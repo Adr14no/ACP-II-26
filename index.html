@@ -47,13 +47,21 @@
                 </div>
             </div>
 
-            <div class="flex items-center gap-3 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
-                <div id="timerDisplay" class="flex items-center gap-2 font-mono font-bold text-xl text-pm-gold">
-                    <i class="fa-regular fa-clock text-base text-slate-400"></i>
-                    <span>02:30:00</span>
+            <!-- Cronômetro e Botões de Controle de Progresso -->
+            <div class="flex flex-wrap items-center gap-3">
+                <div class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
+                    <div id="timerDisplay" class="flex items-center gap-2 font-mono font-bold text-xl text-pm-gold">
+                        <i class="fa-regular fa-clock text-base text-slate-400"></i>
+                        <span>02:30:00</span>
+                    </div>
+                    <button id="toggleTimerBtn" onclick="toggleTimer()" title="Pausar/Continuar Cronômetro" class="text-xs text-slate-300 hover:text-white px-2 py-1 bg-pm-border rounded transition">
+                        <i class="fa-solid fa-pause"></i>
+                    </button>
                 </div>
-                <button id="toggleTimerBtn" onclick="toggleTimer()" class="text-xs text-slate-300 hover:text-white px-2 py-1 bg-pm-border rounded transition">
-                    <i class="fa-solid fa-pause"></i>
+
+                <!-- Botão para Iniciar Novo Simulado Zerdado -->
+                <button onclick="confirmarNovoSimulado()" title="Reiniciar do Zero" class="bg-amber-600/80 hover:bg-amber-600 text-white px-3 py-2 rounded-xl text-xs font-semibold shadow transition flex items-center gap-1.5 border border-amber-500/40">
+                    <i class="fa-solid fa-arrows-rotate"></i> Novo Simulado
                 </button>
             </div>
         </div>
@@ -272,8 +280,10 @@
 
     </main>
 
-    <!-- Script Unificado de Lógica Principal -->
+    <!-- Script Unificado de Lógica Principal com Persistência em LocalStorage -->
     <script>
+        const STORAGE_KEY = "PMESP_SIMULADO_PROGRES_STATE";
+
         let questionsDatabase = [];
 
         let state = {
@@ -290,8 +300,80 @@
         };
 
         document.addEventListener("DOMContentLoaded", function() {
-            gerarEIniciarNovoSimulado();
+            carregarOuInicializarSimulado();
         });
+
+        // ==========================================
+        // SISTEMA DE SALVAMENTO E RECUPERAÇÃO AUTOMÁTICA
+        // ==========================================
+        function saveStateToLocalStorage() {
+            const dataToSave = {
+                questionsDatabase: questionsDatabase,
+                userAnswers: state.userAnswers,
+                flagged: state.flagged,
+                timerSeconds: state.timerSeconds,
+                timerPaused: state.timerPaused,
+                examFinished: state.examFinished,
+                currentIndex: state.currentIndex,
+                mode: state.mode,
+                activeFilter: state.activeFilter
+            };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
+        }
+
+        function carregarOuInicializarSimulado() {
+            const savedData = localStorage.getItem(STORAGE_KEY);
+
+            if (savedData) {
+                try {
+                    const parsed = JSON.parse(savedData);
+                    questionsDatabase = parsed.questionsDatabase || [];
+                    state.userAnswers = parsed.userAnswers || [];
+                    state.flagged = parsed.flagged || [];
+                    state.timerSeconds = parsed.timerSeconds !== undefined ? parsed.timerSeconds : 150 * 60;
+                    state.timerPaused = parsed.timerPaused || false;
+                    state.examFinished = parsed.examFinished || false;
+                    state.currentIndex = parsed.currentIndex || 0;
+                    state.mode = parsed.mode || 'exam';
+                    state.activeFilter = parsed.activeFilter || 'ALL';
+
+                    if (questionsDatabase.length > 0) {
+                        restaurarInterface();
+                        return;
+                    }
+                } catch (e) {
+                    console.error("Erro ao ler dados salvos do localStorage:", e);
+                }
+            }
+
+            // Se não houver progresso salvo, sorteia um simulado do zero
+            gerarEIniciarNovoSimulado();
+        }
+
+        function restaurarInterface() {
+            updateSubjectCounts();
+            updateFilteredQuestions();
+            setMode(state.mode);
+            setSubjectFilter(state.activeFilter);
+            renderQuestionGrid();
+            displayCurrentQuestion();
+
+            if (state.examFinished) {
+                finishExam(false); // Exibe relatório sem recalcular de novo
+            } else {
+                document.getElementById('resultsContainer').classList.add('hidden');
+                document.getElementById('questionContainer').classList.remove('hidden');
+                
+                if (state.timerInterval) clearInterval(state.timerInterval);
+                startTimer();
+            }
+        }
+
+        function confirmarNovoSimulado() {
+            if (confirm("Tem certeza que deseja reiniciar? Todo o progresso do simulado atual será apagado e 50 novas questões serão sorteadas.")) {
+                gerarEIniciarNovoSimulado();
+            }
+        }
 
         function sortearQuestoesProporcionalmente(bancoBruto, totalSimulado = 50) {
             function shuffle(arr) {
@@ -340,12 +422,15 @@
             state.userAnswers = new Array(questionsDatabase.length).fill(null);
             state.flagged = new Array(questionsDatabase.length).fill(false);
             state.timerSeconds = 150 * 60;
+            state.timerPaused = false;
             state.examFinished = false;
             state.currentIndex = 0;
             state.activeFilter = 'ALL';
 
             document.getElementById('resultsContainer').classList.add('hidden');
             document.getElementById('questionContainer').classList.remove('hidden');
+
+            saveStateToLocalStorage(); // Salva estado zerado no localStorage
 
             updateSubjectCounts();
             updateFilteredQuestions();
@@ -380,6 +465,7 @@
                 ? "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow"
                 : "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
 
+            saveStateToLocalStorage();
             displayCurrentQuestion();
         }
 
@@ -396,6 +482,7 @@
 
             updateFilteredQuestions();
             state.currentIndex = 0;
+            saveStateToLocalStorage();
             renderQuestionGrid();
             displayCurrentQuestion();
         }
@@ -413,9 +500,11 @@
             grid.innerHTML = '';
 
             state.filteredQuestions.forEach((q, idx) => {
-                const originalIndex = idx;
-                const isAnswered = state.userAnswers[originalIndex] !== null;
-                const isFlagged = state.flagged[originalIndex];
+                const originalIndex = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
+                const targetIdx = originalIndex !== -1 ? originalIndex : idx;
+
+                const isAnswered = state.userAnswers[targetIdx] !== null;
+                const isFlagged = state.flagged[targetIdx];
                 const isCurrent = idx === state.currentIndex;
 
                 let btnClass = "h-8 rounded text-xs font-bold transition flex items-center justify-center border ";
@@ -437,6 +526,7 @@
                 button.innerText = q.idSimulado || (idx + 1);
                 button.onclick = () => {
                     state.currentIndex = idx;
+                    saveStateToLocalStorage();
                     displayCurrentQuestion();
                     renderQuestionGrid();
                 };
@@ -450,9 +540,10 @@
             if (state.filteredQuestions.length === 0) return;
 
             const q = state.filteredQuestions[state.currentIndex];
-            const origIdx = state.currentIndex;
+            const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
+            const targetIdx = origIdx !== -1 ? origIdx : state.currentIndex;
 
-            document.getElementById('qBadgeNum').innerText = `Questão ${q.idSimulado || (origIdx + 1)} / ${questionsDatabase.length}`;
+            document.getElementById('qBadgeNum').innerText = `Questão ${q.idSimulado || (targetIdx + 1)} / ${questionsDatabase.length}`;
             
             const subjNames = {
                 'OPERACIONAL': 'Assuntos Operacionais',
@@ -463,7 +554,7 @@
             document.getElementById('qText').innerText = q.text;
 
             const flagBtn = document.getElementById('qMarkFlag');
-            if (state.flagged[origIdx]) {
+            if (state.flagged[targetIdx]) {
                 flagBtn.className = "text-xs text-amber-400 font-semibold transition flex items-center gap-1.5 px-3 py-1 rounded border border-amber-500/50 bg-amber-500/10";
                 flagBtn.innerHTML = '<i class="fa-solid fa-bookmark"></i> <span>Marcada</span>';
             } else {
@@ -474,7 +565,7 @@
             const optionsContainer = document.getElementById('qOptions');
             optionsContainer.innerHTML = '';
 
-            const selectedOpt = state.userAnswers[origIdx];
+            const selectedOpt = state.userAnswers[targetIdx];
 
             q.options.forEach((optText, optIdx) => {
                 const optionDiv = document.createElement('div');
@@ -497,7 +588,7 @@
                 }
 
                 optionDiv.className = optStyle;
-                optionDiv.onclick = () => selectOption(origIdx, optIdx);
+                optionDiv.onclick = () => selectOption(targetIdx, optIdx);
 
                 const radioCircle = document.createElement('div');
                 let circleStyle = "w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] ";
@@ -547,9 +638,10 @@
             document.getElementById('btnNext').style.opacity = state.currentIndex === state.filteredQuestions.length - 1 ? "0.4" : "1";
         }
 
-        function selectOption(origIdx, optIdx) {
+        function selectOption(targetIdx, optIdx) {
             if (state.examFinished && state.mode === 'exam') return;
-            state.userAnswers[origIdx] = optIdx;
+            state.userAnswers[targetIdx] = optIdx;
+            saveStateToLocalStorage(); // Auto-save imediato ao responder
             displayCurrentQuestion();
             renderQuestionGrid();
         }
@@ -558,14 +650,19 @@
             const nextIndex = state.currentIndex + direction;
             if (nextIndex >= 0 && nextIndex < state.filteredQuestions.length) {
                 state.currentIndex = nextIndex;
+                saveStateToLocalStorage();
                 displayCurrentQuestion();
                 renderQuestionGrid();
             }
         }
 
         function toggleFlagCurrentQuestion() {
-            const origIdx = state.currentIndex;
-            state.flagged[origIdx] = !state.flagged[origIdx];
+            const q = state.filteredQuestions[state.currentIndex];
+            const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
+            const targetIdx = origIdx !== -1 ? origIdx : state.currentIndex;
+
+            state.flagged[targetIdx] = !state.flagged[targetIdx];
+            saveStateToLocalStorage();
             displayCurrentQuestion();
             renderQuestionGrid();
         }
@@ -601,6 +698,11 @@
                 if (!state.timerPaused && state.timerSeconds > 0) {
                     state.timerSeconds--;
                     updateTimerDisplay();
+                    
+                    // Salva o tempo no localStorage a cada 5 segundos para reduzir E/S
+                    if (state.timerSeconds % 5 === 0) {
+                        saveStateToLocalStorage();
+                    }
                 } else if (state.timerSeconds <= 0) {
                     clearInterval(state.timerInterval);
                     finishExam();
@@ -610,6 +712,7 @@
 
         function toggleTimer() {
             state.timerPaused = !state.timerPaused;
+            saveStateToLocalStorage();
             const btn = document.getElementById('toggleTimerBtn');
             btn.innerHTML = state.timerPaused ? '<i class="fa-solid fa-play"></i>' : '<i class="fa-solid fa-pause"></i>';
         }
@@ -621,9 +724,13 @@
             document.getElementById('timerDisplay').querySelector('span').innerText = `${h}:${m}:${s}`;
         }
 
-        function finishExam() {
+        function finishExam(shouldSave = true) {
             clearInterval(state.timerInterval);
             state.examFinished = true;
+
+            if (shouldSave) {
+                saveStateToLocalStorage();
+            }
 
             let score = 0;
             let opScore = 0, opTotal = 0;
