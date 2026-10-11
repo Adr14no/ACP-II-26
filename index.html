@@ -409,12 +409,17 @@
         function gerarEIniciarNovoSimulado() {
             let bancoBase = [];
 
+            // Verificação abrangente e flexível da variável do banco de dados
             if (typeof BANCO_SIMULADOS !== 'undefined' && BANCO_SIMULADOS.simulado_01 && BANCO_SIMULADOS.simulado_01.questoes) {
                 bancoBase = BANCO_SIMULADOS.simulado_01.questoes;
+            } else if (typeof BANCO_SIMULADOS !== 'undefined' && Array.isArray(BANCO_SIMULADOS)) {
+                bancoBase = BANCO_SIMULADOS;
             } else if (typeof BANCO_GERAL_QUESTOES !== 'undefined' && Array.isArray(BANCO_GERAL_QUESTOES)) {
                 bancoBase = BANCO_GERAL_QUESTOES;
+            } else if (window.questionsDatabase && window.questionsDatabase.length > 0) {
+                bancoBase = window.questionsDatabase;
             } else {
-                alert("Erro ao carregar questoes.js: verifique se o arquivo está na mesma pasta do index.html.");
+                alert("Erro ao carregar questoes.js: verifique se o arquivo está na mesma pasta do index.html e publicado no repositório.");
                 return;
             }
 
