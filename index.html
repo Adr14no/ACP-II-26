@@ -33,7 +33,7 @@
 </head>
 <body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
 
-    <!-- Cabeçalho Principal -->
+    <!-- Cabeçalho Principal (Botão Sempre Visível) -->
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-4 text-center md:text-left">
@@ -47,8 +47,8 @@
                 </div>
             </div>
 
-            <!-- Cronômetro e Botões de Controle de Progresso -->
-            <div class="flex flex-wrap items-center gap-3">
+            <!-- Cronômetro e Botão "Novo Simulado" SEMPRE Visíveis -->
+            <div class="flex items-center gap-3">
                 <div class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
                     <div id="timerDisplay" class="flex items-center gap-2 font-mono font-bold text-xl text-pm-gold">
                         <i class="fa-regular fa-clock text-base text-slate-400"></i>
@@ -59,8 +59,8 @@
                     </button>
                 </div>
 
-                <!-- Botão para Iniciar Novo Simulado Zerdado -->
-                <button onclick="confirmarNovoSimulado()" title="Reiniciar do Zero" class="bg-amber-600/80 hover:bg-amber-600 text-white px-3 py-2 rounded-xl text-xs font-semibold shadow transition flex items-center gap-1.5 border border-amber-500/40">
+                <!-- Botão FIXO para Reiniciar/Novo Simulado -->
+                <button onclick="confirmarNovoSimulado()" title="Limpar tudo e iniciar novo sorteio" class="bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2 border border-amber-400/40">
                     <i class="fa-solid fa-arrows-rotate"></i> Novo Simulado
                 </button>
             </div>
@@ -153,7 +153,7 @@
                 </div>
             </div>
 
-            <!-- Tela de Resultados (Oculta por padrão) -->
+            <!-- Tela de Resultados -->
             <div id="resultsContainer" class="hidden bg-pm-cardBg border border-pm-gold/40 rounded-xl shadow-2xl p-6 sm:p-8">
                 <div class="text-center pb-6 border-b border-pm-border mb-6">
                     <div class="inline-flex p-4 rounded-full bg-pm-gold/10 border-2 border-pm-gold mb-3 text-pm-gold text-3xl">
@@ -218,7 +218,7 @@
                 </div>
 
                 <div class="flex justify-center gap-4">
-                    <button onclick="gerarEIniciarNovoSimulado()" class="px-6 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl transition shadow flex items-center gap-2 text-sm">
+                    <button onclick="confirmarNovoSimulado()" class="px-6 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl transition shadow flex items-center gap-2 text-sm">
                         <i class="fa-solid fa-rotate-right"></i> Gerar Novo Simulado Aleatório
                     </button>
                     <button onclick="reviewExamFromResults()" class="px-6 py-2.5 bg-pm-navy hover:bg-pm-border text-white font-semibold rounded-xl border border-pm-border transition flex items-center gap-2 text-sm">
@@ -280,9 +280,9 @@
 
     </main>
 
-    <!-- Script Unificado de Lógica Principal com Persistência em LocalStorage -->
+    <!-- Script de Lógica Principal com Persistência em LocalStorage -->
     <script>
-        const STORAGE_KEY = "PMESP_SIMULADO_PROGRES_STATE";
+        const STORAGE_KEY = "PMESP_SIMULADO_ACP_STATE";
 
         let questionsDatabase = [];
 
@@ -303,9 +303,7 @@
             carregarOuInicializarSimulado();
         });
 
-        // ==========================================
-        // SISTEMA DE SALVAMENTO E RECUPERAÇÃO AUTOMÁTICA
-        // ==========================================
+        // SALVAMENTO EM TEMPO REAL NO LOCALSTORAGE
         function saveStateToLocalStorage() {
             const dataToSave = {
                 questionsDatabase: questionsDatabase,
@@ -327,26 +325,25 @@
             if (savedData) {
                 try {
                     const parsed = JSON.parse(savedData);
-                    questionsDatabase = parsed.questionsDatabase || [];
-                    state.userAnswers = parsed.userAnswers || [];
-                    state.flagged = parsed.flagged || [];
-                    state.timerSeconds = parsed.timerSeconds !== undefined ? parsed.timerSeconds : 150 * 60;
-                    state.timerPaused = parsed.timerPaused || false;
-                    state.examFinished = parsed.examFinished || false;
-                    state.currentIndex = parsed.currentIndex || 0;
-                    state.mode = parsed.mode || 'exam';
-                    state.activeFilter = parsed.activeFilter || 'ALL';
+                    if (parsed.questionsDatabase && parsed.questionsDatabase.length > 0) {
+                        questionsDatabase = parsed.questionsDatabase;
+                        state.userAnswers = parsed.userAnswers || new Array(questionsDatabase.length).fill(null);
+                        state.flagged = parsed.flagged || new Array(questionsDatabase.length).fill(false);
+                        state.timerSeconds = parsed.timerSeconds !== undefined ? parsed.timerSeconds : 150 * 60;
+                        state.timerPaused = parsed.timerPaused || false;
+                        state.examFinished = parsed.examFinished || false;
+                        state.currentIndex = parsed.currentIndex || 0;
+                        state.mode = parsed.mode || 'exam';
+                        state.activeFilter = parsed.activeFilter || 'ALL';
 
-                    if (questionsDatabase.length > 0) {
                         restaurarInterface();
                         return;
                     }
                 } catch (e) {
-                    console.error("Erro ao ler dados salvos do localStorage:", e);
+                    console.error("Erro ao carregar dados do LocalStorage:", e);
                 }
             }
 
-            // Se não houver progresso salvo, sorteia um simulado do zero
             gerarEIniciarNovoSimulado();
         }
 
@@ -359,18 +356,18 @@
             displayCurrentQuestion();
 
             if (state.examFinished) {
-                finishExam(false); // Exibe relatório sem recalcular de novo
+                finishExam(false);
             } else {
                 document.getElementById('resultsContainer').classList.add('hidden');
                 document.getElementById('questionContainer').classList.remove('hidden');
-                
                 if (state.timerInterval) clearInterval(state.timerInterval);
                 startTimer();
             }
         }
 
         function confirmarNovoSimulado() {
-            if (confirm("Tem certeza que deseja reiniciar? Todo o progresso do simulado atual será apagado e 50 novas questões serão sorteadas.")) {
+            if (confirm("Deseja iniciar um novo simulado? Todas as respostas atuais serão limpas e 50 questões serão sorteadas.")) {
+                localStorage.removeItem(STORAGE_KEY);
                 gerarEIniciarNovoSimulado();
             }
         }
@@ -430,7 +427,7 @@
             document.getElementById('resultsContainer').classList.add('hidden');
             document.getElementById('questionContainer').classList.remove('hidden');
 
-            saveStateToLocalStorage(); // Salva estado zerado no localStorage
+            saveStateToLocalStorage();
 
             updateSubjectCounts();
             updateFilteredQuestions();
@@ -500,8 +497,8 @@
             grid.innerHTML = '';
 
             state.filteredQuestions.forEach((q, idx) => {
-                const originalIndex = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
-                const targetIdx = originalIndex !== -1 ? originalIndex : idx;
+                const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
+                const targetIdx = origIdx !== -1 ? origIdx : idx;
 
                 const isAnswered = state.userAnswers[targetIdx] !== null;
                 const isFlagged = state.flagged[targetIdx];
@@ -641,7 +638,7 @@
         function selectOption(targetIdx, optIdx) {
             if (state.examFinished && state.mode === 'exam') return;
             state.userAnswers[targetIdx] = optIdx;
-            saveStateToLocalStorage(); // Auto-save imediato ao responder
+            saveStateToLocalStorage(); // SALVAMENTO IMEDIATO AO CLICAR NA OPÇÃO
             displayCurrentQuestion();
             renderQuestionGrid();
         }
@@ -698,8 +695,6 @@
                 if (!state.timerPaused && state.timerSeconds > 0) {
                     state.timerSeconds--;
                     updateTimerDisplay();
-                    
-                    // Salva o tempo no localStorage a cada 5 segundos para reduzir E/S
                     if (state.timerSeconds % 5 === 0) {
                         saveStateToLocalStorage();
                     }
