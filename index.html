@@ -306,7 +306,7 @@
             carregarOuInicializarSimulado();
         });
 
-        // SALVAMENTO PERSISTENTE NO LOCALSTORAGE
+        // SALVAMENTO PERSISTENTE NO LOCALSTORAGE (PERSISTÊNCIA COMPLETA)
         function saveStateToLocalStorage() {
             const dataToSave = {
                 questionsDatabase: questionsDatabase,
@@ -356,7 +356,7 @@
             updateSubjectCounts();
             updateFilteredQuestions();
             setMode(state.mode);
-            setSubjectFilter(state.activeFilter);
+            setSubjectFilter(state.activeFilter, false); // Não reseta currentIndex
             renderQuestionGrid();
             displayCurrentQuestion();
 
@@ -470,7 +470,7 @@
             displayCurrentQuestion();
         }
 
-        function setSubjectFilter(cat) {
+        function setSubjectFilter(cat, resetIndex = true) {
             state.activeFilter = cat;
             ['ALL', 'OPERACIONAL', 'ORGANIZACIONAL', 'JURIDICO'].forEach(c => {
                 const btn = document.getElementById('filter' + c);
@@ -482,7 +482,9 @@
             });
 
             updateFilteredQuestions();
-            state.currentIndex = 0;
+            if (resetIndex) {
+                state.currentIndex = 0;
+            }
             saveStateToLocalStorage();
             renderQuestionGrid();
             displayCurrentQuestion();
