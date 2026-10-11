@@ -706,20 +706,7 @@ const BANCO_SIMULADOS = {
                 answer: 1,
                 explanation: "Fundamentação: Normas de Processo Administrativo da PMESP. A apuração de avarias em bens públicos e acidentes de viatura é efetuada mediante Sindicância."
             },
-            {
-                id: 50,
-                subject: "ORGANIZACIONAL",
-                topic: "Material Bélico - Porte de Arma em Eventos e Aglomerações",
-                text: "O policial militar de folga que pretenda frequentar local com aglomeração de pessoas (shows, eventos esportivos) portando sua arma de fogo deve obrigatoriamente cumprir a seguinte condição prevista na Portaria nº PM4-001/1.2/24:",
-                options: [
-                    "a) Exibir o armamento ostensivamente na cintura para intimidar suspeitos.",
-                    "b) Cientificar o policiamento do evento, portar a arma de forma velada e abster-se de consumir bebidas alcoólicas ou substâncias que alterem a capacidade psicomotora.",
-                    "c) Entregar a arma ao organizador do evento civil na entrada do recinto.",
-                    "d) Dispensar qualquer aviso ao policiamento local por possuir porte federal livre."
-                ],
-                answer: 1,
-                explanation: "Fundamentação: Art. 7º, parágrafo único da Portaria nº PM4-001/1.2/24. O porte em aglomerações na folga exige porte velado, sobriedade total e dar ciência ao policiamento da área/evento."
-            },
+         
                         {
                 id: 50,
                 subject: "ORGANIZACIONAL",
