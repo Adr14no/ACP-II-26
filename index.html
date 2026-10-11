@@ -33,7 +33,7 @@
 </head>
 <body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
 
-    <!-- Cabeçalho Principal (Botão Sempre Visível) -->
+    <!-- Cabeçalho Principal -->
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-4 text-center md:text-left">
@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <!-- Cronômetro e Botão "Novo Simulado" SEMPRE Visíveis -->
+            <!-- Cronômetro e Botão "Novo Simulado" -->
             <div class="flex items-center gap-3">
                 <div class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
                     <div id="timerDisplay" class="flex items-center gap-2 font-mono font-bold text-xl text-pm-gold">
@@ -59,7 +59,7 @@
                     </button>
                 </div>
 
-                <!-- Botão FIXO para Reiniciar/Novo Simulado -->
+                <!-- Botão Novo Simulado Sempre Visível -->
                 <button onclick="confirmarNovoSimulado()" title="Limpar tudo e iniciar novo sorteio" class="bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2 border border-amber-400/40">
                     <i class="fa-solid fa-arrows-rotate"></i> Novo Simulado
                 </button>
@@ -114,6 +114,8 @@
                                 Assuntos Operacionais
                             </span>
                         </div>
+                        
+                        <!-- Botão Marcar para Revisar -->
                         <button id="qMarkFlag" onclick="toggleFlagCurrentQuestion()" class="text-xs text-slate-400 hover:text-amber-400 transition flex items-center gap-1.5 px-3 py-1 rounded border border-pm-border bg-pm-navy/50">
                             <i class="fa-regular fa-bookmark"></i> <span>Marcar para Revisar</span>
                         </button>
@@ -137,7 +139,7 @@
                     </div>
                 </div>
 
-                <!-- Rodapé de Navegação do Card -->
+                <!-- Rodapé de Navegação (Salva ao avançar/voltar) -->
                 <div class="flex flex-wrap items-center justify-between border-t border-pm-border/60 pt-4 mt-6 gap-3">
                     <button id="btnPrev" onclick="navigateQuestion(-1)" class="px-4 py-2 bg-pm-navy border border-pm-border hover:border-pm-gold text-slate-200 rounded-lg text-xs sm:text-sm font-semibold transition flex items-center gap-2">
                         <i class="fa-solid fa-arrow-left"></i> Anterior
@@ -280,7 +282,7 @@
 
     </main>
 
-    <!-- Script de Lógica Principal com Persistência em LocalStorage -->
+    <!-- Script de Lógica Principal -->
     <script>
         const STORAGE_KEY = "PMESP_SIMULADO_ACP_STATE";
 
@@ -303,7 +305,7 @@
             carregarOuInicializarSimulado();
         });
 
-        // SALVAMENTO EM TEMPO REAL NO LOCALSTORAGE
+        // SALVAMENTO GARANTIDO EM QUALQUER AÇÃO
         function saveStateToLocalStorage() {
             const dataToSave = {
                 questionsDatabase: questionsDatabase,
@@ -340,7 +342,7 @@
                         return;
                     }
                 } catch (e) {
-                    console.error("Erro ao carregar dados do LocalStorage:", e);
+                    console.error("Erro ao ler dados do LocalStorage:", e);
                 }
             }
 
@@ -366,7 +368,7 @@
         }
 
         function confirmarNovoSimulado() {
-            if (confirm("Deseja iniciar um novo simulado? Todas as respostas atuais serão limpas e 50 questões serão sorteadas.")) {
+            if (confirm("Deseja iniciar um novo simulado do zero? Todas as respostas salvas serão zeradas e 50 novas questões serão sorteadas.")) {
                 localStorage.removeItem(STORAGE_KEY);
                 gerarEIniciarNovoSimulado();
             }
@@ -638,7 +640,7 @@
         function selectOption(targetIdx, optIdx) {
             if (state.examFinished && state.mode === 'exam') return;
             state.userAnswers[targetIdx] = optIdx;
-            saveStateToLocalStorage(); // SALVAMENTO IMEDIATO AO CLICAR NA OPÇÃO
+            saveStateToLocalStorage(); // SALVA AUTOMATICAMENTE AO ESCOLHER A RESPOSTA
             displayCurrentQuestion();
             renderQuestionGrid();
         }
@@ -647,7 +649,7 @@
             const nextIndex = state.currentIndex + direction;
             if (nextIndex >= 0 && nextIndex < state.filteredQuestions.length) {
                 state.currentIndex = nextIndex;
-                saveStateToLocalStorage();
+                saveStateToLocalStorage(); // SALVA AUTOMATICAMENTE AO NAVEGAR PARA PRÓXIMA OU ANTERIOR
                 displayCurrentQuestion();
                 renderQuestionGrid();
             }
@@ -659,7 +661,7 @@
             const targetIdx = origIdx !== -1 ? origIdx : state.currentIndex;
 
             state.flagged[targetIdx] = !state.flagged[targetIdx];
-            saveStateToLocalStorage();
+            saveStateToLocalStorage(); // SALVA AUTOMATICAMENTE AO MARCAR PARA REVISÃO
             displayCurrentQuestion();
             renderQuestionGrid();
         }
