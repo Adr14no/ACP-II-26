@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Carregamento síncrono/defer do banco de dados antes da interface -->
+    <!-- Carregamento do Banco de Dados de Questões -->
     <script src="questoes.js" defer></script>
 
     <script>
@@ -113,7 +113,7 @@
 
                     <!-- Texto do Enunciado -->
                     <div id="qText" class="text-slate-100 text-sm sm:text-base leading-relaxed font-normal mb-6 text-justify">
-                        Carregando questões...
+                        Carregando questões do simulado...
                     </div>
 
                     <!-- Lista de Alternativas -->
@@ -210,8 +210,8 @@
                 </div>
 
                 <div class="flex justify-center gap-4">
-                    <button onclick="restartExam()" class="px-6 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl transition shadow flex items-center gap-2 text-sm">
-                        <i class="fa-solid fa-rotate-right"></i> Reiniciar Simulado
+                    <button onclick="gerarEIniciarNovoSimulado()" class="px-6 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl transition shadow flex items-center gap-2 text-sm">
+                        <i class="fa-solid fa-rotate-right"></i> Gerar Novo Simulado Aleatório
                     </button>
                     <button onclick="reviewExamFromResults()" class="px-6 py-2.5 bg-pm-navy hover:bg-pm-border text-white font-semibold rounded-xl border border-pm-border transition flex items-center gap-2 text-sm">
                         <i class="fa-solid fa-magnifying-glass"></i> Revisar Respostas
@@ -272,7 +272,7 @@
 
     </main>
 
-    <!-- Script de Lógica Principal -->
+    <!-- Script Unificado de Lógica Principal -->
     <script>
         let questionsDatabase = [];
 
@@ -290,25 +290,71 @@
         };
 
         document.addEventListener("DOMContentLoaded", function() {
-            if (typeof BANCO_SIMULADOS !== 'undefined' && BANCO_SIMULADOS.simulado_01) {
-                questionsDatabase = BANCO_SIMULADOS.simulado_01.questoes;
-                if (BANCO_SIMULADOS.simulado_01.titulo) {
-                    document.getElementById('simuladoTitulo').innerText = BANCO_SIMULADOS.simulado_01.titulo;
+            gerarEIniciarNovoSimulado();
+        });
+
+        function sortearQuestoesProporcionalmente(bancoBruto, totalSimulado = 50) {
+            function shuffle(arr) {
+                let array = [...arr];
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
                 }
+                return array;
+            }
+
+            const opPool = shuffle(bancoBruto.filter(q => q.subject === 'OPERACIONAL'));
+            const jurPool = shuffle(bancoBruto.filter(q => q.subject === 'JURIDICO'));
+            const orgPool = shuffle(bancoBruto.filter(q => q.subject === 'ORGANIZACIONAL'));
+
+            const qtdOp = Math.round(totalSimulado * 0.50);
+            const qtdJur = Math.round(totalSimulado * 0.30);
+            const qtdOrg = totalSimulado - (qtdOp + qtdJur);
+
+            const selecionadasOp = opPool.slice(0, qtdOp);
+            const selecionadasJur = jurPool.slice(0, qtdJur);
+            const selecionadasOrg = orgPool.slice(0, qtdOrg);
+
+            const simuladoMezclado = shuffle([...selecionadasOp, ...selecionadasJur, ...selecionadasOrg]);
+
+            return simuladoMezclado.map((q, idx) => ({
+                ...q,
+                idSimulado: idx + 1
+            }));
+        }
+
+        function gerarEIniciarNovoSimulado() {
+            let bancoBase = [];
+
+            if (typeof BANCO_SIMULADOS !== 'undefined' && BANCO_SIMULADOS.simulado_01 && BANCO_SIMULADOS.simulado_01.questoes) {
+                bancoBase = BANCO_SIMULADOS.simulado_01.questoes;
+            } else if (typeof BANCO_GERAL_QUESTOES !== 'undefined' && Array.isArray(BANCO_GERAL_QUESTOES)) {
+                bancoBase = BANCO_GERAL_QUESTOES;
             } else {
                 alert("Erro ao carregar questoes.js: verifique se o arquivo está na mesma pasta do index.html.");
                 return;
             }
 
+            questionsDatabase = sortearQuestoesProporcionalmente(bancoBase, 50);
+
             state.userAnswers = new Array(questionsDatabase.length).fill(null);
             state.flagged = new Array(questionsDatabase.length).fill(false);
+            state.timerSeconds = 150 * 60;
+            state.examFinished = false;
+            state.currentIndex = 0;
+            state.activeFilter = 'ALL';
+
+            document.getElementById('resultsContainer').classList.add('hidden');
+            document.getElementById('questionContainer').classList.remove('hidden');
 
             updateSubjectCounts();
             updateFilteredQuestions();
             renderQuestionGrid();
             displayCurrentQuestion();
+            
+            if (state.timerInterval) clearInterval(state.timerInterval);
             startTimer();
-        });
+        }
 
         function updateSubjectCounts() {
             const total = questionsDatabase.length;
@@ -367,7 +413,7 @@
             grid.innerHTML = '';
 
             state.filteredQuestions.forEach((q, idx) => {
-                const originalIndex = q.id - 1;
+                const originalIndex = idx;
                 const isAnswered = state.userAnswers[originalIndex] !== null;
                 const isFlagged = state.flagged[originalIndex];
                 const isCurrent = idx === state.currentIndex;
@@ -388,7 +434,7 @@
 
                 const button = document.createElement('button');
                 button.className = btnClass;
-                button.innerText = q.id;
+                button.innerText = q.idSimulado || (idx + 1);
                 button.onclick = () => {
                     state.currentIndex = idx;
                     displayCurrentQuestion();
@@ -404,9 +450,9 @@
             if (state.filteredQuestions.length === 0) return;
 
             const q = state.filteredQuestions[state.currentIndex];
-            const origIdx = q.id - 1;
+            const origIdx = state.currentIndex;
 
-            document.getElementById('qBadgeNum').innerText = `Questão ${q.id} / ${questionsDatabase.length}`;
+            document.getElementById('qBadgeNum').innerText = `Questão ${q.idSimulado || (origIdx + 1)} / ${questionsDatabase.length}`;
             
             const subjNames = {
                 'OPERACIONAL': 'Assuntos Operacionais',
@@ -518,8 +564,7 @@
         }
 
         function toggleFlagCurrentQuestion() {
-            const q = state.filteredQuestions[state.currentIndex];
-            const origIdx = q.id - 1;
+            const origIdx = state.currentIndex;
             state.flagged[origIdx] = !state.flagged[origIdx];
             displayCurrentQuestion();
             renderQuestionGrid();
@@ -629,900 +674,6 @@
 
             document.getElementById('questionContainer').classList.add('hidden');
             document.getElementById('resultsContainer').classList.remove('hidden');
-        }
-
-        function restartExam() {
-            state.userAnswers.fill(null);
-            state.flagged.fill(false);
-            state.timerSeconds = 150 * 60;
-            state.examFinished = false;
-            state.currentIndex = 0;
-
-            document.getElementById('resultsContainer').classList.add('hidden');
-            document.getElementById('questionContainer').classList.remove('hidden');
-
-            renderQuestionGrid();
-            displayCurrentQuestion();
-            startTimer();
-        }
-
-        function reviewExamFromResults() {
-            setMode('study');
-            document.getElementById('resultsContainer').classList.add('hidden');
-            document.getElementById('questionContainer').classList.remove('hidden');
-        }
-    </script>
-</body>
-</html>
-ionGrid();
-            displayCurrentQuestion();
-            startTimer();
-        }
-
-        function reviewExamFromResults() {
-            setMode('study');
-            document.getElementById('resultsContainer').classList.add('hidden');
-            document.getElementById('questionContainer').classList.remove('hidden');
-        }
-    </script>
-</body>
-</html>
-'hidden');
-
-            renderQuestionGrid();
-            displayCurrentQuestion();
-            startTimer();
-        }
-
-        function reviewExamFromResults() {
-            setMode('study');
-            document.getElementById('resultsContainer').classList.add('hidden');
-            document.getElementById('questionContainer').classList.remove('hidden');
-        }
-    </script>
-</body>
-</html>
-ndo único e incidente de comando unificado.",
-                    "c) Incidente policial estático e incidente policial dinâmico.",
-                    "d) Incidente de causas naturais e incidente de natureza mecânica"
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Diretriz SCIPM, item 5.2. A classificação doutrinária dos incidentes policiais é dividida em estático (delimitado geograficamente) e dinâmico (causadores em deslocamento)."
-            },
-            {
-                id: 16,
-                subject: "OPERACIONAL",
-                topic: "SCIPM (Princípios)",
-                text: "De acordo com o a Diretriz nº PM3-003/02/23, os princípios que regem o Sistema de Comando de Incidentes da Polícia Militar (SCIPM), são:",
-                options: [
-                    "a) Gestão pela qualidade, Padronização e Unidade de esforços.",
-                    "b) Moralidade, Impessoalidade e Publicidade.",
-                    "c) Flexibilidade, Padronização e Unidade de esforços.",
-                    "d) Aceitabilidade, Validade do Risco e Necessidade."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Diretriz SCIPM, item 5.3. Os três princípios fundamentais do SCIPM são Flexibilidade, Padronização e Unidade de Esforços."
-            },
-            {
-                id: 17,
-                subject: "OPERACIONAL",
-                topic: "SCIPM (Comandante do Incidente)",
-                text: "Na metodologia do Sistema de Comando de Incidentes da Polícia Militar (SCIPM), durante um incidente crítico policial dinâmico, quem exerce a função de Comandante do Incidente (Cmt Inc) até que a situação seja estabilizada e assuma características de incidente estático?",
-                options: [
-                    "a) O Comando de Grupo Patrulha (CGP).",
-                    "b) O Comando de Força Patrulha (CFP).",
-                    "c) O Comando de Área do Corpo de Bombeiros.",
-                    "d) O Chefe de Operações do COPOM."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: Diretriz SCIPM, item 5.6. Em incidentes dinâmicos, o Chefe de Operações do COPOM exerce a função de Cmt Inc (como estrutura supra-incidental) até a estabilização da ocorrência."
-            },
-            {
-                id: 18,
-                subject: "OPERACIONAL",
-                topic: "SCIPM (Posto de Comando)",
-                text: "No Sistema de Comando de Incidentes da Polícia Militar (SCIPM), como é denominada a estrutura física, permanente ou móvel, onde se localizam, no teatro de operações, o Comandante do Incidente (Cmt Inc) e seu Estado-Maior?",
-                options: [
-                    "a) Momento do caos.",
-                    "b) Base de apoio logístico.",
-                    "c) Sala de Gerenciamento de Crises.",
-                    "d) Posto de Comando."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: Diretriz SCIPM, item 5.1. O Posto de Comando (PC) é o local físico/estratégico no teatro de operações reservado ao Cmt Inc e ao Estado-Maior do incidente."
-            },
-            {
-                id: 19,
-                subject: "OPERACIONAL",
-                topic: "SCIPM (Sala de Gerenciamento)",
-                text: "Sobre a Sala de Gerenciamento do Incidente, estrutura prevista para o acompanhamento de operações de grande relevância, assinale a alternativa correta:",
-                options: [
-                    "a) Deve ser instalada obrigatoriamente dentro do perímetro de segurança do teatro de operações para facilitar o comando direto.",
-                    "b) É uma estrutura física localizada fora do sítio da operação, que reunirá autoridades em nível político-estratégico para acompanhar e monitorar as operações e manter contato com o Posto de Comando.",
-                    "c) Destina-se exclusivamente ao Comandante do Incidente (Cmt Inc) para que ele possa realizar o planejamento tático isolado das demais agências.",
-                    "d) Sua ativação é automática em qualquer incidente crítico policial estático, dispensando autorização de autoridade superior."
-                ],
-                answer: 1, // B
-                explanation: "Fundamentação: Diretriz SCIPM e C2. A Sala de Gerenciamento do Incidente fica instalada fora do sítio da operação e agrega o nível político-estratégico de decisão."
-            },
-            {
-                id: 20,
-                subject: "OPERACIONAL",
-                topic: "COP - Câmeras Operacionais (PM3-001/02/25)",
-                text: "A temporalidade de armazenamento das evidências digitais geradas pelas Câmeras Operacionais Portáteis (COP) varia conforme a natureza do registro. Pela Diretriz PM em vigor, qual é o prazo mínimo de disponibilidade estabelecido para o 'Vídeo de Rotina' (Vídeo Recall)?",
-                options: [
-                    "a) 180 dias.",
-                    "b) 1 ano.",
-                    "c) 90 dias.",
-                    "d) 30 dias."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Diretriz COP item 6.9. O prazo de custódia mínimo para gravações classificadas como 'Vídeo de Rotina' é de 90 dias (ao passo que evidências de procedimentos judiciais/especiais exigem 1 ano)."
-            },
-            {
-                id: 21,
-                subject: "OPERACIONAL",
-                topic: "COP - Câmeras Operacionais (Direitos Sensíveis)",
-                text: "Caso o Policial Militar, mesmo durante um fato de interesse policial, precise preservar um direito sensível, qual deve ser a providência no que tange a utilização da Câmera Operacional Corporal?",
-                options: [
-                    "a) Caso a ocorrência envolva criança ou adolescente na condição de vítima, o policial deve limitar o registro à captação das evidências relacionadas ao local do crime ou corpo de delito não relacionados diretamente à imagem da vítima e durante o tempo estritamente necessário.",
-                    "b) Em situações excepcionais, mesmo que caracterizadas como fato de interesse policial, o uso da COP deverá ser temporariamente adaptado...",
-                    "c) Caso a vítima solicite para não ser filmada, deverá entrevistá-la apontando a câmera para outra direção...",
-                    "d) Todas as alternativas anteriores estão incorretas."
-                ],
-                answer: 0, // A
-                explanation: "Fundamentação: Diretriz COP item 6.7. Em ocorrências com criança/adolescente na condição de vítima, a captação audiovisual é restrita ao estritamente necessário para preservar a intimidade do menor."
-            },
-            {
-                id: 22,
-                subject: "OPERACIONAL",
-                topic: "COP - Prioridade de Distribuição",
-                text: "De acordo com as regras gerais de uso previstas em Diretriz PM, caso o número de Câmeras Operacionais Portáteis (COP) não seja suficiente para equipar integralmente todo o efetivo de uma OPM, qual deve ser a primeira prioridade de distribuição?",
-                options: [
-                    "a) Atividades Operacionais Diversas, como DEJEM e Atividade Delegada.",
-                    "b) Programas de Policiamento Primários (Radiopatrulha e Força Tática).",
-                    "c) Programas de Policiamento Complementares, como Escolar e Trânsito.",
-                    "d) Funções de Comando e Supervisão (CGP, CFP e Supervisor Regional)."
-                ],
-                answer: 1, // B
-                explanation: "Fundamentação: Diretriz COP item 6.4. A ordem prioritária de distribuição das COP direciona obrigatoriamente primeiro o atendimento dos Programas Primários (RP e FT)."
-            },
-            {
-                id: 23,
-                subject: "OPERACIONAL",
-                topic: "COP - Requisito em MDIP",
-                text: "A quem recai a obrigatoriedade de requisitar e recolher as Câmeras Operacionais Portáteis (COP), providenciando, pessoalmente, o upload do conteúdo captado, sempre que possível em ato contínuo ao recebimento dos equipamentos, mas sem prejuízo das diligências e medidas necessárias ao gerenciamento de uma ocorrência de Morte Decorrente de Intervenção Policial (MDIP)?",
-                options: [
-                    "a) Supervisor Regional",
-                    "b) Comando de Força Patrulha (ou equivalente)",
-                    "c) Oficial do Plantão de Polícia Judiciária Militar",
-                    "d) Oficial de Permanência da Corregedoria PM."
-                ],
-                answer: 1, // B
-                explanation: "Fundamentação: Diretriz COP item 6.11. O CFP (Comando de Força Patrulha) tem a obrigação de recolher pessoalmente as COP e providenciar o upload em casos de MDIP, LCDIP ou ocorrências de grande repercussão."
-            },
-            {
-                id: 24,
-                subject: "OPERACIONAL",
-                topic: "COP - Procedimentos por Falha",
-                text: "No atendimento a requisição de evidência digital foi identificada a ausência de registro audiovisual da COP decorrente de falha de acionamento, descarga de bateria ou qualquer outro uso em desacordo com as normas aplicáveis. Qual deve ser, obrigatoriamente, a providência adotada para apuração específica do fato, independentemente da existência de outro procedimento apurando a ocorrência em si?",
-                options: [
-                    "a) Expediente à Coord Op PM...",
-                    "b) Instauração de Investigação Preliminar (IP).",
-                    "c) Instauração de Procedimento Disciplinar (PD).",
-                    "d) Instauração de Inquérito Policial Militar (IPM)."
-                ],
-                answer: 1, // B
-                explanation: "Fundamentação: Diretriz COP item 6.12. Identificada a ausência injustificada ou falha de registro das COP, instaura-se obrigatoriamente Investigação Preliminar (IP) para apuração do fato em si."
-            },
-
-            // QUESTÕES ORGANIZACIONAIS (25 a 34)
-            {
-                id: 25,
-                subject: "ORGANIZACIONAL",
-                topic: "Regime de Trabalho (PM1-7/02/23)",
-                text: "Com base na Portaria do Cmt G PM1-7/02/23, que dispõe sobre o regime de trabalho na Polícia Militar do Estado de São Paulo, após quantos serviços cumpridos de forma ininterrupta o policial militar fixado nos turnos de 12x36 ou 12x24/12x48 terá direito a uma folga mensal obrigatória?",
-                options: [
-                    "a) 9 (nove) serviços.",
-                    "b) 12 (doze) serviços.",
-                    "c) 14 (quatorze) serviços.",
-                    "d) 18 (dezoito) serviços."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Portaria PM1-7/02/23, art. 12. Escalas de 12 horas dão direito a folga mensal a cada 14 serviços ininterruptos (nas escalas de 24x48 exige-se 9 serviços)."
-            },
-            {
-                id: 26,
-                subject: "ORGANIZACIONAL",
-                topic: "Regime de Trabalho (Características)",
-                text: "Segundo as disposições preliminares da legislação sobre o regime de trabalho, assinale a alternativa que apresenta uma informação correta sobre o regime de trabalho policial-militar:",
-                options: [
-                    "a) A jornada de trabalho semanal do policial militar é de, no máximo, 40 (quarenta) horas.",
-                    "b) O regime caracteriza-se pelo cumprimento de horário regular e fixo para todas as modalidades de serviço.",
-                    "c) O regime caracteriza-se, entre outros fatores, pela possibilidade de chamadas a qualquer hora e pelo risco de o policial tornar-se vítima de crime em razão de suas atribuições.",
-                    "d) Atividades relativas ao ensino e à difusão cultural não fazem parte das características do regime de trabalho policial-militar."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Portaria PM1-7/02/23, art. 2º. As peculiaridades do regime especial envolvem a sujeição a chamadas imprevistas e a constante exposição ao risco."
-            },
-            {
-                id: 27,
-                subject: "ORGANIZACIONAL",
-                topic: "Regime de Trabalho (Expediente)",
-                text: "No regime de expediente administrativo de 08:00 às 18:00, como funciona a conversão de turnos em folgas?",
-                options: [
-                    "a) Apenas um turno é convertido em folga na sexta-feira.",
-                    "b) Os turnos são convertidos em folgas apenas se houver feriado na semana.",
-                    "c) O policial deve cumprir dez turnos e não faz jus a folgas semanais.",
-                    "d) São cumpridos obrigatoriamente oito turnos, sendo dois turnos convertidos em folgas."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: Portaria PM1-7/02/23, art. 8º. No expediente das 08h às 18h (10 turnos de 5h), 8 turnos são trabalhados e 2 turnos são convertidos em folga semanal."
-            },
-            {
-                id: 28,
-                subject: "ORGANIZACIONAL",
-                topic: "Regime de Trabalho (Janelas de Expediente)",
-                text: "No regime de expediente administrativo padrão, quais são as janelas de horário previstas pela Portaria Cmt G nº PM1-7/02/23 que trata do Regime de Trabalho na Instituição?",
-                options: [
-                    "a) Das 09:00 às 19:00 horas apenas.",
-                    "b) Das 08:00 às 18:00 horas ou das 09:00 às 18:00 horas.",
-                    "c) Das 07:00 às 17:00 horas ou das 08:00 às 17:00 horas.",
-                    "d) Das 08:00 às 17:00 horas ou das 08:30 às 17:30 horas."
-                ],
-                answer: 1, // B
-                explanation: "Fundamentação: Portaria PM1-7/02/23, art. 8º. As duas janelas regulamentares de expediente são das 08h às 18h ou das 09h às 18h."
-            },
-            {
-                id: 29,
-                subject: "ORGANIZACIONAL",
-                topic: "Material Bélico (PM4-001/1.2/24)",
-                text: "Nos termos da Portaria do Cmt G nº PM4-001/1.2/24, que dispõe sobre material bélico na PMESP, o registro e cadastro do material bélico pertencente à Instituição compete:",
-                options: [
-                    "a) Ao Comandante da Unidade, diretamente no SINARM.",
-                    "b) À Diretoria de Logística, em sistema de controle patrimonial, com manutenção permanente dos registros, com as informações exigidas pelo Comando do Exército.",
-                    "c) À Polícia Federal, exclusivamente no SICARM.",
-                    "d) Ao próprio policial militar responsável pela carga individual."
-                ],
-                answer: 1, // B
-                explanation: "Fundamentação: Portaria PM4-001/1.2/24, art. 4º. O controle centralizado e registro patrimonial das armas e materiais da PMESP é incumbência da Diretoria de Logística (DL)."
-            },
-            {
-                id: 30,
-                subject: "ORGANIZACIONAL",
-                topic: "Material Bélico (Extravio de CRAF)",
-                text: "O Sd PM Arielson, do 99º BPM/M durante deslocamento para sua residência, ao chegar em casa, percebeu ter extraviado seu CRAF. Nos termos da Portaria do Cmt G nº PM4-001/1.2/24, assinale a alternativa que indica sobre o procedimento correto a ser adotado pelo policial militar:",
-                options: [
-                    "a) Poderá continuar portando a arma normalmente, desde que esteja com sua identidade funcional.",
-                    "b) Deverá apenas solicitar a segunda via em até 30 (trinta) dias.",
-                    "c) Comunicar imediatamente ao seu superior e solicitar a segunda via em até 30 (trinta) dias.",
-                    "d) Registrar Boletim de Ocorrência sobre os fatos e comunicar imediatamente ao seu superior, por meio de documento, o extravio do CRAF."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: Portaria PM4-001/1.2/24, art. 21. Em extravio de CRAF, impõe-se a confecção formal de BO e comunicação imediata via documento à autoridade de vinculação."
-            },
-            {
-                id: 31,
-                subject: "ORGANIZACIONAL",
-                topic: "Material Bélico (Vedações ao Porte)",
-                text: "Nos termos da Portaria do Cmt G nº PM4-001/1.2/24, que dispõe sobre material bélico na PMESP, acerca das vedações ao porte de arma de fogo, assinale a alternativa incorreta:",
-                options: [
-                    "a) É vedado o porte de arma de fogo ao policial militar que tenha restrição judicial.",
-                    "b) É vedado o porte de arma de fogo ao policial militar que possua restrição médica ou psicológica para tal.",
-                    "c) É vedado o porte de arma ao policial militar que esteja frequentando o 1º ano do Curso de Formação de Oficiais, independentemente de ser oriundo ou não das fileiras da Instituição, mesmo que já habilitado.",
-                    "d) É vedado o porte de arma de fogo ao policial militar que esteja frequentando o Módulo Básico do Curso de Formação de Soldados, salvo quando em serviço e devidamente habilitado."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Portaria PM4-001/1.2/24, art. 9º, II. O Cadete do 1º ano do CFO oriundo da praça mantêm o porte de arma por já ser habilitado e pertencer às fileiras."
-            },
-            {
-                id: 32,
-                subject: "ORGANIZACIONAL",
-                topic: "Material Bélico (Carga Individual)",
-                text: "Nos termos da Portaria do Cmt G nº PM4-001/1.2/24, acerca da carga individual de material bélico, assinale a alternativa incorreta:",
-                options: [
-                    "a) O Cmt da Unidade deverá revogar a autorização para carga individual de material bélico da PMESP, por 12 (doze) meses, ao policial militar que tiver o material bélico da PMESP, carga individual, furtado, roubado ou extraviado.",
-                    "b) A carga individual poderá compreender uma arma de fogo de porte, com até 50 cartuchos operacionais correspondentes, e um colete de proteção balística.",
-                    "c) O Cmt da Unidade poderá revogar a autorização para carga individual de material bélico da PMESP, por 12 (doze) meses, ao policial militar que ingressar no comportamento 'Mau' e enquanto nele permanecer.",
-                    "d) A carga individual acompanhará policial militar quando da sua movimentação de Unidade."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Portaria PM4-001/1.2/24, art. 11. O ingresso no comportamento 'Mau' acarreta a revogação OBRIGATÓRIA (dever) e não facultativa ('poderá') da carga individual."
-            },
-            {
-                id: 33,
-                subject: "ORGANIZACIONAL",
-                topic: "Material Bélico (Aquisição de Uso Restrito)",
-                text: "Nos termos da Portaria do Cmt G nº PM4-001/1.2/24, assinale a alternativa que indica a autoridade competente para conceder a autorização para a aquisição de arma de fogo de uso restrito:",
-                options: [
-                    "a) Comandante da Unidade.",
-                    "b) Comandante Geral PM.",
-                    "c) Comando do Exército.",
-                    "d) Cmt Cia PM."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Portaria PM4-001/1.2/24, art. 16. A autorização para aquisição de arma de uso restrito por policiais militares é de competência do Comando do Exército (SIGMA)."
-            },
-            {
-                id: 34,
-                subject: "ORGANIZACIONAL",
-                topic: "Material Bélico (Porte em Aglomerações)",
-                text: "Nos termos da Portaria do Cmt G nº PM4-001/1.2/24, o policial militar de folga ou em afastamento regulamentar, poderá portar arma de fogo em locais onde haja aglomeração de pessoas em virtude de evento de qualquer natureza, desde que sejam obedecidas as seguintes condições, exceto:",
-                options: [
-                    "a) Cientifique o policiamento do evento, se houver, fornecendo nome, posto ou graduação, a Unidade em que esteja classificado e a identificação da arma.",
-                    "b) Não faça a ingestão de qualquer substância que cause alteração de suas capacidades psicomotoras.",
-                    "c) O porte de materiais bélicos de uso permitido e restrito, pertencentes ao patrimônio da PMESP é inerente ao policial militar e válido em todo território nacional, portanto, não necessita cientificar o policiamento do evento, se houver.",
-                    "d) Não conduza a arma ostensivamente."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Portaria PM4-001/1.2/24, art. 7º, parágrafo único. A obrigatoriedade de cientificar o policiamento do evento é regra estrita para porte em aglomerações na folga."
-            },
-
-            // QUESTÕES JURÍDICO-ADMINISTRATIVAS (35 a 50)
-            {
-                id: 35,
-                subject: "JURIDICO",
-                topic: "Lei 18.442/26 (Cargos em Comissão)",
-                text: "A Lei nº 18.442, de 02ABR26 reestruturou os Quadros da Polícia Militar. Sobre a organização e o emprego dos Oficiais PM, assinale a alternativa correta:",
-                options: [
-                    "a) Os Oficiais do QOE possuem precedência funcional sobre os Oficiais do QOEM em igualdade de postos, devido à natureza técnica.",
-                    "b) O QOEM é destinado exclusivamente aos Oficiais que concluíram o Curso de Habilitação de Oficiais Especialistas (CHOE).",
-                    "c) As funções de Secretário-Chefe da Casa Militar e Comandante-Geral PM são exclusivas de Oficiais da ativa do último posto do QOEM.",
-                    "d) Oficiais do QOE podem exercer funções de comando e direção de órgãos operacionais de policiamento ostensivo."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Lei 18.442/26, art. 10. Os cargos de topo (Comandante-Geral, Subcomandante e Chefe da Casa Militar) são privativos de Coronéis ativos do QOEM."
-            },
-            {
-                id: 36,
-                subject: "JURIDICO",
-                topic: "Lei 18.442/26 (Distribuição do Efetivo)",
-                text: "No tocante à distribuição anual do efetivo, inserido pelo artigo 6º da Lei nº 18.442, de 02ABR26, o Governador do Estado deve editar Decreto para detalhar os postos e graduações. Quanto a este tema, assinale a alternativa INCORRETA:",
-                options: [
-                    "a) O decreto deve ser editado no primeiro semestre do ano antecedente ao da sua entrada em vigor.",
-                    "b) A Comandante-Geral PM possui competência para alterar o quantitativo distribuído em até 20% limitado ao efetivo total previsto no artigo 3º da Lei 18.442/26.",
-                    "c) A distribuição deve observar a disponibilidade orçamentária e financeira.",
-                    "d) Caso o número de promovidos exceda o montante distribuído em Quadro de Organização, o excedente será considerado definitivo e imutável."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: Lei 18.442/26, art. 6º. Promovidos em desacordo com os limites do QO geram excedentes temporários que devem ser corrigidos na primeira vaga superveniente."
-            },
-            {
-                id: 37,
-                subject: "JURIDICO",
-                topic: "Lei 18.442/26 (Exceções ao Teto do Efetivo)",
-                text: "Sobre o efetivo fixado pela Lei nº 18.442, de 02ABR26, que totaliza 93.802 cargos, assinale a alternativa que descreve corretamente quem NÃO é computado para este limite:",
-                options: [
-                    "a) Os Oficiais nos postos de Coronéis PM e Tenentes-Coronéis PM.",
-                    "b) Os Subtenentes PM enquanto aguardam promoção para o QOE.",
-                    "c) O Aspirante a Oficial PM, o Cadete PM e o Aluno-Soldado PM.",
-                    "d) Os Oficiais do Quadro de Oficiais de Saúde (QOS)."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: Lei 18.442/26, art. 3º, parágrafo único. Aspirantes, Cadetes, Alunos-Soldados, revertidos e temporários NÃO entram no cômputo dos 93.802 cargos."
-            },
-            {
-                id: 38,
-                subject: "JURIDICO",
-                topic: "Lei 18.442/26 (Emprego dos Quadros)",
-                text: "Considerando as regras de emprego dos Oficiais PM, estabelecidas no Artigo 7º da Lei nº 18.442, de 02ABR26, analise as seguintes proposições:\nI. Os Oficiais do QOEM serão empregados em funções de comando, chefia e direção.\nII. Os Oficiais do QOE serão empregados principalmente na supervisão operacional.\nIII. Os Oficiais do QOS serão empregados em atividades técnicas de saúde e assessoramento técnico dos órgãos de saúde da PMESP.\nAssinale a alternativa correta:",
-                options: [
-                    "a) Apenas os itens I e II estão corretos.",
-                    "b) Apenas os itens II e III estão corretos.",
-                    "c) Apenas os itens I e III estão corretos.",
-                    "d) Todos os itens estão corretos."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: Lei 18.442/26, art. 7º. Todos os itens expressam com exatidão legal as destinações funcionais dos Quadros QOEM, QOE e QOS."
-            },
-            {
-                id: 39,
-                subject: "JURIDICO",
-                topic: "Lei 18.442/26 (Natureza Institucional)",
-                text: "A Comandante-Geral da PMESP, ao realizar o planejamento estratégico para o ano de 2027, analisou a estrutura institucional à luz da Lei nº 18.442, de 02ABR26. Sobre a natureza e organização da PMESP, assinale a alternativa correta:",
-                options: [
-                    "a) A PMESP é uma instituição temporária, típica de Estado, voltada à salvaguarda do regime democrático.",
-                    "b) A PMESP é força auxiliar e reserva do Exército Brasileiro, integrante do Sistema Único de Segurança Pública.",
-                    "c) O comando da instituição pode ser exercido por Oficial da ativa ou da reserva, QOEM ou QOE, desde que do último posto.",
-                    "d) A PMESP é incumbida exclusivamente da preservação da ordem pública, não atuando na Defesa Civil."
-                ],
-                answer: 1, // B
-                explanation: "Fundamentação: Lei 18.442/26, art. 2º. A PMESP é instituição permanente, força auxiliar e reserva do Exército Brasileiro, integrando o SUSP."
-            },
-            {
-                id: 40,
-                subject: "JURIDICO",
-                topic: "Lei 18.442/26 (Enquadramento dos Quadros)",
-                text: "Considerando as regras de enquadramento dos atuais militares do Estado nos novos Quadros, definidas no artigo 17 da Lei nº 18.442, de 02ABR26, analise as correlações:\nI. Oficiais do Quadro de Oficiais Policiais Militares (QOPM) passam a integrar o QOEM.\nII. Oficiais do Quadro Auxiliar de Oficiais da Polícia Militar (QAOPM) passam a integrar o QOE.\nIII. Praças do Quadro de Praças Policiais Militares (QPPM) passam a integrar o QP.\nAssinale a alternativa correta:",
-                options: [
-                    "a) Apenas o item I está correto.",
-                    "b) Apenas os itens I e II estão corretos.",
-                    "c) Apenas os itens II e III estão corretos.",
-                    "d) Todos os itens estão corretos."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: Lei 18.442/26, art. 17. A reestruturação substitui: QOPM -> QOEM; QAOPM -> QOE; QPPM -> QP. Todos estão corretos."
-            },
-            {
-                id: 41,
-                subject: "JURIDICO",
-                topic: "Lei 18.442/26 (Requisitos de Acesso ao QOE)",
-                text: "O Subtenente PM 'Mike' deseja concorrer à promoção para o posto de Segundo-Tenente QOE. Analise as seguintes afirmativas e aponte quais requisitos estão corretos com base na Lei nº 18.442, de 02ABR26:\nI. Ter concluído o CHOE com aproveitamento.\nII. Estar, pelo menos, no comportamento 'Ótimo'.\nIII. Integrar a primeira terça parte do almanaque.\nEstão corretos apenas os itens:",
-                options: [
-                    "a) Todos os itens.",
-                    "b) I e III.",
-                    "c) II e III.",
-                    "d) I e II."
-                ],
-                answer: 0, // A
-                explanation: "Fundamentação: Lei 18.442/26, art. 12. O Subtenente exige aprovação no CHOE, comportamento mínimo Ótimo e posição na 1ª terça parte do almanaque."
-            },
-            {
-                id: 42,
-                subject: "JURIDICO",
-                topic: "Lei 18.442/26 (Militar Revertido)",
-                text: "No que se refere à fixação do efetivo da Polícia Militar do Estado de São Paulo (93.802 cargos), assinale a alternativa INCORRETA, de acordo com o artigo 3º da Lei nº 18.442, de 02ABR26:",
-                options: [
-                    "a) O efetivo de Coronéis PM é fixado em 74 cargos.",
-                    "b) O Aspirante a Oficial PM e o Cadete PM não são considerados para os limites de efetivo fixados.",
-                    "c) O regime jurídico do policial militar temporário será disciplinado em legislação específica, não sendo ele computado no limite de efetivo fixado.",
-                    "d) O militar do Estado da reserva, quando revertido ao serviço ativo, passa a computar no limite de cargos fixados para o seu respectivo posto ou graduação."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: Lei 18.442/26, art. 3º, parágrafo único. Militares da reserva revertidos NÃO entram no cômputo dos cargos fixados no teto legal."
-            },
-            {
-                id: 43,
-                subject: "JURIDICO",
-                topic: "RDPM (Conversão de Permanência)",
-                text: "De acordo com a norma insculpida no Regulamento Disciplinar da PMESP (Lei Comp. 893/01) a permanência disciplinar é a sanção em que o transgressor ficará na Organização Policial Militar, sem estar circunscrito a determinado compartimento. Contudo, a pedido do transgressor, o cumprimento da sanção de permanência disciplinar poderá, a juízo devidamente motivado, da autoridade que applied a punição, ser convertido em prestação de serviço extraordinário. Nesse sentido é correto afirmar que:",
-                options: [
-                    "a) O limite máximo de conversão da permanência disciplinar em serviço extraordinário é de 6 (seis) dias.",
-                    "b) A prestação do serviço extraordinário poderá ser executada imediatamente após o término de um serviço ordinário.",
-                    "c) A prestação do serviço extraordinário, na hipótese da conversão da permanência disciplinar, consiste na realização de atividades...",
-                    "d) O pedido de conversão elide o pedido de reconsideração de ato."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: RDPM (LC 893/01), art. 16, § 4º. O pedido de conversão da permanência em serviço extraordinário ELIDE (cancela/renuncia) o pedido de reconsideração de ato."
-            },
-            {
-                id: 44,
-                subject: "JURIDICO",
-                topic: "RDPM (Responsabilidade Solidária)",
-                text: "Considerando o texto expresso da Lei Comp. 893/01, que instituiu o Regulamento Disciplinar da Polícia Militar do Estado de São Paulo, é correto afirmar que o superior hierárquico responderá solidariamente, na esfera administrativa disciplinar, incorrendo nas mesmas sanções da transgressão praticada por seu subordinado quando:",
-                options: [
-                    "a) Presenciar o cometimento da transgressão deixando de atuar para fazê-la cessar posteriormente.",
-                    "b) Concorrer indiretamente, por ação ou omissão, para o cometimento da transgressão, mesmo não estando presente no local do ato.",
-                    "c) Presenciar o cometimento da transgressão deixando de atuar para fazê-la cessar imediatamente.",
-                    "d) Concorrer indiretamente, por omissão, para o cometimento da transgressão, mesmo não estando presente no local do ato."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: RDPM (LC 893/01), art. 11, § 2º. O superior responde solidariamente se presenciar o ato e deixar de intervir IMEDIATAMENTE."
-            },
-            {
-                id: 45,
-                subject: "JURIDICO",
-                topic: "RDPM (Isenção ao Regulamento)",
-                text: "De acordo com a Lei Complementar 893/01, que instituiu o Regulamento Disciplinar da Polícia Militar do Estado de São Paulo, é correto afirmarmos que não estão sujeitos a esse Regulamento os seguintes militares:",
-                options: [
-                    "a) Militares do Estado da reserva remunerada.",
-                    "b) Militares do Estado reformados.",
-                    "c) Militares do Estado, ocupantes de cargos públicos ou eletivos.",
-                    "d) Militares do Estado agregados."
-                ],
-                answer: 2, // C
-                explanation: "Fundamentação: RDPM (LC 893/01), art. 3º, § 2º. Policiais militares no exercício de cargos públicos civis ou cargos eletivos não estão sujeitos às sanções do RDPM durante o mandato/exercício."
-            },
-            {
-                id: 46,
-                subject: "JURIDICO",
-                topic: "RDPM (Chefe Supremo da PMESP)",
-                text: "Nos termos da Lei Complementar 893/01, que instituiu o Regulamento Disciplinar, a hierarquia policial-militar é a ordenação progressiva da autoridade, em graus diferentes, da qual decorre a obediência, dentro da estrutura da Polícia Militar do Estado de São Paulo, culminando no:",
-                options: [
-                    "a) Comandante Geral, Chefe Supremo da Polícia Militar do Estado de São Paulo.",
-                    "b) Secretário de Segurança Pública do Estado de São Paulo, Chefe Supremo da Polícia Militar.",
-                    "c) Presidente da República, Chefe Supremo das Polícias Militares do Brasil.",
-                    "d) Governador do Estado, Chefe Supremo da Polícia Militar."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: RDPM (LC 893/01), art. 4º. O Governador do Estado é a autoridade suprema na qual culmina a escala hierárquica da PMESP."
-            },
-            {
-                id: 47,
-                subject: "JURIDICO",
-                topic: "RDPM (Sanção de Detenção)",
-                text: "Nos termos da Lei Comp. 893/01 (Regulamento Disciplinar da PMESP) a detenção consiste na retenção do militar do Estado no âmbito de sua Organização Policial Militar, sem participar de qualquer serviço, instrução ou atividade. Nesse sentido é correto afirmar que:",
-                options: [
-                    "a) Nos dias em que o militar do Estado permanecer detido perderá todas as vantagens...",
-                    "b) A detenção somente poderá ser aplicada quando da reincidência no cometimento de transgressão disciplinar de natureza grave ou média.",
-                    "c) A detenção será aplicada apenas pelo Comandante Geral e pelos demais oficiais ocupantes de funções próprias do posto de coronel.",
-                    "d) Ao Governador do Estado compete conhecer desta sanção disciplinar (detenção) em grau de recurso, quando tiver sido aplicada pelo Secretário da Segurança Pública."
-                ],
-                answer: 3, // D
-                explanation: "Fundamentação: RDPM (LC 893/01), art. 17 e art. 31. Cabe ao Governador reapreciar a sanção de detenção aplicada pelo Secretário de Segurança Pública em sede recursal."
-            },
-            {
-                id: 48,
-                subject: "JURIDICO",
-                topic: "RDPM (Valores vs Deveres Éticos)",
-                text: "Nos termos do Regulamento Disciplinar da PMESP (Lei Complementar 893/01), assinale a alternativa que não corresponda a valores fundamentais, determinantes da moral policial-militar, previstos expressamente no rol de seu artigo 7º, mas sim um dever ético, emanado dos valores policiais-militares, contido no art. 8º do referido Regulamento.",
-                options: [
-                    "a) Patriotismo.",
-                    "b) Cumprir os deveres de cidadão.",
-                    "c) Civismo.",
-                    "d) Constância."
-                ],
-                answer: 1, // B
-                explanation: "Fundamentação: RDPM (LC 893/01), art. 8º, I. 'Cumprir os deveres de cidadão' é dever ético (art. 8º), enquanto patriotismo, civismo e constância são valores fundamentais (art. 7º)."
-            },
-            {
-                id: 49,
-                subject: "JURIDICO",
-                topic: "RDPM (Recompensas Policiais)",
-                text: "De acordo com a disciplina insculpida na Lei Comp. 893/01 (RDPM), são hipóteses de recompensa policial-militar:",
-                options: [
-                    "a) Elogio e cancelamento de sanções.",
-                    "b) Elogio e dispensa recompensa.",
-                    "c) Elogio e dispensa do serviço.",
-                    "d) Elogio e premiação material."
-                ],
-                answer: 0, // A
-                explanation: "Fundamentação: RDPM (LC 893/01), art. 67. As duas únicas recompensas formais previstas no capítulo correspondente do RDPM são o Elogio e o Cancelamento de Sanções."
-            },
-            {
-                id: 50,
-                subject: "JURIDICO",
-                topic: "RDPM (Circunstâncias Atenuantes)",
-                text: "Nos termos da Lei Comp. 893/01 (RDPM), especificamente no tocante ao julgamento para a aplicação das sanções disciplinares nela contidas, podemos afirmar que são circunstâncias atenuantes, exceto:",
-                options: [
-                    "a) Estar, no mínimo, no bom comportamento.",
-                    "b) Ter praticado a falta disciplinar em benefício do serviço, da preservação da ordem pública ou do interesse público.",
-                    "c) Ter prestado serviços relevantes.",
-                    "d) Não possuir prática no serviço."
-                ],
-                answer: 1, // B
-                explanation: "Fundamentação: RDPM (LC 893/01), art. 34, II. Ter praticado a falta em benefício do serviço ou da ordem pública é CAUSA DE JUSTIFICAÇÃO (elimina a transgressão), e não meramente circunstância atenuante."
-            }
-        ];
-
-        let state = {
-            mode: 'exam', // 'exam' or 'study'
-            activeFilter: 'ALL', // 'ALL', 'OPERACIONAL', 'ORGANIZACIONAL', 'JURIDICO'
-            currentIndex: 0,
-            userAnswers: new Array(50).fill(null),
-            flagged: new Array(50).fill(false),
-            timerSeconds: 150 * 60, // 2h30min
-            timerInterval: null,
-            timerPaused: false,
-            examFinished: false,
-            filteredQuestions: []
-        };
-
-        window.onload = function() {
-            updateFilteredQuestions();
-            renderQuestionGrid();
-            displayCurrentQuestion();
-            startTimer();
-        };
-
-        function setMode(newMode) {
-            state.mode = newMode;
-            document.getElementById('btnModeExam').className = newMode === 'exam' 
-                ? "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow"
-                : "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
-            
-            document.getElementById('btnModeStudy').className = newMode === 'study' 
-                ? "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow"
-                : "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
-
-            displayCurrentQuestion();
-        }
-
-        function setSubjectFilter(cat) {
-            state.activeFilter = cat;
-            ['ALL', 'OPERACIONAL', 'ORGANIZACIONAL', 'JURIDICO'].forEach(c => {
-                const btn = document.getElementById('filter' + c);
-                if (c === cat) {
-                    btn.className = "px-3 py-1 text-xs rounded-full border border-pm-gold text-pm-gold font-medium bg-pm-gold/10 whitespace-nowrap shadow";
-                } else {
-                    btn.className = "px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap";
-                }
-            });
-
-            updateFilteredQuestions();
-            state.currentIndex = 0;
-            renderQuestionGrid();
-            displayCurrentQuestion();
-        }
-
-        function updateFilteredQuestions() {
-            if (state.activeFilter === 'ALL') {
-                state.filteredQuestions = questionsDatabase;
-            } else {
-                state.filteredQuestions = questionsDatabase.filter(q => q.subject === state.activeFilter);
-            }
-        }
-
-        function renderQuestionGrid() {
-            const grid = document.getElementById('questionsGrid');
-            grid.innerHTML = '';
-
-            state.filteredQuestions.forEach((q, idx) => {
-                const originalIndex = q.id - 1;
-                const isAnswered = state.userAnswers[originalIndex] !== null;
-                const isFlagged = state.flagged[originalIndex];
-                const isCurrent = idx === state.currentIndex;
-
-                let btnClass = "h-8 rounded text-xs font-bold transition flex items-center justify-center border ";
-
-                if (isCurrent) {
-                    btnClass += "ring-2 ring-pm-gold ring-offset-2 ring-offset-pm-navy ";
-                }
-
-                if (isFlagged) {
-                    btnClass += "bg-amber-500/20 text-amber-300 border-amber-500/60 ";
-                } else if (isAnswered) {
-                    btnClass += "bg-blue-600/30 text-blue-200 border-blue-500/50 ";
-                } else {
-                    btnClass += "bg-pm-navy/60 text-slate-400 border-pm-border hover:border-slate-500 ";
-                }
-
-                const button = document.createElement('button');
-                button.className = btnClass;
-                button.innerText = q.id;
-                button.onclick = () => {
-                    state.currentIndex = idx;
-                    displayCurrentQuestion();
-                    renderQuestionGrid();
-                };
-                grid.appendChild(button);
-            });
-
-            updateRealtimeStats();
-        }
-
-        function displayCurrentQuestion() {
-            if (state.filteredQuestions.length === 0) return;
-
-            const q = state.filteredQuestions[state.currentIndex];
-            const origIdx = q.id - 1;
-
-            document.getElementById('qBadgeNum').innerText = `Questão ${q.id} / 50`;
-            
-            const subjNames = {
-                'OPERACIONAL': 'Assuntos Operacionais',
-                'ORGANIZACIONAL': 'Assuntos Organizacionais',
-                'JURIDICO': 'Assuntos Jurídico-Administrativos'
-            };
-            document.getElementById('qBadgeSubject').innerText = `${subjNames[q.subject]} | ${q.topic}`;
-            document.getElementById('qText').innerText = q.text;
-
-            // Flag status
-            const flagBtn = document.getElementById('qMarkFlag');
-            if (state.flagged[origIdx]) {
-                flagBtn.className = "text-xs text-amber-400 font-semibold transition flex items-center gap-1.5 px-3 py-1 rounded border border-amber-500/50 bg-amber-500/10";
-                flagBtn.innerHTML = '<i class="fa-solid fa-bookmark"></i> <span>Marcada</span>';
-            } else {
-                flagBtn.className = "text-xs text-slate-400 hover:text-amber-400 transition flex items-center gap-1.5 px-3 py-1 rounded border border-pm-border bg-pm-navy/50";
-                flagBtn.innerHTML = '<i class="fa-regular fa-bookmark"></i> <span>Marcar p/ Revisar</span>';
-            }
-
-            // Options Rendering
-            const optionsContainer = document.getElementById('qOptions');
-            optionsContainer.innerHTML = '';
-
-            const selectedOpt = state.userAnswers[origIdx];
-
-            q.options.forEach((optText, optIdx) => {
-                const optionDiv = document.createElement('div');
-                let optStyle = "p-3.5 rounded-xl border transition-all duration-200 cursor-pointer text-xs sm:text-sm flex items-start gap-3 ";
-
-                if (state.mode === 'study' && selectedOpt !== null) {
-                    if (optIdx === q.answer) {
-                        optStyle += "bg-emerald-950/60 border-emerald-500 text-emerald-200 font-medium ";
-                    } else if (optIdx === selectedOpt && selectedOpt !== q.answer) {
-                        optStyle += "bg-rose-950/60 border-rose-500 text-rose-200 ";
-                    } else {
-                        optStyle += "bg-pm-navy/40 border-pm-border/40 text-slate-400 opacity-60 ";
-                    }
-                } else {
-                    if (selectedOpt === optIdx) {
-                        optStyle += "bg-pm-accent/40 border-blue-400 text-white font-medium shadow-md ";
-                    } else {
-                        optStyle += "bg-pm-navy/80 border-pm-border hover:border-pm-gold/50 text-slate-200 hover:bg-pm-navy ";
-                    }
-                }
-
-                optionDiv.className = optStyle;
-                optionDiv.onclick = () => selectOption(origIdx, optIdx);
-
-                const radioCircle = document.createElement('div');
-                let circleStyle = "w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] ";
-                
-                if (state.mode === 'study' && selectedOpt !== null) {
-                    if (optIdx === q.answer) {
-                        circleStyle += "border-emerald-400 bg-emerald-500 text-pm-navy font-bold";
-                        radioCircle.innerHTML = "✓";
-                    } else if (optIdx === selectedOpt && selectedOpt !== q.answer) {
-                        circleStyle += "border-rose-400 bg-rose-500 text-white font-bold";
-                        radioCircle.innerHTML = "✕";
-                    } else {
-                        circleStyle += "border-slate-600";
-                    }
-                } else {
-                    if (selectedOpt === optIdx) {
-                        circleStyle += "border-pm-gold bg-pm-gold text-pm-navy font-bold";
-                        radioCircle.innerHTML = "✓";
-                    } else {
-                        circleStyle += "border-slate-500";
-                    }
-                }
-                
-                radioCircle.className = circleStyle;
-
-                const textSpan = document.createElement('span');
-                textSpan.className = "flex-1 leading-snug";
-                textSpan.innerText = optText;
-
-                optionDiv.appendChild(radioCircle);
-                optionDiv.appendChild(textSpan);
-                optionsContainer.appendChild(optionDiv);
-            });
-
-            // Study Mode Explanation
-            const studyExpBox = document.getElementById('studyExplanation');
-            if (state.mode === 'study' && selectedOpt !== null) {
-                studyExpBox.classList.remove('hidden');
-                document.getElementById('studyExplanationText').innerText = q.explanation;
-            } else {
-                studyExpBox.classList.add('hidden');
-            }
-
-            // Buttons state
-            document.getElementById('btnPrev').disabled = state.currentIndex === 0;
-            document.getElementById('btnPrev').style.opacity = state.currentIndex === 0 ? "0.4" : "1";
-
-            document.getElementById('btnNext').disabled = state.currentIndex === state.filteredQuestions.length - 1;
-            document.getElementById('btnNext').style.opacity = state.currentIndex === state.filteredQuestions.length - 1 ? "0.4" : "1";
-        }
-
-        function selectOption(origIdx, optIdx) {
-            if (state.examFinished && state.mode === 'exam') return;
-            state.userAnswers[origIdx] = optIdx;
-            displayCurrentQuestion();
-            renderQuestionGrid();
-        }
-
-        function navigateQuestion(direction) {
-            const nextIndex = state.currentIndex + direction;
-            if (nextIndex >= 0 && nextIndex < state.filteredQuestions.length) {
-                state.currentIndex = nextIndex;
-                displayCurrentQuestion();
-                renderQuestionGrid();
-            }
-        }
-
-        function toggleFlagCurrentQuestion() {
-            const q = state.filteredQuestions[state.currentIndex];
-            const origIdx = q.id - 1;
-            state.flagged[origIdx] = !state.flagged[origIdx];
-            displayCurrentQuestion();
-            renderQuestionGrid();
-        }
-
-        function updateRealtimeStats() {
-            let answered = 0;
-            let correct = 0;
-            let wrong = 0;
-
-            questionsDatabase.forEach((q, idx) => {
-                const ans = state.userAnswers[idx];
-                if (ans !== null) {
-                    answered++;
-                    if (ans === q.answer) correct++;
-                    else wrong++;
-                }
-            });
-
-            const pending = 50 - answered;
-            const pct = Math.round((answered / 50) * 100);
-
-            document.getElementById('countAnswered').innerText = answered;
-            document.getElementById('statCorrect').innerText = correct;
-            document.getElementById('statWrong').innerText = wrong;
-            document.getElementById('statPending').innerText = pending;
-            document.getElementById('progBar').style.width = `${pct}%`;
-            document.getElementById('progPercent').innerText = `${pct}% concluído`;
-        }
-
-        function startTimer() {
-            state.timerInterval = setInterval(() => {
-                if (!state.timerPaused && state.timerSeconds > 0) {
-                    state.timerSeconds--;
-                    updateTimerDisplay();
-                } else if (state.timerSeconds <= 0) {
-                    clearInterval(state.timerInterval);
-                    finishExam();
-                }
-            }, 1000);
-        }
-
-        function toggleTimer() {
-            state.timerPaused = !state.timerPaused;
-            const btn = document.getElementById('toggleTimerBtn');
-            btn.innerHTML = state.timerPaused ? '<i class="fa-solid fa-play"></i>' : '<i class="fa-solid fa-pause"></i>';
-        }
-
-        function updateTimerDisplay() {
-            const h = String(Math.floor(state.timerSeconds / 3600)).padStart(2, '0');
-            const m = String(Math.floor((state.timerSeconds % 3600) / 60)).padStart(2, '0');
-            const s = String(state.timerSeconds % 60).padStart(2, '0');
-            document.getElementById('timerDisplay').querySelector('span').innerText = `${h}:${m}:${s}`;
-        }
-
-        function finishExam() {
-            clearInterval(state.timerInterval);
-            state.examFinished = true;
-
-            let score = 0;
-            let opScore = 0, opTotal = 24;
-            let orgScore = 0, orgTotal = 10;
-            let jurScore = 0, jurTotal = 16;
-
-            questionsDatabase.forEach((q, idx) => {
-                const isCorrect = state.userAnswers[idx] === q.answer;
-                if (isCorrect) {
-                    score++;
-                    if (q.subject === 'OPERACIONAL') opScore++;
-                    if (q.subject === 'ORGANIZACIONAL') orgScore++;
-                    if (q.subject === 'JURIDICO') jurScore++;
-                }
-            });
-
-            const percent = ((score / 50) * 100).toFixed(1);
-            const grade = ((score / 50) * 10).toFixed(1);
-
-            const elapsedSecs = (150 * 60) - state.timerSeconds;
-            const elapsedMins = Math.floor(elapsedSecs / 60);
-            const elapsedSecsRem = elapsedSecs % 60;
-            const timeFormatted = `${String(elapsedMins).padStart(2, '0')}m ${String(elapsedSecsRem).padStart(2, '0')}s`;
-
-            document.getElementById('resScore').innerText = `${score}/50`;
-            document.getElementById('resPercent').innerText = `${percent}%`;
-            document.getElementById('resGrade').innerText = grade;
-            document.getElementById('resTime').innerText = timeFormatted;
-
-            // Progress Bars
-            const opPct = Math.round((opScore / opTotal) * 100);
-            const orgPct = Math.round((orgScore / orgTotal) * 100);
-            const jurPct = Math.round((jurScore / jurTotal) * 100);
-
-            document.getElementById('labelOpScore').innerText = `${opScore}/${opTotal} (${opPct}%)`;
-            document.getElementById('barOpScore').style.width = `${opPct}%`;
-
-            document.getElementById('labelOrgScore').innerText = `${orgScore}/${orgTotal} (${orgPct}%)`;
-            document.getElementById('barOrgScore').style.width = `${orgPct}%`;
-
-            document.getElementById('labelJurScore').innerText = `${jurScore}/${jurTotal} (${jurPct}%)`;
-            document.getElementById('barJurScore').style.width = `${jurPct}%`;
-
-            document.getElementById('questionContainer').classList.add('hidden');
-            document.getElementById('resultsContainer').classList.remove('hidden');
-        }
-
-        function restartExam() {
-            state.userAnswers.fill(null);
-            state.flagged.fill(false);
-            state.timerSeconds = 150 * 60;
-            state.examFinished = false;
-            state.currentIndex = 0;
-
-            document.getElementById('resultsContainer').classList.add('hidden');
-            document.getElementById('questionContainer').classList.remove('hidden');
-
-            renderQuestionGrid();
-            displayCurrentQuestion();
-            startTimer();
         }
 
         function reviewExamFromResults() {
