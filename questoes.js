@@ -699,7 +699,7 @@ const BANCO_SIMULADOS = {
                 text: "Diante de colisão envolvendo viatura policial militar da Cia PM com danos ao patrimônio público, qual procedimento administrativo deve ser instaurado para averiguar as causas, responsabilidades e eventual ressarcimento ao erário?",
                 options: [
                     "a) Inquérito Policial Militar de Incompetência.",
-                    "b) Sindicância (ou Procedimento Deploratório equivalente) garantidos o contraditório e a ampla defesa.",
+                    "b) Sindicância (or Procedimento Deploratório equivalente) garantidos o contraditório e a ampla defesa.",
                     "c) Desconto direto no contracheque do motorista sem direito à defesa.",
                     "d) Processo de Exclusão por Inaptidão Veicular."
                 ],
