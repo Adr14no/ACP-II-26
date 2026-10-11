@@ -294,7 +294,8 @@
             currentIndex: 0,
             userAnswers: [],
             flagged: [],
-            timerSeconds: 150 * 60, // 2h30min
+            timerSeconds: 150 * 60, // 2h30min (9000 seg)
+            timerEndTime: null,     // Timestamp do término real
             timerInterval: null,
             timerPaused: false,
             examFinished: false,
@@ -305,13 +306,14 @@
             carregarOuInicializarSimulado();
         });
 
-        // SALVAMENTO GARANTIDO EM QUALQUER AÇÃO
+        // SALVAMENTO PERSISTENTE NO LOCALSTORAGE
         function saveStateToLocalStorage() {
             const dataToSave = {
                 questionsDatabase: questionsDatabase,
                 userAnswers: state.userAnswers,
                 flagged: state.flagged,
                 timerSeconds: state.timerSeconds,
+                timerEndTime: state.timerEndTime,
                 timerPaused: state.timerPaused,
                 examFinished: state.examFinished,
                 currentIndex: state.currentIndex,
@@ -332,6 +334,7 @@
                         state.userAnswers = parsed.userAnswers || new Array(questionsDatabase.length).fill(null);
                         state.flagged = parsed.flagged || new Array(questionsDatabase.length).fill(false);
                         state.timerSeconds = parsed.timerSeconds !== undefined ? parsed.timerSeconds : 150 * 60;
+                        state.timerEndTime = parsed.timerEndTime || null;
                         state.timerPaused = parsed.timerPaused || false;
                         state.examFinished = parsed.examFinished || false;
                         state.currentIndex = parsed.currentIndex || 0;
@@ -362,13 +365,12 @@
             } else {
                 document.getElementById('resultsContainer').classList.add('hidden');
                 document.getElementById('questionContainer').classList.remove('hidden');
-                if (state.timerInterval) clearInterval(state.timerInterval);
                 startTimer();
             }
         }
 
         function confirmarNovoSimulado() {
-            if (confirm("Deseja iniciar um novo simulado do zero? Todas as respostas salvas serão zeradas e 50 novas questões serão sorteadas.")) {
+            if (confirm("Deseja iniciar um novo simulado do zero? Todas as respostas salvas e o tempo serão zerados e 50 novas questões serão sorteadas.")) {
                 localStorage.removeItem(STORAGE_KEY);
                 gerarEIniciarNovoSimulado();
             }
@@ -421,6 +423,7 @@
             state.userAnswers = new Array(questionsDatabase.length).fill(null);
             state.flagged = new Array(questionsDatabase.length).fill(false);
             state.timerSeconds = 150 * 60;
+            state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
             state.timerPaused = false;
             state.examFinished = false;
             state.currentIndex = 0;
@@ -436,7 +439,6 @@
             renderQuestionGrid();
             displayCurrentQuestion();
             
-            if (state.timerInterval) clearInterval(state.timerInterval);
             startTimer();
         }
 
@@ -640,7 +642,7 @@
         function selectOption(targetIdx, optIdx) {
             if (state.examFinished && state.mode === 'exam') return;
             state.userAnswers[targetIdx] = optIdx;
-            saveStateToLocalStorage(); // SALVA AUTOMATICAMENTE AO ESCOLHER A RESPOSTA
+            saveStateToLocalStorage();
             displayCurrentQuestion();
             renderQuestionGrid();
         }
@@ -649,7 +651,7 @@
             const nextIndex = state.currentIndex + direction;
             if (nextIndex >= 0 && nextIndex < state.filteredQuestions.length) {
                 state.currentIndex = nextIndex;
-                saveStateToLocalStorage(); // SALVA AUTOMATICAMENTE AO NAVEGAR PARA PRÓXIMA OU ANTERIOR
+                saveStateToLocalStorage();
                 displayCurrentQuestion();
                 renderQuestionGrid();
             }
@@ -661,7 +663,7 @@
             const targetIdx = origIdx !== -1 ? origIdx : state.currentIndex;
 
             state.flagged[targetIdx] = !state.flagged[targetIdx];
-            saveStateToLocalStorage(); // SALVA AUTOMATICAMENTE AO MARCAR PARA REVISÃO
+            saveStateToLocalStorage();
             displayCurrentQuestion();
             renderQuestionGrid();
         }
@@ -692,23 +694,39 @@
             document.getElementById('progPercent').innerText = `${pct}% concluído`;
         }
 
+        // CRONÔMETRO INVIOLÁVEL (RECALCULA TÉRMINO CONTRA BURLA NO F5)
         function startTimer() {
+            if (!state.timerEndTime) {
+                state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+                saveStateToLocalStorage();
+            }
+
+            if (state.timerInterval) clearInterval(state.timerInterval);
+
             state.timerInterval = setInterval(() => {
-                if (!state.timerPaused && state.timerSeconds > 0) {
-                    state.timerSeconds--;
+                if (!state.timerPaused) {
+                    const now = Date.now();
+                    const remaining = Math.max(0, Math.round((state.timerEndTime - now) / 1000));
+                    
+                    state.timerSeconds = remaining;
                     updateTimerDisplay();
-                    if (state.timerSeconds % 5 === 0) {
-                        saveStateToLocalStorage();
+
+                    if (remaining <= 0) {
+                        clearInterval(state.timerInterval);
+                        finishExam();
                     }
-                } else if (state.timerSeconds <= 0) {
-                    clearInterval(state.timerInterval);
-                    finishExam();
+                } else {
+                    // Empurra o término enquanto em pausa
+                    state.timerEndTime += 1000;
                 }
             }, 1000);
         }
 
         function toggleTimer() {
             state.timerPaused = !state.timerPaused;
+            if (!state.timerPaused) {
+                state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+            }
             saveStateToLocalStorage();
             const btn = document.getElementById('toggleTimerBtn');
             btn.innerHTML = state.timerPaused ? '<i class="fa-solid fa-play"></i>' : '<i class="fa-solid fa-pause"></i>';
