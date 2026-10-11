@@ -2,7 +2,7 @@
  * BANCO INTEGRADO DE QUESTÕES PMESP - ACP II/26
  * Arquivo: questoes.js
  * Banca Examinadora PMESP | Processo de Promoção e Habilitação ao Posto de Capitão PM
- * Proporção: ~50% Operacional (1-50), ~30% Jurídico-Administrativo (51-80), ~20% Organizacional (81-100)
+ * Proporção: ~50% Operacional (1-50, 101-125), ~30% Jurídico-Administrativo (51-80, 126-140), ~20% Organizacional (81-100, 141-150)
  */
 
 const BANCO_SIMULADOS = {
@@ -128,7 +128,7 @@ const BANCO_SIMULADOS = {
                 id: 9,
                 subject: "OPERACIONAL",
                 topic: "Sistema de C2 - Salas de Operações",
-                text: "De acordo com as diretrizes established na Diretriz nº PM3-001/02/23 (Sistema de Comando e Controle da PMESP), as Salas de Operações (nível tático/operacional) deverão ser estruturadas em nível mínimo de:",
+                text: "De acordo com as diretrizes estabelecidas na Diretriz nº PM3-001/02/23 (Sistema de Comando e Controle da PMESP), as Salas de Operações (nível tático/operacional) deverão ser estruturadas em nível mínimo de:",
                 options: [
                     "a) Grande Comando (CPM / CPI).",
                     "b) Batalhão de Polícia Militar (BPM).",
@@ -748,7 +748,7 @@ const BANCO_SIMULADOS = {
                 id: 53,
                 subject: "JURIDICO",
                 topic: "Lei Complementar nº 18.442/26 - Transição dos Quadros",
-                text: "Com o advento da LC nº 18.442/26, os antigos Quadros da PMESP foram reestruturados. Assinale a correlação correta de enquadramento automático established na nova norma:",
+                text: "Com o advento da LC nº 18.442/26, os antigos Quadros da PMESP foram reestruturados. Assinale a correlação correta de enquadramento automático estabelecida na nova norma:",
                 options: [
                     "a) Oficiais do QOPM passaram a integrar o QOE.",
                     "b) Oficiais do Quadro de Oficiais Policiais Militares (QOPM) passaram a integrar o Quadro de Oficiais Estado-Maior (QOEM).",
@@ -832,7 +832,7 @@ const BANCO_SIMULADOS = {
                 id: 59,
                 subject: "JURIDICO",
                 topic: "RDPM (LC 893/01) - Distinção entre Valores e Deveres",
-                text: "Qual das alternatives abaixo apresenta um DEVER ÉTICO do policial militar (Art. 8º do RDPM) e NÃO um Valor Fundamental (Art. 7º do RDPM)?",
+                text: "Qual das alternativas abaixo apresenta um DEVER ÉTICO do policial militar (Art. 8º do RDPM) e NÃO um Valor Fundamental (Art. 7º do RDPM)?",
                 options: [
                     "a) Patriotismo.",
                     "b) Cumprir os deveres de cidadão.",
@@ -1370,7 +1370,7 @@ const BANCO_SIMULADOS = {
                 topic: "Regime de Trabalho - DEJEM",
                 text: "A execução de serviço na Diária Especial por Jornada Extraordinária de Trabalho Policial-Militar (DEJEM) possui natureza de trabalho:",
                 options: [
-                    "a) Obrigatória e compulsória sem remuneração.",
+                    "a) Obrigatoria e compulsória sem remuneração.",
                     "b) Voluntária e gratificada, realizada no período de folga do policial militar.",
                     "c) Substitutiva do expediente administrativo ordinário.",
                     "d) Exclusiva para praças punidas disciplinarmente."
@@ -1420,12 +1420,10 @@ const BANCO_SIMULADOS = {
                 answer: 1,
                 explanation: "Fundamentação: Instruções do Processo Administrativo na PMESP (I-16-PM). O prazo para conclusão de Apuração Preliminar é de 30 dias, prorrogável motivadamente."
             },
-                        // =========================================================================
-            // NOVAS QUESTÕES ADICIONADAS - ACP II/26 (QUESTÕES 101 A 150)
-            // Proporção mantida: ~50% Operacional (101-125), ~30% Jurídico (126-140), ~20% Organizacional (141-150)
-            // =========================================================================
 
-            // --- ASSUNTOS OPERACIONAIS (101 A 125) ---
+            // =========================================================================
+            // QUESTÕES ADICIONADAS - ACP II/26 (QUESTÕES 101 A 150)
+            // =========================================================================
             {
                 id: 101,
                 subject: "OPERACIONAL",
@@ -1522,7 +1520,7 @@ const BANCO_SIMULADOS = {
                     "d) Apreensão do veículo com remoção imediata ao Pátio sem direito à indicação de condutor habilitado no local."
                 ],
                 answer: 1,
-                explanation: "Fundamentação: Arts. 165-A, 277 e 306 do CTB c/c Resolução CONTRAN nº 432/12. A recusa gera a sanção administrativa do Art. 165-A; havendo constatação documental de conjunto de sinais de embriaguez, restará caracterizado também o crime de trânsito do Art. 306, impondo a condução à Polícia Judiciária."
+                explanation: "Fundamentação: Arts. 165-A, 277 e 306 do CTB c/c Resolução CONTRAN nº 432/12. A recusa gera a sanção administrativa do Art. 165-A; havendo constatação documental de conjunto de sinais de embriaguez, restará caracterizado também o crime de trânsito do Art. 306, impondo a autuação e condução à Polícia Judiciária."
             },
             {
                 id: 108,
@@ -1592,7 +1590,7 @@ const BANCO_SIMULADOS = {
                     "d) O motorista da viatura com maior antiguidade."
                 ],
                 answer: 0,
-                explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, Anexo B - CFP). O CFP, assistido pela Sala de Operações da OPM e COPOM, detém a prerrogativa gerencial de reorientar em tempo real a distribuição das US conforme a dinamâmica dos índices criminais."
+                explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, Anexo B - CFP). O CFP, assistido pela Sala de Operações da OPM e COPOM, detém a prerrogativa gerencial de reorientar em tempo real a distribuição das US conforme a dinâmica dos índices criminais."
             },
             {
                 id: 113,
@@ -1626,7 +1624,7 @@ const BANCO_SIMULADOS = {
                 id: 115,
                 subject: "OPERACIONAL",
                 topic: "Câmeras Operacionais Portáteis (COP) - Acesso às Imagens por Policiais Envolvidos",
-                text: "Um policial militar envolvido em ocorrência de grande repercussão com uso da força e disparo de arma de fogo solicita ao seu Comandante acesso prévio ao arquivo de vídeo registrado por sua Câmeras Operacional Portátil (COP) antes de prestar seu depoimento oficial na Investigação Preliminar ou Inquérito Policial Militar. De acordo com a Diretriz nº PM3-001/02/25, assinale a opção correta:",
+                text: "Um policial militar envolvido em ocorrência de grande repercussão com uso da força e disparo de arma de fogo solicita ao seu Comandante acesso prévio ao arquivo de vídeo registrado por sua Câmera Operacional Portátil (COP) antes de prestar seu depoimento oficial na Investigação Preliminar ou Inquérito Policial Militar. De acordo com a Diretriz nº PM3-001/02/25, assinale a opção correta:",
                 options: [
                     "a) É proibido em qualquer hipótese o acesso do policial às suas próprias imagens antes do trânsito em julgado da apuração.",
                     "b) O policial militar tem o direito de visualizar o registro da gravação efetuada por sua COP referente aos fatos nos quais participou diretamente, auxiliando na elucidação precisa e fiel dos acontecimentos.",
@@ -1707,7 +1705,7 @@ const BANCO_SIMULADOS = {
                 explanation: "Fundamentação: Diretriz SCIPM (Diretriz nº PM3-003/02/23, item 5.1). O Acampamento (Camp) é a instalação do SCIPM equipada para suprir as necessidades sanitárias, de alojamento, alimentação e descanso dos recursos em operações prolongadas."
             },
             {
-                id: 21,
+                id: 121,
                 subject: "OPERACIONAL",
                 topic: "Programas de Policiamento - ROCAM (Rondas Ostensivas com Apoio de Motocicletas)",
                 text: "A modalidade de policiamento prestada pelas Rondas Ostensivas com Apoio de Motocicletas (ROCAM) tem por característica tática marcante:",
@@ -1724,7 +1722,7 @@ const BANCO_SIMULADOS = {
                 id: 122,
                 subject: "OPERACIONAL",
                 topic: "Câmeras Operacionais Portáteis (COP) - Custódia de Evidências em Homicídio",
-                text: "Em uma ocorrência em que a equipe de Rádio Patrulha atende a um homicídio consumado de civil praticado por desconhecidos na via pública, o registro audiovisual captado pela Câmeras Operacionais Portáteis (COP) dos policiais que preservaram o local de crime deve ser classificado no sistema corporativo sob qual categoria e prazo de retenção mínima?",
+                text: "Em uma ocorrência em que a equipe de Rádio Patrulha atende a um homicídio consumado de civil praticado por desconhecidos na via pública, o registro audiovisual captado pela Câmera Operacional Portátil (COP) dos policiais que preservaram o local de crime deve ser classificado no sistema corporativo sob qual categoria e prazo de retenção mínima?",
                 options: [
                     "a) Vídeo de Rotina, retido por 30 dias.",
                     "b) Vídeo de Evidência / Ocorrência Grave, devendo ser devidamente categorizado e indexado com o número do BOPM para retenção pelo prazo mínimo regulamentar (1 ano).",
@@ -1831,7 +1829,7 @@ const BANCO_SIMULADOS = {
                     "a) Repreensão e Detenção.",
                     "b) Expulsão e Demissão.",
                     "c) Permanência Disciplinar e Advertência.",
-                    "d) Cassação de Licença Prêmio e Transfêrencia Ex Offício."
+                    "d) Cassação de Licença Prêmio e Transferência Ex Offício."
                 ],
                 answer: 1,
                 explanation: "Fundamentação: Arts. 23 e 24 do RDPM (LC nº 893/01). A Expulsão (aplicável a atos atentatórios aos deveres ou desonrosos) e a Demissão (aplicável em caso de condenação criminal ou inaptidão) constituem as penalidades disciplinares exclusórias corporativas."
@@ -1927,7 +1925,7 @@ const BANCO_SIMULADOS = {
                 text: "Na elaboração de atos instrutórios de Inquéritos Policiais Militares (IPM), Sindicâncias e Processos Disciplinares, o encarregado deve zelar pelo rigor formal e pela cadeia de custódia das provas. Constatando-se vício sanável de forma (ex: ausência de numeração de folhas em determinado volume), o Encarregado ou a Autoridade Delegante deve:",
                 options: [
                     "a) Anular todo o processo e determinar o arquivamento definitivo.",
-                    "b) Determinar a regularização do vício formal mediante termo de juntada e renumeração regular das páginas sem prejuízo dos atos substanciais praticados.",
+                    "b) Determinar a regularização do vício formal mediante termo de juntada e renumeração regular das páginas sem prejuízo dos atos substancialmente praticados.",
                     "c) Remeter os autos para a Polícia Federal para refazimento.",
                     "d) Incinerar as peças que apresentarem rasura."
                 ],
@@ -2127,15 +2125,3 @@ const BANCO_SIMULADOS = {
                 text: "Em um procedimento apuratório disciplinar conduzido na OPM, ao citar formalmente o acusado para apresentar sua Defesa Prévia e indicar rol de testemunhas, o Encarregado do processo deve observar o prazo regulamentar concedido à defesa contado da citação válida, que é de:",
                 options: [
                     "a) 24 horas improrrogáveis.",
-                    "b) 5 (cinco) dias úteis.",
-                    "c) 30 dias corridos.",
-                    "d) 6 meses."
-                ],
-                answer: 1,
-                explanation: "Fundamentação: Instruções do Processo Administrativo Disciplinar na PMESP c/c RDPM (LC nº 893/01). A garantia constitucional da ampla defesa assegura o prazo de 5 dias úteis para a apresentação da defesa prévia e indicação de provas e testemunhas a contar da citação formal do acusado."
-            }
-        ]
-    }
-};
-
-    l
