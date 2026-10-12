@@ -134,7 +134,7 @@ const BANCO_GERAL_QUESTOES = [
             "a) Nível Estratégico.",
             "b) Nível Tático.",
             "c) Nível Operacional.",
-            "d) Nível de Execução da Ponta."
+            "d) Nível Decisório."
         ],
         answer: 1,
         explanation: "Fundamentação: Diretriz nº PM3-001/02/23 (C2, item 4.1). O Nível Tático realiza a ponte entre as diretrizes estratégicas do Comando-Geral e a execução operacional na ponta."
@@ -161,10 +161,10 @@ const BANCO_GERAL_QUESTOES = [
         topic: "Câmeras Operacionais Portáteis (COP) - Diretriz nº PM3-001/02/25",
         text: "Em caso de atendimento de ocorrência que resulte em Morte Decorrente de Intervenção Policial (MDIP), a Diretriz nº PM3-001/02/25 estabelece que a recolha dos equipamentos COP dos policiais envolvidos e o imediato upload das mídias na OPM é de atribuição do:",
         options: [
-            "a) Escrivão de Polícia Civil do plantão policial mais próximo.",
+            "a) Graduado na função de Comando Grupo Patrulha (CGP).",
             "b) Próprio policial envolvido, ao final do seu turno ordinário de trabalho.",
             "c) Oficial Comando de Força de Patrulha (CFP) ou autoridade policial-militar equivalente presente no local.",
-            "d) Auxiliar da Seção de Pessoal (P/1) da Unidade."
+            "d) Auxiliar da Seção de Polícia Judiciária Militar e Disciplina da Unidade."
         ],
         answer: 2,
         explanation: "Fundamentação: Diretriz nº PM3-001/02/25 (COP, item 6.11). A recolha e o upload prioritário dos arquivos em ocorrências graves (MDIP/LCDIP) compete ao CFP."
