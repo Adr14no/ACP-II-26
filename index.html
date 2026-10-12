@@ -83,6 +83,27 @@
         </div>
     </div>
 
+
+
+    <!-- Modal personalizado de confirmação -->
+    <div id="modalConfirmacao" class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modalConfirmacaoTitulo" aria-describedby="modalConfirmacaoMensagem">
+        <div class="w-full max-w-md overflow-hidden rounded-2xl border border-pm-gold/50 bg-pm-cardBg text-slate-100 shadow-2xl">
+            <div class="flex items-center gap-3 border-b border-pm-border px-5 py-4">
+                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-pm-gold/50 bg-pm-gold/10 text-pm-gold">
+                    <i id="modalConfirmacaoIcone" class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <h3 id="modalConfirmacaoTitulo" class="text-base font-extrabold text-pm-gold">Confirmar ação</h3>
+            </div>
+            <div class="px-5 py-5">
+                <p id="modalConfirmacaoMensagem" class="text-sm leading-relaxed text-slate-300"></p>
+            </div>
+            <div class="flex justify-end gap-3 border-t border-pm-border bg-pm-navy/40 px-5 py-4">
+                <button id="modalConfirmacaoCancelar" type="button" class="rounded-lg border border-pm-border px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-pm-border hover:text-white">Cancelar</button>
+                <button id="modalConfirmacaoAceitar" type="button" class="rounded-lg bg-pm-gold px-4 py-2 text-sm font-bold text-pm-navy shadow transition hover:bg-pm-goldHover">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Cabeçalho Principal -->
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -333,7 +354,7 @@
     </main>
 
     <!-- Rodapé com Créditos -->
-    <footer class="bg-pm-header border-t border-pm-border py-4 px-4 text-center text-xs text-slate-400 mt-auto">
+    <footer class="bg-pm-header border-t border-pm-border py-3 px-3 text-center text-xs text-slate-400 mt-auto">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
             <span>PMESP — Avaliação de Competência Profissional (ACP II/26)</span>
             <span class="text-pm-gold font-semibold">Elaborado pelo 1° Ten PM Adriano</span>
@@ -448,11 +469,46 @@
             }
         }
 
+        function abrirModalConfirmacao({ titulo = "Confirmar ação", mensagem, textoConfirmar = "Confirmar", textoCancelar = "Cancelar", aoConfirmar }) {
+            const modal = document.getElementById('modalConfirmacao');
+            const btnConfirmar = document.getElementById('modalConfirmacaoAceitar');
+            const btnCancelar = document.getElementById('modalConfirmacaoCancelar');
+            document.getElementById('modalConfirmacaoTitulo').innerText = titulo;
+            document.getElementById('modalConfirmacaoMensagem').innerText = mensagem;
+            btnConfirmar.innerText = textoConfirmar;
+            btnCancelar.innerText = textoCancelar;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+
+            const fechar = () => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                btnConfirmar.onclick = null;
+                btnCancelar.onclick = null;
+                document.removeEventListener('keydown', teclaEsc);
+            };
+            const teclaEsc = (event) => {
+                if (event.key === 'Escape') fechar();
+            };
+            btnCancelar.onclick = fechar;
+            btnConfirmar.onclick = () => {
+                fechar();
+                if (typeof aoConfirmar === 'function') aoConfirmar();
+            };
+            document.addEventListener('keydown', teclaEsc);
+            btnConfirmar.focus();
+        }
+
         function confirmarNovoSimulado() {
-            if (confirm("Deseja iniciar um novo simulado do zero? Todas as respostas salvas e o tempo serão zerados e 50 novas questões serão sorteadas.")) {
-                localStorage.removeItem(STORAGE_KEY);
-                gerarEIniciarNovoSimulado();
-            }
+            abrirModalConfirmacao({
+                titulo: "Iniciar novo simulado?",
+                mensagem: "Todas as respostas salvas e o tempo atual serão zerados, e um novo conjunto de questões será sorteado. Deseja continuar?",
+                textoConfirmar: "Iniciar novo",
+                aoConfirmar: () => {
+                    localStorage.removeItem(STORAGE_KEY);
+                    gerarEIniciarNovoSimulado();
+                }
+            });
         }
 
         function sortearQuestoesProporcionalmente(bancoBruto, totalSimulado = 50) {
@@ -540,18 +596,18 @@
             document.getElementById('gridTotalSpan').innerText = total;
         }
 
-        function setMode(newMode) {
+        function setMode(newMode, confirmado = false) {
             if (newMode === state.mode) return;
 
-            // Aviso ao sair do Modo Prova para o Modo Estudo:
-            // consultar a fundamentação compromete a simulação de prova real.
-            if (newMode === 'study' && state.mode === 'exam' && !state.examFinished) {
-                const confirmarEstudo = confirm(
-                    "Ao entrar no Modo Estudo, você poderá visualizar a resposta correta e a fundamentação. " +
-                    "As questões que forem consultadas ficarão bloqueadas para alterações, mesmo se você voltar ao Modo Prova. " +
-                    "Deseja realmente mudar para o Modo Estudo?"
-                );
-                if (!confirmarEstudo) return;
+            // Confirmação visual personalizada ao sair do Modo Prova para o Modo Estudo.
+            if (newMode === 'study' && state.mode === 'exam' && !state.examFinished && !confirmado) {
+                abrirModalConfirmacao({
+                    titulo: "Entrar no Modo Estudo?",
+                    mensagem: "Você poderá visualizar a resposta correta e a fundamentação. As questões consultadas ficarão bloqueadas para alterações, mesmo se você voltar ao Modo Prova. Deseja realmente mudar para o Modo Estudo?",
+                    textoConfirmar: "Entrar no Modo Estudo",
+                    aoConfirmar: () => setMode(newMode, true)
+                });
+                return;
             }
 
             state.mode = newMode;
@@ -777,7 +833,7 @@
             renderQuestionGrid();
         }
 
-        function navigateQuestion(direction) {
+        function navigateQuestion(direction, confirmado = false) {
             const currentQuestion = state.filteredQuestions[state.currentIndex];
             if (!currentQuestion) return;
 
@@ -786,13 +842,14 @@
 
             // Ao avançar no Modo Estudo depois de responder, confirma a saída
             // porque a fundamentação já foi revelada e a questão ficará bloqueada.
-            if (direction > 0 && state.mode === 'study' && state.userAnswers[currentTargetIdx] !== null) {
-                const seguir = confirm(
-                    "A resposta e a fundamentação desta questão foram reveladas no Modo Estudo. " +
-                    "Isso compromete a experiência de uma prova real e a questão ficará bloqueada para alterações, " +
-                    "mesmo que você retorne ao Modo Prova. Deseja avançar?"
-                );
-                if (!seguir) return;
+            if (direction > 0 && state.mode === 'study' && state.userAnswers[currentTargetIdx] !== null && !confirmado) {
+                abrirModalConfirmacao({
+                    titulo: "Avançar para a próxima questão?",
+                    mensagem: "A resposta e a fundamentação desta questão já foram reveladas. Ela ficará bloqueada para alterações, mesmo que você retorne ao Modo Prova. Deseja avançar?",
+                    textoConfirmar: "Avançar",
+                    aoConfirmar: () => navigateQuestion(direction, true)
+                });
+                return;
             }
 
             const nextIndex = state.currentIndex + direction;
