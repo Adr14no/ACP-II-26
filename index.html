@@ -647,11 +647,22 @@
         }
 
         function selectOption(targetIdx, optIdx) {
-            if (state.examFinished && state.mode === 'exam') return;
-            state.userAnswers[targetIdx] = optIdx;
-            saveStateToLocalStorage();
-            displayCurrentQuestion();
-            renderQuestionGrid();
+    // Se a prova já foi finalizada no modo exam, bloqueia
+    if (state.examFinished && state.mode === 'exam') return;
+
+    // Se já foi respondida anteriormente (no modo estudo ou prova), impede alteração se já errou, 
+    // ou bloqueia a edição após a primeira escolha no Modo Estudo.
+    if (state.userAnswers[targetIdx] !== null) {
+        return; // Impede a alteração da resposta após a primeira escolha
+    }
+
+    // Registra a resposta do usuário
+    state.userAnswers[targetIdx] = optIdx;
+    
+    saveStateToLocalStorage();
+    displayCurrentQuestion();
+    renderQuestionGrid();
+
         }
 
         function navigateQuestion(direction) {
