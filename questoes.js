@@ -1027,6 +1027,21 @@ const BANCO_GERAL_QUESTOES = [
         answer: 1,
         explanation: "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/25, itens 6.7.1.5, 6.7.2 e 6.7.3, em Assuntos Operacionais.pdf, p. 38–39. Trecho: a etiqueta PJM contém evidências de interesse policial para inquéritos e processos da Justiça Militar e admite subetiquetas como MDIP; a Coord Op PM define e atualiza o rol de etiquetas. A é incorreta porque apaga a classificação PJM e a subetiqueta indicada; C atribui ao CFP uma autorização que não consta da regra; D confunde a etiqueta de divulgação com a classificação investigativa. Trecho normativo de suporte: “Essas circunstâncias poderão receber subetiquetas, como Morte Decorrente de Intervenção Policial (MDIP)” (item 6.7.1.5)."
     },
+ {
+        "id": 72,
+        "subject": "OPERACIONAL",
+        "topic": "NORSOP — natureza e execução dos Programas de Policiamento Complementares",
+        "text": "Uma OPM territorial pretende desenvolver o Programa de Policiamento Comunitário, mas não dispõe de efetivo exclusivo para todas as atividades previstas. À luz da NORSOP, qual solução é compatível com a natureza dos Programas de Policiamento Complementares?",
+        "options": [
+          "a) O programa deve contar sempre com efetivo e meios exclusivos, vedado utilizar a estrutura de outros programas.",
+          "b) O programa pode ser desenvolvido de forma híbrida, com efetivo e meios próprios ou aproveitando estruturas de outros programas, conforme necessidade, disponibilidade e previsão da diretriz específica.",
+          "c) O programa substitui os Programas de Policiamento Primários sempre que a OPM não dispuser de efetivo suficiente.",
+          "d) O programa somente pode ser executado em resposta a ocorrência em andamento, sem planejamento territorial preventivo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A NORSOP define os Programas Complementares como desenvolvidos segundo necessidade e disponibilidade e admite forma híbrida: a OPM pode prever efetivo e meios específicos ou aproveitar estruturas de outros programas, conforme as diretrizes respectivas. A nega expressamente a forma híbrida; C atribui substituição dos programas primários, não prevista; D restringe o programa a resposta imediata, embora o dispositivo não imponha essa limitação. Fonte: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/20 (NORSOP), item 6.4.1.2. Trecho: “podem ser desenvolvidos de forma híbrida [...] aproveitar as estruturas de outros Programas de Policiamento”."
+      },
+
     {
         id: 73,
         idSimulado: 73,
@@ -1207,6 +1222,21 @@ const BANCO_GERAL_QUESTOES = [
         answer: 0,
         explanation: "Gabarito: A. Fundamentação: LC nº 893/01 (RDPM), arts. 7º e 8º, incisos I–III, em Assuntos Juridicos-administrativos.pdf. Cumprir deveres de cidadão e preservar a natureza constam dos deveres éticos; patriotismo e civismo constam dos valores fundamentais. B erra ao classificar civismo como dever e omite II e III; C inclui a afirmação IV, falsa; D também inclui IV. Trecho normativo de suporte: “Os valores fundamentais [...] são [...] patriotismo [e] civismo” (art. 7º); “cumprir os deveres de cidadão” e “preservar a natureza e o meio ambiente” constam do art. 8º."
     },
+{
+        "id": 85,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — análise inicial da comunicação disciplinar",
+        "text": "Ao receber uma comunicação disciplinar, a autoridade competente verifica que ainda não há elementos suficientes para formular o Termo Acusatório. À luz da Portaria do Cmt G CORREGPM-1/360/13, assinale a alternativa INCORRETA sobre as providências possíveis nessa fase.",
+        "options": [
+          "a) Restituir a comunicação ao signatário para complementar ou esclarecer os fatos, fixando o prazo previsto na Portaria.",
+          "b) Encaminhar a comunicação ao policial militar comunicado para manifestação preliminar, no prazo previsto na Portaria.",
+          "c) Arquivar a comunicação, se concluir que não houve transgressão, mediante decisão motivada e ciência do policial militar comunicado.",
+          "d) Aplicar imediatamente a sanção disciplinar, dispensando Termo Acusatório e oportunidade de defesa, apenas porque os elementos iniciais são insuficientes."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. O art. 2º prevê análise em 5 dias e, se faltarem elementos suficientes para o Termo Acusatório, permite devolver a comunicação ao signatário para complementação em 3 dias, encaminhá-la ao comunicado para manifestação preliminar em 3 dias ou arquivá-la motivadamente quando não houver transgressão, com ciência do policial. A, B e C correspondem a providências expressamente previstas; D antecipa sanção e elimina a formalização acusatória e a defesa, o que o dispositivo não autoriza. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 2º (Bol G PM 211/2013, p. 1). Trecho: “analisará os fatos, no prazo de 5 (cinco) dias”."
+      },
+
     {
         id: 86,
         idSimulado: 86,
@@ -1237,6 +1267,21 @@ const BANCO_GERAL_QUESTOES = [
         answer: 2,
         explanation: "Gabarito: C. Fundamentação: LC nº 893/01 (RDPM), arts. 71, incisos II e III, e 76, em Assuntos Juridicos-administrativos.pdf. O limite legal é de dez anos ou mais para Conselho de Disciplina; o PAD aplica-se às praças com menos de dez anos. A altera 'dez ou mais' para 'mais de dez'; B atribui a praça um processo próprio de oficiais; D confunde meio sumário de investigação com processo regular. Trecho normativo de suporte: “para praças com 10 (dez) ou mais anos [...] o Conselho de Disciplina; [...] para praças com menos de 10 (dez) anos [...] o Processo Administrativo Disciplinar” (art. 71, II e III)."
     },
+ {
+        "id": 88,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — instauração e audiência de instrução e julgamento",
+        "text": "A autoridade policial-militar competente vislumbra o cometimento de transgressão disciplinar e decide instaurar Procedimento Disciplinar. Conforme o art. 3º da Portaria CORREGPM-1/360/13, qual providência observa os requisitos temporais e formais previstos na norma?",
+        "options": [
+          "a) Instaurar o procedimento em até 3 dias, autuar os autos e elaborar Termo Acusatório motivado, podendo arrolar até 3 testemunhas de acusação e designar audiência para ocorrer em prazo de 10 dias.",
+          "b) Instaurar o procedimento em até 5 dias, elaborar Termo Acusatório sem exposição dos fundamentos jurídicos e designar audiência para ocorrer em prazo de 15 dias.",
+          "c) Instaurar o procedimento em até 3 dias, limitar a acusação a 2 testemunhas e realizar a audiência obrigatoriamente em 5 dias.",
+          "d) Instaurar o procedimento em até 10 dias, dispensar a autuação quando houver comunicação escrita e designar audiência após a oitiva das testemunhas."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. O art. 3º estabelece instauração em 3 dias, autuação e Termo Acusatório motivado com razões de fato e de direito; o rol da acusação pode conter até 3 testemunhas, e a audiência é designada para prazo de 10 dias. B altera prazo, fundamentação e data; C reduz o limite de testemunhas e muda o prazo; D amplia o prazo de instauração e dispensa formalidade não dispensada. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 3º (Bol G PM 211/2013, p. 1). Trecho: “em 3 (três) dias [...] Termo Acusatório [...] até o máximo de 3 (três) [...] audiência [...] num prazo de 10 (dez) dias”."
+      },
+
     {
         id: 89,
         idSimulado: 89,
@@ -1312,6 +1357,49 @@ const BANCO_GERAL_QUESTOES = [
         answer: 1,
         explanation: "Gabarito: B. Fundamentação: LC nº 893/01 (RDPM), art. 20, § 2º, art. 21 e art. 32, incisos I a III, em Assuntos Juridicos-administrativos.pdf. O art. 20 exige reincidência em transgressão grave; os arts. 21 e 32 delimitam as autoridades e os limites de aplicação. A elimina o requisito de reincidência e amplia a competência; C restringe indevidamente a competência ao Comandante-Geral e ignora o requisito; D atribui detenção a Capitão e Major, embora o art. 32 não lhes atribua essa sanção. Trecho normativo de suporte: “A detenção somente poderá ser aplicada quando da reincidência no cometimento de transgressão disciplinar de natureza grave” (art. 20, § 2º); o art. 21 indica as autoridades de aplicação e o art. 32 complementa os limites de competência."
     },
+      {
+        "id": 94,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — interrogatório e direito ao silêncio",
+        "text": "Durante o interrogatório em Procedimento Disciplinar, o policial militar acusado declara que exercerá o direito de permanecer calado e não responder às perguntas formuladas. Segundo a Portaria CORREGPM-1/360/13, qual consequência deve ser atribuída a essa conduta?",
+        "options": [
+          "a) O silêncio equivale à confissão, desde que a acusação esteja acompanhada de documentos.",
+          "b) O silêncio não importa confissão nem pode ser interpretado em prejuízo da defesa.",
+          "c) O silêncio autoriza presumir verdadeiros os fatos, salvo se houver advogado constituído.",
+          "d) O acusado perde o direito de apresentar alegações finais se não responder às perguntas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. O art. 5º determina que, antes do interrogatório, a autoridade informe o direito de permanecer calado e não responder; expressamente, o silêncio “não importará em confissão e nem poderá ser interpretado em prejuízo da defesa”. A e C atribuem efeito probatório contrário ao texto; D cria perda de defesa que o dispositivo não prevê. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 5º (Bol G PM 211/2013, p. 3)."
+      },
+      {
+        "id": 95,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — alegações finais e memoriais",
+        "text": "Encerrado o interrogatório no Procedimento Disciplinar, não houve aditamento do Termo Acusatório. Considerando o art. 7º da Portaria CORREGPM-1/360/13, assinale a alternativa correta quanto à manifestação final da defesa.",
+        "options": [
+          "a) A defesa dispõe de 5 minutos improrrogáveis para alegações orais, e a autoridade deve decidir em até 24 horas.",
+          "b) A defesa apresenta obrigatoriamente memoriais escritos por 10 dias, ainda que o caso não tenha complexidade especial.",
+          "c) São concedidos 10 minutos para alegações finais orais, prorrogáveis por mais 5; excepcionalmente, por complexidade ou número de acusados e decisão motivada em ata, podem ser concedidos 5 dias simultâneos às partes para memoriais.",
+          "d) A acusação apresenta alegações finais orais por 10 minutos e a defesa dispõe de 5 dias úteis, sem necessidade de decisão motivada, para memoriais."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. O art. 7º prevê alegações finais orais por 10 minutos, prorrogáveis por mais 5. Excepcionalmente, pela complexidade e/ou número de acusados, com decisão motivada na ata, a autoridade pode conceder 5 dias simultâneos às partes para memoriais; a decisão será proferida em 5 dias contados da juntada do último memorial de defesa. A altera os tempos; B transforma a exceção em regra e altera o prazo; D transfere a manifestação oral à acusação e dispensa a motivação. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 7º, caput e § 2º (Bol G PM 211/2013, p. 3)."
+      },
+      {
+        "id": 96,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — publicação e efeitos do ato",
+        "text": "Concluído um Procedimento Disciplinar, a autoridade pretende publicar o ato punitivo em Boletim para que produza seus efeitos. Nos termos do art. 12 da Portaria CORREGPM-1/360/13, qual condição deve ser observada?",
+        "options": [
+          "a) O ato deve ser publicado imediatamente após a audiência, ainda que haja prazo recursal em curso.",
+          "b) A publicação pode ocorrer antes da decisão, desde que o Termo Acusatório tenha sido assinado pela autoridade competente.",
+          "c) A publicação deve aguardar necessariamente o trânsito em julgado judicial, mesmo quando já encerrada a via recursal administrativa.",
+          "d) A publicação ocorre após decisão da qual não caiba mais recurso próprio com efeito suspensivo ou após a decadência dos prazos recursais, circunstância que deve ser certificada nos autos."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. O art. 12 condiciona a publicação do ato punitivo ou de justificação à emissão de decisão da qual não caiba mais recurso próprio com efeito suspensivo ou à decadência dos prazos recursais, circunstância a ser cientificada nos autos; a partir da publicação o ato gera seus efeitos. A e B antecipam a publicação; C exige trânsito judicial, condição não prevista no dispositivo. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 12 (Bol G PM 211/2013, p. 4)."
+      },
+      
     {
         id: 97,
         idSimulado: 97,
@@ -1371,7 +1459,288 @@ const BANCO_GERAL_QUESTOES = [
         ],
         answer: 1,
         explanation: "Gabarito: B. Fundamentação: I-16-PM, art. 67, §§ 1º a 3º, em Assuntos Organizacionais.pdf, p. 24. A investigação preliminar é meio sumaríssimo para colher subsídios quando a notícia não reúne elementos suficientes e tem prazo improrrogável de dez dias contados do despacho. A confunde o prazo e a finalidade da sindicância; C inverte a sequência; D atribui prazo e prorrogação da sindicância e exige meios formais que não correspondem à investigação preliminar. Trecho normativo de suporte: A investigação preliminar é “meio sumaríssimo destinado à imediata colheita de subsídios” e “será encerrada no prazo improrrogável de 10 (dez) dias” (I-16-PM, art. 67, §§ 1º e 3º)."
-    }
+    },
+ {
+        "id": 101,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — âmbito de aplicação e critérios do rito",
+        "text": "Uma comunicação relata possível transgressão disciplinar que, em princípio, não apresenta complexidade suficiente para exigir Sindicância nem gravidade que recomende Processo Regular. À luz do art. 1º da Portaria CORREGPM-1/360/13, qual procedimento e quais critérios orientam a apuração?",
+        "options": [
+          "a) Sindicância obrigatória, orientada pela formalidade estrita e pela produção escrita de todos os atos.",
+          "b) Procedimento Disciplinar, orientado pela oralidade, simplicidade, informalidade, economia processual e celeridade.",
+          "c) Processo Regular obrigatório, orientado exclusivamente pela publicidade e pela hierarquia.",
+          "d) Investigação criminal militar, orientada pelos prazos e atos próprios do CPPM, ainda que a notícia trate apenas de transgressão disciplinar."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. O art. 1º destina o Procedimento Disciplinar à apuração de transgressões cuja complexidade não exija Sindicância e cuja gravidade não recomende Processo Regular, orientando-o pela oralidade, simplicidade, informalidade, economia processual e celeridade. A e C substituem o rito sem observar os critérios de cabimento; D desloca a apuração disciplinar para procedimento criminal não indicado pelo dispositivo. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 1º (Bol G PM 211/2013, p. 1)."
+      },
+      {
+        "id": 102,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — sequência da audiência e oitiva de testemunhas",
+        "text": "Na audiência de instrução e julgamento de um Procedimento Disciplinar, a autoridade deve observar a sequência prevista no art. 4º da Portaria CORREGPM-1/360/13. Assinale a alternativa correta.",
+        "options": [
+          "a) Ler o Termo Acusatório, receber e juntar documentos apresentados ou solicitados e, em seguida, ouvir as testemunhas da acusação, seguidas pelas testemunhas da defesa.",
+          "b) Interrogar o acusado antes de ler o Termo Acusatório e, depois, ouvir primeiro as testemunhas da defesa.",
+          "c) Ouvir as testemunhas de defesa antes de admitir documentos e deixar a leitura do Termo Acusatório para o encerramento da audiência.",
+          "d) Receber apenas documentos da acusação, ouvir as testemunhas e dispensar a participação do acusado ou defensor na formulação de perguntas."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. O art. 4º prevê início da audiência com leitura do Termo Acusatório, recebimento e juntada de documentos e oitiva das testemunhas eventualmente arroladas na acusação, seguidas das testemunhas trazidas ou requeridas pela defesa. B antecipa o interrogatório, que é tratado no art. 5º após a oitiva; C inverte a ordem e posterga a leitura; D restringe documentos e defesa sem amparo. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 4º (Bol G PM 211/2013, p. 2)."
+      },
+      {
+        "id": 103,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — nova tipificação fundada em fatos novos",
+        "text": "Após a produção das provas e o interrogatório, a autoridade policial-militar entende que o fato pode receber nova tipificação jurídica, fundada em fatos novos ainda não abrangidos pelo Termo Acusatório. Conforme o art. 6º da Portaria CORREGPM-1/360/13, qual providência é adequada?",
+        "options": [
+          "a) Alterar a tipificação apenas na decisão final, sem cientificar o acusado, porque a instrução já foi encerrada.",
+          "b) Arquivar obrigatoriamente o procedimento e instaurar nova Sindicância, sem aproveitamento dos atos anteriores.",
+          "c) Aditar o Termo Acusatório na audiência, admitir até 3 testemunhas adicionais de acusação e designar nova audiência, permitindo à defesa apresentar até 3 testemunhas adicionais.",
+          "d) Manter a tipificação original, pois a autoridade não pode alterar o enquadramento jurídico após a produção de provas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. O art. 6º permite nova tipificação após o interrogatório; se ela se fundar em fatos novos, a autoridade deve aditar o Termo Acusatório, podendo arrolar até 3 testemunhas adicionais de acusação, e designar nova audiência, na qual a defesa pode apresentar outras 3 testemunhas. A suprime a ciência e a oportunidade de defesa; B impõe arquivamento e Sindicância não previstos; D nega a possibilidade de nova tipificação. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 6º e parágrafo único (Bol G PM 211/2013, p. 3)."
+      },
+      {
+        "id": 104,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — remessa quando cabível Processo Regular",
+        "text": "Ao julgar um Procedimento Disciplinar, a autoridade policial-militar entende que, diante da gravidade do caso, é cabível a instauração de Processo Regular. De acordo com o art. 8º da Portaria CORREGPM-1/360/13, como deve proceder?",
+        "options": [
+          "a) Aplicar a sanção disciplinar de sua competência e remeter os autos apenas para homologação.",
+          "b) Converter automaticamente o procedimento em Investigação Preliminar, mantendo a competência decisória original.",
+          "c) Arquivar o feito, pois o Procedimento Disciplinar não pode coexistir com Processo Regular.",
+          "d) Deixar de aplicar sanção naquele julgamento e remeter os autos à autoridade superior para deliberação."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. O parágrafo único do art. 8º determina que a autoridade não aplique sanção quando julgar cabível a instauração de Processo Regular e remeta os autos à autoridade superior para deliberação. A prevê sanção antes da remessa; B impõe conversão para procedimento diverso; C determina arquivamento não previsto. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 8º e parágrafo único (Bol G PM 211/2013, p. 3)."
+      },
+      {
+        "id": 105,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — registro eletrônico dos atos",
+        "text": "Durante a realização de audiência de Procedimento Disciplinar, a autoridade propõe registrar o ato por meio de gravação audiovisual e armazenamento digital. Conforme o art. 13 da Portaria CORREGPM-1/360/13, assinale a alternativa correta.",
+        "options": [
+          "a) O registro eletrônico é proibido, porque a audiência deve ser documentada exclusivamente por escrito.",
+          "b) O uso de meios eletrônicos para registro é válido, mas não dispensa a lavratura do termo de audiência.",
+          "c) O registro eletrônico substitui integralmente o termo de audiência, que se torna facultativo.",
+          "d) O registro audiovisual depende, em todos os casos, de autorização judicial específica."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. O art. 13 admite meios eletrônicos, incluindo captura de som e imagem e armazenamento de arquivos digitais, para registro do Procedimento Disciplinar, mas ressalva que o termo de audiência não é dispensado. A proíbe meio expressamente aceito; C elimina requisito mantido pela norma; D acrescenta autorização não prevista no dispositivo. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 13 (Bol G PM 211/2013, p. 4)."
+      },
+      {
+        "id": 106,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — numeração dos procedimentos",
+        "text": "Uma OPM de nível Batalhão está organizando os registros de Procedimentos Disciplinares instaurados no mesmo ano. Nos termos do art. 14 da Portaria CORREGPM-1/360/13, qual critério de numeração deve adotar?",
+        "options": [
+          "a) Numeração independente por Companhia, reiniciada a cada trimestre.",
+          "b) Numeração única estadual, em ordem decrescente, sem distinção por ano.",
+          "c) Numeração única no âmbito da OPM, em ordem crescente e por ano.",
+          "d) Numeração por autoridade julgadora, sem vínculo com a OPM de instauração."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. O art. 14 determina numeração única no âmbito da OPM de nível Batalhão ou superior, por ordem crescente e por ano. A cria subdivisão por Companhia e trimestre; B muda o âmbito, a ordem e o critério anual; D troca a unidade de referência pela autoridade julgadora. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 14 (Bol G PM 211/2013, p. 4)."
+      },
+      {
+        "id": 107,
+        "subject": "JURIDICO",
+        "topic": "Procedimento Disciplinar — notícia de transgressão atribuída a militar inativo",
+        "text": "Chega à OPM documento que noticia possível transgressão disciplinar atribuída a policial militar já inativo. Conforme o art. 15 da Portaria CORREGPM-1/360/13, para quem deve ser remetido o documento para apreciação, conforme a condição do envolvido?",
+        "options": [
+          "a) Ao Subcomandante PM, se envolver Praça; ao Comandante-Geral, se envolver Oficial.",
+          "b) Ao Comandante-Geral, se envolver Praça; ao Subcomandante PM, se envolver Oficial.",
+          "c) Em todos os casos, exclusivamente ao Comandante da OPM em que o militar serviu por último.",
+          "d) Em todos os casos, exclusivamente à Corregedoria, sem apreciação pelas autoridades indicadas na Portaria."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. O art. 15 determina remessa ao Subcomandante PM nos casos que envolvam Praças e ao Comandante-Geral nos casos que envolvam Oficiais, para apreciação. B inverte os destinatários; C e D substituem a rota expressamente indicada por destinatário único. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 15 (Bol G PM 211/2013, p. 4)."
+      },
+      {
+        "id": 108,
+        "subject": "JURIDICO",
+        "topic": "Lei nº 18.442/26 — destinação dos Quadros de Oficiais",
+        "text": "Considerando a estrutura dos Quadros prevista na Lei nº 18.442/26, assinale a alternativa que distingue corretamente a destinação do QOEM e do QOE.",
+        "options": [
+          "a) O QOEM destina-se exclusivamente às atividades de saúde; o QOE, ao comando e direção de toda a Instituição.",
+          "b) O QOEM executa atividades musicais e culturais; o QOE é composto por militares destinados à execução das atividades de praça.",
+          "c) O QOEM destina-se às funções de comando, chefia e direção; o QOE desempenha atividades complementares às previstas para o QOEM.",
+          "d) O QOEM e o QOE possuem destinação idêntica e são diferenciados apenas pelo posto máximo de seus integrantes."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. O material da Lei nº 18.442/26 identifica o QOEM como destinado às funções de comando, chefia e direção e o QOE como destinado a atividades complementares às previstas para o QOEM. A atribui ao QOEM a área de saúde e inverte a função do QOE; B transfere ao QOEM a destinação do quadro musical e ao QOE a execução das atividades de praça; D elimina a distinção funcional descrita. Fonte: Assuntos Jurídicos-administrativos.pdf, material referente à Lei nº 18.442/26, quadro de destinação dos Quadros, p. 14 do PDF."
+      },
+      {
+        "id": 109,
+        "subject": "JURIDICO",
+        "topic": "Lei nº 18.442/26 — critérios para definição do efetivo",
+        "text": "Ao definir o efetivo da Polícia Militar, a Lei nº 18.442/26 prevê a consideração de fatores territoriais, demográficos e institucionais. Qual alternativa reúne critérios indicados no material autorizado?",
+        "options": [
+          "a) Apenas o número de ocorrências atendidas no ano anterior e o total de viaturas disponíveis.",
+          "b) Extensão territorial, população, riscos de desastres, desenvolvimento humano, índices de criminalidade e condições socioeconômicas.",
+          "c) Exclusivamente disponibilidade orçamentária, número de promoções previstas e quantitativo de cursos em andamento.",
+          "d) Somente a distribuição atual de efetivo por OPM e a quantidade de armamentos cadastrados."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. O material referente ao art. 3º da Lei nº 18.442/26 lista território, população, desastres, desenvolvimento humano, índices de criminalidade e condições socioeconômicas como fatores considerados na definição do efetivo. A e D substituem a lista por indicadores não apresentados como conjunto normativo; C confunde critérios de definição do efetivo com disponibilidade orçamentária e distribuição, tratadas em etapa distinta. Fonte: Assuntos Jurídicos-administrativos.pdf, material da Lei nº 18.442/26, art. 3º, p. 11–12 do PDF."
+      },
+      {
+        "id": 110,
+        "subject": "JURIDICO",
+        "topic": "RDPM — efeitos do cancelamento de sanções disciplinares",
+        "text": "Após requerimento do interessado, o Comandante-Geral defere o cancelamento de registros de sanções disciplinares, preenchidos os requisitos do art. 70 do RDPM. Qual efeito decorre do cancelamento, segundo o § 2º desse artigo?",
+        "options": [
+          "a) As sanções canceladas são consideradas inexistentes desde a data em que foram aplicadas, com revisão automática dos atos administrativos posteriores.",
+          "b) O cancelamento retroage à data da transgressão, mas não alcança atos administrativos publicados posteriormente.",
+          "c) O cancelamento produz efeitos retroativos apenas para fins de classificação de comportamento.",
+          "d) O cancelamento não tem efeito retroativo nem assegura direito à revisão de outros atos administrativos decorrentes das sanções canceladas."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. O art. 70, § 2º, do RDPM estabelece que o cancelamento “não terá efeito retroativo” e não motivará direito de revisão de outros atos administrativos decorrentes das sanções canceladas. A e B atribuem retroatividade e revisão; C cria efeito retroativo parcial que o texto não prevê. Fonte: Assuntos Jurídicos-administrativos.pdf, LC nº 893/01 (RDPM), art. 70, § 2º, p. 101 do PDF."
+      },
+      {
+        "id": 111,
+        "subject": "ORGANIZACIONAL",
+        "topic": "I-36-PM — autoridade competente para sobrestamento de férias e licença-prêmio",
+        "text": "Verificada uma das situações previstas no art. 80 das Instruções para os Afastamentos na Polícia Militar, é necessário sobrestar férias ou licença-prêmio do policial militar. Quem deve efetuar o sobrestamento por meio de publicação em Boletim Interno?",
+        "options": [
+          "a) A Diretoria de Pessoal, em todos os casos, independentemente da OPM de classificação.",
+          "b) O Subcomandante PM, mediante autorização prévia do Comandante-Geral.",
+          "c) O Comandante, Chefe ou Diretor da OPM, em relação ao efetivo sob seu comando.",
+          "d) A Junta de Saúde que identificou o motivo do afastamento, por despacho médico."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. O art. 80, § 1º, atribui ao Cmt/Ch/Dir de OPM o sobrestamento, por publicação em Bol Int, das férias e licenças-prêmio do efetivo sob seu comando nas situações previstas no artigo. A, B e D transferem a competência para órgãos ou autoridades não indicados nesse dispositivo. Fonte: Assuntos Organizacionais.pdf, I-36-PM, art. 80, § 1º, p. impressa 27–28."
+      },
+      {
+        "id": 112,
+        "subject": "ORGANIZACIONAL",
+        "topic": "I-36-PM — prevalência de férias e licença-prêmio previamente programadas",
+        "text": "Um policial militar tem férias previamente programadas e, antes do início do gozo, surge fato que poderia motivar outro afastamento regulamentar. Conforme o art. 81 das I-36-PM, qual regra geral deve ser observada?",
+        "options": [
+          "a) As férias ou licença-prêmio previamente programadas prevalecem sobre os demais afastamentos, sem prejuízo de eventual alteração da data de início ou sobrestamento, nos termos das próprias Instruções.",
+          "b) O afastamento superveniente sempre prevalece, ainda que as férias ou a licença-prêmio já estejam programadas.",
+          "c) A programação prévia torna impossível qualquer alteração da data de início ou sobrestamento, mesmo nas hipóteses previstas nas Instruções.",
+          "d) O Comandante deve cancelar definitivamente o afastamento programado e converter o período em dispensa-recompensa."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. O art. 81 estabelece que férias e licença-prêmio previamente programadas devem prevalecer sobre outros afastamentos, ressalvando a possibilidade de alteração da data de início ou sobrestamento conforme os arts. 6º e 80. B inverte a regra; C ignora as ressalvas expressas; D cria conversão e cancelamento definitivo não previstos. Fonte: Assuntos Organizacionais.pdf, I-36-PM, art. 81, p. impressa 28."
+      },
+      {
+        "id": 113,
+        "subject": "ORGANIZACIONAL",
+        "topic": "I-36-PM — direito à folga quando não cumprido o turno",
+        "text": "Um policial militar sujeito a escala de serviço deixa de cumprir determinado turno. À luz do art. 85 das I-36-PM, em qual hipótese a folga a que teria direito poderá ser usufruída?",
+        "options": [
+          "a) Sempre que o turno deixar de ser cumprido, independentemente de ter sido concedido afastamento que abranja o período.",
+          "b) Somente se a concessão de algum afastamento abranger o período correspondente, ressalvada a hipótese de afastamento do turno decorrente de dispensa do serviço.",
+          "c) Apenas quando houver autorização judicial, pois a norma não trata de folgas decorrentes de afastamento.",
+          "d) Nunca, porque a falta de cumprimento do turno elimina definitivamente qualquer direito à folga."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. O art. 85 prevê que a folga só poderá ser usufruída se algum afastamento concedido abranger o período do turno não cumprido; o parágrafo único excepciona o afastamento decorrente de dispensa do serviço. A dispensa a condição de cobertura por afastamento; C acrescenta autorização judicial inexistente; D transforma a regra em perda definitiva, o que o artigo não estabelece. Fonte: Assuntos Organizacionais.pdf, I-36-PM, art. 85 e parágrafo único, p. impressa 29."
+      },
+      {
+        "id": 114,
+        "subject": "ORGANIZACIONAL",
+        "topic": "SisTAF — requisito de aprovação no TAF-3 durante a regra de transição",
+        "text": "Em 2026, um policial militar realiza o TAF-3 anual. Considerando a regra de transição do Anexo C à Diretriz nº PM3-001/03/25, qual requisito de pontuação se aplica nesse período?",
+        "options": [
+          "a) Atingir 250 pontos no total e pelo menos 20 pontos em cada teste, sem índice de suficiência nem cômputo da natação de 50 metros na pontuação final.",
+          "b) Atingir 300 pontos no total e pelo menos 30 pontos em cada teste, computando obrigatoriamente a natação de 50 metros.",
+          "c) Atingir 250 pontos no total, sem pontuação mínima por teste, computando a natação apenas se o avaliado for do sexo masculino.",
+          "d) Atingir 300 pontos no total, com pelo menos 20 pontos em cada teste, mas sem computar a natação de 50 metros."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. O Anexo C, item 1.3.1, estabelece, a partir de 1º de janeiro de 2025, 250 pontos no total e mínimo de 20 em cada teste; a natação de 50 m não tem índice de suficiência nem é computada na pontuação final. O patamar de 300 pontos começa em 1º de janeiro de 2029 (item 1.3.2), por isso B e D antecipam a regra futura; C elimina o mínimo por teste e cria distinção por sexo não prevista para a exclusão da natação. Fonte: Assuntos Organizacionais.pdf, Diretriz nº PM3-001/03/25, Anexo C, itens 1.3.1 e 1.3.2, fl. 20."
+      },
+      {
+        "id": 115,
+        "subject": "ORGANIZACIONAL",
+        "topic": "SisTAF — periodicidade, condição e validade do TAF-3",
+        "text": "Sobre a aplicação e a validade do TAF-3, analise as afirmações:\n\nI. A aplicação anual do TAF-3 é obrigatória a todos os policiais militares e está condicionada à realização da Inspeção Anual de Saúde.\nII. O nível de condicionamento físico aferido pelo TAF-3 tem validade de um ano, contado da data da última prova da bateria.\nIII. O policial militar considerado apto no TAF-3 não pode ser reavaliado durante o prazo de validade do teste.\n\nAssinale a alternativa correta.",
+        "options": [
+          "a) Apenas I.",
+          "b) Apenas II e III.",
+          "c) Apenas I e III.",
+          "d) Apenas I e II."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. O Anexo C, item 1.2, condiciona a aplicação anual obrigatória do TAF-3 à Inspeção Anual de Saúde. A validade de um ano e a contagem a partir da última prova da bateria constam dos itens 6.5.4.6 e 6.5.4.6.1 da Diretriz. O item 6.5.4.7 permite reavaliação para melhorar o resultado, tornando III falsa. Fonte: Assuntos Organizacionais.pdf, Diretriz nº PM3-001/03/25, itens 6.5.4.6, 6.5.4.6.1 e 6.5.4.7; Anexo C, item 1.2."
+      },
+      {
+        "id": 116,
+        "subject": "ORGANIZACIONAL",
+        "topic": "SisTAF — indicação da categoria de TAF-4 em caso de restrição médica",
+        "text": "Um Oficial Médico do QOS considera o policial militar apto para o serviço, mas identifica restrição que exige avaliação física adaptada. Conforme a Diretriz nº PM3-001/03/25, qual providência é exigida para definir o TAF-4 aplicável?",
+        "options": [
+          "a) O Treinador Físico escolhe livremente a categoria do TAF-4 com base apenas no desempenho anterior do policial.",
+          "b) O policial escolhe a categoria de TAF-4 que considere menos exigente, sem indicação médica.",
+          "c) O profissional médico do QOS deve indicar expressamente a categoria de TAF-4 a que o policial será submetido, e essa indicação vincula o Treinador Físico.",
+          "d) A OPM deve aplicar o TAF-3 ordinário em todos os casos, pois o TAF-4 é facultativo."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. O item 6.5.4.5 determina que, quando o Oficial QOS declarar o policial apto com restrição, indique expressamente a categoria de TAF-4, sendo a indicação obrigatória para o Treinador Físico. A e B transferem a escolha para pessoas sem essa competência; D ignora a previsão de TAF-4 para aptos com restrições médicas. Fonte: Assuntos Organizacionais.pdf, Diretriz nº PM3-001/03/25, item 6.5.4.5 e Anexo D, itens 2 e 3."
+      },
+      {
+        "id": 117,
+        "subject": "ORGANIZACIONAL",
+        "topic": "TCI — distinção entre Calendário do TCI e Calendário Técnico-Operacional",
+        "text": "Na organização anual do Treinamento Continuado Institucional (TCI), a OPM precisa distinguir o Calendário do TCI do Calendário Técnico-Operacional (CTO). Conforme a Diretriz nº PM3-001/03/24, assinale a alternativa correta.",
+        "options": [
+          "a) O Calendário do TCI é elaborado exclusivamente pela EEF e contém apenas instruções técnico-operacionais; o CTO é a programação local de treinamentos físicos.",
+          "b) O Calendário do TCI é a programação anual dos treinamentos físicos e técnico-operacionais nas OPM; o CTO é elaborado anualmente pela EEF e reúne assuntos de interesse institucional para instruções técnico-operacionais a serem aplicadas no TCI.",
+          "c) Ambos são calendários mensais elaborados pelo COPOM, voltados exclusivamente à escala de patrulhamento.",
+          "d) O CTO contém apenas avaliações físicas individuais e o Calendário do TCI é facultativo para as OPM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Os itens 6.1.2 e 6.1.3 definem, respectivamente, o Calendário do TCI como programação anual de treinamentos físicos e técnico-operacionais das OPM e o CTO como calendário anual elaborado pela EEF com assuntos institucionais para instruções técnico-operacionais do TCI. A inverte as definições; C atribui elaboração e conteúdo não previstos; D restringe indevidamente o CTO e torna facultativa uma programação definida na norma. Fonte: Assuntos Organizacionais.pdf, Diretriz nº PM3-001/03/24, itens 6.1.2 e 6.1.3, fl. 2."
+      },
+      {
+        "id": 118,
+        "subject": "ORGANIZACIONAL",
+        "topic": "TCI — finalidade e execução institucional",
+        "text": "Considerando a finalidade e a missão do Treinamento Continuado Institucional (TCI), assinale a alternativa que melhor corresponde à Diretriz nº PM3-001/03/24.",
+        "options": [
+          "a) Concentrar instruções físicas e técnico-operacionais apenas em cursos presenciais de especialização, fora do turno de serviço.",
+          "b) Executar treinamento físico exclusivamente para policiais militares que atuem em unidades especializadas, sem calendário anual.",
+          "c) Substituir o Estágio de Atualização Profissional e as Instruções de Nivelamento em Procedimentos Operacionais por sessões de treinamento físico.",
+          "d) Desenvolver modelo padronizado de treinamento físico e técnico-operacional, contínuo e programado para todo o efetivo, a ser executado durante o turno de serviço."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. O item 4.1 fixa o objetivo de desenvolver modelo institucional padronizado de treinamento físico e técnico-operacional durante o turno, contínuo e programado para todo o efetivo; o item 5 atribui coordenação, execução, monitoramento e controle aos órgãos e comandos indicados. A e B restringem público e deslocam o treinamento para fora do turno; C contraria o item 6.7.2, que afirma que o TCI não dispensa EAP, INPO e demais atividades de ensino. Fonte: Assuntos Organizacionais.pdf, Diretriz nº PM3-001/03/24, itens 4.1, 5 e 6.7.2, fls. 1–3."
+      },
+      {
+        "id": 119,
+        "subject": "ORGANIZACIONAL",
+        "topic": "Regime de trabalho — autorização excepcional de horário administrativo",
+        "text": "Um policial militar requer horário de expediente administrativo diferente da regra geral. Segundo o art. 16 da Portaria do Cmt G PM1-7/02/23, qual conjunto de condições deve ser observado para eventual autorização?",
+        "options": [
+          "a) A autorização é automática, por prazo indeterminado, desde que o interessado comprove matrícula em curso.",
+          "b) Basta que o horário alternativo seja cumprido entre 06h e 23h, sem exigência de jornada mínima ou decisão individualizada.",
+          "c) A autorização pode ser concedida pelo Cmt de OPM a partir do nível de Batalhão, mediante requerimento, em caráter individual, excepcional e por tempo determinado, respeitando jornada mínima de 40 horas semanais e faixa entre 07h e 19h; não gera direito subjetivo e pode ser revogada motivadamente.",
+          "d) A autorização compete exclusivamente à Diretoria de Pessoal, não pode ser revogada e permite dispensar a jornada semanal mínima."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. O art. 16 permite ao Cmt de OPM, a partir do nível de Batalhão ou superior, autorizar horário diverso a requerimento do interessado, desde que individualizado, excepcional, por tempo determinado, com mínimo de 40 horas semanais e dentro de 07h a 19h; o parágrafo único afasta direito subjetivo e admite revogação motivada por necessidade do serviço. A torna automática e indefinida; B muda a faixa horária e elimina requisitos; D desloca a competência e nega a revogabilidade. Fonte: Assuntos Organizacionais.pdf, Portaria do Cmt G PM1-7/02/23, art. 16, Bol G PM 101/23, p. 5."
+      },
+      {
+        "id": 120,
+        "subject": "ORGANIZACIONAL",
+        "topic": "Regime de trabalho — interrupção da contagem e fruição da folga mensal obrigatória",
+        "text": "Um policial militar em escala operacional deixa de cumprir um turno por motivo que não corresponde à fruição de folga mensal obrigatória de período anterior. Depois de apurado o período de folga mensal, pretende acumulá-la para usufruir em momento posterior ao prazo previsto na Portaria. À luz do art. 12 da Portaria PM1-7/02/23, assinale a alternativa correta.",
+        "options": [
+          "a) O não cumprimento do turno interrompe a contagem do período de apuração; a folga apurada deve ser usufruída nos 30 dias subsequentes e não pode ser acumulada para fruição futura.",
+          "b) O não cumprimento do turno não interfere na contagem, e a folga pode ser acumulada por até 90 dias.",
+          "c) A contagem somente é interrompida quando o policial faltar sem justificativa, e a folga pode ser usufruída a qualquer tempo.",
+          "d) A contagem é interrompida inclusive quando o policial usufrui folga mensal obrigatória de período anterior, e a nova folga deve ser concedida no mesmo mês civil."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. O art. 12, § 3º, determina que o não cumprimento do turno por qualquer causa interrompe a contagem, exceto o gozo da folga mensal obrigatória relativa a período anterior. O § 4º exige fruição nos 30 dias subsequentes ao período de apuração e proíbe acumulação futura. B e C eliminam a interrupção e inventam prazo; D ignora a exceção do § 3º e substitui o prazo de 30 dias por mês civil. Fonte: Assuntos Organizacionais.pdf, Portaria do Cmt G PM1-7/02/23, art. 12, §§ 3º e 4º, Bol G PM 101/23, p. 4."
+      }
+
 
           
 ];
