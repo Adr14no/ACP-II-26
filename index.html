@@ -34,8 +34,8 @@
 <body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
 
     <!-- Modal de Instruções Iniciais (Pop-up) -->
-    <div id="modalInstrucoes" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm hidden">
-        <div class="bg-pm-cardBg border border-pm-gold/50 rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl text-slate-100 relative mx-4">
+    <div id="modalInstrucoes" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm hidden overflow-y-auto">
+        <div class="bg-pm-cardBg border border-pm-gold/50 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-5 sm:p-7 shadow-2xl text-slate-100 relative mx-4 my-6">
             <div class="flex items-center gap-3 mb-4 border-b border-pm-border pb-3">
                 <div class="w-10 h-10 rounded-full bg-pm-gold/10 border border-pm-gold flex items-center justify-center text-pm-gold flex-shrink-0">
                     <i class="fa-solid fa-circle-info"></i>
@@ -45,22 +45,22 @@
                     <p class="text-xs text-slate-400">Instruções de Operação da Plataforma</p>
                 </div>
             </div>
-
-            <div class="space-y-3 text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
-                <p><strong class="text-white">🎯 Objetivo:</strong> Preparação de alto rendimento para o processo de Habilitação e Promoção ao Posto de Capitão PM (PMESP).</p>
-                <p><strong class="text-white">🔄 Novo Simulado:</strong> Zera o progresso atual, reinicia o cronômetro e sorteia 50 novas questões de forma proporcional (50% Operacional, 30% Jurídico-Administrativo e 20% Organizacional).</p>
-                <p><strong class="text-white">📚 Modo Estudo vs Modo Prova:</strong> No <em>Modo Estudo</em>, ao errar uma alternativa, a questão é bloqueada e não pode mais ser respondida, exigindo um novo simulado para recomeçar, garantindo o rigor da prova real.</p>
-                <p><strong class="text-white">🔍 Filtros e Cartão:</strong> Utilize os filtros de matérias no topo e acompanhe seu status em tempo real pelo painel lateral e cartão de respostas numérico.</p>
+            <div class="space-y-4 text-xs sm:text-sm text-slate-300 mb-5 leading-relaxed">
+                <section><p class="font-bold text-white mb-1">🎯 1. OBJETIVO</p><p>Plataforma de preparação para o processo de habilitação e promoção ao posto de Capitão PM da PMESP. Utilize os simulados para testar seus conhecimentos e identificar pontos que precisam ser aprimorados.</p></section>
+                <section><p class="font-bold text-white mb-1">📝 2. INÍCIO DO SIMULADO</p><p>Ao iniciar um novo simulado, o progresso anterior é reiniciado e são selecionadas 50 questões, distribuídas em 50% Operacional, 30% Jurídico-Administrativo e 20% Organizacional. O cronômetro também é reiniciado.</p></section>
+                <section><p class="font-bold text-white mb-1">⚙️ 3. MODOS DE UTILIZAÇÃO</p><p><strong class="text-white">Modo Prova:</strong> permite alterar a alternativa escolhida até a finalização e não exibe acertos e erros durante a execução. <strong class="text-white">Modo Estudo:</strong> corrige a resposta imediatamente e apresenta a fundamentação normativa. Consultar a fundamentação durante uma prova compromete a simulação de avaliação.</p></section>
+                <section><p class="font-bold text-white mb-1">📚 4. RESOLUÇÃO DAS QUESTÕES</p><p>No Modo Prova, você pode mudar sua resposta enquanto a prova estiver em andamento, exceto em questões já consultadas no Modo Estudo. No Modo Estudo, após selecionar uma alternativa, a resposta fica bloqueada. Confira o enunciado e as alternativas antes de responder.</p></section>
+                <section><p class="font-bold text-white mb-1">🔎 5. NAVEGAÇÃO POR TEMA</p><p>Utilize os filtros para alternar entre as questões dos temas Operacional, Jurídico-Administrativo e Organizacional durante o simulado.</p></section>
+                <section><p class="font-bold text-white mb-1">🚩 6. MARCAR PARA REVISAR</p><p>Marque as questões sobre as quais tenha dúvidas ou não saiba a resposta. Você poderá retornar a elas posteriormente. Questões ainda não respondidas permanecem disponíveis; questões respondidas no Modo Estudo ficam bloqueadas.</p></section>
+                <section><p class="font-bold text-white mb-1">🗂️ 7. CARTÃO DE RESPOSTAS</p><p>Utilize o cartão numérico para localizar e acessar diretamente outra questão. As marcações ajudam a identificar questões pendentes, respondidas e sinalizadas para revisão.</p></section>
+                <section><p class="font-bold text-white mb-1">🏁 8. FINALIZAR A PROVA</p><p>Ao finalizar, o cronômetro é interrompido e o sistema apresenta o resultado. Questões não respondidas não recebem pontuação. Para uma avaliação fiel às condições de prova, permaneça no Modo Prova durante toda a execução.</p></section>
             </div>
-
             <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-pm-border pt-4">
                 <label class="flex items-center gap-2 text-xs text-slate-400 cursor-pointer select-none">
                     <input type="checkbox" id="checkNaoMostrar" class="rounded border-pm-border bg-pm-navy text-pm-gold focus:ring-pm-gold w-4 h-4">
                     <span>Não exibir esta mensagem novamente</span>
                 </label>
-                <button onclick="fecharModalInstrucoes()" class="w-full sm:w-auto px-5 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl text-xs sm:text-sm transition shadow">
-                    Entendido, Iniciar
-                </button>
+                <button onclick="fecharModalInstrucoes()" class="w-full sm:w-auto px-5 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl text-xs sm:text-sm transition shadow">Entendido, Iniciar</button>
             </div>
         </div>
     </div>
@@ -70,7 +70,7 @@
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-4 text-center md:text-left">
                 <div class="w-12 h-12 rounded-full bg-pm-gold/10 border-2 border-pm-gold flex items-center justify-center flex-shrink-0 shadow-inner overflow-hidden">
-                    <img src="pmesp.png" alt="Brasão PMESP" class="w-full h-full object-cover scale-100">
+                    <img src="pmesp.png" alt="Brasão PMESP" class="w-full h-full object-cover scale-140">
                 </div>
                 <div>
                     <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Polícia Militar do Estado de São Paulo</h1>
@@ -266,8 +266,8 @@
         <!-- Barra Lateral: Painel de Controle e Cartão de Respostas -->
         <aside class="flex flex-col gap-4">
 
-            <!-- Painel de Progresso -->
-            <div class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg">
+            <!-- Painel de Progresso: visível no Modo Estudo; oculto no Modo Prova -->
+            <div id="progressPanel" class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg">
                 <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-2">
                     <i class="fa-solid fa-chart-pie text-pm-gold"></i> Painel de Progresso
                 </h3>
@@ -335,6 +335,7 @@
             currentIndex: 0,
             userAnswers: [],
             flagged: [],
+            studyLocked: [], // Questões já consultadas/respondidas no Modo Estudo
             timerSeconds: 150 * 60, // 2h30min (9000 seg)
             timerEndTime: null,     // Timestamp do término real
             timerInterval: null,
@@ -370,6 +371,7 @@
                 questionsDatabase: questionsDatabase,
                 userAnswers: state.userAnswers,
                 flagged: state.flagged,
+                studyLocked: state.studyLocked,
                 timerSeconds: state.timerSeconds,
                 timerEndTime: state.timerEndTime,
                 timerPaused: state.timerPaused,
@@ -391,6 +393,7 @@
                         questionsDatabase = parsed.questionsDatabase;
                         state.userAnswers = parsed.userAnswers || new Array(questionsDatabase.length).fill(null);
                         state.flagged = parsed.flagged || new Array(questionsDatabase.length).fill(false);
+                        state.studyLocked = parsed.studyLocked || new Array(questionsDatabase.length).fill(false);
                         state.timerSeconds = parsed.timerSeconds !== undefined ? parsed.timerSeconds : 150 * 60;
                         state.timerEndTime = parsed.timerEndTime || null;
                         state.timerPaused = parsed.timerPaused || false;
@@ -484,6 +487,7 @@
 
             state.userAnswers = new Array(questionsDatabase.length).fill(null);
             state.flagged = new Array(questionsDatabase.length).fill(false);
+            state.studyLocked = new Array(questionsDatabase.length).fill(false);
             state.timerSeconds = 150 * 60;
             state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
             state.timerPaused = false;
@@ -519,6 +523,19 @@
         }
 
         function setMode(newMode) {
+            if (newMode === state.mode) return;
+
+            // Aviso ao sair do Modo Prova para o Modo Estudo:
+            // consultar a fundamentação compromete a simulação de prova real.
+            if (newMode === 'study' && state.mode === 'exam' && !state.examFinished) {
+                const confirmarEstudo = confirm(
+                    "Ao entrar no Modo Estudo, você poderá visualizar a resposta correta e a fundamentação. " +
+                    "As questões que forem consultadas ficarão bloqueadas para alterações, mesmo se você voltar ao Modo Prova. " +
+                    "Deseja realmente mudar para o Modo Estudo?"
+                );
+                if (!confirmarEstudo) return;
+            }
+
             state.mode = newMode;
             document.getElementById('btnModeExam').className = newMode === 'exam' 
                 ? "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow"
@@ -528,8 +545,12 @@
                 ? "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow"
                 : "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
 
+            const progressPanel = document.getElementById('progressPanel');
+            if (progressPanel) progressPanel.classList.toggle('hidden', newMode === 'exam');
+
             saveStateToLocalStorage();
             displayCurrentQuestion();
+            updateRealtimeStats();
         }
 
         function setSubjectFilter(cat, resetIndex = true) {
@@ -632,6 +653,13 @@
 
             const selectedOpt = state.userAnswers[targetIdx];
 
+            // Ao consultar uma resposta no Modo Estudo, ela fica definitiva,
+            // mesmo que o usuário volte posteriormente ao Modo Prova.
+            if (state.mode === 'study' && selectedOpt !== null && !state.studyLocked[targetIdx]) {
+                state.studyLocked[targetIdx] = true;
+                saveStateToLocalStorage();
+            }
+
             q.options.forEach((optText, optIdx) => {
                 const optionDiv = document.createElement('div');
                 let optStyle = "p-3.5 rounded-xl border transition-all duration-200 cursor-pointer text-xs sm:text-sm flex items-start gap-3 ";
@@ -653,6 +681,12 @@
                 }
 
                 optionDiv.className = optStyle;
+                const answerLocked = state.userAnswers[targetIdx] !== null &&
+                    (state.mode === 'study' || state.studyLocked[targetIdx] || state.examFinished);
+                if (answerLocked) {
+                    optionDiv.classList.remove('cursor-pointer');
+                    optionDiv.classList.add('cursor-not-allowed');
+                }
                 optionDiv.onclick = () => selectOption(targetIdx, optIdx);
 
                 const radioCircle = document.createElement('div');
@@ -704,20 +738,45 @@
         }
 
         function selectOption(targetIdx, optIdx) {
-            if (state.examFinished && state.mode === 'exam') return;
+            if (state.examFinished) return;
 
-            if (state.userAnswers[targetIdx] !== null) {
-                return; 
+            // Questões consultadas no Modo Estudo nunca podem ser alteradas.
+            if (state.studyLocked[targetIdx]) return;
+
+            // No Modo Estudo, a primeira resposta é definitiva.
+            if (state.mode === 'study' && state.userAnswers[targetIdx] !== null) return;
+
+            // No Modo Prova, permite alterar a alternativa até a finalização.
+            state.userAnswers[targetIdx] = optIdx;
+
+            // Responder no Modo Estudo revela a fundamentação e bloqueia a questão.
+            if (state.mode === 'study') {
+                state.studyLocked[targetIdx] = true;
             }
 
-            state.userAnswers[targetIdx] = optIdx;
-            
             saveStateToLocalStorage();
             displayCurrentQuestion();
             renderQuestionGrid();
         }
 
         function navigateQuestion(direction) {
+            const currentQuestion = state.filteredQuestions[state.currentIndex];
+            if (!currentQuestion) return;
+
+            const currentOrigIdx = questionsDatabase.findIndex(item => item.idSimulado === currentQuestion.idSimulado);
+            const currentTargetIdx = currentOrigIdx !== -1 ? currentOrigIdx : state.currentIndex;
+
+            // Ao avançar no Modo Estudo depois de responder, confirma a saída
+            // porque a fundamentação já foi revelada e a questão ficará bloqueada.
+            if (direction > 0 && state.mode === 'study' && state.userAnswers[currentTargetIdx] !== null) {
+                const seguir = confirm(
+                    "A resposta e a fundamentação desta questão foram reveladas no Modo Estudo. " +
+                    "Isso compromete a experiência de uma prova real e a questão ficará bloqueada para alterações, " +
+                    "mesmo que você retorne ao Modo Prova. Deseja avançar?"
+                );
+                if (!seguir) return;
+            }
+
             const nextIndex = state.currentIndex + direction;
             if (nextIndex >= 0 && nextIndex < state.filteredQuestions.length) {
                 state.currentIndex = nextIndex;
@@ -756,6 +815,9 @@
 
             const pending = total - answered;
             const pct = total > 0 ? Math.round((answered / total) * 100) : 0;
+
+            const progressPanel = document.getElementById('progressPanel');
+            if (progressPanel) progressPanel.classList.toggle('hidden', state.mode === 'exam');
 
             document.getElementById('countAnswered').innerText = answered;
             document.getElementById('statCorrect').innerText = correct;
