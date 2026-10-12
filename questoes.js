@@ -718,20 +718,6 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 3,
         "explanation": "Gabarito: D. Fundamentação: Nota de Instrução nº PM3-002/02/26 (Sala de Operações), itens 6.1.8 e 6.3.7.11.1 a 6.3.7.11.3, em Assuntos Operacionais.pdf, p. 238 e 244-245. O SIR se destina a demandas não emergenciais previamente descritas, sem risco iminente, passíveis de solução remota. A e B ampliam ou restringem indevidamente os critérios; C cria condição não prevista. Trecho: “atendimento remoto de ocorrência classificada como não emergencial e previamente descrita em rol específico, caracterizada pela ausência de risco iminente [...] com o objetivo de aumentar a disponibilidade de US”."
       },
- {
-        "id": 50,com
-        "subject": "OPERACIONAL",
-        "topic": "COP Motorola - identificação da evidência digital",
-        "text": "QUESTÃO 50 — Sobre o preenchimento do campo ID (AnoMêsDiaTalão) na classificação de evidência digital produzida por COP, analise as proposições.\n\nI. Para evidência vinculada ao talão nº 37, ocorrido em 12/10/2026, o campo deve ser preenchido como “2026101237”.\nII. Para evidência decorrente de abordagem, intervenção ou interação sem relação com talão de ocorrência, deve ser lançado apenas o valor da data, como “20261012”.\nIII. Para padronizar o comprimento do campo, o número do talão deve ser completado com zeros à esquerda.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Assuntos Operacionais.pdf, POP de classificação das COP, “Esclarecimentos”, item 3, PDF p. 11. Evidência: o campo usa o formato “aaaammddtalão”, sem espaçamento; “Não colocar zeros, pontos, traços antes do número de talão”; sem relação com talão, lança-se apenas a data. I e II estão corretas. III contraria expressamente a proibição de zeros antes do talão. Distrator B inclui III; C exclui I; D inclui III. A combinação única sustentada é I e II."
-      },
       {
         "id": 51,
         "subject": "OPERACIONAL",
