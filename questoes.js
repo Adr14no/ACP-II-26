@@ -17,7 +17,7 @@
 
 const BANCO_GERAL_QUESTOES = [
    
-         {
+           {
         "id": 1,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - atribuições do CFP",
@@ -156,7 +156,149 @@ const BANCO_GERAL_QUESTOES = [
         ],
         "answer": 2,
         "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-001/02/25, itens 6.4.6 e 6.11.3. Em ocorrências de MDIP, o policial deve entregar a COP ao CFP ou equivalente, que deverá requisitar e recolher os equipamentos e providenciar pessoalmente o upload, sempre que possível em ato contínuo ao recebimento, sem prejuízo do gerenciamento da ocorrência. A atribui a tarefa ao CGP; B ignora o procedimento específico; D confunde o recolhimento/upload com a administração e custódia que passam ao Chefe da Seção PJMD após o upload."
-      }
+      },
+      {
+        "id": 11,
+        "subject": "OPERACIONAL",
+        "topic": "COP - ausência de gravação audiovisual",
+        "text": "11 - Durante a conferência dos registros de uma ocorrência, o comandante constata que um policial militar deixou de produzir a gravação audiovisual exigida para a situação, sem justificativa registrada. De acordo com a Diretriz nº PM3-001/02/25 (COP), qual providência procedimental deve ser adotada diante da ausência injustificada de registro?",
+        "options": [
+          "a) Instaurar imediatamente Processo Disciplinar de Rito Sumário, sem apuração preliminar.",
+          "b) Instaurar Investigação Preliminar (IP), conforme o procedimento previsto na diretriz.",
+          "c) Encaminhar obrigatoriamente o caso a Conselho de Disciplina, independentemente das circunstâncias.",
+          "d) Arquivar a ocorrência administrativa se houver registro escrito elaborado pela equipe."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/25 (COP), item 6.12, conforme o material de Assuntos Operacionais.pdf. O dispositivo indicado no material prevê Investigação Preliminar diante da ausência injustificada de registro. As demais alternativas antecipam procedimento diverso, impõem consequência não demonstrada ou afastam a apuração."
+      },
+      {
+        "id": 12,
+        "subject": "OPERACIONAL",
+        "topic": "COP - acesso do policial ao próprio registro",
+        "text": "12 - Um policial militar envolvido em ocorrência de grande repercussão será ouvido formalmente sobre os fatos. Antes de prestar suas declarações, solicita consultar a gravação realizada por sua própria Câmera Operacional Portátil (COP). Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
+        "options": [
+          "a) O acesso é vedado até o encerramento definitivo do procedimento apuratório.",
+          "b) O acesso depende necessariamente de autorização judicial específica.",
+          "c) É assegurado ao policial consultar o registro de sua COP relativo aos fatos em que participou, antes de prestar suas declarações oficiais, nos termos da diretriz.",
+          "d) O acesso é permitido somente ao encarregado da investigação, ainda que o registro seja da própria câmera do policial."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-001/02/25 (COP), item 6.8, conforme o material de Assuntos Operacionais.pdf. A diretriz assegura ao policial a consulta ao registro de sua COP antes das declarações oficiais sobre o fato. As alternativas A, B e D acrescentam restrições não indicadas no trecho normativo utilizado."
+      },
+      {
+        "id": 13,
+        "subject": "OPERACIONAL",
+        "topic": "Programa de Policiamento com Drones",
+        "text": "13 - Uma OPM pretende empregar aeronave não tripulada para apoiar uma ação de policiamento, com transmissão de imagens para melhorar a compreensão do cenário pelos responsáveis pela operação. Considerando a finalidade estabelecida na Diretriz nº PM3-005/02/24, assinale a alternativa correta.",
+        "options": [
+          "a) O emprego operacional de drones busca integrar recursos tecnológicos ao Sistema de Comando e Controle, ampliando a consciência situacional e contribuindo para mitigar o risco operacional.",
+          "b) O emprego de drones substitui a necessidade de coordenação e controle das Unidades de Serviço no terreno.",
+          "c) A utilização operacional de drones destina-se exclusivamente à produção de provas criminais após o encerramento da ocorrência.",
+          "d) O emprego de drones dispensa a observância das normas e dos parâmetros aplicáveis ao acesso ao espaço aéreo."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), itens 2 e 3.1–3.2, conforme Assuntos Operacionais.pdf. O programa busca integrar a tecnologia às estruturas institucionais e ao C2, elevando a consciência situacional e mitigando o risco operacional. B e C restringem ou substituem finalidades sem fundamento; D contraria a própria referência da diretriz à regulamentação do espaço aéreo."
+      },
+{
+  "id": 14,
+  "subject": "OPERACIONAL",
+  "topic": "NORSOP - Programas de Policiamento Primários",
+  "text": "14 - Ao revisar a distribuição dos recursos humanos e materiais de uma OPM territorial, um Capitão PM precisa distinguir os Programas de Policiamento Primários dos Complementares, conforme a NORSOP. Assinale a alternativa que apresenta exclusivamente os Programas de Policiamento Primários.",
+  "options": [
+    "a) Programa de Radiopatrulha e Programa de Força Tática.",
+    "b) Programa de Policiamento Escolar e Programa de Policiamento Comunitário.",
+    "c) Programa de Policiamento de Trânsito e Programa de Policiamento Rural.",
+    "d) Programa de Policiamento Escolar e Atividades Operacionais Diversas."
+  ],
+  "answer": 0,
+  "explanation": "Gabarito: A. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, item 6.4.1.1, conforme Assuntos Operacionais.pdf. Os Programas de Policiamento Primários são o Programa de Radiopatrulha e o Programa de Força Tática. O item 6.4.1.2 classifica Escolar, Comunitário, Trânsito e Rural como Programas Complementares; Atividades Operacionais Diversas constituem categoria própria, não um Programa Primário."
+},
+
+      {
+        "id": 15,
+        "subject": "OPERACIONAL",
+        "topic": "Programa de Força Tática - finalidade",
+        "text": "15 - Durante o planejamento operacional, o Comando de um Batalhão avalia o emprego da Força Tática para reforçar a resposta a ocorrências graves e reduzir os efeitos da criminalidade violenta em áreas de maior incidência. À luz da Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
+        "options": [
+          "a) O Programa de Força Tática destina-se prioritariamente à guarda fixa de instalações administrativas e à escolta rotineira de autoridades.",
+          "b) O Programa de Força Tática organiza o policiamento ostensivo e os apoios táticos executados pelas Forças Táticas, oferecendo suporte especializado a ocorrências e incidentes graves ou passíveis de repercussão.",
+          "c) O Programa de Força Tática tem como finalidade substituir permanentemente as Unidades de Serviço do Programa de Radiopatrulha no atendimento ordinário.",
+          "d) O Programa de Força Tática é destinado exclusivamente a operações de busca e salvamento sob comando do Corpo de Bombeiros."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-003/02/20 (Programa de Força Tática), itens 4.1, 4.2 e 6.1.1, conforme Assuntos Operacionais.pdf. A diretriz prevê controle de indicadores de criminalidade violenta, suporte operacional especializado e organização do policiamento e dos apoios táticos. As demais alternativas restringem ou alteram a finalidade descrita."
+      },
+      {
+        "id": 16,
+        "subject": "OPERACIONAL",
+        "topic": "Programa de Policiamento Escolar - adolescente apreendido em flagrante",
+        "text": "16 - Durante o patrulhamento no perímetro escolar, uma equipe presencia adolescente praticando ato infracional. Considerando as disposições do Estatuto da Criança e do Adolescente reproduzidas na Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), assinale a alternativa correta.",
+        "options": [
+          "a) O adolescente deve ser entregue à direção da escola, que decidirá se o encaminha à autoridade policial.",
+          "b) O adolescente apreendido em flagrante de ato infracional deve ser encaminhado desde logo à autoridade policial competente.",
+          "c) O adolescente deve ser encaminhado diretamente à unidade de internação, independentemente de apresentação à autoridade policial.",
+          "d) A equipe deve limitar-se a registrar o fato no relatório de serviço e liberar o adolescente, ainda que o flagrante esteja caracterizado."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-004/02/20, item 2.14, que reproduz o caput do art. 172 do ECA, conforme Assuntos Operacionais.pdf. O dispositivo determina o encaminhamento imediato à autoridade policial competente. As demais alternativas substituem ou suprimem essa etapa."
+      },
+{
+  "id": 17,
+  "subject": "OPERACIONAL",
+  "topic": "NORSOP - segurança viária durante o policiamento",
+  "text": "17 - Durante o patrulhamento, uma equipe identifica um obstáculo na via que prejudica a livre circulação e oferece risco aos usuários. Considerando as orientações de segurança viária previstas na NORSOP, assinale a alternativa correta quanto às providências a serem adotadas.",
+  "options": [
+    "a) Sinalizar imediatamente o local com os meios disponíveis e, em seguida, acionar pelo COPOM/CAD o órgão competente para os reparos emergenciais.",
+    "b) Acionar primeiro o órgão responsável pelos reparos e aguardar sua chegada antes de sinalizar o local.",
+    "c) Registrar a situação em relatório e manter o patrulhamento, deixando a sinalização a cargo do órgão responsável pela via.",
+    "d) Comunicar o obstáculo ao COPOM/CAD e aguardar orientação, sem utilizar os meios de sinalização disponíveis no local."
+  ],
+  "answer": 0,
+  "explanation": "Gabarito: A. Fundamentação: NORSOP, Anexo pertinente às orientações gerais de atuação do policial militar, item 4.14.2, conforme Assuntos Operacionais.pdf. Diante de obstáculo capaz de causar perigo, a orientação é providenciar imediatamente a sinalização com os meios disponíveis e, em seguida, acionar o órgão competente por meio do COPOM/CAD para os reparos emergenciais. B altera a sequência; C e D omitem a sinalização imediata exigida."
+},
+
+      {
+        "id": 18,
+        "subject": "OPERACIONAL",
+        "topic": "Programa de Policiamento Rural - conceitos",
+        "text": "18 - Ao organizar o emprego de uma Patrulha Rural, o comandante precisa identificar a finalidade do Programa de Policiamento Rural e o conceito de Patrulha Rural previstos na Diretriz nº PM3-007/02/20. Assinale a alternativa correta.",
+        "options": [
+          "a) O Programa de Policiamento Rural organiza o policiamento ostensivo geral voltado ao ambiente rural, e a Patrulha Rural é uma Unidade de Serviço composta por policiais militares designados e treinados para esse programa.",
+          "b) O Programa de Policiamento Rural destina-se exclusivamente à fiscalização ambiental, e a Patrulha Rural é composta por agentes civis municipais.",
+          "c) O Programa de Policiamento Rural substitui as atividades das OPM territoriais no ambiente rural, e a Patrulha Rural atua somente mediante requisição judicial.",
+          "d) O Programa de Policiamento Rural restringe-se à investigação posterior de crimes, e a Patrulha Rural não executa policiamento ostensivo."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.1.1 e 6.1.3, conforme Assuntos Operacionais.pdf. A diretriz define o programa como organização do policiamento ostensivo geral no ambiente rural e a Patrulha Rural como Unidade de Serviço composta por policiais designados e treinados para o programa."
+      },
+      {
+        "id": 19,
+        "subject": "OPERACIONAL",
+        "topic": "Policiamento Comunitário - atuação junto ao CONSEG",
+        "text": "19 - Ao assumir o comando de uma Subárea, um Capitão PM verifica que o Conselho Comunitário de Segurança (CONSEG) local está inativo. Considerando as atribuições de comando territorial previstas na NORSOP e as diretrizes do Programa de Policiamento Comunitário, assinale a alternativa correta.",
+        "options": [
+          "a) O comandante deve aguardar iniciativa exclusiva dos moradores, pois a OPM não possui atribuição relacionada à constituição ou ao funcionamento do CONSEG.",
+          "b) O comandante deve atuar junto à estrutura comunitária local, observando as atribuições previstas na NORSOP quanto à constituição e à participação da PM no CONSEG ou Núcleo de Ação Local, conforme aplicável.",
+          "c) O comandante deve substituir o CONSEG por órgão de investigação criminal, que passa a deliberar sobre prioridades de policiamento.",
+          "d) O comandante deve transferir integralmente a gestão do policiamento local à diretoria do CONSEG."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: NORSOP, Anexo C, quadro de funções de comando territorial, e Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), itens 6.4.3 e correlatos, conforme Assuntos Operacionais.pdf. O material prevê atuação dos comandantes na constituição e participação nos CONSEGs/NAL e estimula a integração comunitária. As alternativas A, C e D negam ou extrapolam as atribuições de comando."
+      },
+{
+  "id": 20,
+  "subject": "OPERACIONAL",
+  "topic": "SCIPM - Sala de Gerenciamento de Incidentes",
+  "text": "20 - Durante uma operação policial-militar, o Comandante responsável pelas ações em campo verifica a necessidade de integrar a atuação da Polícia Militar com órgãos externos. Segundo a Diretriz nº PM3-003/02/23 (SCIPM), qual alternativa descreve corretamente a instituição da Sala de Gerenciamento de Incidentes?",
+  "options": [
+    "a) O próprio Comandante responsável pelas operações em campo deve instituí-la obrigatoriamente, mesmo sem necessidade de integração com órgãos externos.",
+    "b) A autoridade policial-militar superior ao Comandante responsável pelas operações em campo poderá instituí-la, por solicitação ou de ofício, sempre que houver necessidade de integração com órgãos externos à Polícia Militar.",
+    "c) A Sala somente pode ser instituída após o encerramento das ações em campo, para consolidar os relatórios das agências envolvidas.",
+    "d) A Sala deve ser instituída exclusivamente quando houver participação de duas ou mais OPM da mesma Matriz Operacional, independentemente da integração com órgãos externos."
+  ],
+  "answer": 1,
+  "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.5.4.4.1, conforme Assuntos Operacionais.pdf. A Sala de Gerenciamento de Incidentes será instituída por autoridade policial-militar superior ao Comandante responsável pelas operações em campo, por solicitação ou de ofício, sempre que houver necessidade de integração com órgãos externos à Polícia Militar. A atribui a competência à autoridade errada e torna a instituição obrigatória em qualquer caso; C desloca a instituição para depois da operação; D cria requisito não previsto no dispositivo."
+}
 ];
 
 // Estrutura de Exportação e Integração ao index.html
