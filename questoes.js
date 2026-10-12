@@ -16,300 +16,366 @@
  */
 
 const BANCO_GERAL_QUESTOES = [
+   {
+        id: 71,
+        idSimulado: 71,
+        subject: "OPERACIONAL",
+        topic: "COP — classificação de evidência relacionada a MDIP",
+        text: "Após uma intervenção policial com resultado morte, o policial usuário da COP encerra a gravação e precisa classificá-la no sistema de evidências digitais. Conforme a Diretriz nº PM3-001/02/25, qual procedimento corresponde à classificação normativa da evidência?",
+        options: [
+            "a) Classificá-la como Polícia Judiciária (PJ), sem subetiqueta, pois toda ocorrência com resultado morte tramita exclusivamente na Justiça comum.",
+            "b) Classificá-la como Polícia Judiciária Militar (PJM), com a subetiqueta Morte Decorrente de Intervenção Policial (MDIP), conforme o rol de etiquetas previsto.",
+            "c) Classificá-la como Polícia Administrativa (PA), utilizando a subetiqueta MDIP apenas após autorização do CFP.",
+            "d) Classificá-la como Divulgação ao CComSoc, pois a repercussão do fato determina a etiqueta principal."
+        ],
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/25, itens 6.7.1.5, 6.7.2 e 6.7.3, em Assuntos Operacionais.pdf, p. 38–39. Trecho: a etiqueta PJM contém evidências de interesse policial para inquéritos e processos da Justiça Militar e admite subetiquetas como MDIP; a Coord Op PM define e atualiza o rol de etiquetas. A é incorreta porque apaga a classificação PJM e a subetiqueta indicada; C atribui ao CFP uma autorização que não consta da regra; D confunde a etiqueta de divulgação com a classificação investigativa. Trecho normativo de suporte: “Essas circunstâncias poderão receber subetiquetas, como Morte Decorrente de Intervenção Policial (MDIP)” (item 6.7.1.5)."
+    },
     {
-        "id": 50,
-        "subject": "OPERACIONAL",
-        "topic": "COP Motorola - identificação da evidência digital",
-        "text": "Sobre o preenchimento do campo ID (AnoMêsDiaTalão) na classificação de evidência digital produzida por COP, analise as proposições.\n\nI. Para evidência vinculada ao talão nº 37, ocorrido em 12/10/2026, o campo deve ser preenchido como “2026101237”.\nII. Para evidência decorrente de abordagem, intervenção ou interação sem relação com talão de ocorrência, deve ser lançado apenas o valor da data, como “20261012”.\nIII. Para padronizar o comprimento do campo, o número do talão deve ser completado com zeros à esquerda.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
+        id: 73,
+        idSimulado: 73,
+        subject: "OPERACIONAL",
+        topic: "NORSOP — planejamento tático",
+        text: "Ao revisar um plano de emprego, um comandante precisa distinguir o planejamento tático do planejamento estratégico e do operacional. Segundo a NORSOP, qual descrição corresponde ao nível tático?",
+        options: [
+            "a) Planejamento de longo prazo que estabelece as estratégias globais do Comando-Geral e orienta o emprego combinado dos órgãos institucionais.",
+            "b) Plano gerencial de médio prazo que desdobra o planejamento estratégico nos escalões operacionais e administrativos, definindo objetivos setoriais e metodologia, sem substituir os objetivos estratégicos.",
+            "c) Plano de ação voltado exclusivamente à execução imediata de cada ocorrência por uma única Unidade de Serviço.",
+            "d) Documento que consolida apenas a distribuição territorial de Setores e Subsetores, sem estabelecer objetivos de gestão."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Assuntos Operacionais.pdf, POP de classificação das COP, “Esclarecimentos”, item 3, PDF p. 11. Evidência: o campo usa o formato “aaaammddtalão”, sem espaçamento; “Não colocar zeros, pontos, traços antes do número de talão”; sem relação com talão, lança-se apenas a data. I e II estão corretas. III contraria expressamente a proibição de zeros antes do talão. Distrator B inclui III; C exclui I; D inclui III. A combinação única sustentada é I e II."
-      },
-      {
-        "id": 51,
-        "subject": "OPERACIONAL",
-        "topic": "NORSOP - Matriz Operacional III e Nível de Resposta 4",
-        "text": "Uma ocorrência apresenta gravidade e complexidade que exigem recursos humanos, materiais e capacitações indisponíveis nas OPM territoriais. Para classificar corretamente o apoio, o oficial deve relacionar a Matriz Operacional e o Nível de Resposta previstos na NORSOP. Assinale a alternativa correta.",
-        "options": [
-          "a) Matriz Operacional III — Apoios Especializados; Nível de Resposta 4.",
-          "b) Matriz Operacional II — Apoios Táticos; Nível de Resposta 2.",
-          "c) Matriz Operacional III — Apoios Especializados; Nível de Resposta 3.",
-          "d) Matriz Operacional I — recursos locais; Nível de Resposta 4."
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, item 6.3.2, em Assuntos Operacionais.pdf, p. 255. Trecho: o nível tático, também chamado Plano Gerencial, desdobra o planejamento estratégico e define objetivos setoriais de médio prazo, podendo complementá-los, mas não substituí-los. A descreve o nível estratégico; C corresponde à lógica de plano de ação operacional e restringe indevidamente sua abrangência; D reduz o planejamento tático à configuração territorial. Trecho normativo de suporte: “O Nível Tático [...] consiste no desdobramento do planejamento estratégico [...] por meio da definição dos objetivos setoriais de médio prazo” (item 6.3.2)."
+    },
+    {
+        id: 74,
+        idSimulado: 74,
+        subject: "OPERACIONAL",
+        topic: "NORSOP — distinção entre princípios e diretrizes básicas",
+        text: "Na revisão doutrinária da NORSOP, um oficial precisa identificar um conjunto formado exclusivamente por PRINCÍPIOS básicos, sem incluir diretrizes básicas. Assinale a alternativa correta.",
+        options: [
+            "a) Acessibilidade, proatividade e autonomia operacional.",
+            "b) Polícia Comunitária, Excelência na Gestão e Direitos Humanos.",
+            "c) Equilíbrio de meios/recursos, universalidade e acessibilidade.",
+            "d) Proatividade, universalidade e Polícia Comunitária."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: NORSOP, Diretriz nº PM3-001/02/20, itens 6.2.1.3 e 6.2.2.4, Assuntos Operacionais.pdf, PDF p. 253-254. Trecho: a Matriz III desenvolve atividades peculiares quando gravidade, especificidade ou complexidade exigem recursos/capacitação não disponíveis às OPM territoriais; o Nível 4 corresponde a apoios especializados. B descreve apoio tático da Matriz II/Nível 2; C associa indevidamente a Matriz III ao Nível 3, que é de recursos adicionais vinculados diretamente aos Cmdo Pol; D combina recursos locais da Matriz I com Nível 4. Só A preserva as duas classificações."
-      },
-      {
-        "id": 52,
-        "subject": "OPERACIONAL",
-        "topic": "SCIPM - atribuições do Estado-Maior do Comandante do Incidente",
-        "text": "No SCIPM, o Comandante do Incidente distribui funções entre integrantes de seu Estado-Maior. Qual alternativa associa corretamente cada função à atribuição normativa correspondente?",
-        "options": [
-          "a) Segurança: assessorar sobre riscos à segurança operacional de respondedores e vítimas; Chefe de Planejamento: assessorar na elaboração dos planos de ação, captação de recursos, análise de informações sensíveis e registro das ações; Chefe de Logística: prover instalações, serviços, materiais e equipamentos necessários às missões planejadas.",
-          "b) Segurança: transmitir informações à imprensa; Chefe de Planejamento: prover alimentação e instalações; Chefe de Logística: analisar informações sensíveis e registrar as ações implementadas.",
-          "c) Segurança: prover materiais e equipamentos; Chefe de Planejamento: transmitir informações à imprensa; Chefe de Logística: assessorar o Comandante do Incidente sobre riscos à integridade física e mental dos respondedores.",
-          "d) Segurança: elaborar os planos de ação e registrar todas as ações; Chefe de Planejamento: assessorar exclusivamente sobre riscos à segurança dos respondedores; Chefe de Logística: atuar como porta-voz perante os órgãos de imprensa."
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, seção 6.1, em Assuntos Operacionais.pdf, p. 251–252. O material separa como princípios básicos Polícia Comunitária, Excelência na Gestão e Direitos Humanos; acessibilidade, proatividade, autonomia operacional, equilíbrio de meios/recursos e universalidade são diretrizes básicas. A e C reúnem diretrizes; D mistura diretrizes com um princípio, portanto não atende ao comando de selecionar exclusivamente princípios. Trecho normativo de suporte: “PRINCÍPIOS básicos: Polícia Comunitária; Excelência na Gestão; Direitos Humanos” e “DIRETRIZES básicas: Acessibilidade; Proatividade; Autonomia Operacional; Equilíbrio de meios/recursos; Universalidade” (seção 6.1)."
+    },
+    {
+        id: 75,
+        idSimulado: 75,
+        subject: "OPERACIONAL",
+        topic: "NORSOP — Nível de Resposta 3",
+        text: "Uma ocorrência excede a capacidade operativa das OPM territoriais subordinadas, mas a avaliação não indica necessidade de recursos especializados próprios da Matriz Operacional III. A resposta exige emprego adicional de efetivo e meios vinculados diretamente ao Comando de Policiamento. Qual nível de resposta corresponde à situação?",
+        options: [
+            "a) Nível de Resposta 1, pois a atuação permanece no âmbito territorial.",
+            "b) Nível de Resposta 2, pois qualquer reforço de uma Unidade de Serviço configura apoio tático.",
+            "c) Nível de Resposta 3, pois prevê recursos adicionais vinculados diretamente aos Comandos de Policiamento quando excedida a capacidade operativa das OPM territoriais subordinadas.",
+            "d) Nível de Resposta 4, pois todo emprego de efetivo externo à OPM territorial constitui apoio especializado."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), itens 6.4.2.2.1, 6.4.2.3.2 e 6.4.2.3.3, Assuntos Operacionais.pdf, PDF p. 148-149. O item 6.4.2.2.1 atribui à Segurança o assessoramento sobre riscos operacionais; 6.4.2.3.2 atribui ao Ch Plan planos, recursos, informações e registros; 6.4.2.3.3 atribui ao Ch Log instalações, serviços e suprimentos. B troca Segurança por Relações Públicas e Ch Plan por Logística; C desloca para Segurança atribuição logística, para Planejamento a função de imprensa e para Logística a função de Segurança; D permuta as atribuições de Planejamento, Segurança e Relações Públicas. As três correspondências de A são as previstas."
-      },
-      {
-        "id": 53,
-        "subject": "OPERACIONAL",
-        "topic": "Sistema de C2 - definição do CC2 em operações regionais e estaduais",
-        "text": "A Coordenação Operacional analisa duas operações: a primeira abrange mais de uma região e envolve OPM de Matrizes Operacionais distintas; a segunda possui abrangência estadual. Considerando a Diretriz de C2, qual designação de Centro de Comando e Controle (CC2) corresponde a cada situação?",
-        "options": [
-          "a) Na primeira, o Coord Op PM define temporariamente um COPOM Regional comum aos Comandos de Policiamento interessados; na segunda, o COPOM São Paulo assume as atribuições de CC2.",
-          "b) Na primeira, o COPOM São Paulo assume obrigatoriamente o CC2; na segunda, cada COPOM Regional atua isoladamente, sem estrutura comum.",
-          "c) Na primeira, a Sala de Operações de uma Companhia assume permanentemente o CC2; na segunda, o Coord Op PM deve escolher qualquer COPOM Regional.",
-          "d) Na primeira, o Comando-Geral assume diretamente o CC2; na segunda, o CC2 deve ser definido pelo comandante da OPM territorial do local inicial."
+        answer: 2,
+        explanation: "Gabarito: C. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, itens 6.2.2.1 a 6.2.2.4, em Assuntos Operacionais.pdf, p. 253–254. Trecho: o Nível 3 envolve emprego adicional de recursos humanos e meios vinculados diretamente aos Cmdo Pol quando excedida a capacidade operativa das OPM territoriais subordinadas. A descreve recursos locais do Nível 1; B confunde apoio tático da Matriz II/Nível 2 com reforço do Cmdo Pol; D confunde reforço do Nível 3 com apoio especializado do Nível 4. Trecho normativo de suporte: “Nível de Resposta 3: emprego adicional de recursos humanos e meios materiais vinculados diretamente aos Comandos de Policiamento [...] em situações que excedem a capacidade operativa das OPM Territoriais subordinadas” (item 6.2.2.3)."
+    },
+    {
+        id: 76,
+        idSimulado: 76,
+        subject: "JURIDICO",
+        topic: "Lei nº 18.442/26 — requisito para o comando da PMESP",
+        text: "Considerando a regra apresentada no material autorizado sobre a Lei nº 18.442/26 para o comando da Polícia Militar, assinale a alternativa que reproduz corretamente o requisito referente ao oficial que exerce o Comando-Geral.",
+        options: [
+            "a) Oficial PM da ativa, de carreira e do último posto do Quadro de Oficiais de Estado-Maior (QOEM).",
+            "b) Oficial PM da ativa, de carreira e do último posto de qualquer quadro de oficiais da Corporação.",
+            "c) Oficial PM da ativa do QOE, desde que tenha concluído curso de habilitação e esteja no último posto do quadro.",
+            "d) Oficial PM da ativa ou da reserva remunerada, desde que ocupe o posto de Coronel PM e seja escolhido pelo Secretário da Segurança Pública."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/23 (Sistema de C2), itens 6.5.4.1.6 e 6.5.4.1.7, Assuntos Operacionais.pdf, PDF p. 204. Trecho: nas operações em mais de uma região e/ou com OPM de Matrizes distintas, o Coord Op PM define COPOM Regional como CC2 temporário comum; nas operações de abrangência estadual, o COPOM São Paulo assume as atribuições. B inverte as hipóteses e nega a estrutura comum; C confunde CC2 com Sala de Operações de nível Btl/Cia e inventa permanência; D atribui a decisão a autoridades que não são indicadas nesses itens. A é a única que respeita as duas condições."
-      },
-      {
-        "id": 54,
-        "subject": "OPERACIONAL",
-        "topic": "SCIPM - designação do Comandante do Incidente em incidentes estáticos e dinâmicos",
-        "text": "À luz do SCIPM, analise as proposições sobre a designação do Comandante do Incidente (Cmt Inc) em incidentes críticos policiais.\n\nI. Nos incidentes estáticos, o Cmt Inc será, em regra, policial militar da OPM da Matriz Operacional I com responsabilidade territorial sobre o local, ou da Matriz III quando se tratar de Nível de Resposta 4, conforme a natureza do fenômeno.\nII. Nos incidentes dinâmicos, o Chefe de Operações do COPOM será o Cmt Inc até a estabilização, quando o evento passa a assumir características de incidente estático.\nIII. Nos incidentes dinâmicos, o policial de maior posto ou graduação presente no local substitui automaticamente o Chefe de Operações do COPOM como Cmt Inc e assume toda a função de comando.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
+        answer: 0,
+        explanation: "Gabarito: A. Fundamentação: Lei nº 18.442/26, regra de comando da Corporação, conforme Assuntos Juridicos-administrativos.pdf e Anexo B do edital ACP II-26. O material indica comando por Oficial PM da ativa, de carreira e do último posto do QOEM. B amplia a regra para qualquer quadro; C substitui o QOEM pelo QOE; D admite reserva remunerada e atribui a escolha ao Secretário, elementos não sustentados pelo texto autorizado. Trecho normativo de suporte: “Comandada exclusivamente por Oficial PM da ativa, de carreira e do último posto do Quadro de Oficiais de Estado-Maior” (material autorizado sobre a Lei nº 18.442/26)."
+    },
+    {
+        id: 77,
+        idSimulado: 77,
+        subject: "JURIDICO",
+        topic: "Lei nº 18.442/26 — precedência funcional entre quadros",
+        text: "Dois Oficiais PM da ativa possuem o mesmo posto e exercem funções que, no caso concreto, não estabelecem superioridade funcional entre si. Para a distinção de precedência funcional entre quadros, qual regra consta do material autorizado?",
+        options: [
+            "a) Prevalece sempre o oficial de maior idade, independentemente do quadro a que pertença.",
+            "b) O Oficial do QOE precede o do QOEM por possuir habilitação especializada.",
+            "c) O Oficial do QOEM tem precedência funcional, em igualdade de posto, sobre os Oficiais PM dos demais quadros.",
+            "d) A precedência entre quadros somente se aplica quando os oficiais possuem postos diferentes."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), itens 6.4.2.1.1.1 e 6.4.2.1.1.2.1-6.4.2.1.1.2.2, Assuntos Operacionais.pdf, PDF p. 147-148. I reproduz a regra para incidentes estáticos; II reproduz a regra para incidentes dinâmicos. III é incorreta: o policial de maior posto/graduação presente no local, ou o mais antigo, responde pelo engajamento e manobra do contingente no teatro de operações, sem que o item o transforme automaticamente em Cmt Inc no lugar do Ch Op COPOM. B inclui III; C exclui I; D inclui III. Apenas I e II são sustentadas."
-      },
-      {
-        "id": 55,
-        "subject": "OPERACIONAL",
-        "topic": "Programa de Policiamento com Drones - composição e funções da Equipe Drone",
-        "text": "Considerando a composição mínima da Equipe Drone e as funções dos seus integrantes, analise as proposições.\n\nI. A equipe será composta, no mínimo, pelo Piloto Remoto em Comando (RPIC) e pelo Observador de UAS.\nII. O policial militar na função de Segurança é componente obrigatório em toda Equipe Drone, sem possibilidade de exceção.\nIII. O Observador auxilia a condução segura do voo pela observação visual da aeronave e do espaço aéreo e pela comunicação permanente com o RPIC, sem uso de equipamentos óticos, exceto lentes corretivas.",
-        "options": [
-          "a) Apenas I e III.",
-          "b) Apenas I e II.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
+        answer: 2,
+        explanation: "Gabarito: C. Fundamentação: Lei nº 18.442/26, art. 4º, § 3º, conforme Assuntos Juridicos-administrativos.pdf. Trecho normativo reproduzido no material: os Oficiais do QOEM terão precedência funcional, em igualdade de postos, com os Oficiais PM dos demais Quadros. A confunde precedência funcional com critério de antiguidade; B inverte a regra; D nega a condição expressa de igualdade de postos. Trecho normativo de suporte: “Os Oficiais PM do QOEM terão precedência funcional, em igualdade de postos, com os Oficiais PM dos demais Quadros” (Lei nº 18.442/26, art. 4º, § 3º)."
+    },
+    {
+        id: 78,
+        idSimulado: 78,
+        subject: "JURIDICO",
+        topic: "Lei nº 18.442/26 — exclusões do limite de efetivo",
+        text: "Ao conferir o limite de efetivo previsto no art. 3º da Lei nº 18.442/26, um oficial deve identificar as categorias que a própria norma exclui da contagem. Qual alternativa reúne o conjunto previsto no material autorizado?",
+        options: [
+            "a) Aspirante a Oficial PM; Cadete, Aluno-Oficial, Aluno-Sargento e Aluno-Soldado PM; militar da reserva revertido ao serviço ativo; e PM temporário.",
+            "b) Aspirante a Oficial PM; todos os Oficiais do QOE; militares reformados; e praças da reserva remunerada.",
+            "c) Cadete e alunos em formação, mas não o Aspirante a Oficial nem o militar da reserva revertido ao serviço ativo.",
+            "d) Aspirante a Oficial PM, Cadete e Aluno-Soldado, excluídos os demais alunos em formação e o PM temporário."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-005/02/24, itens 6.4.2 a 6.4.2.3, Assuntos Operacionais.pdf, PDF p. 439. O item 6.4.2 define RPIC e Observador como composição mínima e diz que a equipe deve, preferencialmente, ser integrada por PM na função de Segurança. Assim, I e III estão corretas; II transforma indevidamente uma composição preferencial em requisito obrigatório. B e D incluem II; C exclui I e inclui II. A é a única combinação correta."
-      },
-      {
-        "id": 56,
-        "subject": "OPERACIONAL",
-        "topic": "Sistema de C2 - confidencialidade e disponibilidade das informações da Sala de Operações",
-        "text": "Na gestão das informações da Sala de Operações, devem ser distinguidas as regras de confidencialidade e disponibilidade. Analise as proposições.\n\nI. A confidencialidade exige resguardar o caráter sigiloso das informações sensíveis e reforçar o cumprimento da Lei de Acesso à Informação e da Lei Geral de Proteção de Dados.\nII. A disponibilidade autoriza fornecer informações a qualquer integrante da Instituição que as solicite, ainda que não tenha necessidade operacional de conhecê-las.\nIII. Dados preservados para consulta futura podem ser suprimidos pelo operador sempre que deixarem de ser úteis ao turno, sem anuência do Supervisor da Sala de Operações.",
-        "options": [
-          "a) Apenas I.",
-          "b) Apenas I e II.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
+        answer: 0,
+        explanation: "Gabarito: A. Fundamentação: Lei nº 18.442/26, art. 3º e parágrafo único, conforme Assuntos Juridicos-administrativos.pdf. O material enumera Aspirante a Oficial; Cadete, Aluno-Oficial, Aluno-Sargento e Aluno-Soldado; militar da reserva revertido ao serviço ativo; e PM temporário. B inclui categorias não listadas; C omite o Aspirante e o militar revertido; D omite alunos e o PM temporário expressamente incluídos na exceção. Trecho normativo de suporte: “Não serão considerados nesses limites: o Aspirante a Oficial PM; o Cadete PM [...] o militar do Estado da reserva revertido ao serviço ativo; o PM temporário” (art. 3º, parágrafo único)."
+    },
+    {
+        id: 79,
+        idSimulado: 79,
+        subject: "JURIDICO",
+        topic: "RDPM — conversão de permanência disciplinar em serviço extraordinário",
+        text: "Um policial militar, após a publicação de sanção de permanência disciplinar, requer a conversão de parte do período em prestação de serviço extraordinário. À luz dos arts. 18 e 19 do RDPM, qual alternativa reúne corretamente as condições normativas?",
+        options: [
+            "a) A conversão é automática quando requerida em até cinco dias e pode abranger todo o período, desde que o serviço seja prestado em dias úteis.",
+            "b) A autoridade que aplicou a punição pode deferir a conversão mediante decisão motivada, se não houver prejuízo à hierarquia e à disciplina; o pedido deve ser encaminhado em três dias da publicação, e o limite de conversão é de cinco dias.",
+            "c) A autoridade superior deve deferir a conversão, que pode ser solicitada até dez dias após a ciência e não interfere no pedido de reconsideração.",
+            "d) A conversão depende de autorização judicial, pode abranger até dez dias e deve ser cumprida imediatamente após o término do serviço ordinário."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/23 (Sistema de C2), itens 6.2.1.1 e 6.2.1.2.1-6.2.1.2.2, Assuntos Operacionais.pdf, PDF p. 239. I corresponde à regra de confidencialidade. II contraria a disponibilidade: a informação é fornecida a quem tenha necessidade de conhecer, no momento correto e para atender demanda operacional da PM. III contraria a regra de preservação: dados que devam permanecer para consulta futura não podem ser suprimidos sem anuência do Supervisor SOp. B inclui II; C inclui II e III; D inclui ambas as proposições incorretas. Apenas I está correta."
-      },
-      {
-        "id": 57,
-        "subject": "OPERACIONAL",
-        "topic": "SCIPM - Plano de Ação do Incidente (PAI)",
-        "text": "Durante a estruturação da resposta a um incidente, o Estado-Maior precisa distinguir o Plano de Ação do Incidente (PAI) de outros instrumentos do SCIPM. Assinale a alternativa que reúne os elementos normativos próprios do PAI.",
-        "options": [
-          "a) Descrição, no tempo e no espaço, das ações, procedimentos e rotinas a implementar; resultante de planejamento por esboço emergencial; elaborado a partir dos objetivos definidos e desenvolvido pela metodologia 5W2H.",
-          "b) Quadro físico com informações atualizadas dos recursos humanos e materiais empregados e dos serviços disponíveis, destinado ao gerenciamento dos recursos.",
-          "c) Estrutura de resposta estabelecida conforme amplitude, complexidade, peculiaridades do ambiente e riscos, com módulos incorporados ou desmobilizados por determinação do Cmt Inc.",
-          "d) Obrigação de prestar contas sobre planejamento, extensão do controle das ações, recursos empregados e responsabilidade pessoal de cada respondedor."
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: LC nº 893/01 (RDPM), arts. 18, caput e §§ 3º–4º, e 19, §§ 1º–3º, em Assuntos Juridicos-administrativos.pdf. A conversão depende de juízo motivado da autoridade que aplicou a punição e não pode prejudicar hierarquia e disciplina; o pedido é de três dias da publicação, o limite é de cinco dias e o pedido elide a reconsideração. A erra prazo, automaticidade e limite; C erra autoridade, prazo e efeito sobre o recurso; D inventa autorização judicial e contraria o limite e a vedação de execução imediatamente após serviço ordinário. Trecho normativo de suporte: “O prazo para o encaminhamento do pedido de conversão será de 3 (três) dias” e “o limite máximo de conversão [...] é de 5 (cinco) dias” (arts. 18, § 3º, e 19, § 1º)."
+    },
+    {
+        id: 80,
+        idSimulado: 80,
+        subject: "JURIDICO",
+        topic: "RDPM — responsabilidade solidária do superior hierárquico",
+        text: "Na apuração de transgressão disciplinar de subordinado, a responsabilidade solidária do superior hierárquico, com incidência das mesmas sanções da transgressão, ocorre em qual das hipóteses previstas no RDPM?",
+        options: [
+            "a) Somente quando o superior estiver presente e tiver autorizado expressamente a conduta.",
+            "b) Apenas quando o superior estiver ausente do local e não tiver recebido comunicação formal do fato.",
+            "c) Quando presenciar a transgressão e deixar de fazê-la cessar imediatamente, ou quando concorrer diretamente, por ação ou omissão, para o cometimento, mesmo sem estar presente.",
+            "d) Sempre que o subordinado praticar transgressão durante o serviço, independentemente de qualquer conduta do superior."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.11, Assuntos Operacionais.pdf, PDF p. 146. O PAI é descrito como plano temporal e espacial de ações, procedimentos e rotinas, resultante de esboço emergencial, baseado nos objetivos e desenvolvido em 5W2H. B define gerenciamento dos recursos (6.2.4.6); C define organização modular (6.2.4.10); D define prestação de contas/Accountability (6.2.4.12). São conceitos verdadeiros do mesmo sistema, mas não definem o PAI."
-      },
-      {
-        "id": 58,
-        "subject": "OPERACIONAL",
-        "topic": "Programa de Policiamento Comunitário - continuidade do vínculo com a comunidade",
-        "text": "À luz das orientações gerais para execução do Policiamento Comunitário, analise as proposições.\n\nI. O policial empregado deve dispor de tempo suficiente para conquistar a confiança e desenvolver parcerias com a comunidade, sendo desaconselhável a substituição constante.\nII. O policial deve estar apto a coletar informações junto à comunidade e entrevistar moradores e outras partes interessadas para obter indicadores úteis ao policiamento comunitário.\nIII. O efetivo deve conhecer as características da comunidade, manter vínculos permanentes com cidadãos e lideranças e adotar postura proativa na busca de soluções, incluindo a elaboração de RAIA, se for o caso.\nIV. O policial deve receber críticas e sugestões da comunidade, mas o encaminhamento delas é dispensável quando não houver consenso entre os envolvidos.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I, II e III.",
-          "c) Apenas II, III e IV.",
-          "d) I, II, III e IV."
+        answer: 2,
+        explanation: "Gabarito: C. Fundamentação: LC nº 893/01 (RDPM), art. 11, § 2º, itens 1 e 2, em Assuntos Juridicos-administrativos.pdf. O dispositivo prevê as duas hipóteses descritas em C. A restringe indevidamente a responsabilidade à autorização expressa; B inverte o requisito de presença para a primeira hipótese e ignora a contribuição direta; D transforma a responsabilidade em automática, sem os requisitos legais. Trecho normativo de suporte: “presenciar o cometimento da transgressão deixando de atuar para fazê-la cessar imediatamente” ou “concorrer diretamente, por ação ou omissão, para o cometimento [...] mesmo não estando presente” (art. 11, § 2º)."
+    },
+    {
+        id: 81,
+        idSimulado: 81,
+        subject: "JURIDICO",
+        topic: "RDPM — âmbito subjetivo de aplicação",
+        text: "Ao delimitar o âmbito subjetivo do Regulamento Disciplinar da Polícia Militar, qual alternativa reproduz integralmente as exceções expressas no parágrafo único do art. 2º do RDPM?",
+        options: [
+            "a) Militares do Estado na reserva remunerada e reformados, além dos agregados.",
+            "b) Militares do Estado ocupantes de cargos públicos ou eletivos e Magistrados da Justiça Militar.",
+            "c) Apenas militares do Estado que estejam afastados temporariamente do serviço ativo.",
+            "d) Todos os militares do Estado que exerçam função administrativa, ainda que não ocupem cargo público."
         ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), itens 6.5.1 a 6.5.3.3, Assuntos Operacionais.pdf, PDF p. 422. I corresponde ao tempo necessário para conquistar confiança e à orientação contra substituição constante; II decorre do item 6.5.2; III reúne as orientações dos itens 6.5.3.1 e 6.5.3.2. IV é incorreta: o item 6.5.3.3 exige postura receptiva a críticas e sugestões, buscando seu devido encaminhamento. A omite III; C inclui IV e omite I; D inclui IV."
-      },
-      {
-        "id": 59,
-        "subject": "OPERACIONAL",
-        "topic": "COP - reiteração do acionamento manual quando não há acionamento remoto",
-        "text": "Em uma OPM cujas COP não dispõem de acionamento remoto-intencional nem remoto-automático, analise as providências previstas para reforçar a gravação de fatos de interesse policial.\n\nI. Em ocorrência despachada pelo COPOM/CAD, o despachador deve, além de transmitir os elementos-base, reiterar à Unidade de Serviço a necessidade de acionamento manual.\nII. Se a Unidade de Serviço comunicar diretamente ao COPOM/CAD uma circunstância de intervenção policial ou interação com o público, o despachador também deve reiterar o acionamento manual.\nIII. Os escalões de supervisão, como CFP e CGP ou equivalentes, devem reforçar a necessidade por rede rádio ou fiscalização direta.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: LC nº 893/01 (RDPM), art. 2º, caput e parágrafo único, em Assuntos Juridicos-administrativos.pdf. A regra geral alcança militares do serviço ativo, reserva remunerada, reformados e agregados; as exceções expressas são ocupantes de cargos públicos ou eletivos e Magistrados da Justiça Militar. A lista pessoas submetidas à regra geral; C cria uma exceção inexistente; D amplia a exceção para qualquer função administrativa. Trecho normativo de suporte: “O disposto neste artigo não se aplica: 1 - aos militares do Estado, ocupantes de cargos públicos ou eletivos; 2 - aos Magistrados da Justiça Militar” (art. 2º, parágrafo único)."
+    },
+    {
+        id: 82,
+        idSimulado: 82,
+        subject: "JURIDICO",
+        topic: "RDPM — critérios de antiguidade em igualdade de posto ou graduação",
+        text: "Dois militares do Estado estão em igualdade de posto ou graduação e não há regra específica de precedência funcional aplicável. Qual sequência reproduz os critérios de antiguidade previstos no art. 4º do RDPM?",
+        options: [
+            "a) Maior idade; data da admissão; classificação no curso; graus hierárquicos anteriores; data da última promoção.",
+            "b) Data da última promoção; prevalência sucessiva dos graus hierárquicos anteriores; classificação no curso de formação ou habilitação; data de nomeação ou admissão; maior idade.",
+            "c) Quadro de origem; função exercida; data da admissão; maior idade; data da última promoção.",
+            "d) Data da última promoção; maior idade; precedência funcional; tempo total de serviço; classificação no curso."
         ],
-        "answer": 3,
-        "explanation": "Gabarito: D. Fonte: Diretriz nº PM3-001/02/25 (COP), itens 6.5.1.1 a 6.5.1.3, Assuntos Operacionais.pdf, PDF p. 36. Os três subitens preveem, respectivamente, a reiteração pelo despachador em ocorrência despachada, a reiteração quando a US comunica diretamente circunstância de intervenção/interação e o reforço pelos escalões de supervisão por rádio ou fiscalização direta. A, B e C omitem uma das providências expressamente previstas."
-      },
-      {
-        "id": 60,
-        "subject": "OPERACIONAL",
-        "topic": "NORSOP - emprego supletivo de Unidades de Serviço das Matrizes II e III",
-        "text": "Uma Unidade de Serviço vinculada à Matriz Operacional II ou III não está executando, naquele momento, sua atividade típica de policiamento ostensivo. À luz da NORSOP, qual emprego supletivo pode ser admitido?",
-        "options": [
-          "a) Desenvolver patrulhamento preventivo no Nível de Resposta 1, em caráter supletivo.",
-          "b) Ser automaticamente reclassificada como Unidade da Matriz Operacional I para todos os fins.",
-          "c) Permanecer obrigatoriamente sem emprego operacional até ser acionada para sua atividade típica.",
-          "d) Executar apenas apoio especializado de Nível de Resposta 4, ainda que não esteja realizando sua atividade típica."
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: LC nº 893/01 (RDPM), art. 4º, incisos I a V e parágrafo único, em Assuntos Juridicos-administrativos.pdf. A ordem legal começa pela última promoção e segue pelos graus anteriores, classificação no curso, nomeação/admissão e idade; há regra particular de classificação em determinados ingressos/promoções. A inverte a ordem; C inclui quadro e função como critérios gerais que não constam da sequência; D substitui critérios legais por tempo total de serviço e altera a ordem. Trecho normativo de suporte: “I - data da última promoção; II - prevalência sucessiva dos graus hierárquicos anteriores; III - classificação no curso de formação ou habilitação; IV - data de nomeação ou admissão; V - maior idade” (art. 4º)."
+    },
+    {
+        id: 83,
+        idSimulado: 83,
+        subject: "JURIDICO",
+        topic: "RDPM — recompensas policiais-militares",
+        text: "Considere as afirmações sobre as recompensas policiais-militares previstas no RDPM: I — o elogio é uma recompensa; II — o cancelamento de sanções é uma recompensa; III — a dispensa do serviço constitui recompensa policial-militar. Está correto o que se afirma em:",
+        options: [
+            "a) I, apenas.",
+            "b) II e III, apenas.",
+            "c) I e II, apenas.",
+            "d) I, II e III."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: NORSOP, Diretriz nº PM3-001/02/20, item 6.2.3, Assuntos Operacionais.pdf, PDF p. 254. O texto estabelece que a US da Matriz II ou III que não estiver executando sua atividade típica poderá, de forma supletiva, desenvolver patrulhamento preventivo no Nível de Resposta 1. B inventa alteração automática de matriz; C transforma a faculdade prevista em proibição; D restringe o emprego ao Nível 4 e ignora a autorização supletiva expressa."
-      },
-      {
-        "id": 61,
-        "subject": "OPERACIONAL",
-        "topic": "SCIPM - gerenciamento dos recursos",
-        "text": "Durante um incidente crítico, o Comandante do Incidente precisa manter uma visão atualizada dos recursos humanos e materiais empregados e dos serviços disponíveis. Segundo o SCIPM, qual instrumento corresponde especificamente ao gerenciamento dos recursos?",
-        "options": [
-          "a) Quadro físico com informações precisas e atualizadas sobre recursos humanos e materiais empregados e serviços disponíveis.",
-          "b) Plano temporal e espacial de ações, procedimentos e rotinas, desenvolvido a partir dos objetivos por metodologia 5W2H.",
-          "c) Estrutura modular que incorpora ou desmobiliza funções conforme a amplitude, a complexidade e os riscos do incidente.",
-          "d) Procedimento de transferência do comando que inclui briefing e transmissão das informações essenciais."
+        answer: 2,
+        explanation: "Gabarito: C. Fundamentação: LC nº 893/01 (RDPM), arts. 68 e 69, em Assuntos Juridicos-administrativos.pdf. O art. 68 enumera elogio e cancelamento de sanções; o art. 69 declara expressamente que a dispensa do serviço não é recompensa policial-militar. A omite o cancelamento de sanções; B inclui a dispensa e exclui o elogio; D inclui incorretamente a dispensa. Trecho normativo de suporte: “São recompensas policiais-militares: I - elogio; II - cancelamento de sanções” (art. 68); “A dispensa do serviço não é uma recompensa policial-militar” (art. 69)."
+    },
+    {
+        id: 84,
+        idSimulado: 84,
+        subject: "JURIDICO",
+        topic: "RDPM — distinção entre valores e deveres éticos",
+        text: "À luz dos arts. 7º e 8º do RDPM, examine as afirmações: I — cumprir os deveres de cidadão é dever ético; II — patriotismo é valor fundamental; III — preservar a natureza e o meio ambiente é dever ético; IV — civismo é dever ético, e não valor fundamental. Está correto o que se afirma em:",
+        options: [
+            "a) I, II e III, apenas.",
+            "b) I e IV, apenas.",
+            "c) II, III e IV, apenas.",
+            "d) I, II, III e IV."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.6, Assuntos Operacionais.pdf, PDF p. 145-146. O gerenciamento dos recursos é definido como anotação em quadro físico com dados precisos e atualizados sobre recursos humanos/materiais empregados e serviços disponíveis. B é o PAI (6.2.4.11); C é organização modular (6.2.4.10); D é designação e transferência do comando por processo (6.2.4.5). As alternativas B-D são conceitos normativos distintos."
-      },
-      {
-        "id": 62,
-        "subject": "OPERACIONAL",
-        "topic": "Programa de Policiamento com Drones - Oficial Coordenador de Operação de UAS",
-        "text": "Sobre a designação e as atribuições do Oficial Coordenador de Operação de UAS, analise as proposições.\n\nI. O Cmt Btl deve designá-lo formalmente e informar a nomeação ao CAvPM, bem como eventual alteração da designação.\nII. Cabe ao Oficial Coordenador monitorar e controlar as atividades das Equipes Drone e fiscalizar os planos de ação elaborados pelo Cmt OPM.\nIII. A autoridade decisória sobre tudo o que se relaciona ao UAS durante o voo pertence ao Oficial Coordenador, e não ao RPIC.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
+        answer: 0,
+        explanation: "Gabarito: A. Fundamentação: LC nº 893/01 (RDPM), arts. 7º e 8º, incisos I–III, em Assuntos Juridicos-administrativos.pdf. Cumprir deveres de cidadão e preservar a natureza constam dos deveres éticos; patriotismo e civismo constam dos valores fundamentais. B erra ao classificar civismo como dever e omite II e III; C inclui a afirmação IV, falsa; D também inclui IV. Trecho normativo de suporte: “Os valores fundamentais [...] são [...] patriotismo [e] civismo” (art. 7º); “cumprir os deveres de cidadão” e “preservar a natureza e o meio ambiente” constam do art. 8º."
+    },
+    {
+        id: 86,
+        idSimulado: 86,
+        subject: "JURIDICO",
+        topic: "RDPM — âmbito do Conselho de Justificação",
+        text: "Na definição do processo regular aplicável aos oficiais, qual alternativa corresponde ao alcance do Conselho de Justificação previsto no RDPM?",
+        options: [
+            "a) Destina-se exclusivamente a praças com dez ou mais anos de serviço policial-militar.",
+            "b) Destina-se a apurar a incapacidade do oficial para permanecer no serviço ativo e também se aplica ao oficial inativo presumivelmente incapaz de permanecer na inatividade.",
+            "c) É aplicável somente ao oficial da ativa e depende da existência prévia de sentença criminal transitada em julgado.",
+            "d) Substitui o Processo Administrativo Disciplinar destinado às praças com menos de dez anos de serviço."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-005/02/24, itens 6.2.8, 6.2.9 e 6.4.2.1, Assuntos Operacionais.pdf, PDF p. 437 e 439. I e II correspondem às atribuições de designação, monitoramento, controle e fiscalização do Oficial Coordenador. III transfere indevidamente ao Oficial Coordenador a autoridade decisória durante o voo, que o item 6.4.2.1 atribui ao Piloto Remoto em Comando (RPIC). B inclui III; C exclui I e inclui III; D inclui III."
-      },
-      {
-        "id": 63,
-        "subject": "OPERACIONAL",
-        "topic": "COP - condições de acesso à transmissão ao vivo",
-        "text": "A Diretriz das COP delimita quem pode acessar a funcionalidade de transmissão ao vivo. Analise as proposições.\n\nI. Cmt OPM podem acessar a partir do nível mínimo de Companhia PM.\nII. Qualquer policial militar, independentemente de função de comando ou supervisão, pode acessar livremente a transmissão.\nIII. O COPOM São Paulo ou Regional pode acessar conforme a área de atuação.\nIV. Outros representantes de OPM podem acessar quando devidamente autorizados pela Coord Op PM.",
-        "options": [
-          "a) Apenas I, III e IV.",
-          "b) Apenas I e II.",
-          "c) Apenas II, III e IV.",
-          "d) I, II, III e IV."
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: LC nº 893/01 (RDPM), arts. 71, inciso I, e 73, caput e parágrafo único, em Assuntos Juridicos-administrativos.pdf. O Conselho de Justificação é o processo regular para oficiais e também alcança o oficial inativo presumivelmente incapaz de permanecer na inatividade. A descreve o Conselho de Disciplina; C exclui indevidamente o inativo e exige sentença prévia; D confunde processos aplicáveis a oficiais e praças. Trecho normativo de suporte: “O Conselho de Justificação destina-se a apurar [...] a incapacidade do oficial para permanecer no serviço ativo” e “aplica-se também ao oficial inativo” (art. 73 e parágrafo único)."
+    },
+    {
+        id: 87,
+        idSimulado: 87,
+        subject: "JURIDICO",
+        topic: "RDPM — escolha do processo regular conforme tempo de serviço",
+        text: "Uma praça possui exatamente dez anos de serviço policial-militar e há notícia de incapacidade moral para permanecer no serviço ativo. Considerando o art. 71 do RDPM, qual processo regular corresponde ao caso?",
+        options: [
+            "a) Processo Administrativo Disciplinar, porque o Conselho de Disciplina exige mais de dez anos completos.",
+            "b) Conselho de Justificação, por se tratar de processo aplicável a qualquer militar do Estado.",
+            "c) Conselho de Disciplina, destinado às praças com dez ou mais anos de serviço policial-militar.",
+            "d) Sindicância, que substitui o processo regular quando a acusação envolve incapacidade moral."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25 (COP), itens 6.6.2.1.1 a 6.6.2.1.4, Assuntos Operacionais.pdf, PDF p. 37. I, III e IV reproduzem as categorias de acesso previstas. II amplia indevidamente o acesso a qualquer policial militar; a norma prevê policiais em função de comando e supervisão, não acesso irrestrito. B inclui II e exclui III/IV; C inclui II e exclui I; D inclui II."
-      },
-      {
-        "id": 64,
-        "subject": "OPERACIONAL",
-        "topic": "Programa de Policiamento de Trânsito - competência territorial e vias sob responsabilidade do Estado",
-        "text": "Considere dois cenários: (1) policiamento ostensivo de trânsito na Região Metropolitana ou no Interior, fora de via sob responsabilidade do Estado; (2) policiamento ostensivo de trânsito em via sob responsabilidade do Estado. Conforme a Diretriz nº PM3-006/02/20, qual distribuição de competência está correta?",
-        "options": [
-          "a) No cenário 1, prioritariamente pelas OPM subordinadas ao CPM e CPI; no cenário 2, pelas OPM subordinadas ao CPRv em todo o Estado, conforme convênio vigente.",
-          "b) No cenário 1, exclusivamente pelo CPTran; no cenário 2, pelas OPM territoriais sem participação do CPRv.",
-          "c) No cenário 1, prioritariamente pelo CPRv; no cenário 2, exclusivamente pelas OPM subordinadas ao CPM e CPI.",
-          "d) Nos dois cenários, exclusivamente pelo CPTran, independentemente de circunstâncias especiais ou carências técnicas."
+        answer: 2,
+        explanation: "Gabarito: C. Fundamentação: LC nº 893/01 (RDPM), arts. 71, incisos II e III, e 76, em Assuntos Juridicos-administrativos.pdf. O limite legal é de dez anos ou mais para Conselho de Disciplina; o PAD aplica-se às praças com menos de dez anos. A altera 'dez ou mais' para 'mais de dez'; B atribui a praça um processo próprio de oficiais; D confunde meio sumário de investigação com processo regular. Trecho normativo de suporte: “para praças com 10 (dez) ou mais anos [...] o Conselho de Disciplina; [...] para praças com menos de 10 (dez) anos [...] o Processo Administrativo Disciplinar” (art. 71, II e III)."
+    },
+    {
+        id: 89,
+        idSimulado: 89,
+        subject: "JURIDICO",
+        topic: "RDPM — prazos dos recursos disciplinares",
+        text: "Um militar pretende interpor Pedido de Reconsideração de Ato e, se necessário, posteriormente, Recurso Hierárquico. Qual alternativa distingue corretamente os prazos de interposição previstos nos arts. 57 e 58 do RDPM?",
+        options: [
+            "a) Ambos devem ser interpostos em cinco dias contados da ciência inicial da punição, independentemente da solução do primeiro recurso.",
+            "b) A reconsideração deve ser apresentada em cinco dias da ciência do ato; o recurso hierárquico, em cinco dias do conhecimento da solução da reconsideração ou do vencimento do prazo de trinta dias sem conhecimento oficial da solução.",
+            "c) A reconsideração deve ser apresentada em dez dias da publicação; o recurso hierárquico, em cinco dias contados da instauração do procedimento.",
+            "d) A reconsideração tem prazo de cinco dias úteis da publicação, e o recurso hierárquico tem prazo de dez dias do recebimento pela autoridade recorrida."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), itens 6.3.1.1.2.1 e 6.3.1.2, Assuntos Operacionais.pdf, PDF p. 484. Para Região Metropolitana e Interior, a diretriz prevê prioritariamente OPM subordinadas ao CPM/CPI; nas vias sob responsabilidade do Estado, prevê OPM subordinadas ao CPRv em todo o Estado, conforme convênio. B, C e D trocam as competências ou tornam exclusivo o CPTran, embora a diretriz lhe atribua atuação excepcional em circunstâncias especiais e diante de carências técnicas."
-      },
-      {
-        "id": 65,
-        "subject": "OPERACIONAL",
-        "topic": "SCIPM - organização modular",
-        "text": "Ao ampliar a estrutura de resposta a um incidente crítico, o Comandante do Incidente considera incorporar novas funções e, após a redução dos riscos, desmobilizar parte da estrutura. Qual afirmação traduz a definição de organização modular do SCIPM?",
-        "options": [
-          "a) Estrutura estabelecida conforme amplitude e complexidade do incidente, peculiaridades do ambiente e riscos e ameaças, podendo o Cmt Inc determinar incorporação ou desmobilização de módulos.",
-          "b) Quadro físico que registra recursos humanos e materiais empregados e serviços disponíveis, atualizado durante a resposta.",
-          "c) Plano que descreve no tempo e no espaço as ações, procedimentos e rotinas, elaborado a partir dos objetivos definidos e pela metodologia 5W2H.",
-          "d) Processo de transferência do comando baseado em critérios preestabelecidos, briefing e transmissão de informações essenciais."
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: LC nº 893/01 (RDPM), art. 57, § 2º e § 4º, e art. 58, § 1º e § 3º, item 1, em Assuntos Juridicos-administrativos.pdf. O prazo da reconsideração conta da ciência do ato; o hierárquico pressupõe a solução da reconsideração, com a exceção prevista para ausência de conhecimento oficial após trinta dias. A ignora a autonomia e a sequência do recurso hierárquico; C inventa prazo de dez dias para reconsideração e marco inicial incorreto; D troca os marcos e os prazos legais. Trecho normativo de suporte: “O pedido de reconsideração [...] deve ser apresentado no prazo máximo de 5 (cinco) dias” (art. 57, § 2º); o recurso hierárquico tem prazo de cinco dias contado do conhecimento da solução ou do marco alternativo previsto no art. 58, § 3º, item 1."
+    },
+    {
+        id: 90,
+        idSimulado: 90,
+        subject: "JURIDICO",
+        topic: "RDPM — causas de justificação e circunstâncias atenuantes",
+        text: "Na análise de uma transgressão disciplinar, o encarregado deve distinguir causa de justificação de circunstância atenuante. Qual situação está expressamente prevista no art. 34 do RDPM como causa de justificação?",
+        options: [
+            "a) O militar ter prestado serviços relevantes à sociedade.",
+            "b) O militar estar, no mínimo, no comportamento bom.",
+            "c) O militar ter praticado a falta para evitar mal maior.",
+            "d) O militar ter agido em legítima defesa própria ou de outrem."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.10, Assuntos Operacionais.pdf, PDF p. 146. A corresponde à definição de organização modular. B descreve gerenciamento dos recursos (6.2.4.6); C descreve o PAI (6.2.4.11); D descreve designação e transferência do comando por processo (6.2.4.5). Os distratores são definições próximas do mesmo sistema, mas não respondem ao conceito solicitado."
-      },
-      {
-        "id": 66,
-        "subject": "OPERACIONAL",
-        "topic": "Programa de Policiamento Escolar - identificação de pessoas com deficiência na comunidade escolar",
-        "text": "No Programa de Policiamento Escolar, analise as obrigações atribuídas aos Cmt OPM quanto aos estabelecimentos de ensino que possuam pessoas com deficiência (PcD) na comunidade escolar.\n\nI. A partir do nível mínimo de Companhia PM, identificar estabelecimentos em que PcD possam necessitar de equipamentos ou procedimentos adaptados durante o atendimento de ocorrências.\nII. Manter atualizados registros referentes à quantidade de pessoas nessas condições e à natureza das respectivas deficiências.\nIII. Limitar a identificação às ocorrências realizadas dentro do estabelecimento, excluindo eventual deslocamento ao distrito policial ou hospital.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
+        answer: 3,
+        explanation: "Gabarito: D. Fundamentação: LC nº 893/01 (RDPM), art. 34, inciso III, e art. 35, incisos I, II e IV, em Assuntos Juridicos-administrativos.pdf. A prestação de serviços relevantes, o comportamento no mínimo bom e a prática para evitar mal maior são circunstâncias atenuantes do art. 35; a legítima defesa própria ou de outrem é causa de justificação do art. 34. Trecho normativo de suporte: “Não haverá aplicação de sanção disciplinar” em caso de “legítima defesa própria ou de outrem” (art. 34, III); “ter praticado a falta para evitar mal maior” figura como atenuante (art. 35, IV)."
+    },
+    {
+        id: 91,
+        idSimulado: 91,
+        subject: "JURIDICO",
+        topic: "Lei nº 18.442/26 — requisitos para promoção ao QOE",
+        text: "Para a promoção de Subtenente PM da ativa ao posto de Segundo-Tenente PM do QOE, qual alternativa reúne os requisitos indicados no material autorizado?",
+        options: [
+            "a) Aproveitamento no CHOE, quatro anos de interstício como Subtenente, idoneidade moral, não estar agregado, integrar a primeira terça parte do almanaque, comportamento no mínimo ótimo e aptidão sem restrições em inspeção de saúde.",
+            "b) Aproveitamento no CHOE, três anos de interstício, comportamento bom, estar na metade superior do almanaque e aptidão com restrições permitidas.",
+            "c) Aproveitamento no CHOE e comportamento excepcional, dispensados interstício, posição no almanaque e inspeção de saúde.",
+            "d) Quatro anos de interstício e comportamento ótimo, sendo facultativos a idoneidade moral, o CHOE e a condição de não agregado."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.5.2.9, redação atualizada pela Ordem Complementar nº PM3-001/02/26, Assuntos Operacionais.pdf, PDF p. 454. I e II correspondem ao dever de identificação e atualização dos registros. III é incorreta porque a norma inclui a necessidade de equipamentos/procedimentos adaptados durante o atendimento, inclusive deslocamento para distrito policial ou hospital. B e D incluem III; C exclui I e inclui III."
-      },
-      {
-        "id": 67,
-        "subject": "OPERACIONAL",
-        "topic": "Programa de Policiamento Comunitário - visitas e registro de informações",
-        "text": "Para potencializar os resultados do Policiamento Comunitário, a Diretriz nº PM3-005/02/20 estabelece providências específicas para as OPM. Analise as proposições.\n\nI. A sistemática de atuação relativa às visitas comunitárias deve ser estabelecida semestralmente por documento próprio de Estado-Maior, visando coletar informações para questionários divulgados pela Coord Op PM.\nII. As OPM devem coordenar visitas comunitárias ou solidárias, campanhas ou reuniões comunitárias e adotar medidas de controle do correto registro das informações no SICoordOp.\nIII. A sistemática deve ser anual, e o registro no SICoordOp é facultativo quando houver reunião presencial.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
+        answer: 0,
+        explanation: "Gabarito: A. Fundamentação: Lei nº 18.442/26, requisitos de promoção ao QOE, conforme Assuntos Juridicos-administrativos.pdf. O material enumera CHOE, quatro anos de interstício, idoneidade moral, não estar agregado, primeira terça parte do almanaque, comportamento ao menos ótimo e aptidão sem restrições. B altera interstício, comportamento, classificação e saúde; C dispensa requisitos expressos; D transforma requisitos cumulativos em facultativos. Trecho normativo de suporte: “Quatro anos de interstício na graduação de Subtenente PM”; “integrar a primeira terça parte do almanaque”; “estar, pelo menos, no comportamento ótimo”; e “ser considerado apto, sem restrições, em inspeção de saúde” (requisitos de promoção ao QOE no material autorizado)."
+    },
+    {
+        id: 92,
+        idSimulado: 92,
+        subject: "JURIDICO",
+        topic: "RDPM — limites de competência para aplicação de permanência disciplinar",
+        text: "Considerando os limites de competência do art. 32 do RDPM, qual alternativa reproduz corretamente os limites máximos de permanência disciplinar que podem ser aplicados pelos oficiais dos postos indicados?",
+        options: [
+            "a) Coronel: até 15 dias; Tenente-Coronel: até 20 dias; Major: até 10 dias; Capitão: até 5 dias.",
+            "b) Coronel: até 20 dias; Tenente-Coronel: até 20 dias; Major: até 15 dias; Capitão: até 10 dias.",
+            "c) Coronel: até 20 dias e detenção de até 15 dias; Tenente-Coronel: até 15 dias; Major: até 20 dias; Capitão: até 10 dias.",
+            "d) Coronel e Tenente-Coronel: até 30 dias; Major: até 20 dias; Capitão: até 15 dias."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), itens 6.5.4.1 e 6.5.4.2, Assuntos Operacionais.pdf, PDF p. 422. I corresponde à sistemática semestral fixada por documento de Estado-Maior; II reproduz a coordenação das visitas/campanhas/reuniões e o controle dos registros no SICoordOp. III altera “semestral” para “anual” e torna facultativo um controle que a norma exige. B e D incluem III; C exclui I e inclui III."
-      },
-      {
-        "id": 68,
-        "subject": "OPERACIONAL",
-        "topic": "Programa de Policiamento de Trânsito - emprego de Unidades de Serviço de outros programas",
-        "text": "Na Região Metropolitana ou no Interior, o comando avalia empregar ocasional ou programadamente uma Unidade de Serviço de outro Programa de Policiamento no policiamento ostensivo de trânsito. À luz da Diretriz nº PM3-006/02/20, analise as proposições.\n\nI. O emprego de US de outros programas ou de Atividades Operacionais Diversas é admitido desde que as atividades próprias por elas executadas não sofram solução de continuidade.\nII. O emprego excepcional do CPTran em operações próprias ou em apoio/reforço pode ocorrer em circunstâncias especiais quando houver carências técnicas apresentadas pelas OPM territoriais.\nIII. Toda US de outro programa empregada ocasionalmente no trânsito deve, por esse motivo, ser permanentemente incorporada ao efetivo específico do Programa de Policiamento de Trânsito.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: LC nº 893/01 (RDPM), art. 32, incisos III a VI, em Assuntos Juridicos-administrativos.pdf. O limite é de 20 dias para Coronel e Tenente-Coronel, 15 para Major e 10 para Capitão; para Coronel, o art. 32 também prevê detenção até 15 dias. A reduz os limites; C troca os limites de Tenente-Coronel e Major; D apresenta limites superiores aos expressos no dispositivo. Trecho normativo de suporte: “aos oficiais do posto de coronel [...] permanência disciplinar de até 20 (vinte) dias”; “tenente-coronel [...] até 20”; “major [...] até 15”; “capitão [...] até 10” (art. 32, III–VI)."
+    },
+    {
+        id: 93,
+        idSimulado: 93,
+        subject: "JURIDICO",
+        topic: "RDPM — detenção: hipótese e competência",
+        text: "Ao examinar a possibilidade de aplicar a sanção de detenção, a autoridade deve verificar tanto a hipótese de cabimento quanto a competência. Qual alternativa concilia corretamente os arts. 20, 21 e 32 do RDPM?",
+        options: [
+            "a) A detenção pode ser aplicada em qualquer primeira transgressão grave por qualquer oficial com competência disciplinar sobre o militar.",
+            "b) A detenção somente pode ser aplicada na reincidência em transgressão grave; a competência inclui o Governador, as autoridades indicadas nos arts. 21 e 32 e, nos limites legais, o Subcomandante da PM e os oficiais em funções próprias do posto de Coronel.",
+            "c) A detenção é exclusiva do Comandante-Geral e pode ser aplicada por transgressão de qualquer natureza, ainda que sem reincidência.",
+            "d) A detenção pode ser aplicada por Capitão ou Major quando a permanência disciplinar exceder dez dias, independentemente de reincidência."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), itens 6.3.1.1.2.1.2 e 6.3.1.1.2.2, Assuntos Operacionais.pdf, PDF p. 484. I reproduz a condição de que as atividades próprias não sofram solução de continuidade; II corresponde à hipótese excepcional de emprego do CPTran diante de circunstâncias especiais e carências técnicas territoriais. III não consta da norma e confunde emprego ocasional/programado de US de outros programas com destinação específica de recursos. B e D incluem III; C exclui I e inclui III."
-      },
-      {
-        "id": 69,
-        "subject": "OPERACIONAL",
-        "topic": "NORSOP - Nível de Resposta 3",
-        "text": "Uma ocorrência excede a capacidade operativa das OPM territoriais subordinadas e demanda recursos humanos e meios materiais adicionais vinculados diretamente ao Comando de Policiamento. Não se trata de apoio tático por contingente da Matriz II nem de apoio especializado próprio da Matriz III. Qual classificação corresponde à NORSOP?",
-        "options": [
-          "a) Nível de Resposta 2, caracterizado pelo apoio tático às US da Matriz I por contingentes com capacitação e equipamentos próprios.",
-          "b) Nível de Resposta 3, caracterizado pelo emprego adicional de recursos humanos e meios materiais vinculados diretamente aos Comandos de Policiamento, diante da insuficiência das OPM territoriais subordinadas.",
-          "c) Nível de Resposta 4, caracterizado por apoios especializados de efetivos vinculados às OPM especializadas indicadas na NORSOP.",
-          "d) Nível de Resposta 1, caracterizado pelo emprego de recursos locais, com uma US isolada ou apoiada por outras US da Matriz I."
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: LC nº 893/01 (RDPM), art. 20, § 2º, art. 21 e art. 32, incisos I a III, em Assuntos Juridicos-administrativos.pdf. O art. 20 exige reincidência em transgressão grave; os arts. 21 e 32 delimitam as autoridades e os limites de aplicação. A elimina o requisito de reincidência e amplia a competência; C restringe indevidamente a competência ao Comandante-Geral e ignora o requisito; D atribui detenção a Capitão e Major, embora o art. 32 não lhes atribua essa sanção. Trecho normativo de suporte: “A detenção somente poderá ser aplicada quando da reincidência no cometimento de transgressão disciplinar de natureza grave” (art. 20, § 2º); o art. 21 indica as autoridades de aplicação e o art. 32 complementa os limites de competência."
+    },
+    {
+        id: 97,
+        idSimulado: 97,
+        subject: "JURIDICO",
+        topic: "RDPM — prescrição da ação disciplinar",
+        text: "Na análise de prescrição de uma transgressão disciplinar que não constitui também infração penal, qual prazo e marco inicial devem ser adotados conforme o art. 85 do RDPM?",
+        options: [
+            "a) Dois anos, contados da ciência da autoridade competente.",
+            "b) Cinco anos, contados da data do cometimento da transgressão disciplinar.",
+            "c) Cinco anos, contados da publicação da sanção aplicada.",
+            "d) Dez anos, contados da instauração da investigação preliminar."
         ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fonte: NORSOP, Diretriz nº PM3-001/02/20, itens 6.2.2.1 a 6.2.2.4, Assuntos Operacionais.pdf, PDF p. 253-254. B reproduz o Nível 3. A descreve o Nível 2; C descreve o Nível 4; D descreve o Nível 1. Os distratores correspondem a níveis reais da mesma norma, mas incompatíveis com os elementos decisivos do enunciado: vínculo direto ao Cmdo Pol e insuficiência das OPM territoriais."
-      },
-      {
-        "id": 70,
-        "subject": "OPERACIONAL",
-        "topic": "COP - ordem de prioridade de distribuição quando os equipamentos são insuficientes",
-        "text": "Quando não é possível equipar integralmente o efetivo com COP, a Diretriz estabelece uma ordem de prioridade de distribuição. Qual alternativa reproduz corretamente a sequência normativa, incluindo a ordem interna das funções de comando e supervisão?",
-        "options": [
-          "a) Programas Primários (Radiopatrulha; Força Tática); Programas Complementares (Escolar; Trânsito; Rural; Comunitário); Atividades Operacionais Diversas; funções de comando/supervisão (CGP; CFP; Supervisor Regional).",
-          "b) Programas Primários (Força Tática; Radiopatrulha); Programas Complementares (Trânsito; Escolar; Comunitário; Rural); funções de comando/supervisão; Atividades Operacionais Diversas.",
-          "c) Programas Primários (Radiopatrulha; Força Tática); Programas Complementares (Escolar; Rural; Trânsito; Comunitário); funções de comando/supervisão (CFP; CGP; Supervisor Regional); Atividades Operacionais Diversas.",
-          "d) Programas Primários (Radiopatrulha; Força Tática); Programas Complementares (Escolar; Trânsito; Rural; Comunitário); funções de comando/supervisão (CGP; CFP; Supervisor Regional); Atividades Operacionais Diversas."
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: LC nº 893/01 (RDPM), art. 85, caput, em Assuntos Juridicos-administrativos.pdf. A ação disciplinar prescreve em cinco anos contados do cometimento da transgressão. A usa prazo e marco inicial não previstos; C conta da publicação da sanção, e não do fato; D duplica o prazo e utiliza marco inicial estranho ao dispositivo. O § 1º prevê regra própria quando a transgressão também for crime, situação excluída do enunciado. Trecho normativo de suporte: “A ação disciplinar da Administração prescreverá em 5 (cinco) anos, contados da data do cometimento da transgressão disciplinar” (art. 85, caput)."
+    },
+    {
+        id: 98,
+        idSimulado: 98,
+        subject: "JURIDICO",
+        topic: "Lei nº 18.442/26 — nomeação do Subcomandante-Geral",
+        text: "Considerando a regra de provimento do cargo de Subcomandante-Geral da Polícia Militar apresentada no material autorizado, qual alternativa reúne corretamente o posto, o quadro e a autoridade responsável pela nomeação?",
+        options: [
+            "a) Coronel PM do QOE, nomeado pelo Secretário da Segurança Pública.",
+            "b) Coronel PM do QOEM, nomeado pelo Governador do Estado.",
+            "c) Tenente-Coronel PM do QOEM, nomeado pelo Comandante-Geral.",
+            "d) Coronel PM de qualquer quadro, escolhido pelo Comandante-Geral e confirmado pelo Secretário da Segurança Pública."
         ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25 (COP), itens 6.2.2 a 6.2.3.4, Assuntos Operacionais.pdf, PDF p. 31. A ordem é: Programas Primários (Radiopatrulha e Força Tática); Complementares (Escolar, Trânsito, Rural e Comunitário); Atividades Operacionais Diversas; funções de comando/supervisão (CGP, CFP e Supervisor Regional). B inverte a ordem dos Primários e dos Complementares e coloca supervisão antes das Atividades Diversas; C altera a ordem dos Complementares, antecipa supervisão e inverte CGP/CFP; D coloca as funções de comando/supervisão antes das Atividades Operacionais Diversas. Apenas A preserva toda a sequência."
-      }
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: Lei nº 18.442/26, art. 10, conforme Assuntos Juridicos-administrativos.pdf. O cargo de Subcomandante-Geral é exercido por Coronel PM do QOEM e a nomeação compete ao Governador do Estado. A altera quadro e autoridade; C altera posto e autoridade; D amplia o requisito de quadro e atribui o provimento a autoridades não indicadas. Trecho normativo de suporte: O material autorizado estabelece que o cargo é exercido por “Oficial do posto de Coronel PM do QOEM, nomeado pelo Governador do Estado” (Lei nº 18.442/26, art. 10, conforme material de estudo)."
+    },
+    {
+        id: 99,
+        idSimulado: 99,
+        subject: "JURIDICO",
+        topic: "RDPM — distinções entre Pedido de Reconsideração e Recurso Hierárquico",
+        text: "Sobre os recursos disciplinares próprios previstos nos arts. 57 e 58 do RDPM, examine as afirmações: I — o Pedido de Reconsideração é dirigido à autoridade que praticou ou aprovou o ato e deve ser encaminhado diretamente a ela, uma única vez; II — o Pedido de Reconsideração tem efeito suspensivo; III — o Recurso Hierárquico é dirigido à autoridade imediatamente superior àquela que não reconsiderou o ato e pressupõe, em regra, prévia reconsideração. Está correto o que se afirma em:",
+        options: [
+            "a) I, apenas.",
+            "b) I e II, apenas.",
+            "c) II e III, apenas.",
+            "d) I, II e III."
+        ],
+        answer: 3,
+        explanation: "Gabarito: D. Fundamentação: LC nº 893/01 (RDPM), arts. 57, §§ 1º–2º, e 58, caput e § 1º, em Assuntos Juridicos-administrativos.pdf. As três afirmações correspondem ao texto normativo. A omite II e III; B omite a regra de endereçamento e precedência do Recurso Hierárquico; C omite a regra de encaminhamento do Pedido de Reconsideração. A exceção prevista no art. 57, § 4º, não elimina a regra geral descrita em III. Trecho normativo de suporte: “O pedido de reconsideração de ato, que tem efeito suspensivo” (art. 57, § 2º); “O recurso hierárquico [...] terá efeito suspensivo” e é dirigido à autoridade imediatamente superior (art. 58, caput)."
+    },
+    {
+        id: 100,
+        idSimulado: 100,
+        subject: "ORGANIZACIONAL",
+        topic: "I-16-PM — investigação preliminar e sindicância",
+        text: "Uma autoridade recebe notícia de irregularidade administrativa, mas os elementos iniciais ainda são insuficientes para decidir pela instauração imediata de sindicância. De acordo com as I-16-PM, qual providência e prazo correspondem à situação?",
+        options: [
+            "a) Instaurar imediatamente sindicância, cujo prazo inicial é de dez dias improrrogáveis e que se destina apenas à coleta informal de subsídios.",
+            "b) Determinar investigação preliminar para colher subsídios que fundamentem a instauração ou não de sindicância ou de outro procedimento; ela deve ser encerrada em dez dias improrrogáveis, contados do despacho de instauração.",
+            "c) Instaurar processo regular, pois a investigação preliminar somente pode ocorrer depois de sindicância formalmente encerrada.",
+            "d) Determinar investigação preliminar por trinta dias, prorrogável por mais noventa dias, com emprego obrigatório de termos formais de declaração e interrogatório."
+        ],
+        answer: 1,
+        explanation: "Gabarito: B. Fundamentação: I-16-PM, art. 67, §§ 1º a 3º, em Assuntos Organizacionais.pdf, p. 24. A investigação preliminar é meio sumaríssimo para colher subsídios quando a notícia não reúne elementos suficientes e tem prazo improrrogável de dez dias contados do despacho. A confunde o prazo e a finalidade da sindicância; C inverte a sequência; D atribui prazo e prorrogação da sindicância e exige meios formais que não correspondem à investigação preliminar. Trecho normativo de suporte: A investigação preliminar é “meio sumaríssimo destinado à imediata colheita de subsídios” e “será encerrada no prazo improrrogável de 10 (dez) dias” (I-16-PM, art. 67, §§ 1º e 3º)."
+    }
 
           
 ];
