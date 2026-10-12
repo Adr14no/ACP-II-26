@@ -34,28 +34,46 @@
 <body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
 
     <!-- Modal de Instruções Iniciais (Pop-up) -->
-    <div id="modalInstrucoes" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm hidden overflow-y-auto">
-        <div class="bg-pm-cardBg border border-pm-gold/50 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-5 sm:p-7 shadow-2xl text-slate-100 relative mx-4 my-6">
-            <div class="flex items-center gap-3 mb-4 border-b border-pm-border pb-3">
+    <div id="modalInstrucoes" class="fixed inset-0 z-[100] flex items-start sm:items-center justify-center bg-black/70 backdrop-blur-sm hidden overflow-y-auto overscroll-contain p-3 sm:p-6">
+        <div class="bg-pm-cardBg border border-pm-gold/50 rounded-2xl max-w-2xl w-full max-h-[calc(100dvh-1.5rem)] sm:max-h-[calc(100dvh-3rem)] flex flex-col shadow-2xl text-slate-100 relative my-auto overflow-hidden">
+            <div class="flex items-center gap-3 border-b border-pm-border p-4 sm:px-6 sm:py-5 flex-shrink-0">
                 <div class="w-10 h-10 rounded-full bg-pm-gold/10 border border-pm-gold flex items-center justify-center text-pm-gold flex-shrink-0">
                     <i class="fa-solid fa-circle-info"></i>
                 </div>
-                <div>
+                <div class="min-w-0">
                     <h3 class="text-base sm:text-lg font-black text-pm-gold uppercase tracking-wider">Bem-vindo ao Simulado ACP II/26</h3>
-                    <p class="text-xs text-slate-400">Instruções de Operação da Plataforma</p>
+                    <p class="text-xs text-slate-400">Instruções rápidas de utilização</p>
                 </div>
             </div>
-            <div class="space-y-4 text-xs sm:text-sm text-slate-300 mb-5 leading-relaxed">
-                <section><p class="font-bold text-white mb-1">🎯 1. OBJETIVO</p><p>Plataforma de preparação para o processo de habilitação e promoção ao posto de Capitão PM da PMESP. Utilize os simulados para testar seus conhecimentos e identificar pontos que precisam ser aprimorados.</p></section>
-                <section><p class="font-bold text-white mb-1">📝 2. INÍCIO DO SIMULADO</p><p>Ao iniciar um novo simulado, o progresso anterior é reiniciado e são selecionadas 50 questões, distribuídas em 50% Operacional, 30% Jurídico-Administrativo e 20% Organizacional. O cronômetro também é reiniciado.</p></section>
-                <section><p class="font-bold text-white mb-1">⚙️ 3. MODOS DE UTILIZAÇÃO</p><p><strong class="text-white">Modo Prova:</strong> permite alterar a alternativa escolhida até a finalização e não exibe acertos e erros durante a execução. <strong class="text-white">Modo Estudo:</strong> corrige a resposta imediatamente e apresenta a fundamentação normativa. Consultar a fundamentação durante uma prova compromete a simulação de avaliação.</p></section>
-                <section><p class="font-bold text-white mb-1">📚 4. RESOLUÇÃO DAS QUESTÕES</p><p>No Modo Prova, você pode mudar sua resposta enquanto a prova estiver em andamento, exceto em questões já consultadas no Modo Estudo. No Modo Estudo, após selecionar uma alternativa, a resposta fica bloqueada. Confira o enunciado e as alternativas antes de responder.</p></section>
-                <section><p class="font-bold text-white mb-1">🔎 5. NAVEGAÇÃO POR TEMA</p><p>Utilize os filtros para alternar entre as questões dos temas Operacional, Jurídico-Administrativo e Organizacional durante o simulado.</p></section>
-                <section><p class="font-bold text-white mb-1">🚩 6. MARCAR PARA REVISAR</p><p>Marque as questões sobre as quais tenha dúvidas ou não saiba a resposta. Você poderá retornar a elas posteriormente. Questões ainda não respondidas permanecem disponíveis; questões respondidas no Modo Estudo ficam bloqueadas.</p></section>
-                <section><p class="font-bold text-white mb-1">🗂️ 7. CARTÃO DE RESPOSTAS</p><p>Utilize o cartão numérico para localizar e acessar diretamente outra questão. As marcações ajudam a identificar questões pendentes, respondidas e sinalizadas para revisão.</p></section>
-                <section><p class="font-bold text-white mb-1">🏁 8. FINALIZAR A PROVA</p><p>Ao finalizar, o cronômetro é interrompido e o sistema apresenta o resultado. Questões não respondidas não recebem pontuação. Para uma avaliação fiel às condições de prova, permaneça no Modo Prova durante toda a execução.</p></section>
+
+            <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-slate-300 p-4 sm:px-6 sm:py-5 leading-relaxed overflow-y-auto overscroll-contain flex-1">
+                <section>
+                    <p class="font-bold text-white mb-1">🎯 1. OBJETIVO</p>
+                    <p>Treinar para a ACP II/26 — Capitão PM, identificar dificuldades e revisar os conteúdos estudados.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">📝 2. NOVO SIMULADO</p>
+                    <p>Ao iniciar um novo simulado, as respostas e o cronômetro são reiniciados e são sorteadas 50 questões: 50% Operacional, 30% Jurídico-Administrativo e 20% Organizacional.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">⚙️ 3. MODOS DE UTILIZAÇÃO</p>
+                    <p><strong class="text-white">Modo Prova:</strong> permite alterar respostas até finalizar e não mostra acertos ou erros durante a execução. <strong class="text-white">Modo Estudo:</strong> corrige imediatamente e exibe a fundamentação. Para simular uma prova real, permaneça no Modo Prova.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">📚 4. RESPONDER E REVISAR</p>
+                    <p>No Modo Estudo, a primeira resposta fica bloqueada, mesmo se você voltar ao Modo Prova. Use <strong class="text-white">Marcar para Revisar</strong> para sinalizar dúvidas e o <strong class="text-white">Cartão de Respostas</strong> para acessar questões diretamente.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">🔎 5. FILTROS E ACOMPANHAMENTO</p>
+                    <p>Use os filtros para navegar por matéria. O painel de progresso fica disponível no Modo Estudo; no Modo Prova, o desempenho não é exibido durante a execução.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">🏁 6. FINALIZAR</p>
+                    <p>Ao finalizar, o cronômetro para e o resultado é apresentado. Questões não respondidas não pontuam. Confira o enunciado e as alternativas antes de responder.</p>
+                </section>
             </div>
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-pm-border pt-4">
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-pm-border p-4 sm:px-6 sm:py-4 flex-shrink-0 bg-pm-cardBg">
                 <label class="flex items-center gap-2 text-xs text-slate-400 cursor-pointer select-none">
                     <input type="checkbox" id="checkNaoMostrar" class="rounded border-pm-border bg-pm-navy text-pm-gold focus:ring-pm-gold w-4 h-4">
                     <span>Não exibir esta mensagem novamente</span>
@@ -69,7 +87,7 @@
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-4 text-center md:text-left">
-                <div class="w-15 h-15 rounded-full bg-pm-gold/13 border-2 border-pm-gold flex items-center justify-center flex-shrink-0 shadow-inner overflow-hidden">
+                <div class="w-15 h-15 rounded-full bg-pm-gold/11 border-2 border-pm-gold flex items-center justify-center flex-shrink-0 shadow-inner overflow-hidden">
                     <img src="pmesp.png" alt="Brasão PMESP" class="w-full h-full object-cover scale-100">
                 </div>
                 <div>
@@ -937,5 +955,4 @@
     </script>
 </body>
 </html>
-
                 
