@@ -2405,7 +2405,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 159,
         subject: "JURIDICO",
         topic: "Doutrina Correcional - Princípios do Processo Administrativo Disciplinar",
-        text: "No âmbito dos Processos Disciplinares (PDRS, CD, CJ), o Princípio da Inviolabilidade da Ampra Defesa e do Contraditório assegura ao acusado o direito de acompanhar os atos instrutórios. Caso uma testemunha de acusação seja ouvida sem a prévia e regular intimação do acusado e de seu defensor constituído, o procedimento padece de:",
+        text: "No âmbito dos Processos Disciplinares (PAD, CD, CJ), o Princípio da Inviolabilidade da Ampra Defesa e do Contraditório assegura ao acusado o direito de acompanhar os atos instrutórios. Caso uma testemunha de acusação seja ouvida sem a prévia e regular intimação do acusado e de seu defensor constituído, o procedimento padece de:",
         options: [
             "a) Mero vício sanável sem qualquer reflexo administrativo.",
             "b) Nulidade absoluta por cerceamento de defesa, invalidando o ato probatório praticado e os dele decorrentes.",
