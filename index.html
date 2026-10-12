@@ -33,15 +33,45 @@
 </head>
 <body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
 
+    <!-- Modal de Instruções Iniciais (Pop-up) -->
+    <div id="modalInstrucoes" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm hidden">
+        <div class="bg-pm-cardBg border border-pm-gold/50 rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl text-slate-100 relative mx-4">
+            <div class="flex items-center gap-3 mb-4 border-b border-pm-border pb-3">
+                <div class="w-10 h-10 rounded-full bg-pm-gold/10 border border-pm-gold flex items-center justify-center text-pm-gold flex-shrink-0">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div>
+                    <h3 class="text-base sm:text-lg font-black text-pm-gold uppercase tracking-wider">Bem-vindo ao Simulado ACP II/26</h3>
+                    <p class="text-xs text-slate-400">Instruções de Operação da Plataforma</p>
+                </div>
+            </div>
+
+            <div class="space-y-3 text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+                <p><strong class="text-white">🎯 Objetivo:</strong> Preparação de alto rendimento para o processo de Habilitação e Promoção ao Posto de Capitão PM (PMESP).</p>
+                <p><strong class="text-white">🔄 Novo Simulado:</strong> Zera o progresso atual, reinicia o cronômetro e sorteia 50 novas questões de forma proporcional (50% Operacional, 30% Jurídico-Administrativo e 20% Organizacional).</p>
+                <p><strong class="text-white">📚 Modo Estudo vs Modo Prova:</strong> No <em>Modo Estudo</em>, ao errar uma alternativa, a questão é bloqueada e não pode mais ser respondida, exigindo um novo simulado para recomeçar, garantindo o rigor da prova real.</p>
+                <p><strong class="text-white">🔍 Filtros e Cartão:</strong> Utilize os filtros de matérias no topo e acompanhe seu status em tempo real pelo painel lateral e cartão de respostas numérico.</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-pm-border pt-4">
+                <label class="flex items-center gap-2 text-xs text-slate-400 cursor-pointer select-none">
+                    <input type="checkbox" id="checkNaoMostrar" class="rounded border-pm-border bg-pm-navy text-pm-gold focus:ring-pm-gold w-4 h-4">
+                    <span>Não exibir esta mensagem novamente</span>
+                </label>
+                <button onclick="fecharModalInstrucoes()" class="w-full sm:w-auto px-5 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl text-xs sm:text-sm transition shadow">
+                    Entendido, Iniciar
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Cabeçalho Principal -->
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-4 text-center md:text-left">
-               
-                  <div class="w-12 h-12 rounded-full bg-pm-gold/10 border-2 border-pm-gold flex items-center justify-center flex-shrink-0 shadow-inner overflow-hidden">
-    <img src="pmesp.png" alt="Brasão PMESP" class="w-full h-full object-cover scale-250">
-</div>
-                
+                <div class="w-12 h-12 rounded-full bg-pm-gold/10 border-2 border-pm-gold flex items-center justify-center flex-shrink-0 shadow-inner overflow-hidden">
+                    <img src="pmesp.png" alt="Brasão PMESP" class="w-full h-full object-cover scale-200">
+                </div>
                 <div>
                     <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Polícia Militar do Estado de São Paulo</h1>
                     <h2 id="simuladoTitulo" class="text-base sm:text-lg font-extrabold text-white">ACP II/26 - Capitão PM</h2>
@@ -284,9 +314,18 @@
 
     </main>
 
+    <!-- Rodapé com Créditos -->
+    <footer class="bg-pm-header border-t border-pm-border py-4 px-4 text-center text-xs text-slate-400 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+            <span>PMESP — Processo de Promoção ao Posto de Capitão PM (ACP II/26)</span>
+            <span class="text-pm-gold font-semibold">Elaborado pelo 1° Ten PM Adriano</span>
+        </div>
+    </footer>
+
     <!-- Script de Lógica Principal -->
     <script>
         const STORAGE_KEY = "PMESP_SIMULADO_ACP_STATE";
+        const MODAL_STORAGE_KEY = "PMESP_MODAL_INSTRUCOES_VISTO_26";
 
         let questionsDatabase = [];
 
@@ -305,10 +344,27 @@
         };
 
         document.addEventListener("DOMContentLoaded", function() {
+            verificarModalInstrucoes();
             carregarOuInicializarSimulado();
         });
 
-        // SALVAMENTO PERSISTENTE NO LOCALSTORAGE (PERSISTÊNCIA COMPLETA)
+        // CONTROLE DO MODAL DE INSTRUÇÕES
+        function verificarModalInstrucoes() {
+            const jaViu = localStorage.getItem(MODAL_STORAGE_KEY);
+            if (!jaViu) {
+                document.getElementById('modalInstrucoes').classList.remove('hidden');
+            }
+        }
+
+        function fecharModalInstrucoes() {
+            const naoMostrarNovamente = document.getElementById('checkNaoMostrar').checked;
+            if (naoMostrarNovamente) {
+                localStorage.setItem(MODAL_STORAGE_KEY, "true");
+            }
+            document.getElementById('modalInstrucoes').classList.add('hidden');
+        }
+
+        // SALVAMENTO PERSISTENTE NO LOCALSTORAGE
         function saveStateToLocalStorage() {
             const dataToSave = {
                 questionsDatabase: questionsDatabase,
@@ -358,7 +414,7 @@
             updateSubjectCounts();
             updateFilteredQuestions();
             setMode(state.mode);
-            setSubjectFilter(state.activeFilter, false); // Não reseta currentIndex
+            setSubjectFilter(state.activeFilter, false); 
             renderQuestionGrid();
             displayCurrentQuestion();
 
@@ -411,7 +467,6 @@
         function gerarEIniciarNovoSimulado() {
             let bancoBase = [];
 
-            // Verificação abrangente e flexível da variável do banco de dados
             if (typeof BANCO_SIMULADOS !== 'undefined' && BANCO_SIMULADOS.simulado_01 && BANCO_SIMULADOS.simulado_01.questoes) {
                 bancoBase = BANCO_SIMULADOS.simulado_01.questoes;
             } else if (typeof BANCO_SIMULADOS !== 'undefined' && Array.isArray(BANCO_SIMULADOS)) {
@@ -649,22 +704,17 @@
         }
 
         function selectOption(targetIdx, optIdx) {
-    // Se a prova já foi finalizada no modo exam, bloqueia
-    if (state.examFinished && state.mode === 'exam') return;
+            if (state.examFinished && state.mode === 'exam') return;
 
-    // Se já foi respondida anteriormente (no modo estudo ou prova), impede alteração se já errou, 
-    // ou bloqueia a edição após a primeira escolha no Modo Estudo.
-    if (state.userAnswers[targetIdx] !== null) {
-        return; // Impede a alteração da resposta após a primeira escolha
-    }
+            if (state.userAnswers[targetIdx] !== null) {
+                return; 
+            }
 
-    // Registra a resposta do usuário
-    state.userAnswers[targetIdx] = optIdx;
-    
-    saveStateToLocalStorage();
-    displayCurrentQuestion();
-    renderQuestionGrid();
-
+            state.userAnswers[targetIdx] = optIdx;
+            
+            saveStateToLocalStorage();
+            displayCurrentQuestion();
+            renderQuestionGrid();
         }
 
         function navigateQuestion(direction) {
@@ -694,6 +744,7 @@
             let wrong = 0;
             const total = questionsDatabase.length;
 
+            questionsDatabase.questionsDatabase?.forEach?.((q, idx) => {}) // fallback safe
             questionsDatabase.forEach((q, idx) => {
                 const ans = state.userAnswers[idx];
                 if (ans !== null) {
@@ -714,7 +765,6 @@
             document.getElementById('progPercent').innerText = `${pct}% concluído`;
         }
 
-        // CRONÔMETRO INVIOLÁVEL (RECALCULA TÉRMINO CONTRA BURLA NO F5)
         function startTimer() {
             if (!state.timerEndTime) {
                 state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
@@ -736,7 +786,6 @@
                         finishExam();
                     }
                 } else {
-                    // Empurra o término enquanto em pausa
                     state.timerEndTime += 1000;
                 }
             }, 1000);
