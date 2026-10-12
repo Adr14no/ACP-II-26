@@ -1,6 +1,19 @@
-
-const BANCO_GERAL_QUESTOES = [
-     
+/**
+ * BANCO DE DADOS OFICIAL DE QUESTÕES - PMESP (ACP II/26)
+ * Arquivo: questoes.js
+ * Padrão Examinador: Banca APMBB / PMESP - Habilitação ao Posto de Capitão PM
+ * 
+ * Distribuição de Matérias:
+ * - ~50% Assuntos Operacionais (75 questões)
+ * - ~30% Assuntos Jurídico-Administrativos (45 questões)
+ * - ~20% Assuntos Organizacionais (30 questões)
+ * 
+ * Ajustes Doutrinários e de Estilo Aplicados:
+ * 1. Uso rigoroso da terminologia técnica da PMESP (ex: "cerco", "P/2 / Seção de Inteligência").
+ * 2. Isolamento normativo estrito quando a questão versa sobre diretriz específica (ex: NORSOP).
+ * 3. Incorporação de questões de letra fria da norma, questões de assertivas (I, II, III) e questões de "Incorreta".
+ * 4. Distratores de alta verossimilhança construídos com inversões de comandos legais ("deve" x "não deve", "vedado" x "permitido").
+ */
 
 const BANCO_GERAL_QUESTOES = [
     {
@@ -706,7 +719,7 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: D. Fundamentação: Nota de Instrução nº PM3-002/02/26 (Sala de Operações), itens 6.1.8 e 6.3.7.11.1 a 6.3.7.11.3, em Assuntos Operacionais.pdf, p. 238 e 244-245. O SIR se destina a demandas não emergenciais previamente descritas, sem risco iminente, passíveis de solução remota. A e B ampliam ou restringem indevidamente os critérios; C cria condição não prevista. Trecho: “atendimento remoto de ocorrência classificada como não emergencial e previamente descrita em rol específico, caracterizada pela ausência de risco iminente [...] com o objetivo de aumentar a disponibilidade de US”."
       },
  {
-        "id": 50,
+        "id": 50,com
         "subject": "OPERACIONAL",
         "topic": "COP Motorola - identificação da evidência digital",
         "text": "QUESTÃO 50 — Sobre o preenchimento do campo ID (AnoMêsDiaTalão) na classificação de evidência digital produzida por COP, analise as proposições.\n\nI. Para evidência vinculada ao talão nº 37, ocorrido em 12/10/2026, o campo deve ser preenchido como “2026101237”.\nII. Para evidência decorrente de abordagem, intervenção ou interação sem relação com talão de ocorrência, deve ser lançado apenas o valor da data, como “20261012”.\nIII. Para padronizar o comprimento do campo, o número do talão deve ser completado com zeros à esquerda.",
@@ -1361,17 +1374,6 @@ const BANCO_GERAL_QUESTOES = [
     }
 
           
-];
-
-// Estrutura de Exportação e Integração ao index.html
-const BANCO_SIMULADOS = {
-    "simulado_01": {
-        "titulo": "Simulado Geral ACP II/26 - Processo de Habilitação ao Posto de Capitão PM",
-        "questoes": BANCO_GERAL_QUESTOES
-    }
-};
-
-window.questionsDatabase = BANCO_GERAL_QUESTOES;          
 ];
 
 // Estrutura de Exportação e Integração ao index.html
