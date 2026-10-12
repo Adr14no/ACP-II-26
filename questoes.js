@@ -1,36 +1,6 @@
-/**
- * BANCO DE DADOS OFICIAL DE QUESTÕES - PMESP (ACP II/26)
- * Arquivo: questoes.js
- * Padrão Examinador: Banca APMBB / PMESP - Habilitação ao Posto de Capitão PM
- * 
- * Distribuição de Matérias:
- * - ~50% Assuntos Operacionais (75 questões)
- * - ~30% Assuntos Jurídico-Administrativos (45 questões)
- * - ~20% Assuntos Organizacionais (30 questões)
- * 
- * Ajustes Doutrinários e de Estilo Aplicados:
- * 1. Uso rigoroso da terminologia técnica da PMESP (ex: "cerco", "P/2 / Seção de Inteligência").
- * 2. Isolamento normativo estrito quando a questão versa sobre diretriz específica (ex: NORSOP).
- * 3. Incorporação de questões de letra fria da norma, questões de assertivas (I, II, III) e questões de "Incorreta".
- * 4. Distratores de alta verossimilhança construídos com inversões de comandos legais ("deve" x "não deve", "vedado" x "permitido").
- */
 
 const BANCO_GERAL_QUESTOES = [
-     * BANCO DE DADOS OFICIAL DE QUESTÕES - PMESP (ACP II/26)
- * Arquivo: questoes.js
- * Padrão Examinador: Banca APMBB / PMESP - Habilitação ao Posto de Capitão PM
- * 
- * Distribuição de Matérias:
- * - ~50% Assuntos Operacionais (75 questões)
- * - ~30% Assuntos Jurídico-Administrativos (45 questões)
- * - ~20% Assuntos Organizacionais (30 questões)
- * 
- * Ajustes Doutrinários e de Estilo Aplicados:
- * 1. Uso rigoroso da terminologia técnica da PMESP (ex: "cerco", "P/2 / Seção de Inteligência").
- * 2. Isolamento normativo estrito quando a questão versa sobre diretriz específica (ex: NORSOP).
- * 3. Incorporação de questões de letra fria da norma, questões de assertivas (I, II, III) e questões de "Incorreta".
- * 4. Distratores de alta verossimilhança construídos com inversões de comandos legais ("deve" x "não deve", "vedado" x "permitido").
- */
+     
 
 const BANCO_GERAL_QUESTOES = [
     {
