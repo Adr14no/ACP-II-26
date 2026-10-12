@@ -2276,7 +2276,1469 @@ const BANCO_GERAL_QUESTOES = [
         ],
         answer: 0,
         explanation: "Fundamentação: Portaria nº PM1-7/02/23. Cabe ao Comando de Cia / Seção de Operações a gestão direta do cumprimento de escalas e folgas."
-    }
+    },
+        // =========================================================================
+    // BLOCO ADICIONAL DE 50 QUESTÕES INÉDITAS E PRINCIPICAIS (QUESTÕES 151 A 200)
+    // =========================================================================
+    {
+        id: 151,
+        idSimulado: 151,
+        subject: "OPERACIONAL",
+        topic: "NORSOP - Princípios e Diretrizes Doutrinárias",
+        text: "Durante a elaboração do planejamento operacional de um Batalhão de Área, o Chefe da P/3 propõe a supressão temporária do patrulhamento em determinada subárea comercial para concentrar todo o efetivo em um evento festivo local. À luz dos princípios e diretrizes doutrinárias regentes da Norma Operacional Padrão (NORSOP - Diretriz nº PM3-001/02/20), a proposta do Oficial viola diretamente qual princípio fundamental do policiamento ostensivo?",
+        options: [
+            "a) Princípio da Supremacia do Interesse Privado, que determina o atendimento prioritário a eventos fechados com cobrança de ingressos.",
+            "b) Princípio da Continuidade do Serviço Policial-Militar, que estabelece que a presença ostensiva e a cobertura preventiva não podem ser descontinuadas nas subáreas sob responsabilidade da OPM.",
+            "c) Princípio da Unidade de Comando, que proíbe a realização de operações extraordinárias em dias de semana.",
+            "d) Princípio da Flexibilidade Absoluta, que faculta ao Comandante de Companhia extinguir o Rádio Patrulhamento sem prévia autorização judicial."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, item 2.2). O Princípio da Continuidade do Serviço Policial-Militar impõe a manutenção ininterrupta da cobertura preventiva básica nas subáreas sob responsabilidade da OPM."
+    },
+    {
+        id: 152,
+        idSimulado: 152,
+        subject: "OPERACIONAL",
+        topic: "SCIPM - Princípios do Sistema de Comando de Incidentes",
+        text: "No gerenciamento de um grande incêndio em parque industrial com vazamento de produtos químicos, reúnem-se no local o Corpo de Bombeiros, o Policiamento de Área, a CETESB e a Defesa Civil. Para evitar ordens conflitantes e garantir a eficiência das ações, os órgãos adotam o modelo de Comando Unificado do SCIPM (Diretriz nº PM3-003/02/23). Quanto às características do Comando Unificado, assinale a opção que traduz corretamente suas diretrizes:",
+        options: [
+            "a) Cada instituição estabelece o seu próprio Posto de Comando físico isolado e atua de forma autônoma sem prestar contas aos demais órgãos.",
+            "b) As agências operam sob um único Posto de Comando físico, determinam objetivos e estratégias conjuntas em um só Plano de Ação do Incidente (PAI), mantendo a integridade de suas respectivas cadeias de comando.",
+            "c) O Comandante do Policiamento de Área assume a coordenação operacional direta e exclusiva dos bombeiros e técnicos da CETESB em substituição aos seus respectivos superiores.",
+            "d) O Comando Unificado extingue o princípio da Unidade de Comando, permitindo que os subordinados recebam ordens simultâneas de qualquer autoridade presente."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM, item 5.5). No Comando Unificado, há apenas 1 Posto de Comando físico; as decisões e o PAI são integrados, respeitando-se as competências legais e a cadeia de comando de cada agência."
+    },
+    {
+        id: 153,
+        idSimulado: 153,
+        subject: "OPERACIONAL",
+        topic: "Sistema de C2 - Princípios e Atributos da Informação",
+        text: "Em termos de doutrina de Comando e Controle (Diretriz nº PM3-001/02/23), a informação que subsidia a tomada de decisão no Nível Tático precisa preencher atributos essenciais de qualidade. Quando o Oficial Coordenador Operacional recebe dados em tempo hábil para interferir no curso de uma ocorrência grave em andamento, diz-se que a informação atendeu primordialmente ao atributo da:",
+        options: [
+            "a) Redundância estática.",
+            "b) Oportunidade (ou Tempestividade).",
+            "c) Inalterabilidade compulsória.",
+            "d) Imparcialidade sumária."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretriz nº PM3-001/02/23 (C2, item 4.2). O atributo da Oportunidade (Tempestividade) estabelece que a informação deve chegar ao tomador de decisão a tempo de permitir ações eficazes."
+    },
+    {
+        id: 154,
+        idSimulado: 154,
+        subject: "OPERACIONAL",
+        topic: "Câmeras Operacionais Portáteis (COP) - Diretrizes e Uso Ético",
+        text: "Policial militar equipado com Câmera Operacional Portátil (COP) é acionado para atender ocorrência de tentativa de suicídio em ambiente privado. Diante do quadro, o policial desliga voluntariamente o equipamento sob a justificativa de que a cena causaria constrangimento ao indivíduo. Nos termos da Diretriz nº PM3-001/02/25 (COP), assinale a opção correta quanto ao enquadramento da conduta:",
+        options: [
+            "a) A conduta está correta, pois a preservação da intimidade prevalece sobre o dever de gravação em qualquer tipo de ocorrência de emergência.",
+            "b) A conduta está incorreta, pois a gravação é compulsória em intervenções operacionais e atendimentos de ocorrência, devendo a proteção da intimidade da pessoa ser resguardada na restrição do acesso às mídias, e não pelo desligamento unilateral do equipamento.",
+            "c) A conduta é lícita desde que o cidadão assine termo de recusa de gravação antes da intervenção policial.",
+            "d) A conduta configura falta médica de competência exclusiva do Conselho Regional de Medicina."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretriz nº PM3-001/02/25 (COP, item 6.3). A gravação de interações operacionais é obrigatória. A preservação da intimidade é tratada na limitação de acesso e sigilo das mídias, vedada a interrupção unilateral do registro pelo policial."
+    },
+    {
+        id: 155,
+        idSimulado: 155,
+        subject: "OPERACIONAL",
+        topic: "Programas de Policiamento - Filosofia de Polícia Comunitária",
+        text: "A implantação da filosofia de Polícia Comunitária na PMESP fundamenta-se em princípios organizacionais e operacionais bem delimitados. Dentre as alternativas abaixo, qual representa um PRINCIPIAMENTO CENTRAL dessa filosofia?",
+        options: [
+            "a) Centralização do processo decisório nas instâncias administrativas do Comando-Geral.",
+            "b) Descentralização tática e mobilização comunitária para a solução preventiva de problemas de segurança no nível local.",
+            "c) Atuação reativa focada estritamente na lavratura de autos de prisão após a consumação dos delitos.",
+            "d) Transferência da responsabilidade de patrulhamento ostensivo para empresas de vigilância privada."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretrizes de Polícia Comunitária PMESP. O pilar central é a descentralização tática e a parceria com a comunidade para resolução de problemas (Método IARA)."
+    },
+    {
+        id: 156,
+        idSimulado: 156,
+        subject: "JURIDICO",
+        topic: "Lei Complementar nº 18.442/26 - Princípios da Carreira",
+        text: "A Lei Complementar nº 18.442/26 reestruturou os Quadros de Oficiais da PMESP. Em relação às promoções na hierarquia policial-militar, a norma consagra o princípio de que a ascensão na carreira baseia-se em critérios objetivos e de valor profissional. Assinale a alternativa que indica uma exigência novatio legis introduzida para a promoção ao posto de Capitão PM do QOEM:",
+        options: [
+            "a) Conclusão obrigatória de curso de graduação em Engenharia Civil.",
+            "b) Aprovação na Avaliação de Competência Profissional (ACP) e cumprimento do interstício mínimo de 4 anos como 1º Tenente PM.",
+            "c) Isenção total do Teste de Aptidão Física (SisTAF) para todos os concorrentes.",
+            "d) Apresentação de artigo científico publicado no exterior."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Arts. 8º e 11 da LC nº 18.442/26. Para acesso ao posto de Capitão PM, exige-se aprovação na ACP e o cumprimento do interstício legalmente fixado."
+    },
+    {
+        id: 157,
+        idSimulado: 157,
+        subject: "JURIDICO",
+        topic: "RDPM - Princípios Fundamentais do Regime Disciplinar",
+        text: "De acordo com os princípios e disposições gerais do Regulamento Disciplinar da Polícia Militar (LC nº 893/01), a disciplina policial-militar é conceituada como:",
+        options: [
+            "a) A rigorosa observância e o acatamento integral das leis, regulamentos, normas e disposições que fundamentam o organismo policial-militar e traduzem-se pelo cumprimento do dever por parte de todos e de cada um dos seus integrantes.",
+            "b) A faculdade atribuída aos superiores hierárquicos de aplicar punições verbais sem necessidade de fundamentação escrita.",
+            "c) A subordinação exclusiva dos praças às ordens judiciais de natureza cível.",
+            "d) A obrigação de cumprir ordens de superiores mesmo quando manifestamente ilegais."
+        ],
+        answer: 0,
+        explanation: "Fundamentação: Art. 2º da LC nº 893/01 (RDPM). É o conceito exato de disciplina policial-militar positivado na norma."
+    },
+    {
+        id: 158,
+        idSimulado: 158,
+        subject: "JURIDICO",
+        topic: "RDPM - Hierarquia e Subordinação",
+        text: "Nos termos do RDPM (LC nº 893/01), quando uma ordem exarada por autoridade superior parecer manifestamente ilegal ao subordinado incumbido de sua execução, qual é a diretriz normativa a ser adotada?",
+        options: [
+            "a) O subordinado deve cumprir a ordem imediatamente e requerer indenização financeira posterior.",
+            "b) O subordinado não deve cumpri-la, representando imediatamente à autoridade superior competente, sob pena de responder em concurso pelas ilegalidades praticadas.",
+            "c) O subordinado deve cumprir a ordem mediante assinatura de termo de isenção formulado pelo próprio punho.",
+            "d) O subordinado deve ausentar-se do serviço sem avisar a OPM."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 10, § 2º do RDPM (LC nº 893/01). Ordens manifestamente ilegais não devem ser cumpridas, devendo o fato ser representado à autoridade competente."
+    },
+    {
+        id: 159,
+        idSimulado: 159,
+        subject: "JURIDICO",
+        topic: "Doutrina Correcional - Princípios do Processo Administrativo Disciplinar",
+        text: "No âmbito dos Processos Disciplinares (PDRS, CD, CJ), o Princípio da Inviolabilidade da Ampra Defesa e do Contraditório assegura ao acusado o direito de acompanhar os atos instrutórios. Caso uma testemunha de acusação seja ouvida sem a prévia e regular intimação do acusado e de seu defensor constituído, o procedimento padece de:",
+        options: [
+            "a) Mero vício sanável sem qualquer reflexo administrativo.",
+            "b) Nulidade absoluta por cerceamento de defesa, invalidando o ato probatório praticado e os dele decorrentes.",
+            "c) Confissão ficta do acusado.",
+            "d) Anulação automática da carreira militar da testemunha."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Instruções de PAD na PMESP c/c Súmula Vinculante 5 do STF. A ausência de intimação para oitiva de testemunha gera cerceamento de defesa e nulidade absoluta do ato."
+    },
+    {
+        id: 160,
+        idSimulado: 160,
+        subject: "ORGANIZACIONAL",
+        topic: "Material Bélico - Princípios de Posse e Guarda",
+        text: "A Portaria nº PM4-001/1.2/24 disciplina o uso e a guarda de material bélico. O princípio da responsabilidade patrimonial e de salvaguarda do armamento estabelece que o policial militar em gozo de folga é responsável pela custódia segura de sua arma de fogo. A esse respeito, assinale a conduta que VIOLA frontalmente as normas corporativas:",
+        options: [
+            "a) Guardar a arma de fogo desalimentada em cofre ou local seguro no interior de sua residência.",
+            "b) Deixar a arma de fogo no porta-luvas de veículo estacionado em via pública desacompanhada de vigilância.",
+            "c) Transportar o armamento veladamente junto ao corpo.",
+            "d) Manter as munições armazenadas em local seco e abrigado do calor excessivo."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 8º da Portaria nº PM4-001/1.2/24. Deixar armamento em veículo sem vigilância constitui negligência grave na guarda de material bélico."
+    },
+    {
+        id: 161,
+        idSimulado: 161,
+        subject: "OPERACIONAL",
+        topic: "NORSOP - Matrizes e Níveis de Resposta",
+        text: "Durante um protesto violento com bloqueio de rodovia e arremesso de artefatos incendiários contra a tropa, o Coordenador Operacional solicita o empenho do Batalhão de Polícia de Choque (BPChq) para restauração da ordem pública. Segundo a NORSOP (Diretriz nº PM3-001/02/20), o emprego de tropa especializada em Controle de Distúrbios Civis de nível corporativo classifica o evento na:",
+        options: [
+            "a) Matriz Operacional I / Nível de Resposta 1.",
+            "b) Matriz Operacional II / Nível de Resposta 2.",
+            "c) Matriz Operacional III / Nível de Resposta 4.",
+            "d) Matriz Operacional I / Nível de Resposta 3."
+        ],
+        answer: 2,
+        explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, item 3.6). O emprego do BPChq em CDC enquadra-se no Apoio Especializado Corporativo (Matriz III / Nível de Resposta 4)."
+    },
+    {
+        id: 162,
+        idSimulado: 162,
+        subject: "OPERACIONAL",
+        topic: "Programas de Policiamento - Trânsito (CTB)",
+        text: "O princípio da legalidade administrativa e o devido processo legal aplicados à fiscalização de trânsito (Lei nº 9.503/97 - CTB) determinam que a lavratura do Auto de Infração de Trânsito (AIT) pelo policial militar na função de agente da autoridade de trânsito é ato:",
+        options: [
+            "a) Discricionário, podendo o agente optar por não autuar se o condutor pedir desculpas.",
+            "b) Vinculado, devendo o agente lavrar a autuação ao constatar a prática da infração, sob pena de responsabilidade funcional.",
+            "c) Facultativo, dependendo de autorização prévia do Delegado de Polícia.",
+            "d) Inexistente em rodovias estaduais."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 280 do CTB. Constatada a infração de trânsito, a lavratura do AIT é ato administrativo vinculado."
+    },
+    {
+        id: 163,
+        idSimulado: 163,
+        subject: "JURIDICO",
+        topic: "RDPM - Classificação das Transgressões Disciplinares",
+        text: "De acordo com o Artigo 12 do RDPM (LC nº 893/01), a transgressão disciplinar é classificada em Leve, Média e Grave. A respeito dos critérios determinantes para essa classificação, a norma fixa que a autoridade deve considerar:",
+        options: [
+            "a) Exclusivamente a quantidade de anos de serviço do transgressor.",
+            "b) A natureza dos fatos, as consequências que dela advierem para o serviço e para a Instituição, e o grau de culpa ou dolo do agente.",
+            "c) A opinião emitida em redes sociais pelo público civil.",
+            "d) O resultado do teste do SisTAF do envolvido."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 12 do RDPM (LC nº 893/01). A dosimetria e classificação da falta observam a natureza do fato, consequências e o elemento subjetivo (dolo/culpa)."
+    },
+    {
+        id: 164,
+        idSimulado: 164,
+        subject: "JURIDICO",
+        topic: "Doutrina Correcional - Princípios da Prisão em Flagrante",
+        text: "Em caso de prisão em flagrante por crime militar praticado por praça, o Oficial encarregado da lavratura do APFD deve expedir a Nota de Culpada no prazo máximo de:",
+        options: [
+            "a) 12 horas após a prisão.",
+            "b) 24 (vinte e quatro) horas após a efetivação da prisão, assinada pela autoridade e com recibo do preso.",
+            "c) 5 dias úteis.",
+            "d) 10 dias corridos."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 247 do CPPM. O prazo constitucional e legal para emissão da Nota de Culpada e entrega ao preso em flagrante é de 24 horas."
+    },
+    {
+        id: 165,
+        idSimulado: 165,
+        subject: "ORGANIZACIONAL",
+        topic: "Regime de Trabalho - Diretrizes de Escala",
+        text: "A Portaria do Cmt G nº PM1-7/02/23 fixa a diretriz de humanização do trabalho e preservação da higidez física da tropa. Segundo a norma, é vedado escalar o policial militar em regime de turnos sem observar o intervalo mínimo de descanso interjornada entre os serviços de:",
+        options: [
+            "a) 2 horas.",
+            "b) 6 horas.",
+            "c) O dobro das horas trabalhadas no turno anterior ou o descanso regulamentar previsto para a escala respectiva.",
+            "d) 72 horas obrigatoriamente em todos os casos."
+        ],
+        answer: 2,
+        explanation: "Fundamentação: Portaria do Cmt G nº PM1-7/02/23. Exige a preservação do descanso interjornada regulamentar previsto em cada modalidade de escala."
+    },
+    {
+        id: 166,
+        idSimulado: 166,
+        subject: "OPERACIONAL",
+        topic: "NORSOP - Conceitos de Apoio e Reforço",
+        text: "A NORSOP (Diretriz nº PM3-001/02/20) estabelece a diferença conceitual precisa entre Apoio e Reforço no emprego operacional. Sobre essa distinção, assinale a alternativa correta:",
+        options: [
+            "a) Apoio e Reforço são sinônimos perfeitos na doutrina militar.",
+            "b) No Apoio, a fração empregada auxilia outra sem subordinação tática ao comandante da área apoiada; no Reforço, os recursos passam a subordinar-se taticamente ao comandante da Unidade reforçada.",
+            "c) O Reforço não pode ser utilizado em missões de Rádio Patrulhamento.",
+            "d) O Apoio só pode ser prestado por órgãos de fora da Polícia Militar."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, item 3.5.2). No Apoio mantém-se a autonomia tática da fração apoiadora; no Reforço ocorre a transferência de subordinação tática."
+    },
+    {
+        id: 167,
+        idSimulado: 167,
+        subject: "OPERACIONAL",
+        topic: "SCIPM - Princípio do Alcance do Controle",
+        text: "O princípio do Alcance do Controle (Span of Control) no SCIPM (Diretriz nº PM3-003/02/23) estabelece que o número ideal de recursos ou subordinados supervisionados diretamente por um único gestor no incidente deve ser de:",
+        options: [
+            "a) 1 a 2 recursos.",
+            "b) 3 a 7 recursos, sendo o número ideal de 5 (cinco) subordinados por supervisor.",
+            "c) Exatamente 15 recursos.",
+            "d) Sem limite numérico, dependendo da antiguidade do supervisor."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM, item 5.2). O alcance de controle eficaz varia de 3 a 7 recursos por supervisor, sendo 5 o ponto ideal."
+    },
+    {
+        id: 168,
+        idSimulado: 168,
+        subject: "JURIDICO",
+        topic: "Lei Complementar nº 18.442/26 - Vagas e Quadro de Acesso",
+        text: "Para que um Oficial 1º Tenente PM possa figurar no Quadro de Acesso por Merecimento ou Antiguidade para promoção ao posto de Capitão PM, a LC nº 18.442/26 exige o seu posicionamento na:",
+        options: [
+            "a) Primeira metade do almanaque da sua turma.",
+            "b) Primeira quarta parte (1/4) do almanaque do seu posto e Quadro.",
+            "c) Totalidade do almanaque sem qualquer restrição de limite.",
+            "d) Apenas entre os 3 mais antigos do Batalhão."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 11, § 2º da LC nº 18.442/26. Exige-se estar posicionado na primeira quarta parte (1/4) da escala hierárquica do posto."
+    },
+    {
+        id: 169,
+        idSimulado: 169,
+        subject: "JURIDICO",
+        topic: "RDPM - Circunstâncias Atenuantes",
+        text: "Dentre as opções abaixo, qual representa uma CIRCUNSTÂNCIA ATENUANTE na aplicação de sanção disciplinar prevista expressamente no Artigo 36 do RDPM (LC nº 893/01)?",
+        options: [
+            "a) Ter praticado a falta em concurso de dois ou mais militares.",
+            "b) Estar no comportamento Ótimo ou Excepcional.",
+            "c) Ter cometido a infração durante o cumprimento de serviço noturno.",
+            "d) Ser o infrator militar de maior posto no local."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 36, I do RDPM (LC nº 893/01). A boa classificação disciplinar (Ótimo/Excepcional) constitui circunstância atenuante."
+    },
+    {
+        id: 170,
+        idSimulado: 170,
+        subject: "ORGANIZACIONAL",
+        topic: "Processo Administrativo - Recursos em Sindicância",
+        text: "Da decisão proferida pelo Comandante de Unidade que aprova Solução de Sindicância e determina a imputação de ressarcimento de dano ao patrimônio ao policial militar, cabe recurso de Apelação Administrativa no prazo de:",
+        options: [
+            "a) 24 horas.",
+            "b) 5 (cinco) dias úteis.",
+            "c) 10 (dez) dias úteis.",
+            "d) 30 dias."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Instruções de Sindicância da PMESP (I-16-PM). O prazo para recurso contra decisão financeira/patrimonial em Sindicância é de 5 dias úteis."
+    },
+    {
+        id: 171,
+        idSimulado: 171,
+        subject: "OPERACIONAL",
+        topic: "Programas de Policiamento - Policiamento Escolar",
+        text: "O Plano de Ação do Programa de Policiamento Escolar da PMESP fixa como princípio de atuação junto à comunidade escolar:",
+        options: [
+            "a) A repressão ostensiva com uso diário de cães de faro nos pátios das escolas.",
+            "b) A integração preventiva com a direção escolar, a patrulha ostensiva no entorno e o desenvolvimento do PROERD como ferramenta educacional de prevenção às drogas.",
+            "c) O patrulhamento interno permanente dentro das salas de aula.",
+            "d) A autuação de infrações de trânsito dos professores dentro do estacionamento escolar."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretriz do Policiamento Escolar e PROERD. Pauta-se na integração preventiva, patrulhamento de entorno e ações educacionais."
+    },
+    {
+        id: 172,
+        idSimulado: 172,
+        subject: "OPERACIONAL",
+        topic: "ARPAS / Drones - Princípios de Segurança Aérea",
+        text: "De acordo com as diretrizes do DECEA e normas corporativas de emprego de ARPAS, em caso de perda de link de comunicação (Lost Link) entre o controle de solo e o Drone em missão policial, o equipamento deve:",
+        options: [
+            "a) Despencar imediatamente no local sobre as pessoas.",
+            "b) Executar automaticamente a rotina preprogramada de RTH (Return to Home), retornando e pousando no ponto de decolagem seguro.",
+            "c) Acelerar para o espaço aéreo reservado a aviões comerciais.",
+            "d) Desligar os motores em pleno voo."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Regulamentação de ARPAS (DECEA / PMESP). O protocolo de Lost Link aciona a rotina RTH (Return to Home) para pouso seguro."
+    },
+    {
+        id: 173,
+        idSimulado: 173,
+        subject: "JURIDICO",
+        topic: "Doutrina Correcional - Exclusão por Inaptidão",
+        text: "A exoneração ex officio por inaptidão para a função policial-militar aplicada à praça em estágio probatório exige:",
+        options: [
+            "a) Processo Administrativo Exoneratório no qual se assegurem o contraditório e a ampla defesa.",
+            "b) Ato sumário sem necessidade de notificação ao interessado.",
+            "c) Julgamento prévio perante o Tribunal de Justiça Militar.",
+            "d) Autorização prévia da Câmara dos Deputados."
+        ],
+        answer: 0,
+        explanation: "Fundamentação: Súmula 20 do STF c/c Instruções Correcionais. A exoneração de servidor em estágio probatório exige processo administrativo com ampla defesa."
+    },
+    {
+        id: 174,
+        idSimulado: 174,
+        subject: "ORGANIZACIONAL",
+        topic: "Violência Doméstica - Princípios de Atendimento Interno",
+        text: "O Protocolo de Acolhimento do Policial Militar Vítima ou Autor de Conflito Familiar / Violência Doméstica fundamenta-se no princípio da:",
+        options: [
+            "a) Divulgação ampla dos fatos no Boletim Geral da Unidade.",
+            "b) Atenção multiprofissional (médica, psicológica, social e jurídica), preservação da dignidade da pessoa humana e neutralização de riscos com armamento.",
+            "c) Demissão imediata de ambas as partes.",
+            "d) Transferência compulsória para Unidades de fronteira."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Protocolo de Acolhimento em Violência Doméstica (PMESP). Prioriza a abordagem multiprofissional, suporte de saúde e gestão de risco."
+    },
+    {
+        id: 175,
+        idSimulado: 175,
+        subject: "OPERACIONAL",
+        topic: "NORSOP - Conceito de Cartão de Prioridade",
+        text: "No contexto da NORSOP (Diretriz nº PM3-001/02/20), o Cartão de Prioridade de Patrulhamento (CPP) do Rádio Patrulhamento caracteriza-se por:",
+        options: [
+            "a) Ser um documento genérico sem indicação de locais ou horários.",
+            "b) Ser a ordem de serviço operacional da equipe, delimitando o setor, os PONTOS DE ESTACIONAMENTO (PE) e os itinerários prioritários nos horários de maior incidência criminal.",
+            "c) Ser uma autorização para o policial permanecer na base durante todo o turno.",
+            "d) Ser emitido exclusivamente pela Polícia Rodoviária Federal."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, item 3.7.1). O CPP desmultiplica o PPI direcionando a patrulha a PEs e itinerários de risco criminal."
+    },
+    {
+        id: 176,
+        idSimulado: 176,
+        subject: "JURIDICO",
+        topic: "RDPM - Causas de Justificação e Isenção",
+        text: "Não haverá punição disciplinar quando for reconhecida qualquer das causas de justificação do Artigo 34 do RDPM. Assinale a opção que NÃO se enquadra como causa de justificação:",
+        options: [
+            "a) Ter sido cometida a transgressão na prática de ação meritória.",
+            "b) Ter sido cometida a falta em legítima defesa própria ou de outrem.",
+            "c) Ter sido praticada a falta por ignorância plenamente comprovada da norma.",
+            "d) Ter sido praticada a falta sob o efeito voluntário de bebidas alcoólicas."
+        ],
+        answer: 3,
+        explanation: "Fundamentação: Art. 34 c/c Art. 35 do RDPM (LC nº 893/01). Embriaguez voluntária não é causa de justificação, constituindo agravante disciplinar."
+    },
+    {
+        id: 177,
+        idSimulado: 177,
+        subject: "ORGANIZACIONAL",
+        topic: "SisTAF - Frequência de Avaliação",
+        text: "Conforme as diretrizes do SisTAF (Sistema de Teste de Aptidão Física), a avaliação física da tropa da ativa é aplicada com qual periodicidade regular?",
+        options: [
+            "a) Mensalmente.",
+            "b) Semestralmente / Anualmente conforme o plano da Diretoria de Pessoal.",
+            "c) Apenas a cada 10 anos.",
+            "d) Somente quando o militar for promovido."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretrizes do SisTAF / DP. O acompanhamento físico do efetivo é periódico (semestral/anual) para manutenção da prontidão funcional."
+    },
+    {
+        id: 178,
+        idSimulado: 178,
+        subject: "OPERACIONAL",
+        topic: "Programas de Policiamento - Policiamento Rural",
+        text: "Uma importante diretriz tática no patrulhamento rural efetuado por equipes motorizadas da PMESP para prevenir emboscadas e sinistros em vias não pavimentadas é:",
+        options: [
+            "a) Circular com a viatura em velocidade máxima constante independentemente do terreno.",
+            "b) Manter disciplina de luzes quando necessário, distância tática ampliada entre viaturas no comboio e comunicação periódica com a Sala de Operações.",
+            "c) Desligar o rádio transceptor da viatura.",
+            "d) Abandono da viatura em caso de chuva."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: POP - Policiamento Rural PMESP. Exige manutenção do espaço tático entre veículos no comboio, postura defensiva e contato com C2."
+    },
+    {
+        id: 179,
+        idSimulado: 179,
+        subject: "JURIDICO",
+        topic: "Lei Complementar nº 18.442/26 - Ingresso no QOE",
+        text: "O ingresso de Subtenentes PM no Quadro de Oficiais Especialistas (QOE) fundamenta-se nos princípios do mérito profissional e antiguidade. Nos termos da LC nº 18.442/26, as vagas para o CHOE são preenchidas na proporção de:",
+        options: [
+            "a) 100% por indicação do Comandante-Geral.",
+            "b) 50% por antiguidade e 50% por merecimento mediante concurso interno de provas e títulos.",
+            "c) 100% por sorteio entre os mais idosos.",
+            "d) Exclusivamente por promoção por bravura."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 12 da LC nº 18.442/26. As vagas de acesso ao QOE/CHOE dividem-se equitativamente entre os critérios de antiguidade e merecimento."
+    },
+    {
+        id: 180,
+        idSimulado: 180,
+        subject: "OPERACIONAL",
+        topic: "Câmeras Operacionais Portáteis (COP) - Auditoria e Controle",
+        text: "A Diretriz nº PM3-001/02/25 (COP) estabelece cotas mínimas de auditagem periódica das gravações da tropa pelos Oficiais Oficiais Comandantes de Companhia e de Pelotão. Essa auditoria tem por finalidade técnica e princípios:",
+        options: [
+            "a) Comercializar os vídeos para emissoras de televisão.",
+            "b) Verificar a conformidade do uso dos equipamentos, aferir a qualidade do atendimento policial, identificar necessidades de treinamento e coibir desvios de conduta.",
+            "c) Deletar vídeos de ocorrências de flagrante.",
+            "d) Monitorar a vida privada dos policiais de folga."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretriz nº PM3-001/02/25 (COP, item 7.1). A auditoria visa o controle de qualidade operacional, padronização de procedimentos e doutrina."
+    },
+    {
+        id: 181,
+        idSimulado: 181,
+        subject: "ORGANIZACIONAL",
+        topic: "Afastamentos Regulamentares - Licença-Prêmio",
+        text: "O direito do militar do Estado à fruição de Licença-Prêmio (90 dias a cada quinquênio de efetivo serviço) subordina-se ao princípio do interesse público. Assim, a concessão do gozo pode ser indeferida ou adiada motivadamente pelo Comando diante de:",
+        options: [
+            "a) Vontade pessoal do chefe de seção sem justificativa.",
+            "b) Necessidade imperiosa do serviço e manutenção do efetivo mínimo operacional da Unidade.",
+            "c) Existência de saldo bancário positivo na conta do militar.",
+            "d) Pedido de vizinhos da OPM."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Regulamento de Licença-Prêmio PMESP. A fruição subordina-se à conveniência da administração e manutenção da continuidade do serviço."
+    },
+    {
+        id: 182,
+        idSimulado: 182,
+        subject: "OPERACIONAL",
+        topic: "SCIPM - Organização das Instalações",
+        text: "No SCIPM (Diretriz nº PM3-003/02/23), a instalação temporária estabelecida para prestar atendimento médico de emergência e triagem de vítimas no local do incidente chama-se:",
+        options: [
+            "a) Posto de Comando.",
+            "b) Posto Médico Avançado (PMA) / Área de Triage.",
+            "c) Heliporto.",
+            "d) Base de Manutenção."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM, item 5.1). O Posto Médico Avançado provê primeiro atendimento e triagem na cena."
+    },
+    {
+        id: 183,
+        idSimulado: 183,
+        subject: "JURIDICO",
+        topic: "RDPM - Recursos Administrativos",
+        text: "O princípio do duplo grau de jurisdição administrativa manifesta-se no RDPM (LC nº 893/01) no direito do punido interpor recursos. Contra a decisão proferida pelo Comandante-Geral em grau de Recurso Hierárquico, cabe qual providência na esfera administrativa corporativa?",
+        options: [
+            "a) Apelação ao Tribunal de Justiça Comum.",
+            "b) Esgotamento da via administrativa corporativa, não cabendo novos recursos na esfera da Polícia Militar.",
+            "c) Novo Pedido de Reconsideração ao Subcomandante-Geral.",
+            "d) Mandado de Segurança perante o Prefeito."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Arts. 57 e 62 do RDPM (LC nº 893/01). A decisão do Comandante-Geral encerra definitivamente a instância recursal administrativa na PMESP."
+    },
+    {
+        id: 184,
+        idSimulado: 184,
+        subject: "OPERACIONAL",
+        topic: "NORSOP - Conceito de Níveis de Decisão",
+        text: "Na estrutura de C2 da NORSOP, o Oficial Comando de Força de Patrulha (CFP) atua predominantemente no nível de decisão e execução tático-operacional da Subárea. Durante o turno, sua principal função de comando no terreno é:",
+        options: [
+            "a) Elaborar o orçamento anual de investimento da Secretaria da Segurança.",
+            "b) Acompanhar, orientar, fiscalizar e coordenar no local a atuação das Unidades de Serviço, assumindo o comando do policiamento em ocorrências de maior complexidade.",
+            "c) Julgar processos do Tribunal de Justiça Militar.",
+            "d) Expedir carteiras de motorista civis."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, Anexo B). O CFP é o coordenador do policiamento em campo, orientando e assumindo crises graves."
+    },
+    {
+        id: 185,
+        idSimulado: 185,
+        subject: "JURIDICO",
+        topic: "Doutrina Correcional - Deserção de Oficial",
+        text: "A cometimento do crime militar de Deserção por Oficial PM (Artigo 187 do CPM) difere da deserção de praça em razão do rito processual. O Oficial que se ausenta sem licença por mais de 8 dias passa à condição de desertor após a lavratura do:",
+        options: [
+            "a) Termo de Ausência e posterior Termo de Deserção lavrado pela autoridade competente.",
+            "b) Auto de Prisão em Flagrante delito sumário no 1º dia.",
+            "c) Apenas publicação de nota no jornal local.",
+            "d) Perdão tácito do Comando."
+        ],
+        answer: 0,
+        explanation: "Fundamentação: Arts. 451 e 452 do CPPM. O rito da deserção formaliza-se com a contagem de ausência e lavratura do Termo de Deserção."
+    },
+    {
+        id: 186,
+        idSimulado: 186,
+        subject: "ORGANIZACIONAL",
+        topic: "Treinamento Continuado - Método Giraldi",
+        text: "No contexto do Método Giraldi, o princípio de que 'a arma de fogo é um instrumento de defesa de última ratio' estabelece que o uso da força letal pelo policial militar deve ser precedido, sempre que taticamente possível, por:",
+        options: [
+            "a) Disparos de advertência para o alto em áreas habitadas.",
+            "b) Presença ostensiva, verbalização firme e clara, e uso de meios de menor potencial ofensivo.",
+            "c) Abandono do local de confronto sem intervir.",
+            "d) Disparos contra veículos em fuga."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Doutrina do Método Giraldi / Uso Progressivo da Força. A força letal é extrema ratio, antecedida de verbalização e meios menos letais quando viável."
+    },
+    {
+        id: 187,
+        idSimulado: 187,
+        subject: "OPERACIONAL",
+        topic: "Programas de Policiamento - Ronda Maria da Penha",
+        text: "A diretriz de sigilo e proteção dos dados das vítimas cadastradas no Programa Ronda Maria da Penha veda expressamente às equipes de patrulha:",
+        options: [
+            "a) Transmitir as coordenadas da residência da vítima na rede aberta de rádio transceptor sem codificação ou revelar dados a terceiros estranhos ao serviço.",
+            "b) Realizar visitas periódicas à residência da vítima.",
+            "c) Registrar os acompanhamentos no relatório oficial.",
+            "d) Orientar a vítima sobre seus direitos."
+        ],
+        answer: 0,
+        explanation: "Fundamentação: Diretriz do Programa Ronda Maria da Penha. Protege os dados e localização da vítima contra vazamentos para salvaguarda da vida."
+    },
+    {
+        id: 188,
+        idSimulado: 188,
+        subject: "JURIDICO",
+        topic: "Lei Complementar nº 18.442/26 - Quadro de Oficiais Músicos",
+        text: "A LC nº 18.442/26 reestruturou o Quadro de Oficiais Músicos (QOM). O acesso ao posto inicial do QOM exige do militar do Estado:",
+        options: [
+            "a) Apenas indicação do Mestre de Banda.",
+            "b) Aprovação no Curso de Habilitação de Oficiais Músicos (CHO-MUS) e diploma de graduação/licenciatura em Música reconhecido.",
+            "c) Idade superior a 60 anos.",
+            "d) Desempenho no futebol da OPM."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 13 da LC nº 18.442/26. Exige aprovação no CHO-MUS e graduação de nível superior em Música."
+    },
+    {
+        id: 189,
+        idSimulado: 189,
+        subject: "OPERACIONAL",
+        topic: "Combate ao Crime Organizado - Doutrina de Patrulhamento Tático",
+        text: "O Patrulhamento Tático realizado pelas equipes de Força Tática e BAEP fundamenta-se nos princípios da disciplina tática, mentalidade de combate e uso coordenado de cobertura. O objetivo precípuo dessa modalidade de patrulha é:",
+        options: [
+            "a) Substituir a fiscalização de posturas do município.",
+            "b) Prevenir e reprimir criminalidade violenta, atuar em áreas de alto risco e dar suporte às viaturas de Rádio Patrulhamento em ocorrências de grande envergadura.",
+            "c) Realizar cobrança de pedágio em rodovias.",
+            "d) Transportar presos civis entre presídios municipais sem escolta."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Manual de Patrulhamento Tático PMESP. Foca na repressão qualificada aos crimes graves e apoio tático no terreno."
+    },
+    {
+        id: 190,
+        idSimulado: 190,
+        subject: "JURIDICO",
+        topic: "RDPM - Competência Disciplinar dos Capitães",
+        text: "Nos termos do Artigo 31 do RDPM (LC nº 893/01), o Oficial no posto de Capitão PM possui competência disciplinar original para aplicar às praças subordinadas as sanções de:",
+        options: [
+            "a) Demissão e Expulsão.",
+            "b) Advertência, Repreensão e Permanência Disciplinar até 8 (oito) dias.",
+            "c) Detenção por 30 dias.",
+            "d) Cassação de aposentadoria."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 31, IV do RDPM (LC nº 893/01). Capitães PM têm competência para aplicar Advertência, Repreensão e Permanência Disciplinar até 8 dias."
+    },
+    {
+        id: 191,
+        idSimulado: 191,
+        subject: "ORGANIZACIONAL",
+        topic: "Material Bélico - Portaria nº PM4-001/1.2/24 (Arma de Aluguel/Empréstimo)",
+        text: "A Portaria nº PM4-001/1.2/24 veda categoricamente ao policial militar em relação ao armamento institucional recebido sob sua guarda:",
+        options: [
+            "a) Utilizá-lo em serviço de patrulhamento ostensivo.",
+            "b) Emprestar, ceder, alugar, permutar ou dar em garantia o armamento pertencente ao patrimônio da PMESP a terceiros ou outros policiais sem autorização legal.",
+            "c) Submetê-lo à manutenção na reserva de armas da OPM.",
+            "d) Transportá-lo em coldre regulamentar."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 10 da Portaria nº PM4-001/1.2/24. É vedado qualquer trespasse, empréstimo ou cessão não autorizada do bem bélico público."
+    },
+    {
+        id: 192,
+        idSimulado: 192,
+        subject: "OPERACIONAL",
+        topic: "SCIPM - Princípio da Terminologia Comum",
+        text: "O princípio da Terminologia Comum no SCIPM (Diretriz nº PM3-003/02/23) estabelece que durante operações interagências os integrantes devem utilizar:",
+        options: [
+            "a) Códigos Q e jargões internos exclusivos da PMESP.",
+            "b) Linguagem clara, sem o uso de códigos ou jargões corporativos específicos que possam gerar ambiguidade entre as diferentes instituições.",
+            "c) Diálogo exclusivamente em língua estrangeira.",
+            "d) Códigos numéricos de sinais de apito."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM, item 5.2). Terminologia Comum exige linguagem clara para integração efetiva entre agências."
+    },
+    {
+        id: 193,
+        idSimulado: 193,
+        subject: "JURIDICO",
+        topic: "Doutrina Correcional - IPM com Indiciado Preso",
+        text: "No IPM instaurado para apurar crime militar com indiciado preso em flagrante, o Encarregado constata a necessidade de realizar perícia complexa que excederá o prazo legal de 10 dias. À luz do CPPM e da doutrina correcional, como deve proceder o Encarregado?",
+        options: [
+            "a) Solimitar a prorrogação do IPM por mais 60 dias e manter o indiciado preso na OPM.",
+            "b) Encerra o IPM no prazo rigoroso de 10 dias com o relatório preliminar, remete os autos à Justiça Militar e informa que o laudo pericial será juntado posteriormente como peça complementar.",
+            "c) Soltar o preso por conta própria sem aviso ao Juiz.",
+            "d) Rasgar os autos de prisão em flagrante."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Art. 20 do CPPM c/c Instruções CorregPM. O prazo de 10 dias com preso é fatal; laudos periciais pendentes são remetidos a posteriori."
+    },
+    {
+        id: 194,
+        idSimulado: 194,
+        subject: "ORGANIZACIONAL",
+        topic: "Regime de Trabalho - Faltas ao Serviço",
+        text: "O policial militar que faltar ao serviço sem causa justificável comete infração disciplinar. No âmbito da gestão de pessoal e escala, a ausência injustificada sujeita o militar, além da sanção disciplinar, a:",
+        options: [
+            "a) Perda da remuneração correspondente ao dia de ausência e desconto nos cômputos para fins de licença-prêmio e aposentadoria.",
+            "b) Prisão sumária de 5 anos no Presídio Romão Gomes sem processo.",
+            "c) Elogio na folha de alterações.",
+            "d) Concessão de folga compensatória no dia seguinte."
+        ],
+        answer: 0,
+        explanation: "Fundamentação: Diretrizes da Diretoria de Pessoal e Lei de Remuneração. A falta injustificada acarreta desconto pecuniário e reflexos no tempo de serviço."
+    },
+    {
+        id: 195,
+        idSimulado: 195,
+        subject: "OPERACIONAL",
+        topic: "NORSOP - Conceito de Nível de Resposta 3",
+        text: "O Nível de Resposta 3 na NORSOP (Diretriz nº PM3-001/02/20) caracteriza-se por mobilizar recursos de reforço e apoio tático no âmbito do:",
+        options: [
+            "a) Exclusivamente do Pelotão local de Rádio Patrulhamento.",
+            "b) Batalhão de Polícia Militar (BPM) ou Comando de Policiamento de Área (CPA), envolvendo Força Tática e OPMs vizinhas.",
+            "c) Ministério da Defesa.",
+            "d) Interpol."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, item 3.6). O Nível de Resposta 3 aciona reforços táticos no âmbito da Unidade/CPA."
+    },
+    {
+        id: 196,
+        idSimulado: 196,
+        subject: "JURIDICO",
+        topic: "RDPM - Início e Cumprimento das Sanções",
+        text: "As sanções disciplinares privativas de liberdade ou restritivas de folga (Permanência Disciplinar e Detenção) aplicadas ao militar do Estado começam a ser cumpridas:",
+        options: [
+            "a) Apenas após o trânsito em julgado na esfera cível.",
+            "b) Após a publicação em boletim e notificação do punido, respeitadas as fases recursais ou eventual concessão de efeito suspensivo.",
+            "c) Dez anos após a falta.",
+            "d) Antes da instauração do procedimento apuratório."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Arts. 56 e 60 do RDPM (LC nº 893/01). A execução pressupõe publicação formal e esgotamento/não concessão de suspensão recursal."
+    },
+    {
+        id: 197,
+        idSimulado: 197,
+        subject: "OPERACIONAL",
+        topic: "Sistema de C2 - Sala de Situação do CPA",
+        text: "A Sala de Situação instalada no nível de Comando de Policiamento de Área (CPA) tem por missão primária no Sistema de C2:",
+        options: [
+            "a) Realizar a lavratura de autos de infração de trânsito.",
+            "b) Acompanhar eventos de grande envergadura na região, centralizar informações estratégicas, monitorar o desdobramento das operações e assessorar o Comandante Regional na tomada de decisões.",
+            "c) Substituir a guarda de presídios civis.",
+            "d) Vender materiais bélicos ao público."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretriz nº PM3-001/02/23 (C2, item 4.3). A Sala de Situação do CPA centraliza a consciência situacional no Nível Tático/Estratégico Regional."
+    },
+    {
+        id: 198,
+        idSimulado: 198,
+        subject: "JURIDICO",
+        topic: "Lei Complementar nº 18.442/26 - Conselho de Ação Social",
+        text: "A LC nº 18.442/26 prevê a organização da estrutura de assistência à saúde e apoio social aos integrantes da Polícia Militar. A gestão desses serviços de saúde e assistência cabe à:",
+        options: [
+            "a) Diretoria de Saúde e Diretoria de Pessoal da PMESP.",
+            "b) Prefeitura Municipal de São Paulo exclusivamente.",
+            "c) Empresa privada de previdência aberta.",
+            "d) Guarda Municipal."
+        ],
+        answer: 0,
+        explanation: "Fundamentação: LC nº 18.442/26 c/c Regulamento de Saúde da PMESP. A gestão do sistema de saúde e assistência é atribuição das Diretorias especializadas."
+    },
+    {
+        id: 199,
+        idSimulado: 199,
+        subject: "ORGANIZACIONAL",
+        topic: "Material Bélico - Portaria nº PM4-001/1.2/24 (Inspeção de Armamento)",
+        text: "A inspeção periódica do material bélico sob Carga Individual ou acautelado nas reservas de armas das Companhias é atribuição de fiscalização do:",
+        options: [
+            "a) Oficial de Material Bélico da OPM e dos Comandantes de Companhia e Pelotão.",
+            "b) Auditor do Tribunal de Contas da União.",
+            "c) Perito do IML civil.",
+            "d) Chefe do pátio de recolhimento de veículos."
+        ],
+        answer: 0,
+        explanation: "Fundamentação: Art. 15 da Portaria nº PM4-001/1.2/24. A fiscalização e inspeção de armas cabem ao Oficial de Material Bélico e cadeia de comando."
+    },
+    {
+        id: 200,
+        idSimulado: 200,
+        subject: "OPERACIONAL",
+        topic: "SCIPM - Encerramento do Incidente",
+        text: "Ao término de uma operação gerenciada pelo SCIPM (Diretriz nº PM3-003/02/23), a última etapa obrigatória conduzida pelo Comandante do Incidente antes da desmobilização total dos recursos é a:",
+        options: [
+            "a) Destruição de todos os documentos do Posto de Comando.",
+            "b) Realização do Briefing de Desmobilização e confecção do Relatório Final do Incidente (Debriefing / RAC).",
+            "c) Prisão preventiva de todas as testemunhas.",
+            "d) Doação dos equipamentos policiais à população local."
+        ],
+        answer: 1,
+        explanation: "Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM, item 5.9). O encerramento formal exige a desmobilização ordenada, reunião de debriefing e relatório final do evento."
+    },
+{
+                id: 201,
+                subject: "OPERACIONAL",
+                topic: "NORSOP - Matrizes e Níveis de Resposta",
+                text: "Durante o turno de serviço sob o comando do Oficial CFP, ocorre uma ocorrência de roubo a estabelecimento bancário com tomada de reféns na área central. Os criminosos barricaram-se no local e a Força Tática da OPM efetuou o cerco inicial. O Coordenador Operacional (CoordOp) aciona o Grupo de Ações Táticas Especiais (GATE) do CPChq para assumir a negociação tática, enquanto solicita o apoio do Grupamento Aéreo (Águia) para sobrevoo de monitoramento. Considerando a classificação das Matrizes Operacionais e Níveis de Resposta previstos na NORSOP (Diretriz nº PM3-001/02/20), analise as proposições abaixo:\n\nI. O empenho da Força Tática da própria OPM insere a ocorrência na Matriz Operacional II e Nível de Resposta 2.\nII. O acionamento e emprego de Tropa Especializada de nível corporativo (GATE/CPChq) enquadram o evento na Matriz Operacional III.\nIII. A mobilização simultânea de recursos especializados corporativos exige o escalonamento para o Nível de Resposta 4.\n\nAssinale a alternativa correta:",
+                options: [
+                    "a) Apenas as proposições I e II estão corretas.",
+                    "b) Apenas as proposições II e III estão corretas.",
+                    "c) Apenas a proposição III está correta.",
+                    "d) Todas as proposições (I, II e III) estão corretas."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, item 3.6). O item I está incorreto porque o empenho da Força Tática (recurso de reforço do Batalhão/CPA) enquadra-se no Nível de Resposta 3 (e não 2, que abrange apenas reforço interno da própria Companhia). Os itens II e III estão corretos, pois recursos corporativos especializados (GATE/CPChq) configuram a Matriz III e impõem o Nível de Resposta 4."
+            },
+            {
+                id: 202,
+                subject: "OPERACIONAL",
+                topic: "NORSOP - Atribuições e Estrutura de C2",
+                text: "Um Capitão PM assume o Comando de uma Companhia Territorial (Subárea) e passa a auditar os processos de planejamento e execução do patrulhamento. A respeito das atribuições operacionais fixadas na Diretriz nº PM3-001/02/20 (NORSOP), assinale a alternativa INCORRETA:",
+                options: [
+                    "a) Compete à Sala de Operações da OPM realizar o acompanhamento em tempo real das Unidades de Serviço, promovendo o remanejamento tático de Cartões de Prioridade (CPP) em casos de urgência.",
+                    "b) O Cartão de Prioridade de Patrulhamento (CPP) constitui documento tático derivado do Plano de Policiamento Inteligente (PPI), sendo a ordem de serviço da Unidade de Serviço no terreno.",
+                    "c) O Coordenador Operacional (CoordOp) pode alterar os limites territoriais das Subáreas das Companhias em caráter definitivo durante o seu turno de serviço por portaria própria.",
+                    "d) Cabe ao Oficial CFP realizar a fiscalização presencial da execução dos PONTOS DE ESTACIONAMENTO (PE) e assumir o gerenciamento inicial de ocorrências de gravidade na Subárea."
+                ],
+                answer: 2,
+                explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, itens 3.4 e 3.5). A definição e alteração de limites territoriais de Subáreas e Batalhões é competência estrutural estratégica do Comando-Geral/Decreto, sendo vedado ao Coordenador Operacional alterar formalmente limites de OPM durante o turno de serviço."
+            },
+            {
+                id: 203,
+                subject: "OPERACIONAL",
+                topic: "SCIPM - Organização e Staff de Comando",
+                text: "No gerenciamento de um incidente grave de colapso de estrutura de prédio residencial com múltiplas vítimas, o Comandante do Incidente (Cmt Inc) estabelece a estrutura do SCIPM (Diretriz nº PM3-003/02/23). Durante a operação, um repórter de televisão e autoridades políticas locais pressionam as equipes no Perímetro Externo buscando dados sobre os resgatados. Para assegurar a fluidez do comando, o Cmt Inc designa integrantes do Staff de Comando. Analise as proposições sobre as funções do Staff de Comando:\n\nI. O Oficial de Informações Públicas é o único integrante autorizado a preparar e divulgar releases e conceder entrevistas à imprensa, após aprovação do Cmt Inc.\nII. O Oficial de Ligação atua como ponto de contato direto entre o Cmt Inc e os representantes das demais agências de apoio presentes na cena.\nIII. O Oficial de Segurança possui autoridade tática para suspender ou alterar imediatamente qualquer ação operacional que represente risco iminente à vida da tropa.\n\nEstá(ão) correta(s):",
+                options: [
+                    "a) Apenas a proposição I.",
+                    "b) Apenas as proposições I e III.",
+                    "c) Apenas as proposições II e III.",
+                    "d) Todas as proposições (I, II e III)."
+                ],
+                answer: 3,
+                explanation: "Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM, item 5.4). As três proposições refletem com precisão absoluta as atribuições doutrinárias dos integrantes do Staff de Comando no SCIPM (Oficial de Informações Públicas, Oficial de Ligação e Oficial de Segurança)."
+            },
+            {
+                id: 204,
+                subject: "OPERACIONAL",
+                topic: "SCIPM - Instalações e Comando Unificado",
+                text: "A respeito das instalações operacionais e dos modelos de comando previstos no Sistema de Comando de Incidentes (Diretriz nº PM3-003/02/23), assinale a alternativa correta:",
+                options: [
+                    "a) No modelo de Comando Unificado, cada agência participante deve instalar o seu próprio Posto de Comando (PC) físico isolado no local do evento.",
+                    "b) O Posto de Comando (PC) deve ser posicionado prioritariamente no Perímetro Interno (Zona Vermelha) para facilitar a visualização tática do ponto crítico pelo Comandante.",
+                    "c) A Área de Espera (Staging Area) é o local onde os recursos operacionais que chegam ao incidente aguardam, em prontidão, a atribuição de missões específicas pelo Comando.",
+                    "d) A substituição do Comandante do Incidente por Oficial de maior antiguidade ocorre de forma automática e tácita, dispensando briefing de passagem de comando."
+                ],
+                answer: 2,
+                explanation: "Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM, itens 5.1 e 5.8). A alternativa C é exata. A alternativa A erra pois no Comando Unificado há apenas 1 PC físico; a B erra pois o PC situa-se em local seguro na Zona Verde/Perímetro Externo; a D erra pois a passagem de comando exige briefing formal obrigatório."
+            },
+            {
+                id: 205,
+                subject: "OPERACIONAL",
+                topic: "Sistema de C2 - Níveis de Decisão e Processo Decisório",
+                text: "A Diretriz nº PM3-001/02/23 conceitua o Sistema de Comando e Controle na PMESP. Durante uma grande operação de reintegração de posse em área urbana, a articulação entre os Níveis de Decisão exige o alinhamento da Consciência Situacional. Considerando os Níveis de Decisão em C2, analise as afirmativas:\n\nI. O Nível Estratégico (Comando-Geral e Grandes Comandos) é responsável por fixar diretrizes institucionais, políticas de segurança e alocação macro de recursos.\nII. O Nível Tático (Comandos de Área e Batalhões) traduz os objetivos estratégicos em planos operacionais, gerenciando a alocação dos meios nas subáreas.\nIII. O Nível Operacional compreende a execução direta das missões táticas no terreno pelas Unidades de Serviço e frações de tropa.\n\nAssinale a alternativa correta:",
+                options: [
+                    "a) Apenas os itens I e II estão corretos.",
+                    "b) Apenas os itens II e III estão corretos.",
+                    "c) Apenas o item I está correto.",
+                    "d) Todos os itens (I, II e III) estão corretos."
+                ],
+                answer: 3,
+                explanation: "Fundamentação: Diretriz nº PM3-001/02/23 (Sistema de C2, item 4.1). As três proposições detalham adequadamente a divisão funcional dos Níveis Estratégico, Tático e Operacional do Sistema de C2 da PMESP."
+            },
+            {
+                id: 206,
+                subject: "OPERACIONAL",
+                topic: "Câmeras Operacionais Portáteis (COP) - Diretrizes e Prazos",
+                text: "Em uma ocorrência de patrulhamento tático, a equipe de Força Tática envolve-se em confronto armado que resulta em Lesão Corporal Decorrente de Intervenção Policial (LCDIP). O Oficial CFP desloca até o local e assume a preservação da cena. Diante das regras estipuladas na Diretriz nº PM3-001/02/25 (COP), assinale a alternativa INCORRETA:",
+                options: [
+                    "a) Cabe ao Oficial CFP ou autoridade equivalente recolher os equipamentos COP dos policiais envolvidos e realizar/supervisionar o imediato upload no sistema da OPM.",
+                    "b) As mídias vinculadas a procedimentos correcionais de grave repercussão (MDIP/LCDIP) devem ser classificadas como 'Vídeo de Evidência' e mantidas sob custódia armazenada pelo prazo mínimo de 1 (um) ano.",
+                    "c) O 'Vídeo de Rotina', sem vinculação com ocorrências criminais ou administrativas, deve permanecer armazenado no sistema corporativo pelo prazo mínimo de 90 (noventa) dias.",
+                    "d) O policial militar envolvido na ocorrência fica expressamente proibido de visualizar o registro gravado por sua própria COP antes de prestar depoimento formal no Inquérito Policial Militar."
+                ],
+                answer: 3,
+                explanation: "Fundamentação: Diretriz nº PM3-001/02/25 (COP, item 6.8). A alternativa D é incorreta pois a norma assegura ao policial militar o direito de visualizar o registro de sua COP antes de prestar suas declarações oficiais, auxiliando na fidelidade do seu relato."
+            },
+            {
+                id: 207,
+                subject: "OPERACIONAL",
+                topic: "Câmeras Operacionais Portáteis (COP) - Interrupção e Auditoria",
+                text: "Durante o patrulhamento ordinário, um Cabo PM desliga temporariamente a sua COP ao adentrar o sanitário de um posto de combustíveis. Mais tarde, no atendimento de uma ocorrência de violência doméstica em residência, a gravação deixa de ser efetuada por esgotamento injustificado do acionamento pelo policial. À luz da Diretriz nº PM3-001/02/25 (COP), analise a conduta do militar:\n\nI. A interrupção da gravação no uso do sanitário é permitida para salvaguarda da intimidade do policial, devendo o equipamento ser reativado imediatamente diante de intervenção policial.\nII. A ausência injustificada de gravação em atendimento de ocorrência operacional impõe a instauração obrigatória de Investigação Preliminar (IP) para apuração de responsabilidade disciplinar.\nIII. A cota de auditoria das mídias das COP pelos Comandantes de Companhia é opcional, realizando-se apenas quando houver denúncia formal da imprensa.\n\nEstá(ão) correta(s) apenas a(s) proposição(ões):",
+                options: [
+                    "a) I e II.",
+                    "b) II e III.",
+                    "c) I e III.",
+                    "d) I."
+                ],
+                answer: 0,
+                explanation: "Fundamentação: Diretriz nº PM3-001/02/25 (COP, itens 6.5, 6.12 e 7.1). As proposições I e II estão corretas. A proposição III é incorreta porque a auditoria periódica por Comandantes de Cia e Pelotão é obrigatória e possui cotas regulamentares fixadas na norma."
+            },
+            {
+                id: 208,
+                subject: "OPERACIONAL",
+                topic: "Programas de Policiamento - Força Tática",
+                text: "A Força Tática constitui o programa de policiamento responsável por prover apoio tático às Unidades de Serviço de Rádio Patrulhamento em ocorrências de maior complexidade. Sobre as diretrizes doutrinárias da Força Tática, assinale a alternativa correta:",
+                options: [
+                    "a) O patrulhamento tático da Força Tática deve ser executado obrigatoriamente sem vinculação com manchas criminais ou prioridades do Batalhão.",
+                    "b) No controle de distúrbios civis em primeiro nível, a Força Tática atua pautada pelo uso progressivo da força, sendo o emprego de munições de impacto controlado determinado pelo Comandante da Tropa/Cena sob estrito respaldo legal.",
+                    "c) A Força Tática subordina-se taticamente ao Delegado de Polícia Titular do município durante o cumprimento de mandados de busca.",
+                    "d) É vedado à equipe de Força Tática realizar o cerco e acompanhamento tático de veículos roubados."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Manual de Doutrina de Força Tática da PMESP. A alternativa B descreve perfeitamente a atuação no controle de distúrbios em 1º nível. As demais alternativas contrariam frontalmente o emprego de patrulhamento orientado por manchas criminais e a subordinação tática militar."
+            },
+            {
+                id: 209,
+                subject: "OPERACIONAL",
+                topic: "Programas de Policiamento - Ronda Maria da Penha",
+                text: "Uma equipe do Programa Ronda Maria da Penha realiza visita de monitoramento a uma vítima de violência doméstica assistida. Ao chegar ao local, a vítima informa que o ex-companheiro esteve na porta da residência proferindo ameaças verbais há cerca de 10 minutos e evadiu-se a pé. Diante desse cenário, analise as condutas táticas da equipe à luz da norma do Programa:\n\nI. Iniciar imediatamente o patrulhamento nas imediações para localização e prisão em flagrante do agressor pelo crime do Art. 24-A da Lei nº 11.340/06 (descumprimento de MPU).\nII. Caso o agressor não seja localizado em flagrante, lavrar o relatório de acompanhamento, orientar a vítima a registrar os fatos no Distrito Policial e informar a autoridade judiciária para reavaliação de risco.\nIII. Realizar a transmissão imediata dos dados de qualificação e endereço completo da vítima na rede aberta de rádio transceptor sem qualquer tipo de codificação.\n\nEstão corretas as condutas descritas nos itens:",
+                options: [
+                    "a) I e II, apenas.",
+                    "b) II e III, apenas.",
+                    "c) I e III, apenas.",
+                    "d) I, II e III."
+                ],
+                answer: 0,
+                explanation: "Fundamentação: Diretriz do Programa Ronda Maria da Penha PMESP. Os itens I e II são condutas padronizadas e corretas. O item III é incorreto, pois a norma exige o sigilo dos dados e endereço da vítima para evitar exposição de risco, vedando a veiculação desnecessária em rede aberta de rádio."
+            },
+            {
+                id: 210,
+                subject: "OPERACIONAL",
+                topic: "Programas de Policiamento - Policiamento Escolar",
+                text: "Em patrulhamento pelo entorno de uma escola pública estadual, a equipe de Policiamento Escolar é acionada pela Direção, que flagrou um estudante de 17 anos vendendo porções de maconha no pátio interno. O adolescente foi contido no Gabinete da Direção. Assinale a alternativa que indica o procedimento regulamentar correto:",
+                options: [
+                    "a) Liberar o adolescente no local mediante assinatura de termo de compromisso pelo Diretor da escola, sem acionamento da Polícia Judiciária.",
+                    "b) Efetuar a apreensão em flagrante do adolescente por ato infracional análogo ao crime de tráfico de drogas, conduzindo-o à Polícia Judiciária com acompanhamento dos responsáveis ou Conselho Tutelar e apreensão das substâncias.",
+                    "c) Aplicar sanção disciplinar prevista no RDPM diretamente ao estudante no âmbito escolar.",
+                    "d) Encaminhar o adolescente diretamente à Fundação CASA sem necessidade de lavratura de Auto de Apreensão em Flagrante de Ato Infracional."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Lei nº 8.069/90 (ECA, Art. 171) e Diretriz do Policiamento Escolar da PMESP. Diante de flagrante de ato infracional grave, impõe-se a apreensão e condução à Polícia Judiciária com garantias do ECA."
+            },
+            {
+                id: 211,
+                subject: "OPERACIONAL",
+                topic: "Programas de Policiamento - Trânsito (CTB e Resoluções CONTRAN)",
+                text: "Durante Ponto de Fiscalização de Trânsito (PFT), um condutor é abordado apresentando forte hálito etílico, agressividade e desorientação temporal. O condutor recusa-se a soprar o etilômetro. A equipe policial militar elabora o Auto de Constatação de Sinais de Alteração da Capacidade Psicomotora nos termos da Resolução CONTRAN aplicável. Diante desses fatos, analise as proposições:\n\nI. A constatação dos sinais de embriaguez atestada pelos policiais supre a ausência do teste de etilômetro para fins de caracterização do crime de trânsito do Art. 306 do CTB.\nII. Além da condução do motorista à Polícia Judiciária pelo crime de trânsito, a equipe deve lavrar o Auto de Infração pelo Art. 165-A do CTB.\nIII. Como medida administrativa, a equipe deve recolher o documento de habilitação e reter o veículo até a apresentação de condutor habilitado.\n\nAssinale a alternativa correta:",
+                options: [
+                    "a) Apenas os itens I e II estão corretos.",
+                    "b) Apenas os itens II e III estão corretos.",
+                    "c) Apenas o item I está correto.",
+                    "d) Todos os itens (I, II e III) estão corretos."
+                ],
+                answer: 3,
+                explanation: "Fundamentação: Arts. 165-A, 277 e 306 do CTB c/c Resolução CONTRAN nº 432/12. Os sinais visíveis atestados no termo oficial comprovam a alteração psicomotora para o crime penal, cumulando-se com as sanções administrativas do Art. 165-A (autuação, recolhimento de CNH e retenção veicular)."
+            },
+            {
+                id: 212,
+                subject: "OPERACIONAL",
+                topic: "Programas de Policiamento - Policiamento Rural",
+                text: "A respeito das estratégias e doutrina de emprego do Policiamento Rural na Polícia Militar do Estado de São Paulo, assinale a alternativa incorreta:",
+                options: [
+                    "a) O cadastramento georreferenciado (coordenadas GPS) das propriedades rurais constitui ferramenta essencial para agilizar o deslocamento das patrulhas e reduzir o tempo de resposta.",
+                    "b) O patrulhamento rural deve ser realizado com distância tática ampliada entre viaturas em comboio e manutenção de disciplina de luzes quando exigido pelo terreno.",
+                    "c) É permitido às patrulhas rurais realizar a apreensão de bens e máquinas agrícolas sem qualquer registro formal ou comunicação à Sala de Operações.",
+                    "d) A integração com lideranças comunitárias rurais e sindicatos patronais/trabalhadores fortalece a rede de prevenção contra furtos de insumos e maquinários."
+                ],
+                answer: 2,
+                explanation: "Fundamentação: Diretriz do Policiamento Rural PMESP. A alternativa C é incorreta, pois qualquer apreensão de bens ou intervenção policial exige estrito cumprimento do devido processo legal e registro formal via BOPM/SOP."
+            },
+            {
+                id: 213,
+                subject: "OPERACIONAL",
+                topic: "Programas de Policiamento - Polícia Comunitária e Método IARA",
+                text: "A filosofia de Polícia Comunitária adota o Método IARA como metodologia científica de solução de problemas. Um Capitão Cmt de Cia orienta seus Comandantes de Pelotão a aplicarem o método no combate a furtos de veículos em um setor específico. Analise as etapas do Método IARA:\n\nI. Identificação: Mapeamento do problema específico de segurança na comunidade a partir do diálogo e dados estatísticos.\nII. Análise: Estudo aprofundado das causas, vulnerabilidades ambientais e atores envolvidos no problema criminal.\nIII. Resposta: Formulação e execução de ações estratégicas conjuntas entre a PM, comunidade e órgãos públicos.\nIV. Avaliação: Mensuração contínua dos resultados obtidos para verificar a efetividade da solução adotada.\n\nEstão corretas as definições contidas em:",
+                options: [
+                    "a) I e III, apenas.",
+                    "b) II e IV, apenas.",
+                    "c) I, II e III, apenas.",
+                    "d) I, II, III e IV."
+                ],
+                answer: 3,
+                explanation: "Fundamentação: Diretrizes de Polícia Comunitária PMESP (Método IARA). As quatro etapas sequenciais do acrônimo IARA (Identificação, Análise, Resposta e Avaliação) estão perfeitamente conceituadas."
+            },
+            {
+                id: 214,
+                subject: "OPERACIONAL",
+                topic: "Programas de Policiamento - Drones / ARPAS",
+                text: "Acerca da regulamentação do uso de Sistemas de Aeronaves Não Tripuladas (ARPAS/Drones) no âmbito da PMESP, de acordo com as normas corporativas e instrução do DECEA (ICA 100-40), analise as afirmações:\n\nI. A operação de ARPAS em missões policiais exige operador militar devidamente credenciado e aprovação prévia do plano de voo no sistema SARPAS/DECEA.\nII. É vedado o emprego de equipamentos privados pertencentes ao acervo pessoal do policial militar durante o serviço ordinário.\nIII. Em caso de perda de sinal de controle (Lost Link) durante o voo, o drone executa automaticamente a rotina preprogramada de retorno ao ponto de decolagem (RTH - Return to Home).\n\nEstá(ão) correta(s):",
+                options: [
+                    "a) Apenas a afirmação I.",
+                    "b) Apenas as afirmações I e II.",
+                    "c) Apenas as afirmações II e III.",
+                    "d) Todas as afirmações (I, II e III)."
+                ],
+                answer: 3,
+                explanation: "Fundamentação: Regulamentação de ARPAS na PMESP c/c ICA 100-40 DECEA. As três afirmações são corretas e traduzem as normas de segurança aérea e corporativa para uso de drones."
+            },
+            {
+                id: 215,
+                subject: "OPERACIONAL",
+                topic: "Combate ao Crime Organizado - Planos de Cerco e Intimidadores",
+                text: "Uma facção criminosa executa um ataque coordenado no modelo 'Domínio de Cidade' (Novo Cangaço) contra a sede de uma empresa de transporte de valores no interior do Estado. O Coordenador Operacional (CoordOp) assume a gestão inicial da crise no Nível Tático. Considerando as diretrizes de C2 e contingência contra crimes violentos patrimoniais, assinale a opção com a providência tática INCORRETA:",
+                options: [
+                    "a) Acionar imediatamente o Plano de Cerco Regional, estabelecendo pontos de bloqueio viário e contenção nas rotas estratégicas de fuga.",
+                    "b) Determinar que viaturas isoladas de Rádio Patrulhamento efetuem incursões diretas ao centro do Ponto Crítico sem apoio de tropa tática.",
+                    "c) Centralizar as comunicações no canal de rádio e manter constante fluxo de informações com a Sala de Operações e COPOM.",
+                    "d) Solicitar o empenho de Unidades Especializadas de Reforço (BAEP, BPChq, CAvPM) para cerco ampliado e varredura de área."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Diretrizes de C2 e Planos de Contingência da PMESP contra Roubos a Bancos/Novo Cangaço. A opção B é taticamente incorreta e vedada, pois expõe viaturas isoladas a emboscadas por armamento de alto calibre (fuzis), exigindo contenção à distância e atuação coordenada com tropa tática."
+            },
+            {
+                id: 216,
+                subject: "OPERACIONAL",
+                topic: "Inteligência Operacional - Doutrina SIPOM",
+                text: "No âmbito do Sistema de Inteligência da Polícia Militar (SIPOM), a produção do conhecimento inteligência subsidia o planejamento operacional do Batalhão. O documento elaborado pela Seção de Inteligência (P/2) que analisa dados coletados na ponta e apresenta diagnósticos táticos para tomada de decisão do Comandante de Unidade denomina-se:",
+                options: [
+                    "a) Auto de Prisão em Flagrante Delito (APFD).",
+                    "b) Relatório de Inteligência (RELINT).",
+                    "c) Parte de Ocorrência Especial.",
+                    "d) Portaria de Investigação Preliminar."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Doutrina SIPOM/PMESP. O RELINT (Relatório de Inteligência) é o documento formal do SIPOM destinado a difundir conhecimentos analisados para assessorar os comandantes."
+            },
+            {
+                id: 217,
+                subject: "OPERACIONAL",
+                topic: "NORSOP - Tipos Formais de Atuação Operacional",
+                text: "A Diretriz nº PM3-001/02/20 (NORSOP) conceitua os tipos formais de atuação operacional da Polícia Militar. Correlacione os termos da Coluna 1 com as respectivas definições da Coluna 2:\n\nColuna 1:\n(1) Ação Policial-Militar\n(2) Operação Policial-Militar\n(3) Missão Policial-Militar\n\nColuna 2:\n( A ) Atividade extraordinária, com prazo e local determinados, destinada a responder a demandas específicas de segurança.\n( B ) Atividade ordinária e continuada, executada segundo normas fixas e planejamento permanente da OPM.\n( C ) Tarefa eventual de caráter emergencial ou de cumprimento imediato atribuída a uma fração de tropa.\n\nA sequência correta da correlação é:",
+                options: [
+                    "a) 1-B, 2-A, 3-C.",
+                    "b) 1-A, 2-B, 3-C.",
+                    "c) 1-C, 2-A, 3-B.",
+                    "d) 1-B, 2-C, 3-A."
+                ],
+                answer: 0,
+                explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, item 3.7.2). Ação (ordinária e continuada = B), Operação (extraordinária com prazo = A) e Missão (tarefa eventual/emergencial = C)."
+            },
+            {
+                id: 218,
+                subject: "OPERACIONAL",
+                topic: "SCIPM - Princípios da Estrutura Modular",
+                text: "No SCIPM (Diretriz nº PM3-003/02/23), a estrutura organizacional expande-se e recolhe-se de forma modular. A respeito desse princípio, é correto afirmar que:",
+                options: [
+                    "a) Todas as seções e funções do SCIPM devem ser obrigatoriamente ativadas no instante inicial de qualquer ocorrência simples.",
+                    "b) O crescimento da estrutura organizacional ocorre de baixo para cima, ativando-se apenas as seções e funções estritamente necessárias conforme a complexidade do incidente.",
+                    "c) A estrutura modular impede que o Comandante do Incidente acumule funções operacionais no início da crise.",
+                    "d) A desmobilização dos recursos deve ser feita de forma simultânea sem qualquer cronograma tático."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM, item 5.2). A estrutura modular é dinâmica e cresce conforme a necessidade e complexidade do incidente, ativando seções gradualmente."
+            },
+            {
+                id: 219,
+                subject: "OPERACIONAL",
+                topic: "Câmeras Operacionais Portáteis (COP) - Situações de Exceção",
+                text: "Durante o atendimento de ocorrência de crime contra a dignidade sexual envolvendo vítima vulnerável no interior de estabelecimento de saúde, a equipe policial militar equipada com COP atua no local. Em relação à captação de imagens e proteção da intimidade, a Diretriz nº PM3-001/02/25 determina que:",
+                options: [
+                    "a) Os policiais devem desligar o equipamento e recusar a produção de qualquer imagem da ocorrência.",
+                    "b) A gravação da intervenção deve focar a produção de provas, vestígios do local e qualificações, adotando-se enquadramentos que zelem pela dignidade e evitem a exposição indevida da intimidade da vítima.",
+                    "c) A COP deve ser entregue aos familiares da vítima para que eles conduzam a gravação.",
+                    "d) O arquivo gravado deve ser publicado em redes sociais para identificação de denúncias."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Diretriz nº PM3-001/02/25 (COP, item 6.7). Mantém-se o dever de gravação com foco na colheita de provas e vestígios do fato, enquadrando-se com sensibilidade para proteger a intimidade e imagem do vulnerável."
+            },
+            {
+                id: 220,
+                subject: "OPERACIONAL",
+                topic: "Programas de Policiamento - ROCAM",
+                text: "A ROCAM (Rondas Ostensivas com Apoio de Motocicletas) destaca-se pela mobilidade tática no ambiente urbano congestionado. Assinale a alternativa que indica a principal diretriz de lançamento da ROCAM:",
+                options: [
+                    "a) Atuação exclusiva em guarda de presídios e escolta de presos civis.",
+                    "b) Emprego prioritário em corredores de grande tráfego, corredores comerciais e manchas criminais de roubo de veículos/transeuntes, dando apoio rápido à RP.",
+                    "c) Realização de patrulhamento de estradas rurais não pavimentadas em comboio pesado.",
+                    "d) Interdição de vias públicas sem prévia autorização da autoridade de trânsito."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Manual de Doutrina ROCAM/PMESP. Foca em flexibilidade, agilidade e supressão do trânsito denso para combate aos roubos urbanos e apoio rápido."
+            },
+            {
+                id: 221,
+                subject: "OPERACIONAL",
+                topic: "NORSOP - Conceito de Unidade de Serviço (US)",
+                text: "Na estrutura conceitual da NORSOP (Diretriz nº PM3-001/02/20), a menor célula de execução do policiamento ostensivo, composta por recursos humanos e materiais empenhada em cartão de prioridade, denomina-se:",
+                options: [
+                    "a) Subárea de Policiamento.",
+                    "b) Unidade de Serviço (US).",
+                    "c) Posto de Comando Regional.",
+                    "d) Pelotão de Força Tática."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: NORSOP (Diretriz nº PM3-001/02/20, item 3.2). Definição exata de Unidade de Serviço (US) na norma (ex: viatura de RP, dupla de ROCAM, patrulha a pé)."
+            },
+            {
+                id: 222,
+                subject: "OPERACIONAL",
+                topic: "SCIPM - Unidade de Comando",
+                text: "O princípio da Unidade de Comando no SCIPM (Diretriz nº PM3-003/02/23) estabelece expressamente que:",
+                options: [
+                    "a) Todas as forças de segurança estaduais e federais no local respondem diretamente ao Governador do Estado.",
+                    "b) Cada indivíduo empregado no incidente reporta-se e recebe ordens de apenas 1 (um) único supervisor designado na cadeia de comando.",
+                    "c) O Posto de Comando deve ser dividido em duas instalações separadas para Oficiais e Praças.",
+                    "d) Apenas 1 (um) policial militar pode estar empenhado no local da crise."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM, item 5.3). Unidade de Comando significa que cada participante presta contas a apenas 1 supervisor direto."
+            },
+            {
+                id: 223,
+                subject: "OPERACIONAL",
+                topic: "Programas de Policiamento - Trânsito (Competência e Legislação)",
+                text: "Um motorista é flagrado por equipe de Rádio Patrulhamento dirigindo veículo com placas de identificação adulteradas (dublê). Diante dessa constatação, a conduta correta da equipe abrange:",
+                options: [
+                    "a) Liberar o condutor após remoção das placas e aplicação de advertência verbal.",
+                    "b) Efetuar a prisão em flagrante delito do condutor pelo crime do Art. 311 do Código Penal, apreender o veículo e conduzir as partes à Polícia Judiciária.",
+                    "c) Aplicar sanção disciplinar militar ao motorista civil.",
+                    "d) Incinerar o veículo no local do fato."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 311 do Código Penal e Procedimento Operacional Padrão. A adulteração de sinal identificador veicular constitui crime grave, impondo prisão em flagrante e apreensão."
+            },
+            {
+                id: 224,
+                subject: "OPERACIONAL",
+                topic: "Sistema de C2 - Sala de Operações da OPM",
+                text: "A Sala de Operações da OPM atua como nó de C2 descentralizado no Nível Tático. Dentre suas atribuições regulamentares, NÃO se inclui:",
+                options: [
+                    "a) O monitoramento contínuo do lançamento das Unidades de Serviço no terreno.",
+                    "b) A redistribuição de Cartões de Prioridade (CPP) em caso de ocorrências de emergência.",
+                    "c) A edição de leis de trânsito em substituição ao Congresso Nacional.",
+                    "d) A interlocução constante de C2 com o COPOM e com o Oficial CFP."
+                ],
+                answer: 2,
+                explanation: "Fundamentação: Diretriz nº PM3-001/02/23 (C2) e NORSOP. A opção C é esdrúxula e patentemente incorreta em termos de atribuição institucional do Poder Executivo/PMESP."
+            },
+            {
+                id: 225,
+                subject: "OPERACIONAL",
+                topic: "Programas de Policiamento - Ronda Maria da Penha (Descumprimento de MPU)",
+                text: "O crime de descumprimento de Medida Protetiva de Urgência (Art. 24-A da Lei nº 11.340/06) praticado por agressor flagrado pela equipe da Ronda Maria da Penha possui a seguinte peculiaridade jurídica na esfera policial:",
+                options: [
+                    "a) Admite a concessão de fiança diretamente pela Autoridade Policial (Delegado de Polícia) no Distrito Policial.",
+                    "b) A fiança somente poderá ser concedida pelo Juiz de Direito competente, sendo vedada a fiança na esfera policial.",
+                    "c) Transforma-se em infração administrativa de trânsito sem sanção penal.",
+                    "d) Impõe a imediata libertação do autor sem lavratura de Auto de Prisão."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 24-A, § 2º da Lei nº 11.340/06 (Lei Maria da Penha). Na prisão em flagrante pelo descumprimento de MPU, a fiança só pode ser concedida pelo Juiz."
+            },
+
+            // =========================================================================
+            // ASSUNTOS JURÍDICO-ADMINISTRATIVOS (~30% - QUESTÕES 226 A 240)
+            // =========================================================================
+            {
+                id: 226,
+                subject: "JURIDICO",
+                topic: "Lei Complementar nº 18.442/26 - Estrutura dos Quadros e Precedência",
+                text: "A Lei Complementar nº 18.442, de 02ABR26, reorganizou o pessoal e a carreira da PMESP. Em uma ocorrência de grande repercussão, encontram-se presentes dois 1º Tenentes PM da ativa promovidos na mesma data: um integrante do Quadro de Oficiais Estado-Maior (QOEM) e outro do Quadro de Oficiais Especialistas (QOE). À luz das regras de precedência funcional da LC nº 18.442/26, analise as proposições:\n\nI. O Oficial integrante do QOEM possui precedência funcional sobre o Oficial do QOE em igualdade de postos no serviço ativo.\nII. Os cargos de Comandante-Geral, Subcomandante-Geral e Secretário-Chefe da Casa Militar são privativos de Coronéis PM do serviço ativo integrantes do QOEM.\nIII. Os Oficiais do QOE podem progredir na carreira até o posto de Coronel PM do QOEM sem necessidade de concurso.\n\nAssinale a alternativa correta:",
+                options: [
+                    "a) Apenas os itens I e II estão corretos.",
+                    "b) Apenas os itens II e III estão corretos.",
+                    "c) Apenas o item I está correto.",
+                    "d) Todos os itens (I, II e III) estão corretos."
+                ],
+                answer: 0,
+                explanation: "Fundamentação: Arts. 4º (§ 3º), 7º e 10 da Lei Complementar nº 18.442/26. Os itens I e II estão corretos. O item III é incorreto, pois os Oficiais do QOE possuem carreira delimitada nos postos do seu quadro, não migrando compulsoriamente aos postos do QOEM sem a formação no CFO/Direito."
+            },
+            {
+                id: 227,
+                subject: "JURIDICO",
+                topic: "Lei Complementar nº 18.442/26 - Efetivo Fixado e Exceções",
+                text: "O artigo 3º da Lei Complementar nº 18.442/26 fixa o teto do efetivo da Polícia Militar do Estado de São Paulo em 93.802 cargos. O parágrafo único do mesmo artigo estabelece exceções expressas que NÃO são computadas nesse limite legal. Analise a listagem abaixo:\n\n1. Aspirantes a Oficial PM\n2. Cadetes PM (Alunos-Oficiais PM)\n3. Alunos-Soldados PM\n4. Policiais Militares da Reserva Remunerada Revertidos ao serviço ativo\n5. Policiais Militares Temporários\n\nNÃO integram o cômputo do teto fixado de 93.802 cargos:",
+                options: [
+                    "a) Apenas os itens 1, 2 e 3.",
+                    "b) Apenas os itens 2, 3 e 5.",
+                    "c) Apenas os itens 1, 4 e 5.",
+                    "d) Todos os itens (1, 2, 3, 4 e 5)."
+                ],
+                answer: 3,
+                explanation: "Fundamentação: Art. 3º, parágrafo único da Lei Complementar nº 18.442/26. Todos os cinco grupos listados são expressamente excluídos do cômputo do limite máximo de 93.802 cargos fixados na lei."
+            },
+            {
+                id: 228,
+                subject: "JURIDICO",
+                topic: "RDPM - Sanções e Conversão em Serviço Extraordinário",
+                text: "Nos termos da LC nº 893/01 (RDPM), a sanção disciplinar de Permanência Disciplinar implica a retenção do militar na OPM. O punido pode requerer a conversão da permanência disciplinar em prestação de serviço extraordinário. A respeito dessa conversão e seus efeitos jurídicos, assinale a alternativa correta:",
+                options: [
+                    "a) O deferimento do pedido de conversão é ato vinculado da autoridade, não podendo ser indeferido.",
+                    "b) A solicitação da conversão formulada pelo punido importa na renúncia ou elisão do direito de interpor recurso de Reconsideração de Ato.",
+                    "c) O serviço extraordinário fruto da conversão será prestado sem fardamento nas folgas e com remuneração em dobro.",
+                    "d) A conversão anula o registro de punição do assentamento individual do militar."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 16, § 4º da LC nº 893/01 (RDPM). O pedido de conversão formulado pelo transgressor e deferido a juízo motivado da autoridade importa na renúncia/elisão do recurso administrativo de reconsideração de ato."
+            },
+            {
+                id: 229,
+                subject: "JURIDICO",
+                topic: "RDPM - Classificação do Comportamento Disciplinar",
+                text: "Um Cabo PM possui em seus assentamentos funcionais o registro de 1 (uma) Permanência Disciplinar sofrida há 18 meses e NENHUMA outra sanção no período de 2 anos. De acordo com as regras do Artigo 53 do RDPM (LC nº 893/01), em qual Comportamento Disciplinar a praça estará enquadrada?",
+                options: [
+                    "a) Comportamento Excepcional.",
+                    "b) Comportamento Ótimo.",
+                    "c) Comportamento Bom.",
+                    "d) Comportamento Insuficiente."
+                ],
+                answer: 2,
+                explanation: "Fundamentação: Art. 53 do RDPM (LC nº 893/01). Enquadra-se no Comportamento 'Bom' a praça que, no período de 2 anos de efetivo serviço, tenha sido punida com até 2 Permanências Disciplinares (ou equivalente em repreensões)."
+            },
+            {
+                id: 230,
+                subject: "JURIDICO",
+                topic: "RDPM - Deveres Éticos e Causas de Justificação",
+                text: "Analise a situação fática: Um Policial Militar, ao notar que um veículo desgovernado caminhava em direção a uma multidão de pedestres, colidiu intencionalmente a viatura policial contra o automóvel sem freios, destruindo a frente da viatura e evitando o atropelamento de dezenas de pessoas. Instaurou-se procedimento para apurar o dano ao patrimônio público. Diante do RDPM (LC nº 893/01), a conduta do militar enquadra-se na:",
+                options: [
+                    "a) Circunstância Agravante de dano ao patrimônio.",
+                    "b) Causa de Justificação (prática de ação para evitar mal maior), isentando o militar de punição disciplinar.",
+                    "c) Transgressão Disciplinar de Natureza Grave com demissão ex officio.",
+                    "d) Circunstância Atenuante de confissão espontânea apenas."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 34, II do RDPM (LC nº 893/01). A conduta praticada para evitar mal maior ou em legítima defesa constitui Causa de Justificação, eliminando a transgressão disciplinar."
+            },
+            {
+                id: 231,
+                subject: "JURIDICO",
+                topic: "Doutrina Correcional - Prazos do IPM e Indiciado Preso",
+                text: "Um Inquérito Policial Militar (IPM) é instaurado para apurar crime militar de peculato. O indiciado encontra-se PRESO preventivamente por ordem da Justiça Militar. Nos termos expressos do Artigo 20 do Código de Processo Penal Militar (CPPM), qual é o prazo para a conclusão e remessa dos autos?",
+                options: [
+                    "a) 10 (dez) dias corridos e improrrogáveis.",
+                    "b) 20 (vinte) dias, prorrogáveis por mais 10 dias.",
+                    "c) 40 (quarenta) dias, prorrogáveis por mais 20 dias.",
+                    "d) 60 (sessenta) dias sem prorrogação."
+                ],
+                answer: 0,
+                explanation: "Fundamentação: Art. 20 do CPPM. Estando o indiciado preso, o prazo para conclusão e remessa do IPM é de 10 dias corridos improrrogáveis, contados do cumprimento da prisão."
+            },
+            {
+                id: 232,
+                subject: "JURIDICO",
+                topic: "Doutrina Correcional - IPM com Indiciado Solto e Prorrogação",
+                text: "Estando o indiciado SOLTO no Inquérito Policial Militar (IPM), o prazo de conclusão regulamentar previsto no Artigo 20 do CPPM é de 40 (quarenta) dias. Caso o Encarregado necessite de prazo complementar para diligências imprescindíveis, a prorrogação do IPM deve ser solicitada à autoridade judiciária e poderá ser concedida pelo prazo de até:",
+                options: [
+                    "a) 10 dias.",
+                    "b) 20 (vinte) dias adicionais.",
+                    "c) 90 dias adicionais.",
+                    "d) 180 dias adicionais."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 20, § 1º do CPPM. Estando o indiciado solto, o prazo inicial é de 40 dias, prorrogável por mais 20 dias mediante autorização fundamentada do Juiz Militar."
+            },
+            {
+                id: 233,
+                subject: "JURIDICO",
+                topic: "Processos Disciplinares - Conselho de Disciplina e PDRS",
+                text: "A respeito dos Processos Administrativos Disciplinares na PMESP (Conselho de Disciplina, Conselho de Justificação e PDRS), analise as afirmações:\n\nI. O Conselho de Justificação é o processo destinado a julgar a incapacidade moral e profissional de Oficiais da Polícia Militar.\nII. O Conselho de Disciplina aplica-se ao julgamento de Praças com estabilidade assegurada (com mais de 10 anos de efetivo serviço).\nIII. O Processo Disciplinar de Rito Sumário (PDRS) destina-se a julgar faltas disciplinares de praças não demissórias de forma célere.\n\nAssinale a alternativa correta:",
+                options: [
+                    "a) Apenas os itens I e II estão corretos.",
+                    "b) Apenas os itens II e III estão corretos.",
+                    "c) Apenas o item III está correto.",
+                    "d) Todos os itens (I, II e III) estão corretos."
+                ],
+                answer: 3,
+                explanation: "Fundamentação: Lei nº 5.836/72 (CJ), Decreto nº 15.848/76 (CD) e Instruções do PAD da PMESP (PDRS). As três proposições delimitam com perfeição o escopo de aplicação dos três processos disciplinares."
+            },
+            {
+                id: 234,
+                subject: "JURIDICO",
+                topic: "RDPM - Prazos de Prescrição Disciplinar",
+                text: "A ação disciplinar da Administração para apurar transgressões disciplinares sujeitas às sanções de Advertência, Repreensão e Permanência Disciplinar prescreve no prazo de:",
+                options: [
+                    "a) 1 (um) ano.",
+                    "b) 2 (dois) anos, contados da data em que a falta foi praticada.",
+                    "c) 5 (cinco) anos.",
+                    "d) 10 (dez) anos."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 85 do RDPM (LC nº 893/01). A prescrição da ação disciplinar para sanções não demissórias ocorre no prazo de 2 anos contados do cometimento do fato."
+            },
+            {
+                id: 235,
+                subject: "JURIDICO",
+                topic: "Doutrina Correcional - Crime Doloso contra a Vida de Civil",
+                text: "Quando policiais militares de serviço envolvem-se em confronto que resulte na morte dolosa de um civil (MDIP), a competência para a lavratura do procedimento de Polícia Judiciária Militar e para o julgamento final do crime doloso contra a vida é dividida do seguinte modo:",
+                options: [
+                    "a) A PMESP lavra a Sindicância e a Justiça Militar julga o homicídio doloso.",
+                    "b) A Polícia Judiciária Militar (Oficial PM) instaura e conduz o Inquérito Policial Militar (IPM), e a remessa dos autos é feita à Justiça Comum (Tribunal do Júri) para processamento e julgamento.",
+                    "c) O procedimento é instaurado exclusivamente pela Guarda Municipal e julgado no TRF.",
+                    "d) O caso é julgado diretamente pelo Comandante de Batalhão sem remessa ao Judiciário."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 82, § 2º do CPPM c/c Lei nº 9.299/96. A apuração do crime militar contra a vida de civil é feita em IPM conduzido por Oficial PM, sendo a competência de julgamento do Tribunal do Júri (Justiça Comum)."
+            },
+            {
+                id: 236,
+                subject: "JURIDICO",
+                topic: "Lei Complementar nº 18.442/26 - Requisitos de Promoção a Capitão PM",
+                text: "Para que um 1º Tenente PM do QOEM concorra à promoção ao posto de Capitão PM, a Lei Complementar nº 18.442/26 estabelece requisitos cumulativos. Dentre as exigências abaixo, assinale a INCORRETA:",
+                options: [
+                    "a) Cumprimento do interstício mínimo de 4 (quatro) anos no posto de 1º Tenente PM.",
+                    "b) Aprovação na Avaliação de Competência Profissional (ACP).",
+                    "c) Estar posicionado na primeira quarta parte (1/4) do almanaque do posto.",
+                    "d) Possuir obrigatoriamente título de doutorado stricto sensu em Direito Penal."
+                ],
+                answer: 3,
+                explanation: "Fundamentação: Arts. 8º e 11 da LC nº 18.442/26. As alternativas A, B e C são requisitos legais expressos. A exigência de doutorado (D) é falsa e não prevista na legislação corporativa."
+            },
+            {
+                id: 237,
+                subject: "JURIDICO",
+                topic: "RDPM - Competências Disciplinares",
+                text: "Assinale a alternativa que indica a autoridade que possui competência disciplinar legal para aplicar a sanção de EXPULSÃO a praça com estabilidade assegurada, nos termos do RDPM (LC nº 893/01):",
+                options: [
+                    "a) Comandante de Companhia PM.",
+                    "b) Coordenador Operacional da OPM.",
+                    "c) Comandante-Geral da Polícia Militar.",
+                    "d) Chefe da P/1 do Batalhão."
+                ],
+                answer: 2,
+                explanation: "Fundamentação: Art. 31, I do RDPM (LC nº 893/01). A aplicação da sanção demissória de Expulsão ou Demissão é competência exclusiva do Comandante-Geral da PMESP."
+            },
+            {
+                id: 238,
+                subject: "JURIDICO",
+                topic: "RDPM - Cancelamento de Sanções Disciplinares",
+                text: "O cancelamento de registros de sanções disciplinares do assentamento individual do militar (Artigo 68 do RDPM) pode ser concedido após o transcurso sem punições do prazo de efetivo serviço de:",
+                options: [
+                    "a) 1 (um) ano.",
+                    "b) 3 (três) anos.",
+                    "c) 5 (cinco) anos.",
+                    "d) 10 (dez) anos."
+                ],
+                answer: 2,
+                explanation: "Fundamentação: Art. 68 do RDPM (LC nº 893/01). O cancelamento administrativo de registros de sanções exige o cumprimento de 5 anos de efetivo serviço sem qualquer nova punição disciplinar."
+            },
+            {
+                id: 239,
+                subject: "JURIDICO",
+                topic: "Doutrina Correcional - Deserção de Praça (Prazo de Consumação)",
+                text: "O crime militar de Deserção praticado por Praça sem licença (Artigo 187 do Código Penal Militar) consuma-se quando a ausência não justificável da Unidade onde serve ultrapassa o prazo de:",
+                options: [
+                    "a) 24 horas.",
+                    "b) 48 horas.",
+                    "c) 8 (oito) dias consecutivos.",
+                    "d) 30 dias."
+                ],
+                answer: 2,
+                explanation: "Fundamentação: Art. 187 do Código Penal Militar (CPM). A consumação da deserção exige ausência injustificada por mais de 8 dias consecutivos (a partir do primeiro minuto do 9º dia)."
+            },
+            {
+                id: 240,
+                subject: "JURIDICO",
+                topic: "RDPM - Prazos Recursais",
+                text: "O prazo regulamentar para o militar do Estado interpor Pedido de Reconsideração de Ato contra punição disciplinar aplicada pela autoridade é de:",
+                options: [
+                    "a) 2 (dois) dias úteis.",
+                    "b) 5 (cinco) dias úteis.",
+                    "c) 10 (dez) dias corridos.",
+                    "d) 15 (quinze) dias úteis."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 58 do RDPM (LC nº 893/01). O prazo formal para interposição do recurso de Reconsideração de Ato é de 5 dias úteis contados da notificação/publicação."
+            },
+
+            // =========================================================================
+            // ASSUNTOS ORGANIZACIONAIS (~20% - QUESTÕES 241 A 250)
+            // =========================================================================
+            {
+                id: 241,
+                subject: "ORGANIZACIONAL",
+                topic: "Regime de Trabalho - Portaria nº PM1-7/02/23 e Folga Mensal",
+                text: "De acordo com as regras da Portaria do Cmt G nº PM1-7/02/23 (Regime de Trabalho na PMESP), os policiais militares fixados em escalas de turnos operacionais de 12 horas (12x36 ou 12x24/12x48) fazem jus à concessão de 1 (uma) Folga Mensal Regulamentar a cada ciclo de cumprimento ininterrupto de quantos serviços?",
+                options: [
+                    "a) 8 serviços.",
+                    "b) 10 serviços.",
+                    "c) 14 (quatorze) serviços.",
+                    "d) 18 serviços."
+                ],
+                answer: 2,
+                explanation: "Fundamentação: Art. 12 da Portaria do Cmt G nº PM1-7/02/23. Nas escalas de turnos de 12 horas, o direito a 1 folga mensal é adquirido a cada 14 serviços prestados ininterruptamente."
+            },
+            {
+                id: 242,
+                subject: "ORGANIZACIONAL",
+                topic: "Material Bélico - Portaria nº PM4-001/1.2/24 (Revogação Obrigatória)",
+                text: "A Portaria nº PM4-001/1.2/24 disciplina a concessão e revogação de Carga Individual de material bélico. Assinale a alternativa que apresenta hipótese em que a revogação da Carga Individual por 12 (doze) meses é MEDIDA OBRIGATÓRIA:",
+                options: [
+                    "a) Quando o policial militar for movimentado de Companhia dentro do mesmo Batalhão.",
+                    "b) Ao policial militar que tiver o material bélico da PMESP sob sua Carga Individual furtado, roubado ou extraviado.",
+                    "c) Quando o militar for eleito representante de turma em curso da Polícia Militar.",
+                    "d) Quando o militar obtiver nota inferior a 8,0 no Teste de Aptidão Física."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 11, § 3º da Portaria nº PM4-001/1.2/24. O furto, roubo ou extravio de material bélico institucional sob carga individual acarreta a revogação compulsória da autorização pelo prazo de 12 meses."
+            },
+            {
+                id: 243,
+                subject: "ORGANIZACIONAL",
+                topic: "Material Bélico - Portaria nº PM4-001/1.2/24 (Comportamento Mau)",
+                text: "Nos termos do Artigo 11 da Portaria nº PM4-001/1.2/24, o Comandante de Unidade é OBRIGADO a revogar a autorização para Carga Individual de material bélico do policial militar que:",
+                options: [
+                    "a) Completar 10 anos de efetivo serviço.",
+                    "b) Ingressar no comportamento disciplinar 'Mau' e enquanto nele permanecer.",
+                    "c) For transferido de Batalhão a pedido próprio.",
+                    "d) For promovido à graduação de Cabo PM."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 11, II da Portaria nº PM4-001/1.2/24. O ingresso do policial militar no comportamento disciplinar 'Mau' impõe a revogação obrigatória da Carga Individual de armamento."
+            },
+            {
+                id: 244,
+                subject: "ORGANIZACIONAL",
+                topic: "Violência Doméstica - Protocolo Institucional e Medidas Cautelares",
+                text: "Um Policial Militar é envolvido como autor/agressor em ocorrência de Violência Doméstica contra a mulher, sendo deferida Medida Protetiva de Urgência (MPU) pelo Poder Judiciário. À luz do Protocolo Institucional de Prevenção e Atendimento a Conflitos Familiares da PMESP, qual medida cautelar administrativa e correcional OBRIGATÓRIA deve ser adotada de imediato pelo Comando da OPM?",
+                options: [
+                    "a) Demissão sumária sem procedimento administrativo.",
+                    "b) Recolhimento cautelar imediato de todo o armamento (institucional e particular) sob posse do militar e seu encaminhamento para avaliação de saúde mental.",
+                    "c) Concessão de elogio por preservar a vida privada.",
+                    "d) Transferência do militar para a reserva remunerada ex officio."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Protocolo Institucional de Atendimento em Violência Doméstica da PMESP. Diante de MPU ou risco grave em conflito familiar, impõe-se o recolhimento cautelar do armamento e acompanhamento de saúde."
+            },
+            {
+                id: 245,
+                subject: "ORGANIZACIONAL",
+                topic: "Afastamentos Regulamentares - Luto e Férias",
+                text: "Ocorrendo o falecimento de cônjuge, pais ou filhos (fato gerador de Afastamento por Luto) durante o gozo de férias regulamentares do policial militar, qual orientação corporativa deve ser observada?",
+                options: [
+                    "a) O afastamento por luto é absorvido pelas férias, perdendo o militar o direito a qualquer compensação.",
+                    "b) A fruição das férias é interrompida/suspensa no dia do óbito, iniciando-se a contagem dos 8 dias de luto, devendo o saldo remanescente das férias ser gozado posteriormente.",
+                    "c) O luto somente poderá ser usufruído após o término do período de férias.",
+                    "d) O militar deve retornar imediatamente ao serviço no dia seguinte sem gozo do luto."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Diretrizes da Diretoria de Pessoal (DP-PMESP) e Regulamento de Afastamentos. Ocorrendo luto ou núpcias durante as férias, estas são suspensas, gozando-se o afastamento compulsório e remanejando-se o saldo de férias."
+            },
+            {
+                id: 246,
+                subject: "ORGANIZACIONAL",
+                topic: "Treinamento Continuado - Método Giraldi (Princípios)",
+                text: "A Doutrina de Tiro Defensivo na Preservação da Vida (Método Giraldi) é o padrão oficial de treinamento de armamento da PMESP. Sobre os princípios fundamentais do Método Giraldi, analise as assertivas:\n\nI. A arma de fogo é considerada instrumento de defesa extrema ratio, cuja utilização deve ser pautada pela legalidade, necessidade e proporcionalidade.\nII. A verbalização firme, clara e a busca por abrigo tático precedem o uso da força letal sempre que taticamente viável.\nIII. As pistas de aplicação do método visam condicionar o policial a refletir e tomar decisões legais sobre disparar ou não disparar.\n\nEstá(ão) correta(s):",
+                options: [
+                    "a) Apenas as assertivas I e II.",
+                    "b) Apenas as assertivas II e III.",
+                    "c) Apenas a assertiva I.",
+                    "d) Todas as assertivas (I, II e III)."
+                ],
+                answer: 3,
+                explanation: "Fundamentação: Doutrina do Método Giraldi (PMESP). As três assertivas retratam com fidelidade pedagógica e doutrinária os pilares do Tiro Defensivo na Preservação da Vida."
+            },
+            {
+                id: 247,
+                subject: "ORGANIZACIONAL",
+                topic: "SisTAF - TAF Alternativo e Condição Promocional",
+                text: "A respeito do Sistema de Teste de Aptidão Física (SisTAF) na PMESP, assinale a alternativa correta:",
+                options: [
+                    "a) A aprovação no SisTAF é facultativa para praças que concorrem a promoções por antiguidade.",
+                    "b) O policial militar com restrição médica temporária atestada pela Junta Regular de Saúde (JRS) pode realizar a prova alternativa regulamentada (ex: caminhada ou natação).",
+                    "c) A aprovação no SisTAF dispensa a realização de inspeção de saúde anual.",
+                    "d) Gestantes devem realizar a prova de corrida de 12 minutos sob supervisão."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Diretrizes do SisTAF / Diretoria de Pessoal. A alternativa B é correta pois prevê a realização de modalidade alternativa regulamentada autorizada pela JRS para militares com restrição temporária."
+            },
+            {
+                id: 248,
+                subject: "ORGANIZACIONAL",
+                topic: "Processo Administrativo - Sindicância para Danos ao Erário",
+                text: "Uma Sindicância é instaurada para apurar colisão de viatura policial militar contra muro particular. A comissão apura que o motorista agiu com imprudência grave (culpa provada). A respeito da Solução da Sindicância, a autoridade deve determinar:",
+                options: [
+                    "a) O arquivamento do processo sem qualquer cobrança por se tratar de viatura pública.",
+                    "b) O encaminhamento para ressarcimento dos danos ao erário ao militar responsável, sem prejuízo da remessa de cópia para apuração disciplinar/penal cabível.",
+                    "c) A demissão imediata do militar sem direito a recurso.",
+                    "d) A transferência do débito para a seguradora privada da vítima sem apuração interna."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Instruções de Sindicância da PMESP (I-16-PM). Provada a responsabilidade subjetiva (culpa/dolo) por dano ao patrimônio, impõe-se a notificação para ressarcimento ao erário e abertura de apuração disciplinar."
+            },
+            {
+                id: 249,
+                subject: "ORGANIZACIONAL",
+                topic: "Regime de Trabalho - DEJEM e Atividade Delegada",
+                text: "A prestação de serviço em Diária Especial por Jornada Extraordinária de Trabalho Policial-Militar (DEJEM) e em Atividade Delegada possui as seguintes características regulamentares comuns:",
+                options: [
+                    "a) São de cumprimento compulsório durante o horário do expediente administrativo.",
+                    "b) São de adesão voluntária, prestadas durante o período de folga do militar, fardado e remuneradas mediante gratificação específica.",
+                    "c) Substituem o cumprimento de punições de permanência disciplinar.",
+                    "d) Podem ser executadas por policiais militares em gozo de licença médica."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: LC nº 1.227/13 (DEJEM) e Convênios de Atividade Delegada. Ambas as jornadas extraordinárias exigem voluntariedade, prestação durante folgas regulamentares e plena aptidão funcional."
+            },
+            {
+                id: 250,
+                subject: "ORGANIZACIONAL",
+                topic: "Material Bélico - Portaria nº PM4-001/1.2/24 (Viagem ao Exterior)",
+                text: "O policial militar detentor de autorização de Carga Individual de material bélico que vá realizar viagem ao exterior em gozo de férias regulamentares deve adotar a seguinte providência obrigatória antes do embarque:",
+                options: [
+                    "a) Levar a arma institucional na bagagem de mão.",
+                    "b) Recolher obrigatoriamente a arma de fogo, munições e colete balístico na reserva de armas de sua Unidade.",
+                    "c) Deixar a arma de fogo no interior do seu veículo particular no estacionamento do aeroporto.",
+                    "d) Doar a arma de fogo a um cidadão civil."
+                ],
+                answer: 1,
+                explanation: "Fundamentação: Art. 18 da Portaria nº PM4-001/1.2/24. Em caso de viagem ao exterior, o militar é obrigado a recolher cautelarmente todo o material bélico sob sua carga na reserva de armas da OPM."
+            }
+        
 ];
 
 // Estrutura de Exportação e Integração ao index.html
