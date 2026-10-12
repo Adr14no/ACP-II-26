@@ -512,34 +512,46 @@
         }
 
         function sortearQuestoesProporcionalmente(bancoBruto, totalSimulado = 50) {
-            function shuffle(arr) {
-                let array = [...arr];
-                for (let i = array.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [array[i], array[j]] = [array[j], array[i]];
-                }
-                return array;
-            }
+    const opPool = bancoBruto.filter(q => q.subject === 'OPERACIONAL');
+    const jurPool = bancoBruto.filter(q => q.subject === 'JURIDICO');
+    const orgPool = bancoBruto.filter(q => q.subject === 'ORGANIZACIONAL');
 
-            const opPool = shuffle(bancoBruto.filter(q => q.subject === 'OPERACIONAL'));
-            const jurPool = shuffle(bancoBruto.filter(q => q.subject === 'JURIDICO'));
-            const orgPool = shuffle(bancoBruto.filter(q => q.subject === 'ORGANIZACIONAL'));
+    const qtdOp = Math.round(totalSimulado * 0.50);
+    const qtdJur = Math.round(totalSimulado * 0.30);
+    const qtdOrg = totalSimulado - qtdOp - qtdJur;
 
-            const qtdOp = Math.round(totalSimulado * 0.50);
-            const qtdJur = Math.round(totalSimulado * 0.30);
-            const qtdOrg = totalSimulado - (qtdOp + qtdJur);
+    if (
+        opPool.length < qtdOp ||
+        jurPool.length < qtdJur ||
+        orgPool.length < qtdOrg
+    ) {
+        alert(
+            `Banco insuficiente para gerar ${totalSimulado} questões.\n` +
+            `Operacional: ${opPool.length}/${qtdOp}\n` +
+            `Jurídico: ${jurPool.length}/${qtdJur}\n` +
+            `Organizacional: ${orgPool.length}/${qtdOrg}`
+        );
+        return [];
+    }
 
-            const selecionadasOp = opPool.slice(0, qtdOp);
-            const selecionadasJur = jurPool.slice(0, qtdJur);
-            const selecionadasOrg = orgPool.slice(0, qtdOrg);
-
-            const simuladoMezclado = shuffle([...selecionadasOp, ...selecionadasJur, ...selecionadasOrg]);
-
-            return simuladoMezclado.map((q, idx) => ({
-                ...q,
-                idSimulado: idx + 1
-            }));
+    function shuffle(arr) {
+        const array = [...arr];
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
         }
+        return array;
+    }
+
+    return shuffle([
+        ...shuffle(opPool).slice(0, qtdOp),
+        ...shuffle(jurPool).slice(0, qtdJur),
+        ...shuffle(orgPool).slice(0, qtdOrg)
+    ]).map((q, idx) => ({
+        ...q,
+        idSimulado: idx + 1
+    }));
+}
 
         function gerarEIniciarNovoSimulado() {
             let bancoBase = [];
