@@ -16,11 +16,28 @@
  */
 
 const BANCO_GERAL_QUESTOES = [
+     * BANCO DE DADOS OFICIAL DE QUESTÕES - PMESP (ACP II/26)
+ * Arquivo: questoes.js
+ * Padrão Examinador: Banca APMBB / PMESP - Habilitação ao Posto de Capitão PM
+ * 
+ * Distribuição de Matérias:
+ * - ~50% Assuntos Operacionais (75 questões)
+ * - ~30% Assuntos Jurídico-Administrativos (45 questões)
+ * - ~20% Assuntos Organizacionais (30 questões)
+ * 
+ * Ajustes Doutrinários e de Estilo Aplicados:
+ * 1. Uso rigoroso da terminologia técnica da PMESP (ex: "cerco", "P/2 / Seção de Inteligência").
+ * 2. Isolamento normativo estrito quando a questão versa sobre diretriz específica (ex: NORSOP).
+ * 3. Incorporação de questões de letra fria da norma, questões de assertivas (I, II, III) e questões de "Incorreta".
+ * 4. Distratores de alta verossimilhança construídos com inversões de comandos legais ("deve" x "não deve", "vedado" x "permitido").
+ */
+
+const BANCO_GERAL_QUESTOES = [
     {
         "id": 1,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - atribuições do CFP",
-        "text": "1-Durante o turno de serviço, o CFP verifica que diferentes Unidades de Serviço estão empregadas em programas de policiamento e atividades operacionais na área de responsabilidade. Ao constatar a necessidade de alinhar a execução dessas atividades às determinações do escalão superior, o CFP avalia as medidas de coordenação e supervisão cabíveis. Considerando a NORSOP, assinale a alternativa correta:",
+        "text": "QUESTÃO 1 — Durante o turno de serviço, o CFP verifica que diferentes Unidades de Serviço estão empregadas em programas de policiamento e atividades operacionais na área de responsabilidade. Ao constatar a necessidade de alinhar a execução dessas atividades às determinações do escalão superior, o CFP avalia as medidas de coordenação e supervisão cabíveis. Considerando a NORSOP, assinale a alternativa correta:",
         "options": [
           "a) Compete ao CFP coordenar e supervisionar os Programas de Policiamento e as Atividades Operacionais Diversas, dentro dos limites estabelecidos pelo escalão superior.",
           "b) Compete ao CFP acompanhar individualmente o tempo-resposta e os horários de início e término de todas as ocorrências atendidas pelas Unidades de Serviço.",
@@ -34,7 +51,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 2,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - estrutura básica do Sistema Operacional",
-        "text": "2-De acordo com a Diretriz nº PM3-001/02/20 (NORSOP), como está fixada a estrutura básica do Sistema Operacional de Policiamento PM? Assinale a alternativa correta.",
+        "text": "QUESTÃO 2 — De acordo com a Diretriz nº PM3-001/02/20 (NORSOP), como está fixada a estrutura básica do Sistema Operacional de Policiamento PM? Assinale a alternativa correta.",
         "options": [
           "a) Nos princípios básicos e nas diretrizes básicas, sem previsão de matrizes operacionais ou níveis de resposta.",
           "b) Nas Matrizes Operacionais I, II e III e nos Níveis de Resposta de 1 a 4.",
@@ -48,7 +65,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 3,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - fiscalização do atendimento de ocorrências pelo CGP",
-        "text": "3-O CGP da 2ª Companhia observa que uma viatura permanece há tempo considerável no atendimento de uma ocorrência de perturbação do sossego. Ao mesmo tempo, há outras ocorrências pendentes na Subárea. O graduado solicita à equipe informações sobre o andamento do atendimento e os motivos da permanência no local, para avaliar a situação operacional. À luz da NORSOP, assinale a alternativa correta:",
+        "text": "QUESTÃO 3 — O CGP da 2ª Companhia observa que uma viatura permanece há tempo considerável no atendimento de uma ocorrência de perturbação do sossego. Ao mesmo tempo, há outras ocorrências pendentes na Subárea. O graduado solicita à equipe informações sobre o andamento do atendimento e os motivos da permanência no local, para avaliar a situação operacional. À luz da NORSOP, assinale a alternativa correta:",
         "options": [
           "a) A conduta é compatível com a atribuição do CGP de acompanhar e fiscalizar o atendimento de ocorrências, monitorando o tempo-resposta, os horários de início e término e a permanência das Unidades de Serviço.",
           "b) A conduta é incompatível com as atribuições do CGP, pois o acompanhamento do tempo de atendimento compete exclusivamente à Seção de Planejamento Operacional.",
@@ -62,7 +79,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 4,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - princípios básicos e diretrizes básicas",
-        "text": "4-Considerando a classificação dos princípios básicos e das diretrizes básicas apresentada no material de NORSOP, analise as proposições:\n\nI. Excelência na Gestão é classificada como princípio básico.\nII. Direitos Humanos é classificado como princípio básico.\nIII. Autonomia Operacional é classificada como princípio básico.\nIV. Universalidade é classificada como diretriz básica.\n\nAssinale a alternativa que reúne apenas as proposições corretas.",
+        "text": "QUESTÃO 4 — Considerando a classificação dos princípios básicos e das diretrizes básicas apresentada no material de NORSOP, analise as proposições:\n\nI. Excelência na Gestão é classificada como princípio básico.\nII. Direitos Humanos é classificado como princípio básico.\nIII. Autonomia Operacional é classificada como princípio básico.\nIV. Universalidade é classificada como diretriz básica.\n\nAssinale a alternativa que reúne apenas as proposições corretas.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I, II e IV.",
@@ -76,7 +93,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 5,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - Posto de Comando",
-        "text": "5-Em um incidente policial estático, o Comandante do Incidente inicia a organização das funções de comando no local. Ainda não há uma estrutura física específica montada, mas um dos veículos presentes pode ser utilizado inicialmente para essa finalidade. Considerando a Diretriz nº PM3-003/02/23 (SCIPM), assinale a alternativa correta:",
+        "text": "QUESTÃO 5 — Em um incidente policial estático, o Comandante do Incidente inicia a organização das funções de comando no local. Ainda não há uma estrutura física específica montada, mas um dos veículos presentes pode ser utilizado inicialmente para essa finalidade. Considerando a Diretriz nº PM3-003/02/23 (SCIPM), assinale a alternativa correta:",
         "options": [
           "a) O Posto de Comando pode ser estabelecido inicialmente em um dos veículos presentes, devendo sua localização geográfica ser informada ao COPOM/COBOM.",
           "b) O Posto de Comando somente pode ser estabelecido após a chegada de todas as agências envolvidas e a montagem de uma estrutura física permanente.",
@@ -90,7 +107,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 6,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - Oficial de Ligação",
-        "text": "6-Durante um incidente crítico, representantes de diferentes órgãos públicos comparecem ao local para apoiar a resposta. O Comandante do Incidente precisa designar integrante do Staff de Comando para manter a ligação com esses representantes. De acordo com a Diretriz nº PM3-003/02/23 (SCIPM), qual função corresponde a essa atribuição?",
+        "text": "QUESTÃO 6 — Durante um incidente crítico, representantes de diferentes órgãos públicos comparecem ao local para apoiar a resposta. O Comandante do Incidente precisa designar integrante do Staff de Comando para manter a ligação com esses representantes. De acordo com a Diretriz nº PM3-003/02/23 (SCIPM), qual função corresponde a essa atribuição?",
         "options": [
           "a) Oficial de Informações Públicas, responsável pela ligação principal com os representantes dos meios de comunicação.",
           "b) Oficial de Segurança, responsável por acompanhar os riscos à segurança das equipes e das operações.",
@@ -104,7 +121,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 7,
         "subject": "OPERACIONAL",
         "topic": "Sistema de Comando e Controle - conceitos",
-        "text": "7-A Diretriz nº PM3-001/02/23 apresenta conceitos empregados no Sistema de Comando e Controle. Assinale a alternativa INCORRETA.",
+        "text": "QUESTÃO 7 — A Diretriz nº PM3-001/02/23 apresenta conceitos empregados no Sistema de Comando e Controle. Assinale a alternativa INCORRETA.",
         "options": [
           "a) Consciência Situacional é o conhecimento e a compreensão dos acontecimentos, circunstâncias e elementos do ambiente, delimitados no tempo e no espaço, permitindo construir imagem mental coerente e projetar riscos futuros.",
           "b) Imagem Operacional Comum corresponde à compreensão compartilhada entre pessoas engajadas na mesma missão, produzindo uma imagem mental comum dos acontecimentos e do ambiente.",
@@ -118,7 +135,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 8,
         "subject": "OPERACIONAL",
         "topic": "Sistema de Comando e Controle - Sala de Operações",
-        "text": "8-No âmbito do Sistema de Comando e Controle, uma OPM de nível Batalhão/Companhia precisa identificar o componente responsável pelos serviços essenciais de C2 no nível operacional. Conforme a Diretriz nº PM3-001/02/23, assinale a alternativa correta:",
+        "text": "QUESTÃO 8 — No âmbito do Sistema de Comando e Controle, uma OPM de nível Batalhão/Companhia precisa identificar o componente responsável pelos serviços essenciais de C2 no nível operacional. Conforme a Diretriz nº PM3-001/02/23, assinale a alternativa correta:",
         "options": [
           "a) O Centro de Comando e Controle de Grande Comando, cuja atuação se restringe ao nível de Companhia.",
           "b) A Sala de Operações, responsável pelos serviços essenciais de C2 no nível operacional da OPM.",
@@ -132,7 +149,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 9,
         "subject": "OPERACIONAL",
         "topic": "COP - temporalidade mínima das evidências digitais",
-        "text": "9-Durante a conferência das regras de armazenamento das Câmeras Operacionais Portáteis (COP), um policial precisa distinguir o prazo de temporalidade mínima dos vídeos de rotina daquele aplicável às demais evidências digitais. Conforme a Diretriz nº PM3-001/02/25, assinale a alternativa correta:",
+        "text": "QUESTÃO 9 — Durante a conferência das regras de armazenamento das Câmeras Operacionais Portáteis (COP), um policial precisa distinguir o prazo de temporalidade mínima dos vídeos de rotina daquele aplicável às demais evidências digitais. Conforme a Diretriz nº PM3-001/02/25, assinale a alternativa correta:",
         "options": [
           "a) Vídeos de rotina: 90 dias; demais evidências digitais: 1 ano.",
           "b) Vídeos de rotina: 1 ano; demais evidências digitais: 90 dias.",
@@ -146,7 +163,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 10,
         "subject": "OPERACIONAL",
         "topic": "COP - recolhimento e upload em ocorrência MDIP",
-        "text": "10-Após uma ocorrência com resultado morte decorrente de intervenção policial (MDIP), o CFP verifica que os policiais envolvidos utilizaram Câmeras Operacionais Portáteis. Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta quanto ao recolhimento dos equipamentos e ao upload do conteúdo captado:",
+        "text": "QUESTÃO 10 — Após uma ocorrência com resultado morte decorrente de intervenção policial (MDIP), o CFP verifica que os policiais envolvidos utilizaram Câmeras Operacionais Portáteis. Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta quanto ao recolhimento dos equipamentos e ao upload do conteúdo captado:",
         "options": [
           "a) O CGP deve recolher as câmeras e realizar o upload em todos os casos, substituindo o procedimento ordinário de entrega ao CFP.",
           "b) Cada policial envolvido deve manter o equipamento consigo e realizar o upload apenas ao final do turno, sem requisição específica.",
@@ -160,7 +177,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 11,
         "subject": "OPERACIONAL",
         "topic": "COP - ausência de gravação audiovisual",
-        "text": "11 - Durante a conferência dos registros de uma ocorrência, o comandante constata que um policial militar deixou de produzir a gravação audiovisual exigida para a situação, sem justificativa registrada. De acordo com a Diretriz nº PM3-001/02/25 (COP), qual providência procedimental deve ser adotada diante da ausência injustificada de registro?",
+        "text": "QUESTÃO 11 — Durante a conferência dos registros de uma ocorrência, o comandante constata que um policial militar deixou de produzir a gravação audiovisual exigida para a situação, sem justificativa registrada. De acordo com a Diretriz nº PM3-001/02/25 (COP), qual providência procedimental deve ser adotada diante da ausência injustificada de registro?",
         "options": [
           "a) Instaurar imediatamente Processo Disciplinar de Rito Sumário, sem apuração preliminar.",
           "b) Instaurar Investigação Preliminar (IP), conforme o procedimento previsto na diretriz.",
@@ -174,7 +191,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 12,
         "subject": "OPERACIONAL",
         "topic": "COP - acesso do policial ao próprio registro",
-        "text": "12 - Um policial militar envolvido em ocorrência de grande repercussão será ouvido formalmente sobre os fatos. Antes de prestar suas declarações, solicita consultar a gravação realizada por sua própria Câmera Operacional Portátil (COP). Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
+        "text": "QUESTÃO 12 — Um policial militar envolvido em ocorrência de grande repercussão será ouvido formalmente sobre os fatos. Antes de prestar suas declarações, solicita consultar a gravação realizada por sua própria Câmera Operacional Portátil (COP). Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
         "options": [
           "a) O acesso é vedado até o encerramento definitivo do procedimento apuratório.",
           "b) O acesso depende necessariamente de autorização judicial específica.",
@@ -188,7 +205,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 13,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento com Drones",
-        "text": "13 - Uma OPM pretende empregar aeronave não tripulada para apoiar uma ação de policiamento, com transmissão de imagens para melhorar a compreensão do cenário pelos responsáveis pela operação. Considerando a finalidade estabelecida na Diretriz nº PM3-005/02/24, assinale a alternativa correta.",
+        "text": "QUESTÃO 13 — Uma OPM pretende empregar aeronave não tripulada para apoiar uma ação de policiamento, com transmissão de imagens para melhorar a compreensão do cenário pelos responsáveis pela operação. Considerando a finalidade estabelecida na Diretriz nº PM3-005/02/24, assinale a alternativa correta.",
         "options": [
           "a) O emprego operacional de drones busca integrar recursos tecnológicos ao Sistema de Comando e Controle, ampliando a consciência situacional e contribuindo para mitigar o risco operacional.",
           "b) O emprego de drones substitui a necessidade de coordenação e controle das Unidades de Serviço no terreno.",
@@ -202,7 +219,7 @@ const BANCO_GERAL_QUESTOES = [
   "id": 14,
   "subject": "OPERACIONAL",
   "topic": "NORSOP - Programas de Policiamento Primários",
-  "text": "14 - Ao revisar a distribuição dos recursos humanos e materiais de uma OPM territorial, um Capitão PM precisa distinguir os Programas de Policiamento Primários dos Complementares, conforme a NORSOP. Assinale a alternativa que apresenta exclusivamente os Programas de Policiamento Primários.",
+  "text": "QUESTÃO 14 — Ao revisar a distribuição dos recursos humanos e materiais de uma OPM territorial, um Capitão PM precisa distinguir os Programas de Policiamento Primários dos Complementares, conforme a NORSOP. Assinale a alternativa que apresenta exclusivamente os Programas de Policiamento Primários.",
   "options": [
     "a) Programa de Radiopatrulha e Programa de Força Tática.",
     "b) Programa de Policiamento Escolar e Programa de Policiamento Comunitário.",
@@ -217,7 +234,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 15,
         "subject": "OPERACIONAL",
         "topic": "Programa de Força Tática - finalidade",
-        "text": "15 - Durante o planejamento operacional, o Comando de um Batalhão avalia o emprego da Força Tática para reforçar a resposta a ocorrências graves e reduzir os efeitos da criminalidade violenta em áreas de maior incidência. À luz da Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
+        "text": "QUESTÃO 15 — Durante o planejamento operacional, o Comando de um Batalhão avalia o emprego da Força Tática para reforçar a resposta a ocorrências graves e reduzir os efeitos da criminalidade violenta em áreas de maior incidência. À luz da Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
         "options": [
           "a) O Programa de Força Tática destina-se prioritariamente à guarda fixa de instalações administrativas e à escolta rotineira de autoridades.",
           "b) O Programa de Força Tática organiza o policiamento ostensivo e os apoios táticos executados pelas Forças Táticas, oferecendo suporte especializado a ocorrências e incidentes graves ou passíveis de repercussão.",
@@ -231,7 +248,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 16,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento Escolar - adolescente apreendido em flagrante",
-        "text": "16 - Durante o patrulhamento no perímetro escolar, uma equipe presencia adolescente praticando ato infracional. Considerando as disposições do Estatuto da Criança e do Adolescente reproduzidas na Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), assinale a alternativa correta.",
+        "text": "QUESTÃO 16 — Durante o patrulhamento no perímetro escolar, uma equipe presencia adolescente praticando ato infracional. Considerando as disposições do Estatuto da Criança e do Adolescente reproduzidas na Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), assinale a alternativa correta.",
         "options": [
           "a) O adolescente deve ser entregue à direção da escola, que decidirá se o encaminha à autoridade policial.",
           "b) O adolescente apreendido em flagrante de ato infracional deve ser encaminhado desde logo à autoridade policial competente.",
@@ -245,7 +262,7 @@ const BANCO_GERAL_QUESTOES = [
   "id": 17,
   "subject": "OPERACIONAL",
   "topic": "NORSOP - segurança viária durante o policiamento",
-  "text": "17 - Durante o patrulhamento, uma equipe identifica um obstáculo na via que prejudica a livre circulação e oferece risco aos usuários. Considerando as orientações de segurança viária previstas na NORSOP, assinale a alternativa correta quanto às providências a serem adotadas.",
+  "text": "QUESTÃO 17 — Durante o patrulhamento, uma equipe identifica um obstáculo na via que prejudica a livre circulação e oferece risco aos usuários. Considerando as orientações de segurança viária previstas na NORSOP, assinale a alternativa correta quanto às providências a serem adotadas.",
   "options": [
     "a) Sinalizar imediatamente o local com os meios disponíveis e, em seguida, acionar pelo COPOM/CAD o órgão competente para os reparos emergenciais.",
     "b) Acionar primeiro o órgão responsável pelos reparos e aguardar sua chegada antes de sinalizar o local.",
@@ -260,7 +277,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 18,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento Rural - conceitos",
-        "text": "18 - Ao organizar o emprego de uma Patrulha Rural, o comandante precisa identificar a finalidade do Programa de Policiamento Rural e o conceito de Patrulha Rural previstos na Diretriz nº PM3-007/02/20. Assinale a alternativa correta.",
+        "text": "QUESTÃO 18 — Ao organizar o emprego de uma Patrulha Rural, o comandante precisa identificar a finalidade do Programa de Policiamento Rural e o conceito de Patrulha Rural previstos na Diretriz nº PM3-007/02/20. Assinale a alternativa correta.",
         "options": [
           "a) O Programa de Policiamento Rural organiza o policiamento ostensivo geral voltado ao ambiente rural, e a Patrulha Rural é uma Unidade de Serviço composta por policiais militares designados e treinados para esse programa.",
           "b) O Programa de Policiamento Rural destina-se exclusivamente à fiscalização ambiental, e a Patrulha Rural é composta por agentes civis municipais.",
@@ -274,7 +291,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 19,
         "subject": "OPERACIONAL",
         "topic": "Policiamento Comunitário - atuação junto ao CONSEG",
-        "text": "19 - Ao assumir o comando de uma Subárea, um Capitão PM verifica que o Conselho Comunitário de Segurança (CONSEG) local está inativo. Considerando as atribuições de comando territorial previstas na NORSOP e as diretrizes do Programa de Policiamento Comunitário, assinale a alternativa correta.",
+        "text": "QUESTÃO 19 — Ao assumir o comando de uma Subárea, um Capitão PM verifica que o Conselho Comunitário de Segurança (CONSEG) local está inativo. Considerando as atribuições de comando territorial previstas na NORSOP e as diretrizes do Programa de Policiamento Comunitário, assinale a alternativa correta.",
         "options": [
           "a) O comandante deve aguardar iniciativa exclusiva dos moradores, pois a OPM não possui atribuição relacionada à constituição ou ao funcionamento do CONSEG.",
           "b) O comandante deve atuar junto à estrutura comunitária local, observando as atribuições previstas na NORSOP quanto à constituição e à participação da PM no CONSEG ou Núcleo de Ação Local, conforme aplicável.",
@@ -288,7 +305,7 @@ const BANCO_GERAL_QUESTOES = [
   "id": 20,
   "subject": "OPERACIONAL",
   "topic": "SCIPM - Sala de Gerenciamento de Incidentes",
-  "text": "20 - Durante uma operação policial-militar, o Comandante responsável pelas ações em campo verifica a necessidade de integrar a atuação da Polícia Militar com órgãos externos. Segundo a Diretriz nº PM3-003/02/23 (SCIPM), qual alternativa descreve corretamente a instituição da Sala de Gerenciamento de Incidentes?",
+  "text": "QUESTÃO 20 — Durante uma operação policial-militar, o Comandante responsável pelas ações em campo verifica a necessidade de integrar a atuação da Polícia Militar com órgãos externos. Segundo a Diretriz nº PM3-003/02/23 (SCIPM), qual alternativa descreve corretamente a instituição da Sala de Gerenciamento de Incidentes?",
   "options": [
     "a) O próprio Comandante responsável pelas operações em campo deve instituí-la obrigatoriamente, mesmo sem necessidade de integração com órgãos externos.",
     "b) A autoridade policial-militar superior ao Comandante responsável pelas operações em campo poderá instituí-la, por solicitação ou de ofício, sempre que houver necessidade de integração com órgãos externos à Polícia Militar.",
@@ -302,7 +319,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 21,
         "subject": "OPERACIONAL",
         "topic": "Combate ao Crime Organizado - providências de conhecimento",
-        "text": "21 - Durante patrulhamento ostensivo, uma Unidade de Serviço identifica circunstâncias que podem sugerir a prática de ações típicas de crime organizado. Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa correta quanto às providências previstas para a equipe e para os policiais militares em funções de comando e supervisão.",
+        "text": "QUESTÃO 21 — Durante patrulhamento ostensivo, uma Unidade de Serviço identifica circunstâncias que podem sugerir a prática de ações típicas de crime organizado. Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa correta quanto às providências previstas para a equipe e para os policiais militares em funções de comando e supervisão.",
         "options": [
           "a) A US deve aguardar a confirmação da autoria antes de comunicar o fato ao escalão superior, cabendo à Agência de Área decidir se os dados serão preservados.",
           "b) A US deve cientificar imediatamente o escalão superior; os oficiais e graduados em funções de comando e supervisão devem cientificar a Agência de Área e providenciar o envio dos dados e informações obtidos para monitoramento.",
@@ -316,7 +333,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 22,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - divisão territorial",
-        "text": "22 - Ao revisar o módulo de configuração territorial de uma OPM, um oficial precisa distinguir Subárea, Setor e Subsetor. Segundo a NORSOP, qual conceito corresponde ao Subsetor?",
+        "text": "QUESTÃO 22 — Ao revisar o módulo de configuração territorial de uma OPM, um oficial precisa distinguir Subárea, Setor e Subsetor. Segundo a NORSOP, qual conceito corresponde ao Subsetor?",
         "options": [
           "a) Espaço territorial atribuído à responsabilidade de uma OPM de escalão Companhia PM ou equivalente.",
           "b) Fração territorial definida pelo Cmt Btl e atribuída à responsabilidade exclusiva de um Cmt Pel PM para gestão operacional localizada.",
@@ -330,7 +347,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 23,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - transferência do comando",
-        "text": "23 - Durante um incidente crítico, ocorre a transferência da função de Comandante do Incidente. Para que a continuidade da resposta seja mantida com segurança e eficácia, qual procedimento corresponde ao elemento essencial do SCIPM denominado Designação e Transferência do Comando por Processo?",
+        "text": "QUESTÃO 23 — Durante um incidente crítico, ocorre a transferência da função de Comandante do Incidente. Para que a continuidade da resposta seja mantida com segurança e eficácia, qual procedimento corresponde ao elemento essencial do SCIPM denominado Designação e Transferência do Comando por Processo?",
         "options": [
           "a) Realizar briefing de passagem e transmitir as informações essenciais à continuidade segura e eficaz das operações.",
           "b) Suspender todas as ações em curso até que o novo comandante refaça integralmente o planejamento desde o início.",
@@ -344,7 +361,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 24,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - nível de planejamento operacional",
-        "text": "24 - Um comandante precisa transformar os objetivos e metas definidos nos níveis estratégico e tático em processos detalhados e padrões de trabalho a serem observados pelos escalões durante ações, operações e missões policial-militares. Segundo a NORSOP, a atividade descrita pertence a qual nível de planejamento?",
+        "text": "QUESTÃO 24 — Um comandante precisa transformar os objetivos e metas definidos nos níveis estratégico e tático em processos detalhados e padrões de trabalho a serem observados pelos escalões durante ações, operações e missões policial-militares. Segundo a NORSOP, a atividade descrita pertence a qual nível de planejamento?",
         "options": [
           "a) Nível Estratégico, que estabelece as estratégias globais de longo prazo no âmbito do Comando-Geral.",
           "b) Nível Tático, que desdobra o planejamento estratégico em objetivos setoriais de médio prazo e planos gerenciais.",
@@ -358,7 +375,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 25,
         "subject": "OPERACIONAL",
         "topic": "COP Motorola - modo tático ou velado",
-        "text": "25 - Durante uma missão em que a disciplina de luz e som é necessária para preservar a segurança da equipe, o policial que utiliza a COP Motorola precisa acionar o modo tático, também denominado velado ou stealth. Conforme o material de COP Motorola constante de Assuntos Operacionais.pdf, qual é o efeito desse modo?",
+        "text": "QUESTÃO 25 — Durante uma missão em que a disciplina de luz e som é necessária para preservar a segurança da equipe, o policial que utiliza a COP Motorola precisa acionar o modo tático, também denominado velado ou stealth. Conforme o material de COP Motorola constante de Assuntos Operacionais.pdf, qual é o efeito desse modo?",
         "options": [
           "a) A gravação audiovisual é interrompida, mas a localização do equipamento continua sendo transmitida.",
           "b) O equipamento desativa os sons e as luzes, mantendo a gravação audiovisual em funcionamento.",
@@ -372,7 +389,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 26,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - Matriz Operacional e Nível de Resposta",
-        "text": "26 - Uma Unidade de Serviço da Matriz Operacional I solicita apoio tático de uma Força Tática pertencente à própria OPM territorial. A situação não exige recursos adicionais do Comando de Policiamento nem apoio especializado. Conforme a NORSOP, qual combinação corresponde ao emprego descrito?",
+        "text": "QUESTÃO 26 — Uma Unidade de Serviço da Matriz Operacional I solicita apoio tático de uma Força Tática pertencente à própria OPM territorial. A situação não exige recursos adicionais do Comando de Policiamento nem apoio especializado. Conforme a NORSOP, qual combinação corresponde ao emprego descrito?",
         "options": [
           "a) Matriz Operacional I e Nível de Resposta 1, pois todo apoio à US permanece classificado como recurso local.",
           "b) Matriz Operacional II e Nível de Resposta 2, pois há apoio tático por contingente capacitado da própria OPM.",
@@ -386,7 +403,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 27,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - Unidade de Comando",
-        "text": "27 - Em uma operação com vários respondedores, o Comandante do Incidente verifica que um integrante recebe orientações conflitantes de dois supervisores. Considerando o elemento essencial Unidade de Comando do SCIPM, assinale a alternativa correta.",
+        "text": "QUESTÃO 27 — Em uma operação com vários respondedores, o Comandante do Incidente verifica que um integrante recebe orientações conflitantes de dois supervisores. Considerando o elemento essencial Unidade de Comando do SCIPM, assinale a alternativa correta.",
         "options": [
           "a) O integrante pode receber ordens de diferentes supervisores, desde que pertençam à mesma agência.",
           "b) A Unidade de Comando exige que todos os órgãos envolvidos se subordinem diretamente ao Comandante-Geral da PMESP.",
@@ -400,7 +417,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 28,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - planejamento estratégico",
-        "text": "28 - No planejamento institucional, são definidas estratégias globais de longo prazo que direcionam o emprego combinado dos Órgãos de Direção, Apoio, Execução e Assessoria. De acordo com a NORSOP, essa atribuição caracteriza qual nível de planejamento?",
+        "text": "QUESTÃO 28 — No planejamento institucional, são definidas estratégias globais de longo prazo que direcionam o emprego combinado dos Órgãos de Direção, Apoio, Execução e Assessoria. De acordo com a NORSOP, essa atribuição caracteriza qual nível de planejamento?",
         "options": [
           "a) Nível Operacional, materializado pelo detalhamento dos Planos de Ação e dos padrões de trabalho.",
           "b) Nível Tático, materializado pelo desdobramento dos objetivos em planos gerenciais setoriais de médio prazo.",
@@ -414,7 +431,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 29,
         "subject": "OPERACIONAL",
         "topic": "COP - requerimento de evidências para procedimento apuratório",
-        "text": "29 - Um policial militar na condição de acusado, por meio de seu defensor, requer acesso a registros audiovisuais da COP para subsidiar procedimento apuratório. Conforme a Diretriz nº PM3-001/02/25, a solicitação deve ser encaminhada:",
+        "text": "QUESTÃO 29 — Um policial militar na condição de acusado, por meio de seu defensor, requer acesso a registros audiovisuais da COP para subsidiar procedimento apuratório. Conforme a Diretriz nº PM3-001/02/25, a solicitação deve ser encaminhada:",
         "options": [
           "a) Diretamente ao fornecedor do equipamento, que poderá liberar os arquivos mediante identificação do requerente.",
           "b) Ao Chefe da Seção PJMD, que deverá deferir o acesso independentemente da autoridade responsável pela apuração.",
@@ -428,7 +445,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 30,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - Plano de Policiamento Inteligente",
-        "text": "30 - Uma OPM precisa gerir os ativos operacionais disponíveis de acordo com os problemas e as peculiaridades territoriais, em processo de melhoria contínua voltado à redução criminal e ao aumento da percepção de segurança. Segundo a NORSOP, essa metodologia denomina-se:",
+        "text": "QUESTÃO 30 — Uma OPM precisa gerir os ativos operacionais disponíveis de acordo com os problemas e as peculiaridades territoriais, em processo de melhoria contínua voltado à redução criminal e ao aumento da percepção de segurança. Segundo a NORSOP, essa metodologia denomina-se:",
         "options": [
           "a) Plano de Policiamento Inteligente (PPI).",
           "b) Plano de Ação do Incidente (PAI).",
@@ -442,7 +459,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 31,
         "subject": "OPERACIONAL",
         "topic": "Força Tática - atendimento de solicitações emergenciais",
-        "text": "31 - Durante o desenvolvimento de atividade típica, uma equipe de Força Tática recebe solicitação emergencial que exige primeiro atendimento. Considerando a Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
+        "text": "QUESTÃO 31 — Durante o desenvolvimento de atividade típica, uma equipe de Força Tática recebe solicitação emergencial que exige primeiro atendimento. Considerando a Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
         "options": [
           "a) A equipe deve ignorar a solicitação, pois a Força Tática só pode atuar em operações previamente planejadas.",
           "b) A equipe deve atender a solicitação emergencial e, conforme o caso, providenciar a continuidade por outra Patrulha, desde que a transferência não implique erro procedimental nem impedimento legal ou regulamentar.",
@@ -456,7 +473,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 32,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - Chefe de Planejamento",
-        "text": "32 - Em um incidente crítico, o Comandante do Incidente precisa de assessoramento para elaborar os planos de ação, captar os recursos necessários, coletar e analisar informações sensíveis e registrar as ações implementadas. Segundo o SCIPM, qual função do Estado-Maior Operacional possui essas atribuições?",
+        "text": "QUESTÃO 32 — Em um incidente crítico, o Comandante do Incidente precisa de assessoramento para elaborar os planos de ação, captar os recursos necessários, coletar e analisar informações sensíveis e registrar as ações implementadas. Segundo o SCIPM, qual função do Estado-Maior Operacional possui essas atribuições?",
         "options": [
           "a) Chefe de Operações de Campo, responsável pela atuação direta na resposta por meio da execução dos planos de ação.",
           "b) Chefe de Logística, responsável por instalações, serviços e fornecimento de materiais e equipamentos.",
@@ -470,7 +487,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 33,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - ação, operação e missão policial-militar",
-        "text": "33 - Considerando as definições da NORSOP para as formas de atuação operacional, analise as proposições:\n\nI. Ação policial-militar caracteriza a atividade rotineira da Unidade de Serviço, voltada à prevenção criminal e ao aumento da percepção de segurança.\nII. Operação policial-militar envolve o emprego combinado de várias Unidades de Serviço, em ações simultâneas e sucessivas, com objetivo comum delimitado no tempo e no espaço.\nIII. Missão policial-militar envolve a aplicação pontual e específica de efetivos e meios, limitada no tempo e no espaço, para atender demanda imediata que afeta o serviço policial-militar.\nIV. Operação policial-militar caracteriza necessariamente a atuação isolada de uma única Unidade de Serviço, sem planejamento prévio.\n\nAssinale a alternativa correta.",
+        "text": "QUESTÃO 33 — Considerando as definições da NORSOP para as formas de atuação operacional, analise as proposições:\n\nI. Ação policial-militar caracteriza a atividade rotineira da Unidade de Serviço, voltada à prevenção criminal e ao aumento da percepção de segurança.\nII. Operação policial-militar envolve o emprego combinado de várias Unidades de Serviço, em ações simultâneas e sucessivas, com objetivo comum delimitado no tempo e no espaço.\nIII. Missão policial-militar envolve a aplicação pontual e específica de efetivos e meios, limitada no tempo e no espaço, para atender demanda imediata que afeta o serviço policial-militar.\nIV. Operação policial-militar caracteriza necessariamente a atuação isolada de uma única Unidade de Serviço, sem planejamento prévio.\n\nAssinale a alternativa correta.",
         "options": [
           "a) Apenas I e IV.",
           "b) Apenas II e III.",
@@ -484,7 +501,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 34,
         "subject": "OPERACIONAL",
         "topic": "COP - acionamento automático por despacho",
-        "text": "34 - Uma Unidade de Serviço é despachada pelo Sistema de Informações Operacionais da PM (SIOPM) para atendimento de ocorrência. No modelo de acionamento remoto-automático por despacho previsto na Diretriz das COP, qual evento ativa a gravação da câmera vinculada à US demandada?",
+        "text": "QUESTÃO 34 — Uma Unidade de Serviço é despachada pelo Sistema de Informações Operacionais da PM (SIOPM) para atendimento de ocorrência. No modelo de acionamento remoto-automático por despacho previsto na Diretriz das COP, qual evento ativa a gravação da câmera vinculada à US demandada?",
         "options": [
           "a) A chegada física da viatura ao local, após confirmação verbal do encarregado.",
           "b) O encerramento do talão eletrônico, para preservar apenas o resumo da ocorrência.",
@@ -498,7 +515,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 35,
         "subject": "OPERACIONAL",
         "topic": "Violência doméstica - Patrulha SP Mulher Segura",
-        "text": "35 - Uma OPM organiza atendimento especializado a mulheres em situação de violência doméstica e familiar, com visitas comunitárias e solidárias, orientação preventiva e atuação voltada à proteção das vítimas. Conforme a Nota de Instrução nº PM3-002/02/26 (Sala de Operações), assinale a alternativa correta sobre a Patrulha SP Mulher Segura.",
+        "text": "QUESTÃO 35 — Uma OPM organiza atendimento especializado a mulheres em situação de violência doméstica e familiar, com visitas comunitárias e solidárias, orientação preventiva e atuação voltada à proteção das vítimas. Conforme a Nota de Instrução nº PM3-002/02/26 (Sala de Operações), assinale a alternativa correta sobre a Patrulha SP Mulher Segura.",
         "options": [
           "a) O PVS “Acolher” é um grupo do Programa Vizinhança Solidária voltado à proteção e ao tratamento humanizado das vítimas, não sendo a definição da Patrulha SP Mulher Segura.",
           "b) É uma Unidade de Serviço composta por policiais militares, preferencialmente um masculino e um feminino, capacitados pelo Programa Lar Mais Seguro, voltada à prevenção e ao enfrentamento da violência doméstica e familiar.",
@@ -512,7 +529,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 36,
         "subject": "OPERACIONAL",
         "topic": "Combate ao Crime Organizado - Plano de Contingência",
-        "text": "36 - Um incidente crítico relacionado à atuação típica do crime organizado abrange a área de responsabilidade de mais de um Comando de Policiamento. De acordo com a Diretriz nº PM3-001/02/24, qual órgão deve elaborar e manter atualizado o Plano de Contingência para essa resposta integrada?",
+        "text": "QUESTÃO 36 — Um incidente crítico relacionado à atuação típica do crime organizado abrange a área de responsabilidade de mais de um Comando de Policiamento. De acordo com a Diretriz nº PM3-001/02/24, qual órgão deve elaborar e manter atualizado o Plano de Contingência para essa resposta integrada?",
         "options": [
           "a) Coordenação Operacional PM, indicando pontos sensíveis e responsáveis pelas medidas iniciais e de continuidade.",
           "b) Cada Unidade de Serviço envolvida, isoladamente, sem consolidação em nível superior.",
@@ -526,7 +543,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 37,
         "subject": "OPERACIONAL",
         "topic": "Policiamento com Drones - Piloto Remoto em Comando",
-        "text": "37 - Durante uma operação com aeronave não tripulada, surge uma questão relativa à segurança do voo e à condução da aeronave. Conforme a Diretriz nº PM3-005/02/24, qual integrante da Equipe Drone possui autoridade decisória sobre tudo o que se relacionar ao UAS enquanto estiver em voo?",
+        "text": "QUESTÃO 37 — Durante uma operação com aeronave não tripulada, surge uma questão relativa à segurança do voo e à condução da aeronave. Conforme a Diretriz nº PM3-005/02/24, qual integrante da Equipe Drone possui autoridade decisória sobre tudo o que se relacionar ao UAS enquanto estiver em voo?",
         "options": [
           "a) O Observador de UAS, por ser responsável pela comunicação visual com as equipes em solo.",
           "b) O Comandante da OPM, ainda que não esteja designado para a equipe nem habilitado para a operação.",
@@ -540,7 +557,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 38,
         "subject": "OPERACIONAL",
         "topic": "Policiamento Comunitário - Núcleo de Mediação Comunitária",
-        "text": "38 - Em uma comunidade, conflitos recorrentes entre moradores podem ser encaminhados para uma estrutura policial-militar destinada à mediação, desde que a atividade seja conduzida por policial capacitado e formalmente habilitado. Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), qual estrutura corresponde a essa descrição?",
+        "text": "QUESTÃO 38 — Em uma comunidade, conflitos recorrentes entre moradores podem ser encaminhados para uma estrutura policial-militar destinada à mediação, desde que a atividade seja conduzida por policial capacitado e formalmente habilitado. Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), qual estrutura corresponde a essa descrição?",
         "options": [
           "a) Base Comunitária de Segurança (BCS), cuja função principal é servir de sede territorial do policiamento comunitário.",
           "b) Programa Vizinhança Solidária (PVS), destinado à mobilização comunitária e às práticas de prevenção primária.",
@@ -554,7 +571,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 39,
         "subject": "OPERACIONAL",
         "topic": "Sistema de Comando e Controle - Unidade de Serviço",
-        "text": "39 - No Sistema de Comando e Controle, uma equipe composta por policiais a pé ou embarcados executa ações em determinado território e está integrada a um Centro de Operações. Segundo a Diretriz nº PM3-001/02/23, essa fração é conceituada como:",
+        "text": "QUESTÃO 39 — No Sistema de Comando e Controle, uma equipe composta por policiais a pé ou embarcados executa ações em determinado território e está integrada a um Centro de Operações. Segundo a Diretriz nº PM3-001/02/23, essa fração é conceituada como:",
         "options": [
           "a) Unidade de Serviço (US), menor fração de recursos humanos composta por um ou mais policiais militares.",
           "b) Subárea, espaço territorial atribuído à responsabilidade de uma OPM de escalão Companhia PM ou equivalente.",
@@ -568,7 +585,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 40,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento de Trânsito - princípios",
-        "text": "40 - Durante fiscalização de trânsito, o policial militar constata infração administrativa, mas a situação também exige providências imediatas para garantir a segurança de usuários da via. Considerando os princípios do Programa de Policiamento de Trânsito, assinale a alternativa INCORRETA.",
+        "text": "QUESTÃO 40 — Durante fiscalização de trânsito, o policial militar constata infração administrativa, mas a situação também exige providências imediatas para garantir a segurança de usuários da via. Considerando os princípios do Programa de Policiamento de Trânsito, assinale a alternativa INCORRETA.",
         "options": [
           "a) A proteção à vida e à incolumidade física das pessoas tem prioridade, mesmo em relação à fluidez do tráfego.",
           "b) O policiamento de trânsito deve privilegiar o caráter educativo-preventivo, sendo as medidas repressivas complementares quando constatado descumprimento intencional.",
@@ -582,7 +599,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 41,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento Escolar - ordem de prioridade",
-        "text": "41 - O comandante de uma OPM precisa organizar a cobertura dos estabelecimentos de ensino da Subárea e há recursos insuficientes para atendimento simultâneo de todas as escolas. Conforme a Diretriz nº PM3-004/02/20, qual ordem de prioridade deve ser observada?",
+        "text": "QUESTÃO 41 — O comandante de uma OPM precisa organizar a cobertura dos estabelecimentos de ensino da Subárea e há recursos insuficientes para atendimento simultâneo de todas as escolas. Conforme a Diretriz nº PM3-004/02/20, qual ordem de prioridade deve ser observada?",
         "options": [
           "a) Escolas particulares; escolas municipais; escolas estaduais.",
           "b) Escolas municipais; escolas particulares; escolas estaduais.",
@@ -596,7 +613,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 42,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - instalações padronizadas",
-        "text": "42 - Ao estruturar a resposta a um incidente crítico, o Comandante do Incidente estabelece instalações padronizadas conforme a complexidade do fenômeno, dotadas de segurança, denominação comum e sinalização. Assinale a alternativa que NÃO corresponde a um dos exemplos expressamente citados pelo SCIPM.",
+        "text": "QUESTÃO 42 — Ao estruturar a resposta a um incidente crítico, o Comandante do Incidente estabelece instalações padronizadas conforme a complexidade do fenômeno, dotadas de segurança, denominação comum e sinalização. Assinale a alternativa que NÃO corresponde a um dos exemplos expressamente citados pelo SCIPM.",
         "options": [
           "a) Posto de Comando.",
           "b) Base de Apoio.",
@@ -610,7 +627,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 43,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - princípio da padronização",
-        "text": "43 - Em incidente que exige atuação conjunta de diferentes agências, a adoção de métodos, estruturas e termos comuns facilita a interoperabilidade da força responsiva e otimiza tempo e recursos. Segundo o SCIPM, essa descrição corresponde a qual princípio?",
+        "text": "QUESTÃO 43 — Em incidente que exige atuação conjunta de diferentes agências, a adoção de métodos, estruturas e termos comuns facilita a interoperabilidade da força responsiva e otimiza tempo e recursos. Segundo o SCIPM, essa descrição corresponde a qual princípio?",
         "options": [
           "a) Flexibilidade, que permite adaptar o sistema às demandas contingenciais e aos eventos programados.",
           "b) Unidade de esforços, que consiste no alcance de objetivos comuns definidos pelo Comandante do Incidente.",
@@ -624,7 +641,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 44,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento Comunitário - CONSEG",
-        "text": "44 - Ao assumir uma área em que ainda não existe Conselho Comunitário de Segurança (CONSEG), o comandante avalia formas de ampliar a participação comunitária no diagnóstico e na solução dos problemas locais. Conforme a Diretriz nº PM3-005/02/20, assinale a alternativa correta.",
+        "text": "QUESTÃO 44 — Ao assumir uma área em que ainda não existe Conselho Comunitário de Segurança (CONSEG), o comandante avalia formas de ampliar a participação comunitária no diagnóstico e na solução dos problemas locais. Conforme a Diretriz nº PM3-005/02/20, assinale a alternativa correta.",
         "options": [
           "a) A atuação junto aos CONSEG deve ser estimulada, inclusive a composição nas Áreas e Subáreas em que ainda não existam, como forma de integrar esforços em prol da segurança pública.",
           "b) A criação de CONSEG é atribuição exclusiva dos moradores e não deve ser estimulada pela OPM.",
@@ -638,7 +655,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 45,
         "subject": "OPERACIONAL",
         "topic": "COP Motorola - transferência e custódia das evidências",
-        "text": "45 - Ao final do turno, o policial militar responsável por uma COP precisa cumprir a rotina de transferência das gravações. Segundo a Diretriz nº PM3-001/02/25, assinale a alternativa correta quanto à sequência e à responsabilidade pelas evidências digitais.",
+        "text": "QUESTÃO 45 — Ao final do turno, o policial militar responsável por uma COP precisa cumprir a rotina de transferência das gravações. Segundo a Diretriz nº PM3-001/02/25, assinale a alternativa correta quanto à sequência e à responsabilidade pelas evidências digitais.",
         "options": [
           "a) O policial pode manter os dados na câmera até o fim da semana, pois a custódia só começa após requisição de autoridade.",
           "b) O policial deve transferir os dados ao término de cada turno, conectando o equipamento à doca; após o upload, a administração e a custódia passam ao Chefe da Seção PJMD da respectiva OPM.",
@@ -652,7 +669,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 46,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento Rural - implantação",
-        "text": "46 - Um comandante avalia a implantação do Programa de Policiamento Rural em uma região com propriedades agrícolas, atividades turísticas e registros esporádicos de delitos que afetam a percepção de segurança. Considerando a Diretriz nº PM3-007/02/20, analise as proposições:\n\nI. A presença de comunidades rurais cujas características se enquadrem na diretriz pode orientar a implantação do programa.\nII. Atividades sociais e econômicas rurais que possam constituir focos de ações criminosas ou refúgio de infratores são fatores relevantes.\nIII. Índices criminais ou ações delituosas que, mesmo esporádicas, afetem a percepção de segurança no ambiente rural podem justificar a implantação.\n\nAssinale a alternativa correta.",
+        "text": "QUESTÃO 46 — Um comandante avalia a implantação do Programa de Policiamento Rural em uma região com propriedades agrícolas, atividades turísticas e registros esporádicos de delitos que afetam a percepção de segurança. Considerando a Diretriz nº PM3-007/02/20, analise as proposições:\n\nI. A presença de comunidades rurais cujas características se enquadrem na diretriz pode orientar a implantação do programa.\nII. Atividades sociais e econômicas rurais que possam constituir focos de ações criminosas ou refúgio de infratores são fatores relevantes.\nIII. Índices criminais ou ações delituosas que, mesmo esporádicas, afetem a percepção de segurança no ambiente rural podem justificar a implantação.\n\nAssinale a alternativa correta.",
         "options": [
           "a) Apenas I.",
           "b) Apenas I e II.",
@@ -666,7 +683,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 47,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - Sala de Gerenciamento de Incidentes",
-        "text": "47 - Durante uma ocorrência, o Comandante do Incidente identifica a necessidade de integrar a resposta da Polícia Militar com órgãos externos. Segundo a Diretriz nº PM3-003/02/23, assinale a alternativa correta sobre a instituição da Sala de Gerenciamento de Incidentes.",
+        "text": "QUESTÃO 47 — Durante uma ocorrência, o Comandante do Incidente identifica a necessidade de integrar a resposta da Polícia Militar com órgãos externos. Segundo a Diretriz nº PM3-003/02/23, assinale a alternativa correta sobre a instituição da Sala de Gerenciamento de Incidentes.",
         "options": [
           "a) A sala somente pode ser instituída após o encerramento das ações em campo, para consolidar os relatórios das agências.",
           "b) A sala deve ser instituída em toda ocorrência, independentemente da necessidade de integração com outras agências.",
@@ -680,7 +697,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 48,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - Reuniões de Análise Crítica",
-        "text": "48 - Considerando as etapas de análise crítica dos indicadores que subsidiam o Plano de Policiamento Inteligente (PPI), analise as proposições:\n\nI. A RAC-Nível I é desenvolvida no âmbito dos Batalhões para avaliar diagnósticos situacionais e estabelecer alternativas de solução para controle de indicadores criminais, aumento da produtividade e redução do tempo-resposta.\nII. A RAC-Nível II é realizada sob responsabilidade dos Comandos de Policiamento do Interior e de Área, para analisar indicadores de desempenho e avaliar medidas de controle, verificando alinhamento com Planos Diretores e Plano de Comando.\nIII. A RAC-Nível III ocorre no âmbito do Comando-Geral, presidida pelo Coord Op PM, para avaliar estratégias regionais em relação aos Planos Diretores e ao Plano de Comando.\n\nAssinale a alternativa correta.",
+        "text": "QUESTÃO 48 — Considerando as etapas de análise crítica dos indicadores que subsidiam o Plano de Policiamento Inteligente (PPI), analise as proposições:\n\nI. A RAC-Nível I é desenvolvida no âmbito dos Batalhões para avaliar diagnósticos situacionais e estabelecer alternativas de solução para controle de indicadores criminais, aumento da produtividade e redução do tempo-resposta.\nII. A RAC-Nível II é realizada sob responsabilidade dos Comandos de Policiamento do Interior e de Área, para analisar indicadores de desempenho e avaliar medidas de controle, verificando alinhamento com Planos Diretores e Plano de Comando.\nIII. A RAC-Nível III ocorre no âmbito do Comando-Geral, presidida pelo Coord Op PM, para avaliar estratégias regionais em relação aos Planos Diretores e ao Plano de Comando.\n\nAssinale a alternativa correta.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -694,7 +711,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 49,
         "subject": "OPERACIONAL",
         "topic": "Programa de Força Tática - composição da Equipe Tática",
-        "text": "49 - Uma OPM planeja constituir uma Equipe Tática em viatura de quatro rodas. O efetivo disponível, contudo, é inferior ao mínimo ordinário previsto ou não há Subtenente/Sargento para exercer a função de comando. Considerando a Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
+        "text": "QUESTÃO 49 — Uma OPM planeja constituir uma Equipe Tática em viatura de quatro rodas. O efetivo disponível, contudo, é inferior ao mínimo ordinário previsto ou não há Subtenente/Sargento para exercer a função de comando. Considerando a Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
         "options": [
           "a) A equipe pode atuar normalmente como Força Tática com dois policiais militares, desde que um Cabo ou Soldado assuma o comando.",
           "b) A equipe deve ser composta ordinariamente por três ou quatro policiais, sendo a função de comando exercida por Oficial ou Subtenente/Sargento; se não for possível compor o mínimo de três ou faltar graduado habilitado para comandá-la, o efetivo disponível deve atuar em ações preventivas, não de apoio tático.",
@@ -708,7 +725,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 50,
         "subject": "OPERACIONAL",
         "topic": "Sala de Operações - Serviço de Intervenção Remota",
-        "text": "50 - A Sala de Operações recebe uma demanda que não apresenta risco iminente à vida, à integridade física, ao patrimônio ou ao meio ambiente e que pode ser solucionada por orientação ou atendimento remoto. Conforme a Nota de Instrução nº PM3-002/02/26, em quais condições a demanda pode ser tratada pelo Serviço de Intervenção Remota (SIR)?",
+        "text": "QUESTÃO 50 — A Sala de Operações recebe uma demanda que não apresenta risco iminente à vida, à integridade física, ao patrimônio ou ao meio ambiente e que pode ser solucionada por orientação ou atendimento remoto. Conforme a Nota de Instrução nº PM3-002/02/26, em quais condições a demanda pode ser tratada pelo Serviço de Intervenção Remota (SIR)?",
         "options": [
           "a) Sempre que houver ocorrência criminal, independentemente da necessidade de providências presenciais ou de risco iminente.",
           "b) Somente após uma Unidade de Serviço comparecer ao local e constatar pessoalmente a inexistência de risco.",
@@ -722,7 +739,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 50,
         "subject": "OPERACIONAL",
         "topic": "COP Motorola - identificação da evidência digital",
-        "text": "Sobre o preenchimento do campo ID (AnoMêsDiaTalão) na classificação de evidência digital produzida por COP, analise as proposições.\n\nI. Para evidência vinculada ao talão nº 37, ocorrido em 12/10/2026, o campo deve ser preenchido como “2026101237”.\nII. Para evidência decorrente de abordagem, intervenção ou interação sem relação com talão de ocorrência, deve ser lançado apenas o valor da data, como “20261012”.\nIII. Para padronizar o comprimento do campo, o número do talão deve ser completado com zeros à esquerda.",
+        "text": "QUESTÃO 50 — Sobre o preenchimento do campo ID (AnoMêsDiaTalão) na classificação de evidência digital produzida por COP, analise as proposições.\n\nI. Para evidência vinculada ao talão nº 37, ocorrido em 12/10/2026, o campo deve ser preenchido como “2026101237”.\nII. Para evidência decorrente de abordagem, intervenção ou interação sem relação com talão de ocorrência, deve ser lançado apenas o valor da data, como “20261012”.\nIII. Para padronizar o comprimento do campo, o número do talão deve ser completado com zeros à esquerda.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -736,7 +753,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 51,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - Matriz Operacional III e Nível de Resposta 4",
-        "text": "Uma ocorrência apresenta gravidade e complexidade que exigem recursos humanos, materiais e capacitações indisponíveis nas OPM territoriais. Para classificar corretamente o apoio, o oficial deve relacionar a Matriz Operacional e o Nível de Resposta previstos na NORSOP. Assinale a alternativa correta.",
+        "text": "QUESTÃO 51 — Uma ocorrência apresenta gravidade e complexidade que exigem recursos humanos, materiais e capacitações indisponíveis nas OPM territoriais. Para classificar corretamente o apoio, o oficial deve relacionar a Matriz Operacional e o Nível de Resposta previstos na NORSOP. Assinale a alternativa correta.",
         "options": [
           "a) Matriz Operacional III — Apoios Especializados; Nível de Resposta 4.",
           "b) Matriz Operacional II — Apoios Táticos; Nível de Resposta 2.",
@@ -750,7 +767,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 52,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - atribuições do Estado-Maior do Comandante do Incidente",
-        "text": "No SCIPM, o Comandante do Incidente distribui funções entre integrantes de seu Estado-Maior. Qual alternativa associa corretamente cada função à atribuição normativa correspondente?",
+        "text": "QUESTÃO 52 — No SCIPM, o Comandante do Incidente distribui funções entre integrantes de seu Estado-Maior. Qual alternativa associa corretamente cada função à atribuição normativa correspondente?",
         "options": [
           "a) Segurança: assessorar sobre riscos à segurança operacional de respondedores e vítimas; Chefe de Planejamento: assessorar na elaboração dos planos de ação, captação de recursos, análise de informações sensíveis e registro das ações; Chefe de Logística: prover instalações, serviços, materiais e equipamentos necessários às missões planejadas.",
           "b) Segurança: transmitir informações à imprensa; Chefe de Planejamento: prover alimentação e instalações; Chefe de Logística: analisar informações sensíveis e registrar as ações implementadas.",
@@ -764,7 +781,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 53,
         "subject": "OPERACIONAL",
         "topic": "Sistema de C2 - definição do CC2 em operações regionais e estaduais",
-        "text": "A Coordenação Operacional analisa duas operações: a primeira abrange mais de uma região e envolve OPM de Matrizes Operacionais distintas; a segunda possui abrangência estadual. Considerando a Diretriz de C2, qual designação de Centro de Comando e Controle (CC2) corresponde a cada situação?",
+        "text": "QUESTÃO 53 — A Coordenação Operacional analisa duas operações: a primeira abrange mais de uma região e envolve OPM de Matrizes Operacionais distintas; a segunda possui abrangência estadual. Considerando a Diretriz de C2, qual designação de Centro de Comando e Controle (CC2) corresponde a cada situação?",
         "options": [
           "a) Na primeira, o Coord Op PM define temporariamente um COPOM Regional comum aos Comandos de Policiamento interessados; na segunda, o COPOM São Paulo assume as atribuições de CC2.",
           "b) Na primeira, o COPOM São Paulo assume obrigatoriamente o CC2; na segunda, cada COPOM Regional atua isoladamente, sem estrutura comum.",
@@ -778,7 +795,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 54,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - designação do Comandante do Incidente em incidentes estáticos e dinâmicos",
-        "text": "À luz do SCIPM, analise as proposições sobre a designação do Comandante do Incidente (Cmt Inc) em incidentes críticos policiais.\n\nI. Nos incidentes estáticos, o Cmt Inc será, em regra, policial militar da OPM da Matriz Operacional I com responsabilidade territorial sobre o local, ou da Matriz III quando se tratar de Nível de Resposta 4, conforme a natureza do fenômeno.\nII. Nos incidentes dinâmicos, o Chefe de Operações do COPOM será o Cmt Inc até a estabilização, quando o evento passa a assumir características de incidente estático.\nIII. Nos incidentes dinâmicos, o policial de maior posto ou graduação presente no local substitui automaticamente o Chefe de Operações do COPOM como Cmt Inc e assume toda a função de comando.",
+        "text": "QUESTÃO 54 — À luz do SCIPM, analise as proposições sobre a designação do Comandante do Incidente (Cmt Inc) em incidentes críticos policiais.\n\nI. Nos incidentes estáticos, o Cmt Inc será, em regra, policial militar da OPM da Matriz Operacional I com responsabilidade territorial sobre o local, ou da Matriz III quando se tratar de Nível de Resposta 4, conforme a natureza do fenômeno.\nII. Nos incidentes dinâmicos, o Chefe de Operações do COPOM será o Cmt Inc até a estabilização, quando o evento passa a assumir características de incidente estático.\nIII. Nos incidentes dinâmicos, o policial de maior posto ou graduação presente no local substitui automaticamente o Chefe de Operações do COPOM como Cmt Inc e assume toda a função de comando.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -792,7 +809,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 55,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento com Drones - composição e funções da Equipe Drone",
-        "text": "Considerando a composição mínima da Equipe Drone e as funções dos seus integrantes, analise as proposições.\n\nI. A equipe será composta, no mínimo, pelo Piloto Remoto em Comando (RPIC) e pelo Observador de UAS.\nII. O policial militar na função de Segurança é componente obrigatório em toda Equipe Drone, sem possibilidade de exceção.\nIII. O Observador auxilia a condução segura do voo pela observação visual da aeronave e do espaço aéreo e pela comunicação permanente com o RPIC, sem uso de equipamentos óticos, exceto lentes corretivas.",
+        "text": "QUESTÃO 55 — Considerando a composição mínima da Equipe Drone e as funções dos seus integrantes, analise as proposições.\n\nI. A equipe será composta, no mínimo, pelo Piloto Remoto em Comando (RPIC) e pelo Observador de UAS.\nII. O policial militar na função de Segurança é componente obrigatório em toda Equipe Drone, sem possibilidade de exceção.\nIII. O Observador auxilia a condução segura do voo pela observação visual da aeronave e do espaço aéreo e pela comunicação permanente com o RPIC, sem uso de equipamentos óticos, exceto lentes corretivas.",
         "options": [
           "a) Apenas I e III.",
           "b) Apenas I e II.",
@@ -806,7 +823,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 56,
         "subject": "OPERACIONAL",
         "topic": "Sistema de C2 - confidencialidade e disponibilidade das informações da Sala de Operações",
-        "text": "Na gestão das informações da Sala de Operações, devem ser distinguidas as regras de confidencialidade e disponibilidade. Analise as proposições.\n\nI. A confidencialidade exige resguardar o caráter sigiloso das informações sensíveis e reforçar o cumprimento da Lei de Acesso à Informação e da Lei Geral de Proteção de Dados.\nII. A disponibilidade autoriza fornecer informações a qualquer integrante da Instituição que as solicite, ainda que não tenha necessidade operacional de conhecê-las.\nIII. Dados preservados para consulta futura podem ser suprimidos pelo operador sempre que deixarem de ser úteis ao turno, sem anuência do Supervisor da Sala de Operações.",
+        "text": "QUESTÃO 56 — Na gestão das informações da Sala de Operações, devem ser distinguidas as regras de confidencialidade e disponibilidade. Analise as proposições.\n\nI. A confidencialidade exige resguardar o caráter sigiloso das informações sensíveis e reforçar o cumprimento da Lei de Acesso à Informação e da Lei Geral de Proteção de Dados.\nII. A disponibilidade autoriza fornecer informações a qualquer integrante da Instituição que as solicite, ainda que não tenha necessidade operacional de conhecê-las.\nIII. Dados preservados para consulta futura podem ser suprimidos pelo operador sempre que deixarem de ser úteis ao turno, sem anuência do Supervisor da Sala de Operações.",
         "options": [
           "a) Apenas I.",
           "b) Apenas I e II.",
@@ -820,7 +837,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 57,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - Plano de Ação do Incidente (PAI)",
-        "text": "Durante a estruturação da resposta a um incidente, o Estado-Maior precisa distinguir o Plano de Ação do Incidente (PAI) de outros instrumentos do SCIPM. Assinale a alternativa que reúne os elementos normativos próprios do PAI.",
+        "text": "QUESTÃO 57 — Durante a estruturação da resposta a um incidente, o Estado-Maior precisa distinguir o Plano de Ação do Incidente (PAI) de outros instrumentos do SCIPM. Assinale a alternativa que reúne os elementos normativos próprios do PAI.",
         "options": [
           "a) Descrição, no tempo e no espaço, das ações, procedimentos e rotinas a implementar; resultante de planejamento por esboço emergencial; elaborado a partir dos objetivos definidos e desenvolvido pela metodologia 5W2H.",
           "b) Quadro físico com informações atualizadas dos recursos humanos e materiais empregados e dos serviços disponíveis, destinado ao gerenciamento dos recursos.",
@@ -834,7 +851,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 58,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento Comunitário - continuidade do vínculo com a comunidade",
-        "text": "À luz das orientações gerais para execução do Policiamento Comunitário, analise as proposições.\n\nI. O policial empregado deve dispor de tempo suficiente para conquistar a confiança e desenvolver parcerias com a comunidade, sendo desaconselhável a substituição constante.\nII. O policial deve estar apto a coletar informações junto à comunidade e entrevistar moradores e outras partes interessadas para obter indicadores úteis ao policiamento comunitário.\nIII. O efetivo deve conhecer as características da comunidade, manter vínculos permanentes com cidadãos e lideranças e adotar postura proativa na busca de soluções, incluindo a elaboração de RAIA, se for o caso.\nIV. O policial deve receber críticas e sugestões da comunidade, mas o encaminhamento delas é dispensável quando não houver consenso entre os envolvidos.",
+        "text": "QUESTÃO 58 — À luz das orientações gerais para execução do Policiamento Comunitário, analise as proposições.\n\nI. O policial empregado deve dispor de tempo suficiente para conquistar a confiança e desenvolver parcerias com a comunidade, sendo desaconselhável a substituição constante.\nII. O policial deve estar apto a coletar informações junto à comunidade e entrevistar moradores e outras partes interessadas para obter indicadores úteis ao policiamento comunitário.\nIII. O efetivo deve conhecer as características da comunidade, manter vínculos permanentes com cidadãos e lideranças e adotar postura proativa na busca de soluções, incluindo a elaboração de RAIA, se for o caso.\nIV. O policial deve receber críticas e sugestões da comunidade, mas o encaminhamento delas é dispensável quando não houver consenso entre os envolvidos.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I, II e III.",
@@ -848,7 +865,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 59,
         "subject": "OPERACIONAL",
         "topic": "COP - reiteração do acionamento manual quando não há acionamento remoto",
-        "text": "Em uma OPM cujas COP não dispõem de acionamento remoto-intencional nem remoto-automático, analise as providências previstas para reforçar a gravação de fatos de interesse policial.\n\nI. Em ocorrência despachada pelo COPOM/CAD, o despachador deve, além de transmitir os elementos-base, reiterar à Unidade de Serviço a necessidade de acionamento manual.\nII. Se a Unidade de Serviço comunicar diretamente ao COPOM/CAD uma circunstância de intervenção policial ou interação com o público, o despachador também deve reiterar o acionamento manual.\nIII. Os escalões de supervisão, como CFP e CGP ou equivalentes, devem reforçar a necessidade por rede rádio ou fiscalização direta.",
+        "text": "QUESTÃO 59 — Em uma OPM cujas COP não dispõem de acionamento remoto-intencional nem remoto-automático, analise as providências previstas para reforçar a gravação de fatos de interesse policial.\n\nI. Em ocorrência despachada pelo COPOM/CAD, o despachador deve, além de transmitir os elementos-base, reiterar à Unidade de Serviço a necessidade de acionamento manual.\nII. Se a Unidade de Serviço comunicar diretamente ao COPOM/CAD uma circunstância de intervenção policial ou interação com o público, o despachador também deve reiterar o acionamento manual.\nIII. Os escalões de supervisão, como CFP e CGP ou equivalentes, devem reforçar a necessidade por rede rádio ou fiscalização direta.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -862,7 +879,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 60,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - emprego supletivo de Unidades de Serviço das Matrizes II e III",
-        "text": "Uma Unidade de Serviço vinculada à Matriz Operacional II ou III não está executando, naquele momento, sua atividade típica de policiamento ostensivo. À luz da NORSOP, qual emprego supletivo pode ser admitido?",
+        "text": "QUESTÃO 60 — Uma Unidade de Serviço vinculada à Matriz Operacional II ou III não está executando, naquele momento, sua atividade típica de policiamento ostensivo. À luz da NORSOP, qual emprego supletivo pode ser admitido?",
         "options": [
           "a) Desenvolver patrulhamento preventivo no Nível de Resposta 1, em caráter supletivo.",
           "b) Ser automaticamente reclassificada como Unidade da Matriz Operacional I para todos os fins.",
@@ -876,7 +893,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 61,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - gerenciamento dos recursos",
-        "text": "Durante um incidente crítico, o Comandante do Incidente precisa manter uma visão atualizada dos recursos humanos e materiais empregados e dos serviços disponíveis. Segundo o SCIPM, qual instrumento corresponde especificamente ao gerenciamento dos recursos?",
+        "text": "QUESTÃO 61 — Durante um incidente crítico, o Comandante do Incidente precisa manter uma visão atualizada dos recursos humanos e materiais empregados e dos serviços disponíveis. Segundo o SCIPM, qual instrumento corresponde especificamente ao gerenciamento dos recursos?",
         "options": [
           "a) Quadro físico com informações precisas e atualizadas sobre recursos humanos e materiais empregados e serviços disponíveis.",
           "b) Plano temporal e espacial de ações, procedimentos e rotinas, desenvolvido a partir dos objetivos por metodologia 5W2H.",
@@ -890,7 +907,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 62,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento com Drones - Oficial Coordenador de Operação de UAS",
-        "text": "Sobre a designação e as atribuições do Oficial Coordenador de Operação de UAS, analise as proposições.\n\nI. O Cmt Btl deve designá-lo formalmente e informar a nomeação ao CAvPM, bem como eventual alteração da designação.\nII. Cabe ao Oficial Coordenador monitorar e controlar as atividades das Equipes Drone e fiscalizar os planos de ação elaborados pelo Cmt OPM.\nIII. A autoridade decisória sobre tudo o que se relaciona ao UAS durante o voo pertence ao Oficial Coordenador, e não ao RPIC.",
+        "text": "QUESTÃO 62 — Sobre a designação e as atribuições do Oficial Coordenador de Operação de UAS, analise as proposições.\n\nI. O Cmt Btl deve designá-lo formalmente e informar a nomeação ao CAvPM, bem como eventual alteração da designação.\nII. Cabe ao Oficial Coordenador monitorar e controlar as atividades das Equipes Drone e fiscalizar os planos de ação elaborados pelo Cmt OPM.\nIII. A autoridade decisória sobre tudo o que se relaciona ao UAS durante o voo pertence ao Oficial Coordenador, e não ao RPIC.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -904,7 +921,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 63,
         "subject": "OPERACIONAL",
         "topic": "COP - condições de acesso à transmissão ao vivo",
-        "text": "A Diretriz das COP delimita quem pode acessar a funcionalidade de transmissão ao vivo. Analise as proposições.\n\nI. Cmt OPM podem acessar a partir do nível mínimo de Companhia PM.\nII. Qualquer policial militar, independentemente de função de comando ou supervisão, pode acessar livremente a transmissão.\nIII. O COPOM São Paulo ou Regional pode acessar conforme a área de atuação.\nIV. Outros representantes de OPM podem acessar quando devidamente autorizados pela Coord Op PM.",
+        "text": "QUESTÃO 63 — A Diretriz das COP delimita quem pode acessar a funcionalidade de transmissão ao vivo. Analise as proposições.\n\nI. Cmt OPM podem acessar a partir do nível mínimo de Companhia PM.\nII. Qualquer policial militar, independentemente de função de comando ou supervisão, pode acessar livremente a transmissão.\nIII. O COPOM São Paulo ou Regional pode acessar conforme a área de atuação.\nIV. Outros representantes de OPM podem acessar quando devidamente autorizados pela Coord Op PM.",
         "options": [
           "a) Apenas I, III e IV.",
           "b) Apenas I e II.",
@@ -918,7 +935,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 64,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento de Trânsito - competência territorial e vias sob responsabilidade do Estado",
-        "text": "Considere dois cenários: (1) policiamento ostensivo de trânsito na Região Metropolitana ou no Interior, fora de via sob responsabilidade do Estado; (2) policiamento ostensivo de trânsito em via sob responsabilidade do Estado. Conforme a Diretriz nº PM3-006/02/20, qual distribuição de competência está correta?",
+        "text": "QUESTÃO 64 — Considere dois cenários: (1) policiamento ostensivo de trânsito na Região Metropolitana ou no Interior, fora de via sob responsabilidade do Estado; (2) policiamento ostensivo de trânsito em via sob responsabilidade do Estado. Conforme a Diretriz nº PM3-006/02/20, qual distribuição de competência está correta?",
         "options": [
           "a) No cenário 1, prioritariamente pelas OPM subordinadas ao CPM e CPI; no cenário 2, pelas OPM subordinadas ao CPRv em todo o Estado, conforme convênio vigente.",
           "b) No cenário 1, exclusivamente pelo CPTran; no cenário 2, pelas OPM territoriais sem participação do CPRv.",
@@ -932,7 +949,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 65,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - organização modular",
-        "text": "Ao ampliar a estrutura de resposta a um incidente crítico, o Comandante do Incidente considera incorporar novas funções e, após a redução dos riscos, desmobilizar parte da estrutura. Qual afirmação traduz a definição de organização modular do SCIPM?",
+        "text": "QUESTÃO 65 — Ao ampliar a estrutura de resposta a um incidente crítico, o Comandante do Incidente considera incorporar novas funções e, após a redução dos riscos, desmobilizar parte da estrutura. Qual afirmação traduz a definição de organização modular do SCIPM?",
         "options": [
           "a) Estrutura estabelecida conforme amplitude e complexidade do incidente, peculiaridades do ambiente e riscos e ameaças, podendo o Cmt Inc determinar incorporação ou desmobilização de módulos.",
           "b) Quadro físico que registra recursos humanos e materiais empregados e serviços disponíveis, atualizado durante a resposta.",
@@ -946,7 +963,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 66,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento Escolar - identificação de pessoas com deficiência na comunidade escolar",
-        "text": "No Programa de Policiamento Escolar, analise as obrigações atribuídas aos Cmt OPM quanto aos estabelecimentos de ensino que possuam pessoas com deficiência (PcD) na comunidade escolar.\n\nI. A partir do nível mínimo de Companhia PM, identificar estabelecimentos em que PcD possam necessitar de equipamentos ou procedimentos adaptados durante o atendimento de ocorrências.\nII. Manter atualizados registros referentes à quantidade de pessoas nessas condições e à natureza das respectivas deficiências.\nIII. Limitar a identificação às ocorrências realizadas dentro do estabelecimento, excluindo eventual deslocamento ao distrito policial ou hospital.",
+        "text": "QUESTÃO 66 — No Programa de Policiamento Escolar, analise as obrigações atribuídas aos Cmt OPM quanto aos estabelecimentos de ensino que possuam pessoas com deficiência (PcD) na comunidade escolar.\n\nI. A partir do nível mínimo de Companhia PM, identificar estabelecimentos em que PcD possam necessitar de equipamentos ou procedimentos adaptados durante o atendimento de ocorrências.\nII. Manter atualizados registros referentes à quantidade de pessoas nessas condições e à natureza das respectivas deficiências.\nIII. Limitar a identificação às ocorrências realizadas dentro do estabelecimento, excluindo eventual deslocamento ao distrito policial ou hospital.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -960,7 +977,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 67,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento Comunitário - visitas e registro de informações",
-        "text": "Para potencializar os resultados do Policiamento Comunitário, a Diretriz nº PM3-005/02/20 estabelece providências específicas para as OPM. Analise as proposições.\n\nI. A sistemática de atuação relativa às visitas comunitárias deve ser estabelecida semestralmente por documento próprio de Estado-Maior, visando coletar informações para questionários divulgados pela Coord Op PM.\nII. As OPM devem coordenar visitas comunitárias ou solidárias, campanhas ou reuniões comunitárias e adotar medidas de controle do correto registro das informações no SICoordOp.\nIII. A sistemática deve ser anual, e o registro no SICoordOp é facultativo quando houver reunião presencial.",
+        "text": "QUESTÃO 67 — Para potencializar os resultados do Policiamento Comunitário, a Diretriz nº PM3-005/02/20 estabelece providências específicas para as OPM. Analise as proposições.\n\nI. A sistemática de atuação relativa às visitas comunitárias deve ser estabelecida semestralmente por documento próprio de Estado-Maior, visando coletar informações para questionários divulgados pela Coord Op PM.\nII. As OPM devem coordenar visitas comunitárias ou solidárias, campanhas ou reuniões comunitárias e adotar medidas de controle do correto registro das informações no SICoordOp.\nIII. A sistemática deve ser anual, e o registro no SICoordOp é facultativo quando houver reunião presencial.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -974,7 +991,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 68,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento de Trânsito - emprego de Unidades de Serviço de outros programas",
-        "text": "Na Região Metropolitana ou no Interior, o comando avalia empregar ocasional ou programadamente uma Unidade de Serviço de outro Programa de Policiamento no policiamento ostensivo de trânsito. À luz da Diretriz nº PM3-006/02/20, analise as proposições.\n\nI. O emprego de US de outros programas ou de Atividades Operacionais Diversas é admitido desde que as atividades próprias por elas executadas não sofram solução de continuidade.\nII. O emprego excepcional do CPTran em operações próprias ou em apoio/reforço pode ocorrer em circunstâncias especiais quando houver carências técnicas apresentadas pelas OPM territoriais.\nIII. Toda US de outro programa empregada ocasionalmente no trânsito deve, por esse motivo, ser permanentemente incorporada ao efetivo específico do Programa de Policiamento de Trânsito.",
+        "text": "QUESTÃO 68 — Na Região Metropolitana ou no Interior, o comando avalia empregar ocasional ou programadamente uma Unidade de Serviço de outro Programa de Policiamento no policiamento ostensivo de trânsito. À luz da Diretriz nº PM3-006/02/20, analise as proposições.\n\nI. O emprego de US de outros programas ou de Atividades Operacionais Diversas é admitido desde que as atividades próprias por elas executadas não sofram solução de continuidade.\nII. O emprego excepcional do CPTran em operações próprias ou em apoio/reforço pode ocorrer em circunstâncias especiais quando houver carências técnicas apresentadas pelas OPM territoriais.\nIII. Toda US de outro programa empregada ocasionalmente no trânsito deve, por esse motivo, ser permanentemente incorporada ao efetivo específico do Programa de Policiamento de Trânsito.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -988,7 +1005,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 69,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - Nível de Resposta 3",
-        "text": "Uma ocorrência excede a capacidade operativa das OPM territoriais subordinadas e demanda recursos humanos e meios materiais adicionais vinculados diretamente ao Comando de Policiamento. Não se trata de apoio tático por contingente da Matriz II nem de apoio especializado próprio da Matriz III. Qual classificação corresponde à NORSOP?",
+        "text": "QUESTÃO 69 — Uma ocorrência excede a capacidade operativa das OPM territoriais subordinadas e demanda recursos humanos e meios materiais adicionais vinculados diretamente ao Comando de Policiamento. Não se trata de apoio tático por contingente da Matriz II nem de apoio especializado próprio da Matriz III. Qual classificação corresponde à NORSOP?",
         "options": [
           "a) Nível de Resposta 2, caracterizado pelo apoio tático às US da Matriz I por contingentes com capacitação e equipamentos próprios.",
           "b) Nível de Resposta 3, caracterizado pelo emprego adicional de recursos humanos e meios materiais vinculados diretamente aos Comandos de Policiamento, diante da insuficiência das OPM territoriais subordinadas.",
@@ -1002,7 +1019,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 70,
         "subject": "OPERACIONAL",
         "topic": "COP - ordem de prioridade de distribuição quando os equipamentos são insuficientes",
-        "text": "Quando não é possível equipar integralmente o efetivo com COP, a Diretriz estabelece uma ordem de prioridade de distribuição. Qual alternativa reproduz corretamente a sequência normativa, incluindo a ordem interna das funções de comando e supervisão?",
+        "text": "QUESTÃO 70 — Quando não é possível equipar integralmente o efetivo com COP, a Diretriz estabelece uma ordem de prioridade de distribuição. Qual alternativa reproduz corretamente a sequência normativa, incluindo a ordem interna das funções de comando e supervisão?",
         "options": [
           "a) Programas Primários (Radiopatrulha; Força Tática); Programas Complementares (Escolar; Trânsito; Rural; Comunitário); Atividades Operacionais Diversas; funções de comando/supervisão (CGP; CFP; Supervisor Regional).",
           "b) Programas Primários (Força Tática; Radiopatrulha); Programas Complementares (Trânsito; Escolar; Comunitário; Rural); funções de comando/supervisão; Atividades Operacionais Diversas.",
@@ -1017,7 +1034,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 71,
         subject: "OPERACIONAL",
         topic: "COP — classificação de evidência relacionada a MDIP",
-        text: "Após uma intervenção policial com resultado morte, o policial usuário da COP encerra a gravação e precisa classificá-la no sistema de evidências digitais. Conforme a Diretriz nº PM3-001/02/25, qual procedimento corresponde à classificação normativa da evidência?",
+        text: "QUESTÃO 71 — Após uma intervenção policial com resultado morte, o policial usuário da COP encerra a gravação e precisa classificá-la no sistema de evidências digitais. Conforme a Diretriz nº PM3-001/02/25, qual procedimento corresponde à classificação normativa da evidência?",
         options: [
             "a) Classificá-la como Polícia Judiciária (PJ), sem subetiqueta, pois toda ocorrência com resultado morte tramita exclusivamente na Justiça comum.",
             "b) Classificá-la como Polícia Judiciária Militar (PJM), com a subetiqueta Morte Decorrente de Intervenção Policial (MDIP), conforme o rol de etiquetas previsto.",
@@ -1032,7 +1049,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 73,
         subject: "OPERACIONAL",
         topic: "NORSOP — planejamento tático",
-        text: "Ao revisar um plano de emprego, um comandante precisa distinguir o planejamento tático do planejamento estratégico e do operacional. Segundo a NORSOP, qual descrição corresponde ao nível tático?",
+        text: "QUESTÃO 73 — Ao revisar um plano de emprego, um comandante precisa distinguir o planejamento tático do planejamento estratégico e do operacional. Segundo a NORSOP, qual descrição corresponde ao nível tático?",
         options: [
             "a) Planejamento de longo prazo que estabelece as estratégias globais do Comando-Geral e orienta o emprego combinado dos órgãos institucionais.",
             "b) Plano gerencial de médio prazo que desdobra o planejamento estratégico nos escalões operacionais e administrativos, definindo objetivos setoriais e metodologia, sem substituir os objetivos estratégicos.",
@@ -1047,7 +1064,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 74,
         subject: "OPERACIONAL",
         topic: "NORSOP — distinção entre princípios e diretrizes básicas",
-        text: "Na revisão doutrinária da NORSOP, um oficial precisa identificar um conjunto formado exclusivamente por PRINCÍPIOS básicos, sem incluir diretrizes básicas. Assinale a alternativa correta.",
+        text: "QUESTÃO 74 — Na revisão doutrinária da NORSOP, um oficial precisa identificar um conjunto formado exclusivamente por PRINCÍPIOS básicos, sem incluir diretrizes básicas. Assinale a alternativa correta.",
         options: [
             "a) Acessibilidade, proatividade e autonomia operacional.",
             "b) Polícia Comunitária, Excelência na Gestão e Direitos Humanos.",
@@ -1062,7 +1079,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 75,
         subject: "OPERACIONAL",
         topic: "NORSOP — Nível de Resposta 3",
-        text: "Uma ocorrência excede a capacidade operativa das OPM territoriais subordinadas, mas a avaliação não indica necessidade de recursos especializados próprios da Matriz Operacional III. A resposta exige emprego adicional de efetivo e meios vinculados diretamente ao Comando de Policiamento. Qual nível de resposta corresponde à situação?",
+        text: "QUESTÃO 75 — Uma ocorrência excede a capacidade operativa das OPM territoriais subordinadas, mas a avaliação não indica necessidade de recursos especializados próprios da Matriz Operacional III. A resposta exige emprego adicional de efetivo e meios vinculados diretamente ao Comando de Policiamento. Qual nível de resposta corresponde à situação?",
         options: [
             "a) Nível de Resposta 1, pois a atuação permanece no âmbito territorial.",
             "b) Nível de Resposta 2, pois qualquer reforço de uma Unidade de Serviço configura apoio tático.",
@@ -1077,7 +1094,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 76,
         subject: "JURIDICO",
         topic: "Lei nº 18.442/26 — requisito para o comando da PMESP",
-        text: "Considerando a regra apresentada no material autorizado sobre a Lei nº 18.442/26 para o comando da Polícia Militar, assinale a alternativa que reproduz corretamente o requisito referente ao oficial que exerce o Comando-Geral.",
+        text: "QUESTÃO 76 — Considerando a regra apresentada no material autorizado sobre a Lei nº 18.442/26 para o comando da Polícia Militar, assinale a alternativa que reproduz corretamente o requisito referente ao oficial que exerce o Comando-Geral.",
         options: [
             "a) Oficial PM da ativa, de carreira e do último posto do Quadro de Oficiais de Estado-Maior (QOEM).",
             "b) Oficial PM da ativa, de carreira e do último posto de qualquer quadro de oficiais da Corporação.",
@@ -1092,7 +1109,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 77,
         subject: "JURIDICO",
         topic: "Lei nº 18.442/26 — precedência funcional entre quadros",
-        text: "Dois Oficiais PM da ativa possuem o mesmo posto e exercem funções que, no caso concreto, não estabelecem superioridade funcional entre si. Para a distinção de precedência funcional entre quadros, qual regra consta do material autorizado?",
+        text: "QUESTÃO 77 — Dois Oficiais PM da ativa possuem o mesmo posto e exercem funções que, no caso concreto, não estabelecem superioridade funcional entre si. Para a distinção de precedência funcional entre quadros, qual regra consta do material autorizado?",
         options: [
             "a) Prevalece sempre o oficial de maior idade, independentemente do quadro a que pertença.",
             "b) O Oficial do QOE precede o do QOEM por possuir habilitação especializada.",
@@ -1107,7 +1124,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 78,
         subject: "JURIDICO",
         topic: "Lei nº 18.442/26 — exclusões do limite de efetivo",
-        text: "Ao conferir o limite de efetivo previsto no art. 3º da Lei nº 18.442/26, um oficial deve identificar as categorias que a própria norma exclui da contagem. Qual alternativa reúne o conjunto previsto no material autorizado?",
+        text: "QUESTÃO 78 — Ao conferir o limite de efetivo previsto no art. 3º da Lei nº 18.442/26, um oficial deve identificar as categorias que a própria norma exclui da contagem. Qual alternativa reúne o conjunto previsto no material autorizado?",
         options: [
             "a) Aspirante a Oficial PM; Cadete, Aluno-Oficial, Aluno-Sargento e Aluno-Soldado PM; militar da reserva revertido ao serviço ativo; e PM temporário.",
             "b) Aspirante a Oficial PM; todos os Oficiais do QOE; militares reformados; e praças da reserva remunerada.",
@@ -1122,7 +1139,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 79,
         subject: "JURIDICO",
         topic: "RDPM — conversão de permanência disciplinar em serviço extraordinário",
-        text: "Um policial militar, após a publicação de sanção de permanência disciplinar, requer a conversão de parte do período em prestação de serviço extraordinário. À luz dos arts. 18 e 19 do RDPM, qual alternativa reúne corretamente as condições normativas?",
+        text: "QUESTÃO 79 — Um policial militar, após a publicação de sanção de permanência disciplinar, requer a conversão de parte do período em prestação de serviço extraordinário. À luz dos arts. 18 e 19 do RDPM, qual alternativa reúne corretamente as condições normativas?",
         options: [
             "a) A conversão é automática quando requerida em até cinco dias e pode abranger todo o período, desde que o serviço seja prestado em dias úteis.",
             "b) A autoridade que aplicou a punição pode deferir a conversão mediante decisão motivada, se não houver prejuízo à hierarquia e à disciplina; o pedido deve ser encaminhado em três dias da publicação, e o limite de conversão é de cinco dias.",
@@ -1137,7 +1154,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 80,
         subject: "JURIDICO",
         topic: "RDPM — responsabilidade solidária do superior hierárquico",
-        text: "Na apuração de transgressão disciplinar de subordinado, a responsabilidade solidária do superior hierárquico, com incidência das mesmas sanções da transgressão, ocorre em qual das hipóteses previstas no RDPM?",
+        text: "QUESTÃO 80 — Na apuração de transgressão disciplinar de subordinado, a responsabilidade solidária do superior hierárquico, com incidência das mesmas sanções da transgressão, ocorre em qual das hipóteses previstas no RDPM?",
         options: [
             "a) Somente quando o superior estiver presente e tiver autorizado expressamente a conduta.",
             "b) Apenas quando o superior estiver ausente do local e não tiver recebido comunicação formal do fato.",
@@ -1152,7 +1169,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 81,
         subject: "JURIDICO",
         topic: "RDPM — âmbito subjetivo de aplicação",
-        text: "Ao delimitar o âmbito subjetivo do Regulamento Disciplinar da Polícia Militar, qual alternativa reproduz integralmente as exceções expressas no parágrafo único do art. 2º do RDPM?",
+        text: "QUESTÃO 81 — Ao delimitar o âmbito subjetivo do Regulamento Disciplinar da Polícia Militar, qual alternativa reproduz integralmente as exceções expressas no parágrafo único do art. 2º do RDPM?",
         options: [
             "a) Militares do Estado na reserva remunerada e reformados, além dos agregados.",
             "b) Militares do Estado ocupantes de cargos públicos ou eletivos e Magistrados da Justiça Militar.",
@@ -1167,7 +1184,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 82,
         subject: "JURIDICO",
         topic: "RDPM — critérios de antiguidade em igualdade de posto ou graduação",
-        text: "Dois militares do Estado estão em igualdade de posto ou graduação e não há regra específica de precedência funcional aplicável. Qual sequência reproduz os critérios de antiguidade previstos no art. 4º do RDPM?",
+        text: "QUESTÃO 82 — Dois militares do Estado estão em igualdade de posto ou graduação e não há regra específica de precedência funcional aplicável. Qual sequência reproduz os critérios de antiguidade previstos no art. 4º do RDPM?",
         options: [
             "a) Maior idade; data da admissão; classificação no curso; graus hierárquicos anteriores; data da última promoção.",
             "b) Data da última promoção; prevalência sucessiva dos graus hierárquicos anteriores; classificação no curso de formação ou habilitação; data de nomeação ou admissão; maior idade.",
@@ -1182,7 +1199,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 83,
         subject: "JURIDICO",
         topic: "RDPM — recompensas policiais-militares",
-        text: "Considere as afirmações sobre as recompensas policiais-militares previstas no RDPM: I — o elogio é uma recompensa; II — o cancelamento de sanções é uma recompensa; III — a dispensa do serviço constitui recompensa policial-militar. Está correto o que se afirma em:",
+        text: "QUESTÃO 83 — Considere as afirmações sobre as recompensas policiais-militares previstas no RDPM: I — o elogio é uma recompensa; II — o cancelamento de sanções é uma recompensa; III — a dispensa do serviço constitui recompensa policial-militar. Está correto o que se afirma em:",
         options: [
             "a) I, apenas.",
             "b) II e III, apenas.",
@@ -1197,7 +1214,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 84,
         subject: "JURIDICO",
         topic: "RDPM — distinção entre valores e deveres éticos",
-        text: "À luz dos arts. 7º e 8º do RDPM, examine as afirmações: I — cumprir os deveres de cidadão é dever ético; II — patriotismo é valor fundamental; III — preservar a natureza e o meio ambiente é dever ético; IV — civismo é dever ético, e não valor fundamental. Está correto o que se afirma em:",
+        text: "QUESTÃO 84 — À luz dos arts. 7º e 8º do RDPM, examine as afirmações: I — cumprir os deveres de cidadão é dever ético; II — patriotismo é valor fundamental; III — preservar a natureza e o meio ambiente é dever ético; IV — civismo é dever ético, e não valor fundamental. Está correto o que se afirma em:",
         options: [
             "a) I, II e III, apenas.",
             "b) I e IV, apenas.",
@@ -1212,7 +1229,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 86,
         subject: "JURIDICO",
         topic: "RDPM — âmbito do Conselho de Justificação",
-        text: "Na definição do processo regular aplicável aos oficiais, qual alternativa corresponde ao alcance do Conselho de Justificação previsto no RDPM?",
+        text: "QUESTÃO 86 — Na definição do processo regular aplicável aos oficiais, qual alternativa corresponde ao alcance do Conselho de Justificação previsto no RDPM?",
         options: [
             "a) Destina-se exclusivamente a praças com dez ou mais anos de serviço policial-militar.",
             "b) Destina-se a apurar a incapacidade do oficial para permanecer no serviço ativo e também se aplica ao oficial inativo presumivelmente incapaz de permanecer na inatividade.",
@@ -1227,7 +1244,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 87,
         subject: "JURIDICO",
         topic: "RDPM — escolha do processo regular conforme tempo de serviço",
-        text: "Uma praça possui exatamente dez anos de serviço policial-militar e há notícia de incapacidade moral para permanecer no serviço ativo. Considerando o art. 71 do RDPM, qual processo regular corresponde ao caso?",
+        text: "QUESTÃO 87 — Uma praça possui exatamente dez anos de serviço policial-militar e há notícia de incapacidade moral para permanecer no serviço ativo. Considerando o art. 71 do RDPM, qual processo regular corresponde ao caso?",
         options: [
             "a) Processo Administrativo Disciplinar, porque o Conselho de Disciplina exige mais de dez anos completos.",
             "b) Conselho de Justificação, por se tratar de processo aplicável a qualquer militar do Estado.",
@@ -1242,7 +1259,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 89,
         subject: "JURIDICO",
         topic: "RDPM — prazos dos recursos disciplinares",
-        text: "Um militar pretende interpor Pedido de Reconsideração de Ato e, se necessário, posteriormente, Recurso Hierárquico. Qual alternativa distingue corretamente os prazos de interposição previstos nos arts. 57 e 58 do RDPM?",
+        text: "QUESTÃO 89 — Um militar pretende interpor Pedido de Reconsideração de Ato e, se necessário, posteriormente, Recurso Hierárquico. Qual alternativa distingue corretamente os prazos de interposição previstos nos arts. 57 e 58 do RDPM?",
         options: [
             "a) Ambos devem ser interpostos em cinco dias contados da ciência inicial da punição, independentemente da solução do primeiro recurso.",
             "b) A reconsideração deve ser apresentada em cinco dias da ciência do ato; o recurso hierárquico, em cinco dias do conhecimento da solução da reconsideração ou do vencimento do prazo de trinta dias sem conhecimento oficial da solução.",
@@ -1257,7 +1274,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 90,
         subject: "JURIDICO",
         topic: "RDPM — causas de justificação e circunstâncias atenuantes",
-        text: "Na análise de uma transgressão disciplinar, o encarregado deve distinguir causa de justificação de circunstância atenuante. Qual situação está expressamente prevista no art. 34 do RDPM como causa de justificação?",
+        text: "QUESTÃO 90 — Na análise de uma transgressão disciplinar, o encarregado deve distinguir causa de justificação de circunstância atenuante. Qual situação está expressamente prevista no art. 34 do RDPM como causa de justificação?",
         options: [
             "a) O militar ter prestado serviços relevantes à sociedade.",
             "b) O militar estar, no mínimo, no comportamento bom.",
@@ -1272,7 +1289,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 91,
         subject: "JURIDICO",
         topic: "Lei nº 18.442/26 — requisitos para promoção ao QOE",
-        text: "Para a promoção de Subtenente PM da ativa ao posto de Segundo-Tenente PM do QOE, qual alternativa reúne os requisitos indicados no material autorizado?",
+        text: "QUESTÃO 91 — Para a promoção de Subtenente PM da ativa ao posto de Segundo-Tenente PM do QOE, qual alternativa reúne os requisitos indicados no material autorizado?",
         options: [
             "a) Aproveitamento no CHOE, quatro anos de interstício como Subtenente, idoneidade moral, não estar agregado, integrar a primeira terça parte do almanaque, comportamento no mínimo ótimo e aptidão sem restrições em inspeção de saúde.",
             "b) Aproveitamento no CHOE, três anos de interstício, comportamento bom, estar na metade superior do almanaque e aptidão com restrições permitidas.",
@@ -1287,7 +1304,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 92,
         subject: "JURIDICO",
         topic: "RDPM — limites de competência para aplicação de permanência disciplinar",
-        text: "Considerando os limites de competência do art. 32 do RDPM, qual alternativa reproduz corretamente os limites máximos de permanência disciplinar que podem ser aplicados pelos oficiais dos postos indicados?",
+        text: "QUESTÃO 92 — Considerando os limites de competência do art. 32 do RDPM, qual alternativa reproduz corretamente os limites máximos de permanência disciplinar que podem ser aplicados pelos oficiais dos postos indicados?",
         options: [
             "a) Coronel: até 15 dias; Tenente-Coronel: até 20 dias; Major: até 10 dias; Capitão: até 5 dias.",
             "b) Coronel: até 20 dias; Tenente-Coronel: até 20 dias; Major: até 15 dias; Capitão: até 10 dias.",
@@ -1302,7 +1319,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 93,
         subject: "JURIDICO",
         topic: "RDPM — detenção: hipótese e competência",
-        text: "Ao examinar a possibilidade de aplicar a sanção de detenção, a autoridade deve verificar tanto a hipótese de cabimento quanto a competência. Qual alternativa concilia corretamente os arts. 20, 21 e 32 do RDPM?",
+        text: "QUESTÃO 93 — Ao examinar a possibilidade de aplicar a sanção de detenção, a autoridade deve verificar tanto a hipótese de cabimento quanto a competência. Qual alternativa concilia corretamente os arts. 20, 21 e 32 do RDPM?",
         options: [
             "a) A detenção pode ser aplicada em qualquer primeira transgressão grave por qualquer oficial com competência disciplinar sobre o militar.",
             "b) A detenção somente pode ser aplicada na reincidência em transgressão grave; a competência inclui o Governador, as autoridades indicadas nos arts. 21 e 32 e, nos limites legais, o Subcomandante da PM e os oficiais em funções próprias do posto de Coronel.",
@@ -1317,7 +1334,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 97,
         subject: "JURIDICO",
         topic: "RDPM — prescrição da ação disciplinar",
-        text: "Na análise de prescrição de uma transgressão disciplinar que não constitui também infração penal, qual prazo e marco inicial devem ser adotados conforme o art. 85 do RDPM?",
+        text: "QUESTÃO 97 — Na análise de prescrição de uma transgressão disciplinar que não constitui também infração penal, qual prazo e marco inicial devem ser adotados conforme o art. 85 do RDPM?",
         options: [
             "a) Dois anos, contados da ciência da autoridade competente.",
             "b) Cinco anos, contados da data do cometimento da transgressão disciplinar.",
@@ -1332,7 +1349,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 98,
         subject: "JURIDICO",
         topic: "Lei nº 18.442/26 — nomeação do Subcomandante-Geral",
-        text: "Considerando a regra de provimento do cargo de Subcomandante-Geral da Polícia Militar apresentada no material autorizado, qual alternativa reúne corretamente o posto, o quadro e a autoridade responsável pela nomeação?",
+        text: "QUESTÃO 98 — Considerando a regra de provimento do cargo de Subcomandante-Geral da Polícia Militar apresentada no material autorizado, qual alternativa reúne corretamente o posto, o quadro e a autoridade responsável pela nomeação?",
         options: [
             "a) Coronel PM do QOE, nomeado pelo Secretário da Segurança Pública.",
             "b) Coronel PM do QOEM, nomeado pelo Governador do Estado.",
@@ -1347,7 +1364,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 99,
         subject: "JURIDICO",
         topic: "RDPM — distinções entre Pedido de Reconsideração e Recurso Hierárquico",
-        text: "Sobre os recursos disciplinares próprios previstos nos arts. 57 e 58 do RDPM, examine as afirmações: I — o Pedido de Reconsideração é dirigido à autoridade que praticou ou aprovou o ato e deve ser encaminhado diretamente a ela, uma única vez; II — o Pedido de Reconsideração tem efeito suspensivo; III — o Recurso Hierárquico é dirigido à autoridade imediatamente superior àquela que não reconsiderou o ato e pressupõe, em regra, prévia reconsideração. Está correto o que se afirma em:",
+        text: "QUESTÃO 99 — Sobre os recursos disciplinares próprios previstos nos arts. 57 e 58 do RDPM, examine as afirmações: I — o Pedido de Reconsideração é dirigido à autoridade que praticou ou aprovou o ato e deve ser encaminhado diretamente a ela, uma única vez; II — o Pedido de Reconsideração tem efeito suspensivo; III — o Recurso Hierárquico é dirigido à autoridade imediatamente superior àquela que não reconsiderou o ato e pressupõe, em regra, prévia reconsideração. Está correto o que se afirma em:",
         options: [
             "a) I, apenas.",
             "b) I e II, apenas.",
@@ -1362,7 +1379,7 @@ const BANCO_GERAL_QUESTOES = [
         idSimulado: 100,
         subject: "ORGANIZACIONAL",
         topic: "I-16-PM — investigação preliminar e sindicância",
-        text: "Uma autoridade recebe notícia de irregularidade administrativa, mas os elementos iniciais ainda são insuficientes para decidir pela instauração imediata de sindicância. De acordo com as I-16-PM, qual providência e prazo correspondem à situação?",
+        text: "QUESTÃO 100 — Uma autoridade recebe notícia de irregularidade administrativa, mas os elementos iniciais ainda são insuficientes para decidir pela instauração imediata de sindicância. De acordo com as I-16-PM, qual providência e prazo correspondem à situação?",
         options: [
             "a) Instaurar imediatamente sindicância, cujo prazo inicial é de dez dias improrrogáveis e que se destina apenas à coleta informal de subsídios.",
             "b) Determinar investigação preliminar para colher subsídios que fundamentem a instauração ou não de sindicância ou de outro procedimento; ela deve ser encerrada em dez dias improrrogáveis, contados do despacho de instauração.",
@@ -1373,9 +1390,18 @@ const BANCO_GERAL_QUESTOES = [
         explanation: "Gabarito: B. Fundamentação: I-16-PM, art. 67, §§ 1º a 3º, em Assuntos Organizacionais.pdf, p. 24. A investigação preliminar é meio sumaríssimo para colher subsídios quando a notícia não reúne elementos suficientes e tem prazo improrrogável de dez dias contados do despacho. A confunde o prazo e a finalidade da sindicância; C inverte a sequência; D atribui prazo e prorrogação da sindicância e exige meios formais que não correspondem à investigação preliminar. Trecho normativo de suporte: A investigação preliminar é “meio sumaríssimo destinado à imediata colheita de subsídios” e “será encerrada no prazo improrrogável de 10 (dez) dias” (I-16-PM, art. 67, §§ 1º e 3º)."
     }
 
-
-
           
+];
+
+// Estrutura de Exportação e Integração ao index.html
+const BANCO_SIMULADOS = {
+    "simulado_01": {
+        "titulo": "Simulado Geral ACP II/26 - Processo de Habilitação ao Posto de Capitão PM",
+        "questoes": BANCO_GERAL_QUESTOES
+    }
+};
+
+window.questionsDatabase = BANCO_GERAL_QUESTOES;          
 ];
 
 // Estrutura de Exportação e Integração ao index.html
