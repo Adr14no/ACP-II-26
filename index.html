@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PMESP - ACP II/26 Simulado - Avaliação de Competência Profissional </title>
+    <title>Plataforma de Aperfeiçoamento</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Carregamento do Banco de Dados de Questões -->
-    <script src="questoes.js" defer></script>
+    <!-- Carrega apenas o banco do curso selecionado. Isso evita conflito entre declarações globais dos dois arquivos. -->
+    <script>
+        var cursoInicial = new URLSearchParams(window.location.search).get('curso');
+        if (cursoInicial !== 'ACP' && cursoInicial !== 'CAO') cursoInicial = null;
+        if (cursoInicial) {
+            document.write('<script src="' + (cursoInicial === 'CAO' ? 'questoes2.js' : 'questoes.js') + '"><\/script>');
+        }
+    </script>
 
     <script>
         tailwind.config = {
@@ -32,6 +38,53 @@
     </script>
 </head>
 <body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
+
+    <!-- Seletor de cursos: CAO permanece marcado como em preparação, mas fica acessível para teste. -->
+    <section id="courseLanding" class="fixed inset-0 z-[200] overflow-y-auto bg-pm-navy">
+        <div class="min-h-full flex items-center justify-center px-4 py-10 sm:px-6">
+            <div class="w-full max-w-4xl">
+                <div class="text-center mb-8 sm:mb-10">
+                    <div class="mx-auto mb-5 w-20 h-20 rounded-2xl border border-pm-gold/60 bg-pm-header flex items-center justify-center shadow-xl">
+                        <i class="fa-solid fa-graduation-cap text-4xl text-pm-gold"></i>
+                    </div>
+                    <p class="text-xs sm:text-sm font-bold uppercase tracking-[0.22em] text-pm-gold mb-3">Ambiente de preparação</p>
+                    <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white">Plataforma <span class="text-pm-gold">de Aperfeiçoamento</span></h1>
+                    <p class="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-slate-300 leading-relaxed">Uma plataforma de estudos para cursos e avaliações profissionais da Polícia Militar do Estado de São Paulo.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                    <article class="group rounded-2xl border border-pm-gold/60 bg-pm-cardBg p-5 sm:p-7 shadow-xl flex flex-col">
+                        <div class="flex items-start justify-between gap-3 mb-5">
+                            <div class="w-14 h-14 rounded-xl border border-pm-gold/40 bg-pm-gold/10 flex items-center justify-center text-pm-gold text-2xl"><i class="fa-solid fa-book-open-reader"></i></div>
+                            <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-emerald-300"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Disponível</span>
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-[0.18em] text-pm-gold">Curso ativo</p>
+                        <h2 class="mt-2 text-2xl sm:text-3xl font-black text-white">ACP II/26</h2>
+                        <p class="mt-1 text-sm font-semibold text-slate-200">Aperfeiçoamento · Capitão PM</p>
+                        <p class="mt-4 text-sm leading-relaxed text-slate-400 flex-1">Simulados de 50 questões, Modo Prova, Modo Estudo, fundamentação, cronômetro e acompanhamento de desempenho.</p>
+                        <button type="button" onclick="entrarNoCurso('ACP')" class="mt-6 w-full rounded-xl bg-pm-gold px-5 py-3.5 text-sm font-extrabold text-pm-navy shadow-lg transition hover:bg-pm-goldHover focus:outline-none focus:ring-2 focus:ring-pm-gold focus:ring-offset-2 focus:ring-offset-pm-cardBg"><i class="fa-solid fa-arrow-right-to-bracket mr-2"></i>Entrar no ACP</button>
+                    </article>
+
+                    <article class="rounded-2xl border border-pm-border bg-pm-cardBg/70 p-5 sm:p-7 shadow-lg flex flex-col">
+                        <div class="flex items-start justify-between gap-3 mb-5">
+                            <div class="w-14 h-14 rounded-xl border border-pm-border bg-pm-navy flex items-center justify-center text-slate-300 text-2xl"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <span class="inline-flex items-center gap-1.5 rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-slate-300"><i class="fa-regular fa-clock"></i> Em preparação</span>
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">Próxima área</p>
+                        <h2 class="mt-2 text-2xl sm:text-3xl font-black text-white">CAO</h2>
+                        <p class="mt-1 text-sm font-semibold text-slate-200">Curso de Aperfeiçoamento de Oficiais</p>
+                        <p class="mt-4 text-sm leading-relaxed text-slate-400 flex-1">Simulados de 100 questões, Modo Prova, Modo Estudo, fundamentação, cronômetro e acompanhamento de desempenho.</p>
+                        <button type="button" onclick="entrarNoCurso('CAO')" class="mt-6 w-full rounded-xl border border-pm-border bg-pm-navy/70 px-5 py-3.5 text-sm font-bold text-slate-300 transition hover:border-pm-gold/50 hover:text-white"><i class="fa-solid fa-flask mr-2"></i>Entrar para teste</button>
+                    </article>
+                </div>
+
+                <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-3 rounded-xl border border-pm-border/80 bg-pm-header/60 px-4 py-3 text-xs text-slate-400">
+                    <span><i class="fa-solid fa-shield-halved text-pm-gold mr-2"></i>Seus estudos são a prioridade.</span>
+                    <span>Plataforma elaborada pelo 1º Ten PM Adriano</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Modal de Instruções Iniciais (Pop-up) -->
     <div id="modalInstrucoes" class="fixed inset-0 z-[100] flex items-start sm:items-center justify-center bg-black/70 backdrop-blur-sm hidden overflow-y-auto overscroll-contain p-3 sm:p-6">
@@ -112,14 +165,17 @@
                     <img src="pmesp.png" alt="Brasão PMESP" class="w-full h-full object-cover scale-100">
                 </div>
                 <div>
-                    <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Polícia Militar do Estado de São Paulo</h1>
+                    <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Plataforma de Aperfeiçoamento</h1>
                     <h2 id="simuladoTitulo" class="text-base sm:text-lg font-extrabold text-white">ACP II/26 - Capitão PM</h2>
-                    <p class="text-xs text-slate-300">Avaliação de Competência Profissional </p>
+                    <p id="subtituloCurso" class="text-xs text-slate-300">Ambiente de preparação para avaliações profissionais</p>
                 </div>
             </div>
 
-            <!-- Cronômetro e Botão "Novo Simulado" -->
-            <div class="flex items-center gap-3">
+            <!-- Seletor de cursos e controles do simulado -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                <button type="button" onclick="voltarSelecaoCursos()" title="Voltar à seleção de cursos" class="rounded-xl border border-pm-border bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-slate-200 transition hover:border-pm-gold/60 hover:text-pm-gold">
+                    <i class="fa-solid fa-layer-group mr-1.5"></i> Cursos
+                </button>
                 <div class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
                     <div id="timerDisplay" class="flex items-center gap-2 font-mono font-bold text-xl text-pm-gold">
                         <i class="fa-regular fa-clock text-base text-slate-400"></i>
@@ -356,15 +412,17 @@
     <!-- Rodapé com Créditos -->
     <footer class="bg-pm-header border-t border-pm-border py-3 px-3 text-center text-xs text-slate-400 mt-auto">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-            <span>PMESP — Avaliação de Competência Profissional (ACP II/26)</span>
+            <span>Plataforma de Aperfeiçoamento</span>
             <span class="text-pm-gold font-semibold">Elaborado pelo 1° Ten PM Adriano</span>
         </div>
     </footer>
 
     <!-- Script de Lógica Principal -->
     <script>
-        const STORAGE_KEY = "PMESP_SIMULADO_ACP_STATE";
-        const MODAL_STORAGE_KEY = "PMESP_MODAL_INSTRUCOES_VISTO_26";
+        const TOTAL_QUESTOES = cursoInicial === 'CAO' ? 100 : 50;
+        const TEMPO_PROVA_SEGUNDOS = TOTAL_QUESTOES * 3 * 60;
+        let STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_SIMULADO_CAO_STATE' : 'PMESP_SIMULADO_ACP_STATE';
+        let MODAL_STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_MODAL_INSTRUCOES_VISTO_CAO' : 'PMESP_MODAL_INSTRUCOES_VISTO_ACP';
 
         let questionsDatabase = [];
 
@@ -375,7 +433,7 @@
             userAnswers: [],
             flagged: [],
             studyLocked: [], // Questões já consultadas/respondidas no Modo Estudo
-            timerSeconds: 150 * 60, // 2h30min (9000 seg)
+            timerSeconds: TEMPO_PROVA_SEGUNDOS,
             timerEndTime: null,     // Timestamp do término real
             timerInterval: null,
             timerPaused: false,
@@ -383,10 +441,58 @@
             filteredQuestions: []
         };
 
+        let cursoAtivo = cursoInicial;
+
         document.addEventListener("DOMContentLoaded", function() {
+            if (!cursoInicial) {
+                document.getElementById('courseLanding').classList.remove('hidden');
+                return;
+            }
+            document.getElementById('courseLanding').classList.add('hidden');
+            configurarIdentidadeCurso();
             verificarModalInstrucoes();
             carregarOuInicializarSimulado();
         });
+
+        function entrarNoCurso(curso) {
+            if (curso !== 'ACP' && curso !== 'CAO') return;
+            // Cada curso carrega seu próprio arquivo e mantém estado/histórico separados.
+            window.location.href = window.location.pathname + '?curso=' + curso;
+        }
+
+        function voltarSelecaoCursos() {
+            if (state.timerInterval) {
+                clearInterval(state.timerInterval);
+                state.timerInterval = null;
+            }
+            if (!state.examFinished && state.timerSeconds > 0) {
+                state.timerPaused = true;
+                state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+                saveStateToLocalStorage();
+            }
+            window.location.href = window.location.pathname;
+        }
+
+        function configurarIdentidadeCurso() {
+            const isCAO = cursoAtivo === 'CAO';
+            const titulo = isCAO ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP II/26 — Capitão PM';
+            document.getElementById('simuladoTitulo').innerText = titulo;
+            const subtituloCurso = document.getElementById('subtituloCurso');
+            if (subtituloCurso) subtituloCurso.innerText = isCAO ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
+            const modalTitulo = document.querySelector('#modalInstrucoes h3');
+            if (modalTitulo) modalTitulo.innerText = isCAO ? 'Bem-vindo ao Simulado CAO' : 'Bem-vindo ao Simulado ACP II/26';
+            const objetivo = document.querySelector('#modalInstrucoes section p:nth-child(2)');
+            if (objetivo) objetivo.innerText = isCAO
+                ? 'Treinar para o Curso de Aperfeiçoamento de Oficiais (CAO), identificar dificuldades e revisar os conteúdos estudados.'
+                : 'Treinar para a ACP II/26 — Capitão PM, identificar dificuldades e revisar os conteúdos estudados.';
+            const instrucoes = document.querySelectorAll('#modalInstrucoes section p:nth-child(2)');
+            if (instrucoes[1]) instrucoes[1].innerHTML = `Ao iniciar um novo simulado, o cronômetro e as respostas são reiniciados, ocorrendo o sorteio de <strong class="text-white">${TOTAL_QUESTOES} questões</strong>. Para gerar outro conjunto, utilize o botão <strong class="text-white">Novo Simulado</strong>.`;
+            const resultadoSubtitulo = document.querySelector('#resultsContainer .text-center p');
+            if (resultadoSubtitulo) resultadoSubtitulo.innerText = isCAO
+                ? 'Curso de Aperfeiçoamento de Oficiais — PMESP'
+                : 'Avaliação de Competência Profissional ACP II/26 — PMESP';
+            document.title = `Plataforma de Aperfeiçoamento | ${isCAO ? 'CAO' : 'ACP II/26'}`;
+        }
 
         // CONTROLE DO MODAL DE INSTRUÇÕES
         function verificarModalInstrucoes() {
@@ -433,7 +539,7 @@
                         state.userAnswers = parsed.userAnswers || new Array(questionsDatabase.length).fill(null);
                         state.flagged = parsed.flagged || new Array(questionsDatabase.length).fill(false);
                         state.studyLocked = parsed.studyLocked || new Array(questionsDatabase.length).fill(false);
-                        state.timerSeconds = parsed.timerSeconds !== undefined ? parsed.timerSeconds : 150 * 60;
+                        state.timerSeconds = parsed.timerSeconds !== undefined ? parsed.timerSeconds : TEMPO_PROVA_SEGUNDOS;
                         state.timerEndTime = parsed.timerEndTime || null;
                         state.timerPaused = parsed.timerPaused || false;
                         state.examFinished = parsed.examFinished || false;
@@ -511,47 +617,111 @@
             });
         }
 
-        function sortearQuestoesProporcionalmente(bancoBruto, totalSimulado = 50) {
-    const opPool = bancoBruto.filter(q => q.subject === 'OPERACIONAL');
-    const jurPool = bancoBruto.filter(q => q.subject === 'JURIDICO');
-    const orgPool = bancoBruto.filter(q => q.subject === 'ORGANIZACIONAL');
+        // HISTÓRICO DE USO DAS QUESTÕES: evita repetição por 3 dias (72 horas).
+        const QUESTION_HISTORY_KEY = cursoAtivo === 'CAO'
+            ? 'PMESP_SIMULADO_CAO_QUESTION_HISTORY'
+            : 'PMESP_SIMULADO_ACP_QUESTION_HISTORY';
+        const QUESTION_HISTORY_WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
 
-    const qtdOp = Math.round(totalSimulado * 0.50);
-    const qtdJur = Math.round(totalSimulado * 0.30);
-    const qtdOrg = totalSimulado - qtdOp - qtdJur;
-
-    if (
-        opPool.length < qtdOp ||
-        jurPool.length < qtdJur ||
-        orgPool.length < qtdOrg
-    ) {
-        alert(
-            `Banco insuficiente para gerar ${totalSimulado} questões.\n` +
-            `Operacional: ${opPool.length}/${qtdOp}\n` +
-            `Jurídico: ${jurPool.length}/${qtdJur}\n` +
-            `Organizacional: ${orgPool.length}/${qtdOrg}`
-        );
-        return [];
-    }
-
-    function shuffle(arr) {
-        const array = [...arr];
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
+        function chaveEstavelQuestao(q) {
+            // Inclui matéria, ID e enunciado para reduzir colisões caso IDs se repitam.
+            return [q.subject || "", q.id !== undefined ? q.id : "", q.text || ""]
+                .join("::")
+                .trim();
         }
-        return array;
-    }
 
-    return shuffle([
-        ...shuffle(opPool).slice(0, qtdOp),
-        ...shuffle(jurPool).slice(0, qtdJur),
-        ...shuffle(orgPool).slice(0, qtdOrg)
-    ]).map((q, idx) => ({
-        ...q,
-        idSimulado: idx + 1
-    }));
-}
+        function carregarHistoricoQuestoes() {
+            try {
+                const raw = localStorage.getItem(QUESTION_HISTORY_KEY);
+                const parsed = raw ? JSON.parse(raw) : [];
+                return Array.isArray(parsed)
+                    ? parsed.filter(item => item && typeof item.key === "string" && Number.isFinite(item.usedAt))
+                    : [];
+            } catch (e) {
+                console.warn("Não foi possível ler o histórico de questões:", e);
+                return [];
+            }
+        }
+
+        function registrarQuestoesUtilizadas(questoes) {
+            const agora = Date.now();
+            const corte = agora - QUESTION_HISTORY_WINDOW_MS;
+            const historico = carregarHistoricoQuestoes()
+                .filter(item => item.usedAt >= corte);
+            const novas = questoes.map(q => ({ key: chaveEstavelQuestao(q), usedAt: agora }));
+            // Uma entrada por questão, mantendo a utilização mais recente.
+            const porChave = new Map();
+            [...historico, ...novas].forEach(item => {
+                const anterior = porChave.get(item.key);
+                if (!anterior || item.usedAt > anterior.usedAt) porChave.set(item.key, item);
+            });
+            localStorage.setItem(QUESTION_HISTORY_KEY, JSON.stringify([...porChave.values()]));
+        }
+
+        function sortearQuestoesProporcionalmente(bancoBruto, totalSimulado = 50) {
+            const historico = carregarHistoricoQuestoes();
+            const agora = Date.now();
+            const corte = agora - QUESTION_HISTORY_WINDOW_MS;
+            const usoRecente = new Map();
+            historico.forEach(item => {
+                const anterior = usoRecente.get(item.key);
+                if (!anterior || item.usedAt > anterior) usoRecente.set(item.key, item.usedAt);
+            });
+
+            const pools = {
+                OPERACIONAL: bancoBruto.filter(q => q.subject === 'OPERACIONAL'),
+                JURIDICO: bancoBruto.filter(q => q.subject === 'JURIDICO'),
+                ORGANIZACIONAL: bancoBruto.filter(q => q.subject === 'ORGANIZACIONAL')
+            };
+            const qtdOp = Math.round(totalSimulado * 0.50);
+            const qtdJur = Math.round(totalSimulado * 0.30);
+            const qtdOrg = totalSimulado - qtdOp - qtdJur;
+            const quantidades = { OPERACIONAL: qtdOp, JURIDICO: qtdJur, ORGANIZACIONAL: qtdOrg };
+
+            for (const materia of Object.keys(pools)) {
+                if (pools[materia].length < quantidades[materia]) {
+                    alert(
+                        `Banco insuficiente para gerar ${totalSimulado} questões.\n` +
+                        `Operacional: ${pools.OPERACIONAL.length}/${qtdOp}\n` +
+                        `Jurídico: ${pools.JURIDICO.length}/${qtdJur}\n` +
+                        `Organizacional: ${pools.ORGANIZACIONAL.length}/${qtdOrg}`
+                    );
+                    return [];
+                }
+            }
+
+            function shuffle(arr) {
+                const array = [...arr];
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            const selecionadas = [];
+            for (const materia of Object.keys(pools)) {
+                const quantidade = quantidades[materia];
+                const pool = pools[materia];
+                const recentes = pool.filter(q => (usoRecente.get(chaveEstavelQuestao(q)) || 0) >= corte);
+                const disponiveis = pool.filter(q => (usoRecente.get(chaveEstavelQuestao(q)) || 0) < corte);
+
+                // Primeiro sorteia entre as não usadas na janela de 3 dias.
+                const escolhidas = shuffle(disponiveis).slice(0, quantidade);
+
+                // Se faltarem questões inéditas na janela, usa as mais antigas primeiro.
+                if (escolhidas.length < quantidade) {
+                    const jaEscolhidas = new Set(escolhidas.map(chaveEstavelQuestao));
+                    const reposicao = shuffle(recentes)
+                        .filter(q => !jaEscolhidas.has(chaveEstavelQuestao(q)))
+                        .sort((a, b) => (usoRecente.get(chaveEstavelQuestao(a)) || 0) - (usoRecente.get(chaveEstavelQuestao(b)) || 0));
+                    escolhidas.push(...reposicao.slice(0, quantidade - escolhidas.length));
+                }
+                selecionadas.push(...escolhidas);
+            }
+
+            return shuffle(selecionadas).map((q, idx) => ({ ...q, idSimulado: idx + 1 }));
+        }
 
         function gerarEIniciarNovoSimulado() {
             let bancoBase = [];
@@ -565,16 +735,18 @@
             } else if (window.questionsDatabase && window.questionsDatabase.length > 0) {
                 bancoBase = window.questionsDatabase;
             } else {
-                alert("Erro ao carregar questoes.js: verifique se o arquivo está na mesma pasta do index.html e publicado no repositório.");
+                alert(`Erro ao carregar o banco ${cursoAtivo === 'CAO' ? 'questoes2.js' : 'questoes.js'}. Verifique se o arquivo está na mesma pasta do index.html e publicado no repositório.`);
                 return;
             }
 
-            questionsDatabase = sortearQuestoesProporcionalmente(bancoBase, 50);
+            questionsDatabase = sortearQuestoesProporcionalmente(bancoBase, TOTAL_QUESTOES);
+            if (questionsDatabase.length !== TOTAL_QUESTOES) return;
+            registrarQuestoesUtilizadas(questionsDatabase);
 
             state.userAnswers = new Array(questionsDatabase.length).fill(null);
             state.flagged = new Array(questionsDatabase.length).fill(false);
             state.studyLocked = new Array(questionsDatabase.length).fill(false);
-            state.timerSeconds = 150 * 60;
+            state.timerSeconds = TEMPO_PROVA_SEGUNDOS;
             state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
             state.timerPaused = false;
             state.examFinished = false;
@@ -989,7 +1161,7 @@
             const percent = total > 0 ? ((score / total) * 100).toFixed(1) : 0;
             const grade = total > 0 ? ((score / total) * 10).toFixed(1) : 0;
 
-            const elapsedSecs = (150 * 60) - state.timerSeconds;
+            const elapsedSecs = TEMPO_PROVA_SEGUNDOS - state.timerSeconds;
             const elapsedMins = Math.floor(elapsedSecs / 60);
             const elapsedSecsRem = elapsedSecs % 60;
             const timeFormatted = `${String(elapsedMins).padStart(2, '0')}m ${String(elapsedSecsRem).padStart(2, '0')}s`;
@@ -1024,4 +1196,3 @@
     </script>
 </body>
 </html>
-                
