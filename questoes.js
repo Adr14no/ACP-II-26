@@ -1,4 +1,4 @@
-/**
+   /**
  * BANCO DE DADOS OFICIAL DE QUESTÕES - PMESP (ACP II/26)
  * Arquivo: questoes.js
  * Padrão Examinador: Banca APMBB / PMESP - Habilitação ao Posto de Capitão PM
@@ -718,21 +718,7 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 3,
         "explanation": "Gabarito: D. Fundamentação: Nota de Instrução nº PM3-002/02/26 (Sala de Operações), itens 6.1.8 e 6.3.7.11.1 a 6.3.7.11.3, em Assuntos Operacionais.pdf, p. 238 e 244-245. O SIR se destina a demandas não emergenciais previamente descritas, sem risco iminente, passíveis de solução remota. A e B ampliam ou restringem indevidamente os critérios; C cria condição não prevista. Trecho: “atendimento remoto de ocorrência classificada como não emergencial e previamente descrita em rol específico, caracterizada pela ausência de risco iminente [...] com o objetivo de aumentar a disponibilidade de US”."
       },
- {
-        "id": 50,com
-        "subject": "OPERACIONAL",
-        "topic": "COP Motorola - identificação da evidência digital",
-        "text": "QUESTÃO 50 — Sobre o preenchimento do campo ID (AnoMêsDiaTalão) na classificação de evidência digital produzida por COP, analise as proposições.\n\nI. Para evidência vinculada ao talão nº 37, ocorrido em 12/10/2026, o campo deve ser preenchido como “2026101237”.\nII. Para evidência decorrente de abordagem, intervenção ou interação sem relação com talão de ocorrência, deve ser lançado apenas o valor da data, como “20261012”.\nIII. Para padronizar o comprimento do campo, o número do talão deve ser completado com zeros à esquerda.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Assuntos Operacionais.pdf, POP de classificação das COP, “Esclarecimentos”, item 3, PDF p. 11. Evidência: o campo usa o formato “aaaammddtalão”, sem espaçamento; “Não colocar zeros, pontos, traços antes do número de talão”; sem relação com talão, lança-se apenas a data. I e II estão corretas. III contraria expressamente a proibição de zeros antes do talão. Distrator B inclui III; C exclui I; D inclui III. A combinação única sustentada é I e II."
-      },
-      {
+       {
         "id": 51,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - Matriz Operacional III e Nível de Resposta 4",
@@ -1463,7 +1449,7 @@ const BANCO_GERAL_QUESTOES = [
  {
         "id": 101,
         "subject": "JURIDICO",
-        "topic": "Procedimento Disciplinar — âmbito de aplicação e critérios do rito",
+        "topic": "QUESTÃO 101 — Procedimento Disciplinar — âmbito de aplicação e critérios do rito",
         "text": "Uma comunicação relata possível transgressão disciplinar que, em princípio, não apresenta complexidade suficiente para exigir Sindicância nem gravidade que recomende Processo Regular. À luz do art. 1º da Portaria CORREGPM-1/360/13, qual procedimento e quais critérios orientam a apuração?",
         "options": [
           "a) Sindicância obrigatória, orientada pela formalidade estrita e pela produção escrita de todos os atos.",
@@ -1477,7 +1463,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 102,
         "subject": "JURIDICO",
-        "topic": "Procedimento Disciplinar — sequência da audiência e oitiva de testemunhas",
+        "topic": "QUESTÃO 102 — Procedimento Disciplinar — sequência da audiência e oitiva de testemunhas",
         "text": "Na audiência de instrução e julgamento de um Procedimento Disciplinar, a autoridade deve observar a sequência prevista no art. 4º da Portaria CORREGPM-1/360/13. Assinale a alternativa correta.",
         "options": [
           "a) Ler o Termo Acusatório, receber e juntar documentos apresentados ou solicitados e, em seguida, ouvir as testemunhas da acusação, seguidas pelas testemunhas da defesa.",
@@ -1492,7 +1478,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 103,
         "subject": "JURIDICO",
         "topic": "Procedimento Disciplinar — nova tipificação fundada em fatos novos",
-        "text": "Após a produção das provas e o interrogatório, a autoridade policial-militar entende que o fato pode receber nova tipificação jurídica, fundada em fatos novos ainda não abrangidos pelo Termo Acusatório. Conforme o art. 6º da Portaria CORREGPM-1/360/13, qual providência é adequada?",
+        "text": "QUESTÃO 103 — Após a produção das provas e o interrogatório, a autoridade policial-militar entende que o fato pode receber nova tipificação jurídica, fundada em fatos novos ainda não abrangidos pelo Termo Acusatório. Conforme o art. 6º da Portaria CORREGPM-1/360/13, qual providência é adequada?",
         "options": [
           "a) Alterar a tipificação apenas na decisão final, sem cientificar o acusado, porque a instrução já foi encerrada.",
           "b) Arquivar obrigatoriamente o procedimento e instaurar nova Sindicância, sem aproveitamento dos atos anteriores.",
@@ -1506,7 +1492,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 104,
         "subject": "JURIDICO",
         "topic": "Procedimento Disciplinar — remessa quando cabível Processo Regular",
-        "text": "Ao julgar um Procedimento Disciplinar, a autoridade policial-militar entende que, diante da gravidade do caso, é cabível a instauração de Processo Regular. De acordo com o art. 8º da Portaria CORREGPM-1/360/13, como deve proceder?",
+        "text": "QUESTÃO 104 — Ao julgar um Procedimento Disciplinar, a autoridade policial-militar entende que, diante da gravidade do caso, é cabível a instauração de Processo Regular. De acordo com o art. 8º da Portaria CORREGPM-1/360/13, como deve proceder?",
         "options": [
           "a) Aplicar a sanção disciplinar de sua competência e remeter os autos apenas para homologação.",
           "b) Converter automaticamente o procedimento em Investigação Preliminar, mantendo a competência decisória original.",
@@ -1520,7 +1506,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 105,
         "subject": "JURIDICO",
         "topic": "Procedimento Disciplinar — registro eletrônico dos atos",
-        "text": "Durante a realização de audiência de Procedimento Disciplinar, a autoridade propõe registrar o ato por meio de gravação audiovisual e armazenamento digital. Conforme o art. 13 da Portaria CORREGPM-1/360/13, assinale a alternativa correta.",
+        "text": "QUESTÃO 105 — Durante a realização de audiência de Procedimento Disciplinar, a autoridade propõe registrar o ato por meio de gravação audiovisual e armazenamento digital. Conforme o art. 13 da Portaria CORREGPM-1/360/13, assinale a alternativa correta.",
         "options": [
           "a) O registro eletrônico é proibido, porque a audiência deve ser documentada exclusivamente por escrito.",
           "b) O uso de meios eletrônicos para registro é válido, mas não dispensa a lavratura do termo de audiência.",
@@ -1534,7 +1520,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 106,
         "subject": "JURIDICO",
         "topic": "Procedimento Disciplinar — numeração dos procedimentos",
-        "text": "Uma OPM de nível Batalhão está organizando os registros de Procedimentos Disciplinares instaurados no mesmo ano. Nos termos do art. 14 da Portaria CORREGPM-1/360/13, qual critério de numeração deve adotar?",
+        "text": "QUESTÃO 106 — Uma OPM de nível Batalhão está organizando os registros de Procedimentos Disciplinares instaurados no mesmo ano. Nos termos do art. 14 da Portaria CORREGPM-1/360/13, qual critério de numeração deve adotar?",
         "options": [
           "a) Numeração independente por Companhia, reiniciada a cada trimestre.",
           "b) Numeração única estadual, em ordem decrescente, sem distinção por ano.",
@@ -1548,7 +1534,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 107,
         "subject": "JURIDICO",
         "topic": "Procedimento Disciplinar — notícia de transgressão atribuída a militar inativo",
-        "text": "Chega à OPM documento que noticia possível transgressão disciplinar atribuída a policial militar já inativo. Conforme o art. 15 da Portaria CORREGPM-1/360/13, para quem deve ser remetido o documento para apreciação, conforme a condição do envolvido?",
+        "text": "QUESTÃO 107 — Chega à OPM documento que noticia possível transgressão disciplinar atribuída a policial militar já inativo. Conforme o art. 15 da Portaria CORREGPM-1/360/13, para quem deve ser remetido o documento para apreciação, conforme a condição do envolvido?",
         "options": [
           "a) Ao Subcomandante PM, se envolver Praça; ao Comandante-Geral, se envolver Oficial.",
           "b) Ao Comandante-Geral, se envolver Praça; ao Subcomandante PM, se envolver Oficial.",
@@ -1562,7 +1548,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 108,
         "subject": "JURIDICO",
         "topic": "Lei nº 18.442/26 — destinação dos Quadros de Oficiais",
-        "text": "Considerando a estrutura dos Quadros prevista na Lei nº 18.442/26, assinale a alternativa que distingue corretamente a destinação do QOEM e do QOE.",
+        "text": "QUESTÃO 108 — Considerando a estrutura dos Quadros prevista na Lei nº 18.442/26, assinale a alternativa que distingue corretamente a destinação do QOEM e do QOE.",
         "options": [
           "a) O QOEM destina-se exclusivamente às atividades de saúde; o QOE, ao comando e direção de toda a Instituição.",
           "b) O QOEM executa atividades musicais e culturais; o QOE é composto por militares destinados à execução das atividades de praça.",
@@ -1576,7 +1562,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 109,
         "subject": "JURIDICO",
         "topic": "Lei nº 18.442/26 — critérios para definição do efetivo",
-        "text": "Ao definir o efetivo da Polícia Militar, a Lei nº 18.442/26 prevê a consideração de fatores territoriais, demográficos e institucionais. Qual alternativa reúne critérios indicados no material autorizado?",
+        "text": "QUESTÃO 109 — Ao definir o efetivo da Polícia Militar, a Lei nº 18.442/26 prevê a consideração de fatores territoriais, demográficos e institucionais. Qual alternativa reúne critérios indicados no material autorizado?",
         "options": [
           "a) Apenas o número de ocorrências atendidas no ano anterior e o total de viaturas disponíveis.",
           "b) Extensão territorial, população, riscos de desastres, desenvolvimento humano, índices de criminalidade e condições socioeconômicas.",
@@ -1590,7 +1576,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 110,
         "subject": "JURIDICO",
         "topic": "RDPM — efeitos do cancelamento de sanções disciplinares",
-        "text": "Após requerimento do interessado, o Comandante-Geral defere o cancelamento de registros de sanções disciplinares, preenchidos os requisitos do art. 70 do RDPM. Qual efeito decorre do cancelamento, segundo o § 2º desse artigo?",
+        "text": "QUESTÃO 110 — Após requerimento do interessado, o Comandante-Geral defere o cancelamento de registros de sanções disciplinares, preenchidos os requisitos do art. 70 do RDPM. Qual efeito decorre do cancelamento, segundo o § 2º desse artigo?",
         "options": [
           "a) As sanções canceladas são consideradas inexistentes desde a data em que foram aplicadas, com revisão automática dos atos administrativos posteriores.",
           "b) O cancelamento retroage à data da transgressão, mas não alcança atos administrativos publicados posteriormente.",
@@ -1604,7 +1590,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 111,
         "subject": "ORGANIZACIONAL",
         "topic": "I-36-PM — autoridade competente para sobrestamento de férias e licença-prêmio",
-        "text": "Verificada uma das situações previstas no art. 80 das Instruções para os Afastamentos na Polícia Militar, é necessário sobrestar férias ou licença-prêmio do policial militar. Quem deve efetuar o sobrestamento por meio de publicação em Boletim Interno?",
+        "text": "QUESTÃO 111 — Verificada uma das situações previstas no art. 80 das Instruções para os Afastamentos na Polícia Militar, é necessário sobrestar férias ou licença-prêmio do policial militar. Quem deve efetuar o sobrestamento por meio de publicação em Boletim Interno?",
         "options": [
           "a) A Diretoria de Pessoal, em todos os casos, independentemente da OPM de classificação.",
           "b) O Subcomandante PM, mediante autorização prévia do Comandante-Geral.",
@@ -1618,7 +1604,7 @@ const BANCO_GERAL_QUESTOES = [
         "id": 112,
         "subject": "ORGANIZACIONAL",
         "topic": "I-36-PM — prevalência de férias e licença-prêmio previamente programadas",
-        "text": "Um policial militar tem férias previamente programadas e, antes do início do gozo, surge fato que poderia motivar outro afastamento regulamentar. Conforme o art. 81 das I-36-PM, qual regra geral deve ser observada?",
+        "text": "QUESTÃO 112 — Um policial militar tem férias previamente programadas e, antes do início do gozo, surge fato que poderia motivar outro afastamento regulamentar. Conforme o art. 81 das I-36-PM, qual regra geral deve ser observada?",
         "options": [
           "a) As férias ou licença-prêmio previamente programadas prevalecem sobre os demais afastamentos, sem prejuízo de eventual alteração da data de início ou sobrestamento, nos termos das próprias Instruções.",
           "b) O afastamento superveniente sempre prevalece, ainda que as férias ou a licença-prêmio já estejam programadas.",
@@ -3559,6 +3545,706 @@ const BANCO_GERAL_QUESTOES = [
     ],
     "answer": 2,
     "explanation": "Gabarito: C. Fonte: I-36-PM, art. 67, parágrafo único, em Assuntos Organizacionais.pdf. A agregação correspondente à licença pode ocorrer pelo prazo máximo de dois anos. A, B e D indicam períodos diferentes do limite expresso. Dificuldade editorial: MEDIANA."
+  },
+ {
+    "id": 251,
+    "subject": "OPERACIONAL",
+    "topic": "COP — reativação automática durante atendimento",
+    "text": "QUESTÃO 251 — Durante o atendimento de um talão, a gravação da COP é encerrada acidentalmente. A equipe permanece empenhada na ocorrência, e o encerramento não se enquadra em nenhuma hipótese autorizada de término do registro. Qual consequência decorre da Diretriz das COP?",
+    "options": [
+      "a) A reativação depende de novo despacho do COPOM, pois o encerramento acidental afasta o acionamento automático durante o atendimento.",
+      "b) A gravação deve ser reativada automaticamente enquanto perdurar o atendimento, ressalvadas as hipóteses de encerramento previstas especificamente na diretriz.",
+      "c) A equipe deve aguardar ordem do CFP, porque a reativação automática só se aplica quando o encerramento for intencional.",
+      "d) O policial deve registrar a interrupção no BOe e aguardar o fim do talão, pois a diretriz veda reiniciar a gravação depois de encerrada."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/02/25, itens 6.3.2.2 e 6.3.8, Assuntos Operacionais.pdf, seção COP. O item 6.3.2.2 prevê reativação automática quando a gravação termina intencional ou acidentalmente durante o atendimento, salvo os encerramentos autorizados no item 6.3.8. A condiciona a novo despacho; C limita a reativação a encerramento intencional; D transforma o registro da falha em substituto da reativação. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 252,
+    "subject": "OPERACIONAL",
+    "topic": "COP — reiteração do acionamento manual",
+    "text": "QUESTÃO 252 — Em OPM cujas COP não dispõem de acionamento remoto intencional nem automático, uma US comunica diretamente ao COPOM/CAD que iniciará interação com o público. Além de receber a comunicação, qual providência cabe ao despachador e como se distribui a obrigação de reforço?",
+    "options": [
+      "a) O despachador reitera o acionamento manual; a mesma providência cabe aos escalões de supervisão, por rádio ou fiscalização direta, e também se aplica ao despacho de ocorrência.",
+      "b) O despachador aciona a gravação remotamente e dispensa o policial de acioná-la manualmente; a supervisão atua apenas se houver falha de upload.",
+      "c) O despachador registra a interação, mas a reiteração cabe exclusivamente ao CFP, que deve comparecer ao local antes do início da gravação.",
+      "d) A reiteração é obrigatória apenas quando a US recebe despacho de ocorrência; a comunicação espontânea da US não aciona essa providência."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, itens 6.5.1.1 a 6.5.1.3, Assuntos Operacionais.pdf. Sem as funcionalidades remotas, o despachador reitera a necessidade de acionamento manual tanto no despacho quanto quando a US comunica diretamente intervenção/interação; CFP, CGP ou equivalentes também reforçam a medida. B presume funcionalidade inexistente; C transfere exclusividade ao CFP e cria comparecimento obrigatório; D exclui a hipótese do item 6.5.1.2. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 253,
+    "subject": "OPERACIONAL",
+    "topic": "COP — áudio bidirecional: hipótese autorizadora e cautela",
+    "text": "QUESTÃO 253 — Durante atendimento, a rede de rádio convencional fica momentaneamente indisponível. O COPOM considera enviar orientação urgente pela função de áudio bidirecional, mas a equipe está em negociação sensível com uma vítima. À luz da diretriz, qual avaliação é tecnicamente correta?",
+    "options": [
+      "a) A indisponibilidade do rádio torna obrigatório o áudio bidirecional, ainda que a intervenção possa gerar ruído ou constrangimento na negociação.",
+      "b) A função é restrita a comunicação com terceiros e não pode ser utilizada para transmitir orientação operacional urgente ao policial.",
+      "c) A indisponibilidade momentânea do rádio é hipótese autorizadora, mas o responsável deve avaliar o momento oportuno e evitar a ativação se o áudio puder interferir na negociação sensível.",
+      "d) A função pode ser usada somente em risco iminente; a indisponibilidade do rádio não é hipótese prevista para sua utilização."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, itens 6.6.1.1.1, 6.6.1.1.2 e 6.6.1.2.3, Assuntos Operacionais.pdf, fl. 12. A norma admite o áudio quando o rádio está momentaneamente indisponível ou para orientação urgente, mas exige avaliação do momento e recomenda evitar a função durante negociações sensíveis. A transforma hipótese autorizadora em obrigação absoluta; B exclui uma finalidade expressa; D exclui a hipótese do item 6.6.1.1.1. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 254,
+    "subject": "OPERACIONAL",
+    "topic": "COP — retirada excepcional do tronco durante o turno",
+    "text": "QUESTÃO 254 — Durante o turno, um policial precisa ajustar uma jaqueta que se sobrepõe à COP. A gravação não está em andamento, e outro integrante da mesma US pode guardar o equipamento. Qual conduta se ajusta à regra de permanência da COP no tronco?",
+    "options": [
+      "a) A retirada é admissível para qualquer ajuste de conforto, desde que o policial registre o intervalo no relatório de serviço.",
+      "b) A retirada pode ocorrer para ajuste decorrente da sobreposição ou retirada de peça complementar do fardamento, sem gravação em curso, ficando a COP sob guarda de outro policial da mesma US.",
+      "c) A retirada é admissível somente para uso do sanitário; ajustes de fardamento exigem autorização prévia do Chefe da Seção PJMD.",
+      "d) A retirada pode ocorrer durante gravação, desde que o outro policial da US assuma a custódia e confirme verbalmente o recebimento."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/02/25, item 6.11.5, Assuntos Operacionais.pdf, fl. 22. A retirada após o início do serviço é excepcional, incluindo ajuste/retirada de peças complementares, ou uso do sanitário, desde que não haja gravação em andamento; nesses casos, a COP fica sob guarda de outro policial da mesma US. A amplia a hipótese; C cria autorização prévia e restringe a regra; D permite retirada durante gravação. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 255,
+    "subject": "OPERACIONAL",
+    "topic": "COP — requisição e recolhimento pelo CFP",
+    "text": "QUESTÃO 255 — Em ocorrência sem grande repercussão e sem resultado lesivo, surgem indícios de ilegalidade na atuação da equipe. O CFP avalia se deve requisitar as COP e realizar o upload pessoalmente. Qual solução decorre da diretriz?",
+    "options": [
+      "a) O recolhimento especial depende de cumularem-se grande repercussão e resultado morte, não alcançando indícios de ilegalidade isolados.",
+      "b) O CFP somente pode requisitar os equipamentos se houver determinação da autoridade encarregada de procedimento apuratório.",
+      "c) Os indícios de má conduta ou ilegalidade constituem hipótese própria de recolhimento; o CFP deve requisitar e recolher a COP e providenciar pessoalmente o upload, sempre que possível em ato contínuo, sem prejuízo do gerenciamento da ocorrência.",
+      "d) O recolhimento cabe ao Chefe da Seção PJMD no local, e o CFP limita-se a encaminhar o arquivo depois do encerramento do turno."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, itens 6.4.6.5 e 6.11.3, Assuntos Operacionais.pdf, fl. 22. Indícios de má conduta ou ilegalidade são hipótese autônoma de entrega/recolhimento; nos casos listados, o CFP ou equivalente requisita e recolhe a COP e realiza pessoalmente o upload, quando possível em ato contínuo. A exige cumulação inexistente; B cria condição externa; D desloca a providência do CFP e posterga o upload. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 256,
+    "subject": "OPERACIONAL",
+    "topic": "COP — responsabilidade pela etiqueta eletrônica",
+    "text": "QUESTÃO 256 — Uma gravação termina sem etiqueta eletrônica, e o operador sustenta que a classificação será definida pela Seção PJMD após o upload. A Coord Op PM, por sua vez, atualizou recentemente o rol de etiquetas. Qual distribuição de responsabilidades corresponde à diretriz?",
+    "options": [
+      "a) A Coord Op PM define, atualiza e divulga o rol e seus parâmetros; o operador deve identificar adequadamente o registro conforme os critérios vigentes no encerramento da gravação.",
+      "b) O Chefe da Seção PJMD define o rol completo e classifica os registros após o upload, enquanto o operador responde apenas pela integridade física da câmera.",
+      "c) O encarregado do procedimento apuratório escolhe a etiqueta segundo a finalidade probatória, cabendo à Coord Op PM somente publicar estatísticas de utilização.",
+      "d) O fornecedor do sistema estabelece as etiquetas técnicas e doutrinárias; o operador pode omitir a classificação quando não houver requisição de evidência."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, itens 6.7.2 e 6.7.3, Assuntos Operacionais.pdf. A Coord Op PM define, atualiza e divulga rol e parâmetros; o operador responde pela identificação correta segundo os critérios vigentes no encerramento, sendo vedada omissão ou classificação indevida. B e C deslocam competências; D transfere a definição ao fornecedor e cria dispensa não prevista. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 257,
+    "subject": "OPERACIONAL",
+    "topic": "COP — integridade do compartilhamento após upload",
+    "text": "QUESTÃO 257 — Após o upload, autoridade policial civil competente requisita evidência digital produzida pela OPM. O policial que utilizou a COP pretende encaminhar diretamente um recorte editado do arquivo, para facilitar a consulta. Qual procedimento atende à diretriz?",
+    "options": [
+      "a) O usuário pode editar a cópia destinada à autoridade, desde que mantenha o arquivo original no sistema e registre a operação.",
+      "b) O Chefe da Seção PJMD deve providenciar o compartilhamento à autoridade competente, preferencialmente em formato digital, preservando a integridade e sem qualquer edição.",
+      "c) A Seção PJMD deve fornecer apenas transcrição escrita, porque a transferência de arquivo digital a órgão externo depende sempre de ordem judicial.",
+      "d) A autoridade requisitante deve obter o arquivo diretamente do fornecedor, pois a responsabilidade da OPM termina com o upload."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/02/25, itens 6.8.3.3 e 6.8.7, Assuntos Operacionais.pdf. Após o upload, a administração e custódia cabem ao Chefe da Seção PJMD, que compartilha evidências/relatórios com autoridade competente, preservados e sem edição; a disponibilização é preferencialmente digital por usuários cadastrados. A autoriza edição vedada para compartilhamento probatório; C inventa exclusividade de transcrição e exigência judicial; D transfere a custódia ao fornecedor. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 258,
+    "subject": "OPERACIONAL",
+    "topic": "COP — acesso individual versus reprodução do registro",
+    "text": "QUESTÃO 258 — Um policial que atuou na ocorrência, na condição de testemunha, recebe autorização para consultar o registro da própria COP a fim de instruir procedimento administrativo. Durante a consulta, pretende fotografar a tela com seu telefone para estudar o conteúdo depois. Qual alternativa corresponde à norma?",
+    "options": [
+      "a) O acesso para instruir procedimento é permitido e, por isso, a reprodução por telefone também é permitida se não houver edição do arquivo original.",
+      "b) O acesso só é permitido ao policial na condição de acusado, não à testemunha ou à vítima, e depende de autorização judicial.",
+      "c) A consulta pode ocorrer nas condições previstas para instrução de procedimento, mas é vedada a captação das imagens e áudios por outro equipamento, assim como a extração, edição ou transferência dos dados.",
+      "d) A consulta é vedada antes do encerramento definitivo do procedimento, embora seja permitida a extração de trechos após a publicação da decisão."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, item 6.8.5, Assuntos Operacionais.pdf. O acesso pode ser concedido ao policial que atuou, na condição de testemunha, vítima ou acusado, para instruir procedimento administrativo/judicial; a mesma regra veda captação por outro equipamento, extração, edição ou transferência. A confunde acesso com autorização para reproduzir; B restringe as condições expressas; D cria marco temporal e permissão inexistentes. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 259,
+    "subject": "OPERACIONAL",
+    "topic": "COP — acionamento por proximidade e gravação em curso",
+    "text": "QUESTÃO 259 — Uma COP desligada aproxima-se de outra COP que já está gravando. O sistema dispõe de tecnologia de acionamento automático por proximidade. Como essa funcionalidade se relaciona com o dever de acionamento do policial?",
+    "options": [
+      "a) A ativação por proximidade substitui definitivamente o acionamento manual em todos os fatos de interesse policial.",
+      "b) A ativação por proximidade pode ocorrer automaticamente via Bluetooth conforme a tecnologia do equipamento, mas não elimina o dever de acionamento intencional em fato de interesse policial nem autoriza omissão injustificada.",
+      "c) A ativação por proximidade somente pode ser feita pelo despachador, após confirmação de que a US recebeu despacho de ocorrência.",
+      "d) A ativação por proximidade só é válida quando as duas câmeras pertencem a US diferentes e quando não há outra gravação em curso."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/02/25, itens 6.3.1, 6.3.4 e 6.3.5, Assuntos Operacionais.pdf, fl. 8. A tecnologia admite ativação automática por proximidade, mas o acionamento manual continua sendo dever do portador diante de fato de interesse policial. A transforma a funcionalidade complementar em substituição geral; C atribui a ativação ao despachador e cria requisito; D acrescenta condições não previstas. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 260,
+    "subject": "OPERACIONAL",
+    "topic": "COP — comunicação de acionamento remoto à Unidade de Serviço",
+    "text": "QUESTÃO 260 — Durante atendimento, o COPOM aciona remotamente a gravação da COP de uma US. O despachador considera suficiente registrar a medida no sistema, sem informar a equipe. Qual providência é exigida?",
+    "options": [
+      "a) A US deve ser informada do acionamento remoto por meio da rede de rádio ou pela comunicação de áudio bidirecional da própria COP.",
+      "b) A informação deve ser transmitida apenas ao Chefe da Seção PJMD após o upload, para preservar a surpresa operacional.",
+      "c) A comunicação à US é exigida somente quando o acionamento ocorrer por proximidade via Bluetooth, não quando realizado pelo COPOM.",
+      "d) A equipe deve consentir expressamente com o acionamento remoto; sem anuência, a gravação não pode ser iniciada."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, item 6.3.3, Assuntos Operacionais.pdf. Sempre que o COPOM acionar remotamente a COP, a US deve ser informada por rádio ou áudio bidirecional. B posterga a informação; C troca a hipótese; D acrescenta consentimento, embora a diretriz expressamente dispense consentimento para iniciar a captação. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 261,
+    "subject": "OPERACIONAL",
+    "topic": "COP — supervisão da distribuição e uso durante o turno",
+    "text": "QUESTÃO 261 — No início do turno, o CGP acompanha a distribuição das COP e os testes iniciais; durante o serviço, constata que um policial está usando o equipamento de forma incompatível com a diretriz. Qual conjunto de atribuições está corretamente delimitado?",
+    "options": [
+      "a) O CGP supervisiona distribuição, testes e fiscalização durante o turno; além disso, o policial de maior posto ou graduação presente no local de fato de interesse policial deve fiscalizar o uso correto, ainda que não seja usuário de COP.",
+      "b) O Chefe da Seção PJMD distribui as COP e realiza todos os testes no início do turno, enquanto o policial mais antigo só fiscaliza depois do upload.",
+      "c) O policial usuário responde exclusivamente pelo próprio equipamento, sendo vedada fiscalização por integrante que não esteja usando COP.",
+      "d) O CFP é o único responsável por fiscalizar o uso durante todo o turno; o CGP limita-se a auditar gravações já transferidas ao sistema."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, itens 6.11.4 e 6.11.6, Assuntos Operacionais.pdf, fl. 22. O CGP supervisiona o Sv de Dia na distribuição, nos testes iniciais e na fiscalização ao longo do turno; o militar de maior posto/graduação presente no local fiscaliza a utilização correta, usuário ou não de COP. B desloca funções; C elimina fiscalização expressamente prevista; D restringe incorretamente o CGP e torna o CFP exclusivo. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 262,
+    "subject": "OPERACIONAL",
+    "topic": "Força Tática — transferência de responsabilidade e registro",
+    "text": "QUESTÃO 262 — Durante atividade típica, uma Equipe Tática presta o primeiro atendimento a solicitação emergencial e conclui que outra Patrulha pode dar continuidade sem erro procedimental ou impedimento legal. Ao transferir a responsabilidade, qual obrigação documental permanece com a Equipe Tática?",
+    "options": [
+      "a) Encerrar o atendimento sem registro, pois a Patrulha que assume passa a responder também pelos dados preliminares da FT.",
+      "b) Elaborar BO da ocorrência até o encerramento, independentemente de transferência, e registrar os dados preliminares em relatório de serviço quando a responsabilidade for transferida.",
+      "c) Produzir somente relatório de serviço em qualquer hipótese, pois a FT não elabora BO em ocorrências que iniciem durante atividade típica.",
+      "d) Transferir o atendimento apenas após autorização judicial, pois a responsabilidade da FT é indelegável durante atividade típica."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-003/02/20 (Programa de Força Tática), itens 6.8.2 e 6.8.3, Assuntos Operacionais.pdf. A FT presta primeiro atendimento e pode transferir a continuidade quando isso não implicar erro ou impedimento; deve elaborar BO até o término e, se transferir, registrar dados preliminares no relatório de serviço. A elimina registro; C generaliza a dispensa de BO; D cria autorização judicial e torna a responsabilidade indelegável. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 263,
+    "subject": "OPERACIONAL",
+    "topic": "Força Tática — rodízio dos componentes da Equipe Tática",
+    "text": "QUESTÃO 263 — Em revisão de escala, o comando verifica que um componente de Equipe Tática permanece na mesma função há quatro meses. A função exige capacitação técnica específica. Qual conclusão é compatível com a diretriz?",
+    "options": [
+      "a) O rodízio deve ocorrer obrigatoriamente a cada três meses, sem exceção, mesmo quando a função exige capacitação técnica específica.",
+      "b) O rodízio periódico não pode exceder três meses, desde que a função exercida não exija capacitação técnica específica; a exceção normativa deve ser considerada no caso descrito.",
+      "c) O rodízio é exigido apenas para equipes comandadas por praças, não alcançando equipes comandadas por oficiais.",
+      "d) O rodízio depende de autorização do COPOM e deve ocorrer apenas após o encerramento de todas as ocorrências sob responsabilidade do policial."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-003/02/20 (Programa de Força Tática), item 6.8.4, Assuntos Operacionais.pdf. A regra prevê rodízio periódico não superior a três meses desde que a função não exija capacitação técnica específica, inclusive para equipes comandadas por oficiais. A ignora a condição; C exclui indevidamente equipes comandadas por oficiais; D cria competência e marco temporal não previstos. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 264,
+    "subject": "OPERACIONAL",
+    "topic": "Policiamento de Trânsito — recursos próprios e emprego de outras US",
+    "text": "QUESTÃO 264 — Uma OPM territorial pretende empregar recursos próprios do Programa de Policiamento de Trânsito e, em período de maior demanda, utilizar ocasionalmente US de outro programa. Qual arranjo respeita os requisitos da diretriz?",
+    "options": [
+      "a) Os recursos próprios podem integrar a Matriz Operacional I, conforme necessidade e disponibilidade, desde que consignados nos Planos Diretores e preenchidos os requisitos normativos; o emprego ocasional ou programado de outras US é possível se suas atividades próprias não sofrerem solução de continuidade.",
+      "b) Os recursos próprios integram obrigatoriamente a Matriz Operacional II, e as US de outros programas só podem ser empenhadas depois de encerradas suas atividades típicas.",
+      "c) Os recursos próprios podem integrar a Matriz I sem consignação nos Planos Diretores; as US de outros programas só podem atuar em reforço autorizado pelo CPTran.",
+      "d) O emprego de US de outros programas é vedado, ainda que ocasional e sem prejuízo de suas atividades próprias; os recursos específicos dependem de inclusão na Matriz III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), itens 6.3.1.1.2.1.1 e 6.3.1.1.2.1.2, Assuntos Operacionais.pdf, PDF p. 484. Recursos específicos podem compor a Matriz I, observados necessidade, disponibilidade, consignação e requisitos; outras US podem ser empregadas ocasional ou programadamente sem descontinuidade de suas atividades. B altera a matriz e a condição; C elimina requisitos e inventa autorização; D proíbe emprego previsto pela norma. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 265,
+    "subject": "OPERACIONAL",
+    "topic": "Policiamento Escolar — composição e condições de emprego da RE",
+    "text": "QUESTÃO 265 — Uma OPM organiza uma Ronda Escolar com apenas um policial militar por viatura em determinado turno. Qual combinação de condições deve ser observada, segundo a diretriz vigente indicada no material?",
+    "options": [
+      "a) A atuação é exclusiva em escolas estaduais, em Nível de Resposta 2, e o rádio portátil é facultativo se a viatura tiver rádio móvel.",
+      "b) A Ronda Escolar pode empregar um ou dois policiais por viatura, atua exclusivamente no policiamento ostensivo escolar em Nível de Resposta 1, e, se houver apenas um policial, é obrigatório o rádio transceptor portátil (HT).",
+      "c) A Ronda Escolar deve ter no mínimo dois policiais em toda viatura e atua em Nível de Resposta 3 quando atende escolas municipais ou particulares.",
+      "d) A Ronda Escolar pode atuar em escolas estaduais, municipais ou particulares, mas o CPP é dispensado quando a viatura está adaptada para PcD."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz do Programa de Policiamento Escolar, item 6.3.1 e seguintes, Assuntos Operacionais.pdf, trecho atualizado pela O Comp nº 001/02/26, de 10SET26. A RE pode ter um ou dois policiais por viatura, atua de forma exclusiva em escolas estaduais, municipais e/ou particulares no Nível de Resposta 1, e o HT é obrigatório quando há apenas um policial. A altera abrangência e nível; C cria mínimo de dois; D cria dispensa de CPP não indicada. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 266,
+    "subject": "OPERACIONAL",
+    "topic": "Crime organizado — planejamento de contingência e consolidação de dados",
+    "text": "QUESTÃO 266 — Um incidente crítico relacionado à atuação típica do crime organizado abrange a área de mais de um Comando de Policiamento. Após a resposta, os dados também podem subsidiar revisão de práticas gerenciais. Qual alternativa reúne as atribuições previstas para a Coordenação Operacional PM?",
+    "options": [
+      "a) Elaborar e manter atualizado o Plano de Contingência para incidentes que envolvam mais de um Cmdo Pol, indicando pontos sensíveis e responsáveis por medidas iniciais e de continuidade; incorporar informações coletadas para aprimorar o emprego do efetivo, inclusive em Reuniões de Análise Crítica — Nível III.",
+      "b) Elaborar o Plano de Contingência apenas depois do encerramento e encaminhar os dados exclusivamente ao CComSoc, que define o emprego futuro do efetivo.",
+      "c) Manter Plano de Contingência apenas para incidentes dentro de um único Cmdo Pol e deixar a identificação de pontos sensíveis para cada US envolvida.",
+      "d) Consolidar os dados apenas quando houver condenação judicial e limitar o plano à relação de recursos já empregados, sem designação de responsáveis por medidas de continuidade."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/24, itens 6.5.5.4 e 6.5.5.5, Assuntos Operacionais.pdf, pp. 229–230. A Coord Op PM mantém o plano para incidentes que envolvam mais de um Cmdo Pol, com pontos sensíveis e responsáveis pelas medidas iniciais e de continuidade, e usa informações/reuniões de análise crítica para aprimorar o emprego do efetivo. B posterga e desloca a atribuição; C restringe a abrangência; D cria condição judicial e reduz o conteúdo do plano. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 267,
+    "subject": "OPERACIONAL",
+    "topic": "SCIPM — autoridade para instituir a Sala de Gerenciamento de Incidentes",
+    "text": "QUESTÃO 267 — Em operação de campo, o comandante identifica necessidade de integrar a PM com órgãos externos. Ele solicita a criação da Sala de Gerenciamento de Incidentes e propõe designar pessoalmente todos os representantes externos. Qual solução corresponde ao SCIPM?",
+    "options": [
+      "a) O comandante de campo institui a Sala e designa os representantes externos, porque a autoridade superior só pode homologar a estrutura após a operação.",
+      "b) A autoridade policial-militar superior ao comandante de campo institui a Sala, por solicitação ou de ofício; a autoridade responsável pela Sala distribui as posições de trabalho dos representantes e designa oficial de ligação para a interface político-estratégica.",
+      "c) A Sala é instituída exclusivamente pelo COPOM e seus representantes são distribuídos por antiguidade, cabendo ao oficial de ligação conduzir as operações em campo.",
+      "d) A Sala depende de solicitação conjunta de todos os órgãos externos e deve ser instituída pelo Cmt Inc, sem participação de autoridade superior."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), itens 6.5.4.4.1 e 6.5.4.4.2, Assuntos Operacionais.pdf. A instituição cabe à autoridade policial-militar superior, por solicitação ou de ofício, quando necessária integração externa; a autoridade responsável distribui posições por similaridade de competências e designa oficial de ligação para interface político-estratégica. A desloca competência; C inventa exclusividade e atribui comando de campo ao oficial; D acrescenta consentimento conjunto e exclui autoridade superior. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 268,
+    "subject": "OPERACIONAL",
+    "topic": "SCIPM — distinção entre incidente dinâmico e manobra no local",
+    "text": "QUESTÃO 268 — Em incidente crítico policial dinâmico, o Ch Op COPOM ainda exerce a função de Cmt Inc. Simultaneamente, o policial de maior posto ou mais antigo no local coordena a atuação do contingente ali presente. Qual interpretação distingue corretamente as atribuições?",
+    "options": [
+      "a) O policial no local substitui automaticamente o Ch Op COPOM como Cmt Inc, ficando este responsável apenas pela transmissão de dados.",
+      "b) O Ch Op COPOM permanece como Cmt Inc até a estabilização e providencia mobilização de recursos complementares; sem prejuízo dessas providências, o policial de maior posto/graduação ou mais antigo no local responde pelo engajamento e manobra do contingente.",
+      "c) O Ch Op COPOM só pode mobilizar recursos da Matriz I; o policial mais antigo no local decide, sozinho, sobre recursos das Matrizes II e III.",
+      "d) O Ch Op COPOM deixa de ser Cmt Inc assim que o primeiro oficial chega ao local, independentemente de estabilização ou de transferência formal."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), itens 6.4.2.1.1.2.1 e 6.4.2.1.1.2.2, Assuntos Operacionais.pdf, fl. 8. O Ch Op COPOM mantém o comando até a estabilização e avalia recursos complementares das Matrizes I, II e III, inclusive de OPM limítrofes; o policial mais antigo/mais graduado no local coordena engajamento e manobra do contingente. A confunde funções; C restringe recursos; D inventa transferência automática. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 269,
+    "subject": "OPERACIONAL",
+    "topic": "SCIPM — exceção aos critérios ordinários de designação",
+    "text": "QUESTÃO 269 — Chega ao COPOM notícia de incidente com pessoa que manifesta propósito suicida e mantém arma branca em sua posse. O escalão de comando pretende aplicar o critério ordinário de designação do Cmt Inc com base na natureza estática ou dinâmica. Qual tratamento a diretriz determina?",
+    "options": [
+      "a) Aplicar o critério ordinário e manter as funções de gerente emergencial e gerente efetivo apenas como apoio facultativo.",
+      "b) Aplicar o critério ordinário somente se a pessoa já tiver usado a arma contra terceiro, pois a posse isolada não afasta os critérios gerais.",
+      "c) Não aplicar os critérios ordinários de designação do Cmt Inc descritos na diretriz; permanecem as funções de gerente emergencial e gerente efetivo previstas na diretriz específica referenciada.",
+      "d) Substituir o Cmt Inc por autoridade civil, pois o SCIPM exclui a participação policial-militar em incidentes com propósito suicida."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), item 6.4.2.1.2, Assuntos Operacionais.pdf, fl. 8. A exceção abrange ocorrências com reféns e/ou pessoas com propósito suicida em posse de arma de fogo e/ou branca, além de artefatos explosivos; permanecem as funções de gerente emergencial e gerente efetivo da Diretriz nº PM3-001/02/13 ou norma substitutiva. A mantém critério ordinário; B cria exigência de uso; D inventa exclusão da PM. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 270,
+    "subject": "OPERACIONAL",
+    "topic": "SCIPM — chegada ao incidente estático e comunicação do Posto de Comando",
+    "text": "QUESTÃO 270 — Em incidente policial estático, o Cmt Inc recém-chegado já informou sua presença e identificação ao COPOM. Agora deve organizar o sítio da operação e estabelecer o Posto de Comando. Qual sequência atende às providências específicas da diretriz?",
+    "options": [
+      "a) Definir objetivos por 5W2H, estabelecer o Posto de Comando somente após chegada de todas as agências e comunicar sua localização ao final do incidente.",
+      "b) Definir o perímetro de segurança e providenciar o isolamento, estabelecer o Posto de Comando — que inicialmente pode ser uma das viaturas presentes — e informar ao Centro de Operações sua localização geográfica.",
+      "c) Instalar a Sala de Gerenciamento de Incidentes em qualquer incidente estático e transferir ao COPOM a responsabilidade de definir o perímetro e o local do Posto de Comando.",
+      "d) Estabelecer primeiro o Posto de Comando em instalação permanente, comunicar apenas o endereço postal e, depois, definir se haverá isolamento."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), itens 6.5.2.4.1 e 6.5.2.4.2, Assuntos Operacionais.pdf, fl. 10. Nos incidentes estáticos, o Cmt Inc define perímetro e isolamento, estabelece PC que pode inicialmente ser viatura e informa localização geográfica ao COPOM/COBOM. A troca metodologia e posterga informação; C torna obrigatória a Sala e desloca competências; D exige instalação permanente e altera a sequência. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 271,
+    "subject": "OPERACIONAL",
+    "topic": "SCIPM — avaliação da complexidade e escalonamento",
+    "text": "QUESTÃO 271 — Após estabelecer objetivos e medidas iniciais, o Cmt Inc avalia que a complexidade ultrapassa a capacidade operativa correspondente ao nível de resposta inicialmente adotado. Há necessidade provável de recursos das Matrizes II e III. Qual providência está alinhada ao SCIPM?",
+    "options": [
+      "a) Manter o nível inicial até o encerramento, pois a avaliação de complexidade não pode fundamentar pedido de autoridade superior durante o incidente.",
+      "b) Solicitar, por intermédio do Centro de Operações, o acionamento de autoridade policial-militar superior, considerando a complexidade e a necessidade de recursos de matrizes superiores.",
+      "c) Transferir imediatamente o comando ao policial de maior posto de qualquer agência presente, sem comunicação ao Centro de Operações.",
+      "d) Encerrar o Plano de Ação do Incidente e aguardar nova designação formal do Comandante-Geral antes de solicitar recursos complementares."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), item 6.5.2.5 e disposições subsequentes sobre avaliação de complexidade, Assuntos Operacionais.pdf, fl. 10. O Cmt Inc deve avaliar a complexidade e a capacidade operativa diante do nível de resposta necessário, solicitando autoridade superior por intermédio do Centro de Operações quando cabível. A impede escalonamento; C inventa transferência automática; D cria suspensão e competência não previstas. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 272,
+    "subject": "OPERACIONAL",
+    "topic": "NORSOP — emprego de recursos de outras matrizes",
+    "text": "QUESTÃO 272 — Uma OPM territorial enfrenta demanda que excede sua capacidade de resposta, mas ainda não há elementos que indiquem necessidade de apoio especializado de nível estadual. O comando analisa recursos das Matrizes II e III. Qual distinção deve orientar a decisão segundo a NORSOP?",
+    "options": [
+      "a) O apoio da Matriz II corresponde a contingentes táticos capacitados para apoiar as US; a Matriz III reúne recursos especializados, acionados conforme a natureza e a necessidade da resposta, não sendo equivalentes entre si.",
+      "b) A Matriz II reúne exclusivamente recursos de outros Comandos de Policiamento e a Matriz III corresponde às US ordinárias da própria OPM territorial.",
+      "c) A Matriz III é acionada sempre que houver qualquer apoio de Força Tática, enquanto a Matriz II se limita às ocorrências atendidas por uma única US.",
+      "d) A Matriz II e a Matriz III são categorias intercambiáveis, diferenciadas apenas pelo número de policiais empregados na ocorrência."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: NORSOP, Diretriz nº PM3-001/02/20, itens 6.2.1 e 6.2.2, Assuntos Operacionais.pdf. A Matriz II abrange apoios táticos e ações especiais de polícia, incluindo Força Tática; a Matriz III abrange recursos especializados, conforme a natureza do fenômeno e o nível de resposta. B inverte as matrizes; C desloca a Força Tática; D reduz a distinção a critério numérico não previsto. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 273,
+    "subject": "OPERACIONAL",
+    "topic": "NORSOP — operação planejada e transferência de responsabilidade",
+    "text": "QUESTÃO 273 — Uma Equipe Tática inicia atendimento emergencial durante sua atividade típica e considera transferir a continuidade a outra Patrulha. O comando precisa distinguir a possibilidade de transferência da obrigação de documentar a ocorrência. Qual alternativa reúne as duas regras?",
+    "options": [
+      "a) A transferência é vedada até o encerramento do turno, e a equipe registra apenas a providência inicial no relatório.",
+      "b) A transferência pode ocorrer quando o caso permitir e não houver erro procedimental ou impedimento legal/regulamentar; a FT elabora BO até o término e registra dados preliminares em relatório se a responsabilidade for transferida.",
+      "c) A transferência é livre sempre que outra Patrulha estiver disponível; após a passagem, a equipe inicial fica dispensada de registrar dados preliminares.",
+      "d) A transferência depende de autorização do Cmt Btl e, se autorizada, a equipe inicial não pode elaborar BO para evitar duplicidade."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-003/02/20 (Programa de Força Tática), itens 6.8.2 e 6.8.3, Assuntos Operacionais.pdf. A continuidade pode ser providenciada conforme o caso, desde que a transferência não implique erro ou impedimento; o BO deve ser elaborado até o término e, havendo transferência, os dados preliminares constam do relatório. A impede transferência; C elimina condição e registro; D cria autorização e proibição de BO. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 274,
+    "subject": "OPERACIONAL",
+    "topic": "Policiamento de Trânsito — exceção de atuação do CPTran",
+    "text": "QUESTÃO 274 — Em município do Interior, a OPM territorial apresenta carência técnica para executar policiamento ostensivo de trânsito em circunstância especial. A equipe avalia a atuação do CPTran. Qual enquadramento corresponde à diretriz?",
+    "options": [
+      "a) O CPTran é o responsável ordinário por todo policiamento de trânsito em vias municipais e estaduais, sem necessidade de circunstância especial.",
+      "b) As OPM subordinadas ao CPM/CPI são prioritárias no território; o CPTran pode atuar excepcionalmente em operação própria, apoio ou reforço em circunstância especial quando houver carência técnica das OPM territoriais.",
+      "c) O CPRv atua prioritariamente em qualquer via do Interior, independentemente da responsabilidade pela via, e o CPTran não pode apoiar OPM territorial.",
+      "d) A OPM territorial só pode atuar no trânsito se o CPTran lhe transferir formalmente a competência em cada ocorrência."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), itens 6.3.1.1.2.1 e 6.3.1.1.2.2, Assuntos Operacionais.pdf, PDF p. 484. O policiamento no território é prioritariamente das OPM subordinadas ao CPM/CPI; excepcionalmente o CPTran atua em operação própria, apoio ou reforço em circunstâncias especiais e carência técnica territorial. A torna ordinária a atuação excepcional; C desloca a regra de vias estaduais para o Interior; D cria transferência formal por ocorrência. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 275,
+    "subject": "OPERACIONAL",
+    "topic": "SCIPM — responsabilidades do Estado-Maior e gestão de riscos",
+    "text": "QUESTÃO 275 — Durante um incidente, o Cmt Inc recebe três propostas: uma para avaliar riscos à segurança operacional dos respondedores e vítimas; outra para divulgar informações à imprensa; e uma terceira para manter interface com representantes de agências externas. Qual distribuição funcional está correta?",
+    "options": [
+      "a) Segurança avalia os riscos; Relações Públicas transmite informações à imprensa; Oficial de Ligação mantém contato com representantes de agências externas.",
+      "b) Oficial de Ligação avalia riscos; Segurança mantém contato com a imprensa; Relações Públicas coordena os representantes de agências externas.",
+      "c) Relações Públicas avalia os riscos; Oficial de Ligação divulga informações à imprensa; Segurança mantém a interface político-estratégica com agências externas.",
+      "d) Chefe de Planejamento executa as três funções, porque o Estado-Maior não possui funções especializadas no SCIPM."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), itens 6.4.2.2.1 a 6.4.2.2.3, Assuntos Operacionais.pdf, fl. 8. Segurança assessora o Cmt Inc no gerenciamento de riscos; Relações Públicas transmite informações à imprensa; Oficial de Ligação mantém contato com representantes de agências externas. B e C permutam as atribuições; D elimina a distribuição funcional expressa. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 276,
+    "subject": "JURIDICO",
+    "topic": "RDPM — sequência da comunicação disciplinar",
+    "text": "QUESTÃO 276 — Uma autoridade recebe notícia de transgressão disciplinar que não envolve recolhimento disciplinar. O comunicante tomou conhecimento do fato na segunda-feira; a autoridade, após receber manifestação preliminar, considera que houve transgressão. Qual sequência de prazos corresponde ao RDPM?",
+    "options": [
+      "a) Apresentar a comunicação em cinco dias do conhecimento; conceder três dias para manifestação preliminar; se mantida a imputação, formular termo acusatório motivado e conceder cinco dias para ampla defesa e contraditório.",
+      "b) Apresentar a comunicação em três dias; conceder cinco dias para manifestação preliminar; após o termo acusatório, conceder dez dias para defesa escrita.",
+      "c) Apresentar a comunicação imediatamente em qualquer hipótese; conceder cinco dias para manifestação preliminar; após o termo acusatório, conceder três dias para defesa.",
+      "d) Apresentar a comunicação em cinco dias da publicação do fato; conceder três dias para defesa final antes da manifestação preliminar; depois, aplicar a sanção."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: LC nº 893/01 (RDPM), art. 28, §§ 1º a 3º. O prazo da comunicação é de cinco dias da constatação/conhecimento, salvo recolhimento, que é imediato; manifestação preliminar em três dias; após termo acusatório motivado, cinco dias para defesa. B troca prazos; C inverte as etapas; D usa marco temporal e sequência inexistentes. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 277,
+    "subject": "JURIDICO",
+    "topic": "RDPM — solução, afastamento regulamentar e ciência do comunicante",
+    "text": "QUESTÃO 277 — A defesa do acusado é recebida pela autoridade competente. Antes de transcorridos 30 dias, o acusado entra em afastamento regulamentar; o signatário da comunicação ainda não foi informado da solução. Qual alternativa aplica corretamente os prazos do RDPM?",
+    "options": [
+      "a) O prazo de solução é de 30 dias do recebimento da defesa, prorrogável por até 15 dias mediante declaração de motivos no enquadramento; o afastamento interrompe a contagem até a reapresentação, e o signatário deve ser notificado em até 90 dias da comunicação.",
+      "b) O prazo de solução é de 30 dias da comunicação, prorrogável por 30 dias; o afastamento não interfere na contagem, mas o signatário deve ser notificado em 90 dias da solução.",
+      "c) O prazo de solução é de 15 dias do recebimento da defesa, sem prorrogação; o afastamento interrompe apenas o prazo recursal do acusado.",
+      "d) O prazo de solução é de 45 dias corridos, independentemente de justificativa; a notificação do signatário só é exigida se ele requerer providências."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: LC nº 893/01 (RDPM), art. 29, §§ 1º a 4º. A solução conta do recebimento da defesa, em 30 dias, prorrogável no máximo por 15 mediante motivação no enquadramento; o afastamento regulamentar interrompe os prazos até reapresentação; o signatário deve ser notificado em até 90 dias da comunicação. B muda marco e prorrogação; C altera prazo e alcance da interrupção; D elimina motivação e transforma a notificação em facultativa. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 278,
+    "subject": "JURIDICO",
+    "topic": "RDPM — representação contra ato disciplinar",
+    "text": "QUESTÃO 278 — Um policial considera ilegal uma sanção disciplinar e pretende apresentar representação contra o ato. Os recursos disciplinares ainda não foram solucionados, e a reclamação também discute a conveniência da punição. Qual conclusão decorre do art. 30 do RDPM?",
+    "options": [
+      "a) A representação pode ser apresentada imediatamente à autoridade superior, pois abrange qualquer discordância com o mérito da sanção.",
+      "b) A representação contra ato disciplinar somente pode ser exercida após solucionados os recursos previstos no RDPM e quando a matéria versar sobre legalidade; em regra, dirige-se à autoridade funcional imediatamente superior àquela contra a qual se atribui o ato.",
+      "c) A representação deve ser dirigida diretamente ao Comandante-Geral, independentemente da autoridade que praticou o ato, e substitui o pedido de reconsideração.",
+      "d) A representação é admissível antes dos recursos se apresentada em cinco dias, mas deve tratar exclusivamente do mérito administrativo e não da legalidade."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: LC nº 893/01 (RDPM), art. 30, §§ 1º a 4º. A representação é dirigida à autoridade funcional imediatamente superior; contra ato disciplinar, somente após solução dos recursos e se versar sobre legalidade. A antecipa a via e amplia o objeto; C altera destinatário e efeito; D inverte o requisito material. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 279,
+    "subject": "JURIDICO",
+    "topic": "RDPM — reincidência específica e agravante durante o serviço",
+    "text": "QUESTÃO 279 — Na análise de duas transgressões, a autoridade verifica que a nova falta foi enquadrada no mesmo item normativo de uma falta anterior e ocorreu durante a execução do serviço. A natureza da nova transgressão, contudo, é inerente à própria execução do serviço. Qual conclusão é correta?",
+    "options": [
+      "a) A reincidência específica não se configura, pois exige repetição do mesmo fato material; a agravante de serviço sempre incide quando a conduta ocorre em turno.",
+      "b) A reincidência específica exige que as faltas sejam idênticas em todos os seus elementos fáticos; a agravante de serviço deixa de incidir somente mediante ordem superior.",
+      "c) A reincidência específica pode decorrer de enquadramento no mesmo item previsto no art. 13 ou no item II do § 1º do art. 12; a agravante por prática durante o serviço não se aplica se, pela natureza, a transgressão for inerente à execução do serviço.",
+      "d) A reincidência específica decorre de qualquer transgressão anterior; a exceção à agravante de serviço depende de a falta ter sido praticada fora do horário de expediente."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: LC nº 893/01 (RDPM), art. 36, inciso V e §§ 1º e 2º. A reincidência específica é definida pelo enquadramento no mesmo item normativo indicado no § 2º; a agravante de serviço não se aplica quando a transgressão é inerente à execução do serviço. A e B restringem ou ampliam conceitos; D elimina o critério de enquadramento e substitui a exceção por horário de expediente. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 280,
+    "subject": "JURIDICO",
+    "topic": "RDPM — causas de justificação versus atenuantes",
+    "text": "QUESTÃO 280 — Na análise de uma transgressão, o militar demonstra que cumpriu ordem superior não manifestamente ilegal e, separadamente, colaborou para esclarecer os fatos. Qual tratamento jurídico distingue corretamente as duas circunstâncias?",
+    "options": [
+      "a) Ambas são atenuantes, de modo que a autoridade deve aplicar sanção menos rigorosa em qualquer hipótese.",
+      "b) A obediência à ordem superior não manifestamente ilegal é causa de justificação que afasta a aplicação de sanção; a colaboração na apuração é circunstância atenuante a considerar na dosimetria se houver transgressão punível.",
+      "c) A colaboração na apuração é causa de justificação, enquanto o cumprimento de ordem superior é agravante por execução de comando.",
+      "d) A ordem superior constitui justificação mesmo quando manifestamente ilegal; a colaboração só atenua se houver confissão de autoria ignorada."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: LC nº 893/01 (RDPM), arts. 34, IV, e 35, VIII. A obediência a ordem superior só justifica quando ela não é manifestamente ilegal; colaborar na apuração é atenuante. A transforma a justificação em atenuante; C troca as categorias; D elimina a ressalva e cria requisito cumulativo para colaboração. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 281,
+    "subject": "JURIDICO",
+    "topic": "I-16-PM — competência em procedimento com integrantes de várias Unidades",
+    "text": "QUESTÃO 281 — Um mesmo fato administrativo envolve policiais militares subordinados a comandantes de duas OPM. A autoridade avalia instaurar um procedimento para cada unidade, com base na subordinação de cada envolvido. Qual solução é compatível com as I-16-PM?",
+    "options": [
+      "a) O processo será único, observadas as restrições específicas, e será instaurado pela autoridade de cargo superior comum aos respectivos comandantes, nos termos da regra de pluralidade de envolvidos.",
+      "b) Devem ser instaurados procedimentos separados por OPM, pois a competência sempre acompanha a subordinação individual de cada acusado.",
+      "c) O processo único só é possível quando todos os envolvidos pertencem à mesma OPM; caso contrário, decide o Comandante-Geral sem instauração formal.",
+      "d) A autoridade que primeiro recebeu a notícia pode instaurar procedimento único em qualquer caso, independentemente da hierarquia comum dos comandantes."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: I-16-PM, art. 11, § 3º, Assuntos Organizacionais.pdf, seção I-16-PM, pp. 8–9. Quando há integrantes de mais de uma Unidade, o processo é único, respeitadas restrições específicas, e instaurado pela autoridade de cargo superior comum aos comandantes. B fragmenta o processo; C cria limitação inexistente; D substitui o critério normativo por mera precedência cronológica. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 282,
+    "subject": "JURIDICO",
+    "topic": "I-16-PM — designação, substituição e atos do Conselho",
+    "text": "QUESTÃO 282 — Em Conselho de Disciplina, um membro titular fica temporariamente impedido de comparecer à audiência. A autoridade pretende designar outro oficial apenas para aquele ato, sem formalizar a substituição, e realizar a audiência com os demais membros presentes. Qual alternativa está correta?",
+    "options": [
+      "a) A substituição pode ser verbal e a audiência prossegue com os membros disponíveis, desde que o ausente receba a ata posteriormente.",
+      "b) O oficial substituto só pode assumir após formalização do ato de designação; não se admite nomeação ad hoc de membro ou presidente para ato do processo regular, salvo para escrivão, e o Conselho só realiza audiência com a totalidade de seus membros.",
+      "c) A autoridade pode nomear ad hoc qualquer membro, desde que seja do mesmo posto; a exigência de totalidade aplica-se apenas à decisão final.",
+      "d) A ausência de um membro pode ser suprida pelo acusado mediante anuência expressa, porque a composição do Conselho é ajustável por acordo."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-16-PM, art. 10, §§ 2º a 4º, Assuntos Organizacionais.pdf, seção I-16-PM, pp. 8–9. O substituto assume após designação formal; nomeação ad hoc é vedada, exceto escrivão; Conselho só realiza audiências com todos os membros. A e C ignoram formalização e totalidade; D cria substituição por acordo sem base normativa. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 283,
+    "subject": "JURIDICO",
+    "topic": "I-16-PM — fundamento da decisão administrativa",
+    "text": "QUESTÃO 283 — Na decisão de procedimento administrativo, a autoridade pretende acolher a conclusão do presidente sem mencionar os elementos probatórios que a sustentam, afirmando que a decisão decorre da hierarquia funcional. Qual exigência das I-16-PM incide sobre a decisão?",
+    "options": [
+      "a) A autoridade pode decidir sem fundamentação quando concordar com o relatório, pois a hierarquia funcional presume a veracidade das conclusões.",
+      "b) A decisão deve ser motivada e decorrer logicamente das provas constantes dos autos, dos preceitos legais e dos valores e deveres éticos estipulados no RDPM.",
+      "c) A decisão deve reproduzir literalmente todos os depoimentos, mas não pode considerar os valores e deveres éticos do RDPM.",
+      "d) A motivação é exigida apenas para decisões absolutórias; a decisão sancionatória decorre automaticamente da conclusão do presidente."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-16-PM, art. 8º, Assuntos Organizacionais.pdf, seção I-16-PM, p. 8. A autoridade responsável motiva a decisão, que deve decorrer logicamente das provas dos autos, dos preceitos legais e dos valores/deveres éticos do RDPM. A presume motivação inexistente; C cria obrigação de reprodução literal e exclui parâmetro expresso; D restringe indevidamente a exigência. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 284,
+    "subject": "JURIDICO",
+    "topic": "I-16-PM — critérios de competência e responsabilidade patrimonial",
+    "text": "QUESTÃO 284 — Um procedimento administrativo apura dano a bem público causado por policial militar que, à época, estava funcionalmente subordinado a outra autoridade. As atribuições específicas do processo não resolvem o conflito. Qual conjunto de critérios as I-16-PM indicam para determinar a competência administrativa?",
+    "options": [
+      "a) A competência é determinada exclusivamente pelo posto do policial apontado como responsável, independentemente do patrimônio envolvido.",
+      "b) A competência é determinada pela atribuição específica no processo, pela subordinação hierárquico-funcional entre autoridade e infrator e pela responsabilidade sobre o patrimônio estatal danificado ou extraviado.",
+      "c) A competência é determinada pela unidade que primeiro instaurou procedimento, mesmo quando não detenha responsabilidade funcional nem patrimonial.",
+      "d) A competência decorre apenas do local em que o dano foi constatado, sendo irrelevantes a subordinação e a atribuição específica."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-16-PM, art. 11, incisos I a III, Assuntos Organizacionais.pdf, seção I-16-PM, p. 9. Os critérios são atribuição específica do processo, subordinação hierárquico-funcional e responsabilidade pelo patrimônio estatal danificado/extraviado. A, C e D reduzem a competência a um fator isolado, contrariando a enumeração normativa. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 285,
+    "subject": "JURIDICO",
+    "topic": "I-16-PM — avocação e fixação da competência",
+    "text": "QUESTÃO 285 — Depois da instauração de procedimento regular, o acusado é movimentado para outra OPM, alterando sua subordinação hierárquico-funcional. Uma autoridade superior pretende avocar a apuração porque surgiram circunstâncias relevantes à preservação da hierarquia e disciplina. Qual alternativa está correta?",
+    "options": [
+      "a) A competência se altera automaticamente com a movimentação, mas a avocação é vedada depois da instauração.",
+      "b) A competência permanece fixada no momento da instauração, sendo irrelevante a alteração posterior da subordinação; a autoridade superior pode avocar motivadamente a apuração quando as circunstâncias recomendarem e isso for importante à preservação da hierarquia e disciplina.",
+      "c) A movimentação torna nulos os atos anteriores e exige nova instauração pela autoridade da OPM de destino.",
+      "d) A avocação é automática quando o acusado muda de OPM, dispensando motivação e demonstração de interesse para a hierarquia e disciplina."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-16-PM, art. 11, §§ 4º e 7º, Assuntos Organizacionais.pdf, seção I-16-PM, p. 9. A competência firma-se no momento da instauração; a autoridade superior pode avocar, motivadamente, a apuração quando houver atos/situações que o recomendem e isso for importante à preservação da hierarquia e disciplina. A e C ignoram a fixação da competência; D transforma faculdade condicionada em efeito automático. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 286,
+    "subject": "JURIDICO",
+    "topic": "I-16-PM — conflito de normas e aplicação subsidiária",
+    "text": "QUESTÃO 286 — Durante procedimento administrativo, a norma interna parece divergir de regra legal de maior hierarquia, e o caso também exige solução para ponto não disciplinado expressamente nas I-16-PM. Qual interpretação reúne corretamente as regras de integração normativa?",
+    "options": [
+      "a) Prevalece a norma interna por ser especial; a lacuna deve ser resolvida exclusivamente por decisão discricionária da autoridade instauradora.",
+      "b) Prevalece a norma de maior hierarquia; subsidiariamente aplicam-se as normas enumeradas no art. 2º, e os casos omissos seguem a ordem do art. 4º, sem que a autoridade possa deixar de decidir alegando lacuna.",
+      "c) Prevalece a norma mais recente independentemente da hierarquia; o uso da analogia é vedado nos procedimentos administrativos policiais.",
+      "d) A autoridade pode suspender indefinidamente a decisão até que seja editada norma específica, porque os casos omissos não admitem integração."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-16-PM, arts. 2º e 4º, Assuntos Organizacionais.pdf, seção I-16-PM, p. 7. Em divergência, prevalece norma de maior hierarquia; há aplicação subsidiária das normas listadas no art. 2º, e os casos omissos seguem a ordem do art. 4º; a autoridade não pode eximir-se de decidir por lacuna. A e C substituem a hierarquia por critérios não previstos; D contraria o parágrafo único do art. 4º. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 287,
+    "subject": "JURIDICO",
+    "topic": "RDPM — comunicação disciplinar e dever de precisão",
+    "text": "QUESTÃO 287 — Uma comunicação disciplinar descreve a ação atribuída ao militar, mas omite horário e local e acrescenta comentários pessoais do signatário sobre o caráter do acusado. A autoridade sustenta que tais omissões podem ser supridas apenas na decisão final. Qual avaliação é correta?",
+    "options": [
+      "a) A comunicação deve conter dados para identificar pessoas/coisas, local, data e hora, circunstâncias e alegações do faltoso quando presente e interpelado, sem comentários ou opiniões pessoais.",
+      "b) A comunicação pode omitir local e hora se houver testemunha, mas deve conter juízo de valor sobre a personalidade do acusado para orientar a sanção.",
+      "c) A comunicação deve conter apenas a tipificação e a assinatura do comunicante; os elementos circunstanciais são facultativos quando houver BOe.",
+      "d) A comunicação deve ser extensa e incluir conclusão sobre a sanção cabível, ainda que não registre as alegações do faltoso."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: LC nº 893/01 (RDPM), art. 28, caput. O dispositivo exige clareza, concisão e precisão, dados de identificação, local/data/hora, circunstâncias e alegações do faltoso quando presentes e interpelado, vedando comentários/opiniões pessoais. B e C dispensam elementos obrigatórios e admitem juízo pessoal; D exige conclusão sancionatória e permite omissão de alegações. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 288,
+    "subject": "JURIDICO",
+    "topic": "RDPM — prazo e admissibilidade da representação",
+    "text": "QUESTÃO 288 — Um militar pretende representar contra ato de superior que reputa injusto. O ato foi praticado há quatro dias, mas a questão não envolve sanção disciplinar nem discussão de legalidade de ato disciplinar. A quem e em que prazo deve dirigir a representação?",
+    "options": [
+      "a) À autoridade funcional imediatamente superior àquela contra a qual se atribui o ato, observando o prazo de cinco dias contado da data do ato ou fato que a motivou.",
+      "b) À autoridade que praticou o ato, no prazo de cinco dias contado da ciência da publicação, como condição para pedido de reconsideração.",
+      "c) À autoridade imediatamente superior na hierarquia militar, necessariamente distinta da autoridade funcional, em dez dias do encerramento do fato.",
+      "d) Diretamente ao Comandante-Geral, no prazo de trinta dias, pois a representação depende de esgotamento prévio de recurso em qualquer matéria."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: LC nº 893/01 (RDPM), art. 30, §§ 1º e 4º. A representação é dirigida à autoridade funcional imediatamente superior e o prazo de encaminhamento é de cinco dias contados do ato ou fato. B descreve parcialmente pedido de reconsideração e usa marco errado; C troca a autoridade e o prazo; D amplia prazo e aplica requisito próprio da representação contra ato disciplinar a qualquer matéria. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 289,
+    "subject": "JURIDICO",
+    "topic": "RDPM — responsabilidade pela aplicação e enquadramento",
+    "text": "QUESTÃO 289 — Após instrução, a autoridade decide que houve transgressão, mas pretende limitar o ato decisório à indicação do artigo violado, sem descrever a conduta nem registrar os fundamentos de fato. Considerando as regras gerais do RDPM, qual conclusão é correta?",
+    "options": [
+      "a) A aplicação da sanção abrange análise do fato, das circunstâncias determinantes, enquadramento e publicação; o enquadramento deve descrever a transgressão e conter os elementos exigidos no regulamento, não apenas o artigo violado.",
+      "b) Basta citar o dispositivo legal, pois a análise do fato e das circunstâncias é atividade exclusiva do comunicante.",
+      "c) A autoridade pode dispensar o enquadramento se houver confissão, mas deve publicar o nome de todas as testemunhas na decisão.",
+      "d) O enquadramento é dispensável quando a transgressão for considerada leve, desde que a sanção seja advertência."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: LC nº 893/01 (RDPM), arts. 37 e 38, caput e incisos. A aplicação abrange análise do fato e circunstâncias, enquadramento e publicação; o enquadramento descreve a transgressão e contém os elementos legais. B reduz o ato a citação; C cria dispensa e exigência não previstas; D cria exceção por gravidade. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 290,
+    "subject": "JURIDICO",
+    "topic": "RDPM — competências para atos revisionais e limite temporal",
+    "text": "QUESTÃO 290 — Uma autoridade de posto não excluído pelo art. 62 toma conhecimento, por via recursal, de possível ilegalidade em sanção disciplinar publicada há quatro anos e meio. Considera anular o ato e decide motivar e publicar a providência. Qual análise é correta?",
+    "options": [
+      "a) A anulação está fora do prazo, pois o limite é de dois anos a contar da ciência da autoridade.",
+      "b) A anulação pode ser praticada dentro do prazo de cinco anos contado da publicação do ato, desde que respeitada a competência e que o ato revisional seja motivado e publicado.",
+      "c) A anulação pode ocorrer a qualquer tempo se a autoridade tomou conhecimento por recurso, ficando dispensada a publicação.",
+      "d) A anulação somente pode ser praticada pelo Comandante-Geral, ainda que a autoridade tenha competência para aplicar sanção disciplinar."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: LC nº 893/01 (RDPM), art. 62, caput e §§ 1º–2º. A anulação só pode ser feita em cinco anos contados da publicação; os atos devem ser motivados e publicados, e o caput exclui Majores e Capitães da competência ali prevista. A altera prazo e marco; C elimina limite e publicidade; D cria exclusividade do Comandante-Geral. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 291,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-2-PM — adição e condição de integrante da OPM",
+    "text": "QUESTÃO 291 — Um policial é adido temporariamente a uma OPM para exercer missão compatível com sua graduação, sem ocupar vaga do QPO. A publicação que originou a adição declara que ele permanecerá na situação como se efetivo fosse. Qual efeito decorre da I-2-PM?",
+    "options": [
+      "a) A adição equivale a transferência definitiva, com atribuição de nova OPM e ocupação automática de vaga do QPO.",
+      "b) O policial permanece vinculado temporariamente sem ocupar vaga; contudo, pela previsão expressa na publicação, pode permanecer como se efetivo fosse e ser considerado integrante da OPM para todos os efeitos.",
+      "c) A adição somente pode ser usada para curso superior a 30 dias, não para missão específica; por isso, a publicação não produz efeito funcional.",
+      "d) A situação corresponde a “à disposição”, pois toda vinculação temporária exclui o policial do efetivo e impede considerá-lo integrante da OPM de destino."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-2-PM, art. 7º, inciso III e parágrafo único, Assuntos Organizacionais.pdf, pp. 5–6. A adição vincula temporariamente sem ocupar vaga, inclusive para função/missão específica compatível; o parágrafo único permite permanência como se efetivo fosse, considerado integrante para todos os efeitos, se constar na publicação. A confunde com transferência; C restringe as hipóteses; D confunde adição com “à disposição” e ignora o parágrafo único. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 292,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-2-PM — classificação, transferência e adição",
+    "text": "QUESTÃO 292 — Um oficial conclui curso de formação e recebe vaga prevista no QPO; outro policial recebe nova OPM para atender conveniência do serviço; um terceiro é vinculado temporariamente a outra OPM para missão específica compatível, sem ocupar vaga. Qual sequência identifica corretamente os atos?",
+    "options": [
+      "a) Transferência; classificação; à disposição.",
+      "b) Classificação; transferência; adição.",
+      "c) Adição; transferência; classificação.",
+      "d) Classificação; adição; transferência."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-2-PM, art. 7º, incisos I a III e V, Assuntos Organizacionais.pdf, pp. 5–6. Classificação atribui vaga do QPO em decorrência, entre outras hipóteses, de término de curso de formação; transferência atribui nova OPM; adição vincula temporariamente sem ocupar vaga para missão específica compatível. A, C e D trocam os conceitos normativos. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 293,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-2-PM — objetivos e razões da movimentação",
+    "text": "QUESTÃO 293 — Um pedido de movimentação é formulado pelo próprio policial para atender conveniência pessoal. O setor administrativo precisa classificar a razão do ato e verificar se isso altera a natureza do pedido. Qual afirmação está correta?",
+    "options": [
+      "a) A movimentação por conveniência própria é definida pela autoridade quando identifica interesse do serviço, mesmo sem solicitação do policial.",
+      "b) A conveniência própria é a razão da movimentação quando solicitada pelo policial; as classificações, contudo, somente podem ser feitas por conveniência do serviço ou própria.",
+      "c) A movimentação por conveniência própria é sinônimo de conveniência da disciplina e exige afastamento da OPM em que a permanência seja inconveniente.",
+      "d) A conveniência própria só pode fundamentar classificação decorrente de curso, nunca transferência para vaga prevista no QPO."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-2-PM, arts. 6º, IV, 8º, II e parágrafo único, Assuntos Organizacionais.pdf, pp. 5–6. A conveniência própria atende solicitação do policial; as classificações somente ocorrem por conveniência do serviço ou própria. A troca pedido individual por interesse do serviço; C confunde com conveniência da disciplina; D restringe indevidamente a classificação. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 294,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-2-PM — união de cônjuges e impedimentos cumulativos",
+    "text": "QUESTÃO 294 — Um policial requer movimentação para o município em que o cônjuge reside e trabalha. O serviço não seria prejudicado e os documentos foram juntados, mas o requerente foi movimentado por conveniência da justiça há três anos. Qual conclusão decorre da I-2-PM?",
+    "options": [
+      "a) O pedido atende aos requisitos, porque a ausência de prejuízo ao serviço e a documentação completa superam qualquer movimentação anterior.",
+      "b) O pedido não atende a uma das condições específicas: a movimentação por união de cônjuges depende também de não ter havido movimentação nos últimos cinco anos pelo mesmo fundamento e de não ter ocorrido movimentação por conveniência da disciplina ou da justiça.",
+      "c) A movimentação pode ser deferida se o município de exercício do cônjuge for diferente de sua residência, desde que ambos sejam no mesmo Estado.",
+      "d) A restrição de cinco anos aplica-se apenas quando a movimentação anterior foi por conveniência da justiça; a conveniência da disciplina não impede o pedido."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-2-PM, arts. 12, 13, incisos II a IV, Assuntos Organizacionais.pdf, pp. 6–7. A movimentação por união de cônjuges é para o município de residência do cônjuge e exige, cumulativamente, ausência de prejuízo, ausência de movimentação pelo mesmo fundamento nos últimos cinco anos, coincidência entre residência e exercício e ausência de movimentação por disciplina ou justiça. A trata condições cumulativas como dispensáveis; C altera a localidade; D elimina uma das vedações expressas. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 295,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-2-PM — competência para movimentação e posto funcional",
+    "text": "QUESTÃO 295 — Dois oficiais requerem movimentação entre OPM: um Capitão exerce Comando de Companhia; o outro, também Capitão, não exerce Comando ou Chefia de OPM. Qual autoridade possui competência para movimentá-los segundo a I-2-PM?",
+    "options": [
+      "a) O Chefe do Estado-Maior movimenta ambos, porque a competência depende apenas do posto de Capitão.",
+      "b) O Comandante-Geral movimenta o Capitão em Comando/Chefia; o Chefe do Estado-Maior movimenta o Capitão que não exerce essas funções.",
+      "c) O Diretor de Pessoal movimenta o Capitão em Comando/Chefia; o Secretário da Segurança Pública movimenta o que não exerce chefia.",
+      "d) O Secretário da Segurança Pública movimenta ambos, pois a regra alcança todos os oficiais intermediários."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-2-PM, art. 17, incisos II e III, Assuntos Organizacionais.pdf, capítulo V. A competência distingue Capitães/Tenentes em Comando ou Chefia daqueles que não exercem essas funções: no primeiro caso, Comandante-Geral; no segundo, Chefe do Estado-Maior. A ignora a distinção funcional; C e D deslocam as autoridades competentes. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 296,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-2-PM — prazo de apresentação conforme fundamento da movimentação",
+    "text": "QUESTÃO 296 — São publicados dois atos de movimentação sem prazo especial: um por conveniência da disciplina e outro por conveniência própria. Os policiais não estão afastados nem em situação excepcional. Qual regra de apresentação deve ser aplicada?",
+    "options": [
+      "a) Ambos se apresentam em cinco dias, pois o prazo geral independe da razão da movimentação.",
+      "b) O ato por conveniência da disciplina exige apresentação imediata; o ato por conveniência própria permite até cinco dias contados da publicação, salvo disposição expressa diversa.",
+      "c) O ato por conveniência própria exige apresentação imediata; o ato por conveniência da disciplina permite cinco dias contados da ciência pessoal.",
+      "d) Ambos se apresentam em dez dias contados do recebimento do ofício da OPM de destino, independentemente do ato publicado."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-2-PM, art. 21, incisos I e II, e parágrafo único, Assuntos Organizacionais.pdf, capítulo VII. A regra distingue a movimentação por conveniência da disciplina, com apresentação imediata, das movimentações por conveniência do serviço/própria, cujo prazo é de cinco dias salvo determinação expressa diversa. A generaliza o prazo; C inverte as regras e o marco; D usa prazo não previsto. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 297,
+    "subject": "ORGANIZACIONAL",
+    "topic": "SisTAF — credenciamento e uso do SITAF",
+    "text": "QUESTÃO 297 — Uma OPM designa policial militar graduado em Educação Física por instituição externa para atuar como Treinador Físico. O policial envia o certificado à EEF e pede inclusão no SITAF. Qual afirmação distingue corretamente a solicitação individual da competência institucional?",
+    "options": [
+      "a) O diploma externo produz credenciamento automático; a OPM pode incluir o policial no SITAF antes da análise da EEF.",
+      "b) A formação externa permite solicitar cadastro, mas a EEF analisa se atende aos requisitos técnicos e legais e pode solicitar documentação complementar; o credenciamento se materializa pela inclusão no SITAF, sob controle da EEF.",
+      "c) O cadastro é decidido exclusivamente pelo comandante da OPM, e o SITAF serve apenas para registrar resultados do TAF, não treinamentos ou avaliações antropométricas.",
+      "d) A EEF somente pode cadastrar policiais formados pela própria PMESP; a formação externa não pode ser considerada para a função."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/03/25 (SisTAF), itens 6.4.2.1 a 6.4.2.3, Assuntos Organizacionais.pdf, fl. 7. A formação externa permite solicitar cadastro, sujeito à análise técnica/legal da EEF e eventual documentação complementar; o credenciamento ocorre pela inclusão no SITAF, sob controle da EEF. A presume efeito automático; C restringe o sistema e desloca competência; D proíbe hipótese prevista. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 298,
+    "subject": "ORGANIZACIONAL",
+    "topic": "SisTAF — avaliação antropométrica e registro dos resultados",
+    "text": "QUESTÃO 298 — Antes do TAF periódico, o Treinador Físico organiza avaliação antropométrica e identifica que a balança de bioimpedância não está disponível. Qual conduta permanece de acordo com a diretriz?",
+    "options": [
+      "a) Adiar obrigatoriamente a avaliação até que haja balança de bioimpedância, pois os três parâmetros só podem ser aferidos com esse equipamento.",
+      "b) Realizar a aferição antes do TAF periódico, tabular IMC, circunferência abdominal e percentual de gordura corporal, utilizando balança de bioimpedância quando possível, e inserir obrigatoriamente os resultados no SITAF.",
+      "c) Realizar a aferição depois do TAF e registrar apenas IMC e circunferência abdominal, porque percentual de gordura é opcional em avaliação periódica.",
+      "d) Dispensar a avaliação se o policial já tiver realizado TAF no exercício anterior, mantendo os dados somente em ficha física da OPM."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/03/25 (SisTAF), itens 6.5.1.1 e 6.5.1.2, Assuntos Organizacionais.pdf, fls. 7–8. A avaliação antecede o TAF periódico e contempla IMC, circunferência abdominal e percentual de gordura; a bioimpedância é utilizada quando possível, e os resultados são obrigatoriamente inseridos no SITAF. A torna o equipamento condição absoluta; C altera momento e parâmetros; D cria dispensa e registro físico exclusivo. Classificação editorial: EXTREMAMENTE DIFÍCIL."
+  },
+  {
+    "id": 299,
+    "subject": "ORGANIZACIONAL",
+    "topic": "SisTAF — adaptação do plano de sessão",
+    "text": "QUESTÃO 299 — Em OPM com particularidades de espaço e efetivo, o Treinador Físico pretende adaptar o plano de sessão do treinamento. Qual critério limita legitimamente essa adaptação?",
+    "options": [
+      "a) O plano pode ser adaptado livremente pela OPM, inclusive para suprimir objetivos e capacidades biomotoras, desde que a sessão caiba no turno.",
+      "b) O plano é padrão elaborado didaticamente pela EEF e pode ser adaptado pelo Treinador Físico às peculiaridades da OPM, desde que a adequação respeite e mantenha os objetivos previamente estabelecidos e as capacidades biomotoras selecionadas.",
+      "c) A adaptação depende sempre de autorização individual da Diretoria de Pessoal, ainda que preserve objetivos e capacidades biomotoras.",
+      "d) O plano deve ser executado sem qualquer adaptação local, pois a padronização exclui consideração das peculiaridades e necessidades da OPM."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/03/25 (SisTAF), itens 6.5.2.2, 6.5.2.4 e 6.5.2.5, Assuntos Organizacionais.pdf, fl. 8. O treinamento é planejado/estruturado pela EEF, executado nas OPM pelos Treinadores Físicos, e o plano pode ser adaptado se mantiver objetivos e capacidades biomotoras selecionadas. A permite supressão; C cria autorização; D ignora a possibilidade expressa de adaptação. Classificação editorial: DIFÍCIL."
+  },
+  {
+    "id": 300,
+    "subject": "ORGANIZACIONAL",
+    "topic": "TCI — finalidade, execução e anamnese",
+    "text": "QUESTÃO 300 — Na programação do Treinamento Continuado Institucional, um comandante propõe transferir as sessões para períodos de folga e aplicar anamnese apenas a policiais reprovados no TAF. Qual avaliação se harmoniza com a Diretriz do TCI?",
+    "options": [
+      "a) O TCI é modelo padronizado de treinamento físico e técnico-operacional, contínuo e programado durante o turno; a anamnese coleta sistematicamente histórico de saúde, hábitos e condições físicas e mentais para identificar limitações e orientar programas.",
+      "b) O TCI deve ocorrer preferencialmente em folgas para preservar o serviço; a anamnese é instrumento corretivo aplicado somente após reprovação no TAF.",
+      "c) O TCI compreende apenas condicionamento físico, e a anamnese é destinada exclusivamente a registrar lesões ocorridas durante o treinamento.",
+      "d) O TCI é executado exclusivamente pela EEF, sem participação das OPM; a anamnese substitui o TAF quando aponta limitação de saúde."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/03/24 (TCI), itens 4.1, 5 e 6.1.1, Assuntos Organizacionais.pdf, fls. 1–2. O TCI é padronizado, contínuo, programado e executado durante o turno; a anamnese coleta informações de saúde, hábitos e condições físicas/mentais para identificar limitações e orientar programas. B altera o momento e restringe a anamnese; C reduz o escopo; D exclui as OPM e atribui efeito substitutivo não previsto. Classificação editorial: EXTREMAMENTE DIFÍCIL."
   }
           
 ];
