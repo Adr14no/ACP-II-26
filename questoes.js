@@ -2859,7 +2859,707 @@ const BANCO_GERAL_QUESTOES = [
         ],
         "answer": 2,
         "explanation": "Gabarito: C. Fundamentação: I-36-PM, art. 27 e § 1º, Assuntos Organizacionais.pdf, p. 15. A incapacidade temporária ou aptidão com restrição por mais de 60 dias exige nova inspeção médica ao final do período, cabendo ao interessado agendar seu comparecimento na UIS. A, B e D criam dispensa, benefício ou prazo inexistentes."
-      }
+      },
+{
+    "id": 201,
+    "subject": "OPERACIONAL",
+    "topic": "COP — solicitação de vítima ou testemunha para não ser filmada",
+    "text": "QUESTÃO 201 — Durante a entrevista de uma testemunha, ela solicita que seu rosto não seja registrado pela Câmera Operacional Portátil (COP). Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
+    "options": [
+      "a) O policial poderá direcionar a câmera para outra direção ou superfície neutra, informando previamente que o áudio continuará sendo gravado.",
+      "b) O policial deverá desligar imediatamente a COP, pois a solicitação da testemunha impede qualquer registro audiovisual.",
+      "c) O policial poderá interromper a gravação de áudio, mantendo apenas a imagem da testemunha para preservar a integridade do registro.",
+      "d) O policial deverá manter obrigatoriamente o enquadramento visual da testemunha, pois não há hipótese de adaptação do posicionamento da COP."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, item 6.3.9.1, em Assuntos Operacionais.pdf. O dispositivo permite apontar a câmera para outra direção ou superfície neutra e exige informar previamente que o equipamento continuará captando som. B e D eliminam a adaptação prevista; C inverte a medida autorizada. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 202,
+    "subject": "OPERACIONAL",
+    "topic": "COP — ocorrência com vítima criança/adolescente ou crime sexual",
+    "text": "QUESTÃO 202 — Em ocorrência envolvendo criança ou adolescente na condição de vítima, a equipe precisa adaptar o uso da COP para preservar direitos sensíveis. À luz da Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
+    "options": [
+      "a) O registro deve ser integralmente suspenso sempre que a vítima for criança ou adolescente, independentemente das demais circunstâncias.",
+      "b) A captação deve se concentrar na imagem da vítima, desde que o policial informe a gravação antes de iniciar a entrevista.",
+      "c) O registro deve limitar-se às evidências relacionadas ao local do crime ou ao corpo de delito não diretamente relacionado à imagem da vítima, pelo tempo estritamente necessário.",
+      "d) A gravação deve ser mantida sem qualquer adaptação, pois a preservação da evidência prevalece em todas as situações."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, item 6.3.9.2, em Assuntos Operacionais.pdf. A regra limita o registro às evidências relacionadas ao local ou ao corpo de delito não diretamente relacionadas à imagem da vítima, pelo tempo estritamente necessário. A e D absolutizam o procedimento; B autoriza justamente a captação direta que a regra busca limitar. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 203,
+    "subject": "OPERACIONAL",
+    "topic": "COP — busca pessoal minuciosa",
+    "text": "QUESTÃO 203 — Antes de realizar busca pessoal minuciosa, a equipe verifica a orientação específica sobre o posicionamento e o registro da COP. Segundo a Diretriz nº PM3-001/02/25, qual providência está prevista?",
+    "options": [
+      "a) Manter a câmera voltada exclusivamente para o policial que realiza a busca.",
+      "b) Registrar previamente o ambiente em 720º, com captação omnidirecional nos sentidos horizontal e vertical.",
+      "c) Desligar a COP durante a busca e justificar a ausência de gravação apenas no relatório de serviço.",
+      "d) Registrar somente o resultado final da busca, sem captação prévia do ambiente."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/02/25, item 6.3.9.3, em Assuntos Operacionais.pdf. A norma prevê registro prévio do ambiente em 720º (omnidirecional, nos sentidos horizontal e vertical). A, C e D substituem ou omitem essa providência específica. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 204,
+    "subject": "OPERACIONAL",
+    "topic": "COP — informação às partes sobre a gravação",
+    "text": "QUESTÃO 204 — Ao iniciar a gravação de uma intervenção policial, o policial militar avalia se é possível informar os envolvidos sem criar risco à sua integridade física. De acordo com a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
+    "options": [
+      "a) A captação depende de consentimento expresso de todas as partes envolvidas.",
+      "b) A informação às partes é dispensada em qualquer ocorrência policial, desde que a COP esteja acionada automaticamente.",
+      "c) A informação deve ocorrer somente após o encerramento da intervenção, para não influenciar os envolvidos.",
+      "d) O policial deve informar às partes sobre o registro audiovisual, se essa comunicação não for potencialmente prejudicial à sua integridade física; o consentimento não é necessário para iniciar a captação."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: Diretriz nº PM3-001/02/25, item 6.4.5, em Assuntos Operacionais.pdf. O dever de informar é condicionado à segurança, e a norma dispensa consentimento dos interlocutores para iniciar a captação. A cria requisito; B elimina indevidamente o dever; C altera o momento previsto. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 205,
+    "subject": "OPERACIONAL",
+    "topic": "COP — interrupção durante fato de interesse policial",
+    "text": "QUESTÃO 205 — Durante o atendimento de uma ocorrência, o policial percebe que a gravação da COP foi interrompida. Conforme a Diretriz nº PM3-001/02/25, qual sequência corresponde à providência prevista?",
+    "options": [
+      "a) Reacionar manualmente o equipamento de imediato e registrar a falha por BOe ou Relatório de Serviço Operacional, conforme o caso; se persistir, informar o escalão superior e solicitar substituição.",
+      "b) Encerrar o atendimento, aguardar o término do turno e solicitar substituição sem registrar a falha.",
+      "c) Manter a ocorrência sem gravação, desde que o policial faça relato escrito ao fim do serviço.",
+      "d) Solicitar ao COPOM que encerre o talão e considerar automaticamente justificada a interrupção."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, item 6.3.10, em Assuntos Operacionais.pdf. O dispositivo exige reacionamento manual imediato, registro da falha e, se ela persistir, comunicação ao escalão superior com solicitação de substituição. B, C e D não observam a sequência normativa. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 206,
+    "subject": "OPERACIONAL",
+    "topic": "COP — equipamento inoperante",
+    "text": "QUESTÃO 206 — Durante o serviço operacional, uma COP passa à condição de inoperante. Considerando as obrigações do operador previstas na Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
+    "options": [
+      "a) O policial deve aguardar o retorno à base para informar a falha, desde que não haja ocorrência em andamento.",
+      "b) O fato deve ser reportado imediatamente ao escalão de comando, conforme a regra específica para equipamento inoperante.",
+      "c) O policial pode continuar usando o equipamento inoperante sem comunicação, desde que registre as ocorrências por escrito.",
+      "d) A comunicação é obrigatória somente se a COP apresentar falha após a conclusão de ocorrência de grande repercussão."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/02/25, item 6.4.3, em Assuntos Operacionais.pdf. A norma determina comunicação imediata ao escalão de comando quando a COP se torna inoperante. A posterga a comunicação; C dispensa a obrigação; D restringe a hipótese sem fundamento. Dificuldade editorial: FÁCIL."
+  },
+  {
+    "id": 207,
+    "subject": "OPERACIONAL",
+    "topic": "COP — acesso à transmissão ao vivo",
+    "text": "QUESTÃO 207 — Uma OPM pretende acompanhar em tempo real imagens captadas por COP durante operação policial-militar. Segundo a Diretriz nº PM3-001/02/25, qual alternativa identifica corretamente uma hipótese de acesso à transmissão ao vivo?",
+    "options": [
+      "a) Qualquer policial da ativa, independentemente de função ou autorização.",
+      "b) Apenas o policial que utiliza a COP, vedado o acompanhamento remoto pelo comando.",
+      "c) Comandantes de OPM a partir do nível mínimo de Companhia PM, policiais em funções de comando e supervisão e COPOM conforme a área de atuação.",
+      "d) Exclusivamente representantes da imprensa previamente cadastrados pela OPM."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, item 6.6.2.1.1 a 6.6.2.1.4, em Assuntos Operacionais.pdf. O rol inclui comandantes de OPM a partir do nível mínimo de Companhia, funções de comando/supervisão, COPOM conforme a área e outros representantes de OPM autorizados pela Coord Op PM. A e D ampliam indevidamente o acesso; B nega o acompanhamento remoto previsto. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 208,
+    "subject": "OPERACIONAL",
+    "topic": "COP — edição de cópia para divulgação institucional",
+    "text": "QUESTÃO 208 — Após ocorrência de interesse institucional, uma unidade pretende editar cópia de vídeo captado por COP para divulgação. Conforme a Diretriz nº PM3-001/02/25, a edição para esse fim:",
+    "options": [
+      "a) Pode ser realizada por qualquer policial envolvido, desde que não altere o sentido geral da gravação.",
+      "b) Compete ao encarregado do procedimento apuratório, sem necessidade de observar a dignidade das pessoas identificadas.",
+      "c) Pode ser realizada pelo comandante da OPM ou pela equipe de serviço, a critério da autoridade local.",
+      "d) Somente pode ser realizada pela CDCA, com observância dos critérios de preservação da dignidade das pessoas eventualmente identificadas."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: Diretriz nº PM3-001/02/25, item 6.2.10, em Assuntos Operacionais.pdf. A edição de cópia para divulgação institucional é reservada à CDCA e deve respeitar a dignidade das pessoas identificadas. A, B e C atribuem a edição a outros agentes ou dispensam cautela expressa. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 209,
+    "subject": "OPERACIONAL",
+    "topic": "COP — propriedade e divulgação dos dados",
+    "text": "QUESTÃO 209 — Uma pessoa solicita diretamente a uma equipe policial cópia de imagens captadas por COP para divulgação pública. Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
+    "options": [
+      "a) Os dados pertencem ao policial que portava o equipamento, que pode autorizar sua divulgação.",
+      "b) Os dados são de propriedade da PMESP, e sua divulgação depende de análise e deliberação da CDCA, ressalvadas as hipóteses normativas de integração a conjunto probatório e os limites legais aplicáveis.",
+      "c) Os dados são públicos por natureza e podem ser divulgados por qualquer integrante da OPM, sem avaliação prévia.",
+      "d) A divulgação compete exclusivamente ao comandante da US, inclusive quando houver procedimento administrativo ou judicial em curso."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/02/25, item 6.2.8, em Assuntos Operacionais.pdf. A norma atribui a propriedade dos dados à PMESP e condiciona a divulgação à análise e deliberação da CDCA, ressalvando situações probatórias com observância da LAI e da LGPD. A, C e D contrariam o regime de propriedade e divulgação. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 210,
+    "subject": "OPERACIONAL",
+    "topic": "COP — vídeo de rotina (Video Recall)",
+    "text": "QUESTÃO 210 — Ao analisar a classificação dos registros audiovisuais da COP, um oficial precisa distinguir o vídeo de rotina do vídeo intencional. De acordo com a Diretriz nº PM3-001/02/25, assinale a alternativa correta sobre o vídeo de rotina.",
+    "options": [
+      "a) É produzido exclusivamente após acionamento manual para registrar fato de interesse policial.",
+      "b) É o registro transmitido ao vivo ao COPOM durante operação de grande envergadura.",
+      "c) É produzido continuamente e sem interrupção durante o modo stand-by, tem temporalidade de 90 dias e acesso restrito à Correg PM e aos encarregados de procedimentos apuratórios.",
+      "d) É o registro audiovisual cuja divulgação institucional pode ser feita livremente pela OPM."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, item 6.1.21, em Assuntos Operacionais.pdf. O vídeo de rotina é contínuo durante o stand-by, tem temporalidade de 90 dias e acesso restrito. A descreve vídeo intencional; B descreve transmissão ao vivo; D contraria as restrições de acesso e divulgação. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 211,
+    "subject": "OPERACIONAL",
+    "topic": "COP — distribuição mínima quando há insuficiência de equipamentos",
+    "text": "QUESTÃO 211 — A OPM possui menos COP do que policiais integrantes das Unidades de Serviço. Segundo a Diretriz nº PM3-001/02/25, qual critério mínimo deve ser garantido?",
+    "options": [
+      "a) Uma COP por OPM, independentemente da quantidade de Unidades de Serviço.",
+      "b) Uma COP para cada turno de serviço, ainda que várias US estejam em atividade simultânea.",
+      "c) A distribuição exclusiva às funções de comando e supervisão até que o efetivo seja integralmente equipado.",
+      "d) Ao menos uma COP por Unidade de Serviço."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: Diretriz nº PM3-001/02/25, item 6.2.2, em Assuntos Operacionais.pdf. Quando houver disponibilidade, todos os policiais integrantes de US devem ser equipados; se os equipamentos forem insuficientes, o critério mínimo é ao menos uma COP por US. A, B e C substituem o critério expresso. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 212,
+    "subject": "OPERACIONAL",
+    "topic": "COP — Oficial de Ligação",
+    "text": "QUESTÃO 212 — Um Batalhão precisa designar oficial para coordenar o emprego operacional das COP, o treinamento do efetivo e o cumprimento da regulamentação pertinente. Conforme a Diretriz nº PM3-001/02/25, quem designa o Oficial de Ligação COP?",
+    "options": [
+      "a) O Comandante de Batalhão.",
+      "b) O Chefe da Seção PJMD, obrigatoriamente.",
+      "c) O despachador do COPOM, a cada ocorrência.",
+      "d) A CDCA, sem participação do comando da OPM."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, item 6.1.16, em Assuntos Operacionais.pdf. O Oficial de Ligação COP é designado pelo Cmt Btl e responde pelas atividades indicadas no dispositivo. B, C e D atribuem a designação a autoridades não indicadas. Dificuldade editorial: FÁCIL."
+  },
+  {
+    "id": 213,
+    "subject": "OPERACIONAL",
+    "topic": "COP — auditoria das evidências digitais",
+    "text": "QUESTÃO 213 — A OPM realiza exame sistemático, independente e documentado dos registros captados por COP, com acesso pessoal ao SiGCED. Conforme a Diretriz nº PM3-001/02/25, essa auditoria tem, entre outros, qual objetivo?",
+    "options": [
+      "a) Autorizar automaticamente a divulgação pública de toda evidência auditada.",
+      "b) Substituir a apuração disciplinar sempre que a gravação demonstrar irregularidade.",
+      "c) Verificar conformidade com critérios técnicos, realizar fiscalização pedagógica, disciplinar e procedimental, identificar boas práticas e subsidiar melhorias e indicadores institucionais.",
+      "d) Transferir à equipe auditora a competência para determinar a sanção disciplinar definitiva."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, item 6.1.6 e subitens 6.1.6.1 a 6.1.6.5, em Assuntos Operacionais.pdf. A auditoria busca verificar conformidade técnica, fiscalizar aspectos pedagógicos, disciplinares e procedimentais, identificar boas práticas, promover melhorias e extrair indicadores. A, B e D atribuem consequências decisórias não previstas. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 214,
+    "subject": "OPERACIONAL",
+    "topic": "COP — cautelas no uso do áudio bidirecional",
+    "text": "QUESTÃO 214 — O COPOM avalia utilizar o áudio bidirecional da COP para transmitir orientação durante atendimento policial. Segundo a Diretriz nº PM3-001/02/25, em qual situação a funcionalidade exige avaliação criteriosa para evitar prejuízo à segurança ou à atividade?",
+    "options": [
+      "a) Apenas quando a ocorrência já estiver formalmente encerrada.",
+      "b) Somente quando a equipe estiver em deslocamento sem atendimento de ocorrência.",
+      "c) Em ações críticas que demandem atenção plena, em situações que exijam disciplina de luz e som e em negociações ou entrevistas sensíveis, entre outras hipóteses previstas.",
+      "d) Exclusivamente quando o equipamento estiver conectado à doca."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, item 6.6.1.2 e subitens, em Assuntos Operacionais.pdf. A diretriz manda avaliar criteriosamente o uso do áudio bidirecional, incluindo ações críticas, disciplina de luz/som e diálogos sensíveis. A, B e D restringem a análise a situações que não correspondem ao rol normativo. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 215,
+    "subject": "OPERACIONAL",
+    "topic": "COP — comunicação de acionamento remoto",
+    "text": "QUESTÃO 215 — O COPOM aciona remotamente a gravação da COP de uma Unidade de Serviço. Qual providência de comunicação está expressamente prevista na Diretriz nº PM3-001/02/25?",
+    "options": [
+      "a) A US deverá ser informada sempre que houver acionamento remoto da COP pelo COPOM.",
+      "b) A US somente será informada após a ocorrência, para não interferir na gravação.",
+      "c) A informação será encaminhada exclusivamente à CDCA, sem comunicação à equipe.",
+      "d) A comunicação é dispensada quando o acionamento remoto tiver sido realizado por escalão de supervisão."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, item 6.3.3, em Assuntos Operacionais.pdf. O dispositivo determina que a US seja informada sempre que o COPOM realizar acionamento remoto. B posterga; C troca o destinatário; D cria exceção não prevista. Dificuldade editorial: FÁCIL."
+  },
+  {
+    "id": 216,
+    "subject": "OPERACIONAL",
+    "topic": "COP — finalidade exclusiva e exceções de uso",
+    "text": "QUESTÃO 216 — Um policial pretende utilizar a COP para captar imagens sem relação com o serviço policial, alegando que o equipamento está disponível. À luz da Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
+    "options": [
+      "a) O uso é livre durante o turno, desde que a gravação não seja divulgada.",
+      "b) O uso é permitido para qualquer finalidade institucional, mesmo sem relação com o serviço operacional.",
+      "c) O equipamento pode ser utilizado para fins particulares se não houver ocorrência em andamento.",
+      "d) A COP é de uso policial exclusivo em serviço operacional por policial capacitado, vedada a captação sem relação com o interesse policial, ressalvadas instruções, treinamentos e testes de funcionamento."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: Diretriz nº PM3-001/02/25, item 6.2.1, em Assuntos Operacionais.pdf. A norma limita o uso ao serviço operacional e ao interesse policial, com exceções expressas para instruções, treinamentos e testes. A, B e C ampliam indevidamente as finalidades permitidas. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 217,
+    "subject": "OPERACIONAL",
+    "topic": "COP — finalidade da transmissão ao vivo",
+    "text": "QUESTÃO 217 — Durante uma operação policial-militar, a transmissão ao vivo das imagens captadas pelas COP é utilizada para apoiar a decisão do comando. Qual finalidade é atribuída a essa funcionalidade pela Diretriz nº PM3-001/02/25?",
+    "options": [
+      "a) Permitir o acompanhamento remoto da execução de ações, missões e operações, emergenciais ou programadas, subsidiando decisões das autoridades competentes com informações em tempo real.",
+      "b) Substituir o registro audiovisual armazenado e dispensar a preservação da evidência digital.",
+      "c) Garantir que toda imagem transmitida possa ser divulgada publicamente ao término da operação.",
+      "d) Transferir ao COPOM a responsabilidade pelo comando direto de todas as equipes acompanhadas."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, item 6.6.2.2, em Assuntos Operacionais.pdf. A transmissão ao vivo tem por objetivo permitir acompanhamento remoto das ações, missões e operações e subsidiar a tomada de decisões com informações em tempo real. B, C e D atribuem efeitos não previstos à funcionalidade. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 218,
+    "subject": "OPERACIONAL",
+    "topic": "COP — término do registro de fato de interesse policial",
+    "text": "QUESTÃO 218 — Após a condução de uma pessoa à delegacia, o policial avalia quando pode encerrar a gravação da COP. De acordo com a Diretriz nº PM3-001/02/25, qual situação consta expressamente como exemplo de encerramento do fato de interesse policial?",
+    "options": [
+      "a) A chegada da equipe ao limite territorial da Subárea, mesmo com a ocorrência ainda em andamento.",
+      "b) O término do turno do policial, independentemente da conclusão das providências.",
+      "c) A entrega da parte conduzida ao órgão competente.",
+      "d) A chegada de outra equipe ao local, ainda que não tenha assumido o atendimento."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, item 6.3.8.4, em Assuntos Operacionais.pdf. A entrega da parte conduzida ao órgão competente é um dos exemplos expressos de encerramento. A, B e D não correspondem aos exemplos normativos e podem ocorrer antes da conclusão do fato. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 219,
+    "subject": "OPERACIONAL",
+    "topic": "COP — classificação de evidência de MDIP",
+    "text": "QUESTÃO 219 — Em uma ocorrência com resultado morte decorrente de intervenção policial, o operador precisa selecionar a classificação da evidência digital produzida pela COP. Conforme o procedimento de classificação descrito na Diretriz nº PM3-001/02/25, qual etiqueta corresponde à situação?",
+    "options": [
+      "a) MDIP — Morte Decorrente de Intervenção Policial.",
+      "b) LDIP — Lesão Decorrente de Intervenção Policial.",
+      "c) Video Recall — vídeo contínuo de rotina produzido no modo stand-by.",
+      "d) Treinamento (Tr) — registro produzido para fins de instrução."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, item 6.7 (MDIP) e seção de classificação de evidências digitais do material de Assuntos Operacionais.pdf. A etiqueta MDIP é destinada às ocorrências em que o policial se envolva em morte decorrente de intervenção policial. B se refere a lesão; C é vídeo de rotina; D é registro de instrução. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 220,
+    "subject": "OPERACIONAL",
+    "topic": "COP — proteção da captação de áudio e imagem",
+    "text": "QUESTÃO 220 — Durante o serviço, o policial mantém a COP acionada, mas uma peça do uniforme cobre parcialmente a lente e o microfone. À luz da Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
+    "options": [
+      "a) A obstrução é permitida se a gravação permanecer armazenada no sistema.",
+      "b) A obrigação de preservar a captação limita-se à lente; o microfone pode permanecer coberto.",
+      "c) A posição do equipamento é irrelevante quando há gravação contínua.",
+      "d) O policial deve manter lentes e microfone desobstruídos e o equipamento voltado para o local dos acontecimentos, sendo vedada ação deliberada que prejudique a captação."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: Diretriz nº PM3-001/02/25, item 6.4.1 e subitens, em Assuntos Operacionais.pdf. A regra abrange lentes, microfone e orientação do equipamento, vedando ações deliberadas que prejudiquem a captação. A, B e C reduzem indevidamente a obrigação. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 221,
+    "subject": "OPERACIONAL",
+    "topic": "COP — repositório de dados (Storage)",
+    "text": "QUESTÃO 221 — No glossário da Diretriz nº PM3-001/02/25, é necessário distinguir repositório de dados (Storage) de outros recursos de armazenamento. Assinale a alternativa que corresponde ao conceito de Storage.",
+    "options": [
+      "a) Aplicativo usado exclusivamente para edição de cópias de vídeos institucionais.",
+      "b) Unidade física com função de depósito dos dados produzidos pelas COP, permitindo armazenamento, gerenciamento e proteção dos arquivos.",
+      "c) Transmissão em tempo real das imagens captadas pelas COP.",
+      "d) Etiqueta eletrônica utilizada para classificar informações produzidas pela COP."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/02/25, item 6.1.18, em Assuntos Operacionais.pdf. Storage é a unidade física de depósito de dados produzidos pelas COP. A descreve finalidade diversa; C corresponde a live streaming; D corresponde à tag. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 222,
+    "subject": "OPERACIONAL",
+    "topic": "SCIPM — gerenciamento modular de recursos",
+    "text": "QUESTÃO 222 — Em incidente crítico, o Comandante do Incidente precisa ampliar a estrutura de resposta conforme o aumento da complexidade e, posteriormente, reduzir recursos quando a demanda diminuir. Considerando o elemento essencial Organização modular do SCIPM, assinale a alternativa correta.",
+    "options": [
+      "a) A estrutura deve permanecer fixa durante todo o incidente, independentemente da evolução do cenário.",
+      "b) A incorporação de recursos adicionais depende sempre do encerramento formal e da abertura de novo incidente.",
+      "c) A organização modular permite incorporar ou desmobilizar módulos conforme a amplitude e a complexidade do incidente.",
+      "d) A organização modular impede a criação de funções adicionais quando houver mais de uma agência envolvida."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.10 (Organização modular) em Assuntos Operacionais.pdf. O sistema admite adaptação da estrutura por incorporação ou desmobilização de módulos conforme amplitude e complexidade. A, B e D tornam a estrutura rígida ou restringem recursos sem previsão. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 223,
+    "subject": "OPERACIONAL",
+    "topic": "COP — cadeia de custódia da evidência digital",
+    "text": "QUESTÃO 223 — Ao encaminhar uma evidência digital produzida por COP a outro órgão, a equipe precisa preservar sua confiabilidade desde a gravação até a saída do sistema. Segundo a Diretriz nº PM3-001/02/25, qual conceito corresponde a essa garantia?",
+    "options": [
+      "a) Transmissão ao vivo, que permite o acesso das autoridades às imagens no momento da captação.",
+      "b) Cadeia de custódia da evidência digital, que salvaguarda e rastreia os dados, protegendo integridade e credibilidade desde a origem até o envio ou retirada do sistema.",
+      "c) Vídeo de rotina, produzido de forma contínua durante o modo stand-by.",
+      "d) Repositório de dados, que é exclusivamente o mecanismo de edição de cópias para divulgação institucional."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Diretriz nº PM3-001/02/25, item 6.1.7, em Assuntos Operacionais.pdf. A cadeia de custódia garante salvaguarda e rastreabilidade dos dados e protege integridade e credibilidade desde a gravação até o envio a outros órgãos ou retirada do sistema. A descreve live streaming; C descreve vídeo de rotina; D confunde armazenamento com edição. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 224,
+    "subject": "OPERACIONAL",
+    "topic": "COP — uso obrigatório em operações específicas",
+    "text": "QUESTÃO 224 — Há disponibilidade de COP para emprego em uma operação policial-militar de restauração da ordem pública. Segundo a Diretriz nº PM3-001/02/25, em qual situação o uso do equipamento é obrigatório?",
+    "options": [
+      "a) Apenas em operações previamente programadas, ficando excluídas as emergenciais.",
+      "b) Somente quando houver ordem judicial específica para gravação.",
+      "c) Em operações de grande envergadura, em incursões em comunidades vulneráveis ou deflagradas em resposta a ataques contra policiais militares; o CFP ou equivalente deve informar ao COPOM o início e o término.",
+      "d) Exclusivamente quando a operação tiver como objetivo produzir prova para procedimento judicial."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, itens 6.2.4 e 6.2.5, em Assuntos Operacionais.pdf. Havendo disponibilidade, é obrigatório o uso de COP nas três hipóteses enumeradas, sejam operações emergenciais ou programadas; o CFP ou equivalente informa início e término ao COPOM, que aciona as COP das US empenhadas. A restringe indevidamente às programadas; B e D criam requisitos ou limitações não previstos. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 225,
+    "subject": "OPERACIONAL",
+    "topic": "COP — armazenamento em nuvem e armazenamento local",
+    "text": "QUESTÃO 225 — Ao revisar a arquitetura de armazenamento das evidências produzidas por COP, um oficial precisa distinguir armazenamento em nuvem de armazenamento local. Conforme a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
+    "options": [
+      "a) Armazenamento em nuvem é mantido fisicamente no Data Center institucional; armazenamento local utiliza exclusivamente provedores públicos de internet.",
+      "b) Os dois conceitos designam apenas a transmissão ao vivo das imagens captadas pela COP.",
+      "c) Armazenamento em nuvem é a unidade física de depósito de dados; armazenamento local é a etiqueta eletrônica atribuída à evidência.",
+      "d) Armazenamento em nuvem utiliza provedor remoto acessado por rede computacional governamental ou pública; armazenamento local mantém a infraestrutura fisicamente nas instalações da PMESP, no Data Center institucional."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: Diretriz nº PM3-001/02/25, itens 6.1.4 e 6.1.5, em Assuntos Operacionais.pdf. Cloud Storage utiliza provedor remoto acessado por rede governamental ou pública; on-premise mantém a infraestrutura nas instalações da PMESP, no Data Center institucional. A inverte os conceitos; B confunde armazenamento com transmissão ao vivo; C confunde armazenamento com repositório e etiqueta. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 226,
+    "subject": "JURIDICO",
+    "topic": "RDPM — definição de posto e graduação",
+    "text": "QUESTÃO 226 — À luz do Regulamento Disciplinar da Polícia Militar, assinale a alternativa correta quanto à distinção entre posto e graduação.",
+    "options": [
+      "a) Posto é o grau hierárquico das praças, conferido pelo Comandante-Geral; graduação é o grau hierárquico dos oficiais, conferido pelo Governador.",
+      "b) Posto e graduação são expressões equivalentes e não possuem distinção quanto à autoridade que os confere.",
+      "c) Posto é o grau hierárquico dos oficiais, conferido por ato do Governador e confirmado em Carta Patente ou Folha de Apostila; graduação é o grau hierárquico das praças, conferida pelo Comandante-Geral.",
+      "d) Posto é conferido por classificação em curso, enquanto graduação depende exclusivamente de ato do Governador."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: RDPM, art. 3º, §§ 2º e 3º, reproduzido em Assuntos Jurídicos-administrativos.pdf. O § 2º define posto para oficiais e o § 3º define graduação para praças. A inverte os conceitos; B elimina distinção expressa; D atribui critérios não previstos nesses parágrafos. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 227,
+    "subject": "JURIDICO",
+    "topic": "RDPM — critérios de antiguidade em igualdade hierárquica",
+    "text": "QUESTÃO 227 — Dois militares do Estado possuem o mesmo posto ou graduação. De acordo com o RDPM, qual critério aparece em primeiro lugar na ordem de definição da antiguidade?",
+    "options": [
+      "a) Data da última promoção.",
+      "b) Maior idade.",
+      "c) Data de nomeação ou admissão.",
+      "d) Classificação no curso de formação ou habilitação."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: RDPM, art. 4º, incisos I a V, em Assuntos Jurídicos-administrativos.pdf. A data da última promoção é o primeiro critério; os demais aparecem sucessivamente depois dela. B, C e D são critérios previstos, mas não ocupam a primeira posição. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 228,
+    "subject": "JURIDICO",
+    "topic": "RDPM — precedência funcional",
+    "text": "QUESTÃO 228 — Em igualdade de posto ou graduação, um militar exerce cargo que lhe atribui superioridade funcional sobre integrantes do órgão que dirige. Segundo o RDPM, a situação corresponde à:",
+    "options": [
+      "a) Antiguidade presumida, independentemente da data da última promoção.",
+      "b) Precedência funcional, em razão do cargo ou função que atribui superioridade funcional.",
+      "c) Alteração automática de posto, com necessidade de Carta Patente.",
+      "d) Subordinação hierárquica temporária, aplicável apenas aos militares inativos."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: RDPM, art. 5º, inciso I, em Assuntos Jurídicos-administrativos.pdf. A precedência funcional ocorre, em igualdade de posto ou graduação, quando o cargo ou função atribui superioridade funcional. A usa categoria diversa; C cria alteração hierárquica; D restringe indevidamente a regra. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 229,
+    "subject": "JURIDICO",
+    "topic": "RDPM — deontologia policial-militar",
+    "text": "QUESTÃO 229 — Conforme o RDPM, a deontologia policial-militar é constituída por:",
+    "options": [
+      "a) Regras exclusivamente processuais para aplicação de sanções disciplinares.",
+      "b) Ordens operacionais temporárias expedidas pelo comandante de cada OPM.",
+      "c) Valores e deveres éticos traduzidos em normas de conduta, voltados à realização do bem comum mediante a preservação da ordem pública.",
+      "d) Critérios de antiguidade e precedência funcional aplicáveis apenas aos oficiais."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: RDPM, art. 6º, em Assuntos Jurídicos-administrativos.pdf. O artigo define deontologia por valores e deveres éticos traduzidos em normas de conduta, associados ao bem comum e à preservação da ordem pública. A, B e D restringem ou substituem a definição normativa. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 230,
+    "subject": "JURIDICO",
+    "topic": "RDPM — valores fundamentais policiais-militares",
+    "text": "QUESTÃO 230 — Considerando o rol de valores fundamentais determinantes da moral policial-militar previsto no RDPM, assinale a alternativa que contém apenas valores expressamente enumerados no art. 7º.",
+    "options": [
+      "a) Antiguidade, precedência funcional, comando e iniciativa.",
+      "b) Hierarquia, disciplina, profissionalismo e dignidade humana.",
+      "c) Eficiência, publicidade, economicidade e impessoalidade.",
+      "d) Subordinação, oportunidade, conveniência e autonomia operacional."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: RDPM, art. 7º, incisos III a V e X, em Assuntos Jurídicos-administrativos.pdf. Hierarquia, disciplina, profissionalismo e dignidade humana integram o rol de valores fundamentais. A reúne critérios/categorias que não constituem esse rol; C reúne princípios administrativos gerais não enumerados nesse artigo; D combina termos que não correspondem à lista do art. 7º. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 231,
+    "subject": "JURIDICO",
+    "topic": "RDPM — prazo de apresentação da comunicação disciplinar",
+    "text": "QUESTÃO 231 — Ressalvadas as disposições relativas ao recolhimento disciplinar, em que a comunicação deve ser imediata, qual é o prazo previsto no RDPM para apresentação da comunicação disciplinar, contado da constatação ou conhecimento do fato?",
+    "options": [
+      "a) 3 dias.",
+      "b) 5 dias.",
+      "c) 10 dias.",
+      "d) 30 dias."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: RDPM, art. 28, § 1º, em Assuntos Jurídicos-administrativos.pdf. A comunicação deve ser apresentada em 5 dias, ressalvada a hipótese de recolhimento disciplinar, que deve ser comunicada imediatamente. A, C e D indicam prazos diferentes do legal. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 232,
+    "subject": "JURIDICO",
+    "topic": "RDPM — prazo para manifestação preliminar",
+    "text": "QUESTÃO 232 — Recebida a comunicação disciplinar, a autoridade competente encaminha os fatos ao militar comunicado para manifestação preliminar por escrito. Qual prazo o RDPM prevê para essa manifestação?",
+    "options": [
+      "a) 3 dias.",
+      "b) 5 dias.",
+      "c) 10 dias.",
+      "d) 15 dias."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: RDPM, art. 28, § 2º, em Assuntos Jurídicos-administrativos.pdf. O prazo para manifestação preliminar escrita é de 3 dias. B corresponde ao prazo de apresentação da comunicação; C e D não são os prazos previstos nesse parágrafo. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 233,
+    "subject": "JURIDICO",
+    "topic": "RDPM — solução do procedimento disciplinar",
+    "text": "QUESTÃO 233 — Após receber a defesa do acusado, a autoridade competente deve solucionar o procedimento disciplinar. Segundo o RDPM, qual é o prazo ordinário e a prorrogação máxima admitida?",
+    "options": [
+      "a) 5 dias, prorrogáveis por mais 5 dias sem justificativa.",
+      "b) 10 dias, prorrogáveis por mais 30 dias automaticamente.",
+      "c) 30 dias, prorrogáveis no máximo por mais 15 dias, mediante declaração de motivos no próprio enquadramento.",
+      "d) 60 dias, sem possibilidade de prorrogação."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: RDPM, art. 29, § 1º, em Assuntos Jurídicos-administrativos.pdf. O prazo é de 30 dias desde o recebimento da defesa, prorrogável por até 15 dias mediante declaração de motivos. A, B e D apresentam prazos ou condições incompatíveis com o dispositivo. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 234,
+    "subject": "JURIDICO",
+    "topic": "RDPM — interrupção dos prazos por afastamento",
+    "text": "QUESTÃO 234 — O militar acusado encontra-se em afastamento regulamentar durante a tramitação do procedimento disciplinar. Como essa situação afeta a contagem do prazo de solução previsto no RDPM?",
+    "options": [
+      "a) O prazo continua correndo normalmente, sem qualquer alteração.",
+      "b) O prazo é reiniciado do zero a partir da instauração, independentemente da data de reapresentação.",
+      "c) O procedimento deve ser arquivado até o retorno do militar.",
+      "d) Os prazos ficam interrompidos durante o afastamento regulamentar e a contagem é reiniciada a partir da reapresentação."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: RDPM, art. 29, § 2º, em Assuntos Jurídicos-administrativos.pdf. O afastamento regulamentar interrompe os prazos, cuja contagem recomeça com a reapresentação. A mantém a contagem; B usa marco não previsto; C cria consequência não estabelecida. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 235,
+    "subject": "JURIDICO",
+    "topic": "RDPM — prazo para encaminhamento da representação",
+    "text": "QUESTÃO 235 — Nos termos do RDPM, qual é o prazo para encaminhamento da representação contra ato praticado ou aprovado por superior hierárquico ou funcional, contado da data do ato ou fato que a motivar?",
+    "options": [
+      "a) 3 dias.",
+      "b) 10 dias.",
+      "c) 30 dias.",
+      "d) 5 dias."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: RDPM, art. 30, § 4º, em Assuntos Jurídicos-administrativos.pdf. O prazo para encaminhamento da representação é de 5 dias contados da data do ato ou fato que a motivar. A, B e C apresentam prazos distintos do dispositivo. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 236,
+    "subject": "JURIDICO",
+    "topic": "RDPM — competência para aplicação de sanções pelo Governador",
+    "text": "QUESTÃO 236 — Considerando a competência disciplinar prevista no RDPM, assinale a alternativa correta.",
+    "options": [
+      "a) O Governador do Estado é competente para aplicar todas as sanções disciplinares previstas no Regulamento.",
+      "b) O Governador somente pode aplicar advertência e repreensão.",
+      "c) A competência do Governador limita-se a sanções aplicadas a oficiais superiores.",
+      "d) O Governador somente pode aplicar sanção após autorização do Comandante-Geral."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: RDPM, art. 32, caput, em Assuntos Jurídicos-administrativos.pdf. O artigo atribui ao Governador competência para aplicar todas as sanções disciplinares previstas. B, C e D criam limitações ou requisitos ausentes do dispositivo. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 237,
+    "subject": "JURIDICO",
+    "topic": "RDPM — competência sancionatória do Capitão PM",
+    "text": "QUESTÃO 237 — De acordo com o quadro de competências do art. 32 do RDPM, qual é o limite de permanência disciplinar que pode ser aplicado por oficial do posto de Capitão PM?",
+    "options": [
+      "a) Até 5 dias.",
+      "b) Até 15 dias.",
+      "c) Até 10 dias.",
+      "d) Até 20 dias."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: RDPM, art. 32, inciso referente aos oficiais do posto de Capitão PM, em Assuntos Jurídicos-administrativos.pdf. O dispositivo atribui aos capitães competência para advertência, repreensão e permanência disciplinar de até 10 dias. A, B e D correspondem a limites diferentes ou superiores aos previstos para esse posto. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 238,
+    "subject": "JURIDICO",
+    "topic": "Lei nº 18.442/26 — alteração da distribuição anual do efetivo",
+    "text": "QUESTÃO 238 — A Lei nº 18.442/26 prevê que o quantitativo distribuído do efetivo poderá ser alterado pelo Comandante-Geral PM. Qual limite percentual consta do art. 3º, observados os limites legais?",
+    "options": [
+      "a) Até 5%.",
+      "b) Até 10%.",
+      "c) Até 15%.",
+      "d) Até 20%."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: Lei nº 18.442/26, art. 3º, conforme Assuntos Jurídicos-administrativos.pdf. O quantitativo distribuído poderá ser alterado em até 20% pelo Comandante-Geral, observados os limites do artigo. A, B e C indicam percentuais inferiores que não correspondem ao limite expresso. Dificuldade editorial: FÁCIL."
+  },
+  {
+    "id": 239,
+    "subject": "JURIDICO",
+    "topic": "Lei nº 18.442/26 — distribuição anual do efetivo",
+    "text": "QUESTÃO 239 — Segundo a Lei nº 18.442/26, a distribuição anual do efetivo por postos e graduações deve ser realizada por:",
+    "options": [
+      "a) Portaria do Comandante de Batalhão, sem observância de limite global.",
+      "b) Decreto do Governador, observados os limites legais e a disponibilidade orçamentária e financeira.",
+      "c) Resolução do Conselho de Disciplina, após cada ciclo de promoções.",
+      "d) Ato individual de cada comandante de OPM, conforme necessidade local."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: Lei nº 18.442/26, art. 3º, conforme Assuntos Jurídicos-administrativos.pdf. A distribuição anual é feita por decreto do Governador, dentro dos limites legais e da disponibilidade orçamentária e financeira. A, C e D atribuem a competência a autoridades ou instrumentos não previstos. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 240,
+    "subject": "JURIDICO",
+    "topic": "RDPM — critérios para aplicação das sanções",
+    "text": "QUESTÃO 240 — Ao aplicar sanção disciplinar, a autoridade deve considerar os critérios expressamente previstos no RDPM. Assinale a alternativa correta.",
+    "options": [
+      "a) Natureza e gravidade da falta, motivos determinantes, danos causados, personalidade e antecedentes do agente, além da intensidade do dolo ou grau da culpa.",
+      "b) Exclusivamente a repercussão pública da ocorrência e o posto do superior que comunicou o fato.",
+      "c) Apenas a natureza da sanção prevista, sendo vedada a consideração dos antecedentes do agente.",
+      "d) A conveniência administrativa, independentemente da gravidade, dos danos e do elemento subjetivo."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: RDPM, art. 33, em Assuntos Jurídicos-administrativos.pdf. O dispositivo enumera natureza, gravidade, motivos determinantes, danos, personalidade, antecedentes e intensidade do dolo ou grau da culpa. B, C e D excluem fatores expressos ou introduzem critérios não previstos como exclusivos. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 241,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-36-PM — dispensa para doação de sangue",
+    "text": "QUESTÃO 241 — Um policial militar pretende doar sangue em banco mantido por entidade conveniada com o Estado e requerer dispensa do serviço no dia da doação. Conforme as I-36-PM, qual requisito é necessário para fazer jus à dispensa?",
+    "options": [
+      "a) Solicitar prévia permissão ao comandante imediato, no nível de Cmt Cia ou superior, e apresentar o atestado do banco de sangue no primeiro dia de retorno ao serviço.",
+      "b) Comunicar verbalmente a intenção ao término do turno, dispensada autorização prévia e comprovação posterior.",
+      "c) Obter autorização exclusiva do Diretor de Pessoal e apresentar o atestado em até 30 dias.",
+      "d) Realizar a doação em qualquer entidade privada, independentemente de convênio com o Estado."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: I-36-PM, arts. 54 e 55, em Assuntos Organizacionais.pdf. A norma exige permissão prévia do comandante imediato, no nível indicado, e apresentação do atestado no primeiro dia de comparecimento após a doação. B e C alteram procedimento e prazo; D ignora a exigência relativa à entidade. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 242,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-36-PM — limite anual para doação de sangue",
+    "text": "QUESTÃO 242 — Para preservar a higidez física do policial militar, as I-36-PM estabelecem limite para a dispensa por doação de sangue. Qual é esse limite?",
+    "options": [
+      "a) Duas vezes por ano, com intervalo mínimo de 30 dias.",
+      "b) Três vezes por ano, com intervalo mínimo de 60 dias entre elas.",
+      "c) Quatro vezes por ano, com intervalo mínimo de 90 dias.",
+      "d) Uma vez por ano, sem intervalo mínimo estabelecido."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-36-PM, art. 55, § 2º, em Assuntos Organizacionais.pdf. A dispensa limita-se a três vezes por ano, com intervalo mínimo de 60 dias. A, C e D indicam limites ou intervalos diferentes. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 243,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-36-PM — licença para tratamento de saúde em pessoa da família",
+    "text": "QUESTÃO 243 — O policial militar requer licença para tratamento de saúde em pessoa da família. Segundo as I-36-PM, qual providência deve adotar quanto ao exercício e à instrução do pedido?",
+    "options": [
+      "a) Afastar-se imediatamente, aguardando em casa a decisão administrativa.",
+      "b) Encaminhar o pedido apenas ao comandante de pelotão, sem relatório médico.",
+      "c) Requerer diretamente ao Diretor de Pessoal, justificar a necessidade e instruir o pedido com relatório do Oficial Médico da OPM, aguardando a concessão em exercício.",
+      "d) Apresentar o pedido à Junta de Saúde, que substitui integralmente o Diretor de Pessoal na concessão."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: I-36-PM, art. 50, em Assuntos Organizacionais.pdf. O pedido é dirigido ao Diretor de Pessoal, instruído com relatório do Oficial Médico da OPM, e o interessado aguarda a concessão em exercício. A, B e D contrariam o procedimento expresso. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 244,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-36-PM — inspeção médica em licença familiar",
+    "text": "QUESTÃO 244 — No pedido de licença para tratamento de saúde em pessoa da família, o deferimento depende de qual providência prevista nas I-36-PM?",
+    "options": [
+      "a) Declaração simples do policial militar, sem avaliação médica.",
+      "b) Parecer exclusivo do comandante imediato, dispensada inspeção da pessoa da família.",
+      "c) Aprovação automática após o protocolo do requerimento.",
+      "d) Resultado da inspeção médica obrigatória da pessoa da família a quem se atribui a doença, realizada por Junta de Saúde no prazo normativo."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: I-36-PM, art. 50, §§ 1º e 2º, em Assuntos Organizacionais.pdf. O deferimento depende da inspeção médica obrigatória da pessoa da família, realizada por Junta de Saúde em até 5 dias do protocolo na DP. A, B e C dispensam requisito expresso. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 245,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-36-PM — afastamento para missão ou estudo no país",
+    "text": "QUESTÃO 245 — Um policial militar pretende afastar-se para participar, no Brasil, de congresso técnico. De acordo com as I-36-PM, qual autoridade é competente para autorizar, cessar ou prorrogar esse afastamento?",
+    "options": [
+      "a) Comandante da Companhia, em caráter definitivo.",
+      "b) Secretário da Segurança Pública, nos termos da legislação em vigor.",
+      "c) Secretário de Governo, exclusivamente para eventos realizados no país.",
+      "d) Diretor de Pessoal, sem participação de autoridade superior."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-36-PM, art. 57, em Assuntos Organizacionais.pdf. Compete ao Secretário da Segurança Pública autorizar, cessar ou prorrogar afastamentos dentro do país para missão/estudo de interesse do serviço ou participação nos eventos previstos. C corresponde ao afastamento para fora do país; A e D atribuem competência diversa. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 246,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-36-PM — prazo de antecedência para processo de afastamento",
+    "text": "QUESTÃO 246 — Para instruir afastamento de policial militar para evento de interesse do serviço, qual antecedência mínima as I-36-PM exigem para entrada do processo na Divisão de Recursos Humanos da DP?",
+    "options": [
+      "a) 10 dias para viagens ao exterior e 5 dias para viagens dentro do país.",
+      "b) 20 dias para viagens ao exterior e 10 dias para viagens dentro do país.",
+      "c) 40 dias antes do embarque para viagens ao exterior e 20 dias para afastamentos dentro do país.",
+      "d) 60 dias para qualquer viagem, independentemente do destino."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: I-36-PM, art. 61, em Assuntos Organizacionais.pdf. O processo deve dar entrada com antecedência mínima de 40 dias para viagens ao exterior e 20 dias para afastamentos dentro do país. A, B e D apresentam prazos diferentes. Dificuldade editorial: MEDIANA."
+  },
+  {
+    "id": 247,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-36-PM — comprovação após afastamento para evento",
+    "text": "QUESTÃO 247 — Encerrado afastamento autorizado para congresso ou estudo de interesse do serviço, o policial militar deve comprovar sua participação. Qual prazo e conjunto documental estão previstos nas I-36-PM?",
+    "options": [
+      "a) Em até 30 dias corridos do término, apresentando atestado ou documento análogo, certificado de frequência se houver e relatório dos trabalhos e estudos realizados.",
+      "b) Em até 5 dias úteis, mediante simples declaração do comandante da OPM.",
+      "c) Em até 60 dias, com apresentação obrigatória apenas de comprovante de passagem.",
+      "d) Em até 90 dias, mediante relatório verbal ao superior imediato."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fonte: I-36-PM, art. 62, § 1º, em Assuntos Organizacionais.pdf. A norma estabelece 30 dias corridos após o término e indica os documentos de comprovação. B, C e D alteram prazo e documentação. A inobservância pode gerar desconto e consideração dos dias como faltas injustificadas, conforme § 2º. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 248,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-36-PM — afastamento para competição desportiva",
+    "text": "QUESTÃO 248 — Um policial militar, devidamente autorizado, solicita afastamento para participar de competição desportiva. Segundo as I-36-PM, em qual hipótese o afastamento ocorre sem prejuízo dos vencimentos?",
+    "options": [
+      "a) Em qualquer competição promovida por entidade privada, independentemente de representação institucional.",
+      "b) Somente quando a competição ocorrer no exterior.",
+      "c) Em todos os casos em que o militar obtiver autorização prévia.",
+      "d) Quando representar o Brasil ou o Estado em competições desportivas oficiais."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fonte: I-36-PM, art. 63, § 2º, em Assuntos Organizacionais.pdf. O afastamento ocorre sem prejuízo dos vencimentos quando o policial representa o Brasil ou o Estado em competição oficial; nos demais casos previstos, ocorre com prejuízo. A, B e C ampliam a hipótese de remuneração preservada. Dificuldade editorial: DIFÍCIL."
+  },
+  {
+    "id": 249,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-36-PM — licença sem vencimentos após tempo de exercício",
+    "text": "QUESTÃO 249 — Um policial militar pretende solicitar licença sem vencimentos para tratar de interesse particular. Qual requisito temporal consta das I-36-PM?",
+    "options": [
+      "a) Um ano de efetivo exercício.",
+      "b) Cinco anos de efetivo exercício.",
+      "c) Dez anos de efetivo exercício.",
+      "d) Não há requisito temporal."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fonte: I-36-PM, art. 67, em Assuntos Organizacionais.pdf. O policial militar, após cinco anos de efetivo exercício, poderá obter a licença sem vencimentos ou remuneração nas hipóteses do artigo, observados os demais requisitos. A, C e D não correspondem ao requisito expresso. Dificuldade editorial: FÁCIL."
+  },
+  {
+    "id": 250,
+    "subject": "ORGANIZACIONAL",
+    "topic": "I-36-PM — limite máximo de licença sem vencimentos",
+    "text": "QUESTÃO 250 — Concedida a licença sem vencimentos prevista no art. 67 das I-36-PM, qual é o prazo máximo de agregação previsto no parágrafo único?",
+    "options": [
+      "a) Seis meses.",
+      "b) Um ano.",
+      "c) Dois anos.",
+      "d) Cinco anos."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fonte: I-36-PM, art. 67, parágrafo único, em Assuntos Organizacionais.pdf. A agregação correspondente à licença pode ocorrer pelo prazo máximo de dois anos. A, B e D indicam períodos diferentes do limite expresso. Dificuldade editorial: MEDIANA."
+  }
           
 ];
 
