@@ -34,15 +34,16 @@ const BANCO_GERAL_QUESTOES = [
         "id": 2,
         "subject": "OPERACIONAL",
         "topic": "NORSOP - estrutura básica do Sistema Operacional",
-        "text": "QUESTÃO 2 — De acordo com a Diretriz nº PM3-001/02/20 (NORSOP), como está fixada a estrutura básica do Sistema Operacional de Policiamento PM? Assinale a alternativa correta.",
-        "options": [
-          "a) Nos princípios básicos e nas diretrizes básicas, sem previsão de matrizes operacionais ou níveis de resposta.",
-          "b) Nas Matrizes Operacionais I, II e III e nos Níveis de Resposta de 1 a 4.",
-          "c) Nos níveis estratégico, tático e operacional, exclusivamente, conforme a estrutura do Sistema de Comando e Controle.",
-          "d) Nos Programas de Policiamento Complementares, que constituem a estrutura básica exclusiva do sistema."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, item 3.6. A estrutura básica é organizada em Matrizes Operacionais I, II e III e Níveis de Resposta de 1 a 4. A alternativa A confunde estrutura com princípios e diretrizes; C desloca a classificação para níveis decisórios do Sistema de C2; D restringe indevidamente a estrutura aos programas complementares."
+        "text": "QUESTÃO 2 — A NORSOP distingue a estrutura básica do Sistema Operacional de outras classificações institucionais. Assinale a alternativa que reproduz integralmente essa estrutura.",
+    "options": [
+      "a) Matrizes Operacionais I, II e III, combinadas com Níveis de Resposta de 1 a 3.",
+      "b) Matrizes Operacionais I, II e III, combinadas com Níveis de Resposta de 1 a 4.",
+      "c) Níveis estratégico, tático e operacional, combinados com os Níveis de Resposta de 1 a 4.",
+      "d) Princípios básicos e diretrizes básicas, complementados exclusivamente pelos Programas de Policiamento Complementares."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, item 3.6, em Assuntos Operacionais.pdf. A estrutura básica é formada pelas Matrizes Operacionais I, II e III e pelos Níveis de Resposta de 1 a 4. A altera a quantidade de níveis de resposta; C combina níveis de planejamento com níveis de resposta; D substitui a estrutura por outras categorias da NORSOP."
+
       },
       {
         "id": 3,
@@ -76,15 +77,16 @@ const BANCO_GERAL_QUESTOES = [
         "id": 5,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - Posto de Comando",
-        "text": "QUESTÃO 5 — Em um incidente policial estático, o Comandante do Incidente inicia a organização das funções de comando no local. Ainda não há uma estrutura física específica montada, mas um dos veículos presentes pode ser utilizado inicialmente para essa finalidade. Considerando a Diretriz nº PM3-003/02/23 (SCIPM), assinale a alternativa correta:",
-        "options": [
-          "a) O Posto de Comando pode ser estabelecido inicialmente em um dos veículos presentes, devendo sua localização geográfica ser informada ao COPOM/COBOM.",
-          "b) O Posto de Comando somente pode ser estabelecido após a chegada de todas as agências envolvidas e a montagem de uma estrutura física permanente.",
-          "c) O Posto de Comando corresponde à área em que os recursos recém-chegados aguardam atribuição de missões, sem concentrar as funções de comando.",
-          "d) A localização do Posto de Comando deve ser comunicada apenas após o encerramento do incidente, para evitar alterações durante o atendimento."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), itens 6.1.9 e 6.5.2.4.2, conforme o material disponibilizado. Para incidentes policiais estáticos, o Posto de Comando deve ser estabelecido e pode inicialmente corresponder a um dos veículos presentes; sua localização geográfica deve ser informada ao COPOM/COBOM. B impõe condição não prevista; C confunde o Posto de Comando com a área de espera; D contraria a orientação de informar a localização durante a operação."
+        "text": "QUESTÃO 5 — Em incidente policial estático, o Comandante do Incidente precisa organizar o Posto de Comando antes de haver uma instalação física específica. Considerando o SCIPM, assinale a alternativa correta quanto à instalação inicial e à comunicação de sua localização.",
+    "options": [
+      "a) O Posto de Comando pode ser estabelecido inicialmente em um dos veículos presentes, e sua localização geográfica deve ser informada ao COPOM/COBOM.",
+      "b) O Posto de Comando pode ser estabelecido em um veículo, mas a localização só deve ser informada ao COPOM/COBOM após a estabilização do incidente.",
+      "c) O veículo inicialmente utilizado deve funcionar como Área de Espera, e a localização do Posto de Comando será informada apenas ao Oficial de Ligação.",
+      "d) O Posto de Comando depende da montagem de estrutura física própria, embora sua localização deva ser informada ao COPOM/COBOM desde o início."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), itens 6.1.9 e 6.5.2.4.2, em Assuntos Operacionais.pdf. Em incidente policial estático, o Posto de Comando pode inicialmente corresponder a um dos veículos presentes, e sua localização geográfica deve ser informada ao COPOM/COBOM. B posterga a comunicação; C confunde o Posto de Comando com a Área de Espera e altera o destinatário; D acrescenta requisito de estrutura física própria."
+
       },
       {
         "id": 6,
@@ -118,16 +120,16 @@ const BANCO_GERAL_QUESTOES = [
         "id": 8,
         "subject": "OPERACIONAL",
         "topic": "Sistema de Comando e Controle - Sala de Operações",
-        "text": "QUESTÃO 8 — No âmbito do Sistema de Comando e Controle, uma OPM de nível Batalhão/Companhia precisa identificar o componente responsável pelos serviços essenciais de C2 no nível operacional. Conforme a Diretriz nº PM3-001/02/23, assinale a alternativa correta:",
-        "options": [
-          "a) O Centro de Comando e Controle de Grande Comando, cuja atuação se restringe ao nível de Companhia.",
-          "b) A Sala de Operações, responsável pelos serviços essenciais de C2 no nível operacional da OPM.",
-          "c) O COPOM São Paulo, que assume as funções de C2 exclusivamente nas operações locais de uma única Companhia.",
-          "d) A Seção de Inteligência, que substitui a Sala de Operações na transmissão de informações e no assessoramento ao comando."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, item 6.5.4.2.1, conforme Assuntos Operacionais.pdf. A Sala de Operações responde pelos serviços essenciais de C2 no nível operacional (Batalhão/Companhia). A descreve incorretamente o nível do CC2; C atribui ao COPOM São Paulo uma função local exclusiva que o material não prevê; D transfere à Seção de Inteligência as funções indicadas para a Sala de Operações."
-      },
+        "text": "QUESTÃO 8 — Uma OPM de nível Batalhão/Companhia está revendo a distribuição das funções de comando e controle. À luz da Diretriz nº PM3-001/02/23, assinale a alternativa que delimita corretamente a atuação da Sala de Operações.",
+    "options": [
+      "a) É a estrutura de C2 de Grande Comando, responsável por consolidar a coordenação estratégica das OPM subordinadas.",
+      "b) Responde pelos serviços essenciais de comando e controle no nível operacional da OPM, correspondente a Batalhão/Companhia.",
+      "c) É órgão de inteligência que substitui a Sala de Operações quando a ocorrência exige análise de dados e transmissão de informações.",
+      "d) É uma estrutura de atendimento exclusivo do COPOM São Paulo, destinada a ocorrências que envolvam mais de uma Companhia."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, item 6.5.4.2.1, em Assuntos Operacionais.pdf. A Sala de Operações responde pelos serviços essenciais de C2 no nível operacional da OPM (Batalhão/Companhia). A desloca a atuação para Grande Comando; C transfere atribuições para a inteligência; D restringe indevidamente a estrutura ao COPOM São Paulo e a ocorrências multicompanhi​​as."
+
       {
         "id": 9,
         "subject": "OPERACIONAL",
@@ -188,15 +190,16 @@ const BANCO_GERAL_QUESTOES = [
         "id": 13,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento com Drones",
-        "text": "QUESTÃO 13 — Uma OPM pretende empregar aeronave não tripulada para apoiar uma ação de policiamento, com transmissão de imagens para melhorar a compreensão do cenário pelos responsáveis pela operação. Considerando a finalidade estabelecida na Diretriz nº PM3-005/02/24, assinale a alternativa correta.",
-        "options": [
-          "a) O emprego operacional de drones busca integrar recursos tecnológicos ao Sistema de Comando e Controle, ampliando a consciência situacional e contribuindo para mitigar o risco operacional.",
-          "b) O emprego de drones substitui a necessidade de coordenação e controle das Unidades de Serviço no terreno.",
-          "c) A utilização operacional de drones destina-se exclusivamente à produção de provas criminais após o encerramento da ocorrência.",
-          "d) O emprego de drones dispensa a observância das normas e dos parâmetros aplicáveis ao acesso ao espaço aéreo."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), itens 2 e 3.1–3.2, conforme Assuntos Operacionais.pdf. O programa busca integrar a tecnologia às estruturas institucionais e ao C2, elevando a consciência situacional e mitigando o risco operacional. B e C restringem ou substituem finalidades sem fundamento; D contraria a própria referência da diretriz à regulamentação do espaço aéreo."
+        "text": "QUESTÃO 13 — No planejamento de emprego de UAS, a equipe propõe transmitir imagens ao sistema de comando e controle para apoiar a avaliação do cenário. Considerando a finalidade do Programa de Policiamento com Drones, assinale a alternativa correta.",
+    "options": [
+      "a) Integrar recursos tecnológicos ao Sistema de Comando e Controle, ampliando a consciência situacional e contribuindo para mitigar o risco operacional.",
+      "b) Integrar os recursos aéreos ao C2 para transferir ao RPIC a decisão tática sobre o emprego das Unidades de Serviço em solo.",
+      "c) Priorizar a produção de registros probatórios, deixando a consciência situacional e a coordenação operacional como finalidades secundárias não previstas.",
+      "d) Ampliar a consciência situacional por meio do UAS, dispensando a observância dos parâmetros aplicáveis ao acesso ao espaço aéreo."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-005/02/24, itens 2 e 3.1–3.2, em Assuntos Operacionais.pdf. O programa integra a tecnologia às estruturas institucionais e ao C2, ampliando a consciência situacional e contribuindo para mitigar riscos. B transfere indevidamente ao RPIC a decisão tática geral; C restringe a finalidade; D contraria a observância dos parâmetros regulatórios do espaço aéreo."
+
       },
 {
   "id": 14,
@@ -231,44 +234,46 @@ const BANCO_GERAL_QUESTOES = [
         "id": 16,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento Escolar - adolescente apreendido em flagrante",
-        "text": "QUESTÃO 16 — Durante o patrulhamento no perímetro escolar, uma equipe presencia adolescente praticando ato infracional. Considerando as disposições do Estatuto da Criança e do Adolescente reproduzidas na Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), assinale a alternativa correta.",
-        "options": [
-          "a) O adolescente deve ser entregue à direção da escola, que decidirá se o encaminha à autoridade policial.",
-          "b) O adolescente apreendido em flagrante de ato infracional deve ser encaminhado desde logo à autoridade policial competente.",
-          "c) O adolescente deve ser encaminhado diretamente à unidade de internação, independentemente de apresentação à autoridade policial.",
-          "d) A equipe deve limitar-se a registrar o fato no relatório de serviço e liberar o adolescente, ainda que o flagrante esteja caracterizado."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-004/02/20, item 2.14, que reproduz o caput do art. 172 do ECA, conforme Assuntos Operacionais.pdf. O dispositivo determina o encaminhamento imediato à autoridade policial competente. As demais alternativas substituem ou suprimem essa etapa."
+        "text": "QUESTÃO 16 — Durante o policiamento escolar, a equipe presencia adolescente praticando ato infracional e efetua a apreensão em flagrante. Conforme a regra reproduzida na Diretriz nº PM3-004/02/20, qual providência inicial é exigida?",
+    "options": [
+      "a) Apresentar o adolescente à autoridade policial competente desde logo, sem substituir essa etapa por encaminhamento à direção escolar.",
+      "b) Comunicar inicialmente a direção escolar e aguardar que ela delibere sobre a apresentação à autoridade policial.",
+      "c) Encaminhar o adolescente diretamente à unidade de internação, cabendo à autoridade policial apenas receber a comunicação posterior.",
+      "d) Conduzir o adolescente ao responsável legal como providência inicial, ainda que a apreensão tenha ocorrido em flagrante."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-004/02/20, item 2.14, que reproduz o caput do art. 172 do ECA, em Assuntos Operacionais.pdf. O adolescente apreendido em flagrante de ato infracional deve ser encaminhado desde logo à autoridade policial competente. B, C e D substituem essa apresentação inicial por providências não previstas no dispositivo citado."
+
       },
 {
   "id": 17,
   "subject": "OPERACIONAL",
   "topic": "NORSOP - segurança viária durante o policiamento",
-  "text": "QUESTÃO 17 — Durante o patrulhamento, uma equipe identifica um obstáculo na via que prejudica a livre circulação e oferece risco aos usuários. Considerando as orientações de segurança viária previstas na NORSOP, assinale a alternativa correta quanto às providências a serem adotadas.",
-  "options": [
-    "a) Sinalizar imediatamente o local com os meios disponíveis e, em seguida, acionar pelo COPOM/CAD o órgão competente para os reparos emergenciais.",
-    "b) Acionar primeiro o órgão responsável pelos reparos e aguardar sua chegada antes de sinalizar o local.",
-    "c) Registrar a situação em relatório e manter o patrulhamento, deixando a sinalização a cargo do órgão responsável pela via.",
-    "d) Comunicar o obstáculo ao COPOM/CAD e aguardar orientação, sem utilizar os meios de sinalização disponíveis no local."
-  ],
-  "answer": 0,
-  "explanation": "Gabarito: A. Fundamentação: NORSOP, Anexo pertinente às orientações gerais de atuação do policial militar, item 4.14.2, conforme Assuntos Operacionais.pdf. Diante de obstáculo capaz de causar perigo, a orientação é providenciar imediatamente a sinalização com os meios disponíveis e, em seguida, acionar o órgão competente por meio do COPOM/CAD para os reparos emergenciais. B altera a sequência; C e D omitem a sinalização imediata exigida."
+  "text": "QUESTÃO 17 — Durante o patrulhamento, a equipe identifica obstáculo que compromete a circulação e cria risco aos usuários da via. Segundo a NORSOP, qual sequência de providências corresponde à orientação normativa?",
+    "options": [
+      "a) Sinalizar imediatamente o local com os meios disponíveis e, em seguida, acionar pelo COPOM/CAD o órgão competente para os reparos emergenciais.",
+      "b) Acionar pelo COPOM/CAD o órgão responsável e, após a confirmação do atendimento, providenciar a sinalização com os meios disponíveis.",
+      "c) Sinalizar o local e comunicar o fato ao escalão superior, deixando o acionamento do órgão responsável para a próxima passagem de serviço.",
+      "d) Registrar o obstáculo e solicitar ao órgão responsável que providencie tanto a sinalização inicial quanto os reparos, sem intervenção da equipe."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: NORSOP, item 4.14.2 do anexo pertinente às orientações gerais de atuação do policial militar, em Assuntos Operacionais.pdf. A regra exige sinalização imediata com os meios disponíveis e, em seguida, acionamento do órgão competente via COPOM/CAD. B inverte a sequência; C posterga o acionamento; D transfere integralmente a sinalização inicial ao órgão responsável."
 },
 
       {
         "id": 18,
         "subject": "OPERACIONAL",
         "topic": "Programa de Policiamento Rural - conceitos",
-        "text": "QUESTÃO 18 — Ao organizar o emprego de uma Patrulha Rural, o comandante precisa identificar a finalidade do Programa de Policiamento Rural e o conceito de Patrulha Rural previstos na Diretriz nº PM3-007/02/20. Assinale a alternativa correta.",
-        "options": [
-          "a) O Programa de Policiamento Rural organiza o policiamento ostensivo geral voltado ao ambiente rural, e a Patrulha Rural é uma Unidade de Serviço composta por policiais militares designados e treinados para esse programa.",
-          "b) O Programa de Policiamento Rural destina-se exclusivamente à fiscalização ambiental, e a Patrulha Rural é composta por agentes civis municipais.",
-          "c) O Programa de Policiamento Rural substitui as atividades das OPM territoriais no ambiente rural, e a Patrulha Rural atua somente mediante requisição judicial.",
-          "d) O Programa de Policiamento Rural restringe-se à investigação posterior de crimes, e a Patrulha Rural não executa policiamento ostensivo."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.1.1 e 6.1.3, conforme Assuntos Operacionais.pdf. A diretriz define o programa como organização do policiamento ostensivo geral no ambiente rural e a Patrulha Rural como Unidade de Serviço composta por policiais designados e treinados para o programa."
+        "text": "QUESTÃO 18 — Na organização do policiamento em área rural, é necessário distinguir a finalidade do programa da composição da patrulha que o executa. Conforme a Diretriz nº PM3-007/02/20, assinale a alternativa correta.",
+    "options": [
+      "a) O programa organiza o policiamento ostensivo geral no ambiente rural; a Patrulha Rural é uma Unidade de Serviço composta por policiais militares designados e treinados para o programa.",
+      "b) O programa organiza o policiamento ostensivo geral no ambiente rural; a Patrulha Rural é formada por policiais designados, mas o treinamento específico é facultativo.",
+      "c) O programa organiza o policiamento ostensivo geral no ambiente rural; a Patrulha Rural é uma estrutura territorial equivalente a uma Subárea.",
+      "d) O programa organiza o policiamento ostensivo geral no ambiente rural; a Patrulha Rural atua exclusivamente em apoio à fiscalização ambiental, sem executar policiamento ostensivo."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.1.1 e 6.1.3, em Assuntos Operacionais.pdf. A diretriz define o programa como organização do policiamento ostensivo geral no ambiente rural e a Patrulha Rural como US formada por policiais designados e treinados para o programa. B elimina o treinamento específico; C confunde a patrulha com divisão territorial; D restringe a atuação à fiscalização ambiental."
+
       },
       {
         "id": 19,
@@ -288,29 +293,29 @@ const BANCO_GERAL_QUESTOES = [
   "id": 20,
   "subject": "OPERACIONAL",
   "topic": "SCIPM - Sala de Gerenciamento de Incidentes",
-  "text": "QUESTÃO 20 — Durante uma operação policial-militar, o Comandante responsável pelas ações em campo verifica a necessidade de integrar a atuação da Polícia Militar com órgãos externos. Segundo a Diretriz nº PM3-003/02/23 (SCIPM), qual alternativa descreve corretamente a instituição da Sala de Gerenciamento de Incidentes?",
-  "options": [
-    "a) O próprio Comandante responsável pelas operações em campo deve instituí-la obrigatoriamente, mesmo sem necessidade de integração com órgãos externos.",
-    "b) A autoridade policial-militar superior ao Comandante responsável pelas operações em campo poderá instituí-la, por solicitação ou de ofício, sempre que houver necessidade de integração com órgãos externos à Polícia Militar.",
-    "c) A Sala somente pode ser instituída após o encerramento das ações em campo, para consolidar os relatórios das agências envolvidas.",
-    "d) A Sala deve ser instituída exclusivamente quando houver participação de duas ou mais OPM da mesma Matriz Operacional, independentemente da integração com órgãos externos."
-  ],
-  "answer": 1,
-  "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.5.4.4.1, conforme Assuntos Operacionais.pdf. A Sala de Gerenciamento de Incidentes será instituída por autoridade policial-militar superior ao Comandante responsável pelas operações em campo, por solicitação ou de ofício, sempre que houver necessidade de integração com órgãos externos à Polícia Militar. A atribui a competência à autoridade errada e torna a instituição obrigatória em qualquer caso; C desloca a instituição para depois da operação; D cria requisito não previsto no dispositivo."
+  "text": "QUESTÃO 20 — Em incidente que exige integração da PM com órgãos externos, avalia-se a instituição de Sala de Gerenciamento de Incidentes. Segundo o SCIPM, qual alternativa descreve corretamente a autoridade competente e a hipótese de instituição?",
+    "options": [
+      "a) O Comandante responsável pelas ações em campo a institui por decisão própria, sempre que houver participação de mais de uma OPM.",
+      "b) A autoridade policial-militar superior ao Comandante responsável pelas ações em campo pode instituí-la, por solicitação ou de ofício, quando houver necessidade de integração com órgãos externos à PM.",
+      "c) A autoridade superior somente pode instituí-la mediante solicitação formal do Comandante em campo, ainda que a necessidade de integração externa seja evidente.",
+      "d) A autoridade superior pode instituí-la por solicitação ou de ofício, desde que a integração necessária se limite a órgãos internos da PM."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.5.4.4.1, em Assuntos Operacionais.pdf. A instituição compete à autoridade policial-militar superior ao Comandante em campo, por solicitação ou de ofício, quando necessária a integração com órgãos externos à PM. A altera a autoridade e o critério; C elimina a possibilidade de iniciativa de ofício; D restringe a hipótese a órgãos internos."
 },
 {
         "id": 21,
         "subject": "OPERACIONAL",
         "topic": "Combate ao Crime Organizado - providências de conhecimento",
-        "text": "QUESTÃO 21 — Durante patrulhamento ostensivo, uma Unidade de Serviço identifica circunstâncias que podem sugerir a prática de ações típicas de crime organizado. Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa correta quanto às providências previstas para a equipe e para os policiais militares em funções de comando e supervisão.",
-        "options": [
-          "a) A US deve aguardar a confirmação da autoria antes de comunicar o fato ao escalão superior, cabendo à Agência de Área decidir se os dados serão preservados.",
-          "b) A US deve cientificar imediatamente o escalão superior; os oficiais e graduados em funções de comando e supervisão devem cientificar a Agência de Área e providenciar o envio dos dados e informações obtidos para monitoramento.",
-          "c) A US deve encaminhar diretamente os dados ao CComSoc, que passa a ser responsável pela análise de inteligência e pelo acionamento das unidades operacionais.",
-          "d) A comunicação é exigível apenas quando a ocorrência resultar em prisão, apreensão de armas ou identificação formal de organização criminosa."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/24, itens 6.4.3 e 6.4.4, em Assuntos Operacionais.pdf, p. 225-226. A US que identificar circunstâncias indicativas deve cientificar imediatamente o escalão superior; oficiais e graduados em comando/supervisão devem cientificar a Agência de Área e encaminhar os dados para monitoramento. A acrescenta requisito de confirmação; C transfere a atribuição para órgão diverso; D cria condição que a diretriz não prevê. Trecho: “as US que identificarem as circunstâncias elencadas [...] deverão cientificar, de imediato, o escalão superior”; e “os oficiais e graduados na função de comando e supervisão deverão cientificar a Agência de Área [...] e providenciando o envio dos dados e informações obtidas”."
+        "text": "QUESTÃO 21 — Uma Unidade de Serviço identifica circunstâncias indicativas de possível atuação típica de crime organizado. Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa que distribui corretamente as providências entre a US e os policiais militares em funções de comando ou supervisão.",
+    "options": [
+      "a) A US cientifica imediatamente o escalão superior; os oficiais e graduados em comando ou supervisão cientificam a Agência de Área e providenciam o envio dos dados obtidos para monitoramento.",
+      "b) A US comunica diretamente a Agência de Área, enquanto os oficiais e graduados em comando ou supervisão aguardam confirmação formal de crime organizado antes de encaminhar os dados.",
+      "c) A US preserva os dados e aguarda orientação; somente a Agência de Área pode iniciar a comunicação ao escalão superior após identificar autoria definida.",
+      "d) A US cientifica imediatamente o escalão superior, mas o envio dos dados para monitoramento compete exclusivamente ao CFP."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/24, itens 6.4.3 e 6.4.4, em Assuntos Operacionais.pdf, pp. 225–226. A US deve cientificar imediatamente o escalão superior; oficiais e graduados em comando ou supervisão devem cientificar a Agência de Área e encaminhar os dados para monitoramento. B troca os destinatários e cria condição de confirmação; C posterga a comunicação; D transfere o envio dos dados ao CFP."
       },
       {
         "id": 22,
@@ -330,15 +335,15 @@ const BANCO_GERAL_QUESTOES = [
         "id": 23,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - transferência do comando",
-        "text": "QUESTÃO 23 — Durante um incidente crítico, ocorre a transferência da função de Comandante do Incidente. Para que a continuidade da resposta seja mantida com segurança e eficácia, qual procedimento corresponde ao elemento essencial do SCIPM denominado Designação e Transferência do Comando por Processo?",
-        "options": [
-          "a) Realizar briefing de passagem e transmitir as informações essenciais à continuidade segura e eficaz das operações.",
-          "b) Suspender todas as ações em curso até que o novo comandante refaça integralmente o planejamento desde o início.",
-          "c) Comunicar a mudança apenas aos órgãos externos, mantendo o Posto de Comando sem atualização até o fim do incidente.",
-          "d) Transferir o comando pela simples chegada de autoridade de maior posto, dispensando a transmissão das informações em andamento."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.5, em Assuntos Operacionais.pdf, p. 145. O processo inclui briefing e transmissão das informações essenciais para manter as operações com segurança e eficácia. B interrompe e reinicia o planejamento sem previsão; C omite a atualização necessária à continuidade; D contraria a exigência de transferência por processo. Trecho: “Designação e transferência do comando por processo: designação do Cmt Inc com base em critérios pré-estabelecidos, e transferência do comandamento por metodologia que inclui briefing e transmissão das informações essenciais à manutenção das operações com segurança e eficácia”."
+        "text": "QUESTÃO 23 — Durante incidente crítico, a função de Comandante do Incidente será transferida a outro integrante. Qual procedimento corresponde ao elemento do SCIPM denominado Designação e Transferência do Comando por Processo?",
+    "options": [
+      "a) Realizar briefing de transferência e transmitir as informações essenciais para a continuidade segura e eficaz das operações.",
+      "b) Realizar briefing de transferência, limitando a passagem ao quadro de recursos disponíveis e deixando as informações operacionais para o relatório posterior.",
+      "c) Registrar a mudança de comando e transmitir as informações essenciais somente por escrito, dispensando briefing entre os responsáveis.",
+      "d) Transmitir as informações essenciais ao COPOM/COBOM e considerar concluída a transferência independentemente da passagem entre os comandantes."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.5, em Assuntos Operacionais.pdf, p. 145. A transferência por processo inclui briefing e transmissão das informações essenciais à continuidade segura e eficaz. B restringe o conteúdo do briefing; C dispensa o briefing; D confunde a comunicação externa com a passagem de comando."
       },
       {
         "id": 24,
@@ -386,16 +391,15 @@ const BANCO_GERAL_QUESTOES = [
         "id": 27,
         "subject": "OPERACIONAL",
         "topic": "SCIPM - Unidade de Comando",
-        "text": "QUESTÃO 27 — Em uma operação com vários respondedores, o Comandante do Incidente verifica que um integrante recebe orientações conflitantes de dois supervisores. Considerando o elemento essencial Unidade de Comando do SCIPM, assinale a alternativa correta.",
-        "options": [
-          "a) O integrante pode receber ordens de diferentes supervisores, desde que pertençam à mesma agência.",
-          "b) A Unidade de Comando exige que todos os órgãos envolvidos se subordinem diretamente ao Comandante-Geral da PMESP.",
-          "c) A Unidade de Comando corresponde à linha ordenada de autoridade pela qual tramitam informações e ordens, sem necessidade de definir responsabilidades individuais.",
-          "d) A Unidade de Comando pressupõe cadeia de comando definida, clara divisão de responsabilidades, comunicação segura e doutrina operacional comum."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.14, em Assuntos Operacionais.pdf, p. 146. A alternativa C descreve a Cadeia de Comando (item 6.2.4.2), mas omite a definição específica de Unidade de Comando. A admite orientações conflitantes; B impõe subordinação direta não prevista. Trecho: “Unidade de Comando: cadeia de comando bem definida, com clara divisão de responsabilidades, dotada de comunicação segura e confiável e cuja atuação obedece à uma doutrina operacional comum a todos os envolvidos”."
-      },
+        "text": "QUESTÃO 27 — Em resposta integrada, um profissional recebe orientações incompatíveis de dois supervisores. Considerando as definições do SCIPM, assinale a alternativa que expressa o elemento essencial Unidade de Comando.",
+    "options": [
+      "a) A linha ordenada de autoridade pela qual tramitam informações e ordens dentro da estrutura de resposta.",
+      "b) A reunião de recursos de diferentes agências sob objetivos comuns, mantendo cada agência sua linha interna de autoridade.",
+      "c) A capacidade de um supervisor dirigir quantidade de subordinados compatível com a eficácia da supervisão.",
+      "d) A existência de cadeia de comando definida, divisão clara de responsabilidades, comunicação segura e doutrina operacional comum."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.14, em Assuntos Operacionais.pdf, p. 146. D corresponde à definição de Unidade de Comando. A descreve Cadeia de Comando; B aproxima-se do conceito de comando unificado; C descreve amplitude de controle. A distinção decorre das definições do próprio SCIPM."      },
       {
         "id": 28,
         "subject": "OPERACIONAL",
@@ -512,15 +516,16 @@ const BANCO_GERAL_QUESTOES = [
         "id": 36,
         "subject": "OPERACIONAL",
         "topic": "Combate ao Crime Organizado - Plano de Contingência",
-        "text": "QUESTÃO 36 — Um incidente crítico relacionado à atuação típica do crime organizado abrange a área de responsabilidade de mais de um Comando de Policiamento. De acordo com a Diretriz nº PM3-001/02/24, qual órgão deve elaborar e manter atualizado o Plano de Contingência para essa resposta integrada?",
-        "options": [
-          "a) Coordenação Operacional PM, indicando pontos sensíveis e responsáveis pelas medidas iniciais e de continuidade.",
-          "b) Cada Unidade de Serviço envolvida, isoladamente, sem consolidação em nível superior.",
-          "c) Exclusivamente o CComSoc, por se tratar de incidente com potencial de repercussão pública.",
-          "d) Somente o Comandante do Incidente após o encerramento da ocorrência, para registro histórico."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/24, item 6.5.5.4, em Assuntos Operacionais.pdf, p. 229. A Coord Op PM deve elaborar e manter atualizado o Plano de Contingência para incidentes críticos de crime organizado que envolvam mais de um Cmdo Pol. B fragmenta a responsabilidade; C confunde comunicação social com planejamento operacional; D posterga indevidamente o planejamento. Trecho: “elaborar, e manter atualizado, Plano de Contingência para resposta a incidentes críticos relacionados à atuação típica de crime organizado que envolva a área de atuação de mais de 1 Cmdo Pol”."
+        "text": "QUESTÃO 36 — Um incidente crítico relacionado ao crime organizado alcança a área de responsabilidade de mais de um Comando de Policiamento. Conforme a Diretriz nº PM3-001/02/24, qual órgão responde pela elaboração e atualização do Plano de Contingência correspondente?",
+    "options": [
+      "a) Coordenação Operacional PM, responsável por elaborar e manter atualizado o plano para esse tipo de incidente intercomandos.",
+      "b) Cada Unidade de Serviço envolvida, que elabora seu próprio plano sem consolidação em nível institucional.",
+      "c) O Comando de Policiamento de maior efetivo, que assume automaticamente a responsabilidade pelo plano dos demais comandos.",
+      "d) O CIPM, que elabora o plano devido a complexidade."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/24, item 6.5.5.4, em Assuntos Operacionais.pdf, p. 229. A Coordenação Operacional PM elabora e mantém atualizado o Plano de Contingência para incidentes críticos de crime organizado que envolvam mais de um Comando de Policiamento. B fragmenta a responsabilidade; C cria critério de competência por efetivo; D confunde planejamento operacional com inteligência policial."
+
       },
       {
         "id": 37,
@@ -601,7 +606,7 @@ const BANCO_GERAL_QUESTOES = [
           "a) Posto de Comando.",
           "b) Base de Apoio.",
           "c) Área de Concentração de Vítimas.",
-          "d) Conselho Comunitário de Segurança."
+          "d) Sala de Gerenciamento de Incidentes."
         ],
         "answer": 3,
         "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.9, em Assuntos Operacionais.pdf, p. 146. Trecho: “São exemplos: Posto de Comando, Base de Apoio, Área de Espera, Área de Concentração de Vítimas, etc.” O CONSEG é uma estrutura de participação comunitária prevista em outra diretriz, não um dos exemplos de instalação padronizada citados pelo SCIPM."
@@ -1030,7 +1035,6 @@ const BANCO_GERAL_QUESTOES = [
 
     {
         id: 73,
-        idSimulado: 73,
         subject: "OPERACIONAL",
         topic: "NORSOP — planejamento tático",
         text: "QUESTÃO 73 — Ao revisar um plano de emprego, um comandante precisa distinguir o planejamento tático do planejamento estratégico e do operacional. Segundo a NORSOP, qual descrição corresponde ao nível tático?",
@@ -1045,7 +1049,6 @@ const BANCO_GERAL_QUESTOES = [
     },
     {
         id: 74,
-        idSimulado: 74,
         subject: "OPERACIONAL",
         topic: "NORSOP — distinção entre princípios e diretrizes básicas",
         text: "QUESTÃO 74 — Na revisão doutrinária da NORSOP, um oficial precisa identificar um conjunto formado exclusivamente por PRINCÍPIOS básicos, sem incluir diretrizes básicas. Assinale a alternativa correta.",
@@ -1060,7 +1063,6 @@ const BANCO_GERAL_QUESTOES = [
     },
     {
         id: 75,
-        idSimulado: 75,
         subject: "OPERACIONAL",
         topic: "NORSOP — Nível de Resposta 3",
         text: "QUESTÃO 75 — Uma ocorrência excede a capacidade operativa das OPM territoriais subordinadas, mas a avaliação não indica necessidade de recursos especializados próprios da Matriz Operacional III. A resposta exige emprego adicional de efetivo e meios vinculados diretamente ao Comando de Policiamento. Qual nível de resposta corresponde à situação?",
@@ -1075,7 +1077,6 @@ const BANCO_GERAL_QUESTOES = [
     },
     {
         id: 76,
-        idSimulado: 76,
         subject: "JURIDICO",
         topic: "Lei nº 18.442/26 — requisito para o comando da PMESP",
         text: "QUESTÃO 76 — Considerando a regra apresentada no material autorizado sobre a Lei nº 18.442/26 para o comando da Polícia Militar, assinale a alternativa que reproduz corretamente o requisito referente ao oficial que exerce o Comando-Geral.",
@@ -1195,7 +1196,6 @@ const BANCO_GERAL_QUESTOES = [
     },
     {
         id: 84,
-        idSimulado: 84,
         subject: "JURIDICO",
         topic: "RDPM — distinção entre valores e deveres éticos",
         text: "QUESTÃO 84 — À luz dos arts. 7º e 8º do RDPM, examine as afirmações: I — cumprir os deveres de cidadão é dever ético; II — patriotismo é valor fundamental; III — preservar a natureza e o meio ambiente é dever ético; IV — civismo é dever ético, e não valor fundamental. Está correto o que se afirma em:",
@@ -1225,7 +1225,6 @@ const BANCO_GERAL_QUESTOES = [
 
     {
         id: 86,
-        idSimulado: 86,
         subject: "JURIDICO",
         topic: "RDPM — âmbito do Conselho de Justificação",
         text: "QUESTÃO 86 — Na definição do processo regular aplicável aos oficiais, qual alternativa corresponde ao alcance do Conselho de Justificação previsto no RDPM?",
@@ -1240,7 +1239,6 @@ const BANCO_GERAL_QUESTOES = [
     },
     {
         id: 87,
-        idSimulado: 87,
         subject: "JURIDICO",
         topic: "RDPM — escolha do processo regular conforme tempo de serviço",
         text: "QUESTÃO 87 — Uma praça possui exatamente dez anos de serviço policial-militar e há notícia de incapacidade moral para permanecer no serviço ativo. Considerando o art. 71 do RDPM, qual processo regular corresponde ao caso?",
