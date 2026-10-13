@@ -129,7 +129,7 @@ const BANCO_GERAL_QUESTOES = [
     ],
     "answer": 1,
     "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, item 6.5.4.2.1, em Assuntos Operacionais.pdf. A Sala de Operações responde pelos serviços essenciais de C2 no nível operacional da OPM (Batalhão/Companhia). A desloca a atuação para Grande Comando; C transfere atribuições para a inteligência; D restringe indevidamente a estrutura ao COPOM São Paulo e a ocorrências multicompanhi​​as."
-      }
+      },
       {
         "id": 9,
         "subject": "OPERACIONAL",
