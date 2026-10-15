@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full bg-slate-900 text-slate-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Aperfeiçoamento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Carrega apenas o banco do curso selecionado. Isso evita conflito entre declarações globais dos dois arquivos. -->
+    <script>
+        var cursoInicial = new URLSearchParams(window.location.search).get('curso');
+        if (cursoInicial !== 'ACP' && cursoInicial !== 'CAO') cursoInicial = null;
+        if (cursoInicial) {
+            document.write('<script src="' + (cursoInicial === 'CAO' ? 'questoes2.js' : 'questoes.js') + '"><\/script>');
+        }
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pm: {
+                            navy: '#0b1326',
+                            header: '#1b2a47',
+                            gold: '#d4af37',
+                            goldHover: '#b59226',
+                            accent: '#1e3a8a',
+                            lightBg: '#131e36',
+                            cardBg: '#1a2744',
+                            border: '#2a3c66'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
+
+    <!-- Página inicial da Plataforma de Aperfeiçoamento: cursos e materiais -->
+    <section id="courseLanding" class="fixed inset-0 z-[200] overflow-y-auto bg-pm-navy">
+        <div class="min-h-full flex flex-col">
+            <!-- Cabeçalho da página inicial -->
+            <header class="relative z-10 border-b border-pm-border bg-[#071020]/95 shadow-lg">
+                <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+                    <div class="flex items-center gap-3">
+                        <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-header text-pm-gold shadow-lg">
+                            <i class="fa-solid fa-graduation-cap text-xl"></i>
+                        </div>
+                        <div class="min-w-0">
+                            <h1 class="text-sm font-black tracking-tight text-white sm:text-base">Plataforma <span class="text-pm-gold">de Aperfeiçoamento</span></h1>
+                            <p class="text-[10px] tracking-wide text-slate-400 sm:text-xs">Polícia Militar do Estado de São Paulo</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Banner com imagem da bandeira paulista; manter bandeira-sp-banner.png na raiz do repositório -->
+            <section class="relative isolate overflow-hidden border-b border-pm-border/70">
+                <img src="bandeira-sp-banner-v2.png" alt="Bandeira do Estado de São Paulo em composição escura" class="absolute inset-0 h-full w-full object-cover object-center" fetchpriority="high">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#071020]/15 via-[#071020]/35 to-[#071020]/75"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-pm-navy/55 via-transparent to-[#071020]/10"></div>
+                <div class="relative mx-auto flex min-h-[210px] max-w-7xl items-center justify-end px-5 py-8 sm:min-h-[250px] sm:px-8 sm:py-10 lg:min-h-[275px] lg:px-10">
+                    <div class="w-full max-w-xl">
+                        <div class="mb-4 h-1 w-16 bg-pm-gold"></div>
+                        <p class="mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-pm-gold sm:text-xs">Ambiente de preparação</p>
+                        <h2 class="max-w-xl text-2xl font-black leading-tight text-white sm:text-3xl lg:text-4xl">Bem-vindo ao seu<br class="hidden sm:block"> ambiente de preparação</h2>
+                        <p class="mt-3 max-w-lg text-xs leading-relaxed text-slate-200 sm:text-sm">Escolha o curso e siga com seus estudos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <main class="mx-auto w-full max-w-7xl flex-1 px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
+                    <article class="flex flex-col rounded-2xl border border-pm-gold/60 bg-gradient-to-br from-[#172641] to-[#0e1a30] p-4 shadow-xl sm:p-5">
+                        <div class="mb-4 flex items-start justify-between gap-3">
+                            <div class="flex h-11 w-11 items-center justify-center rounded-xl border border-pm-gold/40 bg-pm-gold/10 text-lg text-pm-gold"><i class="fa-solid fa-book-open-reader"></i></div>
+                            <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wide text-emerald-300"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>Disponível</span>
+                        </div>
+                        <p class="text-[9px] font-bold uppercase tracking-[0.2em] text-pm-gold">Curso ativo</p>
+                        <h3 class="mt-1 text-2xl font-black text-white sm:text-3xl">ACP II/26</h3>
+                        <p class="mt-1 text-xs font-semibold text-slate-200">Aperfeiçoamento · Capitão PM</p>
+                        <p class="mt-3 flex-1 text-xs leading-relaxed text-slate-400">Simulados de 50 questões, Modo Prova, Modo Estudo, fundamentação, cronômetro e acompanhamento de desempenho.</p>
+                        <button type="button" onclick="entrarNoCurso('ACP')" class="mt-4 w-full rounded-lg bg-pm-gold px-4 py-3 text-xs font-extrabold text-pm-navy shadow-lg transition hover:bg-pm-goldHover focus:outline-none focus:ring-2 focus:ring-pm-gold"><i class="fa-solid fa-arrow-right-to-bracket mr-2"></i>Entrar no ACP</button>
+                    </article>
+
+                    <article class="flex flex-col rounded-2xl border border-pm-border bg-gradient-to-br from-[#17233d] to-[#101a30] p-4 shadow-lg sm:p-5">
+                        <div class="mb-4 flex items-start justify-between gap-3">
+                            <div class="flex h-11 w-11 items-center justify-center rounded-xl border border-pm-border bg-pm-navy text-lg text-slate-300"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <span class="inline-flex items-center gap-1.5 rounded-full border border-slate-600 bg-slate-800/80 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wide text-slate-300"><i class="fa-regular fa-clock"></i>Em preparação</span>
+                        </div>
+                        <p class="text-[9px] font-bold uppercase tracking-[0.2em] text-slate-400">Próxima área</p>
+                        <h3 class="mt-1 text-2xl font-black text-white sm:text-3xl">CAO</h3>
+                        <p class="mt-1 text-xs font-semibold text-slate-200">Curso de Aperfeiçoamento de Oficiais</p>
+                        <p class="mt-3 flex-1 text-xs leading-relaxed text-slate-400">Ambiente de simulados, Modo Prova, Modo Estudo, fundamentação, cronômetro e acompanhamento de desempenho.</p>
+                        <button type="button" onclick="entrarNoCurso('CAO')" class="mt-4 w-full rounded-lg border border-pm-border bg-pm-navy/80 px-4 py-3 text-xs font-bold text-slate-200 transition hover:border-pm-gold/60 hover:text-white"><i class="fa-solid fa-flask mr-2"></i>Entrar no CAO</button>
+                    </article>
+                </div>
+
+                <!-- Outros cursos: espaço reservado para futuras áreas de formação -->
+                <section class="mt-4 rounded-2xl border border-pm-border bg-[#101c32]/95 p-4 shadow-lg sm:mt-5 sm:p-5" aria-labelledby="outrosCursosTitulo">
+                    <div class="mb-4 flex items-center gap-3">
+                        <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl border border-pm-gold/40 bg-pm-gold/10 text-lg text-pm-gold">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div>
+                            <h3 id="outrosCursosTitulo" class="text-sm font-extrabold text-white sm:text-base">Outros cursos</h3>
+                            <p class="text-[10px] text-slate-400 sm:text-xs">Novas áreas de preparação profissional</p>
+                        </div>
+                        <span class="ml-auto inline-flex flex-shrink-0 items-center gap-1.5 rounded-full border border-pm-gold/40 bg-pm-gold/10 px-2.5 py-1.5 text-[9px] font-bold uppercase tracking-wide text-pm-gold">
+                            <i class="fa-regular fa-clock"></i>Em breve
+                        </span>
+                    </div>
+                    <div class="rounded-xl border border-dashed border-pm-border bg-[#14223b]/70 px-4 py-6 text-center sm:py-8">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-pm-gold/80"></i>
+                        <p class="mt-3 text-sm font-bold text-white">Novos cursos serão disponibilizados em breve.</p>
+                        <p class="mx-auto mt-1 max-w-xl text-xs leading-relaxed text-slate-400">Esta área será utilizada para apresentar futuras oportunidades de preparação e aperfeiçoamento.</p>
+                    </div>
+                </section>
+
+                <footer class="mt-4 flex flex-col items-center justify-between gap-2 rounded-xl border border-pm-border bg-pm-header/70 px-4 py-3 text-[10px] text-slate-400 sm:mt-5 sm:flex-row">
+                    <span><i class="fa-solid fa-shield-halved mr-2 text-pm-gold"></i>Seus estudos são a prioridade.</span>
+                    <span>Plataforma elaborada pelo 1º Ten PM Adriano</span>
+                </footer>
+            </main>
+        </div>
+    </section>
+
+    <!-- Modal de Instruções Iniciais (Pop-up) -->
+    <div id="modalInstrucoes" class="fixed inset-0 z-[100] flex items-start sm:items-center justify-center bg-black/70 backdrop-blur-sm hidden overflow-y-auto overscroll-contain p-3 sm:p-6">
+        <div class="bg-pm-cardBg border border-pm-gold/50 rounded-2xl max-w-2xl w-full max-h-[calc(100dvh-1.5rem)] sm:max-h-[calc(100dvh-3rem)] flex flex-col shadow-2xl text-slate-100 relative my-auto overflow-hidden">
+            <div class="flex items-center gap-3 border-b border-pm-border p-4 sm:px-6 sm:py-5 flex-shrink-0">
+                <div class="w-10 h-10 rounded-full bg-pm-gold/10 border border-pm-gold flex items-center justify-center text-pm-gold flex-shrink-0">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="min-w-0">
+                    <h3 class="text-base sm:text-lg font-black text-pm-gold uppercase tracking-wider">Bem-vindo ao Simulado ACP II/26</h3>
+                    <p class="text-xs text-slate-400">Instruções rápidas de utilização</p>
+                </div>
+            </div>
+
+            <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-slate-300 p-4 sm:px-6 sm:py-5 leading-relaxed overflow-y-auto overscroll-contain flex-1">
+                <section>
+                    <p class="font-bold text-white mb-1">🎯 1. OBJETIVO</p>
+                    <p>Treinar para a ACP II/26 — Capitão PM, identificar dificuldades e revisar os conteúdos estudados.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">📝 2. NOVO SIMULADO</p>
+                    <p>Ao iniciar um novo simulado, o cronômetro e as respostas são reiniciados, ocorrendo o sorteio de 50 questões divididas em 50% de Operacional, 30% de Jurídico-Administrativo e 20% de Organizacional. Caso queira atualizar as questões, evite atualizar o navegador e utilize o botão <strong class="text-white">Novo Simulado</strong></p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">⚙️ 3. MODOS DE UTILIZAÇÃO</p>
+                    <p><strong class="text-white">Modo Prova:</strong> permite alterar respostas até finalizar e não mostra acertos ou erros durante a execução. <strong class="text-white">Modo Estudo:</strong> corrige imediatamente e exibe a fundamentação. <strong class="text-white">Modo Personalizado:</strong> funciona exclusivamente como o Modo Estudo; escolha uma única área de conhecimento e a quantidade de questões. Não há cronômetro nessa modalidade. Para simular uma prova real, permaneça no Modo Prova.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">📚 4. RESPONDER E REVISAR</p>
+                    <p>No Modo Estudo, a primeira resposta fica bloqueada, mesmo se você voltar ao Modo Prova. Use <strong class="text-white">Marcar para Revisar</strong> para sinalizar dúvidas e o <strong class="text-white">Cartão de Respostas</strong> para acessar questões diretamente.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">🔎 5. FILTROS E ACOMPANHAMENTO</p>
+                    <p>Use os filtros para navegar por matéria. O painel de progresso fica disponível no Modo Estudo; no Modo Prova, o desempenho não é exibido durante a execução.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">🏁 6. FINALIZAR</p>
+                    <p>Ao finalizar, o cronômetro para e o resultado é apresentado. Questões não respondidas não pontuam. Confira o enunciado e as alternativas antes de responder.</p>
+                </section>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-pm-border p-4 sm:px-6 sm:py-4 flex-shrink-0 bg-pm-cardBg">
+                <label class="flex items-center gap-2 text-xs text-slate-400 cursor-pointer select-none">
+                    <input type="checkbox" id="checkNaoMostrar" class="rounded border-pm-border bg-pm-navy text-pm-gold focus:ring-pm-gold w-4 h-4">
+                    <span>Não exibir esta mensagem novamente</span>
+                </label>
+                <button onclick="fecharModalInstrucoes()" class="w-full sm:w-auto px-5 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl text-xs sm:text-sm transition shadow">Entendido, Iniciar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal de configuração da sessão personalizada -->
+    <div id="modalPersonalizado" class="fixed inset-0 z-[105] hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modalPersonalizadoTitulo">
+        <div class="w-full max-w-lg overflow-hidden rounded-2xl border border-pm-gold/50 bg-pm-cardBg text-slate-100 shadow-2xl">
+            <div class="flex items-center gap-3 border-b border-pm-border px-5 py-4">
+                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-pm-gold/50 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-sliders"></i></div>
+                <div><h3 id="modalPersonalizadoTitulo" class="text-base font-extrabold text-pm-gold">Sessão Personalizada</h3><p class="text-xs text-slate-400">Escolha uma área e a quantidade de questões</p></div>
+            </div>
+            <div class="space-y-4 px-5 py-5">
+                <p class="text-sm leading-relaxed text-slate-300">A sessão funciona exclusivamente no <strong class="text-white">Modo Estudo</strong>, com correção imediata e fundamentação. Não há cronômetro e as provas oficiais não serão alteradas.</p>
+                <div><label for="personalizadoArea" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-300">Área de estudo</label>
+                    <select id="personalizadoArea" class="w-full rounded-xl border border-pm-border bg-pm-navy px-3 py-3 text-sm text-white outline-none focus:border-pm-gold">
+                        <option value="OPERACIONAL">Assuntos Operacionais</option>
+                        <option value="JURIDICO">Assuntos Jurídico-Administrativos</option>
+                        <option value="ORGANIZACIONAL">Assuntos Organizacionais</option>
+                    </select>
+                </div>
+                <div><label for="personalizadoQuantidade" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-300">Quantidade de questões</label>
+                    <input id="personalizadoQuantidade" type="number" min="1" step="1" value="10" class="w-full rounded-xl border border-pm-border bg-pm-navy px-3 py-3 text-sm text-white outline-none focus:border-pm-gold">
+                    <p id="personalizadoDisponiveis" class="mt-1.5 text-xs text-slate-400">A quantidade será validada conforme o banco da área escolhida.</p>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse gap-2 border-t border-pm-border bg-pm-navy/40 px-5 py-4 sm:flex-row sm:justify-end">
+                <button type="button" onclick="fecharModalPersonalizado()" class="rounded-lg border border-pm-border px-4 py-2.5 text-sm font-semibold text-slate-300 transition hover:bg-pm-border hover:text-white">Cancelar</button>
+                <button type="button" onclick="iniciarSessaoPersonalizada()" class="rounded-lg bg-pm-gold px-4 py-2.5 text-sm font-bold text-pm-navy shadow transition hover:bg-pm-goldHover"><i class="fa-solid fa-play mr-1.5"></i> Iniciar sessão</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal personalizado de confirmação -->
+    <div id="modalConfirmacao" class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modalConfirmacaoTitulo" aria-describedby="modalConfirmacaoMensagem">
+        <div class="w-full max-w-md overflow-hidden rounded-2xl border border-pm-gold/50 bg-pm-cardBg text-slate-100 shadow-2xl">
+            <div class="flex items-center gap-3 border-b border-pm-border px-5 py-4">
+                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-pm-gold/50 bg-pm-gold/10 text-pm-gold">
+                    <i id="modalConfirmacaoIcone" class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <h3 id="modalConfirmacaoTitulo" class="text-base font-extrabold text-pm-gold">Confirmar ação</h3>
+            </div>
+            <div class="px-5 py-5">
+                <p id="modalConfirmacaoMensagem" class="text-sm leading-relaxed text-slate-300"></p>
+            </div>
+            <div class="flex justify-end gap-3 border-t border-pm-border bg-pm-navy/40 px-5 py-4">
+                <button id="modalConfirmacaoCancelar" type="button" class="rounded-lg border border-pm-border px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-pm-border hover:text-white">Cancelar</button>
+                <button id="modalConfirmacaoAceitar" type="button" class="rounded-lg bg-pm-gold px-4 py-2 text-sm font-bold text-pm-navy shadow transition hover:bg-pm-goldHover">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabeçalho Principal -->
+    <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4 text-center md:text-left">
+                <div class="w-14 h-14 rounded-full bg-pm-gold/10 border-2 border-pm-gold flex items-center justify-center flex-shrink-0 shadow-inner overflow-hidden">
+                    <img src="pmesp.png" alt="Brasão PMESP" class="w-full h-full object-cover scale-100">
+                </div>
+                <div>
+                    <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Plataforma de Aperfeiçoamento</h1>
+                    <h2 id="simuladoTitulo" class="text-base sm:text-lg font-extrabold text-white">ACP II/26 - Capitão PM</h2>
+                    <p id="subtituloCurso" class="text-xs text-slate-300">Ambiente de preparação para avaliações profissionais</p>
+                </div>
+            </div>
+
+            <!-- Seletor de cursos e controles do simulado -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                <button type="button" onclick="voltarSelecaoCursos()" title="Voltar à seleção de cursos" class="rounded-xl border border-pm-border bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-slate-200 transition hover:border-pm-gold/60 hover:text-pm-gold">
+                    <i class="fa-solid fa-layer-group mr-1.5"></i> Cursos
+                </button>
+                <div class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
+                    <div id="timerDisplay" class="flex items-center gap-2 font-mono font-bold text-xl text-pm-gold">
+                        <i class="fa-regular fa-clock text-base text-slate-400"></i>
+                        <span>02:30:00</span>
+                    </div>
+                    <button id="toggleTimerBtn" onclick="toggleTimer()" title="Pausar/Continuar Cronômetro" class="text-xs text-slate-300 hover:text-white px-2 py-1 bg-pm-border rounded transition">
+                        <i class="fa-solid fa-pause"></i>
+                    </button>
+                </div>
+
+                <button type="button" onclick="abrirModalPersonalizado()" title="Criar sessão de estudo por área e quantidade" class="rounded-xl border border-pm-gold/60 bg-pm-gold/10 px-3.5 py-2 text-xs sm:text-sm font-bold text-pm-gold transition hover:bg-pm-gold hover:text-pm-navy flex items-center gap-2">
+                    <i class="fa-solid fa-sliders"></i> Personalizado
+                </button>
+                <!-- Botão Novo Simulado Sempre Visível -->
+                <button onclick="confirmarNovoSimulado()" title="Limpar tudo e iniciar novo sorteio" class="bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2 border border-amber-400/40">
+                    <i class="fa-solid fa-arrows-rotate"></i> Novo Simulado
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Navegação e Filtros -->
+    <nav class="bg-pm-lightBg border-b border-pm-border py-3 px-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <!-- Alternador de Modos -->
+            <div class="flex items-center bg-pm-navy rounded-lg p-1 border border-pm-border">
+                <button id="btnModeExam" onclick="setMode('exam')" class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow">
+                    <i class="fa-solid fa-file-pen mr-1.5"></i> Modo Prova
+                </button>
+                <button id="btnModeStudy" onclick="setMode('study')" class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200">
+                    <i class="fa-solid fa-graduation-cap mr-1.5"></i> Modo Estudo
+                </button>
+            </div>
+
+            <!-- Filtros de Matéria Dinâmicos -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 custom-scrollbar max-w-full">
+                <span class="text-xs font-semibold text-slate-400 whitespace-nowrap"><i class="fa-solid fa-filter mr-1"></i>Filtrar:</span>
+                <button onclick="setSubjectFilter('ALL')" id="filterALL" class="px-3 py-1 text-xs rounded-full border border-pm-gold text-pm-gold font-medium bg-pm-gold/10 whitespace-nowrap">Todas (<span id="cntAll">0</span>)</button>
+                <button onclick="setSubjectFilter('OPERACIONAL')" id="filterOPERACIONAL" class="px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap">Operacional (<span id="cntOp">0</span>)</button>
+                <button onclick="setSubjectFilter('ORGANIZACIONAL')" id="filterORGANIZACIONAL" class="px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap">Organizacional (<span id="cntOrg">0</span>)</button>
+                <button onclick="setSubjectFilter('JURIDICO')" id="filterJURIDICO" class="px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap">Jurídico-Admin (<span id="cntJur">0</span>)</button>
+            </div>
+
+            <button onclick="finishExam()" class="ml-auto bg-red-600/80 hover:bg-red-600 text-white px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold shadow transition flex items-center gap-2">
+                <i class="fa-solid fa-flag-checkered"></i> Finalizar Prova
+            </button>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+        <!-- Área de Exibição de Questões e Resultados -->
+        <section class="lg:col-span-3 flex flex-col gap-4">
+
+            <!-- Card da Questão Ativa -->
+            <div id="questionContainer" class="bg-pm-cardBg border border-pm-border rounded-xl shadow-xl p-5 sm:p-7 flex flex-col justify-between min-h-[500px]">
+                <div>
+                    <!-- Cabeçalho da Questão -->
+                    <div class="flex flex-wrap items-center justify-between border-b border-pm-border/60 pb-3 mb-4 gap-2">
+                        <div class="flex items-center gap-2">
+                            <span id="qBadgeNum" class="bg-pm-gold text-pm-navy font-black text-sm px-3 py-1 rounded-md shadow-sm">
+                                Questão 1
+                            </span>
+                            <span id="qBadgeSubject" class="bg-pm-accent/60 text-blue-200 border border-blue-400/30 text-xs px-2.5 py-1 rounded-md font-medium">
+                                Assuntos Operacionais
+                            </span>
+                        </div>
+                        
+                        <!-- Botão Marcar para Revisar -->
+                        <button id="qMarkFlag" onclick="toggleFlagCurrentQuestion()" class="text-xs text-slate-400 hover:text-amber-400 transition flex items-center gap-1.5 px-3 py-1 rounded border border-pm-border bg-pm-navy/50">
+                            <i class="fa-regular fa-bookmark"></i> <span>Marcar para Revisar</span>
+                        </button>
+                    </div>
+
+                    <!-- Texto do Enunciado -->
+                    <div id="qText" class="text-slate-100 text-sm sm:text-base leading-relaxed font-normal mb-6 text-justify">
+                        Carregando questões do simulado...
+                    </div>
+
+                    <!-- Lista de Alternativas -->
+                    <div id="qOptions" class="space-y-3 mb-6"></div>
+
+                    <!-- Box de Fundamentação (Modo Estudo) -->
+                    <div id="studyExplanation" class="hidden mt-6 p-4 rounded-xl border border-blue-500/30 bg-slate-900/90 text-sm leading-relaxed">
+                        <div class="flex items-center gap-2 font-bold text-pm-gold mb-2">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                            <span>Fundamentação e Justificativa Oficial:</span>
+                        </div>
+                        <div id="studyExplanationText" class="text-slate-300 text-xs sm:text-sm leading-relaxed"></div>
+                    </div>
+                </div>
+
+                <!-- Rodapé de Navegação (Salva ao avançar/voltar) -->
+                <div class="flex flex-wrap items-center justify-between border-t border-pm-border/60 pt-4 mt-6 gap-3">
+                    <button id="btnPrev" onclick="navigateQuestion(-1)" class="px-4 py-2 bg-pm-navy border border-pm-border hover:border-pm-gold text-slate-200 rounded-lg text-xs sm:text-sm font-semibold transition flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-left"></i> Anterior
+                    </button>
+
+                    <div class="text-xs text-slate-400 font-mono" id="qCounterSummary">
+                        Respondidas: <span id="countAnswered">0</span>/<span id="totalQuestionsCount">0</span>
+                    </div>
+
+                    <button id="btnNext" onclick="navigateQuestion(1)" class="px-5 py-2 bg-pm-gold hover:bg-pm-goldHover text-pm-navy rounded-lg text-xs sm:text-sm font-bold transition flex items-center gap-2 shadow">
+                        Próxima <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tela de Resultados -->
+            <div id="resultsContainer" class="hidden bg-pm-cardBg border border-pm-gold/40 rounded-xl shadow-2xl p-6 sm:p-8">
+                <div class="text-center pb-6 border-b border-pm-border mb-6">
+                    <div class="inline-flex p-4 rounded-full bg-pm-gold/10 border-2 border-pm-gold mb-3 text-pm-gold text-3xl">
+                        🏆
+                    </div>
+                    <h2 class="text-2xl font-black text-white">Relatório Final de Desempenho</h2>
+                    <p class="text-sm text-slate-300">Avaliação de Competência Profissional ACP II/26 — PMESP</p>
+                </div>
+
+                <!-- Quadro Geral de Pontuação -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-pm-navy p-4 rounded-xl border border-pm-border text-center">
+                        <div class="text-xs text-slate-400 uppercase font-semibold">Pontuação</div>
+                        <div id="resScore" class="text-2xl sm:text-3xl font-black text-pm-gold mt-1">0/0</div>
+                    </div>
+                    <div class="bg-pm-navy p-4 rounded-xl border border-pm-border text-center">
+                        <div class="text-xs text-slate-400 uppercase font-semibold">Aproveitamento</div>
+                        <div id="resPercent" class="text-2xl sm:text-3xl font-black text-blue-400 mt-1">0%</div>
+                    </div>
+                    <div class="bg-pm-navy p-4 rounded-xl border border-pm-border text-center">
+                        <div class="text-xs text-slate-400 uppercase font-semibold">Nota Estimada</div>
+                        <div id="resGrade" class="text-2xl sm:text-3xl font-black text-emerald-400 mt-1">0.0</div>
+                    </div>
+                    <div class="bg-pm-navy p-4 rounded-xl border border-pm-border text-center">
+                        <div class="text-xs text-slate-400 uppercase font-semibold">Tempo Utilizado</div>
+                        <div id="resTime" class="text-xl sm:text-2xl font-black text-slate-200 mt-2 font-mono">00:00</div>
+                    </div>
+                </div>
+
+                <!-- Desempenho por Matéria -->
+                <h3 class="text-sm font-bold text-pm-gold uppercase tracking-wider mb-4 border-l-4 border-pm-gold pl-3">
+                    Desempenho por Área de Conhecimento
+                </h3>
+                <div class="space-y-4 mb-8">
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span>Assuntos Operacionais</span>
+                            <span id="labelOpScore">0/0 (0%)</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden border border-pm-border">
+                            <div id="barOpScore" class="bg-blue-500 h-full w-0 transition-all duration-500"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span>Assuntos Organizacionais</span>
+                            <span id="labelOrgScore">0/0 (0%)</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden border border-pm-border">
+                            <div id="barOrgScore" class="bg-emerald-500 h-full w-0 transition-all duration-500"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span>Assuntos Jurídico-Administrativos</span>
+                            <span id="labelJurScore">0/0 (0%)</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden border border-pm-border">
+                            <div id="barJurScore" class="bg-amber-500 h-full w-0 transition-all duration-500"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-4">
+                    <button onclick="confirmarNovoSimulado()" class="px-6 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl transition shadow flex items-center gap-2 text-sm">
+                        <i class="fa-solid fa-rotate-right"></i> Gerar Novo Simulado Aleatório
+                    </button>
+                    <button onclick="reviewExamFromResults()" class="px-6 py-2.5 bg-pm-navy hover:bg-pm-border text-white font-semibold rounded-xl border border-pm-border transition flex items-center gap-2 text-sm">
+                        <i class="fa-solid fa-magnifying-glass"></i> Revisar Respostas
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Barra Lateral: Painel de Controle e Cartão de Respostas -->
+        <aside class="flex flex-col gap-4">
+
+            <!-- Painel de Progresso: visível no Modo Estudo; oculto no Modo Prova -->
+            <div id="progressPanel" class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg">
+                <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-chart-pie text-pm-gold"></i> Painel de Progresso
+                </h3>
+                <div class="grid grid-cols-3 gap-2 text-center text-xs mb-3">
+                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
+                        <div class="text-emerald-400 font-bold text-lg" id="statCorrect">0</div>
+                        <div class="text-[10px] text-slate-400">Acertos</div>
+                    </div>
+                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
+                        <div class="text-rose-400 font-bold text-lg" id="statWrong">0</div>
+                        <div class="text-[10px] text-slate-400">Erros</div>
+                    </div>
+                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
+                        <div class="text-amber-400 font-bold text-lg" id="statPending">0</div>
+                        <div class="text-[10px] text-slate-400">Pendentes</div>
+                    </div>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden border border-pm-border mb-1">
+                    <div id="progBar" class="bg-pm-gold h-full w-0 transition-all duration-300"></div>
+                </div>
+                <div class="text-[11px] text-slate-400 text-right font-mono" id="progPercent">0% concluído</div>
+            </div>
+
+            <!-- Cartão de Respostas Interativo -->
+            <div class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg flex-1 flex flex-col">
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-grip text-pm-gold"></i> Cartão de Respostas
+                    </h3>
+                    <span class="text-[10px] bg-pm-navy text-slate-400 px-2 py-0.5 rounded border border-pm-border"><span id="gridTotalSpan">0</span> questões</span>
+                </div>
+
+                <div class="text-[10px] flex items-center justify-between mb-3 text-slate-400 px-1">
+                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-slate-700 inline-block"></span> Pendente</span>
+                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-pm-gold inline-block"></span> Marcada</span>
+                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-blue-600 inline-block"></span> Respondida</span>
+                </div>
+
+                <!-- Grid de Botões Numéricos -->
+                <div id="questionsGrid" class="grid grid-cols-5 sm:grid-cols-10 lg:grid-cols-5 gap-2 overflow-y-auto max-h-[380px] pr-1 custom-scrollbar"></div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- Rodapé com Créditos -->
+    <footer class="bg-pm-header border-t border-pm-border py-3 px-3 text-center text-xs text-slate-400 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+            <span>Plataforma de Aperfeiçoamento</span>
+            <span class="text-pm-gold font-semibold">Elaborado pelo 1° Ten PM Adriano</span>
+        </div>
+    </footer>
+
+    <!-- Script de Lógica Principal -->
+    <script>
+        const TOTAL_QUESTOES = cursoInicial === 'CAO' ? 100 : 50;
+        const TEMPO_PROVA_SEGUNDOS = TOTAL_QUESTOES * 3 * 60;
+        let STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_SIMULADO_CAO_STATE' : 'PMESP_SIMULADO_ACP_STATE';
+        let MODAL_STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_MODAL_INSTRUCOES_VISTO_CAO' : 'PMESP_MODAL_INSTRUCOES_VISTO_ACP';
+
+        let questionsDatabase = [];
+        let sessaoPersonalizadaAtiva = false;
+        const STORAGE_KEY_OFICIAL = STORAGE_KEY;
+
+        let state = {
+            mode: 'exam', 
+            activeFilter: 'ALL', 
+            currentIndex: 0,
+            userAnswers: [],
+            flagged: [],
+            studyLocked: [], // Questões já consultadas/respondidas no Modo Estudo
+            timerSeconds: TEMPO_PROVA_SEGUNDOS,
+            timerEndTime: null,     // Timestamp do término real
+            timerInterval: null,
+            timerPaused: false,
+            examFinished: false,
+            filteredQuestions: []
+        };
+
+        let cursoAtivo = cursoInicial;
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!cursoInicial) {
+                document.getElementById('courseLanding').classList.remove('hidden');
+                return;
+            }
+            document.getElementById('courseLanding').classList.add('hidden');
+            configurarIdentidadeCurso();
+            verificarModalInstrucoes();
+            carregarOuInicializarSimulado();
+        });
+
+        function entrarNoCurso(curso) {
+            if (curso === 'ACP') {
+                window.location.href = 'plataformaACP.html';
+                return;
+            }
+            if (curso === 'CAO') {
+                window.location.href = 'plataformaCAO.html';
+            }
+        }
+
+        function voltarSelecaoCursos() {
+            if (state.timerInterval) {
+                clearInterval(state.timerInterval);
+                state.timerInterval = null;
+            }
+            if (!state.examFinished && state.timerSeconds > 0) {
+                state.timerPaused = true;
+                state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+                saveStateToLocalStorage();
+            }
+            window.location.href = window.location.pathname;
+        }
+
+        function configurarIdentidadeCurso() {
+            const isCAO = cursoAtivo === 'CAO';
+            const titulo = isCAO ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP II/26 — Capitão PM';
+            document.getElementById('simuladoTitulo').innerText = titulo;
+            const subtituloCurso = document.getElementById('subtituloCurso');
+            if (subtituloCurso) subtituloCurso.innerText = isCAO ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
+            const modalTitulo = document.querySelector('#modalInstrucoes h3');
+            if (modalTitulo) modalTitulo.innerText = isCAO ? 'Bem-vindo ao Simulado CAO' : 'Bem-vindo ao Simulado ACP II/26';
+            const objetivo = document.querySelector('#modalInstrucoes section p:nth-child(2)');
+            if (objetivo) objetivo.innerText = isCAO
+                ? 'Treinar para o Curso de Aperfeiçoamento de Oficiais (CAO), identificar dificuldades e revisar os conteúdos estudados.'
+                : 'Treinar para a ACP II/26 — Capitão PM, identificar dificuldades e revisar os conteúdos estudados.';
+            const instrucoes = document.querySelectorAll('#modalInstrucoes section p:nth-child(2)');
+            if (instrucoes[1]) instrucoes[1].innerHTML = `Ao iniciar um novo simulado, o cronômetro e as respostas são reiniciados, ocorrendo o sorteio de <strong class="text-white">${TOTAL_QUESTOES} questões</strong>. Para gerar outro conjunto, utilize o botão <strong class="text-white">Novo Simulado</strong>.`;
+            const resultadoSubtitulo = document.querySelector('#resultsContainer .text-center p');
+            if (resultadoSubtitulo) resultadoSubtitulo.innerText = isCAO
+                ? 'Curso de Aperfeiçoamento de Oficiais — PMESP'
+                : 'Avaliação de Competência Profissional ACP II/26 — PMESP';
+            document.title = `Plataforma de Aperfeiçoamento | ${isCAO ? 'CAO' : 'ACP II/26'}`;
+        }
+
+        // CONTROLE DO MODAL DE INSTRUÇÕES
+        function verificarModalInstrucoes() {
+            const jaViu = localStorage.getItem(MODAL_STORAGE_KEY);
+            if (!jaViu) {
+                document.getElementById('modalInstrucoes').classList.remove('hidden');
+            }
+        }
+
+        function fecharModalInstrucoes() {
+            const naoMostrarNovamente = document.getElementById('checkNaoMostrar').checked;
+            if (naoMostrarNovamente) {
+                localStorage.setItem(MODAL_STORAGE_KEY, "true");
+            }
+            document.getElementById('modalInstrucoes').classList.add('hidden');
+        }
+
+        // SALVAMENTO PERSISTENTE NO LOCALSTORAGE
+        function saveStateToLocalStorage() {
+            const dataToSave = {
+                questionsDatabase: questionsDatabase,
+                userAnswers: state.userAnswers,
+                flagged: state.flagged,
+                studyLocked: state.studyLocked,
+                timerSeconds: state.timerSeconds,
+                timerEndTime: state.timerEndTime,
+                timerPaused: state.timerPaused,
+                examFinished: state.examFinished,
+                currentIndex: state.currentIndex,
+                mode: state.mode,
+                activeFilter: state.activeFilter,
+                sessaoPersonalizadaAtiva: sessaoPersonalizadaAtiva
+            };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
+        }
+
+        function carregarOuInicializarSimulado() {
+            const savedData = localStorage.getItem(STORAGE_KEY);
+
+            if (savedData) {
+                try {
+                    const parsed = JSON.parse(savedData);
+                    if (parsed.questionsDatabase && parsed.questionsDatabase.length > 0) {
+                        questionsDatabase = parsed.questionsDatabase;
+                        state.userAnswers = parsed.userAnswers || new Array(questionsDatabase.length).fill(null);
+                        state.flagged = parsed.flagged || new Array(questionsDatabase.length).fill(false);
+                        state.studyLocked = parsed.studyLocked || new Array(questionsDatabase.length).fill(false);
+                        state.timerSeconds = parsed.timerSeconds !== undefined ? parsed.timerSeconds : TEMPO_PROVA_SEGUNDOS;
+                        state.timerEndTime = parsed.timerEndTime || null;
+                        state.timerPaused = parsed.timerPaused || false;
+                        state.examFinished = parsed.examFinished || false;
+                        state.currentIndex = parsed.currentIndex || 0;
+                        state.mode = parsed.mode || 'exam';
+                        state.activeFilter = parsed.activeFilter || 'ALL';
+
+                        restaurarInterface();
+                        return;
+                    }
+                } catch (e) {
+                    console.error("Erro ao ler dados do LocalStorage:", e);
+                }
+            }
+
+            gerarEIniciarNovoSimulado();
+        }
+
+        function restaurarInterface() {
+            updateSubjectCounts();
+            updateFilteredQuestions();
+            setMode(state.mode);
+            setSubjectFilter(state.activeFilter, false); 
+            renderQuestionGrid();
+            displayCurrentQuestion();
+
+            if (state.examFinished) {
+                finishExam(false);
+            } else {
+                document.getElementById('resultsContainer').classList.add('hidden');
+                document.getElementById('questionContainer').classList.remove('hidden');
+                startTimer();
+            }
+        }
+
+        function abrirModalConfirmacao({ titulo = "Confirmar ação", mensagem, textoConfirmar = "Confirmar", textoCancelar = "Cancelar", aoConfirmar }) {
+            const modal = document.getElementById('modalConfirmacao');
+            const btnConfirmar = document.getElementById('modalConfirmacaoAceitar');
+            const btnCancelar = document.getElementById('modalConfirmacaoCancelar');
+            document.getElementById('modalConfirmacaoTitulo').innerText = titulo;
+            document.getElementById('modalConfirmacaoMensagem').innerText = mensagem;
+            btnConfirmar.innerText = textoConfirmar;
+            btnCancelar.innerText = textoCancelar;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+
+            const fechar = () => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                btnConfirmar.onclick = null;
+                btnCancelar.onclick = null;
+                document.removeEventListener('keydown', teclaEsc);
+            };
+            const teclaEsc = (event) => {
+                if (event.key === 'Escape') fechar();
+            };
+            btnCancelar.onclick = fechar;
+            btnConfirmar.onclick = () => {
+                fechar();
+                if (typeof aoConfirmar === 'function') aoConfirmar();
+            };
+            document.addEventListener('keydown', teclaEsc);
+            btnConfirmar.focus();
+        }
+
+        function confirmarNovoSimulado() {
+            abrirModalConfirmacao({
+                titulo: "Iniciar novo simulado?",
+                mensagem: "Todas as respostas salvas e o tempo atual serão zerados, e um novo conjunto de questões será sorteado. Deseja continuar?",
+                textoConfirmar: "Iniciar novo",
+                aoConfirmar: () => {
+                    localStorage.removeItem(STORAGE_KEY);
+                    gerarEIniciarNovoSimulado();
+                }
+            });
+        }
+
+        // HISTÓRICO DE USO DAS QUESTÕES: evita repetição por 3 dias (72 horas).
+        const QUESTION_HISTORY_KEY = cursoAtivo === 'CAO'
+            ? 'PMESP_SIMULADO_CAO_QUESTION_HISTORY'
+            : 'PMESP_SIMULADO_ACP_QUESTION_HISTORY';
+        const QUESTION_HISTORY_WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
+
+        function chaveEstavelQuestao(q) {
+            // Inclui matéria, ID e enunciado para reduzir colisões caso IDs se repitam.
+            return [q.subject || "", q.id !== undefined ? q.id : "", q.text || ""]
+                .join("::")
+                .trim();
+        }
+
+        function carregarHistoricoQuestoes() {
+            try {
+                const raw = localStorage.getItem(QUESTION_HISTORY_KEY);
+                const parsed = raw ? JSON.parse(raw) : [];
+                return Array.isArray(parsed)
+                    ? parsed.filter(item => item && typeof item.key === "string" && Number.isFinite(item.usedAt))
+                    : [];
+            } catch (e) {
+                console.warn("Não foi possível ler o histórico de questões:", e);
+                return [];
+            }
+        }
+
+        function registrarQuestoesUtilizadas(questoes) {
+            const agora = Date.now();
+            const corte = agora - QUESTION_HISTORY_WINDOW_MS;
+            const historico = carregarHistoricoQuestoes()
+                .filter(item => item.usedAt >= corte);
+            const novas = questoes.map(q => ({ key: chaveEstavelQuestao(q), usedAt: agora }));
+            // Uma entrada por questão, mantendo a utilização mais recente.
+            const porChave = new Map();
+            [...historico, ...novas].forEach(item => {
+                const anterior = porChave.get(item.key);
+                if (!anterior || item.usedAt > anterior.usedAt) porChave.set(item.key, item);
+            });
+            localStorage.setItem(QUESTION_HISTORY_KEY, JSON.stringify([...porChave.values()]));
+        }
+
+        function sortearQuestoesProporcionalmente(bancoBruto, totalSimulado = 50) {
+            const historico = carregarHistoricoQuestoes();
+            const agora = Date.now();
+            const corte = agora - QUESTION_HISTORY_WINDOW_MS;
+            const usoRecente = new Map();
+            historico.forEach(item => {
+                const anterior = usoRecente.get(item.key);
+                if (!anterior || item.usedAt > anterior) usoRecente.set(item.key, item.usedAt);
+            });
+
+            const pools = {
+                OPERACIONAL: bancoBruto.filter(q => q.subject === 'OPERACIONAL'),
+                JURIDICO: bancoBruto.filter(q => q.subject === 'JURIDICO'),
+                ORGANIZACIONAL: bancoBruto.filter(q => q.subject === 'ORGANIZACIONAL')
+            };
+            const qtdOp = Math.round(totalSimulado * 0.50);
+            const qtdJur = Math.round(totalSimulado * 0.30);
+            const qtdOrg = totalSimulado - qtdOp - qtdJur;
+            const quantidades = { OPERACIONAL: qtdOp, JURIDICO: qtdJur, ORGANIZACIONAL: qtdOrg };
+
+            for (const materia of Object.keys(pools)) {
+                if (pools[materia].length < quantidades[materia]) {
+                    alert(
+                        `Banco insuficiente para gerar ${totalSimulado} questões.\n` +
+                        `Operacional: ${pools.OPERACIONAL.length}/${qtdOp}\n` +
+                        `Jurídico: ${pools.JURIDICO.length}/${qtdJur}\n` +
+                        `Organizacional: ${pools.ORGANIZACIONAL.length}/${qtdOrg}`
+                    );
+                    return [];
+                }
+            }
+
+            function shuffle(arr) {
+                const array = [...arr];
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            const selecionadas = [];
+            for (const materia of Object.keys(pools)) {
+                const quantidade = quantidades[materia];
+                const pool = pools[materia];
+                const recentes = pool.filter(q => (usoRecente.get(chaveEstavelQuestao(q)) || 0) >= corte);
+                const disponiveis = pool.filter(q => (usoRecente.get(chaveEstavelQuestao(q)) || 0) < corte);
+
+                // Primeiro sorteia entre as não usadas na janela de 3 dias.
+                const escolhidas = shuffle(disponiveis).slice(0, quantidade);
+
+                // Se faltarem questões inéditas na janela, usa as mais antigas primeiro.
+                if (escolhidas.length < quantidade) {
+                    const jaEscolhidas = new Set(escolhidas.map(chaveEstavelQuestao));
+                    const reposicao = shuffle(recentes)
+                        .filter(q => !jaEscolhidas.has(chaveEstavelQuestao(q)))
+                        .sort((a, b) => (usoRecente.get(chaveEstavelQuestao(a)) || 0) - (usoRecente.get(chaveEstavelQuestao(b)) || 0));
+                    escolhidas.push(...reposicao.slice(0, quantidade - escolhidas.length));
+                }
+                selecionadas.push(...escolhidas);
+            }
+
+            return shuffle(selecionadas).map((q, idx) => ({ ...q, idSimulado: idx + 1 }));
+        }
+
+        function obterBancoBase() {
+            if (typeof BANCO_SIMULADOS !== 'undefined' && BANCO_SIMULADOS.simulado_01 && BANCO_SIMULADOS.simulado_01.questoes) return BANCO_SIMULADOS.simulado_01.questoes;
+            if (typeof BANCO_SIMULADOS !== 'undefined' && Array.isArray(BANCO_SIMULADOS)) return BANCO_SIMULADOS;
+            if (typeof BANCO_GERAL_QUESTOES !== 'undefined' && Array.isArray(BANCO_GERAL_QUESTOES)) return BANCO_GERAL_QUESTOES;
+            if (window.questionsDatabase && window.questionsDatabase.length > 0) return window.questionsDatabase;
+            return [];
+        }
+
+        function abrirModalPersonalizado() {
+            const banco = obterBancoBase();
+            if (!banco.length) {
+                alert(`Erro ao carregar o banco ${cursoAtivo === 'CAO' ? 'questoes2.js' : 'questoes.js'}. Verifique se o arquivo está na mesma pasta do index.html e publicado no repositório.`);
+                return;
+            }
+            atualizarDisponibilidadePersonalizada();
+            const modal = document.getElementById('modalPersonalizado');
+            modal.classList.remove('hidden'); modal.classList.add('flex');
+        }
+
+        function fecharModalPersonalizado() {
+            const modal = document.getElementById('modalPersonalizado');
+            modal.classList.add('hidden'); modal.classList.remove('flex');
+        }
+
+        function atualizarDisponibilidadePersonalizada() {
+            const banco = obterBancoBase();
+            const area = document.getElementById('personalizadoArea').value;
+            const disponiveis = banco.filter(q => q.subject === area).length;
+            const campo = document.getElementById('personalizadoQuantidade');
+            campo.max = Math.max(1, disponiveis);
+            document.getElementById('personalizadoDisponiveis').innerText = `${disponiveis} questão(ões) disponíveis nesta área no banco atual.`;
+            if (Number(campo.value) > disponiveis) campo.value = disponiveis || 1;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const area = document.getElementById('personalizadoArea');
+            if (area) area.addEventListener('change', atualizarDisponibilidadePersonalizada);
+        });
+
+        function iniciarSessaoPersonalizada() {
+            const bancoBase = obterBancoBase();
+            const area = document.getElementById('personalizadoArea').value;
+            const quantidade = Number.parseInt(document.getElementById('personalizadoQuantidade').value, 10);
+            const pool = bancoBase.filter(q => q.subject === area);
+            if (!Number.isInteger(quantidade) || quantidade < 1) {
+                alert('Informe uma quantidade inteira de pelo menos 1 questão.'); return;
+            }
+            if (quantidade > pool.length) {
+                alert(`A área selecionada possui apenas ${pool.length} questão(ões) no banco. Reduza a quantidade.`); return;
+            }
+
+            if (state.timerInterval) { clearInterval(state.timerInterval); state.timerInterval = null; }
+            sessaoPersonalizadaAtiva = true;
+            STORAGE_KEY = `${STORAGE_KEY_OFICIAL}_PERSONALIZADO`;
+            const embaralhadas = [...pool];
+            for (let i = embaralhadas.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [embaralhadas[i], embaralhadas[j]] = [embaralhadas[j], embaralhadas[i]];
+            }
+            questionsDatabase = embaralhadas.slice(0, quantidade).map((q, idx) => ({ ...q, idSimulado: idx + 1 }));
+            state.mode = 'study';
+            state.userAnswers = new Array(questionsDatabase.length).fill(null);
+            state.flagged = new Array(questionsDatabase.length).fill(false);
+            state.studyLocked = new Array(questionsDatabase.length).fill(false);
+            state.timerSeconds = 0;
+            state.timerEndTime = null;
+            state.timerPaused = true;
+            state.examFinished = false;
+            state.currentIndex = 0;
+            state.activeFilter = 'ALL';
+            fecharModalPersonalizado();
+
+            document.getElementById('timerDisplay').parentElement.classList.add('hidden');
+            document.querySelectorAll('button[onclick="confirmarNovoSimulado()"]')[0]?.classList.remove('hidden');
+            document.querySelectorAll('button[onclick="finishExam()"]')[0].innerHTML = '<i class="fa-solid fa-flag-checkered"></i> Concluir Sessão';
+            document.getElementById('btnModeExam').classList.add('hidden');
+            document.getElementById('btnModeStudy').classList.add('hidden');
+            document.getElementById('simuladoTitulo').innerText = 'Sessão Personalizada';
+            document.getElementById('subtituloCurso').innerText = `${area === 'OPERACIONAL' ? 'Assuntos Operacionais' : area === 'JURIDICO' ? 'Assuntos Jurídico-Administrativos' : 'Assuntos Organizacionais'} · Modo Estudo · Sem cronômetro`;
+            document.getElementById('resultsContainer').classList.add('hidden');
+            document.getElementById('questionContainer').classList.remove('hidden');
+            updateSubjectCounts(); updateFilteredQuestions(); renderQuestionGrid(); displayCurrentQuestion(); updateRealtimeStats();
+            saveStateToLocalStorage();
+        }
+
+        function gerarEIniciarNovoSimulado() {
+            const veioDePersonalizado = sessaoPersonalizadaAtiva;
+            sessaoPersonalizadaAtiva = false;
+            STORAGE_KEY = STORAGE_KEY_OFICIAL;
+            if (veioDePersonalizado) {
+                state.mode = 'exam';
+                document.getElementById('btnModeExam').className = "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow";
+                document.getElementById('btnModeStudy').className = "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
+            }
+            document.getElementById('timerDisplay').parentElement.classList.remove('hidden');
+            document.getElementById('btnModeExam').classList.remove('hidden');
+            document.getElementById('btnModeStudy').classList.remove('hidden');
+            document.getElementById('simuladoTitulo').innerText = cursoAtivo === 'CAO' ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP II/26 — Capitão PM';
+            document.getElementById('subtituloCurso').innerText = cursoAtivo === 'CAO' ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
+            document.querySelectorAll('button[onclick="finishExam()"]')[0].innerHTML = '<i class="fa-solid fa-flag-checkered"></i> Finalizar Prova';
+            let bancoBase = obterBancoBase();
+            if (!bancoBase.length) {
+                alert(`Erro ao carregar o banco ${cursoAtivo === 'CAO' ? 'questoes2.js' : 'questoes.js'}. Verifique se o arquivo está na mesma pasta do index.html e publicado no repositório.`);
+                return;
+            }
+
+            questionsDatabase = sortearQuestoesProporcionalmente(bancoBase, TOTAL_QUESTOES);
+            if (questionsDatabase.length !== TOTAL_QUESTOES) return;
+            registrarQuestoesUtilizadas(questionsDatabase);
+
+            state.userAnswers = new Array(questionsDatabase.length).fill(null);
+            state.flagged = new Array(questionsDatabase.length).fill(false);
+            state.studyLocked = new Array(questionsDatabase.length).fill(false);
+            state.timerSeconds = TEMPO_PROVA_SEGUNDOS;
+            state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+            state.timerPaused = false;
+            state.examFinished = false;
+            state.currentIndex = 0;
+            state.activeFilter = 'ALL';
+
+            document.getElementById('resultsContainer').classList.add('hidden');
+            document.getElementById('questionContainer').classList.remove('hidden');
+
+            saveStateToLocalStorage();
+
+            updateSubjectCounts();
+            updateFilteredQuestions();
+            renderQuestionGrid();
+            displayCurrentQuestion();
+            
+            startTimer();
+        }
+
+        function updateSubjectCounts() {
+            const total = questionsDatabase.length;
+            const op = questionsDatabase.filter(q => q.subject === 'OPERACIONAL').length;
+            const org = questionsDatabase.filter(q => q.subject === 'ORGANIZACIONAL').length;
+            const jur = questionsDatabase.filter(q => q.subject === 'JURIDICO').length;
+
+            document.getElementById('cntAll').innerText = total;
+            document.getElementById('cntOp').innerText = op;
+            document.getElementById('cntOrg').innerText = org;
+            document.getElementById('cntJur').innerText = jur;
+            document.getElementById('totalQuestionsCount').innerText = total;
+            document.getElementById('gridTotalSpan').innerText = total;
+        }
+
+        function setMode(newMode, confirmado = false) {
+            if (sessaoPersonalizadaAtiva) newMode = 'study';
+            if (newMode === state.mode) return;
+
+            // Confirmação visual personalizada ao sair do Modo Prova para o Modo Estudo.
+            if (newMode === 'study' && state.mode === 'exam' && !state.examFinished && !confirmado) {
+                abrirModalConfirmacao({
+                    titulo: "Entrar no Modo Estudo?",
+                    mensagem: "Você poderá visualizar a resposta correta e a fundamentação. As questões consultadas ficarão bloqueadas para alterações, mesmo se você voltar ao Modo Prova. Deseja realmente mudar para o Modo Estudo?",
+                    textoConfirmar: "Entrar no Modo Estudo",
+                    aoConfirmar: () => setMode(newMode, true)
+                });
+                return;
+            }
+
+            state.mode = newMode;
+            document.getElementById('btnModeExam').className = newMode === 'exam' 
+                ? "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow"
+                : "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
+            
+            document.getElementById('btnModeStudy').className = newMode === 'study' 
+                ? "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow"
+                : "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
+
+            const progressPanel = document.getElementById('progressPanel');
+            if (progressPanel) progressPanel.classList.toggle('hidden', newMode === 'exam');
+
+            saveStateToLocalStorage();
+            displayCurrentQuestion();
+            updateRealtimeStats();
+        }
+
+        function setSubjectFilter(cat, resetIndex = true) {
+            state.activeFilter = cat;
+            ['ALL', 'OPERACIONAL', 'ORGANIZACIONAL', 'JURIDICO'].forEach(c => {
+                const btn = document.getElementById('filter' + c);
+                if (c === cat) {
+                    btn.className = "px-3 py-1 text-xs rounded-full border border-pm-gold text-pm-gold font-medium bg-pm-gold/10 whitespace-nowrap shadow";
+                } else {
+                    btn.className = "px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap";
+                }
+            });
+
+            updateFilteredQuestions();
+            if (resetIndex) {
+                state.currentIndex = 0;
+            }
+            saveStateToLocalStorage();
+            renderQuestionGrid();
+            displayCurrentQuestion();
+        }
+
+        function updateFilteredQuestions() {
+            if (state.activeFilter === 'ALL') {
+                state.filteredQuestions = questionsDatabase;
+            } else {
+                state.filteredQuestions = questionsDatabase.filter(q => q.subject === state.activeFilter);
+            }
+        }
+
+        function renderQuestionGrid() {
+            const grid = document.getElementById('questionsGrid');
+            grid.innerHTML = '';
+
+            state.filteredQuestions.forEach((q, idx) => {
+                const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
+                const targetIdx = origIdx !== -1 ? origIdx : idx;
+
+                const isAnswered = state.userAnswers[targetIdx] !== null;
+                const isFlagged = state.flagged[targetIdx];
+                const isCurrent = idx === state.currentIndex;
+
+                let btnClass = "h-8 rounded text-xs font-bold transition flex items-center justify-center border ";
+
+                if (isCurrent) {
+                    btnClass += "ring-2 ring-pm-gold ring-offset-2 ring-offset-pm-navy ";
+                }
+
+                if (isFlagged) {
+                    btnClass += "bg-amber-500/20 text-amber-300 border-amber-500/60 ";
+                } else if (isAnswered) {
+                    btnClass += "bg-blue-600/30 text-blue-200 border-blue-500/50 ";
+                } else {
+                    btnClass += "bg-pm-navy/60 text-slate-400 border-pm-border hover:border-slate-500 ";
+                }
+
+                const button = document.createElement('button');
+                button.className = btnClass;
+                button.innerText = q.idSimulado || (idx + 1);
+                button.onclick = () => {
+                    state.currentIndex = idx;
+                    saveStateToLocalStorage();
+                    displayCurrentQuestion();
+                    renderQuestionGrid();
+                };
+                grid.appendChild(button);
+            });
+
+            updateRealtimeStats();
+        }
+
+        function displayCurrentQuestion() {
+            if (state.filteredQuestions.length === 0) return;
+
+            const q = state.filteredQuestions[state.currentIndex];
+            const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
+            const targetIdx = origIdx !== -1 ? origIdx : state.currentIndex;
+
+            document.getElementById('qBadgeNum').innerText = `Questão ${q.idSimulado || (targetIdx + 1)} / ${questionsDatabase.length}`;
+            
+            const subjNames = {
+                'OPERACIONAL': 'Assuntos Operacionais',
+                'ORGANIZACIONAL': 'Assuntos Organizacionais',
+                'JURIDICO': 'Assuntos Jurídico-Administrativos'
+            };
+            document.getElementById('qBadgeSubject').innerText = `${subjNames[q.subject] || q.subject} | ${q.topic}`;
+            document.getElementById('qText').innerText = q.text;
+
+            const flagBtn = document.getElementById('qMarkFlag');
+            if (state.flagged[targetIdx]) {
+                flagBtn.className = "text-xs text-amber-400 font-semibold transition flex items-center gap-1.5 px-3 py-1 rounded border border-amber-500/50 bg-amber-500/10";
+                flagBtn.innerHTML = '<i class="fa-solid fa-bookmark"></i> <span>Marcada</span>';
+            } else {
+                flagBtn.className = "text-xs text-slate-400 hover:text-amber-400 transition flex items-center gap-1.5 px-3 py-1 rounded border border-pm-border bg-pm-navy/50";
+                flagBtn.innerHTML = '<i class="fa-regular fa-bookmark"></i> <span>Marcar p/ Revisar</span>';
+            }
+
+            const optionsContainer = document.getElementById('qOptions');
+            optionsContainer.innerHTML = '';
+
+            const selectedOpt = state.userAnswers[targetIdx];
+
+            // Ao consultar uma resposta no Modo Estudo, ela fica definitiva,
+            // mesmo que o usuário volte posteriormente ao Modo Prova.
+            if (state.mode === 'study' && selectedOpt !== null && !state.studyLocked[targetIdx]) {
+                state.studyLocked[targetIdx] = true;
+                saveStateToLocalStorage();
+            }
+
+            q.options.forEach((optText, optIdx) => {
+                const optionDiv = document.createElement('div');
+                let optStyle = "p-3.5 rounded-xl border transition-all duration-200 cursor-pointer text-xs sm:text-sm flex items-start gap-3 ";
+
+                if (state.mode === 'study' && selectedOpt !== null) {
+                    if (optIdx === q.answer) {
+                        optStyle += "bg-emerald-950/60 border-emerald-500 text-emerald-200 font-medium ";
+                    } else if (optIdx === selectedOpt && selectedOpt !== q.answer) {
+                        optStyle += "bg-rose-950/60 border-rose-500 text-rose-200 ";
+                    } else {
+                        optStyle += "bg-pm-navy/40 border-pm-border/40 text-slate-400 opacity-60 ";
+                    }
+                } else {
+                    if (selectedOpt === optIdx) {
+                        optStyle += "bg-pm-accent/40 border-blue-400 text-white font-medium shadow-md ";
+                    } else {
+                        optStyle += "bg-pm-navy/80 border-pm-border hover:border-pm-gold/50 text-slate-200 hover:bg-pm-navy ";
+                    }
+                }
+
+                optionDiv.className = optStyle;
+                const answerLocked = state.userAnswers[targetIdx] !== null &&
+                    (state.mode === 'study' || state.studyLocked[targetIdx] || state.examFinished);
+                if (answerLocked) {
+                    optionDiv.classList.remove('cursor-pointer');
+                    optionDiv.classList.add('cursor-not-allowed');
+                }
+                optionDiv.onclick = () => selectOption(targetIdx, optIdx);
+
+                const radioCircle = document.createElement('div');
+                let circleStyle = "w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] ";
+                
+                if (state.mode === 'study' && selectedOpt !== null) {
+                    if (optIdx === q.answer) {
+                        circleStyle += "border-emerald-400 bg-emerald-500 text-pm-navy font-bold";
+                        radioCircle.innerHTML = "✓";
+                    } else if (optIdx === selectedOpt && selectedOpt !== q.answer) {
+                        circleStyle += "border-rose-400 bg-rose-500 text-white font-bold";
+                        radioCircle.innerHTML = "✕";
+                    } else {
+                        circleStyle += "border-slate-600";
+                    }
+                } else {
+                    if (selectedOpt === optIdx) {
+                        circleStyle += "border-pm-gold bg-pm-gold text-pm-navy font-bold";
+                        radioCircle.innerHTML = "✓";
+                    } else {
+                        circleStyle += "border-slate-500";
+                    }
+                }
+                
+                radioCircle.className = circleStyle;
+
+                const textSpan = document.createElement('span');
+                textSpan.className = "flex-1 leading-snug";
+                textSpan.innerText = optText;
+
+                optionDiv.appendChild(radioCircle);
+                optionDiv.appendChild(textSpan);
+                optionsContainer.appendChild(optionDiv);
+            });
+
+            const studyExpBox = document.getElementById('studyExplanation');
+            if (state.mode === 'study' && selectedOpt !== null) {
+                studyExpBox.classList.remove('hidden');
+                document.getElementById('studyExplanationText').innerText = q.explanation;
+            } else {
+                studyExpBox.classList.add('hidden');
+            }
+
+            document.getElementById('btnPrev').disabled = state.currentIndex === 0;
+            document.getElementById('btnPrev').style.opacity = state.currentIndex === 0 ? "0.4" : "1";
+
+            document.getElementById('btnNext').disabled = state.currentIndex === state.filteredQuestions.length - 1;
+            document.getElementById('btnNext').style.opacity = state.currentIndex === state.filteredQuestions.length - 1 ? "0.4" : "1";
+        }
+
+        function selectOption(targetIdx, optIdx) {
+            if (state.examFinished) return;
+
+            // Questões consultadas no Modo Estudo nunca podem ser alteradas.
+            if (state.studyLocked[targetIdx]) return;
+
+            // No Modo Estudo, a primeira resposta é definitiva.
+            if (state.mode === 'study' && state.userAnswers[targetIdx] !== null) return;
+
+            // No Modo Prova, permite alterar a alternativa até a finalização.
+            state.userAnswers[targetIdx] = optIdx;
+
+            // Responder no Modo Estudo revela a fundamentação e bloqueia a questão.
+            if (state.mode === 'study') {
+                state.studyLocked[targetIdx] = true;
+            }
+
+            saveStateToLocalStorage();
+            displayCurrentQuestion();
+            renderQuestionGrid();
+        }
+
+        function navigateQuestion(direction, confirmado = false) {
+            const currentQuestion = state.filteredQuestions[state.currentIndex];
+            if (!currentQuestion) return;
+
+            const currentOrigIdx = questionsDatabase.findIndex(item => item.idSimulado === currentQuestion.idSimulado);
+            const currentTargetIdx = currentOrigIdx !== -1 ? currentOrigIdx : state.currentIndex;
+
+            // Ao avançar no Modo Estudo depois de responder, confirma a saída
+            // porque a fundamentação já foi revelada e a questão ficará bloqueada.
+            if (direction > 0 && state.mode === 'study' && state.userAnswers[currentTargetIdx] !== null && !confirmado) {
+                abrirModalConfirmacao({
+                    titulo: "Avançar para a próxima questão?",
+                    mensagem: "A resposta e a fundamentação desta questão já foram reveladas. Ela ficará bloqueada para alterações, mesmo que você retorne ao Modo Prova. Deseja avançar?",
+                    textoConfirmar: "Avançar",
+                    aoConfirmar: () => navigateQuestion(direction, true)
+                });
+                return;
+            }
+
+            const nextIndex = state.currentIndex + direction;
+            if (nextIndex >= 0 && nextIndex < state.filteredQuestions.length) {
+                state.currentIndex = nextIndex;
+                saveStateToLocalStorage();
+                displayCurrentQuestion();
+                renderQuestionGrid();
+            }
+        }
+
+        function toggleFlagCurrentQuestion() {
+            const q = state.filteredQuestions[state.currentIndex];
+            const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
+            const targetIdx = origIdx !== -1 ? origIdx : state.currentIndex;
+
+            state.flagged[targetIdx] = !state.flagged[targetIdx];
+            saveStateToLocalStorage();
+            displayCurrentQuestion();
+            renderQuestionGrid();
+        }
+
+        function updateRealtimeStats() {
+            let answered = 0;
+            let correct = 0;
+            let wrong = 0;
+            const total = questionsDatabase.length;
+
+            questionsDatabase.questionsDatabase?.forEach?.((q, idx) => {}) // fallback safe
+            questionsDatabase.forEach((q, idx) => {
+                const ans = state.userAnswers[idx];
+                if (ans !== null) {
+                    answered++;
+                    if (ans === q.answer) correct++;
+                    else wrong++;
+                }
+            });
+
+            const pending = total - answered;
+            const pct = total > 0 ? Math.round((answered / total) * 100) : 0;
+
+            const progressPanel = document.getElementById('progressPanel');
+            if (progressPanel) progressPanel.classList.toggle('hidden', state.mode === 'exam');
+
+            document.getElementById('countAnswered').innerText = answered;
+            document.getElementById('statCorrect').innerText = correct;
+            document.getElementById('statWrong').innerText = wrong;
+            document.getElementById('statPending').innerText = pending;
+            document.getElementById('progBar').style.width = `${pct}%`;
+            document.getElementById('progPercent').innerText = `${pct}% concluído`;
+        }
+
+        function startTimer() {
+            if (sessaoPersonalizadaAtiva) {
+                if (state.timerInterval) { clearInterval(state.timerInterval); state.timerInterval = null; }
+                document.getElementById('timerDisplay').parentElement.classList.add('hidden');
+                return;
+            }
+            if (!state.timerEndTime) {
+                state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+                saveStateToLocalStorage();
+            }
+
+            if (state.timerInterval) clearInterval(state.timerInterval);
+
+            state.timerInterval = setInterval(() => {
+                if (!state.timerPaused) {
+                    const now = Date.now();
+                    const remaining = Math.max(0, Math.round((state.timerEndTime - now) / 1000));
+                    
+                    state.timerSeconds = remaining;
+                    updateTimerDisplay();
+
+                    if (remaining <= 0) {
+                        clearInterval(state.timerInterval);
+                        finishExam();
+                    }
+                } else {
+                    state.timerEndTime += 1000;
+                }
+            }, 1000);
+        }
+
+        function toggleTimer() {
+            state.timerPaused = !state.timerPaused;
+            if (!state.timerPaused) {
+                state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+            }
+            saveStateToLocalStorage();
+            const btn = document.getElementById('toggleTimerBtn');
+            btn.innerHTML = state.timerPaused ? '<i class="fa-solid fa-play"></i>' : '<i class="fa-solid fa-pause"></i>';
+        }
+
+        function updateTimerDisplay() {
+            const h = String(Math.floor(state.timerSeconds / 3600)).padStart(2, '0');
+            const m = String(Math.floor((state.timerSeconds % 3600) / 60)).padStart(2, '0');
+            const s = String(state.timerSeconds % 60).padStart(2, '0');
+            document.getElementById('timerDisplay').querySelector('span').innerText = `${h}:${m}:${s}`;
+        }
+
+        function finishExam(shouldSave = true) {
+            clearInterval(state.timerInterval);
+            state.examFinished = true;
+
+            if (shouldSave) {
+                saveStateToLocalStorage();
+            }
+
+            let score = 0;
+            let opScore = 0, opTotal = 0;
+            let orgScore = 0, orgTotal = 0;
+            let jurScore = 0, jurTotal = 0;
+
+            const total = questionsDatabase.length;
+
+            questionsDatabase.forEach((q, idx) => {
+                if (q.subject === 'OPERACIONAL') opTotal++;
+                if (q.subject === 'ORGANIZACIONAL') orgTotal++;
+                if (q.subject === 'JURIDICO') jurTotal++;
+
+                const isCorrect = state.userAnswers[idx] === q.answer;
+                if (isCorrect) {
+                    score++;
+                    if (q.subject === 'OPERACIONAL') opScore++;
+                    if (q.subject === 'ORGANIZACIONAL') orgScore++;
+                    if (q.subject === 'JURIDICO') jurScore++;
+                }
+            });
+
+            const percent = total > 0 ? ((score / total) * 100).toFixed(1) : 0;
+            const grade = total > 0 ? ((score / total) * 10).toFixed(1) : 0;
+
+            const elapsedSecs = TEMPO_PROVA_SEGUNDOS - state.timerSeconds;
+            const elapsedMins = Math.floor(elapsedSecs / 60);
+            const elapsedSecsRem = elapsedSecs % 60;
+            const timeFormatted = sessaoPersonalizadaAtiva ? '—' : `${String(elapsedMins).padStart(2, '0')}m ${String(elapsedSecsRem).padStart(2, '0')}s`;
+
+            document.getElementById('resScore').innerText = `${score}/${total}`;
+            document.getElementById('resPercent').innerText = `${percent}%`;
+            document.getElementById('resGrade').innerText = grade;
+            document.getElementById('resTime').innerText = timeFormatted;
+
+            const opPct = opTotal > 0 ? Math.round((opScore / opTotal) * 100) : 0;
+            const orgPct = orgTotal > 0 ? Math.round((orgScore / orgTotal) * 100) : 0;
+            const jurPct = jurTotal > 0 ? Math.round((jurScore / jurTotal) * 100) : 0;
+
+            document.getElementById('labelOpScore').innerText = `${opScore}/${opTotal} (${opPct}%)`;
+            document.getElementById('barOpScore').style.width = `${opPct}%`;
+
+            document.getElementById('labelOrgScore').innerText = `${orgScore}/${orgTotal} (${orgPct}%)`;
+            document.getElementById('barOrgScore').style.width = `${orgPct}%`;
+
+            document.getElementById('labelJurScore').innerText = `${jurScore}/${jurTotal} (${jurPct}%)`;
+            document.getElementById('barJurScore').style.width = `${jurPct}%`;
+
+            document.getElementById('questionContainer').classList.add('hidden');
+            document.getElementById('resultsContainer').classList.remove('hidden');
+        }
+
+        function reviewExamFromResults() {
+            setMode('study');
+            document.getElementById('resultsContainer').classList.add('hidden');
+            document.getElementById('questionContainer').classList.remove('hidden');
+        }
+    </script>
+</body>
