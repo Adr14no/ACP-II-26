@@ -184,6 +184,34 @@
 
 
 
+    <!-- Modal de configuração da sessão personalizada -->
+    <div id="modalPersonalizado" class="fixed inset-0 z-[105] hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modalPersonalizadoTitulo">
+        <div class="w-full max-w-lg overflow-hidden rounded-2xl border border-pm-gold/50 bg-pm-cardBg text-slate-100 shadow-2xl">
+            <div class="flex items-center gap-3 border-b border-pm-border px-5 py-4">
+                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-pm-gold/50 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-sliders"></i></div>
+                <div><h3 id="modalPersonalizadoTitulo" class="text-base font-extrabold text-pm-gold">Sessão Personalizada</h3><p class="text-xs text-slate-400">Escolha uma área e a quantidade de questões</p></div>
+            </div>
+            <div class="space-y-4 px-5 py-5">
+                <p class="text-sm leading-relaxed text-slate-300">A sessão funciona exclusivamente no <strong class="text-white">Modo Estudo</strong>, com correção imediata e fundamentação. Não há cronômetro e as provas oficiais não serão alteradas.</p>
+                <div><label for="personalizadoArea" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-300">Área de estudo</label>
+                    <select id="personalizadoArea" class="w-full rounded-xl border border-pm-border bg-pm-navy px-3 py-3 text-sm text-white outline-none focus:border-pm-gold">
+                        <option value="OPERACIONAL">Assuntos Operacionais</option>
+                        <option value="JURIDICO">Assuntos Jurídico-Administrativos</option>
+                        <option value="ORGANIZACIONAL">Assuntos Organizacionais</option>
+                    </select>
+                </div>
+                <div><label for="personalizadoQuantidade" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-300">Quantidade de questões</label>
+                    <input id="personalizadoQuantidade" type="number" min="1" step="1" value="10" class="w-full rounded-xl border border-pm-border bg-pm-navy px-3 py-3 text-sm text-white outline-none focus:border-pm-gold">
+                    <p id="personalizadoDisponiveis" class="mt-1.5 text-xs text-slate-400">A quantidade será validada conforme o banco da área escolhida.</p>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse gap-2 border-t border-pm-border bg-pm-navy/40 px-5 py-4 sm:flex-row sm:justify-end">
+                <button type="button" onclick="fecharModalPersonalizado()" class="rounded-lg border border-pm-border px-4 py-2.5 text-sm font-semibold text-slate-300 transition hover:bg-pm-border hover:text-white">Cancelar</button>
+                <button type="button" onclick="iniciarSessaoPersonalizada()" class="rounded-lg bg-pm-gold px-4 py-2.5 text-sm font-bold text-pm-navy shadow transition hover:bg-pm-goldHover"><i class="fa-solid fa-play mr-1.5"></i> Iniciar sessão</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal personalizado de confirmação -->
     <div id="modalConfirmacao" class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modalConfirmacaoTitulo" aria-describedby="modalConfirmacaoMensagem">
         <div class="w-full max-w-md overflow-hidden rounded-2xl border border-pm-gold/50 bg-pm-cardBg text-slate-100 shadow-2xl">
@@ -232,6 +260,9 @@
                     </button>
                 </div>
 
+                <button type="button" onclick="abrirModalPersonalizado()" title="Criar sessão de estudo por área e quantidade" class="rounded-xl border border-pm-gold/60 bg-pm-gold/10 px-3.5 py-2 text-xs sm:text-sm font-bold text-pm-gold transition hover:bg-pm-gold hover:text-pm-navy flex items-center gap-2">
+                    <i class="fa-solid fa-sliders"></i> Personalizado
+                </button>
                 <!-- Botão Novo Simulado Sempre Visível -->
                 <button onclick="confirmarNovoSimulado()" title="Limpar tudo e iniciar novo sorteio" class="bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2 border border-amber-400/40">
                     <i class="fa-solid fa-arrows-rotate"></i> Novo Simulado
@@ -471,6 +502,8 @@
         let MODAL_STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_MODAL_INSTRUCOES_VISTO_CAO' : 'PMESP_MODAL_INSTRUCOES_VISTO_ACP';
 
         let questionsDatabase = [];
+        let sessaoPersonalizadaAtiva = false;
+        const STORAGE_KEY_OFICIAL = STORAGE_KEY;
 
         let state = {
             mode: 'exam', 
@@ -569,7 +602,8 @@
                 examFinished: state.examFinished,
                 currentIndex: state.currentIndex,
                 mode: state.mode,
-                activeFilter: state.activeFilter
+                activeFilter: state.activeFilter,
+                sessaoPersonalizadaAtiva: sessaoPersonalizadaAtiva
             };
             localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
         }
@@ -769,18 +803,108 @@
             return shuffle(selecionadas).map((q, idx) => ({ ...q, idSimulado: idx + 1 }));
         }
 
-        function gerarEIniciarNovoSimulado() {
-            let bancoBase = [];
+        function obterBancoBase() {
+            if (typeof BANCO_SIMULADOS !== 'undefined' && BANCO_SIMULADOS.simulado_01 && BANCO_SIMULADOS.simulado_01.questoes) return BANCO_SIMULADOS.simulado_01.questoes;
+            if (typeof BANCO_SIMULADOS !== 'undefined' && Array.isArray(BANCO_SIMULADOS)) return BANCO_SIMULADOS;
+            if (typeof BANCO_GERAL_QUESTOES !== 'undefined' && Array.isArray(BANCO_GERAL_QUESTOES)) return BANCO_GERAL_QUESTOES;
+            if (window.questionsDatabase && window.questionsDatabase.length > 0) return window.questionsDatabase;
+            return [];
+        }
 
-            if (typeof BANCO_SIMULADOS !== 'undefined' && BANCO_SIMULADOS.simulado_01 && BANCO_SIMULADOS.simulado_01.questoes) {
-                bancoBase = BANCO_SIMULADOS.simulado_01.questoes;
-            } else if (typeof BANCO_SIMULADOS !== 'undefined' && Array.isArray(BANCO_SIMULADOS)) {
-                bancoBase = BANCO_SIMULADOS;
-            } else if (typeof BANCO_GERAL_QUESTOES !== 'undefined' && Array.isArray(BANCO_GERAL_QUESTOES)) {
-                bancoBase = BANCO_GERAL_QUESTOES;
-            } else if (window.questionsDatabase && window.questionsDatabase.length > 0) {
-                bancoBase = window.questionsDatabase;
-            } else {
+        function abrirModalPersonalizado() {
+            const banco = obterBancoBase();
+            if (!banco.length) {
+                alert(`Erro ao carregar o banco ${cursoAtivo === 'CAO' ? 'questoes2.js' : 'questoes.js'}. Verifique se o arquivo está na mesma pasta do index.html e publicado no repositório.`);
+                return;
+            }
+            atualizarDisponibilidadePersonalizada();
+            const modal = document.getElementById('modalPersonalizado');
+            modal.classList.remove('hidden'); modal.classList.add('flex');
+        }
+
+        function fecharModalPersonalizado() {
+            const modal = document.getElementById('modalPersonalizado');
+            modal.classList.add('hidden'); modal.classList.remove('flex');
+        }
+
+        function atualizarDisponibilidadePersonalizada() {
+            const banco = obterBancoBase();
+            const area = document.getElementById('personalizadoArea').value;
+            const disponiveis = banco.filter(q => q.subject === area).length;
+            const campo = document.getElementById('personalizadoQuantidade');
+            campo.max = Math.max(1, disponiveis);
+            document.getElementById('personalizadoDisponiveis').innerText = `${disponiveis} questão(ões) disponíveis nesta área no banco atual.`;
+            if (Number(campo.value) > disponiveis) campo.value = disponiveis || 1;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const area = document.getElementById('personalizadoArea');
+            if (area) area.addEventListener('change', atualizarDisponibilidadePersonalizada);
+        });
+
+        function iniciarSessaoPersonalizada() {
+            const bancoBase = obterBancoBase();
+            const area = document.getElementById('personalizadoArea').value;
+            const quantidade = Number.parseInt(document.getElementById('personalizadoQuantidade').value, 10);
+            const pool = bancoBase.filter(q => q.subject === area);
+            if (!Number.isInteger(quantidade) || quantidade < 1) {
+                alert('Informe uma quantidade inteira de pelo menos 1 questão.'); return;
+            }
+            if (quantidade > pool.length) {
+                alert(`A área selecionada possui apenas ${pool.length} questão(ões) no banco. Reduza a quantidade.`); return;
+            }
+
+            if (state.timerInterval) { clearInterval(state.timerInterval); state.timerInterval = null; }
+            sessaoPersonalizadaAtiva = true;
+            STORAGE_KEY = `${STORAGE_KEY_OFICIAL}_PERSONALIZADO`;
+            const embaralhadas = [...pool];
+            for (let i = embaralhadas.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [embaralhadas[i], embaralhadas[j]] = [embaralhadas[j], embaralhadas[i]];
+            }
+            questionsDatabase = embaralhadas.slice(0, quantidade).map((q, idx) => ({ ...q, idSimulado: idx + 1 }));
+            state.mode = 'study';
+            state.userAnswers = new Array(questionsDatabase.length).fill(null);
+            state.flagged = new Array(questionsDatabase.length).fill(false);
+            state.studyLocked = new Array(questionsDatabase.length).fill(false);
+            state.timerSeconds = 0;
+            state.timerEndTime = null;
+            state.timerPaused = true;
+            state.examFinished = false;
+            state.currentIndex = 0;
+            state.activeFilter = 'ALL';
+            fecharModalPersonalizado();
+
+            document.getElementById('timerDisplay').parentElement.classList.add('hidden');
+            document.querySelectorAll('button[onclick="confirmarNovoSimulado()"]')[0]?.classList.remove('hidden');
+            document.querySelectorAll('button[onclick="finishExam()"]')[0].innerHTML = '<i class="fa-solid fa-flag-checkered"></i> Concluir Sessão';
+            document.getElementById('btnModeExam').classList.add('hidden');
+            document.getElementById('btnModeStudy').classList.add('hidden');
+            document.getElementById('simuladoTitulo').innerText = 'Sessão Personalizada';
+            document.getElementById('subtituloCurso').innerText = `${area === 'OPERACIONAL' ? 'Assuntos Operacionais' : area === 'JURIDICO' ? 'Assuntos Jurídico-Administrativos' : 'Assuntos Organizacionais'} · Modo Estudo · Sem cronômetro`;
+            document.getElementById('resultsContainer').classList.add('hidden');
+            document.getElementById('questionContainer').classList.remove('hidden');
+            updateSubjectCounts(); updateFilteredQuestions(); renderQuestionGrid(); displayCurrentQuestion(); updateRealtimeStats();
+            saveStateToLocalStorage();
+        }
+
+        function gerarEIniciarNovoSimulado() {
+            const veioDePersonalizado = sessaoPersonalizadaAtiva;
+            sessaoPersonalizadaAtiva = false;
+            STORAGE_KEY = STORAGE_KEY_OFICIAL;
+            if (veioDePersonalizado) {
+                state.mode = 'exam';
+                document.getElementById('btnModeExam').className = "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow";
+                document.getElementById('btnModeStudy').className = "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
+            }
+            document.getElementById('timerDisplay').parentElement.classList.remove('hidden');
+            document.getElementById('btnModeExam').classList.remove('hidden');
+            document.getElementById('btnModeStudy').classList.remove('hidden');
+            document.getElementById('simuladoTitulo').innerText = cursoAtivo === 'CAO' ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP II/26 — Capitão PM';
+            document.getElementById('subtituloCurso').innerText = cursoAtivo === 'CAO' ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
+            document.querySelectorAll('button[onclick="finishExam()"]')[0].innerHTML = '<i class="fa-solid fa-flag-checkered"></i> Finalizar Prova';
+            let bancoBase = obterBancoBase();
+            if (!bancoBase.length) {
                 alert(`Erro ao carregar o banco ${cursoAtivo === 'CAO' ? 'questoes2.js' : 'questoes.js'}. Verifique se o arquivo está na mesma pasta do index.html e publicado no repositório.`);
                 return;
             }
@@ -827,6 +951,7 @@
         }
 
         function setMode(newMode, confirmado = false) {
+            if (sessaoPersonalizadaAtiva) newMode = 'study';
             if (newMode === state.mode) return;
 
             // Confirmação visual personalizada ao sair do Modo Prova para o Modo Estudo.
@@ -1133,6 +1258,11 @@
         }
 
         function startTimer() {
+            if (sessaoPersonalizadaAtiva) {
+                if (state.timerInterval) { clearInterval(state.timerInterval); state.timerInterval = null; }
+                document.getElementById('timerDisplay').parentElement.classList.add('hidden');
+                return;
+            }
             if (!state.timerEndTime) {
                 state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
                 saveStateToLocalStorage();
@@ -1210,7 +1340,7 @@
             const elapsedSecs = TEMPO_PROVA_SEGUNDOS - state.timerSeconds;
             const elapsedMins = Math.floor(elapsedSecs / 60);
             const elapsedSecsRem = elapsedSecs % 60;
-            const timeFormatted = `${String(elapsedMins).padStart(2, '0')}m ${String(elapsedSecsRem).padStart(2, '0')}s`;
+            const timeFormatted = sessaoPersonalizadaAtiva ? '—' : `${String(elapsedMins).padStart(2, '0')}m ${String(elapsedSecsRem).padStart(2, '0')}s`;
 
             document.getElementById('resScore').innerText = `${score}/${total}`;
             document.getElementById('resPercent').innerText = `${percent}%`;
