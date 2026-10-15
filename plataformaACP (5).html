@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071020">
+  <title>Área de Estudos ACP II/26 — Plataforma de Aperfeiçoamento</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        pm: { navy: '#0b1326', header: '#071020', gold: '#d4af37',
+              goldHover: '#b59226', card: '#101c32', card2: '#14223b',
+              border: '#2a3c66' }
+      }}}
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0b1326; }
+    .hero-pattern {
+      background:
+        linear-gradient(90deg, rgba(7,16,32,.98) 0%, rgba(7,16,32,.88) 55%, rgba(7,16,32,.96) 100%),
+        repeating-linear-gradient(135deg, transparent 0 42px, rgba(212,175,55,.035) 42px 44px);
+    }
+    .subject-card { transition: border-color .18s ease, transform .18s ease; }
+    .subject-card:hover { border-color: rgba(212,175,55,.7); transform: translateY(-2px); }
+    .focus-ring:focus-visible { outline: 2px solid #d4af37; outline-offset: 3px; }
+  </style>
+</head>
+<body class="min-h-screen text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
+  <!-- CABEÇALHO INSTITUCIONAL -->
+  <header class="sticky top-0 z-40 border-b border-pm-border bg-pm-header/95 shadow-lg backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6 lg:px-8">
+      <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-card text-pm-gold">
+        <i class="fa-solid fa-graduation-cap text-lg"></i>
+      </div>
+      <div class="min-w-0">
+        <h1 class="text-sm font-black tracking-tight text-white sm:text-base">Plataforma <span class="text-pm-gold">de Aperfeiçoamento</span></h1>
+        <p class="text-[10px] text-slate-400 sm:text-xs">Polícia Militar do Estado de São Paulo</p>
+      </div>
+      <div class="ml-auto flex items-center gap-2">
+        <a href="perfil-usuario.html" title="Abrir perfil e segurança da conta" aria-label="Perfil do usuário" class="focus-ring inline-flex items-center gap-2 rounded-lg border border-pm-gold/50 bg-pm-navy/70 px-2.5 py-2 text-xs font-bold text-slate-200 transition hover:border-pm-gold hover:text-pm-gold sm:px-3 sm:text-sm">
+          <span class="flex h-7 w-7 items-center justify-center rounded-full border border-pm-gold/70 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-user"></i></span><span>Perfil</span>
+        </a>
+        <a href="index.html" class="focus-ring inline-flex items-center gap-2 rounded-lg border border-pm-border px-3 py-2 text-xs font-bold text-slate-300 transition hover:border-pm-gold/60 hover:text-white sm:text-sm">
+          <i class="fa-solid fa-arrow-left"></i><span>Início</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER DA ÁREA DO CURSO -->
+  <section class="hero-pattern border-b border-pm-border">
+    <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div class="mb-4 flex items-center gap-2 text-xs text-slate-400">
+        <a class="focus-ring hover:text-pm-gold" href="index.html"><i class="fa-solid fa-house mr-1"></i>Início</a>
+        <span>/</span><span class="text-slate-200">ACP II/26</span>
+      </div>
+      <div class="mb-4 h-1 w-16 bg-pm-gold"></div>
+      <p class="mb-2 text-[10px] font-extrabold uppercase tracking-[.24em] text-pm-gold sm:text-xs">Ambiente de estudos</p>
+      <h2 class="text-3xl font-black leading-tight text-white sm:text-4xl">Área de estudos <span class="text-pm-gold">— ACP II/26</span></h2>
+      <p class="mt-3 max-w-2xl text-sm leading-relaxed text-slate-300 sm:text-base">Selecione uma matéria para acessar normas, referências e materiais organizados por ramo do conhecimento.</p>
+    </div>
+  </section>
+
+  <main class="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+    <!-- IDENTIFICAÇÃO DO CURSO -->
+    <section class="mb-5 flex flex-col gap-4 rounded-2xl border border-pm-border bg-gradient-to-r from-[#172641] to-[#0e1a30] p-4 sm:flex-row sm:items-center sm:p-5">
+      <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-gold/10 text-2xl text-pm-gold">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+      <div class="min-w-0 flex-1">
+        <p class="text-[10px] font-extrabold uppercase tracking-[.2em] text-pm-gold">Curso selecionado</p>
+        <h3 class="mt-1 text-lg font-black text-white sm:text-xl">Aperfeiçoamento — Capitão PM</h3>
+        <p class="mt-1 text-sm text-slate-400">Conteúdos de estudo, legislação e materiais complementares.</p>
+      </div>
+      <span class="inline-flex w-fit items-center gap-2 rounded-full border border-pm-gold/50 px-3 py-2 text-xs font-extrabold text-pm-gold">
+        <i class="fa-solid fa-book-open"></i>ACP II/26
+      </span>
+    </section>
+
+    <!-- BANCO DE CONTEÚDOS POR MATÉRIA -->
+    <section class="rounded-2xl border border-pm-border bg-[#101c32]/95 p-4 shadow-lg sm:p-6">
+      <div class="mb-5 flex items-start gap-3">
+        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-gold/10 text-xl text-pm-gold">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+        <div>
+          <h3 class="text-lg font-black text-white sm:text-xl">Banco de conteúdos por matéria</h3>
+          <p class="mt-1 text-xs leading-relaxed text-slate-400 sm:text-sm">Abra uma área para consultar os materiais disponíveis.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
+        <!-- MATÉRIA 1: adicione os links dos documentos no bloco DOCUMENTOS JURÍDICO-ADMINISTRATIVOS, ao final deste arquivo. -->
+        <article class="subject-card flex flex-col rounded-xl border border-pm-border bg-gradient-to-b from-[#14223b] to-[#0d192c] p-4 sm:p-5">
+          <div class="mb-4 flex items-center gap-3">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-navy text-xl text-pm-gold"><i class="fa-solid fa-scale-balanced"></i></div>
+            <div>
+              <h4 class="font-extrabold text-white">Jurídico-Administrativo</h4>
+              <p class="mt-1 text-xs text-slate-400">Legislação, normas e diretrizes</p>
+            </div>
+          </div>
+          <div class="mb-4 flex-1">
+            <p class="text-xs leading-relaxed text-slate-400">Normas e referências aplicadas à atividade policial e à administração pública.</p>
+            <div id="lista-juridico" class="mt-4 space-y-2">
+              <p class="rounded-lg border border-dashed border-pm-border px-3 py-3 text-xs text-slate-500">Clique em “Ver materiais” para abrir a lista de normas.</p>
+            </div>
+          </div>
+          <button type="button" data-category="juridico" class="focus-ring inline-flex items-center justify-center gap-2 rounded-lg border border-pm-gold/70 px-4 py-3 text-xs font-extrabold text-pm-gold transition hover:bg-pm-gold hover:text-pm-navy">
+            Ver materiais <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <!-- MATÉRIA 2: adicione os links dos documentos no bloco DOCUMENTOS ORGANIZACIONAIS, ao final deste arquivo. -->
+        <article class="subject-card flex flex-col rounded-xl border border-pm-border bg-gradient-to-b from-[#14223b] to-[#0d192c] p-4 sm:p-5">
+          <div class="mb-4 flex items-center gap-3">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-navy text-xl text-pm-gold"><i class="fa-solid fa-building-columns"></i></div>
+            <div>
+              <h4 class="font-extrabold text-white">Organizacional</h4>
+              <p class="mt-1 text-xs text-slate-400">Estrutura e gestão institucional</p>
+            </div>
+          </div>
+          <div class="mb-4 flex-1">
+            <p class="text-xs leading-relaxed text-slate-400">Organização, gestão, administração e assuntos institucionais da PMESP.</p>
+            <div id="lista-organizacional" class="mt-4 space-y-2">
+              <p class="rounded-lg border border-dashed border-pm-border px-3 py-3 text-xs text-slate-500">Clique em “Ver materiais” para abrir a lista de normas.</p>
+            </div>
+          </div>
+          <button type="button" data-category="organizacional" class="focus-ring inline-flex items-center justify-center gap-2 rounded-lg border border-pm-gold/70 px-4 py-3 text-xs font-extrabold text-pm-gold transition hover:bg-pm-gold hover:text-pm-navy">
+            Ver materiais <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <!-- MATÉRIA 3: adicione os links dos documentos no bloco DOCUMENTOS OPERACIONAIS, ao final deste arquivo. -->
+        <article class="subject-card flex flex-col rounded-xl border border-pm-border bg-gradient-to-b from-[#14223b] to-[#0d192c] p-4 sm:p-5">
+          <div class="mb-4 flex items-center gap-3">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-navy text-xl text-pm-gold"><i class="fa-solid fa-crosshairs"></i></div>
+            <div>
+              <h4 class="font-extrabold text-white">Operacional</h4>
+              <p class="mt-1 text-xs text-slate-400">Doutrina e procedimentos operacionais</p>
+            </div>
+          </div>
+          <div class="mb-4 flex-1">
+            <p class="text-xs leading-relaxed text-slate-400">Diretrizes, procedimentos, técnicas e emprego operacional.</p>
+            <div id="lista-operacional" class="mt-4 space-y-2">
+              <p class="rounded-lg border border-dashed border-pm-border px-3 py-3 text-xs text-slate-500">Clique em “Ver materiais” para abrir a lista de normas.</p>
+            </div>
+          </div>
+          <button type="button" data-category="operacional" class="focus-ring inline-flex items-center justify-center gap-2 rounded-lg border border-pm-gold/70 px-4 py-3 text-xs font-extrabold text-pm-gold transition hover:bg-pm-gold hover:text-pm-navy">
+            Ver materiais <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACESSO TEMPORÁRIO AO GOOGLE DRIVE: manter enquanto a biblioteca interna não estiver pronta. -->
+    <section class="mt-5 rounded-2xl border border-pm-gold/40 bg-gradient-to-r from-[#101c32] to-[#14223b] p-4 shadow-lg sm:p-5">
+      <div class="mb-4 flex items-start gap-3">
+        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-gold/10 text-lg text-pm-gold">
+          <i class="fa-brands fa-google-drive"></i>
+        </div>
+        <div>
+          <div class="flex flex-wrap items-center gap-2">
+            <h3 class="text-sm font-extrabold text-white sm:text-base">Acesso temporário aos materiais</h3>
+            <span class="rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-1 text-[9px] font-bold uppercase tracking-wide text-amber-300">Temporário</span>
+          </div>
+          <p class="mt-1 text-xs leading-relaxed text-slate-400 sm:text-sm">Enquanto a biblioteca interna está em desenvolvimento, acesse os arquivos pelo Google Drive.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <a href="https://drive.google.com/drive/u/0/folders/17iptcN0FYZRxodRZZnr5MTuNZ_lJrS3d" target="_blank" rel="noopener noreferrer" class="focus-ring flex items-center justify-between gap-3 rounded-xl border border-pm-border bg-[#0b1326]/70 p-4 transition hover:border-pm-gold/70 hover:bg-[#192b49]">
+          <span class="flex items-center gap-3"><i class="fa-solid fa-file-lines text-xl text-pm-gold"></i><span><span class="block text-sm font-bold text-white">Resumos</span><span class="mt-1 block text-xs text-slate-400">Sínteses para revisão</span></span></span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-sm text-pm-gold"></i>
+        </a>
+        <a href="https://drive.google.com/drive/u/6/folders/1dVtJH7zNjgt2vhIZFmVQWQ527c-t_pgi" target="_blank" rel="noopener noreferrer" class="focus-ring flex items-center justify-between gap-3 rounded-xl border border-pm-border bg-[#0b1326]/70 p-4 transition hover:border-pm-gold/70 hover:bg-[#192b49]">
+          <span class="flex items-center gap-3"><i class="fa-solid fa-scale-balanced text-xl text-pm-gold"></i><span><span class="block text-sm font-bold text-white">Legislação</span><span class="mt-1 block text-xs text-slate-400">Normas e referências de estudo</span></span></span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-sm text-pm-gold"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- BANCO DE QUESTÕES: leva ao simulador existente. A página do simulador deve permanecer como plataforma.html. -->
+    <section class="mt-5 flex flex-col gap-4 rounded-2xl border border-pm-border bg-gradient-to-r from-[#101c32] to-[#14223b] p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
+      <div class="flex items-center gap-3">
+        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-navy text-xl text-pm-gold"><i class="fa-solid fa-file-lines"></i></div>
+        <div>
+          <h3 class="font-black text-white sm:text-lg">Banco de questões</h3>
+          <p class="mt-1 text-xs text-slate-400 sm:text-sm">Acesse o ambiente de simulados do curso selecionado.</p>
+        </div>
+      </div>
+      <a href="plataforma.html?curso=ACP" class="focus-ring inline-flex items-center justify-center gap-2 rounded-lg bg-pm-gold px-5 py-3 text-sm font-black text-pm-navy shadow-lg transition hover:bg-pm-goldHover">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>Acessar questões<i class="fa-solid fa-arrow-right ml-1"></i>
+      </a>
+    </section>
+
+    <!-- INSTRUÇÃO PARA FUTURA INTEGRAÇÃO -->
+    <aside class="mt-4 rounded-xl border border-dashed border-pm-border bg-pm-card/60 p-4">
+      <div class="flex items-start gap-3">
+        <i class="fa-solid fa-circle-info mt-0.5 text-pm-gold"></i>
+        <div>
+          <h3 class="text-sm font-bold text-slate-200">Biblioteca em organização</h3>
+          <p class="mt-1 text-xs leading-relaxed text-slate-400">Os links para as normas serão inseridos conforme os documentos forem transcritos e preparados em páginas próprias, com leitura, marcação amarela e anotações pessoais. Esta página é o índice das matérias, não o leitor da norma.</p>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+
+  <!-- MODAL DE MATERIAIS: abre somente a categoria selecionada -->
+  <div id="materiais-modal" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/75 p-3 sm:p-6" role="presentation">
+    <section class="flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl border border-pm-border bg-pm-navy shadow-2xl" role="dialog" aria-modal="true" aria-labelledby="materiais-modal-title">
+      <div class="flex items-start gap-3 border-b border-pm-border bg-gradient-to-r from-[#172641] to-[#0e1a30] p-4 sm:p-5">
+        <div id="materiais-modal-icon" class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-navy text-xl text-pm-gold"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="min-w-0 flex-1">
+          <p class="text-[10px] font-extrabold uppercase tracking-[.2em] text-pm-gold">Normas da matéria</p>
+          <h2 id="materiais-modal-title" class="mt-1 text-lg font-black text-white sm:text-xl">Jurídico-Administrativo</h2>
+          <p id="materiais-modal-description" class="mt-1 text-xs leading-relaxed text-slate-400 sm:text-sm">Pesquise e selecione uma norma para consultar seus materiais.</p>
+        </div>
+        <button id="materiais-modal-close" type="button" aria-label="Fechar janela" class="focus-ring flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-pm-border text-xl text-slate-300 hover:border-pm-gold hover:text-white">×</button>
+      </div>
+      <div class="border-b border-pm-border p-4">
+        <input id="materiais-modal-search" type="search" placeholder="Pesquisar por nome, código ou assunto..." class="focus-ring w-full rounded-lg border border-pm-border bg-[#071020] px-4 py-3 text-sm text-white placeholder:text-slate-500">
+        <p id="materiais-modal-count" class="mt-2 text-xs text-slate-400" aria-live="polite"></p>
+      </div>
+      <div id="materiais-modal-list" class="grid gap-2 overflow-y-auto p-4 sm:p-5"></div>
+      <div class="border-t border-pm-border bg-[#071020]/70 px-4 py-3 text-[11px] text-slate-500 sm:px-5">A lista mostra somente as normas da matéria selecionada. Ao escolher uma norma, você irá para a página de materiais dela.</div>
+    </section>
+  </div>
+
+  <!-- SEGUNDO MODAL: materiais específicos da norma selecionada -->
+  <div id="norma-materiais-modal" class="fixed inset-0 z-[70] hidden items-center justify-center bg-black/80 p-3 sm:p-6" role="presentation">
+    <section class="flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl border border-pm-border bg-pm-navy shadow-2xl" role="dialog" aria-modal="true" aria-labelledby="norma-materiais-title">
+      <div class="flex items-start gap-3 border-b border-pm-border bg-gradient-to-r from-[#172641] to-[#0e1a30] p-4 sm:p-5">
+        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-navy text-xl text-pm-gold"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="min-w-0 flex-1">
+          <p class="text-[10px] font-extrabold uppercase tracking-[.2em] text-pm-gold">Materiais da norma</p>
+          <h2 id="norma-materiais-title" class="mt-1 text-lg font-black text-white sm:text-xl">I-16-PM</h2>
+          <p class="mt-1 text-xs leading-relaxed text-slate-400 sm:text-sm">Escolha o texto integral ou um material de revisão.</p>
+        </div>
+        <button id="norma-materiais-back" type="button" class="focus-ring rounded-lg border border-pm-border px-3 py-2 text-xs font-bold text-slate-300 hover:border-pm-gold hover:text-white"><i class="fa-solid fa-arrow-left mr-1"></i> Voltar</button>
+        <button id="norma-materiais-close" type="button" aria-label="Fechar janela" class="focus-ring flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-pm-border text-xl text-slate-300 hover:border-pm-gold hover:text-white">×</button>
+      </div>
+      <div class="grid gap-3 overflow-y-auto p-4 sm:p-5">
+        <a href="norma-I16-PM-modelo.html" class="focus-ring flex items-center gap-3 rounded-xl border border-pm-border bg-[#101c32] p-4 text-white transition hover:border-pm-gold/70 hover:bg-[#192b49]">
+          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-book-open text-xl"></i></span>
+          <span class="min-w-0 flex-1"><strong class="block text-sm font-extrabold">I-16-PM · TEXTO INTEGRAL</strong><span class="mt-1 block text-xs leading-relaxed text-slate-400">Instruções do Processo Administrativo da Polícia Militar — leitor da norma transcrita, com grifos e anotações.</span></span>
+          <i class="fa-solid fa-chevron-right text-pm-gold"></i>
+        </a>
+        <a href="https://drive.google.com/file/d/1yZEoGGFXwuo-_J27ORIsHIDjEoD4Pffk/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="focus-ring flex items-center gap-3 rounded-xl border border-pm-border bg-[#101c32] p-4 text-white transition hover:border-pm-gold/70 hover:bg-[#192b49]">
+          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-file-pdf text-xl"></i></span>
+          <span class="min-w-0 flex-1"><strong class="block text-sm font-extrabold">I-16-PM · RESUMO PARA REVISÃO</strong><span class="mt-1 block text-xs leading-relaxed text-slate-400">Resumo elaborado com auxílio de inteligência artificial (IA). Material de apoio à revisão; confira as informações na norma original, pois não substitui a publicação oficial.</span></span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-pm-gold"></i>
+        </a>
+      </div>
+      <div class="border-t border-pm-border bg-[#071020]/70 px-4 py-3 text-[11px] text-slate-500 sm:px-5">Novos resumos e materiais da I-16-PM poderão ser adicionados aqui, cada um com identificação própria.</div>
+    </section>
+  </div>
+
+  <footer class="mt-auto border-t border-pm-border bg-pm-header/80">
+    <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-4 text-[10px] text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <p><i class="fa-solid fa-shield-halved mr-1.5 text-pm-gold"></i>Seus estudos são a prioridade.</p>
+      <p>Plataforma de Aperfeiçoamento | Polícia Militar do Estado de São Paulo</p>
+    </div>
+  </footer>
+
+  <!--
+  ============================================================
+  COMO ADICIONAR UMA NORMA (quando a página da norma existir)
+  ============================================================
+  1. Crie a página própria da norma, por exemplo: norma-diretriz-cop-acp.html
+  2. Localize a lista correspondente abaixo e troque o aviso de
+     "Materiais serão adicionados aqui" por um link no formato:
+
+     <a href="norma-diretriz-cop-acp.html"
+        class="block rounded-lg border border-pm-border bg-pm-navy/60 px-3 py-3 text-sm text-slate-200 hover:border-pm-gold/60">
+       <span class="font-bold">04. Diretriz nº PM3-001/02/25</span>
+       <span class="mt-1 block text-xs text-slate-400">Câmeras Operacionais Portáteis (COP)</span>
+     </a>
+
+  3. Mantenha cada link dentro do recipiente da matéria correta:
+     lista-juridico, lista-organizacional ou lista-operacional.
+  4. Repita o procedimento para cada norma. Não é necessário alterar
+     a estrutura geral da página.
+  5. Para o CAO, use os arquivos e links específicos do CAO.
+  ============================================================
+  -->
+
+<script>
+    // Catálogo por matéria: cada item representa uma NORMA.
+    // Ao selecionar uma norma, abre-se um segundo modal com os materiais específicos.
+    const catalogoMateriais = {
+      juridico: {
+        titulo: "Jurídico-Administrativo",
+        descricao: "Pesquise e selecione uma norma jurídico-administrativa.",
+        icone: "fa-scale-balanced",
+        materiais: [
+          {
+            codigo: "I-16-PM",
+            titulo: "Instruções do Processo Administrativo da Polícia Militar",
+            detalhe: "3ª edição · Texto integral e materiais de revisão",
+            href: "norma-I16-PM-modelo.html",
+            normaId: "i16pm",
+            termos: "processo administrativo polícia militar instruções norma"
+          }
+        ]
+      },
+      organizacional: {
+        titulo: "Organizacional",
+        descricao: "Pesquise e selecione uma norma organizacional.",
+        icone: "fa-building-columns",
+        materiais: []
+      },
+      operacional: {
+        titulo: "Operacional",
+        descricao: "Pesquise e selecione uma norma operacional.",
+        icone: "fa-crosshairs",
+        materiais: []
+      }
+    };
+
+    const modalMateriais = document.getElementById("materiais-modal");
+    const tituloModal = document.getElementById("materiais-modal-title");
+    const descricaoModal = document.getElementById("materiais-modal-description");
+    const iconeModal = document.getElementById("materiais-modal-icon");
+    const buscaModal = document.getElementById("materiais-modal-search");
+    const listaModal = document.getElementById("materiais-modal-list");
+    const contagemModal = document.getElementById("materiais-modal-count");
+    const fecharModal = document.getElementById("materiais-modal-close");
+    const modalNorma = document.getElementById("norma-materiais-modal");
+    const voltarModalNorma = document.getElementById("norma-materiais-back");
+    const fecharModalNorma = document.getElementById("norma-materiais-close");
+    let categoriaAtiva = "";
+    let focoAnterior = null;
+
+    function renderizarMateriais() {
+      const categoria = catalogoMateriais[categoriaAtiva];
+      const termo = buscaModal.value.trim().toLocaleLowerCase("pt-BR");
+      const encontrados = categoria.materiais.filter(m =>
+        (m.codigo + " " + m.titulo + " " + m.detalhe + " " + (m.termos || ""))
+          .toLocaleLowerCase("pt-BR").includes(termo)
+      );
+      contagemModal.textContent = categoria.materiais.length
+        ? `${encontrados.length} de ${categoria.materiais.length} norma(s)`
+        : "Nenhuma norma cadastrada nesta matéria.";
+      listaModal.replaceChildren();
+
+      if (!encontrados.length) {
+        const vazio = document.createElement("div");
+        vazio.className = "rounded-xl border border-dashed border-pm-border p-6 text-center text-sm leading-relaxed text-slate-400";
+        const forte = document.createElement("strong");
+        forte.className = "mb-2 block text-white";
+        forte.textContent = categoria.materiais.length ? "Nenhuma norma encontrada" : "Catálogo em construção";
+        const texto = document.createElement("p");
+        texto.textContent = categoria.materiais.length
+          ? "Tente pesquisar usando outro termo."
+          : "As normas desta matéria serão adicionadas aqui conforme forem preparadas e conferidas.";
+        vazio.append(forte, texto);
+        listaModal.append(vazio);
+        return;
+      }
+
+      encontrados.forEach(norma => {
+        const link = document.createElement("a");
+        link.href = norma.href;
+        if (norma.normaId === "i16pm") link.dataset.openNorma = norma.normaId;
+        link.className = "focus-ring flex items-center gap-3 rounded-xl border border-pm-border bg-[#101c32] p-4 text-white transition hover:border-pm-gold/70 hover:bg-[#192b49]";
+        const icone = document.createElement("span");
+        icone.className = "flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-pm-gold/10 text-pm-gold";
+        icone.innerHTML = '<i class="fa-solid fa-book-open"></i>';
+        const texto = document.createElement("span");
+        texto.className = "min-w-0 flex-1";
+        const codigo = document.createElement("strong");
+        codigo.className = "block text-sm font-extrabold";
+        codigo.textContent = norma.codigo;
+        const detalhe = document.createElement("span");
+        detalhe.className = "mt-1 block text-xs leading-relaxed text-slate-400";
+        detalhe.textContent = norma.titulo + " — " + norma.detalhe;
+        texto.append(codigo, detalhe);
+        const seta = document.createElement("i");
+        seta.className = "fa-solid fa-chevron-right text-sm text-pm-gold";
+        link.append(icone, texto, seta);
+        if (norma.normaId === "i16pm") {
+          link.addEventListener("click", evento => {
+            evento.preventDefault();
+            abrirModalNorma();
+          });
+        }
+        listaModal.append(link);
+      });
+    }
+
+    function abrirModalMateriais(categoria) {
+      categoriaAtiva = categoria;
+      focoAnterior = document.activeElement;
+      const dados = catalogoMateriais[categoria];
+      tituloModal.textContent = dados.titulo;
+      descricaoModal.textContent = dados.descricao;
+      iconeModal.innerHTML = `<i class="fa-solid ${dados.icone}"></i>`;
+      buscaModal.value = "";
+      renderizarMateriais();
+      modalMateriais.classList.remove("hidden");
+      modalMateriais.classList.add("flex");
+      document.body.classList.add("overflow-hidden");
+      fecharModal.focus();
+    }
+
+    function abrirModalNorma() {
+      modalMateriais.classList.add("hidden");
+      modalMateriais.classList.remove("flex");
+      modalNorma.classList.remove("hidden");
+      modalNorma.classList.add("flex");
+      fecharModalNorma.focus();
+    }
+
+    function voltarParaCatalogo() {
+      modalNorma.classList.add("hidden");
+      modalNorma.classList.remove("flex");
+      modalMateriais.classList.remove("hidden");
+      modalMateriais.classList.add("flex");
+      buscaModal.focus();
+    }
+
+    function fecharModalNormaCompleto() {
+      modalNorma.classList.add("hidden");
+      modalNorma.classList.remove("flex");
+      fecharModalMateriais();
+    }
+
+    function fecharModalMateriais() {
+      modalMateriais.classList.add("hidden");
+      modalMateriais.classList.remove("flex");
+      modalNorma.classList.add("hidden");
+      modalNorma.classList.remove("flex");
+      document.body.classList.remove("overflow-hidden");
+      categoriaAtiva = "";
+      if (focoAnterior) focoAnterior.focus();
+    }
+
+    voltarModalNorma.addEventListener("click", voltarParaCatalogo);
+    fecharModalNorma.addEventListener("click", fecharModalNormaCompleto);
+    modalNorma.addEventListener("click", evento => {
+      if (evento.target === modalNorma) fecharModalNormaCompleto();
+    });
+
+    document.querySelectorAll("[data-category]").forEach(botao => {
+      botao.addEventListener("click", () => abrirModalMateriais(botao.dataset.category));
+    });
+    fecharModal.addEventListener("click", fecharModalMateriais);
+    modalMateriais.addEventListener("click", evento => {
+      if (evento.target === modalMateriais) fecharModalMateriais();
+    });
+    document.addEventListener("keydown", evento => {
+      if (evento.key === "Escape" && !modalNorma.classList.contains("hidden")) voltarParaCatalogo();
+      else if (evento.key === "Escape" && !modalMateriais.classList.contains("hidden")) fecharModalMateriais();
+    });
+    buscaModal.addEventListener("input", renderizarMateriais);
+  </script>
+</body>
+</html>
