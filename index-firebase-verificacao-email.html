@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plataforma de Aperfeiçoamento | Teste Firebase</title>
+<style>
+  :root{
+    --navy:#071629; --navy2:#0b2340; --gold:#d6b36a; --gold2:#f0d79b;
+    --white:#f7f8fb; --muted:#b8c4d4; --line:rgba(226,195,125,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--navy);color:var(--white)}
+  .page{min-height:100vh;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(420px,.88fr);background:
+    radial-gradient(ellipse at 14% 12%,rgba(41,83,126,.34),transparent 42%),
+    linear-gradient(125deg,#061222 0%,#0b1d33 55%,#08172a 100%);overflow:hidden}
+  .visual{position:relative;min-height:100vh;padding:42px 5vw 36px;display:flex;flex-direction:column;justify-content:space-between;isolation:isolate}
+  .visual:before{content:"";position:absolute;inset:0;z-index:-2;background:
+    radial-gradient(ellipse at 18% 18%,rgba(38,77,118,.28),transparent 44%),
+    linear-gradient(135deg,#071629 0%,#0b2340 55%,#061222 100%)}
+  .visual:after{content:"";position:absolute;inset:22px 0 22px 22px;border:1px solid rgba(214,179,106,.28);border-right:0;pointer-events:none;z-index:-1}
+  .brand{display:flex;align-items:center;gap:15px;max-width:440px}
+  .crest{width:54px;height:54px;border:1px solid var(--gold);border-radius:15px;display:grid;place-items:center;color:var(--gold2);font-size:24px;background:rgba(5,18,34,.45);box-shadow:0 8px 28px rgba(0,0,0,.18)}
+  .brand-kicker{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2);font-weight:700}
+  .brand-name{font-size:15px;letter-spacing:.06em;font-weight:700;margin-top:5px}
+  .hero{max-width:650px;padding:60px 0 70px}
+  .eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold2);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+  .eyebrow:before{content:"";width:34px;height:1px;background:var(--gold)}
+  h1{font-size:clamp(38px,4.3vw,66px);line-height:1.04;letter-spacing:-.045em;margin:24px 0 22px;font-weight:750}
+  h1 span{color:var(--gold2)}
+  .hero p{font-size:16px;line-height:1.8;color:#d0d9e5;max-width:490px;margin:0}
+  .visual-foot{display:flex;align-items:center;justify-content:space-between;gap:20px;color:#c3cfdd;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+  .status{display:flex;align-items:center;gap:9px}
+  .status-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px rgba(214,179,106,.7)}
+  .form-side{display:flex;align-items:center;justify-content:center;padding:46px 5vw 38px;position:relative}
+  .form-side:before{content:"";position:absolute;left:0;top:13%;height:74%;width:1px;background:linear-gradient(transparent,var(--line),transparent)}
+  .login-card{width:100%;max-width:430px;padding:38px 34px 28px;border:1px solid rgba(221,194,136,.34);border-radius:22px;background:linear-gradient(150deg,rgba(17,39,65,.92),rgba(7,22,41,.94));box-shadow:0 24px 80px rgba(0,0,0,.32);backdrop-filter:blur(12px)}
+  .card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+  .mini-mark{display:flex;align-items:center;gap:9px;color:var(--gold2);font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+  .mini-icon{width:30px;height:30px;border-radius:9px;border:1px solid var(--line);display:grid;place-items:center;font-size:14px}
+  .secure{color:#9eafc3;font-size:10px;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:6px}
+  h2{font-size:29px;letter-spacing:-.035em;margin:0 0 9px}
+  .intro{color:var(--muted);font-size:13px;line-height:1.65;margin:0 0 28px}
+  label{display:block;color:#dce4ed;font-size:12px;font-weight:650;margin:0 0 9px}
+  .field{margin-bottom:19px}
+  .input-wrap{position:relative}
+  input{width:100%;height:51px;border:1px solid rgba(181,198,218,.22);border-radius:11px;background:rgba(3,13,25,.42);color:white;padding:0 15px;font-size:14px;outline:none;transition:border .2s,box-shadow .2s}
+  input::placeholder{color:#788ba1}
+  input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(214,179,106,.11)}
+  .toggle{position:absolute;right:12px;top:50%;transform:translateY(-50%);border:0;background:none;color:#9eafc3;font-size:11px;cursor:pointer;padding:7px}
+  .password{padding-right:67px}
+  .form-options{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:3px 0 24px;font-size:11px}
+  .remember{display:flex;align-items:center;gap:8px;color:#bdc9d7}
+  .remember input{width:14px;height:14px;accent-color:var(--gold);margin:0}
+  a{color:var(--gold2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .submit{height:52px;width:100%;border:0;border-radius:11px;background:linear-gradient(110deg,#c69d4d,#ecd18d);color:#172235;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 9px 24px rgba(198,157,77,.18);transition:transform .18s,filter .18s}
+  .submit:hover{filter:brightness(1.06);transform:translateY(-1px)}
+  .divider{display:flex;align-items:center;gap:13px;margin:24px 0 19px;color:#8293a8;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+  .divider:before,.divider:after{content:"";height:1px;flex:1;background:rgba(181,198,218,.16)}
+  .create{display:flex;justify-content:center;gap:5px;font-size:12px;color:#aebccd}
+  .card-foot{margin-top:29px;padding-top:18px;border-top:1px solid rgba(181,198,218,.12);display:flex;justify-content:space-between;gap:12px;font-size:10px;color:#7f91a7}
+  .card-foot a{color:#aab8c9}
+  .notice{display:none;margin-top:14px;color:var(--gold2);font-size:12px;text-align:center}
+
+  .modal-backdrop{position:fixed;inset:0;background:rgba(1,7,15,.78);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:20px;z-index:20}
+  .modal-backdrop.open{display:flex}
+  .register-card{width:100%;max-width:480px;max-height:92vh;overflow:auto;padding:30px;border:1px solid rgba(221,194,136,.48);border-radius:20px;background:linear-gradient(150deg,#112741,#071629);box-shadow:0 24px 80px rgba(0,0,0,.45)}
+  .register-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:22px}
+  .register-head h3{margin:0 0 8px;font-size:25px;letter-spacing:-.03em}
+  .register-head p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}
+  .close-modal{border:1px solid rgba(181,198,218,.25);border-radius:9px;background:transparent;color:#dce4ed;font-size:20px;width:34px;height:34px;cursor:pointer}
+  .helper{font-size:11px;line-height:1.55;color:#9fb1c6;margin:-10px 0 18px}
+  .google-note{padding:12px 13px;border:1px solid rgba(214,179,106,.3);border-radius:10px;background:rgba(214,179,106,.07);color:#e6d4a9;font-size:11px;line-height:1.6;margin:0 0 20px}
+  .modal-actions{display:flex;gap:10px;margin-top:8px}
+  .secondary{height:48px;padding:0 18px;border:1px solid rgba(181,198,218,.25);border-radius:10px;background:transparent;color:#dce4ed;cursor:pointer}
+  .modal-actions .submit{flex:1;height:48px}
+
+  @media(max-width:900px){.page{grid-template-columns:1fr}.visual{min-height:340px;padding:28px 7vw 20px}.visual:after{inset:12px 12px 12px 12px;border-right:1px solid rgba(214,179,106,.28)}.hero{padding:48px 0 30px}.hero h1{font-size:clamp(34px,7vw,52px)}.hero p{font-size:14px}.visual-foot{display:none}.form-side{padding:28px 6vw 42px}.form-side:before{display:none}.login-card{max-width:480px}}
+  @media(max-width:480px){.visual{min-height:300px;padding:24px 7vw 10px}.crest{width:46px;height:46px}.brand-name{font-size:13px}.hero{padding:38px 0 28px}h1{margin:17px 0 14px}.hero p{font-size:13px}.login-card{padding:28px 22px 23px;border-radius:18px}.card-top{margin-bottom:24px}.secure{font-size:9px}h2{font-size:26px}.card-foot{flex-direction:column;align-items:center}}
+
+  .desktop-tip{max-width:420px;text-align:right;color:#9eafc3;font-size:10px;letter-spacing:.035em;line-height:1.5}
+  .footer-note{color:#8fa1b6}
+  .platform-bypass{width:100%;min-height:52px;margin-top:11px;padding:8px 16px;border:1px solid rgba(214,179,106,.42);border-radius:11px;background:linear-gradient(150deg,rgba(17,39,65,.92),rgba(7,22,41,.94));color:#f7f8fb;font-size:13px;font-weight:650;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;transition:background .18s,border-color .18s,transform .18s}
+  .platform-bypass:hover{background:rgba(214,179,106,.09);border-color:var(--gold);transform:translateY(-1px)}
+  .google-logo-box{width:34px;height:34px;display:grid;place-items:center;border-radius:8px;background:#fff;flex:0 0 34px}
+  .google-logo-box svg{width:22px;height:22px;display:block}
+  .google-divider{display:flex;align-items:center;gap:13px;margin:19px 0 0;color:#8293a8;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+  .google-divider:before,.google-divider:after{content:"";height:1px;flex:1;background:rgba(181,198,218,.16)}
+  .experimental-card{max-width:520px}
+  .experimental-card strong{color:#f0d79b}
+  @media(max-width:900px){.desktop-tip{text-align:center;max-width:100%;padding:12px 0 0}}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <section class="visual" aria-label="Apresentação da plataforma">
+    <div class="brand">
+      <div class="crest" aria-hidden="true">✦</div>
+      <div>
+        <div class="brand-kicker">Ambiente de formação</div>
+        <div class="brand-name">PLATAFORMA DE APERFEIÇOAMENTO</div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="eyebrow">Preparação • Conhecimento • Evolução</div>
+      <h1>Seu próximo passo<br>começa com <span>preparo.</span></h1>
+      <p>Um ambiente dedicado ao estudo, à revisão e ao aperfeiçoamento profissional. Acesse seus cursos e avance com consistência.</p>
+    </div>
+    <div class="visual-foot">
+      <div class="status"><span class="status-dot"></span> Ambiente de estudos</div>
+      <div class="desktop-tip">Para uma melhor experiência, recomendamos utilizar a plataforma em um computador.</div>
+    </div>
+  </section>
+  <main class="form-side">
+    <section class="login-card">
+      <div class="card-top">
+        <div class="mini-mark"><span class="mini-icon">↗</span> Área do aluno</div>
+        <div class="secure">◈ Acesso seguro</div>
+      </div>
+      <h2>Bem-vindo de volta.</h2>
+      <p class="intro">Entre com o e-mail cadastrado na plataforma. O acesso ao Google Drive será vinculado separadamente no cadastro.</p>
+      <form id="loginForm">
+        <div class="field">
+          <label for="identificacao">E-mail da conta</label>
+          <input id="identificacao" name="identificacao" type="email" placeholder="Digite o e-mail usado no cadastro" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="senha">Senha</label>
+          <div class="input-wrap">
+            <input class="password" id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+            <button class="toggle" id="togglePassword" type="button" aria-label="Mostrar senha">Mostrar</button>
+          </div>
+        </div>
+        <div class="form-options">
+          <label class="remember"><input type="checkbox" id="remember"> Manter conectado</label>
+          <a href="#" id="forgot">Esqueci minha senha</a>
+        </div>
+        <button class="submit" id="enterPlatform" type="button">Entrar na plataforma&nbsp; →</button>
+        <div class="notice" id="notice" role="status"></div>
+      </form>
+      <div class="divider">Primeiro acesso?</div>
+      <div class="create">Ainda não tem uma conta? <a href="#" id="createAccount">Criar conta</a></div>
+      <div class="card-foot">
+        <span>© Plataforma de Aperfeiçoamento</span>
+        <span class="footer-note">AMBIENTE DE TESTE • FIREBASE AUTHENTICATION</span>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="modal-backdrop" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+  <section class="register-card">
+    <div class="register-head">
+      <div>
+        <h3 id="registerTitle">Criar sua conta</h3>
+        <p>Informe seus dados de acesso e o e-mail Google que será autorizado a acessar os materiais no Drive.</p>
+      </div>
+      <button class="close-modal" id="closeRegister" type="button" aria-label="Fechar">×</button>
+    </div>
+    <form id="registerForm">
+      <div class="field">
+        <label for="nomeCadastro">Nome completo</label>
+        <input id="nomeCadastro" name="nomeCadastro" type="text" placeholder="Como deseja ser identificado" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="emailCadastro">E-mail da conta</label>
+        <input id="emailCadastro" name="emailCadastro" type="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+      </div>
+      <p class="helper">Pode ser de qualquer provedor, como Outlook, Yahoo ou outro.</p>
+      <div class="field">
+        <label for="emailGoogle">E-mail Google para acesso ao Drive</label>
+        <input id="emailGoogle" name="emailGoogle" type="email" placeholder="voce@gmail.com" autocomplete="off" required>
+      </div>
+      <p class="google-note">Este endereço deve ser uma conta Google. Ele será usado para liberar o acesso aos materiais compartilhados no Google Drive e pode ser diferente do e-mail da sua conta na plataforma.</p>
+      <div class="field">
+        <label for="senhaCadastro">Criar senha</label>
+        <input id="senhaCadastro" name="senhaCadastro" type="password" placeholder="Crie uma senha" autocomplete="new-password" minlength="8" required>
+      </div>
+      <div class="modal-actions">
+        <button class="secondary" id="cancelRegister" type="button">Cancelar</button>
+        <button class="submit" type="submit">Continuar →</button>
+      </div>
+      <div class="notice" id="registerNotice" role="status"></div>
+    </form>
+  </section>
+</div>
+
+
+<div class="modal-backdrop" id="experimentalModal" role="dialog" aria-modal="true" aria-labelledby="experimentalTitle">
+  <section class="register-card experimental-card">
+    <div class="register-head">
+      <div>
+        <h3 id="experimentalTitle">Acesso experimental</h3>
+        <p>O sistema de autenticação está em fase de teste. Para acessar a plataforma, será necessário entrar com uma conta autenticada. Contas criadas com e-mail e senha precisam confirmar o endereço de e-mail antes do acesso.</p>
+      </div>
+      <button class="close-modal" id="closeExperimental" type="button" aria-label="Fechar aviso">×</button>
+    </div>
+    <button class="submit" id="dismissExperimental" type="button">Fechar aviso e visualizar login</button>
+  </section>
+</div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, sendEmailVerification, signOut, GoogleAuthProvider, signInWithPopup, updateProfile } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+const firebaseConfig = {
+  apiKey: "AIzaSyANcW27P7NHL_qJtjTg8n683P0I7sm5Z6Y",
+  authDomain: "plataforma-aperfeicoamento.firebaseapp.com",
+  projectId: "plataforma-aperfeicoamento",
+  storageBucket: "plataforma-aperfeicoamento.firebasestorage.app",
+  messagingSenderId: "750933864503",
+  appId: "1:750933864503:web:9bfdfbbb5a7b87de8e0fb2"
+};
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
+const password = document.getElementById('senha');
+const toggle = document.getElementById('togglePassword');
+const notice = document.getElementById('notice');
+const registerNotice = document.getElementById('registerNotice');
+const registerModal = document.getElementById('registerModal');
+const experimentalModal = document.getElementById('experimentalModal');
+
+if (new URLSearchParams(window.location.search).get('motivo') === 'confirmar-email') {
+  showNotice(notice, 'Para acessar, confirme primeiro o e-mail da sua conta e depois entre novamente.', true);
+}
+
+function showNotice(element, message, error = false) {
+  element.textContent = message;
+  element.style.display = 'block';
+  element.style.color = error ? '#ffb4ab' : '';
+}
+function friendlyError(error) {
+  const messages = {
+    'auth/invalid-email': 'O endereço de e-mail não é válido.',
+    'auth/missing-password': 'Informe a senha.',
+    'auth/invalid-credential': 'E-mail ou senha incorretos.',
+    'auth/email-already-in-use': 'Este e-mail já possui uma conta.',
+    'auth/weak-password': 'A senha deve ter pelo menos 8 caracteres.',
+    'auth/popup-closed-by-user': 'A janela do Google foi fechada antes da conclusão.',
+    'auth/popup-blocked': 'O navegador bloqueou a janela do Google. Permita pop-ups e tente novamente.',
+    'auth/unauthorized-domain': 'Este domínio ainda não está autorizado no Firebase Authentication.',
+    'auth/network-request-failed': 'Falha de conexão. Verifique a internet e tente novamente.'
+  };
+  return messages[error.code] || ('Não foi possível concluir a operação (' + (error.code || 'erro') + ').');
+}
+toggle.addEventListener('click', () => {
+  const show = password.type === 'password';
+  password.type = show ? 'text' : 'password';
+  toggle.textContent = show ? 'Ocultar' : 'Mostrar';
+  toggle.setAttribute('aria-label', show ? 'Ocultar senha' : 'Mostrar senha');
+});
+document.getElementById('forgot').addEventListener('click', async (event) => {
+  event.preventDefault();
+  const email = document.getElementById('identificacao').value.trim();
+  if (!email) {
+    showNotice(notice, 'Digite seu e-mail no campo “E-mail da conta” e clique novamente em “Esqueci minha senha”.', true);
+    return;
+  }
+  try {
+    await sendPasswordResetEmail(auth, email);
+    showNotice(notice, 'Se houver uma conta cadastrada para esse endereço, o Firebase enviará um e-mail com o link de redefinição.');
+  } catch (error) { showNotice(notice, friendlyError(error), true); }
+});
+const openRegister = (event) => {
+  if (event) event.preventDefault();
+  registerModal.classList.add('open');
+  document.getElementById('nomeCadastro').focus();
+};
+const closeRegister = () => registerModal.classList.remove('open');
+document.getElementById('createAccount').addEventListener('click', openRegister);
+document.getElementById('closeRegister').addEventListener('click', closeRegister);
+document.getElementById('cancelRegister').addEventListener('click', closeRegister);
+registerModal.addEventListener('click', (event) => { if (event.target === registerModal) closeRegister(); });
+
+document.getElementById('registerForm').addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const name = document.getElementById('nomeCadastro').value.trim();
+  const email = document.getElementById('emailCadastro').value.trim().toLowerCase();
+  const googleEmail = document.getElementById('emailGoogle').value.trim().toLowerCase();
+  const newPassword = document.getElementById('senhaCadastro').value;
+  if (!name || !email || !googleEmail || !newPassword) return;
+  try {
+    const credential = await createUserWithEmailAndPassword(auth, email, newPassword);
+    await updateProfile(credential.user, { displayName: name });
+    await sendEmailVerification(credential.user);
+    await signOut(auth);
+    showNotice(registerNotice, 'Conta criada! Enviamos um link de confirmação para ' + email + '. Abra a mensagem e confirme seu endereço antes de entrar. Se não encontrar, confira Spam/Lixo eletrônico. O e-mail Google para o Drive ainda não é salvo nesta etapa.');
+    document.getElementById('identificacao').value = email;
+  } catch (error) { showNotice(registerNotice, friendlyError(error), true); }
+});
+
+document.getElementById('enterPlatform').addEventListener('click', async () => {
+  const email = document.getElementById('identificacao').value.trim();
+  const pass = document.getElementById('senha').value;
+  if (!email || !pass) { showNotice(notice, 'Informe o e-mail e a senha para entrar.', true); return; }
+  const button = document.getElementById('enterPlatform');
+  button.disabled = true;
+  button.textContent = 'Verificando acesso…';
+  try {
+    const credential = await signInWithEmailAndPassword(auth, email, pass);
+    if (!credential.user.emailVerified) {
+      try {
+        await sendEmailVerification(credential.user);
+      } catch (verificationError) {
+        console.error('Não foi possível reenviar a confirmação:', verificationError);
+      }
+      await signOut(auth);
+      showNotice(notice, 'Seu e-mail ainda não foi confirmado. Enviamos (ou tentamos reenviar) o link de confirmação. Abra a mensagem, confirme o endereço e depois entre novamente. Confira também Spam/Lixo eletrônico.', true);
+      return;
+    }
+    showNotice(notice, 'E-mail confirmado. Redirecionando para a plataforma…');
+    window.setTimeout(() => { window.location.href = 'plataforma.html'; }, 900);
+  } catch (error) { showNotice(notice, friendlyError(error), true); }
+  finally { button.disabled = false; button.innerHTML = 'Entrar na plataforma&nbsp; →'; }
+});
+
+const googleDivider = document.createElement('div');
+googleDivider.className = 'google-divider';
+googleDivider.textContent = 'OU';
+document.getElementById('enterPlatform').insertAdjacentElement('afterend', googleDivider);
+
+const googleButton = document.createElement('button');
+googleButton.type = 'button';
+googleButton.className = 'platform-bypass';
+googleButton.innerHTML = `
+  <span class="google-logo-box" aria-hidden="true">
+    <svg viewBox="0 0 48 48" role="img" aria-label="Google">
+      <path fill="#4285F4" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.1h6.7c3.9-3.6 6-8.8 6-15Z"/>
+      <path fill="#34A853" d="M24 44c5.5 0 10.1-1.8 13.5-4.9l-6.7-5.1c-1.9 1.3-4.1 2.1-6.8 2.1-5.2 0-9.6-3.5-11.2-8.2H5.9v5.2A20 20 0 0 0 24 44Z"/>
+      <path fill="#FBBC05" d="M12.8 27.9a12 12 0 0 1 0-7.8v-5.2H5.9a20 20 0 0 0 0 18.2l6.9-5.2Z"/>
+      <path fill="#EA4335" d="M24 12.1c3 0 5.7 1 7.8 3.1l5.9-5.9A19.7 19.7 0 0 0 24 4 20 20 0 0 0 5.9 14.9l6.9 5.2C14.4 15.6 18.8 12.1 24 12.1Z"/>
+    </svg>
+  </span>
+  <span>Entrar com Google</span>`;
+googleButton.setAttribute('aria-label', 'Entrar com Google');
+googleButton.addEventListener('click', async () => {
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    showNotice(notice, 'Login com Google confirmado para ' + (result.user.email || 'sua conta') + '. Redirecionando…');
+    window.setTimeout(() => { window.location.href = 'plataforma.html'; }, 900);
+  } catch (error) { showNotice(notice, friendlyError(error), true); }
+});
+googleDivider.insertAdjacentElement('afterend', googleButton);
+const dismissExperimental = () => experimentalModal.classList.remove('open');
+document.getElementById('closeExperimental').addEventListener('click', dismissExperimental);
+document.getElementById('dismissExperimental').addEventListener('click', dismissExperimental);
+dismissExperimental();
+</script>
+</body>
+</html>
