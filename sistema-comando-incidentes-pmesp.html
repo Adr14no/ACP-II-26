@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Sistema de Comando de Incidentes da Polícia Militar (SCIPM) — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}.footnotes{margin:22px 0;padding:14px 16px;border-left:4px solid var(--gold);background:#f7f4eb;border-radius:6px}.footnotes h3{margin:0 0 8px;font-size:15px}.footnotes p{margin:7px 0;line-height:1.65}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+
+.material-picker-backdrop{position:fixed;inset:0;z-index:120;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}.material-picker-backdrop.open{display:flex}.material-picker{width:min(560px,100%);background:#fff;border:1px solid #cbd5e1;border-radius:14px;overflow:hidden;box-shadow:0 25px 80px #0007}.material-picker-head{padding:16px 18px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}.material-picker-head h2{margin:0;font-size:18px}.material-picker-list{padding:14px;display:grid;gap:9px}.material-option{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#26364d;border:1px solid var(--line);border-radius:9px;padding:13px;font-weight:750}.material-option:hover{border-color:var(--gold);background:#fffbed}.material-picker-foot{padding:12px 14px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;background:#f8fafc}
+
+.fn-ref{font-size:.72em;vertical-align:super;line-height:0}
+.fn-ref a{color:#8a6b00;text-decoration:none;font-weight:800}
+.fn-ref a:hover{text-decoration:underline}
+.footnotes{margin-top:2rem;padding:1.25rem;border:1px solid #d9e0ea;border-left:4px solid #d4af37;border-radius:10px;background:#f8fafc}
+.footnote{font-size:.92rem;line-height:1.65;margin:.7rem 0}
+.footnote sup{font-weight:800;color:#8a6b00;margin-right:.35rem}
+.document-title{font-weight:800;text-align:center;font-size:1.1rem}
+.document-reference{text-align:center;font-weight:700;margin-bottom:1.5rem}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Operacionais</div><h1>Sistema de Comando de Incidentes da Polícia Militar (SCIPM)</h1><p>Diretriz nº PM3-003/02/23 · Assuntos Operacionais. Texto organizado para estudo; confira a publicação oficial para verificar atualizações e vigência.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" type="button" id="open-material-picker">Escolher material de apoio ↗</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo foi organizado a partir do arquivo fornecido, preservando a ordem e o conteúdo textual disponível; confira a publicação oficial para verificar atualizações e vigência.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO">
+<p class="document-title">SISTEMA DE COMANDO DE INCIDENTES DA POLÍCIA MILITAR – SCIPM</p><p class="document-reference">DIRETRIZ Nº PM3-003/02/23</p>
+<h2 class="section-heading">1. REFERÊNCIAS</h2>
+<p>1.1. Diretriz nº PM5-001/55/06, de 14FEV06 (Aperfeiçoamento do Relacionamento com a Mídia e Normatização do Serviço de Porta-Voz);</p>
+<p>1.2. Diretriz nº PM3-001/02/13, de 19MAR13 [Ocorrências que exijam a intervenção do Grupo de Ações Táticas Especiais (GATE)];</p>
+<p>1.3. Diretriz nº PM3-001/02/20, de 06MAR20 (Normas para o Sistema Operacional de Policiamento PM – NORSOP);</p>
+<p>1.4. Diretriz nº PM3-001/02/23, de 26JUN23 (Sistema de Comando e Controle da Polícia Militar).</p>
+<h2 class="section-heading">2. FINALIDADE</h2>
+<p>Estabelecer parâmetros doutrinários e princípios básicos do Sistema de Comando de Incidentes da Polícia Militar para o atendimento de ocorrências emergenciais de natureza policial e de bombeiros.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p>3.1. a evolução das sociedades, em conjunto com o desenvolvimento de novas tecnologias, propicia a ocorrência de incidentes críticos cada vez mais complexos, que exigem dos organismos governamentais respostas especiais, mediante atuação integrada e em colaboração de esforços com organismos públicos e privados;</p>
+<p>3.2. essa necessidade fez surgir na década de 70, nos Estado Unidos, o Incident Command System (ICS), que instituiu metodologia de atendimento de ocorrências caracterizadas como de natureza crítica, por meio do fluxo de informações para a tomada de decisão e otimização dos recursos disponíveis, replicado, mais tarde, pelo Corpo de Bombeiros paulista sob a denominação de Sistema de Comando de Operações e Emergências (SiCOE);</p>
+<p>3.3. diante de sua missão constitucional de polícia ostensiva e preservação da ordem pública, bem como de bombeiros e defesa civil, a Instituição consolida, por meio da presente Diretriz, a metodologia de resposta a incidentes críticos, que, em conjunto com as fases de prevenção, proteção, mitigação e recuperação, integram o Sistema de Comando de Incidentes da Polícia Militar.</p>
+<h2 class="section-heading">4. OBJETIVOS</h2>
+<p>4.1. proporcionar unidade de comando, segurança dos operadores e continuidade das ações durante o atendimento de ocorrências emergenciais de polícia ostensiva e de bombeiros;</p>
+<p>4.2. otimizar o direcionamento dos recursos humanos e materiais através do gerenciamento e tomada de decisões por processos eficientes, inclusive em ambiente interagências;</p>
+<p>4.3. promover a percepção de segurança da população por meio de pronta-resposta eficiente, eficaz e efetiva às emergências policiais e de bombeiros.</p>
+<h2 class="section-heading">5. MISSÃO</h2>
+<p>As OPM envolvidas em operações emergenciais de polícia ostensiva e preservação da ordem pública e/ou de bombeiros e defesa civil deverão empregar a metodologia do SCIPM nas operações de resposta aos incidentes críticos.</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<h2 class="section-heading">6.1. Conceituação:</h2>
+<p>6.1.1. Assessoramento: atividade típica de Estado-Maior, consiste na análise de cenários e desenvolvimento de linhas de ação que possam subsidiar a tomada de decisão;</p>
+<p>6.1.2 Comandante do Incidente (Cmt Inc): maior autoridade designada responsável pelo estabelecimento dos objetivos da missão e dos planos de ação, bem como pela supervisão geral das ações, definição dos integrantes do staff do Cmt Inc, além de providenciar o acionamento de recursos internos e externos à Polícia Militar e promover a sua integração no teatro de operações;</p>
+<p>6.1.3. Comando e Controle (C2): metodologia voltada a otimizar o processo decisório em missões de polícia ostensiva e preservação da ordem pública ou de bombeiros e defesa civil, baseada em cadeia de comando que, através do fluxo eficiente de informações, proporcionará formação de consciência situacional adequada ao gerenciamento dos riscos e à definição dos objetivos da missão, bem como ao planejamento, coordenação, emprego e controle dos recursos disponíveis;</p>
+<p>6.1.4. Consciência Situacional<sup class="fn-ref"><a href="#fn-1" aria-label="Nota de rodapé 1">1</a></sup> : conhecimento e compreensão que uma pessoa desenvolve sobre os acontecimentos, as circunstâncias e os elementos do ambiente de atuação,</p>
+<p>delimitados no tempo e no espaço<sup class="fn-ref"><a href="#fn-2" aria-label="Nota de rodapé 2">2</a></sup> , de forma a possibilitar a construção de uma imagem mental coerente, capaz de projetar riscos futuros<sup class="fn-ref"><a href="#fn-3" aria-label="Nota de rodapé 3">3</a></sup> e, consequentemente, antecipá-los no sentido de elevar os níveis de segurança operacional do policial militar. É a sintonia entre a situação percebida e a real<sup class="fn-ref"><a href="#fn-4" aria-label="Nota de rodapé 4">4</a></sup> ;</p>
+<p>6.1.5. Imagem Operacional Comum: conhecimento e compreensão desenvolvidos pelas pessoas sobre os acontecimentos, as circunstâncias e os elementos do ambiente de atuação, que são compartilhados entre os indivíduos engajados em uma mesma missão, produzindo uma imagem mental coerente e comum a todos, de forma a produzir uma compreensão compartilhada e criar uma sinergia para as ações, elevando o nível de segurança operacional coletiva e eficiência no atingimento dos objetivos<sup class="fn-ref"><a href="#fn-5" aria-label="Nota de rodapé 5">5</a></sup> ;</p>
+<p>6.1.6. Incidente crítico<sup class="fn-ref"><a href="#fn-6" aria-label="Nota de rodapé 6">6</a></sup> : fenômeno de causas naturais ou provocado por ação humana que ofereça risco à vida e à incolumidade das pessoas, ao patrimônio ou ao meio ambiente, e que provoque impacto significativo na confiança da sociedade e, por conseguinte, na percepção de segurança das pessoas, exigindo resposta célere e racional dos organismos do Estado, se necessário com esforço conjugado entre agências distintas. Os incidentes críticos policiais serão classificados em:</p>
+<p>6.1.6.1. Incidente policial estático: limitado a um determinado espaço geográfico, permitindo a adoção de medidas iniciais de contenção e isolamento por parte dos primeiros respondedores, bem como o acionamento e emprego de recursos especializados;</p>
+<p>6.1.6.2. Incidente policial dinâmico: seus impactos não estão limitados a um determinado espaço geográfico em razão de seus causadores se encontrarem em movimento, obstando a adoção de medidas iniciais de contenção e isolamento, exigindo, portanto, intervenção imediata por parte dos primeiros respondedores a fim de mitigar seus efeitos, antes mesmo do acionamento e emprego de recursos especializados e/ou de outras agências.</p>
+<p>6.1.7. Momento do caos: período compreendido entre o conhecimento do fato pelos organismos policiais e de bombeiros e o momento em que o incidente é controlado em níveis aceitáveis, assumindo características típicas de incidente estático de modo a permitir a composição de estrutura mínima para resposta adequada à emergência, bem como a organização e isolamento do teatro de operações. É caracterizado nos momentos iniciais do incidente, quando as informações são precárias e os recursos disponíveis são insuficientes, aspectos que dificultam a tomada de decisão;</p>
+<p>6.1.8. Operação Policial-Militar: desenvolvida com base nos requisitos essenciais de força, resistência, amplitude e velocidade, caracteriza-se pelo emprego combinado de várias US, pertencentes a uma ou mais OPM, em ações simultâneas e sucessivas, em determinada localidade, para atingir um objetivo comum único, delimitado no tempo e no espaço. É planejada por meio de Programação Antecipada ou Esboço Emergencial;</p>
+<p>6.1.9. Posto de Comando: estrutura física, permanente ou móvel, onde estarão localizados o Cmt Inc e seu Estado-Maior, consistindo em referencial de comando e controle no teatro de operações, para onde deverão fluir as informações voltadas à tomada de decisão e de onde serão emanadas as ordens do Cmt Inc;</p>
+<p>6.1.10. Sala de Gerenciamento de Incidentes: estrutura física localizada fora do sítio da operação, normalmente contígua a um Centro de Operações, preferencialmente dotada de recursos tecnológicos e audiovisuais, que reunirá autoridades em nível políticoestratégico com a finalidade de acompanhar e monitorar as operações policial-militares, realizadas em caráter programado ou emergencial, mantendo contato bilateral constante com o Posto de Comando, a fim de receber informações essenciais à interlocução com outros órgãos com responsabilidade sobre a demanda e transmitir diretivas ao comandante da operação;</p>
+<p>6.1.11. Segurança Operacional: estado no qual os riscos associados às atividades policialmilitares são reduzidos e controlados a um nível aceitável.</p>
+<h2 class="section-heading">6.2. Regras gerais do SCIPM:</h2>
+<p>6.2.1. o SCIPM estará destinado à gestão padronizada de operações para o atendimento às demandas emergenciais de natureza policial e/ou de bombeiros e defesa civil, independentemente do nível de resposta exigido pela sua complexidade, e será constituído, em resumo, pela organização do sítio de operações, pelo fluxo dinâmico de comunicação entre os operadores e o Cmt Inc e pela interoperabilidade entre os órgãos envolvidos e seus agentes;</p>
+<p>6.2.2. trata-se de metodologia a ser empregada nas ocorrências em que exista uma US atuando isoladamente ou com apoio de outras US, mesmo que de OPM limítrofes, bem como em operações envolvendo Matrizes Operacionais distintas e/ou em ambiente interagências, de forma a integrar as diversas estruturas policial-militares e instituições com competência para atuar em determinado fenômeno;</p>
+<p>6.2.3. são princípios do SCIPM:</p>
+<p>6.2.3.1. Flexibilidade: capacidade de se adaptar tanto às demandas contingenciais quanto aos eventos programados, permitindo que o sistema seja empregado de forma escalonada, de acordo com a complexidade e necessidade de cada incidente;</p>
+<p>6.2.3.2. Padronização: a padronização de métodos, estruturas e termos permite a interoperabilidade da força responsiva com as diversas agências envolvidas, otimizando tempo e recursos;</p>
+<p>6.2.3.3. Unidade de esforços: alcance de objetivos comuns definidos pelo Cmt Inc.</p>
+<p>6.2.4. são elementos essenciais do SCIPM:</p>
+<p>6.2.4.1. Amplitude ou alcance do controle: corresponde à quantidade adequada de operadores subordinados a um mesmo chefe, de modo a permitir o gerenciamento eficaz dos recursos e processos, sendo recomendável o número entre 3 e 5 policiais militares subordinados;</p>
+<p>6.2.4.2. Cadeia de Comando: linha ordenada de autoridade no gerenciamento do incidente, por onde tramita o fluxo de informações e ordens;</p>
+<p>6.2.4.3. Comando Único ou Unificado: representado pelo Cmt Inc ou por um colegiado formado por representantes dos órgãos envolvidos na reposta à emergência, sobretudo quando a reponsabilidade primária sobre o fenômeno não estiver bem definida ou houver sobreposição de competências em razão das atribuições das agências envolvidas;</p>
+<p>6.2.4.4. Comunicações integradas: canais e frequências de comunicação comuns e interconectadas, sob gerenciamento de um Centro de Operações;</p>
+<p>6.2.4.5. Designação e transferência do comando por processo: designação do Cmt Inc com base em critérios pré-estabelecidos, e transferência do comandamento por metodologia que inclui briefing e transmissão das informações essenciais à manutenção das operações com segurança e eficácia;</p>
+<p>6.2.4.6. Gerenciamento dos recursos: anotação em quadro físico que contém informações precisas e atualizadas sobre os recursos humanos e materiais empregados e dos serviços disponíveis;</p>
+<p>6.2.4.7. Gerenciamento de informações e inteligência: processos de coleta, análise, compartilhamento e gerenciamento de informações que possibilitem a formulação e atualização constante da consciência situacional que subsidiará o processo decisório;</p>
+<p>6.2.4.8. Gestão por objetivos: estabelecimento de objetivos concretos, que enunciem os resultados futuros que se pretendem alcançar, devendo ser específicos, mensuráveis, alcançáveis, relevantes e temporizados<sup class="fn-ref"><a href="#fn-7" aria-label="Nota de rodapé 7">7</a></sup> ;</p>
+<p>6.2.4.9. Instalações padronizadas: estabelecidas pelo Cmt Inc em face da complexidade do incidente crítico, dotadas de segurança e fácil localização através de denominação comum e de sinalização. São exemplos: Posto de Comando, Base de Apoio, Área de Espera, Área de Concentração de Vítimas, etc.;</p>
+<p>6.2.4.10. Organização modular: estrutura organizacional de resposta ao incidente estabelecida com base na sua amplitude e complexidade, bem como nas peculiaridades do ambiente e dos riscos e ameaças dele advindos, podendo haver, por determinação do Cmt Inc, incorporação ou desmobilização de módulos à estrutura de resposta;</p>
+<p>6.2.4.11. Plano de Ação do Incidente: descrição, no tempo e no espaço, das ações, procedimentos e rotinas que deverão ser implementadas, resultante de planejamento por esboço emergencial. Será elaborado a partir dos objetivos definidos, e desenvolvido sob metodologia 5W2H<sup class="fn-ref"><a href="#fn-8" aria-label="Nota de rodapé 8">8</a></sup> ;</p>
+<p>6.2.4.12. Prestação de contas (“Accountability”): obrigatoriedade de prestação de contas quanto ao planejamento e à extensão do controle das ações no incidente, aos recursos empregados e à responsabilidade pessoal de cada um dos respondedores. Essa prestação de contas deve ocorrer entre os agentes engajados na resposta e destes para com os superiores, de modo a reforçar a cadeia de comando, bem como entre as agências envolvidas, além da sociedade como um todo;</p>
+<p>6.2.4.13. Terminologia e simbologia padronizadas: possibilita a rápida identificação das funções atribuídas aos operadores e seus respectivos níveis organizacionais, bem como das instalações e áreas que compõem a estrutura do incidente, além da descrição dos recursos, facilitando a comunicação entre os agentes pertencentes aos diferentes organismos envolvidos;</p>
+<p>6.2.4.14. Unidade de Comando: cadeia de comando bem definida, com clara divisão de responsabilidades, dotada de comunicação segura e confiável e cuja atuação obedece à uma doutrina operacional comum a todos os envolvidos.</p>
+<h2 class="section-heading">6.3. Classificação das operações:</h2>
+<p>6.3.1. com a finalidade de estabelecer parâmetros de aplicabilidade do SCIPM, as operações serão classificadas da seguinte forma:</p>
+<p>6.3.1.1. quanto à sua natureza: policiamento ostensivo ou de bombeiros e defesa civil;</p>
+<p>6.3.1.2. quanto à competência: territorial ou especializada.</p>
+<p>6.3.2. a competência para o atendimento às demandas de policiamento ostensivo será, em princípio, da OPM integrante da Matriz Operacional I com responsabilidade territorial sobre o local da ocorrência, que deverá acionar os recursos da Matriz Operacional II e III quando necessários;</p>
+<p>6.3.3. as emergências típicas de bombeiros e defesa civil serão de responsabilidade do Corpo de Bombeiros, que poderá acionar os recursos das Matrizes Operacionais I e II, bem como outros recursos da Matriz Operacional III, sempre que necessário, para atuarem de forma supletiva a fim de garantir a preservação da ordem pública no local do incidente.</p>
+<h2 class="section-heading">6.4. Estrutura e funções de resposta ao incidente:</h2>
+<p>6.4.1. a estrutura mínima a ser empregada para resposta a um incidente crítico será parametrizada pelo Cmt Inc, que observará os requisitos de organização modular (vide subitem “6.2.4.10.”) em face da complexidade do incidente e dos recursos disponíveis, podendo haver acúmulo de funções entre os operadores;</p>
+<p>6.4.2. a estrutura do SCIPM é estabelecida no organograma constante no Anexo à esta Diretriz, e contém as seguintes funções:</p>
+<p>6.4.2.1. Cmt Inc:</p>
+<p>6.4.2.1.1. a designação do Cmt Inc tomará por base, inicialmente, a natureza da operação (policiamento ostensivo ou de bombeiros e defesa civil), que deverá ser, em regra:</p>
+<p>6.4.2.1.1.1. nos incidentes críticos policiais estáticos: o Cmt Inc será policial militar pertencente à OPM integrante da Matriz Operacional I com responsabilidade territorial sobre o local dos fatos, ou da Matriz Operacional III, quando em Nível de Resposta 4, de acordo com a natureza do fenômeno;</p>
+<p>6.4.2.1.1.2. nos incidentes críticos policiais dinâmicos:</p>
+<p>6.4.2.1.1.2.1. o Ch Op COPOM será o Cmt Inc até a sua estabilização, assumindo características de incidente policial estático, cabendo a ele a análise e providências relativas à mobilização de recursos complementares das Matrizes Operacionais I e II, ainda que de OPM limítrofes, bem como da Matriz Operacional III, uma vez que o Centro de Operações será considerado estrutura supra incidental e, por isso, dotado de Imagem Operacional Comum mais detalhada;</p>
+<p>6.4.2.1.1.2.2. sem prejuízo das providências adotadas pelo Ch Op COPOM, o policial militar de maior posto ou graduação presente no local, ou o mais antigo, será responsável pelo engajamento e manobra do contingente no teatro de operações.</p>
+<p>6.4.2.1.1.3. incidente crítico de bombeiros e defesa civil: mediante critérios definidos pelo CCB.</p>
+<p>6.4.2.1.2. não se aplicarão os critérios de designação do Cmt Inc descritos acima nas ocorrências envolvendo reféns e/ou pessoas com propósitos suicidas em posse de arma de fogo e/ou branca, bem como nos incidentes envolvendo artefatos explosivos, ocasiões em que permanecerão as funções de gerente emergencial e gerente efetivo, descritas na Diretriz nº PM3-001/02/13 (referência “1.2.”) ou norma que a substituir.</p>
+<p>6.4.2.2. Estado-Maior do Cmt Inc: composto por profissionais designados pelo Cmt Inc para o seu assessoramento durante o processo decisório (atividade típica de Estado-Maior) e para o adequado funcionamento da estrutura de resposta ao incidente. Será integrado por:</p>
+<p>6.4.2.2.1. Segurança: responsável por assessorar o Cmt Inc no gerenciamento de riscos relativos à segurança operacional dos respondedores e de eventuais vítimas do incidente, propondo medidas que visem à garantia de sua higidez física e mental;</p>
+<p>6.4.2.2.2. Relações públicas: responsável por transmitir informações aos órgãos de imprensa (porta-voz, conforme Diretriz de referência “1.1.”), autoridades externas e outras organizações que não estejam envolvidas diretamente na resposta ao incidente;</p>
+<p>6.4.2.2.3. Ligação: elo do Cmt Inc com os representantes dos órgãos externos envolvidos na resposta ao incidente;</p>
+<p>6.4.2.2.4. Inteligência: responsável pelo assessoramento do Cmt Inc acerca do fluxo de informações de caráter sigiloso que possam impactar a gestão do incidente.</p>
+<p>6.4.2.3. Estado-Maior Operacional: conjunto de atribuições específicas e voltadas exclusivamente para a gestão do incidente, nas quais seus operadores se reportarão diretamente ao Cmt Inc, assessorando-o no processo de tomada de decisão. Será composto pelas seguintes funções:</p>
+<p>6.4.2.3.1. Chefe de Operações de Campo (Ch Op): função que não se confunde com o Cmt Inc, será responsável pela atuação direta na resposta ao incidente através da execução dos planos de ação. Também será atribuição do Ch Op o assessoramento do Cmt Inc acerca das opções táticas disponíveis para a resolução do problema;</p>
+<p>6.4.2.3.2. Chefe de Planejamento (Ch Plan): responsável por assessorar o Cmt Inc para a elaboração dos planos de ação, bem como para a captação dos recursos necessários, coleta e análise de informações sensíveis e registro de todas as ações implementadas;</p>
+<p>6.4.2.3.3. Chefe de Logística (Ch Log): responsável pelo provisionamento de instalações, serviços (atendimento médico, limpeza, alimentação, etc.), e fornecimento de materiais e equipamentos necessários à execução das missões planejadas;</p>
+<p>6.4.2.3.4. Chefe de Recursos Humanos (Ch Rec Hum): responsável por assessorar o Cmt Inc nos assuntos relativos ao emprego de pessoal, regime de escalas, descanso e alimentação, etc.</p>
+<h2 class="section-heading">6.5. Medidas iniciais de resposta ao incidente:</h2>
+<p>6.5.1. as operações terão início com o conhecimento da Polícia Militar, por qualquer meio de comunicação (telefones de Emergência “190” e “193”, diretamente à US, etc.), sobre ocorrência caracterizada como incidente crítico (vide subitem “6.1.6.”);</p>
+<p>6.5.2. o integrante mais antigo da(s) US que se desloca(m) para o local do incidente será considerado Cmt Inc, e deverá adotar as seguintes providências quando de sua chegada no local:</p>
+<p>6.5.2.1. informar o Centro de Operações (COPOM ou COBOM) de sua presença no local da ocorrência, identificando-se como Cmt Inc;</p>
+<p>6.5.2.2. procurar colher o maior número de informações possíveis, a fim de elevar a sua consciência situacional para a tomada de decisão;</p>
+<p>6.5.2.3. definir os objetivos, mediante aplicação da metodologia S.M.A.R.T., conforme descrito no subitem “6.2.4.8.”;</p>
+<p>6.5.2.4. especialmente nos incidentes policiais estáticos:</p>
+<p>6.5.2.4.1. definir o perímetro de segurança e providenciar o isolamento do sítio de operações, sem prejuízo de outras medidas preliminares cabíveis de acordo com a especificidade do fenômeno;</p>
+<p>6.5.2.4.2. estabelecer o Posto de Comando, que poderá ser, inicialmente, uma das viaturas presentes no local (vide subitem “6.1.9.”), e informar o Centro de Operações (COPOM ou COBOM) sobre sua localização geográfica.</p>
+<p>6.5.2.5. em todos os casos, o Cmt Inc deverá proceder à análise quanto a complexidade do incidente, e avaliar a capacidade operativa em face do Nível de Resposta necessário ao gerenciamento do fenômeno.</p>
+<p>6.5.3. verificando se tratar de ocorrência cuja complexidade extrapole seu nível de competência e exija Níveis de Resposta elevados, observando-se, ainda, os parâmetros para mensuração da complexidade da operação descritos no subitem “6.6.” e divisões, solicitará o acionamento de autoridade policial-militar superior, via Centro de Operações, especialmente nos casos em que seja necessário o emprego de recursos pertencentes às Matrizes Operacionais II e/ou III (apoios táticos, AEP e/ou apoios especializados).</p>
+<h2 class="section-heading">6.6. Critérios para mensuração da complexidade das operações:</h2>
+<p>6.6.1. a fim de definir os recursos necessários para a resposta às demandas emergenciais de policiamento ostensivo, serão considerados os seguintes critérios quanto à extensão e complexidade das operações:</p>
+<p>6.6.1.1. Tipo 1: operações cujos recursos disponíveis no Nível de Resposta 1 sejam suficientes para o atendimento;</p>
+<p>6.6.1.2. Tipo 2: operações que possuam necessidade de emprego dos recursos do Nível de Resposta 2;</p>
+<p>6.6.1.3. Tipo 3: operações que exijam recursos provenientes do Nível de Resposta 3;</p>
+<p>6.6.1.4. Tipo 4: operações que necessitem recursos do Nível de Resposta 4.</p>
+<p>6.6.2. os critérios de parametrização das operações de bombeiros e defesa civil estarão assim distribuídos:</p>
+<p>6.6.2.1. Tipo 1: operações com até 1 hora de duração e com até 6 respondedores;</p>
+<p>6.6.2.2. Tipo 2: operações com até 2 horas de duração e com até 50 respondedores;</p>
+<p>6.6.2.3. Tipo 3: operações com duração máxima de 3 horas e com até 200 respondedores;</p>
+<p>6.6.2.4. Tipo 4: operações com duração de até 4 horas e que necessite de estrutura mínima de até 500 respondedores;</p>
+<p>6.6.2.5. Tipo 5: operações com duração superior a 5 horas e que necessitem de mais de 500 respondedores para o atendimento.</p>
+<h2 class="section-heading">6.7. Sala de Gerenciamento do Incidente:</h2>
+<p>6.7.1. poderá ser instituída por solicitação do Cmt Inc ou ex officio por autoridade policialmilitar superior, sempre que for constatada necessidade de integração com outras agências, independentemente da complexidade do fenômeno;</p>
+<p>6.7.2. a autoridade policial-militar responsável pela ativação da Sala de Gerenciamento do Incidente designará a posição de trabalho dos representantes das demais agências, distribuídas por similaridade de competências, a fim de propiciar eficiência ao fluxo de informações;</p>
+<p>6.7.3. será também designado um oficial de ligação para a Sala de Gerenciamento do Incidente, responsável pela interface político-estratégica entre a Polícia Militar e os demais órgãos respondedores;</p>
+<p>6.7.4. a integração em nível operacional com os demais órgãos respondedores deverá ser realizada, obrigatoriamente, no Posto de Comando, nos casos de incidentes policiais estáticos, ou com a interveniência do Ch Op COPOM quando se tratar de incidente policial dinâmico.</p>
+<h2 class="section-heading">6.8. Atribuições Particulares:</h2>
+<p>6.8.1. CIPM Regulamentar a atuação dos agentes de inteligência (vide subitem “6.4.2.2.4.”) no assessoramento do Cmt Inc.</p>
+<p>6.8.2. CComSoc</p>
+<p>6.8.2.1. orientar os órgãos de comunicação social da OPM responsável a elaborar Notas de Imprensa sobre a realização das Operações, sejam planejadas ou emergenciais;</p>
+<p>6.8.2.2. elaborar, em conjunto com a DEC e com a DTIC, versão digital de um “Manual de Bolso” contendo instruções para rápida consulta por todo policial-militar que se encontre na iminência do atendimento de um incidente crítico.</p>
+<p>6.8.3. Coord Op PM</p>
+<p>6.8.3.1. promover as adequações necessárias no SICoordOp para a gestão dos dados e informações das operações emergenciais e seus respectivos planos de ação;</p>
+<p>6.8.3.2. designar o Cmt Inc para os eventos de grandes proporções;</p>
+<p>6.8.3.3. por intermédio do COPOM:</p>
+<p>6.8.3.3.1. ajustar a árvore de decisão e atualizar os Procedimentos Operacionais Padrão (POP) relativos às providências envolvendo o SCIPM;</p>
+<p>6.8.3.3.2. capacitar os policiais militares para assumir as funções descritas no SCIPM relacionadas ao Centro de Operações;</p>
+<p>6.8.3.3.3. garantir o fluxo de informações entre os atores envolvidos na operação, e deles com o Cmt Inc, respeitada a cadeia de comando;</p>
+<p>6.8.3.3.4. atuar, no que couber, como elo integrador entre a Polícia Militar e órgãos externos com competência para resposta às demandas complexas.</p>
+<p>6.8.4. 3ª EM/PM Analisar eventuais propostas de atualização da presente Diretriz, assessorando o Cmdo G na deliberação acerca da necessidade de alterações.</p>
+<p>6.8.5. 6ª EM/PM Analisar propostas e, se for o caso, promover revisões dos POP aplicáveis quando da implantação do SCIPM, visando à melhoria contínua dos processos de atuação institucional.</p>
+<p>6.8.6. DEC</p>
+<p>6.8.6.1. providenciar a revisão e atualização dos currículos de cursos e estágios da Polícia Militar que possam ser influenciados pela sistemática do SCIPM;</p>
+<p>6.8.6.2. em conjunto com o CComSoc e com a DTIC, elaborar versão digital de um “Manual de Bolso” do SCIPM.</p>
+<p>6.8.7. DF Prover recursos orçamentários para as operações de SCIPM, sobretudo nos casos em que as operações se prolongarem.</p>
+<p>6.8.8. DL Mediante solicitação das OPM interessadas, adotar providências visando provê-las dos meios necessários à realização das operações.</p>
+<p>6.8.9. DS Auxiliar com equipes de assistência médica no sítio de operações, sempre que solicitado, inclusive por intermédio dos Grupos de Medicina Tática.</p>
+<p>6.8.10. DTIC</p>
+<p>6.8.10.1. providenciar estudos para desenvolvimento e/ou aquisição de tecnologia para integrar as comunicações entre as diversas Matrizes Operacionais durante o atendimento de incidentes críticos;</p>
+<p>6.8.10.2. desenvolver, em conjunto com o CComSoc e a DEC, o “Manual de Bolso” em versão digital para uso em TMD ou por aplicativo para telefones celulares.</p>
+<p>6.8.11. Gde Cmdo</p>
+<p>6.8.11.1. providenciar estrutura física adequada para a Sala de Gerenciamento de Incidentes e regulamentar critérios específicos de acionamento (vide subitem “6.1.10.”);</p>
+<p>6.8.11.2. promover, em conjunto com a DEC, a atualização profissional do efetivo, visando à capacitação de competências e habilidades afetas ao SCIPM;</p>
+<p>6.8.11.3. elaborar Plano de Contingência, descrevendo, entre outros parâmetros, critérios para a definição dos Cmt Inc, designação de porta-voz, etc.;</p>
+<p>6.8.11.4. providenciar, por meio da DS ou UIS, assistência médica de emergência à tropa empenhada, com alocação de ambulância e equipe médica conforme necessidades apuradas no planejamento das operações;</p>
+<p>6.8.11.5. providenciar, junto à DL, equipamentos, transporte e alimentação (quando for o caso) para as operações programadas, bem como emergenciais de longa duração.</p>
+<p>6.8.12. CPChq Promover estudos e propor ao Cmdo G, via EM/PM, atualização da doutrina operacional de atuação do GATE e seus desdobramentos, descrita na Diretriz nº PM3- 001/02/13 (referência “1.2.”).</p>
+<h2 class="section-heading">6.9. Prescrições Diversas:</h2>
+<p>6.9.1. a metodologia do SCIPM deverá ser empregada, no que couber, nas operações policialmilitares programadas;</p>
+<p>6.9.2. a metodologia do SCIPM não se confunde, e não substitui, as técnicas, táticas e procedimentos específicos para o atendimento de incidentes críticos policiais, notadamente aqueles relativos às ocorrências com reféns e/ou pessoas com propósitos suicidas, bem como aquelas envolvendo artefatos explosivos.</p>
+<section class="footnotes" aria-labelledby="footnotes-heading"><h2 class="section-heading" id="footnotes-heading">Notas de rodapé</h2><p id="fn-1" class="footnote"><sup>1</sup> RACORTI, Valmor Saraiva. Proposta estratégica para atualização, difusão e emprego da Doutrina de gerenciamento de incidentes na Polícia Militar do Estado de São Paulo. 2019. Tese (Doutorado em Ciências Policiais de Segurança e Ordem Pública) – Centro de Altos Estudos de Segurança, São Paulo, 2019.</p><p id="fn-2" class="footnote"><sup>2</sup> MINISTÉRIO DA DEFESA. Força Aérea Brasileira. Manual de Fatores Humanos no Gerenciamento da Segurança Operacional no SISCEAB. MCA 63-15. Comando da Aeronáutica, 2012.</p><p id="fn-3" class="footnote"><sup>3</sup> ENDSLEY. M. R. Toward a theory of situation awareness in dynamic systems. Human Factors Journal, v. 1, nº 37, p. 85-104, 1995.</p><p id="fn-4" class="footnote"><sup>4</sup> MINISTÉRIO DA DEFESA. Exército Brasileiro. Manual de Campanha - Glossário de Termos e Expressões para Uso no Exército. C 20-1. 4ª ed. 2009.</p><p id="fn-5" class="footnote"><sup>5</sup> Adaptado de HEAL, Charles S. Situational awareness and a common operational pictures. The Tactical Edge, p. 43, Winter 2002.</p><p id="fn-6" class="footnote"><sup>6</sup> Pode ser caracterizado por: (i) desastre de causas naturais, como terremotos, furacões, etc.; (ii) natureza mecânica, como descarrilamento de trem, vazamento de material tóxico, acidente de trânsito ou aeronáutico, etc.; (iii) envolvendo agentes químicos (chemical), biológicos (biological), radiológicos (radiological), nucleares (nuclear), e explosivos (explosives), sigla em inglês CBRNE; (iv) policiais ou de conflito, com uma ou mais pessoas a serem capturadas.</p><p id="fn-7" class="footnote"><sup>7</sup> Objetivos S.M.A.R.T.: acrônimo que representa uma metodologia para o estabelecimento de objetivos, traduzido como (i) Específicos (Specific), definidos com clareza e de forma detalhada; (ii) Mensuráveis (Measurable), possíveis de avaliação com dados concretos; (iii) Alcançáveis (Achievable), possíveis de serem atingidos; (iv) Relevantes (Relevant), atingíveis, considerando-se os recursos disponíveis, e relevantes, do ponto de vista do resultado que se pretende alcançar com a operação; (v) Temporizados (Time-based), com prazo estabelecido.</p><p id="fn-8" class="footnote"><sup>8</sup> Metodologia 5W2H: O que será feito – etapas (What); Por que será feito – justificativas (Why); Por quem será feito – responsabilidade (Who); Quando será feito – tempo (When); Onde será feito – local (Where); Como será feito – método (How); Quanto custará – custo financeiro (How much).</p></section>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Procedimento Disciplinar neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Procedimento Disciplinar</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Sistema de Comando de Incidentes da Polícia Militar (COP) e Defesa contra a Violência Doméstica e Familiar são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+
+<div class="material-picker-backdrop" id="material-picker-modal" role="dialog" aria-modal="true" aria-labelledby="material-picker-title">
+ <div class="material-picker">
+  <div class="material-picker-head"><h2 id="material-picker-title">Materiais de apoio — Sistema de Comando de Incidentes da Polícia Militar</h2></div>
+  <div class="material-picker-list">
+   <a class="material-option" href="#document" id="material-option-norma">Norma — texto integral nesta página <span>↓</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1o_lSe22kycfAN6hWpi_IEkkPblKtE-DM/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo do SCIPM <span>↗</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/10XJGK5c_Pxen38grxFTnu4P82KoId7Eb/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Mapa mental do SCIPM <span>↗</span></a>
+  </div>
+  <div class="material-picker-foot"><button class="btn" type="button" id="close-material-picker">Fechar</button></div>
+ </div>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+
+<script>
+(() => {
+ const modal=document.getElementById('material-picker-modal');
+ const open=document.getElementById('open-material-picker');
+ const close=document.getElementById('close-material-picker');
+ if(!modal||!open||!close)return;
+ const hide=()=>{modal.classList.remove('open');open.focus();};
+ open.addEventListener('click',()=>modal.classList.add('open'));
+ close.addEventListener('click',hide);
+ const norma=document.getElementById('material-option-norma');
+ norma.addEventListener('click',()=>{modal.classList.remove('open');});
+ modal.addEventListener('click',e=>{if(e.target===modal)hide();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))hide();});
+})();
+</script>
+
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-scipm-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Procedimento Disciplinar? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Procedimento Disciplinar, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Procedimento Disciplinar foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
