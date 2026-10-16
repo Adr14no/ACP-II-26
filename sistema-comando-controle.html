@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Sistema de Comando e Controle — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Operacionais</div><h1>Sistema de Comando e Controle</h1><p>Diretriz nº PM3-001/02/23. Texto para estudo; confira a fonte oficial e eventuais alterações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><a class="btn gold" href="https://drive.google.com/file/d/180xn85wWI0yKkzG-Dy7BwWA6CQJhsTae/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center">Abrir resumo do Sistema de Comando e Controle ↗</a><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a transcrição preserva as notas de rodapé identificadas no material recebido; confira a fonte oficial em caso de divergência.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO">
+<h1 class="section-heading">SISTEMA DE COMANDO E CONTROLE DA POLÍCIA MILITAR</h1>
+<p class="subheading">DIRETRIZ Nº PM3-001/02/23</p>
+<h2 class="section-heading">1. REFERÊNCIAS</h2>
+<p>1.1. Diretriz nº PM2-001/91/07, de 27JUN07 (Plano de Policiamento Inteligente – PPI);</p>
+<p>1.2. Manual de Campanha do Exército Brasileiro – Comando e Controle (EB20-MC-10.205), 1ª Edição, aprovada pela Portaria nº 002-EME, de 05JAN15;</p>
+<p>1.3. Doutrina para o Sistema Militar de Comando e Controle do Ministério da Defesa (MD31-M03), 3ª Edição, aprovada pela Portaria Normativa nº 1.691/EMCFA/MD, de 05AGO15;</p>
+<p>1.4. Diretriz nº PM3-001/02/19, de 12OUT19 [Obtenção e Emprego Operacional de Sistemas de Aeronaves Não Tripuladas – UAS (Drones) pela Polícia Militar];</p>
+<p>1.5. Diretriz nº PM3-001/02/20, de 06MAR20 (Normas para o Sistema Operacional de Policiamento PM – NORSOP);</p>
+<p>1.6. Manual de Campanha do Exército Brasileiro – Operações Interagências (EB70-MC-10.248), 2ª Edição, aprovada pela Portaria-COTER/C Ex nº 181, de 17DEZ20;</p>
+<p>1.7. Diretriz nº PM3-001/02/22, de 23FEV22 (Câmeras Operacionais Portáteis – COP);</p>
+<p>1.8 Portaria do Cmt G nº PM1-7/02/23, de 30MAI23 (Dispõe sobre o regime de trabalho na Polícia Militar do Estado de São Paulo e dá outras providências), publicada no Bol G PM 101, de 30MAI23.</p>
+<h2 class="section-heading">2. FINALIDADE</h2>
+<p>Estabelecer conceitos doutrinários e princípios básicos do Sistema de Comando e Controle no âmbito da Polícia Militar, bem como de seus desdobramentos, consolidados pelo acrônimo C4ISR – Comando, Controle, Comunicações, Computadores, Inteligência, Vigilância (Surveillance) e Reconhecimento.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p>3.1. o conceito de Comando e Controle está, historicamente, relacionado às operações de natureza militar, e foi aperfeiçoado ao longo do tempo, sobretudo em função de sua aplicabilidade por organismos policiais e de bombeiros em operações de segurança pública e/ou de defesa civil, em caráter programado ou emergencial, uma vez que consiste em metodologia para o gerenciamento de riscos e para a tomada de decisões, sobretudo em circunstâncias complexas e/ou ambientes interagências, com cenários caracterizados por incerteza e ambiguidade;</p>
+<p>3.2. de forma geral, o Comando e Controle propicia o fluxo de informações através da cadeia de comando, elevando o nível de consciência situacional das autoridades policial-militares responsáveis pela tomada de decisões, bem como dos policiais militares que executam o policiamento ostensivo;</p>
+<p>3.3. a Polícia Militar, enquanto instituição responsável pela missão constitucional de polícia ostensiva e preservação da ordem pública, possui, de maneira intrínseca, o Comando e Controle como princípio de atuação, sendo necessário, entretanto, consolidar os parâmetros doutrinários sobre o assunto.</p>
+<h2 class="section-heading">4. OBJETIVOS</h2>
+<p>4.1. consolidar a doutrina institucional de comando e controle, a fim de incrementar os conhecimentos dos policiais militares sobre seus princípios basilares;</p>
+<p>4.2. ampliar a consciência situacional dos escalões de comando e supervisão, bem como dos policiais militares responsáveis pela execução do policiamento ostensivo;</p>
+<p>4.3. aperfeiçoar os processos de tomada de decisão a partir da análise qualificada de informações sensíveis e de interesse;</p>
+<p>4.4. proporcionar vantagem operativa sobre infrações penais e administrativas e/ou incivilidades consideradas indutoras do crime;</p>
+<p>4.5. promover percepção de segurança para as pessoas por meio eficiência, efetividade e eficácia na prestação dos serviços de preservação da ordem pública garantida pela metodologia de comando e controle.</p>
+<h2 class="section-heading">5. MISSÃO</h2>
+<p>As OPM deverão conhecer e difundir os parâmetros doutrinários de comando e controle descritos nesta Diretriz, bem como implementar as estruturas dedicadas às suas atividades típicas, conforme descrito na presente Diretriz.</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<p>6.1. Conceituação:</p>
+<p>6.1.1. Operador de Videopatrulhamento (OpVPtr): policial militar responsável pelo patrulhamento preventivo por meio da observação e análise de imagens, dados e informações captadas por sistemas de câmeras, com auxílio de sistemas inteligentes, a fim de subsidiar a execução do policiamento ostensivo;</p>
+<p>6.1.2. Centro de Comando e Controle (CC2): estrutura física dotada de recursos materiais, tecnológicos e audiovisuais, com pessoal capacitado para gerenciar rotinas e processos voltados ao fluxo eficiente de informações entre os agentes responsáveis pelo policiamento ostensivo;</p>
+<p>6.1.3. Centro de Comando e Controle Móvel (CC2 Móvel): veículo especialmente adaptado e equipado com recursos materiais, tecnológicos e audiovisuais mínimos para emprego em operações policial-militares de grandes proporções, em caráter programado ou emergencial, a fim de garantir o fluxo eficiente de informações entre os agentes responsáveis pela missão;</p>
+<p>6.1.4. Centro de Operações (COPOM): estrutura organizacional responsável por gerenciar o atendimento e despacho de ocorrências de polícia ostensiva e preservação da ordem pública ou de bombeiros e defesa civil, com responsabilidade por garantir o fluxo de informações úteis e/ou sensíveis, inclusive com uso das ferramentas inteligentes, a fim de elevar a consciência situacional dos policiais militares respondedores e/ou integrantes dos escalões de comando e supervisão durante as ações, missões ou operações policial-militares;</p>
+<p>6.1.5. Comando e Controle (C2): metodologia voltada a otimizar o processo decisório em missões de polícia ostensiva e preservação da ordem pública ou de bombeiros e defesa civil, baseada em cadeia de comando que, através do fluxo eficiente de informações, estará voltada à formação de consciência situacional adequada ao gerenciamento dos riscos e à definição dos objetivos da missão, bem como ao planejamento, coordenação, emprego e controle dos recursos disponíveis;</p>
+<p>6.1.6. Consciência Situacional: conhecimento e compreensão que uma pessoa desenvolve sobre os acontecimentos, as circunstâncias e os elementos do ambiente de atuação, delimitados no tempo e no espaço<sup class="footnote-ref">1</sup> , de forma a possibilitar a construção de uma imagem mental coerente, capaz de projetar riscos futuros<sup class="footnote-ref">2</sup> elevar os níveis de segurança operacional do policial militar. É a sintonia entre a situação percebida e a real<sup class="footnote-ref">3</sup> ;</p>
+<p>6.1.7. Diagnóstico Situacional: processo de identificação dos fatores positivos e negativos que afetam a ordem pública no território circunscrito pela OPM, elaborado a partir de indicadores demográficos, socioeconômicos, geocriminais, operacionais e gerenciais, além de outros contidos no Guia de Indicadores dos Programas de Policiamento;</p>
+<p>6.1.8. Imagem Operacional Comum (IOC): conhecimento e compreensão desenvolvidos pelas pessoas sobre os acontecimentos, as circunstâncias e os elementos do ambiente de atuação, que são compartilhados entre os indivíduos engajados em uma mesma missão, produzindo uma imagem mental coerente e comum a todos, de forma a produzir uma compreensão compartilhada e criar uma sinergia para as ações, elevando o nível de segurança operacional coletiva e eficiência no atingimento dos objetivos<sup class="footnote-ref">4</sup> ;</p>
+<p>6.1.9. Sala de Gerenciamento de Incidentes: estrutura física localizada fora do sítio da operação, normalmente contígua a um Centro de Operações, preferencialmente dotada de recursos tecnológicos e audiovisuais, que reunirá autoridades em nível político-estratégico com a finalidade de acompanhar e monitorar as operações policial-militares, realizadas em caráter programado ou emergencial, mantendo contato bilateral constante com o Posto de Comando, a fim de receber informações essenciais à interlocução com outros órgãos com responsabilidade sobre a demanda, bem como transmitir diretivas ao comandante da operação;</p>
+<p>6.1.10. Sala de Operações: estrutura física instalada em sede de OPM, composta por policial militar capacitado que, através do acesso aos sistemas de comunicação, ferramentas inteligentes, sistemas de videopatrulhamento, entre outros, será responsável pela análise de dados e transmissão de informações qualificadas aos policiais militares responsáveis pela execução do policiamento ostensivo, bem como pelo assessoramento dos escalões de comando e supervisão;</p>
+<p>6.1.11. Sistema de Comando e Controle: conjunto de instalações, equipamentos, sistemas de informação e comunicações integradas que garantirão o planejamento, acompanhamento e controle das ações, missões e operações policial-militares, mediante processos desenvolvidos com base em critérios de doutrina operacional;</p>
+<p>6.1.12. Unidade de Serviço (US): é a menor fração de recursos humanos, composta por um ou mais policiais militares, a pé ou embarcado(s), executando suas ações em um determinado território e integrado(s) a um Centro de Operações;</p>
+<p>6.1.13. Videopatrulhamento (VPtr): atividade de observação e análise de imagens, dados e informações de interesse policial gerados por câmeras instaladas pela Polícia Militar ou compartilhados por outros órgãos, a fim de ampliar a consciência situacional do efetivo policial-militar e orientá-lo nas ações de prevenção e repressão imediata de infrações penais e/ou incivilidades indutoras de crimes, bem como fortalecer a prova judicial das ações de restabelecimento da ordem pública.</p>
+<p>6.2. Princípios básicos do Sistema de Comando e Controle:</p>
+<p>6.2.1. o C2 será compreendido como um sistema destinado a garantir o fluxo de informações sensíveis e de interesse para o planejamento e execução do policiamento ostensivo, e deverá ser empregado nas ações, missões e operações policial-militares em que exista uma US atuando isoladamente e/ou com apoio de outras US, mesmo que de OPM limítrofes, bem como de diferentes Matrizes Operacionais, ou ainda, em ambiente interagências, a fim de integrar as instituições com competência para atuar em determinado fenômeno de interesse da Polícia Militar;</p>
+<p>6.2.2. são princípios do C2:</p>
+<p>6.2.2.1. Amplitude: abrangência de todas as áreas e agentes envolvidos na execução das missões de natureza operacional e administrativa relacionadas ao policiamento ostensivo;</p>
+<p>6.2.2.2. Comunicações integradas: canais e frequências de comunicação comuns e interconectadas e sob gerenciamento de um Centro de Operações, a fim de proporcionar o compartilhamento de informações entre os diversos níveis de atuação e órgãos envolvidos nas operações;</p>
+<p>6.2.2.3. Confiabilidade: credibilidade sobre a qualidade e a veracidade das informações transmitidas, principalmente diante de eventos complexos, garantida pela análise qualificada de seu teor realizada por policial militar capacitado, aliada à manutenção de sua eficácia ao longo do tempo;</p>
+<p>6.2.2.4. Flexibilidade: capacidade de adequação da estrutura e dos processos de comando e controle de acordo com o cenário, de modo a atender às realidades operacionais e peculiaridades de cada OPM, podendo ser reconfigurados rapidamente para responder às mudanças circunstanciais;</p>
+<p>6.2.2.5. Gestão por processos: sistematização das rotinas e procedimentos com a finalidade de fornecer, de maneira eficiente, efetiva e eficaz, subsídios à tomada de decisão das autoridades policial-militares competentes, bem como elementos que possam elevar a consciência situacional dos policiais militares durante a execução do policiamento ostensivo;</p>
+<p>6.2.2.6. Segurança das informações: consolidada por seleção e treinamento criteriosos de pessoal, bem como por meio da aplicação de processos que observem os níveis de sigilo necessários;</p>
+<p>6.2.2.7. Simplicidade: processos simplificados para a coleta e transmissão de informações, bem como para a difusão de decisões e ordens emanadas pelas autoridades competentes, com o emprego de linguagem clara e precisa, garantindo a sua fluidez para o perfeito entendimento dos objetivos estabelecidos e demais deliberações adotadas;</p>
+<p>6.2.2.8. Unidade de Comando: cadeia de comando bem definida, com clara divisão de reponsabilidades, dotada de comunicação segura e confiável e cuja atuação obedece à uma doutrina operacional comum a todos os envolvidos.</p>
+<p>6.3. Atividades e serviços essenciais:</p>
+<p>6.3.1. são consideradas atividades essenciais, intrínsecas ao conceito de comando e controle, as seguintes:</p>
+<p>6.3.1.1. Comando: baseado em requisitos de competência, autoridade e responsabilidade (extrínsecas e intrínsecas)<sup class="footnote-ref">5</sup> , consiste no exercício da autoridade regulamentar sobre o planejamento e execução das ações, missões e operações policial-militares, nos níveis estratégico, tático e operacional, através da definição de objetivos, organização de estruturas e processos, direcionamento dos recursos operacionais, bem como coordenação e controle sobre a atuação do efetivo subordinado<sup class="footnote-ref">6</sup> ;</p>
+<p>6.3.1.2. Controle: conjunto de estruturas e processos estabelecidos pela autoridade em comando, com a finalidade de regular a distribuição e emprego dos recursos operacionais, sob critérios de gerenciamento de risco voltado a mitigar incertezas e desenvolver linhas de ação alternativas em tempo adequado<sup class="footnote-ref">7</sup> ;</p>
+<p>6.3.1.3. Assessoramento: atividade típica de Estado-Maior, poderá ser realizado por Estruturas de Comando e Controle (vide subitem “6.5.” e divisões) para subsidiar a tomada de decisão através da coleta e análise de dados e informações sensíveis e de interesse, prospecção e análise de cenários e do desenvolvimento de linhas de ação.</p>
+<p>6.3.2. são serviços essenciais, obrigatórios para todas as Estruturas de Comando e Controle elencadas no subitem “6.5.” e divisões:</p>
+<p>6.3.2.1. Monitoramento da rede de rádio, voltado à captação de dados e informações sensíveis e de interesse para os diagnósticos situacionais (vide subitem “6.1.7.”) de caráter programado ou emergencial;</p>
+<p>6.3.2.2. Análise dos dados e informações com auxílio de ferramentas inteligentes;</p>
+<p>6.3.2.3. Videopatrulhamento (VPtr) – vide subitem “6.1.13.”, realizado com emprego de ferramentas tecnológicas implementadas pela Polícia Militar e/ou disponibilizadas por outros órgãos, mediante observação às regras gerais descritas no Anexo “A”;</p>
+<p>6.3.2.4. outras atividades implementadas por iniciativa da autoridade policial-militar competente, de acordo com o escalão correspondente.</p>
+<p>6.4. Arquitetura de C4ISR:</p>
+<p>6.4.1. consiste em sistema informatizado voltado a maximizar a capacidade operativa dos recursos policial-militares, tanto em atividades cotidianas de policiamento ostensivo quanto para o atendimento de ocorrências emergenciais complexas, por meio de equipamentos, aplicações, serviços e processos representados pelo acrônimo C4ISR – Comando, Controle, Comunicações, Computadores, Inteligência, Vigilância (Surveillance) e Reconhecimento;</p>
+<p>6.4.2. sob processos estruturados em camadas, o C4ISR proporcionará Imagem Operacional Comum (vide subitem “6.1.8.”) ao efetivo por meio da coleta e análise de dados e informações de interesse, visando à correta identificação e compreensão do problema e consequente atuação com eficiência, eficácia e efetividade, a fim de garantir o domínio do ambiente terrestre, aéreo, aquático e cibernético no teatro de operações;</p>
+<p>6.4.3. para o perfeito funcionamento da arquitetura, dever-se-á primar pelo emprego de soluções tecnológicas disponibilizadas pela Polícia Militar, integradas a aplicações com uso de inteligência artificial a serem implementadas pela Instituição;</p>
+<p>6.4.4. a arquitetura C4ISR possui natureza conceitual, e estará concretizada, em regra, pelas Estruturas de Comando e Controle descritas no subitem “6.5.” e divisões, e por estruturas posteriores eventualmente implementadas pelo Cmdo G.</p>
+<p>6.5. Estruturas de Comando e Controle:</p>
+<p>6.5.1. instalações físicas dotadas de recursos humanos, materiais e tecnológicos, implementadas em caráter permanente ou provisório, dedicadas às atividades típicas de comando e controle;</p>
+<p>6.5.2. a fim de promover a interoperabilidade entre as Matrizes Operacionais, e entre a Instituição e órgãos externos, as atividades desenvolvidas em Estruturas de Comando e Controle deverão ser orientadas por processos padronizados de captação, análise e difusão de informações, sobretudo quando relacionados às comunicações, como por exemplo terminologia, simbologia e formulários comuns;</p>
+<p>6.5.3. na condição de OGC, o COPOM ficará incumbido de desenvolver os elementos descritos no subitem anterior, bem como pela coordenação da capacitação e treinamento do efetivo que será designado a realizar os serviços essenciais descritos no subitem “6.3.2.” e divisões;</p>
+<p>6.5.4. as Estruturas de Comando e Controle estarão organizadas da seguinte forma:</p>
+<p>6.5.4.1. Centro de Comando e Controle (CC2):</p>
+<p>6.5.4.1.1. implementada em nível de Gde Cmdo, será responsável pelas atividades de comando e controle em operações cuja complexidade e/ou natureza do fenômeno exijam integração de mais de uma OPM, sobretudo quando pertencentes a Matrizes Operacionais distintas, ou quando houver o envolvimento de órgãos externos à Polícia Militar;</p>
+<p>6.5.4.1.2. suas instalações deverão possuir, além de estações dedicadas às atividades próprias das OPM Territoriais, posições de trabalho permanentes a serem ocupadas por OPM da Matriz Operacional III (CPAmb, CPChq, CPRv, CPTran, CCB), sobretudo quando desempenham atividades rotineiras na área de atuação do respectivo CC2;</p>
+<p>6.5.4.1.3. os CC2 poderão operar de forma integrada com agências prestadoras de serviços públicos essenciais, inclusive acolhendo representantes destas entidades em suas instalações, mediante estabelecimento do instrumento jurídico adequado para a parceria (convênio, termo de cooperação, consórcio administrativo, etc.), que deverá descrever o plano de trabalho comum aos órgãos signatários, com previsão, inclusive, de contrapartida como, por exemplo, acesso aos dados e imagens de interesse público geradas por sistemas próprios do outro órgão;</p>
+<p>6.5.4.1.4. os CC2 deverão organizar sistemática de comunicação com demais Estruturas de Comando e Controle menores (Salas de Operações, por exemplo – vide subitem “6.5.4.2.” e seguintes), eventualmente instaladas em OPM subordinadas ao respectivo Cmdo Pol, podendo compor contato bilateral contínuo com estruturas semelhantes de outros órgãos públicos;</p>
+<p>6.5.4.1.5. em geral, os COPOM serão os Centros de Comando e Controle de seus respectivos Cmdo Pol, e deverão manter-se interconectados por meio de sistemas de comunicação e fluxo de dados seguros;</p>
+<p>6.5.4.1.6. nas operações realizadas em mais de uma região e/ou quando envolverem OPM de Matrizes Operacionais distintas, o Coord Op PM definirá o COPOM Regional que funcionará como CC2, em caráter temporário, comum aos Cmdo Pol interessados;</p>
+<p>6.5.4.1.7. o COPOM São Paulo assumirá as atribuições de CC2 nas operações que tiverem abrangência estadual.</p>
+<p>6.5.4.2. Sala de Operações:</p>
+<p>6.5.4.2.1. responsável pelos serviços essenciais de comando e controle, descritos no subitem “6.3.2.” e divisões, em nível operacional (Btl/Cia PM);</p>
+<p>6.5.4.2.2. as Salas de Operações vinculadas a um mesmo Btl deverão manter-se interconectadas por meio de sistemas de comunicação e fluxo de dados seguros, com integração ao respectivo COPOM;</p>
+<p>6.5.4.2.3. as OPM, no nível mínimo de Cia PM, deverão estruturar as Salas de Operações mediante critérios de necessidade operacional e disponibilidade de recursos, da seguinte forma:</p>
+<p>6.5.4.2.3.1. os policiais militares poderão ser dedicados, exclusivamente, às atividades da Sala de Operações, ou desempenhar as suas missões de forma cumulativa às rotinas do Sv Dia ou outras atividades de apoio operacional eventualmente implementadas pelo Cmdo G;</p>
+<p>6.5.4.2.3.2. suas instalações físicas deverão, preferencialmente, ser exclusivas para as atividades Sala de Operações, podendo estar localizada em conjunto com o Sv Dia, em caráter excepcional, desde que possua estação de trabalho e recursos materiais exclusivos para o desenvolvimento dos serviços essenciais descritos no subitem “6.3.2.” e divisões.</p>
+<p>6.5.4.3. Policial militar destacado em Centro de Controle Operacional (CCO) de outros órgãos:</p>
+<p>6.5.4.3.1. é aquele designado para realizar os serviços essenciais descritos no subitem “6.3.2.” e divisões a partir dos recursos materiais e tecnológicos disponibilizados em CCO pertencente a outros órgãos públicos ou concessionárias de serviço público;</p>
+<p>6.5.4.3.2. o policial militar empregado nessa sistemática ficará dedicado exclusivamente às atividades de polícia ostensiva e preservação da ordem pública, devendo estar integrado à rede de comunicações e sistemas inteligentes da Polícia Militar, cumulativamente ao acesso aos sistemas tecnológicos disponibilizados pelo CCO, mediante previsão no instrumento legal firmado entre Estado e o ente interessado (vide subitem “6.6.2.” e divisões);</p>
+<p>6.5.4.3.3. a seleção do efetivo destacado deverá cumprir os requisitos profissionais constantes no Anexo “B” à esta Diretriz;</p>
+<p>6.5.4.3.4. a escala de serviço será cumprida, presencialmente, nas instalações do centro de controle operacional do outro órgão, sob regime de trabalho previsto na Portaria do Cmt G nº PM1-7/02/23 (referência “1.8.”), independentemente do regime praticado pelos outros entes que compõem aquela estrutura;</p>
+<p>6.5.4.3.5. as atribuições do policial militar destacado, processos de trabalho e regime de escala, bem como a sistemática de fiscalização dos escalões de comando e supervisão, deverão estar previstos em documento de Estado-Maior emitido pelo Cmdo Pol.</p>
+<p>6.5.4.4. Sala de Gerenciamento de Incidentes:</p>
+<p>6.5.4.4.1. será instituída por autoridade policial-militar superior ao Cmt responsável pelas operações em campo, por solicitação ou ex officio, sempre que houver necessidade de integração com órgãos externos à Polícia Militar;</p>
+<p>6.5.4.4.2. a autoridade policial-militar responsável pela Sala de Gerenciamento do Incidente designará a posição de trabalho dos representantes das demais agências, distribuídas por similaridade de competências como forma de propiciar eficiência ao fluxo de informações, bem como um oficial de ligação responsável pela interface políticoestratégica entre a Polícia Militar e os demais órgãos respondedores.</p>
+<p>6.5.4.5. Centro de Comando e Controle Móvel (CC2 Móvel):</p>
+<p>6.5.4.5.1. será empregado em operações policial-militares programadas ou emergenciais, cuja natureza indique a necessidade da presença de estrutura de comando e controle no sítio da operação, de forma contígua ao Posto de Comando;</p>
+<p>6.5.4.5.2. a Coord Op PM será responsável pela gestão operacional centralizada do(s) CC2 Móvel(is) da Polícia Militar, e disponibilizará o veículo às OPM responsáveis pelas operações;</p>
+<p>6.5.4.5.3. os Gde Cmdo poderão propor ao Coord Op PM a aquisição de CC2 Móveis destinados a permanecerem descentralizados e à disposição de suas respectivas regiões, considerando critérios de necessidade operacional e disponibilidade de recursos, dadas as dimensões geográficas do Estado.</p>
+<p>6.6. Implementação das Estruturas de Comando e Controle:</p>
+<p>6.6.1. a competência para deliberar sobre a implementação de Estrutura de Comando e Controle estará vinculada ao Gde Cmdo quando se tratar de CC2, ou ao Cmdo Pol para as Salas de Operações e sistemática de policial militar destacado em CCO de outro órgão, sendo que os recursos humanos e materiais empregados deverão estar previstos no respectivo Plano Diretor;</p>
+<p>6.6.2. nos casos em que a Sala de Operações estruturada em instalações físicas da Polícia Militar possuir equipamentos e/ou tecnologias fornecidas por outro órgão público ou concessionária de serviço público, ou quando houver o emprego de policial militar destacado em CCO, deverão ser observados os seguintes requisitos:</p>
+<p>6.6.2.1. pertinência das atribuições do outro órgão com a missão de polícia ostensiva e preservação da ordem pública;</p>
+<p>6.6.2.2. gestões antecipadas do Cmt OPM com os representantes do outro órgão, a fim de esclarecer os mecanismos de atuação da Polícia Militar de forma integrada com outras agências, sobretudo quanto aos parâmetros legais e regulamentares que norteiam a Instituição;</p>
+<p>6.6.2.3. o acordo de cooperação firmado com o outro órgão deverá ser objeto de convênio ou instrumento jurídico apropriado, que conterá Plano de Trabalho descrevendo as atividades a serem desenvolvidas pela Polícia Militar na sistemática pretendida.</p>
+<p>6.7. Ferramentas tecnológicas de Comando e Controle:</p>
+<p>6.7.1. são recursos tecnológicos e de comunicação capazes de fornecer subsídios para as atividades de comando e controle (vide subitem “6.3.” e divisões), já disponibilizados ou que poderão ser implementados pela Polícia Militar;</p>
+<p>6.7.2. podem ser considerados exemplos de ferramentas de Comando e Controle as seguintes soluções tecnológicas, além daquelas que sobrevierem:</p>
+<p>6.7.2.1. imagens geradas a partir de aeronaves não tripuladas (drones);</p>
+<p>6.7.2.2. “Olho de Águia”, integrado aos sistemas das aeronaves do CAvPM;</p>
+<p>6.7.2.3. imagens geradas pelas COP e transmitidas ao vivo (live streaming);</p>
+<p>6.7.2.4. imagens captadas por sistemas de videopatrulhamento da Polícia Militar ou de outros órgãos com acesso compartilhado.</p>
+<p>6.8. Fontes de informações:</p>
+<p>6.8.1. são aquelas consideradas fontes de dados capazes de subsidiar os diagnósticos situacionais para o planejamento prévio de ações, missões e operações policial-militares, bem como para respostas emergenciais;</p>
+<p>6.8.2. sem prejuízo de outros mecanismos empregados pelas OPM em razão das peculiaridades locais, podem ser indicadas as seguintes fontes de informação:</p>
+<p>6.8.2.1. serviço de Emergência “190”, “193” e Disque-Denúncia “181”;</p>
+<p>6.8.2.2. COPOM On-line, Infocrim, Fotocrim e outras ferramentas inteligentes indicadas no PPI (referência “1.1.”);</p>
+<p>6.8.2.3. monitoramento de mídias sociais vinculadas a pessoas ou grupos de interesse que tenham seus perfis abertos na rede mundial de computadores;</p>
+<p>6.8.2.4. iniciativas típicas de polícia comunitária e/ou de prevenção primária, por meio das quais poderão ser obtidas informações de interesse e/ou sensíveis para o processo decisório, considerando a proximidade dos policiais militares com a comunidade, como por exemplo:</p>
+<p>6.8.2.4.1. Programa Vizinhança Solidária (PVS), sobretudo quando se tratar de iniciativa que possuir, entre suas estratégias, o compartilhamento instantâneo de informações por meio de grupos em aplicativos mensageiros (“Whatsapp”, por exemplo);</p>
+<p>6.8.2.4.2. CONSEG;</p>
+<p>6.8.2.4.3. Visitas Comunitárias;</p>
+<p>6.8.2.4.4. Visitas Solidárias;</p>
+<p>6.8.2.4.5. Reuniões Comunitárias;</p>
+<p>6.8.2.4.6. PROERD.</p>
+<p>6.9. Atribuições particulares:</p>
+<p>6.9.1. CIPM</p>
+<p>6.9.1.1. regulamentar, juntamente com a DTIC, a política de acesso e níveis de privilégios das ferramentas inteligentes aos policiais militares designados para as Estruturas de Comando e Controle (subitem “6.5.” e divisões);</p>
+<p>6.9.1.2 acompanhar, por meio da Sala de Situação, as ocorrências de gravidade e/ou de grande repercussão, mantendo o Cmdo G informado.</p>
+<p>6.9.2. CComSoc</p>
+<p>6.9.2.1. elaborar estratégias de comunicação social voltadas aos públicos interno e externo, visando consolidar o conhecimento do efetivo policial-militar sobre a doutrina de comando e controle;</p>
+<p>6.9.2.2. promover a divulgação de conteúdos positivos produzidos pelo VPtr, objetivando a consolidação da imagem da Polícia Militar como instituição detentora de processos dinâmicos e tecnológicos para a promoção da percepção de segurança pública.</p>
+<p>6.9.3. Coord Op PM</p>
+<p>6.9.3.1. acompanhar os resultados operacionais do emprego das Estruturas de Comando e Controle (subitem “6.5.” e divisões), apontando não conformidades constatadas, elaborando análises de desempenho das OPM e propondo soluções a fim de aprimorar a sistemática vigente;</p>
+<p>6.9.3.2. por intermédio do COPOM:</p>
+<p>6.9.3.2.1. desenvolver formulários padronizados, com terminologia e simbologia comuns para todos os Centros de Operações, Salas de Operações e policiais militares destacados (subitem “6.5.” e divisões);</p>
+<p>6.9.3.2.2. estruturar, com apoio da DTIC, recursos tecnológicos para o espelhamento dos sistemas e plataformas de videomonitoramento disponibilizados por outros órgãos;</p>
+<p>6.9.3.2.3. na qualidade de OGC, prover treinamento voltado à capacitação do efetivo selecionado pelos Gde Cmdo para o VPtr;</p>
+<p>6.9.3.2.4. atuar, no que couber, como elo integrador entre a Polícia Militar e órgãos externos envolvidos no Sistema C2.</p>
+<p>6.9.4. 1ª EM/PM Apoiar os Gde Cmdo nas atividades atinentes à instrução e tramitação de processos para o estabelecimento de convênios e acordos de cooperação para as Estruturas de Comando e Controle, quando houver o envolvimento de outros órgãos públicos ou concessionárias de serviços públicos.</p>
+<p>6.9.5. 3ª EM/PM Analisar eventuais propostas de atualização da presente Diretriz, assessorando o Cmdo G na deliberação acerca da necessidade de alterações.</p>
+<p>6.9.6. 4ª EM/PM</p>
+<p>6.9.6.1. providenciar, em conjunto com a DF, DL, DTIC e COPOM, a previsão orçamentária para atendimento das necessidades apontadas pelos Gde Cmdo para implementação das Estruturas de Comando e Controle;</p>
+<p>6.9.6.2. planejar a aquisição de recursos materiais para o suporte às atividades das Estruturas de Comando e Controle;</p>
+<p>6.9.6.3. realizar estudos, em conjunto com a 3ª EM/PM, DF, DL e CAvPM, para a aquisição e distribuição de aeronaves não tripuladas suficientes para prover, no mínimo, um, equipamento para cada Btl, a ser disponibilizado ao CFP ou função equivalente.</p>
+<p>6.9.7. DEC</p>
+<p>6.9.7.1. providenciar a atualização dos currículos dos cursos e estágios da Polícia Militar para inserção da doutrina referente ao Sistema de Comando e Controle;</p>
+<p>6.9.7.2. elaborar ICC e PVT para ampla divulgação dos conceitos doutrinários e suas aplicações práticas.</p>
+<p>6.9.8. DF</p>
+<p>6.9.8.1. prover recursos orçamentários para implementação das Estruturas de Comando e Controle;</p>
+<p>6.9.8.2. realizar estudos, em conjunto com a 4ª EM/PM, DL e CAvPM, para a aquisição e distribuição de aeronaves não tripuladas suficientes para prover, no mínimo, um, equipamento para cada Btl, a ser disponibilizado ao CFP ou função equivalente.</p>
+<p>6.9.9. DL</p>
+<p>6.9.9.1. adotar providências visando prover materiais necessários à implementação das Estruturas de Comando e Controle por parte das OPM interessadas;</p>
+<p>6.9.9.2. realizar estudos, em conjunto com a 4ª EM/PM, DF e CAvPM, para a aquisição e distribuição de aeronaves não tripuladas suficientes para prover, no mínimo, um, equipamento para cada Btl, a ser disponibilizado ao CFP ou função equivalente.</p>
+<p>6.9.10. DTIC</p>
+<p>6.9.10.1. apoiar as OPM, no que couber, na estruturação dos CC2 e Salas de Operações, sobretudo para a implementação de VPtr com recursos tecnológicos da Polícia Militar ou disponibilizados por outros órgãos;</p>
+<p>6.9.10.2. prover solução tecnológica para integração de dados, informações e registros audiovisuais captados pelos equipamentos da Polícia Militar (COP, drones, circuito de videopatrulhamento, etc.) com as plataformas institucionais utilizadas pelas Estruturas de Comando e Controle;</p>
+<p>6.9.10.3. providenciar, em conjunto com o CIPM, a concessão de login e senha de acesso e níveis de privilégios das ferramentas inteligentes aos policiais militares escalados nas Salas de Operações e no CC2.</p>
+<p>6.9.11. Gde Cmdo</p>
+<p>6.9.11.1. descrever, no Plano Diretor, as Estruturas de Comando e Controle que estiverem implementadas em sua respectiva região, com os recursos humanos e materiais necessários;</p>
+<p>6.9.11.2. providenciar integração das comunicações entre o COPOM Regional e as OPM integrantes da Matriz Operacional III com responsabilidade por áreas coincidentes e/ou limítrofes (CPAmb, CPChq, CPRv e CPTran), provendo estações de trabalho a serem ocupadas por essas OPM, permanentemente, no CC2;</p>
+<p>6.9.11.3. promover integração das comunicações com os demais órgãos públicos e concessionárias de serviços públicos, concitando-os a ocuparem estações de trabalho no COPOM Regional;</p>
+<p>6.9.11.4. estruturar Salas de Operações nas OPM, sobretudo cuja sede esteja localizada em municípios populosos, mediante acordo de cooperação firmado com as respectivas prefeituras municipais, se aplicável;</p>
+<p>6.9.11.5. providenciar estrutura física adequada para a Sala de Gerenciamento de Incidentes e regulamentar os processos específicos para deliberação quanto à sua ativação e desativação;</p>
+<p>6.9.11.6. providenciar, junto ao COPOM Central, treinamento do efetivo que atuará na Sala de Operações;</p>
+<p>6.9.11.7. por meio do Núcleo de Operação de UAS (drone) – vide Diretriz nº PM3-001/02/19 (referência “1.4.”), prover equipamentos aos CFP para emprego diuturno.</p>
+<p>6.9.12. CAvPM</p>
+<p>6.9.12.1. envidar esforços junto à DTIC, DL e DF para a aquisição das UAS que serão utilizadas pelos CFP ou função equivalente;</p>
+<p>6.9.12.2. envidar esforços junto à DTIC para integrar as imagens registradas pelos UAS e aeronaves tripuladas com as plataformas institucionais utilizadas pelas Estruturas de Comando e Controle;</p>
+<p>6.9.12.3. na condição de OGC, providenciar o treinamento necessário aos policiais militares integrantes das US dos CFP para a utilização dos UAS.</p>
+<p>6.9.13. CCB Implementar e aperfeiçoar, no que lhe couber, os parâmetros estabelecidos para o Sistema de Comando e Controle, notadamente quanto ao emprego da metodologia do Sistema de Comando de Operações e Emergências (SiCOE).</p>
+<p>6.10. Prescrições Diversas:</p>
+<p>6.10.1. é vedado o destacamento de policial militar em centro de controle operacional ou central de videomonitoramento de empresas, condomínios fechados ou entidades que representem interesses individuais, comerciais ou qualquer sociedade com fins lucrativos;</p>
+<p>6.10.2. as OPM que possuírem Estruturas de Comando e Controle implementadas anteriormente, terão o prazo de 60 dias, a partir da publicação desta Diretriz, para providenciar sua regularização conforme prescrito no subitem “6.6.2.3.”, se aplicável;</p>
+<p>6.10.3. aplicar-se-ão aos processos de análise e fluxo de informações sensíveis e de interesse, as regras de dados previstos em legislação específica sobre o assunto, em especial a Lei federal nº 12.527, de 18NOV11 (Lei de Acesso à Informação – LAI) e a Lei federal nº 13.709, de 14AGO18 (Lei Geral de Proteção de Dados – LGPD), que deverão ser observados pelos policiais militares envolvidos nesse mister;</p>
+<p>6.10.4. ficam revogadas as disposições em contrário, em especial a Diretriz nº PM3-002/02/08, de 03SET08 (Sistema de Videomonitoração na Polícia Militar de Estado de São Paulo).</p>
+<h2 class="section-heading">NOTAS DE RODAPÉ</h2>
+<p class="footnote" id="footnote-1"><strong>1.</strong> MINISTÉRIO DA DEFESA. Força Aérea Brasileira. Manual de Fatores Humanos no Gerenciamento da Segurança Operacional no SISCEAB. MCA 63-15. Comando da Aeronáutica, 2012.</p>
+<p class="footnote" id="footnote-2"><strong>2.</strong> ENDSLEY. M. R. Toward a theory of situation awareness in dynamic systems. Human Factors Journal, v. 1, nº 37, p. 85-104, 1995.</p>
+<p class="footnote" id="footnote-3"><strong>3.</strong> MINISTÉRIO DA DEFESA. Exército Brasileiro. Manual de Campanha – Glossário de Termos e Expressões para Uso no Exército. C 20-1. 4ª ed. 2009.</p>
+<p class="footnote" id="footnote-4"><strong>4.</strong> Adaptado de HEAL, Charles S. Situational awareness and a common operational pictures. The Tactical Edge, p. 43, Winter, 2002.</p>
+<p class="footnote" id="footnote-5"><strong>5.</strong> Adaptado de McCANN e PIGEAU. Clarifying the Concepts of Control and of Command. Defence and Civil Institute of Environmental Medicine. Toronto, 1999.</p>
+<p class="footnote" id="footnote-6"><strong>6.</strong> Adaptado de Mission Command: Command and Control of Army Forces. FM 6-0. Headquarters Department of the Army. Washington DC, 2003.</p>
+<p class="footnote" id="footnote-7"><strong>7.</strong> Adaptado de McCANN e PIGEAU. Clarifying the Concepts of Control and of Command. Defence and Civil Institute of Environmental Medicine. Toronto, 1999.</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Sistema de Comando e Controle neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Sistema de Comando e Controle</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Sistema de Comando e Controle são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-sistema-comando-controle-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Sistema de Comando e Controle? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Sistema de Comando e Controle, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Sistema de Comando e Controle foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
