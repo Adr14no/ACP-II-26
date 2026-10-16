@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Procedimento Disciplinar — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Jurídico-Administrativos</div><h1>Procedimento Disciplinar</h1><p>Portaria do Comandante Geral CORREGPM-1/360/13 · Boletim Geral PM 211, de 6 de novembro de 2013. Texto para estudo; confira a fonte oficial e eventuais alterações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><a class="btn gold" href="https://drive.google.com/file/d/1iOso7KU7CzQd-3q7o9D1Zmaar9lYDPxs/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center">Abrir resumo do Procedimento Disciplinar ↗</a><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO">
+<p class="subheading">BOLETIM GERAL PM 211</p>
+<p>Publico, para conhecimento dos integrantes da Polícia Militar do Estado de São Paulo e devida execução, o seguinte:</p>
+<p>1a PARTE</p>
+<p class="subheading">LEGISLAÇÃO E ORGANIZAÇÃO DETERMINAÇÕES E ORDENS</p>
+<h2 class="section-heading">1 - PROCEDIMENTO DISCIPLINAR NO ÂMBITO DA POLÍCIA MILITAR DO ESTADO DE SÃO PAULO Portaria do Comandante Geral CORREGPM-1/360/13 Regulamenta, nos termos do artigo 88 da Lei Complementar 893, de 09 de março de 2001, que instituiu o Regulamento Disciplinar da Polícia Militar, o Procedimento Disciplinar no âmbito da Polícia Militar do Estado de São Paulo. O Comandante Geral da Polícia Militar do Estado de São Paulo, no uso das atribuições que lhe competem, nos termos do artigo 88 da Lei Complementar 893, de 09 de março de 2001, que instituiu o Regulamento Disciplinar da Polícia Militar, determina:</h2>
+<p class="legal-article">Artigo 1o - O Procedimento Disciplinar de que trata o Capítulo VII da Lei Complementar 893, de 09 de</p>
+<p>março de 2001 (Regulamento Disciplinar da Polícia Militar - RDPM), destinado à apuração de transgressões disciplinares cuja complexidade não exija a apuração por meio de Sindicância e a gravidade não recomende a instauração de Processo Regular, orientar-se-á pelo disposto nos artigos 27 a 29 do texto legal, bem como pelos critérios da oralidade, simplicidade, informalidade, economia processual e celeridade, conforme o rito estabelecido nesta Portaria.</p>
+<p class="legal-article">Artigo 2o - Ao receber a comunicação disciplinar, a autoridade competente, nos termos do artigo 31</p>
+<p>do RDPM, analisará os fatos, no prazo de 5 (cinco) dias e, caso vislumbre que ela não preenche os requisitos suficientes para a formulação de Termo Acusatório, poderá:</p>
+<p class="legal-article">I - restituir a comunicação disciplinar ao seu signatário, para que ele complemente ou esclareça</p>
+<p>melhor os fatos, no prazo de 3 (três) dias, em consonância com o artigo 28 do RDPM;</p>
+<p class="legal-article">II - encaminhá-la ao policial militar comunicado, para que se manifeste preliminarmente sobre os</p>
+<p>fatos, no prazo de 3 (três) dias;</p>
+<p class="legal-article">III - arquivar a comunicação disciplinar, caso conclua que não houve cometimento de transgressão</p>
+<p>disciplinar, devendo motivar sua decisão e colher a ciência do policial militar comunicado.</p>
+<p class="legal-article">§ 1o - Poderá ser dispensada a manifestação preliminar quando a autoridade competente tiver</p>
+<p>elementos de convicção suficientes para a elaboração do Termo Acusatório, devendo esta circunstância constar do respectivo termo.</p>
+<p class="legal-article">Artigo 3o - Vislumbrado o cometimento de transgressão disciplinar, a autoridade competente, em 3</p>
+<p>(três) dias, instaurará o Procedimento Disciplinar, com a sua autuação e a elaboração do Termo Acusatório, motivado com as razões de fato e de direito, constando, se for o caso, o rol de testemunhas da acusação, até o máximo de 3 (três), para que o acusado possa exercitar, pessoalmente ou por defensor constituído e regularmente inscrito na Ordem dos Advogados do Brasil, o seu direito a ampla defesa e ao contraditório, em audiência de instrução e julgamento designada num prazo de 10 (dez) dias.</p>
+<p class="legal-article">§ 1o - Se na transgressão disciplinar houver o envolvimento de policiais militares de mais de uma</p>
+<p>OPM, o Procedimento Disciplinar poderá ser único e instaurado pela autoridade de cargo superior, comum aos respectivos Comandantes dos transgressores. Entretanto, quando houver a instauração de mais de um Procedimento Disciplinar e a decisão couber a autoridades disciplinares diversas, será obrigatória a aprovação de ato pela autoridade de maior hierarquia, comum aos transgressores, nos termos do parágrafo único do artigo 47 do RDPM.</p>
+<p class="legal-article">§ 2o - Poderá o acusado, independentemente de intimação, trazer à audiência de instrução e</p>
+<p>julgamento as testemunhas de defesa, até o limite de 3 (três), exceto quando se tratar de agente público, quando será realizada a notificação para sua apresentação pela autoridade policial militar, situação em que deverá o acusado ou seu defensor solicitar essa medida, ao menos 4 (quatro) dias antes da audiência de instrução e julgamento.</p>
+<p class="subheading">BOL G PM 211, DE 6 DE NOVEMBRO DE 2013</p>
+<p class="legal-article">§ 3o - Caberá ao acusado ou seu defensor, no mesmo prazo mínimo de 4 (quatro) dias mencionado</p>
+<p>no parágrafo anterior, requerer à administração a intimação de testemunha de defesa, quando não for apresentá-la espontaneamente, bem como requerer a juntada de documento oriundo da Polícia Militar, que o acusado não tenha acesso, para cotejo com as demais provas, na audiência de instrução e julgamento.</p>
+<p class="legal-article">§ 4o - O não comparecimento injustificado das testemunhas arroladas pelo acusado, nos moldes do</p>
+<p class="legal-article">§ 2o, não importará redesignação da audiência de instrução e julgamento, salvo se a autoridade</p>
+<p>policial-militar, de ofício ou a requerimento do acusado ou de seu defensor, entender imprescindível ao devido processo legal. Nesse caso, a audiência será redesignada para um prazo máximo de 5 (cinco) dias.</p>
+<p class="legal-article">§ 5o - a citação do policial militar transgressor deverá ser acompanhada de cópia do termo</p>
+<p>acusatório, bem como deverá conter expressamente os prazos e as disposições contidas nos § 2o ao 4o, desse artigo, além da advertência de que se não for solicitada a produção de prova testemunhal, as razões de defesa deverão ser apresentadas impreterivelmente na audiência de instrução e julgamento, por subentender-se a preclusão do direito.</p>
+<p class="legal-article">§ 6o - Excepcionalmente, por requerimento do presidente do Procedimento Disciplinar, devidamente</p>
+<p>motivado, o Comandante da Unidade Policial-Militar do nível de Batalhão Policial-Militar ou superior poderá autorizar a designação e realização da audiência de instrução e julgamento em prazo superior ao definido nesse artigo, sempre observado o disposto no artigo 29 da Lei Complementar 893, de 9 de março de 2001, que instituiu o Regulamento Disciplinar da Polícia Militar.</p>
+<p class="legal-article">§ 7o - Após a citação e o simultâneo agendamento da audiência de instrução e julgamento, a</p>
+<p>intimação do acusado e de seu defensor constituído, na eventualidade de outros atos instrutórios, deverá ser feita por meio de registro no próprio termo de audiência ou publicação em Diário Oficial.</p>
+<p class="legal-article">Artigo 4o - Presente o acusado ou seu defensor constituído, admitida sua defesa, independentemente</p>
+<p>de instrumento de mandato, a autoridade policial-militar iniciará a audiência de instrução e julgamento com a leitura do Termo Acusatório, receberá e fará juntada de documentos apresentados ou solicitados pelo acusado ou seu defensor, passando à oitiva das testemunhas eventualmente arroladas no Termo Acusatório, seguidas pelas testemunhas trazidas ou requeridas pela defesa.</p>
+<p class="legal-article">§ 1o - diante da impossibilidade da autoridade competente presidir a audiência de instrução e</p>
+<p>julgamento, a instrução do Procedimento Disciplinar poderá ser delegada, por despacho motivado, a Oficial, Praça Especial, Subtenente ou Sargento, observadas as regras da hierarquia.</p>
+<p class="legal-article">§ 2o - A testemunha, alertada sobre as implicações de faltar com a verdade ou de omití-la, deverá</p>
+<p>declarar seu nome, sua idade, seu estado e sua residência, sua profissão, lugar onde exerce sua atividade, se é parente, e em que grau, de alguma das partes, ou quais suas relações com qualquer delas, e relatar o que souber, explicando sempre as razões de sua ciência ou as circunstâncias pelas quais possa avaliar-se de sua credibilidade.</p>
+<p class="legal-article">§ 3o - O depoimento será prestado oralmente, não sendo permitido à testemunha trazê-lo por escrito,</p>
+<p>não lhe sendo vedado, entretanto, breve consulta a apontamentos.</p>
+<p class="legal-article">§ 4o - No Procedimento Disciplinar aplicam-se subsidiariamente às testemunhas, no que couber, o</p>
+<p>previsto nos artigos 202 a 225 do Decreto-lei 3.689, de 3 de outubro de 1941 (Código de Processo Penal) e nos artigos 347 a 367 do Decreto-lei 1.002, de 21 de outubro de 1969 (Código de Processo Penal Militar).</p>
+<p class="legal-article">§ 5o - As perguntas serão formuladas pela autoridade policial-militar competente e pelo acusado ou</p>
+<p>seu defensor constituído, diretamente às testemunhas, não se admitindo aquelas que puderem induzir a resposta, não tiverem relação com a causa ou importarem na repetição de outra já respondida ou manifestação de apreciações pessoais, salvo quando inseparáveis da narrativa do fato.</p>
+<p class="legal-article">§ 6o - Antes de iniciado o depoimento, o acusado ou seu defensor poderá contraditar a testemunha</p>
+<p>ou arguir circunstâncias ou defeitos que a tornem suspeita de parcialidade ou indigna de fé. Nesse caso, a autoridade policial-militar fará consignar a contradita ou arguição e a resposta da testemunha, mas só excluirá a testemunha ou não Ihe deferirá compromisso nos casos daquelas que, em razão de função, ministério, ofício ou profissão, devam guardar segredo, salvo se, desobrigadas pela parte interessada, quiserem dar o seu testemunho, aos doentes e deficientes mentais e aos menores de 14 (quatorze) anos, e ao ascendente ou descendente, ao afim em linha reta, ao cônjuge, ainda que separado judicialmente, e ao irmão.</p>
+<p class="legal-article">§ 7o - Os depoimentos das testemunhas serão reduzidos resumidamente no termo da audiência pela</p>
+<p>autoridade policial-militar, consignando-se somente fatos objetivos relacionados à acusação ou de relevância à defesa, podendo o acusado ou defensor constituído requerer a consignação de suas ressalvas.</p>
+<p class="legal-article">§ 8o - A acareação será admitida entre acusados, entre acusado e testemunha, entre testemunhas,</p>
+<p>entre acusado ou testemunha e a pessoa ofendida, e entre as pessoas ofendidas, sempre que divergirem, em suas declarações, sobre fatos ou circunstâncias relevantes. Os acareados serão reperguntados, para que expliquem os pontos de divergências, reduzindo-se as suas respostas no termo de audiência.</p>
+<p>2</p>
+<p class="subheading">BOL G PM 211, DE 6 DE NOVEMBRO DE 2013</p>
+<p class="legal-article">Artigo 5o - Encerrada a oitiva das testemunhas, proceder-se-á o interrogatório do acusado que,</p>
+<p>depois de devidamente qualificado e cientificado do inteiro teor da acusação, será informado pela autoridade policial-militar, antes de iniciar o interrogatório, do seu direito de permanecer calado e de não responder perguntas que lhe forem formuladas, sendo que o seu silêncio, não importará em confissão e nem poderá ser interpretado em prejuízo da defesa.</p>
+<p class="legal-article">§ 1o - A falta de defesa técnica por advogado não ofende os direitos constitucionais do acusado que,</p>
+<p>neste caso se defenderá pessoalmente. A ausência injustificada de ambos em ato instrutório, entretanto, implicará na nomeação de um defensor “ad hoc”, que poderá ser Oficial, Praça Especial, Subtenente ou Sargento, observadas as regras de hierarquia.</p>
+<p class="legal-article">§ 2o - A expedição de carta precatória deverá preceder de intimação da defesa para que formule as</p>
+<p>perguntas de seu interesse, bem como deverá notificar-se a data, hora e local onde ocorrerá o depoimento, salvaguardando o direito de comparecimento do acusado e seu defensor, sendo que na ausência de ambos deverá ser designado um defensor “ad hoc”, conforme disposto no parágrafo anterior.</p>
+<p class="legal-article">§ 3o - As respostas do acusado devem ser apresentadas de modo respeitoso, preservando-se os</p>
+<p>valores e deveres éticos, que se impõem para que o exercício da profissão policial-militar e, se o interrogado não puder ou não quiser assinar, tal fato será consignado na ata da audiência de instrução e julgamento.</p>
+<p class="legal-article">§ 4o - Havendo mais de um acusado, serão interrogados separadamente.</p>
+<p class="legal-article">Artigo 6o - Após o interrogatório e à vista das provas produzidas na audiência de instrução e</p>
+<p>julgamento, a autoridade policial-militar competente poderá dar ao fato nova tipificação legal, ainda que o acusado fique sujeito à pena mais grave.</p>
+<p class="legal-article">Parágrafo único - Se a nova tipificação se fundar em fatos novos, a autoridade policial-militar</p>
+<p>competente, na própria audiência, exceto quando a instrução ocorrer nos moldes do § 1o do artigo 4o acima, aditará o termo acusatório, podendo arrolar até outras 3 (três) testemunhas de acusação, e designará nova audiência de instrução e julgamento, para a qual todos sairão intimados, podendo o acusado ou seu defensor apresentar outras 3 (três) testemunhas de defesa, procedendo-se então na forma do disposto nos artigos 4o e 5o desta Portaria.</p>
+<p class="legal-article">Artigo 7o - Não havendo aditamento do Termo Acusatório e encerrado o interrogatório, será dada a</p>
+<p>palavra ao acusado ou seu defensor constituído para alegações finais orais por 10 (dez) minutos, prorrogáveis por mais 5 (cinco), proferindo a autoridade policial-militar, a seguir, a decisão do Procedimento Disciplinar, exceto quando sobrevier a hipótese prevista no § 1o do artigo 4o desta Portaria.</p>
+<p class="legal-article">§ 1o - Havendo mais de um acusado, o tempo previsto para a defesa de cada um será individual.</p>
+<p class="legal-article">§ 2o - Excepcionalmente, considerada a complexidade do caso e/ou o número de acusados, por</p>
+<p>decisão motivada na ata da audiência, a autoridade policial-militar poderá conceder às partes o prazo de 5 (cinco) dias, simultaneamente, para a apresentação de memoriais. Nesse caso, a autoridade policial-militar competente terá o prazo de 05 (cinco) dias, a contar da juntada do último dos memoriais de defesa, para proferir a decisão do Procedimento Disciplinar.</p>
+<p class="legal-article">Artigo 8o - No julgamento, a autoridade policial-militar justificará a conduta do acusado quando</p>
+<p>reconhecida qualquer das causas previstas no artigo 34 ou aplicará a sanção disciplinar nos limites de sua competência, observando o disposto nos artigos 33 a 48, todos do RDPM.</p>
+<p class="legal-article">Parágrafo único - A autoridade policial-militar não aplicará a sanção disciplinar quando julgar cabível</p>
+<p>a instauração de Processo Regular e remeterá os autos à autoridade superior para deliberação.</p>
+<p class="legal-article">Artigo 9o - De todo o ocorrido na audiência de instrução e julgamento será lavrado único termo,</p>
+<p>assinado pela autoridade policial-militar, pelas testemunhas, pelo acusado e por seu defensor constituído, contendo brevíssimo resumo dos depoimentos e das razões de defesa, a menção de eventuais incidentes e a decisão da autoridade instauradora do Procedimento Disciplinar, devidamente motivada.</p>
+<p class="legal-article">§ 1o - Quando a instrução do Procedimento Disciplinar tiver sido delegada, nos termos consignados</p>
+<p>no § 1o do artigo 4o dessa Portaria, a autoridade policial militar designada deverá consignar no referido termo de audiência, além do previsto no caput, sua conclusão acerca da procedência ou não da transgressão imputada no Termo Acusatório, a qual, contudo, será meramente opinativa.</p>
+<p class="legal-article">§ 2o - Se as razões de defesa forem apresentadas por meio de memoriais, na hipótese prevista no</p>
+<p class="legal-article">§ 2o do artigo 7o dessa Portaria e a instrução do Procedimento Disciplinar se enquadrar no disposto no</p>
+<p>parágrafo anterior, a síntese da apuração e a conclusão deverão ser registrados em Relatório.</p>
+<p class="legal-article">§ 3o - A nulidade de ato somente será declarada se houver efetiva demonstração de prejuízo à</p>
+<p>defesa ou à Administração, devendo qualquer incidente ser resolvido de plano, com registro nos autos.</p>
+<p class="legal-article">Artigo 10 - A decisão da autoridade instauradora do Procedimento Disciplinar, independente do</p>
+<p>mérito do julgamento, deverá ser submetida à aprovação de ato pelo Comandante de Unidade, conforme previsto no artigo 43 do RDPM.</p>
+<p class="legal-article">Artigo 11 - No caso de afastamento regulamentar do acusado, os prazos do Procedimento Disciplinar</p>
+<p>são suspensos, reniciada a contagem a partir da sua reapresentação.</p>
+<p>3</p>
+<p class="subheading">BOL G PM 211, DE 6 DE NOVEMBRO DE 2013</p>
+<p class="legal-article">Artigo 12 - Somente após a emissão de decisão da qual não caiba mais recurso próprio, ou seja, com</p>
+<p>efeito suspensivo, ou quando ocorrer a decadência dos prazos recursais, tudo conforme previsto nos artigos 57 e 58 do RDPM, circunstância esta que deve ser cientificada nos autos, é que o ato punitivo ou eventualmente de justificação será publicado em Boletim para conhecimento e, a partir daí, gerar seus efeitos (cumprimento do corretivo e demais reflexos secundários).</p>
+<p class="legal-article">Artigo 13 - Será válido no Procedimento Disciplinar o uso de meios eletrônicos, assim compreendidos</p>
+<p>como qualquer forma de captura de dados de som e imagem e armazenamento de arquivos digitais, para o registro do Procedimento Disciplinar, não sendo dispensado, entretanto, o termo de audiência.</p>
+<p class="legal-article">Artigo 14 - Os Procedimentos Disciplinares terão numeração única no âmbito da OPM (nível de</p>
+<p>Batalhão ou superior), por ordem crescente e por ano.</p>
+<p class="legal-article">Artigo 15 - A comunicação disciplinar ou outro tipo de documento que noticie a prática de</p>
+<p>transgressão por policial militar inativo deverá ser remetido ao Subcomandante PM ou Comandante Geral, nos casos que envolvam Praças e Oficiais, respectivamente, para a devida apreciação, observadas as instruções contidas nos Bol G PM 205, de 05NOV09 e 181, de 23SET11.</p>
+<p class="legal-article">Parágrafo único - Se o policial militar inativo tiver ingressado nessa situação após a formulação do</p>
+<p>termo acusatório, a instrução do Procedimento prosseguirá na OPM de origem, cabendo somente a aprovação de ato prevista no artigo 43 do RDPM às autoridades disciplinares elencadas nos incisos II e III do artigo 31, do mesmo Regulamento Disciplinar.</p>
+<p class="legal-article">Artigo 16 - Aplica-se subsidiariamente, no que couber, a parte geral das I-16-PM.</p>
+<p class="legal-article">Artigo 17 - Esta Portaria entrará em vigor no prazo de 30 dias após sua publicação, revogadas as</p>
+<p>disposições em contrário, especialmente o anexo III da Portaria Cmt G CORREGPM-004/305/01, ficando incumbida a Corregedoria da Polícia Militar de desenvolver e disseminar, por meio do Sistema de Justiça e Disciplina, rotinas, modelos de peças procedimentais e treinamento das autoridades policiais-militares para o exercício de suas competências disciplinares.</p>
+<p class="legal-article">Parágrafo único - Os Procedimentos Disciplinares instaurados antes da entrada em vigência desta</p>
+<p>Portaria seguirão o rito e a forma estabelecidos na Portaria Cmt G CORREGPM-004/305/01. (PORTARIA CORREGPM-1/360/13).</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Procedimento Disciplinar neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Procedimento Disciplinar</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Procedimento Disciplinar são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-procedimento-disciplinar-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Procedimento Disciplinar? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Procedimento Disciplinar, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Procedimento Disciplinar foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>

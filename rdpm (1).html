@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>RDPM — Regulamento Disciplinar da Polícia Militar</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;left:50%;top:52%;z-index:5;pointer-events:none;color:#0b1326;opacity:.10;font-size:clamp(16px,2vw,25px);font-weight:800;letter-spacing:.08em;white-space:nowrap;transform:translate(-50%,-50%) rotate(-24deg);background:#ffffff20;padding:12px 18px;border:1px solid #0b132610;border-radius:4px;max-width:90vw;overflow:hidden}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Jurídico-Administrativos</div><h1>RDPM</h1><p>Regulamento Disciplinar da Polícia Militar — Lei Complementar nº 893, de 9 de março de 2001. Texto organizado a partir do arquivo fornecido para estudo; confira a legislação oficial e suas alterações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><a class="btn gold" href="https://drive.google.com/file/d/1IWcTPi4yEbejmBU3hYqnUIc25nJAyNnQ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center">Abrir resumo do RDPM ↗</a><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Anotações sincronizadas:</strong> seus grifos e anotações são associados à sua conta. Use a mesma conta em outros dispositivos para acessar seus dados. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="PLATAFORMA PMESP">
+<p class="subheading">LEI COMPLEMENTAR No 893, DE 09 DE MARÇO DE 2001.</p>
+<p>Institui o Regulamento Disciplinar da Polícia Militar.</p>
+<p>O GOVERNADOR DO ESTADO DE SÃO PAULO:</p>
+<p>Faço saber que a Assembléia Legislativa decreta e eu promulgo a seguinte lei</p>
+<p>complementar:</p>
+<h2 class="section-heading">CAPÍTULO I</h2>
+<p>Das Disposições Gerais</p>
+<p class="legal-article">Artigo 1o - A hierarquia e a disciplina são as bases da organização da Polícia Militar.</p>
+<p class="legal-article">Artigo 2o - Estão sujeitos ao Regulamento Disciplinar da Polícia Militar os militares do</p>
+<p>Estado do serviço ativo, da reserva remunerada, os reformados e os agregados, nos</p>
+<p>termos da legislação vigente.</p>
+<p class="legal-article">Parágrafo único - O disposto neste artigo não se aplica:</p>
+<p>1 - aos militares do Estado, ocupantes de cargos públicos ou eletivos;</p>
+<p>2 - aos Magistrados da Justiça Militar.</p>
+<p class="legal-article">Artigo 3o - Hierarquia policial-militar é a ordenação progressiva da autoridade, em</p>
+<p>graus diferentes, da qual decorre a obediência, dentro da estrutura da Polícia Militar,</p>
+<p>culminando no Governador do Estado, Chefe Supremo da Polícia Militar.</p>
+<p class="legal-article">§ 1o - A ordenação da autoridade se faz por postos e graduações, de acordo com o</p>
+<p>escalonamento hierárquico, a antigüidade e a precedência funcional.</p>
+<p class="legal-article">§ 2o - Posto é o grau hierárquico dos oficiais, conferido por ato do Governador do</p>
+<p>Estado e confirmado em Carta Patente ou Folha de Apostila.</p>
+<p class="legal-article">§ 3o - Graduação é o grau hierárquico das praças, conferida pelo Comandante Geral da</p>
+<p>Polícia Militar.</p>
+<p class="legal-article">Artigo 4o - A antigüidade entre os militares do Estado, em igualdade de posto ou</p>
+<p>graduação, será definida pela:</p>
+<p>I - data da última promoção;</p>
+<p>II - prevalência sucessiva dos graus hierárquicos anteriores;</p>
+<p>III - classificação no curso de formação ou habilitação;</p>
+<p>IV - data de nomeação ou admissão;</p>
+<p>V - maior idade.</p>
+<p class="legal-article">Parágrafo único - Nos casos de promoção a aspirante-a-oficial, a aluno-oficial, a 3o</p>
+<p>sargento, a cabo ou nos casos de nomeação de oficiais, alunos-oficiais ou admissão de</p>
+<p>soldados prevalecerá, para efeito de antigüidade, a ordem de classificação obtida nos</p>
+<p>respectivos cursos ou concursos.</p>
+<p class="legal-article">Artigo 5o - A precedência funcional ocorrerá quando, em igualdade de posto ou</p>
+<p>graduação, o oficial ou a praça:</p>
+<p>I - ocupar cargo ou função que lhe atribua superioridade funcional sobre os integrantes</p>
+<p>do órgão ou serviço que dirige, comanda ou chefia;</p>
+<p>II - estiver no serviço ativo, em relação aos inativos.</p>
+<h2 class="section-heading">CAPÍTULO II</h2>
+<p>Da Deontologia Policial-Militar</p>
+<h2 class="section-heading">SEÇÃO I</h2>
+<p>Disposições Preliminares</p>
+<p class="legal-article">Artigo 6o - A deontologia policial-militar é constituída pelos valores e deveres éticos,</p>
+<p>traduzidos em normas de conduta, que se impõem para que o exercício da profissão</p>
+<p>policial-militar atinja plenamente os ideais de realização do bem comum, mediante a</p>
+<p>preservação da ordem pública.</p>
+<p class="legal-article">§ 1o - Aplicada aos componentes da Polícia Militar, independentemente de posto ou</p>
+<p>graduação, a deontologia policial-militar reúne valores úteis e lógicos a valores</p>
+<p>espirituais superiores, destinados a elevar a profissão policial-militar à condição de</p>
+<p>missão.</p>
+<p class="legal-article">§ 2o - O militar do Estado prestará compromisso de honra, em caráter solene, afirmando</p>
+<p>a consciente aceitação dos valores e deveres policiais-militares e a firme disposição de</p>
+<p>bem cumpri-los.</p>
+<h2 class="section-heading">SEÇÃO II</h2>
+<p>Dos Valores Policiais-Militares</p>
+<p class="legal-article">Artigo 7o - Os valores fundamentais, determinantes da moral policial-militar, são os</p>
+<p>seguintes:</p>
+<p>I - o patriotismo;</p>
+<p>II - o civismo;</p>
+<p>III - a hierarquia;</p>
+<p>IV - a disciplina;</p>
+<p>V - o profissionalismo;</p>
+<p>VI - a lealdade;</p>
+<p>VII - a constância;</p>
+<p>VIII - a verdade real;</p>
+<p>IX - a honra;</p>
+<p>X - a dignidade humana;</p>
+<p>XI - a honestidade;</p>
+<p>XII - a coragem.</p>
+<h2 class="section-heading">SEÇÃO III</h2>
+<p>Dos Deveres Policiais-Militares</p>
+<p class="legal-article">Artigo 8o - Os deveres éticos, emanados dos valores policiais-militares e que conduzem</p>
+<p>a atividade profissional sob o signo da retidão moral, são os seguintes:</p>
+<p>I - cultuar os símbolos e as tradições da Pátria, do Estado de São Paulo e da Polícia</p>
+<p>Militar e zelar por sua inviolabilidade;</p>
+<p>II - cumprir os deveres de cidadão;</p>
+<p>III - preservar a natureza e o meio ambiente;</p>
+<p>IV - servir à comunidade, procurando, no exercício da suprema missão de preservar a</p>
+<p>ordem pública, promover, sempre, o bem estar comum, dentro da estrita observância das</p>
+<p>normas jurídicas e das disposições deste Regulamento;</p>
+<p>V - atuar com devotamento ao interesse público, colocando-o acima dos anseios</p>
+<p>particulares;</p>
+<p>VI - atuar de forma disciplinada e disciplinadora, com respeito mútuo de superiores e</p>
+<p>subordinados, e preocupação com a integridade física, moral e psíquica de todos os</p>
+<p>militares do Estado, inclusive dos agregados, envidando esforços para bem encaminhar</p>
+<p>a solução dos problemas apresentados;</p>
+<p>VII - ser justo na apreciação de atos e méritos dos subordinados;</p>
+<p>VIII - cumprir e fazer cumprir, dentro de suas atribuições legalmente definidas, a</p>
+<p>Constituição, as leis e as ordens legais das autoridades competentes, exercendo suas</p>
+<p>atividades com responsabilidade, incutindo-a em seus subordinados;</p>
+<p>IX - dedicar-se integralmente ao serviço policial-militar, buscando, com todas as</p>
+<p>energias, o êxito e o aprimoramento técnico-profissional e moral;</p>
+<p>X - estar sempre preparado para as missões que desempenhe;</p>
+<p>XI - exercer as funções com integridade e equilíbrio, segundo os princípios que regem a</p>
+<p>administração pública, não sujeitando o cumprimento do dever a influências indevidas;</p>
+<p>XII - procurar manter boas relações com outras categorias profissionais, conhecendo e</p>
+<p>respeitando-lhes os limites de competência, mas elevando o conceito e os padrões da</p>
+<p>própria profissão, zelando por sua competência e autoridade;</p>
+<p>XIII - ser fiel na vida policial-militar, cumprindo os compromissos relacionados às suas</p>
+<p>atribuições de agente público;</p>
+<p>XIV - manter ânimo forte e fé na missão policial-militar, mesmo diante das</p>
+<p>dificuldades, demonstrando persistência no trabalho para solucioná-las;</p>
+<p>XV - zelar pelo bom nome da Instituição Policial-Militar e de seus componentes,</p>
+<p>aceitando seus valores e cumprindo seus deveres éticos e legais;</p>
+<p>XVI - manter ambiente de harmonia e camaradagem na vida profissional, solidarizando-</p>
+<p>se nas dificuldades que esteja ao seu alcance minimizar e evitando comentários</p>
+<p>desairosos sobre os componentes das Instituições Policiais;</p>
+<p>XVII - não pleitear para si, por meio de terceiros, cargo ou função que esteja sendo</p>
+<p>exercido por outro militar do Estado;</p>
+<p>XVIII - proceder de maneira ilibada na vida pública e particular;</p>
+<p>XIX - conduzir-se de modo não subserviente sem ferir os princípios de respeito e</p>
+<p>decoro;</p>
+<p>XX - abster-se do uso do posto, graduação ou cargo para obter facilidades pessoais de</p>
+<p>qualquer natureza ou para encaminhar negócios particulares ou de terceiros;</p>
+<p>XXI - abster-se, ainda que na inatividade, do uso das designações hierárquicas em:</p>
+<p>a) atividade político-partidária, salvo quando candidato a cargo eletivo;</p>
+<p>b) atividade comercial ou industrial;</p>
+<p>c) pronunciamento público a respeito de assunto policial, salvo os de natureza técnica;</p>
+<p>d) exercício de cargo ou função de natureza civil;</p>
+<p>XXII - prestar assistência moral e material ao lar, conduzindo-o como bom chefe de</p>
+<p>família;</p>
+<p>XXIII - considerar a verdade, a legalidade e a responsabilidade como fundamentos de</p>
+<p>dignidade pessoal;</p>
+<p>XXIV - exercer a profissão sem discriminações ou restrições de ordem religiosa,</p>
+<p>política, racial ou de condição social;</p>
+<p>XXV - atuar com prudência nas ocorrências policiais, evitando exacerbá-las;</p>
+<p>XXVI - respeitar a integridade física, moral e psíquica da pessoa do preso ou de quem</p>
+<p>seja objeto de incriminação;</p>
+<p>XXVII - observar as normas de boa educação e ser discreto nas atitudes, maneiras e na</p>
+<p>linguagem escrita ou falada;</p>
+<p>XXVIII - não solicitar ou provocar publicidade visando a própria promoção pessoal;</p>
+<p>XXIX - observar os direitos e garantias fundamentais, agindo com isenção, eqüidade e</p>
+<p>absoluto respeito pelo ser humano, não usando sua condição de autoridade pública para</p>
+<p>a prática de arbitrariedade;</p>
+<p>XXX - exercer a função pública com honestidade, não aceitando vantagem indevida, de</p>
+<p>qualquer espécie;</p>
+<p>XXXI - não usar meio ilícito na produção de trabalho intelectual ou em avaliação</p>
+<p>profissional, inclusive no âmbito do ensino;</p>
+<p>XXXII - não abusar dos meios do Estado postos à sua disposição, nem distribuí-los a</p>
+<p>quem quer que seja, em detrimento dos fins da administração pública, coibindo ainda a</p>
+<p>transferência, para fins particulares, de tecnologia própria das funções policiais;</p>
+<p>XXXIII - atuar com eficiência e probidade, zelando pela economia e conservação dos</p>
+<p>bens públicos, cuja utilização lhe for confiada;</p>
+<p>XXXIV - proteger as pessoas, o patrimônio e o meio ambiente com abnegação e</p>
+<p>desprendimento pessoal;</p>
+<p>XXXV - atuar onde estiver, mesmo não estando em serviço, para preservar a ordem</p>
+<p>pública ou prestar socorro, desde que não exista, naquele momento, força de serviço</p>
+<p>suficiente.</p>
+<p class="legal-article">§ 1o - Ao militar do Estado em serviço ativo é vedado exercer atividade de segurança</p>
+<p>particular, comércio ou tomar parte da administração ou gerência de sociedade</p>
+<p>comercial ou dela ser sócio ou participar, exceto como acionista, cotista ou</p>
+<p>comanditário.</p>
+<p class="legal-article">§ 2o - Compete aos Comandantes de Unidade e de Subunidade destacada fiscalizar os</p>
+<p>subordinados que apresentarem sinais exteriores de riqueza, incompatíveis com a</p>
+<p>remuneração do respectivo cargo, fazendo-os comprovar a origem de seus bens,</p>
+<p>mediante instauração de procedimento administrativo, observada a legislação específica.</p>
+<p class="legal-article">§ 3o - Aos militares do Estado da ativa são proibidas manifestações coletivas sobre atos</p>
+<p>de superiores, de caráter reivindicatório e de cunho político-partidário, sujeitando-se as</p>
+<p>manifestações de caráter individual aos preceitos deste Regulamento.</p>
+<p class="legal-article">§ 4o - É assegurado ao militar do Estado inativo o direito de opinar sobre assunto</p>
+<p>político e externar pensamento e conceito ideológico, filosófico ou relativo a matéria</p>
+<p>pertinente ao interesse público, devendo observar os preceitos da ética policial-militar e</p>
+<p>preservar os valores policiais-militares em suas manifestações essenciais.</p>
+<h2 class="section-heading">CAPÍTULO III</h2>
+<p>Da Disciplina Policial-Militar</p>
+<p class="legal-article">Artigo 9o - A disciplina policial-militar é o exato cumprimento dos deveres, traduzindo-</p>
+<p>se na rigorosa observância e acatamento integral das leis,</p>
+<p>regulamentos, normas e ordens, por parte de todos e de cada integrante da Polícia</p>
+<p>Militar.</p>
+<p class="legal-article">§ 1o - São manifestações essenciais da disciplina:</p>
+<p>1 - a observância rigorosa das prescrições legais e regulamentares;</p>
+<p>2 - a obediência às ordens legais dos superiores;</p>
+<p>3 - o emprego de todas as energias em benefício do serviço;</p>
+<p>4 - a correção de atitudes;</p>
+<p>5 - as manifestações espontâneas de acatamento dos valores e deveres éticos;</p>
+<p>6 - a colaboração espontânea na disciplina coletiva e na eficiência da Instituição.</p>
+<p class="legal-article">§ 2o - A disciplina e o respeito à hierarquia devem ser mantidos, permanentemente,</p>
+<p>pelos militares do Estado, tanto no serviço ativo, quanto na inatividade.</p>
+<p class="legal-article">§ 3o - A camaradagem é indispensável à formação e ao convívio na Polícia Militar,</p>
+<p>incumbindo aos comandantes incentivar e manter a harmonia e a solidariedade entre os</p>
+<p>seus comandados, promovendo estímulos de aproximação e cordialidade.</p>
+<p class="legal-article">§ 4o - A civilidade é parte integrante da educação policial-militar, cabendo a superiores</p>
+<p>e subordinados atitudes de respeito e deferência mútuos.</p>
+<p class="legal-article">Artigo 10 - As ordens legais devem ser prontamente executadas, cabendo inteira</p>
+<p>responsabilidade à autoridade que as determinar.</p>
+<p class="legal-article">§ 1o - Quando a ordem parecer obscura, compete ao subordinado, ao recebê-la, solicitar</p>
+<p>os esclarecimentos necessários ao seu total entendimento.</p>
+<p class="legal-article">§ 2o - Cabe ao executante que exorbitar no cumprimento da ordem recebida a</p>
+<p>responsabilidade pelo abuso ou excesso que cometer.</p>
+<h2 class="section-heading">CAPÍTULO IV</h2>
+<p>Da Violação dos Valores, dos Deveres e da Disciplina</p>
+<h2 class="section-heading">SEÇÃO I</h2>
+<p>Disposições Preliminares</p>
+<p class="legal-article">Artigo 11 - A ofensa aos valores e aos deveres vulnera a disciplina policial-militar,</p>
+<p>constituindo infração administrativa, penal ou civil, isolada ou cumulativamente.</p>
+<p class="legal-article">§ 1o - O militar do Estado é responsável pelas decisões ou atos que praticar, inclusive</p>
+<p>nas missões expressamente determinadas, bem como pela não-observância ou falta de</p>
+<p>exação no cumprimento de seus deveres.</p>
+<p class="legal-article">§ 2o - O superior hierárquico responderá solidariamente, na esfera administrativa</p>
+<p>disciplinar, incorrendo nas mesmas sanções da transgressão praticada por seu</p>
+<p>subordinado quando:</p>
+<p>1 - presenciar o cometimento da transgressão deixando de atuar para fazê-la cessar</p>
+<p>imediatamente;</p>
+<p>2 - concorrer diretamente, por ação ou omissão, para o cometimento da transgressão,</p>
+<p>mesmo não estando presente no local do ato.</p>
+<p class="legal-article">§ 3o - A violação da disciplina policial-militar será tão mais grave quanto mais elevado</p>
+<p>for o grau hierárquico de quem a cometer.</p>
+<h2 class="section-heading">SEÇÃO II</h2>
+<p>Da Transgressão Disciplinar</p>
+<p class="legal-article">Artigo 12 - Transgressão disciplinar é a infração administrativa caracterizada pela</p>
+<p>violação dos deveres policiais-militares, cominando ao infrator as sanções previstas</p>
+<p>neste Regulamento.</p>
+<p class="legal-article">§ 1o - As transgressões disciplinares compreendem:</p>
+<p>1 - todas as ações ou omissões contrárias à disciplina policial-militar, especificadas no</p>
+<p class="legal-article">artigo 13 deste Regulamento;</p>
+<p>2 - todas as ações ou omissões não especificadas no artigo 13 deste Regulamento, mas</p>
+<p>que também violem os valores e deveres policiais-militares.</p>
+<p class="legal-article">§ 2o - As transgressões disciplinares previstas nos itens 1 e 2 do § 1o, deste artigo, serão</p>
+<p>classificadas como graves, desde que venham a ser:</p>
+<p>1 - atentatórias às instituições ou ao Estado;</p>
+<p>2 - atentatórias aos direitos humanos fundamentais;</p>
+<p>3 - de natureza desonrosa.</p>
+<p class="legal-article">§ 3o - As transgressões previstas no item 2 do § 1o e não enquadráveis em algum dos</p>
+<p>itens do § 2o, deste artigo, serão classificadas pela autoridade competente como médias</p>
+<p>ou leves, consideradas as circunstâncias do fato.</p>
+<p class="legal-article">§ 4o - Ao militar do Estado, aluno de curso da Polícia Militar, aplica-se, no que</p>
+<p>concerne à disciplina, além do previsto neste Regulamento, subsidiariamente, o disposto</p>
+<p>nos regulamentos próprios dos estabelecimentos de ensino onde estiver matriculado.</p>
+<p class="legal-article">§ 5o - A aplicação das penas disciplinares previstas neste Regulamento independe do</p>
+<p>resultado de eventual ação penal.</p>
+<p class="legal-article">Artigo 13 - As transgressões disciplinares são classificadas de acordo com sua</p>
+<p>gravidade em graves (G), médias (M) e leves (L).</p>
+<p class="legal-article">Parágrafo único - As transgressões disciplinares são:</p>
+<p>1 - desconsiderar os direitos constitucionais da pessoa no ato da prisão (G);</p>
+<p>2 - usar de força desnecessária no atendimento de ocorrência ou no ato de efetuar prisão</p>
+<p>(G);</p>
+<p>3 - deixar de providenciar para que seja garantida a integridade física das pessoas que</p>
+<p>prender ou detiver (G);</p>
+<p>4 - agredir física, moral ou psicologicamente preso sob sua guarda ou permitir que</p>
+<p>outros o façam (G);</p>
+<p>5 - permitir que o preso, sob sua guarda, conserve em seu poder instrumentos ou outros</p>
+<p>objetos proibidos, com que possa ferir a si próprio ou a outrem (G);</p>
+<p>6 - reter o preso, a vítima, as testemunhas ou partes não definidas por mais tempo que o</p>
+<p>necessário para a solução do procedimento policial, administrativo ou penal (M);</p>
+<p>7 - faltar com a verdade (G);</p>
+<p>8 - ameaçar, induzir ou instigar alguém para que não declare a verdade em</p>
+<p>procedimento administrativo, civil ou penal (G);</p>
+<p>9 - utilizar-se do anonimato para fins ilícitos (G);</p>
+<p>10 - envolver, indevidamente, o nome de outrem para esquivar-se de responsabilidade</p>
+<p>(G);</p>
+<p>11 - publicar, divulgar ou contribuir para a divulgação irrestrita de fatos, documentos ou</p>
+<p>assuntos administrativos ou técnicos de natureza policial, militar ou judiciária, que</p>
+<p>possam concorrer para o desprestígio da Polícia Militar, ferir a hierarquia ou a</p>
+<p>disciplina, comprometer a segurança da sociedade e do Estado ou violar a honra e a</p>
+<p>imagem de pessoa (G);</p>
+<p>12 - espalhar boatos ou notícias tendenciosas em prejuízo da boa ordem civil ou</p>
+<p>policial-militar ou do bom nome da Polícia Militar (M);</p>
+<p>13 - provocar ou fazer-se, voluntariamente, causa ou origem de alarmes injustificados</p>
+<p>(M);</p>
+<p>14 - concorrer para a discórdia, desarmonia ou cultivar inimizade entre companheiros</p>
+<p>(M);</p>
+<p>15 - liberar preso ou detido ou dispensar parte de ocorrência sem competência legal para</p>
+<p>tanto (G);</p>
+<p>16 - entender-se com o preso, de forma velada, ou deixar que alguém o faça, sem</p>
+<p>autorização de autoridade competente (M);</p>
+<p>17 - receber vantagem de pessoa interessada no caso de furto, roubo, objeto achado ou</p>
+<p>qualquer outro tipo de ocorrência ou procurá-la para solicitar vantagem (G);</p>
+<p>18 - receber ou permitir que seu subordinado receba, em razão da função pública,</p>
+<p>qualquer objeto ou valor, mesmo quando oferecido pelo proprietário ou responsável</p>
+<p>(G);</p>
+<p>19 - apropriar-se de bens pertencentes ao patrimônio público ou particular (G);</p>
+<p>20 - empregar subordinado ou servidor civil, ou desviar qualquer meio material ou</p>
+<p>financeiro sob sua responsabilidade ou não, para a execução de atividades diversas</p>
+<p>daquelas para as quais foram destinadas, em proveito próprio ou de outrem (G);</p>
+<p>21 - provocar desfalques ou deixar de adotar providências, na esfera de suas atribuições,</p>
+<p>para evitá-los (G);</p>
+<p>22 - utilizar-se da condição de militar do Estado para obter facilidades pessoais de</p>
+<p>qualquer natureza ou para encaminhar negócios particulares ou de terceiros (G);</p>
+<p>23 - dar, receber ou pedir gratificação ou presente com finalidade de retardar, apressar</p>
+<p>ou obter solução favorável em qualquer ato de serviço (G);</p>
+<p>24 - contrair dívida ou assumir compromisso superior às suas possibilidades, desde que</p>
+<p>venha a expor o nome da Polícia Militar (M);</p>
+<p>25 - fazer, diretamente ou por intermédio de outrem, agiotagem ou transação pecuniária</p>
+<p>envolvendo assunto de serviço, bens da administração pública ou material cuja</p>
+<p>comercialização seja proibida (G);</p>
+<p>26 - exercer ou administrar, o militar do Estado em serviço ativo, a função de segurança</p>
+<p>particular ou qualquer atividade estranha à Instituição Policial-Militar com prejuízo do</p>
+<p>serviço ou com emprego de meios do Estado (G);</p>
+<p>27 - exercer, o militar do Estado em serviço ativo, o comércio ou tomar parte na</p>
+<p>administração ou gerência de sociedade comercial com fins lucrativos ou dela ser sócio,</p>
+<p>exceto como acionista, cotista ou comanditário (G);</p>
+<p>28 - deixar de fiscalizar o subordinado que apresentar sinais exteriores de riqueza</p>
+<p>incompatíveis com a remuneração do cargo (G);</p>
+<p>29 - não cumprir, sem justo motivo, a execução de qualquer ordem legal recebida (G);</p>
+<p>30 - retardar, sem justo motivo, a execução de qualquer ordem legal recebida (M);</p>
+<p>31 - dar, por escrito ou verbalmente, ordem manifestamente ilegal que possa acarretar</p>
+<p>responsabilidade ao subordinado, ainda que não chegue a ser cumprida (G);</p>
+<p>32 - deixar de assumir a responsabilidade de seus atos ou pelos praticados por</p>
+<p>subordinados que agirem em cumprimento de sua ordem (G);</p>
+<p>33 - aconselhar ou concorrer para não ser cumprida qualquer ordem legal de autoridade</p>
+<p>competente, ou serviço, ou para que seja retardada, prejudicada ou embaraçada a sua</p>
+<p>execução (G);</p>
+<p>34 - interferir na administração de serviço ou na execução de ordem ou missão sem ter a</p>
+<p>devida competência para tal (M);</p>
+<p>35 - deixar de comunicar ao superior a execução de ordem dele recebida, no mais curto</p>
+<p>prazo possível (L);</p>
+<p>36 - dirigir-se, referir-se ou responder a superior de modo desrespeitoso (G);</p>
+<p>37 - recriminar ato legal de superior ou procurar desconsiderá-lo (G);</p>
+<p>38 - ofender, provocar ou desafiar superior ou subordinado hierárquico (G);</p>
+<p>39 - promover ou participar de luta corporal com superior, igual, ou subordinado</p>
+<p>hierárquico (G);</p>
+<p>40 - procurar desacreditar seu superior ou subordinado hierárquico (M);</p>
+<p>41 - ofender a moral e os bons costumes por atos, palavras ou gestos (G);</p>
+<p>42 - desconsiderar ou desrespeitar, em público ou pela imprensa, os atos ou decisões das</p>
+<p>autoridades civis ou dos órgãos dos Poderes Executivo, Legislativo, Judiciário ou de</p>
+<p>qualquer de seus representantes (G);</p>
+<p>43 - desrespeitar, desconsiderar ou ofender pessoa por palavras, atos ou gestos, no</p>
+<p>atendimento de ocorrência policial ou em outras situações de serviço (G);</p>
+<p>44 - deixar de prestar a superior hierárquico continência ou outros sinais de honra e</p>
+<p>respeito previstos em regulamento (M);</p>
+<p>45 - deixar de corresponder a cumprimento de seu subordinado (M);</p>
+<p>46 - deixar de exibir, estando ou não uniformizado, documento de identidade funcional</p>
+<p>ou recusar-se a declarar seus dados de identificação quando lhe for exigido por</p>
+<p>autoridade competente (M);</p>
+<p>47 - evadir-se ou tentar evadir-se de escolta, bem como resistir a ela (G);</p>
+<p>48 - retirar-se da presença do superior hierárquico sem obediência às normas</p>
+<p>regulamentares (L);</p>
+<p>49 - deixar, tão logo seus afazeres o permitam, de apresentar-se ao seu superior</p>
+<p>funcional, conforme prescrições regulamentares (L);</p>
+<p>50 - deixar, nas solenidades, de apresentar-se ao superior hierárquico de posto ou</p>
+<p>graduação mais elevada e de saudar os demais, de acordo com as normas</p>
+<p>regulamentares (L);</p>
+<p>51 - deixar de fazer a devida comunicação disciplinar (M);</p>
+<p>52 - tendo conhecimento de transgressão disciplinar, deixar de apurá-la (G);</p>
+<p>53 - deixar de punir o transgressor da disciplina, salvo se houver causa de justificação</p>
+<p>(M);</p>
+<p>54 - não levar fato ilegal ou irregularidade que presenciar ou de que tiver ciência, e não</p>
+<p>lhe couber reprimir, ao conhecimento da autoridade para isso competente (M);</p>
+<p>55 - deixar de comunicar ao superior imediato ou, na ausência deste, a qualquer</p>
+<p>autoridade superior toda informação que tiver sobre iminente perturbação da ordem</p>
+<p>pública ou grave alteração do serviço ou de sua marcha, logo que tenha conhecimento</p>
+<p>(G);</p>
+<p>56 - deixar de manifestar-se nos processos que lhe forem encaminhados, exceto nos</p>
+<p>casos de suspeição ou impedimento, ou de absoluta falta de elementos, hipótese em que</p>
+<p>essas circunstâncias serão fundamentadas (M);</p>
+<p>57 - deixar de encaminhar à autoridade competente, no mais curto prazo e pela via</p>
+<p>hierárquica, documento ou processo que receber, se não for de sua alçada a solução (M);</p>
+<p>58 - omitir, em boletim de ocorrência, relatório ou qualquer documento, dados</p>
+<p>indispensáveis ao esclarecimento dos fatos (G);</p>
+<p>59 - subtrair, extraviar, danificar ou inutilizar documentos de interesse da administração</p>
+<p>pública ou de terceiros (G);</p>
+<p>60 - trabalhar mal, intencionalmente ou por desídia, em qualquer serviço, instrução ou</p>
+<p>missão (M);</p>
+<p>61 - deixar de assumir, orientar ou auxiliar o atendimento de ocorrência, quando esta,</p>
+<p>por sua natureza ou amplitude, assim o exigir (G);</p>
+<p>62 - retardar ou prejudicar o serviço de polícia judiciária militar que deva promover ou</p>
+<p>em que esteja investido (M);</p>
+<p>63 - desrespeitar medidas gerais de ordem policial, judiciária ou administrativa, ou</p>
+<p>embaraçar sua execução (M);</p>
+<p>64 - não ter, pelo preparo próprio ou de seus subordinados ou instruendos, a dedicação</p>
+<p>imposta pelo sentimento do dever (M);</p>
+<p>65 - causar ou contribuir para a ocorrência de acidente de serviço ou instrução (M);</p>
+<p>66 - consentir, o responsável pelo posto de serviço ou a sentinela, na formação de grupo</p>
+<p>ou permanência de pessoas junto ao seu posto (L);</p>
+<p>67 - içar ou arriar, sem ordem, bandeira ou insígnia de autoridade (L);</p>
+<p>68 - dar toques ou fazer sinais, previstos nos regulamentos, sem ordem de autoridade</p>
+<p>competente (L);</p>
+<p>69 - conversar ou fazer ruídos em ocasiões ou lugares impróprios (L);</p>
+<p>70 - deixar de comunicar a alteração de dados de qualificação pessoal ou mudança de</p>
+<p>endereço residencial (L);</p>
+<p>71 - apresentar comunicação disciplinar ou representação sem fundamento ou interpor</p>
+<p>recurso disciplinar sem observar as prescrições regulamentares (M);</p>
+<p>72 - dificultar ao subordinado o oferecimento de representação ou o exercício do direito</p>
+<p>de petição (M);</p>
+<p>73 - passar a ausente (G);</p>
+<p>74 - abandonar serviço para o qual tenha sido designado ou recusar-se a executá-lo na</p>
+<p>forma determinada (G);</p>
+<p>75 - faltar ao expediente ou ao serviço para o qual esteja nominalmente escalado (G);</p>
+<p>76 - faltar a qualquer ato em que deva tomar parte ou assistir, ou ainda, retirar-se antes</p>
+<p>de seu encerramento sem a devida autorização (M);</p>
+<p>77 - afastar-se, quando em atividade policial-militar com veículo automotor, aeronave,</p>
+<p>embarcação ou a pé, da área em que deveria permanecer ou não cumprir roteiro de</p>
+<p>patrulhamento predeterminado (G);</p>
+<p>78 - afastar-se de qualquer lugar em que deva estar por força de dispositivo ou ordem</p>
+<p>legal (M);</p>
+<p>79 - chegar atrasado ao expediente, ao serviço para o qual esteja nominalmente escalado</p>
+<p>ou a qualquer ato em que deva tomar parte ou assistir (L);</p>
+<p>80 - deixar de comunicar a tempo, à autoridade competente, a impossibilidade de</p>
+<p>comparecer à Organização Policial Militar (OPM) ou a qualquer ato ou serviço de que</p>
+<p>deva participar ou a que deva assistir (L);</p>
+<p>81 - permutar serviço sem permissão da autoridade competente (M);</p>
+<p>82 - simular doença para esquivar-se ao cumprimento do dever (M);</p>
+<p>83 - deixar de se apresentar às autoridades competentes nos casos de movimentação ou</p>
+<p>quando designado para comissão ou serviço extraordinário (M);</p>
+<p>84 - não se apresentar ao seu superior imediato ao término de qualquer afastamento do</p>
+<p>serviço ou, ainda, logo que souber que o mesmo tenha sido interrompido ou suspenso</p>
+<p>(M);</p>
+<p>85 - dormir em serviço de policiamento, vigilância ou segurança de pessoas ou</p>
+<p>instalações (G);</p>
+<p>86 - dormir em serviço, salvo quando autorizado (M);</p>
+<p>87 - permanecer, alojado ou não, deitado em horário de expediente no interior da OPM,</p>
+<p>sem autorização de quem de direito (L);</p>
+<p>88 - fazer uso, estar sob ação ou induzir outrem ao uso de substância proibida,</p>
+<p>entorpecente ou que determine dependência física ou psíquica, ou introduzi-las em local</p>
+<p>sob administração policial-militar (G);</p>
+<p>89 - embriagar-se quando em serviço ou apresentar-se embriagado para prestá-lo (G);</p>
+<p>90 - ingerir bebida alcoólica quando em serviço ou apresentar-se alcoolizado para</p>
+<p>prestá-lo (M);</p>
+<p>91 - introduzir bebidas alcoólicas em local sob administração policial-militar, salvo se</p>
+<p>devidamente autorizado (M);</p>
+<p>92 - fumar em local não permitido (L);</p>
+<p>93 - tomar parte em jogos proibidos ou jogar a dinheiro os permitidos, em local sob</p>
+<p>administração policial-militar, ou em qualquer outro, quando uniformizado (L);</p>
+<p>94 - portar ou possuir arma em desacordo com as normas vigentes (G);</p>
+<p>95 - andar ostensivamente armado, em trajes civis, não se achando de serviço (G);</p>
+<p>96 - disparar arma por imprudência, negligência, imperícia, ou desnecessariamente (G);</p>
+<p>97 - não obedecer às regras básicas de segurança ou não ter cautela na guarda de arma</p>
+<p>própria ou sob sua responsabilidade (G);</p>
+<p>98 - ter em seu poder, introduzir, ou distribuir em local sob administração policial-</p>
+<p>militar, substância ou material inflamável ou explosivo sem permissão da autoridade</p>
+<p>competente (M);</p>
+<p>99 - dirigir viatura policial com imprudência, imperícia, negligência, ou sem habilitação</p>
+<p>legal (G);</p>
+<p>100 - desrespeitar regras de trânsito, de tráfego aéreo ou de navegação marítima,</p>
+<p>lacustre ou fluvial (M);</p>
+<p>101 - autorizar, promover ou executar manobras perigosas com viaturas, aeronaves,</p>
+<p>embarcações ou animais (M);</p>
+<p>102 - conduzir veículo, pilotar aeronave ou embarcação oficial, sem autorização do</p>
+<p>órgão competente da Polícia Militar, mesmo estando habilitado (L);</p>
+<p>103 - transportar na viatura, aeronave ou embarcação que esteja sob seu comando ou</p>
+<p>responsabilidade, pessoal ou material, sem autorização da autoridade competente (L);</p>
+<p>104 - andar a cavalo, a trote ou galope, sem necessidade, pelas ruas da cidade ou</p>
+<p>castigar inutilmente a montada (L);</p>
+<p>105 - não ter o devido zelo, danificar, extraviar ou inutilizar, por ação ou omissão, bens</p>
+<p>ou animais pertencentes ao patrimônio público ou particular, que estejam ou não sob</p>
+<p>sua responsabilidade (M);</p>
+<p>106 - negar-se a utilizar ou a receber do Estado fardamento, armamento, equipamento</p>
+<p>ou bens que lhe sejam destinados ou devam ficar em seu poder ou sob sua</p>
+<p>responsabilidade (M);</p>
+<p>107 - retirar ou tentar retirar de local sob administração policial-militar material, viatura,</p>
+<p>aeronave, embarcação ou animal, ou mesmo deles servir-se, sem ordem do responsável</p>
+<p>ou proprietário (G);</p>
+<p>108 - entrar, sair ou tentar fazê-lo, de OPM, com tropa, sem prévio conhecimento da</p>
+<p>autoridade competente, salvo para fins de instrução autorizada pelo comando (G);</p>
+<p>109 - deixar o responsável pela segurança da OPM de cumprir as prescrições</p>
+<p>regulamentares com respeito a entrada, saída e permanência de pessoa estranha (M);</p>
+<p>110 - permitir que pessoa não autorizada adentre prédio ou local interditado (M);</p>
+<p>111 - deixar, ao entrar ou sair de OPM onde não sirva, de dar ciência da sua presença ao</p>
+<p>Oficial-de-Dia ou de serviço e, em seguida, se oficial, de procurar o comandante ou o</p>
+<p>oficial de posto mais elevado ou seu substituto legal para expor a razão de sua presença,</p>
+<p>salvo as exceções regulamentares previstas (M);</p>
+<p>112 - adentrar, sem permissão ou ordem, aposentos destinados a superior ou onde este</p>
+<p>se encontre, bem como qualquer outro lugar cuja entrada lhe seja vedada (M);</p>
+<p>113 - abrir ou tentar abrir qualquer dependência da OPM, desde que não seja a</p>
+<p>autoridade competente ou sem sua ordem, salvo em situações de emergência (M);</p>
+<p>114 - permanecer em dependência de outra OPM ou local de serviço sem consentimento</p>
+<p>ou ordem da autoridade competente (L);</p>
+<p>115 - permanecer em dependência da própria OPM ou local de serviço, desde que a ele</p>
+<p>estranho, sem consentimento ou ordem da autoridade competente (L);</p>
+<p>116 - entrar ou sair, de qualquer OPM, por lugares que não sejam para isso designados</p>
+<p>(L);</p>
+<p>117 - deixar de exibir a superior hierárquico, quando por ele solicitado, objeto ou</p>
+<p>volume, ao entrar ou sair de qualquer OPM (M);</p>
+<p>118 - ter em seu poder, introduzir ou distribuir, em local sob administração policial-</p>
+<p>militar, publicações, estampas ou jornais que atentem contra a disciplina, a moral ou as</p>
+<p>instituições (L);</p>
+<p>119 - apresentar-se, em qualquer situação, mal uniformizado, com o uniforme alterado</p>
+<p>ou diferente do previsto, contrariando o Regulamento de Uniformes da Polícia Militar</p>
+<p>ou norma a respeito (M);</p>
+<p>120 - usar no uniforme, insígnia, medalha, condecoração ou distintivo, não</p>
+<p>regulamentares ou de forma indevida (M);</p>
+<p>121 - usar vestuário incompatível com a função ou descurar do asseio próprio ou</p>
+<p>prejudicar o de outrem (L);</p>
+<p>122 - estar em desacordo com as normas regulamentares de apresentação pessoal (L);</p>
+<p>123 - recusar ou devolver insígnia, salvo quando a regulamentação o permitir (L);</p>
+<p>124 - comparecer, uniformizado, a manifestações ou reuniões de caráter político-</p>
+<p>partidário, salvo por motivo de serviço (M);</p>
+<p>125 - freqüentar ou fazer parte de sindicatos, associações profissionais com caráter de</p>
+<p>sindicato, ou de associações cujos estatutos não estejam de conformidade com a lei (G);</p>
+<p>126 - autorizar, promover ou participar de petições ou manifestações de caráter</p>
+<p>reivindicatório, de cunho político-partidário, religioso, de crítica ou de apoio a ato de</p>
+<p>superior, para tratar de assuntos de natureza policial-militar, ressalvados os de natureza</p>
+<p>técnica ou científica havidos em razão do exercício da função policial (M);</p>
+<p>127 - aceitar qualquer manifestação coletiva de subordinados, com exceção das</p>
+<p>demonstrações de boa e sã camaradagem e com prévio conhecimento do homenageado</p>
+<p>(L);</p>
+<p>128 - discutir ou provocar discussão, por qualquer veículo de comunicação, sobre</p>
+<p>assuntos políticos, militares ou policiais, excetuando-se os de natureza exclusivamente</p>
+<p>técnica, quando devidamente autorizado (L);</p>
+<p>129 - freqüentar lugares incompatíveis com o decoro social ou policial-militar, salvo por</p>
+<p>motivo de serviço (M);</p>
+<p>130 - recorrer a outros órgãos, pessoas ou instituições, exceto ao Poder Judiciário, para</p>
+<p>resolver assunto de interesse pessoal relacionados com a Polícia Militar (M);</p>
+<p>131 - assumir compromisso em nome da Polícia Militar, ou representá-la em qualquer</p>
+<p>ato, sem estar devidamente autorizado (M);</p>
+<p>132 - deixar de cumprir ou fazer cumprir as normas legais ou regulamentares, na esfera</p>
+<p>de suas atribuições (M).</p>
+<h2 class="section-heading">CAPÍTULO V</h2>
+<p>Das Sanções Administrativas Disciplinares</p>
+<h2 class="section-heading">SEÇÃO I</h2>
+<p>Disposições Gerais</p>
+<p class="legal-article">Artigo 14 - As sanções disciplinares aplicáveis aos militares do Estado,</p>
+<p>independentemente do posto, graduação ou função que ocupem, são:</p>
+<p>I - advertência;</p>
+<p>II - repreensão;</p>
+<p>III - permanência disciplinar;</p>
+<p>IV - detenção;</p>
+<p>V - reforma administrativa disciplinar;</p>
+<p>VI - demissão;</p>
+<p>VII - expulsão;</p>
+<p>VIII - proibição do uso do uniforme.</p>
+<p class="legal-article">Parágrafo único - Todo fato que constituir transgressão deverá ser levado ao</p>
+<p>conhecimento da autoridade competente para as providências disciplinares.</p>
+<h2 class="section-heading">SEÇÃO II</h2>
+<p>Da Advertência</p>
+<p class="legal-article">Artigo 15 - A advertência, forma mais branda de sanção, é aplicada verbalmente ao</p>
+<p>transgressor, podendo ser feita particular ou ostensivamente, sem constar de publicação</p>
+<p>ou dos assentamentos individuais.</p>
+<p class="legal-article">Parágrafo único - A sanção de que trata o &quot;caput&quot; aplica-se exclusivamente às faltas de</p>
+<p>natureza leve.</p>
+<h2 class="section-heading">SEÇÃO III</h2>
+<p>Da Repreensão</p>
+<p class="legal-article">Artigo 16 - A repreensão é a sanção feita por escrito ao transgressor, publicada de forma</p>
+<p>reservada ou ostensiva, devendo sempre ser averbada nos assentamentos individuais.</p>
+<p class="legal-article">Parágrafo único - A sanção de que trata o &quot;caput&quot; aplica-se às faltas de natureza leve e</p>
+<p>média.</p>
+<h2 class="section-heading">SEÇÃO IV</h2>
+<p>Da Permanência Disciplinar</p>
+<p class="legal-article">Artigo 17 - A permanência disciplinar é a sanção em que o transgressor ficará na OPM,</p>
+<p>sem estar circunscrito a determinado compartimento.</p>
+<p class="legal-article">Parágrafo único - O militar do Estado nesta situação comparecerá a todos os atos de</p>
+<p>instrução e serviço, internos e externos.</p>
+<p class="legal-article">Artigo 18 - A pedido do transgressor, o cumprimento da sanção de permanência</p>
+<p>disciplinar poderá, a juízo devidamente motivado, da autoridade que aplicou a punição,</p>
+<p>ser convertido em prestação de serviço extraordinário, desde que não implique prejuízo</p>
+<p>para a manutenção da hierarquia e da disciplina.</p>
+<p class="legal-article">§ 1o - Na hipótese da conversão, a classificação do comportamento do militar do Estado</p>
+<p>será feita com base na sanção de permanência disciplinar.</p>
+<p class="legal-article">§ 2o - Considerar-se-á 1 (um) dia de prestação de serviço extraordinário equivalente ao</p>
+<p>cumprimento de 1 (um) dia de permanência.</p>
+<p class="legal-article">§ 3o - O prazo para o encaminhamento do pedido de conversão será de 3 (três) dias,</p>
+<p>contados da data da publicação da sanção de permanência.</p>
+<p class="legal-article">§ 4o - O pedido de conversão elide o pedido de reconsideração de ato.</p>
+<p class="legal-article">Artigo 19 - A prestação do serviço extraordinário, nos termos do &quot;caput&quot; do artigo</p>
+<p>anterior, consiste na realização de atividades, internas ou externas, por período nunca</p>
+<p>inferior a 6 (seis) ou superior a 8 (oito) horas, nos dias em que o militar do Estado</p>
+<p>estaria de folga.</p>
+<p class="legal-article">§ 1o - O limite máximo de conversão da permanência disciplinar em serviço</p>
+<p>extraordinário é de 5 (cinco) dias.</p>
+<p class="legal-article">§ 2o - O militar do Estado, punido com período superior a 5 (cinco) dias de permanência</p>
+<p>disciplinar, somente poderá pleitear a conversão até o limite previsto no parágrafo</p>
+<p>anterior, a qual, se concedida, será sempre cumprida na fase final do período de</p>
+<p>punição.</p>
+<p class="legal-article">§ 3o - A prestação do serviço extraordinário não poderá ser executada imediatamente</p>
+<p>após o término de um serviço ordinário.</p>
+<h2 class="section-heading">SEÇÃO V</h2>
+<p>Da Detenção</p>
+<p class="legal-article">Artigo 20 - A detenção consiste na retenção do militar do Estado no âmbito de sua</p>
+<p>OPM, sem participar de qualquer serviço, instrução ou atividade.</p>
+<p class="legal-article">§ 1o - Nos dias em que o militar do Estado permanecer detido perderá todas as</p>
+<p>vantagens e direitos decorrentes do exercício do posto ou graduação, tempo esse não</p>
+<p>computado para efeito algum, nos termos da legislação vigente.</p>
+<p class="legal-article">§ 2o - A detenção somente poderá ser aplicada quando da reincidência no cometimento</p>
+<p>de transgressão disciplinar de natureza grave.</p>
+<p class="legal-article">Artigo 21 - A detenção será aplicada pelo Secretário da Segurança Pública, pelo</p>
+<p>Comandante Geral e pelos demais oficiais ocupantes de funções próprias do posto de</p>
+<p>coronel.</p>
+<p class="legal-article">§ 1o - A autoridade que entender necessária a aplicação desta sanção disciplinar</p>
+<p>providenciará para que a documentação alusiva à respectiva transgressão seja remetida à</p>
+<p>autoridade competente.</p>
+<p class="legal-article">§ 2o - Ao Governador do Estado compete conhecer desta sanção disciplinar em grau de</p>
+<p>recurso, quando tiver sido aplicada pelo Secretário da Segurança Pública.</p>
+<h2 class="section-heading">SEÇÃO VI</h2>
+<p>Da Reforma Administrativa Disciplinar</p>
+<p class="legal-article">Artigo 22 - A reforma administrativa disciplinar poderá ser aplicada, mediante processo</p>
+<p>regular:</p>
+<p>I - ao oficial julgado incompatível ou indigno profissionalmente para com o oficialato,</p>
+<p>após sentença passada em julgado no tribunal competente, ressalvado o caso de</p>
+<p>demissão;</p>
+<p>II - à praça que se tornar incompatível com a função policial-militar, ou nociva à</p>
+<p>disciplina, e tenha sido julgada passível de reforma.</p>
+<p class="legal-article">Parágrafo único - O militar do Estado que sofrer reforma administrativa disciplinar</p>
+<p>receberá remuneração proporcional ao tempo de serviço policial-militar.</p>
+<h2 class="section-heading">SEÇÃO VII</h2>
+<p>Da Demissão</p>
+<p class="legal-article">Artigo 23 - A demissão será aplicada ao militar do Estado na seguinte forma:</p>
+<p>I - ao oficial quando:</p>
+<p>a) for condenado a pena restritiva de liberdade superior a 2 (dois) anos, por sentença</p>
+<p>passada em julgado;</p>
+<p>b) for condenado a pena de perda da função pública, por sentença passada em julgado;</p>
+<p>c) for considerado moral ou profissionalmente inidôneo para a promoção ou revelar</p>
+<p>incompatibilidade para o exercício da função policial-militar, por sentença passada em</p>
+<p>julgado no tribunal competente;</p>
+<p>II - à praça quando:</p>
+<p>a) for condenada, por sentença passada em julgado, a pena restritiva de liberdade por</p>
+<p>tempo superior a 2 (dois) anos;</p>
+<p>b) for condenada, por sentença passada em julgado, a pena de perda da função pública;</p>
+<p>c) praticar ato ou atos que revelem incompatibilidade com a função policial-militar,</p>
+<p>comprovado mediante processo regular;</p>
+<p>d) cometer transgressão disciplinar grave, estando há mais de 2 (dois) anos consecutivos</p>
+<p>ou 4 (quatro) anos alternados no mau comportamento, apurado mediante processo</p>
+<p>regular;</p>
+<p>e) houver cumprido a pena conseqüente do crime de deserção;</p>
+<p>f) considerada desertora e capturada ou apresentada, tendo sido submetida a exame de</p>
+<p>saúde, for julgada incapaz definitivamente para o serviço policial-militar.</p>
+<p class="legal-article">Parágrafo único - O oficial demitido perderá o posto e a patente, e a praça, a graduação.</p>
+<h2 class="section-heading">SEÇÃO VIII</h2>
+<p>Da Expulsão</p>
+<p class="legal-article">Artigo 24 - A expulsão será aplicada, mediante processo regular, à praça que atentar</p>
+<p>contra a segurança das instituições nacionais ou praticar atos desonrosos ou ofensivos</p>
+<p>ao decoro profissional.</p>
+<h2 class="section-heading">SEÇÃO IX</h2>
+<p>Da Proibição do Uso de Uniformes</p>
+<p class="legal-article">Artigo 25 - A proibição do uso de uniformes policiais-militares será aplicada, nos</p>
+<p>termos deste Regulamento, temporariamente, ao inativo que atentar contra o decoro ou a</p>
+<p>dignidade policial-militar, até o limite de 1 (um) ano.</p>
+<h2 class="section-heading">CAPÍTULO VI</h2>
+<p>Do Recolhimento Disciplinar</p>
+<p class="legal-article">Artigo 26 - O recolhimento de qualquer transgressor à prisão, sem nota de punição</p>
+<p>publicada em boletim, poderá ocorrer quando:</p>
+<p>I - houver indício de autoria de infração penal e for necessário ao bom andamento das</p>
+<p>investigações para sua apuração;</p>
+<p>II - for necessário para a preservação da ordem e da disciplina policial-militar,</p>
+<p>especialmente se o militar do Estado mostrar-se agressivo, embriagado ou sob ação de</p>
+<p>substância entorpecente.</p>
+<p class="legal-article">§ 1o - São autoridades competentes para determinar o recolhimento disciplinar aquelas</p>
+<p>elencadas no artigo 31 deste Regulamento.</p>
+<p class="legal-article">§ 2o - A condução do militar do Estado à autoridade competente para determinar o</p>
+<p>recolhimento somente poderá ser efetuada por superior hierárquico.</p>
+<p class="legal-article">§ 3o - As decisões de aplicação do recolhimento disciplinar serão sempre fundamentadas</p>
+<p>e comunicadas ao Juiz Corregedor da polícia judiciária militar.</p>
+<p class="legal-article">§ 4o - O militar do Estado preso nos termos deste artigo poderá permanecer nessa</p>
+<p>situação pelo prazo máximo de 5 (cinco) dias.</p>
+<h2 class="section-heading">CAPÍTULO VII</h2>
+<p>Do Procedimento Disciplinar</p>
+<h2 class="section-heading">SEÇÃO I</h2>
+<p>Da Comunicação Disciplinar</p>
+<p class="legal-article">Artigo 27 - A comunicação disciplinar dirigida à autoridade policial-militar competente</p>
+<p>destina-se a relatar uma transgressão disciplinar cometida por subordinado hierárquico.</p>
+<p class="legal-article">Artigo 28 - A comunicação disciplinar deve ser clara, concisa e precisa, contendo os</p>
+<p>dados capazes de identificar as pessoas ou coisas envolvidas, o local, a data e a hora do</p>
+<p>fato, além de caracterizar as circunstâncias que o envolveram, bem como as alegações</p>
+<p>do faltoso, quando presente e ao ser interpelado pelo signatário das razões da</p>
+<p>transgressão, sem tecer comentários ou opiniões pessoais.</p>
+<p class="legal-article">§ 1o - A comunicação disciplinar deverá ser apresentada no prazo de 5 (cinco) dias,</p>
+<p>contados da constatação ou conhecimento do fato, ressalvadas as disposições relativas</p>
+<p>ao recolhimento disciplinar, que deverá ser feita imediatamente.</p>
+<p class="legal-article">§ 2o - A comunicação disciplinar deve ser a expressão da verdade, cabendo à autoridade</p>
+<p>competente encaminhá-la ao acusado para que, por escrito, manifeste-se</p>
+<p>preliminarmente sobre os fatos, no prazo de 3 (três) dias.</p>
+<p class="legal-article">§ 3o - Conhecendo a manifestação preliminar e considerando praticada a transgressão, a</p>
+<p>autoridade competente elaborará termo acusatório motivado, com as razões de fato e de</p>
+<p>direito, para que o militar do Estado possa exercitar, por escrito, o seu direito a ampla</p>
+<p>defesa e ao contraditório, no prazo de 5 (cinco) dias.</p>
+<p class="legal-article">§ 4o - Estando a autoridade convencida do cometimento da transgressão, providenciará</p>
+<p>o enquadramento disciplinar, mediante nota de culpa ou, se determinar outra solução,</p>
+<p>deverá fundamentá-la por despacho nos autos.</p>
+<p class="legal-article">§ 5o - Poderá ser dispensada a manifestação preliminar quando a autoridade competente</p>
+<p>tiver elementos de convicção suficientes para a elaboração do termo acusatório,</p>
+<p>devendo esta circunstância constar do respectivo termo.</p>
+<p class="legal-article">Artigo 29 - A solução do procedimento disciplinar é da inteira responsabilidade da</p>
+<p>autoridade competente, que deverá aplicar sanção ou justificar o fato, de acordo com</p>
+<p>este Regulamento.</p>
+<p class="legal-article">§ 1o - A solução será dada no prazo de 30 (trinta) dias, contados a partir do recebimento</p>
+<p>da defesa do acusado, prorrogável no máximo por mais 15 (quinze) dias, mediante</p>
+<p>declaração de motivos no próprio enquadramento.</p>
+<p class="legal-article">§ 2o - No caso de afastamento regulamentar do transgressor, os prazos supracitados</p>
+<p>serão interrompidos, reiniciada a contagem a partir da sua reapresentação.</p>
+<p class="legal-article">§ 3o - Em qualquer circunstância, o signatário da comunicação deverá ser notificado da</p>
+<p>respectiva solução, no prazo máximo de 90 (noventa) dias da data da comunicação.</p>
+<p class="legal-article">§ 4o - No caso de não cumprimento do prazo do parágrafo anterior, poderá o signatário</p>
+<p>da comunicação solicitar, obedecida a via hierárquica, providências a respeito da</p>
+<p>solução.</p>
+<h2 class="section-heading">SEÇÃO II</h2>
+<p>Da Representação</p>
+<p class="legal-article">Artigo 30 - Representação é toda comunicação que se referir a ato praticado ou</p>
+<p>aprovado por superior hierárquico ou funcional, que se repute irregular, ofensivo,</p>
+<p>injusto ou ilegal.</p>
+<p class="legal-article">§ 1o - A representação será dirigida à autoridade funcional imediatamente superior</p>
+<p>àquela contra a qual é atribuída a prática do ato irregular, ofensivo, injusto ou ilegal.</p>
+<p class="legal-article">§ 2o - A representação contra ato disciplinar será feita somente após solucionados os</p>
+<p>recursos disciplinares previstos neste Regulamento e desde que a matéria recorrida</p>
+<p>verse sobre a legalidade do ato praticado.</p>
+<p class="legal-article">§ 3o - A representação nos termos do parágrafo anterior será exercida no prazo</p>
+<p>estabelecido no § 1o, do artigo 62.</p>
+<p class="legal-article">§ 4o - O prazo para o encaminhamento de representação será de 5 (cinco) dias contados</p>
+<p>da data do ato ou fato que o motivar.</p>
+<h2 class="section-heading">CAPÍTULO VIII</h2>
+<p>Da Competência, do Julgamento, da Aplicação e do</p>
+<p>Cumprimento das Sanções Disciplinares</p>
+<h2 class="section-heading">SEÇÃO I</h2>
+<p>Da Competência</p>
+<p class="legal-article">Artigo 31 - A competência disciplinar é inerente ao cargo, função ou posto, sendo</p>
+<p>autoridades competentes para aplicar sanção disciplinar:</p>
+<p>I - o Governador do Estado: a todos os militares do Estado sujeitos a este Regulamento;</p>
+<p>II - o Secretário da Segurança Pública e o Comandante Geral: a todos os militares do</p>
+<p>Estado sujeitos a este Regulamento, exceto ao Chefe da Casa Militar;</p>
+<p>III - o Subcomandante da Polícia Militar: a todos os integrantes de seu comando e das</p>
+<p>unidades subordinadas e às praças inativas;</p>
+<p>IV - os oficiais da ativa da Polícia Militar do posto de coronel a capitão: aos militares do</p>
+<p>Estado que estiverem sob seu comando ou integrantes das OPM subordinadas.</p>
+<p class="legal-article">§ 1o - Ao Secretário da Segurança Pública e ao Comandante Geral da Polícia Militar</p>
+<p>compete conhecer das sanções disciplinares aplicadas aos inativos, em grau de recurso,</p>
+<p>respectivamente, se oficial ou praça.</p>
+<p class="legal-article">§ 2o - Aos oficiais, quando no exercício interino das funções de posto igual ou superior</p>
+<p>ao de capitão, ficará atribuída a competência prevista no inciso IV deste artigo.</p>
+<h2 class="section-heading">SEÇÃO II</h2>
+<p>Dos Limites de Competência das Autoridades</p>
+<p class="legal-article">Artigo 32 - O Governador do Estado é competente para aplicar todas as sanções</p>
+<p>disciplinares previstas neste Regulamento, cabendo às demais autoridades as seguintes</p>
+<p>competências:</p>
+<p>I - ao Secretário da Segurança Pública e ao Comandante Geral: todas as sanções</p>
+<p>disciplinares exceto a demissão de oficiais;</p>
+<p>II - ao Subcomandante da Polícia Militar: as sanções disciplinares de advertência,</p>
+<p>repreensão, permanência disciplinar, detenção e proibição do uso de uniformes de até os</p>
+<p>limites máximos previstos;</p>
+<p>III - aos oficiais do posto de coronel: as sanções disciplinares de advertência,</p>
+<p>repreensão, permanência disciplinar de até 20 (vinte) dias e detenção de até 15 (quinze)</p>
+<p>dias;</p>
+<p>IV - aos oficiais do posto de tenente-coronel: as sanções disciplinares de advertência,</p>
+<p>repreensão e permanência disciplinar de até 20 (vinte) dias;</p>
+<p>V - aos oficiais do posto de major: as sanções disciplinares de advertência, repreensão e</p>
+<p>permanência disciplinar de até 15 (quinze) dias;</p>
+<p>VI - aos oficiais do posto de capitão: as sanções disciplinares de advertência, repreensão</p>
+<p>e permanência disciplinar de até 10 (dez) dias.</p>
+<h2 class="section-heading">SEÇÃO III</h2>
+<p>Do Julgamento</p>
+<p class="legal-article">Artigo 33 - Na aplicação das sanções disciplinares serão sempre considerados a</p>
+<p>natureza, a gravidade, os motivos determinantes, os danos causados, a personalidade e</p>
+<p>os antecedentes do agente, a intensidade do dolo ou o grau da culpa.</p>
+<p class="legal-article">Artigo 34 - Não haverá aplicação de sanção disciplinar quando for reconhecida qualquer</p>
+<p>das seguintes causas de justificação:</p>
+<p>I - motivo de força maior ou caso fortuito, plenamente comprovados;</p>
+<p>II - benefício do serviço, da preservação da ordem pública ou do interesse público;</p>
+<p>III - legítima defesa própria ou de outrem;</p>
+<p>IV - obediência a ordem superior, desde que a ordem recebida não seja manifestamente</p>
+<p>ilegal;</p>
+<p>V - uso de força para compelir o subordinado a cumprir rigorosamente o seu dever, no</p>
+<p>caso de perigo, necessidade urgente, calamidade pública ou manutenção da ordem e da</p>
+<p>disciplina.</p>
+<p class="legal-article">Artigo 35 - São circunstâncias atenuantes:</p>
+<p>I - estar, no mínimo, no bom comportamento;</p>
+<p>II - ter prestado serviços relevantes;</p>
+<p>III - ter admitido a transgressão de autoria ignorada ou, se conhecida, imputada a</p>
+<p>outrem;</p>
+<p>IV - ter praticado a falta para evitar mal maior;</p>
+<p>V - ter praticado a falta em defesa de seus próprios direitos ou dos de outrem;</p>
+<p>VI - ter praticado a falta por motivo de relevante valor social;</p>
+<p>VII - não possuir prática no serviço;</p>
+<p>VIII - colaborar na apuração da transgressão disciplinar.</p>
+<p class="legal-article">Artigo 36 - São circunstâncias agravantes:</p>
+<p>I - mau comportamento;</p>
+<p>II - prática simultânea ou conexão de duas ou mais transgressões;</p>
+<p>III - reincidência específica;</p>
+<p>IV - conluio de duas ou mais pessoas;</p>
+<p>V - ter sido a falta praticada durante a execução do serviço;</p>
+<p>VI - ter sido a falta praticada em presença de subordinado, de tropa ou de civil;</p>
+<p>VII - ter sido a falta praticada com abuso de autoridade hierárquica ou funcional.</p>
+<p class="legal-article">§ 1o - Não se aplica a circunstância agravante prevista no inciso V quando, pela sua</p>
+<p>natureza, a transgressão seja inerente à execução do serviço.</p>
+<p class="legal-article">§ 2o - Considera-se reincidência específica o enquadramento da falta praticada num</p>
+<p>mesmo item dos previstos no artigo 13 ou no item II do § 1o do artigo 12.</p>
+<h2 class="section-heading">SEÇÃO IV</h2>
+<p>Da Aplicação</p>
+<p class="legal-article">Artigo 37 - A aplicação da sanção disciplinar abrange a análise do fato, nos termos do</p>
+<p class="legal-article">artigo 33 deste Regulamento, a análise das circunstâncias que determinaram a</p>
+<p>transgressão, o enquadramento e a decorrente publicação.</p>
+<p class="legal-article">Artigo 38 - O enquadramento disciplinar é a descrição da transgressão cometida, dele</p>
+<p>devendo constar, resumidamente, o seguinte:</p>
+<p>I - indicação da ação ou omissão que originou a transgressão;</p>
+<p>II - tipificação da transgressão disciplinar;</p>
+<p>III - discriminação, em incisos e artigos, das causas de justificação ou das circunstâncias</p>
+<p>atenuantes e ou agravantes;</p>
+<p>IV - decisão da autoridade impondo, ou não, a sanção;</p>
+<p>V - classificação do comportamento policial-militar em que o punido permaneça ou</p>
+<p>ingresse;</p>
+<p>VI - alegações de defesa do transgressor;</p>
+<p>VII - observações, tais como:</p>
+<p>a) data do início do cumprimento da sanção disciplinar;</p>
+<p>b) local do cumprimento da sanção, se for o caso;</p>
+<p>c) determinação para posterior cumprimento, se o transgressor estiver baixado, afastado</p>
+<p>do serviço ou à disposição de outra autoridade;</p>
+<p>d) outros dados que a autoridade competente julgar necessários;</p>
+<p>VIII - assinatura da autoridade.</p>
+<p class="legal-article">Artigo 39 - A publicação é a divulgação oficial do ato administrativo referente à</p>
+<p>aplicação da sanção disciplinar ou à sua justificação, e dá início a seus efeitos.</p>
+<p class="legal-article">Parágrafo único - A advertência não deverá constar de publicação em boletim,</p>
+<p>figurando, entretanto, no registro de informações de punições para os oficiais, ou na</p>
+<p>nota de corretivo das praças.</p>
+<p class="legal-article">Artigo 40 - As sanções de oficiais, aspirantes-a-oficial, alunos-oficiais, subtenentes e</p>
+<p>sargentos serão publicadas somente para conhecimento dos integrantes dos seus</p>
+<p>respectivos círculos e superiores hierárquicos, podendo ser dadas ao conhecimento geral</p>
+<p>se as circunstâncias ou a natureza da transgressão e o bem da disciplina assim o</p>
+<p>recomendarem.</p>
+<p class="legal-article">Artigo 41 - Na aplicação das sanções disciplinares previstas neste Regulamento, serão</p>
+<p>rigorosamente observados os seguintes limites:</p>
+<p>I - quando as circunstâncias atenuantes preponderarem, a sanção não será aplicada em</p>
+<p>seu limite máximo;</p>
+<p>II - quando as circunstâncias agravantes preponderarem, poderá ser aplicada a sanção</p>
+<p>até o seu limite máximo;</p>
+<p>III - pela mesma transgressão não será aplicada mais de uma sanção disciplinar.</p>
+<p class="legal-article">Artigo 42 - A sanção disciplinar será proporcional à gravidade e natureza da infração,</p>
+<p>observados os seguintes limites:</p>
+<p>I - as faltas leves são puníveis com advertência ou repreensão e, na reincidência</p>
+<p>específica, com permanência disciplinar de até 5 (cinco) dias;</p>
+<p>II - as faltas médias são puníveis com permanência disciplinar de até 8 (oito) dias e, na</p>
+<p>reincidência específica, com permanência disciplinar de até 15 (quinze) dias;</p>
+<p>III - as faltas graves são puníveis com permanência de até 10 (dez) dias ou detenção de</p>
+<p>até 8 (oito) dias e, na reincidência específica, com permanência de até 20 (vinte) dias ou</p>
+<p>detenção de até 15 (quinze) dias, desde que não caiba demissão ou expulsão.</p>
+<p class="legal-article">Artigo 43 - O início do cumprimento da sanção disciplinar dependerá de aprovação do</p>
+<p>ato pelo Comandante da Unidade ou pela autoridade funcional imediatamente superior,</p>
+<p>quando a sanção for por ele aplicada, e prévia publicação em boletim, salvo a</p>
+<p>necessidade de recolhimento disciplinar previsto neste Regulamento.</p>
+<p class="legal-article">Artigo 44 - A sanção disciplinar não exime o punido da responsabilidade civil e</p>
+<p>criminal emanadas do mesmo fato.</p>
+<p class="legal-article">Parágrafo único - A instauração de inquérito ou ação criminal não impede a imposição,</p>
+<p>na esfera administrativa, de sanção pela prática de transgressão disciplinar sobre o</p>
+<p>mesmo fato.</p>
+<p class="legal-article">Artigo 45 - Na ocorrência de mais de uma transgressão, sem conexão entre elas, serão</p>
+<p>impostas as sanções correspondentes isoladamente; em caso contrário, quando forem</p>
+<p>praticadas de forma conexa, as de menor gravidade serão consideradas como</p>
+<p>circunstâncias agravantes da transgressão principal.</p>
+<p class="legal-article">Artigo 46 - Na ocorrência de transgressão disciplinar envolvendo militares do Estado de</p>
+<p>mais de uma Unidade, caberá ao comandante do policiamento da área territorial onde</p>
+<p>ocorreu o fato apurar ou determinar a apuração e, ao final, se necessário, remeter os</p>
+<p>autos à autoridade funcional superior comum aos envolvidos.</p>
+<p class="legal-article">Artigo 47 - Quando duas autoridades de níveis hierárquicos diferentes, ambas com ação</p>
+<p>disciplinar sobre o transgressor, conhecerem da transgressão disciplinar, competirá à de</p>
+<p>maior hierarquia apurá-la ou determinar que a menos graduada o faça.</p>
+<p class="legal-article">Parágrafo único - Quando a apuração ficar sob a incumbência da autoridade menos</p>
+<p>graduada, a punição resultante será aplicada após a aprovação da autoridade superior, se</p>
+<p>esta assim determinar.</p>
+<p class="legal-article">Artigo 48 - A expulsão será aplicada, em regra, quando a praça policial-militar,</p>
+<p>independentemente da graduação ou função que ocupe, for condenado judicialmente</p>
+<p>por crime que também constitua infração disciplinar grave e que denote incapacidade</p>
+<p>moral para a continuidade do exercício de suas funções.</p>
+<h2 class="section-heading">SEÇÃO V</h2>
+<p>Do Cumprimento e da Contagem de Tempo</p>
+<p class="legal-article">Artigo 49 - A autoridade que tiver de aplicar sanção a subordinado que esteja a serviço</p>
+<p>ou à disposição de outra autoridade requisitará a apresentação do transgressor.</p>
+<p class="legal-article">Parágrafo único - Quando o local determinado para o cumprimento da sanção não for a</p>
+<p>respectiva OPM, a autoridade indicará o local designado para a apresentação do policial.</p>
+<p class="legal-article">Artigo 50 - Nenhum militar do Estado será interrogado ou ser-lhe-á aplicada sanção se</p>
+<p>estiver em estado de embriaguez, ou sob a ação de substância entorpecente ou que</p>
+<p>determine dependência física ou psíquica, devendo se necessário, desde logo, recolhido</p>
+<p>disciplinarmente.</p>
+<p class="legal-article">Artigo 51 - O cumprimento da sanção disciplinar, por militar do Estado afastado do</p>
+<p>serviço, deverá ocorrer após a sua apresentação na OPM, pronto para o serviço policial-</p>
+<p>militar, salvo nos casos de interesse da preservação da ordem e da disciplina.</p>
+<p class="legal-article">Parágrafo único - A interrupção de afastamento regulamentar, para cumprimento de</p>
+<p>sanção disciplinar, somente ocorrerá quando determinada pelo Governador do Estado,</p>
+<p>Secretário da Segurança Pública ou pelo Comandante Geral.</p>
+<p class="legal-article">Artigo 52 - O início do cumprimento da sanção disciplinar deverá ocorrer no prazo</p>
+<p>máximo de 5 (cinco) dias após a ciência, pelo punido, da sua publicação.</p>
+<p class="legal-article">§ 1o - A contagem do tempo de cumprimento da sanção começa no momento em que o</p>
+<p>militar do Estado iniciá-lo, computando-se cada dia como período de 24 (vinte e quatro)</p>
+<p>horas.</p>
+<p class="legal-article">§ 2o - Não será computado, como cumprimento de sanção disciplinar, o tempo em que o</p>
+<p>militar do Estado passar em gozo de afastamentos regulamentares, interrompendo-se a</p>
+<p>contagem a partir do momento de seu afastamento até o seu retorno.</p>
+<p class="legal-article">§ 3o - O afastamento do militar do Estado do local de cumprimento da sanção e o seu</p>
+<p>retorno a esse local, após o afastamento regularmente previsto no § 2o, deverão ser</p>
+<p>objeto de publicação.</p>
+<h2 class="section-heading">CAPÍTULO IX</h2>
+<p>Do Comportamento</p>
+<p class="legal-article">Artigo 53 - O comportamento da praça policial-militar demonstra o seu procedimento</p>
+<p>na vida profissional e particular, sob o ponto de vista disciplinar.</p>
+<p class="legal-article">Artigo 54 - Para fins disciplinares e para outros efeitos, o comportamento policial-</p>
+<p>militar classifica-se em:</p>
+<p>I - excelente - quando, no período de 10 (dez) anos, não lhe tenha sido aplicada qualquer</p>
+<p>sanção disciplinar;</p>
+<p>II - ótimo - quando, no período de 5 (cinco) anos, lhe tenham sido aplicadas até 2</p>
+<p>repreensões;</p>
+<p>III - bom - quando, no período de 2 (dois) anos, lhe tenham sido aplicadas até 2 (duas)</p>
+<p>permanências disciplinares;</p>
+<p>IV - regular - quando, no período de 1 (um) ano, lhe tenham sido aplicadas até 2 (duas)</p>
+<p>permanências disciplinares ou 1 (uma) detenção;</p>
+<p>V - mau - quando, no período de 1 (um) ano, lhe tenham sido aplicadas mais de 2 (duas)</p>
+<p>permanências disciplinares ou mais de 1 (uma) detenção.</p>
+<p class="legal-article">§ 1o - A contagem de tempo para melhora do comportamento se fará automaticamente,</p>
+<p>de acordo com os prazos estabelecidos neste artigo.</p>
+<p class="legal-article">§ 2o - Bastará uma única sanção disciplinar acima dos limites estabelecidos neste artigo</p>
+<p>para alterar a categoria do comportamento.</p>
+<p class="legal-article">§ 3o - Para a classificação do comportamento fica estabelecido que duas repreensões</p>
+<p>equivalerão a uma permanência disciplinar.</p>
+<p class="legal-article">§ 4o - Para efeito de classificação, reclassificação ou melhoria do comportamento, ter-</p>
+<p>se-ão como base as datas em que as sanções foram publicadas.</p>
+<p class="legal-article">Artigo 55 - Ao ser admitida na Polícia Militar, a praça policial-militar será classificada</p>
+<p>no comportamento &quot;bom&quot;.</p>
+<h2 class="section-heading">CAPÍTULO X</h2>
+<p>Dos Recursos Disciplinares</p>
+<p class="legal-article">Artigo 56 - O militar do Estado, que considere a si próprio, a subordinado seu ou a</p>
+<p>serviço sob sua responsabilidade prejudicado, ofendido ou injustiçado por ato de</p>
+<p>superior hierárquico, poderá interpor recursos disciplinares.</p>
+<p class="legal-article">Parágrafo único - São recursos disciplinares:</p>
+<p>1 - pedido de reconsideração de ato;</p>
+<p>2 - recurso hierárquico.</p>
+<p class="legal-article">Artigo 57 - O pedido de reconsideração de ato é recurso interposto, mediante parte ou</p>
+<p>ofício, à autoridade que praticou, ou aprovou, o ato disciplinar que se reputa irregular,</p>
+<p>ofensivo, injusto ou ilegal, para que o reexamine.</p>
+<p class="legal-article">§ 1o - O pedido de reconsideração de ato deve ser encaminhado, diretamente, à</p>
+<p>autoridade recorrida e por uma única vez.</p>
+<p class="legal-article">§ 2o - O pedido de reconsideração de ato, que tem efeito suspensivo, deve ser</p>
+<p>apresentado no prazo máximo de 5 (cinco) dias, a contar da data em que o militar do</p>
+<p>Estado tomar ciência do ato que o motivou.</p>
+<p class="legal-article">§ 3o - A autoridade a quem for dirigido o pedido de reconsideração de ato deverá,</p>
+<p>saneando se possível o ato praticado, dar solução ao recurso, no prazo máximo de 10</p>
+<p>(dez) dias, a contar da data de recebimento do documento, dando conhecimento ao</p>
+<p>interessado, mediante despacho fundamentado que deverá ser publicado.</p>
+<p class="legal-article">§ 4o - O subordinado que não tiver oficialmente conhecimento da solução do pedido de</p>
+<p>reconsideração, após 30 (trinta) dias contados da data de sua solicitação, poderá interpor</p>
+<p>recurso hierárquico no prazo previsto no item 1 do § 3o, do artigo 58.</p>
+<p class="legal-article">§ 5o - O pedido de reconsideração de ato deve ser redigido de forma respeitosa,</p>
+<p>precisando o objetivo e as razões que o fundamentam, sem comentários ou insinuações,</p>
+<p>podendo ser acompanhado de documentos comprobatórios.</p>
+<p class="legal-article">§ 6o - Não será conhecido o pedido de reconsideração intempestivo, procrastinador ou</p>
+<p>que não apresente fatos novos que modifiquem a decisão anteriormente tomada,</p>
+<p>devendo este ato ser publicado, obedecido o prazo do § 3o deste artigo.</p>
+<p class="legal-article">Artigo 58 - O recurso hierárquico, interposto por uma única vez, terá efeito suspensivo e</p>
+<p>será redigido sob a forma de parte ou ofício e endereçado diretamente à autoridade</p>
+<p>imediatamente superior àquela que não reconsiderou o ato tido por irregular, ofensivo,</p>
+<p>injusto ou ilegal.</p>
+<p class="legal-article">§ 1o - A interposição do recurso de que trata este artigo, a qual deverá ser precedida de</p>
+<p>pedido de reconsideração do ato, somente poderá ocorrer depois de conhecido o</p>
+<p>resultado deste pelo requerente, exceto na hipótese prevista pelo § 4o do artigo anterior.</p>
+<p class="legal-article">§ 2o - A autoridade que receber o recurso hierárquico deverá comunicar tal fato, por</p>
+<p>escrito, àquela contra a qual está sendo interposto.</p>
+<p class="legal-article">§ 3o - Os prazos referentes ao recurso hierárquico são:</p>
+<p>1 - para interposição: 5 (cinco) dias, a contar do conhecimento da solução do pedido de</p>
+<p>reconsideração pelo interessado ou do vencimento do prazo do § 4o do artigo anterior;</p>
+<p>2 - para comunicação: 3 (três) dias, a contar do protocolo da OPM da autoridade</p>
+<p>destinatária;</p>
+<p>3 - para solução: 10 (dez) dias, a contar do recebimento da interposição do recurso no</p>
+<p>protocolo da OPM da autoridade destinatária.</p>
+<p class="legal-article">§ 4o - O recurso hierárquico, em termos respeitosos, precisará o objeto que o</p>
+<p>fundamenta de modo a esclarecer o ato ou fato, podendo ser acompanhado de</p>
+<p>documentos comprobatórios.</p>
+<p class="legal-article">§ 5o - O recurso hierárquico não poderá tratar de assunto estranho ao ato ou fato que o</p>
+<p>tenha motivado, nem versar sobre matéria impertinente ou fútil.</p>
+<p class="legal-article">§ 6o - Não será conhecido o recurso hierárquico intempestivo, procrastinador ou que não</p>
+<p>apresente fatos novos que modifiquem a decisão anteriormente tomada, devendo ser</p>
+<p>cientificado o interessado, e publicado o ato em boletim, no prazo de 10 (dez) dias.</p>
+<p class="legal-article">Artigo 59 - Solucionado o recurso hierárquico, encerra-se para o recorrente a</p>
+<p>possibilidade administrativa de revisão do ato disciplinar sofrido, exceto nos casos de</p>
+<p>representação previstos nos §§ 3o e 4o do artigo 30.</p>
+<p class="legal-article">Artigo 60 - Solucionados os recursos disciplinares e havendo sanção disciplinar a ser</p>
+<p>cumprida, o militar do Estado iniciará o seu cumprimento dentro do prazo de 3 (três)</p>
+<p>dias:</p>
+<p>I - desde que não interposto recurso hierárquico, no caso de solução do pedido de</p>
+<p>reconsideração;</p>
+<p>II - após solucionado o recurso hierárquico.</p>
+<p class="legal-article">Artigo 61 - Os prazos para a interposição dos recursos de que trata este Regulamento</p>
+<p>são decadenciais.</p>
+<h2 class="section-heading">CAPÍTULO XI</h2>
+<p>Da Revisão dos Atos Disciplinares</p>
+<p class="legal-article">Artigo 62 - As autoridades competentes para aplicar sanção disciplinar, exceto as</p>
+<p>ocupantes do posto de major e capitão, quando tiverem conhecimento, por via recursal</p>
+<p>ou de ofício, da possível existência de irregularidade ou ilegalidade na aplicação da</p>
+<p>sanção imposta por elas ou pelas autoridades subordinadas, podem praticar um dos</p>
+<p>seguintes atos:</p>
+<p>I - retificação;</p>
+<p>II - atenuação;</p>
+<p>III - agravação;</p>
+<p>IV - anulação.</p>
+<p class="legal-article">§ 1o - A anulação de sanção administrativa disciplinar somente poderá ser feita no prazo</p>
+<p>de 5 (cinco) anos, a contar da data da publicação do ato que se pretende invalidar.</p>
+<p class="legal-article">§ 2o - Os atos previstos neste artigo deverão ser motivados e publicados.</p>
+<p class="legal-article">Artigo 63 - A retificação consiste na correção de irregularidade formal sanável, contida</p>
+<p>na sanção disciplinar aplicada pela própria autoridade ou por autoridade subordinada.</p>
+<p class="legal-article">Artigo 64 - Atenuação é a redução da sanção proposta ou aplicada, para outra menos</p>
+<p>rigorosa ou, ainda, a redução do número de dias da sanção, nos limites do artigo 42, se</p>
+<p>assim o exigir o interesse da disciplina e a ação educativa sobre o militar do Estado.</p>
+<p class="legal-article">Artigo 65 - Agravação é a ampliação do número dos dias propostos para uma sanção</p>
+<p>disciplinar ou a aplicação de sanção mais rigorosa, nos limites do artigo 42, se assim o</p>
+<p>exigir o interesse da disciplina e a ação educativa sobre o militar do Estado.</p>
+<p class="legal-article">Parágrafo único - Não caberá agravamento da sanção em razão da interposição de</p>
+<p>recurso disciplinar.</p>
+<p class="legal-article">Artigo 66 - Anulação é a declaração de invalidade da sanção disciplinar aplicada pela</p>
+<p>própria autoridade ou por autoridade subordinada, quando, na apreciação do recurso,</p>
+<p>verificar a ocorrência de ilegalidade, devendo retroagir à data do ato.</p>
+<h2 class="section-heading">CAPÍTULO XII</h2>
+<p>Das Recompensas Policiais-Militares</p>
+<p class="legal-article">Artigo 67 - As recompensas policiais-militares constituem reconhecimento dos bons</p>
+<p>serviços prestados pelo militar do Estado e consubstanciam-se em prêmios concedidos</p>
+<p>por atos meritórios e serviços relevantes.</p>
+<p class="legal-article">Artigo 68 - São recompensas policiais-militares:</p>
+<p>I - elogio;</p>
+<p>II - cancelamento de sanções.</p>
+<p class="legal-article">Parágrafo único - O elogio individual, ato administrativo que coloca em relevo as</p>
+<p>qualidades morais e profissionais do militar, poderá ser formulado independentemente</p>
+<p>da classificação de seu comportamento e será registrado nos assentamentos.</p>
+<p class="legal-article">Artigo 69 - A dispensa do serviço não é uma recompensa policial-militar e somente</p>
+<p>poderá ser concedida quando houver, a juízo do Comandante da Unidade, motivo de</p>
+<p>força maior.</p>
+<p class="legal-article">Parágrafo único - A concessão de dispensas do serviço, observado o disposto neste</p>
+<p class="legal-article">artigo, fica limitada ao máximo de 6 (seis) dias por ano, sendo sempre publicada em</p>
+<p>boletim.</p>
+<p class="legal-article">Artigo 70 - O cancelamento de sanções disciplinares consiste na retirada dos registros</p>
+<p>realizados nos assentamentos individuais do militar do Estado, relativos às penas</p>
+<p>disciplinares que lhe foram aplicadas.</p>
+<p class="legal-article">§ 1o - O cancelamento de sanções é ato do Comandante Geral, praticado a pedido do</p>
+<p>interessado, e o seu deferimento deverá atender aos bons serviços por ele prestados,</p>
+<p>comprovados em seus assentamentos, e depois de decorridos 10 (dez) anos de efetivo</p>
+<p>serviço, sem qualquer outra sanção, a contar da data da última pena imposta.</p>
+<p class="legal-article">§ 2o - O cancelamento de sanções não terá efeito retroativo e não motivará o direito de</p>
+<p>revisão de outros atos administrativos decorrentes das sanções canceladas.</p>
+<h2 class="section-heading">CAPÍTULO XIII</h2>
+<p>Do Processo Regular</p>
+<h2 class="section-heading">SEÇÃO I</h2>
+<p>Disposições Gerais</p>
+<p class="legal-article">Artigo 71 - O processo regular a que se refere este Regulamento, para os militares do</p>
+<p>Estado, será:</p>
+<p>I - para oficiais: o Conselho de Justificação;</p>
+<p>II - para praças com 10 (dez) ou mais anos de serviço policial-militar: o Conselho de</p>
+<p>Disciplina;</p>
+<p>III - para praças com menos de 10 (dez) anos de serviço policial-militar: o Processo</p>
+<p>Administrativo Disciplinar.</p>
+<p class="legal-article">Artigo 72 - O militar do Estado submetido a processo regular deverá, quando houver</p>
+<p>possibilidade de prejuízo para a hierarquia, disciplina ou para a apuração do fato, ser</p>
+<p>designado para o exercício de outras funções, enquanto perdurar o processo, podendo</p>
+<p>ainda a autoridade instauradora proibir-lhe o uso do uniforme, como medida cautelar.</p>
+<h2 class="section-heading">SEÇÃO II</h2>
+<p>Do Conselho de Justificação</p>
+<p class="legal-article">Artigo 73 - O Conselho de Justificação destina-se a apurar, na forma da legislação</p>
+<p>específica, a incapacidade do oficial para permanecer no serviço ativo da Polícia</p>
+<p>Militar.</p>
+<p class="legal-article">Parágrafo único - O Conselho de Justificação aplica-se também ao oficial inativo</p>
+<p>presumivelmente incapaz de permanecer na situação de inatividade.</p>
+<p class="legal-article">Artigo 74 - O oficial submetido a Conselho de Justificação e considerado culpado, por</p>
+<p>decisão unânime, poderá ser agregado disciplinarmente mediante ato do Comandante</p>
+<p>Geral, até decisão final do tribunal competente, ficando:</p>
+<p>I - afastado das suas funções e adido à Unidade que lhe for designada;</p>
+<p>II - proibido de usar uniforme;</p>
+<p>III - percebendo 1/3 (um terço) da remuneração;</p>
+<p>IV - mantido no respectivo Quadro, sem número, não concorrendo à promoção.</p>
+<p class="legal-article">Artigo 75 - Ao Conselho de Justificação aplica-se o previsto na legislação específica,</p>
+<p>complementarmente ao disposto neste Regulamento.</p>
+<h2 class="section-heading">SEÇÃO III</h2>
+<p>Do Conselho de Disciplina</p>
+<p class="legal-article">Artigo 76 - O Conselho de Disciplina destina-se a declarar a incapacidade moral da</p>
+<p>praça para permanecer no serviço ativo da Polícia Militar e será instaurado:</p>
+<p>I - por portaria do Comandante da Unidade a que pertencer o acusado;</p>
+<p>II - por ato de autoridade superior à mencionada no inciso anterior.</p>
+<p class="legal-article">Parágrafo único - A instauração do Conselho de Disciplina poderá ser feita durante o</p>
+<p>cumprimento de sanção disciplinar.</p>
+<p class="legal-article">Artigo 77 - As autoridades referidas no artigo anterior podem, com base na natureza da</p>
+<p>falta ou na inconsistência dos fatos apontados, considerar, desde logo, insuficiente a</p>
+<p>acusação e, em conseqüência, deixar de instaurar o Conselho de Disciplina, sem</p>
+<p>prejuízo de novas diligências.</p>
+<p class="legal-article">Artigo 78 - O Conselho será composto por 3 (três) oficiais da ativa.</p>
+<p class="legal-article">§ 1o - O mais antigo do Conselho, no mínimo um capitão, é o presidente, e o que lhe</p>
+<p>seguir em antigüidade ou precedência funcional é o interrogante, sendo o relator e</p>
+<p>escrivão o mais moderno.</p>
+<p class="legal-article">§ 2o - Entendendo necessário, o presidente poderá nomear um subtenente ou sargento</p>
+<p>para funcionar como escrivão no processo, o qual não integrará o Conselho.</p>
+<p class="legal-article">Artigo 79 - O Conselho poderá ser instaurado, independentemente da existência ou da</p>
+<p>instauração de inquérito policial comum ou militar, de processo criminal ou de sentença</p>
+<p>criminal transitada em julgado.</p>
+<p class="legal-article">Parágrafo único - Se no curso dos trabalhos do Conselho surgirem indícios de crime</p>
+<p>comum ou militar, o presidente deverá extrair cópia dos autos, remetendo-os por ofício</p>
+<p>à autoridade competente para início do respectivo inquérito policial ou da ação penal</p>
+<p>cabível.</p>
+<p class="legal-article">Artigo 80 - Será instaurado apenas um processo quando o ato ou atos motivadores</p>
+<p>tenham sido praticados em concurso de agentes.</p>
+<p class="legal-article">§ 1o - Havendo dois ou mais acusados pertencentes a OPM diversas, o processo será</p>
+<p>instaurado pela autoridade imediatamente superior, comum aos respectivos</p>
+<p>comandantes das OPM dos acusados.</p>
+<p class="legal-article">§ 2o - Existindo concurso ou continuidade infracional, deverão todos os atos censuráveis</p>
+<p>constituir o libelo acusatório da portaria.</p>
+<p class="legal-article">§ 3o - Surgindo, após a elaboração da portaria, elementos de autoria e materialidade de</p>
+<p>infração disciplinar conexa, em continuidade ou em concurso, esta poderá ser aditada,</p>
+<p>abrindo-se novos prazos para a defesa.</p>
+<p class="legal-article">Artigo 81 - A decisão da autoridade instauradora, devidamente fundamentada, será</p>
+<p>aposta nos autos, após a apreciação do Conselho e de toda a prova produzida, das razões</p>
+<p>de defesa e do relatório, no prazo de 15 (quinze) dias a contar do seu recebimento.</p>
+<p class="legal-article">Artigo 82 - A autoridade instauradora, na sua decisão, considerará a acusação</p>
+<p>procedente, procedente em parte ou improcedente, devendo propor ao Comandante</p>
+<p>Geral, conforme o caso, a aplicação das sanções administrativas cabíveis.</p>
+<p class="legal-article">Parágrafo único - A decisão da autoridade instauradora será publicada em boletim.</p>
+<p class="legal-article">Artigo 83 - Recebidos os autos, o Comandante Geral, dentro do prazo de 45 (quarenta e</p>
+<p>cinco) dias, fundamentando seu despacho, emitirá a decisão final sobre o Conselho, que</p>
+<p>será publicada em boletim e transcrita nos assentamentos da praça.</p>
+<h2 class="section-heading">SEÇÃO IV</h2>
+<p>Do Processo Administrativo Disciplinar</p>
+<p class="legal-article">Artigo 84 - O Processo Administrativo Disciplinar seguirá rito próprio ao qual se aplica</p>
+<p>o disposto nos incisos I, II e parágrafo único do artigo 76 e os artigos 79, 80 e 82 deste</p>
+<p>Regulamento.</p>
+<p class="legal-article">Parágrafo único - Recebido o Processo, o Comandante Geral emitirá a decisão final.</p>
+<h2 class="section-heading">CAPÍTULO XIV</h2>
+<p>Disposições Finais</p>
+<p class="legal-article">Artigo 85 - A ação disciplinar da Administração prescreverá em 5 (cinco) anos,</p>
+<p>contados da data do cometimento da transgressão disciplinar.</p>
+<p class="legal-article">§ 1o - A punibilidade da transgressão disciplinar também prevista como crime prescreve</p>
+<p>nos prazos estabelecidos para o tipo previsto na legislação penal, salvo se esta</p>
+<p>prescrição ocorrer em prazo inferior a 5 (cinco) anos.</p>
+<p class="legal-article">§ 2o - A interposição de recurso disciplinar interrompe a prescrição da punibilidade até a</p>
+<p>solução final do recurso.</p>
+<p class="legal-article">Artigo 86 - Para os efeitos deste Regulamento, considera-se Comandante de Unidade o</p>
+<p>oficial que estiver exercendo funções privativas dos postos de coronel e de tenente-</p>
+<p>coronel.</p>
+<p class="legal-article">Parágrafo único - As expressões diretor, corregedor e chefe têm o mesmo significado de</p>
+<p>Comandante de Unidade.</p>
+<p class="legal-article">Artigo 87 - Aplicam-se, supletivamente, ao Conselho de Disciplina as disposições do</p>
+<p>Código de Processo Penal Militar.</p>
+<p class="legal-article">Artigo 88 - O Comandante Geral baixará instruções complementares, necessárias à</p>
+<p>interpretação, orientação e fiel aplicação do disposto neste Regulamento.</p>
+<p class="legal-article">Artigo 89 - Esta lei complementar entra em vigor na data de sua publicação, revogadas</p>
+<p>as disposições em contrário.</p>
+<p>Palácio dos Bandeirantes, aos 09 de março de 2001.</p>
+<p>Geraldo Alckmin</p>
+<p>Marco Vinicio Petrelluzzi</p>
+<p>Secretário da Segurança Pública</p>
+<p>João Caramez</p>
+<p>Secretário - Chefe da Casa Civil</p>
+<p>Antonio Angarita</p>
+<p>Secretário do Governo e Gestão Estratégica</p>
+<p>Publicada na Assessoria Técnico-Legislativa, aos 09 de março de 2001.</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações da RDPM da sua conta.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> As anotações e marcações são vinculadas à sua conta e sincronizadas com a nuvem. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados do RDPM (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas no RDPM.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos da RDPM</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>RDPM — sincronização da conta</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações da RDPM são vinculados à sua conta autenticada e sincronizados com a nuvem. Aguarde a confirmação de sincronização antes de sair da página.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar os dados salvos do RDPM. Isso não afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca RDPM · Dados sincronizados por conta</footer>
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-rdpm-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(n){
+     return n.parentElement.closest('script,style') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function textMap(){
+   const nodes=textNodes(doc); let text='';
+   const spans=nodes.map(node=>{const item={node,start:text.length,end:text.length+node.nodeValue.length};text+=node.nodeValue;return item;});
+   return {nodes,spans,text};
+ }
+ function unwrapMarks(){
+   doc.querySelectorAll('mark.user-highlight').forEach(mark=>mark.replaceWith(document.createTextNode(mark.textContent||'')));
+   doc.normalize();
+ }
+ function applyHighlight(start,end,id){
+   const {spans}=textMap();
+   for(const item of [...spans].reverse()){
+     const a=Math.max(start,item.start), b=Math.min(end,item.end);
+     if(a>=b) continue;
+     const range=document.createRange();
+     range.setStart(item.node,a-item.start); range.setEnd(item.node,b-item.start);
+     const mark=document.createElement('mark'); mark.className='user-highlight'; mark.dataset.id=id;
+     try{range.surroundContents(mark);}catch(error){console.warn('Não foi possível aplicar um segmento do grifo.',error);}
+   }
+ }
+ function restoreHighlights(){
+   unwrapMarks();
+   const map=textMap();
+   // Compatibilidade com grifos antigos que só guardavam o texto e a ocorrência.
+   for(const h of saved){
+     if(Number.isInteger(h.start) && Number.isInteger(h.end)) continue;
+     let from=0, pos=-1, occurrence=Math.max(0,h.occurrence||0);
+     for(let i=0;i<=occurrence;i++){pos=map.text.indexOf(h.text,from);if(pos<0)break;from=pos+h.text.length;}
+     if(pos>=0){h.start=pos;h.end=pos+h.text.length;}
+   }
+   saved.filter(h=>Number.isInteger(h.start)&&Number.isInteger(h.end)&&h.end>h.start)
+     .sort((a,b)=>b.start-a.start).forEach(h=>applyHighlight(h.start,h.end,h.id));
+   localStorage.setItem(key,JSON.stringify(saved));
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function selectionOffsets(range){
+   const map=textMap(); let start=null,end=null;
+   for(const item of map.spans){
+     if(item.node===range.startContainer) start=item.start+range.startOffset;
+     if(item.node===range.endContainer) end=item.start+range.endOffset;
+   }
+   return start!==null&&end!==null?{start,end}:null;
+ }
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const selection=window.getSelection(); const text=getSelectionText();
+   if(!text||!selection||selection.rangeCount===0){alert('Selecione primeiro um trecho da norma.');return;}
+   const range=selection.getRangeAt(0).cloneRange();
+   if(!doc.contains(range.commonAncestorContainer)){alert('Selecione um trecho dentro do texto da norma.');return;}
+   const offsets=selectionOffsets(range);
+   if(!offsets||offsets.end<=offsets.start){alert('Não foi possível identificar o trecho. Selecione-o novamente.');return;}
+   if(saved.some(x=>x.text===text&&x.start===offsets.start)){alert('Esse trecho já está marcado.');return;}
+   const item={id:Date.now().toString(36),text,start:offsets.start,end:offsets.end,createdAt:new Date().toISOString()};
+   saved.push(item); localStorage.setItem(key,JSON.stringify(saved)); restoreHighlights();
+   selection.removeAllRanges();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ async function persistDeletion(successMessage){
+   try {
+     if (typeof window.syncI16Cloud !== 'function') throw new Error('Rotina de sincronização não carregada.');
+     await window.syncI16Cloud();
+     setSyncStatus(successMessage);
+     return true;
+   } catch (error) {
+     console.error('Falha ao confirmar exclusão no Firestore:', error);
+     setSyncStatus('A exclusão ficou apenas no navegador. O Firebase não confirmou a gravação; tente novamente.', true);
+     alert('Não foi possível confirmar a exclusão no Firebase. Seus dados podem continuar no banco. Verifique a conexão e as regras do Firestore antes de continuar.');
+     return false;
+   }
+ }
+ document.getElementById('delete-selected').addEventListener('click', async ()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));
+   renderNotes();
+   const ok=await persistDeletion('Anotações excluídas e sincronizadas com o Firebase.');
+   if(ok) renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click', async ()=>{
+   notes=load(notesKey,[]);
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações da RDPM? Os grifos amarelos serão preservados.'))return;
+   localStorage.setItem(notesKey,JSON.stringify([]));
+   notes=[];renderNotes();
+   const ok=await persistDeletion('Todas as anotações foram apagadas e sincronizadas.');
+   if(ok) renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click', async ()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados salvos da RDPM nesta conta, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.setItem(notesKey,JSON.stringify([]));
+   localStorage.setItem(key,JSON.stringify([]));
+   notes=[];saved=[];renderNotes();
+   const ok=await persistDeletion('Todos os dados da RDPM foram apagados e sincronizados.');
+   if(ok){closeNotes();alert('Todos os dados salvos da RDPM foram apagados desta conta. Outras normas não foram afetadas.');}
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('i16-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('i16-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('i16-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('i16-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyANcW27P7NHL_qJtjTg8n683P0I7sm5Z6Y",
+  authDomain: "plataforma-aperfeicoamento.firebaseapp.com",
+  projectId: "plataforma-aperfeicoamento",
+  storageBucket: "plataforma-aperfeicoamento.firebasestorage.app",
+  messagingSenderId: "750933864503",
+  appId: "1:750933864503:web:9bfdfbbb5a7b87de8e0fb2"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+auth.languageCode = "pt-BR";
+const db = getFirestore(app);
+
+const DATA_KEY = "biblioteca-pmesp-rdpm-v1";
+const NOTES_KEY = DATA_KEY + "-notes";
+const nativeSetItem = Storage.prototype.setItem;
+const nativeRemoveItem = Storage.prototype.removeItem;
+let activeUid = null;
+let ready = false;
+let saveTimer = null;
+let cloudDocRef = null;
+
+function readLocal(key, fallback) {
+  try {
+    const value = JSON.parse(localStorage.getItem(key));
+    return value ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function localPayload() {
+  return {
+    highlights: readLocal(DATA_KEY, []),
+    notes: readLocal(NOTES_KEY, [])
+  };
+}
+
+function setLocalPayload(payload) {
+  nativeSetItem.call(localStorage, DATA_KEY, JSON.stringify(payload.highlights || []));
+  nativeSetItem.call(localStorage, NOTES_KEY, JSON.stringify(payload.notes || []));
+}
+
+function setSyncStatus(message, isError = false) {
+  let status = document.getElementById("cloud-sync-status");
+  if (!status) {
+    status = document.createElement("div");
+    status.id = "cloud-sync-status";
+    status.setAttribute("role", "status");
+    status.style.cssText = "position:fixed;right:12px;bottom:12px;z-index:150;background:#101d35;color:#fff;border:1px solid #d4af37;border-radius:9px;padding:9px 12px;font-size:12px;max-width:min(360px,calc(100vw - 24px));box-shadow:0 5px 18px #0003";
+    document.body.appendChild(status);
+  }
+  status.textContent = message;
+  status.style.borderColor = isError ? "#ef4444" : "#d4af37";
+}
+
+async function saveCloudData() {
+  if (!ready || !cloudDocRef) return;
+  try {
+    const payload = localPayload();
+    await setDoc(cloudDocRef, {
+      highlights: payload.highlights,
+      notes: payload.notes,
+      updatedAt: serverTimestamp()
+    });
+    setSyncStatus("Anotações e grifos sincronizados.");
+    return true;
+  } catch (error) {
+    console.error("Falha ao sincronizar anotações:", error);
+    setSyncStatus("Não foi possível sincronizar. Confira a conexão e a configuração do Firestore.", true);
+    throw error;
+  }
+}
+
+// Exposto para que os botões de exclusão aguardem a confirmação real do Firestore.
+window.syncI16Cloud = async function() {
+  if (!ready || !cloudDocRef) {
+    throw new Error("A sincronização com o Firebase ainda não está pronta.");
+  }
+  clearTimeout(saveTimer);
+  await saveCloudData();
+};
+
+function scheduleCloudSave() {
+  if (!ready) return;
+  clearTimeout(saveTimer);
+  setSyncStatus("Salvando na nuvem…");
+  saveTimer = setTimeout(saveCloudData, 650);
+}
+
+Storage.prototype.setItem = function(key, value) {
+  nativeSetItem.call(this, key, value);
+  if (this === localStorage && (key === DATA_KEY || key === NOTES_KEY)) scheduleCloudSave();
+};
+
+Storage.prototype.removeItem = function(key) {
+  nativeRemoveItem.call(this, key);
+  if (this === localStorage && (key === DATA_KEY || key === NOTES_KEY)) scheduleCloudSave();
+};
+
+onAuthStateChanged(auth, async user => {
+  if (!user) {
+    const returnTo = encodeURIComponent(location.pathname + location.search + location.hash);
+    location.replace("index.html?motivo=login&retorno=" + returnTo);
+    return;
+  }
+
+  if (activeUid === user.uid && ready) return;
+  activeUid = user.uid;
+  ready = false;
+  const watermarkEmail = user.email || user.displayName || "USUÁRIO AUTENTICADO";
+  document.getElementById("document").setAttribute("data-watermark", "PLATAFORMA PMESP · " + watermarkEmail);
+  cloudDocRef = doc(db, "users", user.uid, "libraryData", "i16pm");
+  setSyncStatus("Carregando suas anotações…");
+
+  try {
+    const snapshot = await getDoc(cloudDocRef);
+    if (snapshot.exists()) {
+      const cloud = snapshot.data();
+      const local = localPayload();
+      const cloudHighlights = Array.isArray(cloud.highlights) ? cloud.highlights : [];
+      const cloudNotes = Array.isArray(cloud.notes) ? cloud.notes : [];
+
+      // First-time merge preserves any existing local notes while importing cloud data.
+      const mergedHighlights = [...cloudHighlights];
+      for (const item of local.highlights) {
+        if (!mergedHighlights.some(x => x.id === item.id || (x.text === item.text && x.occurrence === item.occurrence))) mergedHighlights.push(item);
+      }
+      const mergedNotes = [...cloudNotes];
+      for (const item of local.notes) {
+        if (!mergedNotes.some(x => x.id === item.id || (x.text === item.text && x.note === item.note))) mergedNotes.push(item);
+      }
+      setLocalPayload({ highlights: mergedHighlights, notes: mergedNotes });
+
+      const needsMergeSave = mergedHighlights.length !== cloudHighlights.length || mergedNotes.length !== cloudNotes.length;
+      const localChanged = JSON.stringify(local) !== JSON.stringify({ highlights: mergedHighlights, notes: mergedNotes });
+      ready = true;
+      if (needsMergeSave) scheduleCloudSave();
+      setSyncStatus("Anotações carregadas da sua conta.");
+      // The page's original script loads its data at startup, so reload once if cloud data changed local state.
+      if (localChanged && !sessionStorage.getItem("i16pm-cloud-hydrated")) {
+        sessionStorage.setItem("i16pm-cloud-hydrated", "1");
+        location.reload();
+        return;
+      }
+      sessionStorage.removeItem("i16pm-cloud-hydrated");
+    } else {
+      // First visit: keep any local data and create the user's cloud record.
+      ready = true;
+      await saveCloudData();
+      setSyncStatus("Sincronização ativada para esta conta.");
+    }
+  } catch (error) {
+    console.error("Falha ao carregar anotações:", error);
+    setSyncStatus("Erro ao acessar o Firestore. Confira se o banco foi criado e as regras foram publicadas.", true);
+  }
+});
+</script>
+
+</body>
+</html>

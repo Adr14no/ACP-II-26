@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Lei nº 18.442/2026 — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Jurídico-Administrativos</div><h1>Lei nº 18.442, de 2 de abril de 2026</h1><p>Dispõe sobre efetivo, regime jurídico e regras gerais de promoção dos militares do Estado de São Paulo e dá providências correlatas. Texto para estudo; confira a publicação oficial e eventuais alterações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><a class="btn gold" href="https://drive.google.com/file/d/1g9LNJm8tiEKzY_Pv2PbueU_t9ToCgRhh/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center">Abrir resumo da Lei nº 18.442/2026 ↗</a><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO">
+<p class="subheading">Dispõe sobre efetivo, regime jurídico e regras gerais de promoção dos militares do Estado de São Paulo e dá providências correlatas.</p>
+<p>O GOVERNADOR DO ESTADO DE SÃO PAULO:</p>
+<p>Faço saber que a Assembleia Legislativa decreta e eu promulgo a seguinte lei:</p>
+<h2 class="section-heading">SEÇÃO I DAS DISPOSIÇÕES GERAIS</h2>
+<p class="legal-article"><strong>Artigo 1° -</strong> A fixação do efetivo, a definição da estrutura e dos Quadros da Polícia Militar do Estado de São Paulo e as regras gerais de promoção obedecerão ao fixado nesta lei.</p>
+<p class="legal-article"><strong>Artigo 2° -</strong> A Polícia Militar, força auxiliar e reserva do Exército Brasileiro, integrante do Sistema Único de Segurança Pública, do Sistema Nacional do Meio Ambiente, do Sistema Nacional de Trânsito e do Sistema Nacional de Proteção e Defesa Civil, organizada com base nas premissas da hierarquia e disciplina, comandada exclusivamente por Oficial PM da ativa, de carreira e do último posto do Quadro de Oficiais de Estado-Maior, é instituição permanente, típica de Estado, essencial à Justiça Militar e indispensável à atividade de polícia ostensiva e de preservação da ordem pública, incumbida da proteção dos direitos fundamentais, da incolumidade pública e da salvaguarda do regime democrático de direito, além da proteção no âmbito da defesa civil e combate a incêndios, nos termos dos §§ 5° e 6° do artigo 144 da Constituição Federal, do artigo 9° da Lei federal n° 13.675, de 11 de junho de 2018, e do artigo 2° da Lei federal n° 14.751, de 12 de dezembro de 2023.</p>
+<h2 class="section-heading">SEÇÃO II DO EFETIVO</h2>
+<p class="legal-article"><strong>Artigo 3° -</strong> O efetivo da Polícia Militar, composto pelos militares do Estado de carreira, nos termos do artigo 42 da Constituição Federal, será definido considerando-se a extensão da área territorial, a população, os índices de criminalidade, os riscos potenciais de desastres, o índice de desenvolvimento humano e as condições socioeconômicas, e fixado em 93.802 (noventa e três mil, oitocentos e dois) cargos, distribuídos na seguinte conformidade:</p>
+<p class="legal-item">I - 74 (setenta e quatro) Coronéis PM;</p>
+<p class="legal-item">II - 6.229 (seis mil, duzentos e vinte nove) Oficiais PM;</p>
+<p class="legal-item">III - 1.734 (mil, setecentos e trinta e quatro) Subtenentes PM;</p>
+<p class="legal-item">IV - 11.870 (onze mil, oitocentos e setenta) Sargentos PM;</p>
+<p class="legal-item">V - 73.895 (setenta e três mil, oitocentos e noventa e cinco) Cabos PM e Soldados PM.</p>
+<p class="legal-article"><strong>§ 1° -</strong> Não serão considerados, para os limites fixados no "caput" deste artigo:</p>
+<p class="legal-item">1 - o Aspirante a Oficial PM;</p>
+<p class="legal-item">2 - o Cadete PM, o Aluno-Oficial PM, o Aluno-Sargento PM e o Aluno-Soldado PM;</p>
+<p class="legal-item">3 - o militar do Estado da reserva revertido ao serviço ativo;</p>
+<p class="legal-item">4 - o policial militar temporário, cujo regime jurídico será disciplinado em legislação específica.</p>
+<p class="legal-article"><strong>§ 2° -</strong> O quantitativo de Cadetes PM, de Alunos-Oficiais PM, de Alunos-Sargentos PM e de Alunos-Soldados PM será regulado por ato do Comandante-Geral PM, de modo a suprir os cargos vagos, observado o limite fixado no "caput" deste artigo e a disponibilidade orçamentária e financeira.</p>
+<p class="legal-article"><strong>Artigo 4° -</strong> A estrutura básica da ordenação hierárquica da Polícia Militar é a seguinte:</p>
+<p class="legal-item">I - Oficiais:</p>
+<p class="legal-item">a) Oficiais Superiores: Coronel PM, Tenente-Coronel PM e Major PM;</p>
+<p class="legal-item">b) Oficiais Intermediários: Capitão PM;</p>
+<p class="legal-item">c) Oficiais Subalternos: Primeiro-Tenente PM e Segundo-Tenente PM.</p>
+<p class="legal-item">II - Praças Especiais: Aspirante a Oficial PM, Cadete PM e Aluno-Oficial PM;</p>
+<p class="legal-item">III - Praças: Subtenente PM, Primeiro-Sargento PM, Segundo-Sargento PM, Terceiro-Sargento PM, Aluno-Sargento PM, Cabo PM, Soldado PM e Aluno-Soldado PM.</p>
+<p class="legal-article"><strong>§ 1° -</strong> O Aluno-Oficial PM e o Aluno-Sargento PM encontram-se em condição especial e transitória, durante a frequência aos cursos de habilitação e formação, respectivamente.</p>
+<p class="legal-article"><strong>§ 2° -</strong> Durante os cursos previstos nos incisos II, II-A e II-B do artigo 5° da <a href="https://www.al.sp.gov.br/norma/75188" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.036, de 11 de janeiro de 2008</a>, os alunos a que se refere o § 1° deste artigo conservarão as prerrogativas, direitos e deveres da graduação ocupada antes da matrícula no respectivo curso, inclusive os de natureza remuneratória.</p>
+<p class="legal-article"><strong>Artigo 5° -</strong> O efetivo de carreira da Polícia Militar será estruturado nos seguintes Quadros:</p>
+<p class="legal-item">I - Quadro de Oficiais de Estado-Maior (QOEM): destinado às funções de comando, chefia e direção dos órgãos da Polícia Militar e composto por Oficiais PM que concluíram o Curso de Formação de Oficiais (CFO);</p>
+<p class="legal-item">II - Quadro de Oficiais Especialistas (QOE): destinado ao exercício de atividades complementares às previstas para o QOEM e composto por militares do Estado oriundos do Quadro de Praças que concluíram o Curso de Habilitação de Oficial do Quadro de Oficiais Especialistas (CHOE);</p>
+<p class="legal-item">III - Quadro de Oficiais de Saúde (QOS): destinado ao desempenho de atividades de saúde e de assessoramento técnico dos órgãos de saúde da Polícia Militar, composto por Oficiais PM que concluíram cursos de graduação superior na área de saúde médica, odontológica, de medicina veterinária e farmacêutica;</p>
+<p class="legal-item">IV - Quadro de Oficiais Músicos (QOM): destinado à execução de atividades musicais e culturais no âmbito da Polícia Militar e composto por militares do Estado oriundos do Quadro de Praças, detentores de licenciatura ou bacharelado em música, e que concluíram o Curso de Habilitação de Oficial do Quadro de Oficiais Músicos (CHO-MUS);</p>
+<p class="legal-item">V - Quadro de Oficiais da Reserva e Reformados (QORR): integrado pelos Oficiais PM da reserva remunerada e reformados;</p>
+<p class="legal-item">VI - Quadro de Praças (QP): composto por militares do Estado destinados à execução das atividades operacionais e administrativas da Polícia Militar;</p>
+<p class="legal-item">VII - Quadro de Praças da Reserva e Reformados (QPRR): integrado pelas Praças PM da reserva remunerada e reformadas.</p>
+<p class="legal-article"><strong>Artigo 6° -</strong> A distribuição do efetivo da Polícia Militar será realizada anualmente, por decreto do Governador do Estado, nos postos e graduações previstos no artigo 4°, observado os limites a que se refere o artigo 3°, ambos desta lei, e a disponibilidade orçamentária e financeira.</p>
+<p class="legal-article"><strong>§ 1° -</strong> O decreto de que trata o "caput" deste artigo deverá detalhar a distribuição de:</p>
+<p class="legal-item">1 - Oficiais PM, por postos, em seus respectivos Quadros;</p>
+<p class="legal-item">2 - Subtenentes PM e Sargentos PM, em suas respectivas graduações;</p>
+<p class="legal-item">3 - Cabos PM e Soldados PM, em suas respectivas graduações.</p>
+<p class="legal-article"><strong>§ 2° -</strong> O decreto previsto no "caput" deste artigo será editado no primeiro semestre do ano antecedente ao da sua entrada em vigor.</p>
+<p class="legal-article"><strong>§ 3° -</strong> O quantitativo distribuído nos termos do "caput" deste artigo poderá ser alterado em até 20% (vinte por cento) pelo Comandante-Geral PM, observados os limites do artigo 3° desta lei.</p>
+<p class="legal-article"><strong>§ 4° -</strong> A distribuição anual do efetivo deverá atender o previsto nos artigos 3° e 8° desta lei.</p>
+<p class="legal-article"><strong>§ 5° -</strong> Na aplicação do disposto neste artigo, caso o número de militares do Estado promovidos, por posto ou graduação, seja diferente do montante distribuído em Quadro de Organização, respeitados os limites fixados no artigo 3° desta lei, o eventual excedente será considerado provisório, até que haja nova distribuição de efetivo, por meio de decreto do Governador do Estado.</p>
+<p class="legal-article"><strong>Artigo 7° -</strong> O emprego dos Oficiais será disciplinado por ato do Comandante-Geral PM, obedecendo os seguintes critérios:</p>
+<p class="legal-item">I - os Oficiais do QOEM serão empregados em funções de comando, chefia e direção das estruturas organizacionais da Polícia Militar;</p>
+<p class="legal-item">II - os Oficiais do QOE serão empregados em funções complementares às desempenhadas pelos Oficiais do QOEM, principalmente na supervisão operacional;</p>
+<p class="legal-item">III - os Oficiais do QOS serão empregados em atividades técnicas de saúde e de assessoramento técnico dos órgãos de saúde da Polícia Militar;</p>
+<p class="legal-item">IV - os Oficiais do QOM serão empregados em atividades técnico musicais da Polícia Militar.</p>
+<p class="legal-article"><strong>Artigo 8° -</strong> Para o ingresso, o acesso e a promoção aos Quadros das carreiras policiais militares, adiante especificados, segundo seus postos ou graduações, observar-se-ão os seguintes critérios:</p>
+<p class="legal-item">I - para o Oficial do QOEM processar-se-á, no mínimo, a promoção de uma turma por ano-base, para cada posto do respectivo Quadro;</p>
+<p class="legal-item">II - o Cadete PM será promovido à graduação de Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO;</p>
+<p class="legal-item">III - o Aspirante a Oficial PM, após cumprir, com aproveitamento, o estágio administrativo-operacional e possuir, no mínimo, um ano na graduação, será promovido, por merecimento intelectual, ao posto de Primeiro-Tenente PM do QOEM;</p>
+<p class="legal-item">IV - o Segundo-Tenente PM do QOE ou do QOM que possuir 1 (um) ano no posto será promovido ao posto de Primeiro-Tenente PM do respectivo Quadro;</p>
+<p class="legal-item">V - o Oficial do QOS realizará o curso de adaptação no posto de Primeiro-Tenente PM;</p>
+<p class="legal-item">VI - para a Praça PM do QP:</p>
+<p class="legal-item">a) o Aluno-Soldado PM que concluir, com aproveitamento, o Curso de Formação de Praças (CFP) será promovido à graduação de Soldado PM;</p>
+<p class="legal-item">b) o Soldado PM que contar, no mínimo, com 5 (cinco) anos na graduação será promovido à graduação de Cabo PM;</p>
+<p class="legal-item">c) o Terceiro-Sargento PM que contar, no mínimo, com 2 (dois) anos na graduação será promovido à graduação de Segundo-Sargento PM;</p>
+<p class="legal-item">d) o Segundo-Sargento PM que contar, no mínimo, com 3 (três) anos na graduação será promovido à graduação de Primeiro-Sargento PM;</p>
+<p class="legal-item">e) o Subtenente PM que contar, no mínimo, com 4 (quatro) anos na graduação e que tiver concluído, com aproveitamento, o Curso de Habilitação de Oficial do Quadro de Oficiais Especialistas (CHOE) ou o Curso de Habilitação de Oficial do Quadro de Oficiais Músicos (CHO-Mus) será promovido ao posto de Segundo-Tenente PM do QOE ou QOM, respectivamente.</p>
+<p class="legal-article"><strong>Parágrafo único -</strong> O acesso e promoção serão condicionados, em qualquer hipótese, à existência de vagas e disponibilidade orçamentária e financeira, na forma do decreto a que se refere o artigo 6° desta lei, bem como ao cumprimento da legislação que disciplina as promoções e o Sistema de Ensino da Polícia Militar do Estado de São Paulo.</p>
+<p class="legal-article"><strong>Artigo 9° -</strong> Os Cadetes PM declarados Aspirantes a Oficial PM, no ato de conclusão do CFO, constituem, na ordem do merecimento intelectual, uma turma de formação de Oficiais PM do QOEM.</p>
+<p class="legal-article"><strong>§ 1° -</strong> O Oficial PM ou Aspirante a Oficial PM que, na turma de formação respectiva, for o último classificado, na ordem definida no "caput" deste artigo, assinala o fim de turma.</p>
+<p class="legal-article"><strong>§ 2° -</strong> O Aspirante a Oficial PM ou o Oficial PM que for ultrapassado hierarquicamente por militar do Estado de outra turma passará a pertencer à turma:</p>
+<p class="legal-item">1 - do ultrapassante mais moderno; ou</p>
+<p class="legal-item">2 - imediatamente posterior à do ultrapassante mais moderno, quando este assinalar o fim da sua turma.</p>
+<p class="legal-article"><strong>§ 3° -</strong> O deslocamento do último componente de uma turma de formação, por melhoria ou perda de sua posição hierárquica, por força de previsão legal, acarretará para o militar do Estado que o antecede imediatamente na turma a ocupação do fim da turma.</p>
+<p class="legal-article"><strong>Artigo 10 -</strong> Os cargos de Secretário-Chefe da Casa Militar, Comandante-Geral e Subcomandante da Polícia Militar, todos de provimento em comissão, serão exercidos por Oficiais PM do serviço ativo, ocupantes do último posto do QOEM.</p>
+<h2 class="section-heading">SEÇÃO III DA PROMOÇÃO NO QUADRO DE OFICIAIS ESPECIALISTAS E NO QUADRO DE OFICIAIS MÚSICOS</h2>
+<p class="legal-article"><strong>Artigo 11 -</strong> Para o preparo das promoções ao QOE e ao QOM os Comandantes de Unidades remeterão à Comissão de Promoções de Praças da Polícia Militar as informações dos Subtenentes PM que participarão do processo de promoção.</p>
+<p class="legal-article"><strong>§ 1° -</strong> A quantidade de Subtenentes PM a serem cogitados será definida pelo Presidente da Comissão de Promoções de Praças, quando da deflagração do processo de promoção, e deverá atender as necessidades específicas de cada processo de promoção, de modo que a quantidade estabelecida seja o suficiente para prover as vagas em aberto no período de vigência do certame.</p>
+<p class="legal-article"><strong>§ 2° -</strong> Para a organização das relações de acesso complementares poderão ser cogitados novos Subtenentes PM, cujas informações utilizadas pela Comissão de Promoções de Praças deverão estar atualizadas nas mesmas datas daquelas utilizadas na formação das relações de acesso ordinárias.</p>
+<p class="legal-article"><strong>§ 3° -</strong> A relação de acesso para a promoção dos Subtenentes para Segundos-Tenentes PM do QOE e QOM será organizada duas vezes por ano, nas segundas quinzenas dos meses de março e agosto, sendo a primeira para as promoções de 21 de abril e 9 de julho e a última para as promoções de 7 de setembro e 15 de dezembro.</p>
+<p class="legal-article"><strong>Artigo 12 -</strong> A promoção ao posto de Segundo-Tenente PM do QOE e do QOM caberá ao Subtenente PM da ativa que tiver atingido, na respectiva relação de acesso, lugar correspondente às vagas existentes por antiguidade e merecimento, observados os seguintes requisitos:</p>
+<p class="legal-item">I - ter concluído, com aproveitamento, o CHOE ou o CHO-MUS, conforme o Quadro;</p>
+<p class="legal-item">II - ter comprovada a idoneidade moral;</p>
+<p class="legal-item">III - ser considerado apto, sem restrições, em inspeção de saúde;</p>
+<p class="legal-item">IV - estar, pelo menos, no comportamento ótimo;</p>
+<p class="legal-item">V - não estar agregado;</p>
+<p class="legal-item">VI - possuir interstício de 4 (quatro) anos na graduação;</p>
+<p class="legal-item">VII - integrar a primeira terça parte do almanaque.</p>
+<p class="legal-article"><strong>§ 1° -</strong> O ingresso no CHOE ou CHO-MUS, para os fins previstos no inciso I deste artigo, dar-se-á mediante processo seletivo interno, cujos critérios de seleção, estrutura curricular, carga horária, formas de avaliação e demais requisitos serão regulamentados por ato do Comandante-Geral PM.</p>
+<p class="legal-article"><strong>§ 2° -</strong> A idoneidade moral de que trata o inciso II deste artigo será aferida pela Comissão de Promoções de Praças, que utilizará como subsídios o conceito emitido pelo respectivo Comandante do candidato e os seus registros disciplinares.</p>
+<p class="legal-article"><strong>Artigo 13 -</strong> A antiguidade e o interstício para promoção ao posto de Segundo-Tenente PM do QOE e do QOM serão contados a partir da data de promoção à graduação de Subtenente PM, de acordo com a posição aferida em almanaque, efetuados os seguintes descontos:</p>
+<p class="legal-item">I - tempo de fruição de licença obtida para tratar de interesse particular;</p>
+<p class="legal-item">II - tempo que ultrapassar 12 (doze) meses, consecutivos ou não, na fruição de licença para tratar de saúde em pessoa da família;</p>
+<p class="legal-item">III - tempo durante o qual se tenha concretizado a ausência ilegal ou a deserção;</p>
+<p class="legal-item">IV - tempo decorrido em cumprimento de pena privativa de liberdade, por sentença transitada em julgado;</p>
+<p class="legal-item">V - tempo decorrido em cumprimento de suspensão do exercício da graduação, cargo ou função, por sentença judicial transitada em julgado.</p>
+<p class="legal-article"><strong>Parágrafo único -</strong> Serão considerados como datas-bases para a aferição do previsto no "caput" deste artigo os dias 31 de março, para as relações de acesso do primeiro semestre, e 31 de agosto, para as do segundo semestre.</p>
+<p class="legal-article"><strong>Artigo 14 -</strong> O merecimento para promoção do Segundo-Tenente PM do QOE e do QOM será aferido pelo conjunto de informações pessoais e funcionais, de acordo com os critérios fixados por ato do Comandante-Geral PM.</p>
+<p class="legal-article"><strong>§ 1° -</strong> Para aferição do merecimento de que trata este artigo deverão ser observados, no mínimo, os seguintes quesitos, aos quais atribuir-se-ão pontos positivos ou negativos:</p>
+<p class="legal-item">1 - avaliação de desempenho;</p>
+<p class="legal-item">2 - elogios;</p>
+<p class="legal-item">3 - cursos realizados na Polícia Militar do Estado de São Paulo;</p>
+<p class="legal-item">4 - cursos realizados em outras instituições oficiais;</p>
+<p class="legal-item">5 - resultado do Teste de Aptidão Física;</p>
+<p class="legal-item">6 - média final de aprovação no CHOE ou no CHO-MUS;</p>
+<p class="legal-item">7 - punições disciplinares;</p>
+<p class="legal-item">8 - condenações de natureza penal, com trânsito em julgado.</p>
+<p class="legal-article"><strong>§ 2° -</strong> Do conceito emitido pelo respectivo Comandante e do grau de merecimento atribuído pela Comissão de Promoções de Praças, serão graduados de 0 (zero) a 10 (dez) pontos, considerados os seguintes aspectos:</p>
+<p class="legal-item">1 - caráter;</p>
+<p class="legal-item">2 - capacidade de ação e de trabalho;</p>
+<p class="legal-item">3 - cultura profissional e geral;</p>
+<p class="legal-item">4 - conduta militar e civil;</p>
+<p class="legal-item">5 - capacidade de supervisão.</p>
+<p class="legal-article"><strong>§ 3° -</strong> A ordem de classificação final do merecimento será resultante do somatório dos pontos atribuídos aos aspectos e quesitos discriminados nos §§ 1° e 2° deste artigo, nos termos fixados em ato a ser editado pelo Comandante-Geral PM.</p>
+<p class="legal-article"><strong>§ 4° -</strong> A antiguidade do Subtenente PM será utilizada como critério de desempate na apuração do merecimento.</p>
+<p class="legal-article"><strong>Artigo 15 -</strong> O Subtenente PM será excluído da relação de acesso para ingresso no QOE e no QOM quando:</p>
+<p class="legal-item">I - deixar de cumprir os requisitos estabelecidos no artigo 12 desta lei;</p>
+<p class="legal-item">II - estiver sendo processado por infração penal, enquanto a sentença final não houver transitado em julgado;</p>
+<p class="legal-item">III - figurar como acusado em processo regular;</p>
+<p class="legal-item">IV - enquanto perdurar o cumprimento da pena em regime aberto ou no caso de suspensão condicional da pena, não se computando o tempo acrescido à pena original, para fins de sua suspensão condicional;</p>
+<p class="legal-item">V - for promovido;</p>
+<p class="legal-item">VI - falecer;</p>
+<p class="legal-item">VII - passar à inatividade;</p>
+<p class="legal-item">VIII - for demitido, expulso ou exonerado.</p>
+<p class="legal-article"><strong>Artigo 16 -</strong> Não será promovido, mesmo que incluído em relação de acesso, o Subtenente PM que for submetido a processo administrativo de caráter demissório ou tiver constatada a perda do requisito previsto no inciso II do artigo 12 desta lei.</p>
+<p class="legal-article"><strong>§ 1° -</strong> O Subtenente PM preterido da promoção por antiguidade, em decorrência da submissão a processo regular, nos termos do "caput" deste artigo, e que, posteriormente, for declarado sem culpa, será promovido, a seu requerimento, com direito à retroação.</p>
+<p class="legal-article"><strong>§ 2° -</strong> O disposto no § 1° deste artigo se aplica também ao Subtenente PM que for agregado, nos termos dos incisos VIII e X do artigo 5° do <a href="https://www.al.sp.gov.br/norma/49548" target="_blank" rel="noopener noreferrer">Decreto-lei n° 260, de 29 de maio de 1970</a>, e ao final:</p>
+<p class="legal-item">1 - tiver o inquérito policial-militar, ou inquérito policial, arquivado;</p>
+<p class="legal-item">2 - for absolvido por negativa de autoria;</p>
+<p class="legal-item">3 - for absolvido por inexistência do fato;</p>
+<p class="legal-item">4 - for absolvido por não constituir o fato infração penal;</p>
+<p class="legal-item">5 - for absolvido por existir circunstância que exclua a ilicitude do fato ou a culpabilidade ou imputabilidade do agente.</p>
+<p class="legal-article"><strong>§ 3° -</strong> Não cabe ressarcimento de promoção pelo princípio de merecimento.</p>
+<h2 class="section-heading">SEÇÃO IV DAS DISPOSIÇÕES FINAIS</h2>
+<p class="legal-article"><strong>Artigo 17 -</strong> Para fins de composição dos Quadros previstos no artigo 5° desta lei, os militares do Estado, do serviço ativo, passam a ser enquadrados da seguinte forma:</p>
+<p class="legal-item">I - Oficiais do Quadro de Oficiais Policiais Militares (QOPM), passam a integrar o QOEM;</p>
+<p class="legal-item">II - Oficiais do Quadro Auxiliar de Oficiais da Polícia Militar (QAOPM), passam a integrar o QOE;</p>
+<p class="legal-item">III - Praças do Quadro de Praças Policiais Militares (QPPM), passam a integrar o QP.</p>
+<p class="legal-article"><strong>Artigo 18 -</strong> O Comandante-Geral PM disciplinará as demais providências necessárias para a organização dos Quadros e das relações de acesso de que trata esta lei.</p>
+<p class="legal-article"><strong>Artigo 19 -</strong> O Governador do Estado poderá delegar ao Comandante Geral PM a promoção do Subtenente PM ao posto de Segundo-Tenente PM, nos Quadros QOE e QOM.</p>
+<p class="legal-article"><strong>Artigo 20 -</strong> Ficam extintos, na vacância, os postos e graduações não previstos nesta lei.</p>
+<p class="legal-article"><strong>Artigo 21 -</strong> Os dispositivos adiante indicados do <a href="https://www.al.sp.gov.br/norma/130299" target="_blank" rel="noopener noreferrer">Decreto-lei n° 13.654, de 6 de novembro de 1943</a>, passam a vigorar com a seguinte redação:</p>
+<p class="legal-item">I - o "caput" do artigo 9°:</p>
+<p>"Artigo 9° - As promoções de Oficiais PM serão feitas dentro de cada Quadro, por antiguidade e merecimento e, em casos extraordinários, por bravura ou ressarcimento de preterição:" (NR);</p>
+<p class="legal-item">II - os incisos e parágrafos do artigo 10:</p>
+<p>"Artigo 10 - (...):</p>
+<p class="legal-item">I - ser Oficial PM no efetivo exercício do respectivo Quadro;</p>
+<p class="legal-item">II - comprovar idoneidade moral;</p>
+<p class="legal-item">III - não estar submetido a processo administrativo ou exoneratório cuja decisão final possa gerar demissão, reforma administrativa disciplinar ou exoneração "ex officio";</p>
+<p class="legal-item">IV - ter sido considerado apto em inspeção de saúde, atestado por meio de parecer médico do órgão de saúde da Polícia Militar;</p>
+<p class="legal-item">V - possuir interstício no posto:</p>
+<p class="legal-item">a) 1° Tenente PM: 4 (quatro) anos;</p>
+<p class="legal-item">b) Capitão PM:</p>
+<p>b1) do QOEM: 6 (seis) anos;</p>
+<p>b2) demais Quadros: 2 (dois) anos.</p>
+<p class="legal-item">c) Major PM: 2 (dois) anos; e</p>
+<p class="legal-item">d) Tenente-Coronel PM: 6 (seis) meses.</p>
+<p class="legal-item">VI - possuir o Curso de Aperfeiçoamento de Oficiais (CAO) para a promoção ao posto de Major PM e o Curso de Comando e Estado-Maior (CCEM) para a promoção ao posto de Coronel PM;</p>
+<p class="legal-item">VII - aprovação na Avaliação de Competência Profissional, para promoção ao posto de Capitão PM;</p>
+<p class="legal-item">VIII - estar incluído no Quadro de Acesso correspondente, nos critérios de antiguidade ou merecimento;</p>
+<p class="legal-item">IX - possuir tempo de efetivo exercício no posto, como arregimentado ou em função prevista nos Quadros de Organização da Polícia Militar, nos termos definidos em ato do Comandante-Geral PM;</p>
+<p class="legal-item">X - se Tenente PM e Capitão PM do QOEM e do QOE, estar na primeira quarta parte do almanaque.</p>
+<p>§ 1° - Não se aplica o disposto no inciso I deste artigo para o Oficial PM do serviço ativo que, de acordo com a lei, tomar posse em cargo, emprego ou função pública civil temporária, não eletiva, ainda que da administração indireta, ressalvada a hipótese prevista no artigo 37, inciso XVI, alíneas "b" e "c", da Constituição Federal, podendo, enquanto permanecer nessa situação, ser promovido por antiguidade, desde que não ultrapasse dois anos de afastamento, contínuos ou não.</p>
+<p>§ 2° - Os agregados nos termos do inciso XIV do artigo 5° do <a href="https://www.al.sp.gov.br/norma/49548" target="_blank" rel="noopener noreferrer">Decreto-lei n° 260, de 29 de maio de 1970</a> somente concorrerão às promoções pelos princípios de merecimento e antiguidade nas hipóteses em que o encargo ou comissão sejam considerados de interesse policial pelo Governador do Estado.</p>
+<p>§ 3° - Constitui ônus do militar do Estado zelar pelo preenchimento dos requisitos para a promoção, nos termos desta lei, devendo comunicar, em tempo, à Administração Militar qualquer divergência.</p>
+<p>§ 4° - O interstício de que trata o inciso V deste artigo, que é o período mínimo que o Oficial PM deverá permanecer no posto para que possa ser cogitado para a promoção, pelos critérios de merecimento ou antiguidade, será contado dia a dia, a partir da data da última promoção ou da posse, no caso do 1° Tenente PM do QOS, realizados os descontos previstos nesta lei.</p>
+<p>§ 5° - A Avaliação de Competência Profissional de que trata o inciso VII deste artigo será aplicada a todos os 1° Tenentes PM, independentemente do Quadro, e versará sobre matéria de interesse da Polícia Militar, conforme definido por ato do Comandante-Geral.</p>
+<p>§ 6° - Em razão de proposta devidamente justificada da Polícia Militar, o Governador do Estado poderá reduzir os interstícios fixados no inciso V deste artigo, até a metade do tempo, tendo a referida redução aplicação somente durante seis meses, a contar da data em que tiver sido decretada." (NR);</p>
+<p class="legal-item">III - o artigo 33:</p>
+<p>"Artigo 33 - A organização dos Quadros de Acesso é atribuição exclusiva da Comissão de Promoções da Polícia Militar.</p>
+<p>§ 1° - Para a organização dos Quadros de Acesso, em 30 de abril e em 31 de outubro de cada ano o Secretário da Comissão de Promoções comunicará às autoridades referidas no artigo 32 deste decreto-lei os Oficiais PM que participarão do processo de promoção.</p>
+<p>§ 2° - A quantidade de Oficiais PM a serem cogitados será definida pelo Chefe do Estado-Maior da Polícia Militar, quando da deflagração do processo de promoção, e deverá atender as necessidades específicas de cada processo de promoção, de modo que a quantidade estabelecida seja o suficiente para prover as vagas em aberto no período de vigência do certame.</p>
+<p>§ 3° - As datas-bases para a aferição dos requisitos e aspectos de promoção serão 31 de maio, para os Quadros de Acesso do segundo semestre do mesmo ano, e 30 de novembro, para os Quadros de Acesso do primeiro semestre do ano subsequente.</p>
+<p>§ 4° - Nas datas previstas no § 3° deste artigo, as autoridades referidas no artigo 32 deste decreto-lei remeterão as informações elencadas no ato de deflagração do processo de promoção relativas a todos os Oficiais PM a eles diretamente subordinados que satisfizerem os requisitos necessários para a inclusão nos Quadros de Acesso, por qualquer princípio.</p>
+<p>§ 5° - Para a organização dos Quadros de Acesso complementares poderão ser cogitados Oficiais PM suplementares, cujas informações utilizadas pela Comissão de Promoções deverão estar atualizadas, tendo como referência as datas de formação dos Quadros de Acessos ordinários." (NR);</p>
+<p class="legal-item">IV - o "caput" do artigo 38:</p>
+<p>"Artigo 38 - O número de Oficiais PM que devem ser incluídos em cada Quadro de Acesso, pelos princípios de antiguidade ou merecimento, será definido pelo Presidente da Comissão de Promoções e deverá atender as necessidades para o preenchimento das vagas abertas para promoção, de modo que a quantidade estabelecida seja o suficiente para atender o previsto nas alíneas "a", "b" e "c" do parágrafo único do artigo 40 deste decreto-lei." (NR);</p>
+<p class="legal-item">V - o artigo 46:</p>
+<p>"Artigo 46 - O Oficial PM que, em inspeção de saúde, for julgado incapaz temporariamente para o serviço policial-militar não concorrerá à promoção, enquanto estiver inapto.</p>
+<p>Parágrafo único - A promoção poderá ser requerida, em ressarcimento, se comprovado o completo restabelecimento da condição descrita no "caput" deste artigo, por meio de parecer de junta de saúde competente, em prazo inferior a seis meses após a preterição." (NR)</p>
+<p class="legal-article"><strong>Artigo 22 -</strong> Os dispositivos adiante indicados da <a href="https://www.al.sp.gov.br/norma/36030" target="_blank" rel="noopener noreferrer">Lei n° 3.159, de 22 de setembro de 1955</a>, passam a vigorar com a seguinte redação:</p>
+<p class="legal-item">I - o "caput" do artigo 7°:</p>
+<p>"Artigo 7° - Para as promoções por merecimento é necessário também que os Primeiros-Sargentos PM tenham atingido, por ordem de antiguidade, no almanaque, o primeiro terço mais antigo." (NR);</p>
+<p class="legal-item">II - os incisos e parágrafos do artigo 9°:</p>
+<p>"Artigo 9° - (...)</p>
+<p class="legal-item">I - estar no efetivo exercício das funções policial-militares;</p>
+<p class="legal-item">II - comprovar idoneidade moral;</p>
+<p class="legal-item">III - ter, no mínimo, bom comportamento;</p>
+<p class="legal-item">IV - ter sido considerado apto em inspeção de saúde, atestado por meio de parecer médico de integrante do órgão de saúde da Polícia Militar;</p>
+<p class="legal-item">V - ter, o Primeiro-Sargento PM, no mínimo, o interstício de 5 (cinco) anos;</p>
+<p class="legal-item">VI - estar, o Primeiro-Sargento PM, no terço mais antigo;</p>
+<p class="legal-item">VII - possuir o Curso de Formação de Sargentos;</p>
+<p class="legal-item">VIII - ter, o Segundo-Sargento PM concluído, com aproveitamento, o Curso de Aperfeiçoamento de Sargentos.</p>
+<p>§ 1° - A idoneidade moral será aferida pela Comissão de Promoções de Praças, que utilizará como subsídios o conceito emitido pelo Comandante da unidade da Praça PM cogitada, bem como as informações funcionais.</p>
+<p>§ 2° - Na falta de candidatos que satisfaçam a exigência do inciso V deste artigo, o Comandante-Geral PM, estritamente para aquele processo de promoção, poderá reduzir até a metade o interstício." (NR);</p>
+<p class="legal-item">III - o § 3° do artigo 11:</p>
+<p>"Artigo 11 - (...)</p>
+<p>(...)</p>
+<p>§ 3° - Para a organização das Relações de Acesso complementares poderão ser cogitados Sargentos PM suplementares, cujas informações utilizadas pela Comissão de Promoções deverão estar atualizadas, tendo como referência as datas de formação das Relações de Acesso ordinárias." (NR);</p>
+<p class="legal-item">IV - o artigo 12:</p>
+<p>"Artigo 12 - Não concorrerá à promoção, nem será promovida, mesmo que incluída em relação de acesso, a Praça PM que for submetida a processo administrativo de caráter demissório ou que tenha constatada a perda dos requisitos previstos nos incisos I, II ou III do artigo 9° desta lei.</p>
+<p>§ 1° - A Praça PM incluída nas relações de acesso que for submetida a processo regular, nos termos do "caput" deste artigo e, posteriormente, tiver, em sede de decisão final da autoridade competente, a acusação declarada procedente em parte ou improcedente será promovida, a seu requerimento, com direito à retroação.</p>
+<p>§ 2° - O disposto no § 1° deste artigo também se aplica à Praça PM que não for promovida pela ausência de comprovação do requisito previsto no inciso I do artigo 9° desta lei, em decorrência de agregação, nos termos dos incisos VIII e X do artigo 5° do <a href="https://www.al.sp.gov.br/norma/49548" target="_blank" rel="noopener noreferrer">Decreto-lei n° 260, de 29 de maio de 1970</a>, e ao final da apuração:</p>
+<p class="legal-item">1 - tiver o inquérito policial-militar, ou inquérito policial, arquivado;</p>
+<p class="legal-item">2 - for absolvido por negativa de autoria;</p>
+<p class="legal-item">3 - for absolvido por inexistência do fato;</p>
+<p class="legal-item">4 - for absolvido por não constituir o fato infração penal;</p>
+<p class="legal-item">5 - for absolvido por existir circunstância que exclua a ilicitude do fato ou a culpabilidade ou imputabilidade do agente." (NR);</p>
+<p class="legal-item">V - o artigo 19:</p>
+<p>"Artigo 19 - Para o preparo das promoções, os Comandantes de unidades remeterão à Comissão de Promoções de Praças as informações relativas às Praças PM que participarão do processo de promoção.</p>
+<p>Parágrafo único - A quantidade de Praças PM a serem cogitadas será definida pelo Presidente da Comissão de Promoções de Praças, quando da deflagração do processo, e deverá atender as necessidades específicas de cada processo de promoção, de modo que a quantidade estabelecida seja o suficiente para prover as vagas em aberto no período de vigência do certame." (NR);</p>
+<p class="legal-item">VI - os incisos II e III do artigo 29:</p>
+<p>"Artigo 29 - (...)</p>
+<p>(...)</p>
+<p class="legal-item">II - 3 (três) Oficiais, sendo pelo menos 1 (um) Oficial Superior; e</p>
+<p class="legal-item">III - 1 (um) Oficial do Estado-Maior da Polícia Militar, como Secretário." (NR).</p>
+<p class="legal-article"><strong>Artigo 23 -</strong> O anexo XII da <a href="https://www.al.sp.gov.br/norma/14776" target="_blank" rel="noopener noreferrer">Lei Complementar n° 731, de 26 de outubro de 1993</a>, é substituído pelo Anexo Único desta lei.</p>
+<p class="legal-article"><strong>Artigo 24 -</strong> A <a href="https://www.al.sp.gov.br/norma/3909" target="_blank" rel="noopener noreferrer">Lei Complementar n° 892, de 31 de janeiro de 2001</a>, passa a vigorar com as seguintes alterações:</p>
+<p class="legal-item">I - o "caput" do artigo 1°:</p>
+<p>"Artigo 1° - A promoção à graduação de Cabo PM será efetuada por antiguidade." (NR);</p>
+<p class="legal-item">II - o "caput" do artigo 2°:</p>
+<p>"Artigo 2° - O Soldado PM que, ao completar cinco anos de efetivo exercício na graduação, poderá requerer a sua inclusão em relação de acesso para as promoções previstas no artigo 1° desta lei complementar, cujo ingresso se dará após comprovação dos seguintes requisitos:" (NR);</p>
+<p class="legal-item">III - o "caput" do artigo 4°:</p>
+<p>"Artigo 4° - A promoção à graduação de Terceiro-Sargento PM será efetuada mediante a conclusão, com aproveitamento, do Curso de Formação de Sargentos." (NR);</p>
+<p class="legal-item">IV - o "caput" e os incisos II e VI do artigo 6°:</p>
+<p>"Artigo 6° - A convocação para ingresso no Curso de Formação de Sargentos recairá sobre o Cabo PM que tiver atingido, na relação de acesso ao curso, lugar correspondente às vagas existentes por antiguidade, observados os seguintes requisitos:</p>
+<p>(...)</p>
+<p class="legal-item">II - tenha sido considerado apto em inspeção de saúde, sem restrição;</p>
+<p>(...)</p>
+<p class="legal-item">VI - tenha conhecimento básico em informática, aferida em prova específica;" (NR);</p>
+<p class="legal-item">V - o artigo 7°:</p>
+<p>"Artigo 7° - Ao exame de seleção para frequência ao Curso de Formação de Sargentos, nos termos do artigo 5° desta lei complementar, poderá concorrer o Cabo PM que preencher os requisitos constantes dos incisos do artigo 6°." (NR);</p>
+<p class="legal-item">VI - o "caput" do artigo 11:</p>
+<p>"Artigo 11 - Para os fins previstos nesta lei complementar, a antiguidade e o tempo de efetivo exercício na graduação serão determinados, sucessivamente, pelos seguintes critérios:" (NR).</p>
+<p class="legal-article"><strong>Artigo 25 -</strong> Os dispositivos adiante indicados do artigo 5° da <a href="https://www.al.sp.gov.br/norma/75188" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.036, de 11 de janeiro de 2008</a>, passam a vigorar com a seguinte redação:</p>
+<p class="legal-item">I - os incisos I, II, III e IV:</p>
+<p>"Artigo 5° - (...)</p>
+<p class="legal-item">I - Curso de Formação de Praças (CFP): destinado aos aprovados em concurso público para a graduação de Aluno-Soldado PM, habilita à promoção à graduação de Soldado PM. Visa à qualificação técnica para análise e execução, de forma produtiva, das funções próprias de polícia ostensiva e de preservação da ordem pública, em conformidade com a filosofia que norteia a polícia comunitária, além de outras atribuições definidas em lei, bem como as funções de bombeiro e a execução das atividades de defesa civil;</p>
+<p class="legal-item">II - Curso de Formação de Sargentos (CFS): destinado às Praças PM, com ingresso na graduação de Aluno-Sargento PM, habilita à promoção à graduação de Terceiro-Sargento PM. Visa qualificar profissionalmente o militar do Estado, promovendo a sua habilitação técnica, humana e conceitual para o exercício consciente, responsável e criativo das funções de liderança, gestão e assessoramento, nos limites de suas atribuições hierárquicas, dotando-o de capacidade de análise de questões atuais que envolvam o comando na execução das atividades de polícia ostensiva e de preservação da ordem pública, em conformidade com a filosofia de polícia comunitária, além de outras definidas em lei, bem como a execução das atividades de bombeiro e de defesa civil;</p>
+<p class="legal-item">III - Curso de Formação de Oficiais (CFO): destinado aos aprovados no concurso público para a graduação de Cadete PM, habilita à promoção a Aspirante a Oficial PM, com a consequente graduação em Ciências Policiais de Segurança e Ordem Pública. Visa à formação, com solidez teórica e prática, do profissional ocupante do posto inicial de Oficial PM, tornando-o apto ao comando de pessoas e à análise e administração de processos, por intermédio da utilização ampla de conhecimentos na busca de soluções para os variados problemas pertinentes às atividades jurídicas de preservação da ordem pública, de polícia ostensiva e de polícia judiciária militar, em conformidade com a filosofia de polícia comunitária, além de outras definidas em lei;</p>
+<p class="legal-item">IV - cursos de pós-graduação, compreendendo:</p>
+<p class="legal-item">a) Curso de Aperfeiçoamento de Praças (CAP): curso de especialização, no sentido lato, destinado a ampliar os conhecimentos técnico-profissionais que exijam práticas específicas, habilitando ou aperfeiçoando a formação do militar do Estado para o exercício de suas funções, nas respectivas áreas de atuação;</p>
+<p class="legal-item">b) Curso de Aperfeiçoamento de Oficiais (CAO): programa de mestrado profissional, no sentido estrito, direcionado para a continuidade da formação científica, acadêmica e profissional e destinado a graduar o Oficial Intermediário, capacitando-o à pesquisa científica, à análise, ao planejamento e ao desenvolvimento, em alto nível, da atividade profissional de polícia ostensiva e de preservação da ordem pública, de bombeiros e de execução das atividades de defesa civil;</p>
+<p class="legal-item">c) Curso de Comando e Estado-Maior (CCEM): programa de doutorado, no sentido estrito, direcionado para a continuidade da formação científica, acadêmica e profissional e destinado a graduar o Oficial Superior para as funções de administração estratégica, direção e comando nas áreas específicas de polícia ostensiva, de preservação da ordem pública, de polícia judiciária militar, de bombeiros e de execução das atividades de defesa civil, bem como o assessoramento governamental em segurança pública."(NR);</p>
+<p class="legal-item">II - o parágrafo 3°:</p>
+<p>"(...)</p>
+<p>§ 3° - A conclusão, com aproveitamento, do curso sequencial de complementação de estudos e dos cursos de habilitação previstos, respectivamente, nos incisos II, II-A e II-B deste artigo atribuirá ao militar do Estado a especialidade superior de Tecnólogo de Polícia Ostensiva e de Preservação da Ordem Pública." (NR).</p>
+<p class="legal-article"><strong>Artigo 26 -</strong> O artigo 1° da <a href="https://www.al.sp.gov.br/norma/163531" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.150, de 20 de outubro de 2011</a>, passa a vigorar com a seguinte redação:</p>
+<p>"Artigo 1° - Será transferido, "ex officio", para a reserva remunerada, com vencimento e vantagens integrais, o militar do Estado que contar com o tempo mínimo exigido na legislação aplicável e:</p>
+<p class="legal-item">I - se Oficial, no posto de Coronel PM, completar 5 (cinco) anos nesse posto;</p>
+<p class="legal-item">II - se Oficial Superior ou Intermediário do QOE e do QOM há 1 (um) ano ou encontrar-se no penúltimo nível hierárquico do QOEM ou do QOS há 1 (um) ano:</p>
+<p class="legal-item">a) não atender aos requisitos legais exigidos para promoção ao nível hierárquico imediatamente superior; ou;</p>
+<p class="legal-item">b) tenha sido preterido na última data de promoção, não obstante atenda aos requisitos legais exigidos para promoção ao nível hierárquico imediatamente superior;</p>
+<p class="legal-item">III - se Subtenente PM:</p>
+<p class="legal-item">a) tenha completado 1 (um) ano na mesma graduação e não atenda aos requisitos legais exigidos para promoção ao nível hierárquico imediatamente superior; ou</p>
+<p class="legal-item">b) tenha sido preterido na última data de promoção, não obstante atenda aos requisitos legais exigidos para promoção ao nível hierárquico imediatamente superior.</p>
+<p>§ 1° - Será considerado preterido, para fins de aplicação deste artigo, aquele que for ultrapassado, em promoção, por militar do Estado que estava em posição inferior na escala hierárquica.</p>
+<p>§ 2° - O disposto no artigo 2° desta lei aplica-se ao Subtenente PM referido no inciso III deste artigo, cuja concessão será de ofício." (NR)</p>
+<p class="legal-article"><strong>Artigo 27 -</strong> Os dispositivos adiante indicados da <a href="https://www.al.sp.gov.br/norma/178800" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.291, de 22 de julho de 2016</a>, passam a vigorar com a seguinte redação:</p>
+<p class="legal-item">I - os incisos I e IV do artigo 1°:</p>
+<p>"Artigo 1° - (...):</p>
+<p class="legal-item">I - Quadro de Oficiais de Estado-Maior (QOEM);</p>
+<p>(...)</p>
+<p class="legal-item">IV - Quadro de Praças (QP)." (NR);</p>
+<p class="legal-item">II - as alíneas "a" e "d" do inciso III e o § 2° do artigo 2°:</p>
+<p>"Artigo 2° - (...)</p>
+<p>(...)</p>
+<p class="legal-item">III - (...):</p>
+<p class="legal-item">a) 30 (trinta) anos, para ingresso no QOEM;</p>
+<p>(...)</p>
+<p class="legal-item">d) 30 (trinta) anos, para ingresso no QP;</p>
+<p>(...)</p>
+<p>§ 2° - O inciso IV deste artigo não se aplica à inscrição no concurso público para o QOS." (NR);</p>
+<p class="legal-item">III - o inciso III do artigo 4°:</p>
+<p>"Artigo 4° - (...):</p>
+<p>(...)</p>
+<p class="legal-item">III - exames de saúde, que compreenderão exames médicos, odontológicos e toxicológicos com larga janela de detecção;" (NR);</p>
+<p class="legal-item">IV - os parágrafos 1°, 2° e 4° do artigo 11:</p>
+<p>"Artigo 11 - (...)</p>
+<p>(...)</p>
+<p>§ 1° - Para ser empossado Cadete PM, além dos requisitos gerais previstos neste artigo, o candidato deverá ter concluído o ensino médio ou equivalente.</p>
+<p>§ 2° - Para ser empossado Primeiro-Tenente PM do QOS, além dos requisitos gerais previstos neste artigo, será exigida a conclusão de curso de nível superior de graduação ou habilitação legal correspondente, necessária para o exercício profissional das atribuições inerentes ao cargo, reconhecido pelo Ministério da Educação ou por órgão oficial.</p>
+<p>(...)</p>
+<p>§ 4° - Para ser empossado Aluno-Soldado PM, além dos requisitos gerais previstos neste artigo, o candidato deverá:</p>
+<p class="legal-item">1 - ter concluído o ensino médio ou equivalente;</p>
+<p class="legal-item">2 - ser habilitado para condução de veículo motorizado entre as categorias 'B' e 'E'." (NR);</p>
+<p class="legal-item">V - os incisos I, II e IV do artigo 15:</p>
+<p>"Artigo 15 - (...):</p>
+<p class="legal-item">I - para ingresso no QOEM, na condição de Cadete PM, durante a graduação em curso específico e o consequente estágio administrativo operacional, na condição de Aspirante a Oficial PM, conforme previsto no Sistema de Ensino da Polícia Militar, instituído pela <a href="https://www.al.sp.gov.br/norma/75188" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.036, de 11 de janeiro de 2008</a>;</p>
+<p class="legal-item">II - para ingresso no QOS, durante a realização do curso de habilitação, previsto no Sistema de Ensino da Polícia Militar, instituído pela <a href="https://www.al.sp.gov.br/norma/75188" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.036, de 11 de janeiro de 2008</a>, e o consequente período como Primeiro-Tenente PM, totalizando 3 (três) anos de estágio probatório;</p>
+<p>(...)</p>
+<p class="legal-item">IV - para ingresso no QP, na graduação de Aluno-Soldado PM, durante a formação em curso específico, conforme previsão no Sistema de Ensino da Polícia Militar, instituído pela <a href="https://www.al.sp.gov.br/norma/75188" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.036, de 11 de janeiro de 2008</a>, e o consequente período de estágio operacional, totalizando 3 (três) anos a contar da posse." (NR)</p>
+<p class="legal-article"><strong>Artigo 28 -</strong> Ficam acrescentados ao <a href="https://www.al.sp.gov.br/norma/130299" target="_blank" rel="noopener noreferrer">Decreto-lei n° 13.654, de 6 de novembro de 1943</a>, os seguintes dispositivos:</p>
+<p class="legal-item">I - ao artigo 9°, o § 5°:</p>
+<p>"Artigo 9° - (...)</p>
+<p>(...)</p>
+<p>§ 5° - Quando o oficial concorrer à promoção por ambos os princípios, o preenchimento de vagas de antiguidade poderá ser feito pelo princípio de merecimento, sem prejuízo do cômputo das futuras quotas de merecimento." (NR)</p>
+<p class="legal-item">II - o artigo 9°-A:</p>
+<p>"Artigo 9°-A - A promoção em ressarcimento de preterição é aquela efetivada após ser reconhecido, ao Oficial PM preterido, o direito à promoção não havida e caberá quando:</p>
+<p class="legal-item">I - tiver solução favorável a ato impugnativo interposto;</p>
+<p class="legal-item">II - ocorrer a justificação do fato que motivou a instauração do Conselho de Justificação;</p>
+<p class="legal-item">III - encontrar-se agregado, nos termos dos incisos VIII e X do artigo 5° do <a href="https://www.al.sp.gov.br/norma/49548" target="_blank" rel="noopener noreferrer">Decreto-lei n° 260, de 29 de maio de 1970</a>, ou tiver desconto de tempo no posto devido a esta condição e ao cabo das investigações:</p>
+<p class="legal-item">a) tiver o inquérito policial-militar, ou inquérito policial, arquivado;</p>
+<p class="legal-item">b) for absolvido por negativa de autoria;</p>
+<p class="legal-item">c) for absolvido por inexistência do fato;</p>
+<p class="legal-item">d) for absolvido por não constituir o fato infração penal;</p>
+<p class="legal-item">e) for absolvido por existir circunstância que exclua a ilicitude do fato ou a culpabilidade ou imputabilidade do agente.</p>
+<p>§ 1° - Para a promoção de que trata o "caput" deste artigo, fica dispensada a exigência da inclusão no Quadro de Acesso.</p>
+<p>§ 2° - Em qualquer dos casos, a promoção de que trata este artigo será processada apenas mediante apresentação de requerimento pelo Oficial PM interessado.</p>
+<p>§ 3° - A imposição de qualquer penalidade disciplinar ao Oficial PM, na hipótese do inciso II deste artigo, afasta a possibilidade de concessão da promoção por ressarcimento em preterição, ressalvado o direito de concorrer a futuras promoções.</p>
+<p>§ 4° - A promoção prevista no "caput" deste artigo será efetuada somente pelo critério de antiguidade, independentemente da existência de vaga, sendo o Oficial PM colocado na escala hierárquica como se tivesse sido promovido, na época devida, pelo princípio em que ora é feita sua promoção." (NR);</p>
+<p class="legal-item">III - os parágrafos 3°, 4°, 5° e 6° ao artigo 20:</p>
+<p>"Artigo 20 - (...)</p>
+<p>(...)</p>
+<p>§ 3° - A promoção por ato de bravura está condicionada à conclusão de curso que habilite o Oficial PM ao exercício de cargos e funções típicas de posto imediatamente superior.</p>
+<p>§ 4° - Após a conclusão, com aproveitamento, do curso de que trata o § 3° deste artigo, o Oficial PM será promovido, a contar da data do fato que deu causa à promoção por ato de bravura.</p>
+<p>§ 5° - Caso o Oficial PM já tenha sido promovido, após a data do ato de bravura, segundo as regras ordinárias de promoções, não haverá nova promoção, contudo, aquela já havida retroagirá à data do ato de bravura, não cabendo promoção por ressarcimento de preterição a terceiros interessados.</p>
+<p>§ 6° - O Oficial PM poderá ser promovido por bravura somente 1 (uma) vez em sua carreira." (NR);</p>
+<p class="legal-item">IV - § 3° ao artigo 38:</p>
+<p>"§ 3° - Sempre que o número de nomes constantes dos Quadros de Acesso para promoções for insuficiente para prover as vagas já abertas, a Comissão de Promoções deverá proceder à complementação desses Quadros, a fim de que seja possível dar cumprimento integral ao disposto no "caput" deste artigo." (NR)</p>
+<p class="legal-article"><strong>Artigo 29 -</strong> Fica acrescido o artigo 2-A à <a href="https://www.al.sp.gov.br/norma/36030" target="_blank" rel="noopener noreferrer">Lei n° 3.159, de 22 de setembro de 1955</a>, com a seguinte redação:</p>
+<p>"Artigo 2°-A - A promoção por bravura, forma excepcional de ascensão na carreira profissional, resulta de atos incomuns de coragem e audácia que, ultrapassando os limites normais de cumprimento do dever, representam extremo perigo à vida e feitos indispensáveis ou úteis às operações policial-militares, pelos resultados alcançados ou pelo exemplo positivo deles emanados.</p>
+<p>§ 1° - A Praça PM poderá ser promovida por ato de bravura realizado:</p>
+<p class="legal-item">1 - em caso de guerra externa ou interna, empregada a Polícia Militar do Estado de São Paulo como força auxiliar, reserva do Exército Brasileiro, em missão de interesse da Segurança Nacional;</p>
+<p class="legal-item">2 - nas atividades de polícia ostensiva, preservação da ordem pública e de proteção à incolumidade das pessoas e do patrimônio, em ações de defesa civil e de combate a incêndio e salvamento.</p>
+<p>§ 2° - A promoção de que trata este artigo ocorrerá independentemente da existência de vaga e a Praça PM permanecerá excedente na graduação até a abertura de vaga.</p>
+<p>§ 3° - O ato de bravura será apurado em investigação criteriosa determinada somente pelo Presidente da Comissão de Promoções de Praças.</p>
+<p>§ 4° - Concluso o procedimento investigativo, caberá à Comissão de Promoções de Praças:</p>
+<p class="legal-item">1 - avaliar se, em razão do que foi apurado, é devida à Praça PM a promoção por ato de bravura;</p>
+<p class="legal-item">2 - avaliar se, devido à inabilitação para o exercício de cargos e funções típicas da graduação pretendida, há óbice para a promoção da Praça PM, condicionando a promoção à conclusão de curso que o habilite ao exercício de cargos e funções típicas da graduação superior.</p>
+<p class="legal-item">3 - decidir:</p>
+<p class="legal-item">a) pela promoção da Praça PM, por ato de bravura, quando inexistir óbice ao deferimento da promoção, retroagindo esta imediatamente à data do fato que lhe deu causa; ou</p>
+<p class="legal-item">b) pela promoção da Praça PM por ato de bravura, condicionada à conclusão de curso que o habilite ao exercício de cargos e funções típicas da graduação superior, retroagindo a promoção à data do fato que lhe deu causa.</p>
+<p>§ 5° - A promoção de que trata este artigo será efetivada pelo Comandante-Geral, a contar da data em que ocorreu o ato de bravura.</p>
+<p>§ 6° - Caso a Praça PM já tenha sido promovida, após a data do ato de bravura, segundo as regras ordinárias de promoções, não haverá nova promoção, contudo, aquela já havida retroagirá à data do ato de bravura, não cabendo promoção por ressarcimento de preterição a terceiros interessados.</p>
+<p>§ 7° - A Praça PM poderá ser promovida por bravura somente 1 (uma) vez em sua carreira." (NR)</p>
+<p class="legal-article"><strong>Artigo 30 -</strong> Fica acrescido o parágrafo único ao artigo 5° da <a href="https://www.al.sp.gov.br/norma/3910" target="_blank" rel="noopener noreferrer">Lei Complementar n° 893, de 9 de março de 2001</a>, com a seguinte redação:</p>
+<p>"Artigo 5° - (...)</p>
+<p>Parágrafo único - Além das hipóteses previstas nos incisos I e II do "caput" deste artigo, os integrantes do Quadro de Oficiais de Estado-Maior (QOEM) terão precedência funcional, em igualdade de postos, com os Oficiais PM dos demais Quadros." (NR).</p>
+<p class="legal-article"><strong>Artigo 31 -</strong> Ficam acrescentados os incisos II-A, II-B e V e o § 7° ao artigo 5° da <a href="https://www.al.sp.gov.br/norma/75188" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.036, de 11 de janeiro de 2008</a>, com a seguinte redação:</p>
+<p>"Artigo 5° - (...):</p>
+<p>(...)</p>
+<p class="legal-item">II-A - Curso de Habilitação de Oficial do Quadro de Oficiais Especialistas (CHOE): destinado aos Subtenentes PM, para habilitação à promoção ao posto de Segundo-Tenente PM do Quadro de Oficiais Especialistas. Visa capacitar o Subtenente PM ao exercício de atividades complementares da carreira dos Oficiais PM, sobretudo à supervisão operacional e gestão de processos técnicos e administrativos no âmbito da atividade policial-militar;</p>
+<p class="legal-item">II-B - Curso de Habilitação de Oficial do Quadro de Oficiais Músicos (CHO-Mus): destinado aos Subtenentes PM com formação em música, para habilitação à promoção ao posto de Segundo-Tenente PM do Quadro de Oficiais Músicos;</p>
+<p>(...)</p>
+<p class="legal-item">V - curso de bacharelado em Direito, formação acadêmica de nível superior, destinado ao estudo sistemático e aprofundado da ciência jurídica, com o objetivo de capacitar o Cadete PM ao exercício de atividades jurídicas, com ênfase na segurança pública, na atuação institucional da Polícia Militar e na promoção da cidadania, dos direitos humanos fundamentais, no Estado Democrático de Direito e na Justiça.</p>
+<p>(...)</p>
+<p>§ 7° - O curso previsto no inciso V será iniciado concomitantemente com o curso previsto no inciso III, ambos do "caput" deste artigo, e será de frequência obrigatória para o Cadete PM." (NR)</p>
+<p class="legal-article"><strong>Artigo 32 -</strong> Fica acrescido o inciso X ao artigo 11 da <a href="https://www.al.sp.gov.br/norma/178800" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.291, de 22 de julho de 2016</a>, com a seguinte redação:</p>
+<p>"X - não registrar antecedentes penais dolosos incompatíveis com a função policial-militar." (NR).</p>
+<p class="legal-article"><strong>Artigo 33 -</strong> Ficam revogados:</p>
+<p class="legal-item">I - na data da entrada em vigor desta lei:</p>
+<p class="legal-item">a) os §§ 1°, 3° e 4° do artigo 9° e a alínea "f" do artigo 15, todos do <a href="https://www.al.sp.gov.br/norma/130299" target="_blank" rel="noopener noreferrer">Decreto-lei n° 13.654, de 6 de novembro de 1943</a>;</p>
+<p class="legal-item">b) o parágrafo único do artigo 2° e os itens 5 e 6 do § 1° do artigo 15 da <a href="https://www.al.sp.gov.br/norma/36030" target="_blank" rel="noopener noreferrer">Lei n° 3.159, de 22 de setembro de 1955</a>;</p>
+<p class="legal-item">c) a <a href="https://www.al.sp.gov.br/norma/36439" target="_blank" rel="noopener noreferrer">Lei n° 3.322, de 29 de dezembro de 1955</a>;</p>
+<p class="legal-item">d) a <a href="https://www.al.sp.gov.br/norma/27309" target="_blank" rel="noopener noreferrer">Lei Complementar n° 419, de 25 de outubro de 1985</a>, ressalvados os artigos 5°, 6°, 7°, 8° e 9°;</p>
+<p class="legal-item">e) o parágrafo único do artigo 1°, o artigo 3°, e a alínea "f" do inciso I do artigo 11, todos da <a href="https://www.al.sp.gov.br/norma/3909" target="_blank" rel="noopener noreferrer">Lei Complementar n° 892, de 31 de janeiro de 2001</a>;</p>
+<p class="legal-item">f) o § 3° do artigo 2° da <a href="https://www.al.sp.gov.br/norma/163531" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.150, de 20 de outubro de 2011</a>;</p>
+<p class="legal-item">g) a <a href="https://www.al.sp.gov.br/norma/172014" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.224, de 13 de dezembro de 2013</a>;</p>
+<p class="legal-item">II - 1 (um) ano após a data da entrada em vigor desta lei, o inciso III do artigo 1°, a alínea "c" do inciso III do artigo 2°, o § 3° do artigo 11 e o inciso III do artigo 15, todos da <a href="https://www.al.sp.gov.br/norma/178800" target="_blank" rel="noopener noreferrer">Lei Complementar n° 1.291, de 22 de julho de 2016</a>;</p>
+<p class="legal-item">III - 2 (dois) anos após a data da entrada em vigor desta lei, os artigos 5°, 6°, 7°, 8° e 9° da <a href="https://www.al.sp.gov.br/norma/27309" target="_blank" rel="noopener noreferrer">Lei Complementar n° 419, de 25 de outubro de 1985</a>, observado o disposto no artigo 2° das Disposições Transitórias desta lei;</p>
+<p class="legal-article"><strong>Artigo 34 -</strong> As despesas decorrentes da aplicação desta lei correrão à conta das dotações próprias consignadas no orçamento vigente, ficando o Poder Executivo autorizado a abrir créditos suplementares, se necessário, mediante a utilização de recursos, nos termos do § 1° do artigo 43 da Lei federal n° 4.320, de 17 de março de 1964.</p>
+<p class="legal-article"><strong>Artigo 35 -</strong> Esta lei e suas Disposições Transitórias entram em vigor na data de sua publicação, com exceção do inciso I do artigo 24 desta lei, que entrará em vigor em 1° de dezembro de 2026, observado o disposto no artigo 33.</p>
+<h2 class="section-heading">SEÇÃO V DAS DISPOSIÇÕES TRANSITÓRIAS</h2>
+<p class="legal-article"><strong>Artigo 1° -</strong> O efetivo fixado no artigo 3° desta lei, cuja distribuição será regulamentada pelo decreto previsto no artigo 6°, entrará em vigor em 1° de dezembro de 2026.</p>
+<p class="legal-article"><strong>Artigo 2° -</strong> Os artigos 5° ao 9° da <a href="https://www.al.sp.gov.br/norma/27309" target="_blank" rel="noopener noreferrer">Lei Complementar n° 419, de 25 de outubro de 1985</a>, aplicar-se-ão aos concursos cujos editais de abertura forem publicados nos 2 (dois) primeiros anos subsequentes à edição desta lei.</p>
+<p class="legal-article"><strong>Parágrafo único -</strong> Os Oficiais PM participantes dos concursos de que trata o "caput" deste artigo que concluírem o Curso de Habilitação específico, previsto no artigo 5° da <a href="https://www.al.sp.gov.br/norma/27309" target="_blank" rel="noopener noreferrer">Lei Complementar n° 419, de 25 de outubro de 1985</a>, serão incorporados ao Quadro de Oficiais Especialistas de que trata esta lei, após a respectiva nomeação.</p>
+<p class="legal-article"><strong>Artigo 3° -</strong> A organização do almanaque de Oficiais PM do Quadro de Oficiais Especialistas e do Quadro de Oficiais Músicos terá por base a data de promoção no respectivo Quadro de origem.</p>
+<p class="legal-article"><strong>Artigo 4° -</strong> Com a finalidade de preservar o princípio da hierarquia e garantir o fluxo regular da carreira das Praças, a promoção à graduação de Cabo PM prevista na alínea "b" do inciso VI do artigo 8° desta lei, para os Soldados PM que já contarem com mais de 5 (cinco) anos de efetivo exercício, será processada de forma escalonada, observando se as seguintes datas e anos de ingresso:</p>
+<p class="legal-item">I - em 15 de dezembro de 2026, para os que ingressaram até 31 de dezembro de 2014;</p>
+<p class="legal-item">II - em 21 de abril de 2027, para os que ingressaram até 31 de dezembro de 2015;</p>
+<p class="legal-item">III - em 9 de julho de 2027, para os que ingressaram até 31 de dezembro de 2016;</p>
+<p class="legal-item">IV - em 7 de setembro de 2027, para os que ingressaram até 31 de dezembro de 2017;</p>
+<p class="legal-item">V - em 15 de dezembro de 2027, para os que ingressaram até 31 de dezembro de 2018;</p>
+<p class="legal-item">VI - em 21 de abril de 2028, para os que ingressaram até 31 de dezembro de 2019;</p>
+<p class="legal-item">VII - em 9 de julho de 2028, para os que ingressaram até 31 de dezembro de 2021;</p>
+<p class="legal-item">VIII - em 7 de setembro de 2028, para os que ingressaram até 31 de dezembro de 2022;</p>
+<p class="legal-item">IX - em 15 de dezembro de 2028, para os que ingressaram até 31 de dezembro de 2023.</p>
+<p class="legal-article"><strong>Parágrafo único -</strong> Aos Soldados PM abrangidos pelo escalonamento previsto neste artigo, que contem com 5 (cinco) anos de tempo de serviço, fica assegurada a possibilidade de concorrer ao processo seletivo interno para frequência ao Curso de Formação de Sargentos, nos termos do artigo 5° da <a href="https://www.al.sp.gov.br/norma/3909" target="_blank" rel="noopener noreferrer">Lei Complementar n° 892, de 31 de janeiro de 2001</a>, desde que preencham os requisitos constantes nos incisos do artigo 6° da mesma Lei Complementar.</p>
+<p>Palácio dos Bandeirantes, na data da assinatura digital.</p>
+<p>Tarcísio de Freitas</p>
+<p>Osvaldo Nico Gonçalves</p>
+<p>Secretário de Segurança Pública</p>
+<p>Roberto Ribeiro Carneiro</p>
+<p>Secretário de Governo e Relações Institucionais</p>
+<p>Nerylson Lima da Silva</p>
+<p>Secretário-Chefe da Casa Civil</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações da Lei nº 18.442/2026 neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos da Lei nº 18.442/2026</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações da Lei nº 18.442/2026 são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-lei-18442-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações da Lei nº 18.442/2026? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais da Lei nº 18.442/2026, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais da Lei nº 18.442/2026 foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
