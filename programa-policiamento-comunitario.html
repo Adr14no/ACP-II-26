@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Programa de Policiamento Comunitário — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Operacionais</div><h1>Programa de Policiamento Comunitário</h1><p>Diretriz nº PM3-005/02/20 · Texto para estudo. Confira a fonte oficial e eventuais alterações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO">
+<h2 class="section-heading">PROGRAMA DE POLICIAMENTO COMUNITÁRIO</h2>
+<p>DIRETRIZ Nº PM3-005/02/20</p>
+<h2 class="section-heading">1. REFERÊNCIA</h2>
+<p>Diretriz nº PM3-001/02/20, de 06MAR20 – Normas para o Sistema Operacional de Policiamento PM (NORSOP).</p>
+<h2 class="section-heading">2. FINALIDADE</h2>
+<p>Regular a organização e os procedimentos relativos ao Programa de Policiamento Comunitário.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p>3.1. ao longo dos últimos 15 anos, a Polícia Militar desenvolveu, em razão de experiências nos cenários nacional e internacional, ampla gama de conhecimentos acerca do policiamento comunitário, aplicado em todo o Estado de São Paulo;</p>
+<p>3.2. em decorrência desse aprendizado, associado à sedimentação da filosofia de polícia comunitária na Instituição, necessário se faz aprimorar os critérios e formas de emprego dos efetivos que atuam diretamente no Programa de Policiamento Comunitário, visando ao aprimoramento contínuo dos ativos operacionais diretamente empregados nessa sistemática.</p>
+<h2 class="section-heading">4. OBJETIVO</h2>
+<p>4.1. consolidar a aproximação do policial militar em relação à comunidade onde atua, fortalecendo os laços de confiança e respeito mútuos;</p>
+<p>4.2. aumentar o envolvimento das pessoas que residem ou trabalham na comunidade nas questões afetas à segurança pública local, favorecendo a busca por soluções conjuntas para eliminar ou minimizar os fatores causadores de infrações penais ou administrativas;</p>
+<p>4.3. aumentar a credibilidade nas ações voltadas à preservação da ordem pública desenvolvidas pela Polícia Militar, sedimentando a sua imagem como promotora dos Direitos Humanos.</p>
+<h2 class="section-heading">5. MISSÃO</h2>
+<p>O CPC, CPM e CPI cumprirão as normas estabelecidas nesta Diretriz no tocante às atividades de policiamento ostensivo comunitário a serem desenvolvidas pelas OPM subordinadas, podendo valer-se da instalação de BCS e BCSD ou da utilização de BCM.</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<p>6.1. Conceituação:</p>
+<h3 class="subheading">6.1.1. Polícia Comunitária</h3>
+<p>Princípio básico do Sistema de Policiamento PM que deve ser entendido como uma filosofia que abrange todos os níveis organizacionais da Polícia Militar e deve ser internalizada por todos os seus integrantes, consistindo também em estratégia institucional que direciona esforços, medidas e programas no sentido de buscar a interação permanente com a comunidade, visando ao desenvolvimento de ações destinadas a alcançar níveis desejáveis de segurança e melhoria da qualidade de vida das pessoas.</p>
+<h3 class="subheading">6.1.2. Policiamento Ostensivo Comunitário</h3>
+<p>Atuação direcionada a localidades específicas, estabelecidas conforme critérios estratégicos, visando alcançar níveis aceitáveis de segurança pública e de qualidade de vida, por meio do respaldo, cooperação, parceria, participação e coleta de informações junto às respectivas comunidades.</p>
+<h3 class="subheading">6.1.3. Programa de Policiamento Comunitário</h3>
+<p>Programa que tem por objetivo organizar o desenvolvimento do Policiamento Ostensivo Comunitário.</p>
+<h3 class="subheading">6.1.4. Patrulha Comunitária (Ptr Com)</h3>
+<p>Unidade de Serviço (US) composta por policiais militares designados e treinados para atuação exclusiva no Programa de Policiamento Comunitário.</p>
+<h3 class="subheading">6.1.5 Base Comunitária de Segurança (BCS)</h3>
+<p>Edificação policial-militar fixa, instalada segundo os critérios de acessibilidade, visibilidade e existência de comunidade que necessite de atendimento policial-militar, servindo como ícone de referência da Polícia Militar nas atividades de Polícia Comunitária.</p>
+<h3 class="subheading">6.1.6. Base Comunitária de Segurança Distrital (BCSD)</h3>
+<p>Variante da BCS, aplicável aos Distritos Municipais, constituído de 1 policial militar que reside no local e presta atendimento ao público, a partir de sua residência.</p>
+<h3 class="subheading">6.1.7. Base Comunitária Móvel (BCM)</h3>
+<p>Consiste em veículo do tipo “trailer” ou “van”, com adaptações necessárias para emprego no policiamento ostensivo comunitário, visando fazer frente às circunstâncias que necessitem de presença policial não permanente.</p>
+<h3 class="subheading">6.1.8. Visita Comunitária</h3>
+<p>Consiste no contato periódico de policial militar, pertencente ou não ao Programa de Policiamento Comunitário, com os integrantes da comunidade, voltado a estreitar relações e criar vínculos de confiança mútua, de forma a permitir que a Polícia Militar conheça e busque soluções para os reais problemas de segurança pública que os afligem.</p>
+<h3 class="subheading">6.1.9. Visita Solidária</h3>
+<p>Contato de policial militar com vítima de delito previamente identificada, objetivando, além de demonstrar solidariedade frente ao ocorrido e orientar acerca das medidas de prevenção primária que podem ser adotadas, coletar dados de interesse e evidenciar os esforços que a Polícia Militar envidará para garantir a segurança das partes envolvidas e também preservar a ordem pública na localidade. Especial atenção deve ser direcionada às vítimas de violência doméstica e de conflitos envolvendo pessoas vulneráveis.</p>
+<h3 class="subheading">6.1.10. Campanha Comunitária</h3>
+<p>Evento desenvolvido pelo policiamento ostensivo comunitário, com coordenação definida em reunião comunitária e supervisão dos Cmt OPM, destinados a mobilizar a comunidade em geral, envolvendo pessoas físicas ou jurídicas diretamente beneficiadas por questões locais de interesse da segurança pública.</p>
+<h3 class="subheading">6.1.11. Reunião Comunitária</h3>
+<p>Atividade organizada pelo policiamento ostensivo comunitário na qual são reunidas entidades públicas ou privadas, com ou sem fins lucrativos, lideranças comunitárias e demais partes interessadas nas questões afetas à segurança pública local, destinada a discutir as melhores alternativas de solução dos problemas que afetam determinada comunidade e definir ações a serem adotadas, visando à alteração do ambiente comunitário e à melhoria da qualidade de vida das pessoas.</p>
+<h3 class="subheading">6.1.12. Unidade Comunitária</h3>
+<p>Habitação de menor parcela da estrutura física da comunidade a ser abrangida pelo policiamento ostensivo comunitário, compreendendo desde acomodações habitadas individual ou coletivamente até estabelecimentos ou instalações públicas ou privadas situadas nas respectivas áreas de atuação. Será assim conceituada seja ela permanente ou temporária, utilizada como moradia ou para fins comerciais.</p>
+<p>6.2. Desenvolvimento:</p>
+<p>6.2.1. o policiamento ostensivo comunitário será executado na seguinte conformidade:</p>
+<p>6.2.1.1. de forma exclusiva, por intermédio de BCS, BCSD e BCM, juntamente com estruturas de apoio, mediante critérios de necessidade operacional e disponibilidade de meios, cujas estruturas serão vinculadas à Matriz Operacional I, devidamente descritas no respectivo Plano Diretor;</p>
+<p>6.2.1.2. pelos demais Programas de Policiamento e Atividades Operacionais Diversas, notadamente quando da execução de atividades atinentes ao policiamento ostensivo comunitário que caracterizem as visitas comunitárias ou solidárias, campanhas ou reuniões comunitárias.</p>
+<p>6.2.2. qualquer US empregada no policiamento ostensivo comunitário atuará no Nível de Resposta 1, sob a fiscalização do CFP, que será auxiliado pelo CGP;</p>
+<p>6.2.3. a coordenação do Programa de Policiamento Comunitário incumbe ao Cmt Cia PM, auxiliado pelos policiais militares de maior graduação designados para atuar em cada uma de suas estruturas.</p>
+<p>6.3. Estrutura e funcionamento das BCS, BCSD e BCM:</p>
+<p>6.3.1. BCS:</p>
+<p>6.3.1.1. a competência para deliberar sobre a instalação e desativação de BCS está vinculada ao Subcmt PM, que analisará propostas encaminhadas pelos Cmdo Pol;</p>
+<p>6.3.1.2. a condição prévia para sua instalação é a existência de apoio e envolvimento comunitário (lideranças, associações de bairros, CONSEG, etc.) que possa dar suporte ao empenho da Polícia Militar e garantir a sustentabilidade do funcionamento da BCS;</p>
+<p>6.3.1.3. deverá possuir viatura exclusiva à disposição para as atividades típicas do policiamento ostensivo comunitário, sistemas de informática, radiocomunicação e impressoras, bem como o seu efetivo deverá portar EPI completo;</p>
+<p>6.3.1.4. a quantidade de efetivo da BCS pode variar de acordo com as características da comunidade e disponibilidade de meios da OPM, devendo ser descrita no Plano Diretor previsto no subitem “6.2.1.1.”;</p>
+<p>6.3.1.5. a BCS pode tanto possuir sede própria quanto ser instalada em prédio ocupado por OPM (Btl, Cia PM, Pel PM ou Gp PM). Nesse caso, para efeito de planejamento, sua estrutura (efetivo e meios) deverá ser considerada à parte da existente na sede da OPM;</p>
+<p>6.3.1.6. o efetivo que nela presta serviços atua no atendimento ao público que a ela se dirige, inclusive lavrando Boletim de Ocorrência, e nos contatos com as comunidades abrangidas;</p>
+<p>6.3.1.7. suas dependências devem atender ao que estabelecem as I-23-PM (Instruções para Administração Logística e Patrimonial da Polícia Militar), I-38-PM (Instruções para a Administração de Bens Imóveis) e normas correlatas, principalmente no que tange à acomodação adequada do efetivo e do público atendido.</p>
+<p>6.3.2. BCSD:</p>
+<p>6.3.2.1. o Cmt Pol Metropol e os Cmt Pol Int são autoridades competentes para deliberar sobre a instalação e desativação de BCSD;</p>
+<p>6.3.2.2. será instalada em distritos municipais cuja distância do município sede da OPM dificulte o acesso rápido e pronto de US para atendimento ao público, observando-se os seguintes critérios:</p>
+<p>6.3.2.2.1. população, preferencialmente, superior a 2.000 habitantes;</p>
+<p>6.3.2.2.2. localidade distante mais de 10 quilômetros do município-sede;</p>
+<p>6.3.2.2.3. adoção antecipada das medidas legais e normativas para a regularização da instalação física da BCSD;</p>
+<p>6.3.2.2.4. será instalada somente nos distritos municipais em que o Cmt Cia PM, após criteriosa avaliação técnica, tenha-os considerado seguros para a ocupação do imóvel pela família do policial militar;</p>
+<p>6.3.2.3. deverá possuir viatura exclusiva à disposição para as atividades típicas do policiamento ostensivo comunitário, sistemas de informática, radiocomunicação e impressoras, bem como o policial militar deverá possuir EPI completo e rádio transceptor portátil (HT);</p>
+<p>6.3.2.4. para escolha do policial militar que atuará na BCSD, observar-se-á o seguinte:</p>
+<p>6.3.2.4.1. recomenda-se que conte com no mínimo 5 e no máximo 25 anos de serviço, sendo vedado o emprego de policial militar com menos de 2 anos de serviço em atividade própria de policiamento ostensivo;</p>
+<p>6.3.2.4.2. deve ter boa conduta e estar, no mínimo, no comportamento “bom”;</p>
+<p>6.3.2.4.3. deve ser voluntário, manifestando por escrito, via canal de comando, seu interesse em prestar serviços na BCSD;</p>
+<p>6.3.2.5. a OPM, após a devida comunicação à prefeitura local, suspenderá a permanência do policial militar na moradia funcional, em até 30 dias, nos casos de:</p>
+<p>6.3.2.5.1. exoneração, demissão ou expulsão das fileiras da Polícia Militar;</p>
+<p>6.3.2.5.2. falecimento;</p>
+<p>6.3.2.5.3. transferência de OPM;</p>
+<p>6.3.2.5.4. ingresso no comportamento “mau”.</p>
+<p>6.3.2.6. a cada 5 anos, o Cmt Cia PM deverá avaliar se o policial militar apresenta condições de permanecer na BCSD ou se deve ser substituído, caso outra circunstância ainda não o tenha exigido;</p>
+<p>6.3.2.7. quando de afastamentos regulares do policial militar, o Cmt Cia PM deverá designar um substituto, adotando os critérios do subitem “6.3.2.4.” e divisões para sua escolha, devendo apresentá-lo à comunidade do distrito, a fim de não haver solução de continuidade na prestação dos serviços;</p>
+<p>6.3.2.8. para afastar-se do distrito municipal por motivos particulares, durante o turno de serviço, o policial militar deverá solicitar autorização ao escalão superior;</p>
+<p>6.3.2.9. quando não estiver cumprindo o turno de serviço, mas necessitar afastar-se do distrito municipal, caberá ao policial militar somente cientificar o escalão superior mediante o meio de comunicação mais rápido, a ser definido pelo Cmt Cia PM;</p>
+<p>6.3.2.10. o patrulhamento preventivo nas áreas rurais pertencentes ao distrito não é considerado afastamento, devendo, porém, ser comunicado ao COPOM/CAD;</p>
+<p>6.3.2.11. somente será destinada viatura de apoio à BCSD depois de obtida a moradia e definido o policial militar que atuará na localidade;</p>
+<p>6.3.2.12. é proibida a participação de pessoas estranhas ao serviço policial-militar nas atividades administrativas e/ou operacionais da BCSD, salvo se contratadas pelo ente municipal para tais misteres e mediante conhecimento prévio do Cmt Cia PM.</p>
+<p>6.3.3. BCM:</p>
+<p>6.3.3.1. a Ptr Com será composta, no mínimo, por 3 policiais militares (encarregado, motorista e auxiliar), que poderá ser reforçada segundo critérios de necessidade operacional e disponibilidade de recursos humanos e materiais;</p>
+<p>6.3.3.2. cabe ao motorista realizar a segurança da BCM quando estiver estacionada;</p>
+<p>6.3.3.3. os policiais militares deverão ser providos de EPI completo, sendo necessário ao menos</p>
+<p>1 HT disponível para utilização pela Ptr Com;</p>
+<p>6.3.3.4. a BCM deverá ser empregada nos locais descritos em Cartão de Prioridade de Patrulhamento (CPP), após criteriosa avaliação do Cmt OPM;</p>
+<p>6.3.3.5. a mobilidade da viatura deve ser restrita aos deslocamentos entre a OPM e os Pontos de Estacionamento (PE), exceto eventual prestação de socorro de emergência e/ou atendimento de ocorrência ou incidente grave, sendo vedado o seu uso em patrulhamento motorizado, operações de controle de multidões, operações de bloqueio, preservação de local de crime e deslocamento para atendimento de ocorrências;</p>
+<p>6.3.3.6. qualquer atendimento de ocorrência deve ser priorizado pela Ptr Com a pé, evitando o empenho do motorista. Caso necessário, poderá ser solicitado o apoio dos demais Programas de Policiamento ou Atividades Operacionais Diversas disponíveis;</p>
+<p>6.3.3.7. o efetivo empregado na BCM deve estar em condições de prestar orientações gerais à população, inclusive sobre a localização de pontos específicos nas imediações de onde estiver atuando. Também deve atender ocorrências com as quais se deparar, independentemente de sua natureza, buscando sempre agir com presteza e eficiência.</p>
+<p>6.4. Estruturas e atividades de consolidação da filosofia de polícia comunitária:</p>
+<p>6.4.1. na execução do policiamento ostensivo comunitário desenvolvido de maneira complementar por qualquer US, nos termos do subitem “6.2.1.2.”, o policial militar designado para os demais Programas de Policiamento e Atividades Operacionais Diversas atuará em busca de respaldo, cooperação, parceria, participação e coleta de informações junto às respectivas comunidades;</p>
+<p>6.4.2. as atividades que caracterizem visitas comunitárias ou solidárias, campanhas ou reuniões comunitárias, mesmo que conduzidas por efetivo de outros Programas de Policiamento ou Atividades Operacionais Diversas, deverão ser coordenadas, supervisionadas e controladas pela respectiva OPM, de forma a produzir indicadores vinculados ao Programa de Policiamento Comunitário;</p>
+<p>6.4.3. a atuação das OPM junto aos CONSEG também caracteriza elemento fundamental para a integração de esforços em prol dos objetivos do Programa de Policiamento Comunitário, devendo ser estimulada a sua composição nas Áreas e Subáreas onde ainda não existam, sendo recomendável aos respectivos comandantes a indicação, por aclamação, de membros das diretorias, dentre as lideranças comunitárias sabidamente altruístas e envolvidas com a causa pública;</p>
+<p>6.4.4. nas localidades onde o CONSEG estiver atuando, todo o efetivo deve ser instado a exercer sua responsabilidade quanto à mobilização comunitária, envolvendo pessoas e entidades que possam contribuir com a segurança pública por meio de sugestões, informações, desenvolvimento de projetos de abrangência local, entre outras práticas de interesse. Essa responsabilidade se traduz em obrigação aos policiais militares empregados no Policiamento Comunitário, qualquer que seja a sua atividade;</p>
+<p>6.4.5. além disso, o Policiamento Comunitário contará com o apoio de outros programas institucionais e estruturas de apoio à consolidação da filosofia de polícia comunitária, que passam a ter relação direta com as políticas institucionais adotadas nesse sentido, entre as quais podem ser citados (entre outros):</p>
+<h3 class="subheading">6.4.5.1. Programa Vizinhança Solidária (PVS): estruturado segundo legislação e normas</h3>
+<p>próprias, sua atuação vai ao encontro dos objetivos estratégicos do Programa de Policiamento Comunitário, contribuindo com a adoção de práticas e produção de indicadores a serem positivamente explorados por todas as OPM, especialmente por meio de visitas comunitárias ou solidárias, bem como da mobilização dos integrantes/moradores, pessoal ou coletivamente junto às mídias sociais;</p>
+<p>6.4.5.2. Programa Educacional de Resistência às Drogas e à Violência (PROERD): desenvolvido com o propósito de inspirar jovens a se defenderem das drogas e da violência, afeta diretamente a comunidade escolar, produzindo resultados que coadunam com os objetivos do Policiamento Comunitário, gerando indicadores úteis para a sua consolidação;</p>
+<h3 class="subheading">6.4.5.3. Núcleo de Mediação Comunitária (NUMEC): também constituído segundo</h3>
+<p>normatização institucional, consiste em instalação policial-militar, que pode operar inclusive em BCS, BCSD ou BCM, destinada à mediação de conflitos, onde o policial militar, capacitado e formalmente habilitado, aplica técnicas para auxiliar as pessoas na autocomposição pacífica e consensual de seus interesses. O NUMEC pode ser estruturado para o desenvolvimento de mediação extrajudicial ou judicial, nos termos da Resolução CNJ nº 125/10 (instituiu a Política Judiciária Nacional de tratamento adequado dos conflitos de interesses), operando como Centro Judiciário de Solução de Conflitos e Cidadania (CEJUSC).</p>
+<p>6.5. Orientações gerais para a execução do Policiamento Comunitário:</p>
+<p>6.5.1. o policial militar empregado no policiamento ostensivo comunitário precisa de tempo suficiente para conquistar a confiança e desenvolver parcerias com a comunidade, sendo desaconselhável a sua substituição constante, sob pena de prejudicar os objetivos almejados;</p>
+<p>6.5.2. o policial militar deve estar apto a atuar em campo, coletando informações junto à comunidade em geral e, principalmente, às unidades comunitárias, entrevistando moradores e demais partes interessadas, de forma a obter indicadores úteis ao policiamento comunitário;</p>
+<p>6.5.3. o efetivo empregado no policiamento deve ser orientado a:</p>
+<p>6.5.3.1. conhecer as características da comunidade onde atua, estreitando vínculos com os cidadãos e com lideranças comunitárias de forma permanente, de modo que não haja solução de continuidade na interação entre a Polícia Militar e a comunidade;</p>
+<p>6.5.3.2. manter postura proativa, atuando com iniciativa na busca de soluções para quaisquer problemas que afetem a ordem pública e prejudiquem a qualidade de vida da comunidade em que está inserido, incluindo a elaboração de Relatório de Averiguação de Incidente Administrativo (RAIA), se for o caso;</p>
+<p>6.5.3.3. primar pela excelência na prestação dos serviços, o que exige adotar posturas receptivas a críticas e sugestões apresentadas pela comunidade, buscando sempre o seu devido encaminhamento.</p>
+<p>6.5.4. de forma a potencializar os resultados do policiamento comunitário, as OPM devem:</p>
+<p>6.5.4.1. estabelecer, mediante a elaboração de documento de Estado-Maior próprio, a sistemática semestral de atuação do Policiamento Comunitário quanto à realização de visitas comunitárias, visando coletar junto aos moradores as informações necessárias para o preenchimento dos questionários divulgados pela Coord Op PM;</p>
+<p>6.5.4.2. coordenar a realização de visitas comunitárias ou solidárias, campanhas ou reuniões comunitárias, adotando medidas de controle sobre o correto registro de informações junto ao SICoordOp;</p>
+<p>6.5.4.3. estimular a atuação dos CONSEG, Associações de Bairro, Centros de Integração da Cidadania (CIC) e outras entidades e lideranças comunitárias, a fim de otimizar a interface entre a Polícia Militar e a governança local como forma de promoção de qualidade de vida;</p>
+<p>6.5.4.4. estimular, em suas respectivas áreas de atuação, a criação de estruturas de PVS, NUMEC PM e NUMEC/CEJUSC, de modo a disponibilizar às comunidades importantes mecanismos de prevenção criminal e solução consensual de conflitos, com a finalidade de neutralizar a evolução de demandas inicialmente mais simples para ocorrências policiais;</p>
+<p>6.5.4.5. buscar o contínuo apoio da população, formando laços de estreita colaboração, confiança e respeito mútuo, visando sedimentar a imagem positiva da Polícia Militar e aumentar a percepção de segurança;</p>
+<p>6.5.4.6. como forma de interação junto à comunidade, estimular o patrulhamento a pé realizado pelo efetivo envolvido no Policiamento Comunitário, que deverá manter-se constantemente integrado às demais estruturas operacionais.</p>
+<p>6.6. Atribuições particulares:</p>
+<h3 class="subheading">6.6.1. Coord Op PM</h3>
+<p>6.6.1.1. monitorar e supervisionar, por meio do Guia de Indicadores dos Programas de Policiamento, o desenvolvimento do Programa de Policiamento Comunitário;</p>
+<p>6.6.1.2. dentre os indicadores de desempenho do Programa de Policiamento Comunitário, definir sistemática semestral de coleta de dados sobre percepção de segurança, bem como outros temas ligados à polícia comunitária, padronizando questionários a serem disseminados pelo efetivo envolvido no Policiamento Comunitário, conforme o subitem “6.5.2.”;</p>
+<p>6.6.1.3. promover os ajustes necessários para que o SICoordOp passe a receber as informações sobre visitas comunitárias, visitas solidárias, campanhas comunitárias e reuniões comunitárias;</p>
+<p>6.6.1.4. compartilhar com a DPCDH as informações sobre indicadores relacionados ao desenvolvimento do Programa de Policiamento Comunitário;</p>
+<p>6.6.1.5. desenvolver o planejamento estratégico e a regulação detalhada dos mecanismos de emprego do Programa de Policiamento Comunitário, em especial, das BCS, BCSD e</p>
+<h2 class="section-heading">BCM.</h2>
+<h3 class="subheading">6.6.2. CComSoc</h3>
+<p>Adotar as medidas necessárias para a confecção e impressão de Cartilhas do Policiamento Comunitário, voltadas à instrução do efetivo e divulgação à comunidade.</p>
+<h3 class="subheading">6.6.3. DPCDH</h3>
+<p>6.6.3.1. centralizar o cadastro atualizado das BCS e BCSD, tanto as que se encontram em funcionamento quanto as que tiverem sido desativadas, inclusive referente ao controle imobiliário;</p>
+<p>6.6.3.2. cadastrar e monitorar o emprego das BCM, apresentando ao Coord Op PM sugestões para regular o seu emprego operacional;</p>
+<p>6.6.3.3. para a atualização dos cadastros existentes, devem ser captados os dados registrados junto ao EM/PM;</p>
+<p>6.6.3.4. estabelecer junto à Coord Op PM sistemática de troca de informações sobre os indicadores relacionados ao desenvolvimento do Programa de Policiamento Comunitário;</p>
+<p>6.6.3.5. analisar e desenvolver estudos hábeis a subsidiar o Cmdo G sobre o desenvolvimento das atividades de Policiamento Comunitário, em todas as suas vertentes, nos termos desta Diretriz.</p>
+<h3 class="subheading">6.6.4. CPC, CPM e CPI</h3>
+<p>6.6.4.1. promover a instalação de BCS e BCSD, bem como o emprego de BCM, de forma racional e técnica, respeitadas as limitações operacionais e o equilíbrio com os demais Programas de Policiamento, especialmente os Primários, e Atividades Operacionais Diversas;</p>
+<p>6.6.4.2. acatar as determinações do Coord Op PM e orientações da DPCDH, otimizando o emprego dos recursos afetos ao Programa de Policiamento Comunitário aplicados de forma direta ou complementar.</p>
+<p>6.7. Prescrições Diversas:</p>
+<p>6.7.1. a filosofia de Polícia Comunitária, sobretudo no que se refere à aproximação comunitária, transcende o Programa de Policiamento Comunitário e se aplica a todo o Sistema Operacional de Policiamento PM;</p>
+<p>6.7.2. o efetivo destacado para atuar nas BCS, BCSD e BCM dever ser constantemente instruído sobre as normas e princípios que regem suas atividades;</p>
+<p>6.7.3. os Postos Policial-Militares (PPM) e as Bases Operacionais (BOp) deixam de integrar o Programa de Policiamento Comunitário, estando sujeitos à seguinte sistemática:</p>
+<p>6.7.3.1. no tocante aos PPM, as estruturas que se enquadrarem aos parâmetros descritos nesta Diretriz (vide subitem “6.3.1.” e divisões) passarão a ser denominadas BCS, sendo que as demais irão constituir mecanismos de suporte à Matriz Operacional I, sendo consideradas Atividades Operacionais Diversas (assim como o policiamento ostensivo em fóruns, plataformas elevadas, etc.);</p>
+<p>6.7.3.2. o Cmt OPM que não tenha interesse em manter antiga estrutura de PPM em funcionamento deverá desativá-la, de acordo com as I-38-PM (Instruções para a Administração de Bens Imóveis) e legislação vigente, mediante aprovação do respectivo Cmdo Pol Int/Área e gestão junto às autoridades e lideranças comunitárias locais;</p>
+<p>6.7.3.3. quanto às BOp, compostas sob a responsabilidade do CPAmb, CPRv e CPTran, funcionarão mediante os parâmetros próprios estabelecidos por estes Cmdo Pol.</p>
+<p>6.7.5. revogam-se as disposições em contrário, em especial:</p>
+<p>6.7.5.1. Nota de Instrução nº PM3-004/02/97, de 10DEZ97 (Polícia Comunitária);</p>
+<p>6.7.5.2. Diretriz nº PM3-015/02/05, de 07NOV05 (Programa de Policiamento Comunitário);</p>
+<h3 class="subheading">6.7.5.3. Ordem de Serviço nº PM3-001/02/15-Circular, de 07MAI15 (Criação e desativação de</h3>
+<h2 class="section-heading">BCS).</h2>
+<p>Assinado no original</p>
+<h2 class="section-heading">FERNANDO ALENCAR MEDEIROS</h2>
+<p>Cel PM Comandante-Geral ANEXOS: A – Processo de Instalação e Desativação de BCS; B – Processo de Instalação e Desativação de BCSD.</p>
+<h2 class="section-heading">DISTRIBUIÇÃO</h2>
+<p>Subcmt PM, Subch EM/PM ........................................................................................................... 2 Gab Cmt G, Coord Op PM, Correg PM, CIPM, CComSoc e CAJ................................................ 6 1ª, 3ª, 4ª e 6ª EM/PM...................................................................................................................... 4 DL, DTIC, DF, DEC, DS, DPCDH e DP....................................................................................... 7 CPC, CPM, CPI 1 a 10, CPAmb, CPChq, CPRv, CPTran, CAvPM e CCB................................ 18 CPA/M-1 a 12 e COPOM............................................................................................................. 13 CMil, Assessorias e DSA/CG....................................................................................................... 13 Arquivo........................................................................................................................................... 1 Total...............................................................................................................................................64</p>
+<p>“Nós, Policiais Militares, sob a proteção de Deus, estamos compromissados com a defesa da Vida, da Integridade Física e da Dignidade da Pessoa Humana.”</p>
+<h2 class="section-heading">SÃO PAULO-SP</h2>
+<h2 class="section-heading">120945MAR20</h2>
+<h2 class="section-heading">PROGRAMA DE POLICIAMENTO COMUNITÁRIO</h2>
+<h2 class="section-heading">ANEXO “A” À DIRETRIZ Nº PM3-005/02/20</h2>
+<h2 class="section-heading">PROCESSO DE INSTALAÇÃO E DESATIVAÇÃO DE BASE COMUNITÁRIA DE</h2>
+<h2 class="section-heading">SEGURANÇA (BCS)</h2>
+<p>1. INSTALAÇÃO:</p>
+<p>1.1. o processo será instruído pelo Cmt Btl com responsabilidade territorial sobre a respectiva Área, que se manifestará pela instalação ou não da BCS, expondo os motivos técnicos e operacionais, observados os critérios estabelecidos nesta Diretriz;</p>
+<p>1.2. caso a documentação de origem seja proveniente do Gab Cmt G, a 3ª EM/PM fará chegar ao respectivo Btl, via canal de comando;</p>
+<p>1.3. após formalizada a manifestação do Cmt Btl, o processo deverá ser encaminhado, via canal de comando, ao respectivo Gde Cmdo (CPC, CPM ou CPI), para emissão de parecer que irá subsidiar decisão do Subcmt PM;</p>
+<p>1.4. o Subcmt PM, ao receber o expediente instruído pela 3ª EM/PM, decidirá pela instalação ou não da BCS, cabendo adoção posterior das seguintes providências:</p>
+<p>1.4.1. sendo a decisão desfavorável à instalação da BCS:</p>
+<p>1.4.1.1. restituição do processo à autoridade policial-militar que lhe deu origem (Ch Gab Cmt G ou Cmt OPM Territorial);</p>
+<p>1.4.1.2. a autoridade policial-militar que deu origem ao processo ficará incumbida de formalizar expediente que exponha ao interessado as razões pela não instalação da BCS, arquivando cópia digitalizada da documentação.</p>
+<p>1.4.2. sendo a decisão favorável à instalação da BCS:</p>
+<p>1.4.2.1. restituição do processo à autoridade policial-militar que lhe deu origem (Ch Gab Cmt G ou Cmt OPM Territorial);</p>
+<p>1.4.2.2. a autoridade policial-militar que deu origem ao processo ficará incumbida de formalizar expediente cientificando o interessado que a BCS será instalada;</p>
+<p>1.4.2.3. o Gde Cmdo onde a BCS será instalada (CPC, CPM ou CPI) deverá adotar providências para a regularização da edificação, notadamente quando se tratar de imóvel específico, providenciando documentação diretamente à DF, via CIAP;</p>
+<p>1.4.2.4. o CIAP adotará as providências prescritas nas I-38-PM no tocante à visita técnica e à vistoria do imóvel, informando o Gde Cmdo quando apresentar plenas condições para o funcionamento da BCS;</p>
+<p>1.4.2.5. a 1ª EM/PM e a 4ª EM/PM poderão orientar as OPM envolvidas no processo, via canal técnico, quanto às providências relativas a eventuais convênios e regularização de documentos;</p>
+<p>1.4.2.6. após a regularização estrutural e documental do imóvel, o Gde Cmdo, por intermédio das respectivas OPM subordinadas, poderá dar início às atividades da BCS, alocando os recursos humanos e materiais necessários ao seu funcionamento, a serem registrados no Plano Diretor;</p>
+<p>1.4.2.7. toda a documentação relativa à regularização do imóvel permanecerá arquivada sob a responsabilidade do Cmt Btl, junto à respectiva Seção de Logística. Para fins de controle, a Cia PM onde estiver instalada a BCS deverá manter arquivo digital dos autos;</p>
+<p>1.4.2.8. cópia digital dos expedientes que formalizaram a instalação e o funcionamento da BCS deverá ser encaminhada ao Subcmt PM, via 4ª EM/PM, para o devido controle, independente se a BCS irá funcionar em imóvel específico ou junto a alguma OPM (Btl, Cia, Pel ou Gp PM);</p>
+<p>1.4.2.9. a 4ª EM/PM encaminhará cópia de todo o processo à DPCDH, incumbida de manter o cadastro atualizado das BCS em funcionamento e o controle sobre as suas atividades.</p>
+<p>2. DESATIVAÇÃO:</p>
+<p>2.1. a principal premissa para a desativação da BCS envolverá, obrigatoriamente, gestões antecipadas junto às autoridades públicas locais e às lideranças comunitárias, apresentando as intenções e os motivos da OPM local. Tais providências deverão envolver frentes diversas, visando alcançar o maior número possível de integrantes das comunidades a serem afetadas, de forma a mitigar o impacto negativo caso a medida seja efetivada;</p>
+<p>2.2. a desativação da BCS será instruída pelo Cmt Btl, que deverá fundamentar a proposta, evidenciando as providências prévias adotadas, com base em documentos comprobatórios elaborados com riqueza de detalhes (atas de reuniões, matérias jornalísticas, etc.), além de outros motivos técnicos e operacionais, que deverão incluir, obrigatoriamente, a análise sobre os indicadores criminais e de produtividade policial;</p>
+<p>2.3. o processo será remetido, via canal de comando, ao respectivo Gde Cmdo (CPC, CPM, CPI), para emissão de parecer que irá subsidiar decisão do Subcmt PM;</p>
+<p>2.4. o Subcmt PM, ao receber o expediente instruído pela 3ª EM/PM, decidirá pela desativação ou não da BCS, cabendo adoção posterior das seguintes providências:</p>
+<p>2.4.1. sendo mantida a BCS, o processo deverá ser restituído e arquivado junto à OPM de origem;</p>
+<p>2.4.2. sendo a deliberação favorável à desativação da BCS:</p>
+<p>2.4.2.1. a 4ª EM/PM registrará e arquivará o processo, cientificando o respectivo Gde Cmdo e a</p>
+<h2 class="section-heading">DPCDH;</h2>
+<p>2.4.2.2. o Gde Cmdo, por intermédio das respectivas OPM subordinadas, deverá adotar todas as providências para o encerramento das atividades da BCS e realocação dos recursos humanos e materiais, garantindo a descaracterização do imóvel e a manutenção dos serviços policial-militares prestados às comunidades afetadas;</p>
+<p>2.4.2.3. a DPCDH atualizará o cadastro das BCS em funcionamento.</p>
+<p>Assinado no original</p>
+<h2 class="section-heading">MARCUS VINICIUS VALÉRIO</h2>
+<p>Cel PM Subcomandante</p>
+<p>“Nós, Policiais Militares, sob a proteção de Deus, estamos compromissados com a defesa da Vida, da Integridade Física e da Dignidade da Pessoa Humana.”</p>
+<h2 class="section-heading">SÃO PAULO-SP</h2>
+<h2 class="section-heading">120945MAR20</h2>
+<h2 class="section-heading">PROGRAMA DE POLICIAMENTO COMUNITÁRIO</h2>
+<h2 class="section-heading">ANEXO “B” À DIRETRIZ Nº PM3-005/02/20</h2>
+<h2 class="section-heading">PROCESSO DE INSTALAÇÃO E DESATIVAÇÃO DE BASE COMUNITÁRIA DE</h2>
+<h2 class="section-heading">SEGURANÇA DISTRITAL (BCSD)</h2>
+<h2 class="section-heading">1. INSTALAÇÃO</h2>
+<p>1.1. preliminarmente, a proposta, qualquer que seja a sua origem, deverá indicar o imóvel a ser ocupado, necessariamente disponibilizado pela respectiva Prefeitura Municipal, ainda que subsidiada por outro órgão ou entidade pública ou privada, mediante prévia celebração de convênio entre o Estado e Município, nos termos das I-27-PM (Instruções sobre Convênios da Polícia Militar);</p>
+<p>1.2. o processo será instruído pelo Cmt Btl com responsabilidade territorial sobre a respectiva Área, que se manifestará pela instalação ou não da BCSD expondo os motivos técnicos e operacionais, observados os critérios estabelecidos nesta Diretriz;</p>
+<p>1.3. caso a documentação de origem seja proveniente do Gab Cmt G, a 3ª EM/PM fará chegar ao respectivo Btl, via canal de comando;</p>
+<p>1.4. após formalizada a manifestação do Cmt Btl, o processo deverá ser encaminhado, via canal de comando, ao Cmt Pol Metropol ou Cmt Pol Int, que decidirá pela instalação ou não da BCSD, cabendo adoção posterior das seguintes providências:</p>
+<p>1.4.1. sendo a decisão desfavorável à instalação da BCSD:</p>
+<p>1.4.1.1. restituição do processo à autoridade policial-militar que lhe deu origem (Ch Gab Cmt G ou Cmt OPM Territorial);</p>
+<p>1.4.1.2. a autoridade policial-militar que deu origem ao processo ficará incumbida de formalizar expediente que exponha ao interessado as razões pela não instalação da BCSD, arquivando cópia digitalizada da documentação.</p>
+<p>1.4.2. sendo a decisão favorável à instalação da BCSD:</p>
+<p>1.4.2.1. restituição do processo à autoridade policial-militar que lhe deu origem (Ch Gab Cmt G ou Cmt OPM Territorial);</p>
+<p>1.4.2.2. a autoridade policial-militar que deu origem ao processo ficará incumbida de formalizar expediente cientificando o interessado que a BCSD será instalada;</p>
+<p>1.4.2.3. a documentação atinente ao convênio a que se refere o subitem “1.1.” deste Anexo deverá ser submetida formalmente à apreciação da 1ª EM/PM, que orientará a OPM sobre a formalização do devido instrumento legal;</p>
+<p>1.4.2.4. simultaneamente, o Gde Cmdo onde a BCSD será instalada (CPM ou CPI) deverá adotar providências para a regularização da edificação, notadamente quando se tratar de imóvel específico, providenciando documentação diretamente à DF, via CIAP;</p>
+<p>1.4.2.5. o CIAP adotará as providências prescritas nas I-38-PM no tocante à visita técnica e à vistoria do imóvel, informando o Gde Cmdo quando apresentar plenas condições para o funcionamento da BCSD;</p>
+<p>1.4.2.6. a 4ª EM/PM poderá orientar as OPM envolvidas no processo, via canal técnico, quanto às providências relativas à regularização de documentos;</p>
+<p>1.4.2.7. após a regularização estrutural e documental do imóvel, o Gde Cmdo, por intermédio das respectivas OPM subordinadas, poderá dar início às atividades da BCSD, alocando os recursos humanos e materiais necessários ao seu funcionamento, a serem registrados no Plano Diretor;</p>
+<p>1.4.2.8. toda a documentação relativa à regularização do imóvel permanecerá arquivada sob a responsabilidade do Cmt Btl, junto à respectiva Seção de Logística. Para fins de controle, a Cia PM onde estiver instalada a BCSD deverá manter arquivo digital dos autos;</p>
+<p>1.4.2.9. cópia digital dos expedientes que formalizaram a instalação e o funcionamento da BCSD deverá ser encaminhada ao Subcmt PM, via 4ª EM/PM, para o devido controle;</p>
+<p>1.4.2.10. a 4ª EM/PM encaminhará cópia de todo o processo à DPCDH, incumbida de manter o cadastro atualizado das BCSD em funcionamento e o controle sobre as suas atividades.</p>
+<h2 class="section-heading">2. DESATIVAÇÃO</h2>
+<p>2.1. a principal premissa para a desativação da BCSD envolverá, obrigatoriamente, gestões antecipadas junto às autoridades públicas locais e às lideranças comunitárias, apresentando as intenções e os motivos da OPM local. Tais providências deverão envolver frentes diversas, visando alcançar o maior número possível de integrantes das comunidades a serem afetadas, de forma a mitigar o impacto negativo caso a medida seja efetivada;</p>
+<p>2.2. a desativação da BCSD será instruída pelo Cmt Btl, que deverá fundamentar a proposta, evidenciando as providências prévias adotadas, com base em documentos comprobatórios elaborados com riqueza de detalhes (atas de reuniões, matérias jornalísticas, etc.), além de outros motivos técnicos e operacionais, que deverão incluir, obrigatoriamente, a análise sobre os indicadores criminais e de produtividade policial;</p>
+<p>2.3. o processo será remetido, via canal de comando, ao Cmt Pol Metropol ou Cmt Pol Int, que decidirá pela desativação ou não da BCSD, cabendo adoção posterior das seguintes providências:</p>
+<p>2.3.1. sendo mantida a BCSD, o processo deverá ser restituído e arquivado junto à OPM de origem;</p>
+<p>2.3.2. sendo a deliberação favorável à desativação da BCSD:</p>
+<p>2.3.2.1. a 4ª EM/PM registrará e arquivará o processo, cientificando o respectivo Gde Cmdo e a</p>
+<h2 class="section-heading">DPCDH;</h2>
+<p>2.3.2.2. o Gde Cmdo, por intermédio das respectivas OPM subordinadas, deverá adotar todas as providências para o encerramento das atividades da BCSD e realocação dos recursos humanos e materiais, garantindo a descaracterização do imóvel e a manutenção dos serviços policial-militares prestados às comunidades afetadas;</p>
+<p>2.3.2.3. a DPCDH atualizará o cadastro das BCSD em funcionamento.</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Programa de Policiamento Comunitário neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Programa de Policiamento Comunitário</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Programa de Policiamento Comunitário são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-policiamento-comunitario-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Programa de Policiamento Comunitário? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Programa de Policiamento Comunitário, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Programa de Policiamento Comunitário foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>

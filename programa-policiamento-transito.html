@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Programa de Policiamento de Trânsito — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Operacionais</div><h1>Programa de Policiamento de Trânsito</h1><p>Diretriz nº PM3-006/02/20 · Texto para estudo. Confira a fonte oficial e eventuais alterações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO">
+<h2 class="section-heading">PROGRAMA DE POLICIAMENTO DE TRÂNSITO</h2>
+<p>DIRETRIZ Nº PM3-006/02/20</p>
+<h2 class="section-heading">1. REFERÊNCIAS</h2>
+<p>1.1. Lei nº 9.503, de 23SET97 – Código de Trânsito Brasileiro (CTB);</p>
+<p>1.2. Decreto Estadual nº 57.491, de 04NOV11 – Autoriza o Secretário da Segurança Pública e o Secretário de Gestão Pública a representar conjuntamente o Estado na celebração de convênios com Municípios paulistas, objetivando a execução de serviços de engenharia, fiscalização, policiamento e controle de tráfego e trânsito nas vias terrestres municipais;</p>
+<p>1.3. M-2-PM – Manual de Policiamento de Trânsito Urbano;</p>
+<p>1.4. Manual Brasileiro de Fiscalização de Trânsito – Volumes I e II (Aprovados, respectivamente, pelas Resoluções do CONTRAN nº 371, de 10DEZ10, e nº 561, de 15OUT15);</p>
+<p>1.5. Diretriz nº PM3-001/02/20, de 06MAR20 – Normas para o Sistema Operacional de Policiamento PM (NORSOP).</p>
+<h2 class="section-heading">2. FINALIDADE</h2>
+<p>Regular o desenvolvimento do Programa de Policiamento de Trânsito (PPT) e estabelecer parâmetros gerais para a realização do policiamento ostensivo de trânsito, urbano e rodoviário, em todo o Estado de São Paulo.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p>3.1. a competência da Polícia Militar para o policiamento ostensivo de trânsito urbano e rodoviário, prevista no art. 3º do Decreto-lei nº 667, de 02JUL69, nos números 21 e 27 do art. 2º do Decreto Federal nº 88.777, de 30SET83 (R-200), e no art. 3º, parágrafo único, números 2 e 7 da Lei Estadual nº 616, de 17DEZ74, foi recepcionada pela Constituição Federal, como decorrente das missões estampadas no art. 144, § 5º, e reafirmada pelo CTB, que, em seu Anexo I, definiu Policiamento Ostensivo de Trânsito como função exercida pelas Polícias Militares;</p>
+<p>3.2. entretanto, o legislador de trânsito, ao prescrever a competência das Polícias Militares como integrantes do Sistema Nacional de Trânsito, limitou o exercício da fiscalização de trânsito à existência de convênio com os órgãos e entidades executivos de trânsito e rodoviários (inciso III do artigo 23 do CTB), do que se conclui que, apesar de reconhecida sua missão no campo da segurança viária, necessária se faz a existência de convênio específico para a fiscalização e controle do cumprimento das normas de trânsito, a fim de possibilitar a correspondente imposição de sanções administrativas pelos órgãos competentes, o que pode ocorrer de maneira exclusiva ou concorrente com os demais agentes credenciados;</p>
+<p>3.3. não obstante, incumbe à Polícia Militar capacitar e especializar o efetivo de todos os Programas de Policiamento e Atividades Policiais Diversas para garantir a segurança viária e executar atividades de prevenção e fiscalização de polícia sobre usuários das vias públicas, especialmente os policiais militares que executam tais atividades de maneira dedicada.</p>
+<h2 class="section-heading">4. OBJETIVOS</h2>
+<p>4.1. prevenir e reprimir infrações administrativas e/ou penais em via pública;</p>
+<p>4.2. garantir a obediência às normas relativas à segurança do trânsito, priorizando a orientação aos usuários das vias públicas;</p>
+<p>4.3. proteger a vida e a incolumidade física das pessoas em via pública;</p>
+<p>4.4. assegurar a livre circulação de veículos e pedestres.</p>
+<h2 class="section-heading">5. MISSÃO</h2>
+<p>O CPC, CPM, CPI, CPTran e CPRv executarão o policiamento ostensivo de trânsito nas vias públicas do Estado de São Paulo, nos termos desta Diretriz, podendo as OPM Territoriais, conforme necessidades operacionais e disponibilidade de meios, desenvolver o Programa de Policiamento de Trânsito (PPT).</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<p>6.1. Conceituação:</p>
+<p>6.1.1. Policiamento Ostensivo de Trânsito (Urbano ou Rodoviário) Tipo de policiamento ostensivo executado em vias terrestres abertas à livre circulação, com o objetivo de prevenir e reprimir atos relacionados com a segurança pública e de garantir obediência às normas relativas à segurança de trânsito, assegurando a livre circulação e evitando acidentes.</p>
+<p>6.1.2. Programa de Policiamento de Trânsito (PPT) Programa que tem por objetivo organizar o desenvolvimento do Policiamento Ostensivo de Trânsito.</p>
+<p>6.1.3. Fiscalização de Trânsito Ato de controlar o cumprimento das normas estabelecidas na legislação de trânsito, por meio do poder de polícia administrativa de trânsito, no âmbito de circunscrição dos órgãos e entidades executivos de trânsito e de acordo com as competências definidas no CTB.</p>
+<p>6.1.4. Ocorrência de trânsito Constitui ocorrência de trânsito fato ou ato causador de lesão ou ameaça de lesão ao valor protegido pela ordem jurídica que diz respeito, direta ou indiretamente, ao uso das vias terrestres, abertas à circulação, por pessoas, animais ou veículos, isolados ou em grupos, conduzidos ou não, para os fins de circulação, parada e estacionamento.</p>
+<p>6.2. Princípios do Policiamento de Trânsito:</p>
+<p>6.2.1. Princípio da proteção prioritária à vida e à incolumidade física das pessoas: a ordem, o consentimento, a fiscalização e as medidas administrativas e coercitivas adotadas pelo policial militar terão por objetivo prioritário a proteção à vida e à incolumidade física das pessoas. A segurança deve sempre prevalecer, mesmo sobre a fluidez do tráfego de veículos, cabendo especial atenção à segurança e à mobilidade dos pedestres;</p>
+<p>6.2.2. Princípio da predominância do caráter educativo-preventivo: as ações do policiamento ostensivo de trânsito devem objetivar a orientação antecipada aos usuários da via quanto à sua correta utilização, de maneira segura e livre de interferências. As medidas de natureza repressiva devem ser entendidas como providências complementares, a serem adotadas sempre que se constatar o descumprimento intencional da legislação de trânsito;</p>
+<p>6.2.3. Princípio da obrigatoriedade: uma vez constatada a inobservância de qualquer dispositivo da legislação de trânsito, caracterizada como infração de trânsito, é obrigatória a autuação por parte do policial militar, a qual, apenas por motivo de força maior plenamente justificado ou impossibilidade absoluta determinada pela necessidade de adoção de medida destinada a garantir a segurança do trânsito, poderá deixar de ser lavrada.</p>
+<p>6.3. Desenvolvimento:</p>
+<p>6.3.1. a Polícia Militar, em cumprimento às suas atribuições legais e conforme as necessidades que lhe são impostas, executará o policiamento ostensivo de trânsito na seguinte conformidade:</p>
+<p>6.3.1.1. nas vias sob a responsabilidade dos municípios:</p>
+<p>6.3.1.1.1. na Capital:</p>
+<p>6.3.1.1.1.1. pelas OPM subordinadas ao CPTran, cujas estruturas estão vinculadas à Matriz Operacional III, devidamente descritas nos Quadros Particulares de Organização (QPO) e distribuídas conforme descrição no respectivo Plano Diretor;</p>
+<p>6.3.1.1.1.2. pelas OPM subordinadas ao CPC:</p>
+<p>6.3.1.1.1.2.1. por meio de recursos humanos e materiais destinados especificamente para atuar no PPT, como parte integrante da Matriz Operacional I, observados os critérios de necessidade operacional e disponibilidade de meios, desde que devidamente consignados nos Planos Diretores, após preenchidos os requisitos estabelecidos no subitem “6.7.1.” desta Diretriz;</p>
+<p>6.3.1.1.1.2.2. mediante o empenho ocasional ou programado de US dos demais Programas de Policiamento e Atividades Operacionais Diversas, desde que as atividades próprias por eles executadas não sofram solução de continuidade.</p>
+<p>6.3.1.1.2. na Região Metropolitana e Interior:</p>
+<p>6.3.1.1.2.1. prioritariamente, pelas OPM subordinadas ao CPM e CPI, observados os seguintes parâmetros:</p>
+<p>6.3.1.1.2.1.1. por meio de recursos humanos e materiais destinados especificamente para atuar no PPT, como parte integrante da Matriz Operacional I, observados os critérios de necessidade operacional e disponibilidade de meios, desde que devidamente consignados nos Planos Diretores, após preenchidos os requisitos estabelecidos no subitem “6.7.1.” desta Diretriz;</p>
+<p>6.3.1.1.2.1.2. mediante o empenho ocasional ou programado de US dos demais Programas de Policiamento e Atividades Operacionais Diversas desenvolvidos em seus respectivos territórios, desde que as atividades próprias por eles executadas não sofram solução de continuidade.</p>
+<p>6.3.1.1.2.2. excepcionalmente, pelo CPTran, em operações policial-militares próprias ou em apoio ou reforço à execução do policiamento ostensivo de trânsito em circunstâncias especiais, quando ocorrerem carências técnicas apresentadas pelas OPM Territoriais.</p>
+<p>6.3.1.2. nas vias sob a responsabilidade do Estado: pelas OPM subordinadas ao CPRv, em todo o Estado de São Paulo, conforme convênio vigente.</p>
+<p>6.3.2. a atuação do policiamento ostensivo de trânsito deve pautar-se na organização sistêmica e integrada, de modo que todas as US empregadas neste tipo de policiamento estejam interligadas por radiocomunicação e dispostas no terreno de modo a assegurar o apoio efetivo e eficaz a cada integrante desse sistema;</p>
+<p>6.3.3. o policiamento ostensivo de trânsito deverá ser planejado de forma a garantir sua destinação precípua às ações voltadas à segurança e fluidez viária, atentando para os seguintes locais e/ou regiões:</p>
+<p>6.3.3.1. na execução do policiamento ostensivo de trânsito urbano:</p>
+<p>6.3.3.1.1. áreas comerciais, terminais de ônibus e outras de grande concentração de pessoas (ex.: feiras livres, festividades, locais de eventos, etc.);</p>
+<p>6.3.3.1.2. perímetros escolares, mormente dos estabelecimentos de ensino atendidos pelo Programa de Policiamento Escolar, no período de entrada e saída dos alunos, visando principalmente à segurança dos pedestres, coordenando a travessia das vias, prevenindo, impedindo e coibindo as infrações de trânsito;</p>
+<p>6.3.3.1.3. locais de crime e ou de acidente de trânsito, preservando-o, se necessário, nos termos da regulamentação vigente e evitando a aglomeração de veículos e pessoas;</p>
+<p>6.3.3.1.4. locais de concentração de bares, casas de espetáculos noturnos e espaços para eventos e shows próximos às rodovias ou vias de grande circulação;</p>
+<p>6.3.3.1.5. principais corredores viários.</p>
+<p>6.3.3.2. na execução do policiamento ostensivo de trânsito rodoviário:</p>
+<p>6.3.3.2.1. principais trechos de rodovias, notadamente os que estão localizados próximo às áreas ou assentamentos urbanos e que possuem grande circulação de veículos de transporte coletivo e/ou pedestres;</p>
+<p>6.3.3.2.2. locais com altos índices de acidentes de trânsito rodoviários;</p>
+<p>6.3.3.2.3. regiões de grande circulação de veículos pesados e/ou com altos índices de furto/roubo de carga;</p>
+<p>6.3.3.2.4. vias próximas a locais de eventos e praças de pedágio.</p>
+<p>6.4. Emprego:</p>
+<p>6.4.1. as US de OPM Territorial designadas para atuar especificamente no PPT (vide subitens “6.3.1.1.1.2.2.” e “6.3.1.1.2.1.2.”) serão compostas por 2 policiais militares, podendo atuar em Patrulhas a pé ou em viaturas de 2 ou 4 rodas, conforme previsão no respectivo Plano Diretor;</p>
+<p>6.4.2. aplicam-se a todas as US que executam o policiamento ostensivo de trânsito (CPTran, CPRv e OPM Territoriais, nos termos do subitem “6.3.1.” e divisões) os seguintes parâmetros:</p>
+<p>6.4.2.1. deverão portar EPI completo, colete refletivo, bissaca (porta-talões), apito e, se possível, rádio transceptor portátil (HT);</p>
+<p>6.4.2.2. sua atuação será direcionada por meio de Cartão de Prioridade de Patrulhamento (CPP), elaborado com base nas necessidades identificadas pelo comando da respectiva OPM durante o desenvolvimento do Plano de Policiamento Inteligente (PPI);</p>
+<p>6.4.2.3. além de executarem as atividades de policiamento ostensivo de trânsito (orientação, fiscalização, autuação, remoção, etc.), deverão prestar o primeiro atendimento a todas as ocorrências com as quais se depararem, independentemente de suas naturezas. Contudo, a US deverá:</p>
+<p>6.4.2.3.1. nas ocorrências afetas à legislação de trânsito, executar todos os procedimentos operacionais e administrativos a ela inerentes, visando à solução dos fatos ocorridos;</p>
+<p>6.4.2.3.2. nas ocorrências não relacionadas à legislação de trânsito e desde que não seja caso de flagrante delito, verificar com o respectivo CFP ou CGP a viabilidade de, após o atendimento inicial, determinar que US de outro Programa de Policiamento prossiga no atendimento.</p>
+<p>6.4.2.4. as US do CPC, CPM e CPI pertencentes a outros Programas de Policiamento (subitens “6.3.1.1.1.2.1.” e “6.3.1.1.2.1.1.”), durante o período de atuação exclusiva no policiamento ostensivo de trânsito, poderão, a critério da autoridade policial-militar competente, operar no Status de Viatura “3” (vide M-16-PM);</p>
+<p>6.4.2.5. as US pertencentes ao CPTran e CPRv serão empregadas:</p>
+<p>6.4.2.5.1. ordinariamente, no Nível de Resposta 1, para a execução de atividades típicas do policiamento ostensivo de trânsito urbano e rodoviário, respectivamente;</p>
+<p>6.4.2.5.2. excepcionalmente, em ações, operações ou missões policial-militares que caracterizam a atuação no Nível de Resposta 4, isto é, fornecendo apoio especializado a qualquer US.</p>
+<p>6.4.3. orientações gerais para atuação do policial militar:</p>
+<p>6.4.3.1. nos deslocamentos, paradas e em pontos de estacionamento, além das atividades previstas em normas específicas, o policial militar deverá permanecer atento ao fluxo de veículos e pedestres nas vias públicas, observando:</p>
+<p>6.4.3.1.1. potenciais situações de risco à vida e à incolumidade física das pessoas, intervindo imediatamente, sempre que possível;</p>
+<p>6.4.3.1.2. potenciais situações de prejuízo à livre circulação de veículos, sejam as determinadas por obstáculos, sejam as decorrentes de comportamentos inadequados de condutores e pedestres, atuando na remoção do obstáculo ou na orientação ao tráfego, de maneira a garantir a fluidez com segurança;</p>
+<p>6.4.3.1.3. o comportamento dos condutores de veículos, identificando as práticas contrárias à legislação de trânsito e autuando-os sem comprometimento às atividades precedentes e da segurança própria e de terceiros;</p>
+<p>6.4.3.1.4. as condições das vias e da sinalização, providenciando o acionamento dos órgãos responsáveis por eventuais reparos que se façam necessários, por intermédio do COPOM/CAD e, quando for o caso, elaborando o respectivo Relatório de Averiguação de Incidente Administrativo (RAIA).</p>
+<p>6.4.3.2. a atuação do policial militar no policiamento ostensivo de trânsito também deve estar direcionada à orientação dos usuários da via quanto aos seus deslocamentos, de forma a alertá-los acerca das condições de segurança.</p>
+<p>6.5. Instrução e treinamento:</p>
+<p>6.5.1. o efetivo empregado no policiamento ostensivo de trânsito deverá ser devidamente preparado e instruído para a:</p>
+<p>6.5.1.1. fiscalização de trânsito e fluidez viária, conforme as competências próprias do Estado e as delegadas pelo município mediante convênio;</p>
+<p>6.5.1.2. execução de operações policial-militares que visem aos objetivos do PPT;</p>
+<p>6.5.1.3. realização de outras atividades atinentes à execução do programa.</p>
+<p>6.5.2. como critério para indicação de policiais militares ao exercício das missões relacionadas ao PPT, recomenda-se preferência àqueles que possuem habilidades e competências específicas desenvolvidas em cursos ou estágios na Instituição.</p>
+<p>6.6. Atribuições particulares:</p>
+<p>6.6.1. Coord Op PM Monitorar e supervisionar, por meio do Guia de Indicadores dos Programas de Policiamento, o desenvolvimento do PPT.</p>
+<p>6.6.2. CPTran</p>
+<p>6.6.2.1. desenvolver o policiamento ostensivo de trânsito urbano na Capital, suprindo eventuais carências das OPM Territoriais no que se relacionar às competências de atuação na seara afeta à legislação de trânsito;</p>
+<p>6.6.2.2. planejar e executar, quando necessário, nas demais regiões do Estado, o policiamento ostensivo de trânsito urbano, atuando de modo complementar e em apoio às atividades de polícia ostensiva e de preservação da ordem pública desencadeadas pelas OPM Territoriais;</p>
+<p>6.6.2.3. responsabilizar-se pela fixação e difusão da doutrina nas questões afetas às atividades de policiamento de trânsito urbano, apresentando, nessa seara, entre outras, proposta de instituição e/ou aprimoramento de procedimentos operacionais de emprego do efetivo policial-militar;</p>
+<p>6.6.2.4. atuar como representante da Polícia Militar junto ao órgão executivo de trânsito estadual e da Capital, a fim de solucionar problemas relativos aos eventuais convênios, assessorando o Cmdo G;</p>
+<p>6.6.2.5. designar policiais militares para ministrarem palestras sobre assuntos pertinentes à legislação de trânsito, mediante solicitação dos G Cmdo;</p>
+<p>6.6.2.6. com base nesta Diretriz, regular os pormenores acerca da atuação de suas OPM subordinadas na seara afeta ao policiamento ostensivo de trânsito urbano.</p>
+<p>6.6.3. CPRv</p>
+<p>6.6.3.1. instituir e/ou aprimorar a doutrina de emprego operacional e os procedimentos operacionais próprios relativos à execução do policiamento ostensivo de trânsito nas rodovias do Estado, mantendo seu efetivo permanentemente treinado e apto para atuar nessa seara;</p>
+<p>6.6.3.2. atuar como representante da Polícia Militar junto ao órgão executivo de transportes rodoviários do Estado, a fim de solucionar problemas relativos aos eventuais convênios, assessorando o Cmdo G;</p>
+<p>6.6.3.3. com base nesta Diretriz, regular os pormenores acerca da atuação de suas OPM subordinadas na seara afeta ao policiamento ostensivo de trânsito rodoviário.</p>
+<p>6.6.4. CPC, CPM e CPI</p>
+<p>6.6.4.1. auxiliar as OPM subordinadas no planejamento das ações de policiamento de trânsito urbano, atentando especialmente para a sistemática de atuação territorial;</p>
+<p>6.6.4.2. adotar as medidas necessárias para o desenvolvimento do policiamento ostensivo de trânsito, regulando as missões por meio de documento de Estado-Maior próprio, que, entre outras disposições, deverá prever:</p>
+<p>6.6.4.2.1. a forma de atuação dos efetivos destinados especificamente para o desenvolvimento do PPT;</p>
+<p>6.6.4.2.2. a forma de atuação dos demais Programas de Policiamento e Atividades Operacionais Diversas na seara afeta ao policiamento ostensivo de trânsito, atentando para que as finalidades que lhes são precípuas não sejam desviadas ou que as atividades que lhes são próprias não sofram solução de continuidade, zelando pelo fiel cumprimento da normatização institucional.</p>
+<p>6.6.4.3. mediante solicitação das OPM subordinadas, promover a capacitação do efetivo envolvido no policiamento ostensivo de trânsito, em especial os policiais militares designados para o PPT, podendo ainda agendar palestras junto ao CPTran e CPRv.</p>
+<p>6.6.4.4. por intermédio das OPM subordinadas:</p>
+<p>6.6.4.4.1. executar o policiamento de trânsito urbano, em suas respectivas circunscrições, colaborando para a integração operacional com os demais órgãos de trânsito locais, visando eliminar áreas de conflito em suas atividades;</p>
+<p>6.6.4.4.2. realizar o policiamento ostensivo de trânsito nos grandes eventos, espetáculos, manifestações públicas, operações especiais de trânsito e atividades congêneres;</p>
+<p>6.6.4.4.3. manter atualizados os levantamentos estatísticos necessários ao planejamento do policiamento ostensivo de trânsito;</p>
+<p>6.6.4.4.4. manter estreito contato com os dirigentes dos órgãos de trânsito que atuem na respectiva Área, a fim de solucionar problemas relativos aos eventuais convênios, assessorando o Cmdo Pol a que estiverem subordinadas.</p>
+<p>6.7. Prescrições Diversas:</p>
+<p>6.7.1. as OPM de escalão Btl ou Cia PM subordinadas ao CPC, CPM e CPI, poderão propor ao Subcmt PM a designação de efetivos e viaturas específicas para o desenvolvimento do PPT. A proposta deverá ocorrer mediante apresentação de estudo que esclareça, entre outras informações julgadas relevantes:</p>
+<p>6.7.1.1. as demandas de policiamento ostensivo de trânsito e os fatores de interesse (características das vias, frota de veículos, volume médio de veículos que transitam pelas vias, índices criminais, etc.);</p>
+<p>6.7.1.2. quantidade e origem do efetivo que se pretende empregar no PPT, bem como o regime e horário de serviço em que atuarão;</p>
+<p>6.7.1.3. quantidade, tipo e origem das viaturas que se pretende utilizar no PPT, indicando eventuais propostas de alteração no Quadro de Fixação de Frota QFF.</p>
+<p>6.7.2. obtida autorização do Subcmt PM para o desenvolvimento do PPT, o plano de emprego desse contingente deverá ser consignado pelo Cmdo Pol nos respectivos Planos Diretores;</p>
+<p>6.7.3. para a execução das condutas próprias do policiamento ostensivo de trânsito, deve ser observado o disposto na legislação e normatização referenciada;</p>
+<p>6.7.4. a rotina contendo os trâmites, prazos e a forma de retirada dos talonários de Auto de Infração (AI) e Comprovante de Recolhimento e Remoção (CRR), bem como aquela que disciplina o encaminhamento destes e dos Certificados de Licenciamento Anual (CLA), Carteira Nacional de Habilitação (CNH), placa de veículo, etc., aos órgãos executivos de trânsito competentes, deverá ser disciplinada pelos Cmdo Pol, com o devido alinhamento com os órgãos executivos de trânsito correspondentes;</p>
+<p>6.7.5. os Cmdo Pol deverão avaliar a eficácia do PPT periodicamente, com base no Guia de Indicadores dos Programas de Policiamento, propondo alterações sempre que julgarem necessário;</p>
+<p>6.7.6. revogam-se as disposições em contrário, em especial a Diretriz nº PM3-001/02/07, de 26JUL07 (Programa de Policiamento de Trânsito).</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Programa de Policiamento Rural neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Programa de Policiamento Rural</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Programa de Policiamento Rural são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-policiamento-transito-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Programa de Policiamento Rural? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Programa de Policiamento Rural, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Programa de Policiamento Rural foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>

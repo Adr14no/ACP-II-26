@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Programa de Policiamento Rural — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Operacionais</div><h1>Programa de Policiamento Rural</h1><p>Diretriz nº PM3-005/02/20 · Texto para estudo. Confira a fonte oficial e eventuais alterações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO">
+<h2 class="section-heading">PROGRAMA DE POLICIAMENTO RURAL</h2>
+<p>DIRETRIZ Nº PM3-007/02/20</p>
+<h2 class="section-heading">1. REFERÊNCIA</h2>
+<p>Diretriz nº PM3-001/02/20, de 06MAR20 – Normas para o Sistema Operacional de Policiamento PM (NORSOP).</p>
+<h2 class="section-heading">2. FINALIDADE</h2>
+<p>Estabelecer as bases doutrinárias, administrativas e operacionais para a estruturação e desenvolvimento do Programa de Policiamento Rural em todo o Estado de São Paulo.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p>3.1. nos últimos anos, além da migração de atos delituosos para ambientes rurais, atingindo tanto o agronegócio como os de lazer e turismo (chácaras de veraneio, pousadas, hotéis-fazenda, etc.), tem sido notado o incremento na atuação das organizações criminosas, que por vezes se valem dos ambientes rurais para incluir determinadas etapas das suas ações;</p>
+<p>3.2. nesse contexto, as comunidades rurais estão sendo cada vez mais afetadas por todos os tipos de infrações, sejam de natureza administrativa e criminal, comuns ou ambientais, as quais são praticadas tanto em razão das atividades sociais, econômicas, políticas e agrárias desenvolvidas no campo, como por seu afastamento em relação aos centros urbanos, fator este que confere aos infratores a sensação de que estão longe de serem alvos da fiscalização das forças públicas de segurança;</p>
+<p>3.3. portanto, a Polícia Militar precisa estar preparada para atuar nesse tipo de ambiente, envolvendo-se com as comunidades rurais para a identificação e solução dos problemas locais afetos à ordem pública e buscando, assim, proporcionar-lhes níveis aceitáveis de qualidade de vida.</p>
+<h2 class="section-heading">4. OBJETIVOS</h2>
+<p>4.1. prevenir a ocorrência de infrações penais nos ambientes rurais;</p>
+<p>4.2. desenvolver um diagnóstico situacional fidedigno do ambiente rural, a ser compartilhado entre as OPM envolvidas, de forma a possibilitar o planejamento conjunto das ações típicas deste Programa;</p>
+<p>4.3. estimular a integração de esforços junto à governança local e, por meio dela, aumentar a percepção de segurança da comunidade rural.</p>
+<h2 class="section-heading">5. MISSÃO</h2>
+<p>O CPC, CPM, CPI, CPAmb e CPRv poderão desenvolver o Programa de Policiamento Rural nos termos desta Diretriz.</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<p>6.1. Conceituação:</p>
+<p class="subheading">6.1.1. Programa de Policiamento Rural (Programa Pol Rr)</p>
+<p>Programa que tem por objetivo organizar o desenvolvimento do Policiamento Ostensivo Geral voltado ao ambiente rural.</p>
+<p class="subheading">6.1.2. Policiamento Ostensivo Geral</p>
+<p>São as ações de fiscalização de polícia, sobre matéria de ordem pública, em cujo emprego o homem ou a fração de tropa sejam identificados de relance, quer pela farda, quer pelo equipamento, armamento ou viatura. Consiste em um tipo de policiamento ostensivo que pode ser executado no ambiente urbano ou rural.</p>
+<p class="subheading">6.1.3. Patrulha Rural (Ptr Rr)</p>
+<p>Unidade de Serviço (US) composta por policiais militares designados e treinados para emprego no Programa de Policiamento Rural.</p>
+<p class="subheading">6.1.4. Ambiente Rural</p>
+<p>Espaço territorial, em princípio, situado fora dos limites legais estabelecidos pelo Poder Público Municipal como Perímetro Urbano, normalmente com baixa densidade demográfica, abrigando pessoas, isoladas ou organizadas em comunidades, que possuem características próprias de relacionamento social, econômico e político vinculado à terra. Verifica-se, neste ambiente, a predominância de atividades extrativistas, agrárias e/ou de criação de animais, dentre outras congêneres.</p>
+<p class="subheading">6.1.5. Comunidade Rural</p>
+<p>Conjunto das pessoas ligadas por interesses comuns e que habitam, agrupadas ou isoladas, áreas de ambiente rural, possuindo normalmente padrões semelhantes de relacionamento social, econômico e político vinculados à terra.</p>
+<p class="subheading">6.1.6. Reunião Comunitária</p>
+<p>Atividade organizada pelo Programa de Policiamento Rural, decorrente de características de policiamento ostensivo comunitário, onde são reunidas entidades públicas, incluindo a Polícia Militar, ou privadas, com ou sem fins lucrativos, lideranças comunitárias e demais partes interessadas nas questões afetas à segurança pública local, destinada a discutir as melhores alternativas de solução dos problemas que afetam determinada comunidade rural e definir ações a serem adotadas, em especial ações de prevenção primária, visando à alteração do ambiente rural e à melhoria da qualidade de vida das pessoas.</p>
+<p>6.2. Desenvolvimento:</p>
+<p>6.2.1. a implantação do Programa Pol Rr será orientada pela existência, entre outros, dos seguintes fatores:</p>
+<p>6.2.1.1. presença de comunidade(s) rural(is) que, por suas características e atividades, se enquadrem nesta Diretriz;</p>
+<p>6.2.1.2. presença de atividades sociais, políticas e econômicas (extrativistas, agrárias, de criação de animais, turísticas, dentre outras congêneres) que sejam potenciais focos de ações criminosas ou refúgio de infratores da lei;</p>
+<p>6.2.1.3. índices criminais e/ou ações delituosas que, mesmo esporádicas, por sua natureza e notoriedade, afetem a percepção de segurança no ambiente rural.</p>
+<p>6.3. Condições de Execução:</p>
+<p>6.3.1. o Policiamento Ostensivo Geral em Ambiente Rural será desenvolvido na seguinte conformidade:</p>
+<p>6.3.1.1. pelas OPM Territoriais subordinadas ao CPC, CPM e CPI:</p>
+<p>6.3.1.1.1. por meio de recursos humanos e materiais destinados especificamente para atuar no Programa Pol Rr, observados os critérios de necessidade operacional e disponibilidade de meios. A composição de Ptr Rr, nos termos desta Diretriz, estará devidamente consignada nos respectivos Planos Diretores;</p>
+<p>6.3.1.1.2. por meio dos demais Programas de Policiamento ou Atividades Operacionais Diversas desenvolvidos pela OPM. Nesse caso, as ações, operações e missões policial-militares serão desenvolvidas de acordo com o Plano de Policiamento Inteligente (PPI) da OPM, não havendo necessidade de detalhamento, em Plano Diretor, dos recursos envolvidos;</p>
+<p>6.3.1.1.3. qualquer destas estruturas fará parte da Matriz Operacional I;</p>
+<p>6.3.1.1.4. a atuação das respectivas US sempre ocorrerá no Nível de Resposta 1.</p>
+<p>6.3.1.2. pelo CPAmb:</p>
+<p>6.3.1.2.1. suas estruturas, que são vinculadas à Matriz Operacional III, serão empregadas, nos termos desta Diretriz, quando da existência de algum dos fatores de implantação, de forma integrada e compartilhada com as OPM Territoriais e Rodoviárias, utilizando-se dos recursos próprios (humanos e materiais) das unidades subordinadas, desenvolvendo, além das ações relacionadas com a salvaguarda dos recursos naturais do Estado e proteção ao meio ambiente, atividades de prevenção e repressão imediata das infrações penais cometidas em ambientes rurais;</p>
+<p>6.3.1.2.2. atuarão, ordinariamente, no Nível de Resposta 1, para a execução de atividades típicas do policiamento ostensivo geral em ambiente rural;</p>
+<p>6.3.1.2.3. também pode haver necessidade de que forneçam apoio especializado a qualquer US, quando, então, atuarão no Nível de Resposta 4.</p>
+<p>6.3.1.3. pelo CPRv, de forma complementar às OPM Territoriais e Ambientais, utilizando os recursos próprios (humanos e materiais) que serão empregados, ordinariamente, no Nível de Resposta 1 para atividades de prevenção e repressão imediata das infrações penais praticadas em seu ambiente de atuação, bem como, de forma excepcional, quando da prestação de apoio especializado, atuando, assim, no Nível de Resposta 4.</p>
+<p>6.3.2. considerando as características geográficas da circunscrição (rios, trilhas, montanhas, áreas de preservação ambiental, terrenos acidentados, etc.), bem como situações que sejam indicadas pelo planejamento conjunto entre as OPM envolvidas nessa atividade, o policiamento ostensivo geral em ambiente rural poderá ser desenvolvido por meio de qualquer processo de policiamento (motorizado, náutico, aéreo, montado, com cães, etc.).</p>
+<p>6.4. Composição e organização:</p>
+<p>6.4.1. efetivo e meios:</p>
+<p>6.4.1.1. a US que atuar no ambiente rural será composta por no mínimo 2 e no máximo 3 policiais militares, sendo, neste último caso, 1 encarregado (preferencialmente Subten/Sgt PM), 1 motorista (Cb/Sd PM) e/ou 1 auxiliar (Cb/Sd PM);</p>
+<p>6.4.1.2. o veículo a ser empregado deverá possuir preferencialmente altura em relação ao solo, suspensão e/ou tração adequadas para utilização no ambiente rural;</p>
+<p>6.4.1.3. além do armamento usual, pode ser utilizada arma portátil, desde que os policiais militares sejam devidamente habilitados;</p>
+<p>6.4.1.4. EPI completo e equipamentos de apoio pertinentes;</p>
+<p>6.4.1.5. sistema de radiocomunicação deverá ser compartilhado entre as OPM envolvidas, possibilitando o conhecimento e acompanhamento mútuo das ações desencadeadas, além de viabilizar esforços conjugados de maneira a maximizar os efeitos preventivos do Programa Pol Rr.</p>
+<p>6.4.2. responsabilidade de comando: os Cmt Cia PM Territorial detêm a responsabilidade gerencial sobre o Programa Pol Rr;</p>
+<p>6.4.3. desenvolvimento do PPI voltado ao Programa Pol Rr:</p>
+<p>6.4.3.1. para subsidiar os planos de ação, as camadas de dados de interesse serão obtidas a partir de dados georreferenciados junto aos Sistemas Inteligentes, bem como de informações oriundas das comunidades rurais consideradas relevantes para o Programa Pol Rr.</p>
+<p>6.4.3.2. em função das grandes áreas geográficas a serem patrulhadas, os Cmt Cia PM Territorial e os Comandantes, até nível Pel PM, das OPM Pol Amb e Pol Rv dos territórios correspondentes, deverão estabelecer, em conjunto, os espaços físicos de atuação das respectivas US, que deverão ser previstos em Cartões de Prioridade de Patrulhamento (CPP);</p>
+<p>6.4.3.3. ao menos uma vez por mês, os Cmt OPM Pol Amb e Pol Rv deverão participar das Reuniões de Análise Crítica (RAC) – Nível I junto aos Btl Territoriais abrangidos pelas suas respectivas circunscrições;</p>
+<p>6.4.3.4. considerar, nessa fase, que as ações delituosas ocorridas em ambientes rurais, mormente aquelas relacionadas às infrações penais de roubo e furto, são, normalmente, praticadas por quadrilhas compostas por vários indivíduos dotados de estrutura logística considerável (armamento de maior potencial ofensivo, meios de transporte, etc.);</p>
+<p>6.4.3.5. a distribuição dos efetivos e meios no território deverá ser planejada de modo que não haja sobreposição de esforços e permita melhor alocação de recursos por parte de cada OPM;</p>
+<p>6.4.3.6. os planos de ação devem considerar, ao menos, a adoção das seguintes medidas em ações, operações ou missões policial-militares, as quais serão descritas nos CPP das Ptr Rr que atuam isolada ou conjuntamente:</p>
+<p>6.4.3.6.1. realização de bloqueios viários em estradas vicinais e principais rotas de veículos;</p>
+<p>6.4.3.6.2. acompanhamento das rotinas em escolas rurais, por meio de contato com a direção dos estabelecimentos de ensino, visando ao intercâmbio de informações de interesse ao planejamento do Programa Pol Rr;</p>
+<p>6.4.3.5.3. saturação preventiva em locais de aglomeração humana (vilas, distritos, condomínios, pontos turísticos, eventos culturais, esportivos ou religiosos, etc.);</p>
+<p>6.4.3.5.4. averiguação de estabelecimentos comerciais (bares, mercearias, desmanches, etc.);</p>
+<p>6.4.3.5.5. contato com representantes das comunidades rurais, bem como das entidades públicas e privadas existentes nessas localidades;</p>
+<p>6.4.3.6.6. ações para identificação e cadastramento de propriedades rurais.</p>
+<p>6.5. Atribuições particulares:</p>
+<p class="subheading">6.5.1. Coord Op PM</p>
+<p>Monitorar e supervisionar, por meio do Guia de Indicadores dos Programas de Policiamento, o desenvolvimento do Programa Pol Rr.</p>
+<p class="subheading">6.5.2. CComSoc</p>
+<p>Adotar providências objetivando dar maior conhecimento e visibilidade à atuação do Programa Pol Rr à mídia em geral e ao público interno.</p>
+<p class="subheading">6.5.3. 6ª EM/PM</p>
+<p>Desenvolver POP descrevendo as formas de atuação e os equipamentos de apoio a serem empregados pelas Ptr Rr.</p>
+<p class="subheading">6.5.4. CPC, CPM e CPI</p>
+<p>6.5.4.1. elaborar e manter atualizado o cadastramento de propriedades rurais, onde for necessário, providenciando para que os respectivos COPOM/CAD possam dispor dessas informações visando facilitar o despacho de ocorrências;</p>
+<p>6.5.4.2. estudar e propor formas de a comunidade rural potencializar o Programa Pol Rr, estimulando a identificação de lideranças, a realização de reuniões comunitárias e o desenvolvimento de parcerias envolvendo a governança local.</p>
+<p class="subheading">6.5.5. CPAmb e CPRv</p>
+<p>6.5.5.1. participar, por meio de suas OPM subordinadas, das reuniões de planejamento conjunto realizado pelas OPM Territoriais, fornecendo as informações pertinentes ao bom desenvolvimento do Programa Pol Rr;</p>
+<p>6.5.5.2. elaborar, por meio dos respectivos Cmt OPM Pol Amb e Pol Rv, os CPP das US que apoiarão o Programa, após definidas as áreas de atuação de cada OPM em planejamento conjunto, nos termos desta Diretriz.</p>
+<p>6.6. Prescrições Diversas:</p>
+<p>6.6.1. deve ser privilegiado o canal técnico entre as OPM envolvidas para fins de compartilhamento de informações, planejamentos conjuntos, compatibilização de atividades, solicitação de apoio e o que mais couber para o cumprimento desta Diretriz;</p>
+<p>6.6.2. revogam-se as disposições em contrário, em especial a Diretriz nº PM3-001/02/09, de 23JUL09 (Policiamento Rural - uma nova sistemática de atuação).</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Programa de Policiamento Rural neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Programa de Policiamento Rural</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Programa de Policiamento Rural são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-policiamento-rural-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Programa de Policiamento Rural? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Programa de Policiamento Rural, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Programa de Policiamento Rural foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>

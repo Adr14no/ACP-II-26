@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Programa de Policiamento com Drones — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Operacionais</div><h1>Programa de Policiamento com Drones</h1><p>Diretriz nº PM3-005/02/20 · Texto para estudo. Confira a fonte oficial e eventuais alterações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button> <a class="btn gold" href="https://drive.google.com/file/d/1PBkmaLq4t6Nvqs5c92bjW4Sfxo-oYHXb/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center">Abrir resumo do Programa de Policiamento com Drones ↗</a><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="MATERIAL DE ESTUDO · PMESP">
+<h2 class="section-heading">PROGRAMA DE POLICIAMENTO COM DRONES</h2>
+<p><strong>DIRETRIZ Nº PM3-005/02/24</strong></p>
+<h2 class="section-heading">1. REFERÊNCIAS</h2>
+<p>1.1. Diretriz nº PM3-001/02/20, de 06MAR20 – Normas para o Sistema Operacional de Policiamento PM (NORSOP);</p>
+<p>1.2. ICA 100-40 (Aeronaves Não Tripuladas e o Acesso ao Espaço Aéreo Brasileiro), aprovada pela Portaria DECEA nº 928/DNOR8, de 15MAI23;</p>
+<p>1.3. MCA 56-5 (Aeronaves Não Tripuladas para Uso Exclusivo em Operações Aéreas Especiais), aprovado pela Portaria DECEA nº 929/DNOR8, de 15MAI23;</p>
+<p>1.4. Diretriz nº PM3-001/02/23, de 26JUN23 (Sistema de Comando e Controle da Polícia Militar);</p>
+<p>1.5. Diretriz nº PM3-003/02/23, de 26DEZ23 (Sistema de Comando de Incidentes da Polícia Militar);</p>
+<p>1.6. Nota de Instrução nº PM6-002/600/24, de 02SET24 (Execução do Plano de Comando 2024- 2031).</p>
+<h2 class="section-heading">2. FINALIDADE</h2><p>Criar o Programa de Policiamento com Drones da Polícia Militar, estabelecendo parâmetros e princípios básicos para o seu desenvolvimento.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p>3.1. os problemas policiais contemporâneos são caracterizados por desafios multifacetados e com nível de risco elevado, resultado de relações sociais complexas e difusas, o que exige respostas cada vez mais abrangentes, com emprego de tecnologias capazes de integrar, de modo sistêmico, as diversas estruturas institucionais por meios da transmissão de dados e imagens, a fim de mitigar o risco operacional, preservando o policial militar e demais pessoas envolvidas, a partir do incremento da consciência situacional dos respondedores, com tomada de decisão com rapidez e assertividade;</p>
+<p>3.2. nesse contexto, o emprego operacional de aeronaves não tripuladas na Polícia Militar, de modo integrado às demais soluções institucionais, à luz do Sistema de Comando e Controle da Polícia Militar, eleva a consciência situacional, mitigando o risco operacional, de modo a oferecer respostas adequadas para problemas policiais, sobretudo os emergenciais e complexos;</p>
+<p>3.3. para tanto, o Programa de Policiamento com Drones promoverá a atuação da Polícia Militar com esse equipamento em todo o Estado, com padrões de execução bem definidos, de modo a possibilitar um planejamento orçamentário eficiente, a partir do conjunto de diretrizes e projetos de implantação perene e ajustáveis ao longo do tempo.</p>
+<h2 class="section-heading">4. OBJETIVOS</h2>
+<p>4.1. ampliar a consciência situacional dos policiais militares durante as ações, missões e operações policial-militares, por meio do incremento da capacidade de transmissão de imagens de interesse policial;</p>
+<p>4.2. mitigar os riscos operacionais para os policiais militares respondedores de emergências, sobretudo os incidentes críticos complexos;</p>
+<p>4.3. subsidiar a tomada de decisão durante as ações, missões e operações policial-militares, permitindo respostas com rapidez e assertividade para os diversos problemas policiais.</p>
+<h2 class="section-heading">5. MISSÃO</h2><p>As OPM detentoras de aeronaves não tripuladas, bem como os integrantes das Equipes Drone, deverão desenvolver o Programa de Policiamento com Drones, observando, entre outros critérios, as regras do ar aplicáveis aos Pilotos Remotos, a seleção de novos integrantes, as rotinas de habilitação, treinamento e manutenção da proficiência, os requisitos mínimos aplicáveis aos equipamentos e as rotinas de monitoramento e controle da sistemática.</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<p>6.1. <strong>Conceituação:</strong></p>
+<p>6.1.1. <strong>Aeronave Não Tripulada (UA – Unmanned Aircraft):</strong> qualquer aparelho que possa sustentar-se na atmosfera, a partir de reações do ar que não sejam as reações do ar contra a superfície da terra, e que se pretenda operar sem piloto a bordo, doravante também denominado drone para o Programa de Policiamento com Drones. Possui 2 subcategorias:</p>
+<p>6.1.1.1 Aeronave Remotamente Pilotada (RPA – Remotely Piloted Aircraft): aeronave não tripulada utilizada com propósitos não recreativos, que seja capaz de interagir com o Controle de Tráfego Aéreo e outras aeronaves em tempo real. Para tanto, deverá possuir certificação aeronáutica ou projeto autorizado, em conformidade com a regulamentação em vigor;</p>
+<p>6.1.1.2. <strong>Small Unmanned Aircraft (SUA):</strong> todas as demais aeronaves não tripuladas utilizadas com propósitos recreativos ou não, as quais dependem de cadastro junto à Agência Nacional de Aviação Civil (ANAC) e autorização do Departamento de Controle do Espaço Aéreo (DECEA) para acesso ao espaço aéreo, sem necessidade de certificação ou projeto autorizado.</p>
+<p>6.1.2. <strong>Sistema de Aeronave Não Tripulada (UAS – Unmanned Aircraft System):</strong> sistema composto pela UA e seus elementos associados, como estação de pilotagem remota, sistemas de comunicação, sensores, enlaces de pilotagem, entre outros;</p>
+<p>6.1.3. <strong>Equipe Drone:</strong> composição de Unidade de Serviço com efetivo devidamente capacitado, habilitado e treinado, com atribuições essenciais à operação de um UAS, composta, no mínimo, pelo Piloto Remoto em Comando e pelo Observador de UAS, contando, além disso, preferencialmente, 01 (um) PM na função de segurança;</p>
+<p>6.1.4. <strong>Evidência Digital:</strong> registro audiovisual dotado de integridade, rastreabilidade e credibilidade, garantido por cadeia de custódia, que constitui elemento probatório em caráter administrativo/judicial;</p>
+<p>6.1.5. <strong>Imagem Operacional Comum:</strong> conhecimento e compreensão desenvolvidos pelas pessoas sobre os acontecimentos, as circunstâncias e os elementos do ambiente de atuação, que são compartilhados entre indivíduos engajados em uma mesma missão, produzindo uma imagem mental coerente e comum a todos, de forma a gerar uma compreensão compartilhada e criar uma sinergia entre as ações, elevando o nível de segurança operacional coletiva e a eficiência no atingimento dos objetivos;</p>
+<p>6.1.6. <strong>Missões Emergenciais:</strong> operações de segurança pública, bombeiros e defesa civil, conduzidas com o emprego de drones, que exijam providências imediatas, inviabilizando o cumprimento dos prazos estabelecidos na ICA 100-40 para que o DECEA seja previamente informado. Para tanto, por absoluta necessidade de manter os níveis de segurança compatíveis com a atividade aérea, é imperioso que o voo emergencial se adéque estritamente às limitações operacionais estabelecidas pela MCA 56-5;</p>
+<p>6.1.7. <strong>Missões Programadas:</strong> operações de segurança pública, bombeiros e defesa civil, conduzidas com o emprego de drones, que não caracterizem urgência ou emergência e possam ser planejadas com antecedência suficiente para permitir que o DECEA seja informado por meio do Sistema de Autorização para Acesso ao Espaço Aéreo por UAS (SARPAS) ou versão eletrônica posterior, em conformidade às previsões da ICA 100-40;</p>
+<p>6.1.8. <strong>Operação em Linha de Visada Visual (VLOS – Visual Line of Sight):</strong> operação na qual o piloto remoto mantém o contato visual direto com a aeronave (sem auxílio de lentes ou outros equipamentos, exceto as lentes corretivas), de modo a conduzir o voo com as responsabilidades de manter a separação com outras aeronaves, bem como de evitar colisões com obstáculos;</p>
+<p>6.1.9. <strong>Operação em Linha de Visada Visual Estendida (EVLOS – Extended Visual Line of Sight):</strong> operação em condições meteorológicas visuais, na qual o Piloto Remoto, sem auxílio de lentes ou outros equipamentos, não é capaz de manter o contato visual direto com a Aeronave Remotamente Pilotada, necessitando, dessa forma, do auxílio de Observador para conduzir o voo com as responsabilidades de manter a segurança da navegação, bem como de evitar colisões com obstáculos, seguindo as mesmas regras de uma operação VLOS;</p>
+<p>6.1.10. <strong>Operação Além da Linha de Visada Visual (BVLOS – Beyond Visual Line of Sight):</strong> operação que não atenda às condições VLOS ou EVLOS, em que o Piloto Remoto não consiga manter a UA dentro do seu alcance visual;</p>
+<p>6.1.11. <strong>Piloto Remoto:</strong> policial militar, de qualquer posto ou graduação, especialmente capacitado e habilitado conforme exigências da ANAC e da Polícia Militar, apto para a condução segura e eficiente de UA em operações em áreas especiais de segurança pública;</p>
+<p>6.1.12. <strong>Programa de Treinamento Operacional para Drones (PTO – Drone):</strong> documento técnico elaborado pelo CAvPM, de acordo com normas e procedimentos previstos na legislação em vigor e em publicações editadas pelos fabricantes, que visam à padronização para as atividades de instrução e treinamento de operações com aeronaves não tripuladas no âmbito da Polícia Militar;</p>
+<p>6.1.13. <strong>Programas de Policiamento Complementares:</strong> são os demais Programas de Policiamento (excetuados o Programa de Radiopatrulha e de Programa de Força Tática) a serem desenvolvidos mediante critérios de necessidade e disponibilidade, os quais podem ser desenvolvidos de forma híbrida, ou seja, as OPM podem tanto prever efetivos e meios específicos para a sua execução quanto aproveitar as estruturas de outros Programas de Policiamento, conforme previsão nas respectivas Diretrizes.</p>
+<p>6.2. <strong>Princípios gerais:</strong></p>
+<p>6.2.1. o Programa de Policiamento com Drones constituirá programa de policiamento complementar (vide subitem “6.1.13.”), nos termos do subitem “6.4.1.2.5.” das NORSOP (referência “1.1.”), com funcionamento ininterrupto, que tem por objetivo organizar o desenvolvimento das ações, missões e operações com emprego de aeronaves não tripuladas na Polícia Militar, devendo ser implementado ordinariamente por todas as OPM;</p>
+<p>6.2.2. será desenvolvido pelas OPM pertencentes às Matrizes Operacionais I, II e III, estruturado em nível de Btl, com base em critérios de necessidade operacional e disponibilidade de recursos humanos e materiais, devidamente consignados no Plano Tático do respectivo Cmdo Pol (vide referência “1.6.”), e sua gestão operacional caberá ao nível mínimo de Cia;</p>
+<p>6.2.3. o emprego do drone poderá ocorrer em missões rotineiras de polícia ostensiva, sobretudo nas atividades típicas elencadas no subitem “6.3.” e divisões, em caráter emergencial ou programado (subitens “6.1.6.” e “6.1.7.”, respectivamente);</p>
+<p>6.2.4. quando pertencente à Matriz Operacional I, o drone atuará no Nível de Resposta 1, cujo emprego atenderá aos critérios do Plano de Policiamento Inteligente (PPI), sobretudo no tocante à identificação de AISP e definição/atribuição de CPP;</p>
+<p>6.2.5. os drones pertencentes às Matrizes Operacionais II e III atuarão nos Níveis de Resposta 2, 3 e 4, devendo ser operados por todos os Órgãos de Execução, em especial os especializados, como CCB, CPAmb, CPChq, CPRv, CPTran e BAEPs, em conformidade com as peculiaridades de suas respectivas atividades típicas, cujo emprego estará devidamente consignado em planos de ação, sem prejuízo do desenvolvimento de atividades supletivas em missões de patrulhamento preventivo, conforme subitem “6.2.3.” das NORSOP (referência “1.1.”), além das atividades de prevenção e extinção de incêndios, de busca e salvamento e de defesa civil;</p>
+<p>6.2.6. os Cmdo Pol deverão definir, em documento de Estado-Maior, as regras de engajamento mínimas para o acionamento e emprego dos drones em caráter emergencial, a fim de subsidiar a tomada de decisão dos escalões de comando e supervisão em situações, sobretudo quando envolver problemas policiais complexos;</p>
+<p>6.2.7. considerando que os drones e seus sistemas (UAS) compõem a Arquitetura de C4ISR<sup><a href="#nota-1">1</a></sup> da Polícia Militar, seus sistemas de captação e transmissão de dados e imagens deverão estar plenamente integrados às Estruturas de Comando e Controle<sup><a href="#nota-2">2</a></sup>, visando prover Imagem Operacional Comum (subitem “6.1.5.”) aos policiais militares em solo, visto que essas estruturas, permanentes ou temporárias, consistem em centros de convergência e de difusão de informações, observando, além disso:</p>
+<p>6.2.7.1. que as Salas de Operações das Cia PM e das sedes do Btl devem ser objeto de priorização da integração com os UAS, pois, em razão da proximidade com as demandas operacionais, representam potencial amplificado de eficiência nas ações, missões e operações policial-militares.</p>
+<p>6.2.8. o Cmt Btl, ao implementar o Programa de Policiamento com Drones, deverá designar, formalmente, o Oficial Coordenador de Operação de UAS, devendo tal nomeação ser informada ao CAvPM, bem como eventual alteração de designação;</p>
+<p>6.2.9. o Oficial Coordenador de Operação de UAS será o responsável pelo monitoramento e controle das atividades executadas pelas Equipes Drone, bem como pela fiscalização dos planos de ação elaborados pelo Cmt OPM, incumbindo-lhe:</p>
+<p>6.2.9.1. a comunicação técnica com a Coord Op PM e CAvPM;</p>
+<p>6.2.9.2. monitoramento e controle das atividades executadas pelas Equipes Drone, bem como pela fiscalização dos planos de ação elaborados pelo Cmt OPM;</p>
+<p>6.2.9.3. controlar, monitorar e fiscalizar a formação, habilitação, treinamentos periódicos e condição técnica dos integrantes das Equipes Drone;</p>
+<p>6.2.9.4. coordenar a elaboração de relatórios de boas práticas a ser enviado ao CAvPM (advindas do emprego operacional) e Coord Op PM (advindas dos resultados operacionais);</p>
+<p>6.2.9.5. fiscalizar o envio de informações e dados dos indicadores de desempenho e resultados para o Cmt Pol e Coord Op PM referente ao Programa de Policiamento com Drones;</p>
+<p>6.2.9.6. assessorar o Cmt Btl na indicação de policiais militares para integrarem as Equipes Drone;</p>
+<p>6.2.9.7. a verificação constante do cumprimento dos termos estabelecidos nesta Diretriz, reportando ao respectivo Comandante as questões cujas decisões dependam do escalão superior;</p>
+<p>6.2.9.8. quaisquer outras atividades relacionadas à comunicação com as demais OPM e outras medidas que se fizerem necessárias à preservação da continuidade e eficiência do Programa de Policiamento, atuando como ponto focal.</p>
+<p>6.2.10. os dados produzidos pelas Equipes Drones somente serão objeto de divulgação após análise e deliberação do respectivo Cmt/Ch/Dir da OPM, observando-se as disposições da Lei federal nº 13.709, de 14AGO18 (Lei Geral de Proteção de Dados – LGPD), protegendo-se os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural;</p>
+<p>6.2.11. as Equipes Drone são responsáveis pelo zelo do equipamento, especialmente quanto ao acondicionamento, transporte, montagem e utilização, devendo seguir estritamente as orientações dos fabricantes, considerando, sobretudo, a condição de fragilidade e precisão de muitos mecanismos.</p>
+<p>6.3. <strong>Atividades típicas do Programa de Policiamento com Drones:</strong></p>
+<p>6.3.1. patrulhamento preventivo voltado ao controle dos indicadores criminais;</p>
+<p>6.3.2. pronta resposta a ocorrências (DFR – Drone as First Responder), desde o apoio às US em atendimento de ocorrências corriqueiras a, sobretudo, incidentes críticos, graves e complexos, como por exemplo, aqueles que envolvem criminalidade ultraviolenta;</p>
+<p>6.3.3. utilização da UA para minimização do risco, como apoio em varreduras e outros deslocamentos que podem anteceder a atuação direta do policial militar;</p>
+<p>6.3.4. operações em áreas de difícil acesso, como áreas montanhosas, de mata ou anômicas, com a finalidade de identificar, localizar e orientar as equipes em solo para a detenção de infratores em fuga, busca e salvamento de pessoas perdidas, etc.;</p>
+<p>6.3.5. policiamento em eventos;</p>
+<p>6.3.6. controle de multidões;</p>
+<p>6.3.7. policiamento ostensivo ambiental;</p>
+<p>6.3.8. policiamento ostensivo de trânsito urbano e rodoviário;</p>
+<p>6.3.9. policiamento ostensivo rural;</p>
+<p>6.3.10. busca de infratores homiziados e localização de criminoso(s) em fuga;</p>
+<p>6.3.11. identificação, localização e monitoramento de alvos em ações de inteligência policial;</p>
+<p>6.3.12. atividades de prevenção e extinção de incêndios, de busca e salvamento e de defesa civil que devem ser apoiadas pelos programas de policiamento, significando que o emprego dos UAS deverá acontecer tanto pelo Comando do Corpo de Bombeiros como pelos demais Órgãos de Execução;</p>
+<p>6.3.13. outras ações, missões ou operações policial-militares atinentes à polícia ostensiva e preservação da ordem pública, bem como atividades típicas de bombeiros e defesa civil.</p>
+<p>6.4. <strong>Equipe Drone:</strong></p>
+<p>6.4.1. consistirá em US integrante da Força de Patrulha ou fração de tropa a qual estiver vinculada, na seguinte conformidade:</p>
+<p>6.4.1.1. mediante emprego de contingente especialmente dedicado a este mister, como atividade exclusiva do Programa de Policiamento com Drones;</p>
+<p>6.4.1.2. mediante integração matricial pelos policiais militares que compõem os demais Programas de Policiamento e Atividades Operacionais Diversas, condição na qual desempenharão as missões ordinárias de sua respectiva Matriz Operacional (incluem-se todas as Unidades especializadas da Polícia Militar, tais como CCB, CPAmb, CPChq, CPRv, CPTran e BAEPs), mantendo-se em condições de pronto emprego, passando a atuar como Equipe Drone nos locais e horários previstos em plano de ação ou emergencialmente, por determinação dos escalões de comando e supervisão.</p>
+<p>6.4.2. a Equipe Drone será composta, no mínimo, pelo Piloto Remoto em Comando e pelo Observador de UAS, devendo, preferencialmente, ser integrada, ainda, por PM na função de segurança, conforme a seguir:</p>
+<p>6.4.2.1. <strong>Piloto Remoto em Comando (Remotely Pilot in Command – RPIC):</strong> policial militar, de qualquer posto ou graduação, especialmente capacitado e habilitado como Piloto Remoto (vide subitem “6.1.11.”) conforme exigências da ANAC e da Polícia Militar, possuidor de autoridade decisória sobre tudo que se relacionar ao UAS enquanto estiver em voo, e responsável pela condução e navegação segura da aeronave, podendo ou não deter os controles de manuseio da aeronave, mediante observância das regras do ar, desde a preparação do voo, sua execução e até seu encerramento;</p>
+<p>6.4.2.2. <strong>Observador de UAS (Observador):</strong> policial militar, de qualquer posto ou graduação, especialmente capacitado e habilitado conforme exigências da ANAC e da Polícia Militar, responsável por auxiliar a condução segura do voo, por meio da observação visual da aeronave e do espaço aéreo (sem auxílio de equipamentos óticos, exceto lentes corretivas) e mediante comunicação permanente com o RPIC;</p>
+<p>6.4.2.3. <strong>Segurança:</strong> Cb/Sd PM responsável pela segurança física do RPIC e Observador durante a operação com o drone.</p>
+<p>6.4.3. deverá atuar mediante a certificação emitida pelo CAvPM.</p>
+<p>6.5. <strong>Regras do ar aplicáveis à Equipe Drone:</strong></p>
+<p>6.5.1. as operações com aeronaves não tripuladas da Polícia Militar consistirão em operações aéreas especiais de segurança pública, assim definidas pela autoridade aeronáutica brasileira, e estarão submetidas às instruções constantes na ICA 100-40 e MCA 56-5 (referências “1.2.” e “1.3.”, respectivamente), e demais normas em vigor, sobretudo, mas não exclusivamente, quanto aos parâmetros operacionais de altura do voo e de acesso aos espaços aéreos diversos;</p>
+<p>6.5.2. o RPIC terá autoridade decisória em tudo o que se relacionar com a UA, desde o momento em que se apresentem intenções para o voo até a parada total dos motores do equipamento;</p>
+<p>6.5.3. suas decisões serão norteadas por parâmetros de segurança e de gerenciamento de risco operacional, bem como pela doutrina e procedimentos estabelecidos pela autoridade aeronáutica brasileira e pela Polícia Militar, por meio do CAvPM;</p>
+<p>6.5.4. <strong>serão de responsabilidade exclusiva do RPIC, além daquelas descritas no subitem anterior:</strong></p>
+<p>6.5.4.1. a proteção de pessoas e propriedades no solo;</p>
+<p>6.5.4.2. a separação com obstáculos e demais aeronaves;</p>
+<p>6.5.4.3. o planejamento do voo, com avaliação criteriosa das condições meteorológicas, cálculo adequado de autonomia e demais condições pertinentes, como por exemplo a consulta a eventuais NOTAM<sup><a href="#nota-3">3</a></sup> e demais informações aeronáuticas de interesse das operações;</p>
+<p>6.5.4.4. a comunicação bilateral com outras aeronaves e/ou órgãos de Controle de Tráfego Aéreo, quando aplicável;</p>
+<p>6.5.4.5. a posse dos documentos de porte obrigatório para voos de operações aéreas especiais;</p>
+<p>6.5.4.6. outras atribuições previstas pela autoridade aeronáutica brasileira e pelo Cmdo G, que não estejam elencadas acima.</p>
+<p>6.6. <strong>Seleção de integrantes de Equipe Drone:</strong></p>
+<p>6.6.1. a seleção prévia do integrante da Equipe Drone caberá ao Cmt Btl;</p>
+<p>6.6.2. para exercer a função de Piloto Remoto, o policial militar voluntário deverá atender, aos seguintes requisitos:</p>
+<p>6.6.2.1. possuir, no mínimo, 2 anos de efetivo exercício em atividade operacional;</p>
+<p>6.6.2.2. estar classificado em órgão de execução, no caso de atuação direta no Programa de Policiamento com Drones;</p>
+<p>6.6.2.3. não estar respondendo a processo regular;</p>
+<p>6.6.2.4. não possuir sanção disciplinar por falta atentatória às Instituições ou ao Estado, aos direitos humanos fundamentais, ou ainda de natureza desonrosa;</p>
+<p>6.6.2.5. estar integralmente apto ao serviço policial-militar, sem restrições de qualquer natureza;</p>
+<p>6.6.2.6. outros requisitos estabelecidos pelo CAvPM, dentre eles estar devidamente habilitado.</p>
+<p>6.6.3. os mesmos requisitos deverão ser preenchidos pelo candidato à função de Observador, com exceção do período mínimo de 2 anos de efetivo exercício em atividade operacional.</p>
+<p>6.7. <strong>Habilitação, treinamento e manutenção da proficiência de pilotagem e observação:</strong></p>
+<p>6.7.1. o CAvPM, por meio da Escola de Aviação da Polícia Militar, é a OPM Gestora do Conhecimento (OGC) para os assuntos referentes à operação de UAS e responsável pela habilitação, treinamento e manutenção da proficiência dos policiais militares integrantes do Programa de Policiamento com Drones, na seguinte conformidade:</p>
+<p>6.7.2. <strong>para o Piloto Remoto:</strong></p>
+<p>6.7.2.1. a habilitação do Piloto Remoto fica condicionada à conclusão com aproveitamento do respectivo Curso de Especialização Profissional de Formação de Piloto Remoto desenvolvido pela Polícia Militar;</p>
+<p>6.7.2.2. a renovação da habilitação ocorrerá por meio de teste de aptidão e proficiência, destinado à certificação das credenciais do Piloto, segundo periodicidade e forma definidos no Programa de Treinamento Operacional para Drones (PTO – Drone) descrito no subitem “6.1.12.”;</p>
+<p>6.7.3. <strong>para o Observador:</strong></p>
+<p>6.7.3.1. a habilitação do Observador fica condicionada à conclusão, com aproveitamento, do respectivo curso de especialização profissional desenvolvido pela Polícia Militar;</p>
+<p>6.7.3.2. a renovação da habilitação ocorrerá por meio de frequência a treinamento específico e segundo periodicidade a serem definidos pelo CAvPM.</p>
+<p>6.7.4. o limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos.</p>
+<p>6.8. <strong>Requisitos mínimos dos UAS da Polícia Militar:</strong></p>
+<p>6.8.1. os UAS da Polícia Militar serão compostos por aeronave não tripulada (UA), conjugada a sistema de conectividade, transceptor aeronáutico, viatura, além das respectivas soluções tecnológicas necessárias para desenvolvimento das missões típicas das OPM que os possuírem;</p>
+<p>6.8.2. <strong>os UAS são classificados na seguinte conformidade:</strong></p>
+<p>6.8.2.1. <strong>UAS Tático:</strong> sistema composto por uma aeronave com sistema de lentes óticas ou digitais, preferencialmente com sensor termal, com características de portabilidade, transporte e operacionalidade;</p>
+<p>6.8.2.2. <strong>UAS Avançado:</strong> sistema composto por uma aeronave com sistema de sensores, no mínimo, ótico e termal, com maior autonomia de voo e proteção contra água e poeira, podendo ser certificado para operação VLOS/EVLOS acima de 400 pés ou BVLOS (subitens “6.1.8.”, “6.1.9.” e 6.1.10.”, respectivamente);</p>
+<p>6.8.2.3. <strong>UAS Especial:</strong> sistema composto com uma aeronave para atender demanda específica de uma OPM, que não se enquadre nos sistemas descrito nos itens acima;</p>
+<p>6.8.3. as aeronaves empregadas no Programa de Policiamento com Drones serão, em regra, da subcategoria RPAS (subitem “6.1.1.1.”), podendo, excepcional e justificadamente, ser da subcategoria SUA (subitem “6.1.1.2.”), conforme especificações do CAvPM;</p>
+<p>6.8.4. deverão possuir soluções tecnológicas capazes de prover a captação, o registro e a transmissão de dados úteis ao voo e às operações, como telemetria de voo, transmissão instantânea de imagens para as Estruturas de Comando e Controle, custódia de evidências digitais, etc.;</p>
+<p>6.8.5. viatura conjugada à UAS definida segundo critérios estabelecidos pela 4ª EM/PM, seguindo os padrões de certificação do CAvPM para Equipes Drone, sendo, preferencialmente, equipada com recursos materiais, tecnológicos e audiovisuais mínimos, como suporte para televisor, monitor, inversor de energia, compartimentos para armazenamento e transporte dos equipamentos, configuração elétrica otimizada e de tecnologia para operacionalizar a conectividade, etc., podendo, inclusive, constituir Centro de Comando e Controle Móvel (CC2 Móvel), conforme subitens “6.1.3.” e “6.5.4.5.” da Diretriz de referência “1.4.”.</p>
+<p>6.9. <strong>Monitoramento e controle:</strong></p>
+<p>6.9.1. a eficiência, eficácia e efetividade do emprego de drones nas missões descritas no subitem “6.3.” serão aferidas por meio de indicadores de desempenho e de resultados específicos, desenvolvidos pela Coord Op PM, que integrará o Guia de Indicadores dos Programas de Policiamento (subitem “6.5.” e divisões das NORSOP) e cujas informações gerenciais deverão constar em aba específica no SiCoordOp, sendo objeto de avaliação periódica nas RAC-III;</p>
+<p>6.9.2. os Cmdo Pol desenvolverão indicadores de desempenho próprios e suas respectivas memórias de cálculo, capazes de aferir os resultados operacionais do emprego da UAS nos indicadores criminais, especialmente aqueles relacionados à criminalidade violenta, devendo, ainda, consigná-los nos respectivos Planos Táticos;</p>
+<p>6.9.3. o emprego operacional dos drones será, ainda, objeto de análise nas RAC-I e II, onde serão avaliadas as estratégias de policiamento com uso de UA empregadas como solução dos problemas policiais priorizados, a produtividade policial e os indicadores criminais, verificando o alinhamento em relação aos Planos Táticos e ao Plano de Comando, observando-se, ainda:</p>
+<p>6.9.3.1. os Cmt OPM (nível Btl) estipularão, no Plano Operacional, as ações, missões e operações policial-militares direcionadas ao atingimento das metas de controle e/ou redução de indicador(es) criminal(is), fixadas no Plano Tático do Cmdo Pol a que estiver subordinado.</p>
+<p>6.9.4. o Cmt Btl deverá estabelecer rotinas próprias de fiscalização a ser realizada pelos escalões de comando e supervisão, bem como de monitoramento rotineiro por parte do Coord Op Btl;</p>
+<p>6.9.5. <strong>do Repositório de boas práticas:</strong></p>
+<p>6.9.5.1. considerando a necessidade de desenvolvimento contínuo de tecnologia, adaptável à solução dos problemas policiais dinâmicos, bem como o registro de empregos positivos do equipamento, que podem servir como referenciais para o aperfeiçoamento da atividade policial, fica estabelecido que:</p>
+<p>6.9.5.1.1. o CAvPM, com a participação da DTIC, será responsável por fixar os parâmetros e constituir o repositório técnico de boas práticas advindas do emprego operacional de Drones, indicando as necessidades tecnológicas para o aperfeiçoamento dos UAS a serem implementadas conforme o desenvolvimento e evolução do Programa;</p>
+<p>6.9.5.1.2. a Coord Op PM será responsável por fixar e constituir o repositório de boas práticas, advindas dos resultados operacionais do emprego de Drones, registrando ocorrências policial-militares referenciais cujo emprego do equipamento tenha sido destacado, assim como as metodologias empregadas pelas OPM, especialmente aquelas que indicarem a possibilidade de expansão e aproveitamento por outras Unidades, reportando ao CAvPM as necessidades de adequações tecnológicas.</p>
+<p>6.10. <strong>Atribuições particulares:</strong></p>
+<p>6.10.1. CIPM</p>
+<p>6.10.1.1. regular o emprego de drones para as atividades de inteligência policial, sobretudo pelas agências de inteligência em todo o Estado, respeitados os requisitos e orientações técnicas estabelecidos pelo CAvPM, pautados nas normas legais e regulamentares;</p>
+<p>6.10.1.2. desenvolver, em conjunto com a Coord Op PM, DTIC e CAvPM, soluções de contramedidas, a exemplo da utilização de equipamentos antidrones, para aeronaves não tripuladas que porventura venham a ser utilizadas por organizações criminosas durante a prática de crimes.</p>
+<p>6.10.2. CComSoc</p>
+<p>6.10.2.1. elaborar estratégias de comunicação social voltadas aos públicos interno e externo, visando a consolidar o uso de drones como tecnologia favorecedora da eficiência, transparência e legitimidade da atuação policial-militar;</p>
+<p>6.10.2.2. promover a divulgação de conteúdos positivos resultantes do desenvolvimento do Programa de Policiamento com Drones, objetivando a consolidação da imagem da Polícia Militar como instituição eficiente na proteção da sociedade paulista.</p>
+<p>6.10.3. Coord Op PM</p>
+<p>6.10.3.1. desenvolver indicadores de desempenho e suas respectivas memórias de cálculo para o Programa de Policiamento com Drones, integrando as informações gerenciais ao SiCoordOp;</p>
+<p>6.10.3.2. desenvolver, em conjunto com a DTIC e CAvPM, soluções tecnológicas de controle gerencial do emprego de drones na Polícia Militar;</p>
+<p>6.10.3.3. monitorar, por meio do Guia de Indicadores dos Programas de Policiamento, o desenvolvimento do Programa de Policiamento com Drones em todo o Estado;</p>
+<p>6.10.3.4. desenvolver, em conjunto com os Cmdo Pol, medidas relacionadas à melhoria contínua dos processos operacionais que envolvem o Programa de Policiamento com Drones, utilizando-se, principalmente, de dados e informações obtidos nas RAC-III e do repositório de boas práticas (subitem “6.9.5.1.2.”);</p>
+<p>6.10.3.5. fixar e constituir o repositório de boas práticas, advindas dos resultados operacionais do emprego de Drones (subitem “6.9.5.1.2.”);</p>
+<p>6.10.3.6. desenvolver, em conjunto com o CIPM, DTIC e CAvPM, soluções de contramedidas, a exemplo da utilização de equipamentos antidrones, para aeronaves não tripuladas que porventura venham a ser utilizadas por organizações criminosas durante a prática de crimes.</p>
+<p>6.10.4. 3ª EM/PM</p>
+<p>6.10.4.1. monitorar o desenvolvimento do Programa de Policiamento com Drones em todo o Estado, bem como analisar eventuais propostas de aprimoramento, assessorando o Cmdo G na deliberação acerca da necessidade de ajustes a serem procedidos na doutrina de emprego operacional;</p>
+<p>6.10.4.2. analisar e adequar os currículos de cursos e estágios relacionados com o desenvolvimento das atividades afetas a esta Diretriz.</p>
+<p>6.10.5. 4ª EM/PM Adotar medidas inerentes à estratégia e planejamento de fixação, aquisição e distribuição de drones e seus sistemas, bem como das viaturas que integrarão os UAS, com base nas previsões contidas nos Planos Táticos dos Cmdo Pol e seguindo os critérios de certificação do CAvPM para as Equipes Drone.</p>
+<p>6.10.6. 6ª EM/PM Desenvolver, em conjunto com o CAvPM e demais Cmdo Pol, os processos operacionais específicos para o uso do drone nas missões descritas no subitem “6.3.”, analisando propostas e promovendo revisões, se for o caso, nos POP.</p>
+<p>6.10.7. DEC</p>
+<p>6.10.7.1. sistematizar a revisão e atualização dos conteúdos programáticos dos cursos e estágios da Polícia Militar que guardam relação com a temática desta Dtz;</p>
+<p>6.10.7.2. utilizando-se de Videotreinamentos e Instruções Continuadas de Comando, bem como de outras modalidades de treinamento, auxiliar na instrução e treinamento do efetivo policial-militar para o emprego de drones, estimulando o conhecimento do potencial de ampliação da consciência situacional e de prevenção da exposição a risco, entre outras características;</p>
+<p>6.10.7.3. auxiliar o CAvPM no desenvolvimento do PTO – Drone.</p>
+<p>6.10.8. DF Prover, de acordo com o planejamento financeiro e orçamentário da Polícia Militar, recursos para a aquisição de aeronaves não tripuladas, seus respectivos sistemas e aplicações conjugadas.</p>
+<p>6.10.9. DL Elaborar, com a participação do CAvPM, processos de aquisição e distribuição dos meios necessários para o desenvolvimento do Programa de Policiamento com Drones, tais como viaturas e soluções de adaptação veicular.</p>
+<p>6.10.10. DTIC</p>
+<p>6.10.10.1. com a participação da CoordOpPM e do CAvPM, adotar as medidas necessárias para aquisição dos ativos e contratação dos serviços necessários para a integração completa dos UAS às plataformas e sistemas institucionais, incluindo hardware, software, infraestrutura de comunicação e sistemas de gestão de dados, notadamente a gestão e custódia de imagens;</p>
+<p>6.10.10.2. desenvolver, em conjunto com a Coord Op PM, CIPM e CAvPM, soluções de contramedidas, a exemplo da utilização de equipamentos antidrones, para aeronaves não tripuladas que porventura venham a ser utilizadas por organizações criminosas durante a prática de crimes.</p>
+<p>6.10.10.3. desenvolver, com a participação do CAvPM e da Coord Op PM, aplicativo a ser integrado ao SiCoordOp, apto a prestar informações gerenciais e permitir acesso remoto às imagens coletadas pelos UAS.</p>
+<p>6.10.11. CAvPM</p>
+<p>6.10.11.1. desenvolver e manter atualizados os parâmetros técnicos referenciais para a aquisição de equipamentos de UAS na Polícia Militar, bem como prospectar novas tecnologias;</p>
+<p>6.10.11.2. assessorar a DL e DTIC nos processos de aquisição/contratação, respectivamente, de viaturas de apoio aos UAS e itens/serviços de tecnologia;</p>
+<p>6.10.11.3. fornecer à DTIC as especificações técnicas para aquisição/contratação de estrutura tecnológica para gestão de frota, missões, recursos materiais, telemetria de voo, transmissão de imagens dos UAS para as plataformas institucionais utilizadas pelas Estruturas de Comando e Controle;</p>
+<p>6.10.11.4. desenvolver e aperfeiçoar, em conjunto com a 6ª EM/PM e demais Cmdo Pol, os processos operacionais de emprego de UAS;</p>
+<p>6.10.11.5. atuar, por meio da Escola de Aviação da Polícia Militar, como OGC responsável pela capacitação, habilitação e renovação das habilitações dos Pilotos Remotos e Observadores da Polícia Militar, zelando pela proteção do conhecimento e das informações atinentes ao emprego de UAS;</p>
+<p>6.10.11.6. prestar suporte às OPM acerca de questões regulamentares, administrativas e operacionais, bem como assistência técnica e manutenção dos equipamentos, inclusive realizando visitas técnicas a fim de fornecer orientações aos operadores;</p>
+<p>6.10.11.7. monitorar a regulamentação que ampara as operações com UAS, estabelecendo rotina para a divulgação e atualização do efetivo policial-militar integrante das Equipes Drone;</p>
+<p>6.10.11.8. disponibilizar e manter atualizado, em sua página na Intranet, todo o acervo normativo publicado pelos órgãos reguladores das operações de aeronaves não tripuladas, de modo a propiciar rápida consulta pelos operadores acerca da regulamentação em vigor;</p>
+<p>6.10.11.9. desenvolver, em conjunto com a Coord Op PM, CIPM e a DTIC, soluções de contramedidas, a exemplo da utilização de equipamentos antidrones, para aeronaves não tripuladas que porventura venham a ser utilizadas por organizações criminosas durante a prática de crimes;</p>
+<p>6.10.11.10. desenvolver sistema de gerenciamento de segurança operacional, abrangendo as operações com UAS e elaborando manual com objetivos, políticas, responsabilidades e estruturas organizacionais necessárias ao funcionamento do gerenciamento da segurança operacional da Polícia Militar, nos termos da regulamentação vigente, disciplinando os procedimentos técnicos e administrativos que devem ser adotados em face da eclosão de sinistros (colisão; queda; lesão corporal provocada em pessoas; danos ao patrimônio público ou particular; perda de enlace e consequente extravio de Drone etc.) envolvendo UA;</p>
+<p>6.10.11.11. regular, com a participação da Coord Op PM, por meio da elaboração de documento de Estado-Maior, a atuação operacional das Equipes Drone, estabelecendo os parâmetros técnicos necessários para o desenvolvimento do Programa e editando normas complementares a esta Diretriz, se necessário;</p>
+<p>6.10.11.12. representar a Polícia Militar junto aos órgãos reguladores de operação com UAS, realizando cadastramento e emissão de informações necessárias às operações da Polícia Militar, bem como, atuando para expandir a capacidade operacional do Programa de Policiamento com Drones, limitada, atualmente, pelas normas reguladoras;</p>
+<p>6.10.11.13. fixar os parâmetros e constituir o repositório técnico de boas práticas advindas do emprego operacional de Drones, indicando as necessidades tecnológicas para o aperfeiçoamento dos UAS, nos termos do subitem “6.9.5.1.1.”;</p>
+<p>6.10.11.14. atuar como certificadora das Equipes Drone, definindo os parâmetros técnicos de certificação e a periodicidade de sua renovação em documento de Estado-Maior.</p>
+<p>6.10.12. Cmdo Pol</p>
+<p>6.10.12.1. estabelecer rotinas de controle e monitoramento das operações com UAS, além daquelas já previstas na regulamentação em vigor, a exemplo das RAC I e II;</p>
+<p>6.10.12.2. providenciar estrutura, no âmbito das OPM subordinadas, de armazenamento e custódia das evidências digitais de interesse de segurança pública na seguinte conformidade:</p>
+<p>6.10.12.2.1. armazenamento e custódia prioritários na Sala de Operações do Batalhão, com custódia final na Div Op/Seç Op ou equivalente;</p>
+<p>6.10.12.2.2. armazenamento e custódia nas Salas de Operações das Cia PM, com custódia final na Div Op/Seç Op ou equivalente;</p>
+<p>6.10.12.2.3. diante da ausência de estruturas existentes em Sala de Operações, realizar, no primeiro momento possível, o armazenamento direto e a custódia na Div Op/Seç Op ou equivalente.</p>
+<p>6.10.12.3. reportar à Coord Op PM e ao CAvPM as demandas relacionadas ao aperfeiçoamento de tecnologias necessárias à ampliação da eficiência do Programa, registrando os fatos de interesse policial e as ocorrências com resultados relevantes e que possam ser utilizados como referenciais por outras OPM ou, se negativos, possam indicar a revisão de determinado procedimento, para fins de manutenção dos repositórios de boas prática (subitens “6.9.5.1.1.” e 6.9.5.1.2.”).</p>
+<p>6.11. <strong>Prescrições diversas:</strong></p>
+<p>6.11.1. os Cmdo Pol poderão constituir estruturas matriciais de Equipes Drones, temporárias ou permanentes, que serão denominadas Núcleos de Drones, sobretudo para o desenvolvimento de treinamentos permanentes das Equipes Drones, bem como o emprego em operações programadas que exijam respostas vetoriais externas ou no nível regional;</p>
+<p>6.11.2. a participação de policiais militares de outros estados da Federação e outros representantes de órgãos públicos alheios à Polícia Militar do Estado de São Paulo em cursos, estágios e treinamentos pertinentes à temática desta Diretriz fica condicionada à autorização expressa do Subcmt PM;</p>
+<p>6.11.3. as imagens de interesse de segurança pública captadas pelos UAS serão consideradas evidências digitais (subitem “6.1.4.”), estando sujeitas à legislação vigente, principalmente no que concerne às regras de cadeia de custódia previstas no art. 158-A e B do Código de Processo Penal;</p>
+<p>6.11.4. todas as disposições da Lei federal nº 13.709, de 14AGO18 (Lei Geral de Proteção de Dados – LGPD) deverão ser observadas, protegendo-se os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural;</p>
+<p>6.11.5. as disposições desta Diretriz são consideradas imprescindíveis à segurança da sociedade e do Estado, devendo ser, inicialmente, classificadas no grau de sigilo de reservado, nos termos da Lei federal nº 12.527, de 18NOV11 (Lei de Acesso à Informação), e do Decreto nº 68.155, de 09DEZ23 (Regulamenta, em âmbito estadual, a Lei federal nº 12.527/11);</p>
+<p>6.11.6. revogam-se as disposições em contrário, em especial a Diretriz nº PM3-001/02/19, de 21OUT19 [Obtenção e emprego operacional de Sistemas de Aeronaves Não Tripuladas – UAS (Drones) pela Polícia Militar].</p>
+<h2 class="section-heading">NOTAS DE RODAPÉ</h2><p id="nota-1" class="legal-article"><strong>1.</strong> Arquitetura de C4ISR: consiste em sistema informatizado voltado a maximizar a capacidade operativa dos recursos policial-militares, tanto em atividades cotidianas de policiamento ostensivo quanto para o atendimento de ocorrências emergenciais complexas, por meio de equipamentos, aplicações, serviços e processos representados pelo acrônimo C4ISR – Comando, Controle, Comunicações, Computadores, Inteligência, Vigilância (Surveillance) e Reconhecimento (subitem “6.4.1.” da Diretriz nº PM3-001/02/23, referência “1.4.”).</p><p id="nota-2" class="legal-article"><strong>2.</strong> Instalações físicas dotadas de recursos humanos, materiais e tecnológicos, implementadas em caráter permanente ou provisório, dedicadas às atividades típicas de comando e controle. Estão organizadas em (i) Centro de Comando e Controle (CC2); (ii) Sala de Operações; (iii) Policial militar destacado em Centro de Controle Operacional (CCO) de outros órgãos; (iv) Sala de Gerenciamento de Incidentes; (v) Centro de Comando e Controle Móvel (CC2 Móvel), conforme subitem “6.5.” e divisões da Diretriz nº PM3-001/02/23, referência “1.4.”.</p><p id="nota-3" class="legal-article"><strong>3.</strong> NOTAM (Notice to Airmen): emitido pelo Departamento de Controle do Espaço Aéreo (DECEA) e tem por finalidade divulgar antecipadamente a informação aeronáutica de interesse direto e imediato para a segurança e regularidade da navegação aérea. A divulgação antecipada só não ocorrerá nos casos em que surgirem deficiências nos serviços e instalações que, obviamente, não puderem ser previstas.</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Programa de Policiamento com Drones neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Programa de Policiamento com Drones</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Programa de Policiamento com Drones são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-policiamento-drones-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Programa de Policiamento com Drones? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Programa de Policiamento com Drones, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Programa de Policiamento com Drones foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
