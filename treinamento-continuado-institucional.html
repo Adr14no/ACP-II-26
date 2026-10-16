@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Treinamento Continuado Institucional (TCI) — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+
+.material-picker-backdrop{position:fixed;inset:0;z-index:120;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}.material-picker-backdrop.open{display:flex}.material-picker{width:min(560px,100%);background:#fff;border:1px solid #cbd5e1;border-radius:14px;overflow:hidden;box-shadow:0 25px 80px #0007}.material-picker-head{padding:16px 18px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}.material-picker-head h2{margin:0;font-size:18px}.material-picker-list{padding:14px;display:grid;gap:9px}.material-option{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#26364d;border:1px solid var(--line);border-radius:9px;padding:13px;font-weight:750}.material-option:hover{border-color:var(--gold);background:#fffbed}.material-picker-foot{padding:12px 14px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;background:#f8fafc}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Organizacionais</div><h1>Treinamento Continuado Institucional (TCI)</h1><p>Diretriz nº PM3-001/03/24 · Texto integral para estudo. Consulte a publicação oficial para verificar atualizações e vigência.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" type="button" id="open-material-picker">Escolher material de apoio ↗</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO">
+<p>SÃO PAULO – SP</p>
+<p>051000SET24</p>
+<p>TREINAMENTO CONTINUADO INSTITUCIONAL - TCI</p>
+<p>DIRETRIZ Nº PM3-001/03/24</p>
+<h2 class="section-heading">1. REFERÊNCIAS</h2>
+<h2 class="section-heading">1.1. Lei complementar nº 1.036, de 11JAN08, que institui o Sistema de Ensino da Polícia Militar</h2>
+<p>do Estado de São Paulo;</p>
+<h2 class="section-heading">1.2. Decreto nº 54.911, de 14OUT09, que regulamenta a Lei Complementar estadual nº 1.036,</h2>
+<p>de 11JAN08;</p>
+<h2 class="section-heading">1.3. Diretriz Geral de Ensino [DGE (D-5-PM)];</h2>
+<h2 class="section-heading">1.4. Instrução do Sistema Integrado de Treinamento Policial Militar (I-22-PM);</h2>
+<h2 class="section-heading">1.5. Portaria nº PM1-7/02/23, de 30MAI23 (Dispõe sobre o regime de trabalho na Polícia Militar</h2>
+<p>do Estado de São Paulo e dá outras providências).</p>
+<h2 class="section-heading">2. FINALIDADE</h2>
+<p>Estabelecer parâmetros técnicos e doutrinários para o desenvolvimento do Treinamento</p>
+<p>Continuado Institucional (TCI) na PMESP.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p class="subheading">3.1. as circunstâncias sociais, a cada dia, exigem maior preparo físico e técnico do policial militar,</p>
+<p>que necessita de desenvolvimento constante e essencial para o desempenho eficaz e seguro de</p>
+<p>suas funções;</p>
+<p class="subheading">3.2. a aptidão física para o exercício da função operacional, atribuição inerente a qualquer policial</p>
+<p>militar, é uma condição necessária que, além de preservar a saúde, permite o aumento da</p>
+<p>capacidade de resposta e tende a reduzir afastamentos decorrentes de eventuais lesões em</p>
+<p>serviço;</p>
+<p class="subheading">3.3. o preparo técnico-profissional é exigido para a tomada rápida de decisões, com maior</p>
+<p>assertividade, especialmente em situações de emergência, em ambientes diversos e adversos,</p>
+<p>conduzindo a resultados eficientes e potencializando a segurança operacional própria, dos</p>
+<p>demais policiais militares atuantes nos teatros de operações e de terceiros;</p>
+<p class="subheading">3.4. policiais militares fisicamente aptos e tecnicamente competentes ampliam o nível de confiança</p>
+<p>no trabalho individual e coletivo, demonstrando à sociedade maior profissionalismo e</p>
+<p>compromisso com a segurança pública, o que contribui com a preservação da imagem</p>
+<p>institucional e com o reconhecimento social da legitimidade policial.</p>
+<h2 class="section-heading">4. OBJETIVO</h2>
+<p class="subheading">4.1. desenvolver um modelo institucional padronizado de treinamento físico e técnico-operacional</p>
+<p>para ser executado durante o turno de serviço, de modo contínuo e programado a todo o efetivo</p>
+<p>policial-militar;</p>
+<p class="subheading">4.2. promover a saúde física e mental do policial militar;</p>
+<p class="subheading">4.3. ampliar a eficiência e a segurança operacional das ações policial-militares, por meio de</p>
+<p>treinamento continuado.</p>
+<h2 class="section-heading">5. MISSÃO</h2>
+<p>Coordenação, execução, monitoramento e controle do Treinamento Continuado Institucional</p>
+<p>(TCI), por meio dos Órgãos de Direção e dos Cmdo Pol e suas OPM subordinadas, de modo</p>
+<p>que todo o efetivo policial-militar participe rotineiramente das instruções físico e técnicooperacionais programadas, nos termos definidos nesta Diretriz (DTZ).</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<h2 class="section-heading">6.1. Conceituação:</h2>
+<h2 class="section-heading">6.1.1. Anamnese: é o processo de coleta sistemática de informações sobre o histórico de saúde,</h2>
+<p>hábitos de vida relacionados ao trabalho e no âmbito pessoal, condições físicas e mentais</p>
+<p>do policial militar, realizado por meio de uma entrevista, ou questionário, estruturada. Esse</p>
+<p>procedimento visa identificar condições pré-existentes, possíveis limitações ou restrições</p>
+<p>físicas, bem como traçar um perfil físico e comportamental que oriente a elaboração de</p>
+<p>programas de exercício físico seguros e eficazes., proporcionando, também,</p>
+<p>autoconhecimento ao entrevistado;</p>
+<h2 class="section-heading">6.1.2. Calendário do TCI: programação anual de treinamentos físicos e técnico-operacionais a</h2>
+<p>serem desenvolvidos nas OPM;</p>
+<h2 class="section-heading">6.1.3. Calendário Técnico-Operacional (CTO): calendário anual elaborado pela EEF, composto</h2>
+<p>por assuntos de interesse institucional atinentes às instruções técnico-operacionais que</p>
+<p>deverão ser aplicados no âmbito do TCI;</p>
+<h2 class="section-heading">6.1.4. Composição Corporal: proporção relativa de diferentes componentes que constituem o</h2>
+<p>peso total do corpo, incluindo massa magra e massa gorda. Busca-se analisar a composição</p>
+<p>corporal do policial militar, tais como: peso total, altura e índice de massa corporal (IMC)</p>
+<p>e os percentuais de massa gorda, massa magra e gordura visceral;</p>
+<h2 class="section-heading">6.1.5. Regimental de Treinamento Físico e Técnico-Operacional: Oficial PM formado no Curso</h2>
+<p>de Bacharelado em Educação Física (CBEF), ministrado pela Escola de Educação Física</p>
+<p>(EEF), encarregado de assessorar e coordenar os treinamentos e avaliações físicas</p>
+<p>desenvolvidos e realizados nos Órgãos de Direção e nos Cmdo Pol, bem como nas OPM</p>
+<p>subordinadas;</p>
+<h2 class="section-heading">6.1.6. Responsável pelo Treinamento da OPM: Policial Militar formado, preferencialmente, no</h2>
+<p>Curso de Bacharelado em Educação Física (CBEF) ministrado pela Escola de Educação</p>
+<p>Física (EEF), ou bacharel em educação física por outra instituição de ensino superior,</p>
+<p>encarregado de assessorar o Regimental de Treinamento Físico e Técnico-Operacional nos</p>
+<p>assuntos ligados à educação física e Treinamento Técnico-Operacional na OPM;</p>
+<h2 class="section-heading">6.1.7. Sobreposição de horário (efetivo operacional): período de concomitância do horário de</h2>
+<p>serviço entre os pelotões operacionais de OPM territoriais, garantindo que, diariamente,</p>
+<p>um pelotão realize o treinamento sem comprometer a continuidade do serviço policialmilitar;</p>
+<h2 class="section-heading">6.1.8. Testes hemodinâmicos: testes que possuem o objetivo de analisar a sáude cardiovascular</h2>
+<p>do policial militar. É composto pela verificação da pressão arterial sistêmica (pressão</p>
+<p>arterial sistólica e diastólica) e pela aferição da frequência cardíaca em repouso;</p>
+<h2 class="section-heading">6.1.9. Treinador Físico da OPM: Policial Militar formado, preferencialmente, no CBEF</h2>
+<p>ministrado pela EEF, ou bacharel em educação física por outra instituição de ensino</p>
+<p>superior, encarregado de auxiliar o Responsável pelo Treinamento da OPM, executando,</p>
+<p>in loco, o treinamento e a avaliação física do efetivo;</p>
+<h2 class="section-heading">6.1.10. Treinador Técnico-Operacional da OPM: Policial militar designado para desenvolver as</h2>
+<p>sessões de Treinamento de Tiro Defensivo na Preservação da Vida (TTDPV), Treinamento</p>
+<p>de Procedimento Operacional Padrão (TPOP), Treinamento de Defesa Pessoal Policial</p>
+<p>(TDPP) e pelo Treinamento de Técnicas de Direção Policial Preventiva (TTDPP);</p>
+<p>observando-se os requisitos de capacitação e especialização exigidos para cada um deles;</p>
+<h2 class="section-heading">6.1.11. Treinamento Físico (TF): é o conjunto sistemático e planejado de ações e atividades</h2>
+<p>físicas direcionadas ao desenvolvimento e aprimoramento das capacidades físicas, de</p>
+<p>forma equilibrada e segura, com o objetivo de promover a manutenção e a melhoria do</p>
+<p>estado de saúde, bem como a elevação da qualidade de vida do policial militar;</p>
+<h2 class="section-heading">6.1.12. Treinamento Técnico-Operacional (TTOp): conjunto estruturado de ações que se destina à</h2>
+<p>difusão das normas vigentes e à promoção da padronização e proficiência na execução da</p>
+<p>atividade policial-militar;</p>
+<h2 class="section-heading">6.1.13. Treinamento de Defesa Pessoal Policial (TDPP): modalidade de ensino prática que busca</h2>
+<p>consolidar técnicas de controle físico de pessoas e do uso combinado dos equipamentos</p>
+<p>de menor potencial ofensivo, atualizando os conhecimentos profissionais do policial</p>
+<p>militar;</p>
+<h2 class="section-heading">6.1.14. Treinamento Durante o Serviço (TDS): modalidade de ensino que conjuga variadas</h2>
+<p>formas de treinamento, de caráter facultativo e executado, exclusivamente, durante o</p>
+<p>turno de serviço do policial militar, com a finalidade de difundir e reforçar conhecimentos</p>
+<p>profissionais;</p>
+<h2 class="section-heading">6.1.15. Treinamento de Procedimento Operacional Padrão (TPOP): modalidade de ensino prática</h2>
+<p>que busca consolidar no policial militar os padrões de excelência em procedimentos</p>
+<p>operacionais estabelecidos pela Instituição para o emprego correto de técnicas e táticas e</p>
+<p>equipamentos policiais, necessários ao desenvolvimento da polícia ostensiva e</p>
+<p>preservação da ordem pública;</p>
+<h2 class="section-heading">6.1.16. Treinamento de Tiro Defensivo na Preservação da Vida (TTDPV): cujo objetivo é</h2>
+<p>aprimorar o policial militar no uso e manuseio de armas de fogo de maneira técnica e</p>
+<p>segura, com ênfase na preservação da vida, tanto própria quanto de terceiros. O</p>
+<p>treinamento foca no desenvolvimento da qualidade técnica, no preparo psicológico e no</p>
+<p>profissionalismo, assegurando que o uso da força seja sempre proporcional, legítimo e</p>
+<p>necessário. A finalidade é capacitar o policial militar a tomar decisões seguras e oportunas</p>
+<p>em situações de risco, servindo e protegendo a sociedade de forma ética e eficiente;</p>
+<h2 class="section-heading">6.1.17. Treinamento de Técnicas de Direção Policial Preventiva (TTDPP): modalidade de ensino</h2>
+<p>prática que tem como objetiv treinar e conscientizar o Policial Militar a conduzir a viatura</p>
+<p>policial de forma segura e eficiente. O TTDPP busca preservar vidas e o patrimônio</p>
+<p>institucional, reduzindo a ocorrência de acidentes de trânsito e garantindo a segurança de</p>
+<p>todos os envolvidos, promovendo uma direção preventiva e responsável em consonância</p>
+<p>com os padrões operacionais da Polícia Militar.</p>
+<h2 class="section-heading">6.2. Princípios gerais do TCI:</h2>
+<p>6.2.1. o TCI é um instrumento de manutenção e aprimoramento da capacidade técnicooperacional do policial militar, promovendo a padronização técnica e a melhoria das</p>
+<p>condições físicas e da saúde do efetivo;</p>
+<p class="subheading">6.2.2. de realização obrigatória, deverá ser executado, sempre, durante o turno de serviço</p>
+<p>(operacional ou administrativo) do policial militar;</p>
+<p class="subheading">6.2.3. todas as sessões de TCI deverão ter como premissa a segurança e a integridade física dos</p>
+<p>treinadores, alunos e terceiros;</p>
+<p class="subheading">6.2.4. o TCI deve ser pautado, sempre, na eficiência e na dedicação integral dos envolvidos,</p>
+<p>aproveitando-se, ao máximo, o tempo destinado à atividade.</p>
+<h2 class="section-heading">6.3. Desenvolvimento:</h2>
+<p class="subheading">6.3.1. o TCI será desenvolvido em 4 fases, a saber:</p>
+<p class="subheading">6.3.1.1. 1ª fase - designação de atribuições:</p>
+<p class="subheading">6.3.1.1.1. cada Cmt/Ch/Dir dos Órgãos de Direção ou Cmdo Pol deverá designar um Oficial PM</p>
+<p>para exercer a função de Regimental de Treinamento Físico e Técnico-Operacional;</p>
+<p class="subheading">6.3.1.1.2. os Cmt das OPM subordinadas designarão os Policiais Militares para exercerem a função</p>
+<p>de Responsável pelo Treinamento na OPM, bem como os Treinadores Físicos;</p>
+<p class="subheading">6.3.1.1.3. o Cmt/Ch/Dir dos Órgãos de Direção ou Cmdo Pol e suas OPM subordinadas deverão</p>
+<p>informar à EEF o nome, RE, Posto/Grad e OPM dos policiais militares que exercerão</p>
+<p>as funções descritas nos subitens “6.3.1.1.1.” e 6.3.1.1.2.” desta DTZ, por meio do email eeftreinamentocontinuado@policiamilitar.sp.gov.br.</p>
+<p class="subheading">6.3.1.2. 2ª fase – nivelamento do conhecimento:</p>
+<p class="subheading">6.3.1.2.1. os policiais militares indicados para exercer as funções descritas nos subitens</p>
+<p>“6.3.1.1.1.” e “6.3.1.1.2.”, durante a fase de implantação do TCI, serão submetidos a um</p>
+<p>nivelamento de conhecimento, ministrado pela EEF;</p>
+<p class="subheading">6.3.1.2.2. o nivelamento de conhecimento será desenvolvido em meio dia letivo, conforme</p>
+<p>calendário elaborado e disponiblizado por aquele OAES;</p>
+<p class="subheading">6.3.1.2.3. os indicados para participarem do nivelamento serão divididos em turmas pela EEF,</p>
+<p>mediante planejamento próprio, de acordo com sua capacidade de formação.</p>
+<p class="subheading">6.3.1.3. 3ª fase - Avaliação Física do Efetivo:</p>
+<p class="subheading">6.3.1.3.1. será realizada a avaliação física de cada policial militar que será submetido ao TCI,</p>
+<p>contemplando:</p>
+<p class="subheading">6.3.1.3.1.1. a anamnese, que será aplicada por intermédio de questionário eletrônico de respostas</p>
+<p>autorrelatadas, nos quais os dados obtidos serão de acesso restrito à EEF e ao Centro</p>
+<p>de Apoio Psicológico e Social (CAPS);</p>
+<p class="subheading">6.3.1.3.1.2. o teste hemodinâmico, que será realizado por meio da aferiação da pressão arterial e</p>
+<p>batimentos cardíacos em repouso;</p>
+<p class="subheading">6.3.1.3.1.3. o teste de composição corporal, que será realizado por meio da medição do peso,</p>
+<p>altura para determinação do índice de massa corporal (IMC) e percentual de gordura</p>
+<p>e massa muscular, podendo-se utilizar, caso disponível, balanças de bioimpedância;</p>
+<p class="subheading">6.3.1.3.2. a avaliação física do efetivo será de responsabilidade de cada OPM, devendo ser</p>
+<p>realizada antes do início da implantação do TCI. Além disso, deve ser realizada,</p>
+<p>obrigatoriamente, uma reavaliação após, no mínimo, 90 dias e, no máximo, 180 dias;</p>
+<p class="subheading">6.3.1.3.2.1. após a implementação do TCI nas OPM, o processo de reavaliação física deverá</p>
+<p>ocorrer anualmente, conforme calendário disponibilizado pela EEF, com exceção da</p>
+<p>reavaliação citada no subitem anterior;</p>
+<p class="subheading">6.3.1.3.3. os resultados obtidos na avaliação e reavaliação físicas deverão ser dispostos em</p>
+<p>planilhas eletrônicas fornecidas pela EEF e encaminhadas por meio do endereço</p>
+<p>eletrônico eefpesquisa@policiamilitar.sp.gov.br, até 30 dias após sua realização;</p>
+<p class="subheading">6.3.1.4. 4ª fase – execução do TCI nas OPM:</p>
+<p class="subheading">6.3.1.4.1. o TCI será realizado em cada OPM, mediante planejamento próprio, por meio do</p>
+<p>desenvolvimento das sessões de TF e de TTOp;</p>
+<h2 class="section-heading">6.3.1.4.2. Sessões de TF no TCI:</h2>
+<p class="subheading">6.3.1.4.2.1. as sessões de TF a serem desenvolvidas durante o TCI serão elaboradas pela EEF e</p>
+<p>disponibilizadas aos Treinadores Físicos das OPM por meio eletrônico;</p>
+<p class="subheading">6.3.1.4.2.2. as OPM que desenvolvem o Programa de Radiopatrulha deverão (para o</p>
+<p>desenvolvimento das sessões de TF no TCI) promover adequações no regime e</p>
+<p>horário de trabalho do efetivo operacional, na seguinte conformidade:</p>
+<p class="subheading">6.3.1.4.2.2.1. adequação das escalas de serviço operacional para turnos de 12h30min, a fim de</p>
+<p>prever instrução e/ou avaliação nos períodos de serviço;</p>
+<p class="subheading">6.3.1.4.2.2.2. complementarmente, as OPM deverão prever um período de concomitância de 1</p>
+<p>(uma) hora de serviço entre os pelotões operacionais, nos termos no subitem</p>
+<p>“6.1.7.”;</p>
+<p class="subheading">6.3.1.4.2.2.3. o treinamento deverá ocorrer de maneira alternada, ou seja, a cada dia de serviço</p>
+<p>um pelotão realiza o treinamento, enquanto o outro permanece na atividade de</p>
+<p>policiamento ordinário. No serviço seguinte, os pelotões invertem as atividades (o</p>
+<p>que treinou efetua o policiamento e o outro executa o treinamento), de forma que</p>
+<p>cada pelotão realize o TF ao menos por uma vez a cada 2 (dois) serviços, coforme</p>
+<p>exemplo consignado no Anexo “A”.</p>
+<p class="subheading">6.3.1.4.2.3. para o efetivo do expediente administrativo, demais programas de policiamento e</p>
+<p>OPM especializadas, a prática do TF ficará a critério do Cmt/Ch/Dir, sendo</p>
+<p>obrigatória a realização do TF, ao menos, em dois dias da semana e nos moldes</p>
+<p>descritos nesta DTZ;</p>
+<p class="subheading">6.3.1.4.2.4. o TF no TCI poderá ser desenvolvido na própria OPM, não havendo a necessidade</p>
+<p>de deslocamento de efetivo para a realização da atividade física.</p>
+<h2 class="section-heading">6.3.1.4.3. Sessões de TTOp no TCI:</h2>
+<p class="subheading">6.3.1.4.3.1. as sessões de TTOp serão definidas pela EEF e consolidadas em CTO;</p>
+<p class="subheading">6.3.1.4.3.2. o CTO será específico para cada OPM e disponibilizado pela EEF até o penúltimo</p>
+<p>mês do ano anterior;</p>
+<p class="subheading">6.3.1.4.3.3. as sessões de TTOp serão realizadas durante o turno de serviço, em horário diverso</p>
+<p>ao destinado para a realização do TF;</p>
+<p class="subheading">6.3.1.4.3.4. cada policial militar deverá participar, obrigatoriamente, de um TTOp por tema,</p>
+<p>conforme definido no CTO;</p>
+<p class="subheading">6.3.1.4.3.5. conforme planejamento próprio, o P/3 (ou equivalente) da OPM, deverá definir o</p>
+<p>local para a realização das sessões de TTOp, observando os requisitos de capacitação</p>
+<p>e especialização exigidos para cada tema, para fins de designação do treinador;</p>
+<p class="subheading">6.3.1.4.3.6. o TTDPV, o TDPP e o TTDPP serão ministrados, respectivamente, por policiais</p>
+<p>militares formados com aproveitamento nos Cursos de Especialização Profissional</p>
+<p>(CEP): Tiro Defensivo na Preservação da Vida – Método Giraldi ®, Defesa Pessoal</p>
+<p>Policial e Docência em Técnicas de Direção Policial Preventiva, bem como outros</p>
+<p>CEP que venham a substituí-los;</p>
+<p class="subheading">6.3.1.4.3.7. o TPOP deverá ser ministrado por Oficial ou Subten/Sgt PM que, preferencialmente,</p>
+<p>tenha frequentado, ao menos, um Curso de Especialização Profissional (CEP)</p>
+<p>voltado à atividade operacional;</p>
+<p class="subheading">6.3.1.4.3.8. os instrutores de TTDPV, TDPP e de TTDPP deverão, obrigatoriamente, seguir os</p>
+<p>planos de aula disponibilizados pela EEF;</p>
+<p class="subheading">6.3.1.4.3.9. os instrutores de TPOP deverão, obrigatoriamente, seguir o planejamento</p>
+<p>estabelecido pelo Responsável do Treinamento na OPM;</p>
+<p class="subheading">6.3.1.4.3.10. nos TTDPV deverá haver um consumo máximo de 25 (vinte e cinco) munições por</p>
+<p>policial militar, mediante planejamento e disponibilidade. Caso não haja munições</p>
+<p>disponíveis, o TTDPV poderá ser realizado tão somente com foco no treinamento de</p>
+<p>procedimentos, sem o consumo de munição;</p>
+<p class="subheading">6.3.1.4.3.11. os TTDPV deverão ser realizados, obrigatoriamente, em dias distintos e não poderão</p>
+<p>ser desenvolvidos junto ao EAP.</p>
+<h2 class="section-heading">6.4. Gestão e Controle do TCI</h2>
+<p class="subheading">6.4.1. o Responsável pelo Treinamento da OPM, auxiliado pelos Treinadores Físicos, devem</p>
+<p>manter controle dos treinamentos de cada policial militar, a fim de subsidiar relatórios</p>
+<p>periódicos, que serão remetidos à EEF até o 10º (décimo) dia do mês subsequente, mediante</p>
+<p>planilha ou formulário digital a ser elaborado e disponibilizado pela EEF, para o e-mail</p>
+<p>eeftreinamentocontinuado@policiamilitar.sp.gov.br;</p>
+<p class="subheading">6.4.2. da mesma forma que no TF, o Responsável pelo Treinamento da OPM, auxiliado pelos</p>
+<p>instrutores do TTOp, deverá manter controle dos treinamentos de cada policial militar, a</p>
+<p>fim de subsidiar relatórios periódicos, que serão remetidos à EEF até o 10º (décimo) dia do</p>
+<p>mês subsequente, mediante planilha ou formulário digital a ser elaborado e disponibilizado</p>
+<p>pela EEF, para o e-mail eeftreinamentocontinuado@policiamilitar.sp.gov.br.</p>
+<h2 class="section-heading">6.5. Atribuições Particulares:</h2>
+<p class="subheading">6.5.1. 3ª EM/PM</p>
+<p>Analisar eventuais propostas de atualização desta DTZ, assessorando o Cmt G na</p>
+<p>deliberação acerca da necessidade de alterações.</p>
+<h2 class="section-heading">6.5.2. DL</h2>
+<p>Adotar providências para prover recursos logísticos necessários ao desenvolvimento do</p>
+<p>TCI nas OPM.</p>
+<h2 class="section-heading">6.5.3. DF</h2>
+<p>Prover, de acordo com o planejamento financeiro e orçamentário da Polícia Militar,</p>
+<p>recursos para a aquisição de equipamentos e materiais necessários ao desenvolvimento do</p>
+<p>TCI nas OPM.</p>
+<h2 class="section-heading">6.5.4. DP</h2>
+<p>Por intermédio do CAPS, realizar a seleção de questionários validados, a fim de comporem</p>
+<p>a Avaliação Física do Efetivo (anamnese).</p>
+<h2 class="section-heading">6.5.5. DEC</h2>
+<p class="subheading">6.5.5.1. adotar as providências necessárias ao cumprimento desta DTZ, supervisionando as OPM</p>
+<p>que desenvolverão o TCI;</p>
+<p class="subheading">6.5.5.2. aprovar os assuntos e temas de interesse institucional a serem inseridos no CTO;</p>
+<p class="subheading">6.5.5.3. por meio da EEF:</p>
+<p class="subheading">6.5.5.3.1. controlar a execução do TCI por meio de relatórios específicos e, também, in loco, se</p>
+<p>necessário;</p>
+<p class="subheading">6.5.5.3.2. capacitar os Responsáveis pelo Treinamento na OPM e Treinadores Físicos;</p>
+<p class="subheading">6.5.5.3.3. gerir os resultados da avaliação e reavaliação física do efetivo das OPM;</p>
+<p class="subheading">6.5.5.3.4. incluir os questionários validados pelo CAPS, para a fase da anamnese, durante o</p>
+<p>processo de avaliação física de OPM;</p>
+<p class="subheading">6.5.5.3.5. elaborar e estruturar a anamnese e disponibilizá-la às OPM por meio de canal técnico;</p>
+<p class="subheading">6.5.5.3.6. tabular os dados colhidos nas avaliações do efetivo policial-militar, mantendo banco de</p>
+<p>dados próprio;</p>
+<p class="subheading">6.5.5.3.7. desenvolver as sessões de treino do TF;</p>
+<p class="subheading">6.5.5.3.8. dar suporte técnico às OPM, inclusive no início do período de implantação do TCI,</p>
+<p>dirimindo eventuais dúvidas ou esclarecimentos que possam surgir no seu</p>
+<p>desenvolvimento;</p>
+<p class="subheading">6.5.5.3.9. elaborar, anualmente, o CTO;</p>
+<p class="subheading">6.5.5.3.10. desenvolver os planos de aula do TTDPV e TDPP;</p>
+<p class="subheading">6.5.5.3.11. desenvolver, quando necessário, pesquisas científicas de interesse institucional</p>
+<p>envolvendo o TCI;</p>
+<p class="subheading">6.5.5.3.12. consultar, via canal técnico, a OGC responsável por assuntos especializados, ao tratar</p>
+<p>de temas específicos nos planos de aula do TCI, que estejam fora da gestão do</p>
+<p>conhecimento da EEF.</p>
+<p class="subheading">6.5.5.4. por meio da ESSd:</p>
+<p class="subheading">6.5.5.4.1. desenvolver os planos de aula do TTDPP, disponibilizando-os à EEF.</p>
+<h2 class="section-heading">6.5.6. Cmt/Ch Dir de Órgãos de Direção e Cmdo Pol:</h2>
+<p class="subheading">6.5.6.1. coordenar e adotar as providências necessárias quanto ao desenvolvimento do TCI;</p>
+<p class="subheading">6.5.6.2. comunicar à DEC, via canal técnico, eventuais problemas relativos ao planejamento e</p>
+<p>execução do TCI, para imediata solução;</p>
+<p class="subheading">6.5.6.3. zelar para que todo o efetivo subordinado participe dos TCI;</p>
+<p class="subheading">6.5.6.4. responsabilizar-se pelo controle, fiscalização e operacionalização do TCI nas OPM</p>
+<p>subordinadas, conforme preconizado nesta DTZ;</p>
+<p class="subheading">6.5.6.5. por intermédio do Cmt OPM em nível de Ten Cel PM:</p>
+<p class="subheading">6.5.6.5.1. regulamentar, por meio de documento de Estado-Maior, as rotinas de planejamento e</p>
+<p>execução dos TCI na sede do Btl (ou equivalente) e demais OPM subordinadas;</p>
+<p class="subheading">6.5.6.5.2. desenvolver os TCI nos termos dessa DTZ, zelando pela sua correta execução e para</p>
+<p>que todo o efetivo subordinado participe;</p>
+<p class="subheading">6.5.6.5.3. definir o Responsável pelo Treinamento na OPM, bem como os Treinadores Físicos;</p>
+<p class="subheading">6.5.6.5.4. operacionalizar e manter sob controle os treinamentos por meio da seção P/3 ou</p>
+<p>equivalente;</p>
+<p class="subheading">6.5.6.5.5. por intermédio do Cmt Cia PM (ou equivalente):</p>
+<p class="subheading">6.5.6.5.5.1. definir o melhor local para a realização do TF na Cia PM;</p>
+<p class="subheading">6.5.6.5.5.2. apresentar os policiais militares no local estabelecido pela seção P/3 (ou equivalente)</p>
+<p>do Btl (ou equivalente), para a execução do TCI, conforme cronograma estabelecido;</p>
+<p class="subheading">6.5.6.5.5.3. supervisionar o fiel cumprimento das rotinas de treinamento na Cia PM (ou</p>
+<p>equivalente);</p>
+<p class="subheading">6.5.6.5.5.4. cumprir o CTO definido para a sua OPM.</p>
+<h2 class="section-heading">6.6. Prescrições Diversas:</h2>
+<p class="subheading">6.6.1. cada OPM, considerando as pecularidades locais, poderá definir a melhor dinâmica a ser</p>
+<p>empregada para os assuntos descritos no CTO, previamente fornecidos pela EEF;</p>
+<p class="subheading">6.6.2. a participação dos policiais militares no TCI não dispensa a frequência obrigatória ao</p>
+<p>Estágio de Atualização Profissional (EAP), às Instruções de Nivelamento em</p>
+<p>Procedimentos Operacionais (INPO), bem como aos demais treinamentos ou atividades de</p>
+<p>ensino desenvolvidos na Instituição;</p>
+<p class="subheading">6.6.3. a execução do TCI não deve inviabilizar a execução de outras modalidades de treinamento</p>
+<p>ou ensino previstos na Instituição;</p>
+<p class="subheading">6.6.4. caso ocorra emergência policial relevante durante o desenvolvimento do TCI, o CFP (ou</p>
+<p>equivalente), segundo critérios de conveniência e oportunidade relacionados à magnitude</p>
+<p>da ocorrência policial-militar, solicitará ao responsável pela instrução a imediata liberação</p>
+<p>das equipes que estiverem sendo treinadas, informando o P/3 posteriormente, relatando o</p>
+<p>ocorrido;</p>
+<p class="subheading">6.6.5. por se tratar de treinamento policial-militar, os instrutores empregados nas sessões de</p>
+<p>treinamento não farão jus a retribuição pecuniária;</p>
+<p class="subheading">6.6.6. fica liberado o canal técnico entre as OPM com atribuições particulares previstas nesta</p>
+<p>DTZ, com vistas à solução de problemas e esclarecimentos que se fizerem necessários;</p>
+<p class="subheading">6.6.7. os casos não tratados nessa DTZ, que demandem uniformização, serão submetidos à</p>
+<p>apreciação do Comando da Instituição para a conveniente deliberação</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Procedimento Disciplinar neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Procedimento Disciplinar</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Treinamento Continuado Institucional são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+
+<div class="material-picker-backdrop" id="material-picker-modal" role="dialog" aria-modal="true" aria-labelledby="material-picker-title">
+ <div class="material-picker">
+  <div class="material-picker-head"><h2 id="material-picker-title">Treinamento Continuado Institucional — TCI</h2></div>
+  <div class="material-picker-list">
+   <a class="material-option" href="#document" id="material-option-norma">Norma — texto integral nesta página <span>↓</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1cJADlj1UpMkjEUjYWrd6jIsI4RNKT5mD/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo 1 <span>↗</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1Q44z0piKp0QLLmUqFnymc3Jpkot7rX8X/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo 2 <span>↗</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1M1L6EwL0oHUQ3XP6TMpoNfV6fNMuHE4p/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Mapa mental <span>↗</span></a>
+  </div>
+  <div class="material-picker-foot"><button class="btn" type="button" id="close-material-picker">Fechar</button></div>
+ </div>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+
+<script>
+(() => {
+ const modal=document.getElementById('material-picker-modal');
+ const open=document.getElementById('open-material-picker');
+ const close=document.getElementById('close-material-picker');
+ if(!modal||!open||!close)return;
+ const hide=()=>{modal.classList.remove('open');open.focus();};
+ open.addEventListener('click',()=>modal.classList.add('open'));
+ close.addEventListener('click',hide);
+ const norma=document.getElementById('material-option-norma');
+ norma.addEventListener('click',()=>{modal.classList.remove('open');});
+ modal.addEventListener('click',e=>{if(e.target===modal)hide();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))hide();});
+})();
+</script>
+
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-tci-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Procedimento Disciplinar? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Procedimento Disciplinar, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Procedimento Disciplinar foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
