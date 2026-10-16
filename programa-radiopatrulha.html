@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Programa de Radiopatrulha — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Operacionais</div><h1>Programa de Radiopatrulha</h1><p>Diretriz nº PM3-002/02/20 · Texto para estudo. Confira a fonte oficial e eventuais alterações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO">
+<p>PROGRAMA DE RADIOPATRULHA DIRETRIZ Nº PM3-002/02/20</p>
+<h2 class="section-heading">1. REFERÊNCIA</h2>
+<p>Diretriz nº PM3-001/02/20, de 06MAR20 – Normas para o Sistema Operacional de Policiamento PM (NORSOP).</p>
+<h2 class="section-heading">2. FINALIDADE</h2>
+<p>Disciplinar o desenvolvimento do Programa de Radiopatrulha (RP) no Estado de São Paulo.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p>3.1. as inovações que se processam na Polícia Militar ao longo do tempo, associadas à evolução natural que se opera no ambiente social em que atua, tornam necessário o aprimoramento das diretrizes de distribuição e emprego de seus efetivos, dentre eles o Programa RP;</p>
+<p>3.2. este Programa de Policiamento é voltado à realização do policiamento ostensivo como forma de inibir, coibir e reprimir crimes, bem como dar atendimento às demandas de segurança pública da população, tanto as originadas pelo telefone de emergência “190”, quanto as decorrentes das solicitações diretas junto às Unidades de Serviço (US), instalações policial-militares ou, ainda, outras plataformas digitais;</p>
+<p>3.3. visando garantir a efetividade dos serviços prestados, a Radiopatrulha necessita ser identificada como o primeiro nível de resposta às necessidades da população e, por conseguinte, o mais importante dentre os Programas de Policiamento desenvolvidos pela Polícia Militar, devendo o emprego racional de suas US ser realizado de acordo com o Plano de Policiamento Inteligente (PPI), metodologia de planejamento fundamental para ampliar a percepção de segurança, o controle da criminalidade e o atendimento às chamadas de emergência “190”.</p>
+<h2 class="section-heading">4. OBJETIVOS</h2>
+<p>4.1. racionalizar o emprego dos recursos humanos e meios materiais em observância às diretrizes básicas do Sistema Operacional de Policiamento PM (vide NORSOP);</p>
+<p>4.2. oferecer melhor percepção de segurança e qualidade de vida às pessoas;</p>
+<p>4.3. atuar na redução dos indicadores criminais de acordo com a metodologia de policiamento baseado em evidências estabelecida pelo PPI.</p>
+<h2 class="section-heading">5. MISSÃO</h2>
+<p>As Organizações Policial-Militares (OPM) Territoriais deverão executar o Policiamento Ostensivo Geral por meio do Programa RP, conforme os termos desta Diretriz.</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<h2 class="section-heading">6.1. Conceituação:</h2>
+<h3 class="subheading">6.1.1. Radiopatrulha</h3>
+<p>É a denominação que recebe a fração de F Ptr vinculada à Matriz Operacional I, com a incumbência de realizar o policiamento ostensivo geral voltado à preservação da ordem pública em todas as localidades, sendo empregado predominantemente em ambientes urbanos. Atua com viatura, armamento e equipamentos adequados ao atendimento das demandas ordinárias de segurança pública sob a responsabilidade das OPM Territoriais.</p>
+<h3 class="subheading">6.1.2. Programa de Radiopatrulha</h3>
+<p>Programa que tem por objetivo organizar o desenvolvimento das atividades de policiamento ostensivo geral.</p>
+<h3 class="subheading">6.1.3. Patrulha</h3>
+<p>Unidade de Serviço cujas atividades típicas estejam voltadas predominantemente ao patrulhamento preventivo.</p>
+<h3 class="subheading">6.1.4. Matriz Operacional I – Policiamento Preventivo</h3>
+<p>Composta pelo Programa de Radiopatrulha, Programas de Policiamento Complementares e Atividades Operacionais Diversas, implementada de acordo com critérios de necessidade e disponibilidade das OPM Territoriais, com o propósito de oferecer melhor percepção de segurança e qualidade de vida às pessoas, por meio do controle de indicadores criminais e atendimento às chamadas de emergência 190. Seus objetivos são mais facilmente alcançados quando há integração da OPM junto à comunidade em que está inserida, bem como às instituições públicas e/ou privadas, de forma a facilitar a conjugação de esforços para atuar sobre os fatores que afetam a ordem pública.</p>
+<h3 class="subheading">6.1.5. Nível de Resposta 1</h3>
+<p>Atuação em ocorrências policiais com o emprego de recursos locais, considerando, para tanto, uma US atuando unicamente, sob a premissa de organização sistêmica de polícia ostensiva, e/ou com o apoio de outras US da Matriz Operacional I, mesmo que de OPM limítrofe.</p>
+<h3 class="subheading">6.1.6. Programas de Policiamento Primários</h3>
+<p>Constituídos pelo Programa de Radiopatrulha e Programa de Força Tática, os quais terão prioridade de desenvolvimento em relação aos demais Programas de Policiamento e Atividades Operacionais Diversas.</p>
+<h2 class="section-heading">6.2. Condições de Execução:</h2>
+<p>6.2.1. o Programa RP consiste em Programa de Policiamento Primário, sendo prioritário em relação aos demais Programas de Policiamento e Atividades Operacionais Diversas, bem como imprescindível em todos os municípios do Estado, devendo, por isso, ser desenvolvido por todas as OPM Territoriais, cabendo aos respectivos Comandantes exercerem a fiscalização, monitoramento e controle gerencial plenos, nos termos das NORSOP;</p>
+<p>6.2.2. o Programa RP, que é parte da Matriz Operacional I, deve operar ininterruptamente (24 horas por dia) e suas US (doravante denominadas Patrulhas para fins de aplicação desta Diretriz) distribuídas conforme análise oriunda do diagnóstico situacional do PPI;</p>
+<p>6.2.3. quantidade mínima de Patrulhas em operação ininterrupta:</p>
+<p>6.2.3.1. cada Cia PM deve contar com, no mínimo, 3 Patrulhas distribuídas em sua respectiva subárea, que irão compor 1 Grupo de Patrulha, devidamente supervisionadas pelo Comando de Grupo de Patrulha (CGP);</p>
+<p>6.2.3.2. deve ser mantida, no mínimo, 1 Patrulha operando ininterruptamente nas localidades que possuam estrutura prevista nos Quadros Particulares de Organização (QPO) a partir do escalão Gp PM/Gp PM-Distrital.</p>
+<p>6.2.4. em regra, a gestão do Programa de RP caberá aos Cmt Cia PM. O Coord Op Btl (ou equivalente) somente coordenará a atuação das Patrulhas que estiverem dispostas em AISP, exclusivamente nas OPM que tiverem optado por atuar no Módulo 3 de Configuração Territorial;</p>
+<p>6.2.5. o Comando de Força de Patrulha (CFP) é o responsável pelo funcionamento, coordenação operacional e fiscalização das atividades da Força de Patrulha (F Ptr), sendo auxiliado pelo CGP. Estas atribuições de comando e supervisão observarão o contido no Anexo “B” às NORSOP;</p>
+<p>6.2.6. cada Patrulha será empregada de acordo com o módulo de configuração territorial descrito no Plano Diretor da sua respectiva OPM, executando, isoladamente ou em grupo, as ações policial-militares determinadas pelo escalão superior;</p>
+<p>6.2.7. a Patrulha do Programa RP atuará sempre no Nível de Resposta 1, o que significa dizer que prestará o pronto atendimento a toda ocorrência que lhe for comunicada, de forma urgente e imediata, podendo receber apoio de outras Patrulhas pertencentes a qualquer Matriz Operacional, sempre que a natureza, gravidade ou complexidade da situação o exigir;</p>
+<p>6.2.8. a Patrulha será composta por 2 policiais militares, que utilizarão viaturas de 2 ou de 4 rodas, conforme previsão no Plano Diretor da OPM, na execução de atividades de polícia ostensiva, em um ou mais Subsetores, AISP ou outros parâmetros de distribuição territorial empregados pela respectiva OPM, conforme o módulo de configuração territorial adotado;</p>
+<p>6.2.9. o emprego de Patrulha em viaturas de 2 rodas deverá estar devidamente previsto no Plano Diretor e atenderá aos seguintes parâmetros:</p>
+<p>6.2.9.1. a utilização de motocicleta estará condicionada à conveniência do Cmt OPM, à necessidade operacional e à disponibilidade de meios, considerando, entre outros fatores, as características estruturais, topográficas e de trânsito da localidade e as demandas que requeiram maior rapidez no atendimento;</p>
+<p>6.2.9.2. cada motocicleta será ocupada por somente 1 policial militar;</p>
+<p>6.2.9.3. a Patrulha com motocicletas será empregada, preferencialmente, entre as 06h00min e 23h00min;</p>
+<p>6.2.9.4. durante o turno de serviço, a Patrulha poderá ser realocada das motocicletas para viatura de 4 rodas e vice-versa, de acordo com as características do serviço, do local de patrulhamento e das condições climáticas.</p>
+<p>6.2.10. a OPM deverá indicar, no Sistema de Informações Operacionais da Polícia Militar (SIOPM), a composição das Patrulhas e os territórios de atuação respectivos, devendo ser atualizado diariamente, a cada início de turno ou tão logo ocorram alterações promovidas pelo CFP ou CGP, ou determinadas por autoridade policial-militar superior competente;</p>
+<p>6.2.11. nos casos mais graves, o CGP ou autoridade de comando ou supervisão policial-militar superior poderá reunir as Patrulhas do Programa RP que estiverem mais próximas, coordenando intervenções locais diretas, após as quais deverão retornar imediatamente aos seus locais de patrulhamento;</p>
+<p>6.2.12. quanto maior o equilíbrio na distribuição e emprego de recursos no território, mais eficiente, eficaz e efetiva será a ação geral de presença, logo, de prevenção e intervenção rápida. Assim, deve-se atentar para as seguintes medidas, entre outras:</p>
+<p>6.2.12.1. as Patrulhas devem ser distribuídas racionalmente na circunscrição da OPM, buscando maior alcance visual e, consequentemente, acessibilidade à população;</p>
+<p>6.2.12.2. estacionar a viatura de forma a proporcionar a maior visibilidade possível ao público.</p>
+<p>6.2.13. a fim de melhor dispor dos meios existentes, com vistas ao controle dos indicadores geocriminais e aumento da percepção de segurança da população, os Cmt OPM Territorial poderão empregar, excepcional e matricialmente, as Patrulhas do Programa RP no Status de Viatura “3” (vide M-16-PM), em determinados locais e períodos do dia, para a execução de ações, operações ou missões policial-militares, obedecidas as seguintes condições:</p>
+<p>6.2.13.1. a quantidade de Patrulhas empregadas não poderá inviabilizar o atendimento às demandas próprias do Programa RP;</p>
+<p>6.2.13.2. em conjunto com o Programa RP poderão ser empregadas Patrulhas dos demais Programas de Policiamento e Atividades Operacionais Diversas, exceto do Programa de Policiamento Escolar, quando este dispuser de apenas uma Patrulha na Subárea.</p>
+<p>6.2.14. a viatura, quando em patrulhamento, deve ser conduzida em velocidade compatível com o fluxo de trânsito da via, em termos de velocidade máxima (exceto em caso de deslocamento emergencial) e mínima (metade da velocidade máxima), atentando-se para não prejudicar o fluxo normal de veículos;</p>
+<p>6.2.15. o emprego da viatura em Ponto de Estacionamento ou atendimento de ocorrência deve atender às normas de trânsito, exceto quando houver circunstância contrária em razão das características da ocorrência, da sua urgência ou para garantir a segurança das pessoas nela envolvidas, devendo, neste caso, ser adotados todos os procedimentos para evitar acidentes e/ou prejuízos ao tráfego;</p>
+<p>6.2.16. os policiais militares devem estar munidos de EPI completo, bem como, se possível, de rádio transceptor portátil (HT);</p>
+<p>6.2.17. a Patrulha poderá, desde que os policiais militares sejam habilitados, utilizar armas portáteis, conforme normatização em vigor, devidamente autorizada pelos escalões superiores;</p>
+<p>6.2.18. o CFP e o CGP deverão utilizar, obrigatoriamente, armas portáteis, devendo ser habilitados para tal mediante controle das Seções Operacionais/Gabinetes de Treinamento, e, pelo menos o CFP, também escudo balístico e instrumentos de menor potencial ofensivo;</p>
+<p>6.2.19. o regime de trabalho a ser aplicado ao Programa RP e as trocas de turnos de serviço deverão observar o contido no subitem “6.10.” e divisões das NORSOP, observada a regulamentação institucional em vigor.</p>
+<h2 class="section-heading">6.3. Atribuições particulares:</h2>
+<p>6.3.1. Coord Op PM Monitorar e supervisionar, por meio do Guia de Indicadores dos Programas de Policiamento, o desenvolvimento do Programa RP.</p>
+<p>6.3.2. CPC, CPM, CPI e CPA</p>
+<p>6.3.2.1. gerenciar a alocação de recursos a serem utilizados no Programa RP por suas OPM subordinadas, garantindo o alinhamento das informações consignadas em seus respectivos Planos Diretores à sua aplicação efetiva;</p>
+<p>6.3.2.2. gerenciar a coleta das informações referentes ao Guia de Indicadores do Programa RP, monitorando o seu registro junto à plataforma da Coord Op PM.</p>
+<h2 class="section-heading">6.4. Prescrições Diversas:</h2>
+<p>6.4.1. revogam-se as disposições em contrário, em especial:</p>
+<p>6.4.1.1. Diretriz nº PM3-011/02/05, de 07NOV05 (Programa de Radiopatrulha – Atendimento “190”);</p>
+<p>6.4.1.2. Diretriz nº PM3-012/02/05, de 07NOV05 (Programa de Policiamento Integrado);</p>
+<p>6.4.1.3. Diretriz nº PM3-004/02/12, de 30OUT12 (Emprego de Motocicletas no Programa de Radiopatrulha – Atendimento “190”).</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Procedimento Disciplinar neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Procedimento Disciplinar</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Procedimento Disciplinar são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-programa-radiopatrulha-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Procedimento Disciplinar? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Procedimento Disciplinar, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Procedimento Disciplinar foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
