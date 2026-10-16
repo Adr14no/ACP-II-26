@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Sala de Operações — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc-title{text-align:center;font-weight:900;font-size:22px;letter-spacing:.04em;margin-bottom:8px!important}.doc-subtitle{text-align:center;font-weight:800;color:#334155;margin-bottom:24px!important}.footnote-ref{color:#8a6b00;font-weight:800;text-decoration:none}.footnotes{font-size:13px;line-height:1.6;padding-left:24px}.footnotes li{margin:0 0 12px}.back-note{font-size:11px;margin-left:8px;color:#806315}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+
+.material-picker-backdrop{position:fixed;inset:0;z-index:120;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}.material-picker-backdrop.open{display:flex}.material-picker{width:min(560px,100%);background:#fff;border:1px solid #cbd5e1;border-radius:14px;overflow:hidden;box-shadow:0 25px 80px #0007}.material-picker-head{padding:16px 18px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}.material-picker-head h2{margin:0;font-size:18px}.material-picker-list{padding:14px;display:grid;gap:9px}.material-option{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#26364d;border:1px solid var(--line);border-radius:9px;padding:13px;font-weight:750}.material-option:hover{border-color:var(--gold);background:#fffbed}.material-picker-foot{padding:12px 14px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;background:#f8fafc}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Organizacionais</div><h1>Sala de Operações (TCI)</h1><p>Diretriz nº PM3-001/03/24 · Texto integral para estudo. Consulte a publicação oficial para verificar atualizações e vigência.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" type="button" id="open-material-picker">Escolher material de apoio ↗</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="SALA DE OPERAÇÕES · PMESP"><p class="doc-title">SALA DE OPERAÇÕES</p>
+<p class="doc-subtitle">NOTA DE INSTRUÇÃO Nº PM3-002/02/26</p>
+<h2 class="section-heading">1. REFERÊNCIAS</h2>
+<p>1.1. Decreto nº 68.828, de 04SET24 (Institui o Programa Muralha Paulista e dá outras providências);</p>
+<p>1.2. Resolução SSP-24, de 07MAI26 (Aprova e divulga o Plano Estadual de Combate à violência contra a Mulher no âmbito da Secretaria da Segurança Pública do Estado de São Paulo);</p>
+<p>1.3. Diretriz nº PM3-002/02/13, de 13JUN13 (Programa Vizinhança Solidária);</p>
+<p>1.4. Diretriz nº PM3-001/02/20, de 06MAR20 (Normas para o Sistema Operacional de Policiamento PM – NORSOP);</p>
+<p>1.5. Diretriz nº PM3-003/02/20, de 12MAR20 (Programa de Policiamento Comunitário);</p>
+<p>1.6. Diretriz nº PM3-001/02/23, de 26JUN23 (Sistema de Comando e Controle da Polícia Militar);</p>
+<p>1.7. Diretriz nº PM3-003/02/23, de 26DEZ23 (Sistema de Comando de Incidentes da Polícia Militar - SCIPM);</p>
+<p>1.8. Diretriz nº PM3-005/02/24, de 16DEZ24 (Programa de Policiamento com drones);</p>
+<p>1.9. Diretriz nº PM3-002/02/25, de 13AGO25 (Sistema Estadual de Atendimento e Resposta a Emergências e Incidentes Críticos em Segurança Pública - SisCOPOM);</p>
+<p>1.10. Nota de Instrução nº PM3-001/02/15, de 03SET15 (Sistemática de Atuação da Polícia Militar no Atendimento de Ocorrências - Resolução SSP-57/2015);</p>
+<p>1.11. Nota de Instrução nº PM3-007/03/17, de 14DEZ17 (Boletim de Ocorrência Eletrônico);</p>
+<p>1.12. Nota de Instrução nº PM3-001/02/26, de 12MAI26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar).</p>
+<p>2. FINALIDADE Disciplinar o funcionamento da Sala de Operações (SOp) na Polícia Militar do Estado de São Paulo, as atividades a ela vinculadas, bem como os parâmetros de seleção e capacitação do seu efetivo.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p>3.1. a Secretaria da Segurança Pública (SSP/SP), com base na contemporânea Estratégia de Policiamento com Tecnologia, instituiu o Programa Muralha Paulista, que possui objetivos de restringir a mobilidade criminal e de aumentar a probabilidade de prisão de criminosos durante seus deslocamentos no território paulista, sendo constituído por um conjunto integrado de soluções tecnológicas de infraestrutura física, de operação em nuvem e de inteligência artificial;</p>
+<p>3.2. com fulcro na mesma premissa estratégica e em sintonia com a SSP/SP, a Polícia Militar consolidou o Sistema de Comando e Controle e renovou a concepção de um dos elementos essenciais dessa doutrina institucional de atuação: a Sala de Operações (SOp);</p>
+<p>3.3. desta forma, a SOp possibilita a melhora no atendimento às demandas de polícia ostensiva e preservação da ordem pública por meio do emprego otimizado de recursos operacionais, em consequência do aumento da consciência situacional e direcionamento de esforços, proporcionados pela análise, consolidação e transmissão de informações extraídas por meio de sistemas diversos e ferramentas inteligentes.</p>
+<h2 class="section-heading">4. OBJETIVOS</h2>
+<p>4.1. ampliar a consciência situacional e tomada de decisão dos escalões de comando e supervisão, bem como dos policiais militares responsáveis pela execução do policiamento ostensivo;</p>
+<p>4.2. aumentar a vantagem operacional em relação à prevenção e à repressão imediata dos ilícitos penais e administrativos, além da mitigação das incivilidades consideradas indutoras de crimes;</p>
+<p>4.3. promover a melhoria da percepção de segurança por meio do assessoramento ao processo decisório, potencializando o emprego eficiente dos recursos operacionais destinados à preservação da ordem pública.</p>
+<p>5. MISSÃO As OPM deverão adotar a sistemática de gestão administrativa definida nesta Nota de Instrução (NI), observando os regramentos e critérios técnicos ora estabelecidos.</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<h3 class="subheading">6.1. Conceituação</h3>
+<p>6.1.1. Equipe SOp: Unidade de Serviço (US) composta por um ou mais policiais militares designados na Sala de Operações (SOp), para atuarem no monitoramento, coordenação, comunicação e apoio às ocorrências e aos meios empregados em um determinado território, devidamente integrada ao Centro de Operações da Polícia Militar (COPOM);</p>
+<p>6.1.2. Espaço Lilás: ambiente integrado à Sala de Operações (SOp), voltado ao serviço de prevenção e enfrentamento à violência doméstica e familiar, preferencialmente realizado por policiais militares femininas, capacitadas no âmbito da Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar, por meio do Programa “Lar Mais Seguro”, para atuação no acolhimento, na escuta ativa e na orientação das mulheres nessa situação, com o objetivo de fornecer informações e ferramentas para acesso à rede de apoio e de proteção, para romper o ciclo da violência e evitar o feminicídio. Os policiais militares efetuarão neste espaço, por meio de Sistemas Informatizados Corporativos, a busca ativa de ocorrências das naturezas A98 (violência doméstica) e A99 (medida protetiva), consistente no levantamento sistemático e proativo das ocorrências atendidas na circunscrição sob responsabilidade da OPM, as quais subsidiarão a realização de visitas comunitárias e solidárias por equipes da Patrulha “SP Mulher Segura”, além da realização de atividades de prevenção primária por meio do Programa Vizinhança Solidária;</p>
+<p>6.1.3. DEJEM Lilás: missão de prevenção primária direcionada ao enfrentamento à violência doméstica e familiar, executada por policiais militares capacitados no Programa “Lar mais Seguro”;</p>
+<p>6.1.4. Estratégia de Policiamento com Tecnologia: é a atividade que, empregando inovações tecnológicas inter-relacionadas [inteligência artificial, reconhecimento biométrico (facial, voz, íris, impressões digitais, etc.), sensores, drones, algoritmos preditivos, sistemas informatizados, sistemas de comunicação, etc.], possui a finalidade de coletar, recuperar, processar, armazenar e distribuir dados de interesse policial, subsidiando o processo decisório e contribuindo para o emprego mais adequado dos recursos operacionais na preservação da ordem pública e no controle do crime (identificando criminosos, mapeando padrões criminais, detectando atitudes suspeitas e melhorando o tempo de resposta);</p>
+<p>6.1.5. Patrulha “SP Mulher Segura”: US composta por policiais militares, preferencialmente um masculino e um feminino, que concluíram a capacitação realizada pelo Programa “Lar mais Seguro”, atuando no status 03 (operação especial) e com viatura específica e identidade visual diferenciada, focada em missões de prevenção primária e no enfrentamento à violência doméstica e familiar, por meio da realização de visitas comunitárias e solidárias às mulheres em situação de violência doméstica, dedicadas a aumentar a proteção das mulheres, inibir a violência e capturar agressores que ameaçam, agridem ou infringem medidas protetivas;</p>
+<p>6.1.6. PVS “Acolher”: grupo do Programa Vizinhança Solidária, voltado à proteção e ao tratamento humanizado das vítimas de violência doméstica e por meio do qual serão ofertadas orientações contínuas sobre as principais ações e ferramentas da PMESP e de outros órgãos públicos disponíveis para a defesa das pessoas hipossuficientes diante do ciclo de violência doméstica;</p>
+<p>6.1.7. Sala de Operações (SOp): estrutura física instalada em sede de OPM (escalão de Btl), que, por meio do acesso aos sistemas de comunicação, ferramentas inteligentes, sistemas de videopatrulhamento, entre outros, será responsável por missões de prevenção primária, realizando análise de dados e transmissão de informações qualificadas aos policiais militares incumbidos pela execução do policiamento ostensivo, bem como pelo assessoramento dos escalões de comando e supervisão;</p>
+<p>6.1.8. Serviço de Intervenção Remota (SIR): atendimento remoto de ocorrência classificada como não emergencial e previamente descrita em rol específico, caracterizada pela ausência de risco iminente à vida, integridade física, patrimônio e meio ambiente pela análise preliminar de suas circunstâncias conhecidas, com o objetivo de aumentar a disponibilidade de US para o patrulhamento preventivo e atendimento de ocorrências emergenciais.</p>
+<h3 class="subheading">6.2. Segurança Institucional</h3>
+<p>6.2.1. com o escopo de proteger as informações institucionais, que serão tratadas e veiculadas pelos integrantes da SOp, as seguintes medidas de gestão de riscos devem ser adotadas, com o propósito de garantir a integridade, a confidencialidade, a disponibilidade e a autenticidade de dados:</p>
+<p>6.2.1.1. confidencialidade: de modo a resguardar o caráter sigiloso das informações sensíveis a que terá acesso, ao efetivo da SOp deve ser reforçado o cumprimento da Lei federal nº 12.527/2011 (Lei de Acesso à Informação)1 e Lei federal nº 13.709/2018 (Lei Geral de Proteção de Dados)2 , bem como, em caso de descumprimento, as sanções nela previstas;</p>
+<p>6.2.1.2. disponibilidade:</p>
+<p>6.2.1.2.1. o fornecimento de informação pelo integrante da SOp será efetuado a quem possua a necessidade de conhecer, no momento correto e apenas para atender demanda operacional da Polícia Militar;</p>
+<p>6.2.1.2.2. as informações produzidas pelos integrantes da SOp são, em regra, voláteis e de uso imediato; entretanto, os dados que necessitarem ser preservados para consulta futura permanecerão armazenados nos equipamentos de informática (microcomputadores e aparelhos de telefonia celular funcional) da própria SOp, sendo proibida a supressão desses dados, por qualquer meio, sem a anuência do Supervisor SOp;</p>
+<p>6.2.1.2.3. sob a perspectiva técnica, a disponibilidade de dados nos sistemas informatizados da Instituição, para os integrantes da SOp, deve ser garantida, em primeiro lugar, pelo serviço de telemática da OPM e, em segundo plano, pela Central de Serviços de TIC da PMESP (helpdesk).</p>
+<p>6.2.1.3. autenticidade: após a atribuição de senhas individuais aos integrantes da SOp, para o acesso aos dados, programas e sistemas informatizados em uso na Polícia Militar, será</p>
+<h3 class="subheading">6.3. Condições de Execução</h3>
+<p>6.3.1. a SOp funcionará, preferencialmente, de forma ininterrupta, em razão da natureza essencial das atividades que desempenha, sendo subordinada à Seção Operacional (P/3) ou equivalente;</p>
+<p>6.3.2. os policiais militares designados para compor a Equipe SOp serão empregados no desempenho das atividades próprias e inerentes à SOp;</p>
+<p>6.3.3. Oficial de Operações: função exercida por Oficial Subalterno do QOEM;</p>
+<p>6.3.4. Operador SOp: função exercida por Subten PM, Sgt PM, Cb PM ou Sd PM, que:</p>
+<p>6.3.4.1. não possua sanção disciplinar considerada incompatível com as atividades da SOp;</p>
+<p>6.3.4.2. não possua qualquer das seguintes restrições previstas em norma institucional3 :</p>
+<p>6.3.4.2.1. audição seja primordial (AU);</p>
+<p>6.3.4.2.2. datilografia e digitação (DG);</p>
+<p>6.3.4.2.3. longa permanência sentado (LS);</p>
+<p>6.3.4.2.4. serviços burocráticos (SB);</p>
+<p>6.3.4.2.5. serviços internos (SI);</p>
+<p>6.3.4.2.6. serviços de telefonia (ST);</p>
+<p>6.3.4.2.7. visão seja primordial (VP).</p>
+<p>6.3.4.3. não esteja respondendo a Processo Regular ou Procedimento Administrativo Exoneratório (PAE).</p>
+<p>6.3.5. atribuições da Seção Operacional (P/3) ou equivalente</p>
+<p>6.3.5.1. gerenciar os recursos materiais e tecnológicos, especialmente quanto à deflagração da manutenção periódica dos meios disponíveis e à reposição daqueles que se tornarem obsoletos;</p>
+<p>6.3.5.2. monitorar os processos, organizar os procedimentos e estabelecer as práticas inerentes às intervenções diárias realizadas pela SOp, de modo a verificar se os serviços de segurança pública estão sendo prestados à população com eficiência e qualidade;</p>
+<p>6.3.5.3. preservar a segurança institucional, especialmente no que se refere à proteção dos dados sensíveis tratados pela SOp;</p>
+<p>6.3.5.4. verificar e assegurar que os serviços realizados pela SOp estejam alinhados (sem conflitos ou duplicidade de tarefas) e atuem em sinergia (com otimização dos meios e efetividade</p>
+<p>6.3.5.5. empregar a SOp em apoio ao efetivo do policiamento ostensivo, nos planos de ação ou de operação da OPM, especialmente nas operações policial-militares de grande envergadura4 , para o suporte nas pesquisas criminais;</p>
+<p>6.3.5.6. validar o Cartão de Prioridade de Patrulhamento (CPP) das viaturas da Patrulha “SP Mulher Segura”, elaborado pela SOp por intermédio do Espaço Lilás;</p>
+<p>6.3.5.7. validar os BOe elaborados pelos integrantes da SOp.</p>
+<p>6.3.6. atribuições do Oficial de Operações</p>
+<p>6.3.6.1. gerenciar, coordenar, fiscalizar e apoiar a execução das rotinas administrativas e operacionais da SOp;</p>
+<p>6.3.6.2. elaborar, organizar, controlar e encaminhar as documentações relacionadas às atividades da SOp, observando os modelos, os prazos e os canais institucionais estabelecidos;</p>
+<p>6.3.6.3. manter atualizados o banco de dados e os registros operacionais da SOp, assegurando a organização, a integridade, a rastreabilidade, a segurança e a disponibilidade das informações para consulta pelos escalões de comando e supervisão;</p>
+<p>6.3.6.4. monitorar a inserção, a atualização e a consistência dos dados nos sistemas policiais inteligentes e na planilha de controle dos indicadores de produtividade da SOp, definidos pela Coord Op PM;</p>
+<p>6.3.6.5. elaborar e encaminhar, nos prazos estabelecidos, relatórios, demonstrativos e demais documentos destinados ao acompanhamento das atividades, dos resultados e do indicador de desempenho da SOp, propondo, quando necessário, medidas corretivas e ações de aprimoramento;</p>
+<p>6.3.6.6. acompanhar, organizar e encaminhar aos escalões de comando e supervisão as informações relativas às ocorrências positivas e negativas comunicadas pelo efetivo da SOp, observando os procedimentos institucionais aplicáveis;</p>
+<p>6.3.6.7. propor e desencadear os procedimentos necessários ao reconhecimento formal dos atos meritórios praticados pelos integrantes do efetivo da SOp;</p>
+<p>6.3.6.8. gerenciar e acompanhar a atividade de videopatrulhamento executada pelos integrantes da SOp, zelando pelo cumprimento das diretrizes, pela adequada utilização dos recursos disponíveis e pelo registro das ações realizadas;</p>
+<p>6.3.6.9. promover a integração operacional entre as atividades da SOp e as atribuições da(s) equipe(s) do Programa de Policiamento com Drones, assegurando o adequado fluxo de informações e a coordenação das ações;</p>
+<p>6.3.6.10. supervisionar a elaboração, a execução e o cumprimento do Cartão de Prioridade de Patrulhamento (CPP) estabelecido para a Patrulha “SP Mulher Segura”;</p>
+<p>6.3.6.11. encaminhar o CPP elaborado para a Patrulha “SP Mulher Segura” à apreciação e validação do Supervisor SOp, promovendo os ajustes necessários;</p>
+<p>6.3.6.12. supervisionar o correto preenchimento, a conferência e o encaminhamento do Relatório Operacional da SOp definido pela Coord Op PM;</p>
+<p>6.3.6.13. subsidiar o planejamento, o acompanhamento e a execução das ações relacionadas aos temas de interesse da Organização Policial Militar (OPM), mediante o levantamento, a organização, a análise e a disseminação de informações relevantes, contribuindo para o aprimoramento da gestão, a coordenação das atividades operacionais e a tomada de decisões em tempo oportuno;</p>
+<p>6.3.6.14. promover a integração e o fluxo adequado de informações entre a SOp, as frações operacionais, os órgãos de apoio e os demais setores da OPM, zelando pela padronização dos procedimentos, pela continuidade do serviço e pela observância das normas e diretrizes institucionais.</p>
+<p>6.3.7. atribuições do Operador SOp:</p>
+<p>6.3.7.1. transmitir, de forma ordinária, diária, automática e imediata, informações sobre fatos, ocorrências e intervenções policial-militares relevantes na área da OPM, devidamente checadas por policial militar no teatro de operações ou efetivamente conferidas por policial militar em ferramenta inteligente oficial da Polícia Militar ou de outro órgão público, aos escalões de comando e supervisão, com o fim de ampliar a consciência situacional operacional, melhorar a análise de cenários, aprimorar a prospecção de linhas de ação e aperfeiçoar o processo decisório;</p>
+<p>6.3.7.2. utilizar preferencialmente o sistema de radiocomunicação digital para o envio de informações, recorrendo a outros meios de comunicação sempre que houver impossibilidade técnica, inclusive em “áreas de sombra”, ou quando tal medida se mostrar conveniente e oportuna para ampliar as chances de êxito operacional;</p>
+<p>6.3.7.3. preencher, de forma completa e fidedigna, o Relatório Operacional da SOp (definido pela Coord Op PM), consignando as ocorrências atendidas, as orientações prestadas, as providências adotadas e os respectivos encaminhamentos;</p>
+<p>6.3.7.4. ofertar suporte operacional qualitativo ao policiamento ostensivo com o objetivo de coletar, analisar e fornecer, de forma célere, dados qualitativos às US, por intermédio da rede de rádio, preferencialmente, ou excepcionalmente, por telefone funcional ou fixo da SOp, valendo-se de:</p>
+<p>6.3.7.4.1. sistemas inteligentes;</p>
+<p>6.3.7.4.2. sistemas de videopatrulhamento;</p>
+<p>6.3.7.4.3. sistema de radiocomunicação digital;</p>
+<p>6.3.7.4.4. sistemas informatizados de outros órgãos públicos (Rede Nacional de Integração de Informações de Segurança Pública, Justiça e Fiscalização - INFOSEG; Sistema de Informações Criminais - INFOCRIM; Banco Nacional de Medidas Penais e Prisões - BNMP 3.0; Sistema Muralha Paulista; Sistema Detecta etc.);</p>
+<p>6.3.7.4.5. Intranet PM;</p>
+<p>6.3.7.4.6. Internet;</p>
+<p>6.3.7.4.7. outros meios de comunicação (rádio, televisão e outras plataformas);</p>
+<p>6.3.7.4.8. demais fontes abertas, sobretudo, junto ao solicitante das ocorrências policiais.</p>
+<p>6.3.7.5. manter, na SOp, dados operacionais atualizados, com o objetivo de subsidiar o planejamento, o acompanhamento e a execução das ações relacionadas aos seguintes temas de interesse da OPM:</p>
+<p>6.3.7.5.1. mapas;</p>
+<p>6.3.7.5.2. pontos sensíveis;</p>
+<p>6.3.7.5.3. áreas críticas;</p>
+<p>6.3.7.5.4. relação de autoridades residentes na área da OPM (nível Batalhão PM);</p>
+<p>6.3.7.5.5. relação de telefones de órgãos públicos relevantes e de outras OPM;</p>
+<p>6.3.7.5.6. informações sobre os crimes mais comuns e criminosos da área;</p>
+<p>6.3.7.5.7. equipes drones e núcleos de drones circunvizinhos;</p>
+<p>6.3.7.5.8. dados e informações do Projeto V.I.D.A. (Vigilância, Inteligência, Defesa e Ação);</p>
+<p>6.3.7.5.9. outros dados de interesse operacional.</p>
+<p>6.3.7.6. priorizar a inibição dos delitos de maior incidência na área da OPM, com ênfase no controle das infrações penais de maior impacto social na circunscrição;</p>
+<p>6.3.7.7. monitorar e interagir com os grupos do PVS existentes na OPM, utilizando aplicativo de mensageria em plataforma web, podendo prestar atendimento inicial e imediato às demandas emergenciais dos integrantes do PVS e dos demais membros da comunidade que acionem os tutores, quando estes comunicarem fato urgente;</p>
+<p>6.3.7.8. interagir com os grupos do PVS também por meio do envio de informações, orientações e material digital voltados à prevenção primária na comunidade;</p>
+<p>6.3.7.9. encaminhar aos escalões de comando e supervisão responsáveis pela área dos fatos, as informações ofertadas (como fotos, vídeos, áudios, links e dados), bem como das solicitações formuladas pelos integrantes do PVS que demandem providências de segurança pública não emergenciais;</p>
+<p>6.3.7.10. promover a proteção à mulher e o enfrentamento à violência doméstica e familiar por meio da atuação integrada ao Espaço Lilás, realizando visitas solidárias, via fone, por videochamada ou presencialmente, às vítimas de violência doméstica, objetivando proporcionar o acolhimento frente ao ocorrido, bem como:</p>
+<p>6.3.7.10.1. orientar acerca das medidas de prevenção primária que podem ser adotadas;</p>
+<p>6.3.7.10.2. informar sobre a rede de proteção que pode ser acessada para romper o ciclo da violência;</p>
+<p>6.3.7.10.3. atuar ativamente no PVS “Acolher”;</p>
+<p>6.3.7.10.4. elaborar o CPP das viaturas Patrulha “SP Mulher Segura”, sob a coordenação do administrador SOp, com base consistente no levantamento sistemático e proativo de todas as ocorrências atendidas na circunscrição sob responsabilidade da OPM;</p>
+<p>6.3.7.10.5. coletar informações de interesse para prevenção de reincidências e agravamentos de risco de violência doméstica;</p>
+<p>6.3.7.10.6. coletar informações quantitativas e qualitativas sobre as Visitas Solidárias realizadas por telefone e presenciais pelas patrulhas designadas.</p>
+<p>6.3.7.11. realizar o Serviço de Intervenção Remota (SIR), mediante o atendimento de ocorrências à distância, por meio de comunicação remota, sem o emprego imediato de equipe policial-militar in loco, para o atendimento inicial, a triagem e a condução de demandas que não exijam, de pronto, intervenção presencial, observados os seguintes requisitos:</p>
+<p>6.3.7.11.1. inexistência de perigo à vida humana, à integridade física das pessoas, ao patrimônio público ou particular, nem risco de significativa degradação ao meio ambiente;</p>
+<p>6.3.7.11.2. tratar-se de ocorrência que não configure infração penal, como nos casos de perturbação do sossego em que o denunciante não manifeste interesse em dar prosseguimento aos registros perante a Polícia Civil, bem como aquelas de natureza criminal que não demandem providências legais que exijam a atuação física;</p>
+<p>6.3.7.11.3. possibilidade de solução da demanda por orientação, mediação ou atendimento remoto ao solicitante, especialmente nos casos de perturbação do sossego público.</p>
+<p>6.3.7.12. constituem exemplos de ocorrências passíveis de atendimento por meio do SIR:</p>
+<p>6.3.7.12.1. furto já ocorrido de documentos/celular/placa de veículo/bicicleta;</p>
+<p>6.3.7.12.2. perda de documentos/celular/placa de veículo;</p>
+<p>6.3.7.12.3. roubo já ocorrido de documentos, celulares e/ou objetos;</p>
+<p>6.3.7.12.4. injúria, calúnia ou difamação;</p>
+<p>6.3.7.12.5. acidente de trânsito sem vítimas, sem partes embriagadas e sem ilícitos administrativos;</p>
+<p>6.3.7.12.6. desaparecimento de pessoas;</p>
+<p>6.3.7.12.7. encontro de pessoas;</p>
+<p>6.3.7.12.8. furto já ocorrido de fios/cabos em vias públicas (somente para empresas concessionárias);</p>
+<p>6.3.7.12.9. fraude e estelionato;</p>
+<p>6.3.7.12.10. orientações relativas a ocorrências de competência de outros órgãos (Zoonose, Conselho Tutelar etc.).</p>
+<p>6.3.7.13. nas ocorrências elencadas nos subitens anteriores, o efetivo da SOp, ao constatar nos Sistemas Informatizados Corporativos a existência de caso pendente de atendimento, deverá adotar as providências necessárias ao seu encaminhamento e encerramento, observando o seguinte:</p>
+<p>6.3.7.13.1. orientar o solicitante a elaborar de forma digital o boletim de ocorrência na Polícia Civil do Estado de São Paulo, por meio da &quot;Delegacia Eletrônica&quot;;</p>
+<p>6.3.7.13.2. inserir os dados da ocorrência e proceder ao seu encerramento no SIOPM, inclusive nos casos em que houver dispensa do atendimento pelo solicitante;</p>
+<p>6.3.7.13.3. informar imediatamente o COPOM para adoção das providências cabíveis e regular prosseguimento da ocorrência, caso o solicitante insista no atendimento presencial por US.</p>
+<p>6.3.7.14. sem prejuízo das providências acima, nas ocorrências de perturbação do sossego cujo tempo de pendência de despacho no SIOPM seja igual ou superior a 1 (uma) hora, deverá ser executado o SIR, ocasião em que o solicitante será informado de que:</p>
+<p>6.3.7.14.1. é possível elaborar o Boletim de Ocorrência Eletrônico (BOe) da Polícia Militar (com o uso de Terminal Portátil de Dados - TPD), mediante o fornecimento de dados do acontecido (inclusive, imagens e vídeos);</p>
+<p>6.3.7.14.2. após a confecção do BOe, será disponibilizado um número de token5 para acesso digital no sítio eletrônico da Polícia Militar (www.policiamilitar.sp.gov.br - ícone: Boletim de Ocorrência Eletrônico);</p>
+<p>6.3.7.14.3. as vítimas e testemunhas poderão restringir, se assim postularem, o acesso a seus dados e endereços no sítio eletrônico da Polícia Militar, caso as vítimas e testemunhas se sintam coagidas ou ameaçadas em decorrência do registro de crimes;</p>
+<p>6.3.7.14.4. caso haja indisponibilidade de acesso às informações e aos dados registrados ou dificuldade para a impressão do documento, a parte interessada poderá comunicar o fato à SOp e solicitar a extração de cópia física do registro junto à própria OPM, ainda que esteja de posse do número de token.</p>
+<p>6.3.7.15. em qualquer hipótese, é terminantemente vedado ao Operador SOp encerrar, junto ao SIOPM, a ocorrência de perturbação do sossego sem que tenha sido realizado o atendimento remoto ao solicitante;</p>
+<p>6.3.7.16. nos casos de incidente crítico6 , sem prejuízo das atribuições anteriormente previstas, a SOp poderá funcionar como estrutura de apoio nos processos de captação, análise e difusão de informações, sobretudo quando relacionados às comunicações operacionais, no gerenciamento de incidente crítico em segurança pública na área da OPM;</p>
+<p>6.3.7.17. nessa hipótese, sua atuação ocorrerá mediante solicitação da autoridade policial-militar responsável pelo Comando da operações em campo ou quando houver necessidade de integração com órgãos externos à Polícia Militar, a critério do Cmt OPM.</p>
+<h3 class="subheading">6.4. Instalação de SOp</h3>
+<p>6.4.1. a SOp será prevista como estrutura organizacional integrante do QPO (escalão Btl) e instalada em espaço físico livre de ruídos;</p>
+<p>6.4.2. a infraestrutura tecnológica necessária para a estruturação de uma SOp deve possuir recursos que possibilitem a utilização de componentes essenciais, interdependentes e complementares, inerentes à tecnologia da informação e comunicação, que sustentam a atividade operacional da SOp, sendo formada, preferencialmente, por:</p>
+<p>6.4.2.1. microcomputador;</p>
+<p>6.4.2.2. aparelho de telefonia celular funcional;</p>
+<p>6.4.2.3. Terminal Portátil de Dados (TPD), com o aplicativo da Polícia Militar, possibilitando a elaboração do Boletim de Ocorrência Eletrônico (BOe);</p>
+<p>6.4.2.4. rádio comunicador;</p>
+<p>6.4.2.5. televisores;</p>
+<p>6.4.2.6. linha telefônica fixa.</p>
+<h3 class="subheading">6.5. Atribuições particulares</h3>
+<p>6.5.1. Coord Op PM</p>
+<p>6.5.1.1. acompanhar os resultados operacionais das Salas de Operações, apontando não conformidades, elaborando análises de desempenho das OPM e propondo medidas corretivas;</p>
+<p>6.5.1.2. elaborar e divulgar o modelo padrão de relatório gerencial mensal a ser elaborado pelas respectivas Salas de Operações, estabelecendo os parâmetros, a periodicidade, o formato e os prazos para seu preenchimento e encaminhamento, com o objetivo de padronizar os registros e subsidiar o acompanhamento das atividades operacionais.</p>
+<p>6.5.1.3. por intermédio do COPOM:</p>
+<p>6.5.1.3.1. acompanhar os processos de instalação das Salas de Operações, mantendo o controle atualizado das Salas em funcionamento no Estado, consolidando as informações relativas à implantação, localização, estrutura, regime de funcionamento, composição das equipes, capacidade operacional e demais dados relevantes, de modo a subsidiar o acompanhamento gerencial, a tomada de decisões e o aprimoramento contínuo das atividades desenvolvidas;</p>
+<p>6.5.1.3.2. emitir orientações técnicas (validadas pela Coord Op PM), bem como protocolos técnicos aplicáveis às OPM com SOp em funcionamento, podendo, para tanto, valer-se do apoio dos COPOM Regionais;</p>
+<p>6.5.1.3.3. realizar o monitoramento e controle das Salas de Operações que possuem Espaço Lilás em operação;</p>
+<p>6.5.1.3.4. promover e viabilizar a capacitação técnica dos Operadores SOp, por meio de cursos, estágios, simpósios e treinamentos, incentivando a participação em eventos técnicos;</p>
+<p>6.5.1.3.5. manter estreita ligação com as OPM com SOp, para o perfeito desenvolvimento das atividades previstas, buscando a otimização dos padrões de qualidade na prestação de serviços em todo o Estado;</p>
+<p>6.5.1.3.6. realizar visitas técnicas nas Salas de Operações, com a finalidade de verificar as práticas e procedimentos estabelecidos, evidenciando-se o caráter de apoio, orientação e supervisão, podendo, para tanto, valer-se do apoio dos COPOM Regionais;</p>
+<p>6.5.1.3.7. realizar estudos periódicos para a melhoria contínua, incluindo-se eventuais realinhamentos e adequações em quaisquer serviços prestados pela SOp, assim como aprimoramentos à presente NI.</p>
+<p>6.5.2. CIPM Por meio das Agências de Inteligência assessorar os Cmt OPM quanto aos critérios de segurança orgânica para as Salas de Operações.</p>
+<p>6.5.3. 3ª EM/PM Analisar eventuais propostas de atualização desta Nota de Instrução, assessorando o Cmdo G na deliberação acerca da necessidade de alterações.</p>
+<p>6.5.4. 4ª EM/PM Assessorar o Cmdo G nas decisões estratégicas, em conjunto com a Coord Op PM, DTIC e DF, para aplicação dos recursos orçamentários necessários para operacionalização das Salas de Operações, Espaço Lilás e Patrulha “SP Mulher Segura”.</p>
+<p>6.5.5. DF Planejar, em conjunto com a Coord Op PM, DTIC e 4ª EM/PM, a aplicação dos recursos orçamentários para operacionalização das Salas de Operações, Espaço Lilás e Patrulha “SP Mulher Segura”.</p>
+<p>6.5.6. DL Adotar providências visando prover suporte ao fornecimento de recursos logísticos necessários à instalação das Salas de Operações, Espaço Lilás e Patrulha “SP Mulher Segura”.</p>
+<p>6.5.7. DTIC</p>
+<p>6.5.7.1. planejar, em conjunto com a Coord Op PM, 4ª EM/PM e DF, a aplicação dos recursos orçamentários para operacionalização das Salas de Operações;</p>
+<p>6.5.7.2. prover estrutura de TIC para suporte tecnológico da SOp.</p>
+<p>6.5.8. Cmdo Pol</p>
+<p>6.5.8.1. coordenar a instalação e a supervisão das Salas de Operações em suas OPM subordinadas, seguindo os trâmites dispostos nesta NI, e dando especial atenção à necessidade operacional, disponibilidade e prioridade de recursos humanos, materiais, tecnológicos e de infraestrutura empregados, de modo a assegurar sua utilização racional, evitando sobreposições ou redundâncias no emprego desses recursos;</p>
+<p>6.5.8.2. por intermédio das OPM subordinadas:</p>
+<p>6.5.8.2.1. garantir o funcionamento eficaz das Salas de Operações, assegurando a integração ao COPOM e à rede de Comando e Controle da Polícia Militar;</p>
+<p>6.5.8.2.2. prover o treinamento do efetivo empregado na respectiva SOp, por intermédio de requerimento de vagas nos cursos e treinamentos ministrados no COPOM (Despachador; Atendente de Emergência; Ferramentas Inteligentes; Cabine Lilás; Supervisor de COPOM);</p>
+<p>6.5.8.2.3. promover o treinamento do efetivo empregado no respectivo Espaço Lilás e Patrulha “SP Mulher Segura”, nas capacitações realizadas pela DPCDH (Programa “Lar Mais Seguro”) e pelo COPOM.</p>
+<h3 class="subheading">6.6. Prescrições Diversas</h3>
+<p>6.6.1. as OPM pertencentes à Matriz Operacional III poderão, observadas as diretrizes e parâmetros definidos na presente Nota de Instrução, promover as adequações necessárias à realidade de suas demandas operacionais e administrativas para instalação de SOp. Essas adaptações deverão garantir a rastreabilidade dos atendimentos, a uniformidade dos procedimentos e a integração ao Sistema de Comando e Controle e ao Sistema Estadual de Atendimento e Resposta a Emergências e Incidentes Críticos em Segurança Pública (SisCOPOM);</p>
+<p>6.6.2. as atividades de videopatrulhamento desenvolvidas nas Salas de Operações deverão, preferencialmente, contar com sistemas de Inteligência Artificial destinados à identificação, classificação ou detecção de pessoas, veículos e situações de interesse operacional, observadas as normas de proteção de dados e de emprego ético da tecnologia;</p>
+<p>6.6.3. os sistemas mencionados no subitem anterior deverão ser submetidos à avaliação prévia da DTIC, com a finalidade de verificar a adequação ao parque tecnológico da instituição e a aderência aos padrões corporativos de segurança da informação.</p><h2 class="section-heading" id="notas-rodape">Notas de rodapé</h2><ol class="footnotes"><li id="nota-1">Lei nº 12.527, de 18 de novembro de 2011, que regula o acesso a informações. <a href="#document" class="back-note">Voltar ao texto</a></li><li id="nota-2">Lei nº 13.709, de 14 de agosto de 2018, que regula a proteção de dados pessoais. <a href="#document" class="back-note">Voltar ao texto</a></li><li id="nota-3">Bol G PM 166, de 30AGO06, ou regulamentação que o substituir. <a href="#document" class="back-note">Voltar ao texto</a></li><li id="nota-4">Operação policial-militar de grande envergadura: ação coordenada e de ampla escala envolvendo os esforços de diversas Organizações Policial-Militares, com elevado nível de planejamento, comando integrado ou unificado e emprego significativo de recursos humanos e materiais, destinada a alcançar objetivos estratégicos em cenários complexos e de alta criticidade, buscando garantir a supremacia operacional e a preservação da ordem pública em uma área de grande impacto social e territorial (definição trazida no subitem “6.1.17.”, da Diretriz nº PM3-001/02/25, de 04JUL25, das Câmeras Operacionais Portáteis – COP). <a href="#document" class="back-note">Voltar ao texto</a></li><li id="nota-5">Trata-se de dispositivo numérico ou alfanumérico de segurança pessoal que consiste em senha de proteção para acesso a determinado arquivo pelo usuário. <a href="#document" class="back-note">Voltar ao texto</a></li><li id="nota-6">Conforme o subitem “6.1.6.” e divisões da Diretriz nº PM3-003/02/23 (referência “1.7.”). <a href="#document" class="back-note">Voltar ao texto</a></li></ol></section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Procedimento Disciplinar neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Procedimento Disciplinar</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Sala de Operações são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+
+<div class="material-picker-backdrop" id="material-picker-modal" role="dialog" aria-modal="true" aria-labelledby="material-picker-title">
+ <div class="material-picker">
+  <div class="material-picker-head"><h2 id="material-picker-title">Sala de Operações — TCI</h2></div>
+  <div class="material-picker-list">
+   <a class="material-option" href="#document" id="material-option-norma">Norma — texto integral nesta página <span>↓</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1bek__b5o7XL9azTzsSd2Lw1NDF8k7IbW/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo 1 <span>↗</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1Q44z0piKp0QLLmUqFnymc3Jpkot7rX8X/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo 2 <span>↗</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1M1L6EwL0oHUQ3XP6TMpoNfV6fNMuHE4p/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Mapa mental <span>↗</span></a>
+  </div>
+  <div class="material-picker-foot"><button class="btn" type="button" id="close-material-picker">Fechar</button></div>
+ </div>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+
+<script>
+(() => {
+ const modal=document.getElementById('material-picker-modal');
+ const open=document.getElementById('open-material-picker');
+ const close=document.getElementById('close-material-picker');
+ if(!modal||!open||!close)return;
+ const hide=()=>{modal.classList.remove('open');open.focus();};
+ open.addEventListener('click',()=>modal.classList.add('open'));
+ close.addEventListener('click',hide);
+ const norma=document.getElementById('material-option-norma');
+ norma.addEventListener('click',()=>{modal.classList.remove('open');});
+ modal.addEventListener('click',e=>{if(e.target===modal)hide();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))hide();});
+})();
+</script>
+
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-tci-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Procedimento Disciplinar? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Procedimento Disciplinar, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Procedimento Disciplinar foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
