@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Câmeras Operacionais Portáteis (COP) — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}.footnotes{margin:22px 0;padding:14px 16px;border-left:4px solid var(--gold);background:#f7f4eb;border-radius:6px}.footnotes h3{margin:0 0 8px;font-size:15px}.footnotes p{margin:7px 0;line-height:1.65}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+
+.material-picker-backdrop{position:fixed;inset:0;z-index:120;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}.material-picker-backdrop.open{display:flex}.material-picker{width:min(560px,100%);background:#fff;border:1px solid #cbd5e1;border-radius:14px;overflow:hidden;box-shadow:0 25px 80px #0007}.material-picker-head{padding:16px 18px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}.material-picker-head h2{margin:0;font-size:18px}.material-picker-list{padding:14px;display:grid;gap:9px}.material-option{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#26364d;border:1px solid var(--line);border-radius:9px;padding:13px;font-weight:750}.material-option:hover{border-color:var(--gold);background:#fffbed}.material-picker-foot{padding:12px 14px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;background:#f8fafc}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Operacionais</div><h1>Câmeras Operacionais Portáteis (COP)</h1><p>Diretriz nº PM3-001/02/25 · Texto integral para estudo. Consulte a publicação oficial para verificar atualizações e vigência.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" type="button" id="open-material-picker">Escolher material de apoio ↗</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo foi organizado a partir do arquivo fornecido, preservando a ordem e o conteúdo textual disponível; confira a publicação oficial para verificar atualizações e vigência.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO"><p>CÂMERAS OPERACIONAIS PORTÁTEIS – COP</p><p>DIRETRIZ Nº PM3-001/02/25</p>
+<h2 class="section-heading">1. REFERÊNCIAS</h2>
+<p>1.1. Lei complementar nº 893, de 09MAR01 (Dispõe sobre o Regulamento Disciplinar da Polícia Militar do Estado de São Paulo - RDPM);</p>
+<h3 class="subheading">1.2. Lei federal nº 12.527, de 18NOV11 (Lei de Acesso à Informação - LAI);</h3>
+<h3 class="subheading">1.3. Lei federal nº 13.709, de 14AGO18 (Lei Geral de Proteção de Dados Pessoais - LGPD);</h3>
+<p>1.4. Diretriz nº PM3-001/02/20, de 06MAR20 (Normas para o Sistema Operacional de Policiamento PM - NORSOP);</p>
+<h3 class="subheading">1.5. Diretriz nº PM3-001/02/23, de 26JUN23 (Sistema de Comando e Controle da Polícia Militar);</h3>
+<h3 class="subheading">1.6. Diretriz nº PM3-003/02/23, de 26DEZ23 (Sistema de Comando de Incidentes da Polícia Militar - SCIPM).</h3>
+<h2 class="section-heading">2. FINALIDADE</h2>
+<p>Disciplinar o emprego das Câmeras Operacionais Portáteis (COP) no âmbito da Polícia Militar, bem como regulamentar a estratégia de armazenamento, custódia, compartilhamento e difusão das evidências digitais registradas.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p>3.1. a tecnologia tem sido importante aliada da atuação da Polícia Militar para obtenção de diagnósticos situacionais mais precisos e emprego racional dos seus recursos, oferecendo resposta adequada aos problemas policiais cada vez mais complexos, tornando mais eficientes os processos de comando e controle na execução das missões típicas de polícia ostensiva e preservação da ordem pública;</p>
+<p>3.2. o conhecimento no campo das ciências policiais sobre estratégias de policiamento com tecnologia, sobretudo com a utilização de câmeras corporais, foi construído ao longo do tempo pela Polícia Militar do Estado de São Paulo e instituições policiais internacionais a partir da observação empírica do seu emprego, indicando que a gravação audiovisual é capaz de influenciar o comportamento das pessoas, mitigar eventual hostilização durante a atuação policial, minimizar a necessidade de uso da força, bem como contribuir para a solução pacífica dos conflitos, reforçando, também, a transparência e a legitimidade policial, além de constituir importantíssimo elemento probatório na persecução criminal;</p>
+<p>3.3. desse modo, a experiência adquirida pela Polícia Militar desde o início do uso das COP, em meados de 2017, ainda em projeto-piloto, e mais tarde, em 2020, com sua implementação definitiva, consolidou o seu emprego como elemento de apoio à atividade policial-militar, voltado, essencialmente, ao respaldo jurídico-profissional e à integridade física e moral do policial militar como principal protetor dos direitos individuais e coletivos no Estado Democrático de Direito, de modo a consolidar a cultura profissional legalista da Instituição e, ainda, um elemento de capacitação e treinamento com propósito de fomento à melhoria contínua da prestação de serviços pela Polícia Militar;</p>
+<p>3.4. no mesmo sentido, os avanços tecnológicos materializados pelas inovações em sistemas, equipamentos e funcionalidades adicionais que agregam eficiência ao uso das COP, impõem a necessária atualização doutrinária da Instituição, como forma de readequar as estratégias de policiamento aos anseios da sociedade, o que se faz por meio desta Diretriz.</p>
+<h2 class="section-heading">4. OBJETIVOS</h2>
+<p>4.1. garantir o respaldo jurídico-profissional e a integridade física e moral do policial militar, bem como os direitos individuais dos cidadãos, em especial pelo efeito apaziguador e dissuasório proveniente do uso das COP;</p>
+<p>4.2. reforçar a transparência e a legitimidade das ações da Polícia Militar, otimizando a qualidade dos serviços prestados e o incremento da percepção de segurança da comunidade onde o policial militar atua;</p>
+<p>4.3. consolidar a cultura profissional legalista nas intervenções e interações realizadas pela Polícia Militar;</p>
+<p>4.4. fortalecer a prova judicial com maior robustez ao conjunto probatório coletado pela Polícia Militar;</p>
+<p>4.5. potencializar a capacitação e o treinamento policial-militar, com fomento a estudos de casos que podem ser levados para os ambientes de ensino.</p>
+<h2 class="section-heading">5. MISSÃO</h2>
+<p>As OPM detentoras de COP, os policiais militares usuários, adequadamente treinados, e os respectivos escalões de fiscalização e supervisão deverão zelar pelo correto emprego do equipamento de acordo com o previsto nesta Diretriz, bem como em outras regulamentações afins, atentando, especialmente, para a preservação da cadeia de custódia das evidências digitais armazenadas.</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<h3 class="subheading">6.1. Conceituação</h3>
+<p>6.1.1. Acionamento manual (gravação intencional): ativação intencional da gravação audiovisual da COP feita por parte do policial militar usuário, mediante acionamento físico no equipamento;</p>
+<p>6.1.2. Acionamento remoto-intencional (gravação intencional): ativação da gravação audiovisual pelo COPOM, por ação do policial militar Despachador de Ocorrência, Supervisor de Despacho de Ocorrência, Chefe de Operações e demais escalões de supervisão, quando identificado o início de uma interação que constitua fato de interesse policial sem que tenha ocorrido o acionamento manual;</p>
+<p>6.1.3. Acionamento remoto-automático: ativação automatizada da gravação audiovisual da COP, sem a intervenção direta do policial militar, podendo ocorrer por:</p>
+<p>6.1.3.1. acionamento por proximidade via “bluetooth”: ocorre quando uma COP que se encontra com a gravação desativada é aproximada de outra com gravação ativada; ao detectar o sinal da COP em operação por meio de conexão Bluetooth, a câmera inativa inicia automaticamente sua gravação;</p>
+<p>6.1.3.2. acionamento por despacho de ocorrência: ocorre quando a Unidade de Serviço (US) é despachada para atendimento de ocorrência por meio do Sistema de Informações Operacionais da PM (SIOPM); o registro preliminar do talão eletrônico de ocorrência aciona automaticamente a gravação da COP vinculada à US demandada;</p>
+<p>6.1.3.3. reativação automática por interrupção do armazenamento: ocorre, em intervalos máximos de 1 (um) minuto, quando há interrupção da gravação da ocorrência que deveria ser registrada.</p>
+<p>6.1.4. Armazenamento em Nuvem (Cloud Storage): modelo de armazenamento de dados em provedor remoto, cujo acesso ocorre por meio de rede computacional governamental (Intragov) ou pública (provedores de internet);</p>
+<p>6.1.5. Armazenamento local (on-premise): modelo de armazenamento de dados em que a infraestrutura é mantida fisicamente nas instalações da Polícia Militar, no Data Center institucional;</p>
+<p>6.1.6. Auditoria das evidências digitais obtidas por COP: exame sistemático, independente e documentado, dos registros captados por COP, realizada por meio de credencial pessoal de acesso ao SiGCED, com os seguintes objetivos:</p>
+<p>6.1.6.1. verificar a conformidade com critérios técnicos estabelecidos;</p>
+<p>6.1.6.2. realizar fiscalização de natureza pedagógica, disciplinar e procedimental;</p>
+<p>6.1.6.3. identificar boas práticas;</p>
+<p>6.1.6.4. promover melhorias nos processos operacionais;</p>
+<p>6.1.6.5. propiciar a extração de indicadores institucionais para subsidiar a gestão.</p>
+<p>6.1.7. Cadeia de Custódia da Evidência Digital: solução que garante a salvaguarda e rastreabilidade dos dados digitais produzidos, protegendo sua integridade e credibilidade, desde a origem (gravação) até o envio a outros órgãos ou retirada do sistema, quando decorrido o prazo de temporalidade;</p>
+<p>6.1.8. Câmera Operacional Portátil (COP): câmera individual acoplada ao fardamento do policial militar que visa à captação de dados de áudio e vídeo de interesse policial;</p>
+<p>6.1.9. Cartão de Identificação por Radiofrequência (RFID): recurso aplicável aos modelos mais recentes de COP, constituindo cartão de identificação individual do policial militar, pessoal e intransferível, utilizado para ativar automaticamente a COP por meio da doca, garantindo a correta vinculação entre o equipamento e o usuário, com rastreabilidade das gravações;</p>
+<p>6.1.10. Central de Difusão de Conteúdo Audiovisual (CDCA): subordinada ao CComSoc, é responsável por analisar a conveniência e oportunidade de divulgação dos conteúdos audiovisuais gravados pelas COP, mediante solicitação de órgãos externos à Polícia Militar ou por interesse institucional, exceto quanto à requisição de autoridades encarregadas de procedimentos e processos apuratórios, que deverá ser analisada pelo Chefe da Seção de Polícia Judiciária Militar e Disciplina (PJMD) da OPM;</p>
+<p>6.1.11. Comunidade Vulnerável: agrupamento populacional distribuído em espaço territorial dotado de limitações estruturais relevantes, no qual parcela significativa de seus membros ou a comunidade como um todo apresenta um conjunto de privações e fragilidades socioeconômicas e de acesso a direitos e serviços, tornando-os mais suscetíveis a riscos e danos, com menor capacidade de resposta a eventos adversos, como crises econômicas, desastres naturais etc.;</p>
+<p>6.1.12. Doca ou Estação de Acoplamento (Docking Station): plataforma física que permite a acoplagem de uma ou mais COP, destinada à recepção dos dados gravados pelas câmeras e sua transferência para armazenamento das informações em nuvem ou local, além da recarga de bateria;</p>
+<p>6.1.13. Etiqueta Eletrônica (tag): classificação das informações produzidas pela COP, de responsabilidade do policial militar usuário do equipamento, que permite a identificação das imagens e sons quanto ao seu objetivo e relevância;</p>
+<p>6.1.14. Evidência Digital: registro audiovisual, dotado de integridade, rastreabilidade e credibilidade, garantido por cadeia de custódia, que constitui elemento probatório em caráter administrativo e/ou judicial;</p>
+<p>6.1.15. Fato de Interesse Policial: todo fato em que há intervenção ou interação do policial militar com o público destinatário no exercício das atividades de polícia ostensiva e de preservação da ordem pública, cuja gravação de áudio e vídeo constitui evidência digital;</p>
+<p>6.1.16. Oficial de Ligação COP (Of Lig): oficial designado pelo Cmt Btl, responsável pela coordenação do emprego operacional, treinamento do efetivo e participação em reuniões e eventos relacionados às COP, bem como pelo zelo no cumprimento da regulamentação referente ao uso do equipamento;</p>
+<p>6.1.17. Operação policial-militar de grande envergadura: ação coordenada e de ampla escala envolvendo os esforços de diversas Organizações Policial-Militares, com elevado nível de planejamento, comando integrado ou unificado e emprego significativo de recursos humanos e materiais, destinada a alcançar objetivos estratégicos em cenários complexos e de alta criticidade, buscando garantir a supremacia operacional e a preservação da ordem pública em uma área de grande impacto social e territorial;</p>
+<p>6.1.18. Repositório de Dados (Storage): unidade física com função de depósito de dados produzidos pelas COP, permitindo soluções de armazenamento, gerenciamento e proteção dos arquivos;</p>
+<p>6.1.19. Sistema de Gerenciamento, Custódia e Compartilhamento de Evidências Digitais (SiGCED): conjunto de ferramentas de gestão de dados e informações computacionais produzidos por qualquer meio de captação (COP, drone, circuito de monitoramento, etc.) de evidências digitais a serem disponibilizadas para processo e/ou procedimento apuratório, judicial e/ou administrativo;</p>
+<p>6.1.20. Transmissão ao vivo (live streaming): transmissão em tempo real das evidências de vídeo e áudio produzidos pela COP, permitindo que as autoridades policial-militares competentes acessem os registros no mesmo momento em que são captados;</p>
+<p>6.1.21. Vídeo de Rotina (Video Recall): registro audiovisual produzido de forma contínua e ininterrupta durante o modo stand-by da COP, que não constitui, ao menos em sede de análise preliminar, registro de interesse policial. O acesso ao vídeo de rotina será restrito à Correg PM e aos encarregados de procedimentos apuratórios, e sua temporalidade é de 90 dias. Ressalva-se que nem todos os modelos de COP utilizados pela Instituição possuem esta funcionalidade de gravação contínua em modo de espera. Essa modalidade de registro deverá ser observada tão-somente enquanto houver temporalidade ainda em curso de guarda das imagens captadas no modelo de câmera anterior.</p>
+<p>6.1.22. Vídeo Intencional: registro audiovisual de fato de interesse policial produzido por acionamento manual de gravação da COP, marcando temporalmente o início e término do registro.</p>
+<h3 class="subheading">6.2. Regras gerais de uso das COP</h3>
+<p>6.2.1. a COP é equipamento de uso policial exclusivo em serviço operacional por policial militar devidamente capacitado, sendo vedada sua utilização para a captação de imagens ou sons que não se relacionem ao interesse policial, excetuadas as hipóteses de uso em instruções, treinamentos ou testes de funcionamento;</p>
+<p>6.2.2. todos os policiais militares integrantes de US deverão ser equipados com COP, sempre que houver disponibilidade. Nos casos em que o número de equipamentos não for suficiente para atender à totalidade do efetivo, deverá ser garantido, como critério mínimo, ao menos uma COP por US;</p>
+<p>6.2.3. quando não for possível equipar integralmente o efetivo, a distribuição das COP deverá obedecer à seguinte ordem de prioridade:</p>
+<h3 class="subheading">6.2.3.1. Programas de Policiamento Primários:</h3>
+<h3 class="subheading">6.2.3.1.1. Programa de Radiopatrulha;</h3>
+<h3 class="subheading">6.2.3.1.2. Programa de Força Tática;</h3>
+<h3 class="subheading">6.2.3.2. Programas de Policiamento Complementares:</h3>
+<h3 class="subheading">6.2.3.2.1. Programa de Policiamento Escolar;</h3>
+<h3 class="subheading">6.2.3.2.2. Programa de Policiamento de Trânsito;</h3>
+<h3 class="subheading">6.2.3.2.3. Programa de Policiamento Rural;</h3>
+<h3 class="subheading">6.2.3.2.4. Programa de Policiamento Comunitário.</h3>
+<p>6.2.3.3. Atividades Operacionais Diversas, a exemplo da DEJEM e Atividade Delegada, Serviço de Dia com atendimento ao público, Policiamento com Bicicletas, Policiamento a Cavalo, Policiamento Náutico, policiamento em fóruns, etc.;</p>
+<h3 class="subheading">6.2.3.4. Funções de Comando e Supervisão, na seguinte ordem: CGP, CFP e Supervisor Regional.</h3>
+<p>6.2.4. havendo disponibilidade do equipamento, é obrigatório o uso das COP por policiais militares empregados em operações policial-militares para restauração da ordem pública:</p>
+<p>6.2.4.1. de grande envergadura (vide subitem “6.1.17.”);</p>
+<p>6.2.4.2. que incluam incursões em comunidades vulneráveis (vide subitem “6.1.11.”);</p>
+<p>6.2.4.3. deflagradas em resposta a ataques praticados contra policiais militares.</p>
+<p>6.2.5. no tocante ao subitem anterior, em todas as hipóteses, sendo a operação emergencial ou programada, deverá o CFP ou equivalente informar o COPOM, via rede de rádio, sobre seu início e término, devendo o COPOM providenciar o acionamento por despacho de ocorrência (conforme subitem “6.1.3.2”) das COP de todas as US empenhadas;</p>
+<p>6.2.6. nos casos em que não seja possível cumprir a obrigatoriedade prevista no item “6.2.4.”, a OPM deverá priorizar o deslocamento de efetivo que esteja portando COP e, não sendo possível, deverá justificar a excepcionalidade com base em razões técnicas, operacionais e/ou administrativas;</p>
+<p>6.2.7. constitui dever funcional do policial militar: acionar, manter acionada e não interromper a gravação da COP nas hipóteses previstas nesta Diretriz, sendo o descumprimento dessas obrigações passível de responsabilização disciplinar e, a depender das circunstâncias, criminal;</p>
+<p>6.2.8. os dados produzidos pelas COP são de propriedade da Polícia Militar do Estado de São Paulo e sua divulgação somente poderá ocorrer mediante análise e deliberação da CDCA, excetuadas as hipóteses em que tais dados, quando devidamente requisitados, integrem conjunto probatório vinculado a inquérito policial, procedimento ou processo administrativo e/ou judicial, ocasião em que sua divulgação deverá observar a conclusão das investigações e apurações correspondentes, bem como os limites estabelecidos pela Lei de Acesso à Informação (referência “1.2.”) e pela Lei Geral de Proteção de Dados Pessoais (referência “1.3.”);</p>
+<p>6.2.9. os arquivos gravados pelas COP, em razão das características técnicas do sistema empregado, possuem garantias de integridade e rastreabilidade, assegurando sua confiabilidade como evidência digital;</p>
+<p>6.2.10. a edição de cópia de conteúdo audiovisual para fins de divulgação institucional somente poderá ser realizada pela CDCA, devendo ser observados os critérios de preservação da dignidade das pessoas eventualmente identificadas, nos termos da legislação vigente.</p>
+<h3 class="subheading">6.3. Acionamento da gravação das COP</h3>
+<p>6.3.1. constitui dever do policial militar portador da COP acionar intencionalmente o mecanismo de gravação (acionamento manual) sempre que se deparar com fato de interesse policial, sendo vedada a omissão injustificada;</p>
+<p>6.3.2. o acionamento remoto da gravação dar-se-á nas seguintes hipóteses:</p>
+<p>6.3.2.1. de forma automática, no momento do despacho da ocorrência para a US;</p>
+<p>6.3.2.2. de forma automática (reativação automática – subitem “6.1.3.3”), quando houver encerramento da gravação da COP, intencional ou acidentalmente, enquanto perdurar o atendimento de talão de ocorrência pela US, salvo as hipóteses de encerramento previstas no subitem “6.3.8.” e divisões;</p>
+<p>6.3.2.3. pelo despachador, outro integrante do COPOM ou escalão de supervisão ao constatar que a COP não foi acionada durante situação caracterizada como fato de interesse policial.</p>
+<p>6.3.2.4. pelo despachador do COPOM nas hipóteses previstas no subitem “6.2.4” e divisões;</p>
+<p>6.3.3. sempre que houver acionamento remoto da COP pelo COPOM, a US deverá ser informada da medida por meio da rede de rádio ou pela comunicação de áudio bidirecional da própria COP;</p>
+<p>6.3.4. a COP também poderá ser acionada automaticamente, por proximidade (via bluetooth), quando detectada a aproximação de uma câmera desligada em relação à outra que esteja com gravação em curso, conforme tecnologia do equipamento;</p>
+<p>6.3.5. para todo fato de interesse policial deverá ser obrigatoriamente acionado o mecanismo de gravação da COP. São exemplos de fatos de interesse policial:</p>
+<p>6.3.5.1. abordagem policial-militar;</p>
+<p>6.3.5.2. atendimento de ocorrência policial de qualquer natureza;</p>
+<p>6.3.5.3. ocorrências de flagrante delito ou contravenção penal;</p>
+<p>6.3.5.4. situações em que se presuma a necessidade do uso diferenciado da força;</p>
+<p>6.3.5.5. acompanhamento de veículo ou perseguição de pessoa a pé;</p>
+<p>6.3.5.6. fiscalizações atribuídas à Polícia Militar, por competência originária ou delegada, inclusive as de trânsito e ambientais;</p>
+<p>6.3.5.7. ações policial-militares de busca e varredura, bem como incursões em ambientes de alto risco, comunidades e congêneres;</p>
+<p>6.3.5.8. atendimento de ocorrências típicas de bombeiro e/ou defesa civil;</p>
+<p>6.3.5.9. condução de pessoas a outros órgãos (delegacias/distritos policiais, hospitais, casas de saúde, estabelecimentos prisionais, etc.), durante o período em que a custódia e/ou responsabilidade estiver a cargo da autoridade policial-militar;</p>
+<p>6.3.5.10. em todas as operações policial-militares;</p>
+<p>6.3.5.11. nas ocasiões em que o policial militar for acionado por qualquer pessoa;</p>
+<p>6.3.5.12. cumprimento de determinações de autoridades legitimadas e de mandados judiciais;</p>
+<p>6.3.5.13. apoio a intervenções e resolução de crises, motins e rebeliões no sistema prisional;</p>
+<p>6.3.5.14. sinistros de trânsito;</p>
+<p>6.3.5.15. patrulhamento preventivo e ostensivo ou execução de diligências de rotina em situações em que haja expectativa da necessidade do uso diferenciado da força;</p>
+<p>6.3.5.16. em apoio a outra(s) US e/ou outro(s) órgão(s).</p>
+<p>6.3.6. quando o policial militar perceber que uma intervenção ou interação pode constituir fato de interesse policial, além das circunstâncias anteriormente destacadas, ou quando houver dúvida quanto à necessidade de gravação da interação, a COP deverá ser acionada intencionalmente, prevalecendo o princípio da precaução;</p>
+<p>6.3.7. uma vez iniciada a gravação pela COP, seja por acionamento remoto ou manual, esta deverá ser mantida em funcionamento até o encerramento do fato de interesse policial, cabendo ao policial militar registrar, em áudio com sua própria voz, a justificativa do encerramento da gravação, com a indicação de que o fato foi integralmente concluído;</p>
+<p>6.3.8. são considerados exemplos de encerramento do fato de interesse policial:</p>
+<p>6.3.8.1. término da ocorrência ou do atendimento, com verificação da segurança de todas as partes envolvidas, inclusive dos policiais, e o completo registro da cena da ocorrência ou do crime;</p>
+<p>6.3.8.2. finalização da coleta de depoimentos ou declarações de vítimas, testemunhas ou acusados, nos casos em que atuação policial se limite à tomada de testemunhos;</p>
+<p>6.3.8.3. conclusão de prisão ou apreensão de pessoa, com a adoção de todas as providências decorrentes da ocorrência;</p>
+<p>6.3.8.4. entrega da parte conduzida ao órgão competente;</p>
+<p>6.3.8.5. encerramento de abordagem policial com a liberação dos envolvidos.</p>
+<p>6.3.9. em situações excepcionais, mesmo que caracterizadas como fato de interesse policial, o uso da COP poderá ser temporariamente adaptado de modo a preservar direitos sensíveis mediante reposicionamento ou, caso não seja tecnicamente viável, retirada do uniforme e alocação em superfície segura que permita a captação do áudio. Nesses casos, o policial militar deverá justificar a medida por meio de declaração registrada em áudio antes de realizar qualquer ajuste de posicionamento do dispositivo. São exemplos:</p>
+<p>6.3.9.1. solicitação de vítima ou testemunha para não ser filmada, caso em que a entrevista poderá ser realizada com a câmera apontada para outra direção ou superfície neutra, devendo o policial militar informar previamente à parte que o equipamento continuará gravando som, mesmo sem enquadrá-la visualmente;</p>
+<p>6.3.9.2. ocorrência com criança ou adolescente na condição de vítima, ou crimes de natureza sexual, limitando-se o registro à captação das evidências relacionadas ao local de crime ou corpo de delito não relacionados diretamente à imagem da vítima e durante o tempo estritamente necessário;</p>
+<p>6.3.9.3. realização de busca pessoal minuciosa, devendo o ambiente ser previamente registrado em 720º (omnidirecional – sentidos horizontal/vertical);</p>
+<p>6.3.10. constatada a interrupção da gravação da COP já acionada durante o atendimento de fato de interesse policial, o policial militar deverá proceder ao imediato reacionamento manual do equipamento, registrando a falha por meio de Boletim de Ocorrência eletrônico (BOe) ou Relatório de Serviço Operacional, conforme o caso; se a falha persistir, o policial militar deverá informar o escalão superior tão breve quanto possível, solicitando a substituição da COP.</p>
+<h3 class="subheading">6.4. Obrigações do operador da COP</h3>
+<p>6.4.1. o policial militar deverá conservar as lentes e o microfone da COP completamente desobstruídos durante o serviço policial-militar, especialmente no decorrer das gravações, bem como manter o equipamento voltado para o sítio dos acontecimentos, sendo vedada qualquer ação deliberada que possa prejudicar a captação de imagens e áudio, tais como:</p>
+<p>6.4.1.1. sobreposição das mãos, de peças do uniforme, de outros equipamentos, ou do armamento (bandoleira, coronha, etc.);</p>
+<p>6.4.1.2. corpo do policial voltado para local diferente daquele onde o fato de interesse policial se desenvolve;</p>
+<p>6.4.1.3. afastamento não justificado em relação ao local do fato de interesse policial, prejudicando a captação de vídeo e áudio;</p>
+<p>6.4.1.4. acoplamento da COP em ponto do colete ou fardamento diverso da parte superior do tronco do policial;</p>
+<p>6.4.1.5. resíduos, manchas, tintas, etc. na lente da câmera que obstrua a captação integral do fato de interesse policial.</p>
+<p>6.4.2. é vedado o uso da COP de forma contrária às normas estabelecidas, incluindo, mas não se limitando a: uso para fins particulares, acionamentos simulados ou manipulação indevida dos registros. Tais condutas caracterizam infração funcional passível de responsabilização;</p>
+<p>6.4.3. caso a COP passe à condição de inoperante, o fato deverá ser reportado imediatamente ao escalão superior, além de ser registrado em relatório ou, nos casos em que a falha ocorrer durante atendimento de ocorrência, em Boletim de Ocorrência Eletrônico (BOe), constando o horário e local em que a inoperância aconteceu. Nesse caso, o equipamento deverá ser imediatamente substituído, desde que haja disponibilidade de equipamento, devendo ser acionada a Central de Serviços de TIC da Polícia Militar, informando o número do equipamento defeituoso;</p>
+<p>6.4.4. importante ressaltar que, no atendimento de ocorrências policiais com registro em BOe, tendo a US gravado evidências digitais por meio de COP, é imperioso registrar o uso do equipamento no campo “Evidência Digital”, inserindo os dados relacionados às gravações;</p>
+<p>6.4.5. ao iniciar a gravação, o policial militar deverá informar às partes sobre o registro audiovisual da intervenção ou interação, se tal ação não for potencialmente prejudicial à sua integridade física, não havendo necessidade do consentimento dos interlocutores para iniciar a captação das evidências digitais;</p>
+<p>6.4.6. entregar a COP ao Comando de Força de Patrulha (CFP) ou equivalente, que requisitará, previamente, o equipamento nos seguintes casos e adotará as providências descritas no subitem “6.11.3”:</p>
+<p>6.4.6.1. ocorrências de grande repercussão;</p>
+<p>6.4.6.2. resultado morte decorrente de intervenção policial (MDIP);</p>
+<p>6.4.6.3. lesão corporal decorrente de intervenção policial (LCDIP);</p>
+<p>6.4.6.4. agressão contra policial militar;</p>
+<p>6.4.6.5. indícios de má conduta ou ilegalidade por parte da equipe policial-militar.</p>
+<h3 class="subheading">6.5. Reiteração do COPOM/CAD e dos Escalões de Supervisão</h3>
+<p>6.5.1. nas OPM que possuírem COP que não disponham das funcionalidades de acionamento remoto intencional e acionamento remoto automático:</p>
+<p>6.5.1.1. nas circunstâncias policiais de atendimento de ocorrência, com despacho do COPOM/CAD, o policial militar despachador, além da transmissão dos elementos-base da ocorrência policial em si, deverá reiterar à US atendente a necessidade de acionamento manual da gravação por meio das COP;</p>
+<p>6.5.1.2. do mesmo modo, quando a US comunicar diretamente ao COPOM/CAD circunstância de intervenção policial ou interação com o público destinatário dos serviços policiais, deverá o policial militar despachador, também, reiterar a necessidade de acionamento manual da gravação por meio das COP;</p>
+<p>6.5.1.3. tal providência, igualmente, deverá ser observada pelos escalões de supervisão (CFP e CGP, ou equivalentes) da atividade operacional, utilizando-se da rede de rádio ou da fiscalização direta dos policiais militares para reforçar a necessidade do acionamento da gravação das COP.</p>
+<h3 class="subheading">6.6. Funcionalidades complementares das COP</h3>
+<h3 class="subheading">6.6.1. Áudio bidirecional:</h3>
+<p>6.6.1.1. a funcionalidade de áudio bidirecional permite ao COPOM ou outro escalão de supervisão comunicar-se diretamente com o policial militar por meio da COP, mediante envio de áudio, sendo seu uso restrito às seguintes situações:</p>
+<p>6.6.1.1.1. impossibilidade momentânea de comunicação via rede de rádio convencional;</p>
+<p>6.6.1.1.2. necessidade urgente de transmitir orientações operacionais durante o atendimento da ocorrência;</p>
+<p>6.6.1.1.3. necessidade urgente de estabelecer comunicação com terceiros (vítimas, testemunhas etc.), quando o policial militar estiver incapacitado de falar ou em condição de risco;</p>
+<p>6.6.1.1.4. em situações de risco iminente, com o objetivo de reforçar comandos ou alertar sobre mudanças táticas em curso.</p>
+<p>6.6.1.2. o policial militar do COPOM ou escalão de supervisão deverá avaliar criteriosamente o momento mais oportuno para ativar a comunicação por áudio bidirecional, evitando fazêlo:</p>
+<p>6.6.1.2.1. durante ações críticas que demandem atenção plena do policial, como o manuseio de armamento ou a condução de motocicleta em alta velocidade;</p>
+<p>6.6.1.2.2. em situações que exijam disciplina de luz e som, nas quais a emissão sonora possa comprometer a eficácia e a segurança da ação policial;</p>
+<p>6.6.1.2.3. durante negociações sensíveis, entrevistas ou diálogos estratégicos com vítimas, testemunhas ou infratores, nos quais a intervenção remota possa gerar ruído ou constrangimento;</p>
+<p>6.6.1.2.4. em qualquer situação na qual o ruído do áudio possa comprometer a segurança da equipe, expor sua posição, prejudicar interações presenciais ou interferir na concentração necessária ao desempenho da atividade policial.</p>
+<h3 class="subheading">6.6.2. Transmissão ao vivo (live streaming):</h3>
+<p>6.6.2.1. a funcionalidade de transmissão ao vivo permite o acompanhamento remoto, em tempo real, das imagens captadas pelas COP, e poderá ser acessada:</p>
+<p>6.6.2.1.1. pelos Cmt OPM, a partir do nível mínimo de Companhia PM;</p>
+<p>6.6.2.1.2. pelos policiais militares em função de comando e supervisão;</p>
+<p>6.6.2.1.3. pelo COPOM (São Paulo ou Regional), conforme área de atuação;</p>
+<p>6.6.2.1.4. por demais representantes de OPM, quando devidamente autorizados pela Coord Op PM.</p>
+<p>6.6.2.2. a transmissão ao vivo tem como objetivo o acompanhamento remoto da execução de ações, missões e operações policial-militares, emergenciais ou programadas, subsidiando a tomada de decisões das autoridades policial-militares competentes, com base em informações em tempo real.</p>
+<h3 class="subheading">6.6.3. Modo tático (velado/stealth):</h3>
+<p>6.6.3.1. consiste na operação da COP com som e luzes desativados, mantendo-se, contudo, a possibilidade de registro audiovisual em pleno funcionamento;</p>
+<p>6.6.3.2. essa funcionalidade deverá ser empregada em situações em que a disciplina de luz e som se fizer necessária para preservar a segurança das equipes envolvidas ou o êxito da missão.</p>
+<h3 class="subheading">6.7. Classificação das evidências digitais</h3>
+<p>6.7.1. as evidências digitais produzidas pelas COP deverão ser classificadas pelo próprio policial militar usuário, logo após o encerramento da gravação, conforme etiquetas eletrônicas (tags) pré-estabelecidas, conforme o seguinte rol mínimo:</p>
+<h3 class="subheading">6.7.1.1. Teste (T): teste de funcionamento do equipamento;</h3>
+<h3 class="subheading">6.7.1.2. Vídeo Acidental (VidAc): gravação acionada involuntariamente cujo conteúdo não envolva fato de interesse policial;</h3>
+<p>6.7.1.3. Treinamento (Tr): para vídeos e áudios produzidos com fins de instrução e treinamento policial-militar;</p>
+<p>6.7.1.4. Polícia Administrativa (PA): contém evidências digitais que não demandam ações de polícia judiciária ou polícia judiciária militar, como autuações ambientais, busca e varredura, incursões em ambientes de alto risco e em comunidades e operações policiais. Muitas dessas circunstâncias possuirão tags próprias como subdivisões da etiqueta PA, a exemplo das Abordagens Policiais e Fiscalizações de Polícia (Ab/Fisc), Notificações de Autuação de Trânsito (Not Trans), Orientação ao Público (Or Pub), Apoio a Outros Órgãos (ApOO), etc.;</p>
+<p>6.7.1.5. Polícia Judiciária Militar (PJM): contém evidências digitais de interesse policial que podem compor provas em inquéritos e processos de alçada da Justiça Militar Estadual, em especial quando as ocorrências tiverem desdobramentos que indiquem a atuação dos Plantões de Polícia Judiciária Militar e Disciplina. Essas circunstâncias poderão receber subetiquetas, como Morte Decorrente de Intervenção Policial (MDIP), Lesão Corporal Decorrente de Intervenção Policial (LCDIP), Disparo de Arma de Fogo (DAF) e Emprego de Força Física (EFF);</p>
+<p>6.7.1.6. Polícia Judiciária (PJ): contém evidências digitais que podem compor provas em inquéritos e processos em geral, otimizando o conjunto investigatório e apuratório necessário à comprovação dos fatos. Todas as circunstâncias de Flagrante Delito deverão ser classificadas com esta etiqueta, além da tag Flagrante (FGT);</p>
+<p>6.7.1.7. Busca Domiciliar (BD): subetiqueta de Polícia Judiciária, contém evidências digitais produzidas em ações de busca domiciliar, devendo o consentimento do morador ser registrado por meio da COP quando a ação não for precedida de mandado judicial;</p>
+<p>6.7.1.8. Divulgação ao CComSoc (DivComSoc): para divulgação de boas ações, resolução de incidentes críticos, atuação em catástrofes e todo o tipo de ocorrência positiva e/ou meritória indicada para divulgação pela CDCA.</p>
+<p>6.7.2. a Coord Op PM é responsável por definir, atualizar e divulgar o rol completo de etiquetas eletrônicas, incluindo parâmetros técnicos e doutrinários para sua aplicação, subetiquetas, campos descritivos e uso em evidências provenientes de outras fontes, mantendo essa informação atualizada na intranet da Polícia Militar, em área própria de sua homepage;</p>
+<p>6.7.3. é vedada a omissão ou classificação indevida da evidência digital, sendo responsabilidade do operador garantir a adequada identificação do registro conforme os critérios vigentes no momento do encerramento da gravação.</p>
+<h3 class="subheading">6.8. Cadeia de Custódia das Evidências Digitais</h3>
+<p>6.8.1. a cadeia de custódia tem início com a gravação dos dados (áudios e vídeos) pela COP, sendo responsabilidade do policial militar que utiliza o equipamento garantir a integridade das informações até o upload das evidências digitais para o armazenamento em nuvem ou local;</p>
+<p>6.8.2. os dados deverão ser transferidos da COP para o sistema de armazenamento (upload) ao término de cada turno de serviço, obrigatoriamente, quando o policial militar usuário ou responsável pelo equipamento enviará os dados para o servidor através da conexão do equipamento à doca;</p>
+<p>6.8.3. realizado o upload no sistema de armazenamento, a responsabilidade sobre a administração e custódia das evidências digitais produzidas pelo efetivo da respectiva OPM passa a ser do Chefe da Seção PJMD, que terá as atribuições de:</p>
+<p>6.8.3.1. controlar o acesso de integrantes da OPM ao sistema de armazenamento;</p>
+<p>6.8.3.2. garantir a salvaguarda e integridade dos dados produzidos pela respectiva OPM;</p>
+<p>6.8.3.3. providenciar o compartilhamento de evidências digitais e/ou relatórios extraídos do SiGCED para autoridade policial-militar ou civil competente que o requisitar, com sua integridade preservada, sem qualquer edição;</p>
+<p>6.8.4. a disponibilidade das evidências digitais seguirá os seguintes prazos de temporalidade mínima:</p>
+<p>6.8.4.1. 90 dias para vídeos de rotina (vide subitem “6.1.21”);</p>
+<p>6.8.4.2. 1 ano para as demais evidências digitais.</p>
+<p>6.8.5. o policial militar poderá ter acesso aos registros audiovisuais atrelados à ocorrência em que tenha atuado, com o objetivo de instruir processos/procedimentos administrativos e/ou judiciais, na condição de testemunha, vítima ou acusado, sendo vedada a captação das imagens e áudios por outro equipamento, bem como a extração, edição ou transferência dos dados;</p>
+<p>6.8.6. o requerimento de dados para subsidiar procedimento apuratório por parte de acusado (civil ou policial militar) ou seu defensor deverá ser feito à autoridade encarregada;</p>
+<p>6.8.7. as informações serão disponibilizadas para a autoridade requisitante, preferencialmente, em formato digital por intermédio de compartilhamento das evidências com usuários cadastrados de cada um dos órgãos públicos interessados (Poder Judiciário, Ministério Público, Polícia Civil, Polícia Técnico-Científica, Defensoria Pública, etc.);</p>
+<p>6.8.8. a quebra do sigilo de evidência digital ou sua divulgação não autorizada pode caracterizar fato atentatório à Instituição, aos direitos humanos fundamentais, à proteção da imagem, privacidade e honra das pessoas, motivando eventual processo de responsabilização administrativa, civil, penal e/ou penal-militar;</p>
+<p>6.8.9. identificada, no atendimento a requisição de evidência digital, a ausência de registro audiovisual da COP decorrente de falha de acionamento, descarga de bateria ou qualquer outro uso em desacordo com as normas aplicáveis, deverá ser obrigatoriamente instaurada Investigação Preliminar (IP) para apuração específica do fato, independentemente da existência de outro procedimento apurando a ocorrência em si, nos termos da orientação institucional a ser expedida pela Corregedoria PM (conforme subitem “6.10.3.3.”);</p>
+<p>6.8.10. o Oficial, a partir da função de Comandante de Companhia PM ou equivalente, poderá solicitar o acesso a registros audiovisuais específicos (sobre efetivo que não lhe seja subordinado funcionalmente), por intermédio da Seção PJMD da OPM, desde que:</p>
+<p>6.8.10.1. a solicitação seja formal;</p>
+<p>6.8.10.2. seja demonstrada a finalidade exclusiva de subsidiar ações de instrução, preleção ou treinamento da tropa;</p>
+<p>6.8.10.3. sejam observados os princípios da dignidade da pessoa humana, da proteção da imagem e da finalidade pedagógica da solicitação.</p>
+<h3 class="subheading">6.9. Monitoramento e Controle</h3>
+<p>6.9.1. o monitoramento do uso das Câmeras Operacionais Portáteis (COP) será realizado de forma contínua pelos escalões de Supervisão, Estado-Maior e Comando, com o objetivo de garantir a observância das normas vigentes, identificar falhas, reforçar boas práticas e promover a responsabilização quando cabível;</p>
+<p>6.9.2. a auditoria sempre deverá considerar a totalidade da ocorrência, e não apenas os blocos fragmentados (geralmente de 30 minutos) criados automaticamente pelo sistema, uma vez que as evidências digitais possuem tempo máximo de gravação e uma mesma ocorrência pode gerar mais de uma evidência digital;</p>
+<p>6.9.3. as seguintes autoridades deverão possuir credenciais de acesso ao sistema de gerenciamento de evidências digitais (SiGCED), com fins de auditoria e controle das evidências captadas: CGP, Cmt Gp PM, CFP, Cmt Pel PM, Cmt de Cia PM, Chefes de Agência de Inteligência, Chefes de Seção ou Divisão Operacional, Coord Op Btl, Subcmt Btl, Cmt de Btl e Cmt de CPA/CPI, Oficial PPJMD, ou equivalentes, ou, ainda, outro oficial formalmente designado pelo Cmt OPM para auditoria das gravações das COP;</p>
+<p>6.9.4. no decorrer do turno de serviço, caberá ao:</p>
+<p>6.9.4.1. CGP: fiscalizar a correta classificação das evidências digitais das US subordinadas e auditar, no mínimo, evidências digitais correspondentes a 2 ocorrências por turno;</p>
+<p>6.9.4.2. CFP: auditar, no mínimo, evidências digitais correspondentes a 2 ocorrências por Btl por turno;</p>
+<p>6.9.4.3. Supervisor Regional: fiscalizar, no mínimo, as evidências digitais correspondentes a 2 ocorrências do Cmdo Pol, sendo obrigatória a fiscalização nos casos de MDIP/LCDIP;</p>
+<p>6.9.4.4. nas ocorrências de MDIP e/ou LCDIP é obrigatória a auditoria dos vídeos, o mais breve possível, sem prejuízo das diligências e medidas necessárias ao gerenciamento da ocorrência, pelo CFP, PPJMD, Cmt Cia e/ou Coord Op Btl, conforme suas respectivas atribuições;</p>
+<p>6.9.5. a cada expediente de serviço, caberá ao:</p>
+<p>6.9.5.1. Coord Op Btl: auditar, no mínimo, as evidências digitais correspondentes a 2 ocorrências do Btl PM;</p>
+<p>6.9.5.2. Cmt Cia: auditar, no mínimo, duas evidências digitais, correspondentes a ocorrências de Pel/Gp sob seu comando;</p>
+<p>6.9.5.3. Cmt Pel PM: auditar, no mínimo, duas evidências digitais, correspondentes a ocorrências de Pel PM sob seu comando;</p>
+<p>6.9.5.4. Cmt Gp PM: auditar, no mínimo, duas evidências digitais, correspondentes a ocorrências de Gp PM sob seu comando.</p>
+<p>6.9.6. das auditorias realizadas poderão resultar iniciativas relativas, por exemplo, a pedidos de elogio para os policiais militares, divulgação para o CComSoc, revisão ou treinamento dos procedimentos operacionais padrão, orientações verbais ou, se assim for verificado, instauração de procedimentos disciplinares, processos regulares, inquéritos policialmilitares ou outros procedimentos apuratórios;</p>
+<p>6.9.7. sempre que, no curso de auditoria ou por outro meio legítimo, forem identificados indícios de infração disciplinar relacionados ao uso indevido da COP, deverá ser instaurado procedimento disciplinar, nos termos da legislação vigente. São considerados, entre outros, motivos para a instauração de procedimento disciplinar:</p>
+<p>6.9.7.1. obstrução intencional da lente da COP;</p>
+<p>6.9.7.2. desvio proposital do enquadramento da câmera com o intuito de evitar o registro da ação policial;</p>
+<p>6.9.7.3. não utilização da COP em situações em que seu uso é obrigatório;</p>
+<p>6.9.7.4. acionamento inadequado da gravação;</p>
+<p>6.9.7.5. omissão injustificada do acionamento da gravação;</p>
+<p>6.9.7.6. qualquer outro uso da COP em desacordo com as normas da Polícia Militar.</p>
+<p>6.9.8. nas hipóteses em que o uso indevido da COP possa configurar transgressão disciplinar de natureza grave, notadamente quando houver indícios de ação ou omissão dolosa voltada a frustrar ou fraudar a captação de evidências digitais, a responsabilização disciplinar deverá ocorrer por meio de procedimento compatível com a sua complexidade/gravidade, podendo compreender, conforme o caso, a instauração de Processo Regular;</p>
+<p>6.9.9. verificada a existência de indícios de crime militar relacionado ao uso da COP, deverá ser instaurado o respectivo Inquérito Policial Militar (IPM), independentemente das providências disciplinares cabíveis.</p>
+<h3 class="subheading">6.10. Atribuições Particulares</h3>
+<h3 class="subheading">6.10.1. CComSoc</h3>
+<p>6.10.1.1. elaborar estratégias de comunicação voltadas aos públicos interno e externo, visando a consolidar o uso das COP como tecnologia de apoio à eficiência, transparência e legitimidade da atuação policial-militar;</p>
+<p>6.10.1.2. promover a divulgação de conteúdos positivos produzidos pelas COP, objetivando a consolidação da imagem da Polícia Militar como instituição legalista e promotora da defesa dos direitos humanos e garantias individuais;</p>
+<p>6.10.1.3. deliberar, por meio da CDCA, sobre a divulgação de imagens captadas pelas COP, respeitando os critérios legais e normativos.</p>
+<h3 class="subheading">6.10.2. CIPM</h3>
+<p>6.10.2.1. disponibilizar ao Cmdo G, periodicamente, análises em nível estratégico sobre produtividade policial-militar, uso diferenciado da força e evolução criminal no contexto de emprego da COP;</p>
+<p>6.10.2.2. orientar os Oficiais das Agências de Inteligência quanto ao acompanhamento e monitoramento de uso das COP em consonância com as disposições previstas nesta Diretriz, para fins de quantificação e assessoramento aos Comandantes locais quanto ao uso adequado do equipamento;</p>
+<p>6.10.2.3. definir matriz de risco, aplicável aos casos de morte decorrente de intervenção policial, separadas por OPM, para fins de subsidiar a priorização de distribuição das COP na Polícia Militar;</p>
+<p>6.10.2.4. disciplinar, por meio de norma orientadora, a sistemática de gestão dos cartões de identificação por radiofrequência (RFID) nas Agências de Inteligência das OPM que possuírem modelo de COP compatível com tal tecnologia, estabelecendo critérios de guarda, controle, vinculação e substituição, com vistas a garantir a individualização, rastreabilidade e segurança no uso do equipamento.</p>
+<h3 class="subheading">6.10.3. Correg PM</h3>
+<p>6.10.3.1. acompanhar e regulamentar a sistemática de atendimento a requisições, sob responsabilidade dos Chefes da Seções PJMD, referentes à disponibilização das evidências digitais a autoridades que possuam competências apuratórias ou investigatórias em inquéritos, procedimentos ou processos;</p>
+<p>6.10.3.2. estabelecer, por meio das Seções PJMD, os fluxos de atendimento às solicitações de acesso feitas por acusados ou seus defensores, observada a legislação vigente;</p>
+<p>6.10.3.3 elaborar estudo técnico e publicar norma de caráter orientativo destinada a auxiliar as autoridades disciplinares na análise de condutas funcionais relacionadas ao uso das COP, observando a gradação prevista na Lei Complementar nº 893/01 - RDPM, a existência de circunstâncias agravantes ou atenuantes e o potencial lesivo à imagem institucional e à disciplina da Polícia Militar, sem prejuízo da análise individualizada e fundamentada por parte da autoridade competente;</p>
+<p>6.10.3.4. auxiliar a 6ª EM/PM na elaboração de documento de Estado-Maior que discipline a sistemática de definição, captação, processamento e distribuição dos indicadores relacionados ao uso das COP, bem como cooperar com o fornecimento das informações sob sua responsabilidade, elaborando relatório consolidado de monitoramento e avaliação da política pública de uso das COP, com base nos parâmetros e periodicidade estipulados pela 6ª EM/PM (conforme subitem “6.10.7.2.”).</p>
+<h3 class="subheading">6.10.4. Coord Op PM</h3>
+<p>6.10.4.1. acompanhar os resultados operacionais do emprego das COP, apontando não conformidades, elaborando análises de desempenho das OPM e propondo medidas corretivas;</p>
+<p>6.10.4.2. elaborar relatório consolidado de monitoramento e avaliação da política pública de uso das COP, com base nos parâmetros e periodicidade estipulados pela 6ª EM/PM (conforme subitem “6.10.7.2.”);</p>
+<p>6.10.4.3. auxiliar a 6ª EM/PM na elaboração de documento de Estado-Maior que discipline a sistemática de definição, captação, processamento e distribuição dos indicadores relacionados ao uso das COP, bem como cooperar com o fornecimento das informações sob sua responsabilidade;</p>
+<p>6.10.4.4. definir protocolos para as rotinas de auditoria das OPM (conforme subitem “6.9.” e divisões);</p>
+<p>6.10.4.5. definir, atualizar e divulgar o rol completo de etiquetas eletrônicas (tags) das evidências digitais, incluindo os parâmetros técnicos e doutrinários para sua aplicação, as subetiquetas e preenchimento dos campos descritivos, mantendo essa informação atualizada na intranet da Polícia Militar, em área própria de sua homepage;</p>
+<p>6.10.4.6. planejar, em conjunto com a 4ª EM/PM, DTIC e DF, a aplicação dos recursos orçamentários necessários para operacionalização das COP.</p>
+<p>6.10.5. 3ª EM/PM Analisar propostas de atualização desta diretriz e assessorar o Cmdo G nas decisões estratégicas relativas à estratégia institucional de uso das COP.</p>
+<p>6.10.6. 4ª EM/PM</p>
+<p>6.10.6.1. assessorar o Cmdo G nas decisões estratégicas relativas à execução orçamentária dos contratos relativos à COP;</p>
+<p>6.10.6.2. planejar, em conjunto com a Coord Op PM, DTIC e DF, a aplicação dos recursos orçamentários necessários para operacionalização das COP.</p>
+<p>6.10.7. 6ª EM/PM</p>
+<p>6.10.7.1. revisar os Procedimentos Operacionais Padrão (POP) aplicáveis ao emprego das COP, com base em propostas recebidas ou na análise da experiência institucional, visando à melhoria contínua dos processos;</p>
+<p>6.10.7.2. editar e publicar documento de Estado-Maior que, em conjunto com a Correg PM, a DTIC e a Coord Op PM, defina os indicadores estratégicos das COP e discipline sua sistemática de captação, processamento e divulgação.</p>
+<h3 class="subheading">6.10.8. DEC</h3>
+<p>6.10.8.1. revisar e atualizar os currículos dos cursos de formação, aperfeiçoamento e especialização da Polícia Militar, assim como os estágios, incorporando conteúdos voltados ao uso técnico e jurídico das COP;</p>
+<p>6.10.8.2. promover, por meio de videotreinamentos, ICC, INPO ou outras atividades de ensino, a capacitação técnica e operacional do efetivo policial-militar quanto ao uso das COP (cadeia de custódia das evidências digitais, acionamento, funcionalidades, proteção dos dados, responsabilização etc.).</p>
+<h3 class="subheading">6.10.9. DF</h3>
+<p>6.10.9.1. planejar, em conjunto com a Coord Op PM, DTIC e 4ª EM/PM, a aplicação dos recursos orçamentários para operacionalização das COP;</p>
+<p>6.10.9.2. prover, de acordo com o planejamento financeiro e orçamentário da Polícia Militar, recursos para a contratação de serviços e/ou para a aquisição e manutenção das COP e aplicações conjugadas, tais como baterias, estações de acoplamento e aparatos de fixação da COP ao fardamento.</p>
+<h3 class="subheading">6.10.10. DTIC</h3>
+<p>6.10.10.1. providenciar a estruturação, quanto à tecnologia da informação, do SiGCED, trabalhando em comunhão de esforços com os demais órgãos da Polícia Militar;</p>
+<p>6.10.10.2. definir as especificações dos recursos tecnológicos necessários à aplicação das COP na Polícia Militar;</p>
+<p>6.10.10.3. prover (no caso de aquisição) ou coordenar (no caso de contratação de serviços) estrutura de TIC para armazenamento seguro dos dados gravados pelas COP, possibilitando a gestão eficiente das evidências digitais;</p>
+<p>6.10.10.4. acompanhar a evolução tecnológica das COP e das aplicações a serem disponibilizadas, propondo, durante a elaboração do planejamento orçamentário, aquisições ou contratações de serviço de acordo com as melhores soluções disponíveis no mercado;</p>
+<p>6.10.10.5. manter a Central de Serviços de TIC em funcionamento contínuo, para atendimento das demandas das OPM quanto à manutenção, substituição e suporte técnico dos equipamentos;</p>
+<p>6.10.10.6. auxiliar a 6ª EM/PM na elaboração de documento de Estado-Maior que discipline a sistemática de definição, captação, processamento e distribuição dos indicadores relacionados ao uso das COP, bem como cooperar com o fornecimento das informações sob sua responsabilidade;</p>
+<p>6.10.10.7. planejar, em conjunto com a Coord Op PM, 4ª EM/PM e DF, a aplicação dos recursos orçamentários para operacionalização das COP.</p>
+<p>6.10.10.8. emitir semestralmente, para remessa ao Ch EM/PM, via 4ª EM/PM, o mapa de controle da execução dos contratos relativos à COP, incluindo eventuais alterações.</p>
+<h3 class="subheading">6.10.11. COPOM (São Paulo e Regionais)</h3>
+<p>6.10.11.1. reiterar, quando necessário, o acionamento obrigatório da gravação pelas US durante o despacho de ocorrências;</p>
+<p>6.10.11.2. sob a responsabilidade do COPOM São Paulo, regulamentar o acesso e estruturar a rotina de uso das funcionalidades complementares das COP no âmbito dos COPOM;</p>
+<p>6.10.11.3. sob a responsabilidade ou coordenação do COPOM São Paulo, desenvolver e aplicar treinamento aos despachadores sobre a operação do acionamento remoto e as demais funcionalidades complementares da COP, no tocante ao papel do COPOM.</p>
+<h3 class="subheading">6.10.12. Cmdo Pol das OPM que possuam COP</h3>
+<p>6.10.12.1. coordenar a implantação e a supervisão do sistema de uso das COP na região de sua responsabilidade;</p>
+<p>6.10.12.2. por intermédio das OPM subordinadas, garantir:</p>
+<p>6.10.12.2.1. o funcionamento eficaz da sistemática das COP, assegurando a integridade da cadeia de custódia;</p>
+<p>6.10.12.2.2. a capacitação dos policiais militares para uso do equipamento, conforme orientações técnicas e doutrinárias atualizadas;</p>
+<p>6.10.12.2.3. a adoção regular das rotinas de auditoria das evidências digitais;</p>
+<p>6.10.12.2.4. a escrituração adequada dos BOe, com menção ao uso das COP;</p>
+<p>6.10.12.2.5. a designação dos Of Lig COP e eventuais;</p>
+<p>6.10.12.2.6. a correta atuação do Chefe da Seção PJMD da OPM na gestão das evidências digitais, cabendo-lhe administrar o sistema de armazenamento, controlar o acesso dos usuários, garantir a cadeia de custódia e realizar o compartilhamento dos dados com autoridades competentes, nos termos da legislação e desta diretriz;</p>
+<p>6.10.12.2.7. a fiscalização, por parte do CGP e do CFP, do correto uso das COP pelas US subordinadas, incluindo a auditoria periódica das evidências digitais, a verificação da classificação das gravações e o reforço das boas práticas operacionais, conforme atribuições previstas nos subitens “6.9.4.1.” e “6.9.4.2.”;</p>
+<p>6.10.12.2.8. gestão, por meio das respectivas Agências de Inteligência, do controle, guarda e distribuição dos cartões de identificação por radiofrequência (RFID), nos casos em que a OPM utilize modelo de COP compatível com tal tecnologia, observando as normas orientadoras expedidas pelo CIPM e zelando pela individualização e rastreabilidade no uso do equipamento.</p>
+<h3 class="subheading">6.11. Prescrições diversas</h3>
+<p>6.11.1. a distribuição institucional das COP, por OPM, será realizada de acordo com a relação de prioridade estipulada por matriz de risco, estabelecida pelo CIPM;</p>
+<p>6.11.2. as OPM deverão adotar em relação às COP, medidas de guarda, controle e uso de material vigentes na Polícia Militar;</p>
+<p>6.11.3. nos casos constantes do subitem “6.4.6.”, o CFP (ou equivalente) deverá, obrigatoriamente, requisitar e recolher as COP, providenciando, pessoalmente, o upload do conteúdo captado, sempre que possível em ato contínuo ao recebimento dos equipamentos, mas sem prejuízo das diligências e medidas necessárias ao gerenciamento da ocorrência;</p>
+<p>6.11.4. os CGP (ou equivalentes), além das atribuições relativas à auditoria das evidências digitais, deverão supervisionar o Sv de Dia na distribuição das COP, nos testes iniciais de funcionamento e, durante todo o turno de serviço, na fiscalização das regras de uso;</p>
+<p>6.11.5. após o início do serviço, a COP somente poderá ser removida da parte superior do tronco do policial militar em caráter extraordinário, para ajuste durante a sobreposição ou retirada de peças complementares do fardamento (como jaquetas, capotes ou capas impermeáveis), ou para uso do sanitário, desde que não haja gravação em andamento. Nesses casos, a COP deverá permanecer sob a guarda de outro policial militar da mesma US;</p>
+<p>6.11.6. é responsabilidade do policial militar de maior posto ou graduação, usuário ou não de COP, presente em local de ocorrência/fato de interesse policial, fiscalizar a utilização correta das COP pelos policiais militares;</p>
+<p>6.11.7. todos os policiais militares que utilizarem as COP na atividade operacional deverão ser previamente capacitados ao uso do equipamento;</p>
+<p>6.11.8. fica liberado o canal técnico entre as OPM com atribuições particulares previstas nesta Dtz, com vistas à solução de problemas e esclarecimentos que se fizerem necessários;</p>
+<p>6.11.9. revogam-se as disposições em contrário, em especial a Diretriz nº PM3-001/02/22, de 06JUN22 (Câmeras Operacionais Portáteis - COP).</p></section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Procedimento Disciplinar neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Procedimento Disciplinar</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Câmeras Operacionais Portáteis (COP) e Defesa contra a Violência Doméstica e Familiar são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+
+<div class="material-picker-backdrop" id="material-picker-modal" role="dialog" aria-modal="true" aria-labelledby="material-picker-title">
+ <div class="material-picker">
+  <div class="material-picker-head"><h2 id="material-picker-title">Materiais de apoio — Câmeras Operacionais Portáteis (COP) e Defesa contra a Violência Doméstica e Familiar</h2></div>
+  <div class="material-picker-list">
+   <a class="material-option" href="#document" id="material-option-norma">Norma — texto integral nesta página <span>↓</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1sWmLyejnd5soSGXhmucxC_6sunhNU3mZ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo para revisão <span>↗</span></a>
+  </div>
+  <div class="material-picker-foot"><button class="btn" type="button" id="close-material-picker">Fechar</button></div>
+ </div>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+
+<script>
+(() => {
+ const modal=document.getElementById('material-picker-modal');
+ const open=document.getElementById('open-material-picker');
+ const close=document.getElementById('close-material-picker');
+ if(!modal||!open||!close)return;
+ const hide=()=>{modal.classList.remove('open');open.focus();};
+ open.addEventListener('click',()=>modal.classList.add('open'));
+ close.addEventListener('click',hide);
+ const norma=document.getElementById('material-option-norma');
+ norma.addEventListener('click',()=>{modal.classList.remove('open');});
+ modal.addEventListener('click',e=>{if(e.target===modal)hide();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))hide();});
+})();
+</script>
+
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-cop-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Procedimento Disciplinar? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Procedimento Disciplinar, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Procedimento Disciplinar foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
