@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Regime de Trabalho — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+
+.material-picker-backdrop{position:fixed;inset:0;z-index:120;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}.material-picker-backdrop.open{display:flex}.material-picker{width:min(560px,100%);background:#fff;border:1px solid #cbd5e1;border-radius:14px;overflow:hidden;box-shadow:0 25px 80px #0007}.material-picker-head{padding:16px 18px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}.material-picker-head h2{margin:0;font-size:18px}.material-picker-list{padding:14px;display:grid;gap:9px}.material-option{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#26364d;border:1px solid var(--line);border-radius:9px;padding:13px;font-weight:750}.material-option:hover{border-color:var(--gold);background:#fffbed}.material-picker-foot{padding:12px 14px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;background:#f8fafc}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Organizacionais</div><h1>Regime de Trabalho</h1><p>Portaria do Cmt G PM1-7/02/23 · Texto integral para estudo. A transcrição inclui alterações identificadas no arquivo-fonte; confira a publicação oficial e suas atualizações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" type="button" id="open-material-picker">Escolher material de apoio ↗</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO">
+<p class="subheading">LEGISLAÇÃO E ORGANIZAÇÃO</p>
+<p class="subheading">PORTARIAS</p>
+<h2 class="section-heading">1 - DISPÕE SOBRE O REGIME DE TRABALHO NA POLÍCIA MILITAR DO ESTADO DE SÃO PAULO E DÁ OUTRAS PROVIDÊNCIAS</h2>
+<p>Portaria do Cmt G PM1-7/02/23</p>
+<p>O Comandante-Geral da Polícia Militar do Estado de São Paulo (PMESP);</p>
+<p>Considerando o advento da Lei Complementar (LC) 1.188, de 27 de novembro de 2012, que altera a Lei 10.291, de 26 de novembro de 1968, que instituiu o Regime Especial de Trabalho Policial (RETP), em especial, à necessidade de alinhar com a normatização vigente na PMESP, no tocante ao regime de trabalho;</p>
+<p>Considerando as disposições do Decreto 52.054, de 14 de agosto de 2007, que dispõe sobre o horário de trabalho e registro de ponto dos servidores públicos estaduais da Administração Direta e das Autarquias, consolida a legislação relativa às entradas e saídas no serviço, e dá providências correlatas;</p>
+<p>Considerando as disposições da Resolução SSP-225, de 14 de setembro de 1995, que dispõe sobre o horário de trabalho e o controle de frequência e de pontualidade dos servidores e policiais civis e militares, em exercício na Secretaria da Segurança Pública e dá providências correlatas;</p>
+<p>Considerando, por fim, que nos termos do artigo 19, inciso I, do Regulamento Geral da Polícia Militar, aprovado pelo Decreto 7.290, de 15 de dezembro de 1975, combinado com o artigo 14, parágrafo único, da Resolução supracitada, que prevê a competência do Comandante-Geral para baixar os atos necessários ao seu fiel cumprimento;</p>
+<p>Resolve baixar o seguinte regramento sobre o regime de trabalho policial-militar:</p>
+<h2 class="section-heading">CAPÍTULO I DAS DISPOSIÇÕES PRELIMINARES</h2>
+<p class="legal-article">Artigo 1º - O regime de trabalho policial-militar é especial e caracteriza-se:</p>
+<p>I - pela prestação de serviços em condições precárias de segurança e pela possibilidade de chamadas a qualquer hora;</p>
+<p>II - pelo cumprimento de horário irregular;</p>
+<p>III - pelas situações extraordinárias da tropa (sobreaviso, prontidões, etc.);</p>
+<p>IV - pelo exercício de atividades relativas ao ensino e à difusão cultural;</p>
+<p>V - pelo exercício de atividades decorrentes de convênio firmado entre o Estado e municípios para a gestão associada de serviços públicos, cuja execução possa ser atribuída, mediante delegação municipal, à Polícia Militar do Estado de São Paulo;</p>
+<p>VI - pelo risco de o policial tornar-se vítima de crime no exercício ou em razão de suas atribuições.</p>
+<p class="legal-article">Artigo 2º - A jornada de trabalho semanal do policial militar é de, no mínimo, 40 (quarenta) horas.</p>
+<p class="legal-article">Artigo 3º - A Escala de Serviço é o documento expedido por superior competente, a partir do nível de Comandante de Companhia (Cmt Cia PM) ou equivalente, designando turnos de serviço aos seus subordinados.</p>
+<p class="legal-article">Artigo 4º - Toda Organização Policial-Militar (OPM) deve ter seu pessoal discriminado em horário de expediente administrativo, escalas de serviço e eventuais afastamentos.</p>
+<p class="legal-article">Artigo 5º - O regime de trabalho é determinado por:</p>
+<p>I - horário de expediente administrativo;</p>
+<p>II - escala de serviço operacional ou administrativo.</p>
+<p class="subheading">§ 1º - O horário de expediente administrativo é aplicado ao efetivo empenhado em funções administrativas.</p>
+<p class="subheading">§ 2º - A escala de serviço operacional é utilizada para organizar a distribuição dos policiais militares em turnos e unidades de serviço na execução das atividades operacionais ininterruptas de polícia ostensiva e preservação da ordem pública, de bombeiros e de defesa civil.</p>
+<p class="subheading">§ 3º - A escala de serviço administrativo se aplica ao efetivo empenhado em funções administrativas específicas, cuja peculiaridade exija a escala do policial militar em horário diverso do expediente administrativo.</p>
+<p class="subheading">§ 4º - O regime de trabalho do policial militar está diretamente vinculado às atividades desenvolvidas no Órgão de Direção, de Apoio, de Execução ou de Assessoria em que está classificado, devendo adequar-se ao horário desenvolvido na respectiva OPM.</p>
+<p class="subheading">§ 5º - Os horários e escalas de cumprimento do regime de trabalho policial-militar fixados nesta portaria foram previstos de forma a acomodar uma regra geral e ao menos uma regra alternativa, de modo a harmonizar a presente disciplina, e, por outro lado, contribuir com a promoção da qualidade de vida e do bem-estar do policial militar.</p>
+<h2 class="section-heading">CAPÍTULO II DO EXPEDIENTE ADMINISTRATIVO</h2>
+<h3 class="section-heading">Seção I Da Regra Geral</h3>
+<p class="legal-article">Artigo 6º O horário de expediente administrativo na Polícia Militar, em regra, será desenvolvido da seguinte forma:</p>
+<p>I - das 08:00 às 18:00 horas - de 2ª à 6ª feiras; ou</p>
+<p>II - das 09:00 às 18:00 horas - de 2ª à 6ª feiras.</p>
+<p class="subheading">Parágrafo único - A jornada de trabalho a que o policial militar estiver submetido deverá constar expressamente da escala de serviço da OPM.</p>
+<p class="legal-article">Artigo 7º - A jornada de trabalho do policial militar submetido ao horário de expediente administrativo poderá ter as seguintes configurações:</p>
+<p>I - a jornada de trabalho diária prevista no inciso I do artigo 6º desta Portaria será desdobrada, para fins de controle, em dois turnos, das 08:00 às 13:00 horas e das 13:00 às 18:00 horas, totalizando dez turnos por semana, observando-se o seguinte:</p>
+<p>a) os policiais militares sujeitos a este regime de trabalho deverão cumprir obrigatoriamente oito turnos de serviço, de forma a manter a jornada semanal mínima fixada no artigo 2º;</p>
+<p>b) os dois turnos restantes serão convertidos em folgas, cuja fruição poderá ocorrer em dias distintos ou mediante a aglutinação em um único dia da respectiva semana.</p>
+<p>II - no horário previsto no inciso II do artigo 6º desta Portaria, em um dia da semana haverá o desdobramento do período em dois turnos, das 08:00 às 13:00 horas ou das 13:00 às 18:00 horas, sendo um deles convertido em folga.</p>
+<p class="subheading">§ 1º - Os desdobramentos previstos nos incisos do “caput” deste artigo deverão ser controlados pelo Comandante da OPM (Cmt OPM), até o nível de Companhia PM, de forma que haja, no mínimo, 50% do efetivo em cada turno de serviço, em todos os dias da semana.</p>
+<p class="subheading">§ 2º - Nas semanas em que houver dois dias sem expediente administrativo, decorrentes de feriados, pontos facultativos ou quaisquer outros afastamentos regularmente autorizados, estão vedadas as folgas previstas nos incisos do “caput” deste artigo.</p>
+<p class="subheading">§ 3º - Na hipótese do parágrafo 2º deste artigo, fica autorizado o militar do Estado, devidamente designado como docente em cursos ou estágios da Instituição, a ministrar aula em um dos turnos de serviço da referida semana, desde que haja previsão no Quadro de Trabalho Semanal (QTS) do respectivo Órgão de Apoio de Ensino Superior (OAES) ou da OPM Gestora do Conhecimento (OGC).</p>
+<p>(NR dada pela Portaria do CMT G PM1-001/02/26, publicada no Bol G PM 027/26)</p>
+<p class="legal-article">Artigo 8º - O policial militar sujeito ao regime de horário de expediente não poderá se afastar por 2 (dois) dias consecutivos de sua OPM na respectiva semana, salvo por caso fortuito ou motivo de força maior.</p>
+<p class="subheading">§ 1º - Para fins de cumprimento do “caput”, outras causas de afastamento temporário e regularmente previstos (tais como cumprimento de escala operacional fora da sede de sua OPM, folga decorrente do cumprimento de escala operacional, escala de representação, reuniões fora da sede da OPM, dispensa do serviço ou dispensa-recompensa, dispensa para doação de sangue e etc.) terão preferência, para fins de elaboração de escala de serviço, sobre a aglutinação de folgas parciais decorrentes dos desdobramentos previstos no artigo 6º, inciso II, e no artigo 7º, § 1º.</p>
+<p class="subheading">§ 2º - Não se aplica o disposto no “caput” deste artigo e no parágrafo anterior nos casos de início de férias, licença prêmio, finais de semana e feriados.</p>
+<p class="subheading">§ 3º - O Comandante da OPM, responsável pela escala de serviço, deverá fiscalizar e controlar o disposto nesse artigo.</p>
+<h3 class="section-heading">Seção II Do horário de expediente administrativo nos Órgãos de Apoio de Ensino Superior</h3>
+<p class="legal-article">Artigo 9º - O horário de expediente administrativo dos Órgãos de Apoio de Ensino Superior (OAES) da PMESP será:</p>
+<p>I - das 07:30 às 17:30 horas - de 2ª à 5ª feiras;</p>
+<p>II - das 07:30 às 12:30 horas - às 6ª feiras;</p>
+<p>III - em um dia da semana, o horário de expediente administrativo a ser cumprido por cada policial militar será desdobrado em dois turnos, das 07:30 às 12:30 horas ou das 12:30 às 17:30 horas.</p>
+<p class="subheading">§ 1º - As folgas parciais decorrentes do desdobramento previsto no inciso III e do turno parcial previsto do inciso II, ambos do “caput”, poderão ser aglutinadas em um único dia da respectiva semana. Caso a opção seja pela aglutinação em um dia diverso da 6ª feira, o expediente administrativo a ser cumprindo na 6ª feira será das 07:30 às 17:30 horas.</p>
+<p class="subheading">§ 2º - Alternativamente, poderá ser adotado o seguinte horário de expediente administrativo dos OAES:</p>
+<h2 class="section-heading">1 - das 07:30 às 16:30 horas - de 2ª à 5ª feiras;</h2>
+<h2 class="section-heading">2 - das 07:30 às 12:30 horas - às 6ª feiras.</h2>
+<p class="subheading">§ 3º - Os desdobramentos previstos no inciso III do “caput” e no § 1º, assim como o turno parcial previsto no item 2 do § 2º, deverão ser controlados pelo Comandante da OAES, Chefe de Departamento ou de Divisão, de forma que haja 50% do efetivo em cada turno de cada dia da semana, ajustando o efetivo disponível de acordo com critérios relacionados às peculiaridades da OPM e à necessidade do serviço.</p>
+<p class="subheading">§ 4º - Nas semanas em que houver 2 (dois) dias sem expediente administrativo, decorrente de feriado, ponto facultativo ou outra causa regularmente prevista, não haverá o desdobramento previsto no inciso III do “caput” deste artigo.</p>
+<h3 class="section-heading">Seção III Do regime de trabalho dos integrantes do Quadro de Oficiais de Saúde</h3>
+<p class="legal-article">Artigo 10 - O horário de expediente administrativo dos integrantes do Quadro de Oficiais de Saúde (QOS) da PMESP será:</p>
+<p>I - para os integrantes do QOS que exercem exclusivamente funções de direção, chefia e atividades administrativas deverão cumprir horário de expediente administrativo nos termos dos artigos 6º e 7º da presente portaria;</p>
+<p>II - para os integrantes do QOS que prestam serviços de atendimento ao público nos Centros, nas UIS ou em outras OPM, deverão obedecer as seguintes regras:</p>
+<p>a) no mínimo, 6 (seis) horas diárias e 30 (trinta) horas semanais de serviço prestadas efetivamente no C Med, no C Odont, no CRPM, nas Unidades Integradas de Saúde (UIS) ou em outras OPM, compreendido, preferencialmente, entre às 07:00 e 19:00 horas;</p>
+<p>b) 10 (dez) horas semanais destinadas a encargos móveis, enquadrando-se nesse caso as seguintes situações: atualização científica, aprimoramento profissional, elaboração de estudos, visitas a policiais militares enfermos, plantões extraordinários, palestras de orientação aos policiais militares e outros encargos próprios do QOS;</p>
+<p class="subheading">§ 1º - O CMed, COdont, CRPM e UIS, nos locais de atendimento aos policiais militares, deverão possuir avisos, em lugar externo e visível, próximo à recepção dos usuários, contendo informações sobre o período de funcionamento dos respectivos locais e os nomes e os horários em que os Oficiais de Saúde estarão prestando serviços.</p>
+<p class="subheading">§ 2º - O afastamento do integrante do QOS que impeça a realização de atendimento (férias, licenças, dispensas, etc.) deverá constar obrigatoriamente do aviso que trata o parágrafo anterior, antes do início da fruição, permitindo assim que os policiais militares tenham ciência dessa informação com antecedência.</p>
+<p class="subheading">§ 3º - O Diretor de Saúde é o responsável pela fiscalização e controle do cumprimento do regime de trabalho previsto nesse artigo, especialmente em relação aos encargos móveis, devendo estabelecer os procedimentos a serem adotados pelas Unidades subordinadas.</p>
+<p class="subheading">§ 4º - Os documentos de registros e outros relatórios comprobatórios do cumprimento do regime de trabalho e da carga horária deverão ser mantidos em arquivo nas seções responsáveis pela gestão de pessoal das respectivas unidades.</p>
+<p class="subheading">§ 5º - A Diretoria de Saúde encaminhará à Diretoria de Pessoal os horários que serão realizados em função do regime de trabalho disciplinado nesta Portaria para fins de inserção no Sistema de Escala Corporativa.</p>
+<h3 class="section-heading">Seção IV Da jornada de trabalho do militar do Estado estudante</h3>
+<p class="legal-article">Artigo 11 - O militar estudante, que cumprir escala de expediente administrativo, poderá, a critério da Administração, entrar em serviço até uma hora após o início do expediente ou deixá-lo até uma hora antes do término, conforme se trate de curso diurno ou noturno, respectivamente.</p>
+<p class="subheading">§ 1º - O benefício previsto no "caput" desse artigo somente será concedido quando mediar entre o período de aulas e o expediente da unidade de prestação dos serviços, tempo igual ou inferior a noventa minutos.</p>
+<p class="subheading">§ 2º - Para fazer jus ao benefício o militar deverá apresentar comprovante, anual ou semestral conforme o caso, de que está matriculado em estabelecimento de ensino oficial ou autorizado.</p>
+<p class="subheading">§ 3º - O benefício de que trata o "caput" só será concedido nos dias letivos, ficando afastada sua fruição nos períodos de recesso ou férias escolares.</p>
+<p class="subheading">§ 4º - O militar fica obrigado a comprovar o comparecimento às aulas, semestralmente, junto ao Cmt da OPM, mediante apresentação de documento hábil expedido pelo estabelecimento de ensino em que estiver matriculado.</p>
+<p class="subheading">§ 5º - O não cumprimento das disposições do § 4º desse artigo implicará na adoção de medidas visando à responsabilização disciplinar, civil ou penal, conforme o caso.</p>
+<p class="subheading">§ 6º - Nos casos do expediente administrativo cumprido nos termos do artigo 6º, inciso I, o militar estudante fará jus a apenas uma folga parcial decorrente dos desdobramentos de turno de serviço previstas no artigo 7º, inciso I, alínea “b”;</p>
+<p class="subheading">§ 7º - Nos casos do expediente administrativo cumprido nos termos do artigo 6º, inciso II, o militar estudante, contemplado pelo benefício previsto no "caput" desse artigo, não fará jus a folga parcial decorrente dos desdobramentos de turno de serviço, prevista no artigo 7º, inciso II.</p>
+<h2 class="section-heading">CAPÍTULO III DAS ESCALAS DE SERVIÇOS OPERACIONAL E ADMINISTRATIVO</h2>
+<h3 class="section-heading">Seção I Da Regra Geral</h3>
+<p class="legal-article">Artigo 12 - A escala de serviço operacional ou administrativo será cumprida ininterruptamente, de acordo com critérios relacionados às peculiaridades da OPM e à necessidade especial do serviço, estabelecida nos seguintes turnos:</p>
+<p>I - 12x36 - 12 (doze) horas trabalhadas seguidas por 36 (trinta e seis) horas de descanso;</p>
+<p>II - 12x24/12x48 - 12 (doze) horas trabalhadas seguidas por 24 (vinte e quatro) horas de descanso e 12 (doze) horas trabalhadas seguidas de 48 (quarenta e oito) horas de descanso;</p>
+<p>III - 24x48 - 24 (vinte e quatro) horas trabalhadas seguidas por 48 (quarenta e oito) horas de descanso.</p>
+<p class="subheading">§ 1º - O turno de 24x48 (inciso III do “caput”) é aplicado às escalas de atividades de prontidão e pronta-resposta ou às escalas de atividades de fiscalização e supervisão.</p>
+<p class="subheading">§ 2º - A fim de harmonizar o regime de trabalho previsto nesse artigo ao quantitativo estabelecido de horas trabalhadas, disposto na legislação de regência e expressamente previsto no artigo 2º da presente portaria, fica definida uma folga mensal obrigatória ao policial militar sujeito ao regime de trabalho escala de serviço operacional e administrativo, nas seguintes condições:</p>
+<p>1 - para os policiais fixados nos turnos de 12x36 ou 12x24/12x48 (incisos I e II do “caput”), após a apuração de 14 (quatorze) serviços cumpridos em regime de escala, de forma ininterrupta;</p>
+<h2 class="section-heading">2 - para os policiais fixados no turno de 24x48 (inciso III do “caput”), após a apuração de 9 (nove) serviços cumpridos em regime de escala, de forma ininterrupta.</h2>
+<p class="subheading">§ 3º - O não cumprimento de turno de serviço, por qualquer causa, interrompe a contagem do período de apuração da folga mensal obrigatória, exceto o gozo da própria folga mensal obrigatória relativa a período anterior.</p>
+<p class="subheading">§ 4º - A folga mensal obrigatória que trata o § 2º desse artigo deverá ser usufruída no período de 30 (trinta) dias subsequente ao período de apuração, não podendo ser acumulada para fruição futura.</p>
+<p class="subheading">§ 5º - A folga mensal obrigatória que trata o § 2º desse artigo não poderá ser usufruída na sequência de dispensa do serviço, dispensa-recompensa ou dispensa para doação de sangue ou qualquer outro afastamento temporário.</p>
+<p class="subheading">§ 6º - Não se aplica o disposto no parágrafo anterior nos casos de início de férias ou licença prêmio.</p>
+<p class="subheading">§ 7º - O Comandante da OPM, responsável pela escala de serviço, deverá fiscalizar e controlar o disposto nesse artigo, e realizar os ajustes necessários para garantir a distribuição da fruição dos afastamentos de que trata o “caput”, de modo a manter o efetivo necessário para garantir a continuidade do serviço policial-militar.</p>
+<p class="subheading">§ 8º - A fruição da folga mensal obrigatória deve constar na escala de serviço.</p>
+<h3 class="section-heading">Seção II Das peculiaridades das Unidades</h3>
+<p class="legal-article">Artigo 13 - Excepcionalmente, a fim de contemplar peculiaridades da OPM que não podem ser atendidas pela adoção de nenhum dos horários de escala previstos no artigo 10, as escalas de serviço poderão ser fixadas de modo diverso da regra geral, desde que observado o interesse público e a conveniência e oportunidade, além dos seguintes parâmetros gerais:</p>
+<p>I - o período de serviço deverá compreender turnos de:</p>
+<p>a) no mínimo 6 (seis) horas;</p>
+<p>b) no máximo 12 (doze) horas;</p>
+<p>II - os serviços que por suas peculiaridades exigirem duração superior ao estabelecido no inciso I, alínea b, deverão ter duração exclusiva e tão somente, de 24 (vinte e quatro) horas;</p>
+<p>III - os períodos de folga observarão, preferencialmente, as seguintes situações:</p>
+<p>a) no mínimo 1 (uma) vez o número de horas trabalhadas no período de serviço previsto em escala, não se considerando o período de instrução constante no artigo 18;</p>
+<p>b) no máximo 4 (quatro) vezes o número de horas trabalhadas no período de serviço previsto por escala, desde que não ultrapasse 48 (quarenta e oito) horas;</p>
+<p>IV - as escalas de serviço deverão ser estabelecidas de tal forma que o quociente entre o período de folga e período de serviço resulte em número inteiro.</p>
+<h2 class="section-heading">CAPÍTULO IV DAS EXCEPCIONALIDADES</h2>
+<p class="legal-article">Artigo 14 - O horário de expediente administrativo dos Órgãos de Direção Geral e Setorial poderá ser adaptado às necessidades institucionais, observado o interesse público e a conveniência e oportunidade, disciplinado por ato específico do Comandante, Chefe ou Diretor, de modo a atender às demandas especiais do serviço por eles desenvolvidos.</p>
+<p class="legal-article">Artigo 15 - Para atender as peculiaridades do CMed, do COdont e do CRPM, com vistas ao melhor aproveitamento de seus equipamentos, os atendimentos clínicos ou as atividades específicas dessas OPM poderão iniciar-se a partir das 06:00 e encerrar-se até às 23:00, ressalvados os serviços que demandarem a existência permanente de plantões.</p>
+<p class="legal-article">Artigo 16 - O Cmt de OPM, a partir do nível de Batalhão ou superior, poderá, em atendimento a requerimento do militar do Estado interessado, autorizar o cumprimento de horário de expediente administrativo de maneira diversa da prevista nesta portaria, observado o interesse público, a conveniência e a oportunidade, desde que atendidos, cumulativamente, os seguintes requisitos:</p>
+<p>I - a concessão deve ser individualizada, em caráter excepcional e por tempo determinado;</p>
+<p>II - a jornada de trabalho mínima de 40 horas semanais deve ser respeitada;</p>
+<p>III - a jornada deve ser cumprida dentro da faixa horária compreendida entre 07:00 e 19:00 horas;</p>
+<p>IV - nesse caso, fica vedada a concessão do horário de estudante de que trata o artigo 9º desta Portaria.</p>
+<p class="subheading">Parágrafo único - A concessão de que trata esse artigo não constitui direito subjetivo do seu titular, podendo ser revogada, a qualquer momento, por necessidade do serviço, mediante decisão motivada da autoridade competente.</p>
+<p class="legal-article">Artigo 17 - O policial militar designado para ministrar aulas em cursos ou estágios da Instituição deverá, necessariamente, exercer tal função durante as folgas decorrentes dos desdobramentos de turno de serviço.</p>
+<p class="subheading">Parágrafo único - Tal disposição não se aplica aos policiais militares classificados em OAES e que ministrem aulas em cursos da mesma OPM.</p>
+<p class="subheading">Parágrafo único - O disposto no caput deste artigo não se aplica aos militares do Estado classificados em OAES ou OGC, quando designados para ministrar aulas em cursos ou estágios coordenados pela respectiva OPM de classificação. (NR dada pela Portaria do CMT G PM1-001/02/26, publicada no Bol G PM 027/26)</p>
+<h2 class="section-heading">CAPÍTULO V DAS DISPOSIÇÕES FINAIS</h2>
+<p class="legal-article">Artigo 18 - Aos períodos de serviço, em regime de escala poderão ser acrescentados até 30 minutos, para instrução e ou avaliação.</p>
+<p class="legal-article">Artigo 19 - As OPM que, devido às suas peculiaridades necessitarem de regime de trabalho diverso do estabelecido por esta Portaria, deverão apresentar suas propostas e razões, para análise do EM/PM e posterior decisão do Cmdo G.</p>
+<p class="legal-article">Artigo 20 - Os Órgãos de Direção, de Apoio e de Execução deverão adequar as respectivas Ordens, Notas, Instruções e Diretrizes a presente publicação.</p>
+<p class="legal-article">Artigo 21 - Os servidores civis do Estado que prestam serviço na Polícia Militar, cumprirão jornada de trabalho conforme determina a legislação própria e contratos de trabalho, sendo que as dúvidas deverão ser sanadas junto à Diretoria de Pessoal.</p>
+<p class="legal-article">Artigo 22 - Esta Portaria entrará em vigor na data de sua publicação, revogadas as disposições em contrário, em especial:</p>
+<p>I - Artigo 4º da Portaria DEI-3/11/98, de 01JUL98;</p>
+<p>II - Portaria PM1-1/02/99, de 31MAI99 e suas alterações;</p>
+<p>III - Portaria PM1-3/02/13, de 25JUL13 e suas alterações;</p>
+<p>IV - Ordem de Serviço CoordOpPM-53/03/14, de 03JAN13.</p>
+<p>(NOTA PM1-7/02/23)</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Procedimento Disciplinar neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Procedimento Disciplinar</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Treinamento Continuado Institucional são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+
+<div class="material-picker-backdrop" id="material-picker-modal" role="dialog" aria-modal="true" aria-labelledby="material-picker-title">
+ <div class="material-picker">
+  <div class="material-picker-head"><h2 id="material-picker-title">Regime de Trabalho — PMESP</h2></div>
+  <div class="material-picker-list">
+   <a class="material-option" href="#document" id="material-option-norma">Norma — texto integral nesta página <span>↓</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1yS5Yf4kSdtA2ZEXX5HIOV6-Smowhg-RE/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo 1 <span>↗</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1L3NSAqs0vblf5bbjbEH97EiCuL7VoKPM/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo 2 <span>↗</span></a>
+  </div>
+  <div class="material-picker-foot"><button class="btn" type="button" id="close-material-picker">Fechar</button></div>
+ </div>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+
+<script>
+(() => {
+ const modal=document.getElementById('material-picker-modal');
+ const open=document.getElementById('open-material-picker');
+ const close=document.getElementById('close-material-picker');
+ if(!modal||!open||!close)return;
+ const hide=()=>{modal.classList.remove('open');open.focus();};
+ open.addEventListener('click',()=>modal.classList.add('open'));
+ close.addEventListener('click',hide);
+ const norma=document.getElementById('material-option-norma');
+ norma.addEventListener('click',()=>{modal.classList.remove('open');});
+ modal.addEventListener('click',e=>{if(e.target===modal)hide();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))hide();});
+})();
+</script>
+
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-regime-trabalho-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Procedimento Disciplinar? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Procedimento Disciplinar, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Procedimento Disciplinar foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
