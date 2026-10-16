@@ -44,7 +44,7 @@
         <a href="perfil-usuario.html" title="Abrir perfil e segurança da conta" aria-label="Perfil do usuário" class="focus-ring inline-flex items-center gap-2 rounded-lg border border-pm-gold/50 bg-pm-navy/70 px-2.5 py-2 text-xs font-bold text-slate-200 transition hover:border-pm-gold hover:text-pm-gold sm:px-3 sm:text-sm">
           <span class="flex h-7 w-7 items-center justify-center rounded-full border border-pm-gold/70 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-user"></i></span><span>Perfil</span>
         </a>
-        <a href="plataforma.html" class="focus-ring inline-flex items-center gap-2 rounded-lg border border-pm-border px-3 py-2 text-xs font-bold text-slate-300 transition hover:border-pm-gold/60 hover:text-white sm:text-sm">
+        <a href="index.html" class="focus-ring inline-flex items-center gap-2 rounded-lg border border-pm-border px-3 py-2 text-xs font-bold text-slate-300 transition hover:border-pm-gold/60 hover:text-white sm:text-sm">
           <i class="fa-solid fa-arrow-left"></i><span>Início</span>
         </a>
       </div>
@@ -243,19 +243,8 @@
         <button id="norma-materiais-back" type="button" class="focus-ring rounded-lg border border-pm-border px-3 py-2 text-xs font-bold text-slate-300 hover:border-pm-gold hover:text-white"><i class="fa-solid fa-arrow-left mr-1"></i> Voltar</button>
         <button id="norma-materiais-close" type="button" aria-label="Fechar janela" class="focus-ring flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-pm-border text-xl text-slate-300 hover:border-pm-gold hover:text-white">×</button>
       </div>
-      <div class="grid gap-3 overflow-y-auto p-4 sm:p-5">
-        <a href="norma-I16-PM-modelo.html" class="focus-ring flex items-center gap-3 rounded-xl border border-pm-border bg-[#101c32] p-4 text-white transition hover:border-pm-gold/70 hover:bg-[#192b49]">
-          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-book-open text-xl"></i></span>
-          <span class="min-w-0 flex-1"><strong class="block text-sm font-extrabold">I-16-PM · TEXTO INTEGRAL</strong><span class="mt-1 block text-xs leading-relaxed text-slate-400">Instruções do Processo Administrativo da Polícia Militar — leitor da norma transcrita, com grifos e anotações.</span></span>
-          <i class="fa-solid fa-chevron-right text-pm-gold"></i>
-        </a>
-        <a href="https://drive.google.com/file/d/1yZEoGGFXwuo-_J27ORIsHIDjEoD4Pffk/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="focus-ring flex items-center gap-3 rounded-xl border border-pm-border bg-[#101c32] p-4 text-white transition hover:border-pm-gold/70 hover:bg-[#192b49]">
-          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-file-pdf text-xl"></i></span>
-          <span class="min-w-0 flex-1"><strong class="block text-sm font-extrabold">I-16-PM · RESUMO PARA REVISÃO</strong><span class="mt-1 block text-xs leading-relaxed text-slate-400">Resumo elaborado com auxílio de inteligência artificial (IA). Material de apoio à revisão; confira as informações na norma original, pois não substitui a publicação oficial.</span></span>
-          <i class="fa-solid fa-arrow-up-right-from-square text-pm-gold"></i>
-        </a>
-      </div>
-      <div class="border-t border-pm-border bg-[#071020]/70 px-4 py-3 text-[11px] text-slate-500 sm:px-5">Novos resumos e materiais da I-16-PM poderão ser adicionados aqui, cada um com identificação própria.</div>
+      <div id="norma-materiais-list" class="grid gap-3 overflow-y-auto p-4 sm:p-5"></div>
+      <div class="border-t border-pm-border bg-[#071020]/70 px-4 py-3 text-[11px] text-slate-500 sm:px-5">Selecione o texto integral ou um material de revisão da norma escolhida.</div>
     </section>
   </div>
 
@@ -297,21 +286,38 @@
         descricao: "Pesquise e selecione uma norma jurídico-administrativa.",
         icone: "fa-scale-balanced",
         materiais: [
-          {
-            codigo: "I-16-PM",
-            titulo: "Instruções do Processo Administrativo da Polícia Militar",
-            detalhe: "3ª edição · Texto integral e materiais de revisão",
-            href: "norma-I16-PM-modelo.html",
-            normaId: "i16pm",
-            termos: "processo administrativo polícia militar instruções norma"
-          }
         ]
       },
       organizacional: {
         titulo: "Organizacional",
         descricao: "Pesquise e selecione uma norma organizacional.",
         icone: "fa-building-columns",
-        materiais: []
+        materiais: [
+          {
+            codigo: "I-16-PM",
+            titulo: "Instruções do Processo Administrativo da Polícia Militar",
+            detalhe: "3ª edição · Texto integral e materiais de revisão",
+            href: "norma-I16-PM-modelo.html",
+            normaId: "i16pm",
+            termos: "processo administrativo polícia militar instruções norma",
+            recursos: [
+              { tipo: "texto", titulo: "I-16-PM · TEXTO INTEGRAL", descricao: "Leitor da norma com grifos e anotações.", href: "norma-I16-PM-modelo.html" },
+              { tipo: "resumo", titulo: "I-16-PM · RESUMO PARA REVISÃO", descricao: "Material de apoio à revisão; confira a publicação oficial.", href: "https://drive.google.com/file/d/1yZEoGGFXwuo-_J27ORIsHIDjEoD4Pffk/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "RDPM",
+            titulo: "Regulamento Disciplinar da Polícia Militar",
+            detalhe: "Lei Complementar nº 893/2001 · Texto integral e resumo para revisão",
+            href: "rdpm.html",
+            normaId: "rdpm",
+            termos: "regulamento disciplinar lei complementar 893 transgressão sanção disciplina",
+            recursos: [
+              { tipo: "texto", titulo: "RDPM · TEXTO INTEGRAL", descricao: "Leitor do regulamento com grifos e anotações.", href: "rdpm.html" },
+              { tipo: "resumo", titulo: "RDPM · RESUMO PARA REVISÃO", descricao: "Material de apoio à revisão; confira a legislação oficial e suas alterações.", href: "https://drive.google.com/file/d/1IWcTPi4yEbejmBU3hYqnUIc25nJAyNnQ/view?usp=drive_link", externo: true }
+            ]
+          }
+        ]
       },
       operacional: {
         titulo: "Operacional",
@@ -330,6 +336,7 @@
     const contagemModal = document.getElementById("materiais-modal-count");
     const fecharModal = document.getElementById("materiais-modal-close");
     const modalNorma = document.getElementById("norma-materiais-modal");
+    const listaMateriaisNorma = document.getElementById("norma-materiais-list");
     const voltarModalNorma = document.getElementById("norma-materiais-back");
     const fecharModalNorma = document.getElementById("norma-materiais-close");
     let categoriaAtiva = "";
@@ -365,7 +372,7 @@
       encontrados.forEach(norma => {
         const link = document.createElement("a");
         link.href = norma.href;
-        if (norma.normaId === "i16pm") link.dataset.openNorma = norma.normaId;
+        if (norma.recursos) link.dataset.openNorma = norma.normaId;
         link.className = "focus-ring flex items-center gap-3 rounded-xl border border-pm-border bg-[#101c32] p-4 text-white transition hover:border-pm-gold/70 hover:bg-[#192b49]";
         const icone = document.createElement("span");
         icone.className = "flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-pm-gold/10 text-pm-gold";
@@ -382,10 +389,10 @@
         const seta = document.createElement("i");
         seta.className = "fa-solid fa-chevron-right text-sm text-pm-gold";
         link.append(icone, texto, seta);
-        if (norma.normaId === "i16pm") {
+        if (norma.recursos) {
           link.addEventListener("click", evento => {
             evento.preventDefault();
-            abrirModalNorma();
+            abrirModalNorma(norma);
           });
         }
         listaModal.append(link);
@@ -407,7 +414,34 @@
       fecharModal.focus();
     }
 
-    function abrirModalNorma() {
+    function abrirModalNorma(norma) {
+      document.getElementById("norma-materiais-title").textContent = norma.codigo;
+      listaMateriaisNorma.replaceChildren();
+      (norma.recursos || []).forEach(recurso => {
+        const link = document.createElement("a");
+        link.href = recurso.href;
+        if (recurso.externo) {
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+        }
+        link.className = "focus-ring flex items-center gap-3 rounded-xl border border-pm-border bg-[#101c32] p-4 text-white transition hover:border-pm-gold/70 hover:bg-[#192b49]";
+        const icone = document.createElement("span");
+        icone.className = "flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-pm-gold/10 text-pm-gold";
+        icone.innerHTML = `<i class="fa-solid ${recurso.tipo === "resumo" ? "fa-file-pdf" : "fa-book-open"} text-xl"></i>`;
+        const texto = document.createElement("span");
+        texto.className = "min-w-0 flex-1";
+        const titulo = document.createElement("strong");
+        titulo.className = "block text-sm font-extrabold";
+        titulo.textContent = recurso.titulo;
+        const descricao = document.createElement("span");
+        descricao.className = "mt-1 block text-xs leading-relaxed text-slate-400";
+        descricao.textContent = recurso.descricao;
+        texto.append(titulo, descricao);
+        const seta = document.createElement("i");
+        seta.className = `fa-solid ${recurso.externo ? "fa-arrow-up-right-from-square" : "fa-chevron-right"} text-pm-gold`;
+        link.append(icone, texto, seta);
+        listaMateriaisNorma.append(link);
+      });
       modalMateriais.classList.add("hidden");
       modalMateriais.classList.remove("flex");
       modalNorma.classList.remove("hidden");
