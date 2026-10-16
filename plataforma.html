@@ -9,10 +9,12 @@
     
     <!-- Carrega apenas o banco do curso selecionado. Isso evita conflito entre declarações globais dos dois arquivos. -->
     <script>
-        var cursoInicial = new URLSearchParams(window.location.search).get('curso');
-        if (cursoInicial !== 'ACP' && cursoInicial !== 'CAO') cursoInicial = null;
-        if (cursoInicial) {
-            document.write('<script src="' + (cursoInicial === 'CAO' ? 'questoes2.js' : 'questoes.js') + '"><\/script>');
+        var cursoSolicitado = new URLSearchParams(window.location.search).get('curso');
+        // CAO permanece indisponível nesta etapa: não carregar o banco de questões nem permitir acesso direto.
+        var acessoCAOBloqueado = cursoSolicitado === 'CAO';
+        var cursoInicial = cursoSolicitado === 'ACP' ? 'ACP' : null;
+        if (cursoInicial === 'ACP') {
+            document.write('<script src="questoes.js"><\/script>');
         }
     </script>
 
@@ -147,6 +149,26 @@
             </main>
         </div>
     </section>
+
+    <!-- Modal de CAO em construção: impede a entrada no curso e no banco de questões -->
+    <div id="modalCAOConstrucao" class="fixed inset-0 z-[300] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modalCAOTitulo" aria-describedby="modalCAOMensagem">
+        <div class="w-full max-w-md overflow-hidden rounded-2xl border border-pm-gold/60 bg-pm-cardBg text-slate-100 shadow-2xl">
+            <div class="flex items-center gap-3 border-b border-pm-border px-5 py-4">
+                <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-pm-gold/50 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-person-digging text-lg"></i></div>
+                <div>
+                    <h3 id="modalCAOTitulo" class="text-lg font-black text-pm-gold">Em Construção...</h3>
+                    <p class="text-xs text-slate-400">Curso de Aperfeiçoamento de Oficiais</p>
+                </div>
+            </div>
+            <div class="px-5 py-6 text-center">
+                <p id="modalCAOMensagem" class="text-base font-semibold leading-relaxed text-white">É muito cedo, logo chegaremos lá.</p>
+                <p class="mt-2 text-sm leading-relaxed text-slate-400">O ambiente do CAO e o banco de questões ainda estão em preparação.</p>
+            </div>
+            <div class="flex justify-end border-t border-pm-border bg-pm-navy/40 px-5 py-4">
+                <button type="button" onclick="fecharModalCAOConstrucao()" class="rounded-xl bg-pm-gold px-5 py-2.5 text-sm font-extrabold text-pm-navy transition hover:bg-pm-goldHover focus:outline-none focus:ring-2 focus:ring-pm-gold">Entendi</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal de Instruções Iniciais (Pop-up) -->
     <div id="modalInstrucoes" class="fixed inset-0 z-[100] flex items-start sm:items-center justify-center bg-black/70 backdrop-blur-sm hidden overflow-y-auto overscroll-contain p-3 sm:p-6">
@@ -546,6 +568,7 @@
         document.addEventListener("DOMContentLoaded", function() {
             if (!cursoInicial) {
                 document.getElementById('courseLanding').classList.remove('hidden');
+                if (acessoCAOBloqueado) abrirModalCAOConstrucao();
                 return;
             }
             document.getElementById('courseLanding').classList.add('hidden');
@@ -560,8 +583,24 @@
                 return;
             }
             if (curso === 'CAO') {
-                window.location.href = 'plataformaCAO.html';
+                abrirModalCAOConstrucao();
             }
+        }
+
+        function abrirModalCAOConstrucao() {
+            const modal = document.getElementById('modalCAOConstrucao');
+            if (!modal) return;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            const botao = modal.querySelector('button');
+            if (botao) botao.focus();
+        }
+
+        function fecharModalCAOConstrucao() {
+            const modal = document.getElementById('modalCAOConstrucao');
+            if (!modal) return;
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
         }
 
         function voltarSelecaoCursos() {
