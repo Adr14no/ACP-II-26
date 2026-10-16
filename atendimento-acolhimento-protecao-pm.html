@@ -1,0 +1,725 @@
+html
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#071020" name="theme-color"/>
+<title>Atendimento, Acolhimento e Proteção a Policiais Militares Vítimas de Violência Doméstica e Familiar — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}.footnotes{margin:22px 0;padding:14px 16px;border-left:4px solid var(--gold);background:#f7f4eb;border-radius:6px}.footnotes h3{margin:0 0 8px;font-size:15px}.footnotes p{margin:7px 0;line-height:1.65}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+
+.material-picker-backdrop{position:fixed;inset:0;z-index:120;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}.material-picker-backdrop.open{display:flex}.material-picker{width:min(560px,100%);background:#fff;border:1px solid #cbd5e1;border-radius:14px;overflow:hidden;box-shadow:0 25px 80px #0007}.material-picker-head{padding:16px 18px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}.material-picker-head h2{margin:0;font-size:18px}.material-picker-list{padding:14px;display:grid;gap:9px}.material-option{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#26364d;border:1px solid var(--line);border-radius:9px;padding:13px;font-weight:750}.material-option:hover{border-color:var(--gold);background:#fffbed}.material-picker-foot{padding:12px 14px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;background:#f8fafc}
+
+/* Hierarquia editorial da seção 6 */
+.doc .subheading{font-weight:800;color:#273e60;margin-top:20px;margin-bottom:9px}
+.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}
+.doc .risk-item{font-family:Georgia,'Times New Roman',serif;background:#f5f7fa;border-left:3px solid #d4af37;padding:9px 12px;margin:8px 0 12px}
+.doc .concept-label{color:#203a5e}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Organizacionais</div><h1>Atendimento, Acolhimento e Proteção a Policiais Militares Vítimas de Violência Doméstica e Familiar</h1><p>Nota de Instrução nº PM3-003/02/26 · Transcrição OCR organizada para estudo. Confira o documento original, pois podem existir erros de reconhecimento de caracteres.</p></div></section>
+<main>
+<div class="tools">
+<input aria-label="Pesquisar no documento" id="search" placeholder="Pesquisar palavra ou expressão na norma…" type="search"/>
+<button class="btn" id="find">Localizar</button><button class="btn gold" id="open-material-picker" type="button">Escolher material de apoio ↗</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição OCR para estudo:</strong> o arquivo fornecido foi reconhecido por OCR e pode conter erros de caracteres, datas, siglas e endereços. Organizei os parágrafos e títulos sem corrigir silenciosamente trechos duvidosos. As marcações e anotações ficam apenas neste navegador. Confira a versão oficial antes de usar como referência normativa.</div>
+<section class="doc" data-watermark="ACESSO EXPERIMENTAL · E-MAIL NÃO CONFIGURADO" id="document">
+<p class="document-title">NOTA DE INSTRUÇÃO Nº PM3-003/02/26** **TRANSCRIÇÃO POR OCR</p>
+<p class="document-title">DOMÉSTICA E FAMILIAR.</p>
+<p class="document-title">NOTA DE INSTRUÇÃO Nº PM3-003/02/26</p>
+<h2 class="section-heading">1. REFERÊNCIAS</h2>
+<p>1.1. Lei federal nº 11.340, de 07AGO06 (Lei Maria da Penha) e alterações;</p>
+<p>1.2. Lei federal nº 13.104, de OOMARI5 (Lei do Feminicídio);</p>
+<p>1.3. Decreto estadual nº 46.039, de 23AGOO01 (Cria e regulamenta o Sistema de Saúde Mental da</p>
+<p>Polícia Militar do Estado de São Paulo);</p>
+<p>1.4. RI-25-PM - Regimento Interno do SiSMen, publicado anexo ao Bol G PM 84, de 15ABRO2;</p>
+<p>1.5. 1-40-PM - Instruções para o atendimento de ocorrência em que haja o cometimento de infração</p>
+<p>penal praticada por policial militar, publicada anexa ao Bol G PM 126, 23JUNOD9, e alterações;</p>
+<p>1.6. 1-42-PM - Instruções para o Funcionamento do Alojamento Central da PMESP, publicada</p>
+<p>anexa ao Bol G PM 72, de 12ABRIO;</p>
+<p>1.7. Portaria Cmt G nº PM4-001/1.2/24, de 16JUL24 (Material Bélico) e alterações;</p>
+<p>1.8. Nota de Instrução nº PM3-001/03/20, de 29JUL20 (Programa de Acompanhamento e Apoio</p>
+<p>ao Policial Militar - PAAPM);</p>
+<p>1.9. Nota de Instrução nº PM3-001/03/22, de 04JUL22 (Núcleos de Atenção Psicossocial - NAPS);</p>
+<p>1.10. Nota de Instrução nº PM3-001/02/26, de 12MAD6 (Sistemática de Proteção à Mulher e</p>
+<p>Defesa contra a Violência Doméstica e Familiar).</p>
+<h2 class="section-heading">2. FINALIDADE</h2>
+<p>Estabelecer diretrizes e procedimentos para o acolhimento, atendimento, proteção e</p>
+<p>acompanhamento de policiais militares vítimas de violência doméstica e familiar, no âmbito da</p>
+<p>PMESP, assegurando atuação integrada entre os órgãos institucionais, com observância do</p>
+<p>sigilo, proteção integral e respeito à dignidade da vítima.</p>
+<h2 class="section-heading">3. SITUAÇÃO</h2>
+<p>3.1.a violência doméstica contra a mulher constitui fenômeno social complexo, estrutural e</p>
+<p>multifatorial, reconhecido pelo ordenamento jurídico brasileiro como violação de direitos</p>
+<p>humanos, nos termos da Lei nº 11.340, de 07AG006, demandando atuação estatal integrada,</p>
+<p>preventiva e protetiva;</p>
+<p>3.2. em atenção a esse fenômeno social complexo, a PMESP implementou a Sistemática de</p>
+<p>Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar a fim de disciplinar,</p>
+<p>uniformizar e orientar as ações de prevenção primária e de policiamento ostensivo voltadas a</p>
+<p>essa temática;</p>
+<p>3.3. no contexto das instituições policiais, tal fenômeno apresenta especificidades próprias, na</p>
+<p>medida em que seu próprio efetivo policial-militar, que atua na prevenção, atendimento e</p>
+<p>encaminhamento de ocorrências de violência doméstica, também pode vivenciar situações de</p>
+<p>violência em suas relações privadas, reproduzindo dinâmicas similares àquelas enfrentadas</p>
+<p>cotidianamente no exercício profissional;</p>
+<p>3.4. além disso, situações que envolvam vínculos profissionais entre vítima e agressor ou o</p>
+<p>compartilhamento de ambientes institucionais podem exigir a adoção de medidas específicas</p>
+<p>de proteção, acompanhamento e gestão de riscos, observadas as particularidades de cada caso;</p>
+<p>3.5. no âmbito institucional, o Sistema de Saúde Mental (SiSMen) consolidou-se como estrutura</p>
+<p>estratégica voltada à prevenção, ao tratamento e ao restabelecimento da saúde mental do</p>
+<p>policial militar, dispondo de serviços especializados de psicologia e serviço social, com</p>
+<p>atuação pautada no sigilo profissional, na escuta qualificada e na abordagem multidimensional</p>
+<p>das demandas;</p>
+<p>3.6. destaca-se, nesse contexto, o papel do serviço social como porta de entrada qualificada, em</p>
+<p>razão de sua capacidade técnica de análise das dimensões pessoais, familiares, funcionais e</p>
+<p>institucionais envolvidas, permitindo a construção de respostas integradas e individualizadas</p>
+<p>para cada caso;</p>
+<p>3.7. paralelamente, a Instituição dispõe de mecanismos próprios de apuração e acompanhamento,</p>
+<p>com atuação imediata diante da notícia dos fatos, por intermédio da Corregedoria da Polícia</p>
+<p>Militar (Correg PM);</p>
+<p>3.8. não obstante a existência desses instrumentos, verifica-se a necessidade de padronização</p>
+<p>institucional dos fluxos de atendimento, de modo a integrar as áreas técnicas e operacionais,</p>
+<p>garantir previsibilidade de atuação, reduzir barreiras de acesso e assegurar resposta célere,</p>
+<p>sigilosa e efetiva a policiais militares vítimas de violência doméstica e familiar.</p>
+<h2 class="section-heading">4. OBJETIVOS</h2>
+<p>4.1. assegurar aos policiais militares vítimas de violência doméstica e familiar atendimento</p>
+<p>especializado, célere, eficaz, sigiloso, humanizado e tecnicamente qualificado;</p>
+<p>4.2. estruturar fluxo interno para o atendimento e encaminhamento dos casos de violência</p>
+<p>doméstica e familiar envolvendo policiais militares, de forma integrada e coordenada;</p>
+<p>4.3. promover a devida avaliação de risco para a adoção imediata de medidas administrativas,</p>
+<p>protetivas e acautelatórias, visando à mitigação de ameaças à integridade da vítima;</p>
+<p>4.4. assegurar a proteção integral da vítima, preservando sua integridade física, psicológica e</p>
+<p>funcional por meio de intervenções técnicas que evitem a revitimização e desfechos letais;</p>
+<p>4.5. estimular a denúncia e a integração com as redes de proteção, facilitando o acesso da vítima</p>
+<p>tanto aos órgãos internos da Instituição quanto aos órgãos externos competentes.</p>
+<h2 class="section-heading">5. MISSÃO</h2>
+<p>As OPM deverão adotar as diretrizes desta NI, garantindo o acolhimento imediato, o sigilo das</p>
+<p>informações, o encaminhamento adequado e o acompanhamento de policiais militares vítimas</p>
+<p>de violência doméstica e familiar.</p>
+<h2 class="section-heading">6. EXECUÇÃO</h2>
+<p>6.1. Conceituação:</p>
+<p>6.1.1. <span class="concept-label"><u><strong>Acolhimento institucional</strong></u></span>: primeiro contato estruturado com a vítima, realizado com</p>
+<p>escuta qualificada (pelo primeiro interventor), garantia de sigilo e avaliação inicial das</p>
+<p>necessidades e riscos envolvidos;</p>
+<p>6.1.2. <span class="concept-label"><u><strong>Atendimento especializado</strong></u></span>: conjunto de ações técnicas integradas, desenvolvidas por</p>
+<p>profissionais qualificados, compreendendo acolhimento, escuta técnica (realizada por</p>
+<p>profissionais capacitados, como psicólogo e assistente social), avaliação de risco,</p>
+<p>orientação, intervenção e acompanhamento da vítima;</p>
+<p>6.1.3. <span class="concept-label"><u><strong>Avaliação de risco</strong></u></span>: procedimento técnico interdisciplinar destinado à identificação da</p>
+<p>gravidade da situação de violência, fatores de vulnerabilidade, potencial letalidade, risco</p>
+<p>de reincidência e necessidade de adoção de medidas protetivas e institucionais;</p>
+<p>6.1.4. <span class="concept-label"><u><strong>Eixo de prevenção e cuidado</strong></u></span>: conjunto de ações desenvolvidas pela PMESP buscando</p>
+<p>identificar, precocemente, sinais de risco e situações de violência doméstica e familiar,</p>
+<p>possibilitando a adoção de providências preventivas e protetivas em tempo oportuno.</p>
+<p>Compreende a orientação, escuta qualificada e acolhimento humanizado às vítimas, bem</p>
+<p>como a facilitação do acesso aos serviços da rede de proteção e aos canais institucionais de</p>
+<p>denúncia e apoio, bem como a sensibilização e a orientação aos policiais militares quanto</p>
+<p>à prevenção da violência doméstica e familiar, ao reconhecimento de seus fatores de risco</p>
+<p>e à necessidade de busca imediata por auxílio;</p>
+<p>6.1.5. <span class="concept-label"><u><strong>Eixo acolhimento, proteção e acompanhamento integrado</strong></u></span>: conjunto de ações</p>
+<p>desenvolvidas pela PMESP com o objetivo de garantir proteção imediata em situações de</p>
+<p>violência doméstica e familiar, o acompanhamento sistemático da evolução de cada caso e</p>
+<p>a articulação das providências institucionais cabíveis, assegurando resposta célere</p>
+<p>mediante a adoção de medidas administrativas e protetivas;</p>
+<p>6.1.6. <span class="concept-label"><u><strong>Grupos reflexivos</strong></u></span>: modalidade de intervenção psicossocial desenvolvida em grupo,</p>
+<p>voltada a policiais militares, com foco prioritário na reflexão e na reeducação de autores</p>
+<p>de violência doméstica e familiar, bem como na prevenção e identificação precoce de</p>
+<p>fatores de risco. Conduzidos por profissionais do SiSMen, utilizam atividades terapêuticas</p>
+<p>e psicoeducativas para fortalecer fatores de proteção, desenvolver habilidades</p>
+<p>socioemocionais e interromper a escalada da violência;</p>
+<p>6.1.7. <span class="concept-label"><u><strong>Medidas protetivas institucionais</strong></u></span>: providências administrativas, de competência dos</p>
+<p>comandantes, diretores e chefes, destinadas a assegurar a proteção de policial militar vítima</p>
+<p>de violência doméstica e familiar, por meio da adoção de medidas de prevenção e</p>
+<p>gerenciamento dos riscos decorrentes da violência e de seus reflexos no ambiente</p>
+<p>institucional, especialmente quando o autor também for policial militar;</p>
+<p>6.1.8 <span class="concept-label"><u><strong>Medidas protetivas de urgência</strong></u></span>: ato da autoridade judicial ou policial que visa salvaguardar</p>
+<p>a vida e a integridade física da mulher e de sua família, vítimas de violência doméstica,</p>
+<p>estabelecendo obrigações ao agressor ou à própria ofendida;</p>
+<p>6.1.9. Núcleo de Proteção e Enfrentamento à Violência Doméstica e Familiar contra policiais</p>
+<p>militares (NUPRO-PM): instituído no âmbito da Correg PM, com a finalidade de</p>
+<p>implementar ações voltadas à prevenção, acolhimento, proteção e acompanhamento de</p>
+<p>policiais militares vítimas de violência doméstica e familiar, assegurando atendimento</p>
+<p>humanizado, célere e sigiloso, bem como a adoção de medidas institucionais destinadas à</p>
+<p>preservação de sua integridade física, psicológica e funcional, em consonância com os</p>
+<p>princípios da dignidade da pessoa humana, da legalidade e da eficiência administrativa;</p>
+<p>6.1.1<span class="concept-label"><u><strong>0. Prevenção e Cuidados Universais</strong></u></span>: conjunto de ações de prevenção, sensibilização,</p>
+<p>educação e informação dirigidas a todo o efetivo da PMESP, independentemente de</p>
+<p>qualquer identificação de risco individual, com o objetivo de prevenir a violência antes que</p>
+<p>ocorra, reduzir o estigma associado à denúncia e promover uma cultura institucional de</p>
+<p>proteção e respeito;</p>
+<p>6.1.1<span class="concept-label"><u><strong>1. Prevenção e Cuidados Seletivos</strong></u></span>: conjunto de ações voltadas a subgrupos de policiais</p>
+<p>militares que apresentam fatores de risco identificados para a violência doméstica, com o</p>
+<p>objetivo de identificação precoce, redução de riscos, fortalecimento de fatores de proteção</p>
+<p>e prevenção da escalada da violência;</p>
+<p>6.1.1<span class="concept-label"><u><strong>2. Prevenção e Cuidados Indicados</strong></u></span>: conjunto de ações de intervenção intensiva e</p>
+<p>especializada dirigidas a policiais militares que já vivenciam situações concretas de</p>
+<p>violência doméstica, com o objetivo de interromper o ciclo de violência, tratar as</p>
+<p>consequências psicossociais, assegurar proteção integral e promover a reintegração e o</p>
+<p>bem-estar da vítima;</p>
+<p>6.1.1<span class="concept-label"><u><strong>3. Rede externa de proteção</strong></u></span>: conjunto de órgãos e serviços públicos responsáveis pela</p>
+<p>proteção à mulher em situação de violência, incluindo Delegacias de Defesa da Mulher</p>
+<p>(DDM), Poder Judiciário, Ministério Público, Defensoria Pública, Instituto Médico Legal</p>
+<p>(IML), Casa da Mulher Brasileira, serviços de saúde, entre outros;</p>
+<p>6.1.1<span class="concept-label"><u><strong>4. Rede interna de proteção</strong></u></span>: conjunto articulado entre OPM que atuam de forma integrada e</p>
+<p>coordenada para garantir o acolhimento, o suporte psicossocial, a segurança logística e a</p>
+<p>adoção de medidas administrativas e disciplinares necessárias à proteção integral do</p>
+<p>policial militar vítima de violência doméstica;</p>
+<p>6.1.1<span class="concept-label"><u><strong>5. Sigilo profissional e institucional</strong></u></span>: dever de resguardar as informações relacionadas à</p>
+<p>vítima, garantindo proteção de dados pessoais, identidade funcional e circunstâncias do</p>
+<p>caso, com acesso restrito aos profissionais diretamente envolvidos.</p>
+<p>6.2. Eixo de prevenção e cuidado:</p>
+<p>6.2.1. coordenado pelo Centro de Atenção Psicológica e Social (CAPS) e Núcleos de Atenção</p>
+<p>Psicossocial (NAPS), por intermédio dos profissionais do SiSMen, estrutura-se em um</p>
+<p>modelo de cuidados escalonados e integrados, organizado em três níveis de intervenção:</p>
+<p class="subheading">6.2.2.1. Nível 1: Prevenção e Cuidados Universais:</p>
+<p class="subheading">6.2.2.1.1. desenvolvido especialmente por psicólogos e assistentes sociais, mediante atividades</p>
+<p>educativas, orientações técnicas, campanhas institucionais e ações de sensibilização</p>
+<p>voltadas à prevenção da violência doméstica e ao fortalecimento dos fatores de proteção</p>
+<p>institucionais;</p>
+<p class="subheading">6.2.2.1.2. destina-se a todo o efetivo da PMESP, independentemente de posto ou graduação, com</p>
+<p>o objetivo de prevenir a violência doméstica e familiar antes que ocorra, reduzir o</p>
+<p>estigma associado à denúncia e informar sobre direitos, canais de proteção e recursos</p>
+<p>disponíveis.</p>
+<p class="subheading">6.2.2.2. Nível 2: Prevenção e Cuidados Seletivos:</p>
+<p class="subheading">6.2.2.2.1. desenvolvido por meio de grupos terapêuticos, grupos reflexivos, ações psicoeducativas</p>
+<p>e atividades de acompanhamento direcionadas ao público com fatores de risco ou</p>
+<p>vulnerabilidades identificadas, em datas e periodicidade definidas pelo CAPS, conforme</p>
+<p>a demanda institucional, critérios técnicos e oportunidade administrativa;</p>
+<p class="subheading">6.2.2.2.2. voltado a grupos específicos com maior vulnerabilidade ou fatores de risco identificados</p>
+<p>em relação à violência doméstica e familiar, de forma a prevenir a escalada da violência</p>
+<p>e facilitar o acesso aos serviços de proteção.</p>
+<p class="subheading">6.2.2.3. Nível 3: Prevenção e Cuidados Indicados:</p>
+<p>Iniciado, preferencialmente, no âmbito interno da Instituição, por meio do CAPS ou do</p>
+<p>NUPRO-PM, destina-se aos policiais militares vitimados por violência doméstica e</p>
+<p>familiar, com o objetivo de intervir após a ocorrência da agressão, mediante acolhimento</p>
+<p>imediato, mitigação e redução dos danos psicossociais, acompanhamento multidisciplinar</p>
+<p>especializado e adoção das medidas administrativas, operacionais, judiciais e protetivas</p>
+<p>necessárias à preservação da integridade física e emocional da vítima.</p>
+<p class="subheading">6.3. Eixo acolhimento, proteção e acompanhamento integrado:</p>
+<p>6.3.1. <span class="underlined-label"><u>materializado por meio do NUPRO-PM, tem por objetivos</u></span>:</p>
+<p>6.3.1.<span class="underlined-label"><u>1. proporcionar acolhimento aos policiais militares em situação de violência doméstica e</u></span></p>
+<p>familiar;</p>
+<p>6.3.1.<span class="underlined-label"><u>2. assegurar resposta institucional célere, mediante a adoção de medidas administrativas e</u></span></p>
+<p>protetivas destinadas à preservação da integridade física, psicológica e funcional da</p>
+<p>vítima;</p>
+<p>6.3.1.<span class="underlined-label"><u>3. prevenir a revitimização e quaisquer formas de constrangimento, discriminação ou</u></span></p>
+<p>retaliação no âmbito da Instituição;</p>
+<p>6.3.1.<span class="underlined-label"><u>4. promover o acompanhamento continuado dos casos atendidos, articulando, sempre que</u></span></p>
+<p>necessário, suporte psicológico, social, jurídico e administrativo.</p>
+<p>6.3.2. <span class="underlined-label"><u>compete ao NUPRO-PM</u></span>:</p>
+<p>6.3.2.<span class="underlined-label"><u>1. receber denúncias e pedidos de apoio;</u></span></p>
+<p>6.3.2.<span class="underlined-label"><u>2. realizar o acolhimento institucional e avaliação preliminar de risco;</u></span></p>
+<p>6.3.2.<span class="underlined-label"><u>3. propor medidas protetivas institucionais;</u></span></p>
+<p>6.3.2.<span class="underlined-label"><u>4. articular atendimento psicossocial, por meio do CAPS;</u></span></p>
+<p>6.3.2.<span class="underlined-label"><u>5. acompanhar casos em tramitação administrativa ou judicial;</u></span></p>
+<p>6.3.2.<span class="underlined-label"><u>6. manter interlocução com unidades territoriais e órgãos externos.</u></span></p>
+<p>6.3.3. o NUPRO-PM será composto por equipe multidisciplinar devidamente capacitada,</p>
+<p>integrante do efetivo da Correg PM, preferencialmente formada por policiais militares do</p>
+<p>sexo feminino, designadas pelo Corregedor;</p>
+<p>6.3.4. conforme a natureza e a complexidade do caso, a equipe do NUPRO-PM poderá contar</p>
+<p>com a participação de integrantes da Seção de Permanência, da Divisão PM Vítima, das</p>
+<p>Seções de Investigação, bem como de outros profissionais ou setores cuja atuação se mostre</p>
+<p>necessária à adequada análise, ao encaminhamento e ao acompanhamento da ocorrência.</p>
+<p>6.3.5. fluxo de atendimento: o acolhimento será iniciado mediante:</p>
+<p>6.3.5.1. encaminhamento, pela OPM, da documentação ou notícia do fato envolvendo violência</p>
+<p>doméstica e familiar;</p>
+<p>6.3.5.2. comunicação do fato pelo CAPS ou pelo NAPS;</p>
+<p>6.3.5.3. comunicação direta aa NUPRO-PM pela vítima policial militar, quando o agressor for</p>
+<p>policial militar ou civil, ou pela mulher civil, quando o agressor for policial militar;</p>
+<p>6.3.5.4. comunicação pela Polícia Civil, após o registro da ocorrência em Delegacia de Defesa da</p>
+<p>Mulher (DDM) ou Delegacia Policial;</p>
+<p>6.3.5.5. comunicação por meio de outros canais institucionais formalmente reconhecidos.</p>
+<p>6.3.6. uma vez cientificado da ocorrência envolvendo policial militar vítima de violência</p>
+<p>doméstica e familiar, o NUPRO-PM procederá à avaliação e à classificação do risco,</p>
+<p>considerando, entre outros, os seguintes aspectos:</p>
+<p class="risk-item">6.3.6.1. risco baixo (sem ameaças recentes e/ou histórico grave de violência): acolhimento,</p>
+<p>orientação, encaminhamento (direcionamento da vítima ou da demanda aos órgãos e</p>
+<p>serviços competentes, internos ou externos, conforme as necessidades identificadas no</p>
+<p>atendimento (tais como CAPS, NAPS ou DDM), atendimento médico ou autoridade</p>
+<p>competente) e acompanhamento regular;</p>
+<p class="risk-item">6.3.6.2. risco médio (ameaças, controle e/ou episódios de violência não grave): acompanhamento</p>
+<p>prioritário e medidas protetivas;</p>
+<p class="risk-item">6.3.6.3. risco alto (agressões graves, ameaça com arma e/ou descumprimento de medidas</p>
+<p>protetivas de urgência): medidas protetivas e providências administrativas urgentes;</p>
+<p class="risk-item">6.3.6.4. risco iminente de feminicídio (risco à vida da vítima ou de terceiros e/ou acesso a arma</p>
+<p>de fogo): acionamento imediato de US e medidas de proteção integral, caso ainda não</p>
+<p>tenham sido iniciadas pela Organização Policial Militar (OPM) do policial envolvido ou</p>
+<p>pela unidade que atendeu à ocorrência.</p>
+<p>6.3.7. todas as ocorrências de violência doméstica e familiar serão acompanhadas continuamente</p>
+<p>pelo NUPRO-PM, desde o registro inicial até o encerramento do caso, garantindo o</p>
+<p>monitoramento sistemático das providências adotadas e da situação das vítimas.</p>
+<p class="subheading">6.4. Do atendimento de ocorrência de violência doméstica e familiar</p>
+<p class="subheading">6.4.1. vítima e agressor policiais militares:</p>
+<p class="subheading">6.4.1.1. assegurar o sigilo absoluto das informações, evitando qualquer forma de exposição,</p>
+<p>constrangimento ou revitimização, bem como coibir práticas de discriminação ou</p>
+<p>retaliação no ambiente de trabalho;</p>
+<p class="subheading">6.4.1.2. cientificar imediatamente o Oficial de Serviço sobre a ocorrência, especialmente quando</p>
+<p>houver necessidade de intervenção médica ou hospitalar, bem como diante da constatação</p>
+<p>de situação de risco atual ou iminente para a vítima ou seus dependentes, a fim de</p>
+<p>possibilitar a coordenação das medidas de proteção necessárias;</p>
+<p class="subheading">6.4.1.3. nos casos que demandem intervenção médica ou hospitalar, encaminhar prioritariamente</p>
+<p>a vítima ao CMed ou a uma unidade da rede externa de saúde, de forma orientada e segura,</p>
+<p>respeitando seu tempo e evitando a revitimização ou a exposição indevida, de modo a</p>
+<p>assegurar atendimento prioritário, sigiloso e humanizado;</p>
+<p class="subheading">6.4.1.4. adotar, mediante autorização da vítima, as providências necessárias à sua proteção quando</p>
+<p>identificada situação de risco ou vulnerabilidade crítica, incluindo, conforme a gravidade</p>
+<p>do caso: (i) orientação quanto à solicitação de medidas protetivas de urgência; (ii)</p>
+<p>avaliação da necessidade de afastamento do agressor do lar (iii) indicação de um local</p>
+<p>seguro para sua permanência; e (iv) acionamento do suporte emergencial, e (v) posterior</p>
+<p>encaminhamento da vítima ao CAPS ou NAPS;</p>
+<p class="subheading">6.4.1.5. nas situações de crime militar, a Autoridade de Polícia Judiciária Militar poderá, além das</p>
+<p>providências elencadas nas [-40-PM, aplicar as medidas previstas no artigo 12 da Lei</p>
+<p>federal nº Lei nº 11.340, de 07AGO06, submetendo, na sequência, as medidas adotadas</p>
+<p>para avaliação do juízo competente. Nas situações de crime comum, adotar as</p>
+<p>providências cabíveis e proceder a apresentação à autoridade judiciária competente;</p>
+<p class="subheading">6.4.1.6. havendo necessidade de conduzir o policial militar preso (em razão de crime comum ou</p>
+<p>militar), deverá ser acionado superior hierárquico ao agressor ou, na ausência deste, o</p>
+<p>policial militar mais antigo disponível, a fim de assegurar a observância da precedência</p>
+<p>hierárquica durante todo o procedimento de condução e custódia;</p>
+<p class="subheading">6.4.1.7. o Oficial de Serviço deverá cientificar o NUPRO-PM (por meio do e-mail</p>
+<p>correg(dpoliciamilitar.sp.gov.br), encaminhando as informações iniciais disponíveis,</p>
+<p>sem prejuízo de adoção imediata das providências urgentes e legais cabíveis;</p>
+<p class="subheading">6.4.1.8. quando aplicável, o Cmt/Ch/Dir deverá adotar as medidas cabíveis relativas ao</p>
+<p>armamento particular do policial militar e à carga individual de material bélico da PMESP</p>
+<p>(inclusive no que se refere à condição de Colecionador, Atirador Desportivo e Caçador -</p>
+<p>CAC), tais como: recolhimento cautelar, a vedação ou restrição, a revogação de</p>
+<p>autorizações ou registros, bem como outras medidas previstas em normas específicas;</p>
+<p class="subheading">6.4.1.9. o Cmt/Ch/Dir deverá alterar a escala ou local de trabalho do agressor (policial militar),</p>
+<p>de modo a evitar o compartilhamento de ambiente, atividades, horários ou trajetos com a</p>
+<p>vítima (policial militar), bem como reduzir as possibilidades de contato, constrangimento,</p>
+<p>intimidação ou reiteração da violência, observadas as necessidades do serviço e a</p>
+<p>conveniência administrativa;</p>
+<p class="subheading">6.4.1.10. o Cmt/Ch/Dir deverá encaminhar o agressor (policial militar) ao CAPS para avaliação</p>
+<p>psicológica e demais providências de saúde pertinentes, nos moldes estabelecidos pela</p>
+<p>Nota de Instrução nº PM3-001/03/20, de 29JUL20, sem prejuízo da adoção das medidas</p>
+<p>administrativas, disciplinares, operacionais, judiciais e protetivas cabíveis.</p>
+<p class="subheading">6.4.2. vítima policial militar e agressor civil:</p>
+<p class="subheading">6.4.2.1. assegurar o sigilo absoluto das informações, evitando qualquer forma de exposição,</p>
+<p>constrangimento ou revitimização, bem como coibir práticas de discriminação ou</p>
+<p>retaliação no ambiente de trabalho;</p>
+<p class="subheading">6.4.2.2. cientificar imediatamente o Oficial de Serviço sobre a ocorrência, especialmente quando</p>
+<p>houver necessidade de intervenção médica ou hospitalar, bem como diante da constatação</p>
+<p>de situação de risco atual ou iminente para a vítima ou seus dependentes, a fim de</p>
+<p>possibilitar a coordenação das medidas de proteção necessárias;</p>
+<p class="subheading">6.4.2.3. nos casos que demandem intervenção médica ou hospitalar, encaminhar prioritariamente</p>
+<p>a vítima ao CMed ou a uma unidade da rede externa de saúde, de forma orientada e segura,</p>
+<p>respeitando seu tempo e evitando a revitimização ou a exposição indevida, de modo a</p>
+<p>assegurar atendimento prioritário, sigiloso e humanizado;</p>
+<p class="subheading">6.4.2.4. apresentar a policial militar na Delegacia da Mulher (DDM) ou em unidade policial</p>
+<p>competente, para registro e adoção das medidas protetivas de urgência;</p>
+<p class="subheading">6.4.2.5. o Oficial de Serviço deverá cientificar o NUPRO-PM (por meio do e-mail</p>
+<p>correg(dpoliciamilitar.sp.gov.br), encaminhando as informações iniciais disponíveis,</p>
+<p>sem prejuízo de adoção imediata das providências urgentes e legais cabíveis;</p>
+<p class="subheading">6.4.2.6. adotar, mediante autorização da vítima, as providências necessárias à sua proteção quando</p>
+<p>identificada situação de risco ou vulnerabilidade crítica, incluindo, conforme a gravidade</p>
+<p>do caso: (i) orientação quanto à solicitação de medidas protetivas de urgência; (ii)</p>
+<p>avaliação da necessidade de afastamento do agressor do lar (iii) indicação de um local</p>
+<p>seguro para sua permanência; e (iv) acionamento do suporte emergencial, e (v) posterior</p>
+<p>encaminhamento da vítima ao CAPS ou NAPS.</p>
+<p class="subheading">6.4.3. vítima civil e agressor policial militar:</p>
+<p class="subheading">6.4.3.1. adotar as providências previstas nos subitens “6.5.1.1.” e “6.5.1.2.” da Nota de Instrução</p>
+<p>nº PM3-001/02/26, de I2MADS6;</p>
+<p class="subheading">6.4.3.2. orientar a vítima quanto ao registro da ocorrência perante a DDM ou unidade policial</p>
+<p>competente, às medidas protetivas de urgência e aos canais de atendimento especializados</p>
+<p>existentes, bem como, sobre a possibilidade de instalação de aplicativos do Governo, a</p>
+<p>exemplo do 4pp “SP Mulher Segura”;</p>
+<p class="subheading">6.4.3.3. providenciar conforme as necessidades e especificidades de cada caso, o</p>
+<p>encaminhamento da vítima à DDM, ao Poder Judiciário, para adoção das providências</p>
+<p>relativas às medidas protetivas de urgência, à rede externa de proteção e aos serviços de</p>
+<p>apoio psicossocial. O encaminhamento poderá ser realizado com o apoio da PMESP ou,</p>
+<p>após contato com a Cabine Lilás do COPOM, por meio de programas parceiros ou de</p>
+<p>plataformas de transporte por aplicativo disponíveis, observados o consentimento da</p>
+<p>vítima, a preservação de sua segurança e o sigilo das informações;</p>
+<p class="subheading">6.4.3.4. nas situações de crime militar, a Autoridade de Polícia Judiciária Militar poderá, além das</p>
+<p>providências elencadas nas I-40-PM, aplicar as medidas previstas no artigo 12, da Lei</p>
+<p>federal nº Lei nº 11.340, de 07AG006, submetendo, na sequência, as medidas adotadas</p>
+<p>para avaliação do juízo competente. Nas situações de crime comum, adotar as</p>
+<p>providências cabíveis e proceder a apresentação à autoridade judiciária competente;</p>
+<p class="subheading">6.4.3.5. havendo necessidade de conduzir o policial militar preso (em razão de crime comum ou</p>
+<p>militar), deverá ser acionado superior hierárquico ao agressor ou, na ausência deste, o</p>
+<p>policial militar mais antigo disponível, a fim de assegurar a observância da precedência</p>
+<p>hierárquica durante todo o procedimento de condução e custódia;</p>
+<p class="subheading">6.4.3.6. o Oficial de Serviço deverá cientificar o NUPRO-PM (por meio do e-mail</p>
+<p>correg(mpoliciamilitar.sp.gov.br), encaminhando as informações iniciais disponíveis,</p>
+<p>sem prejuízo de adoção imediata das providências urgentes e legais cabíveis;</p>
+<p class="subheading">6.4.3.7. quando aplicável, o Cmt/Ch/Dir deverá adotar as medidas cabíveis relativas ao</p>
+<p>armamento particular do policial militar e à carga individual de material bélico da PMESP</p>
+<p>(inclusive no que se refere à condição de Colecionador, Atirador Desportivo e Caçador -</p>
+<p>CAC), tais como recolhimento cautelar, a vedação ou restrição, a revogação de</p>
+<p>autorizações ou registros, bem como outras medidas previstas em normas específicas.</p>
+<p class="subheading">6.5. Do abrigamento temporário:</p>
+<p>6.5.1. nos casos em que for constatada a necessidade de retirada imediata da vítima e/ou de seus</p>
+<p>dependentes do ambiente doméstico, a Diretoria de Logística (DL) poderá ser acionada,</p>
+<p>por intermédio do CAPS, NAPS, NUPRO-PM, Cmt da OPM ou Oficial de Serviço,</p>
+<p>diretamente junto ao Oficial de Dia do “Alojamento C”, durante o expediente</p>
+<p>administrativo, ou ao Fiscal de Dia, fora desse horário, a fim de viabilizar a hospedagem</p>
+<p>especial, observando-se a seguinte conformidade:</p>
+<p>6.5.1.1. <span class="underlined-label"><u><strong>Fase Emergencial</strong></u></span>:</p>
+<p>6.5.1.1.1 após o acionamento e constatada a existência de vaga, o acolhimento será realizado</p>
+<p>imediatamente, dispensando-se a prévia formalização por expediente administrativo e a</p>
+<p>cobrança de diárias, a fim de assegurar uma resposta célere e eficaz à situação de risco;</p>
+<p>6.5.1.1.2. caberá ao Oficial de Dia ou Fiscal de dia do “Alojamento C” formalizar o ingresso e</p>
+<p>comunicar o fato à Chefia da Divisão de Subsistência no primeiro expediente útil</p>
+<p>subsequente;</p>
+<p>6.5.1.1.3. durante o período de abrigamento emergencial, a Instituição assegurará o fornecimento</p>
+<p>de alimentação ao policial militar e aos seus dependentes, garantindo condições dignas</p>
+<p>de permanência sob coordenação da Divisão de Subsistência da DL.</p>
+<p>6.5.1.2. <span class="underlined-label"><u><strong>Fase de Regularização Administrativa</strong></u></span>:</p>
+<p>6.5.1.2.1. após o acolhimento emergencial, a OPM responsável pelo acionamento deverá</p>
+<p>providenciar a regularização documental (Ofício, ficha de hospedagem e demais</p>
+<p>registros) até o primeiro dia útil subsequente, encaminhando-a via processo SEI à</p>
+<p>Divisão de Subsistência (código SEI 201007120), a fim de preservar a rastreabilidade e</p>
+<p>os controles de auditoria;</p>
+<p>6.5.1.2.2 todas as ocorrências de acolhimento decorrentes desta Nota de Instrução deverão ser</p>
+<p>obrigatoriamente registradas e encaminhadas à DL, para fins de controle administrativo,</p>
+<p>produção de dados estatísticos, monitoramento e auditoria, observados o sigilo das</p>
+<p>informações, a proteção dos dados pessoais e a preservação da identidade e da</p>
+<p>integridade da vítima;</p>
+<p>6.5.1.2.3. o acolhimento terá caráter temporário e por período limitado e razoável, suficiente para</p>
+<p>a superação da situação de risco inicial. Eventuais pedidos de prorrogação da</p>
+<p>hospedagem serão analisados pela DL com base em justificativa técnica fundamentada</p>
+<p>do órgão assistencial ou correcional solicitante;</p>
+<p>6.5.1.2.4. em localidades distantes da Capital, a utilização de instalações institucionais análogas</p>
+<p>dependerá de prévia avaliação do Cmt/Ch, observando-se fluxos operacionais similares</p>
+<p>aos estabelecidos para o “Alojamento C”.</p>
+<p class="section-heading">6.6. Atribuições particulares:</p>
+<p class="subheading">6.6.1. Correg PM</p>
+<p>6.6.1.1. receber, por quaisquer meios, notícias relativas a casos de violência doméstica e familiar</p>
+<p>envolvendo policiais militares, realizando o registro formal da demanda e a análise</p>
+<p>preliminar dos fatos, com a adoção das providências necessárias para a devida apuração</p>
+<p>e eventual intervenção;</p>
+<p>6.6.1.2. propor à autoridade competente, medidas acautelatórias imediatas voltadas à mitigação</p>
+<p>de riscos, especialmente nos casos em que o agressor seja policial militar, relacionadas</p>
+<p>ao armamento particular (inclusive, quando cabível, aos registros de Colecionador</p>
+<p>Atirador Desportivo e Caçador - CAC), carga individual de material bélico da PMESP ou</p>
+<p>particular, observadas as normas específicas aplicáveis;</p>
+<p>6.6.1.3. acionar o CAPS ou NAPS, caso a OPM ainda não tenha adotado essa providência, tão</p>
+<p>logo seja cientificado de ocorrência envolvendo policial militar na condição de vítima ou</p>
+<p>autor de violência doméstica, para fins de acolhimento técnico especializado e</p>
+<p>acompanhamento psicossocial;</p>
+<p>6.6.1.4. acompanhar os casos em que policiais militares figurem na condição de vítimas de</p>
+<p>violência doméstica, inclusive quando o autor for civil, promovendo o monitoramento</p>
+<p>institucional da situação, a articulação com os órgãos competentes e a adoção das medidas</p>
+<p>necessárias à preservação da integridade física e funcional da vítima.</p>
+<p class="subheading">6.6.2. CComSoc</p>
+<p>Em conjunto com a DEC, CAPS e demais órgãos competentes, promover campanhas</p>
+<p>institucionais de sensibilização, conscientização e prevenção da violência doméstica e</p>
+<p>familiar, destinadas ao efetivo policial militar, visando à redução do estigma, ao</p>
+<p>fortalecimento da cultura de proteção institucional e à qualificação do atendimento</p>
+<p>prestado.</p>
+<p class="subheading">6.6.3. DEC</p>
+<p>Divulgar, por meio de Instrução Continuada de Comando (ICC) e do Programa de</p>
+<p>Videotreinamento (PV'T), o papel do CAPS e da Correg PM (por intermédio do NUPRO-</p>
+<p>PM), no atendimento, acolhimento e proteção dos policiais militares vítimas de violência</p>
+<p>doméstica.</p>
+<p class="subheading">6.6.4. DPCDH</p>
+<p>Divulgar, no âmbito do Programa “Lar Mais Seguro”, as ações previstas nesta NL,</p>
+<p>destinadas ao público interno, voltadas à prevenção e ao enfrentamento da violência</p>
+<p>doméstica e familiar.</p>
+<p class="subheading">6.6.5. DL</p>
+<p>6.6.5.1. analisar, quando acionada, a viabilidade de disponibilização de acomodação temporária</p>
+<p>em instalações institucionais, especialmente no “Alojamento C”, para a policial militar</p>
+<p>vítima de violência doméstica e seus dependentes;</p>
+<p>6.6.5.2. adotar as medidas administrativas necessárias à viabilização da permanência temporária,</p>
+<p>resguardando a discrição, a segurança e a dignidade da vítima e de sua família;</p>
+<p>6.6.5.3. os casos previstos nesta NI, serão considerados previamente como excepcionais, nos</p>
+<p>termos do artigo 7º das 1-42-PM, sendo dispensado a formalidade de solicitação por</p>
+<p>escrito, bem como a cobrança do valor das diárias.</p>
+<p class="subheading">6.6.6.DP</p>
+<p>6.6.6.1. por intermédio do CAPS:</p>
+<p>6.6.6.1.1. planejar, coordenar e supervisionar as ações institucionais relacionadas à prevenção,</p>
+<p>acolhimento, acompanhamento e proteção de policiais militares vítimas de violência</p>
+<p>doméstica e familiar no âmbito da PMESP;</p>
+<p>6.6.6.1.2. fomentar e apoiar, em conjunto com o CComSoc, DEC e demais órgãos competentes,</p>
+<p>campanhas institucionais de sensibilização, conscientização e prevenção da violência</p>
+<p>doméstica e familiar, destinadas ao efetivo policial militar, visando à redução do</p>
+<p>estigma, ao fortalecimento da cultura de proteção institucional e à qualificação do</p>
+<p>atendimento prestado;</p>
+<p>6.6.6.1.3 promover capacitação continuada dos profissionais do SiSMen envolvidos no</p>
+<p>atendimento e gestão dos casos previstos nesta NI;</p>
+<p>6.6.6.1.4. realizar o acolhimento técnico especializado da vítima, de forma presencial ou remota,</p>
+<p>com escuta técnica, avaliação psicossocial, identificação de fatores de risco,</p>
+<p>vulnerabilidades e recursos disponíveis;</p>
+<p>6.6.6.1.5. atuar como porta de entrada prioritária para o atendimento psicossocial e como eixo</p>
+<p>executivo de coordenação do atendimento institucional nos três níveis de prevenção,</p>
+<p>promovendo a elaboração de planos de intervenção individualizados, em articulação</p>
+<p>com os demais integrantes do SiSMen e, quando necessário, com outras redes de apoio;</p>
+<p>6.6.6.1.6. conhecer as redes disponíveis conforme a demanda pessoal da vítima, orientando quanto</p>
+<p>aos seus direitos, às medidas protetivas de urgência e às possibilidades de acesso à rede</p>
+<p>interna e externa de proteção;</p>
+<p>6.6.6.1.7. preservar o sigilo das informações, observando os preceitos éticos e legais aplicáveis;</p>
+<p>6.6.6.1.8. nos casos de violência doméstica em que o autor seja policial militar, realizar avaliação</p>
+<p>psicológica individualizada, visando subsidiar medidas institucionais preventivas e de</p>
+<p>mitigação de riscos, com finalidade assistencial e preventiva;</p>
+<p>6.6.6.1.9. elaborar relatório específico para os atendimentos realizados pelos NAPS, com a</p>
+<p>finalidade de subsidiar o conhecimento, a gestão, o acompanhamento e o controle dos</p>
+<p>atendimentos.</p>
+<p>6.6.7. DS</p>
+<p>6.6.7.1. por meio do Centro Médico:</p>
+<p>6.6.7.1.1. assegurar o atendimento médico ao policial militar vítima de violência doméstica, de</p>
+<p>forma célere, humanizada e sigilosa, garantindo a preservação de sua integridade física</p>
+<p>e psicológica;</p>
+<p>6.6.7.1.2. acionar o CAPS ou NAPS, caso a OPM não o tenha feito, sempre que tomar</p>
+<p>conhecimento de policial militar na condição de vítima (respeitando-se a autonomia do</p>
+<p>policial militar e a natureza voluntária de sua adesão), para fins de atendimento técnico</p>
+<p>especializado e acompanhamento psicossocial;</p>
+<p>6.6.7.1.3. planejar e realizar treinamentos e atualizações técnicas periódicas voltados aos oficiais</p>
+<p>que integram o QOS e demais profissionais do CMed e das UIS, com foco em protocolos</p>
+<p>de atendimento humanizado, identificação de indicadores de violência doméstica e</p>
+<p>familiar e diretrizes para o acolhimento sigiloso, visando garantir a padronização e a</p>
+<p>excelência do suporte médico em todas as regiões do Estado.</p>
+<p>6.6.8. Cmt/Ch/Dir</p>
+<p>6.6.8.1. adotar providências imediatas voltadas à preservação da integridade da vítima,</p>
+<p>disponibilizando meios para acesso célere ao CAPS, NAPS, CMed ou rede externa de</p>
+<p>saúde para acolhimento técnico especializado, presencial ou remoto;</p>
+<p>6.6.8.2. adotar, nos casos em que houver indícios de envolvimento de policial militar na condição</p>
+<p>de autor, as medidas de polícia judiciária militar e administrativas cabíveis, bem como</p>
+<p>demais providências institucionais de natureza investigativa, protetiva ou acautelatória</p>
+<p>necessárias à adequada apuração dos fatos e mitigação de riscos;</p>
+<p>6.6.8.3. cientificar o NUPRO-PM (por meio do e-mail correg(dpoliciamilitar.sp.gov.br), sobre</p>
+<p>situações de violência doméstica e familiar que envolvam policial militar na condição de</p>
+<p>vítima;</p>
+<p>6.6.8.4. providenciar a apresentação do policial militar na condição de autor ao CAPS ou NAPS,</p>
+<p>para realização de avaliação psicológica individualizada, nos termos da Nota de Instrução</p>
+<p>nº PM3-001/03/20, de 29JUL20, visando à análise de risco, aspectos comportamentais</p>
+<p>relevantes e eventual necessidade de acompanhamento técnico especializado;</p>
+<p>6.6.8.5. nos casos em que o policial militar, na condição de autor, estiver recolhido no Presídio</p>
+<p>Militar Romão Gomes (PMRG), o atendimento se dará por meio do NAPS daquela OPM;</p>
+<p>6.6.8.6. adotar, conforme as circunstâncias e a necessidade de cada caso, medidas protetivas</p>
+<p>institucionais destinadas a reduzir a exposição da vítima ao risco, tais como alteração de</p>
+<p>escala, mudança do local de serviço, afastamento temporário de atividades operacionais</p>
+<p>específicas, disponibilização de alojamento temporário ou outras providências adequadas,</p>
+<p>assegurando-se, sempre que possível, a preservação de sua situação funcional e evitando-</p>
+<p>se prejuízos indevidos à vítima;</p>
+<p>6.6.8.7. zelar pela preservação do sigilo das informações, evitando qualquer forma de exposição,</p>
+<p>constrangimento ou revitimização, bem como coibir práticas de discriminação ou</p>
+<p>retaliação no ambiente de trabalho.</p>
+<p class="section-heading">6.7. Prescrições Diversas:</p>
+<p class="section-heading">6.7.1. os atendimentos previstos nesta NI terão caráter prioritário, especialmente nos casos com</p>
+<p>risco identificado à integridade física ou psicológica da vítima;</p>
+<p class="section-heading">6.7.2. a adesão da vítima às medidas propostas no âmbito do acompanhamento psicossocial será</p>
+<p>voluntária, cabendo aos profissionais responsáveis orientá-la quanto à relevância e aos</p>
+<p>benefícios do acompanhamento, sempre respeitando sua autonomia e liberdade de decisão;</p>
+<p class="section-heading">6.7.3. os registros, relatórios e demais documentos produzidos no âmbito desta NI deverão</p>
+<p>tramitar sob acesso restrito, limitando-se o acesso aos profissionais diretamente envolvidos</p>
+<p>no atendimento e na gestão do caso, em observância ao sigilo das informações e à proteção</p>
+<p>dos dados pessoais;</p>
+<p class="section-heading">6.7.4. as medidas previstas nesta NI não excluem outras providências cabíveis no âmbito</p>
+<p>administrativo, disciplinar, penal ou judicial;</p>
+<p class="section-heading">6.7.5. para garantir o respaldo legal, os Cmt/Ch/Dir deverão avaliar a classificação da</p>
+<p>documentação como informação pessoal, nos termos do artigo 31 da Lei federal nº 12.527,</p>
+<p>de 18NOVI1I (Lei de Acesso à Informação) e da Lei federal nº 13.709, de 14AGO18 (Lei</p>
+<p>Geral de Proteção de Dados Pessoais - LGPD), garantindo que o acesso aos dados relativos</p>
+<p>à intimidade, à vida privada, à honra e à imagem permaneça restrito aos agentes públicos</p>
+<p>legalmente autorizados, em observância às diretrizes institucionais de proteção, tratamento</p>
+<p>e sigilo das informações;</p>
+<p class="section-heading">6.7.6. qualquer policial militar que tomar conhecimento, por qualquer meio, de policial militar na</p>
+<p>condição de vítima de violência doméstica e familiar deverá comunicar o fato, com a maior</p>
+<p>brevidade possível e de forma sigilosa, ao Oficial em serviço ou à autoridade policial-</p>
+<p>militar competente que adotará as ações previstas nesta NI;</p>
+<p class="section-heading">6.7.7. os registros, documentos e atendimentos realizados pelo NUPRO-PM terão restrição de</p>
+<p>acesso, conforme previsto nos termos da Lei federal nº 12.527, de I8NOVII1 (Lei de</p>
+<p>Acesso à Informação), e da Lei federal nº 13.709, de 14AGO18 (Lei Geral de Proteção de</p>
+<p>Dados Pessoais - LGPD).</p>
+</section>
+</main>
+<div aria-labelledby="notes-title" aria-modal="true" class="modal-backdrop" id="notes-modal" role="dialog">
+<section class="modal">
+<div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Atendimento, Acolhimento e Proteção neste navegador.</p></div>
+<div class="modal-body">
+<div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+<div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input id="select-all-notes" type="checkbox"/> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+<div id="notes-list"></div>
+<div class="warning-box" id="notes-empty" style="display:none">Não há anotações salvas nesta norma.</div>
+</div>
+<div class="modal-actions">
+<button class="btn" id="close-notes" type="button">Fechar</button>
+<button class="btn danger" id="delete-selected" type="button">Excluir selecionadas</button>
+<button class="btn danger" id="clear-all-notes" type="button">Apagar todas as anotações</button>
+<button class="btn gold" id="clear-page-data" type="button">Limpar todos os dados salvos do Atendimento, Acolhimento e Proteção</button>
+</div>
+</section>
+</div>
+<div aria-labelledby="warning-title" aria-modal="true" class="modal-backdrop" id="warning-modal" role="alertdialog">
+<section class="modal" style="max-width:560px">
+<div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+<div class="modal-body">
+<div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Atendimento, Acolhimento e Proteção a Policiais Militares Vítimas de Violência Doméstica e Familiar são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+<p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+</div>
+<div class="modal-actions"><button class="btn gold" id="dismiss-warning" type="button">Entendi</button><button class="btn" id="open-notes-from-warning" type="button">Revisar anotações</button></div>
+</section>
+</div>
+<div aria-labelledby="material-picker-title" aria-modal="true" class="material-picker-backdrop" id="material-picker-modal" role="dialog">
+<div class="material-picker">
+<div class="material-picker-head"><h2 id="material-picker-title">Materiais de apoio — Atendimento, Acolhimento e Proteção a Policiais Militares Vítimas de Violência Doméstica e Familiar</h2></div>
+<div class="material-picker-list">
+<a class="material-option" href="#document" id="material-option-norma">Norma — texto integral nesta página <span>↓</span></a>
+<a class="material-option" href="https://drive.google.com/file/d/1sDNEYnqnsXom73gHNCyrBfgsh5CV49-J/view?usp=drive_link" rel="noopener noreferrer" target="_blank">Resumo para revisão <span>↗</span></a>
+</div>
+<div class="material-picker-foot"><button class="btn" id="close-material-picker" type="button">Fechar</button></div>
+</div>
+</div>
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+<script>
+(() => {
+ const modal=document.getElementById('material-picker-modal');
+ const open=document.getElementById('open-material-picker');
+ const close=document.getElementById('close-material-picker');
+ if(!modal||!open||!close)return;
+ const hide=()=>{modal.classList.remove('open');open.focus();};
+ open.addEventListener('click',()=>modal.classList.add('open'));
+ close.addEventListener('click',hide);
+ const norma=document.getElementById('material-option-norma');
+ norma.addEventListener('click',()=>{modal.classList.remove('open');});
+ modal.addEventListener('click',e=>{if(e.target===modal)hide();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))hide();});
+})();
+</script>
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-nupro-pm-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Atendimento, Acolhimento e Proteção? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Atendimento, Acolhimento e Proteção, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Atendimento, Acolhimento e Proteção foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('procedimento-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('procedimento-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
