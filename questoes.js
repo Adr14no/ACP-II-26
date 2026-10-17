@@ -16191,6 +16191,1131 @@ const BANCO_SIMULADOS = {
         ],
         "answer": 2,
         "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (Sala de Operações): “As instalações da Sala de Operações devem, preferencialmente, ser exclusivas para essas atividades; excepcionalmente podem ficar junto ao Sv Dia, desde que haja estação e recursos exclusivos.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A Sala de Operações deve ficar necessariamente fora da OPM territorial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre Sala de Operações. B: incorreta para o comando, pois afirma: “A Sala de Operações pode funcionar em qualquer ambiente sem estação de trabalho ou recursos próprios.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre Sala de Operações. D: incorreta para o comando, pois afirma: “A Sala de Operações deve sempre compartilhar todos os recursos com o Sv Dia, sem exceção.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre Sala de Operações. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+           {
+        "id": 1077,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1077 — A partir de 01OUT24, qual meio passou a ser obrigatório para instaurar Investigações Preliminares?",
+        "options": [
+          "a) Pelo SIJD, com posterior migração automática ao Sistema Correcional.",
+          "b) Pelo novo módulo do Sistema Correcional, com instrução digital e assinatura eletrônica.",
+          "c) Por meio físico, com registro posterior no Sistema Correcional.",
+          "d) Pelo Sistema Correcional apenas quando a OPM não possuir cadastro no SIJD."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.1. Trecho de suporte: ““a contar de 01OUT24, obrigatoriamente, todas as Investigações Preliminares deverão ser instauradas por meio do novo módulo do Sistema Correcional””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 2.1. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.1. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.1."
+      },
+      {
+        "id": 1078,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1078 — Qual é o marco temporal indicado para a obrigatoriedade de instauração pelo novo módulo?",
+        "options": [
+          "a) 01JAN15.",
+          "b) 23ABR24.",
+          "c) 01OUT24.",
+          "d) 01JAN25."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.1. Trecho de suporte: ““a contar de 01OUT24, obrigatoriamente””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 2.1. B está incorreta porque contraria ou amplia indevidamente a regra do item 2.1. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.1."
+      },
+      {
+        "id": 1079,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1079 — Segundo a determinação, como as Investigações Preliminares instauradas no Sistema Correcional devem ser instruídas e finalizadas?",
+        "options": [
+          "a) Instruídas digitalmente e finalizadas com assinatura eletrônica.",
+          "b) Instruídas em papel e finalizadas com assinatura manuscrita.",
+          "c) Instruídas no SIJD e finalizadas por publicação em Boletim Geral.",
+          "d) Instruídas digitalmente, mas finalizadas exclusivamente com assinatura manuscrita."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.1. Trecho de suporte: ““serão [...] instruídas de maneira digital e finalizadas com a assinatura eletrônica””. A alternativa correta corresponde à regra expressa no documento. B está incorreta porque contraria ou amplia indevidamente a regra do item 2.1. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.1. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.1."
+      },
+      {
+        "id": 1080,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1080 — Qual finalidade operacional decorre da instrução digital e da assinatura eletrônica previstas no item 2.1?",
+        "options": [
+          "a) Permitir que a investigação seja tramitada pelo mesmo meio digital.",
+          "b) Autorizar o encerramento no SIJD de qualquer investigação nova.",
+          "c) Dispensar a atribuição da Corregedoria de manter banco de dados.",
+          "d) Substituir a necessidade de numeração da investigação."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.1. Trecho de suporte: ““possibilitando sua tramitação pelo mesmo meio””. A alternativa correta corresponde à regra expressa no documento. B está incorreta porque contraria ou amplia indevidamente a regra do item 2.1. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.1. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.1."
+      },
+      {
+        "id": 1081,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1081 — Durante a transição, qual informação a OPM deve inserir ao instaurar uma investigação no Sistema Correcional?",
+        "options": [
+          "a) O número da primeira investigação já encerrada no Sistema Correcional.",
+          "b) O número da última Investigação Preliminar cadastrada no SIJD.",
+          "c) O número do último procedimento disciplinar publicado em Boletim Geral.",
+          "d) O total anual de investigações arquivadas pela OPM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.2. Trecho de suporte: ““será necessário informar o número da última Inv Prel cadastrada no SIJD””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 2.2. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.2. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.2."
+      },
+      {
+        "id": 1082,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1082 — Qual é o objetivo declarado de informar o número da última Inv Prel cadastrada no SIJD durante a transição?",
+        "options": [
+          "a) Permitir a continuidade do numerador.",
+          "b) Reabrir investigações antigas no novo sistema.",
+          "c) Transferir a competência instauradora à Corregedoria PM.",
+          "d) Gerar novo número para todas as investigações anteriores."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.2. Trecho de suporte: ““objetivando a continuidade do numerador””. A alternativa correta corresponde à regra expressa no documento. B está incorreta porque contraria ou amplia indevidamente a regra do item 2.2. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.2. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.2."
+      },
+      {
+        "id": 1083,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1083 — Quem solicita o procedimento transitório de informar o último número do SIJD?",
+        "options": [
+          "a) A própria plataforma.",
+          "b) A Corregedoria PM, por ofício individual.",
+          "c) O comandante da OPM, por mensagem ao Boletim Geral.",
+          "d) O encarregado da investigação, em documento físico."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.2. Trecho de suporte: ““sendo este procedimento solicitado pela própria plataforma””. A alternativa correta corresponde à regra expressa no documento. B está incorreta porque contraria ou amplia indevidamente a regra do item 2.2. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.2. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.2."
+      },
+      {
+        "id": 1084,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1084 — Como devem ser encerradas as Investigações Preliminares que já foram instauradas no SIJD?",
+        "options": [
+          "a) Devem ser migradas e encerradas obrigatoriamente no Sistema Correcional.",
+          "b) Devem ser encerradas no próprio SIJD.",
+          "c) Devem permanecer abertas até a desativação total do SIJD.",
+          "d) Devem ser canceladas e instauradas novamente no Sistema Correcional."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.4. Trecho de suporte: ““as Investigações Preliminares instauradas no SIJD deverão ser encerradas em tal sistema””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 2.4. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.4. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.4."
+      },
+      {
+        "id": 1085,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1085 — Uma investigação foi instaurada no SIJD antes da mudança e ainda está em andamento. Qual regra expressa se aplica ao encerramento?",
+        "options": [
+          "a) Encerrar no Sistema Correcional, por ser a plataforma substituta.",
+          "b) Encerrar no SIJD, pois o item 2.4 determina o encerramento nesse sistema.",
+          "c) Encerrar em qualquer sistema, conforme conveniência da OPM.",
+          "d) Cancelar o registro no SIJD e reiniciar a contagem no Sistema Correcional."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.4. Trecho de suporte: ““instauradas no SIJD deverão ser encerradas em tal sistema””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 2.4. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.4. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.4."
+      },
+      {
+        "id": 1086,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1086 — Até quando as OPM deveriam atualizar os prefixos das estruturas correcionais no Sistema Correcional?",
+        "options": [
+          "a) Até 23ABR24.",
+          "b) Até 01JAN25.",
+          "c) Até 01OUT24.",
+          "d) Até 31DEZ24."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 3. Trecho de suporte: ““até 01OUT24, as OPM deverão proceder a imediata atualização””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 3. B está incorreta porque contraria ou amplia indevidamente a regra do item 3. D está incorreta porque contraria ou amplia indevidamente a regra do item 3."
+      },
+      {
+        "id": 1087,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1087 — Quais estruturas são expressamente mencionadas para atualização de prefixos?",
+        "options": [
+          "a) Somente a Corregedoria PM e as Seções de Justiça Militar.",
+          "b) Seção Correcional de Polícia Judiciária Militar e Disciplina, Seção ou Setor de Polícia Judiciária Militar e Disciplina e Plantão de Polícia Judiciária Militar e Disciplina.",
+          "c) Apenas os cartórios e as unidades prisionais militares.",
+          "d) Somente as OPM que ainda utilizavam exclusivamente o SIJD."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 3. Trecho de suporte: ““Seção Correcional [...] Seção ou Setor [...] e Plantão de Polícia Judiciária Militar e Disciplina””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 3. C está incorreta porque contraria ou amplia indevidamente a regra do item 3. D está incorreta porque contraria ou amplia indevidamente a regra do item 3."
+      },
+      {
+        "id": 1088,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1088 — Qual recurso foi indicado para orientar a atualização dos prefixos?",
+        "options": [
+          "a) Manual impresso encaminhado por cada Comando de Policiamento.",
+          "b) Vídeo orientador existente na plataforma.",
+          "c) Curso presencial obrigatório na Corregedoria PM.",
+          "d) Circular publicada exclusivamente no Diário Oficial."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 3. Trecho de suporte: ““conforme vídeo orientador existente na plataforma””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 3. C está incorreta porque contraria ou amplia indevidamente a regra do item 3. D está incorreta porque contraria ou amplia indevidamente a regra do item 3."
+      },
+      {
+        "id": 1089,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1089 — Qual sistema recebia os dados referentes às Investigações Preliminares instauradas pelas OPM desde 01JAN15?",
+        "options": [
+          "a) Sistema Correcional.",
+          "b) Sistema Integrado de Justiça e Disciplina — SIJD.",
+          "c) Sistema de Administração de Pessoal.",
+          "d) Sistema de Polícia Judiciária Militar Digital."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 1.2. Trecho de suporte: ““a contar de 01JAN15, os dados referentes às Investigações Preliminares instauradas pelas OPM passaram a ser inseridos no [...] SIJD””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 1.2. C está incorreta porque contraria ou amplia indevidamente a regra do item 1.2. D está incorreta porque contraria ou amplia indevidamente a regra do item 1.2."
+      },
+      {
+        "id": 1090,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1090 — Qual plataforma está em implantação para substituir gradualmente o SIJD?",
+        "options": [
+          "a) Sistema Integrado de Justiça e Disciplina — SIJD.",
+          "b) Sistema Correcional.",
+          "c) Sistema de Gestão de Recursos Humanos.",
+          "d) Sistema de Tramitação de Inquéritos Policiais."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 1.3. Trecho de suporte: ““está em implantação o Sistema Correcional, plataforma que gradualmente substituirá o SIJD””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 1.3. C está incorreta porque contraria ou amplia indevidamente a regra do item 1.3. D está incorreta porque contraria ou amplia indevidamente a regra do item 1.3."
+      },
+      {
+        "id": 1091,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1091 — A substituição do SIJD pelo Sistema Correcional foi descrita como:",
+        "options": [
+          "a) Imediata e limitada ao cadastro de investigações.",
+          "b) Gradual, abrangendo suas funcionalidades e disponibilizando outras ferramentas.",
+          "c) Facultativa para as OPM até decisão individual de cada comandante.",
+          "d) Restrita à assinatura eletrônica, mantendo todas as demais funções no SIJD."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 1.3. Trecho de suporte: ““gradualmente substituirá o SIJD em todas as suas funcionalidades, bem como disponibilizará outras ferramentas””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 1.3. C está incorreta porque contraria ou amplia indevidamente a regra do item 1.3. D está incorreta porque contraria ou amplia indevidamente a regra do item 1.3."
+      },
+      {
+        "id": 1092,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1092 — A implantação do Sistema Correcional objetiva aprimorar a gestão institucional em quais áreas expressamente mencionadas?",
+        "options": [
+          "a) Polícia judiciária militar e disciplina.",
+          "b) Pessoal, saúde e ensino.",
+          "c) Finanças e aquisições exclusivamente.",
+          "d) Policiamento ostensivo e trânsito exclusivamente."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 1.3. Trecho de suporte: ““aprimorar a gestão da Instituição na área de polícia judiciária militar e disciplina””. A alternativa correta corresponde à regra expressa no documento. B está incorreta porque contraria ou amplia indevidamente a regra do item 1.3. C está incorreta porque contraria ou amplia indevidamente a regra do item 1.3. D está incorreta porque contraria ou amplia indevidamente a regra do item 1.3."
+      },
+      {
+        "id": 1093,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1093 — Qual atribuição da Corregedoria PM é mencionada no fundamento da determinação?",
+        "options": [
+          "a) Manter banco de dados funcional informatizado e integrado.",
+          "b) Autorizar individualmente cada assinatura eletrônica das investigações.",
+          "c) Instaurar diretamente todas as Investigações Preliminares das OPM.",
+          "d) Encerrar no Sistema Correcional todos os procedimentos antigos do SIJD."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 1.1. Trecho de suporte: ““organizar e manter banco de dados funcional informatizado e integrado””. A alternativa correta corresponde à regra expressa no documento. B está incorreta porque contraria ou amplia indevidamente a regra do item 1.1. C está incorreta porque contraria ou amplia indevidamente a regra do item 1.1. D está incorreta porque contraria ou amplia indevidamente a regra do item 1.1."
+      },
+      {
+        "id": 1094,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1094 — Qual referência normativa foi citada para a atribuição de banco de dados da Corregedoria PM?",
+        "options": [
+          "a) Decreto Estadual 38.318/90.",
+          "b) Nota CORREGPM-4694/280/24.",
+          "c) Nota CORREGPM-12243/280/24, item 2.4.",
+          "d) Boletim Geral PM 76, sem outra referência."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 1.1. Trecho de suporte: ““nos termos do Decreto Estadual 38.318/90””. A alternativa correta corresponde à regra expressa no documento. B está incorreta porque contraria ou amplia indevidamente a regra do item 1.1. C está incorreta porque contraria ou amplia indevidamente a regra do item 1.1. D está incorreta porque contraria ou amplia indevidamente a regra do item 1.1."
+      },
+      {
+        "id": 1095,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1095 — Qual nota foi indicada como marco para o funcionamento das Seções correcionais no ambiente virtual?",
+        "options": [
+          "a) Nota CORREGPM-12243/280/24, publicada em 01OUT24.",
+          "b) Nota CORREGPM-4694/280/24, publicada no BG PM 76 de 23ABR24.",
+          "c) Nota PM3-003/02/26, publicada em 2026.",
+          "d) Nota CORREGPM-4694/280/24, publicada em 01JAN15."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 1.4. Trecho de suporte: ““Nota CORREGPM-4694/280/24, no Boletim Geral PM 76 de 23ABR24””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 1.4. C está incorreta porque contraria ou amplia indevidamente a regra do item 1.4. D está incorreta porque contraria ou amplia indevidamente a regra do item 1.4."
+      },
+      {
+        "id": 1096,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1096 — Desde a publicação da Nota CORREGPM-4694/280/24, quais estruturas passaram a operar no ambiente virtual do Sistema Correcional?",
+        "options": [
+          "a) Todas as unidades administrativas da PMESP, sem distinção.",
+          "b) Seções Correcionais de PJMD e Seções ou Setores de PJMD.",
+          "c) Somente a Corregedoria PM e o SIJD.",
+          "d) Somente os Plantões de Polícia Judiciária Militar e Disciplina."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 1.4. Trecho de suporte: ““todas as Seções Correcionais [...] e as Seções ou Setores [...] operam no ambiente virtual””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 1.4. C está incorreta porque contraria ou amplia indevidamente a regra do item 1.4. D está incorreta porque contraria ou amplia indevidamente a regra do item 1.4."
+      },
+      {
+        "id": 1097,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1097 — O texto relaciona a tramitação virtual mencionada no item 1.4 a documentos afetos a qual seção da Corregedoria PM?",
+        "options": [
+          "a) Seção de Fiscalização Ostensiva.",
+          "b) Seção de Promoções.",
+          "c) Seção de Saúde.",
+          "d) Seção de Planejamento Operacional."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 1.4. Trecho de suporte: ““tramitação de documentos afetos à Seção de Fiscalização Ostensiva, da Corregedoria PM””. A alternativa correta corresponde à regra expressa no documento. B está incorreta porque contraria ou amplia indevidamente a regra do item 1.4. C está incorreta porque contraria ou amplia indevidamente a regra do item 1.4. D está incorreta porque contraria ou amplia indevidamente a regra do item 1.4."
+      },
+      {
+        "id": 1098,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1098 — Uma OPM pretende instaurar nova Investigação Preliminar em outubro de 2024. Qual alternativa combina corretamente o sistema e o tratamento do procedimento?",
+        "options": [
+          "a) Instaurar no SIJD e finalizar no Sistema Correcional.",
+          "b) Instaurar no novo módulo do Sistema Correcional, com instrução digital e assinatura eletrônica.",
+          "c) Instaurar em papel, informando o número antigo apenas ao encerrar.",
+          "d) Instaurar no Sistema Correcional apenas após encerrar todas as investigações antigas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.1–2.4. Trecho de suporte: ““todas [...] deverão ser instauradas por meio do novo módulo”; “instauradas no SIJD deverão ser encerradas em tal sistema””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 2.1–2.4. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.1–2.4. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.1–2.4."
+      },
+      {
+        "id": 1099,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1099 — Qual alternativa distingue corretamente a regra para investigações novas e a regra para as já instauradas no SIJD?",
+        "options": [
+          "a) As novas devem ser instauradas no SIJD; as antigas devem ser migradas.",
+          "b) As novas devem ser instauradas no Sistema Correcional; as instauradas no SIJD devem ser encerradas no próprio SIJD.",
+          "c) Ambas devem ser encerradas no Sistema Correcional.",
+          "d) Ambas devem ser instauradas e encerradas no SIJD até desativação formal."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.1 e 2.4. Trecho de suporte: ““todas [...] deverão ser instauradas [...] no [...] Sistema Correcional”; “instauradas no SIJD deverão ser encerradas em tal sistema””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 2.1 e 2.4. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.1 e 2.4. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.1 e 2.4."
+      },
+      {
+        "id": 1100,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1100 — O procedimento de informar o último número do SIJD é caracterizado no texto como:",
+        "options": [
+          "a) Uma regra permanente para toda investigação, sem relação com transição.",
+          "b) Um procedimento transitório de instauração pelas OPM no transcorrer daquele ano.",
+          "c) Uma exigência exclusiva para investigações encerradas antes de 2015.",
+          "d) Uma faculdade da OPM, dispensada quando o número for conhecido."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.2. Trecho de suporte: ““transitoriamente, quando da instauração pelas OPM no transcorrer do corrente ano””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 2.2. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.2. D está incorreta porque contraria ou amplia indevidamente a regra do item 2.2."
+      },
+      {
+        "id": 1101,
+        "subject": "JURIDICO",
+        "tag": "Sistema Correcional",
+        "topic": "Instauração e atualização de Investigação Preliminar",
+        "text": "QUESTÃO 1101 — Assinale a alternativa INCORRETA sobre a determinação.",
+        "options": [
+          "a) A instauração de todas as Investigações Preliminares passou a ser obrigatória no novo módulo a contar de 01OUT24.",
+          "b) Investigações instauradas no SIJD devem ser encerradas no próprio SIJD.",
+          "c) Durante a transição, a plataforma solicita a informação do número da última Inv Prel cadastrada no SIJD.",
+          "d) A OPM pode escolher livremente instaurar novas Investigações Preliminares no SIJD ou no Sistema Correcional."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 2.1, 2.2 e 2.4. Trecho de suporte: ““obrigatoriamente, todas [...] deverão ser instauradas por meio do novo módulo””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 2.1, 2.2 e 2.4. B está incorreta porque contraria ou amplia indevidamente a regra do item 2.1, 2.2 e 2.4. C está incorreta porque contraria ou amplia indevidamente a regra do item 2.1, 2.2 e 2.4."
+      },
+      {
+        "id": 1102,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1102 — Qual é a finalidade central da Nota de Instrução nº PM3-003/02/26?",
+        "options": [
+          "a) Estabelecer diretrizes para acolhimento, atendimento, proteção e acompanhamento de policiais militares vítimas de violência doméstica e familiar.",
+          "b) Regular exclusivamente a apuração disciplinar de policiais militares acusados de violência doméstica.",
+          "c) Definir o regime de afastamento médico dos policiais militares envolvidos em conflitos familiares.",
+          "d) Criar procedimento penal autônomo para substituir a atuação dos órgãos externos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 2, p. 1. Trecho de suporte: ““Estabelecer diretrizes e procedimentos para o acolhimento, atendimento, proteção e acompanhamento de policiais militares vítimas de violência doméstica e familiar””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 2, p. 1. C está incorreta porque não corresponde ao conteúdo normativo citado no item 2, p. 1. D está incorreta porque não corresponde ao conteúdo normativo citado no item 2, p. 1."
+      },
+      {
+        "id": 1103,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1103 — A Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar foi implementada pela PMESP com qual finalidade descrita na Nota?",
+        "options": [
+          "a) Uniformizar e orientar ações de prevenção primária e policiamento ostensivo voltadas à temática.",
+          "b) Transferir a apuração de toda ocorrência doméstica à rede externa de proteção.",
+          "c) Substituir o acompanhamento institucional por encaminhamento exclusivamente judicial.",
+          "d) Restringir as providências aos casos em que a vítima não seja policial militar."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 3.2, p. 2. Trecho de suporte: ““a fim de disciplinar, uniformizar e orientar as ações de prevenção primária e de policiamento ostensivo voltadas a essa temática””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 3.2, p. 2. C está incorreta porque não corresponde ao conteúdo normativo citado no item 3.2, p. 2. D está incorreta porque não corresponde ao conteúdo normativo citado no item 3.2, p. 2."
+      },
+      {
+        "id": 1104,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1104 — Qual característica da violência doméstica contra a mulher é destacada na situação descrita pela Nota?",
+        "options": [
+          "a) Fenômeno social complexo, estrutural e multifatorial, que exige atuação estatal integrada, preventiva e protetiva.",
+          "b) Fenômeno estritamente individual, solucionável por intervenção disciplinar isolada.",
+          "c) Matéria exclusivamente criminal, sem repercussões no ambiente profissional.",
+          "d) Questão administrativa que dispensa avaliação de risco quando há vínculo funcional."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 3.1, p. 1. Trecho de suporte: ““fenômeno social complexo, estrutural e multifatorial””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 3.1, p. 1. C está incorreta porque não corresponde ao conteúdo normativo citado no item 3.1, p. 1. D está incorreta porque não corresponde ao conteúdo normativo citado no item 3.1, p. 1."
+      },
+      {
+        "id": 1105,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1105 — Qual conjunto de dimensões é expressamente considerado na definição de acolhimento institucional?",
+        "options": [
+          "a) Primeiro contato estruturado, escuta qualificada, triagem de sigilo e avaliação inicial das necessidades e riscos.",
+          "b) Registro estatístico, interrogatório formal, indiciamento e decisão disciplinar.",
+          "c) Entrevista exclusivamente remota, comunicação pública e apuração de responsabilidade penal.",
+          "d) Apenas coleta documental e classificação funcional da vítima."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.1.1, p. 3. Trecho de suporte: ““primeiro contato estruturado com a vítima, realizado com escuta qualificada (pelo primeiro interventor), garantindo sigilo e avaliação inicial das necessidades e riscos envolvidos””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.1, p. 3. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.1, p. 3. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.1, p. 3."
+      },
+      {
+        "id": 1106,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1106 — O que a Nota define como atendimento especializado?",
+        "options": [
+          "a) Conjunto de ações técnicas integradas, desenvolvidas por profissionais qualificados, incluindo escuta técnica, avaliação de risco e orientação.",
+          "b) Atendimento prestado exclusivamente pelo comandante da OPM, sem participação de profissionais especializados.",
+          "c) Procedimento de investigação criminal que se encerra com a classificação disciplinar.",
+          "d) Ato de encaminhamento automático à rede externa, sem avaliação individual."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.1.2, p. 3. Trecho de suporte: ““conjunto de ações técnicas integradas, desenvolvidas por profissionais qualificados””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.2, p. 3. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.2, p. 3. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.2, p. 3."
+      },
+      {
+        "id": 1107,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1107 — Qual é o foco da avaliação de risco prevista na Nota?",
+        "options": [
+          "a) Identificar a gravidade da situação, fatores de vulnerabilidade, potencial letalidade, risco de reincidência e necessidade de medidas protetivas.",
+          "b) Definir a culpabilidade criminal do agressor e a sanção disciplinar aplicável.",
+          "c) Estabelecer apenas o risco patrimonial da OPM envolvida.",
+          "d) Determinar exclusivamente se a vítima necessita de afastamento médico."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.1.3, p. 3. Trecho de suporte: ““identificação da gravidade da situação de violência, fatores de vulnerabilidade, potencial letalidade, risco de reincidência e necessidade de adoção de medidas protetivas””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.3, p. 3. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.3, p. 3. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.3, p. 3."
+      },
+      {
+        "id": 1108,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1108 — Qual é a finalidade do eixo de prevenção e cuidado?",
+        "options": [
+          "a) Identificar precocemente sinais de risco e situações de violência, possibilitando providências preventivas e protetivas em tempo oportuno.",
+          "b) Substituir medidas protetivas por campanhas gerais de conscientização.",
+          "c) Atuar somente após a confirmação judicial da violência.",
+          "d) Limitar-se a encaminhar a vítima ao serviço de saúde, sem articulação institucional."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.1.4, p. 3. Trecho de suporte: ““identificar, precocemente, sinais de risco e situações de violência doméstica e familiar, possibilitando a adoção de providências preventivas e protetivas em tempo oportuno””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.4, p. 3. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.4, p. 3. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.4, p. 3."
+      },
+      {
+        "id": 1109,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1109 — O eixo de acolhimento, proteção e acompanhamento integrado busca, entre outros objetivos:",
+        "options": [
+          "a) Garantir proteção imediata em situações de violência doméstica e familiar e articular providências institucionais cabíveis.",
+          "b) Centralizar toda decisão no órgão externo, vedando medidas administrativas internas.",
+          "c) Suspender o acompanhamento depois do primeiro atendimento.",
+          "d) Priorizar a preservação da rotina do agressor sobre a integridade da vítima."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.1.5, p. 3. Trecho de suporte: ““garantir proteção imediata em situações de violência doméstica e familiar””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.5, p. 3. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.5, p. 3. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.5, p. 3."
+      },
+      {
+        "id": 1110,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1110 — Como a Nota caracteriza os grupos reflexivos?",
+        "options": [
+          "a) Intervenção psicossocial em grupo, voltada prioritariamente à reflexão e à reeducação de policiais militares, com foco preventivo.",
+          "b) Procedimento disciplinar coletivo para aplicação de sanção a policiais acusados.",
+          "c) Grupo de atendimento exclusivo às vítimas, substitutivo do CAPS e do NUPRO-PM.",
+          "d) Reunião operacional destinada à definição de escala de serviço."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.1.6, pp. 3–4. Trecho de suporte: ““modalidade de intervenção psicossocial desenvolvida em grupo, voltada a policiais militares, com foco prioritário na reflexão e na reeducação””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.6, pp. 3–4. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.6, pp. 3–4. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.6, pp. 3–4."
+      },
+      {
+        "id": 1111,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1111 — O que são medidas protetivas institucionais na Nota?",
+        "options": [
+          "a) Providências administrativas de competência dos comandantes, diretores e chefes para assegurar a proteção da policial militar vítima.",
+          "b) Medidas judiciais que somente podem ser decretadas por autoridade do Poder Judiciário.",
+          "c) Ações de prevenção universal dirigidas a todo o efetivo, sem individualização.",
+          "d) Procedimentos exclusivamente médicos destinados à avaliação clínica."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.1.7, p. 4. Trecho de suporte: ““providências administrativas, de competência dos comandantes, diretores e chefes””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.7, p. 4. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.7, p. 4. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.7, p. 4."
+      },
+      {
+        "id": 1112,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1112 — As medidas protetivas de urgência são descritas como providências:",
+        "options": [
+          "a) Adotadas pela autoridade judicial ou policial para salvaguardar vida e integridade física da mulher e de sua família, vítimas de violência doméstica.",
+          "b) Administrativas, de competência exclusiva do comandante imediato, sem participação de autoridade judicial ou policial.",
+          "c) Aplicáveis apenas depois do encerramento da investigação preliminar.",
+          "d) Destinadas exclusivamente à preservação de dados e documentos institucionais."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.1.8, p. 4. Trecho de suporte: ““providências adotadas pela autoridade judicial ou policial que visa salvaguardar a vida e a integridade física da mulher e de sua família””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.8, p. 4. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.8, p. 4. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.8, p. 4."
+      },
+      {
+        "id": 1113,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1113 — Qual é a finalidade do NUPRO-PM?",
+        "options": [
+          "a) Implementar ações voltadas à prevenção, acolhimento, proteção e acompanhamento de policiais militares vítimas de violência doméstica e familiar.",
+          "b) Substituir as autoridades policiais e judiciais na apuração de todas as ocorrências domésticas.",
+          "c) Executar exclusivamente ações de prevenção universal para o efetivo inteiro.",
+          "d) Realizar apenas perícias médicas e avaliações de capacidade laborativa."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.1.9, p. 4. Trecho de suporte: ““instituído no âmbito da Correg PM, com a finalidade de implementar ações voltadas à prevenção, acolhimento, proteção e acompanhamento de policiais militares vítimas””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.9, p. 4. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.9, p. 4. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.9, p. 4."
+      },
+      {
+        "id": 1114,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1114 — A prevenção e cuidados universais são dirigidos a quem?",
+        "options": [
+          "a) A todo o efetivo da PMESP, independentemente de posto ou graduação.",
+          "b) Somente a policiais militares previamente identificados como vítimas.",
+          "c) Exclusivamente aos comandantes e oficiais de serviço.",
+          "d) Apenas a policiais militares afastados por motivo de saúde."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.1.10 e 6.2.2.1.2, pp. 4–5. Trecho de suporte: ““dirigidas a todo o efetivo da PMESP, independentemente de posto ou graduação””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.10 e 6.2.2.1.2, pp. 4–5. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.10 e 6.2.2.1.2, pp. 4–5. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.1.10 e 6.2.2.1.2, pp. 4–5."
+      },
+      {
+        "id": 1115,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1115 — O Nível 2 — Prevenção e Cuidados Seletivos — destina-se principalmente a:",
+        "options": [
+          "a) Grupos terapêuticos, reflexivos e atividades de acompanhamento dirigidas a públicos com fatores de risco ou vulnerabilidades identificadas.",
+          "b) Todo o efetivo, sem distinção de fatores de risco.",
+          "c) Apenas policiais militares após ocorrência de agressão consumada e com risco iminente.",
+          "d) Exclusivamente à avaliação clínica de urgência pelo Centro Médico."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.2.2.2 e subitens, p. 5. Trecho de suporte: ““destina-se a grupos terapêuticos, grupos reflexivos, ações psicoeducativas e atividades de acompanhamento direcionadas ao público com fatores de risco””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.2.2.2 e subitens, p. 5. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.2.2.2 e subitens, p. 5. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.2.2.2 e subitens, p. 5."
+      },
+      {
+        "id": 1116,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1116 — O Nível 3 — Prevenção e Cuidados Indicados — é iniciado preferencialmente:",
+        "options": [
+          "a) No âmbito interno da Instituição, por meio do CAPS ou do NUPRO-PM.",
+          "b) Somente após ordem judicial definitiva.",
+          "c) Exclusivamente por encaminhamento de unidade policial civil.",
+          "d) Apenas por iniciativa do agressor, após encerramento da ocorrência."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.2.2.3, pp. 5–6. Trecho de suporte: ““Iniciado, preferencialmente, no âmbito interno da Instituição, por meio do CAPS ou do NUPRO-PM””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.2.2.3, pp. 5–6. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.2.2.3, pp. 5–6. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.2.2.3, pp. 5–6."
+      },
+      {
+        "id": 1117,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1117 — Qual órgão é indicado como responsável pela materialização do eixo de acolhimento, proteção e acompanhamento integrado?",
+        "options": [
+          "a) NUPRO-PM.",
+          "b) Somente a Delegacia de Defesa da Mulher.",
+          "c) Exclusivamente o comandante da OPM, sem apoio técnico.",
+          "d) Apenas o Centro Médico, sem participação de outros setores."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.1 e 6.3.2, p. 6. Trecho de suporte: ““materializado por meio do NUPRO-PM””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.1 e 6.3.2, p. 6. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.1 e 6.3.2, p. 6. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.1 e 6.3.2, p. 6."
+      },
+      {
+        "id": 1118,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1118 — Qual das seguintes atribuições pertence ao NUPRO-PM?",
+        "options": [
+          "a) Receber denúncias e pedidos de apoio e realizar acolhimento institucional e avaliação preliminar de risco.",
+          "b) Aplicar diretamente sanções disciplinares ao agressor policial militar.",
+          "c) Decretar medidas protetivas judiciais em substituição à autoridade competente.",
+          "d) Publicar dados identificadores da vítima para orientar o efetivo."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.2.1–6.3.2.7, p. 6. Trecho de suporte: ““receber denúncias e pedidos de apoio; realizar o acolhimento institucional e avaliação preliminar de risco””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.2.1–6.3.2.7, p. 6. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.2.1–6.3.2.7, p. 6. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.2.1–6.3.2.7, p. 6."
+      },
+      {
+        "id": 1119,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1119 — Como é composto o NUPRO-PM segundo a Nota?",
+        "options": [
+          "a) Por equipe multidisciplinar devidamente capacitada, integrante do efetivo da Correg PM, preferencialmente formada por policiais militares do sexo feminino, designadas pelo Corregedor.",
+          "b) Exclusivamente por profissionais civis externos indicados pelo Poder Judiciário.",
+          "c) Por policiais da OPM da vítima, designados pelo comandante local sem capacitação específica.",
+          "d) Por equipe temporária formada somente quando houver risco iminente."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.3, p. 6. Trecho de suporte: ““equipe multidisciplinar devidamente capacitada, integrante do efetivo da Correg PM, preferencialmente formada por policiais militares do sexo feminino, designadas pelo Corregedor””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.3, p. 6. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.3, p. 6. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.3, p. 6."
+      },
+      {
+        "id": 1120,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1120 — Como o NUPRO-PM pode ser composto adicionalmente, conforme a necessidade do caso?",
+        "options": [
+          "a) Com participação de integrantes da Seção de Permanência, Divisão PM Vítima, Seções de Investigação e outros profissionais ou setores cuja atuação seja necessária.",
+          "b) Somente com integrantes da Polícia Civil e do Ministério Público.",
+          "c) Apenas com policiais militares da mesma unidade da vítima.",
+          "d) Exclusivamente com profissionais do CAPS, vedada a participação de outros setores."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.4, p. 6. Trecho de suporte: ““poderá contar com a participação de integrantes da Seção de Permanência, da Divisão PM Vítima, das Seções de Investigação””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.4, p. 6. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.4, p. 6. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.4, p. 6."
+      },
+      {
+        "id": 1121,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1121 — Qual é a primeira modalidade de encaminhamento indicada no fluxo de atendimento do NUPRO-PM?",
+        "options": [
+          "a) Encaminhamento, pela OPM, da documentação ou notícia do fato envolvendo violência doméstica e familiar.",
+          "b) Comunicação obrigatória à imprensa para registro da ocorrência.",
+          "c) Encaminhamento direto ao órgão disciplinar para aplicação de sanção.",
+          "d) Abertura de procedimento judicial pela própria OPM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.5.1, p. 6. Trecho de suporte: ““encaminhamento, pela OPM, da documentação ou notícia do fato envolvendo violência doméstica e familiar””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.5.1, p. 6. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.5.1, p. 6. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.5.1, p. 6."
+      },
+      {
+        "id": 1122,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1122 — Em que hipótese a Nota prevê comunicação direta ao NUPRO-PM pela vítima policial militar?",
+        "options": [
+          "a) Quando o agressor for policial militar ou civil, ou mulher policial civil, quando o agressor for policial militar.",
+          "b) Somente quando o agressor for civil sem vínculo institucional.",
+          "c) Apenas depois da conclusão da investigação criminal.",
+          "d) Exclusivamente se houver medida protetiva judicial já deferida."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.5.3, p. 6. Trecho de suporte: ““comunicação direta ao NUPRO-PM pela vítima policial militar, quando o agressor for policial militar ou civil, ou mulher policial civil, quando o agressor for policial militar””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.5.3, p. 6. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.5.3, p. 6. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.5.3, p. 6."
+      },
+      {
+        "id": 1123,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1123 — Quando a ocorrência for registrada em Delegacia de Defesa da Mulher, como o NUPRO-PM será comunicado?",
+        "options": [
+          "a) Por comunicação pela Polícia Civil, após o registro da ocorrência na DDM ou Delegacia Policial.",
+          "b) Somente por ofício do comandante-geral após encerramento do caso.",
+          "c) Pela vítima exclusivamente, sem comunicação interinstitucional.",
+          "d) Apenas pela autoridade judicial após deferimento de medida protetiva."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.5.4, p. 7. Trecho de suporte: ““comunicação pela Polícia Civil, após o registro da ocorrência em Delegacia de Defesa da Mulher (DDM) ou Delegacia Policial””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.5.4, p. 7. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.5.4, p. 7. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.5.4, p. 7."
+      },
+      {
+        "id": 1124,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1124 — Após a ocorrência ser comunicada, como o NUPRO-PM acompanha os casos?",
+        "options": [
+          "a) Procede à avaliação e classificação do risco, considerando os fatores descritos na Nota.",
+          "b) Encerra o atendimento assim que registra a notícia do fato.",
+          "c) Classifica o risco apenas pela graduação da vítima.",
+          "d) Aguarda decisão judicial para iniciar qualquer acompanhamento."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.6 e 6.3.7, p. 7. Trecho de suporte: ““o NUPRO-PM procederá à avaliação e à classificação do risco””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6 e 6.3.7, p. 7. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6 e 6.3.7, p. 7. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6 e 6.3.7, p. 7."
+      },
+      {
+        "id": 1125,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1125 — Qual conjunto corresponde ao risco baixo segundo a Nota?",
+        "options": [
+          "a) Ausência de ameaças recentes e/ou histórico grave; acolhimento, orientação, encaminhamento e acompanhamento regular.",
+          "b) Ameaças, controle e/ou episódios de violência não grave, com acompanhamento prioritário e medidas protetivas.",
+          "c) Agressões graves, ameaça com arma e/ou descumprimento de medidas protetivas de urgência.",
+          "d) Risco à vida da vítima ou de terceiros e uso ou acesso a arma de fogo, com acionamento imediato."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.6.1, p. 7. Trecho de suporte: ““risco baixo (sem ameaças recentes e/ou histórico grave de violência)””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.1, p. 7. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.1, p. 7. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.1, p. 7."
+      },
+      {
+        "id": 1126,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1126 — Qual classificação corresponde a ameaças, controle e/ou episódios de violência não grave?",
+        "options": [
+          "a) Risco baixo.",
+          "b) Risco médio.",
+          "c) Risco alto.",
+          "d) Risco iminente de feminicídio."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.6.2, p. 7. Trecho de suporte: ““risco médio (ameaças, controle e/ou episódios de violência não grave)””. A alternativa correta reproduz a regra indicada. A está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.2, p. 7. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.2, p. 7. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.2, p. 7."
+      },
+      {
+        "id": 1127,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1127 — Agressões graves, ameaça com arma e/ou descumprimento de medidas protetivas de urgência caracterizam:",
+        "options": [
+          "a) Risco baixo, com acompanhamento regular.",
+          "b) Risco médio, sem necessidade de medidas urgentes.",
+          "c) Risco alto, com medidas protetivas e providências administrativas urgentes.",
+          "d) Risco iminente de feminicídio em todos os casos, sem avaliação adicional."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.6.3, p. 7. Trecho de suporte: ““risco alto (agressões graves, ameaça com arma e/ou descumprimento de medidas protetivas de urgência)””. A alternativa correta reproduz a regra indicada. A está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.3, p. 7. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.3, p. 7. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.3, p. 7."
+      },
+      {
+        "id": 1128,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1128 — Qual elemento é explicitamente associado ao risco iminente de feminicídio?",
+        "options": [
+          "a) Risco à vida da vítima ou de terceiros e/ou uso ou acesso a arma de fogo.",
+          "b) Apenas a ausência de histórico grave de violência.",
+          "c) Somente o registro de ocorrência em delegacia especializada.",
+          "d) A existência de vínculo funcional entre vítima e agressor, independentemente dos fatos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.6.4, p. 7. Trecho de suporte: ““risco iminente de feminicídio (risco à vida da vítima ou de terceiros e/ou acesso a arma de fogo)””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.4, p. 7. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.4, p. 7. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.6.4, p. 7."
+      },
+      {
+        "id": 1129,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1129 — As ocorrências de violência doméstica e familiar serão acompanhadas continuamente por qual estrutura?",
+        "options": [
+          "a) NUPRO-PM, desde o registro inicial até o encerramento do caso.",
+          "b) Somente pela OPM de origem até o primeiro encaminhamento.",
+          "c) Exclusivamente pelo CAPS até a avaliação psicológica inicial.",
+          "d) Apenas pela autoridade judicial após o recebimento da denúncia."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.3.7, p. 7. Trecho de suporte: ““todas as ocorrências [...] serão acompanhadas continuamente pelo NUPRO-PM, desde o registro inicial até o encerramento do caso””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.7, p. 7. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.7, p. 7. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.3.7, p. 7."
+      },
+      {
+        "id": 1130,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1130 — Quando a vítima e o agressor são policiais militares, qual providência o comandante deve adotar?",
+        "options": [
+          "a) Assegurar sigilo, evitar exposição ou retaliação e cientificar imediatamente o Oficial de Serviço, especialmente diante de necessidade médica ou risco atual/iminente.",
+          "b) Aguardar manifestação formal da vítima por escrito antes de comunicar o Oficial de Serviço.",
+          "c) Comunicar o efetivo da OPM para que todos acompanhem o caso.",
+          "d) Encaminhar a vítima diretamente ao agressor para tentativa de conciliação."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.1.1–6.4.1.2, p. 7. Trecho de suporte: ““assegurar o sigilo absoluto das informações [...] bem como coibir práticas de discriminação ou retaliação”; “cientificar imediatamente o Oficial de Serviço””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.1–6.4.1.2, p. 7. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.1–6.4.1.2, p. 7. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.1–6.4.1.2, p. 7."
+      },
+      {
+        "id": 1131,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1131 — Nos casos que demandem intervenção médica ou hospitalar, qual encaminhamento é priorizado para vítima policial militar?",
+        "options": [
+          "a) Ao CMed ou a uma unidade da rede externa de saúde, de forma orientada e segura.",
+          "b) Ao NUPRO-PM exclusivamente, vedado o atendimento de saúde externo.",
+          "c) À autoridade disciplinar antes de qualquer cuidado médico.",
+          "d) Ao alojamento temporário, sem avaliação de saúde."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.1.3, p. 7. Trecho de suporte: ““encaminhar prioritariamente a vítima ao CMed ou a uma unidade da rede externa de saúde””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.3, p. 7. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.3, p. 7. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.3, p. 7."
+      },
+      {
+        "id": 1132,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1132 — A adoção de providências necessárias à proteção da vítima policial militar depende, em qual situação, de autorização da vítima?",
+        "options": [
+          "a) Quando as providências se destinarem à sua proteção e a situação crítica ou vulnerabilidade for identificada, conforme o caso.",
+          "b) Em todas as situações, inclusive para cientificar o Oficial de Serviço de risco iminente.",
+          "c) Nunca; a Nota proíbe considerar a vontade da vítima.",
+          "d) Somente após autorização do agressor."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.1.4, p. 8. Trecho de suporte: ““adotar, mediante autorização da vítima, as providências necessárias à sua proteção quando identificada situação de risco ou vulnerabilidade crítica””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.4, p. 8. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.4, p. 8. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.4, p. 8."
+      },
+      {
+        "id": 1133,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1133 — Em situação de crime militar, além das providências da I-40-PM, o que poderá fazer a Autoridade de Polícia Judiciária Militar?",
+        "options": [
+          "a) Aplicar as medidas previstas no art. 12 da Lei federal nº 11.340/2006, submetendo-as em sequência à avaliação do juízo competente.",
+          "b) Substituir definitivamente o juízo competente e decidir de forma final sobre todas as medidas protetivas.",
+          "c) Deixar de adotar providências porque o caso envolve policiais militares.",
+          "d) Encaminhar obrigatoriamente todos os casos ao procedimento administrativo, sem providências protetivas."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.1.5, p. 8. Trecho de suporte: ““a Autoridade de Polícia Judiciária Militar poderá [...] aplicar as medidas previstas no artigo 12 [...] submetendo, na sequência, as medidas adotadas para avaliação do juízo competente””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.5, p. 8. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.5, p. 8. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.5, p. 8."
+      },
+      {
+        "id": 1134,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1134 — Se houver necessidade de conduzir policial militar preso em razão de crime comum ou militar, qual cautela hierárquica é prevista?",
+        "options": [
+          "a) Acionar superior hierárquico do agressor ou, na ausência, o policial militar mais antigo disponível.",
+          "b) Acionar sempre o policial mais moderno da OPM.",
+          "c) Aguardar autorização do NUPRO-PM para qualquer condução.",
+          "d) Dispensar comunicação hierárquica se a vítima já estiver em local seguro."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.1.6, p. 8. Trecho de suporte: ““deverá ser acionado superior hierárquico do agressor ou, na ausência deste, o policial militar mais antigo disponível””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.6, p. 8. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.6, p. 8. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.6, p. 8."
+      },
+      {
+        "id": 1135,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1135 — Quem deve encaminhar ao NUPRO-PM as informações iniciais disponíveis por e-mail, sem prejuízo das providências urgentes?",
+        "options": [
+          "a) O Oficial de Serviço.",
+          "b) Exclusivamente a vítima, ao final do acompanhamento.",
+          "c) O agressor, por intermédio do defensor.",
+          "d) Somente o juízo competente, após decisão."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.1.7, p. 8. Trecho de suporte: ““O Oficial de Serviço deverá cientificar o NUPRO-PM [...] encaminhando as informações iniciais disponíveis””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.7, p. 8. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.7, p. 8. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.7, p. 8."
+      },
+      {
+        "id": 1136,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1136 — Quando aplicável, que medidas relativas ao armamento particular do policial militar devem ser avaliadas pelo Cmt/Ch/Dir?",
+        "options": [
+          "a) Recolhimento cautelar, vedação ou restrição, revogação de autorizações ou registros e outras medidas previstas nas normas específicas.",
+          "b) Confisco definitivo automático de todo armamento, sem análise individual.",
+          "c) Apenas a transferência de propriedade do armamento ao comandante.",
+          "d) Nenhuma medida, pois a Nota exclui armamento particular."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.1.8, p. 8. Trecho de suporte: ““recolhimento cautelar, a vedação ou restrição, a revogação de autorizações ou registros””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.8, p. 8. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.8, p. 8. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.8, p. 8."
+      },
+      {
+        "id": 1137,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1137 — Qual é a finalidade de alterar escala ou local de trabalho do agressor policial militar, quando necessário?",
+        "options": [
+          "a) Evitar compartilhamento de ambiente, atividades, horários ou trajetos com a vítima e reduzir possibilidades de contato ou constrangimento.",
+          "b) Punir disciplinarmente o agressor sem procedimento próprio.",
+          "c) Afastar a vítima de todas as atividades, independentemente de sua necessidade.",
+          "d) Substituir medidas protetivas judiciais por mudança automática de escala."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.1.9, p. 8. Trecho de suporte: ““evitar o compartilhamento de ambiente, atividades, horários ou trajetos com a vítima [...] reduzir as possibilidades de contato, constrangimento””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.9, p. 8. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.9, p. 8. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.9, p. 8."
+      },
+      {
+        "id": 1138,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1138 — Em que hipótese a Nota prevê encaminhar o agressor policial militar ao CAPS para avaliação psicológica e demais providências?",
+        "options": [
+          "a) Nos moldes estabelecidos pela Nota de Instrução nº PM3-001/03/20, de 29JUL20, sem prejuízo da adoção de medidas administrativas, disciplinares, operacionais, judiciais e protetivas cabíveis.",
+          "b) Somente após absolvição definitiva no processo criminal.",
+          "c) Como providência exclusiva, que impede medidas administrativas e protetivas.",
+          "d) Apenas se a vítima autorizar expressamente o atendimento do agressor."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.1.10, p. 8. Trecho de suporte: ““encaminhar o agressor [...] ao CAPS para avaliação psicológica e demais providências pertinentes [...] sem prejuízo da adoção das medidas administrativas, disciplinares, operacionais, judiciais e protetivas cabíveis””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.10, p. 8. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.10, p. 8. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.1.10, p. 8."
+      },
+      {
+        "id": 1139,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1139 — No caso de vítima policial militar e agressor civil, a apresentação da vítima deverá ocorrer, conforme a Nota:",
+        "options": [
+          "a) À Delegacia da Mulher (DDM) ou unidade policial competente, para registro e adoção das medidas protetivas de urgência.",
+          "b) Exclusivamente ao NUPRO-PM, sem possibilidade de registro policial externo.",
+          "c) Somente ao comandante da OPM, que substituirá a autoridade policial.",
+          "d) Ao CAPS, que registrará a ocorrência criminal."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.2.4, p. 9. Trecho de suporte: ““apresentar a policial militar na Delegacia da Mulher (DDM) ou em unidade policial competente, para registro e adoção das medidas protetivas de urgência””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.2.4, p. 9. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.2.4, p. 9. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.2.4, p. 9."
+      },
+      {
+        "id": 1140,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1140 — Para a vítima civil e agressor policial militar, a Nota prevê que a OPM:",
+        "options": [
+          "a) Adote providências previstas nos subitens aplicáveis e observe a possibilidade de instalação de aplicativos do Governo, como o App ‘SP Mulher Segura’.",
+          "b) Recuse atendimento por não se tratar de vítima policial militar.",
+          "c) Limite a atuação à apuração disciplinar interna, sem medidas protetivas externas.",
+          "d) Encaminhe a vítima exclusivamente ao alojamento temporário."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.4.3.1–6.4.3.3, pp. 9–10. Trecho de suporte: ““adotar as providências previstas nos subitens ‘6.5.1.1’ e ‘6.5.1.2’ [...] bem como [...] possibilidade de instalação de aplicativos do Governo, a exemplo do App ‘SP Mulher Segura’””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.3.1–6.4.3.3, pp. 9–10. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.3.1–6.4.3.3, pp. 9–10. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.4.3.1–6.4.3.3, pp. 9–10."
+      },
+      {
+        "id": 1141,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1141 — Quando poderá ser acionada a Diretoria de Logística para abrigo temporário?",
+        "options": [
+          "a) Quando houver necessidade de retirada imediata da vítima e/ou dependentes do ambiente doméstico, por intermédio dos órgãos e autoridades indicados na Nota.",
+          "b) Em toda ocorrência, antes da avaliação de risco.",
+          "c) Somente após o encerramento definitivo do caso.",
+          "d) Apenas por solicitação do agressor."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.5, p. 10. Trecho de suporte: ““nos casos em que for constatada a necessidade de retirada imediata da vítima e/ou de seus dependentes do ambiente doméstico, a Diretoria de Logística (DL) poderá ser acionada””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.5, p. 10. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.5, p. 10. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.5, p. 10."
+      },
+      {
+        "id": 1142,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1142 — Na fase emergencial do abrigo temporário, como ocorre o acolhimento?",
+        "options": [
+          "a) Imediatamente, dispensando-se a prévia formalização por expediente administrativo e a cobrança de diárias, para assegurar resposta célere e eficaz.",
+          "b) Somente após autorização judicial escrita e pagamento prévio de diárias.",
+          "c) Após análise administrativa completa, sem possibilidade de acolhimento imediato.",
+          "d) Exclusivamente em instalações externas à PMESP."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.5.1.1, p. 10. Trecho de suporte: ““o acolhimento será realizado imediatamente, dispensando-se a prévia formalização por expediente administrativo e a cobrança de diárias””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.5.1.1, p. 10. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.5.1.1, p. 10. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.5.1.1, p. 10."
+      },
+      {
+        "id": 1143,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1143 — Quem formaliza o ingresso e comunica a chefia da Divisão de Subsistência na fase emergencial?",
+        "options": [
+          "a) O Oficial de Dia ou Fiscal de Dia do alojamento ‘C’.",
+          "b) O NUPRO-PM, exclusivamente, sem atuação do alojamento.",
+          "c) A vítima, por requerimento administrativo próprio.",
+          "d) A autoridade judicial, por ofício à Diretoria de Logística."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.5.1.1.2, p. 10. Trecho de suporte: ““caberá ao Oficial de Dia ou Fiscal de dia do ‘Alojamento C’ formalizar o ingresso e comunicar o fato à Chefia da Divisão de Subsistência””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.5.1.1.2, p. 10. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.5.1.1.2, p. 10. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.5.1.1.2, p. 10."
+      },
+      {
+        "id": 1144,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1144 — Qual atribuição é indicada ao CAPS por meio da Nota?",
+        "options": [
+          "a) Realizar acolhimento técnico especializado, avaliação psicossocial, identificação de vulnerabilidades e recursos disponíveis, e articular planos de intervenção individualizados.",
+          "b) Aplicar medidas disciplinares e definir a culpabilidade do agressor.",
+          "c) Substituir o NUPRO-PM no registro e acompanhamento de toda ocorrência até o encerramento.",
+          "d) Divulgar relatórios identificados das vítimas para fins estatísticos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.6.6.1.4–6.6.6.1.6, pp. 12–13. Trecho de suporte: ““realizar o acolhimento técnico especializado da vítima [...] avaliação psicossocial, identificação de fatores de risco, vulnerabilidades e recursos disponíveis””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.6.1.4–6.6.6.1.6, pp. 12–13. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.6.1.4–6.6.6.1.6, pp. 12–13. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.6.1.4–6.6.6.1.6, pp. 12–13."
+      },
+      {
+        "id": 1145,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1145 — Qual é uma atribuição do Centro Médico no contexto da Nota?",
+        "options": [
+          "a) Assegurar atendimento médico célere, humanizado e sigiloso, garantindo a preservação da integridade física e psicológica.",
+          "b) Conduzir a investigação preliminar e definir a classificação disciplinar.",
+          "c) Gerenciar o alojamento temporário e a cobrança de diárias.",
+          "d) Autorizar acesso irrestrito aos documentos do NUPRO-PM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.6.7.1.1, p. 13. Trecho de suporte: ““assegurar o atendimento médico ao policial militar vítima [...] de forma célere, humanizada e sigilosa””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.7.1.1, p. 13. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.7.1.1, p. 13. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.7.1.1, p. 13."
+      },
+      {
+        "id": 1146,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1146 — O que deve fazer o Cmt/Ch/Dir ao tomar conhecimento de violência doméstica envolvendo policial militar vítima?",
+        "options": [
+          "a) Adotar providências imediatas para preservar a integridade da vítima e viabilizar acesso célere ao CAPS, NAPS, CMed ou rede externa de saúde.",
+          "b) Aguardar a conclusão da apuração para disponibilizar atendimento técnico.",
+          "c) Encaminhar o caso apenas ao setor de comunicação social.",
+          "d) Informar o efetivo inteiro com os dados pessoais para garantir transparência."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.6.8.1, p. 13. Trecho de suporte: ““adotar providências imediatas voltadas à preservação da integridade da vítima, disponibilizando meios para acesso célere ao CAPS, NAPS, CMed ou rede externa de saúde””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.8.1, p. 13. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.8.1, p. 13. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.8.1, p. 13."
+      },
+      {
+        "id": 1147,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1147 — Se houver indícios de envolvimento do policial militar na condição de autor, o comandante deve:",
+        "options": [
+          "a) Adotar medidas de polícia judiciária militar e administrativas cabíveis, além das providências institucionais de natureza investigativa, protetiva ou acautelatória necessárias.",
+          "b) Suspender toda apuração até que o NUPRO-PM conclua o acompanhamento psicossocial.",
+          "c) Aplicar sanção definitiva imediatamente, sem procedimento.",
+          "d) Encaminhar apenas à rede de saúde, sem qualquer providência administrativa."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.6.8.2, p. 14. Trecho de suporte: ““adotar [...] as medidas de polícia judiciária militar e administrativas cabíveis, bem como demais providências institucionais de natureza investigativa, protetiva ou acautelatória””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.8.2, p. 14. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.8.2, p. 14. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.6.8.2, p. 14."
+      },
+      {
+        "id": 1148,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1148 — Qual orientação é prevista sobre a documentação relacionada à vítima?",
+        "options": [
+          "a) Avaliar sua classificação como informação pessoal e restringir o acesso, garantindo intimidade, vida privada e proteção de dados.",
+          "b) Classificar todos os registros como públicos, por se tratar de assunto institucional.",
+          "c) Restringir apenas documentos médicos, deixando os demais registros livres.",
+          "d) Publicar dados pessoais desde que se omita o nome da vítima."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.7.5 e 6.7.7, p. 15. Trecho de suporte: ““avaliar a classificação da documentação como informação pessoal”; “os registros, documentos e atendimentos [...] terão restrição de acesso””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.5 e 6.7.7, p. 15. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.5 e 6.7.7, p. 15. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.5 e 6.7.7, p. 15."
+      },
+      {
+        "id": 1149,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1149 — A adesão da vítima às medidas propostas no acompanhamento psicossocial é caracterizada como:",
+        "options": [
+          "a) Voluntária, cabendo aos profissionais orientar a relevância e os benefícios, respeitando autonomia e liberdade de decisão.",
+          "b) Obrigatória em todos os casos, independentemente da vontade da vítima.",
+          "c) Dependente de autorização do agressor ou do comandante da OPM.",
+          "d) Facultativa apenas após o encerramento da investigação criminal."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.7.2, p. 14. Trecho de suporte: ““a adesão da vítima às medidas propostas [...] será voluntária [...] respeitando sua autonomia e liberdade de decisão””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.2, p. 14. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.2, p. 14. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.2, p. 14."
+      },
+      {
+        "id": 1150,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1150 — Os registros, documentos e atendimentos realizados pelo NUPRO-PM terão:",
+        "options": [
+          "a) Restrição de acesso, conforme as normas de acesso à informação e proteção de dados pessoais.",
+          "b) Acesso público irrestrito, desde que mantidos em sistema eletrônico.",
+          "c) Acesso exclusivo ao agressor, para assegurar contraditório prévio.",
+          "d) Divulgação obrigatória a toda a OPM para fins de prevenção."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.7.7, p. 15. Trecho de suporte: ““os registros, documentos e atendimentos realizados pelo NUPRO-PM terão restrição de acesso””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.7, p. 15. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.7, p. 15. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.7, p. 15."
+      },
+      {
+        "id": 1151,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento, acolhimento e proteção de PM vítima",
+        "text": "QUESTÃO 1151 — A Nota determina que as medidas nela previstas:",
+        "options": [
+          "a) Não excluem outras providências cabíveis nos âmbitos administrativo, disciplinar, penal ou judicial.",
+          "b) Substituem todas as providências penais e disciplinares existentes.",
+          "c) Impedem o encaminhamento do caso à autoridade judicial.",
+          "d) Aplicam-se apenas se não houver qualquer procedimento externo."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.7.4, p. 14. Trecho de suporte: ““as medidas previstas nesta NI não excluem outras providências cabíveis no âmbito administrativo, disciplinar, penal ou judicial””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.4, p. 14. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.4, p. 14. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.4, p. 14."
       }
 
 ];
