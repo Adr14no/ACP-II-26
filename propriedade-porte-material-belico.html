@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Propriedade e Porte de Material Bélico na Polícia Militar — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9} .doc .document-identification{font-weight:800;text-align:center;color:#273e60;margin-bottom:5px}.doc .definition-term{color:#17365d}.doc h3.subheading{font-size:16px}
+.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:transparent;border-left:0;padding:0;border-radius:0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}.footnotes{margin:22px 0;padding:14px 16px;border-left:4px solid var(--gold);background:#f7f4eb;border-radius:6px}.footnotes h3{margin:0 0 8px;font-size:15px}.footnotes p{margin:7px 0;line-height:1.65}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+
+.material-picker-backdrop{position:fixed;inset:0;z-index:120;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}.material-picker-backdrop.open{display:flex}.material-picker{width:min(560px,100%);background:#fff;border:1px solid #cbd5e1;border-radius:14px;overflow:hidden;box-shadow:0 25px 80px #0007}.material-picker-head{padding:16px 18px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}.material-picker-head h2{margin:0;font-size:18px}.material-picker-list{padding:14px;display:grid;gap:9px}.material-option{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#26364d;border:1px solid var(--line);border-radius:9px;padding:13px;font-weight:750}.material-option:hover{border-color:var(--gold);background:#fffbed}.material-picker-foot{padding:12px 14px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;background:#f8fafc}
+.subsection-heading{font-size:1.02rem;font-weight:800;color:#172d4f;margin:1.35rem 0 .55rem;padding:.45rem .65rem;border-left:3px solid var(--gold);background:#f5f7fb}.legal-article{margin:.45rem 0;line-height:1.65}.document-identification{text-align:center;font-weight:800}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Organizacionais</div><h1>Propriedade e Porte de Material Bélico na Polícia Militar</h1><p>Portaria do Cmt G PM4-1/1.2/24 · alterações publicadas no Bol G PM 241, de 20 de dezembro de 2024. Confira o ato oficial e alterações posteriores.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" type="button" id="open-material-picker">Escolher material de apoio ↗</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Texto transcrito para estudo:</strong> conteúdo organizado a partir do arquivo enviado, que apresenta alterações à Portaria sobre propriedade e porte de material bélico. A formatação foi ajustada para consulta; confira o ato oficial e eventuais atualizações.</div>
+<section class="doc" id="document" data-watermark="MATERIAL DE ESTUDO · CONFIRA O ATO OFICIAL">
+<h2 class="section-heading">PROPRIEDADE E PORTE DE MATERIAL BÉLICO NA POLÍCIA MILITAR — ALTERAÇÕES</h2>
+<h2 class="section-heading">LEGISLAÇÃO E ORGANIZAÇÃO</h2>
+<h2 class="section-heading">PORTARIAS</h2>
+<h2 class="section-heading">1 - PORTARIA DO CMT G PM4-1/1.2/24 - DISPÕE SOBRE A PROPRIEDADE E O PORTE DE</h2>
+<h2 class="section-heading">MATERIAL BÉLICO NA POLICIA MILITAR - ALTERAÇÕES</h2>
+<p>Portaria do Cmt G PM-3/1.2/24 O Comandante-Geral da Polícia Militar, com fundamento nos incisos I e IV do artigo 19 do Regulamento Geral da Polícia Militar (R-1-PM), que foi aprovado pelo Decreto 7.290, de 15 de dezembro de 1975, e no artigo 47 e seguintes das Instruções para as Publicações da Polícia Militar (I-1-PM), e considerando a necessidade de alinhar a regulamentação interna que trata dos ritos para aquisição de armas de fogo de uso restrito e transferência de armas de fogo, com a nova orientação expedida pela Diretoria de Fiscalização de Produtos Controlados (DFPC) do Exército Brasileiro (EB), bem como a demanda por constantes atualizações das publicações da Instituição, Determina:</p>
+<p class="legal-article">Artigo 1º - Os dispositivos da Portaria do Cmt G PM4-1/1.2/24, de 16JUL24, a seguir elencados, passam a vigorar com a seguinte redação:</p>
+<p class="legal-article">I - o § 2º do artigo 19:</p>
+<p>§ 2º - O policial militar do serviço ativo deverá informar ao Cmt da Unidade a que esteja funcionalmente vinculado sobre a aquisição de munição, por meio do preenchimento e encaminhamento da declaração constante no Apêndice “P” do Anexo “IV” desta Portaria, em até 30 (trinta) dias da data da aquisição. (NR)</p>
+<p class="legal-article">II - o § 3º do artigo 19:</p>
+<p>§ 3º - O policial militar veterano deverá informar ao Cmt da Unidade detentora do seu AI sobre a aquisição de munição, por meio do preenchimento e encaminhamento da declaração constante no Apêndice “P” do Anexo “IV”, observado o disposto no artigo 61, tudo desta Portaria, em até 30 (trinta) dias da data da aquisição. (NR)</p>
+<p class="legal-article">III - o caput do artigo 54:</p>
+<p class="legal-article">Artigo 54 - A renovação da APAFI obedecerá a regra do inciso I do artigo 50 desta Portaria, mediante prévia solicitação do interessado ao Cmt da Unidade detentora do seu AI. (NR)</p>
+<p class="legal-article">IV - o subitem “1.1.1.1” do Anexo I:</p>
+<p class="legal-article">1.1.1.1. requerimento para a aquisição de material bélico de uso permitido do comércio/indústria</p>
+<p>(Apêndice “A” do Anexo “IV”); (NR)</p>
+<p class="legal-article">V - o item “2”, e seus respectivos desdobramentos, do Anexo I:</p>
+<h2 class="section-heading">2. AQUISIÇÃO DE ARMA DE FOGO DE USO RESTRITO NO COMÉRCIO OU INDÚSTRIA:</h2>
+<h2 class="section-heading">2.1. Etapa 1 - Solicitação de autorização junto ao Exército Brasileiro (EB):</h2>
+<p class="legal-article">2.1.1. preenchimento do formulário constante no Apêndice “A-1” do Anexo “IV” desta Portaria,</p>
+<p>acompanhado da assinatura física do requerente e do respectivo Cmt da Unidade a que esteja funcionalmente vinculado ou, se veterano, do Cmt da Unidade detentora do Assentamento Individual (AI), SENDO VEDADA A ASSINATURA DIGITAL OU DIGITALIZADA, para solicitação de obtenção da autorização do Chefe do Serviço de Fiscalização de Produtos Controlados da 2ª Região Militar (SFPC/2ª RM) do EB, mediante tramitação realizada pessoalmente pelo policial militar interessado;</p>
+<p class="legal-article">2.1.2. a assinatura do Cmt da Unidade deve estar acompanhada de sua identificação nominal,</p>
+<p>cargo (posto) e função, digitados ou carimbados;</p>
+<p class="legal-article">2.1.3. juntar ao formulário preenchido:</p>
+<p class="legal-article">2.1.3.1. cópia de documento de identificação pessoal do policial militar;</p>
+<p class="legal-article">2.1.3.2. cópia da Guia de Recolhimento da União (GRU) e do comprovante de pagamento da taxa de</p>
+<p>aquisição de Produto Controlado pelo Exército (PCE).</p>
+<p class="legal-article">2.1.4. acondicionar toda a documentação em uma pasta de elástico (plástico ou papel) na cor azul;</p>
+<p class="legal-article">2.1.5. caso a quantidade de armas de fogo seja superior à prevista, preencher o Apêndice “B” do Anexo IV;</p>
+<p class="legal-article">2.1.6. protocolar a “pasta azul” contendo a respectiva documentação, pessoalmente, nos seguintes</p>
+<p>postos de atendimento do Exército Brasileiro (EB):</p>
+<p class="legal-article">2.1.6.1. na sede do SFPC, junto ao Comando da 2ª Região Militar, localizado na Avenida Mario Kozel</p>
+<p>Filho, nº 222, Paraíso, São Paulo-SP;</p>
+<p class="legal-article">2.1.6.2. na sede do Comando da 11ª Brigada de Infantaria Mecanizada, localizado na Avenida Soldado</p>
+<p>Passarinho, 1.601, Jardim Chapadão, Campinas-SP;</p>
+<p class="legal-article">2.1.6.3. na sede do Comando da 12ª Brigada de Infantaria Leve, localizado na Rua Marquês de Herval,</p>
+<p>109, Centro, Caçapava-SP;</p>
+<p class="legal-article">2.1.6.4. na sede do Comando de Defesa Antiaérea do Exército (Forte dos Andradas), localizado na</p>
+<p>Rua Marechal Emílio Mallet, nº 1.000, Jardim Guaiúba, Guarujá-SP;</p>
+<p class="legal-article">2.1.6.5. na sede da Base de Apoio Regional de Sorocaba, localizada na Avenida Roberto Símonsen,</p>
+<p>nº 150, Jardim Santa Rosália, Sorocaba-SP;</p>
+<p class="legal-article">2.1.6.6. na sede da Base de Apoio Regional de Ribeirão Preto, localizada na Rua Duque de Caxias,</p>
+<p>nº 1.255, Centro, Ribeirão Preto-SP;</p>
+<p class="legal-article">2.1.6.7. na sede da Base de Apoio Regional de Bauru, localizada na Rua Bandeirantes, 3-55, Quadra 3,</p>
+<p>Centro, Bauru - SP.</p>
+<p class="legal-article">2.1.7. o interessado deverá acompanhar a expedição da autorização, por meio do Sistema de</p>
+<p>Protocolado Eletrônico (SISPROT), e, após constatar que a assinatura da autoridade competente do EB foi realizada, retirará, pessoalmente, a autorização no mesmo posto de atendimento em que protocolou o pedido.</p>
+<h2 class="section-heading">2.2. Etapa 2 - Análise e encaminhamento do pedido:</h2>
+<p class="legal-article">2.2.1. o policial militar requerente, em posse da autorização da autoridade competente do EB e suas</p>
+<p>respectivas documentações acessórias, deverá obter as aprovações subsidiárias na respectiva Unidade e parecer do seu Cmt ou do Cmt da Unidade detentora do AI para posterior remessa ao CMB, exclusivamente, por meio de expediente eletrônico consolidado no Sistema Eletrônico de Informações (SEI), contendo:</p>
+<p class="legal-article">2.2.1.1. a declaração formal do interessado, informando que há cofre ou lugar seguro com tranca em</p>
+<p>sua residência para o armazenamento de arma de fogo desmuniciada, garantindo ainda que a arma de fogo não será acessível aos menores de 25 (vinte e cinco) anos de idade ou às pessoas civilmente incapazes que, porventura, residam ou frequentem o local.</p>
+<p class="legal-article">2.2.2. as aprovações subsidiárias a que se refere o subitem “2.2.1.” devem ser proferidas por meio das</p>
+<p>seguintes manifestações:</p>
+<p class="legal-article">2.2.2.1. do Oficial de Logística, sobre o interessado atender o limite para aquisição de arma de uso restrito;</p>
+<p class="legal-article">2.2.2.2. do Oficial de Administração de Pessoal, sobre a vedação para a aquisição de material bélico</p>
+<p>prevista no inciso I do artigo 23 desta Portaria e, ainda, sobre a habilitação para o uso de arma de fogo específica, conforme as normas da PMESP, providências essas que devem ser adotadas pelo Oficial Secretário da Unidade detentora do AI, caso o interessado seja veterano;</p>
+<p class="legal-article">2.2.2.3. do Oficial de Polícia Judiciária Militar e Disciplina, sobre as demais vedações para a aquisição</p>
+<p>de material bélico previstas no artigo 23 desta Portaria.</p>
+<p class="legal-article">2.2.3. após toda a documentação ter sido digitalizada, compondo-se em processo único, o Cmt da</p>
+<p>Unidade ou o Cmt da Unidade detentora do AI, conforme o caso, por meio da Seção de Logística, encaminhará o pedido de aquisição para o Ch CMB, eletronicamente;</p>
+<p class="legal-article">2.2.4. o Ch CMB adotará as medidas de saneamento do processo de aquisição, podendo restituir ao</p>
+<p>interessado, via Cmt da Unidade ou Cmt da Unidade detentora do AI, para retificação ou complementação de informação ou, então, para ciência da liberação da compra.</p>
+<p class="legal-article">2.3. Juntada da Nota Fiscal: efetivada a compra, o interessado deverá anexar ao processo eletrônico</p>
+<p>no SEI a nota fiscal contendo os dados da arma de fogo de uso restrito, restituindo ao CMB, via Cmt da Unidade ou Cmt da Unidade detentora do AI;</p>
+<p class="legal-article">2.4. conferência e publicação dos atos:</p>
+<p class="legal-article">2.4.1. de posse de todas as informações, o Ch CMB adotará as providências para o cadastro no SIGMA,</p>
+<p>junto ao SFPC/2ª RM, emitindo-se o CRAF, com a consequente remessa à Seção de Logística da Unidade do interessado;</p>
+<p class="legal-article">2.4.2. após conferir todos os dados, o Cmt da Unidade ou o Cmt da Unidade detentora do AI</p>
+<p>providenciará a publicação em Boletim Interno Reservado (Bol Int Res) e entregará o CRAF ao interessado.</p>
+<p class="legal-article">2.5. retirada da arma de fogo: de posse do CRAF, o interessado poderá retirar a arma de fogo,</p>
+<p>pessoalmente, junto ao seu fornecedor. (NR)</p>
+<p class="legal-article">VI - o subitem “3.4.1.5” do Anexo I:</p>
+<p class="legal-article">3.4.1.5. Termo de Vistoria Física (Apêndice “J” do Anexo “IV”) com fotos, realizada pelo armeiro da</p>
+<p>Unidade do adquirente, sendo dispensável quando a transferência ocorrer entre policiais militares; (NR)</p>
+<p class="legal-article">VII - o subitem “3.5”, e seus respectivos desdobramentos, do Anexo I:</p>
+<h2 class="section-heading">3.5. transferência de propriedade de arma de fogo de uso restrito entre militares (de SIGMA para</h2>
+<h2 class="section-heading">SIGMA):</h2>
+<p class="legal-article">3.5.1. Etapa 1 - Solicitação de autorização junto ao Exército Brasileiro (EB):</p>
+<p class="legal-article">3.5.1.1. o policial militar interessado em adquirir arma de fogo de uso restrito de outro policial militar ou</p>
+<p>de integrante das Forças Armadas (compra, venda ou doação) deverá preencher o formulário constante no Apêndice “C” do Anexo “IV” desta Portaria, acompanhado da assinatura física do requerente e do respectivo Cmt da Unidade a que esteja vinculado ou, se veterano, do Cmt da Unidade detentora do Assentamento Individual (AI), SENDO VEDADA ASSINATURA DIGITAL OU DIGITALIZADA, para solicitação de obtenção da autorização do Chefe do Serviço de Fiscalização de Produtos Controlados da 2ª Região Militar (SFPC/2ªRM) do EB, mediante tramitação realizada pessoalmente pelo policial militar interessado;</p>
+<p class="legal-article">3.5.1.2. a assinatura do Cmt da Unidade deve estar acompanhada de sua identificação nominal,</p>
+<p>cargo (posto) e função, digitados ou carimbados:</p>
+<p class="legal-article">3.5.1.3. juntar ao formulário preenchido:</p>
+<p class="legal-article">3.5.1.3.1. cópia da GRU/PCE e do comprovante de pagamento da taxa de aquisição de PCE;</p>
+<p class="legal-article">3.5.1.3.2. cópia dos documentos de identificação pessoal do policial militar adquirente e do</p>
+<p>vendedor/doador;</p>
+<p class="legal-article">3.5.1.3.3. cópia do CRAF da arma de fogo objeto da transferência;</p>
+<p class="legal-article">3.5.1.3.4. ficha de cadastro da arma de fogo no SIGMA;</p>
+<p class="legal-article">3.5.1.3.5. comprovante de aptidão psicológica e capacidade técnica do adquirente, quando for o caso.</p>
+<p class="legal-article">3.5.1.4. acondicionar toda a documentação em uma pasta de elástico (plástico ou papel) na cor azul;</p>
+<p class="legal-article">3.5.1.5. caso a quantidade de arma de fogo seja superior à prevista, preencher o Apêndice “B” do</p>
+<p>Anexo IV;</p>
+<p class="legal-article">3.5.1.6. protocolar a “pasta azul”, contendo a respectiva documentação, pessoalmente e</p>
+<p>exclusivamente na sede do SFPC, junto ao Comando da 2ª Região Militar, localizado na Avenida Mario Kozel Filho, nº 222, Paraíso, São Paulo-SP, material esse que, após receber o parecer do Exército Brasileiro sobre a transferência da arma de fogo, será liberado ao CMB para a adoção das demais providências referentes à emissão do CRAF;</p>
+<p class="legal-article">3.5.1.7. o adquirente deverá acompanhar a expedição da autorização, por meio do Sistema de</p>
+<p>Protocolado Eletrônico (SISPROT), e, após constatar que a assinatura da autoridade competente do EB foi realizada, aguardará a convocação da respectiva Unidade, via Seção de Logística, para retirada do CRAF.</p>
+<p class="legal-article">3.5.2. Etapa 2 - Análise e encaminhamento do pedido:</p>
+<p class="legal-article">3.5.2.1. esta etapa deverá ser adotada somente nos casos em que a arma de fogo transferida é a</p>
+<p>primeira do acervo do adquirente;</p>
+<p class="legal-article">3.5.2.2. o policial militar adquirente, em posse da autorização do EB, enviada pelo CMB à Seção de</p>
+<p>Logística de sua Unidade e de suas respectivas documentações acessórias, deverá juntar o Termo de Vistoria Física (Apêndice “J” do Anexo “IV”) com fotos, realizado pelo armeiro da Unidade do adquirente, sendo dispensável quando a transferência se der entre policiais militares, para posterior entrega em sua Unidade;</p>
+<p class="legal-article">3.5.2.3. o policial militar adquirente deverá, ainda, obter as aprovações subsidiárias na respectiva</p>
+<p>Unidade detentora do AI para posterior remessa ao CMB, exclusivamente, por meio de expediente eletrônico consolidado no Sistema Eletrônico de Informações (SEI), contendo:</p>
+<p class="legal-article">3.5.2.3.1. a declaração formal do interessado de que há cofre ou lugar seguro com tranca em sua</p>
+<p>residência para armazenamento de arma de fogo desmuniciada, garantindo ainda que a arma de fogo não será acessível aos menores de 25 (vinte e cinco) anos de idade ou às pessoas civilmente incapazes que, porventura, residam ou frequentem o local.</p>
+<p class="legal-article">3.5.2.4. as aprovações subsidiárias a que se refere o subitem “3.5.2.3.” devem ser proferidas por meio</p>
+<p>das seguintes manifestações:</p>
+<p class="legal-article">3.5.2.4.1. do Oficial de Logística, sobre o interessado atender o limite para aquisição de arma de uso restrito;</p>
+<p class="legal-article">3.5.2.4.2. do Oficial de Administração de Pessoal, sobre a vedação para a aquisição de material bélico</p>
+<p>prevista no inciso I do artigo 23 desta Portaria e, ainda, sobre a habilitação para o uso da arma de fogo específica, conforme as normas da PMESP, providências essas que devem ser adotadas pelo Oficial Secretário da Unidade detentora do AI, caso o interessado seja veterano;</p>
+<p class="legal-article">3.5.2.4.3. do Oficial de Polícia Judiciária Militar e Disciplina, sobre as demais vedações para aquisição</p>
+<p>de material bélico previstas no artigo 23 desta Portaria.</p>
+<p class="legal-article">3.5.2.5. após toda a documentação ter sido digitalizada, compondo-se em processo único, o Cmt da</p>
+<p>Unidade ou o Cmt da Unidade detentora do AI, por meio da Seção de Logística, encaminhará o pedido de transferência para o Ch CMB, eletronicamente;</p>
+<p class="legal-article">3.5.2.6. o Ch CMB adotará as medidas de saneamento do processo de aquisição, podendo restituir ao</p>
+<p>interessado, via Cmt da Unidade ou Cmt da Unidade detentora do AI, para retificação ou complementação de informação ou, então, para ciência da liberação da compra;</p>
+<p class="legal-article">3.5.2.7. de posse de todas as informações, o CMB providenciará a alteração no cadastro do SIGMA e</p>
+<p>emitirá novo CRAF, com a consequente remessa à Seção de Logística da Unidade do interessado, para retirada, pessoalmente;</p>
+<p class="legal-article">3.5.2.8. após conferir todos os dados, o Cmt da Unidade ou o Cmt da Unidade detentora do AI</p>
+<p>providenciará a publicação em Boletim Interno Reservado (Bol Int Res) e entregará o CRAF ao policial militar interessado;</p>
+<p class="legal-article">3.5.2.9. concluída a transferência de propriedade da arma de fogo, o objeto poderá ser captado pelo</p>
+<p>adquirente e o CRAF vinculado ao cadastro anterior deverá ser destruído pelo antigo proprietário. (NR)</p>
+<p class="legal-article">VIII - o subitem “3.7”, e seus respectivos desdobramentos, do Anexo I:</p>
+<h2 class="section-heading">3.7. transferência de propriedade de arma de fogo de uso permitido de civil para policial militar</h2>
+<p>(SINARM para SIGMA):</p>
+<p class="legal-article">3.7.1. o policial militar interessado em adquirir arma de fogo de uso permitido de civil (compra, venda</p>
+<p>ou doação) deverá encaminhar a solicitação ao Cmt da Unidade ou Cmt da Unidade detentora do AI, por meio de Parte, instruída com:</p>
+<p class="legal-article">3.7.1.1. requerimento (Apêndice “D” do Anexo “IV”) devidamente preenchido;</p>
+<p class="legal-article">3.7.1.2. cópia da Guia GRU/PCE e o comprovante de pagamento da taxa de aquisição de PCE;</p>
+<p class="legal-article">3.7.1.3. Termo de Vistoria Física (Apêndice “J” do Anexo “IV”) com fotos, realizado pelo armeiro da</p>
+<p>Unidade do policial militar adquirente;</p>
+<p class="legal-article">3.7.1.4. cópia dos documentos de identificação do policial militar adquirente e do civil vendedor/doador;</p>
+<p class="legal-article">3.7.1.5. autorização de transferência de arma de fogo entre sistemas (SINARM para SIGMA), emitida</p>
+<p>pela Polícia Federal;</p>
+<p class="legal-article">3.7.1.6. cópia do CRAF da arma objeto de transferência.</p>
+<p class="legal-article">3.7.2. após o saneamento da documentação apresentada pelo policial militar adquirente, a OPM</p>
+<p>deverá providenciar a publicação da pretensão do policial militar em Boletim Interno Reservado, remetendo todo o processo digitalizado diretamente ao CMB, por meio do SEI;</p>
+<p class="legal-article">3.7.3. o CMB providenciará a alteração no cadastro do SIGMA e emitirá novo CRAF, documento que</p>
+<p>será retirado e entregue ao policial militar interessado, pela respectiva Unidade;</p>
+<p class="legal-article">3.7.4. concluída a transferência de propriedade da arma de fogo, o CRAF vinculado ao cadastro</p>
+<p>anterior deverá ser destruído pelo antigo proprietário;</p>
+<p class="legal-article">3.7.5. caso a quantidade de armas de fogo seja superior à prevista, o policial militar deverá preencher</p>
+<p>o Apêndice “B” do Anexo IV. (NR)</p>
+<p class="legal-article">IX - o subitem “5.1.1” do Anexo I:</p>
+<p class="legal-article">5.1.1. requerimento para aquisição de material bélico do comércio/indústria (Apêndice “A”, na hipótese</p>
+<p>de arma de fogo de uso permitido, e Apêndice “A-1”, quando se tratar de arma de fogo de uso restrito, ambos do Anexo “IV”); (NR)</p>
+<p class="legal-article">X - o item “2” (caput) do Anexo II:</p>
+<p class="legal-article">2. Pré-requisitos para a concessão de carga de material bélico da PMESP: (NR)</p>
+<p class="legal-article">Artigo 2º - Fica acrescido o subitem “3.8”, e seus respectivos desdobramentos, ao Anexo I da Portaria do Cmt G PM4-1/1.2/24, de 16JUL24:</p>
+<h2 class="section-heading">3.8. transferência de propriedade de arma de fogo de uso restrito de civil para policial militar</h2>
+<p>(SINARM para SIGMA):</p>
+<p class="legal-article">3.8.1. Etapa I - Solicitação de autorização junto ao Exército Brasileiro (EB):</p>
+<p class="legal-article">3.8.1.1. o policial militar interessado em adquirir arma de fogo de uso restrito de civil (compra, venda</p>
+<p>ou doação) deverá preencher o formulário constante no Apêndice “D” do Anexo “IV” desta Portaria, acompanhado da assinatura física do requerente e do respectivo Cmt da Unidade a que esteja vinculado ou, se veterano, do Cmt da Unidade detentora do Assentamento Individual (AI), SENDO VEDADA ASSINATURA DIGITAL OU DIGITALIZADA, para solicitação de obtenção da autorização do Chefe do Serviço de Fiscalização de Produtos Controlados da 2ª Região Militar (SFPC/2ªRM) do EB, mediante tramitação realizada pessoalmente pelo policial militar interessado;</p>
+<p class="legal-article">3.8.1.2. a assinatura do Cmt da Unidade deve estar acompanhada de sua identificação nominal, cargo</p>
+<p>(posto) e função, digitados ou carimbados:</p>
+<p class="legal-article">3.8.1.3. juntar ao formulário preenchido:</p>
+<p class="legal-article">3.8.1.3.1. cópia da GRU/PCE e do comprovante de pagamento da taxa de aquisição de PCE;</p>
+<p class="legal-article">3.8.1.3.2. cópia dos documentos de identificação pessoal do policial militar adquirente e do civil</p>
+<p>vendedor/doador;</p>
+<p class="legal-article">3.8.1.3.3. autorização de transferência de arma de fogo entre sistemas (SINARM para SIGMA), emitida</p>
+<p>pela Polícia Federal;</p>
+<p class="legal-article">3.8.1.3.4. cópia do CRAF da arma de fogo objeto da transferência;</p>
+<p class="legal-article">3.8.1.3.5. comprovante de aptidão psicológica e capacidade técnica do adquirente, quando for o caso.</p>
+<p class="legal-article">3.8.1.4. acondicionar toda a documentação em uma pasta de elástico (plástico ou papel) na cor azul;</p>
+<p class="legal-article">3.8.1.5. caso a quantidade de armas de fogo seja superior à prevista, preencher o Apêndice “B” do</p>
+<p>Anexo “IV”;</p>
+<p class="legal-article">3.8.1.6. protocolar a “pasta azul” contendo a respectiva documentação, pessoalmente e</p>
+<p>exclusivamente na sede do SFPC, junto ao Comando da 2ª Região Militar, localizado na Avenida Mario Kozel Filho, nº 222, Paraíso, São Paulo-SP, material esse que, após receber o parecer do Exército Brasileiro sobre a transferência da arma de fogo, será liberado ao CMB para a adoção das demais providências referentes à emissão do CRAF;</p>
+<p class="legal-article">3.8.1.7. o adquirente deve acompanhar a expedição da autorização, por meio do Sistema de Protocolado</p>
+<p>Eletrônico (SISPROT), e, após constatar que a assinatura da autoridade competente do EB foi realizada, aguardará a convocação da respectiva Unidade, via Seção de Logística, para retirada do CRAF.</p>
+<p class="legal-article">3.8.2. Etapa 2 - Análise e encaminhamento do pedido:</p>
+<p class="legal-article">3.8.2.1. esta etapa deverá ser adotada somente nos casos em que a arma de fogo transferida é a</p>
+<p>primeira do acervo do adquirente;</p>
+<p class="legal-article">3.8.2.2. o policial militar adquirente, em posse da autorização do EB, enviada pelo CMB à Seção de</p>
+<p>Logística de sua Unidade e de suas respectivas documentações acessórias, deverá juntar o Termo de Vistoria Física (Apêndice “J” do Anexo “IV”) com fotos, realizado pelo armeiro da Unidade do adquirente, sendo dispensável quando a transferência se der entre policiais militares, para posterior entrega em sua Unidade;</p>
+<p class="legal-article">3.8.2.3. o policial militar adquirente deverá, ainda, obter as aprovações subsidiárias na respectiva</p>
+<p>Unidade detentora do AI para posterior remessa ao CMB, exclusivamente, por meio de expediente eletrônico consolidado no Sistema Eletrônico de Informações (SEI), contendo:</p>
+<p class="legal-article">3.8.2.3.1. a declaração formal do interessado de que há cofre ou lugar seguro com tranca em sua</p>
+<p>residência para armazenamento de arma de fogo desmuniciada, garantindo ainda que a arma de fogo não será acessível aos menores de 25 (vinte e cinco) anos de idade ou às pessoas civilmente incapazes que, porventura, residam ou frequentem o local.</p>
+<p class="legal-article">3.8.2.4. as aprovações subsidiárias a que se refere o subitem “3.8.2.3” devem ser proferidas por meio</p>
+<p>das seguintes manifestações:</p>
+<p class="legal-article">3.8.2.4.1. do Oficial de Logística, sobre o interessado atender o limite para aquisição de arma de fogo</p>
+<p>de uso restrito;</p>
+<p class="legal-article">3.8.2.4.2. do Oficial de Administração de Pessoal, sobre a vedação para a aquisição de material bélico</p>
+<p>prevista no inciso I do artigo 23 desta Portaria e, ainda, sobre a habilitação para o uso da arma de fogo específica, conforme as normas da PMESP, providências essas que devem ser adotadas pelo Oficial Secretário da Unidade detentora do AI, caso o interessado seja veterano;</p>
+<p class="legal-article">3.8.2.4.3. do Oficial de Polícia Judiciária Militar e Disciplina, sobre as demais vedações para a</p>
+<p>aquisição de material bélico previstas no artigo 23 desta Portaria.</p>
+<p class="legal-article">3.8.2.5. após toda a documentação ter sido digitalizada, compondo-se em processo único, o Cmt da</p>
+<p>Unidade ou o Cmt da Unidade detentora do AI, por meio da Seção de Logística, encaminhará o pedido de transferência para o Ch CMB, eletronicamente;</p>
+<p class="legal-article">3.8.2.6. o Ch CMB adotará as medidas de saneamento do processo de aquisição, podendo restituir ao</p>
+<p>interessado, via Cmt da Unidade ou Cmt da Unidade detentora do AI, para retificação ou complementação de informação ou, então, para ciência da liberação da compra;</p>
+<p class="legal-article">3.8.2.7. de posse de todas as informações, o CMB providenciará a alteração no cadastro do SIGMA e</p>
+<p>emitirá novo CRAF, com a consequente remessa à Seção de Logística da Unidade do interessado, para retirada, pessoalmente;</p>
+<p class="legal-article">3.8.2.8. após conferir todos os dados, o Cmt da Unidade ou o Cmt da Unidade detentora do AI</p>
+<p>providenciará a publicação em Boletim Interno Reservado (Bol Int Res) e entregará o CRAF ao policial militar interessado;</p>
+<p class="legal-article">3.8.2.9. concluída a transferência de propriedade da arma de fogo, o objeto poderá ser captado pelo</p>
+<p>adquirente e o CRAF vinculado ao cadastro anterior deverá ser destruído pelo antigo proprietário. (NR)</p>
+<p class="legal-article">Artigo 3º - Ficam alterados os modelos de formulários constantes dos Apêndices “A”, “C”, “D” e “E” e acrescidos os Apêndices “A-1” e “P”, todos do Anexo IV da Portaria do Cmt G PM4-1/1.2/24, de 16JUL24, que também recebeu as devidas adequações na sua redação, na forma dos anexos desta Portaria.</p>
+<p class="legal-article">Artigo 4º - Estas alterações entram em vigor na data de sua publicação.</p>
+<h2 class="section-heading">(NOTA PM4-3/1.2/24)</h2>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações da material bélico nesta página.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais da material bélico (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos desta página</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações desta página são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+
+<div class="material-picker-backdrop" id="material-picker-modal" role="dialog" aria-modal="true" aria-labelledby="material-picker-title">
+ <div class="material-picker">
+  <div class="material-picker-head"><h2 id="material-picker-title">Materiais de apoio — Propriedade e Porte de Material Bélico</h2></div>
+  <div class="material-picker-list">
+   <a class="material-option" href="#document" id="material-option-norma">Texto transcrito — nesta página <span>↓</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1rSZywVqW2YiVbAPEg09np9UPsIqPiLrs/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo 1 para revisão <span>↗</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1uCaltCoW1PRLwk7I5nvFCyYS7460B7-6/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo 2 <span>↗</span></a>
+  </div>
+  <div class="material-picker-foot"><button class="btn" type="button" id="close-material-picker">Fechar</button></div>
+ </div>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+
+<script>
+(() => {
+ const modal=document.getElementById('material-picker-modal');
+ const open=document.getElementById('open-material-picker');
+ const close=document.getElementById('close-material-picker');
+ if(!modal||!open||!close)return;
+ const hide=()=>{modal.classList.remove('open');open.focus();};
+ open.addEventListener('click',()=>modal.classList.add('open'));
+ close.addEventListener('click',hide);
+ const norma=document.getElementById('material-option-norma');
+ norma.addEventListener('click',()=>{modal.classList.remove('open');});
+ modal.addEventListener('click',e=>{if(e.target===modal)hide();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))hide();});
+})();
+</script>
+
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-material-belico-v1';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações da material bélico? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais desta página, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais desta página foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('material-belico-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('material-belico-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('material-belico-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('material-belico-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
