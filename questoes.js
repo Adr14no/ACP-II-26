@@ -18808,7 +18808,757 @@ const BANCO_GERAL_QUESTOES = [
         ],
         "answer": 3,
         "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 11, caput e § 3º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O caput lista os três critérios de competência; o § 3º prevê processo único para envolvidos de mais de uma Unidade, com autoridade comum de cargo superior. Análise dos distratores: A contradiz a regra de processo único; B elimina critérios expressos; C substitui os critérios normativos por antiguidade."
-      }
+      },
+     {
+            "id": 1252,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Critérios do rito",
+            "text": "QUESTÃO 1252 — Qual conjunto corresponde aos critérios expressamente enumerados para o rito?",
+            "options": [
+              "a) Oralidade, simplicidade, informalidade, economia processual e celeridade.",
+              "b) Oralidade, publicidade, hierarquia, eficiência e celeridade.",
+              "c) Legalidade, motivação, eficiência, publicidade e economia financeira.",
+              "d) Informalidade, oficialidade, verdade real, concentração e publicidade."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 34, BOL G PM 211, de 06NOV13. Trecho normativo: “oralidade, simplicidade, informalidade, economia processual e celeridade”. O art. 1º contém exatamente os cinco critérios da alternativa A. B: B acrescenta critérios não enumerados. C: C troca a lista por princípios distintos. D: D apresenta conceitos ausentes da enumeração."
+          },
+          {
+            "id": 1253,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Restituição para complemento",
+            "text": "QUESTÃO 1253 — A comunicação não permite formular Termo Acusatório por falta de clareza. Qual medida pode ser adotada?",
+            "options": [
+              "a) Restituí-la ao signatário para complementar ou esclarecer os fatos em três dias.",
+              "b) Encaminhá-la ao comunicado para alegações finais em cinco dias.",
+              "c) Arquivá-la obrigatoriamente por insuficiência formal.",
+              "d) Instaurar o procedimento e conceder dez dias ao signatário para corrigir o termo."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 2º, I; Assuntos Juridicos-administrativos.pdf, p. PDF 34, BOL G PM 211, de 06NOV13. Trecho normativo: “restituir ... ao seu signatário ... no prazo de 3 (três) dias”. O inciso I permite restituir ao signatário para complementação ou esclarecimento em três dias. B: B confunde manifestação preliminar com alegações finais. C: C transforma uma faculdade em obrigação e ignora a hipótese de ausência de transgressão. D: D cria prazo e sequência não previstos."
+          },
+          {
+            "id": 1254,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Manifestação preliminar",
+            "text": "QUESTÃO 1254 — A autoridade já dispõe de elementos suficientes para formular o Termo Acusatório. Como tratar a manifestação preliminar?",
+            "options": [
+              "a) Pode dispensá-la, registrando essa circunstância no Termo Acusatório.",
+              "b) Deve ouvi-la obrigatoriamente em todos os casos.",
+              "c) Pode dispensá-la sem registrar o motivo no termo.",
+              "d) Deve substituir a manifestação por memoriais escritos em cinco dias."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 2º, II e § 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 34, BOL G PM 211, de 06NOV13. Trecho normativo: “Poderá ser dispensada ... quando ... elementos ... suficientes ... devendo esta circunstância constar do respectivo termo”. O § 1º autoriza a dispensa diante de elementos suficientes e exige registro da circunstância. B: B nega a dispensa expressa. C: C omite o registro obrigatório. D: D cria etapa e prazo estranhos ao dispositivo."
+          },
+          {
+            "id": 1255,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Arquivamento",
+            "text": "QUESTÃO 1255 — A autoridade conclui que não houve transgressão disciplinar. Qual providência é compatível com a Portaria?",
+            "options": [
+              "a) Arquivar a comunicação, motivar a decisão e colher ciência do comunicado.",
+              "b) Arquivar sem motivação, desde que avise o signatário verbalmente.",
+              "c) Instaurar obrigatoriamente o procedimento para justificar a inexistência de transgressão.",
+              "d) Remeter sempre à autoridade superior para que formule acusação."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 2º, III; Assuntos Juridicos-administrativos.pdf, p. PDF 34, BOL G PM 211, de 06NOV13. Trecho normativo: “caso conclua que não houve ... transgressão ... motivar sua decisão e colher a ciência”. O inciso III permite arquivamento nessa hipótese, com motivação e ciência do comunicado. B: B elimina exigências expressas. C: C contraria a possibilidade de arquivamento. D: D cria remessa e formulação acusatória não previstas."
+          },
+          {
+            "id": 1256,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Termo Acusatório",
+            "text": "QUESTÃO 1256 — Qual conteúdo corresponde ao Termo Acusatório descrito no art. 3º?",
+            "options": [
+              "a) Razões de fato e de direito e, se for o caso, até três testemunhas da acusação.",
+              "b) Somente fatos, com cinco testemunhas obrigatórias da acusação.",
+              "c) Razões de direito, sem exposição dos fatos, e até três testemunhas da defesa.",
+              "d) Relatório final e sanção definitiva, com rol ilimitado de testemunhas."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 3º, caput; Assuntos Juridicos-administrativos.pdf, p. PDF 34, BOL G PM 211, de 06NOV13. Trecho normativo: “motivado com as razões de fato e de direito ... até o máximo de 3 ... testemunhas da acusação”. O art. 3º exige razões de fato e de direito e prevê rol eventual de até três testemunhas de acusação. B: B omite razões jurídicas e altera limite/obrigatoriedade. C: C omite razões de fato e troca o tipo de testemunha. D: D antecipa decisão e elimina limite."
+          },
+          {
+            "id": 1257,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Mais de uma OPM",
+            "text": "QUESTÃO 1257 — A mesma transgressão envolve policiais de mais de uma OPM. Qual possibilidade é prevista?",
+            "options": [
+              "a) Procedimento único, instaurado pela autoridade de cargo superior comum aos comandantes, pode ser adotado.",
+              "b) O procedimento deve ser sempre único e instaurado pela OPM onde ocorreu o fato.",
+              "c) Cada OPM deve instaurar procedimento separado, sem aprovação comum.",
+              "d) Somente é possível procedimento único se houver o mesmo comandante imediato."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 3º, § 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 34, BOL G PM 211, de 06NOV13. Trecho normativo: “poderá ser único e instaurado pela autoridade de cargo superior, comum aos respectivos Comandantes”. O § 1º permite procedimento único pela autoridade de cargo superior comum aos comandantes. B: B transforma faculdade em obrigação e inventa critério local. C: C nega a opção de procedimento único. D: D acrescenta condição inexistente."
+          },
+          {
+            "id": 1258,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Procedimentos separados",
+            "text": "QUESTÃO 1258 — Foram instaurados procedimentos separados e as decisões cabem a autoridades disciplinares diversas. Quem deve aprovar o ato?",
+            "options": [
+              "a) A autoridade de maior hierarquia comum aos transgressores.",
+              "b) Cada comandante de OPM, sem aprovação comum.",
+              "c) A autoridade de menor hierarquia entre as envolvidas.",
+              "d) O presidente da instrução, em caráter definitivo."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 3º, § 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 34, BOL G PM 211, de 06NOV13. Trecho normativo: “mais de um Procedimento ... decisão ... autoridades diversas ... aprovação ... autoridade de maior hierarquia, comum”. A hipótese do § 1º exige aprovação pela autoridade de maior hierarquia comum aos transgressores. B: B ignora a regra específica. C: C indica a hierarquia oposta. D: D confunde presidência da instrução com aprovação do ato."
+          },
+          {
+            "id": 1259,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Agente público como testemunha",
+            "text": "QUESTÃO 1259 — A defesa quer ouvir agente público. Qual regra específica se aplica?",
+            "options": [
+              "a) A autoridade policial-militar notifica para sua apresentação, a pedido da defesa.",
+              "b) O acusado deve trazê-lo espontaneamente, sem notificação, como regra universal.",
+              "c) Agentes públicos não podem ser testemunhas no procedimento.",
+              "d) A notificação só pode ser requerida depois da audiência."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 3º, § 2º; Assuntos Juridicos-administrativos.pdf, p. PDF 34, BOL G PM 211, de 06NOV13. Trecho normativo: “exceto quando se tratar de agente público ... notificação para sua apresentação pela autoridade policial militar”. O § 2º excepciona o agente público e prevê notificação para apresentação pela autoridade policial-militar. B: B ignora a exceção. C: C cria impedimento não previsto. D: D contraria a antecedência requerida pelo § 3º."
+          },
+          {
+            "id": 1260,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Requerimento probatório",
+            "text": "QUESTÃO 1260 — A defesa precisa requerer a intimação de testemunha e a juntada de documento da PM a que não tem acesso. Qual antecedência mínima se aplica?",
+            "options": [
+              "a) Quatro dias antes da audiência para ambos os requerimentos.",
+              "b) Três dias antes para a testemunha e dez dias para o documento.",
+              "c) No início da audiência, sem antecedência mínima.",
+              "d) Cinco dias após a audiência."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 3º, § 3º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “prazo mínimo de 4 (quatro) dias ... intimação de testemunha ... juntada de documento oriundo da Polícia Militar”. O § 3º estende a antecedência mínima de quatro dias aos dois requerimentos. B: B cria prazos diferentes. C: C elimina a antecedência. D: D situa o requerimento depois da audiência."
+          },
+          {
+            "id": 1261,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Citação e termo",
+            "text": "QUESTÃO 1261 — O que deve acompanhar a citação do policial militar comunicado como transgressor?",
+            "options": [
+              "a) Cópia do Termo Acusatório, prazos e disposições dos §§ 2º a 4º e advertência sobre prova testemunhal e razões de defesa.",
+              "b) Somente a comunicação disciplinar, sem informação sobre testemunhas.",
+              "c) A decisão final e a sanção já definida, sem cópia do Termo Acusatório.",
+              "d) Apenas data e local da audiência, com orientações orais posteriores."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 3º, § 5º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “citação ... acompanhada de cópia do termo acusatório ... prazos e disposições dos § 2º ao 4º”. O § 5º lista a cópia do Termo Acusatório, informações dos §§ 2º a 4º e advertência específica. B: B omite elementos exigidos. C: C antecipa sanção e omite termo. D: D posterga informações que devem constar da citação."
+          },
+          {
+            "id": 1262,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Prorrogação excepcional da audiência",
+            "text": "QUESTÃO 1262 — É necessária audiência em prazo superior ao ordinário. Qual autoridade pode autorizar a extensão e em que condições?",
+            "options": [
+              "a) Comandante de Unidade de nível Batalhão ou superior, mediante requerimento motivado do presidente.",
+              "b) O presidente, por decisão verbal sem justificativa.",
+              "c) Qualquer oficial, sem requerimento, se houver muitas testemunhas.",
+              "d) O acusado, mediante pedido fundamentado."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 3º, § 6º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “requerimento ... devidamente motivado ... Comandante ... nível de Batalhão ... ou superior poderá autorizar”. O § 6º exige requerimento motivado do presidente e autorização do comandante de Unidade de nível Batalhão ou superior. B: B atribui a decisão ao presidente e dispensa motivação. C: C reduz a autoridade e elimina o requerimento. D: D atribui poder de autorização à defesa."
+          },
+          {
+            "id": 1263,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Intimação de atos posteriores",
+            "text": "QUESTÃO 1263 — Após a citação e agendamento simultâneo, como deve ser feita a intimação para outros atos instrutórios?",
+            "options": [
+              "a) Por registro no próprio termo de audiência ou publicação em Diário Oficial.",
+              "b) Exclusivamente por carta precatória.",
+              "c) Somente por nova citação pessoal em todos os atos.",
+              "d) Por comunicação verbal sem registro."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 3º, § 7º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “registro no próprio termo de audiência ou publicação em Diário Oficial”. O § 7º prevê registro no termo de audiência ou publicação em Diário Oficial. B: B confunde intimação com carta precatória. C: C impõe nova citação em todos os atos. D: D elimina as formas expressamente previstas."
+          },
+          {
+            "id": 1264,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Ordem da audiência",
+            "text": "QUESTÃO 1264 — Qual sequência corresponde ao início da audiência?",
+            "options": [
+              "a) Leitura do Termo Acusatório, juntada de documentos e oitiva das testemunhas da acusação, seguidas pelas da defesa.",
+              "b) Interrogatório, decisão, leitura do Termo Acusatório e testemunhas.",
+              "c) Testemunhas da defesa, alegações finais e depois testemunhas da acusação.",
+              "d) Decisão preliminar, citação e juntada de documentos."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, caput; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “leitura do Termo Acusatório ... documentos ... testemunhas ... acusação ... defesa”. O art. 4º estabelece a leitura, a juntada documental e a oitiva sucessiva da acusação e defesa. B: B antecipa interrogatório e decisão. C: C inverte a ordem e antecipa alegações. D: D inclui etapas estranhas ao início da audiência."
+          },
+          {
+            "id": 1265,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Qualificação da testemunha",
+            "text": "QUESTÃO 1265 — Qual dado integra a qualificação prevista para a testemunha?",
+            "options": [
+              "a) Profissão e lugar onde exerce sua atividade.",
+              "b) Opinião sobre a sanção adequada.",
+              "c) Histórico disciplinar integral do acusado.",
+              "d) Proposta de enquadramento jurídico."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 2º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “nome, idade, estado e residência, profissão, lugar ... atividade, parentesco ou relações”. O § 2º inclui profissão e local de atividade entre os dados declarados pela testemunha. B: B e D não são dados de qualificação. C: C não consta da enumeração normativa. D: Não corresponde ao comando e não encontra suporte no dispositivo citado."
+          },
+          {
+            "id": 1266,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Forma do depoimento",
+            "text": "QUESTÃO 1266 — A testemunha comparece com relato integral escrito. Qual regra deve ser aplicada?",
+            "options": [
+              "a) O depoimento é oral; não se permite trazê-lo por escrito, mas é permitida breve consulta a apontamentos.",
+              "b) O relato escrito pode substituir o depoimento oral se assinado.",
+              "c) É proibida qualquer consulta a apontamentos.",
+              "d) A testemunha pode ler integralmente o texto se a defesa concordar."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 3º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “prestado oralmente ... não sendo permitido ... trazê-lo por escrito ... breve consulta a apontamentos”. O § 3º exige depoimento oral, veda trazê-lo por escrito e permite consulta breve a apontamentos. B: B e D autorizam o relato escrito vedado. C: C proíbe consulta que o dispositivo permite. D: Não corresponde ao comando e não encontra suporte no dispositivo citado."
+          },
+          {
+            "id": 1267,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Perguntas vedadas",
+            "text": "QUESTÃO 1267 — Qual pergunta não deve ser admitida nos termos do § 5º?",
+            "options": [
+              "a) A que induza a resposta ou não tenha relação com a causa.",
+              "b) A que esclareça a razão de ciência da testemunha.",
+              "c) A formulada diretamente pelo acusado ou defensor.",
+              "d) A relativa a fato relevante para a defesa."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 5º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “não se admitindo ... induzir a resposta, não tiverem relação com a causa ou ... repetição”. O § 5º veda perguntas indutivas, sem relação com a causa e repetitivas, entre outras limitações expressas. B: B busca esclarecimento admitido. C: C é forma autorizada de perguntar. D: D trata de questão pertinente à defesa."
+          },
+          {
+            "id": 1268,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Contradita",
+            "text": "QUESTÃO 1268 — Antes do depoimento, a defesa aponta possível parcialidade da testemunha. Qual providência é correta?",
+            "options": [
+              "a) Registrar a contradita ou arguição e a resposta da testemunha, observando as hipóteses normativas de exclusão ou não compromisso.",
+              "b) Excluir automaticamente a testemunha a pedido da defesa.",
+              "c) Permitir contradita apenas depois do interrogatório.",
+              "d) Ignorar a arguição porque a testemunha já foi arrolada."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 6º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “Antes de iniciado o depoimento ... contraditar ... fará consignar a contradita ... e a resposta”. O § 6º permite contradita prévia e exige registro da arguição e da resposta, sem exclusão automática. B: B torna a exclusão automática. C: C altera o momento. D: D nega faculdade expressa."
+          },
+          {
+            "id": 1269,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Hipóteses familiares",
+            "text": "QUESTÃO 1269 — Qual relação é expressamente mencionada no § 6º entre as hipóteses de exclusão ou não deferimento de compromisso?",
+            "options": [
+              "a) Irmão.",
+              "b) Primo, independentemente de outras circunstâncias.",
+              "c) Colega de serviço, pelo vínculo profissional apenas.",
+              "d) Testemunha indicada pela defesa."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 6º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “ascendente ou descendente, afim em linha reta, cônjuge ... e irmão”. O irmão é expressamente citado no dispositivo. B: Primo não consta da lista. C: vínculo profissional isolado não é hipótese listada. D: a origem defensiva da testemunha não é causa de exclusão."
+          },
+          {
+            "id": 1270,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Resumo do depoimento",
+            "text": "QUESTÃO 1270 — Como devem ser registrados os depoimentos no termo?",
+            "options": [
+              "a) Resumo de fatos objetivos relacionados à acusação ou relevantes à defesa, com possibilidade de ressalvas.",
+              "b) Transcrição integral obrigatória de cada palavra.",
+              "c) Somente fatos favoráveis à acusação.",
+              "d) Documento apartado, sem registro no termo."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 7º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “reduzidos resumidamente ... somente fatos objetivos ... acusação ou relevância à defesa”. O § 7º exige resumo objetivo no termo e permite ressalvas da defesa. B: B contraria o registro resumido. C: C exclui fatos relevantes à defesa. D: D contraria a inserção no termo."
+          },
+          {
+            "id": 1271,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Acareação",
+            "text": "QUESTÃO 1271 — Quando é admitida acareação?",
+            "options": [
+              "a) Quando as pessoas indicadas no dispositivo divergem sobre fatos ou circunstâncias relevantes.",
+              "b) Sempre que houver discordância sobre a sanção, sem divergência factual.",
+              "c) Somente entre duas testemunhas de acusação sobre fatos secundários.",
+              "d) Somente depois da decisão final."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 8º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “sempre que divergirem ... sobre fatos ou circunstâncias relevantes”. O § 8º vincula a acareação a divergências relevantes nas declarações entre as pessoas enumeradas. B: B troca divergência factual por discordância jurídica. C: C restringe sujeitos e altera relevância. D: D desloca ato instrutório para depois da decisão."
+          },
+          {
+            "id": 1272,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Defesa pessoal",
+            "text": "QUESTÃO 1272 — O acusado comparece sem advogado e decide defender-se pessoalmente. Qual conclusão é correta?",
+            "options": [
+              "a) A falta de advogado, isoladamente, não ofende os direitos constitucionais; a ausência injustificada de acusado e defensor em ato instrutório leva à nomeação de defensor ad hoc.",
+              "b) A audiência deve ser suspensa sempre que não houver advogado.",
+              "c) Defensor ad hoc deve ser nomeado sempre que o acusado comparecer sem advogado, mesmo presente.",
+              "d) A ausência de advogado equivale à confissão."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 5º, § 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “falta de defesa técnica por advogado não ofende ... ausência injustificada de ambos ... defensor ad hoc”. O § 1º admite defesa pessoal e reserva defensor ad hoc à ausência injustificada de ambos em ato instrutório. B: B torna advogado obrigatório. C: C ignora a condição de ausência de ambos. D: D cria confissão sem base."
+          },
+          {
+            "id": 1273,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Defensor ad hoc",
+            "text": "QUESTÃO 1273 — Quem pode ser nomeado defensor ad hoc?",
+            "options": [
+              "a) Oficial, Praça Especial, Subtenente ou Sargento, observada a hierarquia.",
+              "b) Qualquer policial militar, independentemente de hierarquia.",
+              "c) Somente advogado inscrito na OAB.",
+              "d) Exclusivamente oficial de posto superior ao da autoridade."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 5º, § 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “Oficial, Praça Especial, Subtenente ou Sargento, observadas as regras de hierarquia”. O dispositivo lista as categorias e exige observância da hierarquia. B: B amplia o rol. C: C exclui as categorias militares expressas. D: D acrescenta requisito de posto superior não indicado."
+          },
+          {
+            "id": 1274,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Carta precatória",
+            "text": "QUESTÃO 1274 — A testemunha será ouvida por carta precatória. Qual garantia deve anteceder o ato?",
+            "options": [
+              "a) Intimar a defesa para formular perguntas e notificá-la da data, hora e local do depoimento, resguardando comparecimento.",
+              "b) Expedir a carta sem prévia intimação e informar depois o resultado.",
+              "c) Permitir perguntas somente após o retorno da carta.",
+              "d) Notificar apenas o acusado, sem o defensor."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 5º, § 2º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “intimação da defesa para formular perguntas ... notificar data, hora e local”. O § 2º exige participação prévia da defesa e notificação do ato para resguardar comparecimento. B: B e C retiram a participação prévia. C: D exclui o defensor expressamente abrangido. D: Não corresponde ao comando e não encontra suporte no dispositivo citado."
+          },
+          {
+            "id": 1275,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Pluralidade de acusados",
+            "text": "QUESTÃO 1275 — Havendo mais de um acusado, como se realiza o interrogatório?",
+            "options": [
+              "a) Separadamente.",
+              "b) Conjuntamente.",
+              "c) Somente por escrito.",
+              "d) Após a decisão final."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 5º, § 4º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “Havendo mais de um acusado, serão interrogados separadamente”. O § 4º determina interrogatórios separados. B: B contraria a regra. C: C cria forma escrita não prevista. D: D inverte a sequência procedimental."
+          },
+          {
+            "id": 1276,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Fatos novos",
+            "text": "QUESTÃO 1276 — A nova tipificação se baseia em fatos novos, e a autoridade competente preside a audiência. Qual providência é prevista?",
+            "options": [
+              "a) Aditar o Termo Acusatório na própria audiência, podendo arrolar até três testemunhas adicionais de acusação, e designar nova audiência, com possibilidade de outras três de defesa.",
+              "b) Alterar apenas a capitulação ao final, sem aditamento ou nova audiência.",
+              "c) Aditar fora da audiência e limitar a defesa a uma testemunha adicional.",
+              "d) Remeter à autoridade superior sem reabrir a instrução."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 6º, parágrafo único; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “aditará ... na própria audiência ... até outras 3 testemunhas ... designará nova audiência”. O parágrafo único exige aditamento, prevê até três testemunhas adicionais de acusação e nova audiência, permitindo até três de defesa. B: B omite garantias procedimentais. C: C altera momento e limite sem base. D: D substitui o rito por remessa não prevista."
+          },
+          {
+            "id": 1277,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Memoriais",
+            "text": "QUESTÃO 1277 — A complexidade do caso recomenda memoriais. Quais requisitos constam do § 2º?",
+            "options": [
+              "a) Decisão motivada na ata e prazo simultâneo de cinco dias para as partes.",
+              "b) Pedido conjunto das partes e dez dias sucessivos para cada uma.",
+              "c) Autorização do Comandante-Geral e prazo só para a defesa.",
+              "d) Concessão automática, sem motivação, sempre que houver pluralidade de acusados."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 7º, § 2º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “complexidade ... e/ou número de acusados ... decisão motivada na ata ... 5 dias, simultaneamente”. O § 2º prevê decisão motivada na ata e prazo simultâneo de cinco dias. B: B inventa pedido conjunto e prazo sucessivo. C: C cria autoridade e prazo não previstos. D: D elimina a motivação e automatiza a faculdade."
+          },
+          {
+            "id": 1278,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Decisão após memoriais",
+            "text": "QUESTÃO 1278 — Concedidos memoriais, qual é o prazo para a autoridade decidir e de quando começa a contagem?",
+            "options": [
+              "a) Cinco dias contados da juntada do último memorial de defesa.",
+              "b) Cinco dias contados da decisão que concedeu memoriais.",
+              "c) Dez dias contados do primeiro memorial de acusação.",
+              "d) Três dias contados do encerramento da audiência."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 7º, § 2º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “prazo de 05 (cinco) dias, a contar da juntada do último dos memoriais de defesa”. O § 2º fixa cinco dias a partir da juntada do último memorial de defesa. B: B usa marco não indicado. C: C usa memorial de acusação e prazo errado. D: D usa etapa e prazo estranhos à regra."
+          },
+          {
+            "id": 1279,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Justificação ou sanção",
+            "text": "QUESTÃO 1279 — No julgamento, qual alternativa corresponde ao art. 8º?",
+            "options": [
+              "a) Justificar a conduta se reconhecida causa do art. 34 do RDPM ou aplicar sanção dentro dos limites de competência.",
+              "b) Aplicar sanção em todos os casos, mesmo reconhecida causa justificante.",
+              "c) Justificar somente após aprovação do Comandante de Unidade.",
+              "d) Aplicar sanção acima da competência se a gravidade for elevada."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 8º, caput; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “justificará ... causas ... art. 34 ou aplicará sanção ... nos limites de sua competência”. O art. 8º prevê justificação ou sanção nos limites de competência. B: B elimina justificação. C: C cria condição temporal. D: D viola o limite de competência."
+          },
+          {
+            "id": 1280,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Termo único",
+            "text": "QUESTÃO 1280 — Qual conteúdo deve constar do termo único da audiência?",
+            "options": [
+              "a) Resumo dos depoimentos e razões de defesa, incidentes e decisão motivada, com as assinaturas previstas.",
+              "b) Transcrição integral obrigatória, sem incidentes ou motivação.",
+              "c) Somente decisão final, com depoimentos em documento separado.",
+              "d) Resumo da acusação, sem razões de defesa."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 9º, caput; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “único termo ... resumo dos depoimentos e razões de defesa ... incidentes ... decisão ... motivada”. O art. 9º enumera esses elementos e exige decisão motivada. B: B impõe transcrição e omite itens. C: C exclui elementos do termo único. D: D elimina razões de defesa e motivação."
+          },
+          {
+            "id": 1281,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Conclusão do instrutor delegado",
+            "text": "QUESTÃO 1281 — O militar designado para instrução conclui pela procedência da imputação. Qual é o efeito dessa conclusão?",
+            "options": [
+              "a) É meramente opinativa; a autoridade competente mantém a responsabilidade pela decisão.",
+              "b) Vincula a autoridade instauradora.",
+              "c) Substitui a decisão final e dispensa aprovação.",
+              "d) Não deve ser registrada no termo."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 9º, § 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “conclusão ... procedência ou não ... será meramente opinativa”. O § 1º qualifica a conclusão do designado como meramente opinativa e exige sua consignação. B: B atribui força vinculante. C: C confunde conclusão e decisão. D: D contraria a obrigação de registro."
+          },
+          {
+            "id": 1282,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Nulidade",
+            "text": "QUESTÃO 1282 — É apontada irregularidade formal sem demonstração de prejuízo à defesa ou à Administração. Qual critério deve orientar a nulidade?",
+            "options": [
+              "a) A nulidade somente é declarada com demonstração efetiva de prejuízo à defesa ou à Administração.",
+              "b) Toda irregularidade formal gera nulidade automaticamente.",
+              "c) Somente prejuízo patrimonial à Administração autoriza nulidade.",
+              "d) A nulidade nunca pode ser examinada durante o procedimento."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 9º, § 3º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “nulidade ... somente ... se houver efetiva demonstração de prejuízo à defesa ou à Administração”. O § 3º exige demonstração efetiva de prejuízo à defesa ou à Administração. B: B elimina requisito. C: C restringe o prejuízo e exclui defesa. D: D contraria a resolução de incidentes de plano."
+          },
+          {
+            "id": 1283,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Incidentes",
+            "text": "QUESTÃO 1283 — Como devem ser resolvidos incidentes no procedimento?",
+            "options": [
+              "a) De plano, com registro nos autos.",
+              "b) Somente após decisão judicial definitiva.",
+              "c) Apenas na decisão final, sem registro.",
+              "d) Sempre pelo Comandante-Geral."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 9º, § 3º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “qualquer incidente ser resolvido de plano, com registro nos autos”. O § 3º prevê resolução de plano e registro nos autos. B: B cria condição judicial. C: C posterga e omite registro. D: D cria remessa universal sem base."
+          },
+          {
+            "id": 1284,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Registro eletrônico",
+            "text": "QUESTÃO 1284 — O procedimento foi gravado em áudio e vídeo. Qual exigência permanece?",
+            "options": [
+              "a) Lavrar o termo de audiência; o registro eletrônico não o dispensa.",
+              "b) A gravação substitui integralmente o termo.",
+              "c) Só é válido se houver transcrição integral e dispensa do termo.",
+              "d) Meios eletrônicos são proibidos."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 13; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “uso de meios eletrônicos ... não sendo dispensado ... termo de audiência”. O art. 13 autoriza meios eletrônicos, mas mantém o termo de audiência. B: B e C contradizem a ressalva expressa. C: D nega a autorização normativa. D: Não corresponde ao comando e não encontra suporte no dispositivo citado."
+          },
+          {
+            "id": 1285,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Numeração",
+            "text": "QUESTÃO 1285 — Qual padrão de numeração é exigido?",
+            "options": [
+              "a) Única no âmbito da OPM de nível Batalhão ou superior, crescente e por ano.",
+              "b) Única estadual e reiniciada mensalmente.",
+              "c) Individual por autoridade e sem reinício anual.",
+              "d) Por acusado, em ordem alfabética."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 14; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “numeração única no âmbito da OPM (nível de Batalhão ou superior), por ordem crescente e por ano”. O art. 14 estabelece âmbito da OPM de nível Batalhão ou superior, ordem crescente e anualidade. B: B altera âmbito e periodicidade. C: C elimina a numeração única por OPM e o ano. D: D cria critério inexistente."
+          },
+          {
+            "id": 1286,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Resposta respeitosa e assinatura do interrogado",
+            "text": "QUESTÃO 1286 — Após o interrogatório, o acusado declara que não assinará a ata. Qual providência é expressamente prevista no § 3º do art. 5º?",
+            "options": [
+              "a) Consignar na ata que o interrogado não pôde ou não quis assinar.",
+              "b) Considerar a recusa como confissão dos fatos imputados.",
+              "c) Encerrar o procedimento sem registrar o interrogatório.",
+              "d) Exigir assinatura por testemunha em substituição, sem anotação da recusa."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 5º, § 3º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “as respostas ... modo respeitoso ... se o interrogado não puder ou não quiser assinar, tal fato será consignado na ata”. O § 3º exige que a resposta seja respeitosa e determina consignar na ata se o interrogado não puder ou não quiser assinar. B: B atribui confissão à recusa de assinatura, efeito não previsto. C: C cria encerramento automático. D: D substitui a anotação expressa por exigência de assinatura testemunhal não estabelecida."
+          },
+          {
+            "id": 1287,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Aplicação subsidiária às testemunhas",
+            "text": "QUESTÃO 1287 — No Procedimento Disciplinar, quais dispositivos processuais são indicados subsidiariamente para as testemunhas, no que couber?",
+            "options": [
+              "a) Arts. 202 a 225 do CPP e arts. 347 a 367 do CPPM.",
+              "b) Arts. 27 a 29 do RDPM e arts. 57 a 58 do RDPM.",
+              "c) Arts. 347 a 367 do CPP e arts. 202 a 225 do CPPM.",
+              "d) Somente os arts. 27 a 29 da LC 893/2001."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 4º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “aplicam-se subsidiariamente às testemunhas ... artigos 202 a 225 ... Código de Processo Penal e ... artigos 347 a 367 ... Código de Processo Penal Militar”. O § 4º do art. 4º remete subsidiariamente às faixas 202–225 do CPP e 347–367 do CPPM, no que couber. B: A alternativa B cita dispositivos do RDPM que não são os intervalos processuais mencionados para testemunhas. C: C troca as faixas entre CPP e CPPM. D: D omite os dois conjuntos expressamente referidos."
+          },
+          {
+            "id": 1288,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Vigência",
+            "text": "QUESTÃO 1288 — Qual prazo de entrada em vigor a Portaria estabeleceu?",
+            "options": [
+              "a) No dia da publicação.",
+              "b) Trinta dias após a publicação.",
+              "c) Quinze dias após a publicação.",
+              "d) Sessenta dias após a publicação."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 17, caput; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “entrará em vigor no prazo de 30 dias após sua publicação”. O caput do art. 17 prevê trinta dias após a publicação. A: A antecipa. C: C reduz. D: D duplica o prazo expresso."
+          },
+          {
+            "id": 1289,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Regra de transição",
+            "text": "QUESTÃO 1289 — Procedimento instaurado antes da entrada em vigor da Portaria nova deve seguir qual rito?",
+            "options": [
+              "a) O rito e a forma da Portaria CORREGPM-004/305/01.",
+              "b) O rito novo desde a publicação, ainda antes da vigência.",
+              "c) O rito escolhido pelo acusado.",
+              "d) O rito do RDPM sem qualquer portaria procedimental."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 17, parágrafo único; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “instaurados antes ... seguirão o rito e a forma ... CORREGPM-004/305/01”. O parágrafo único preserva o rito e a forma da Portaria anterior para procedimentos já instaurados. B: B ignora a regra de transição. C: C cria escolha não prevista. D: D exclui a portaria expressamente indicada."
+          },
+          {
+            "id": 1290,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Advertência à testemunha",
+            "text": "QUESTÃO 1290 — Antes de colher os dados de qualificação e o relato da testemunha, qual advertência a autoridade deve fazer conforme o § 2º do art. 4º?",
+            "options": [
+              "a) Alertá-la sobre as implicações de faltar com a verdade ou omiti-la.",
+              "b) Informá-la de que pode omitir fatos sem consequência se não tiver presenciado todos os acontecimentos.",
+              "c) Adverti-la de que deve concordar com a versão constante do Termo Acusatório.",
+              "d) Informá-la de que seu depoimento será necessariamente escrito."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 2º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “A testemunha, alertada sobre as implicações de faltar com a verdade ou de omiti-la”. O § 2º exige que a testemunha seja alertada sobre as implicações de faltar com a verdade ou omiti-la. B: B autoriza omissão sem apoio na norma. C: C exige concordância com a acusação, o que não está previsto. D: D contradiz a regra de depoimento oral do § 3º."
+          },
+          {
+            "id": 1291,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Memoriais e relatório",
+            "text": "QUESTÃO 1291 — A instrução foi delegada e foram concedidos memoriais. Onde devem ser registradas a síntese da apuração e a conclusão?",
+            "options": [
+              "a) Em Relatório.",
+              "b) Apenas na gravação eletrônica.",
+              "c) Em novo Termo Acusatório.",
+              "d) Em documento assinado somente pelas testemunhas."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 9º, § 2º; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “memoriais ... instrução ... delegada ... síntese da apuração e conclusão ... em Relatório”. O art. 9º, § 2º, prevê Relatório nessa combinação de memoriais e instrução delegada. B: B não satisfaz a forma expressa. C: C confunde relatório com acusação. D: D inventa documento e signatários."
+          },
+          {
+            "id": 1292,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Tempo individual de defesa",
+            "text": "QUESTÃO 1292 — Há três acusados na audiência. Como se aplica o tempo para alegações finais?",
+            "options": [
+              "a) O tempo de defesa é individual para cada acusado.",
+              "b) Os três compartilham um único período de dez minutos.",
+              "c) O tempo é individual apenas se houver defensores diferentes.",
+              "d) A autoridade pode ignorar o caput e fixar qualquer duração."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 7º, § 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “Havendo mais de um acusado, o tempo ... para a defesa de cada um será individual”. O § 1º determina tempo individual para cada acusado. B: B transforma tempo individual em compartilhado. C: C cria condição ausente. D: D elimina o prazo normativo."
+          },
+          {
+            "id": 1293,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Nova tipificação e instrução delegada",
+            "text": "QUESTÃO 1293 — A nova tipificação depende de fatos novos, mas a instrução foi delegada. Qual afirmação é segura conforme a Portaria?",
+            "options": [
+              "a) A regra de aditamento na própria audiência contém ressalva expressa para a instrução delegada.",
+              "b) O instrutor delegado pode sempre aditar e aplicar a decisão final.",
+              "c) A delegação elimina todo direito a testemunhas adicionais.",
+              "d) Nova tipificação fica proibida em qualquer hipótese de delegação."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 6º, parágrafo único, c/c art. 4º, § 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “exceto quando a instrução ocorrer nos moldes do § 1º do artigo 4º”. O parágrafo único do art. 6º excepciona a regra de aditamento na própria audiência quando a instrução é delegada. B: B atribui poderes não descritos. C: C amplia a ressalva para eliminar direitos sem base. D: D cria proibição absoluta não estabelecida."
+          },
+          {
+            "id": 1294,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Ressalvas ao resumo",
+            "text": "QUESTÃO 1294 — A defesa entende que o resumo não refletiu adequadamente um aspecto relevante. Qual faculdade possui?",
+            "options": [
+              "a) Requerer que suas ressalvas sejam consignadas no termo.",
+              "b) Exigir transcrição integral em todos os casos.",
+              "c) Substituir unilateralmente o termo oficial por memorial.",
+              "d) Excluir o depoimento sem contradita."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 7º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “acusado ou defensor constituído requerer a consignação de suas ressalvas”. O § 7º permite requerer a consignação de ressalvas. B: B converte resumo em transcrição obrigatória. C: C atribui substituição unilateral. D: D confunde ressalva com exclusão."
+          },
+          {
+            "id": 1295,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Aprovação versus publicação",
+            "text": "QUESTÃO 1295 — A decisão foi proferida e há recurso próprio com efeito suspensivo cabível. Qual sequência respeita os arts. 10 e 12?",
+            "options": [
+              "a) Submeter o ato à aprovação do Comandante de Unidade e aguardar o marco recursal do art. 12 antes da publicação.",
+              "b) Publicar imediatamente e obter aprovação depois.",
+              "c) Aprovar somente depois da publicação.",
+              "d) Dispensar aprovação se houver recurso com efeito suspensivo."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, arts. 10 e 12; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “aprovação ... pelo Comandante de Unidade; somente após ... situação recursal ... publicado em Boletim”. O art. 10 exige aprovação e o art. 12 condiciona a publicação ao marco recursal; são exigências distintas. B: B antecipa publicação e posterga aprovação. C: C inverte a sequência sem base. D: D inventa dispensa de aprovação."
+          },
+          {
+            "id": 1296,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Efeito da publicação",
+            "text": "QUESTÃO 1296 — Após a publicação em Boletim, qual efeito a Portaria indica?",
+            "options": [
+              "a) O ato passa a gerar efeitos, incluindo cumprimento do corretivo e reflexos secundários.",
+              "b) A publicação é apenas informativa e não produz efeitos.",
+              "c) O corretivo deve ser cumprido antes da publicação.",
+              "d) A publicação reabre automaticamente prazo de defesa."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 12; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “a partir daí, gerar seus efeitos (cumprimento do corretivo e demais reflexos secundários)”. O art. 12 afirma que o ato gera efeitos a partir da publicação. B: B nega efeito expresso. C: C antecipa o efeito. D: D cria reabertura de prazo sem previsão."
+          },
+          {
+            "id": 1297,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Ciência da decadência recursal",
+            "text": "QUESTÃO 1297 — Decorreram os prazos recursais sem recurso. O que deve constar dos autos antes da publicação?",
+            "options": [
+              "a) Ciência da ocorrência da decadência dos prazos recursais.",
+              "b) Novo Termo Acusatório.",
+              "c) Autorização do acusado para publicação.",
+              "d) Declaração de que houve confissão."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 12; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “circunstância ... deve ser cientificada nos autos”. O art. 12 exige ciência nos autos da decadência dos prazos recursais. B: B pertence à fase acusatória. C: C não é exigida. D: D é incompatível com a regra de recurso e silêncio."
+          },
+          {
+            "id": 1298,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Referências para inativo",
+            "text": "QUESTÃO 1298 — Quais boletins são mencionados no art. 15 como referências para a apreciação de notícia envolvendo policial militar inativo?",
+            "options": [
+              "a) Bol G PM 205, de 05NOV09, e 181, de 23SET11.",
+              "b) Bol G PM 211, de 06NOV13, exclusivamente.",
+              "c) Bol G PM 205 e 181, ambos de 2013.",
+              "d) Nenhum boletim; o artigo remete apenas às I-16-PM."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 15; Assuntos Juridicos-administrativos.pdf, p. PDF 34, BOL G PM 211, de 06NOV13. Trecho normativo: “Bol G PM 205, de 05NOV09 e 181, de 23SET11”. O art. 15 menciona expressamente os Boletins Gerais PM 205/2009 e 181/2011. B: B confunde boletim de publicação da Portaria com as referências citadas. C: C altera as datas. D: D omite referências expressas."
+          },
+          {
+            "id": 1299,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Assinaturas do termo",
+            "text": "QUESTÃO 1299 — Quem consta entre os signatários do termo único?",
+            "options": [
+              "a) Autoridade policial-militar, testemunhas, acusado e defensor constituído.",
+              "b) Somente autoridade e acusado.",
+              "c) Signatário da comunicação, Comandante-Geral e testemunhas, sempre.",
+              "d) Somente acusado e defensor."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 9º, caput; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “assinado pela autoridade policial-militar, pelas testemunhas, pelo acusado e por seu defensor constituído”. O caput enumera autoridade, testemunhas, acusado e defensor constituído. B: B e D omitem signatários previstos. C: C substitui pessoas e adiciona exigência universal não prevista. D: Não corresponde ao comando e não encontra suporte no dispositivo citado."
+          },
+          {
+            "id": 1300,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Redesignação excepcional",
+            "text": "QUESTÃO 1300 — A testemunha falta injustificadamente, mas a autoridade entende imprescindível sua oitiva. Qual solução cabe?",
+            "options": [
+              "a) A autoridade pode redesignar de ofício ou a requerimento da defesa, para prazo máximo de cinco dias.",
+              "b) Somente a defesa pode requerer redesignação, sem limite temporal.",
+              "c) A redesignação é vedada em qualquer hipótese.",
+              "d) A audiência deve ser remarcada por prazo mínimo de dez dias."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 3º, § 4º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “de ofício ou a requerimento do acusado ou de seu defensor ... imprescindível ... prazo máximo de 5 dias”. O § 4º admite redesignação de ofício ou a requerimento da defesa quando imprescindível e limita o prazo a cinco dias. B: B restringe iniciativa e elimina limite. C: C nega exceção expressa. D: D troca prazo máximo por mínimo e altera a duração."
+          },
+          {
+            "id": 1301,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Efeito da decisão instrutória delegada",
+            "text": "QUESTÃO 1301 — A instrução foi delegada e o instrutor concluiu pela procedência. Qual alternativa distingue corretamente os atos?",
+            "options": [
+              "a) A conclusão do instrutor é opinativa; a decisão da autoridade instauradora deve ser submetida à aprovação do Comandante de Unidade.",
+              "b) A conclusão do instrutor é vinculante e dispensa aprovação.",
+              "c) A conclusão é a decisão final, desde que assinada pelas testemunhas.",
+              "d) A autoridade instauradora não pode divergir e deve publicar imediatamente."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, arts. 9º, § 1º e 10; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “conclusão ... meramente opinativa; decisão ... submetida à aprovação ... Comandante de Unidade”. O art. 9º, § 1º, qualifica a conclusão como opinativa; o art. 10 exige aprovação da decisão da autoridade instauradora. B: B e C confundem opinião com decisão e eliminam aprovação. C: D cria vinculação e publicação imediata contrárias aos arts. 10 e 12. D: Não corresponde ao comando e não encontra suporte no dispositivo citado."
+          }
 
 ];
 
