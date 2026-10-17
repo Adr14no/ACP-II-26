@@ -13551,6 +13551,2646 @@ const BANCO_SIMULADOS = {
         ],
         "answer": 3,
         "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 405, Anexo B, Indicador 02. Evidência normativa: O indicador de PM capacitados é calculado pela razão entre PM capacitados na ativa e efetivo existente ativo da PMESP, multiplicada por 100; maior valor é mais favorável. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 404, Anexo B, Indicador 01 disciplina indicador de ligações não efetuadas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 396, item 6.7.4 disciplina avaliação prévia do risco operacional, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.4.5 disciplina planejamento das visitas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+           {
+        "id": 901,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Atribuição por RFID e falha de reconhecimento",
+        "text": "QUESTÃO 901 — Na preparação do turno, o policial aproxima o cartão de identificação da doca, mas o sistema não reconhece o RFID. Em outra hipótese, a câmera é retirada da doca sem atribuição correta ao usuário. Considerando o POP 5.28.01, assinale a alternativa correta.",
+        "options": [
+          "A) O cartão RFID pode ser compartilhado entre policiais da mesma US, desde que a atribuição seja registrada no RSO.",
+          "B) Em qualquer das duas hipóteses, a COP apresenta indicador luminoso vermelho e desliga automaticamente após um minuto.",
+          "C) A COP permanece ligada até o fim do turno, mas impede apenas o upload automático dos vídeos.",
+          "D) A falha exige desatribuição manual por meio do botão de gravação, sem indicação visual do equipamento."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01, “Funcionamento do Equipamento”, sequência das ações, itens 1 a 5, p. 2–3 do PDF. O documento determina que o cartão RFID é associado ao usuário e pessoal/exclusivo; se o sistema não reconhecer o cartão ou a COP for retirada da doca sem atribuição correta, haverá indicador vermelho e desligamento automático após 1 minuto. Distratores: A contraria a natureza pessoal e exclusiva do cartão; C substitui o desligamento automático por uma restrição de upload não prevista; D inventa procedimento por botão e nega o indicador expressamente previsto."
+      },
+      {
+        "id": 902,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Fixação e enquadramento da câmera",
+        "text": "QUESTÃO 902 — Antes de iniciar o patrulhamento, o policial fixa a COP na parte superior do tronco, mas percebe que, embarcado na viatura, a câmera fica abaixo da linha do para-brisa. À luz do POP 5.28.01, qual providência corresponde ao padrão de emprego?",
+        "options": [
+          "A) Manter a fixação, pois a exigência de enquadramento acima da linha do para-brisa aplica-se apenas ao policial desembarcado.",
+          "B) Fixar a COP na parte superior do tronco e ajustar o posicionamento para permitir visão acima da linha do para-brisa quando embarcado e enquadramento adequado quando desembarcado.",
+          "C) Transferir a COP para a cintura durante o deslocamento e recolocá-la no tronco ao desembarcar.",
+          "D) Fixar a COP na parte superior do tronco apenas durante gravações manuais, podendo deixá-la em outro ponto quando o acionamento for remoto."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01, “Funcionamento do Equipamento”, sequência das ações, item 6, p. 3–4 do PDF. A câmera deve ser fixada na parte superior do tronco, sobre o colete, com visão acima da linha do para-brisa quando embarcado e enquadramento adequado quando desembarcado. Distratores: A inverte a condição de embarcado/desembarcado; C cria autorização de transporte na cintura; D condiciona a fixação ao modo de acionamento, distinção que o POP não faz."
+      },
+      {
+        "id": 903,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Pronto emprego durante o turno",
+        "text": "QUESTÃO 903 — Durante o turno, a equipe alterna entre atendimento de ocorrência, deslocamento e patrulhamento preventivo. Qual condição operacional da COP deve ser mantida durante todo o período de serviço?",
+        "options": [
+          "A) Permanecer em condição de pronto emprego para gravação remota automática via COPOM, acionamento remoto pela supervisão, proximidade Bluetooth ou acionamento manual, inclusive com possibilidade de reativação automática se a gravação for interrompida manualmente.",
+          "B) Permanecer desligada durante o patrulhamento preventivo e ser ligada somente quando houver despacho formal no SIOPM.",
+          "C) Permanecer em gravação contínua, vedados os acionamentos remotos e a reativação automática.",
+          "D) Ser mantida em condição de pronto emprego apenas para acionamento manual, pois a ativação remota é exclusiva do COPOM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01, “Funcionamento do Equipamento”, sequência das ações, item 7, p. 4 do PDF. O POP exige condição de pronto emprego durante todo o turno e enumera os modos remoto automático, remoto pela supervisão, proximidade Bluetooth e manual, além da reativação automática quando a gravação for interrompida manualmente. Distratores: B restringe indevidamente o funcionamento ao despacho; C cria gravação contínua obrigatória e exclui modos previstos; D elimina acionamentos previstos e atribui exclusividade ao COPOM."
+      },
+      {
+        "id": 904,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Modo velado e botão de pânico",
+        "text": "QUESTÃO 904 — Em missão na qual a emissão luminosa e sonora da câmera pode expor a equipe, o operador considera utilizar o modo velado e, separadamente, acionar o botão de pânico. Conforme o POP da COP Motorola, assinale a alternativa correta.",
+        "options": [
+          "A) O modo velado é acionado pelo botão P0 em dois toques, enquanto o pânico é acionado pelo P1 por três segundos.",
+          "B) O modo velado desativa a gravação audiovisual, e o botão de pânico serve apenas para marcar o vídeo.",
+          "C) O modo velado é acionado pelo P1 por três segundos e deve ser reservado a situações em que luz e som exponham o policial a risco ou a situação tática assim exija; o pânico é acionado com dois cliques no P0 e envia alerta de emergência.",
+          "D) O modo velado deve ser utilizado sempre que houver abordagem, e o botão de pânico interrompe o armazenamento para preservar a bateria."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01, itens sobre modo velado e botão de pânico, p. 6 do PDF. O modo velado é acionado pelo P1 por 3 segundos e seu uso está condicionado à exposição a risco por luz/som ou exigência tática; o botão de pânico é acionado por dois cliques no P0 e envia alerta de emergência, permitindo acompanhamento das cenas e georreferenciamento. Distratores: A troca os botões e suas funções; B confunde modo velado com interrupção da gravação e marcador; D cria uso obrigatório em toda abordagem e atribui ao pânico função de desligamento não prevista."
+      },
+      {
+        "id": 905,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Classificação de vídeos de ocorrência com apoio",
+        "text": "QUESTÃO 905 — Duas US participam da mesma ocorrência e produzem gravações independentes. O policial responsável pelo BOe utiliza uma categoria de fato, mas o policial que prestou apoio pretende classificar seu vídeo em categoria distinta, por ter sido outro operador. Segundo o POP 5.28.02, qual procedimento é correto?",
+        "options": [
+          "A) Cada operador deve classificar segundo sua percepção individual, pois as gravações são arquivos independentes.",
+          "B) O policial em apoio deve buscar as informações para que seus vídeos recebam a mesma classificação aplicada pela patrulha responsável pelo BO, seguindo a coordenação do CGP e/ou CFP.",
+          "C) A classificação do vídeo de apoio cabe exclusivamente à Agência de Inteligência, sem participação dos operadores.",
+          "D) Apenas o vídeo usado como prova no BO precisa ser classificado; os demais podem permanecer sem etiqueta."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.02, “Classificação das Evidências Digitais”, sequência das ações, item 4, p. 10 do PDF. Em ocorrência atendida por outra US, os operadores devem harmonizar a classificação com a adotada pela patrulha responsável pelo BO; CGP e/ou CFP coordenam essa atividade. Distratores: A admite classificação divergente contra o POP; C transfere a atribuição a órgão não indicado; D contraria a regra de que nenhum vídeo deve ficar sem classificação."
+      },
+      {
+        "id": 906,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Registro de evidência no RSO/BOe",
+        "text": "QUESTÃO 906 — A COP é acionada automaticamente por proximidade Bluetooth durante apoio a uma ocorrência. O policial considera que, por não ter iniciado manualmente a gravação, não precisa registrar a existência do arquivo no RSO ou no BOe. À luz do POP 5.28.02, assinale a alternativa correta.",
+        "options": [
+          "A) A evidência só precisa ser registrada se o acionamento tiver sido manual.",
+          "B) O registro é exigido apenas quando o vídeo for encaminhado diretamente à autoridade judiciária.",
+          "C) A gravação acionada por Bluetooth deve ser descartada se o operador não tiver acionado manualmente a câmera.",
+          "D) A existência da evidência digital deve ser registrada no RSO e/ou BOe, inclusive quando a gravação tiver sido acionada automaticamente por proximidade Bluetooth."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.02, “Classificação das Evidências Digitais”, sequência das ações, item 1, p. 9 do PDF. O registro da existência da evidência em RSO e/ou BOe inclui expressamente gravações acionadas automaticamente por Bluetooth. Distratores: A cria exceção por modo de acionamento; B condiciona o registro ao envio judicial, condição ausente; C determina descarte não previsto e incompatível com o dever de classificação."
+      },
+      {
+        "id": 907,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Etiqueta em flagrante e TCO",
+        "text": "QUESTÃO 907 — Ao classificar duas gravações, uma referente a flagrante delito e outra a situação enquadrada como Termo Circunstanciado, o operador deve selecionar quais etiquetas segundo o POP 5.28.02?",
+        "options": [
+          "A) Em ambos os casos, apenas a etiqueta Polícia Administrativa.",
+          "B) Para flagrante, apenas a tag “Flagrante”; para TCO, apenas a etiqueta “Termo Circunstanciado”.",
+          "C) Para flagrante, a etiqueta Polícia Judiciária e também a tag Flagrante; para TCO, a etiqueta Polícia Judiciária e também a etiqueta Termo Circunstanciado.",
+          "D) Para flagrante, Polícia Judiciária e Termo Circunstanciado; para TCO, Polícia Judiciária e Flagrante."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.02, itens 6.14 e 6.15, p. 13 do PDF. O flagrante exige Polícia Judiciária mais tag Flagrante; a situação de TCO exige Polícia Judiciária mais etiqueta Termo Circunstanciado. Distratores: A atribui categoria administrativa; B omite a etiqueta principal Polícia Judiciária; D troca as subetiquetas específicas entre os dois casos."
+      },
+      {
+        "id": 908,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Interrupção da gravação durante ocorrência",
+        "text": "QUESTÃO 908 — Durante o atendimento de fato de interesse policial, a gravação já iniciada é interrompida por falha técnica. Qual conjunto de providências é previsto no POP 5.28.03?",
+        "options": [
+          "A) Reacionar manualmente de imediato, registrar a falha em BOe ou RSO conforme o caso e, se persistir, informar o escalão superior tão breve quanto possível e solicitar substituição da COP.",
+          "B) Aguardar a reativação automática de até um minuto, sem reacionamento manual nem registro, pois o sistema elimina a necessidade de providência do operador.",
+          "C) Encerrar o atendimento e encaminhar a câmera à doca, sem registrar a interrupção para não duplicar a ocorrência.",
+          "D) Informar apenas ao fim do turno, sendo vedado reacionar manualmente para evitar sobreposição de arquivos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.03, “Uso da Câmera Operacional Portátil Motorola”, item 9, p. 17 do PDF; ações corretivas, item 5, p. 19. O POP exige reacionamento manual imediato, registro em BOe ou RSO e comunicação ao escalão superior se a falha persistir, com pedido de substituição. Distratores: B confunde reativação automática do sistema com deveres do operador; C elimina registros obrigatórios; D posterga a comunicação e proíbe reacionamento expressamente exigido."
+      },
+      {
+        "id": 909,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Adaptação excepcional para preservar direitos sensíveis",
+        "text": "QUESTÃO 909 — Durante entrevista, uma vítima pede para não ser filmada. O policial avalia ajustar o enquadramento da COP. Qual procedimento atende ao POP 5.28.03?",
+        "options": [
+          "A) Desligar definitivamente a câmera, pois a solicitação da vítima prevalece automaticamente sobre a coleta de áudio.",
+          "B) Apontar a câmera para outra direção ou superfície neutra, informar previamente que o áudio continuará sendo gravado e justificar a adaptação por declaração registrada em áudio antes do ajuste.",
+          "C) Retirar a câmera sem qualquer registro e interromper também o áudio, desde que a vítima assine autorização.",
+          "D) Manter a imagem da vítima obrigatoriamente no enquadramento, porque não há previsão de adaptação em situação sensível."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.03, itens 12 e 12.1, p. 18 do PDF. O procedimento admite adaptação temporária para preservar direitos sensíveis; no pedido para não filmar, a câmera pode ser voltada para outra direção ou superfície neutra, com informação prévia de que o áudio continuará gravando. A declaração justificadora deve ser registrada em áudio antes do ajuste. Distratores: A cria desligamento definitivo; C elimina áudio e registro justificativo; D ignora a exceção expressa."
+      },
+      {
+        "id": 910,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Áudio bidirecional e cautelas de uso",
+        "text": "QUESTÃO 910 — O COPOM avalia usar áudio bidirecional para transmitir orientação durante atendimento de ocorrência. Qual hipótese é compatível com o POP 5.28.03 e qual cautela deve ser observada?",
+        "options": [
+          "A) A função pode ser usada livremente para substituir a rede-rádio em todas as situações, inclusive durante manuseio de armamento.",
+          "B) A função é exclusiva para comunicação com o policial que esteja fora de serviço, sem possibilidade de falar com terceiros.",
+          "C) A função deve ser acionada sempre que houver entrevista com vítima, pois o ruído remoto não interfere na interação.",
+          "D) A função pode ser usada quando houver impossibilidade momentânea de comunicação convencional ou necessidade urgente de orientação, mas deve-se evitar acioná-la durante ações críticas que exijam atenção plena ou quando o áudio comprometer a segurança."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.03, esclarecimentos, itens 12 e 13.1–13.4, pp. 20–21 do PDF. O áudio bidirecional é restrito a hipóteses como impossibilidade momentânea de rádio, orientação urgente, comunicação urgente com terceiros em situação de risco ou reforço de comandos; o operador deve avaliar o momento e evitar a função durante manuseio de armamento, condução em alta velocidade, disciplina de luz/som, negociações sensíveis ou quando houver risco à segurança. Distratores: A transforma hipótese restrita em substituição universal e ignora cautela expressa; B limita destinatários e finalidade sem base; C contraria a cautela específica para entrevistas e diálogos sensíveis."
+      },
+      {
+        "id": 911,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Âmbito e critério de cabimento",
+        "text": "QUESTÃO 911 — Ao receber comunicação disciplinar, a autoridade avalia se a complexidade do fato exige sindicância ou se a gravidade recomenda Processo Regular. Considerando a Portaria CORREGPM-1/360/13, assinale a alternativa correta sobre o cabimento do Procedimento Disciplinar.",
+        "options": [
+          "A) É destinado a toda transgressão, inclusive às que necessariamente exijam sindicância ou Processo Regular, pois não há limite de complexidade ou gravidade.",
+          "B) Destina-se à apuração de transgressões cuja complexidade não exija sindicância e cuja gravidade não recomende a instauração de Processo Regular, orientando-se por oralidade, simplicidade, informalidade, economia processual e celeridade.",
+          "C) Destina-se exclusivamente a apurar infrações penais de menor potencial ofensivo, sem aplicação do RDPM.",
+          "D) É cabível apenas quando o acusado admite os fatos e renuncia ao contraditório."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Jurídicos-administrativos.pdf, Portaria do Comandante Geral CORREGPM-1/360/13, art. 1º, p. 34 do PDF. O procedimento alcança transgressões cuja complexidade não exija sindicância e cuja gravidade não recomende Processo Regular, sob os princípios expressos no artigo. Distratores: A elimina os limites de cabimento; C confunde transgressão disciplinar com infração penal; D cria condição de confissão/renúncia incompatível com a finalidade do rito."
+      },
+      {
+        "id": 912,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Análise inicial da comunicação disciplinar",
+        "text": "QUESTÃO 912 — A autoridade competente recebe comunicação disciplinar e identifica que os elementos apresentados podem ser insuficientes para formular termo acusatório. À luz da Portaria CORREGPM-1/360/13, qual providência e prazo correspondem à regra inicial?",
+        "options": [
+          "A) Deve julgar imediatamente o mérito em até 48 horas, sem possibilidade de devolver a comunicação para complementação.",
+          "B) Deve instaurar Processo Regular em todos os casos de insuficiência, independentemente de sua natureza.",
+          "C) Deve analisar os fatos no prazo de cinco dias e, se entender insuficientes os requisitos para formulação do Termo Acusatório, poderá adotar uma das providências previstas no art. 2º, inclusive restituir a comunicação ao signatário para complementação.",
+          "D) Deve remeter a comunicação à autoridade judiciária, que decidirá se os dados são suficientes para termo acusatório."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 2º, p. 34 do PDF. A autoridade analisa os fatos em cinco dias e, se faltarem requisitos suficientes para formular termo acusatório, poderá tomar as providências enumeradas, entre elas a restituição ao signatário para complementação. Distratores: A inventa prazo e elimina opções; B transforma insuficiência em causa automática de Processo Regular; D transfere a análise inicial a autoridade judicial sem previsão no artigo."
+      },
+      {
+        "id": 913,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Testemunhas de defesa e prazo mínimo",
+        "text": "QUESTÃO 913 — Em audiência de instrução e julgamento, o acusado pretende levar espontaneamente testemunhas de defesa e requerer a intimação de agente público que não comparecerá espontaneamente. Conforme a Portaria CORREGPM-1/360/13, qual alternativa está correta?",
+        "options": [
+          "A) Pode levar até três testemunhas de defesa independentemente de intimação; se se tratar de agente público cuja apresentação dependa de notificação, o pedido deve ser feito ao menos quatro dias antes da audiência.",
+          "B) Pode levar até cinco testemunhas espontaneamente, mas a intimação de agente público deve ser requerida no próprio momento da audiência.",
+          "C) Pode levar até três testemunhas apenas com autorização prévia da autoridade, e o prazo de quatro dias é contado depois da audiência.",
+          "D) A defesa não pode apresentar testemunhas espontaneamente; todas devem ser intimadas pela Administração com antecedência de dez dias."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 3º, §§ 2º e 3º, pp. 34–35 do PDF. O acusado pode levar, independentemente de intimação, até três testemunhas; para agente público cuja apresentação dependa de notificação, o requerimento deve ocorrer ao menos quatro dias antes. Distratores: B altera o limite e o prazo; C cria autorização prévia e desloca a contagem; D elimina a possibilidade de apresentação espontânea e inventa antecedência de dez dias."
+      },
+      {
+        "id": 914,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Ausência de testemunha de defesa",
+        "text": "QUESTÃO 914 — A testemunha arrolada pela defesa não comparece à audiência sem justificativa. A autoridade considera a hipótese de redesignação. Qual solução corresponde ao art. 3º, § 4º, da Portaria CORREGPM-1/360/13?",
+        "options": [
+          "A) A audiência deve ser redesignada automaticamente por até quinze dias, sem necessidade de avaliação da autoridade.",
+          "B) O não comparecimento sempre implica desistência definitiva da defesa, vedada qualquer redesignação.",
+          "C) A audiência deve ser suspensa por prazo indeterminado até a localização da testemunha.",
+          "D) A ausência injustificada não impõe redesignação; esta poderá ocorrer se a autoridade, de ofício ou a requerimento, considerar a testemunha imprescindível ao devido processo legal, hipótese em que o prazo máximo é de cinco dias."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 3º, § 4º, p. 35 do PDF. A regra afasta redesignação automática e admite exceção se a autoridade considerar a testemunha imprescindível ao devido processo legal; nesse caso, o prazo máximo para redesignação é cinco dias. Distratores: A cria automaticidade e prazo de quinze dias; B transforma a regra em proibição absoluta; C prevê suspensão indeterminada, não contemplada."
+      },
+      {
+        "id": 915,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Preclusão da prova testemunhal",
+        "text": "QUESTÃO 915 — Na citação, o acusado recebe cópia do termo acusatório, mas a comunicação não adverte sobre a consequência de não requerer prova testemunhal. Na audiência, a defesa pretende apresentar pela primeira vez suas razões por escrito. Segundo a Portaria CORREGPM-1/360/13, qual é a regra documental pertinente?",
+        "options": [
+          "A) A citação pode omitir prazos e advertências, pois a defesa sempre poderá apresentar razões por escrito em qualquer momento posterior.",
+          "B) A citação deve conter o termo acusatório, prazos e disposições sobre testemunhas e a advertência de que, não solicitada a produção testemunhal, as razões de defesa devem ser apresentadas impreterivelmente na audiência, por preclusão.",
+          "C) A advertência é exigida somente quando houver mais de um acusado.",
+          "D) A falta de advertência converte automaticamente o procedimento em sindicância, independentemente de prejuízo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 3º, § 5º, p. 35 do PDF. A citação deve vir acompanhada do termo acusatório, informar prazos e regras pertinentes e advertir sobre a apresentação das razões de defesa na audiência quando não for solicitada prova testemunhal, em razão da preclusão. Distratores: A elimina exigências expressas; C inventa condição; D cria consequência automática não prevista, sendo que a nulidade exige demonstração de prejuízo conforme art. 9º, § 3º, p. 36."
+      },
+      {
+        "id": 916,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Delegação da instrução",
+        "text": "QUESTÃO 916 — A autoridade competente não pode presidir a audiência de instrução e julgamento. Qual condição permite delegar a instrução do Procedimento Disciplinar, nos termos da Portaria CORREGPM-1/360/13?",
+        "options": [
+          "A) Delegação verbal a qualquer policial militar, sem registro ou observância da hierarquia.",
+          "B) Delegação obrigatória ao defensor do acusado, que passa a decidir o procedimento.",
+          "C) Delegação por despacho motivado a Oficial, Praça Especial, Subtenente ou Sargento, observadas as regras de hierarquia.",
+          "D) Delegação exclusiva ao Comandante-Geral, sem possibilidade de atuação de autoridade da OPM."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 4º, § 1º, p. 35 do PDF. Diante da impossibilidade de a autoridade competente presidir a audiência, a instrução pode ser delegada por despacho motivado a Oficial, Praça Especial, Subtenente ou Sargento, observada a hierarquia. Distratores: A dispensa motivação e amplia indevidamente os destinatários; B confunde autoridade instrutora com defesa; D restringe a delegação a autoridade não indicada."
+      },
+      {
+        "id": 917,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Nova tipificação baseada em fatos novos",
+        "text": "QUESTÃO 917 — Após o interrogatório, a autoridade entende cabível nova tipificação legal. A alteração se funda em fatos novos, e a instrução não foi delegada. Qual procedimento é previsto na Portaria CORREGPM-1/360/13?",
+        "options": [
+          "A) A autoridade adita o termo acusatório na própria audiência, pode arrolar até três novas testemunhas de acusação, designa nova audiência e permite à defesa apresentar outras três testemunhas.",
+          "B) A autoridade altera a tipificação sem aditar o termo, vedada nova audiência, pois o interrogatório já encerrou a instrução.",
+          "C) A autoridade deve arquivar o procedimento e instaurar novo expediente sem aproveitar os atos anteriores.",
+          "D) A autoridade pode aditar o termo, mas fica proibida de indicar testemunhas adicionais e deve decidir imediatamente."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 6º, parágrafo único, p. 36 do PDF. Quando a nova tipificação se funda em fatos novos, a autoridade adita o termo acusatório na própria audiência, salvo a exceção de instrução delegada; pode arrolar até três testemunhas de acusação, designa nova audiência e admite até três testemunhas adicionais de defesa. Distratores: B elimina o aditamento e nova audiência; C impõe arquivamento não previsto; D omite garantias e altera o rito expresso."
+      },
+      {
+        "id": 918,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Alegações finais e memoriais",
+        "text": "QUESTÃO 918 — Encerrado o interrogatório sem aditamento do Termo Acusatório, a defesa requer prazo para memoriais por considerar o caso complexo. Qual solução encontra respaldo na Portaria CORREGPM-1/360/13?",
+        "options": [
+          "A) A concessão de memoriais é obrigatória em qualquer procedimento, por prazo mínimo de quinze dias.",
+          "B) As alegações finais devem ser sempre escritas, e a autoridade dispõe de trinta dias para decidir.",
+          "C) A defesa oral é limitada a cinco minutos, sem possibilidade de prorrogação ou memoriais.",
+          "D) A regra é a concessão de alegações finais orais por dez minutos, prorrogáveis por mais cinco; excepcionalmente, pela complexidade e/ou número de acusados, a autoridade pode motivar na ata prazo simultâneo de cinco dias para memoriais, decidindo em cinco dias após a juntada do último memorial."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 7º e § 2º, p. 36 do PDF. A regra é alegação final oral por 10 minutos, prorrogáveis por 5; em caráter excepcional, por complexidade e/ou número de acusados, podem ser concedidos cinco dias simultâneos para memoriais, com decisão em cinco dias após a juntada do último. Distratores: A transforma exceção em regra e altera o prazo; B torna a defesa sempre escrita e aplica prazo estranho ao artigo; C altera o tempo e elimina a exceção."
+      },
+      {
+        "id": 919,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Publicação e produção de efeitos",
+        "text": "QUESTÃO 919 — A autoridade proferiu decisão punitiva, mas ainda há recurso próprio com efeito suspensivo pendente. Quando a decisão poderá ser publicada em Boletim para produzir os efeitos indicados na Portaria CORREGPM-1/360/13?",
+        "options": [
+          "A) Imediatamente após a assinatura da decisão, mesmo que haja recurso com efeito suspensivo.",
+          "B) Somente após decisão da qual não caiba mais recurso próprio, ou após decadência dos prazos recursais, com a circunstância certificada nos autos.",
+          "C) Após a oitiva da última testemunha, antes do interrogatório do acusado.",
+          "D) Após a comunicação verbal ao acusado, independentemente do estado dos recursos."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 12, p. 37 do PDF. A publicação do ato punitivo ou de justificação só ocorre após decisão irrecorrível ou após decadência dos prazos recursais, observados os arts. 57 e 58 do RDPM e com certificação nos autos. Distratores: A ignora recurso com efeito suspensivo; C antecipa a publicação para fase anterior à decisão; D substitui condição recursal e certificação por comunicação verbal."
+      },
+      {
+        "id": 920,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Afastamento regulamentar e contagem dos prazos",
+        "text": "QUESTÃO 920 — O acusado entra em afastamento regulamentar durante o Procedimento Disciplinar. A autoridade precisa registrar o efeito sobre os prazos e distingui-lo da regra geral do RDPM. Qual alternativa é correta?",
+        "options": [
+          "A) A Portaria determina suspensão dos prazos, retomando-se a contagem a partir da reapresentação; o art. 29, § 2º, do RDPM utiliza a expressão “interrompidos”, também com reinício a partir da reapresentação.",
+          "B) A Portaria determina interrupção com reinício apenas após nova citação, enquanto o RDPM determina suspensão sem retomada automática.",
+          "C) Ambos os diplomas determinam que os prazos continuam correndo durante o afastamento.",
+          "D) A Portaria extingue os prazos já iniciados e obriga a instauração de novo procedimento na reapresentação."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 11, p. 37 do PDF, e RDPM, art. 29, § 2º, p. 89. A Portaria emprega “suspensos”; o RDPM usa “interrompidos”; ambos preveem retomada da contagem a partir da reapresentação. Distratores: B troca os efeitos e adiciona nova citação; C contraria ambos os textos; D cria extinção e instauração obrigatória sem fundamento."
+      },
+      {
+        "id": 921,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Prioridade e continuidade do Programa",
+        "text": "QUESTÃO 921 — Em uma OPM Territorial, o comando pretende reduzir temporariamente o emprego da Radiopatrulha para reforçar programas complementares. À luz da Diretriz nº PM3-002/02/20, assinale a alternativa correta.",
+        "options": [
+          "A) A Radiopatrulha é um programa complementar, podendo ser suspensa se houver demanda de policiamento escolar.",
+          "B) A Radiopatrulha é programa primário, mas sua operação ininterrupta é facultativa nos municípios com menor demanda.",
+          "C) A Radiopatrulha é programa primário, prioritário em relação aos demais programas e atividades operacionais diversas, imprescindível em todos os municípios e deve operar ininterruptamente, 24 horas por dia.",
+          "D) A Radiopatrulha é programa primário apenas nas capitais, cabendo às OPM do interior optar por sua implantação."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-002/02/20, itens 6.1.6, 6.2.1 e 6.2.2, pp. 470–471. A norma classifica Radiopatrulha e Força Tática como programas primários; determina prioridade da RP, sua presença em todos os municípios e operação ininterrupta. Distratores: A reclassifica indevidamente a RP e permite suspensão; B cria exceção por demanda; D restringe territorialmente uma obrigação prevista para todas as OPM Territoriais."
+      },
+      {
+        "id": 922,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Quantidade mínima e supervisão das patrulhas",
+        "text": "QUESTÃO 922 — Uma Companhia PM possui estrutura prevista no QPO e pretende organizar a cobertura ininterrupta de sua Subárea. Qual configuração mínima corresponde à Diretriz do Programa de Radiopatrulha?",
+        "options": [
+          "A) No mínimo três Patrulhas distribuídas na Subárea, compondo um Grupo de Patrulha supervisionado pelo CGP.",
+          "B) No mínimo duas Patrulhas por Subárea, supervisionadas diretamente pelo Coordenador Operacional do Batalhão em qualquer módulo territorial.",
+          "C) Uma Patrulha por Companhia, sem necessidade de composição de Grupo de Patrulha.",
+          "D) Três Patrulhas por município, obrigatoriamente reunidas no mesmo subsetor e supervisionadas pelo CFP."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-002/02/20, item 6.2.3.1, p. 471. Cada Cia PM deve contar com pelo menos três Patrulhas distribuídas na Subárea, compondo um Grupo de Patrulha supervisionado pelo CGP. Distratores: B altera o mínimo e generaliza competência do Coordenador Operacional; C reduz a quantidade e elimina o grupo; D troca a unidade de referência e exige concentração territorial não prevista."
+      },
+      {
+        "id": 923,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Gestão do programa e coordenação por AISP",
+        "text": "QUESTÃO 923 — Em OPM que adotou o Módulo 3 de Configuração Territorial, Patrulhas estão dispostas em AISP. Qual alternativa delimita corretamente a gestão ordinária e a hipótese de coordenação pelo Coord Op Btl?",
+        "options": [
+          "A) O Coord Op Btl gerencia ordinariamente todas as Patrulhas de todas as OPM, independentemente do módulo territorial.",
+          "B) A gestão cabe em regra aos Cmt Cia PM; o Coord Op Btl ou equivalente somente coordenará as Patrulhas dispostas em AISP nas OPM que tenham optado pelo Módulo 3.",
+          "C) A gestão cabe exclusivamente ao CFP, enquanto o Cmt Cia PM exerce apenas controle disciplinar.",
+          "D) A gestão é atribuída ao CGP em todos os módulos, e a coordenação por AISP depende de autorização do COPOM São Paulo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-002/02/20, item 6.2.4, p. 471. A regra geral atribui a gestão aos Cmt Cia PM; o Coord Op Btl somente coordena as Patrulhas dispostas em AISP quando a OPM optou pelo Módulo 3. Distratores: A elimina a condição territorial; C transfere a gestão ao CFP e reduz a função do comandante; D transforma o CGP em gestor universal e cria autorização não prevista."
+      },
+      {
+        "id": 924,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Nível de Resposta 1 e apoio",
+        "text": "QUESTÃO 924 — Uma Patrulha de Radiopatrulha recebe ocorrência cuja gravidade exige apoio de US de outra matriz operacional. Qual conclusão decorre da Diretriz nº PM3-002/02/20?",
+        "options": [
+          "A) A Patrulha deve transferir o atendimento, pois o Nível de Resposta 1 proíbe apoio de outra matriz.",
+          "B) A Patrulha só pode receber apoio de outra Patrulha da mesma Subárea.",
+          "C) O apoio de outra matriz transforma automaticamente a Patrulha em recurso de Nível de Resposta 4.",
+          "D) A Patrulha permanece atuando no Nível de Resposta 1 e pode receber apoio de Patrulhas de qualquer Matriz Operacional quando a natureza, gravidade ou complexidade exigir."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-002/02/20, itens 6.1.5 e 6.2.7, pp. 470–471. O Nível de Resposta 1 abrange recursos locais e apoio de US da Matriz Operacional I, e a regra específica da RP permite apoio de Patrulhas de qualquer Matriz quando a situação o exigir, sem mudar a classificação ordinária da Patrulha RP. Distratores: A converte o nível em proibição; B restringe indevidamente o apoio; C confunde o recebimento de apoio com atuação especializada de Nível 4."
+      },
+      {
+        "id": 925,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Composição da Patrulha e motocicletas",
+        "text": "QUESTÃO 925 — A OPM pretende empregar uma Patrulha em motocicletas e outra em viatura de quatro rodas. Qual combinação corresponde à diretriz?",
+        "options": [
+          "A) Toda Patrulha deve ter três policiais, inclusive quando cada motocicleta é ocupada individualmente.",
+          "B) A Patrulha é composta por dois policiais; o emprego em duas rodas deve constar do Plano Diretor, cada motocicleta é ocupada por um policial e a utilização é preferencialmente entre 06h e 23h.",
+          "C) A motocicleta pode ser ocupada por dois policiais e sua utilização independe do Plano Diretor se houver urgência.",
+          "D) A Patrulha de motocicletas deve atuar exclusivamente entre 23h e 06h, sendo vedada a realocação para viatura de quatro rodas durante o turno."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-002/02/20, itens 6.2.8 e 6.2.9.1–6.2.9.4, pp. 471–472. A Patrulha é composta por dois PM; o uso de duas rodas deve estar previsto no Plano Diretor, cada motocicleta comporta um policial e o emprego é preferencialmente entre 06h e 23h, com possibilidade de realocação conforme serviço, local e clima. Distratores: A altera a composição; C elimina requisito e permite dois ocupantes; D inverte a faixa preferencial e proíbe realocação autorizada."
+      },
+      {
+        "id": 926,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Atualização de composição no SIOPM",
+        "text": "QUESTÃO 926 — Durante o turno, o CFP altera a composição de uma Patrulha e redistribui seu território. Qual providência de registro é exigida pela Diretriz de Radiopatrulha?",
+        "options": [
+          "A) A OPM deve indicar no SIOPM a composição das Patrulhas e seus territórios, atualizando diariamente a cada início de turno ou tão logo ocorram alterações promovidas pelo CFP/CGP ou determinadas por autoridade superior competente.",
+          "B) A composição deve ser atualizada apenas mensalmente, mediante autorização escrita do Cmt Pol.",
+          "C) O registro compete exclusivamente à Seção de Inteligência, e alterações territoriais não exigem atualização.",
+          "D) O SIOPM registra apenas a viatura, não a composição dos policiais nem o território de atuação."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-002/02/20, item 6.2.10, p. 472. A OPM deve indicar no SIOPM composição e território, atualizando diariamente no início do turno ou assim que ocorrerem as alterações previstas. Distratores: B cria periodicidade mensal e autorização; C desloca a responsabilidade e dispensa atualização territorial; D restringe o conteúdo do registro contra o texto."
+      },
+      {
+        "id": 927,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Reunião de patrulhas em casos graves",
+        "text": "QUESTÃO 927 — Em ocorrência grave, o CGP reúne Patrulhas próximas para intervenção direta. Após a atuação local, as equipes permanecem concentradas aguardando nova ordem, embora não haja motivo operacional para isso. Qual regra foi desatendida?",
+        "options": [
+          "A) As Patrulhas reunidas devem permanecer no local até o encerramento formal do turno.",
+          "B) Somente o Cmt Btl pode reunir Patrulhas e apenas para operações planejadas.",
+          "C) Nos casos mais graves, o CGP ou autoridade superior de comando/supervisão pode reunir Patrulhas próximas para intervenção local direta, após a qual elas devem retornar imediatamente aos locais de patrulhamento.",
+          "D) A reunião de Patrulhas só é permitida quando todas pertencem à mesma viatura e ao mesmo subsetor."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-002/02/20, item 6.2.11, p. 472. A norma permite ao CGP ou autoridade superior reunir as Patrulhas mais próximas em casos graves e exige retorno imediato aos locais de patrulhamento após a intervenção. Distratores: A prolonga a concentração sem fundamento; B restringe autoridade e hipótese; D cria condição de identidade de viatura/subsetor não prevista."
+      },
+      {
+        "id": 928,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Emprego matricial em Status de Viatura 3",
+        "text": "QUESTÃO 928 — O comando territorial pretende empregar excepcional e matricialmente Patrulhas de RP em Status de Viatura “3” para ações de prevenção em determinados locais e períodos. Qual condição limita essa possibilidade?",
+        "options": [
+          "A) A medida é proibida para Patrulhas de RP, ainda que haja necessidade de controle de indicadores geocriminais.",
+          "B) A medida depende exclusivamente de ordem do COPOM e não admite emprego de outros programas.",
+          "C) A medida pode ocorrer sem considerar a capacidade de atendimento das demandas próprias da RP.",
+          "D) O Cmt OPM Territorial pode adotar o emprego excepcional e matricial, mas a quantidade de Patrulhas empregadas não pode inviabilizar o atendimento das demandas próprias do Programa RP."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-002/02/20, item 6.2.13 e subitem 6.2.13.1, pp. 472–473. O emprego excepcional/matricial em Status 3 é permitido para controle de indicadores e percepção de segurança, condicionado a não inviabilizar as demandas próprias da RP. Distratores: A converte exceção autorizada em proibição; B atribui competência exclusiva ao COPOM e elimina integração; C omite a condição expressa."
+      },
+      {
+        "id": 929,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Velocidade de patrulhamento e deslocamento emergencial",
+        "text": "QUESTÃO 929 — Durante patrulhamento ordinário, a viatura trafega acima da velocidade compatível com o fluxo; posteriormente, é acionada para deslocamento emergencial. Qual interpretação corresponde à Diretriz de Radiopatrulha?",
+        "options": [
+          "A) A regra de compatibilidade com o fluxo aplica-se ao patrulhamento, com velocidade mínima equivalente à metade da máxima da via; a exceção expressa refere-se à velocidade máxima em deslocamento emergencial.",
+          "B) A velocidade mínima é metade da máxima e a velocidade máxima nunca admite exceção, mesmo em deslocamento emergencial.",
+          "C) A velocidade de patrulhamento é livre, desde que a viatura esteja com sinais luminosos acionados.",
+          "D) A regra de velocidade mínima aplica-se apenas em rodovias, não às vias urbanas."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-002/02/20, item 6.2.14, p. 473. A viatura em patrulhamento deve observar velocidade compatível com o fluxo, tanto máxima (exceto em deslocamento emergencial) quanto mínima (metade da velocidade máxima), sem prejudicar o fluxo. Distratores: B elimina a exceção expressa; C cria autorização geral não prevista; D restringe a regra por tipo de via sem suporte no item."
+      },
+      {
+        "id": 930,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Uso conjunto com outros programas",
+        "text": "QUESTÃO 930 — Para reforçar ações de prevenção, o comandante deseja empregar Patrulhas de outros programas em conjunto com a Radiopatrulha. A Subárea dispõe de apenas uma Patrulha do Programa de Policiamento Escolar. Qual solução é compatível com a diretriz?",
+        "options": [
+          "A) Todas as Patrulhas complementares podem ser empregadas sem restrição, pois a prioridade da RP elimina ressalvas.",
+          "B) Podem ser empregadas Patrulhas de outros programas e atividades diversas, mas não a única Patrulha Escolar disponível na Subárea.",
+          "C) É vedado empregar qualquer Patrulha de outro programa em conjunto com a RP.",
+          "D) Somente Patrulhas do Programa de Força Tática podem ser empregadas conjuntamente, independentemente da disponibilidade da Patrulha Escolar."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-002/02/20, item 6.2.13.2, p. 473. A norma admite emprego conjunto de Patrulhas de outros programas e atividades diversas, mas excepciona o Programa Escolar quando houver apenas uma Patrulha na Subárea. Distratores: A ignora a exceção; C transforma possibilidade em proibição geral; D restringe o emprego à Força Tática sem base no dispositivo."
+      },
+      {
+        "id": 931,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Fatores para implantação do programa",
+        "text": "QUESTÃO 931 — Uma área rural apresenta baixa incidência estatística, mas registra episódios esporádicos de grande notoriedade que afetam a percepção de segurança, além de atividades econômicas potencialmente visadas por criminosos. Como esses fatores se relacionam à implantação do Programa de Policiamento Rural?",
+        "options": [
+          "A) Não justificam considerar o programa, pois somente índices criminais elevados e contínuos podem fundamentar sua implantação.",
+          "B) Justificam o programa apenas se houver atividade extrativista, ficando excluídas atividades turísticas e de criação de animais.",
+          "C) Podem fundamentar a implantação: a diretriz considera comunidades rurais, atividades sociais/econômicas potencialmente visadas ou usadas como refúgio e índices ou ações delituosas, ainda que esporádicas, que afetem a percepção de segurança.",
+          "D) A implantação depende exclusivamente de solicitação formal de associação rural e não considera dados criminais."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-007/02/20, itens 6.2.1.1–6.2.1.3, p. 477. A implantação é orientada, entre outros fatores, pela presença de comunidades rurais, atividades sociais/políticas/econômicas que possam ser focos de criminalidade ou refúgio de infratores e índices ou ações delituosas mesmo esporádicas, se afetarem a percepção de segurança. Distratores: A cria requisito de frequência/volume não previsto; B exclui atividades citadas e limita indevidamente os fatores; D torna exclusiva a solicitação comunitária e elimina dados criminais."
+      },
+      {
+        "id": 932,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Emprego por OPM Territorial e Matriz Operacional",
+        "text": "QUESTÃO 932 — Uma OPM Territorial subordinada ao CPI executa policiamento rural com efetivo especificamente destinado ao programa e também utiliza, em certas ocasiões, US de outros programas. Qual enquadramento é correto?",
+        "options": [
+          "A) Ambas as formas podem ser usadas; a estrutura específica deve constar do Plano Diretor, enquanto o emprego de outros programas ou atividades segue o PPI sem exigir detalhamento, no Plano Diretor, dos recursos envolvidos; ambas integram a Matriz Operacional I e atuam no Nível de Resposta 1.",
+          "B) Apenas a estrutura especificamente destinada ao programa é permitida, e ela integra a Matriz Operacional III no Nível de Resposta 4.",
+          "C) O emprego de outros programas exige sempre detalhamento prévio de cada recurso no Plano Diretor e atuação no Nível de Resposta 4.",
+          "D) As OPM Territoriais não podem executar o Programa de Policiamento Rural, cuja execução cabe exclusivamente ao CPAmb."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-007/02/20, itens 6.3.1.1.1–6.3.1.1.4, p. 477. A diretriz permite recursos específicos consignados no Plano Diretor e também o emprego de outros programas/atividades conforme o PPI, sem detalhamento específico no Plano Diretor; ambas as estruturas integram a Matriz I e atuam no Nível 1. Distratores: B desloca matriz e nível; C impõe detalhamento e nível 4 sem base; D contraria a previsão expressa de atuação das OPM Territoriais."
+      },
+      {
+        "id": 933,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Atuação do CPAmb e CPRv por nível de resposta",
+        "text": "QUESTÃO 933 — No planejamento integrado de policiamento rural, o CPAmb e o CPRv podem atuar preventivamente em seu ambiente de atuação e, excepcionalmente, prestar apoio especializado. Qual alternativa reproduz a distinção normativa?",
+        "options": [
+          "A) CPAmb e CPRv atuam sempre no Nível de Resposta 4, independentemente da natureza da missão.",
+          "B) O CPAmb atua ordinariamente no Nível 4 e excepcionalmente no Nível 1; o CPRv só atua com recursos territoriais.",
+          "C) O CPRv atua ordinariamente no Nível 4 e o CPAmb não pode apoiar US de outras matrizes.",
+          "D) O CPAmb atua ordinariamente no Nível 1 e pode prestar apoio especializado no Nível 4; o CPRv, de forma complementar, também atua ordinariamente no Nível 1 e excepcionalmente no Nível 4 para apoio especializado."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-007/02/20, itens 6.3.1.2.1–6.3.1.2.3 e 6.3.1.3, pp. 477–478. O CPAmb integra Matriz III e atua de modo integrado/compartilhado; ordinariamente no Nível 1, podendo fornecer apoio especializado no Nível 4. O CPRv atua complementarmente às OPM Territoriais e Ambientais, também ordinariamente no Nível 1 e excepcionalmente no Nível 4. Distratores: A elimina a regra ordinária; B inverte os níveis do CPAmb e restringe o CPRv; C inverte os níveis do CPRv e nega possibilidade de apoio do CPAmb."
+      },
+      {
+        "id": 934,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Composição da US e equipamentos",
+        "text": "QUESTÃO 934 — Para compor uma US no ambiente rural, o comandante dispõe de dois policiais e pretende utilizar veículo com tração adequada. Qual alternativa corresponde aos requisitos da Diretriz nº PM3-007/02/20?",
+        "options": [
+          "A) A US deve ter exatamente três policiais, e arma portátil é obrigatória para todos, independentemente de habilitação.",
+          "B) A US deve ter de dois a três policiais; o veículo deve preferencialmente ter altura, suspensão e/ou tração adequadas, e arma portátil pode ser usada se os policiais forem habilitados.",
+          "C) A US pode ter um único policial se houver radiocomunicação compartilhada; a escolha do veículo é irrelevante.",
+          "D) A US deve ter quatro policiais, e o sistema de radiocomunicação deve ser exclusivo de cada OPM para preservar autonomia."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-007/02/20, itens 6.4.1.1–6.4.1.5, p. 478. A US deve ser composta por no mínimo dois e no máximo três PM; veículo preferencialmente adequado ao ambiente rural; arma portátil é facultativa e condicionada à habilitação; radiocomunicação deve ser compartilhada entre as OPM envolvidas. Distratores: A altera o número e torna obrigatória arma facultativa; C admite efetivo abaixo do mínimo e ignora o veículo; D aumenta o efetivo e contraria a integração de comunicações."
+      },
+      {
+        "id": 935,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Responsabilidade gerencial do Programa",
+        "text": "QUESTÃO 935 — Em planejamento conjunto, surge divergência entre o Cmt Cia PM Territorial e o comandante de uma OPM ambiental quanto à responsabilidade gerencial pelo Programa de Policiamento Rural. Qual regra deve orientar a decisão?",
+        "options": [
+          "A) A responsabilidade gerencial sobre o Programa Pol Rr cabe aos Cmt Cia PM Territoriais, sem excluir o planejamento conjunto com as OPM ambientais e rodoviárias.",
+          "B) A responsabilidade gerencial cabe exclusivamente ao CPAmb em todas as áreas rurais, inclusive quanto aos recursos territoriais.",
+          "C) A responsabilidade gerencial cabe ao COPOM/CAD, pois o programa é definido pelo despacho de ocorrências.",
+          "D) A responsabilidade gerencial cabe ao CPRv, ficando os comandantes territoriais limitados à elaboração de estatísticas."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-007/02/20, item 6.4.2, p. 478. A diretriz atribui aos Cmt Cia PM Territorial a responsabilidade gerencial pelo Programa Pol Rr, enquanto outras disposições preveem planejamento integrado e participação das OPM ambientais e rodoviárias. Distratores: B desloca a responsabilidade territorial para o CPAmb; C atribui gestão a órgão de despacho sem base; D transfere a gestão ao CPRv e restringe indevidamente a atuação territorial."
+      },
+      {
+        "id": 936,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Fontes de dados para o PPI rural",
+        "text": "QUESTÃO 936 — Ao elaborar planos de ação para áreas rurais extensas, o comando precisa selecionar as fontes de dados que subsidiarão o planejamento. Qual combinação é prevista na Diretriz nº PM3-007/02/20?",
+        "options": [
+          "A) Apenas boletins de ocorrência encerrados, vedada a utilização de informações comunitárias por risco de subjetividade.",
+          "B) Exclusivamente relatos de lideranças rurais, sem uso de dados georreferenciados ou Sistemas Inteligentes.",
+          "C) Dados georreferenciados obtidos junto aos Sistemas Inteligentes e informações relevantes oriundas das comunidades rurais.",
+          "D) Somente dados agregados estaduais, sem recorte territorial nem CPP das Patrulhas Rurais."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-007/02/20, item 6.4.3.1, p. 478. Para subsidiar os planos de ação, a norma prevê camadas de dados de interesse obtidas de dados georreferenciados junto aos Sistemas Inteligentes e informações relevantes oriundas das comunidades rurais. Distratores: A exclui fonte comunitária; B exclui dados georreferenciados e sistemas; D elimina o recorte territorial e o planejamento por CPP sem fundamento."
+      },
+      {
+        "id": 937,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Planejamento conjunto e CPP",
+        "text": "QUESTÃO 937 — Devido à extensão territorial, Cmt Cia PM Territorial e comandantes até o nível de Pel PM das OPM de Policiamento Ambiental e Rodoviário precisam delimitar espaços de atuação. Qual medida se ajusta à diretriz?",
+        "options": [
+          "A) Cada OPM define seus espaços de forma isolada, evitando reuniões conjuntas e compartilhamento de informação.",
+          "B) Os espaços físicos de atuação devem ser estabelecidos em conjunto pelos comandos indicados, com previsão das áreas de atuação nos Cartões de Prioridade de Patrulhamento das US.",
+          "C) A delimitação compete exclusivamente ao Coord Op PM, sem participação das OPM que atuarão no território.",
+          "D) A área de atuação é definida apenas após cada ocorrência, não devendo constar de CPP."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-007/02/20, item 6.4.3.2 e continuação, pp. 478–479. Em razão das grandes áreas a patrulhar, os comandantes territoriais e os comandantes até nível Pel das OPM Pol Amb e Pol Rv devem estabelecer conjuntamente os espaços físicos de atuação, consignados em CPP. Distratores: A contradiz o planejamento conjunto; C transfere a competência de forma exclusiva; D elimina o planejamento prévio e a previsão nos CPP."
+      },
+      {
+        "id": 938,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Reuniões de Análise Crítica",
+        "text": "QUESTÃO 938 — Na organização do calendário de avaliação do policiamento rural, o comando considera dispensável a presença das OPM ambientais e rodoviárias nas RAC de nível I, pois já encaminham relatórios. O que determina a Diretriz nº PM3-007/02/20?",
+        "options": [
+          "A) A participação é semestral e cabe apenas aos comandantes regionais.",
+          "B) A participação é facultativa e depende de convocação extraordinária do Comandante-Geral.",
+          "C) As OPM ambientais e rodoviárias participam das RAC somente quando houver ocorrência grave no mês.",
+          "D) Ao menos uma vez por mês, os Cmt OPM Pol Amb e Pol Rv devem participar das Reuniões de Análise Crítica — Nível I junto aos Batalhões Territoriais abrangidos por suas circunscrições."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-007/02/20, item 6.4.3.3, p. 479. A norma estabelece participação ao menos mensal dos comandantes das OPM Pol Amb e Pol Rv nas RAC Nível I junto aos Batalhões Territoriais abrangidos. Distratores: A altera periodicidade e destinatários; B transforma dever em faculdade; C cria condição de ocorrência grave não prevista."
+      },
+      {
+        "id": 939,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Medidas mínimas em planos de ação",
+        "text": "QUESTÃO 939 — Na elaboração de planos de ação para Patrulhas Rurais, o estado-maior precisa selecionar medidas que a diretriz expressamente indica para inclusão nos CPP. Qual alternativa contém apenas medidas previstas?",
+        "options": [
+          "A) Bloqueios viários em estradas vicinais e rotas principais; contato com direção de escolas rurais; saturação preventiva em locais de aglomeração; averiguação de estabelecimentos comerciais; contato com comunidades e cadastramento de propriedades rurais.",
+          "B) Apenas bloqueios em rodovias estaduais e operações de trânsito, vedada a atuação junto a escolas rurais.",
+          "C) Exclusivamente fiscalização ambiental e autuação de infrações administrativas, sem contato com comunidades ou cadastramento de propriedades.",
+          "D) Somente ações reativas após despacho, pois bloqueios, saturação e contato comunitário não integram o planejamento rural."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-007/02/20, item 6.4.3.6 e subitens, p. 479. A diretriz prevê, entre as medidas a descrever nos CPP, bloqueios em estradas vicinais e rotas principais, contato com escolas rurais, saturação preventiva em aglomerações, averiguação de comércios, contato com comunidades e cadastramento de propriedades. Distratores: B restringe locais e exclui medida expressa; C reduz o programa a fiscalização ambiental e omite as ações listadas; D contraria o planejamento preventivo descrito."
+      },
+      {
+        "id": 940,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Cadastro de propriedades e atribuições",
+        "text": "QUESTÃO 940 — Para melhorar o despacho de ocorrências em propriedades rurais, uma OPM pretende atualizar o cadastro e disponibilizá-lo ao COPOM/CAD. Qual repartição de atribuições corresponde à Diretriz nº PM3-007/02/20?",
+        "options": [
+          "A) O cadastro compete exclusivamente ao COPOM estadual, e as OPM territoriais apenas solicitam consultas.",
+          "B) O cadastro deve ser elaborado apenas pelas comunidades rurais, sem providências das OPM.",
+          "C) CPC, CPM e CPI devem elaborar e manter atualizado, onde necessário, o cadastro de propriedades rurais e providenciar que COPOM/CAD disponham dessas informações; também devem estudar formas de potencializar o programa com participação comunitária.",
+          "D) CPAmb e CPRv são os únicos responsáveis pelo cadastro, e as reuniões comunitárias são vedadas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-007/02/20, item 6.5.4.1–6.5.4.2, p. 480. CPC, CPM e CPI devem elaborar e atualizar o cadastro onde necessário e assegurar sua disponibilidade ao COPOM/CAD, além de estudar formas de potencializar o programa por identificação de lideranças, reuniões e parcerias. Distratores: A transfere a competência e elimina atuação local; B substitui a atribuição institucional; D desloca a responsabilidade e contraria o estímulo à participação comunitária."
+      },
+      {
+        "id": 941,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Consciência Situacional e Imagem Operacional Comum",
+        "text": "QUESTÃO 941 — Durante operação integrada, o efetivo compartilha uma compreensão comum dos acontecimentos e do ambiente, enquanto o comando utiliza essa compreensão para projetar riscos futuros. À luz da Diretriz nº PM3-001/02/23, qual distinção conceitual é correta?",
+        "options": [
+          "A) Consciência Situacional é necessariamente um produto estatístico mensal; Imagem Operacional Comum é o nome dado ao relatório de inteligência.",
+          "B) Consciência Situacional é a compreensão desenvolvida por uma pessoa sobre o ambiente, delimitada no tempo e espaço, apta a projetar riscos; Imagem Operacional Comum é a compreensão compartilhada entre indivíduos engajados na mesma missão.",
+          "C) Consciência Situacional e Imagem Operacional Comum são sinônimos perfeitos e a diretriz não as distingue.",
+          "D) Imagem Operacional Comum é a percepção individual não compartilhada, enquanto Consciência Situacional só existe quando todas as agências concordam formalmente."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/23, itens 6.1.6 e 6.1.8, pp. 199–200. Consciência Situacional é o conhecimento e compreensão de acontecimentos, circunstâncias e elementos do ambiente, delimitados no tempo e espaço, apto a projetar riscos; a IOC é a compreensão compartilhada entre pessoas engajadas na mesma missão. Distratores: A substitui conceitos por relatório estatístico; C apaga a distinção textual; D inverte o caráter individual e compartilhado e cria requisito de concordância formal."
+      },
+      {
+        "id": 942,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Princípios do Sistema C2",
+        "text": "QUESTÃO 942 — Uma auditoria identifica falha de credibilidade na análise das informações, dificuldade de reconfiguração diante de mudanças no cenário e ausência de canais comuns de comunicação. Qual associação entre princípio e descrição corresponde à Diretriz nº PM3-001/02/23?",
+        "options": [
+          "A) Confiabilidade: credibilidade da qualidade/veracidade das informações; Flexibilidade: adequação da estrutura e dos processos ao cenário; Comunicações integradas: canais e frequências comuns/interconectados sob gerenciamento de um Centro de Operações.",
+          "B) Confiabilidade: capacidade de reconfigurar estruturas; Flexibilidade: credibilidade das informações; Comunicações integradas: sigilo individual sem compartilhamento.",
+          "C) Simplicidade: veracidade das informações; Amplitude: adaptação rápida; Unidade de Comando: uso de canais sem gerenciamento central.",
+          "D) Gestão por processos: canais e frequências comuns; Segurança das informações: simplificação da linguagem; Flexibilidade: seleção e treinamento criteriosos de pessoal."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/23, itens 6.2.2.2–6.2.2.8, p. 201. A alternativa associa corretamente Confiabilidade, Flexibilidade e Comunicações integradas às definições normativas. Distratores: B troca confiabilidade e flexibilidade e nega compartilhamento; C desloca conceitos de simplicidade, amplitude e unidade de comando; D mistura gestão por processos, segurança da informação e flexibilidade com definições de outros princípios."
+      },
+      {
+        "id": 943,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Comando, controle e assessoramento",
+        "text": "QUESTÃO 943 — Em uma estrutura de C2, a autoridade precisa distinguir três atividades essenciais: exercício da autoridade sobre planejamento e execução; regulação da distribuição e emprego dos recursos sob gerenciamento de risco; e coleta/análise de informações para subsidiar decisões. Qual sequência corresponde à diretriz?",
+        "options": [
+          "A) Controle; comando; videopatrulhamento.",
+          "B) Assessoramento; controle; comando.",
+          "C) Comando; controle; assessoramento.",
+          "D) Comando; assessoramento; controle."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/23, itens 6.3.1.1–6.3.1.3, p. 202. Comando é o exercício da autoridade regulamentar sobre planejamento e execução; controle regula a distribuição e emprego de recursos com gerenciamento de risco; assessoramento coleta/análise de dados e cenários para subsidiar decisão. Distratores: A inverte comando e controle e substitui assessoramento por serviço distinto; B começa com assessoramento e inverte as duas outras atividades; D confunde controle e assessoramento."
+      },
+      {
+        "id": 944,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Serviços essenciais obrigatórios",
+        "text": "QUESTÃO 944 — Ao verificar o funcionamento de uma estrutura de C2, o avaliador constata que há monitoramento de rádio e análise de dados, mas não há videopatrulhamento. A estrutura alega que o VPtr é facultativo por depender de imagens próprias da PM. Qual interpretação está correta?",
+        "options": [
+          "A) A alegação procede, pois somente o monitoramento de rádio é obrigatório.",
+          "B) O VPtr é obrigatório apenas para Centros de Comando e Controle em nível de Grande Comando.",
+          "C) O VPtr é serviço essencial apenas quando a operação envolve órgãos externos.",
+          "D) Monitoramento da rede de rádio, análise de dados/informações com ferramentas inteligentes e videopatrulhamento são serviços essenciais obrigatórios para todas as estruturas de C2, podendo o VPtr utilizar ferramentas da PM e/ou disponibilizadas por outros órgãos."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/23, itens 6.3.2.1–6.3.2.4, p. 202. A diretriz define como serviços essenciais obrigatórios monitoramento de rádio, análise de dados com ferramentas inteligentes e VPtr, além de outras atividades implementadas pela autoridade competente; o VPtr pode usar ferramentas da PM ou de outros órgãos. Distratores: A elimina dois serviços obrigatórios; B restringe a obrigação ao CC2; C cria condição de operação interagências inexistente."
+      },
+      {
+        "id": 945,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Competência para implementação de estruturas",
+        "text": "QUESTÃO 945 — Uma região pretende implementar um Centro de Comando e Controle (CC2) e uma Sala de Operações em OPM subordinada. Segundo a Diretriz nº PM3-001/02/23, qual distribuição de competência é correta?",
+        "options": [
+          "A) A implementação de CC2 compete ao Grande Comando; a de Salas de Operações e da sistemática de policial destacado em CCO de outro órgão compete ao Comando de Policiamento, com recursos humanos e materiais previstos no Plano Diretor.",
+          "B) Todas as estruturas são implementadas exclusivamente pelo Comandante-Geral, sem previsão no Plano Diretor.",
+          "C) O Comando de Policiamento implementa CC2, enquanto o Grande Comando decide sobre Salas de Operações de Companhia.",
+          "D) A implementação depende exclusivamente de convênio com órgão externo, inclusive quando a estrutura for interna à PM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/23, item 6.6.1, p. 206. A competência para deliberar sobre CC2 está vinculada ao Grande Comando; para Salas de Operações e policial destacado em CCO de outro órgão, ao Comando de Policiamento; os recursos devem constar do Plano Diretor. Distratores: B centraliza toda competência e elimina o Plano Diretor; C inverte os níveis decisórios; D exige convênio externo em qualquer hipótese, condição não prevista para todas as estruturas."
+      },
+      {
+        "id": 946,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Centro de Comando e Controle em operação multirregional",
+        "text": "QUESTÃO 946 — Uma operação envolve OPM de matrizes distintas e ocorre em mais de uma região. Em outra hipótese, a operação tem abrangência estadual. Qual regra define o CC2 responsável em cada caso?",
+        "options": [
+          "A) Em ambos os casos, a Sala de Operações da OPM territorial mais próxima torna-se automaticamente o CC2.",
+          "B) Nas operações multirregionais ou com OPM de matrizes distintas, o Coord Op PM define o COPOM Regional que funcionará temporariamente como CC2 comum; nas operações de abrangência estadual, o COPOM São Paulo assume as atribuições de CC2.",
+          "C) O CC2 é sempre o COPOM São Paulo, mesmo quando a operação for regional, e não há possibilidade de definição temporária.",
+          "D) A definição cabe ao Oficial de Ligação de órgão externo, conforme o número de agências envolvidas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/23, itens 6.5.4.1.5–6.5.4.1.7, p. 204. Em geral, COPOM são CC2 de seus respectivos Comandos de Policiamento; em operações multirregionais ou envolvendo matrizes distintas, o Coord Op PM define COPOM Regional temporário comum; em abrangência estadual, atua o COPOM São Paulo. Distratores: A cria escolha por proximidade; C elimina a regra regional e temporária; D transfere a definição a agente não indicado."
+      },
+      {
+        "id": 947,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Sala de Operações e compartilhamento de instalações",
+        "text": "QUESTÃO 947 — Uma Companhia PM pretende instalar Sala de Operações em conjunto com o Serviço de Dia por limitação física. Qual condição torna essa solução compatível com a Diretriz nº PM3-001/02/23?",
+        "options": [
+          "A) É vedada em qualquer hipótese a coexistência física com o Serviço de Dia.",
+          "B) É permitida sem estação de trabalho exclusiva, desde que os mesmos recursos sejam usados alternadamente.",
+          "C) As instalações devem ser preferencialmente exclusivas, mas podem compartilhar espaço com o Serviço de Dia em caráter excepcional, desde que haja estação de trabalho e recursos materiais exclusivos para os serviços essenciais de C2.",
+          "D) O compartilhamento é permitido somente mediante autorização judicial e desde que não exista integração com COPOM."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/23, itens 6.5.4.2.3 e 6.5.4.2.3.2, pp. 204–205. As instalações devem preferencialmente ser exclusivas, mas podem estar junto ao Serviço de Dia excepcionalmente, desde que estação de trabalho e recursos materiais sejam exclusivos para os serviços essenciais. Distratores: A converte preferência em proibição absoluta; B elimina a exclusividade dos recursos exigida; D inventa autorização judicial e contradiz a integração prevista."
+      },
+      {
+        "id": 948,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Policial destacado em CCO externo",
+        "text": "QUESTÃO 948 — Um policial militar será destacado para atuar em Centro de Controle Operacional de concessionária pública. Qual conjunto de requisitos corresponde à Diretriz nº PM3-001/02/23?",
+        "options": [
+          "A) O policial passa a exercer funções próprias da concessionária e pode deixar de acessar os sistemas institucionais da PM.",
+          "B) O policial pode trabalhar remotamente, sob o regime da concessionária, e a seleção fica a critério exclusivo do ente privado.",
+          "C) A atuação é permitida em qualquer empresa comercial, desde que haja acesso às imagens e ao COPOM.",
+          "D) O policial fica dedicado exclusivamente à polícia ostensiva e preservação da ordem pública, integrado à rede de comunicações e sistemas inteligentes da PM e aos sistemas do CCO conforme instrumento jurídico; a escala é presencial e a seleção observa os requisitos do Anexo B."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/23, itens 6.5.4.3.1–6.5.4.3.5, p. 205, e Anexo B, p. 214. O policial destacado executa serviços essenciais de C2 com recursos do CCO externo, permanece dedicado exclusivamente à missão institucional, integrado aos sistemas da PM e do CCO mediante instrumento legal, cumpre escala presencial e deve atender aos requisitos profissionais do Anexo B. Distratores: A desvia a finalidade e elimina integração institucional; B contraria presença física, regime e seleção; C ignora a vedação de destacamento em empresas/entidades de interesses individuais ou comerciais prevista no item 6.10.1, p. 211."
+      },
+      {
+        "id": 949,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Sala de Gerenciamento de Incidentes",
+        "text": "QUESTÃO 949 — Em ocorrência complexa, o comandante em campo solicita uma Sala de Gerenciamento de Incidentes para articular órgãos externos. Quem pode instituí-la e como se organiza a participação das demais agências?",
+        "options": [
+          "A) A autoridade policial-militar superior ao comandante responsável pelas operações em campo pode instituí-la, por solicitação ou de ofício, quando houver necessidade de integração com órgãos externos; a autoridade responsável define posições de trabalho e designa oficial de ligação para interface político-estratégica.",
+          "B) O comandante em campo deve instituí-la obrigatoriamente por decisão própria, e cada agência escolhe livremente sua posição sem coordenação.",
+          "C) A Sala só pode ser instituída após solicitação formal de todos os órgãos externos, sendo vedada iniciativa de ofício.",
+          "D) A instituição compete ao COPOM, exclusivamente para integração entre OPM da própria Polícia Militar."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/23, itens 6.5.4.4.1–6.5.4.4.2, p. 205. A instituição cabe à autoridade policial-militar superior ao comandante em campo, por solicitação ou de ofício, quando necessária integração com órgãos externos; a autoridade responsável organiza posições por similaridade de competências e designa oficial de ligação para interface político-estratégica. Distratores: B desloca a competência e elimina coordenação; C elimina iniciativa de ofício e cria unanimidade dos órgãos; D restringe a finalidade a órgãos internos e atribui competência exclusiva ao COPOM."
+      },
+      {
+        "id": 950,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Vedação de destacamento e regularização de estruturas",
+        "text": "QUESTÃO 950 — Uma OPM avalia destacar policial militar para central de videomonitoramento de condomínio fechado com finalidade comercial e, paralelamente, regularizar uma estrutura de C2 implementada antes da publicação da Diretriz nº PM3-001/02/23. Qual alternativa está correta?",
+        "options": [
+          "A) O destacamento é permitido se o condomínio custear o posto, e a regularização deve ocorrer em 30 dias.",
+          "B) É vedado destacar PM para CCO ou central de videomonitoramento de empresas, condomínios fechados ou entidades que representem interesses individuais/comerciais ou fins lucrativos; estruturas anteriores devem ser regularizadas em 60 dias da publicação, conforme aplicável.",
+          "C) A vedação alcança apenas empresas privadas com fins lucrativos, não condomínios fechados; o prazo de regularização é de 90 dias.",
+          "D) A vedação é aplicável apenas a centros de comando móveis, e estruturas anteriores não precisam ser regularizadas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz nº PM3-001/02/23, itens 6.10.1 e 6.10.2, p. 211. A diretriz veda o destacamento em CCO/centrais de empresas, condomínios fechados ou entidades que representem interesses individuais, comerciais ou lucrativos; OPM com estruturas anteriores tinham prazo de 60 dias da publicação para regularização, quando aplicável. Distratores: A cria exceção por custeio e altera prazo; C restringe a vedação e altera prazo; D limita indevidamente a vedação e elimina a regularização."
+      },
+           {
+        "id": 951,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP Motorola — atribuição automática e seleção da câmera",
+        "text": "QUESTÃO 951 — Na doca há três COP: uma com bateria superior, mas com upload em andamento; outra com bateria inferior, sem upload pendente; e uma terceira fora de serviço. O policial apresenta RFID válido. Qual resultado corresponde ao procedimento?",
+        "options": [
+          "A) O sistema seleciona a câmera com maior bateria, ainda que haja transferência de vídeos em andamento, pois o nível de carga é o único critério de seleção.",
+          "B) O sistema atribui automaticamente a câmera em melhor condição de emprego, considerando nível de bateria e ausência de descarregamento de vídeo em andamento.",
+          "C) O sistema exige que o usuário escolha manualmente entre as câmeras aptas, pois o RFID apenas autentica o policial, sem atribuir equipamento.",
+          "D) O sistema seleciona a câmera fora de serviço se ela estiver disponível fisicamente, deixando a verificação funcional para depois do início da gravação."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01, sequência das ações, itens 1–3, PDF p. 2. O RFID pessoal e exclusivo identifica o usuário; ao ser aproximado do leitor da doca, o sistema atribui automaticamente a COP em melhor condição de emprego, considerada a bateria e a inexistência de descarregamento de vídeo em andamento. Distratores: A transforma um dos critérios em critério único e ignora a transferência em curso; C nega a atribuição automática expressa; D contradiz a seleção da câmera em melhor condição."
+      },
+      {
+        "id": 952,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP Motorola — falha de atribuição e gestão do cartão",
+        "text": "QUESTÃO 952 — Um policial relata que seu cartão RFID não é reconhecido pela doca. Em outro turno, uma COP foi retirada sem associação correta ao usuário. Qual associação entre providência e consequência é fiel ao POP?",
+        "options": [
+          "A) A Agência de Inteligência da OPM administra os cartões; diante da falha de atribuição, o equipamento sinaliza vermelho e desliga após um minuto.",
+          "B) O CGP administra os cartões; diante da falha de atribuição, o equipamento sinaliza verde e permanece ligado até o término do turno.",
+          "C) A Seção PJMD administra os cartões; diante da falha de atribuição, o equipamento bloqueia apenas o upload, sem desligamento automático.",
+          "D) O usuário administra o cartão; diante da falha de atribuição, deve concluir uma gravação manual para que o equipamento sinalize vermelho."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01, sequência das ações, item 5, e esclarecimentos, item 1.1, PDF pp. 3 e 5. A falha de reconhecimento do RFID ou a retirada sem atribuição correta produz indicador vermelho e desligamento automático após um minuto; a gestão dos cartões é do Chefe da Agência de Inteligência da OPM. Distratores: B altera o responsável e o sinal, além de negar o desligamento; C atribui a gestão a órgão diverso e substitui a consequência; D transfere a gestão ao usuário e inventa uma etapa de gravação."
+      },
+      {
+        "id": 953,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP Motorola — pre-buffer e acionamento manual",
+        "text": "QUESTÃO 953 — Durante uma abordagem, o policial inicia a gravação por duplo clique no botão frontal. O registro precisa abranger também o intervalo imediatamente anterior ao acionamento. Qual alcance temporal está previsto no POP?",
+        "options": [
+          "A) A COP incorpora os 30 segundos anteriores, desde que o usuário tenha ativado previamente o marcador pelo botão P0.",
+          "B) A COP incorpora os 60 segundos anteriores, mas somente quando a gravação é acionada remotamente pelo COPOM.",
+          "C) A COP incorpora ao armazenamento interno áudio e vídeo dos 90 segundos anteriores ao acionamento, independentemente de o início ter sido manual.",
+          "D) A COP incorpora os 90 segundos posteriores ao acionamento, desde que a gravação seja encerrada por pressão contínua do botão frontal."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01, esclarecimentos, item 2, PDF p. 5. O início da gravação é realizado por duplo clique no botão frontal; ao iniciar, a câmera inclui no armazenamento interno áudio e vídeo dos 90 segundos anteriores (pre-buffer). Distratores: A inventa duração e condiciona o pre-buffer ao marcador; B altera a duração e restringe a acionamento remoto; D troca o intervalo anterior pelo posterior e descreve incorretamente o encerramento."
+      },
+      {
+        "id": 954,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP Motorola — modo velado e acionamento dos botões",
+        "text": "QUESTÃO 954 — Em operação, o policial precisa desativar sinais luminosos e sonoros sem encerrar a gravação. Posteriormente, pretende gerar um marcador e, em situação distinta, enviar alerta de emergência. Qual sequência está correta?",
+        "options": [
+          "A) Ativar o modo velado pelo P1 por três segundos; usar dois cliques no P0 para marcador; um clique no P0 para pânico.",
+          "B) Ativar o modo velado pelo P2 por três segundos; usar um clique no P0 para marcador; dois cliques no P0 para pânico.",
+          "C) Ativar o modo velado pelo P2 por dois cliques; usar o P1 para marcador; manter o P0 pressionado por três segundos para pânico.",
+          "D) Ativar o modo velado pelo P0 por três segundos; usar um clique no P2 para marcador; dois cliques no P1 para pânico."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01, esclarecimentos, itens 3–5, PDF p. 6. O modo velado é acionado pelo P2 por três segundos e desativado pelo P1 por três segundos; um clique no P0 gera marcador e dois cliques no mesmo botão acionam o pânico. Distratores: A troca os botões do modo velado e inverte marcador/pânico; C altera a forma de acionamento e associa funções a botões não previstos; D atribui as três funções a botões ou sequências incorretos."
+      },
+      {
+        "id": 955,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP Motorola — condição de pronto emprego e interrupção manual",
+        "text": "QUESTÃO 955 — Durante o atendimento, o policial interrompe manualmente a gravação, mas a ocorrência continua em andamento. Considerando a condição de pronto emprego exigida durante todo o turno, assinale a alternativa correta.",
+        "options": [
+          "A) A COP pode permanecer sem possibilidade de reativação, desde que a primeira gravação tenha sido classificada pelo usuário.",
+          "B) A COP deve permanecer em condição de pronto emprego para acionamentos remotos automáticos via COPOM, pela Supervisão, por Bluetooth ou manualmente, e deve permitir reativação automática se a gravação for interrompida manualmente durante o atendimento.",
+          "C) A COP deve gravar continuamente sem possibilidade de interrupção manual, sendo vedados os acionamentos por Bluetooth e pela Supervisão.",
+          "D) A COP somente precisa permanecer apta ao acionamento manual; os demais modos dependem de autorização individual do Chefe da Agência de Inteligência."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01, sequência das ações, item 7, PDF p. 4. Durante todo o turno, a COP deve ficar apta a iniciar gravação por COPOM, Supervisão, proximidade Bluetooth ou acionamento manual, inclusive permitindo reativação automática quando a gravação for interrompida manualmente durante atendimento. Distratores: A elimina a reativação automática prevista; C converte pronto emprego em gravação contínua e veda modos previstos; D restringe os modos sem apoio no POP."
+      },
+      {
+        "id": 956,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP Motorola — classificação de vídeo produzido em apoio",
+        "text": "QUESTÃO 956 — Uma US registra ocorrência e define a natureza do fato e a categoria eletrônica correspondente. Policiais de outra US, que apoiaram o atendimento e produziram vídeos próprios, precisam classificar seus registros. Qual procedimento é exigido?",
+        "options": [
+          "A) Cada policial de apoio deve classificar o vídeo segundo a sua percepção individual, ainda que os campos divirjam dos usados pela patrulha responsável pelo BOe.",
+          "B) Somente o condutor da US responsável precisa classificar vídeos; os registros de apoio ficam vinculados automaticamente ao mesmo talão.",
+          "C) Os policiais em apoio devem buscar as informações para usar a mesma classificação aplicada pela patrulha responsável pelo registro, sob coordenação do CGP e/ou CFP.",
+          "D) O CGP deve realizar pessoalmente a classificação de todos os vídeos, dispensando o policial usuário de atuar após o encerramento da gravação."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.02, sequência das ações, item 4, PDF p. 10. Os operadores que apoiam ocorrência atendida por outra US devem assegurar que a classificação seja a mesma aplicada pela patrulha responsável pelo BO, buscando as informações necessárias; CGP e/ou CFP coordenam a atividade. Distratores: A permite divergência expressamente evitada; B dispensa a classificação individual e presume vinculação automática; D transfere a classificação ao supervisor, embora o POP atribua ao usuário a classificação da evidência."
+      },
+      {
+        "id": 957,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP Motorola — registro sem talão de ocorrência",
+        "text": "QUESTÃO 957 — Uma COP é acionada por proximidade Bluetooth e grava abordagem de interesse policial para a qual não foi confeccionado talão de ocorrência. Na classificação, qual conjunto de campos e tratamento deve ser adotado?",
+        "options": [
+          "A) Deixar o vídeo sem classificação até que exista talão; depois preencher todos os campos com os dados do registro formal.",
+          "B) Preencher somente a data nos campos de data, escolher a natureza “Abordagem” ou “Outros fatos de interesse policial sem talão”, conforme o caso, e não deixar o vídeo sem classificação.",
+          "C) Preencher apenas a categoria do fato, pois a ausência de talão dispensa os campos de data e natureza.",
+          "D) Classificar obrigatoriamente como “Vídeo Acidental”, já que a gravação não foi iniciada por despacho formal."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.02, sequência das ações, itens 5–6, PDF p. 10. Nenhum vídeo pode ficar sem classificação; quando houver abordagem ou outro fato de interesse policial sem talão, lançam-se os valores relativos à data e seleciona-se a natureza correspondente. Distratores: A contraria a vedação de vídeo sem classificação; C elimina campos expressamente exigidos; D confunde ausência de talão com gravação involuntária, que é hipótese distinta."
+      },
+      {
+        "id": 958,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP Motorola — correção posterior de metadados",
+        "text": "QUESTÃO 958 — Após o upload, o policial percebe que o vídeo foi classificado com a data correta, mas com natureza do fato incorreta. Qual providência se harmoniza com o POP?",
+        "options": [
+          "A) Manter o registro, pois a classificação não pode ser alterada depois do upload.",
+          "B) Excluir o vídeo e solicitar nova gravação, pois os metadados são imutáveis após o armazenamento.",
+          "C) Solicitar ao Chefe da Seção PJMD que altere a classificação, pois apenas o custodiante pode corrigir metadados operacionais.",
+          "D) Acessar o sistema e corrigir as informações incorretas incluídas após o upload."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.02, Ações Corretivas, item 1, PDF p. 10. O próprio policial deve acessar o sistema e corrigir as informações quando verificar erro após o upload. Distratores: A cria imutabilidade não prevista; B inventa exclusão e regravação como solução; C transfere a correção ao custodiante sem suporte no procedimento."
+      },
+      {
+        "id": 959,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP Motorola — gravação involuntária e categoria específica",
+        "text": "QUESTÃO 959 — Uma gravação involuntária registra conversa e imagens sem interesse policial. O usuário identifica o conteúdo antes de encerrar o turno. Qual é o tratamento previsto no POP?",
+        "options": [
+          "A) Classificar a evidência como “Vídeo Acidental”, em vez de deixá-la sem classificação ou atribuir-lhe uma natureza de ocorrência não correspondente.",
+          "B) Apagar imediatamente o arquivo, pois gravações sem interesse policial não podem permanecer no sistema.",
+          "C) Classificar como “Abordagem”, pois todo vídeo sem talão deve usar essa natureza independentemente do conteúdo.",
+          "D) Manter o vídeo sem classificação até que o CFP decida se houve interesse policial."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.02, Ações Corretivas, item 2, PDF p. 10. Se a COP for acionada involuntariamente e registrar situação sem interesse policial, a evidência deve ser classificada como “Vídeo Acidental”. Distratores: B determina exclusão não prevista; C aplica a regra de fatos sem talão a um registro acidental e ignora a categoria específica; D viola a exigência de classificação de todos os vídeos."
+      },
+      {
+        "id": 960,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP Motorola — atribuição e desatribuição como etapas distintas",
+        "text": "QUESTÃO 960 — Considere o ciclo de utilização da COP: atribuição na doca, retirada para o serviço e retorno à estação após o turno. Qual alternativa descreve corretamente a relação entre identificação do usuário, desatribuição e transferência dos arquivos?",
+        "options": [
+          "A) A desatribuição ocorre quando o usuário pressiona o botão frontal por três segundos, iniciando simultaneamente o upload.",
+          "B) A desatribuição ocorre automaticamente quando a COP é conectada à doca; nessa ocasião, os vídeos são enviados automaticamente ao armazenamento e a bateria é carregada.",
+          "C) A desatribuição ocorre quando o policial encerra a gravação, e os vídeos só são enviados após a classificação manual.",
+          "D) A desatribuição ocorre quando o cartão RFID é aproximado do leitor pela segunda vez, independentemente de a COP estar conectada à doca."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01, sequência das ações, item 8, PDF p. 4. Ao conectar a COP à doca, ocorre a desatribuição do usuário, o envio automático dos vídeos para armazenamento e o carregamento da bateria. Distratores: A confunde encerramento de gravação com desatribuição e inventa upload pelo botão; C desloca a desatribuição para o encerramento e condiciona o envio à classificação; D cria procedimento por segunda leitura RFID não descrito."
+      },
+      {
+        "id": 961,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Procedimento Disciplinar — cabimento e limites do rito",
+        "text": "QUESTÃO 961 — Uma comunicação descreve transgressão de apuração simples, cuja complexidade não exige sindicância e cuja gravidade não recomenda Processo Regular. Qual enquadramento corresponde à Portaria CORREGPM-1/360/13?",
+        "options": [
+          "A) O Procedimento Disciplinar é cabível e segue os arts. 27 a 29 do RDPM e os critérios de oralidade, simplicidade, informalidade, economia processual e celeridade.",
+          "B) O Procedimento Disciplinar é cabível apenas se a gravidade recomendar Processo Regular, pois substitui o rito mais complexo.",
+          "C) A sindicância é obrigatória sempre que houver comunicação disciplinar, ainda que a complexidade não a exija.",
+          "D) O Procedimento Disciplinar é cabível apenas para apurar fatos sem possível consequência disciplinar, por não admitir aplicação de sanção."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Portaria Cmt G CORREGPM-1/360/13, art. 1º, Assuntos Juridicos-administrativos.pdf, PDF p. 34. O rito destina-se a transgressões cuja complexidade não exija sindicância e cuja gravidade não recomende Processo Regular, orientando-se pelos arts. 27 a 29 do RDPM e pelos cinco critérios enumerados. Distratores: B inverte o requisito relativo à gravidade; C torna obrigatória a sindicância contra a delimitação do art. 1º; D nega a finalidade de apuração de transgressões e a possibilidade de sanção prevista no art. 8º."
+      },
+      {
+        "id": 962,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Procedimento Disciplinar — análise inicial e manifestação preliminar",
+        "text": "QUESTÃO 962 — A autoridade recebe comunicação disciplinar que ainda não contém elementos suficientes para formular Termo Acusatório. Qual sequência está de acordo com o art. 2º?",
+        "options": [
+          "A) A autoridade dispõe de três dias para analisar e deve instaurar o procedimento mesmo sem elementos, concedendo cinco dias ao signatário.",
+          "B) A autoridade analisa em cinco dias e pode restituir ao signatário para complementar em três dias, encaminhar ao comunicado para manifestação preliminar em três dias ou arquivar motivadamente se concluir pela inexistência de transgressão.",
+          "C) A autoridade deve encaminhar a comunicação ao comunicado por cinco dias e, após isso, dispõe de três dias para decidir entre sindicância e Processo Regular.",
+          "D) A autoridade deve arquivar toda comunicação incompleta, sem possibilidade de complementação nem manifestação preliminar."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Portaria CORREGPM-1/360/13, art. 2º, incisos I–III e § 1º, Assuntos Juridicos-administrativos.pdf, PDF p. 34. A análise inicial é feita em cinco dias; se faltarem elementos, a autoridade pode devolver para complementação em três dias, encaminhar para manifestação preliminar em três dias ou arquivar motivadamente quando não houver transgressão. A manifestação preliminar pode ser dispensada se já houver convicção suficiente, com registro no Termo Acusatório. Distratores: A troca os prazos e impõe instauração automática; C troca destinatário e prazos; D elimina duas faculdades expressas."
+      },
+      {
+        "id": 963,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Procedimento Disciplinar — instauração e audiência",
+        "text": "QUESTÃO 963 — Após analisar os fatos, a autoridade vislumbra transgressão disciplinar. Considerando a regra ordinária do art. 3º, qual combinação de prazo, conteúdo e audiência está correta?",
+        "options": [
+          "A) Instaurar em cinco dias, sem necessidade de motivação do Termo Acusatório, designando audiência em três dias.",
+          "B) Instaurar em três dias, com Termo Acusatório motivado em fatos e direito, podendo arrolar até três testemunhas de acusação, e designar audiência de instrução e julgamento em prazo de dez dias.",
+          "C) Instaurar em três dias, com até cinco testemunhas de acusação e audiência em dez dias úteis contados da citação.",
+          "D) Instaurar em dez dias, com até três testemunhas de acusação, e designar audiência em cinco dias após o termo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Portaria CORREGPM-1/360/13, art. 3º, caput, Assuntos Juridicos-administrativos.pdf, PDF p. 34. Vislumbrada a transgressão, o procedimento é instaurado em três dias, com autuação e Termo Acusatório motivado, rol de até três testemunhas de acusação e audiência designada num prazo de dez dias. Distratores: A altera os prazos e elimina a motivação; C aumenta o limite e acrescenta “úteis”, expressão não constante; D inverte os prazos de instauração e audiência."
+      },
+      {
+        "id": 964,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Procedimento Disciplinar — pluralidade de OPM",
+        "text": "QUESTÃO 964 — Uma mesma transgressão envolve policiais militares de duas OPM. Foram instaurados procedimentos separados, e as decisões caberão a autoridades disciplinares diferentes. Qual consequência a Portaria prevê?",
+        "options": [
+          "A) A separação é vedada em qualquer hipótese, sendo nulo o segundo procedimento sem possibilidade de aprovação posterior.",
+          "B) Cada decisão é definitiva no âmbito da respectiva OPM, pois a aprovação por autoridade comum só se aplica a fatos ocorridos em serviço conjunto.",
+          "C) A autoridade de maior hierarquia comum aos transgressores deve aprovar o ato quando houver procedimentos separados e decisões por autoridades disciplinares diversas; também seria possível procedimento único instaurado pela autoridade de cargo superior comum aos comandantes.",
+          "D) A competência para decidir passa automaticamente ao comandante da OPM de maior efetivo, sem necessidade de aprovação de ato."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Portaria CORREGPM-1/360/13, art. 3º, § 1º, Assuntos Juridicos-administrativos.pdf, PDF p. 34. O procedimento pode ser único, instaurado pela autoridade de cargo superior comum aos comandantes; se houver mais de um e as decisões couberem a autoridades diversas, é obrigatória a aprovação do ato pela autoridade de maior hierarquia comum, conforme art. 47, parágrafo único, do RDPM. Distratores: A torna obrigatória a unidade e inventa nulidade; B cria condição não prevista; D substitui a regra hierárquica comum por critério de efetivo."
+      },
+      {
+        "id": 965,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Procedimento Disciplinar — testemunhas de defesa e agente público",
+        "text": "QUESTÃO 965 — O acusado pretende levar duas testemunhas civis espontaneamente e requerer que um agente público seja apresentado pela Administração. Qual providência e prazo correspondem ao art. 3º?",
+        "options": [
+          "A) Pode trazer espontaneamente até três testemunhas de defesa; para agente público cuja apresentação será notificada pela autoridade, ou para requerer intimação de testemunha e documento da PM a que não tenha acesso, deve solicitar a medida ao menos quatro dias antes da audiência.",
+          "B) Pode trazer até cinco testemunhas espontaneamente; a Administração deve notificar todas, independentemente da antecedência do requerimento.",
+          "C) Pode trazer até três testemunhas, mas qualquer pedido de intimação deve ocorrer no prazo de três dias após a audiência.",
+          "D) Pode arrolar até três testemunhas apenas por petição assinada por advogado; a ausência de advogado impede a apresentação espontânea."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Portaria CORREGPM-1/360/13, art. 3º, §§ 2º e 3º, Assuntos Juridicos-administrativos.pdf, PDF pp. 34–35. O acusado pode trazer até três testemunhas de defesa independentemente de intimação; para agente público, requer a notificação com antecedência mínima de quatro dias. O mesmo prazo se aplica ao requerimento de intimação de testemunha e à juntada de documento da PM inacessível ao acusado. Distratores: B eleva o limite e torna universal a notificação; C altera o momento do requerimento; D impõe advogado e elimina a possibilidade de defesa pessoal."
+      },
+      {
+        "id": 966,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Procedimento Disciplinar — ausência de testemunha de defesa",
+        "text": "QUESTÃO 966 — A testemunha de defesa que o acusado se comprometeu a apresentar espontaneamente falta injustificadamente à audiência. Qual solução decorre do art. 3º, § 4º?",
+        "options": [
+          "A) A audiência deve ser redesignada automaticamente para dez dias, ainda que a autoridade não considere a prova necessária.",
+          "B) A ausência não implica redesignação, salvo se a autoridade, de ofício ou a requerimento, entender a presença imprescindível ao devido processo legal; nesse caso, a nova audiência será marcada para prazo máximo de cinco dias.",
+          "C) A audiência prossegue obrigatoriamente, sendo proibida qualquer redesignação mesmo quando a prova for imprescindível.",
+          "D) A testemunha ausente deve ser substituída por testemunha de acusação, e a audiência será suspensa por prazo indeterminado."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Portaria CORREGPM-1/360/13, art. 3º, § 4º, Assuntos Juridicos-administrativos.pdf, PDF p. 35. A ausência injustificada da testemunha de defesa não gera redesignação automática; a exceção ocorre se a autoridade considerar a presença imprescindível ao devido processo legal, quando a audiência é redesignada para prazo máximo de cinco dias. Distratores: A cria automaticidade e prazo de dez dias; C elimina a exceção expressa; D cria substituição e prazo indeterminado."
+      },
+      {
+        "id": 967,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Procedimento Disciplinar — delegação da instrução",
+        "text": "QUESTÃO 967 — A autoridade competente não pode presidir a audiência. Pretende delegar a instrução e, ao final, receber uma conclusão sobre a procedência da imputação. Qual alternativa corresponde à Portaria?",
+        "options": [
+          "A) A delegação é proibida; somente a autoridade instauradora pode presidir a audiência e formar conclusão.",
+          "B) A delegação pode ser feita verbalmente a qualquer policial militar, e a conclusão do delegado vincula a autoridade instauradora.",
+          "C) A instrução pode ser delegada por despacho motivado a Oficial, Praça Especial, Subtenente ou Sargento, observada a hierarquia; se delegada, a conclusão sobre procedência ou não será meramente opinativa.",
+          "D) A delegação pode ocorrer apenas a Oficial, e a conclusão deve ser tratada como decisão final, dispensada a aprovação do Comandante de Unidade."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Portaria CORREGPM-1/360/13, art. 4º, § 1º, e art. 9º, § 1º, Assuntos Juridicos-administrativos.pdf, PDF pp. 35–36. Diante da impossibilidade de presidir, a instrução pode ser delegada por despacho motivado a Oficial, Praça Especial, Subtenente ou Sargento, respeitada a hierarquia. A conclusão do designado sobre procedência é opinativa. Distratores: A nega a delegação; B dispensa despacho e atribui efeito vinculante; D restringe os destinatários e converte a conclusão em decisão final."
+      },
+      {
+        "id": 968,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Procedimento Disciplinar — contradita e compromisso de testemunha",
+        "text": "QUESTÃO 968 — Antes do início do depoimento, a defesa contradita testemunha por possível parcialidade. A autoridade registra a arguição e a resposta, mas precisa decidir se a exclui ou deixa de tomar compromisso. Qual leitura é correta?",
+        "options": [
+          "A) Toda contradita apresentada pela defesa obriga a excluir a testemunha, independentemente da causa invocada.",
+          "B) A autoridade registra a contradita e a resposta; a exclusão ou a dispensa de compromisso restringe-se às hipóteses previstas no § 6º, incluindo pessoas obrigadas a guardar segredo, salvo desobrigação, doentes e deficientes mentais, menores de 14 anos e determinados parentes.",
+          "C) A autoridade pode ignorar a contradita, pois a suspeição só pode ser arguida depois de concluído o depoimento.",
+          "D) A contradita impede a oitiva, mas a testemunha pode ser substituída automaticamente por qualquer pessoa indicada pela autoridade."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Portaria CORREGPM-1/360/13, art. 4º, § 6º, Assuntos Juridicos-administrativos.pdf, PDF p. 35. A contradita ou arguição deve ser consignada, com a resposta; a exclusão ou não deferimento de compromisso fica limitada às hipóteses expressamente listadas no dispositivo. Distratores: A transforma a arguição em exclusão automática; C inverte o momento permitido; D cria substituição automática e dispensa a análise das hipóteses normativas."
+      },
+      {
+        "id": 969,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Procedimento Disciplinar — nova tipificação e fatos novos",
+        "text": "QUESTÃO 969 — Após o interrogatório, a autoridade entende que os fatos já apurados recebem tipificação legal diversa e mais grave. Em cenário distinto, a nova tipificação depende de fatos novos. Qual alternativa distingue corretamente as hipóteses?",
+        "options": [
+          "A) A nova tipificação é vedada quando puder resultar em sanção mais grave, mesmo após o interrogatório.",
+          "B) A autoridade pode alterar a tipificação após o interrogatório; se a alteração se fundar em fatos novos, deve aditar o Termo Acusatório, podendo arrolar até três novas testemunhas de acusação e concedendo à defesa a possibilidade de apresentar até três novas testemunhas, com nova audiência.",
+          "C) A nova tipificação pode ocorrer antes da oitiva das testemunhas, mas fatos novos dispensam aditamento quando o acusado já foi interrogado.",
+          "D) A alteração é permitida apenas se não houver fatos novos; se houver, deve ser instaurado automaticamente novo procedimento sem aproveitamento dos atos."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Portaria CORREGPM-1/360/13, art. 6º e parágrafo único, Assuntos Juridicos-administrativos.pdf, PDF p. 36. Após o interrogatório e à vista das provas, a autoridade pode dar nova tipificação, ainda que mais grave; se fundada em fatos novos, deve aditar o Termo Acusatório, arrolar até três testemunhas de acusação e designar nova audiência, podendo a defesa apresentar até três novas testemunhas. Distratores: A proíbe a hipótese expressamente permitida; C dispensa aditamento e desloca o momento; D inventa instauração automática de novo procedimento."
+      },
+      {
+        "id": 970,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "Procedimento Disciplinar — alegações finais, memoriais e decisão",
+        "text": "QUESTÃO 970 — Encerrado o interrogatório, não houve aditamento do Termo Acusatório. O caso tem complexidade elevada e dois acusados. Qual regime de alegações finais e decisão é admitido?",
+        "options": [
+          "A) A defesa dispõe necessariamente de cinco dias úteis para memoriais, e a autoridade decide em dez dias após o último protocolo.",
+          "B) As alegações finais são orais por dez minutos, prorrogáveis por cinco; excepcionalmente, por decisão motivada em ata, podem ser concedidos simultaneamente cinco dias para memoriais, e a decisão deve ser proferida em cinco dias a contar da juntada do último memorial de defesa.",
+          "C) Cada acusado dispõe de dez minutos compartilhados, sem prorrogação; memoriais só são permitidos por decisão do Comandante-Geral.",
+          "D) A autoridade deve proferir decisão antes das alegações finais, salvo quando a instrução tiver sido delegada."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Portaria CORREGPM-1/360/13, art. 7º, caput e §§ 1º–2º, Assuntos Juridicos-administrativos.pdf, PDF p. 36. A regra é alegação oral de dez minutos, prorrogável por mais cinco; com pluralidade de acusados, o tempo é individual. Excepcionalmente, por decisão motivada em ata, podem ser concedidos cinco dias simultâneos para memoriais, e a autoridade decide em cinco dias após a juntada do último memorial de defesa. Distratores: A acrescenta “úteis”, amplia prazo decisório e torna a exceção regra; C nega o tempo individual e restringe indevidamente a autoridade; D inverte a sequência processual."
+      },
+      {
+        "id": 971,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — nível de resposta e apoio de outras matrizes",
+        "text": "QUESTÃO 971 — Uma Patrulha de Radiopatrulha recebe ocorrência que, pela complexidade, exige apoio de unidade de outra Matriz Operacional. Qual leitura da Diretriz é correta?",
+        "options": [
+          "A) A Patrulha deixa de atuar no Nível de Resposta 1 tão logo solicite apoio externo à Matriz Operacional I.",
+          "B) A Patrulha atua sempre no Nível de Resposta 1, prestando pronto atendimento e podendo receber apoio de Patrulhas de qualquer Matriz quando a natureza, gravidade ou complexidade exigir.",
+          "C) A Patrulha só pode receber apoio de outra US da própria OPM, pois o apoio de OPM limítrofe depende de elevação ao Nível 2.",
+          "D) A Patrulha pode receber apoio de qualquer Matriz, mas apenas depois de concluir o primeiro atendimento e encerrar o talão."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-002/02/20, itens 6.1.5 e 6.2.7, Assuntos Operacionais.pdf, PDF pp. 470–471. O Nível de Resposta 1 abrange uma US atuando isoladamente e/ou com apoio de outras US da Matriz Operacional I, inclusive de OPM limítrofe; a Patrulha RP atua sempre nesse nível, mas pode receber apoio de qualquer Matriz quando a natureza, gravidade ou complexidade exigir. Distratores: A inventa alteração automática do nível; C restringe indevidamente o apoio; D posterga apoio que pode ser necessário durante o atendimento."
+      },
+      {
+        "id": 972,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — continuidade e distribuição territorial",
+        "text": "QUESTÃO 972 — A OPM propõe manter o Programa RP apenas nos horários de maior incidência criminal, deslocando todas as Patrulhas para programas complementares no restante do dia. Qual alternativa corresponde à Diretriz?",
+        "options": [
+          "A) O Programa RP deve operar ininterruptamente, 24 horas por dia, com Patrulhas distribuídas conforme análise do diagnóstico situacional do PPI.",
+          "B) O Programa RP deve operar ininterruptamente apenas nas sedes de Batalhão; nas demais localidades, a continuidade depende do volume de chamadas 190.",
+          "C) O Programa RP pode ser suspenso fora do horário de pico se o diagnóstico situacional justificar, pois a continuidade é apenas recomendatória.",
+          "D) O Programa RP deve operar por 24 horas, mas a distribuição das Patrulhas é definida exclusivamente pelo COPOM, sem vínculo com o PPI."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.2, Assuntos Operacionais.pdf, PDF p. 471. O Programa RP integra a Matriz Operacional I, deve operar ininterruptamente 24 horas por dia e suas US são distribuídas conforme análise do diagnóstico situacional do PPI. Distratores: B cria limitação territorial e condiciona continuidade a chamadas; C transforma obrigação em faculdade; D desloca a distribuição ao COPOM e exclui o PPI."
+      },
+      {
+        "id": 973,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — quantitativo mínimo por Companhia",
+        "text": "QUESTÃO 973 — Uma Companhia PM possui três Patrulhas previstas para sua Subárea, distribuídas em um Grupo de Patrulha supervisionado pelo CGP. Em município com estrutura prevista no QPO a partir do escalão Grupo PM, qual parâmetro mínimo adicional se aplica?",
+        "options": [
+          "A) A Companhia deve contar com pelo menos duas Patrulhas e cada Grupo PM com três, sob supervisão do CFP.",
+          "B) A Companhia deve contar com pelo menos três Patrulhas, mas a exigência de uma Patrulha ininterrupta nas localidades com estrutura QPO só começa no escalão Pelotão PM.",
+          "C) Cada Companhia deve contar com no mínimo três Patrulhas na Subárea, compondo um Grupo de Patrulha sob CGP; localidades com estrutura prevista no QPO a partir de Grupo PM/Grupo PM-Distrital devem manter ao menos uma Patrulha ininterrupta.",
+          "D) O mínimo é de uma Patrulha por Companhia e três por município, sem relação com a estrutura prevista no QPO."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-002/02/20, itens 6.2.3.1 e 6.2.3.2, Assuntos Operacionais.pdf, PDF p. 471. Cada Cia PM deve contar com no mínimo três Patrulhas distribuídas na Subárea, compondo um Grupo de Patrulha supervisionado pelo CGP; localidades com estrutura prevista no QPO a partir de Grupo PM/Grupo PM-Distrital devem manter ao menos uma Patrulha ininterrupta. Distratores: A altera o quantitativo e a supervisão; B desloca o escalão inicial; D substitui os mínimos por critérios não previstos."
+      },
+      {
+        "id": 974,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — gestão do programa e exceção do módulo territorial",
+        "text": "QUESTÃO 974 — Uma OPM utiliza configuração territorial diferente da convencional, com atuação por AISP no Módulo 3. Quem gerencia ordinariamente o Programa RP e qual é a exceção de coordenação descrita?",
+        "options": [
+          "A) A gestão ordinária é do Coord Op Btl, que sempre coordena todas as Patrulhas, independentemente do módulo territorial adotado.",
+          "B) A gestão ordinária cabe aos Cmt Cia PM; o Coord Op Btl ou equivalente coordena Patrulhas dispostas em AISP exclusivamente nas OPM que optaram pelo Módulo 3 de Configuração Territorial.",
+          "C) A gestão cabe ao CGP em todas as OPM, enquanto o Cmt Cia apenas atualiza o SIOPM.",
+          "D) A gestão é exclusiva do Cmt OPM, e a coordenação por AISP é vedada pela Diretriz."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.4, Assuntos Operacionais.pdf, PDF p. 471. A gestão do Programa RP cabe, em regra, aos Cmt Cia PM; o Coord Op Btl somente coordena Patrulhas dispostas em AISP nas OPM que optaram pelo Módulo 3. Distratores: A transforma a exceção em regra geral; C transfere a gestão ao CGP; D nega a exceção expressamente prevista."
+      },
+      {
+        "id": 975,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — composição da Patrulha e motocicleta",
+        "text": "QUESTÃO 975 — Uma Patrulha será empregada em motocicletas por necessidade de maior rapidez no atendimento. Qual combinação reúne as condições previstas para essa modalidade?",
+        "options": [
+          "A) O emprego deve estar previsto no Plano Diretor; depende da conveniência do Cmt OPM, necessidade operacional e disponibilidade, cada motocicleta é ocupada por um policial e a atuação é preferencialmente entre 06h e 23h.",
+          "B) O emprego depende exclusivamente da disponibilidade de motocicletas; cada veículo deve ser ocupado por dois policiais e a preferência horária é entre 23h e 06h.",
+          "C) O emprego pode ser definido pelo CGP sem previsão no Plano Diretor; cada motocicleta transporta dois policiais e o horário é livre por regra expressa.",
+          "D) O emprego depende de autorização do COPOM e ocorre exclusivamente entre 06h e 23h, sendo vedada a troca para viatura de quatro rodas durante o turno."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-002/02/20, itens 6.2.8 e 6.2.9.1–6.2.9.4, Assuntos Operacionais.pdf, PDF pp. 471–472. A Patrulha tem dois policiais, mas cada motocicleta é ocupada por apenas um; o emprego deve estar previsto no Plano Diretor, depende de conveniência, necessidade e disponibilidade, é preferencialmente das 06h às 23h e pode ser realocado para viatura de quatro rodas conforme serviço, local e clima. Distratores: B altera ocupação e horário; C elimina previsão no Plano Diretor e altera composição; D cria exclusividade horária e veda realocação permitida."
+      },
+      {
+        "id": 976,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — atualização de composição no SIOPM",
+        "text": "QUESTÃO 976 — Após o início do turno, o CFP altera a composição da Patrulha e o território de atuação. Qual providência documental é exigida pela Diretriz?",
+        "options": [
+          "A) Atualizar o SIOPM apenas no fechamento do mês, desde que a alteração conste do RSO.",
+          "B) A composição e o território devem ser indicados no SIOPM e atualizados diariamente a cada início de turno ou tão logo ocorram alterações promovidas pelo CFP/CGP ou determinadas por autoridade superior.",
+          "C) A alteração deve ser lançada apenas no Plano Diretor, pois o SIOPM serve exclusivamente para registrar ocorrências atendidas.",
+          "D) O CGP deve aguardar autorização escrita do Cmt Cia antes de registrar qualquer alteração, ainda que determinada por autoridade superior competente."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.10, Assuntos Operacionais.pdf, PDF p. 472. A OPM deve indicar no SIOPM a composição das Patrulhas e seus territórios, atualizando diariamente a cada início de turno ou tão logo haja alteração promovida pelo CFP/CGP ou determinada por autoridade superior competente. Distratores: A posterga atualização; C substitui o sistema expressamente indicado; D cria autorização prévia absoluta que o item não exige."
+      },
+      {
+        "id": 977,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — reunião de Patrulhas em casos graves",
+        "text": "QUESTÃO 977 — Em ocorrência grave, o CGP reúne Patrulhas próximas para intervenção direta. Concluída a intervenção local, qual conduta corresponde à Diretriz?",
+        "options": [
+          "A) As Patrulhas devem permanecer concentradas até o encerramento administrativo da ocorrência, mesmo que a necessidade de concentração cesse.",
+          "B) As Patrulhas podem ser reunidas apenas pelo Cmt OPM, sendo vedada a coordenação direta pelo CGP.",
+          "C) O CGP ou autoridade de comando/supervisão superior pode reunir as Patrulhas mais próximas e, após a intervenção local, elas devem retornar imediatamente aos respectivos locais de patrulhamento.",
+          "D) A reunião somente é permitida se houver apoio de Matriz Operacional III, devendo as Patrulhas retornar após autorização do COPOM."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.11, Assuntos Operacionais.pdf, PDF p. 472. Em casos mais graves, CGP ou autoridade superior de comando/supervisão pode reunir Patrulhas RP próximas para intervenção local direta; após, devem retornar imediatamente aos locais de patrulhamento. Distratores: A prolonga concentração sem fundamento; B restringe indevidamente a autoridade competente; D cria requisito de apoio e autorização não previstos."
+      },
+      {
+        "id": 978,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — emprego matricial em Status de Viatura 3",
+        "text": "QUESTÃO 978 — O Cmt OPM pretende empregar excepcionalmente Patrulhas RP em Status de Viatura 3, em local e período definidos, sem comprometer o atendimento ordinário. Qual requisito adicional decorre da Diretriz?",
+        "options": [
+          "A) O emprego matricial é ordinário e pode reduzir o número de Patrulhas abaixo do necessário, se houver aumento da percepção de segurança.",
+          "B) O emprego é excepcional e não pode inviabilizar as demandas próprias do Programa RP; podem ser empregadas Patrulhas de outros programas, exceto do Programa Escolar quando este dispuser de apenas uma Patrulha na Subárea.",
+          "C) O emprego é permitido apenas em ações emergenciais, sendo proibida a participação de Patrulhas de outros programas em conjunto com RP.",
+          "D) O emprego em Status 3 depende exclusivamente de autorização do CGP e não se submete à análise de indicadores geocriminais."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.13 e subitens, Assuntos Operacionais.pdf, PDF p. 472–473. O uso matricial é excepcional, voltado ao controle de indicadores e à percepção de segurança; a quantidade empregada não pode inviabilizar as demandas do RP. Podem participar outros programas, exceto o Escolar se houver apenas uma Patrulha na Subárea. Distratores: A transforma exceção em regra e permite inviabilizar o serviço; C restringe às emergências e proíbe apoio permitido; D altera autoridade e elimina o planejamento."
+      },
+      {
+        "id": 979,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — velocidade de patrulhamento e exceção emergencial",
+        "text": "QUESTÃO 979 — Durante patrulhamento ordinário, a viatura percorre via cujo limite máximo é 60 km/h. Sem deslocamento emergencial, qual parâmetro de velocidade é expressamente indicado pela Diretriz?",
+        "options": [
+          "A) A viatura deve manter velocidade mínima equivalente à metade da velocidade máxima da via e não ultrapassar a velocidade máxima, evitando prejudicar o fluxo normal; a exceção à máxima ocorre em deslocamento emergencial.",
+          "B) A viatura deve manter velocidade mínima de 30 km/h, mas pode exceder 60 km/h sempre que houver baixa densidade de trânsito, mesmo sem emergência.",
+          "C) A viatura deve circular sempre exatamente a 30 km/h, inclusive em deslocamento emergencial, pois a regra de velocidade não comporta exceções.",
+          "D) A viatura pode parar o fluxo normal para manter velocidade inferior à metade do limite, desde que permaneça em patrulhamento preventivo."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.14, Assuntos Operacionais.pdf, PDF p. 473. A viatura deve respeitar velocidade máxima (exceto em deslocamento emergencial) e mínima equivalente à metade da máxima, sem prejudicar o fluxo normal. Distratores: B cria exceção por baixa densidade não prevista; C transforma a velocidade mínima em velocidade fixa e elimina a exceção emergencial; D autoriza prejudicar o fluxo."
+      },
+      {
+        "id": 980,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — comando e armas portáteis",
+        "text": "QUESTÃO 980 — Considerando o emprego de armamento na Força de Patrulha, qual distinção entre a Patrulha e os responsáveis pela supervisão está prevista na Diretriz?",
+        "options": [
+          "A) Qualquer Patrulha pode empregar arma portátil sem habilitação se a ocorrência for grave; CFP e CGP apenas recomendam o uso.",
+          "B) A Patrulha pode utilizar arma portátil se seus policiais forem habilitados e houver autorização dos escalões superiores; CFP e CGP devem utilizar armas portáteis e ser habilitados, cabendo ao CFP também portar escudo balístico e instrumentos de menor potencial ofensivo.",
+          "C) A Patrulha e o CGP devem utilizar armas portáteis, mas o CFP pode dispensá-las se possuir escudo balístico.",
+          "D) O emprego de arma portátil é vedado à Patrulha RP, sendo obrigatório apenas para o CFP e facultativo para o CGP."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-002/02/20, itens 6.2.17–6.2.18, Assuntos Operacionais.pdf, PDF p. 473. Patrulhas podem usar armas portáteis se habilitadas e autorizadas pelos escalões superiores; CFP e CGP devem obrigatoriamente usá-las e ser habilitados; pelo menos o CFP também deve dispor de escudo balístico e instrumentos de menor potencial ofensivo. Distratores: A dispensa habilitação e autorização; C cria dispensa ao CFP e não distingue os equipamentos adicionais; D proíbe o que é permitido e torna facultativo o que é obrigatório."
+      },
+      {
+        "id": 981,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — critérios de implantação",
+        "text": "QUESTÃO 981 — Uma região apresenta comunidade rural dispersa, atividade turística e agrária, e poucos registros criminais, mas um roubo notório alterou a percepção de segurança. Qual avaliação é compatível com os fatores de implantação do Programa Pol Rr?",
+        "options": [
+          "A) A implantação é inviável sem índices criminais elevados e contínuos, pois fatos esporádicos não podem ser considerados.",
+          "B) A implantação pode ser orientada pela presença de comunidade rural, atividades sociais/econômicas potencialmente vulneráveis ou aptas a servir de refúgio, e índices ou ações delituosas mesmo esporádicos que afetem a percepção de segurança.",
+          "C) A implantação depende exclusivamente da existência de atividade extrativista, não abrangendo turismo, criação de animais ou comunidades dispersas.",
+          "D) A implantação somente é possível se a área estiver dentro do perímetro urbano e possuir alta densidade demográfica."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.2.1.1–6.2.1.3, Assuntos Operacionais.pdf, PDF p. 477. Os fatores incluem comunidade rural enquadrada, atividades sociais/políticas/econômicas potencialmente focos de ação criminosa ou refúgio de infratores, e índices ou ações delituosas que, mesmo esporádicas, afetem a percepção de segurança. Distratores: A elimina a hipótese expressa de fatos esporádicos; C restringe atividades e comunidades sem base; D contraria o conceito de ambiente rural."
+      },
+      {
+        "id": 982,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — composição e função da Patrulha Rural",
+        "text": "QUESTÃO 982 — Uma OPM pretende designar equipe para o Programa Rural. Qual combinação respeita a definição da Patrulha Rural e o quantitativo de efetivo?",
+        "options": [
+          "A) A Patrulha Rural é uma estrutura territorial, equivalente a uma Subárea, formada por um único policial e destinada a fiscalização ambiental.",
+          "B) A Patrulha Rural é uma US composta por policiais designados e treinados para o programa; a US rural deve ter de dois a três policiais, com a composição funcional indicada para a equipe de três.",
+          "C) A Patrulha Rural é qualquer US que transite em área fora do perímetro urbano, independentemente de designação ou treinamento; a composição mínima é de quatro policiais.",
+          "D) A Patrulha Rural é uma equipe especializada do CPAmb, não podendo ser formada por OPM territoriais."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.1.3 e 6.4.1.1, Assuntos Operacionais.pdf, PDF pp. 476 e 478. A Patrulha Rural é US composta por policiais designados e treinados para o programa; a US no ambiente rural terá no mínimo dois e no máximo três PM. Se três, prevê-se encarregado, preferencialmente Subten/Sgt, motorista e/ou auxiliar, conforme as graduações indicadas. Distratores: A confunde patrulha com divisão territorial e reduz o efetivo; C dispensa designação/treinamento e eleva o mínimo; D exclui indevidamente as OPM territoriais."
+      },
+      {
+        "id": 983,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — atuação do CPAmb e do CPRv",
+        "text": "QUESTÃO 983 — Em uma mesma área rural, há necessidade de prevenção e repressão imediata de delitos comuns e ambientais, além de uma demanda específica de apoio especializado. Qual distinção entre CPAmb, CPRv e OPM territoriais corresponde à Diretriz?",
+        "options": [
+          "A) As OPM territoriais atuam no Nível 4; CPAmb e CPRv atuam exclusivamente no Nível 1, sem possibilidade de apoio especializado.",
+          "B) As OPM territoriais subordinadas ao CPC/CPM/CPI atuam no Nível 1; o CPAmb atua ordinariamente no Nível 1 de forma integrada e pode apoiar no Nível 4; o CPRv atua complementarmente no Nível 1 e, excepcionalmente, no Nível 4 para apoio especializado.",
+          "C) O CPAmb só atua em crimes ambientais e nunca participa de prevenção e repressão imediata de infrações penais comuns em ambiente rural.",
+          "D) O CPRv assume a gestão territorial do Programa Rural, substituindo as OPM territoriais sempre que houver rodovia na região."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.3.1.1–6.3.1.3, Assuntos Operacionais.pdf, PDF pp. 477–478. As OPM territoriais desenvolvem o programa no Nível 1; o CPAmb atua integrado e compartilhado, ordinariamente no Nível 1 para policiamento geral rural e pode apoiar qualquer US no Nível 4; o CPRv atua de forma complementar, ordinariamente no Nível 1 e excepcionalmente no Nível 4 para apoio especializado. Distratores: A inverte níveis e nega apoio; C restringe indevidamente a atuação do CPAmb; D transfere gestão territorial ao CPRv sem fundamento."
+      },
+      {
+        "id": 984,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — critérios do ambiente rural",
+        "text": "QUESTÃO 984 — Uma localidade está formalmente fora do perímetro urbano, tem baixa densidade demográfica, população agrupada e isolada e atividades agrárias e de criação de animais. Qual análise utiliza corretamente os conceitos da Diretriz?",
+        "options": [
+          "A) O conceito de ambiente rural depende exclusivamente de baixa densidade demográfica; localização legal e atividades econômicas são irrelevantes.",
+          "B) A área pode enquadrar-se como ambiente rural; a comunidade rural é definida pelo conjunto de pessoas ligadas por interesses comuns, agrupadas ou isoladas, com padrões de relacionamento vinculados à terra.",
+          "C) A comunidade rural exige necessariamente residência contígua e organização formal em associação, sendo excluídas pessoas isoladas.",
+          "D) A definição de ambiente rural exige que toda atividade econômica seja extrativista, excluindo criação de animais e turismo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.1.4 e 6.1.5, Assuntos Operacionais.pdf, PDF p. 476. O ambiente rural é, em princípio, espaço fora dos limites legais do perímetro urbano, normalmente com baixa densidade, com atividades extrativistas, agrárias ou criação de animais, entre outras congêneres; comunidade rural pode ser agrupada ou isolada e é ligada por interesses comuns. Distratores: A elimina critérios relevantes; C exige organização formal e exclui isolados sem base; D restringe indevidamente as atividades abrangidas."
+      },
+      {
+        "id": 985,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — planejamento conjunto e CPP",
+        "text": "QUESTÃO 985 — Uma área extensa envolve OPM territorial, ambiental e rodoviária. Para evitar sobreposição de patrulhas, os comandantes discutem limites físicos e prioridades. Qual procedimento é exigido pela Diretriz?",
+        "options": [
+          "A) Cada OPM define isoladamente seus espaços e os registra apenas em relatório mensal, evitando coordenação para preservar autonomia.",
+          "B) Os comandantes de Cia PM territorial e, até nível Pel PM, os comandantes das OPM ambientais e rodoviárias dos territórios correspondentes devem estabelecer conjuntamente os espaços de atuação, previstos nos CPP das respectivas US.",
+          "C) A Coordenação Operacional PM define todos os espaços de patrulhamento sem participação dos comandos territoriais ou especializados.",
+          "D) Os espaços físicos são definidos apenas depois de cada ocorrência, e o CPP é dispensado quando há mais de uma OPM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.3.2, Assuntos Operacionais.pdf, PDF p. 479. Em razão das grandes áreas, os comandantes territoriais de Cia PM e os comandantes até nível Pel PM das OPM Pol Amb e Pol Rv correspondentes devem estabelecer conjuntamente os espaços físicos de atuação, previstos nos CPP. Distratores: A contradiz o planejamento conjunto; C exclui os comandantes expressamente envolvidos; D posterga planejamento e dispensa o CPP sem previsão."
+      },
+      {
+        "id": 986,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — composição e veículo",
+        "text": "QUESTÃO 986 — Uma US destinada ao ambiente rural será composta por três policiais e utilizará viatura. Qual composição e característica veicular se alinham à Diretriz?",
+        "options": [
+          "A) Encarregado, motorista e auxiliar, com as graduações preferenciais indicadas; veículo preferencialmente com altura em relação ao solo, suspensão e/ou tração adequadas ao ambiente rural.",
+          "B) Três policiais de qualquer função, sem preferência de graduação; veículo obrigatoriamente 4x4 e com modelo padronizado único.",
+          "C) Encarregado e dois motoristas, com proibição de auxiliar; veículo de passeio sem adaptação, pois a Diretriz não aborda características de viatura.",
+          "D) Dois policiais no máximo; veículo deve ser necessariamente motocicleta para permitir acesso a estradas vicinais."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.4.1.1–6.4.1.2, Assuntos Operacionais.pdf, PDF p. 478. A US terá de dois a três PM; no caso de três, a composição indicada é encarregado (preferencialmente Subten/Sgt), motorista (Cb/Sd) e/ou auxiliar (Cb/Sd). O veículo deve preferencialmente ter altura, suspensão e/ou tração adequadas. Distratores: B converte preferências em obrigatoriedade e cria modelo único; C altera funções e nega o item veicular; D reduz o máximo e impõe motocicleta."
+      },
+      {
+        "id": 987,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — fontes de dados do PPI rural",
+        "text": "QUESTÃO 987 — Para elaborar plano de ação do Programa Rural, o comandante precisa integrar informação georreferenciada e conhecimento comunitário. Qual método corresponde ao item 6.4.3.1?",
+        "options": [
+          "A) Utilizar exclusivamente boletins de ocorrência registrados nos últimos 30 dias, excluindo fontes comunitárias por não serem dados georreferenciados.",
+          "B) Obter camadas de dados de interesse a partir de dados georreferenciados dos Sistemas Inteligentes e de informações oriundas das comunidades rurais consideradas relevantes ao programa.",
+          "C) Utilizar apenas denúncias anônimas, sem integração com Sistemas Inteligentes, para evitar viés de planejamento.",
+          "D) Aguardar reunião mensal com CPAmb e CPRv para só então iniciar a coleta de dados do PPI."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.3.1, Assuntos Operacionais.pdf, PDF p. 478. As camadas de dados de interesse devem vir de dados georreferenciados dos Sistemas Inteligentes e de informações relevantes das comunidades rurais. Distratores: A restringe as fontes e inventa prazo; C exclui uma fonte expressamente prevista e limita a coleta; D posterga indevidamente a coleta até reunião."
+      },
+      {
+        "id": 988,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — reunião de análise crítica mensal",
+        "text": "QUESTÃO 988 — Uma OPM ambiental atua em circunscrição que abrange diversos Batalhões territoriais. Qual participação mínima nas Reuniões de Análise Crítica está estabelecida para os comandantes das OPM ambientais e rodoviárias?",
+        "options": [
+          "A) Participar diariamente de todas as RAC de nível II, independentemente da circunscrição.",
+          "B) Participar ao menos uma vez por mês das RAC — Nível I junto aos Batalhões territoriais abrangidos por suas respectivas circunscrições.",
+          "C) Participar uma vez por trimestre de reunião convocada exclusivamente pelo CPAmb, sem necessidade de comparecimento aos Batalhões territoriais.",
+          "D) Participar apenas quando houver roubo ou furto com repercussão, pois a Diretriz não prevê frequência mínima."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.3.3, Assuntos Operacionais.pdf, PDF p. 479. Os comandantes das OPM Pol Amb e Pol Rv devem participar ao menos uma vez por mês das RAC — Nível I junto aos Batalhões territoriais abrangidos pelas circunscrições. Distratores: A altera frequência e nível; C substitui a periodicidade e o local; D cria condição eventual incompatível com a periodicidade mínima."
+      },
+      {
+        "id": 989,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — ações previstas nos CPP",
+        "text": "QUESTÃO 989 — Na revisão dos CPP das Patrulhas Rurais, a equipe precisa selecionar um conjunto de medidas expressamente indicado para as ações, operações ou missões do programa. Qual conjunto está integralmente alinhado à Diretriz?",
+        "options": [
+          "A) Bloqueios em estradas vicinais e rotas principais; contato com escolas rurais; saturação preventiva em locais de aglomeração; averiguação de estabelecimentos comerciais; contato comunitário e cadastramento de propriedades rurais.",
+          "B) Bloqueios apenas em rodovias estaduais; patrulhamento escolar exclusivo; fiscalização tributária de propriedades e apreensão de equipamentos agrícolas.",
+          "C) Contato com escolas apenas após ocorrência criminal; proibição de saturação em pontos turísticos; cadastramento restrito a propriedades com boletim de ocorrência.",
+          "D) Ações de inteligência exclusivamente sigilosas, sem contato comunitário, averiguação de comércio ou previsão nos CPP."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.3.6 e subitens, Assuntos Operacionais.pdf, PDF p. 479. O plano deve considerar bloqueios em estradas vicinais e rotas principais, contato com escolas rurais, saturação preventiva em aglomerações, averiguação de estabelecimentos, contato com comunidades/entidades e identificação e cadastramento de propriedades. Distratores: B substitui as medidas por atividades não previstas; C cria restrições e condições não previstas; D exclui ações expressamente enumeradas."
+      },
+      {
+        "id": 990,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — gestão do programa e diagnóstico compartilhado",
+        "text": "QUESTÃO 990 — Uma OPM territorial sustenta que, por ser responsável pela área, pode conduzir o Programa Rural sem compartilhar diagnóstico com as OPM ambientais ou rodoviárias. Qual alternativa contraria essa leitura?",
+        "options": [
+          "A) O programa busca diagnóstico situacional fidedigno compartilhado entre OPM envolvidas e planejamento conjunto; a responsabilidade gerencial sobre o Programa Rural cabe aos Cmt Cia PM Territorial.",
+          "B) O programa exige diagnóstico compartilhado, mas a responsabilidade gerencial cabe exclusivamente à Coordenação Operacional PM, sem participação dos Cmt Cia.",
+          "C) O programa não exige integração entre OPM, pois o ambiente rural deve ser patrulhado exclusivamente por unidades territoriais.",
+          "D) A responsabilidade gerencial é sempre do CPAmb, ainda que a atividade seja desenvolvida pelas OPM territoriais."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, objetivos 4.2 e item 6.4.2, Assuntos Operacionais.pdf, PDF pp. 475 e 478. O programa busca diagnóstico fidedigno compartilhado entre OPM envolvidas e planejamento conjunto; os Cmt Cia PM Territorial detêm a responsabilidade gerencial. Distratores: B transfere a gestão e elimina a competência expressa; C nega a integração e restringe indevidamente a execução; D atribui gestão exclusiva ao CPAmb."
+      },
+      {
+        "id": 991,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "C2 — distinção entre CC2, COPOM e Sala de Operações",
+        "text": "QUESTÃO 991 — Uma OPM precisa definir qual estrutura é responsável por analisar dados e transmitir informações qualificadas aos executores do policiamento, além de assessorar escalões de comando e supervisão. Qual conceito corresponde à função descrita?",
+        "options": [
+          "A) Centro de Operações, que gerencia despacho de ocorrências de polícia ostensiva, bombeiros e defesa civil.",
+          "B) Centro de Comando e Controle, estrutura implementada em nível de Grande Comando para operações complexas e integração de OPM ou órgãos externos.",
+          "C) Sala de Operações, estrutura física instalada na sede de OPM, com policial capacitado para analisar dados e transmitir informações qualificadas e assessorar o comando.",
+          "D) Sala de Gerenciamento de Incidentes, estrutura externa ao sítio da operação que reúne autoridades político-estratégicas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-001/02/23, item 6.1.10, Assuntos Operacionais.pdf, PDF p. 200. A Sala de Operações é instalada na sede da OPM e realiza análise de dados, transmissão de informações qualificadas e assessoramento aos escalões de comando e supervisão. Distratores: A descreve o COPOM; B descreve o CC2; D descreve a Sala de Gerenciamento de Incidentes."
+      },
+      {
+        "id": 992,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "C2 — Sala de Gerenciamento de Incidentes e Posto de Comando",
+        "text": "QUESTÃO 992 — Em operação programada de grande repercussão, autoridades político-estratégicas precisam acompanhar a operação sem se instalar no local da ocorrência, mantendo contato bilateral com o Posto de Comando. Qual estrutura atende a essa finalidade?",
+        "options": [
+          "A) Sala de Operações, instalada obrigatoriamente no local do incidente e subordinada à US que executa a ação.",
+          "B) Sala de Gerenciamento de Incidentes, localizada fora do sítio da operação, normalmente contígua a um Centro de Operações, para monitoramento e interlocução com outros órgãos e transmissão de diretivas ao comandante.",
+          "C) CC2 Móvel, que substitui o Posto de Comando e exerce a autoridade tática sobre todas as equipes em campo.",
+          "D) COPOM, que reúne necessariamente autoridades político-estratégicas e determina diretamente o comando da operação."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, item 6.1.9, Assuntos Operacionais.pdf, PDF p. 200. A Sala de Gerenciamento de Incidentes fica fora do sítio, normalmente contígua a Centro de Operações, reúne autoridades político-estratégicas, mantém contato bilateral com o Posto de Comando e transmite diretivas ao comandante. Distratores: A descreve de forma incorreta a Sala de Operações; C atribui ao CC2 Móvel função de comando tático não definida; D confunde o COPOM com a estrutura político-estratégica."
+      },
+      {
+        "id": 993,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "C2 — princípios de confiabilidade e segurança da informação",
+        "text": "QUESTÃO 993 — Durante incidente interagências, a equipe recebe dado ainda não validado e precisa escolher entre difundi-lo imediatamente como fato confirmado ou submetê-lo à análise de policial capacitado. Qual princípio exige atenção à qualidade e veracidade das informações, aliada à manutenção de sua eficácia ao longo do tempo?",
+        "options": [
+          "A) Amplitude.",
+          "B) Simplicidade.",
+          "C) Flexibilidade.",
+          "D) Confiabilidade."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-001/02/23, item 6.2.2.3, Assuntos Operacionais.pdf, PDF p. 201. Confiabilidade refere-se à credibilidade da qualidade e veracidade das informações transmitidas, especialmente em eventos complexos, garantida por análise qualificada por policial capacitado e manutenção de eficácia ao longo do tempo. Distratores: A trata da abrangência de áreas e agentes; B trata de processos simplificados e linguagem clara; C trata de adaptação de estrutura e processos às circunstâncias."
+      },
+      {
+        "id": 994,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "C2 — unidade de comando versus comunicações integradas",
+        "text": "QUESTÃO 994 — Uma operação tem cadeia de comando definida e divisão clara de responsabilidades, mas os canais de rádio de duas agências não são interconectados. Qual distinção doutrinária é correta?",
+        "options": [
+          "A) A falha descrita é exclusivamente de Unidade de Comando, pois esse princípio exige apenas canais comuns, sem relação com cadeia de autoridade.",
+          "B) A cadeia de comando definida corresponde à Unidade de Comando; a falta de canais e frequências comuns e interconectadas afeta Comunicações Integradas.",
+          "C) A situação caracteriza Confiabilidade, que exige somente a existência de autoridade única, sem análise de informações.",
+          "D) A situação caracteriza Flexibilidade, pois canais desconectados permitem que cada agência opere sem padronização."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.2.2.2 e 6.2.2.8, Assuntos Operacionais.pdf, PDF p. 201. Unidade de Comando exige cadeia definida, divisão de responsabilidades, comunicação segura/confiável e doutrina comum; Comunicações Integradas tratam de canais e frequências comuns e interconectados sob gerenciamento de Centro de Operações. Distratores: A inverte os conceitos e reduz Unidade de Comando; C confunde confiabilidade com autoridade; D atribui à flexibilidade o oposto de interoperabilidade."
+      },
+      {
+        "id": 995,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "C2 — serviços essenciais e autoridade de iniciativa",
+        "text": "QUESTÃO 995 — Uma Sala de Operações executa monitoramento de rádio, análise de informações e videopatrulhamento. O comando propõe acrescentar atividade compatível com o escalão e a necessidade local. Qual interpretação da Diretriz é correta?",
+        "options": [
+          "A) Os serviços essenciais obrigatórios incluem monitoramento da rede de rádio, análise de dados com ferramentas inteligentes e videopatrulhamento; outras atividades podem ser implementadas por iniciativa da autoridade competente, conforme o escalão.",
+          "B) Somente o monitoramento da rede de rádio é obrigatório; análise e videopatrulhamento dependem de ocorrência de grande repercussão.",
+          "C) Todas as atividades adicionais dependem de autorização do Comandante-Geral, independentemente do escalão da estrutura.",
+          "D) O videopatrulhamento é facultativo e incompatível com as estruturas de C2, que devem limitar-se a comunicações de voz."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.3.2.1–6.3.2.4, Assuntos Operacionais.pdf, PDF p. 202. São serviços essenciais obrigatórios o monitoramento da rede de rádio, a análise de dados e informações com ferramentas inteligentes e o VPtr; outras atividades podem ser implementadas por iniciativa da autoridade competente, conforme o escalão. Distratores: B torna facultativos serviços obrigatórios; C centraliza toda iniciativa sem base; D exclui atividade expressamente obrigatória."
+      },
+      {
+        "id": 996,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "C2 — controle, comando e assessoramento",
+        "text": "QUESTÃO 996 — Em um exercício de planejamento, três tarefas são distribuídas: (i) definir objetivos, organizar estruturas e direcionar recursos; (ii) regular a distribuição e emprego dos recursos sob gerenciamento de risco; (iii) coletar e analisar informações e desenvolver linhas de ação para subsidiar decisões. Qual associação está correta?",
+        "options": [
+          "A) (i) Controle; (ii) Assessoramento; (iii) Comando.",
+          "B) (i) Assessoramento; (ii) Comando; (iii) Controle.",
+          "C) (i) Comando; (ii) Controle; (iii) Assessoramento.",
+          "D) (i) Comando; (ii) Assessoramento; (iii) Controle."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.3.1.1–6.3.1.3, Assuntos Operacionais.pdf, PDF p. 202. Comando envolve autoridade sobre planejamento/execução, definição de objetivos, organização e direcionamento de recursos; Controle regula distribuição e emprego sob gerenciamento de risco; Assessoramento coleta/análise de informações, cenários e linhas de ação. Distratores: A troca as três funções; B também as troca; D associa corretamente apenas Comando e desloca Controle e Assessoramento."
+      },
+      {
+        "id": 997,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "C2 — videopatrulhamento e tratamento da evidência",
+        "text": "QUESTÃO 997 — Um OpVPtr identifica imagem de interesse policial e conclui que é necessária intervenção. Depois, verifica que a gravação pode constituir evidência digital. Qual sequência é exigida pelo Anexo A?",
+        "options": [
+          "A) Acionar a US via COPOM/CAD com informações obtidas; extrair a imagem e, tratando-se de evidência digital, realizar upload ao SiGCED e classificá-la conforme a diretriz de COP.",
+          "B) Enviar a imagem diretamente à imprensa para ampliar a consciência situacional; a custódia começa quando a autoridade solicita cópia.",
+          "C) Acionar diretamente a equipe por canal informal e manter o arquivo local, pois o upload ao SiGCED é responsabilidade exclusiva do Chefe PJMD.",
+          "D) Editar a imagem para destacar o fato, transferi-la por aplicativo e registrar o upload somente se houver instauração de procedimento."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, Anexo A, itens 1.2.1–1.2.2, Assuntos Operacionais.pdf, PDF p. 212. O OpVPtr aciona via COPOM/CAD a US responsável, fornece o máximo de informações, extrai imagens e, se forem evidência digital, faz upload ao SiGCED e classificação conforme diretriz de COP. Distratores: B viola o fluxo de acionamento e custódia; C substitui o canal e transfere indevidamente o upload; D autoriza edição e compartilhamento por aplicativo, contrários à integridade exigida."
+      },
+      {
+        "id": 998,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "C2 — cadeia de custódia após upload",
+        "text": "QUESTÃO 998 — Após o OpVPtr extrair e enviar evidência ao SiGCED, uma autoridade competente solicita arquivo para procedimento apuratório. Quem passa a responder pela administração e custódia e qual padrão deve observar?",
+        "options": [
+          "A) O OpVPtr mantém indefinidamente a custódia e pode editar cópia de trabalho antes de disponibilizar à autoridade.",
+          "B) O Chefe da Seção PJMD passa a responder pela administração e custódia, controla o acesso, salvaguarda a integridade e disponibiliza o arquivo à autoridade competente sem edição.",
+          "C) O COPOM passa a responder pela custódia e pode editar trechos não relevantes, desde que preserve o arquivo original em outro sistema.",
+          "D) A autoridade solicitante assume a custódia antes do upload e define livremente a forma de edição e compartilhamento."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, Anexo A, item 2.2 e subitens, Assuntos Operacionais.pdf, PDF p. 213. Após upload ao SiGCED, a administração e custódia passam ao Chefe da Seção PJMD, que controla acesso, garante salvaguarda/integridade e disponibiliza o arquivo requisitado sem edição. Distratores: A mantém a custódia com o operador e autoriza edição; C atribui a custódia ao COPOM e permite edição; D antecipa a transferência e dá liberdade de edição sem base."
+      },
+      {
+        "id": 999,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "C2 — acesso às imagens e competência para requerimento",
+        "text": "QUESTÃO 999 — Um policial que atuou em ocorrência requer imagens de videopatrulhamento para instruir procedimento administrativo na condição de acusado. Ao mesmo tempo, pretende capturar a tela com celular para anexá-la ao requerimento. Qual solução corresponde ao Anexo A?",
+        "options": [
+          "A) Pode acessar as imagens ligadas à ocorrência, mas não captá-las com outro equipamento, nem extrair, editar ou transferir os dados; o requerimento para subsidiar procedimento apuratório deve ser dirigido à autoridade encarregada.",
+          "B) O acesso é vedado a acusado, sendo permitido apenas a testemunha ou vítima; o requerimento deve ser dirigido ao CDCA.",
+          "C) Pode capturar a tela se o requerimento for apresentado ao Chefe da Seção PJMD, que deve autorizar qualquer uso particular.",
+          "D) Pode editar e transferir as imagens desde que o procedimento seja administrativo e não judicial."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, Anexo A, itens 3.1–3.2, Assuntos Operacionais.pdf, PDF p. 213. O policial pode acessar imagens relacionadas à ocorrência em que atuou como testemunha, vítima ou acusado para instruir processos/procedimentos, mas é vedada a captação por outro equipamento, extração, edição ou transferência dos dados. O requerimento do acusado ou defensor deve ser dirigido à autoridade encarregada. Distratores: B restringe indevidamente o acesso e altera o destinatário; C autoriza captura vedada e desloca competência; D cria exceção para procedimento administrativo."
+      },
+      {
+        "id": 1000,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "C2 — requisitos para seleção de OpVPtr",
+        "text": "QUESTÃO 1000 — Na seleção de policial para atuar como OpVPtr, um candidato está no comportamento “bom”, possui dois anos de experiência operacional, mas responde a Processo Administrativo Disciplinar (PAD). Qual avaliação corresponde aos requisitos do Anexo A?",
+        "options": [
+          "A) Pode ser selecionado porque comportamento bom e experiência de dois anos compensam a existência de PAD.",
+          "B) Não atende ao requisito de não responder a processo regular (CJ, CD, PAD) ou PAE; a experiência de dois anos é preferencial, enquanto o comportamento mínimo “bom” é requisito.",
+          "C) Não pode ser selecionado apenas por não possuir três anos de experiência, pois essa é condição obrigatória, enquanto o PAD é irrelevante.",
+          "D) Pode ser selecionado se a autoridade responsável pelo PAD autorizar, pois a Diretriz não prevê restrição a procedimentos em curso."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, Anexo A, item 4.1–4.3, Assuntos Operacionais.pdf, PDF p. 213. O candidato deve estar no mínimo no comportamento “bom” e não responder a processo regular (CJ, CD, PAD) nem PAE; possuir preferencialmente dois anos de experiência operacional. Distratores: A transforma experiência preferencial em compensação para requisito impeditivo; C inverte obrigatório/preferencial e ignora o PAD; D inventa exceção por autorização."
+      },
+          {
+        "id": 1001,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "identificação exclusiva do equipamento",
+        "text": "QUESTÃO 1001 — Considerando identificação exclusiva do equipamento e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O sistema exige que o operador digite manualmente o número de série em cada gravação.",
+          "B) A identificação do equipamento é realizada por RFID, de forma exclusiva.",
+          "C) A identificação é feita exclusivamente pelo GPS da viatura, sem RFID.",
+          "D) A identificação é feita pela matrícula do policial, dispensando qualquer identificação do equipamento."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (identificação exclusiva do equipamento): “A identificação do equipamento é realizada por RFID, de forma exclusiva.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O sistema exige que o operador digite manualmente o número de série em cada gravação.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre identificação exclusiva do equipamento. C: incorreta para o comando, pois afirma: “A identificação é feita exclusivamente pelo GPS da viatura, sem RFID.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre identificação exclusiva do equipamento. D: incorreta para o comando, pois afirma: “A identificação é feita pela matrícula do policial, dispensando qualquer identificação do equipamento.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre identificação exclusiva do equipamento. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1002,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "seleção automática de gravação",
+        "text": "QUESTÃO 1002 — Considerando seleção automática de gravação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A seleção automática considera o nível de bateria e a existência de gravação ainda não enviada.",
+          "B) A seleção automática ocorre somente quando o usuário escolhe manualmente cada arquivo.",
+          "C) A seleção automática considera apenas a matrícula do usuário, independentemente da bateria.",
+          "D) A seleção automática depende exclusivamente da localização da viatura no mapa."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (seleção automática de gravação): “A seleção automática considera o nível de bateria e a existência de gravação ainda não enviada.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “A seleção automática ocorre somente quando o usuário escolhe manualmente cada arquivo.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre seleção automática de gravação. C: incorreta para o comando, pois afirma: “A seleção automática considera apenas a matrícula do usuário, independentemente da bateria.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre seleção automática de gravação. D: incorreta para o comando, pois afirma: “A seleção automática depende exclusivamente da localização da viatura no mapa.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre seleção automática de gravação. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1003,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "pré-gravação",
+        "text": "QUESTÃO 1003 — Considerando pré-gravação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O sistema mantém pré-gravação de 60 segundos.",
+          "B) O sistema mantém pré-gravação de 30 segundos.",
+          "C) O sistema mantém pré-gravação de 120 segundos.",
+          "D) O sistema mantém pré-gravação de 90 segundos."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (pré-gravação): “O sistema mantém pré-gravação de 90 segundos.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O sistema mantém pré-gravação de 60 segundos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre pré-gravação. B: incorreta para o comando, pois afirma: “O sistema mantém pré-gravação de 30 segundos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre pré-gravação. C: incorreta para o comando, pois afirma: “O sistema mantém pré-gravação de 120 segundos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre pré-gravação. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1004,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "modo velado no botão P2",
+        "text": "QUESTÃO 1004 — Considerando modo velado no botão P2 e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Um clique no P0 corresponde ao modo velado.",
+          "B) Dois cliques no P0 correspondem ao modo velado.",
+          "C) O acionamento do P2 por três segundos corresponde ao modo velado.",
+          "D) O acionamento do P1 por três segundos corresponde ao modo velado."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (modo velado no botão P2): “O acionamento do P2 por três segundos corresponde ao modo velado.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Um clique no P0 corresponde ao modo velado.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre modo velado no botão P2. B: incorreta para o comando, pois afirma: “Dois cliques no P0 correspondem ao modo velado.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre modo velado no botão P2. D: incorreta para o comando, pois afirma: “O acionamento do P1 por três segundos corresponde ao modo velado.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre modo velado no botão P2. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1005,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "desativação pelo P1",
+        "text": "QUESTÃO 1005 — Considerando desativação pelo P1 e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Dois cliques no P0 desativam a gravação sem gerar alerta.",
+          "B) O acionamento do P1 por três segundos desativa a gravação, conforme o procedimento descrito.",
+          "C) Um clique no P0 desativa a gravação.",
+          "D) O acionamento do P2 por três segundos desativa a gravação e ativa o modo velado."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (desativação pelo P1): “O acionamento do P1 por três segundos desativa a gravação, conforme o procedimento descrito.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Dois cliques no P0 desativam a gravação sem gerar alerta.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre desativação pelo P1. C: incorreta para o comando, pois afirma: “Um clique no P0 desativa a gravação.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre desativação pelo P1. D: incorreta para o comando, pois afirma: “O acionamento do P2 por três segundos desativa a gravação e ativa o modo velado.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre desativação pelo P1. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1006,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "marcador pelo P0",
+        "text": "QUESTÃO 1006 — Considerando marcador pelo P0 e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Um clique no P0 insere um marcador.",
+          "B) Um clique no P1 insere o marcador.",
+          "C) Dois cliques no P0 inserem apenas um marcador, sem outra função.",
+          "D) Manter o P2 pressionado por três segundos insere o marcador."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (marcador pelo P0): “Um clique no P0 insere um marcador.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “Um clique no P1 insere o marcador.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre marcador pelo P0. C: incorreta para o comando, pois afirma: “Dois cliques no P0 inserem apenas um marcador, sem outra função.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre marcador pelo P0. D: incorreta para o comando, pois afirma: “Manter o P2 pressionado por três segundos insere o marcador.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre marcador pelo P0. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1007,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "acionamento de pânico",
+        "text": "QUESTÃO 1007 — Considerando acionamento de pânico e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Manter o P2 pressionado por três segundos aciona a função de pânico.",
+          "B) Um clique no P0 aciona a função de pânico.",
+          "C) Dois cliques no P1 acionam a função de pânico.",
+          "D) Dois cliques no P0 acionam a função de pânico."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (acionamento de pânico): “Dois cliques no P0 acionam a função de pânico.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Manter o P2 pressionado por três segundos aciona a função de pânico.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre acionamento de pânico. B: incorreta para o comando, pois afirma: “Um clique no P0 aciona a função de pânico.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre acionamento de pânico. C: incorreta para o comando, pois afirma: “Dois cliques no P1 acionam a função de pânico.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre acionamento de pânico. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1008,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "classificação pelo usuário",
+        "text": "QUESTÃO 1008 — Considerando classificação pelo usuário e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A classificação é substituída pela identificação RFID e não exige atuação do usuário.",
+          "B) A classificação é feita automaticamente apenas pela localização GPS.",
+          "C) O usuário realiza a classificação da gravação no fluxo previsto pelo sistema.",
+          "D) A classificação cabe exclusivamente ao supervisor, sendo vedada ao usuário."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (classificação pelo usuário): “O usuário realiza a classificação da gravação no fluxo previsto pelo sistema.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A classificação é substituída pela identificação RFID e não exige atuação do usuário.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre classificação pelo usuário. B: incorreta para o comando, pois afirma: “A classificação é feita automaticamente apenas pela localização GPS.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre classificação pelo usuário. D: incorreta para o comando, pois afirma: “A classificação cabe exclusivamente ao supervisor, sendo vedada ao usuário.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre classificação pelo usuário. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1009,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "correção de classificação",
+        "text": "QUESTÃO 1009 — Considerando correção de classificação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A correção é substituída pela exclusão obrigatória de toda gravação classificada incorretamente.",
+          "B) O procedimento contempla a correção de classificação de gravação.",
+          "C) A classificação é imutável após o primeiro envio.",
+          "D) A correção só pode ser feita por usuário externo à PMESP."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (correção de classificação): “O procedimento contempla a correção de classificação de gravação.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A correção é substituída pela exclusão obrigatória de toda gravação classificada incorretamente.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre correção de classificação. C: incorreta para o comando, pois afirma: “A classificação é imutável após o primeiro envio.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre correção de classificação. D: incorreta para o comando, pois afirma: “A correção só pode ser feita por usuário externo à PMESP.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre correção de classificação. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1010,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "gravação acidental",
+        "text": "QUESTÃO 1010 — Considerando gravação acidental e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O procedimento prevê tratamento para gravação acidental.",
+          "B) Gravação acidental é sempre tratada como acionamento de pânico.",
+          "C) Toda gravação acidental deve ser eliminada automaticamente sem registro.",
+          "D) O procedimento não prevê tratamento para gravação acidental."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (gravação acidental): “O procedimento prevê tratamento para gravação acidental.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “Gravação acidental é sempre tratada como acionamento de pânico.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre gravação acidental. C: incorreta para o comando, pois afirma: “Toda gravação acidental deve ser eliminada automaticamente sem registro.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre gravação acidental. D: incorreta para o comando, pois afirma: “O procedimento não prevê tratamento para gravação acidental.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre gravação acidental. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1011,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "desatribuição no dock",
+        "text": "QUESTÃO 1011 — Considerando desatribuição no dock e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A desatribuição ocorre exclusivamente por contato telefônico com o COPOM.",
+          "B) A desatribuição ocorre automaticamente ao desligar a viatura, sem uso do dock.",
+          "C) A desatribuição ocorre ao inserir um marcador P0.",
+          "D) A desatribuição do equipamento ocorre no procedimento de encaixe no dock."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (desatribuição no dock): “A desatribuição do equipamento ocorre no procedimento de encaixe no dock.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A desatribuição ocorre exclusivamente por contato telefônico com o COPOM.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre desatribuição no dock. B: incorreta para o comando, pois afirma: “A desatribuição ocorre automaticamente ao desligar a viatura, sem uso do dock.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre desatribuição no dock. C: incorreta para o comando, pois afirma: “A desatribuição ocorre ao inserir um marcador P0.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre desatribuição no dock. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1012,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "P2 e P1",
+        "text": "QUESTÃO 1012 — Considerando P2 e P1 e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) P2 insere marcador e P0 desativa a gravação, ambos por três segundos.",
+          "B) P1 ativa o modo velado e P2 desativa a gravação, ambos por um clique.",
+          "C) O P2 mantido por três segundos ativa o modo velado; o P1 mantido por três segundos é usado para desativar, conforme o procedimento.",
+          "D) P0 ativa o modo velado e P1 aciona o pânico, ambos por dois cliques."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (P2 e P1): “O P2 mantido por três segundos ativa o modo velado; o P1 mantido por três segundos é usado para desativar, conforme o procedimento.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “P2 insere marcador e P0 desativa a gravação, ambos por três segundos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre P2 e P1. B: incorreta para o comando, pois afirma: “P1 ativa o modo velado e P2 desativa a gravação, ambos por um clique.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre P2 e P1. D: incorreta para o comando, pois afirma: “P0 ativa o modo velado e P1 aciona o pânico, ambos por dois cliques.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre P2 e P1. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1013,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "marcador versus pânico",
+        "text": "QUESTÃO 1013 — Considerando marcador versus pânico e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O P0 diferencia as funções pelo tempo de três segundos, sem considerar o número de cliques.",
+          "B) O P0 diferencia o marcador, por um clique, do pânico, por dois cliques.",
+          "C) O marcador e o pânico são acionados exclusivamente pelo P1.",
+          "D) O marcador é acionado por dois cliques e o pânico por um clique."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (marcador versus pânico): “O P0 diferencia o marcador, por um clique, do pânico, por dois cliques.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O P0 diferencia as funções pelo tempo de três segundos, sem considerar o número de cliques.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre marcador versus pânico. C: incorreta para o comando, pois afirma: “O marcador e o pânico são acionados exclusivamente pelo P1.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre marcador versus pânico. D: incorreta para o comando, pois afirma: “O marcador é acionado por dois cliques e o pânico por um clique.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre marcador versus pânico. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1014,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "estado de envio pendente",
+        "text": "QUESTÃO 1014 — Considerando estado de envio pendente e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A existência de gravação ainda não enviada é um dos fatores considerados na seleção automática.",
+          "B) A seleção depende apenas da data de fabricação do equipamento.",
+          "C) A existência de gravação não enviada impede, em qualquer hipótese, o uso de RFID.",
+          "D) O sistema ignora gravações pendentes de envio ao selecionar o equipamento."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (estado de envio pendente): “A existência de gravação ainda não enviada é um dos fatores considerados na seleção automática.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “A seleção depende apenas da data de fabricação do equipamento.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre estado de envio pendente. C: incorreta para o comando, pois afirma: “A existência de gravação não enviada impede, em qualquer hipótese, o uso de RFID.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre estado de envio pendente. D: incorreta para o comando, pois afirma: “O sistema ignora gravações pendentes de envio ao selecionar o equipamento.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre estado de envio pendente. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1015,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "identificação não manual",
+        "text": "QUESTÃO 1015 — Considerando identificação não manual e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O procedimento exige digitação manual em toda utilização e proíbe RFID.",
+          "B) A identificação é feita apenas pelo número da ocorrência, sem identificar equipamento.",
+          "C) A identificação ocorre por código verbal transmitido pelo rádio, sem RFID.",
+          "D) A identificação por RFID evita que a identificação do equipamento dependa exclusivamente de digitação manual."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (identificação não manual): “A identificação por RFID evita que a identificação do equipamento dependa exclusivamente de digitação manual.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O procedimento exige digitação manual em toda utilização e proíbe RFID.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre identificação não manual. B: incorreta para o comando, pois afirma: “A identificação é feita apenas pelo número da ocorrência, sem identificar equipamento.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre identificação não manual. C: incorreta para o comando, pois afirma: “A identificação ocorre por código verbal transmitido pelo rádio, sem RFID.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre identificação não manual. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1016,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "operações de gravação",
+        "text": "QUESTÃO 1016 — Considerando operações de gravação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Todas as funções são acionadas pelo mesmo botão, sem distinção de cliques ou duração.",
+          "B) A função de pânico é acionada apenas pelo P2 por três segundos.",
+          "C) As ações de modo velado, desativação, marcador e pânico são diferenciadas pelos comandos previstos para P2, P1 e P0.",
+          "D) O modo velado é acionado pelo P0 em dois cliques, e o marcador pelo P2."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (operações de gravação): “As ações de modo velado, desativação, marcador e pânico são diferenciadas pelos comandos previstos para P2, P1 e P0.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Todas as funções são acionadas pelo mesmo botão, sem distinção de cliques ou duração.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre operações de gravação. B: incorreta para o comando, pois afirma: “A função de pânico é acionada apenas pelo P2 por três segundos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre operações de gravação. D: incorreta para o comando, pois afirma: “O modo velado é acionado pelo P0 em dois cliques, e o marcador pelo P2.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre operações de gravação. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1017,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "prazo de análise inicial",
+        "text": "QUESTÃO 1017 — Considerando prazo de análise inicial e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A análise inicial deve ocorrer em 3 dias.",
+          "B) A análise inicial do procedimento deve ocorrer no prazo de 5 dias.",
+          "C) A análise inicial deve ocorrer em 15 dias.",
+          "D) A análise inicial deve ocorrer em 10 dias."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (prazo de análise inicial): “A análise inicial do procedimento deve ocorrer no prazo de 5 dias.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A análise inicial deve ocorrer em 3 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre prazo de análise inicial. C: incorreta para o comando, pois afirma: “A análise inicial deve ocorrer em 15 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre prazo de análise inicial. D: incorreta para o comando, pois afirma: “A análise inicial deve ocorrer em 10 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre prazo de análise inicial. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1018,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "complementação ou manifestação",
+        "text": "QUESTÃO 1018 — Considerando complementação ou manifestação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O prazo previsto para complementação ou manifestação é de 3 dias.",
+          "B) O prazo previsto para complementação ou manifestação é de 5 dias.",
+          "C) O prazo previsto para complementação ou manifestação é de 10 dias.",
+          "D) O prazo previsto para complementação ou manifestação é de 15 dias."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (complementação ou manifestação): “O prazo previsto para complementação ou manifestação é de 3 dias.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “O prazo previsto para complementação ou manifestação é de 5 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre complementação ou manifestação. C: incorreta para o comando, pois afirma: “O prazo previsto para complementação ou manifestação é de 10 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre complementação ou manifestação. D: incorreta para o comando, pois afirma: “O prazo previsto para complementação ou manifestação é de 15 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre complementação ou manifestação. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1019,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "instauração",
+        "text": "QUESTÃO 1019 — Considerando instauração e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A instauração deve ocorrer no prazo de 5 dias.",
+          "B) A instauração deve ocorrer no prazo de 15 dias.",
+          "C) A instauração deve ocorrer no prazo de 10 dias.",
+          "D) A instauração deve ocorrer no prazo de 3 dias, nos termos da Portaria."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (instauração): “A instauração deve ocorrer no prazo de 3 dias, nos termos da Portaria.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A instauração deve ocorrer no prazo de 5 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre instauração. B: incorreta para o comando, pois afirma: “A instauração deve ocorrer no prazo de 15 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre instauração. C: incorreta para o comando, pois afirma: “A instauração deve ocorrer no prazo de 10 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre instauração. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1020,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "testemunhas da acusação",
+        "text": "QUESTÃO 1020 — Considerando testemunhas da acusação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A acusação pode arrolar até 2 testemunhas.",
+          "B) A acusação pode arrolar até 4 testemunhas.",
+          "C) A acusação pode arrolar até 3 testemunhas.",
+          "D) A acusação pode arrolar até 5 testemunhas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (testemunhas da acusação): “A acusação pode arrolar até 3 testemunhas.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A acusação pode arrolar até 2 testemunhas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre testemunhas da acusação. B: incorreta para o comando, pois afirma: “A acusação pode arrolar até 4 testemunhas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre testemunhas da acusação. D: incorreta para o comando, pois afirma: “A acusação pode arrolar até 5 testemunhas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre testemunhas da acusação. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1021,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "audiência de instrução",
+        "text": "QUESTÃO 1021 — Considerando audiência de instrução e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A audiência deve ser realizada em 5 dias.",
+          "B) A audiência deve ser realizada em 10 dias, conforme a regra da Portaria.",
+          "C) A audiência deve ser realizada em 3 dias.",
+          "D) A audiência deve ser realizada em 15 dias."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (audiência de instrução): “A audiência deve ser realizada em 10 dias, conforme a regra da Portaria.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A audiência deve ser realizada em 5 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre audiência de instrução. C: incorreta para o comando, pois afirma: “A audiência deve ser realizada em 3 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre audiência de instrução. D: incorreta para o comando, pois afirma: “A audiência deve ser realizada em 15 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre audiência de instrução. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1022,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "testemunha de defesa",
+        "text": "QUESTÃO 1022 — Considerando testemunha de defesa e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O requerimento de intimação de testemunha de defesa deve observar prazo mínimo de 4 dias antes da audiência.",
+          "B) O requerimento deve observar prazo mínimo de 3 dias antes da audiência.",
+          "C) O requerimento deve observar prazo mínimo de 5 dias antes da audiência.",
+          "D) O requerimento deve observar prazo mínimo de 2 dias antes da audiência."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (testemunha de defesa): “O requerimento de intimação de testemunha de defesa deve observar prazo mínimo de 4 dias antes da audiência.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “O requerimento deve observar prazo mínimo de 3 dias antes da audiência.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre testemunha de defesa. C: incorreta para o comando, pois afirma: “O requerimento deve observar prazo mínimo de 5 dias antes da audiência.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre testemunha de defesa. D: incorreta para o comando, pois afirma: “O requerimento deve observar prazo mínimo de 2 dias antes da audiência.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre testemunha de defesa. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1023,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "ausência de testemunha da defesa",
+        "text": "QUESTÃO 1023 — Considerando ausência de testemunha da defesa e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A ausência injustificada impõe redesignação automática por 15 dias.",
+          "B) A ausência injustificada sempre impõe redesignação por 10 dias.",
+          "C) A ausência injustificada nunca permite redesignação, mesmo se a testemunha for imprescindível.",
+          "D) A ausência injustificada de testemunha arrolada pela defesa não impõe redesignação, salvo se a autoridade a considerar imprescindível; nessa hipótese, a regra prevê prazo máximo de 5 dias."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (ausência de testemunha da defesa): “A ausência injustificada de testemunha arrolada pela defesa não impõe redesignação, salvo se a autoridade a considerar imprescindível; nessa hipótese, a regra prevê prazo máximo de 5 dias.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A ausência injustificada impõe redesignação automática por 15 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ausência de testemunha da defesa. B: incorreta para o comando, pois afirma: “A ausência injustificada sempre impõe redesignação por 10 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ausência de testemunha da defesa. C: incorreta para o comando, pois afirma: “A ausência injustificada nunca permite redesignação, mesmo se a testemunha for imprescindível.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ausência de testemunha da defesa. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1024,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "delegação",
+        "text": "QUESTÃO 1024 — Considerando delegação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A delegação exige ordem não motivada e só pode recair em oficial superior.",
+          "B) A delegação é vedada em qualquer hipótese.",
+          "C) A delegação para conduzir o procedimento deve ser formalizada por ordem motivada e pode recair nas categorias previstas na Portaria.",
+          "D) A delegação pode ser verbal e recair em qualquer policial militar, independentemente da categoria."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (delegação): “A delegação para conduzir o procedimento deve ser formalizada por ordem motivada e pode recair nas categorias previstas na Portaria.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A delegação exige ordem não motivada e só pode recair em oficial superior.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre delegação. B: incorreta para o comando, pois afirma: “A delegação é vedada em qualquer hipótese.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre delegação. D: incorreta para o comando, pois afirma: “A delegação pode ser verbal e recair em qualquer policial militar, independentemente da categoria.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre delegação. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1025,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "nova tipificação",
+        "text": "QUESTÃO 1025 — Considerando nova tipificação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A nova tipificação dispensa ciência do acusado porque o interrogatório já ocorreu.",
+          "B) Se houver nova tipificação após o interrogatório, deve ser observado o procedimento previsto na Portaria para assegurar a ciência e a defesa.",
+          "C) A nova tipificação converte automaticamente o procedimento em processo judicial.",
+          "D) A nova tipificação só pode ser feita antes da oitiva de testemunhas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (nova tipificação): “Se houver nova tipificação após o interrogatório, deve ser observado o procedimento previsto na Portaria para assegurar a ciência e a defesa.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A nova tipificação dispensa ciência do acusado porque o interrogatório já ocorreu.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre nova tipificação. C: incorreta para o comando, pois afirma: “A nova tipificação converte automaticamente o procedimento em processo judicial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre nova tipificação. D: incorreta para o comando, pois afirma: “A nova tipificação só pode ser feita antes da oitiva de testemunhas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre nova tipificação. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1026,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "fatos novos",
+        "text": "QUESTÃO 1026 — Considerando fatos novos e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A inclusão de fatos novos exige aditamento, com possibilidade de até 3 novas testemunhas para cada lado.",
+          "B) A inclusão de fatos novos exige apenas anotação informal e não admite novas testemunhas.",
+          "C) A inclusão de fatos novos impede qualquer manifestação complementar da defesa.",
+          "D) A inclusão de fatos novos permite até 5 novas testemunhas apenas para a acusação."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (fatos novos): “A inclusão de fatos novos exige aditamento, com possibilidade de até 3 novas testemunhas para cada lado.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “A inclusão de fatos novos exige apenas anotação informal e não admite novas testemunhas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fatos novos. C: incorreta para o comando, pois afirma: “A inclusão de fatos novos impede qualquer manifestação complementar da defesa.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fatos novos. D: incorreta para o comando, pois afirma: “A inclusão de fatos novos permite até 5 novas testemunhas apenas para a acusação.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fatos novos. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1027,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "alegações orais",
+        "text": "QUESTÃO 1027 — Considerando alegações orais e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) As alegações finais orais são de 20 minutos, prorrogáveis por mais 10 minutos.",
+          "B) As alegações finais orais são de 15 minutos, sem prorrogação.",
+          "C) As alegações finais orais são de 5 minutos, prorrogáveis por mais 5 minutos.",
+          "D) As alegações finais orais são de 10 minutos, prorrogáveis por mais 5 minutos."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (alegações orais): “As alegações finais orais são de 10 minutos, prorrogáveis por mais 5 minutos.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “As alegações finais orais são de 20 minutos, prorrogáveis por mais 10 minutos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre alegações orais. B: incorreta para o comando, pois afirma: “As alegações finais orais são de 15 minutos, sem prorrogação.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre alegações orais. C: incorreta para o comando, pois afirma: “As alegações finais orais são de 5 minutos, prorrogáveis por mais 5 minutos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre alegações orais. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1028,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "memoriais",
+        "text": "QUESTÃO 1028 — Considerando memoriais e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A Portaria proíbe a apresentação de memoriais.",
+          "B) A Portaria admite memoriais apenas no prazo de 2 dias.",
+          "C) A Portaria admite memoriais motivados no prazo de 5 dias, na hipótese regulamentada.",
+          "D) A Portaria estabelece prazo de 10 dias para memoriais em qualquer hipótese."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (memoriais): “A Portaria admite memoriais motivados no prazo de 5 dias, na hipótese regulamentada.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A Portaria proíbe a apresentação de memoriais.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre memoriais. B: incorreta para o comando, pois afirma: “A Portaria admite memoriais apenas no prazo de 2 dias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre memoriais. D: incorreta para o comando, pois afirma: “A Portaria estabelece prazo de 10 dias para memoriais em qualquer hipótese.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre memoriais. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1029,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "decisão",
+        "text": "QUESTÃO 1029 — Considerando decisão e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A decisão deve ser proferida em 3 dias após o último memorial defensivo.",
+          "B) A decisão deve ser proferida em 5 dias após o último memorial defensivo, conforme a regra aplicável.",
+          "C) A decisão deve ser proferida em 10 dias após o último memorial defensivo.",
+          "D) A decisão deve ser proferida em 15 dias após o último memorial defensivo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (decisão): “A decisão deve ser proferida em 5 dias após o último memorial defensivo, conforme a regra aplicável.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A decisão deve ser proferida em 3 dias após o último memorial defensivo.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre decisão. C: incorreta para o comando, pois afirma: “A decisão deve ser proferida em 10 dias após o último memorial defensivo.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre decisão. D: incorreta para o comando, pois afirma: “A decisão deve ser proferida em 15 dias após o último memorial defensivo.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre decisão. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1030,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "publicação",
+        "text": "QUESTÃO 1030 — Considerando publicação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A publicação do ato punitivo ou de justificação ocorre somente após a decisão não mais sujeita a recurso próprio ou com efeito suspensivo, ou após a decadência dos prazos recursais.",
+          "B) A publicação ocorre imediatamente após a decisão inicial, ainda que exista recurso com efeito suspensivo pendente.",
+          "C) A publicação ocorre antes da decisão para iniciar o prazo recursal.",
+          "D) A publicação depende sempre de homologação judicial."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (publicação): “A publicação do ato punitivo ou de justificação ocorre somente após a decisão não mais sujeita a recurso próprio ou com efeito suspensivo, ou após a decadência dos prazos recursais.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “A publicação ocorre imediatamente após a decisão inicial, ainda que exista recurso com efeito suspensivo pendente.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre publicação. C: incorreta para o comando, pois afirma: “A publicação ocorre antes da decisão para iniciar o prazo recursal.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre publicação. D: incorreta para o comando, pois afirma: “A publicação depende sempre de homologação judicial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre publicação. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1031,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "silêncio no interrogatório",
+        "text": "QUESTÃO 1031 — Considerando silêncio no interrogatório e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O silêncio impede a continuidade do procedimento.",
+          "B) O silêncio pode ser usado como elemento autônomo de agravamento da sanção.",
+          "C) O silêncio do acusado importa confissão tácita.",
+          "D) O silêncio do acusado não importa confissão nem pode ser interpretado em prejuízo da defesa."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (silêncio no interrogatório): “O silêncio do acusado não importa confissão nem pode ser interpretado em prejuízo da defesa.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O silêncio impede a continuidade do procedimento.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre silêncio no interrogatório. B: incorreta para o comando, pois afirma: “O silêncio pode ser usado como elemento autônomo de agravamento da sanção.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre silêncio no interrogatório. C: incorreta para o comando, pois afirma: “O silêncio do acusado importa confissão tácita.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre silêncio no interrogatório. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1032,
+        "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
+        "topic": "defesa técnica",
+        "text": "QUESTÃO 1032 — Considerando defesa técnica e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A presença de advogado é obrigatória sob pena de nulidade absoluta em toda hipótese prevista.",
+          "B) A falta de advogado autoriza presumir a veracidade da acusação.",
+          "C) A falta de advogado não ofende, por si só, os direitos constitucionais do acusado, que nesse caso se defenderá pessoalmente, nos termos da Portaria.",
+          "D) A falta de advogado determina arquivamento automático do procedimento."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Juridicos-administrativos.pdf, Portaria Cmt G CORREGPM-1/360/13, PDF pp. 34–37; artigos indicados na explicação. Regra aplicável ao ponto perguntado (defesa técnica): “A falta de advogado não ofende, por si só, os direitos constitucionais do acusado, que nesse caso se defenderá pessoalmente, nos termos da Portaria.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A presença de advogado é obrigatória sob pena de nulidade absoluta em toda hipótese prevista.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre defesa técnica. B: incorreta para o comando, pois afirma: “A falta de advogado autoriza presumir a veracidade da acusação.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre defesa técnica. D: incorreta para o comando, pois afirma: “A falta de advogado determina arquivamento automático do procedimento.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre defesa técnica. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1033,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "prioridade do programa",
+        "text": "QUESTÃO 1033 — Considerando prioridade do programa e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A Radiopatrulha é prioritária apenas em municípios com mais de uma Companhia.",
+          "B) A Radiopatrulha é Programa de Policiamento Primário e prioritário em relação aos demais Programas de Policiamento e Atividades Operacionais Diversas.",
+          "C) A Radiopatrulha é programa complementar, subordinado à disponibilidade após os demais programas.",
+          "D) A Radiopatrulha é atividade eventual, acionada somente em reforço a operações especiais."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (prioridade do programa): “A Radiopatrulha é Programa de Policiamento Primário e prioritário em relação aos demais Programas de Policiamento e Atividades Operacionais Diversas.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A Radiopatrulha é prioritária apenas em municípios com mais de uma Companhia.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre prioridade do programa. C: incorreta para o comando, pois afirma: “A Radiopatrulha é programa complementar, subordinado à disponibilidade após os demais programas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre prioridade do programa. D: incorreta para o comando, pois afirma: “A Radiopatrulha é atividade eventual, acionada somente em reforço a operações especiais.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre prioridade do programa. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1034,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "funcionamento contínuo",
+        "text": "QUESTÃO 1034 — Considerando funcionamento contínuo e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O Programa RP deve operar ininterruptamente, 24 horas por dia.",
+          "B) O Programa RP pode ser suspenso nos finais de semana por decisão local.",
+          "C) O Programa RP deve operar apenas nos horários de maior incidência criminal.",
+          "D) O Programa RP deve operar 12 horas por dia, com interrupção noturna."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (funcionamento contínuo): “O Programa RP deve operar ininterruptamente, 24 horas por dia.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “O Programa RP pode ser suspenso nos finais de semana por decisão local.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre funcionamento contínuo. C: incorreta para o comando, pois afirma: “O Programa RP deve operar apenas nos horários de maior incidência criminal.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre funcionamento contínuo. D: incorreta para o comando, pois afirma: “O Programa RP deve operar 12 horas por dia, com interrupção noturna.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre funcionamento contínuo. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1035,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "quantidade mínima",
+        "text": "QUESTÃO 1035 — Considerando quantidade mínima e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A diretriz prevê pelo menos 4 Patrulhas por Companhia.",
+          "B) A diretriz prevê pelo menos 2 Patrulhas por Companhia.",
+          "C) A diretriz prevê pelo menos 5 Patrulhas por Companhia.",
+          "D) A diretriz prevê pelo menos 3 Patrulhas por Companhia."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (quantidade mínima): “A diretriz prevê pelo menos 3 Patrulhas por Companhia.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A diretriz prevê pelo menos 4 Patrulhas por Companhia.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre quantidade mínima. B: incorreta para o comando, pois afirma: “A diretriz prevê pelo menos 2 Patrulhas por Companhia.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre quantidade mínima. C: incorreta para o comando, pois afirma: “A diretriz prevê pelo menos 5 Patrulhas por Companhia.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre quantidade mínima. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1036,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "nível de resposta",
+        "text": "QUESTÃO 1036 — Considerando nível de resposta e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A Radiopatrulha opera no Nível 4 quando acionada pelo COPOM.",
+          "B) A Radiopatrulha alterna entre os Níveis 1 e 4 conforme a escala de serviço.",
+          "C) A Radiopatrulha opera sempre no Nível de Resposta 1.",
+          "D) A Radiopatrulha opera ordinariamente no Nível 2 e excepcionalmente no Nível 1."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (nível de resposta): “A Radiopatrulha opera sempre no Nível de Resposta 1.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A Radiopatrulha opera no Nível 4 quando acionada pelo COPOM.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre nível de resposta. B: incorreta para o comando, pois afirma: “A Radiopatrulha alterna entre os Níveis 1 e 4 conforme a escala de serviço.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre nível de resposta. D: incorreta para o comando, pois afirma: “A Radiopatrulha opera ordinariamente no Nível 2 e excepcionalmente no Nível 1.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre nível de resposta. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1037,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "apoio de outras matrizes",
+        "text": "QUESTÃO 1037 — Considerando apoio de outras matrizes e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A RP não pode receber apoio de OPM limítrofe.",
+          "B) A RP pode receber apoio de qualquer Matriz Operacional, conforme a natureza, gravidade e complexidade da ocorrência.",
+          "C) A RP só pode receber apoio da Matriz Operacional III mediante autorização judicial.",
+          "D) A RP somente pode receber apoio de outra US da Matriz Operacional I."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (apoio de outras matrizes): “A RP pode receber apoio de qualquer Matriz Operacional, conforme a natureza, gravidade e complexidade da ocorrência.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A RP não pode receber apoio de OPM limítrofe.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre apoio de outras matrizes. C: incorreta para o comando, pois afirma: “A RP só pode receber apoio da Matriz Operacional III mediante autorização judicial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre apoio de outras matrizes. D: incorreta para o comando, pois afirma: “A RP somente pode receber apoio de outra US da Matriz Operacional I.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre apoio de outras matrizes. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1038,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "emprego territorial",
+        "text": "QUESTÃO 1038 — Considerando emprego territorial e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O Programa RP deve ser desenvolvido pelas OPM Territoriais, com fiscalização, monitoramento e controle gerencial pelos respectivos comandantes.",
+          "B) O Programa RP é gerido exclusivamente pelo COPOM, sem controle dos comandantes territoriais.",
+          "C) O Programa RP é executado exclusivamente pelas OPM especializadas.",
+          "D) O Programa RP depende de autorização individual da Coord Op PM para cada turno."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (emprego territorial): “O Programa RP deve ser desenvolvido pelas OPM Territoriais, com fiscalização, monitoramento e controle gerencial pelos respectivos comandantes.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “O Programa RP é gerido exclusivamente pelo COPOM, sem controle dos comandantes territoriais.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre emprego territorial. C: incorreta para o comando, pois afirma: “O Programa RP é executado exclusivamente pelas OPM especializadas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre emprego territorial. D: incorreta para o comando, pois afirma: “O Programa RP depende de autorização individual da Coord Op PM para cada turno.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre emprego territorial. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1039,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "motocicletas no Plano Diretor",
+        "text": "QUESTÃO 1039 — Considerando motocicletas no Plano Diretor e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O emprego de motocicletas só pode ser previsto em plano de operações extraordinárias.",
+          "B) O emprego de motocicletas é definido exclusivamente pelo policial escalado.",
+          "C) O emprego de motocicletas dispensa previsão no Plano Diretor quando houver demanda de rapidez.",
+          "D) O emprego de Patrulhas em viaturas de duas rodas deve estar previsto no Plano Diretor."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (motocicletas no Plano Diretor): “O emprego de Patrulhas em viaturas de duas rodas deve estar previsto no Plano Diretor.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O emprego de motocicletas só pode ser previsto em plano de operações extraordinárias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre motocicletas no Plano Diretor. B: incorreta para o comando, pois afirma: “O emprego de motocicletas é definido exclusivamente pelo policial escalado.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre motocicletas no Plano Diretor. C: incorreta para o comando, pois afirma: “O emprego de motocicletas dispensa previsão no Plano Diretor quando houver demanda de rapidez.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre motocicletas no Plano Diretor. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1040,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "conveniência de motocicleta",
+        "text": "QUESTÃO 1040 — Considerando conveniência de motocicleta e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A utilização de motocicleta é obrigatória em toda área de trânsito intenso.",
+          "B) A utilização de motocicleta depende apenas da preferência do policial escalado.",
+          "C) A utilização de motocicleta depende da conveniência do Cmt OPM, da necessidade operacional e da disponibilidade de meios, entre outros fatores.",
+          "D) A utilização de motocicleta independe das características topográficas da localidade."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (conveniência de motocicleta): “A utilização de motocicleta depende da conveniência do Cmt OPM, da necessidade operacional e da disponibilidade de meios, entre outros fatores.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A utilização de motocicleta é obrigatória em toda área de trânsito intenso.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre conveniência de motocicleta. B: incorreta para o comando, pois afirma: “A utilização de motocicleta depende apenas da preferência do policial escalado.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre conveniência de motocicleta. D: incorreta para o comando, pois afirma: “A utilização de motocicleta independe das características topográficas da localidade.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre conveniência de motocicleta. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1041,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "horário preferencial",
+        "text": "QUESTÃO 1041 — Considerando horário preferencial e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O emprego de motocicletas é vedado entre 18h e 23h.",
+          "B) O emprego de motocicletas é preferencialmente entre 06h e 23h, conforme a diretriz.",
+          "C) O emprego de motocicletas é preferencialmente entre 00h e 06h.",
+          "D) O emprego de motocicletas é obrigatório exclusivamente entre 23h e 06h."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (horário preferencial): “O emprego de motocicletas é preferencialmente entre 06h e 23h, conforme a diretriz.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O emprego de motocicletas é vedado entre 18h e 23h.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre horário preferencial. C: incorreta para o comando, pois afirma: “O emprego de motocicletas é preferencialmente entre 00h e 06h.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre horário preferencial. D: incorreta para o comando, pois afirma: “O emprego de motocicletas é obrigatório exclusivamente entre 23h e 06h.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre horário preferencial. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1042,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "quantidade de policiais por moto",
+        "text": "QUESTÃO 1042 — Considerando quantidade de policiais por moto e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A diretriz prevê um policial militar por motocicleta.",
+          "B) A diretriz prevê dois policiais militares por motocicleta.",
+          "C) A diretriz prevê um policial militar e um agente civil por motocicleta.",
+          "D) A diretriz não fixa parâmetro de efetivo por motocicleta."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (quantidade de policiais por moto): “A diretriz prevê um policial militar por motocicleta.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “A diretriz prevê dois policiais militares por motocicleta.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre quantidade de policiais por moto. C: incorreta para o comando, pois afirma: “A diretriz prevê um policial militar e um agente civil por motocicleta.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre quantidade de policiais por moto. D: incorreta para o comando, pois afirma: “A diretriz não fixa parâmetro de efetivo por motocicleta.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre quantidade de policiais por moto. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1043,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "atualização no SIOPM",
+        "text": "QUESTÃO 1043 — Considerando atualização no SIOPM e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Os dados no SIOPM são atualizados apenas ao final do mês.",
+          "B) Os dados no SIOPM não precisam ser atualizados quando houver alteração durante o turno.",
+          "C) Os dados no SIOPM são atualizados exclusivamente pelo escalão regional, uma vez por semana.",
+          "D) Os dados no SIOPM devem ser atualizados no início do turno e sempre que houver alterações."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (atualização no SIOPM): “Os dados no SIOPM devem ser atualizados no início do turno e sempre que houver alterações.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Os dados no SIOPM são atualizados apenas ao final do mês.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre atualização no SIOPM. B: incorreta para o comando, pois afirma: “Os dados no SIOPM não precisam ser atualizados quando houver alteração durante o turno.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre atualização no SIOPM. C: incorreta para o comando, pois afirma: “Os dados no SIOPM são atualizados exclusivamente pelo escalão regional, uma vez por semana.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre atualização no SIOPM. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1044,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "concentração de patrulhas",
+        "text": "QUESTÃO 1044 — Considerando concentração de patrulhas e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O CGP não pode reunir patrulhas de áreas próximas.",
+          "B) A concentração de patrulhas só pode ser determinada pelo Comandante-Geral.",
+          "C) Em ocorrência grave, o CGP pode reunir as patrulhas mais próximas, devendo elas retornar aos postos logo após a necessidade cessar.",
+          "D) O CGP pode reunir patrulhas e mantê-las concentradas até o fim do turno, independentemente da ocorrência."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (concentração de patrulhas): “Em ocorrência grave, o CGP pode reunir as patrulhas mais próximas, devendo elas retornar aos postos logo após a necessidade cessar.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O CGP não pode reunir patrulhas de áreas próximas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre concentração de patrulhas. B: incorreta para o comando, pois afirma: “A concentração de patrulhas só pode ser determinada pelo Comandante-Geral.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre concentração de patrulhas. D: incorreta para o comando, pois afirma: “O CGP pode reunir patrulhas e mantê-las concentradas até o fim do turno, independentemente da ocorrência.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre concentração de patrulhas. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1045,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "emprego excepcional em status 3",
+        "text": "QUESTÃO 1045 — Considerando emprego excepcional em status 3 e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O emprego em Status 3 deve prevalecer sobre toda demanda de Radiopatrulha.",
+          "B) O emprego excepcional de Patrulhas em Status 3 não pode prejudicar o atendimento das demandas próprias da Radiopatrulha.",
+          "C) O emprego em Status 3 é sempre proibido, mesmo excepcionalmente.",
+          "D) O emprego em Status 3 dispensa avaliação de impacto sobre a demanda ordinária."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (emprego excepcional em status 3): “O emprego excepcional de Patrulhas em Status 3 não pode prejudicar o atendimento das demandas próprias da Radiopatrulha.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O emprego em Status 3 deve prevalecer sobre toda demanda de Radiopatrulha.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre emprego excepcional em status 3. C: incorreta para o comando, pois afirma: “O emprego em Status 3 é sempre proibido, mesmo excepcionalmente.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre emprego excepcional em status 3. D: incorreta para o comando, pois afirma: “O emprego em Status 3 dispensa avaliação de impacto sobre a demanda ordinária.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre emprego excepcional em status 3. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1046,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "velocidade de patrulhamento",
+        "text": "QUESTÃO 1046 — Considerando velocidade de patrulhamento e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Em patrulhamento, a viatura deve respeitar a velocidade máxima da via, salvo deslocamento emergencial, e observar a mínima correspondente à metade da máxima.",
+          "B) A diretriz estabelece apenas velocidade mínima igual à máxima da via.",
+          "C) A viatura pode exceder a velocidade máxima em qualquer patrulhamento preventivo.",
+          "D) A viatura deve trafegar sempre abaixo da metade da velocidade máxima, inclusive em emergência."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (velocidade de patrulhamento): “Em patrulhamento, a viatura deve respeitar a velocidade máxima da via, salvo deslocamento emergencial, e observar a mínima correspondente à metade da máxima.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “A diretriz estabelece apenas velocidade mínima igual à máxima da via.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre velocidade de patrulhamento. C: incorreta para o comando, pois afirma: “A viatura pode exceder a velocidade máxima em qualquer patrulhamento preventivo.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre velocidade de patrulhamento. D: incorreta para o comando, pois afirma: “A viatura deve trafegar sempre abaixo da metade da velocidade máxima, inclusive em emergência.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre velocidade de patrulhamento. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1047,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "prioridade de emprego",
+        "text": "QUESTÃO 1047 — Considerando prioridade de emprego e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A prioridade da RP impede qualquer apoio conjunto com outros programas em todas as circunstâncias.",
+          "B) O Programa RP não possui prioridade perante outros programas.",
+          "C) O Programa RP tem prioridade somente sobre atividades administrativas internas.",
+          "D) O Programa RP tem prioridade sobre outros programas e atividades operacionais diversas, sem afastar os parâmetros expressos para apoio e emprego conjunto."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (prioridade de emprego): “O Programa RP tem prioridade sobre outros programas e atividades operacionais diversas, sem afastar os parâmetros expressos para apoio e emprego conjunto.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A prioridade da RP impede qualquer apoio conjunto com outros programas em todas as circunstâncias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre prioridade de emprego. B: incorreta para o comando, pois afirma: “O Programa RP não possui prioridade perante outros programas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre prioridade de emprego. C: incorreta para o comando, pois afirma: “O Programa RP tem prioridade somente sobre atividades administrativas internas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre prioridade de emprego. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1048,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "exceção no emprego conjunto",
+        "text": "QUESTÃO 1048 — Considerando exceção no emprego conjunto e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O emprego conjunto exclui apenas a Patrulha Rural quando houver uma unidade na Subárea.",
+          "B) O emprego conjunto nunca admite exceções relacionadas ao Programa Escolar.",
+          "C) O emprego conjunto exclui a Patrulha do Programa de Policiamento Escolar quando esta dispuser de apenas uma Patrulha na Subárea.",
+          "D) O emprego conjunto exclui sempre todas as Patrulhas do Programa de Policiamento Escolar."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-002/02/20, PDF pp. 469–473; item indicado na explicação. Regra aplicável ao ponto perguntado (exceção no emprego conjunto): “O emprego conjunto exclui a Patrulha do Programa de Policiamento Escolar quando esta dispuser de apenas uma Patrulha na Subárea.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O emprego conjunto exclui apenas a Patrulha Rural quando houver uma unidade na Subárea.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre exceção no emprego conjunto. B: incorreta para o comando, pois afirma: “O emprego conjunto nunca admite exceções relacionadas ao Programa Escolar.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre exceção no emprego conjunto. D: incorreta para o comando, pois afirma: “O emprego conjunto exclui sempre todas as Patrulhas do Programa de Policiamento Escolar.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre exceção no emprego conjunto. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1049,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "fator de implantação",
+        "text": "QUESTÃO 1049 — Considerando fator de implantação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A implantação exige exclusivamente ocorrência diária e uniforme em toda a área rural.",
+          "B) A implantação pode considerar índices criminais ou ações delituosas que, mesmo esporádicas, por natureza e notoriedade, afetem a percepção de segurança no ambiente rural.",
+          "C) A implantação depende apenas de pedido formal de proprietário rural, sem consideração de dados criminais.",
+          "D) A implantação é vedada quando os registros criminais forem esporádicos."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (fator de implantação): “A implantação pode considerar índices criminais ou ações delituosas que, mesmo esporádicas, por natureza e notoriedade, afetem a percepção de segurança no ambiente rural.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A implantação exige exclusivamente ocorrência diária e uniforme em toda a área rural.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fator de implantação. C: incorreta para o comando, pois afirma: “A implantação depende apenas de pedido formal de proprietário rural, sem consideração de dados criminais.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fator de implantação. D: incorreta para o comando, pois afirma: “A implantação é vedada quando os registros criminais forem esporádicos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fator de implantação. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1050,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "atividades econômicas rurais",
+        "text": "QUESTÃO 1050 — Considerando atividades econômicas rurais e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A presença de atividades extrativistas, agrárias, de criação de animais ou turísticas pode ser fator para orientar a implantação.",
+          "B) A implantação considera apenas a densidade populacional urbana.",
+          "C) Somente atividades industriais urbanas podem orientar a implantação.",
+          "D) A presença de atividades econômicas é irrelevante para a implantação do programa."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (atividades econômicas rurais): “A presença de atividades extrativistas, agrárias, de criação de animais ou turísticas pode ser fator para orientar a implantação.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “A implantação considera apenas a densidade populacional urbana.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre atividades econômicas rurais. C: incorreta para o comando, pois afirma: “Somente atividades industriais urbanas podem orientar a implantação.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre atividades econômicas rurais. D: incorreta para o comando, pois afirma: “A presença de atividades econômicas é irrelevante para a implantação do programa.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre atividades econômicas rurais. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1051,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "órgãos que podem desenvolver",
+        "text": "QUESTÃO 1051 — Considerando órgãos que podem desenvolver e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Somente OPM territoriais de nível Companhia podem desenvolver o programa.",
+          "B) Somente CPAmb e CPRv podem desenvolver o Programa de Policiamento Rural.",
+          "C) O programa é atribuição exclusiva do COPOM.",
+          "D) CPC, CPM, CPI, CPAmb e CPRv podem desenvolver o Programa de Policiamento Rural, nos termos da Diretriz."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (órgãos que podem desenvolver): “CPC, CPM, CPI, CPAmb e CPRv podem desenvolver o Programa de Policiamento Rural, nos termos da Diretriz.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Somente OPM territoriais de nível Companhia podem desenvolver o programa.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre órgãos que podem desenvolver. B: incorreta para o comando, pois afirma: “Somente CPAmb e CPRv podem desenvolver o Programa de Policiamento Rural.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre órgãos que podem desenvolver. C: incorreta para o comando, pois afirma: “O programa é atribuição exclusiva do COPOM.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre órgãos que podem desenvolver. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1052,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "composição da US",
+        "text": "QUESTÃO 1052 — Considerando composição da US e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A Unidade de Serviço deve ser composta por 4 a 5 policiais militares.",
+          "B) A Diretriz proíbe fixar parâmetros de composição da Unidade de Serviço.",
+          "C) A Unidade de Serviço de Policiamento Rural é composta, em regra prevista na diretriz, por 2 a 3 policiais militares.",
+          "D) A Unidade de Serviço deve ser composta por exatamente um policial militar."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (composição da US): “A Unidade de Serviço de Policiamento Rural é composta, em regra prevista na diretriz, por 2 a 3 policiais militares.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A Unidade de Serviço deve ser composta por 4 a 5 policiais militares.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre composição da US. B: incorreta para o comando, pois afirma: “A Diretriz proíbe fixar parâmetros de composição da Unidade de Serviço.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre composição da US. D: incorreta para o comando, pois afirma: “A Unidade de Serviço deve ser composta por exatamente um policial militar.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre composição da US. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1053,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "papel territorial",
+        "text": "QUESTÃO 1053 — Considerando papel territorial e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A OPM territorial atua ordinariamente no Nível de Resposta 4.",
+          "B) A OPM territorial atua ordinariamente no Nível de Resposta 1 no desenvolvimento do programa.",
+          "C) A OPM territorial atua exclusivamente no Nível de Resposta 3.",
+          "D) A OPM territorial não participa do Programa de Policiamento Rural."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (papel territorial): “A OPM territorial atua ordinariamente no Nível de Resposta 1 no desenvolvimento do programa.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A OPM territorial atua ordinariamente no Nível de Resposta 4.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel territorial. C: incorreta para o comando, pois afirma: “A OPM territorial atua exclusivamente no Nível de Resposta 3.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel territorial. D: incorreta para o comando, pois afirma: “A OPM territorial não participa do Programa de Policiamento Rural.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel territorial. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1054,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "papel da CPAmb",
+        "text": "QUESTÃO 1054 — Considerando papel da CPAmb e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A CPAmb atua integrada e, em regra, no Nível de Resposta 1, podendo prestar apoio especializado no Nível de Resposta 4.",
+          "B) A CPAmb atua exclusivamente no Nível de Resposta 4.",
+          "C) A CPAmb não pode prestar apoio especializado às Unidades de Serviço.",
+          "D) A CPAmb substitui a OPM territorial em todo policiamento rural ordinário."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (papel da CPAmb): “A CPAmb atua integrada e, em regra, no Nível de Resposta 1, podendo prestar apoio especializado no Nível de Resposta 4.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “A CPAmb atua exclusivamente no Nível de Resposta 4.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel da CPAmb. C: incorreta para o comando, pois afirma: “A CPAmb não pode prestar apoio especializado às Unidades de Serviço.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel da CPAmb. D: incorreta para o comando, pois afirma: “A CPAmb substitui a OPM territorial em todo policiamento rural ordinário.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel da CPAmb. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1055,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "papel da CPRv",
+        "text": "QUESTÃO 1055 — Considerando papel da CPRv e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A CPRv atua exclusivamente no Nível 4, sem emprego preventivo ordinário.",
+          "B) A CPRv substitui permanentemente as OPM territoriais no ambiente rural.",
+          "C) A CPRv só pode atuar após determinação judicial.",
+          "D) A CPRv atua de forma complementar às OPM territoriais e ambientais, ordinariamente no Nível 1 e excepcionalmente no Nível 4 para apoio especializado."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (papel da CPRv): “A CPRv atua de forma complementar às OPM territoriais e ambientais, ordinariamente no Nível 1 e excepcionalmente no Nível 4 para apoio especializado.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A CPRv atua exclusivamente no Nível 4, sem emprego preventivo ordinário.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel da CPRv. B: incorreta para o comando, pois afirma: “A CPRv substitui permanentemente as OPM territoriais no ambiente rural.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel da CPRv. C: incorreta para o comando, pois afirma: “A CPRv só pode atuar após determinação judicial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel da CPRv. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1056,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "planejamento integrado",
+        "text": "QUESTÃO 1056 — Considerando planejamento integrado e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O planejamento deve ser feito separadamente, sem coordenação entre as OPM.",
+          "B) O planejamento cabe exclusivamente à OPM territorial, vedada integração especializada.",
+          "C) O planejamento deve ser realizado conjuntamente entre as OPM territoriais e as especializadas envolvidas.",
+          "D) O planejamento cabe exclusivamente à OPM especializada, sem participação territorial."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (planejamento integrado): “O planejamento deve ser realizado conjuntamente entre as OPM territoriais e as especializadas envolvidas.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O planejamento deve ser feito separadamente, sem coordenação entre as OPM.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre planejamento integrado. B: incorreta para o comando, pois afirma: “O planejamento cabe exclusivamente à OPM territorial, vedada integração especializada.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre planejamento integrado. D: incorreta para o comando, pois afirma: “O planejamento cabe exclusivamente à OPM especializada, sem participação territorial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre planejamento integrado. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1057,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "CPP",
+        "text": "QUESTÃO 1057 — Considerando CPP e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O CPP é exigido apenas para operações urbanas, não para policiamento rural.",
+          "B) As ações e os locais de atuação das Unidades de Serviço devem ser previstos em Cartões de Prioridade de Patrulhamento.",
+          "C) O CPP deve ser elaborado exclusivamente após o encerramento da operação.",
+          "D) As ações rurais são dispensadas de previsão em CPP."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (CPP): “As ações e os locais de atuação das Unidades de Serviço devem ser previstos em Cartões de Prioridade de Patrulhamento.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O CPP é exigido apenas para operações urbanas, não para policiamento rural.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre CPP. C: incorreta para o comando, pois afirma: “O CPP deve ser elaborado exclusivamente após o encerramento da operação.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre CPP. D: incorreta para o comando, pois afirma: “As ações rurais são dispensadas de previsão em CPP.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre CPP. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1058,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "fontes para planejamento",
+        "text": "QUESTÃO 1058 — Considerando fontes para planejamento e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O planejamento considera sistemas inteligentes georreferenciados e informações provenientes da comunidade.",
+          "B) O planejamento depende exclusivamente de estatísticas estaduais agregadas, sem georreferenciamento.",
+          "C) O planejamento deve ignorar informações comunitárias e considerar somente mapas impressos.",
+          "D) O planejamento se limita a dados financeiros dos estabelecimentos rurais."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (fontes para planejamento): “O planejamento considera sistemas inteligentes georreferenciados e informações provenientes da comunidade.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “O planejamento depende exclusivamente de estatísticas estaduais agregadas, sem georreferenciamento.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fontes para planejamento. C: incorreta para o comando, pois afirma: “O planejamento deve ignorar informações comunitárias e considerar somente mapas impressos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fontes para planejamento. D: incorreta para o comando, pois afirma: “O planejamento se limita a dados financeiros dos estabelecimentos rurais.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fontes para planejamento. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1059,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "RAC mensal",
+        "text": "QUESTÃO 1059 — Considerando RAC mensal e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A participação é semanal e restrita aos comandantes territoriais.",
+          "B) A participação mensal cabe apenas ao comandante do COPOM.",
+          "C) A participação ocorre uma vez por ano, em reunião estadual única.",
+          "D) Os comandantes das OPM de Policiamento Ambiental e Rodoviário devem participar ao menos uma vez por mês das RAC de Nível I junto aos Batalhões Territoriais abrangidos."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (RAC mensal): “Os comandantes das OPM de Policiamento Ambiental e Rodoviário devem participar ao menos uma vez por mês das RAC de Nível I junto aos Batalhões Territoriais abrangidos.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A participação é semanal e restrita aos comandantes territoriais.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre RAC mensal. B: incorreta para o comando, pois afirma: “A participação mensal cabe apenas ao comandante do COPOM.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre RAC mensal. C: incorreta para o comando, pois afirma: “A participação ocorre uma vez por ano, em reunião estadual única.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre RAC mensal. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1060,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "ações em CPP",
+        "text": "QUESTÃO 1060 — Considerando ações em CPP e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O CPP deve prever exclusivamente bloqueios em rodovias estaduais, vedadas ações comunitárias.",
+          "B) O CPP não pode contemplar registro de propriedades nem contatos com estabelecimentos.",
+          "C) Entre as ações previstas no CPP podem constar bloqueios em vias vicinais ou principais, contatos escolares, saturação em aglomerados, contatos com estabelecimentos e registro de propriedades.",
+          "D) O CPP pode prever apenas contatos escolares, excluídas as demais ações mencionadas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (ações em CPP): “Entre as ações previstas no CPP podem constar bloqueios em vias vicinais ou principais, contatos escolares, saturação em aglomerados, contatos com estabelecimentos e registro de propriedades.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O CPP deve prever exclusivamente bloqueios em rodovias estaduais, vedadas ações comunitárias.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ações em CPP. B: incorreta para o comando, pois afirma: “O CPP não pode contemplar registro de propriedades nem contatos com estabelecimentos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ações em CPP. D: incorreta para o comando, pois afirma: “O CPP pode prever apenas contatos escolares, excluídas as demais ações mencionadas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ações em CPP. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1061,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "processo de policiamento",
+        "text": "QUESTÃO 1061 — Considerando processo de policiamento e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O emprego de meios aéreos é obrigatório em toda localidade rural.",
+          "B) O processo empregado pode variar conforme as características geográficas, incluindo meios motorizados, embarcados, aéreos, montados ou com cães, entre outros.",
+          "C) O programa deve utilizar exclusivamente viaturas de quatro rodas em qualquer terreno.",
+          "D) O processo de policiamento é invariável e não considera características geográficas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (processo de policiamento): “O processo empregado pode variar conforme as características geográficas, incluindo meios motorizados, embarcados, aéreos, montados ou com cães, entre outros.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O emprego de meios aéreos é obrigatório em toda localidade rural.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre processo de policiamento. C: incorreta para o comando, pois afirma: “O programa deve utilizar exclusivamente viaturas de quatro rodas em qualquer terreno.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre processo de policiamento. D: incorreta para o comando, pois afirma: “O processo de policiamento é invariável e não considera características geográficas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre processo de policiamento. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1062,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "conceito do programa",
+        "text": "QUESTÃO 1062 — Considerando conceito do programa e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O Programa de Policiamento Rural organiza o desenvolvimento do policiamento ostensivo geral voltado ao ambiente rural.",
+          "B) O programa é uma atividade exclusivamente administrativa de cadastro de propriedades.",
+          "C) O programa se limita à fiscalização ambiental e exclui policiamento ostensivo geral.",
+          "D) O programa se destina exclusivamente à investigação criminal após a ocorrência."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (conceito do programa): “O Programa de Policiamento Rural organiza o desenvolvimento do policiamento ostensivo geral voltado ao ambiente rural.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “O programa é uma atividade exclusivamente administrativa de cadastro de propriedades.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre conceito do programa. C: incorreta para o comando, pois afirma: “O programa se limita à fiscalização ambiental e exclui policiamento ostensivo geral.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre conceito do programa. D: incorreta para o comando, pois afirma: “O programa se destina exclusivamente à investigação criminal após a ocorrência.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre conceito do programa. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1063,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Sala de Gerenciamento de Incidentes",
+        "text": "QUESTÃO 1063 — Considerando Sala de Gerenciamento de Incidentes e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A Sala de Gerenciamento de Incidentes é o local em que o operador realiza toda a captura e edição das evidências.",
+          "B) A Sala de Gerenciamento de Incidentes deve ficar dentro do sítio da operação e substituir o Posto de Comando.",
+          "C) A Sala de Gerenciamento de Incidentes é uma viatura móvel destinada exclusivamente ao despacho rotineiro de ocorrências.",
+          "D) A Sala de Gerenciamento de Incidentes fica fora do sítio da operação e reúne autoridades em nível político-estratégico, mantendo contato bilateral com o Posto de Comando."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (Sala de Gerenciamento de Incidentes): “A Sala de Gerenciamento de Incidentes fica fora do sítio da operação e reúne autoridades em nível político-estratégico, mantendo contato bilateral com o Posto de Comando.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A Sala de Gerenciamento de Incidentes é o local em que o operador realiza toda a captura e edição das evidências.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre Sala de Gerenciamento de Incidentes. B: incorreta para o comando, pois afirma: “A Sala de Gerenciamento de Incidentes deve ficar dentro do sítio da operação e substituir o Posto de Comando.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre Sala de Gerenciamento de Incidentes. C: incorreta para o comando, pois afirma: “A Sala de Gerenciamento de Incidentes é uma viatura móvel destinada exclusivamente ao despacho rotineiro de ocorrências.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre Sala de Gerenciamento de Incidentes. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1064,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "princípio de amplitude",
+        "text": "QUESTÃO 1064 — Considerando princípio de amplitude e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Amplitude significa manter apenas uma equipe responsável por toda operação, vedada atuação integrada.",
+          "B) Amplitude significa limitar o comando e controle às ocorrências emergenciais complexas.",
+          "C) Amplitude significa abranger todas as áreas e agentes envolvidos na execução das missões operacionais e administrativas relacionadas ao policiamento ostensivo.",
+          "D) Amplitude significa utilizar canais comuns e interconectados de comunicação sob gestão de um Centro de Operações."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (princípio de amplitude): “Amplitude significa abranger todas as áreas e agentes envolvidos na execução das missões operacionais e administrativas relacionadas ao policiamento ostensivo.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Amplitude significa manter apenas uma equipe responsável por toda operação, vedada atuação integrada.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre princípio de amplitude. B: incorreta para o comando, pois afirma: “Amplitude significa limitar o comando e controle às ocorrências emergenciais complexas.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre princípio de amplitude. D: incorreta para o comando, pois afirma: “Amplitude significa utilizar canais comuns e interconectados de comunicação sob gestão de um Centro de Operações.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre princípio de amplitude. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1065,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "comunicações integradas",
+        "text": "QUESTÃO 1065 — Considerando comunicações integradas e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Comunicações integradas são apenas a publicação posterior de relatórios administrativos.",
+          "B) Comunicações integradas consistem em canais e frequências comuns e interconectados, sob gerenciamento de um Centro de Operações.",
+          "C) Comunicações integradas se limitam à comunicação com autoridades externas à PM.",
+          "D) Comunicações integradas significam que cada OPM utiliza frequências isoladas e sem interconexão."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (comunicações integradas): “Comunicações integradas consistem em canais e frequências comuns e interconectados, sob gerenciamento de um Centro de Operações.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Comunicações integradas são apenas a publicação posterior de relatórios administrativos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comunicações integradas. C: incorreta para o comando, pois afirma: “Comunicações integradas se limitam à comunicação com autoridades externas à PM.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comunicações integradas. D: incorreta para o comando, pois afirma: “Comunicações integradas significam que cada OPM utiliza frequências isoladas e sem interconexão.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comunicações integradas. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1066,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "comando",
+        "text": "QUESTÃO 1066 — Considerando comando e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Comando envolve o exercício da autoridade regulamentar sobre planejamento e execução das ações, missões e operações, com definição de objetivos, estruturas, recursos, coordenação e controle.",
+          "B) Comando se limita ao armazenamento das gravações depois do encerramento da ocorrência.",
+          "C) Comando é exclusivamente a transmissão técnica de imagens, sem poder de direcionamento de recursos.",
+          "D) Comando é apenas a análise estatística posterior, sem autoridade sobre execução."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (comando): “Comando envolve o exercício da autoridade regulamentar sobre planejamento e execução das ações, missões e operações, com definição de objetivos, estruturas, recursos, coordenação e controle.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “Comando se limita ao armazenamento das gravações depois do encerramento da ocorrência.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comando. C: incorreta para o comando, pois afirma: “Comando é exclusivamente a transmissão técnica de imagens, sem poder de direcionamento de recursos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comando. D: incorreta para o comando, pois afirma: “Comando é apenas a análise estatística posterior, sem autoridade sobre execução.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comando. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1067,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "ferramentas C2",
+        "text": "QUESTÃO 1067 — Considerando ferramentas C2 e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Drones são excluídos expressamente das ferramentas de Comando e Controle.",
+          "B) Somente imagens captadas por câmeras privadas podem ser ferramentas de Comando e Controle.",
+          "C) Apenas comunicações telefônicas convencionais podem ser ferramentas de Comando e Controle.",
+          "D) Imagens de drones, Olho de Águia, transmissões ao vivo das COP e imagens de sistemas de videopatrulhamento podem ser ferramentas de Comando e Controle."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (ferramentas C2): “Imagens de drones, Olho de Águia, transmissões ao vivo das COP e imagens de sistemas de videopatrulhamento podem ser ferramentas de Comando e Controle.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Drones são excluídos expressamente das ferramentas de Comando e Controle.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ferramentas C2. B: incorreta para o comando, pois afirma: “Somente imagens captadas por câmeras privadas podem ser ferramentas de Comando e Controle.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ferramentas C2. C: incorreta para o comando, pois afirma: “Apenas comunicações telefônicas convencionais podem ser ferramentas de Comando e Controle.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ferramentas C2. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1068,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "vedação de destacamento comercial",
+        "text": "QUESTÃO 1068 — Considerando vedação de destacamento comercial e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A vedação alcança apenas condomínios fechados, não empresas ou entidades com fins lucrativos.",
+          "B) É permitido destacar policial militar em central comercial se o serviço for prestado sem remuneração direta ao policial.",
+          "C) É vedado destacar policial militar em centro de controle operacional ou central de videomonitoramento de empresa, condomínio fechado ou entidade que represente interesse individual/comercial ou tenha fins lucrativos.",
+          "D) A vedação pode ser afastada por decisão do responsável privado pelo sistema de câmeras."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (vedação de destacamento comercial): “É vedado destacar policial militar em centro de controle operacional ou central de videomonitoramento de empresa, condomínio fechado ou entidade que represente interesse individual/comercial ou tenha fins lucrativos.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A vedação alcança apenas condomínios fechados, não empresas ou entidades com fins lucrativos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre vedação de destacamento comercial. B: incorreta para o comando, pois afirma: “É permitido destacar policial militar em central comercial se o serviço for prestado sem remuneração direta ao policial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre vedação de destacamento comercial. D: incorreta para o comando, pois afirma: “A vedação pode ser afastada por decisão do responsável privado pelo sistema de câmeras.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre vedação de destacamento comercial. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1069,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "VPtr por roteiro",
+        "text": "QUESTÃO 1069 — Considerando VPtr por roteiro e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O videopatrulhamento substitui o CPP e não se vincula ao método de planejamento operacional.",
+          "B) O videopatrulhamento deve ser realizado por roteiro preestabelecido, em formato de CPP, desenvolvido pelo método de planejamento operacional indicado na diretriz.",
+          "C) O videopatrulhamento deve ser feito sem roteiro, conforme decisão espontânea do operador.",
+          "D) O roteiro de videopatrulhamento é elaborado somente depois de captadas as imagens."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (VPtr por roteiro): “O videopatrulhamento deve ser realizado por roteiro preestabelecido, em formato de CPP, desenvolvido pelo método de planejamento operacional indicado na diretriz.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O videopatrulhamento substitui o CPP e não se vincula ao método de planejamento operacional.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre VPtr por roteiro. C: incorreta para o comando, pois afirma: “O videopatrulhamento deve ser feito sem roteiro, conforme decisão espontânea do operador.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre VPtr por roteiro. D: incorreta para o comando, pois afirma: “O roteiro de videopatrulhamento é elaborado somente depois de captadas as imagens.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre VPtr por roteiro. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1070,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "custódia após upload",
+        "text": "QUESTÃO 1070 — Considerando custódia após upload e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Após o upload da evidência ao SiGCED, a administração e custódia das evidências digitais captadas pelo OpVPtr passam ao Chefe da Seção PJMD.",
+          "B) Após o upload, a custódia passa ao responsável pela empresa fornecedora da câmera.",
+          "C) Após o upload, a custódia passa automaticamente ao operador que visualizou primeiro a imagem.",
+          "D) Após o upload, a custódia permanece exclusivamente com o policial que fez o download, sem atribuição da Seção PJMD."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (custódia após upload): “Após o upload da evidência ao SiGCED, a administração e custódia das evidências digitais captadas pelo OpVPtr passam ao Chefe da Seção PJMD.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “Após o upload, a custódia passa ao responsável pela empresa fornecedora da câmera.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre custódia após upload. C: incorreta para o comando, pois afirma: “Após o upload, a custódia passa automaticamente ao operador que visualizou primeiro a imagem.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre custódia após upload. D: incorreta para o comando, pois afirma: “Após o upload, a custódia permanece exclusivamente com o policial que fez o download, sem atribuição da Seção PJMD.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre custódia após upload. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1071,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "integridade da evidência",
+        "text": "QUESTÃO 1071 — Considerando integridade da evidência e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A autoridade competente recebe apenas transcrição, sendo proibido disponibilizar o arquivo íntegro.",
+          "B) A evidência pode ser editada para melhorar a qualidade antes de ser entregue à autoridade.",
+          "C) A integridade só precisa ser preservada até a primeira visualização, podendo depois haver edição.",
+          "D) A disponibilização de arquivo à autoridade competente deve preservar sua integridade, sem qualquer edição."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (integridade da evidência): “A disponibilização de arquivo à autoridade competente deve preservar sua integridade, sem qualquer edição.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A autoridade competente recebe apenas transcrição, sendo proibido disponibilizar o arquivo íntegro.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre integridade da evidência. B: incorreta para o comando, pois afirma: “A evidência pode ser editada para melhorar a qualidade antes de ser entregue à autoridade.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre integridade da evidência. C: incorreta para o comando, pois afirma: “A integridade só precisa ser preservada até a primeira visualização, podendo depois haver edição.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre integridade da evidência. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1072,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "acesso a imagens",
+        "text": "QUESTÃO 1072 — Considerando acesso a imagens e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) Qualquer policial pode acessar livremente todas as imagens, sem observância de nível de privilégio.",
+          "B) O acesso só pode ocorrer por divulgação pública da imagem.",
+          "C) O acesso às imagens observa as regras de disponibilidade de acesso e a competência da autoridade responsável, conforme o Anexo da Diretriz.",
+          "D) O acesso é definido exclusivamente pela empresa proprietária da câmera, sem controle institucional."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (acesso a imagens): “O acesso às imagens observa as regras de disponibilidade de acesso e a competência da autoridade responsável, conforme o Anexo da Diretriz.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Qualquer policial pode acessar livremente todas as imagens, sem observância de nível de privilégio.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre acesso a imagens. B: incorreta para o comando, pois afirma: “O acesso só pode ocorrer por divulgação pública da imagem.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre acesso a imagens. D: incorreta para o comando, pois afirma: “O acesso é definido exclusivamente pela empresa proprietária da câmera, sem controle institucional.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre acesso a imagens. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1073,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "níveis de acesso",
+        "text": "QUESTÃO 1073 — Considerando níveis de acesso e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A concessão é feita exclusivamente pela autoridade municipal responsável pela área.",
+          "B) A concessão de login, senha e níveis de privilégios das ferramentas inteligentes aos policiais escalados nas Salas de Operações e no CC2 é providenciada em conjunto pelo CIPM e DTIC, conforme a diretriz.",
+          "C) Cada usuário concede a si próprio login e privilégios, sem participação de órgão técnico.",
+          "D) A concessão compete exclusivamente ao Chefe da Seção PJMD, sem atuação do CIPM ou DTIC."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (níveis de acesso): “A concessão de login, senha e níveis de privilégios das ferramentas inteligentes aos policiais escalados nas Salas de Operações e no CC2 é providenciada em conjunto pelo CIPM e DTIC, conforme a diretriz.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A concessão é feita exclusivamente pela autoridade municipal responsável pela área.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre níveis de acesso. C: incorreta para o comando, pois afirma: “Cada usuário concede a si próprio login e privilégios, sem participação de órgão técnico.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre níveis de acesso. D: incorreta para o comando, pois afirma: “A concessão compete exclusivamente ao Chefe da Seção PJMD, sem atuação do CIPM ou DTIC.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre níveis de acesso. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1074,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "CC2 Móvel",
+        "text": "QUESTÃO 1074 — Considerando CC2 Móvel e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) O CC2 Móvel é empregado em operações programadas ou emergenciais cuja natureza indique necessidade de estrutura de comando e controle contígua ao Posto de Comando.",
+          "B) O CC2 Móvel é empregado apenas em serviços administrativos de rotina, afastado do Posto de Comando.",
+          "C) O CC2 Móvel é obrigatório em toda ocorrência de baixa complexidade, independentemente da necessidade.",
+          "D) O CC2 Móvel substitui permanentemente os Centros de Operações regionais."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (CC2 Móvel): “O CC2 Móvel é empregado em operações programadas ou emergenciais cuja natureza indique necessidade de estrutura de comando e controle contígua ao Posto de Comando.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “O CC2 Móvel é empregado apenas em serviços administrativos de rotina, afastado do Posto de Comando.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre CC2 Móvel. C: incorreta para o comando, pois afirma: “O CC2 Móvel é obrigatório em toda ocorrência de baixa complexidade, independentemente da necessidade.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre CC2 Móvel. D: incorreta para o comando, pois afirma: “O CC2 Móvel substitui permanentemente os Centros de Operações regionais.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre CC2 Móvel. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1075,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "gestão do CC2 Móvel",
+        "text": "QUESTÃO 1075 — Considerando gestão do CC2 Móvel e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A gestão é atribuída permanentemente à OPM que primeiro solicitar o veículo.",
+          "B) A gestão operacional centralizada compete exclusivamente a cada operador de câmera.",
+          "C) A gestão compete ao município em que ocorrer a operação.",
+          "D) A Coord Op PM é responsável pela gestão operacional centralizada dos CC2 Móveis e disponibiliza o veículo às OPM responsáveis pelas operações."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (gestão do CC2 Móvel): “A Coord Op PM é responsável pela gestão operacional centralizada dos CC2 Móveis e disponibiliza o veículo às OPM responsáveis pelas operações.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A gestão é atribuída permanentemente à OPM que primeiro solicitar o veículo.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre gestão do CC2 Móvel. B: incorreta para o comando, pois afirma: “A gestão operacional centralizada compete exclusivamente a cada operador de câmera.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre gestão do CC2 Móvel. C: incorreta para o comando, pois afirma: “A gestão compete ao município em que ocorrer a operação.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre gestão do CC2 Móvel. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
+      },
+      {
+        "id": 1076,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Sala de Operações",
+        "text": "QUESTÃO 1076 — Considerando Sala de Operações e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+        "options": [
+          "A) A Sala de Operações deve ficar necessariamente fora da OPM territorial.",
+          "B) A Sala de Operações pode funcionar em qualquer ambiente sem estação de trabalho ou recursos próprios.",
+          "C) As instalações da Sala de Operações devem, preferencialmente, ser exclusivas para essas atividades; excepcionalmente podem ficar junto ao Sv Dia, desde que haja estação e recursos exclusivos.",
+          "D) A Sala de Operações deve sempre compartilhar todos os recursos com o Sv Dia, sem exceção."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (Sala de Operações): “As instalações da Sala de Operações devem, preferencialmente, ser exclusivas para essas atividades; excepcionalmente podem ficar junto ao Sv Dia, desde que haja estação e recursos exclusivos.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A Sala de Operações deve ficar necessariamente fora da OPM territorial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre Sala de Operações. B: incorreta para o comando, pois afirma: “A Sala de Operações pode funcionar em qualquer ambiente sem estação de trabalho ou recursos próprios.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre Sala de Operações. D: incorreta para o comando, pois afirma: “A Sala de Operações deve sempre compartilhar todos os recursos com o Sv Dia, sem exceção.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre Sala de Operações. Auditoria editorial: gabarito conferido contra a regra registrada; a revisão é interna ao modelo e não equivale a validação humana independente."
       }
 
 ];
