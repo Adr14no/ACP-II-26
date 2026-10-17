@@ -10542,7 +10542,1882 @@ const BANCO_GERAL_QUESTOES = [
     ],
     "answer": 1,
     "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, Nota de Instrução nº PM3-001/02/26, itens 6.7.4 a 6.7.6, PDF p. 396. A SP Mulher Segura prioriza prevenção, visitas e articulação; Maria da Penha prioriza atendimento de ocorrências. A avaliação prévia cabe ao Supervisor SOp ou, na ausência, CFP/CGP, com apoio territorial compatível; as viaturas SP Mulher Segura têm uso restrito aos programas especificados. A inverte prioridades; C elimina a prioridade e amplia o uso; D atribui competência diversa."
-  }
+  },
+      {
+    "id": 701,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — atribuição por RFID",
+    "text": "QUESTÃO 701 — No início do turno, o policial militar encosta seu cartão RFID no leitor da doca para retirar uma COP. Considerando o procedimento de atribuição, assinale a alternativa correta.",
+    "options": [
+      "a) O sistema identifica o usuário e atribui automaticamente a câmera em melhor condição de emprego, considerando o nível de bateria e a inexistência de descarregamento de vídeo em andamento.",
+      "b) A atribuição é feita manualmente pelo policial, que escolhe qualquer câmera disponível, independentemente do nível de bateria.",
+      "c) O cartão RFID é compartilhável entre policiais da mesma Unidade de Serviço, desde que a retirada seja registrada no RSO.",
+      "d) A COP somente é atribuída depois que o usuário inicia a primeira gravação no local da ocorrência."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 2, POP 5.28.01, sequência das ações, itens 1 a 3; esclarecimentos, item 1. O cartão é pessoal e exclusivo, e a doca atribui automaticamente a câmera em melhor condição. B contraria a atribuição automática e os critérios descritos; C contraria o caráter pessoal e exclusivo do cartão; D confunde atribuição na doca com acionamento da gravação."
+  },
+  {
+    "id": 702,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — falha na atribuição",
+    "text": "QUESTÃO 702 — O sistema não reconhece o cartão RFID e a câmera é retirada da doca sem atribuição correta. Conforme o POP 5.28.01, qual comportamento do equipamento está previsto?",
+    "options": [
+      "a) A câmera permanece em funcionamento, mas bloqueia apenas o envio dos vídeos.",
+      "b) O equipamento indica falha por luz vermelha e desliga automaticamente após um minuto.",
+      "c) A câmera emite luz verde e aguarda que o policial confirme a atribuição pelo botão P0.",
+      "d) O sistema mantém a câmera ligada por cinco minutos e transfere a atribuição ao supervisor."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 3, POP 5.28.01, item 5. A indicação prevista é luminosa vermelha, seguida de desligamento automático após 1 minuto. A, C e D introduzem comportamentos e prazos não previstos no procedimento."
+  },
+  {
+    "id": 703,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — posicionamento",
+    "text": "QUESTÃO 703 — Após confirmar o funcionamento e a atribuição da COP, o policial deve fixá-la ao uniforme. Qual posicionamento atende ao procedimento?",
+    "options": [
+      "a) Na parte inferior do tronco, para evitar que o equipamento registre o interior da viatura.",
+      "b) Em qualquer ponto do uniforme, desde que a lente fique livre de obstruções.",
+      "c) Na parte superior do tronco, sobre o colete de proteção individual, de modo a permitir enquadramento adequado embarcado e desembarcado.",
+      "d) Na ombreira, exclusivamente do lado dominante, para facilitar o acionamento manual."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, p. 3, POP 5.28.01, item 6. A posição prescrita é a parte superior do tronco sobre o colete, buscando visão acima da linha do para-brisa quando embarcado e enquadramento correto quando desembarcado. A, B e D alteram ou relativizam a posição definida."
+  },
+  {
+    "id": 704,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — pronto emprego",
+    "text": "QUESTÃO 704 — Durante o turno, a COP deve permanecer em condição de pronto emprego. Qual alternativa corresponde às formas de acionamento ou reativação mencionadas no POP?",
+    "options": [
+      "a) Somente acionamento manual pelo usuário, sendo vedados acionamentos remotos.",
+      "b) Acionamento exclusivamente pelo COPOM, sem possibilidade de acionamento por proximidade.",
+      "c) Acionamento por Bluetooth apenas depois do término da ocorrência.",
+      "d) Acionamento remoto automático via COPOM, pela supervisão, por proximidade via Bluetooth ou manualmente, além da reativação automática prevista."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, p. 4, POP 5.28.01, item 7. A condição de pronto emprego abrange as modalidades remotas, Bluetooth e manual, além da reativação automática em caso de interrupção. A, B e C restringem indevidamente as modalidades previstas."
+  },
+  {
+    "id": 705,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — desatribuição e transferência",
+    "text": "QUESTÃO 705 — Ao término do turno, o policial conecta a COP à doca. Qual consequência é expressamente prevista?",
+    "options": [
+      "a) O usuário é desatribuído, os vídeos são enviados automaticamente ao armazenamento e a bateria é carregada.",
+      "b) A câmera mantém a atribuição até que o policial apague os arquivos do equipamento.",
+      "c) O sistema transfere a atribuição ao próximo usuário sem enviar os vídeos.",
+      "d) A conexão à doca serve apenas para carregar a bateria; a transferência dos vídeos deve ser iniciada manualmente."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 4, POP 5.28.01, item 8. A conexão à doca desatribui o usuário, transfere automaticamente os vídeos e carrega a bateria. B e C contradizem a desatribuição; D ignora a transferência automática prevista."
+  },
+  {
+    "id": 706,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — pre-buffer",
+    "text": "QUESTÃO 706 — Ao iniciar uma gravação pelo botão frontal, qual recurso de armazenamento prévio está previsto no POP?",
+    "options": [
+      "a) A câmera armazena apenas os 30 segundos posteriores ao acionamento.",
+      "b) O equipamento inclui no armazenamento interno áudio e vídeo dos 90 segundos anteriores ao acionamento.",
+      "c) O sistema recupera os cinco minutos anteriores somente se o COPOM autorizar.",
+      "d) O pre-buffer funciona apenas quando a gravação é iniciada remotamente por Bluetooth."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 5, esclarecimentos, item 2 do POP 5.28.01. O acionamento inicia a gravação e inclui os 90 segundos anteriores. A e C alteram a duração; D restringe a função a modalidade não indicada."
+  },
+  {
+    "id": 707,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — modo tático",
+    "text": "QUESTÃO 707 — Em situação na qual os sinais luminosos e sonoros exponham o policial a risco, ele avalia utilizar o modo tático (velado/Stealth). Qual procedimento está correto?",
+    "options": [
+      "a) Acionar o botão P1 por três segundos para ativar e o P2 por três segundos para desativar.",
+      "b) Manter pressionado o botão frontal por três segundos para ativar o modo e tocar P0 para desativar.",
+      "c) Pressionar P2 por três segundos para ativar e P1 por três segundos para desativar; o modo é reservado às situações em que luzes e sons exponham o policial a risco ou a situação tática exija.",
+      "d) Ativar o modo velado em todo o turno, independentemente das condições operacionais."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, pp. 5–6, esclarecimentos do POP 5.28.01, item 3. O modo desativa sinais sonoros e luminosos, ativa-se por P2 durante 3 segundos e desativa-se por P1 durante 3 segundos, somente nas situações indicadas. A inverte os botões; B atribui a função a outros comandos; D elimina a condição de uso."
+  },
+  {
+    "id": 708,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — marcador e pânico",
+    "text": "QUESTÃO 708 — Durante uma gravação, o operador pretende registrar um marcador e, em outro momento, emitir um alerta de emergência. Qual associação entre função e comando está correta?",
+    "options": [
+      "a) Marcador: dois cliques em P0; Pânico: um clique em P0.",
+      "b) Marcador: botão T2; Pânico: botão frontal por três segundos.",
+      "c) Marcador: botão P2 por três segundos; Pânico: botão P1 por três segundos.",
+      "d) Marcador: um clique em P0; Pânico: dois cliques em P0."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, p. 6, esclarecimentos, itens 4 e 5 do POP 5.28.01. Um clique em P0 gera marcador; dois cliques em P0 acionam o modo Pânico. A inverte os comandos; B e C atribuem funções a botões distintos dos indicados."
+  },
+  {
+    "id": 709,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — classificação obrigatória",
+    "text": "QUESTÃO 709 — Após encerrar uma gravação, o policial usuário deve classificar a evidência digital. Qual regra deve observar?",
+    "options": [
+      "a) A classificação é responsabilidade exclusiva do Chefe da Agência de Inteligência, sem participação do usuário.",
+      "b) Cada evidência deve ser classificada pelo policial usuário logo após o encerramento da gravação, conforme as etiquetas eletrônicas preestabelecidas.",
+      "c) A classificação pode ser dispensada quando o vídeo for transmitido ao COPOM em tempo real.",
+      "d) A classificação somente é feita se houver instauração de procedimento judicial."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 9, POP 5.28.02, itens 1 a 3. O usuário classifica logo após encerrar a gravação. A confunde gestão do cartão RFID com classificação; C e D criam exceções não previstas."
+  },
+  {
+    "id": 710,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — evidência sem talão",
+    "text": "QUESTÃO 710 — Uma gravação decorre de abordagem sem talão de ocorrência. Como deve ser preenchido o identificador e selecionada a natureza, segundo o POP 5.28.02?",
+    "options": [
+      "a) Deixar o identificador vazio e selecionar obrigatoriamente a natureza “Flagrante”.",
+      "b) Utilizar o número do talão anterior da mesma Unidade de Serviço.",
+      "c) Informar apenas a data no formato ano-mês-dia e selecionar “Abordagem” ou “Outros fatos de interesse policial sem talão”, conforme o caso.",
+      "d) Registrar a data e inserir zeros até completar o mesmo número de caracteres dos talões de ocorrência."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, pp. 9 e 11, POP 5.28.02, item 6 e esclarecimento 3. Sem talão, informa-se apenas a data e escolhe-se uma das naturezas específicas. A e B atribuem dados não correspondentes; D contraria a orientação de não inserir zeros ou sinais antes do número do talão."
+  },
+  {
+    "id": 711,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — gravações de apoio",
+    "text": "QUESTÃO 711 — Uma Unidade de Serviço presta apoio a outra que registra a ocorrência. Para assegurar uniformidade na classificação das gravações, o policial que porta a COP deve:",
+    "options": [
+      "a) Criar classificação independente, pois cada equipamento corresponde a usuário diferente.",
+      "b) Classificar o vídeo apenas com a data, ainda que exista talão de ocorrência.",
+      "c) Utilizar sempre a categoria Polícia Judiciária, independentemente da natureza do fato.",
+      "d) Buscar as informações da classificação utilizada pela patrulha responsável pelo boletim, de modo que os vídeos do mesmo fato recebam os mesmos dados, conforme orientação do CGP e/ou CFP."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, p. 10, POP 5.28.02, item 4. A classificação deve coincidir com a aplicada pela patrulha responsável pelo registro. A, B e C criam critérios que não constam do procedimento."
+  },
+  {
+    "id": 712,
+    "subject": "OPERACIONAL",
+    "tag": "COP MOTOROLA",
+    "topic": "COP Motorola — falha durante gravação",
+    "text": "QUESTÃO 712 — Durante atendimento de fato de interesse policial, a gravação é interrompida por motivo alheio à vontade do policial. Qual conjunto de providências está previsto?",
+    "options": [
+      "a) Aguardar o fim do turno e comunicar verbalmente o ocorrido, sem registrar o período de falha.",
+      "b) Registrar o fato em RSO e/ou BOe, indicar período de inoperância e possível motivo, e informar imediatamente o CGP/CFP para troca do equipamento.",
+      "c) Apagar o arquivo incompleto e reiniciar a COP somente após autorização judicial.",
+      "d) Desatribuir a câmera imediatamente e deixar de registrar a falha, pois a interrupção foi involuntária."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 19, POP 5.28.03, ação corretiva 5.1–5.3; p. 17, item 9. A norma exige registro, indicação do período e motivo possível, comunicação imediata e reacionamento manual quando cabível. A, C e D omitem ou contrariam as providências prescritas."
+  },
+  {
+    "id": 713,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — conceito",
+    "text": "QUESTÃO 713 — De acordo com a Diretriz nº PM3-001/02/23, qual definição corresponde ao Sistema de Comando e Controle?",
+    "options": [
+      "a) Conjunto de procedimentos exclusivamente administrativos para controlar escalas e afastamentos.",
+      "b) Rede de câmeras que registra ocorrências e substitui o comando operacional.",
+      "c) Conjunto integrado de instalações, equipamentos, sistemas de informação e comunicações que garante planejamento, acompanhamento e controle de ações, missões e operações policial-militares com base na doutrina operacional.",
+      "d) Unidade de Serviço formada por um ou mais policiais, a pé ou embarcados, em determinado território."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, p. 200 (fl. 4), Diretriz nº PM3-001/02/23, item 6.1.11. A e B reduzem indevidamente o conceito; D é a definição de Unidade de Serviço, item 6.1.12."
+  },
+  {
+    "id": 714,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — consciência situacional e IOC",
+    "text": "QUESTÃO 714 — Em uma operação conjunta, a compreensão do ambiente é compartilhada entre os participantes, produzindo entendimento comum. Qual conceito corresponde especificamente a essa compreensão compartilhada?",
+    "options": [
+      "a) Diagnóstico Situacional.",
+      "b) Imagem Operacional Comum (IOC).",
+      "c) Consciência Situacional individual.",
+      "d) Plano de Contingência."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, pp. 199–200 (fls. 3–4), item 6.1.8. A IOC é compartilhada entre indivíduos engajados na mesma missão. A é processo de identificação de fatores territoriais; C é compreensão desenvolvida por uma pessoa; D é planejamento prévio para situação futura."
+  },
+  {
+    "id": 715,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — princípios",
+    "text": "QUESTÃO 715 — Assinale a alternativa que reúne exclusivamente princípios do Sistema de Comando e Controle previstos no item 6.2.2 da Diretriz.",
+    "options": [
+      "a) Amplitude, comunicações integradas, confiabilidade e flexibilidade.",
+      "b) Prontidão, hierarquia, oportunidade e universalidade.",
+      "c) Prevenção, repressão, proximidade comunitária e mobilidade.",
+      "d) Comando, controle, assessoramento e videopatrulhamento."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 201 (fl. 5), item 6.2.2. Os princípios incluem amplitude, comunicações integradas, confiabilidade, flexibilidade, gestão por processos, segurança das informações, simplicidade e unidade de comando. B e C apresentam termos não listados como princípios nesse item; D mistura atividades/serviços essenciais e ferramenta operacional."
+  },
+  {
+    "id": 716,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — comunicações integradas",
+    "text": "QUESTÃO 716 — No contexto dos princípios do C2, “comunicações integradas” significa:",
+    "options": [
+      "a) A concentração de todas as comunicações exclusivamente em um único aparelho portátil.",
+      "b) A transmissão de mensagens apenas entre integrantes de uma mesma Unidade de Serviço.",
+      "c) Canais e frequências comuns e interconectados, sob gerenciamento de um Centro de Operações, para compartilhar informações entre níveis e órgãos envolvidos.",
+      "d) A substituição das comunicações operacionais por relatórios escritos ao final do turno."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, p. 201 (fl. 5), item 6.2.2.2. A definição expressa a integração e o gerenciamento por Centro de Operações. A, B e D restringem ou substituem indevidamente o conceito."
+  },
+  {
+    "id": 717,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — confiabilidade",
+    "text": "QUESTÃO 717 — A Diretriz associa a confiabilidade das informações transmitidas, principalmente diante de eventos complexos, a qual combinação?",
+    "options": [
+      "a) À velocidade de transmissão, mesmo sem análise do conteúdo.",
+      "b) À livre edição dos dados por qualquer integrante para facilitar a compreensão.",
+      "c) À confirmação exclusiva por autoridade externa à Polícia Militar.",
+      "d) À análise qualificada do teor por policial militar capacitado e à manutenção da eficácia da informação ao longo do tempo."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, p. 201 (fl. 5), item 6.2.2.3. A confiabilidade decorre de análise qualificada e manutenção da eficácia. A privilegia velocidade sem validação; B permite edição indiscriminada; C introduz requisito não previsto."
+  },
+  {
+    "id": 718,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — atividades essenciais",
+    "text": "QUESTÃO 718 — A autoridade estabelece estruturas e processos para regular a distribuição e o emprego de recursos operacionais, gerenciar riscos e desenvolver linhas de ação alternativas em tempo adequado. A descrição corresponde a:",
+    "options": [
+      "a) Assessoramento.",
+      "b) Controle.",
+      "c) Comando.",
+      "d) Videopatrulhamento."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 202 (fl. 6), item 6.3.1.2. Controle regula distribuição e emprego de recursos sob gerenciamento de risco. A é atividade de coleta/análise para subsidiar decisão; C é exercício de autoridade sobre planejamento e execução; D é observação e análise de imagens."
+  },
+  {
+    "id": 719,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — serviços essenciais",
+    "text": "QUESTÃO 719 — Qual alternativa apresenta apenas serviços essenciais obrigatórios para todas as Estruturas de Comando e Controle, conforme a Diretriz?",
+    "options": [
+      "a) Monitoramento da rede de rádio, análise de dados e informações com ferramentas inteligentes e videopatrulhamento.",
+      "b) Investigação criminal, perícia oficial e cumprimento de mandados judiciais.",
+      "c) Gestão de escalas, administração de férias e controle de frequência.",
+      "d) Patrulhamento a pé, policiamento escolar e atendimento ao público."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 202 (fl. 6), itens 6.3.2.1 a 6.3.2.3. B, C e D listam atividades que não compõem o rol de serviços essenciais definido nesse dispositivo."
+  },
+  {
+    "id": 720,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — atribuição do CC2",
+    "text": "QUESTÃO 720 — Uma operação exige integração de mais de uma OPM, de matrizes operacionais distintas, com possível participação de órgãos externos. Qual estrutura a Diretriz associa a esse tipo de operação?",
+    "options": [
+      "a) Sala de Operações, exclusivamente no nível de Companhia.",
+      "b) Centro de Comando e Controle Móvel, em todos os casos, sem considerar o sítio da operação.",
+      "c) Centro de Comando e Controle (CC2), implementado em nível de Grande Comando.",
+      "d) Centro de Controle Operacional de empresa privada."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, p. 203 (fl. 7), item 6.5.4.1.1. O CC2 em nível de Grande Comando atende operações cuja complexidade/natureza exija integração de mais de uma OPM ou órgãos externos. A descreve estrutura de nível operacional; B ignora a hipótese específica de CC2 móvel; D não é a estrutura institucional definida."
+  },
+  {
+    "id": 721,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — operação estadual",
+    "text": "QUESTÃO 721 — Em operação com abrangência estadual, qual estrutura assume as atribuições de Centro de Comando e Controle segundo a Diretriz?",
+    "options": [
+      "a) O COPOM Regional indicado pelo comandante da OPM de menor escalão.",
+      "b) O COPOM São Paulo.",
+      "c) A Sala de Gerenciamento de Incidentes, obrigatoriamente instalada no sítio da operação.",
+      "d) O Centro de Comando e Controle Móvel, independentemente da decisão da Coord Op PM."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 204 (fl. 8), item 6.5.4.1.7. O COPOM São Paulo assume as atribuições de CC2 nas operações de abrangência estadual. A se refere a operações em mais de uma região ou com matrizes distintas, nas quais Coord Op PM define COPOM Regional temporário; C e D não são a regra expressa."
+  },
+  {
+    "id": 722,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — Sala de Operações",
+    "text": "QUESTÃO 722 — A Sala de Operações é descrita na Diretriz como estrutura responsável, em nível operacional, por:",
+    "options": [
+      "a) Decidir sobre a implementação de todos os CC2 do Estado.",
+      "b) Executar exclusivamente o armazenamento de evidências digitais, sem análise de dados.",
+      "c) Representar politicamente a Polícia Militar perante órgãos externos durante qualquer operação.",
+      "d) Realizar serviços essenciais de comando e controle, como monitoramento da rede de rádio, análise de dados e videopatrulhamento, no nível operacional."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, pp. 202 e 204–205 (fls. 6 e 8–9), itens 6.3.2 e 6.5.4.2.1. A competência de implementação do CC2 é do Grande Comando; B reduz a função da Sala; C descreve função de interface político-estratégica atribuída a outro arranjo, não a definição da Sala de Operações."
+  },
+  {
+    "id": 723,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — Sala de Gerenciamento de Incidentes",
+    "text": "QUESTÃO 723 — Em operação que exige integração com órgãos externos à PM, quem institui a Sala de Gerenciamento de Incidentes, conforme a Diretriz?",
+    "options": [
+      "a) A autoridade policial-militar superior ao comandante responsável pelas operações em campo, por solicitação ou de ofício.",
+      "b) O operador de videopatrulhamento, sempre que identificar uma imagem de interesse policial.",
+      "c) O chefe da Seção PJMD, após o upload de evidência digital.",
+      "d) O comandante de qualquer Unidade de Serviço, independentemente da necessidade de integração interagências."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 205 (fl. 9), item 6.5.4.4.1. A instituição cabe à autoridade superior ao comandante em campo, por solicitação ou ex officio, quando necessária integração externa. B, C e D atribuem a competência a agentes ou situações não previstos."
+  },
+  {
+    "id": 724,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — CC2 Móvel",
+    "text": "QUESTÃO 724 — Em qual hipótese a Diretriz prevê o emprego do Centro de Comando e Controle Móvel?",
+    "options": [
+      "a) Somente em operações previamente programadas e nunca em emergências.",
+      "b) Em qualquer patrulhamento ordinário, como substituto permanente do COPOM Regional.",
+      "c) Em operações programadas ou emergenciais cuja natureza indique a necessidade de estrutura de comando e controle no local da operação, contígua ao Posto de Comando.",
+      "d) Exclusivamente quando solicitado por órgão privado que disponibilize câmeras."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, p. 206 (fl. 10), item 6.5.4.5.1. O CC2 Móvel pode ser empregado em operações programadas ou emergenciais e deve atender à necessidade no sítio da operação. A exclui emergências; B generaliza o emprego; D inventa condição."
+  },
+  {
+    "id": 725,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "C2 — implementação de estruturas",
+    "text": "QUESTÃO 725 — A competência para deliberar sobre a implementação de Estruturas de Comando e Controle é distribuída, segundo a Diretriz, da seguinte forma:",
+    "options": [
+      "a) O Cmdo G decide sobre qualquer Sala de Operações, e o Cmt Cia decide sobre todos os CC2.",
+      "b) O Grande Comando delibera sobre CC2; o Cmdo Pol, sobre Salas de Operações e a sistemática de policial destacado em CCO de outro órgão.",
+      "c) A DTIC decide sobre todas as estruturas, pois é responsável por soluções tecnológicas.",
+      "d) O COPOM decide isoladamente sobre todas as estruturas, sem previsão no Plano Diretor."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 206 (fl. 10), item 6.6.1. A distribuição é CC2 pelo Grande Comando e Salas de Operações/policial destacado em CCO pelo Cmdo Pol, com recursos previstos no Plano Diretor. A inverte os níveis; C confunde apoio tecnológico com competência deliberativa; D ignora a competência e o Plano Diretor."
+  },
+  {
+    "id": 726,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — grupo organizado e ORCRIM",
+    "text": "QUESTÃO 726 — Para os fins da Diretriz nº PM3-001/02/24, qual alternativa distingue corretamente grupo criminoso organizado de Organização Criminosa (ORCRIM)?",
+    "options": [
+      "a) Grupo criminoso organizado: 4 ou mais pessoas e pena máxima superior a 4 anos; ORCRIM: 3 ou mais pessoas e benefício material.",
+      "b) Ambos exigem exatamente quatro pessoas, estrutura formal e divisão de tarefas escrita.",
+      "c) Grupo criminoso organizado: grupo estruturado de 3 ou mais pessoas que atua concertadamente para infrações graves e benefício econômico/material; ORCRIM: associação de 4 ou mais pessoas estruturalmente ordenada, com divisão de tarefas, ainda que informal, e finalidade de vantagem por infrações penais nos termos legais.",
+      "d) Grupo criminoso organizado exige vínculo transnacional; ORCRIM exige exclusivamente crimes cibernéticos."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, pp. 219–220 (fls. 5–6), itens 6.1.4.1 e 6.1.4.2. A troca os quantitativos e critérios; B acrescenta exigências formais não previstas; D restringe indevidamente os conceitos."
+  },
+  {
+    "id": 727,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — área anômica",
+    "text": "QUESTÃO 727 — Uma localidade sofre interferência aguda de criminosos na vida cotidiana, com imposição de normas de comportamento e controle territorial e social, exigindo apoio de outras matrizes para o policiamento territorial. Como a Diretriz denomina esse ambiente?",
+    "options": [
+      "a) Área anômica.",
+      "b) Área emblemática.",
+      "c) Cena aberta de uso.",
+      "d) Área de Interesse de Segurança Pública."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 219 (fl. 5), item 6.1.1. A área anômica é caracterizada por interferência aguda e dificuldade crítica para a atuação policial. B descreve interferência sutil/velada; C trata de aglomeração de usuários e traficantes em espaço público; D é categoria de planejamento territorial, não a definição dada."
+  },
+  {
+    "id": 728,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — área emblemática",
+    "text": "QUESTÃO 728 — A interferência criminosa ocorre de forma sutil ou velada, intimida moradores, dificulta a prestação de serviços públicos e induz pessoas a falsear testemunhos ou dificultar o atendimento de ocorrências. Qual conceito corresponde à situação?",
+    "options": [
+      "a) Área anômica, necessariamente caracterizada por apoio de contingentes de outras matrizes.",
+      "b) Área emblemática.",
+      "c) Plano de Contingência.",
+      "d) Operação Humanitária."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 219 (fl. 5), item 6.1.2. Área emblemática envolve interferência sutil ou velada, medo e obstáculos à atuação pública. A mistura características da área anômica; C é planejamento prévio para situação futura; D é ação estratégica protetiva em favor de pessoas vulneráveis."
+  },
+  {
+    "id": 729,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — lavagem de dinheiro",
+    "text": "QUESTÃO 729 — Conforme a definição reproduzida na Diretriz, lavagem de dinheiro consiste em:",
+    "options": [
+      "a) Apenas a ocultação física de dinheiro em espécie, sem abranger outros bens.",
+      "b) A transferência de bens exclusivamente entre pessoas jurídicas regularmente constituídas.",
+      "c) A conversão de qualquer ativo em moeda estrangeira, ainda que sem relação com infração penal.",
+      "d) A ocultação ou dissimulação da natureza, origem, localização, disposição, movimentação ou propriedade de bens, direitos ou valores provenientes direta ou indiretamente de infração penal."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, p. 220 (fl. 6), item 6.1.9. A definição abrange bens, direitos e valores provenientes de infração penal. A e B restringem indevidamente o alcance; C elimina o vínculo com infração penal."
+  },
+  {
+    "id": 730,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — Plano de Ação",
+    "text": "QUESTÃO 730 — Qual descrição corresponde ao Plano de Ação previsto na Diretriz de combate ao crime organizado?",
+    "options": [
+      "a) Documento elaborado somente após a ocorrência, para registrar as providências já adotadas.",
+      "b) Planejamento baseado em informações do diagnóstico situacional, com sobreposição de camadas de dados para plotar AISP e/ou pontos de concentração ou fixação do policiamento, otimizando o emprego das US.",
+      "c) Documento que contém exclusivamente a cadeia de comando para situação futura imprevisível.",
+      "d) Relatório de inteligência restrito à identificação de integrantes de organizações criminosas, sem relação com emprego de US."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 220 (fl. 6), item 6.1.10. O Plano de Ação usa dados do diagnóstico para mapear áreas e otimizar US. A descreve registro posterior; C se aproxima do Plano de Contingência, mas não o define; D restringe a finalidade."
+  },
+  {
+    "id": 731,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — Plano de Contingência",
+    "text": "QUESTÃO 731 — Um documento estabelece previamente condutas e linhas de ação para uma situação futura que eventualmente possa ocorrer, incluindo providências operacionais ou administrativas. A Diretriz denomina esse documento:",
+    "options": [
+      "a) Plano de Ação.",
+      "b) Diagnóstico Situacional.",
+      "c) Plano de Contingência.",
+      "d) Imagem Operacional Comum."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, p. 220 (fl. 6), item 6.1.11. O Plano de Contingência é o planejamento prévio para situação futura. A usa dados para otimizar emprego territorial; B identifica fatores que afetam a ordem pública; D é compreensão compartilhada do ambiente."
+  },
+  {
+    "id": 732,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — infrações prioritárias",
+    "text": "QUESTÃO 732 — Qual alternativa contém apenas infrações expressamente listadas como prioritárias na Diretriz de combate ao crime organizado?",
+    "options": [
+      "a) Tráfico de armas e munições; roubo de cargas; lavagem de dinheiro.",
+      "b) Desacato simples; infração de trânsito; dano culposo sem associação a outros fatos.",
+      "c) Qualquer infração administrativa, ainda que sem possível associação ao crime organizado.",
+      "d) Somente tráfico de drogas e homicídio, excluídos crimes financeiros e cibernéticos."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 221 (fl. 7), itens 6.2.2, 6.2.4 e 6.2.8. Os três itens são prioritários. B e C apresentam categorias não enumeradas como tais; D restringe o rol, que também inclui lavagem, crimes cibernéticos e outras condutas."
+  },
+  {
+    "id": 733,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — pontos sensíveis",
+    "text": "QUESTÃO 733 — Ao identificar possíveis pontos sensíveis relacionados à atuação do crime organizado, a Diretriz orienta os Comandos de Policiamento a:",
+    "options": [
+      "a) Limitar a análise a locais cuja fiscalização administrativa seja de competência exclusiva da Polícia Militar.",
+      "b) Desconsiderar estabelecimentos lícitos, pois não podem ser usados para ocultar práticas criminosas.",
+      "c) Encaminhar todos os dados diretamente à imprensa para mobilizar a comunidade.",
+      "d) Identificar pontos sensíveis e infraestruturas críticas potencialmente relacionadas à atuação criminosa, mesmo quando a fiscalização da atividade não seja competência da PM."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, p. 222 (fl. 8), item 6.3.1. A Diretriz prevê identificar pontos sensíveis mesmo sem competência fiscalizatória da PM sobre a atividade. A restringe indevidamente; B contraria a referência a atividades lícitas/paralícitas; C não é providência prevista."
+  },
+  {
+    "id": 734,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — encaminhamento a autoridades",
+    "text": "QUESTÃO 734 — Após reunir dados suficientes sobre irregularidades administrativas ou criminais em ponto sensível, qual providência a Diretriz prevê para o Comando de Policiamento?",
+    "options": [
+      "a) Determinar diretamente a aplicação de sanções administrativas por qualquer órgão competente.",
+      "b) Encaminhar expediente à autoridade competente para fiscalização administrativa e/ou adoção de medidas judiciais, observando a eventual necessidade de atuação integrada.",
+      "c) Arquivar os dados se a fiscalização não for atribuição da Polícia Militar.",
+      "d) Substituir a atuação dos órgãos fiscalizadores por policiamento ostensivo permanente."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 223 (fl. 9), itens 6.3.3 e 6.3.4. O Cmdo Pol encaminha expediente às autoridades competentes e busca atuação integrada. A atribui poder sancionador direto; C contraria o encaminhamento previsto; D substitui indevidamente órgãos competentes."
+  },
+  {
+    "id": 735,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — planos de ação dos batalhões",
+    "text": "QUESTÃO 735 — Segundo a Diretriz, os comandantes de Batalhão devem elaborar planos de ação para prevenção e repressão imediata ao crime organizado:",
+    "options": [
+      "a) Somente depois de recebida ordem judicial específica.",
+      "b) Exclusivamente por planejamento anual, sem possibilidade de resposta emergencial.",
+      "c) Por programação antecipada ou esboço emergencial, conforme a urgência, a partir de diagnóstico situacional e das informações consolidadas pelo respectivo Cmdo Pol.",
+      "d) Sem considerar pontos sensíveis ou infraestruturas críticas identificadas."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, p. 223 (fl. 9), item 6.4.1. O plano pode ser antecipado ou emergencial, segundo a urgência, e parte de diagnóstico situacional. A e B impõem condições ausentes; D exclui informações que devem subsidiar o planejamento."
+  },
+  {
+    "id": 736,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — indícios de lavagem",
+    "text": "QUESTÃO 736 — Durante abordagem, são encontrados diversos comprovantes de depósitos em espécie, em nome de terceiros, em valores abaixo de R$ 10.000,00. A Diretriz associa esse padrão, como circunstância a observar, a:",
+    "options": [
+      "a) Possível fracionamento de movimentações para camuflar a origem ilícita do dinheiro e dificultar fiscalização e monitoramento.",
+      "b) Prova conclusiva e autossuficiente de lavagem de dinheiro, dispensando outras providências.",
+      "c) Indício exclusivo de tráfico de pessoas, sem relação com movimentação financeira.",
+      "d) Situação que deve ser desconsiderada porque cada depósito é inferior a R$ 10.000,00."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 223 (fl. 9), item 6.4.2.1.4. A Diretriz aponta os depósitos fracionados abaixo de R$ 10.000,00 como possível forma de camuflar ilicitude e dificultar monitoramento. B transforma indício em prova conclusiva; C altera a categoria; D contradiz expressamente o item."
+  },
+  {
+    "id": 737,
+    "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
+    "topic": "Crime Organizado — tráfico de drogas",
+    "text": "QUESTÃO 737 — Para compreender a dinâmica do tráfico de drogas na área de atribuição, a Diretriz orienta a Unidade de Serviço a identificar:",
+    "options": [
+      "a) Apenas o local de venda varejista, desconsiderando transporte e produção.",
+      "b) Somente o nome do proprietário do veículo utilizado.",
+      "c) Exclusivamente a quantidade apreendida, sem observar a logística.",
+      "d) A fase em que o tráfico se encontra — produção, transporte, distribuição ou varejo — e os meios de transporte utilizados."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, pp. 223–224 (fls. 9–10), itens 6.4.2.2.1 e 6.4.2.2.2. A Diretriz manda identificar a fase e os meios de transporte, entre outros dados. A, B e C restringem a análise e omitem fatores expressamente indicados."
+  },
+  {
+    "id": 738,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — filosofia",
+    "text": "QUESTÃO 738 — Segundo a Diretriz nº PM3-005/02/20, Polícia Comunitária é:",
+    "options": [
+      "a) Um programa restrito às equipes designadas para Patrulha Comunitária.",
+      "b) Uma estrutura física fixa instalada em local de fácil acesso.",
+      "c) Princípio básico do Sistema de Policiamento PM, entendido como filosofia que abrange todos os níveis organizacionais e estratégia institucional de interação permanente com a comunidade.",
+      "d) Atuação exclusiva em localidades onde não exista policiamento territorial."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, p. 416 (fl. 2), item 6.1.1. A é definição aproximada de programa/estrutura específica; B corresponde à Base Comunitária de Segurança; D não consta da definição e restringe indevidamente a filosofia."
+  },
+  {
+    "id": 739,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — policiamento ostensivo comunitário",
+    "text": "QUESTÃO 739 — Qual descrição corresponde ao Policiamento Ostensivo Comunitário na Diretriz?",
+    "options": [
+      "a) Atuação direcionada a localidades específicas, estabelecidas por critérios estratégicos, buscando segurança e qualidade de vida por respaldo, cooperação, parceria, participação e coleta de informações junto à comunidade.",
+      "b) Atuação geral em qualquer localidade, definida exclusivamente pelo volume de chamadas emergenciais.",
+      "c) Atividade de investigação criminal realizada sem interação com os moradores.",
+      "d) Atendimento administrativo realizado somente dentro de uma Base Comunitária de Segurança."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 416 (fl. 2), item 6.1.2. A definição inclui localidades específicas e interação comunitária. B e C substituem a finalidade e os métodos; D descreve de modo restrito atendimento em uma estrutura, não o conceito."
+  },
+  {
+    "id": 740,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — Patrulha Comunitária",
+    "text": "QUESTÃO 740 — A Diretriz define a Patrulha Comunitária (Ptr Com) como:",
+    "options": [
+      "a) Qualquer equipe que realize uma visita comunitária, ainda que sem designação específica.",
+      "b) Unidade de Serviço composta por policiais militares designados e treinados para atuação exclusiva no Programa de Policiamento Comunitário.",
+      "c) Base física de referência para atendimento ao público.",
+      "d) Grupo de representantes comunitários que atua sem participação policial."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 416 (fl. 2), item 6.1.4. A Ptr Com é US com policiais designados e treinados para atuação exclusiva no Programa. A elimina os requisitos de designação/treinamento; C descreve BCS; D não corresponde a uma Unidade de Serviço."
+  },
+  {
+    "id": 741,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — BCS",
+    "text": "QUESTÃO 741 — Qual característica corresponde à Base Comunitária de Segurança (BCS)?",
+    "options": [
+      "a) Variante da BCS destinada a distritos municipais e constituída por um policial residente no local.",
+      "b) Equipe móvel sem instalação física, composta por policiais designados para atuação exclusiva.",
+      "c) Instalação temporária exclusiva para gerenciamento de incidentes de grande repercussão.",
+      "d) Edificação policial-militar fixa, instalada segundo critérios de acessibilidade, visibilidade e existência de comunidade que necessite de atendimento, servindo como referência da Polícia Militar."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, p. 416 (fl. 2), item 6.1.5. A define a BCSD; B se aproxima da Ptr Com; C descreve finalidade diversa, não a definição de BCS."
+  },
+  {
+    "id": 742,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — BCSD",
+    "text": "QUESTÃO 742 — A Base Comunitária de Segurança Distrital (BCSD) é definida na Diretriz como:",
+    "options": [
+      "a) Edificação fixa em qualquer município, necessariamente com viatura exclusiva e efetivo variável.",
+      "b) Variante da BCS aplicável aos Distritos Municipais, constituída por um policial militar que reside no local e presta atendimento ao público a partir de sua residência.",
+      "c) Patrulha móvel composta por no mínimo dois policiais militares sem local de atendimento.",
+      "d) Base instalada apenas em prédio de OPM, sem possibilidade de atendimento a partir de residência."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 416 (fl. 2), item 6.1.6. A BCSD é variante distrital com um policial residente no local. A descreve parcialmente BCS e acrescenta condições; C não corresponde à estrutura; D contradiz o atendimento a partir da residência."
+  },
+  {
+    "id": 743,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — coordenação do programa",
+    "text": "QUESTÃO 743 — De acordo com a Diretriz, a coordenação do Programa de Policiamento Comunitário incumbe a:",
+    "options": [
+      "a) Cmt Cia PM, auxiliado pelos policiais militares de maior graduação designados para atuar em cada uma de suas estruturas.",
+      "b) Subcmt PM, exclusivamente, em todas as atividades cotidianas do programa.",
+      "c) Chefe da Agência de Inteligência, por ser responsável pelos cartões RFID.",
+      "d) Conselho Comunitário de Segurança, com exclusão da cadeia de comando policial-militar."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 418 (fl. 4), item 6.2.3. A coordenação cabe ao Cmt Cia PM, com o auxílio indicado. B confunde competência de deliberação sobre instalação/desativação de BCS; C refere-se à gestão de cartões RFID; D atribui indevidamente a coordenação ao CONSEG."
+  },
+  {
+    "id": 744,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — nível de resposta",
+    "text": "QUESTÃO 744 — Qual regra a Diretriz estabelece para qualquer Unidade de Serviço empregada no policiamento ostensivo comunitário?",
+    "options": [
+      "a) Atuar no Nível de Resposta 2, sob fiscalização exclusiva do Cmt Btl.",
+      "b) Atuar sem fiscalização do CFP, desde que exista Conselho Comunitário de Segurança.",
+      "c) Atuar no Nível de Resposta 1, sob fiscalização do CFP, auxiliado pelo CGP.",
+      "d) Atuar somente mediante despacho de autoridade externa à Polícia Militar."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, p. 418 (fl. 4), item 6.2.2. A US empregada no policiamento ostensivo comunitário atua no Nível de Resposta 1, sob fiscalização do CFP, auxiliado pelo CGP. A altera nível e autoridade; B exclui fiscalização; D cria requisito não previsto."
+  },
+  {
+    "id": 745,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — instalação de BCS",
+    "text": "QUESTÃO 745 — Qual condição prévia para a instalação de uma BCS está expressamente prevista na Diretriz?",
+    "options": [
+      "a) A existência obrigatória de efetivo fixo definido nacionalmente, independentemente das características locais.",
+      "b) A aprovação prévia do CONSEG como autoridade deliberativa final, dispensando o canal de comando.",
+      "c) A instalação exclusivamente em imóvel de propriedade da Polícia Militar.",
+      "d) O apoio e envolvimento comunitário, como lideranças, associações de bairro ou CONSEG, capazes de apoiar o empenho policial e sustentar o funcionamento da BCS."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, p. 418 (fl. 4), item 6.3.1.2. O apoio e envolvimento comunitário é condição prévia. A cria efetivo padronizado; B atribui decisão final ao CONSEG; C restringe o imóvel, embora a diretriz admita sede própria ou prédio ocupado por OPM."
+  },
+  {
+    "id": 746,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — deliberação sobre BCS",
+    "text": "QUESTÃO 746 — A competência para deliberar sobre instalação e desativação de BCS está vinculada a qual autoridade, conforme a Diretriz?",
+    "options": [
+      "a) Ao Cmt Cia PM, sem análise de proposta pelo escalão superior.",
+      "b) Ao Subcmt PM, que analisa propostas encaminhadas pelos Comandos de Policiamento.",
+      "c) Ao Chefe da Agência de Inteligência, após consulta à Seção PJMD.",
+      "d) À Prefeitura Municipal, por decisão administrativa unilateral."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 418 (fl. 4), item 6.3.1.1. A competência de deliberar é do Subcmt PM. A confunde coordenação do programa com deliberação de instalação; C e D não são as autoridades indicadas."
+  },
+  {
+    "id": 747,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — indicadores de visitas",
+    "text": "QUESTÃO 747 — Visitas comunitárias ou solidárias, campanhas e reuniões comunitárias realizadas por efetivo de outros programas também devem:",
+    "options": [
+      "a) Ser coordenadas, supervisionadas e controladas pela respectiva OPM para produzir indicadores vinculados ao Programa de Policiamento Comunitário.",
+      "b) Ser excluídas dos indicadores se não forem realizadas por Ptr Com.",
+      "c) Ser registradas exclusivamente pelo CONSEG, sem controle da OPM.",
+      "d) Ser contabilizadas apenas quando gerarem boletim de ocorrência."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, p. 421 (fl. 7), item 6.4.2. As atividades devem ser coordenadas, supervisionadas e controladas pela OPM, mesmo quando realizadas por efetivo de outros programas. B, C e D introduzem restrições inexistentes."
+  },
+  {
+    "id": 748,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — mobilização comunitária",
+    "text": "QUESTÃO 748 — Nas localidades em que houver CONSEG atuante, a Diretriz determina que todo o efetivo:",
+    "options": [
+      "a) Deixe a mobilização comunitária a cargo exclusivo da Patrulha Comunitária.",
+      "b) Realize mobilização somente quando houver determinação judicial.",
+      "c) Seja instado a exercer responsabilidade pela mobilização comunitária, envolvendo pessoas e entidades que possam contribuir com sugestões, informações e projetos locais; para policiais empregados no Policiamento Comunitário, trata-se de obrigação qualquer que seja sua atividade.",
+      "d) Limite o contato aos membros formalmente eleitos para a diretoria do CONSEG."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, p. 421 (fl. 7), item 6.4.4. A responsabilidade pela mobilização comunitária é ampla, e para policiais empregados no programa constitui obrigação. A e D restringem o público e a responsabilidade; B acrescenta condição não prevista."
+  },
+  {
+    "id": 749,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — visita comunitária",
+    "text": "QUESTÃO 749 — Segundo o glossário de NORSOP reproduzido no material operacional, visita comunitária é:",
+    "options": [
+      "a) Contato do policial exclusivamente com vítima de delito, para orientar sobre medidas de prevenção após o fato.",
+      "b) Reunião formal com todos os membros do CONSEG para deliberação de prioridades.",
+      "c) Atendimento prestado apenas dentro de uma BCS, com lavratura obrigatória de boletim.",
+      "d) Contato periódico de policial militar com integrantes da comunidade, voltado a estreitar relações, criar confiança mútua e conhecer e buscar soluções para problemas reais de segurança pública."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, p. 395 (glossário de NORSOP, definição “Visita Comunitária”). A descreve visita solidária a vítima; B reduz o conceito a reunião do CONSEG; C restringe local e finalidade e adiciona lavratura obrigatória."
+  },
+  {
+    "id": 750,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento Comunitário",
+    "topic": "Policiamento Comunitário — filosofia transversal",
+    "text": "QUESTÃO 750 — Qual afirmação corresponde à prescrição diversa sobre o alcance da filosofia de Polícia Comunitária?",
+    "options": [
+      "a) A filosofia se aplica exclusivamente às BCS, BCSD e BCM.",
+      "b) A filosofia, especialmente quanto à aproximação comunitária, transcende o Programa de Policiamento Comunitário e se aplica a todo o Sistema Operacional de Policiamento PM.",
+      "c) A filosofia só deve ser aplicada em municípios sem CONSEG.",
+      "d) A filosofia se limita à coleta de informações criminais e não abrange confiança ou respeito mútuos."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, p. 424 (fl. 10), item 6.7.1. A filosofia transcende o programa e alcança todo o sistema operacional. A e C restringem indevidamente sua abrangência; D contraria os objetivos de aproximação e vínculos de confiança."
+  },
+     {
+        "id": 751,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — classificação, finalidade e prioridade",
+        "text": "No NORSOP, qual programa integra, ao lado da Força Tática, o grupo dos Programas de Policiamento Primários?",
+        "options": [
+          "A) Programa de Policiamento Escolar",
+          "B) Programa de Radiopatrulha",
+          "C) Programa de Policiamento Rural",
+          "D) Programa de Policiamento Comunitário"
+        ],
+        "answer": 1,
+        "explanation": "O NORSOP classifica Radiopatrulha e Força Tática como Programas Primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 752,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — classificação, finalidade e prioridade",
+        "text": "Segundo a definição constante do material operacional, qual é o objetivo do Programa de Radiopatrulha?",
+        "options": [
+          "A) Organizar o desenvolvimento das atividades de policiamento ostensivo geral",
+          "B) Organizar exclusivamente o policiamento ostensivo escolar",
+          "C) Organizar exclusivamente o policiamento ostensivo de trânsito",
+          "D) Organizar apenas o policiamento ostensivo rural"
+        ],
+        "answer": 0,
+        "explanation": "A definição do programa associa Radiopatrulha ao desenvolvimento das atividades de policiamento ostensivo geral. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 753,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — classificação, finalidade e prioridade",
+        "text": "Na distribuição de recursos humanos e meios materiais, como o NORSOP posiciona os Programas Primários?",
+        "options": [
+          "A) Devem ser desenvolvidos somente quando houver disponibilidade após os complementares",
+          "B) Têm prioridade de desenvolvimento em relação aos demais programas e atividades operacionais diversas",
+          "C) Possuem a mesma prioridade formal que todas as atividades diversas",
+          "D) São classificados como atividades operacionais diversas"
+        ],
+        "answer": 1,
+        "explanation": "Os Programas Primários têm prioridade de desenvolvimento sobre os demais programas e atividades operacionais diversas. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 754,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — classificação, finalidade e prioridade",
+        "text": "Qual combinação corresponde integralmente aos Programas de Policiamento Primários previstos no NORSOP?",
+        "options": [
+          "A) Radiopatrulha e Policiamento Escolar",
+          "B) Radiopatrulha e Força Tática",
+          "C) Força Tática e Policiamento Rural",
+          "D) Policiamento Comunitário e Radiopatrulha"
+        ],
+        "answer": 1,
+        "explanation": "A combinação normativa é Programa de Radiopatrulha e Programa de Força Tática. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 755,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — classificação, finalidade e prioridade",
+        "text": "Um comando está classificando atividades para organizar a distribuição de recursos. Em qual categoria deve inserir a Radiopatrulha?",
+        "options": [
+          "A) Programa de Policiamento Complementar",
+          "B) Atividade Operacional Diversa",
+          "C) Programa de Policiamento Primário",
+          "D) Programa a ser criado exclusivamente pela OPM territorial"
+        ],
+        "answer": 2,
+        "explanation": "Radiopatrulha é expressamente classificada como Programa Primário. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 756,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — classificação, finalidade e prioridade",
+        "text": "Qual afirmação respeita a relação de prioridade prevista no NORSOP para Radiopatrulha?",
+        "options": [
+          "A) É complementar e depende de sobra de efetivo",
+          "B) É primária e tem prioridade em relação aos programas complementares e atividades diversas",
+          "C) É atividade diversa e não integra programa de policiamento",
+          "D) Sua prioridade depende de ser realizada em jornada extraordinária"
+        ],
+        "answer": 1,
+        "explanation": "O NORSOP dá prioridade aos Programas Primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 757,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — classificação, finalidade e prioridade",
+        "text": "No conjunto de programas do NORSOP, qual deles tem a finalidade de organizar o policiamento ostensivo geral?",
+        "options": [
+          "A) Programa de Radiopatrulha",
+          "B) Programa de Policiamento Escolar",
+          "C) Programa de Policiamento de Trânsito",
+          "D) Programa de Policiamento Rural"
+        ],
+        "answer": 0,
+        "explanation": "A definição do material associa Radiopatrulha ao policiamento ostensivo geral. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 758,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — classificação, finalidade e prioridade",
+        "text": "Qual opção descreve corretamente a posição da Radiopatrulha na organização operacional prevista no NORSOP?",
+        "options": [
+          "A) Programa complementar sujeito a critérios de necessidade e disponibilidade, sem prioridade",
+          "B) Programa primário, com prioridade de desenvolvimento",
+          "C) Atividade administrativa de apoio, fora dos programas",
+          "D) Atividade operacional diversa, junto a escoltas e policiamento em eventos"
+        ],
+        "answer": 1,
+        "explanation": "Radiopatrulha é programa primário, com prioridade de desenvolvimento. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 759,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — classificação, finalidade e prioridade",
+        "text": "Assinale a alternativa INCORRETA sobre os Programas Primários, segundo o NORSOP.",
+        "options": [
+          "A) Incluem Radiopatrulha",
+          "B) Incluem Força Tática",
+          "C) Têm prioridade sobre os demais programas e atividades operacionais diversas",
+          "D) Incluem necessariamente os programas Escolar e Comunitário"
+        ],
+        "answer": 3,
+        "explanation": "Escolar e Comunitário são programas complementares, não primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 760,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — classificação, finalidade e prioridade",
+        "text": "A classificação da Radiopatrulha como Programa Primário decorre de qual dispositivo do material operacional?",
+        "options": [
+          "A) NORSOP, item 6.4.1.1",
+          "B) NORSOP, item 6.4.1.3.2",
+          "C) Nota de Instrução da Sala de Operações, item 2",
+          "D) Diretriz de Policiamento de Trânsito, item 1.1"
+        ],
+        "answer": 0,
+        "explanation": "O item 6.4.1.1 define os Programas Primários como Radiopatrulha e Força Tática. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 761,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "No NORSOP, o Programa de Policiamento Escolar pertence a qual categoria?",
+        "options": [
+          "A) Programa Primário",
+          "B) Programa Complementar",
+          "C) Atividade Operacional Diversa, em qualquer hipótese",
+          "D) Matriz Operacional III — Apoios Especializados"
+        ],
+        "answer": 1,
+        "explanation": "O item 6.4.1.2.1 enumera o Policiamento Escolar entre os Programas Complementares. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 762,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual é o objetivo atribuído ao Programa de Policiamento Escolar no material operacional?",
+        "options": [
+          "A) Organizar o desenvolvimento do Policiamento Ostensivo Escolar",
+          "B) Organizar o policiamento ostensivo geral",
+          "C) Organizar o policiamento ostensivo de trânsito",
+          "D) Organizar exclusivamente o apoio tático das Forças Táticas"
+        ],
+        "answer": 0,
+        "explanation": "A definição do programa é organizar o desenvolvimento do Policiamento Ostensivo Escolar. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 763,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Como os Programas Complementares podem ser desenvolvidos, conforme o NORSOP?",
+        "options": [
+          "A) Somente com efetivo e meios exclusivos, sem exceção",
+          "B) De forma híbrida, com meios específicos ou aproveitamento da estrutura de outros programas, conforme as diretrizes",
+          "C) Apenas por efetivo administrativo",
+          "D) Somente em jornada extraordinária"
+        ],
+        "answer": 1,
+        "explanation": "O NORSOP admite desenvolvimento híbrido dos Programas Complementares, conforme as respectivas diretrizes. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 764,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "A OPM avalia necessidade de executar Policiamento Escolar, mas não dispõe de efetivo e meios exclusivos. Qual possibilidade consta do NORSOP?",
+        "options": [
+          "A) O programa fica proibido de ser executado",
+          "B) Pode aproveitar estruturas de outros programas, conforme previsão na respectiva diretriz",
+          "C) Deve ser automaticamente convertido em Radiopatrulha",
+          "D) Só pode ser executado após autorização judicial"
+        ],
+        "answer": 1,
+        "explanation": "Os complementares podem aproveitar estruturas de outros programas, conforme as diretrizes. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 765,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual opção reúne apenas Programas de Policiamento Complementares expressamente listados no NORSOP?",
+        "options": [
+          "A) Radiopatrulha, Força Tática e Escolar",
+          "B) Escolar, Comunitário, Trânsito e Rural",
+          "C) Força Tática, Rural e Radiopatrulha",
+          "D) Radiopatrulha, Comunitário e Força Tática"
+        ],
+        "answer": 1,
+        "explanation": "O item 6.4.1.2 enumera Escolar, Comunitário, Trânsito, Rural e outros programas implementados pelo Comando-Geral. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 766,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Assinale a alternativa INCORRETA sobre o Programa de Policiamento Escolar.",
+        "options": [
+          "A) É complementar no NORSOP",
+          "B) Tem por objetivo organizar o Policiamento Ostensivo Escolar",
+          "C) Pode ser desenvolvido conforme necessidade e disponibilidade, observada a diretriz",
+          "D) Integra, ao lado da Radiopatrulha, os Programas Primários"
+        ],
+        "answer": 3,
+        "explanation": "O programa Escolar é complementar; Radiopatrulha e Força Tática são primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 767,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Ao priorizar a distribuição de recursos humanos e materiais, o NORSOP prevê o policiamento ostensivo por meio de quais conjuntos?",
+        "options": [
+          "A) Somente Programas Primários",
+          "B) Programas de Policiamento e Atividades Operacionais Diversas",
+          "C) Apenas programas complementares",
+          "D) Exclusivamente atividades de prevenção secundária"
+        ],
+        "answer": 1,
+        "explanation": "O item 6.4.1 organiza o policiamento ostensivo em Programas de Policiamento e Atividades Operacionais Diversas. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 768,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual alternativa diferencia corretamente Programa Escolar e atividade operacional diversa?",
+        "options": [
+          "A) Escolar é programa complementar; atividades diversas abrangem atividades não definidas como programas",
+          "B) Escolar é atividade diversa por definição; atividades diversas são programas primários",
+          "C) Ambos são programas primários",
+          "D) Escolar é apoio especializado da Matriz III em todos os casos"
+        ],
+        "answer": 0,
+        "explanation": "O NORSOP lista Escolar entre os complementares e define atividades diversas como as não definidas como programas. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 769,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "No NORSOP, o Programa de Policiamento Escolar é previsto em qual subitem?",
+        "options": [
+          "A) 6.4.1.1.1",
+          "B) 6.4.1.2.1",
+          "C) 6.4.1.3.1",
+          "D) 6.4.2.1"
+        ],
+        "answer": 1,
+        "explanation": "O item 6.4.1.2.1 lista o Programa de Policiamento Escolar. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 770,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual conclusão é compatível com a classificação do Programa Escolar?",
+        "options": [
+          "A) Sua execução independe de necessidade e disponibilidade",
+          "B) A classificação como complementar afasta a possibilidade de execução híbrida",
+          "C) É um programa complementar, desenvolvido segundo necessidade, disponibilidade e diretriz aplicável",
+          "D) A classificação como complementar o torna atividade administrativa"
+        ],
+        "answer": 2,
+        "explanation": "Os complementares são desenvolvidos mediante critérios de necessidade e disponibilidade e podem ser híbridos conforme suas diretrizes. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 771,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Como o NORSOP classifica o Programa de Policiamento Comunitário?",
+        "options": [
+          "A) Primário",
+          "B) Complementar",
+          "C) Atividade Operacional Diversa necessariamente",
+          "D) Apoio especializado da Matriz III"
+        ],
+        "answer": 1,
+        "explanation": "O Programa Comunitário aparece expressamente entre os Programas Complementares. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 772,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual é o objetivo do Programa de Policiamento Comunitário segundo a definição do material operacional?",
+        "options": [
+          "A) Organizar o desenvolvimento do policiamento ostensivo comunitário",
+          "B) Organizar exclusivamente o policiamento ostensivo geral",
+          "C) Organizar o policiamento ostensivo de trânsito",
+          "D) Organizar exclusivamente operações de apoio tático"
+        ],
+        "answer": 0,
+        "explanation": "A definição identifica o programa com a organização do desenvolvimento do Policiamento Ostensivo Comunitário. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 773,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual dispositivo do NORSOP inclui o Programa Comunitário entre os complementares?",
+        "options": [
+          "A) Item 6.4.1.1",
+          "B) Item 6.4.1.2.2",
+          "C) Item 6.4.1.3.1",
+          "D) Item 6.3.3"
+        ],
+        "answer": 1,
+        "explanation": "O item 6.4.1.2.2 lista o Programa de Policiamento Comunitário. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 774,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Uma OPM pretende executar o Programa Comunitário sem criar necessariamente efetivo exclusivo. O que o NORSOP admite para programas complementares?",
+        "options": [
+          "A) Apenas efetivo exclusivo",
+          "B) Desenvolvimento híbrido, inclusive com aproveitamento de estruturas de outros programas, conforme diretriz",
+          "C) Somente emprego administrativo",
+          "D) Execução apenas após transformação em programa primário"
+        ],
+        "answer": 1,
+        "explanation": "O NORSOP permite que os complementares sejam desenvolvidos de forma híbrida, conforme previsão nas diretrizes. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 775,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual conjunto apresenta somente programas complementares previstos no NORSOP?",
+        "options": [
+          "A) Comunitário, Rural e Escolar",
+          "B) Radiopatrulha, Comunitário e Força Tática",
+          "C) Força Tática, Escolar e Radiopatrulha",
+          "D) Radiopatrulha, Força Tática e Comunitário"
+        ],
+        "answer": 0,
+        "explanation": "Comunitário, Rural e Escolar estão listados como complementares; Radiopatrulha e Força Tática são primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 776,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Assinale a alternativa INCORRETA sobre o Policiamento Comunitário no NORSOP.",
+        "options": [
+          "A) É classificado como complementar",
+          "B) Pode ser desenvolvido conforme necessidade e disponibilidade",
+          "C) Pode aproveitar estruturas de outros programas, conforme a diretriz aplicável",
+          "D) Tem prioridade normativa sobre Radiopatrulha e Força Tática"
+        ],
+        "answer": 3,
+        "explanation": "Os Programas Primários têm prioridade sobre os complementares. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 777,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "A distinção normativa entre Programa Comunitário e Atividades Operacionais Diversas é que:",
+        "options": [
+          "A) o Comunitário está listado como programa complementar, enquanto atividades diversas são atividades não definidas como programas",
+          "B) o Comunitário é sempre atividade diversa",
+          "C) as atividades diversas são programas complementares",
+          "D) não existe distinção no NORSOP"
+        ],
+        "answer": 0,
+        "explanation": "O NORSOP lista o Comunitário entre os programas e define atividades diversas como as não definidas como programas. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 778,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual critério geral condiciona o desenvolvimento dos Programas Complementares?",
+        "options": [
+          "A) Somente a antiguidade do comandante",
+          "B) Necessidade e disponibilidade",
+          "C) Exclusivamente a quantidade de ocorrências do mês anterior",
+          "D) Apenas a existência de sede própria"
+        ],
+        "answer": 1,
+        "explanation": "O item 6.4.1.2 prevê necessidade e disponibilidade. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 779,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Em relação à prioridade de emprego, qual afirmação é correta?",
+        "options": [
+          "A) O Programa Comunitário sempre antecede os primários",
+          "B) O Programa Comunitário integra a categoria complementar, enquanto Radiopatrulha e Força Tática são primários",
+          "C) O Programa Comunitário não pode ser executado por OPM territorial",
+          "D) O NORSOP o classifica como atividade de inteligência"
+        ],
+        "answer": 1,
+        "explanation": "A norma distingue programas primários e complementares dessa forma. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 780,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual é a referência mais direta para comprovar a classificação do Programa Comunitário?",
+        "options": [
+          "A) NORSOP, item 6.4.1.2.2",
+          "B) NORSOP, item 6.4.1.3.2",
+          "C) Nota de Instrução da Sala de Operações, item 2",
+          "D) Diretriz de Trânsito, item 1.1"
+        ],
+        "answer": 0,
+        "explanation": "O subitem 6.4.1.2.2 lista expressamente o Programa Comunitário. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 781,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "No NORSOP, o Programa de Policiamento de Trânsito é classificado como:",
+        "options": [
+          "A) Primário",
+          "B) Complementar",
+          "C) Atividade Operacional Diversa",
+          "D) Apoio administrativo"
+        ],
+        "answer": 1,
+        "explanation": "O item 6.4.1.2.3 o inclui entre os Programas Complementares. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 782,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual objetivo é atribuído ao Programa de Policiamento de Trânsito?",
+        "options": [
+          "A) Organizar o desenvolvimento do Policiamento Ostensivo de Trânsito",
+          "B) Organizar o policiamento ostensivo geral",
+          "C) Organizar exclusivamente o policiamento escolar",
+          "D) Organizar apenas a atividade de inteligência"
+        ],
+        "answer": 0,
+        "explanation": "A definição do programa refere-se ao desenvolvimento do Policiamento Ostensivo de Trânsito. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 783,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual alternativa indica a posição normativa do Policiamento de Trânsito?",
+        "options": [
+          "A) Programa Primário, com prioridade sobre Radiopatrulha",
+          "B) Programa Complementar, condicionado à necessidade e disponibilidade",
+          "C) Atividade diversa em todas as circunstâncias",
+          "D) Programa sem previsão no NORSOP"
+        ],
+        "answer": 1,
+        "explanation": "O Policiamento de Trânsito está no rol dos complementares. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 784,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual subitem do NORSOP lista o Programa de Policiamento de Trânsito?",
+        "options": [
+          "A) 6.4.1.2.1",
+          "B) 6.4.1.2.2",
+          "C) 6.4.1.2.3",
+          "D) 6.4.1.3.1"
+        ],
+        "answer": 2,
+        "explanation": "O subitem 6.4.1.2.3 lista o Programa de Policiamento de Trânsito. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 785,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "A OPM não dispõe de estrutura exclusiva para executar o Programa de Trânsito. Qual regra geral do NORSOP pode ser aplicada aos complementares?",
+        "options": [
+          "A) É vedado aproveitar estrutura de outro programa",
+          "B) Pode haver desenvolvimento híbrido, conforme previsão nas diretrizes",
+          "C) O programa passa automaticamente a ser primário",
+          "D) O programa deve ser suspenso em toda a área"
+        ],
+        "answer": 1,
+        "explanation": "Os Programas Complementares podem ser desenvolvidos de forma híbrida, conforme suas diretrizes. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 786,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Assinale a alternativa INCORRETA sobre o Programa de Policiamento de Trânsito.",
+        "options": [
+          "A) É complementar",
+          "B) Tem como finalidade organizar o Policiamento Ostensivo de Trânsito",
+          "C) Seu desenvolvimento considera necessidade e disponibilidade",
+          "D) É um dos dois Programas Primários indicados no item 6.4.1.1"
+        ],
+        "answer": 3,
+        "explanation": "Os dois Programas Primários são Radiopatrulha e Força Tática. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 787,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual conjunto contém somente programas complementares citados no NORSOP?",
+        "options": [
+          "A) Trânsito, Rural e Comunitário",
+          "B) Trânsito, Radiopatrulha e Força Tática",
+          "C) Escolar, Radiopatrulha e Trânsito",
+          "D) Força Tática, Rural e Radiopatrulha"
+        ],
+        "answer": 0,
+        "explanation": "Trânsito, Rural e Comunitário estão entre os complementares. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 788,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Segundo a organização prevista no NORSOP, os programas complementares são desenvolvidos:",
+        "options": [
+          "A) independentemente de recursos disponíveis",
+          "B) mediante critérios de necessidade e disponibilidade",
+          "C) apenas se tiverem efetivo permanente exclusivo",
+          "D) somente em operações estaduais"
+        ],
+        "answer": 1,
+        "explanation": "A norma prevê necessidade e disponibilidade como critérios. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 789,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Qual é a diferença de prioridade entre o Programa de Trânsito e o Programa de Radiopatrulha?",
+        "options": [
+          "A) Ambos são primários",
+          "B) Trânsito é complementar e Radiopatrulha é primário",
+          "C) Trânsito é atividade administrativa e Radiopatrulha é complementar",
+          "D) Ambos são atividades operacionais diversas"
+        ],
+        "answer": 1,
+        "explanation": "Trânsito está na lista complementar; Radiopatrulha, na primária. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 790,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — classificação e desenvolvimento do programa",
+        "text": "Além dos programas expressamente enumerados, o NORSOP admite como complementares:",
+        "options": [
+          "A) outros programas que venham a ser implementados pelo Comando-Geral",
+          "B) somente programas criados por cada patrulha",
+          "C) apenas programas previstos em lei municipal",
+          "D) nenhum outro programa"
+        ],
+        "answer": 0,
+        "explanation": "O item 6.4.1.2.5 prevê outros programas implementados pelo Comando-Geral. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 791,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — classificação, finalidade e patrulha rural",
+        "text": "Como o NORSOP classifica o Programa de Policiamento Rural?",
+        "options": [
+          "A) Primário",
+          "B) Complementar",
+          "C) Atividade Operacional Diversa em qualquer hipótese",
+          "D) Apoio especializado da Matriz III"
+        ],
+        "answer": 1,
+        "explanation": "O item 6.4.1.2.4 lista o Programa Rural entre os complementares. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 792,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — classificação, finalidade e patrulha rural",
+        "text": "Qual objetivo é atribuído ao Programa de Policiamento Rural?",
+        "options": [
+          "A) Organizar o desenvolvimento do Policiamento Ostensivo Rural",
+          "B) Organizar o policiamento ostensivo geral",
+          "C) Organizar exclusivamente o policiamento escolar",
+          "D) Organizar o policiamento ostensivo de trânsito"
+        ],
+        "answer": 0,
+        "explanation": "A definição do programa associa-o ao desenvolvimento do Policiamento Ostensivo Rural. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 793,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — classificação, finalidade e patrulha rural",
+        "text": "Qual subitem do NORSOP prevê o Programa de Policiamento Rural?",
+        "options": [
+          "A) 6.4.1.1",
+          "B) 6.4.1.2.4",
+          "C) 6.4.1.3.2",
+          "D) 6.3.2"
+        ],
+        "answer": 1,
+        "explanation": "O subitem 6.4.1.2.4 enumera o Programa Rural. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 794,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — classificação, finalidade e patrulha rural",
+        "text": "O Programa Rural não dispõe de efetivo exclusivo em determinada OPM. De acordo com a regra geral dos complementares, qual alternativa é correta?",
+        "options": [
+          "A) A execução é sempre proibida",
+          "B) Pode ser desenvolvido de forma híbrida, conforme previsão na diretriz",
+          "C) Passa a integrar automaticamente os Programas Primários",
+          "D) Deve ser tratado como serviço administrativo"
+        ],
+        "answer": 1,
+        "explanation": "A norma admite execução híbrida dos complementares, conforme as respectivas diretrizes. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 795,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — classificação, finalidade e patrulha rural",
+        "text": "Qual conjunto reúne apenas programas complementares?",
+        "options": [
+          "A) Rural, Escolar e Comunitário",
+          "B) Rural, Radiopatrulha e Força Tática",
+          "C) Rural, Força Tática e Radiopatrulha",
+          "D) Rural, Radiopatrulha e Trânsito"
+        ],
+        "answer": 0,
+        "explanation": "Rural, Escolar e Comunitário são complementares; Radiopatrulha e Força Tática são primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 796,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — classificação, finalidade e patrulha rural",
+        "text": "Assinale a alternativa INCORRETA sobre o Programa Rural.",
+        "options": [
+          "A) É complementar",
+          "B) Seu desenvolvimento se submete a critérios de necessidade e disponibilidade",
+          "C) Pode aproveitar estrutura de outros programas, conforme diretriz",
+          "D) Tem prioridade normativa sobre todos os programas primários"
+        ],
+        "answer": 3,
+        "explanation": "Os Programas Primários têm prioridade sobre os demais. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 797,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — classificação, finalidade e patrulha rural",
+        "text": "Qual conceito do material operacional descreve a Patrulha Rural (Ptr Rr)?",
+        "options": [
+          "A) Unidade de Serviço composta por policiais militares designados e treinados para emprego no Programa de Policiamento Rural",
+          "B) Equipe administrativa destinada ao processamento de multas",
+          "C) Unidade de inteligência sem emprego em patrulhamento",
+          "D) Equipe temporária destinada exclusivamente a eventos"
+        ],
+        "answer": 0,
+        "explanation": "O glossário do material define Ptr Rr como US de policiais designados e treinados para o Programa Rural. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 798,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — classificação, finalidade e patrulha rural",
+        "text": "A classificação do Rural como complementar significa que:",
+        "options": [
+          "A) não pode ser executado em nenhuma área territorial",
+          "B) seu desenvolvimento observa necessidade e disponibilidade, conforme diretriz",
+          "C) tem prioridade sobre Radiopatrulha",
+          "D) não é considerado Programa de Policiamento"
+        ],
+        "answer": 1,
+        "explanation": "Essa é a regra geral dos Programas Complementares. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 799,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — classificação, finalidade e patrulha rural",
+        "text": "Qual par diferencia corretamente as categorias previstas no NORSOP?",
+        "options": [
+          "A) Rural: primário; Força Tática: complementar",
+          "B) Rural: complementar; Força Tática: primário",
+          "C) Rural: atividade diversa; Força Tática: atividade administrativa",
+          "D) Rural e Força Tática: ambos complementares"
+        ],
+        "answer": 1,
+        "explanation": "Rural está entre os complementares; Força Tática, entre os primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 800,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — classificação, finalidade e patrulha rural",
+        "text": "Que regra autoriza a previsão de novos Programas Complementares além dos nominalmente listados?",
+        "options": [
+          "A) A decisão de qualquer comandante de patrulha",
+          "B) O item 6.4.1.2.5, relativo a programas implementados pelo Comando-Geral",
+          "C) A classificação automática como atividade diversa",
+          "D) A existência de recursos em qualquer OPM, sem previsão normativa"
+        ],
+        "answer": 1,
+        "explanation": "O item 6.4.1.2.5 prevê outros programas implementados pelo Comando-Geral. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 801,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Qual é a finalidade expressa da Nota de Instrução nº PM3-002/02/26, intitulada Sala de Operações?",
+        "options": [
+          "A) Disciplinar o funcionamento da Sala de Operações na PMESP, suas atividades vinculadas e parâmetros de seleção e capacitação do efetivo",
+          "B) Instituir o Programa de Radiopatrulha e definir sua prioridade",
+          "C) Disciplinar exclusivamente a atividade correcional das OPM",
+          "D) Regulamentar somente a fiscalização de trânsito"
+        ],
+        "answer": 0,
+        "explanation": "A finalidade indicada no item 2 abrange funcionamento, atividades vinculadas, seleção e capacitação. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 802,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Qual conjunto corresponde à finalidade declarada da Nota de Instrução da Sala de Operações?",
+        "options": [
+          "A) Funcionamento da SOp, atividades vinculadas, seleção e capacitação do efetivo",
+          "B) Somente aquisição de equipamentos e obras",
+          "C) Apenas a distribuição de viaturas de Radiopatrulha",
+          "D) Exclusivamente a atuação em incidentes críticos estaduais"
+        ],
+        "answer": 0,
+        "explanation": "O item 2 enumera esses três campos. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 803,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Segundo o material, em qual nível as Salas de Operações prestam serviços essenciais de comando e controle?",
+        "options": [
+          "A) Nível operacional, Batalhão/Companhia PM",
+          "B) Exclusivamente nível estratégico do Comando-Geral",
+          "C) Somente nível federal",
+          "D) Apenas nível de apoio administrativo"
+        ],
+        "answer": 0,
+        "explanation": "O trecho sobre estrutura indica as SOp como responsáveis por serviços essenciais de comando e controle em nível operacional (Btl/Cia PM). Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 804,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Como devem manter-se interconectadas as Salas de Operações vinculadas a um mesmo Batalhão?",
+        "options": [
+          "A) Por sistemas de comunicação e fluxo de dados seguros, com integração ao respectivo COPOM",
+          "B) Somente por telefone público, sem fluxo de dados",
+          "C) Por contato informal, sem integração ao COPOM",
+          "D) Apenas por correspondência física"
+        ],
+        "answer": 0,
+        "explanation": "O material exige sistemas de comunicação e fluxo de dados seguros e integração ao COPOM. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 805,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Qual requisito é indicado para a interconexão entre Salas de Operações do mesmo Batalhão?",
+        "options": [
+          "A) Comunicação e fluxo de dados seguros, integrados ao COPOM correspondente",
+          "B) Compartilhamento irrestrito de dados por canais não protegidos",
+          "C) Autonomia sem conexão com o COPOM",
+          "D) Integração apenas em dias úteis"
+        ],
+        "answer": 0,
+        "explanation": "A regra do material menciona comunicação e fluxo de dados seguros, integrados ao COPOM. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 806,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Em que nível mínimo as OPM devem estruturar Salas de Operações, conforme o trecho da Nota de Instrução?",
+        "options": [
+          "A) No mínimo, Companhia PM",
+          "B) Somente no nível de Comando-Geral",
+          "C) Exclusivamente no nível de Região Militar",
+          "D) Apenas no nível de Pelotão"
+        ],
+        "answer": 0,
+        "explanation": "O trecho afirma que as OPM, no nível mínimo de Cia PM, deverão estruturar as SOp. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 807,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Quais critérios são mencionados para estruturar as Salas de Operações?",
+        "options": [
+          "A) Necessidade operacional e disponibilidade de recursos",
+          "B) Antiguidade do comandante e número de viaturas apenas",
+          "C) Localização da sede e existência de estacionamento",
+          "D) Somente quantidade de chamadas telefônicas"
+        ],
+        "answer": 0,
+        "explanation": "O documento cita critérios de necessidade operacional e disponibilidade de recursos. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 808,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Qual alternativa reproduz corretamente a possibilidade de emprego do efetivo da Sala de Operações?",
+        "options": [
+          "A) Os policiais podem ser exclusivos da SOp ou acumular suas funções com rotinas do Sv Dia ou outras atividades de apoio operacional previstas",
+          "B) O efetivo deve ser sempre exclusivo, sem possibilidade de cumulação",
+          "C) O efetivo deve ser sempre acumulado com o Sv Dia",
+          "D) A Nota proíbe que policiais militares atuem na SOp"
+        ],
+        "answer": 0,
+        "explanation": "O material admite dedicação exclusiva ou desempenho cumulativo com rotinas do Sv Dia ou outras atividades de apoio operacional implementadas pelo Cmdo G. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 809,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Como devem ser, preferencialmente, as instalações físicas das Salas de Operações?",
+        "options": [
+          "A) Exclusivas para as atividades da SOp",
+          "B) Compartilhadas obrigatoriamente com o Sv Dia",
+          "C) Instaladas fora da OPM, em qualquer situação",
+          "D) Destinadas somente a armazenamento de equipamentos"
+        ],
+        "answer": 0,
+        "explanation": "O documento determina preferência por instalações exclusivas. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 810,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Em que condição excepcional a Sala de Operações pode estar localizada junto ao Serviço de Dia?",
+        "options": [
+          "A) Desde que disponha de estação de trabalho e recursos materiais exclusivos para os serviços essenciais",
+          "B) Sempre, independentemente de estrutura própria",
+          "C) Somente quando não houver comunicação com o COPOM",
+          "D) Apenas mediante encerramento da Sala de Operações"
+        ],
+        "answer": 0,
+        "explanation": "A localização conjunta é excepcional e condicionada a estação e recursos materiais exclusivos. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 811,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Qual conjunto de atividades é citado como serviço essencial da Sala de Operações?",
+        "options": [
+          "A) Assessoramento, videopatrulhamento, controle, comando, análise de dados e informações, monitoramento da rede-rádio e outras atividades",
+          "B) Somente manutenção de viaturas e controle de combustível",
+          "C) Exclusivamente lavratura de autos de infração",
+          "D) Apenas arquivo físico e protocolo administrativo"
+        ],
+        "answer": 0,
+        "explanation": "O trecho enumera essas funções como serviços essenciais. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 812,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Qual alternativa descreve corretamente a regra sobre as instalações da SOp?",
+        "options": [
+          "A) Preferencialmente exclusivas; excepcionalmente podem ficar junto ao Sv Dia com estação e recursos exclusivos",
+          "B) Sempre compartilhadas com o Sv Dia, sem recursos exclusivos",
+          "C) Sempre fora da OPM",
+          "D) A Nota não estabelece preferência sobre instalações"
+        ],
+        "answer": 0,
+        "explanation": "Essa é a regra expressa no trecho sobre instalações físicas. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 813,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Uma OPM pretende estruturar sua SOp sem considerar disponibilidade de recursos. Qual critério documental foi desconsiderado?",
+        "options": [
+          "A) A disponibilidade de recursos, considerada junto à necessidade operacional",
+          "B) A obrigatoriedade de sede estadual",
+          "C) A exigência de efetivo exclusivamente administrativo",
+          "D) A prioridade do policiamento de trânsito"
+        ],
+        "answer": 0,
+        "explanation": "A estruturação deve considerar necessidade operacional e disponibilidade de recursos. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 814,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Qual alternativa diferencia a Sala de Operações de um Centro de Comando e Controle (CC2) conforme o material?",
+        "options": [
+          "A) As Salas de Operações integram o conjunto de estruturas de comando e controle, ao lado dos Centros de Comando e Controle, Salas de Gerenciamento de Incidentes e CC2 Móvel",
+          "B) A Sala de Operações é a única estrutura de comando e controle reconhecida",
+          "C) CC2 e SOp são expressões que o documento declara sempre idênticas",
+          "D) A Sala de Operações não integra estruturas de comando e controle"
+        ],
+        "answer": 0,
+        "explanation": "O documento lista CC2, Salas de Operações, Salas de Gerenciamento de Incidentes e CC2 Móvel como estruturas. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 815,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
+        "text": "Qual regra é correta quanto ao efetivo da Sala de Operações?",
+        "options": [
+          "A) A dedicação exclusiva é possível, mas não obrigatória em todos os casos, pois também se admite atuação cumulativa prevista",
+          "B) A cumulação com rotinas do Sv Dia é sempre proibida",
+          "C) Todo policial da SOp deve exercer exclusivamente funções administrativas",
+          "D) A composição do efetivo independe das necessidades operacionais"
+        ],
+        "answer": 0,
+        "explanation": "O trecho admite dedicação exclusiva ou atuação cumulativa, conforme organização prevista. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+      },
+      {
+        "id": 816,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — organização dos programas",
+        "text": "Segundo o NORSOP, qual alternativa apresenta a relação correta entre programas e atividades operacionais diversas?",
+        "options": [
+          "A) Os programas são definidos em rol próprio; atividades diversas abrangem atividades não definidas como programas",
+          "B) Toda atividade operacional diversa é Programa Primário",
+          "C) Programas complementares são atividades administrativas",
+          "D) Atividades diversas têm sempre prioridade sobre programas primários"
+        ],
+        "answer": 0,
+        "explanation": "O NORSOP distingue os programas listados das demais atividades não definidas como programas. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 817,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — organização dos programas",
+        "text": "Qual opção corresponde a uma atividade operacional diversa exemplificada pelo NORSOP?",
+        "options": [
+          "A) Serviço de Dia e funções de atendimento e despacho junto aos COPOM/CAD",
+          "B) Programa de Radiopatrulha",
+          "C) Programa de Policiamento Comunitário",
+          "D) Programa de Policiamento Rural"
+        ],
+        "answer": 0,
+        "explanation": "O item 6.4.1.3.1 cita Serviço de Dia e funções de atendimento e despacho junto aos COPOM/CAD como exemplos de atividades diversas. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 818,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — organização dos programas",
+        "text": "No NORSOP, escoltas armadas, policiamento em eventos e policiamento náutico são apresentados como:",
+        "options": [
+          "A) Programas Primários",
+          "B) Programas Complementares nominalmente listados",
+          "C) Exemplos de Atividades Operacionais Diversas",
+          "D) Estruturas de comando e controle"
+        ],
+        "answer": 2,
+        "explanation": "Essas atividades aparecem como exemplos no item 6.4.1.3.1. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 819,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — organização dos programas",
+        "text": "Qual exemplo de programa educacional é citado no item sobre atividades operacionais diversas?",
+        "options": [
+          "A) Programa Educacional de Resistência às Drogas e à Violência (PROERD)",
+          "B) Programa de Radiopatrulha",
+          "C) Programa de Policiamento de Trânsito",
+          "D) Programa de Força Tática"
+        ],
+        "answer": 0,
+        "explanation": "O item 6.4.1.3.2 cita o PROERD como exemplo de programa educacional tratado nesse contexto. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 820,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — organização dos programas",
+        "text": "Qual afirmação descreve a finalidade geral de priorizar a distribuição de recursos humanos e meios materiais?",
+        "options": [
+          "A) Organizar o policiamento ostensivo por Programas de Policiamento e Atividades Operacionais Diversas",
+          "B) Substituir todos os programas por atividades esporádicas",
+          "C) Destinar todos os recursos exclusivamente a programas complementares",
+          "D) Eliminar critérios de necessidade e disponibilidade"
+        ],
+        "answer": 0,
+        "explanation": "O item 6.4.1 apresenta essa organização como meio de priorizar a distribuição de recursos. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 821,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "NORSOP — organização dos programas",
+        "text": "Qual é a categoria de atividade que pode abranger ações rotineiras ou esporádicas não definidas como Programas de Policiamento?",
+        "options": [
+          "A) Atividades Operacionais Diversas",
+          "B) Programas Primários",
+          "C) Programas Complementares, exclusivamente",
+          "D) Estruturas CC2"
+        ],
+        "answer": 0,
+        "explanation": "O item 6.4.1.3 define Atividades Operacionais Diversas como demais atividades não definidas como programas, rotineiras ou esporádicas. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 822,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "NORSOP — organização dos programas",
+        "text": "Qual afirmação corresponde à regra dos Programas Complementares?",
+        "options": [
+          "A) São desenvolvidos mediante necessidade e disponibilidade e podem adotar forma híbrida conforme as respectivas diretrizes",
+          "B) Devem sempre contar com efetivo e meios exclusivos",
+          "C) Têm prioridade sobre Radiopatrulha e Força Tática",
+          "D) Não podem ser executados por OPM territoriais"
+        ],
+        "answer": 0,
+        "explanation": "O item 6.4.1.2 prevê necessidade, disponibilidade e possibilidade de desenvolvimento híbrido. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 823,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
+        "topic": "NORSOP — organização dos programas",
+        "text": "Qual conjunto contém os dois Programas Primários?",
+        "options": [
+          "A) Radiopatrulha e Força Tática",
+          "B) Escolar e Comunitário",
+          "C) Trânsito e Rural",
+          "D) Rural e Força Tática"
+        ],
+        "answer": 0,
+        "explanation": "O item 6.4.1.1 define os Programas Primários como Radiopatrulha e Força Tática. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 824,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "NORSOP — organização dos programas",
+        "text": "Segundo o NORSOP, os Programas Complementares podem incluir:",
+        "options": [
+          "A) outros programas que venham a ser implementados pelo Comando-Geral",
+          "B) somente os quatro programas já listados, sem possibilidade de ampliação",
+          "C) qualquer atividade definida unilateralmente por uma patrulha",
+          "D) apenas atividades administrativas"
+        ],
+        "answer": 0,
+        "explanation": "O item 6.4.1.2.5 permite outros programas implementados pelo Comando-Geral. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      },
+      {
+        "id": 825,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "NORSOP — organização dos programas",
+        "text": "Assinale a alternativa INCORRETA sobre Atividades Operacionais Diversas.",
+        "options": [
+          "A) Podem atender necessidades específicas das OPM",
+          "B) Podem ser realizadas rotineira ou esporadicamente",
+          "C) Incluem, entre outros exemplos, policiamento em fóruns e eventos",
+          "D) Constituem a mesma categoria normativa dos Programas Primários"
+        ],
+        "answer": 3,
+        "explanation": "O NORSOP distingue atividades diversas dos Programas Primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+      }
           
 ];
 
@@ -10551,7 +12426,1132 @@ const BANCO_SIMULADOS = {
     "simulado_01": {
         "titulo": "Simulado Geral ACP II/26 - Processo de Habilitação ao Posto de Capitão PM",
         "questoes": BANCO_GERAL_QUESTOES
-    }
+    },
+     {
+        "id": 826,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — previsão de contingentes do Programa FT",
+        "text": "Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), quanto a previsão de contingentes do Programa FT, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) As FT são organizadas nos escalões Companhia de Força Tática, Pelotão de Força Tática ou Grupo de Força Tática.",
+          "B) Os contingentes do Programa FT são previstos nos QPO das OPM Territoriais em municípios que sediam, no mínimo, uma Cia PM, conforme os critérios das I-28-PM.",
+          "C) A ROCAM é considerada Equipe Tática quando composta por 3 motociclistas atuando conjuntamente, um por motocicleta, sob comando de Oficial ou Subten/Sgt PM.",
+          "D) A ROCAM composta por 2 motociclistas é denominada Patrulha, independentemente da presença de Oficial ou Subten/Sgt PM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, PDF p. 462, item 6.3.2. Evidência normativa: Os contingentes do Programa FT são previstos nos QPO das OPM Territoriais em municípios que sediam, no mínimo, uma Cia PM, conforme os critérios das I-28-PM. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 463, item 6.3.3 disciplina escalões de organização das Forças Táticas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.6.3 disciplina classificação da ROCAM com três motociclistas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.6.4 disciplina classificação da ROCAM com dois motociclistas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 827,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — escalões de organização das Forças Táticas",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar escalões de organização das Forças Táticas. Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) As FT são organizadas nos escalões Companhia de Força Tática, Pelotão de Força Tática ou Grupo de Força Tática.",
+          "B) Os contingentes do Programa FT são previstos nos QPO das OPM Territoriais em municípios que sediam, no mínimo, uma Cia PM, conforme os critérios das I-28-PM.",
+          "C) A ROCAM é considerada Equipe Tática quando composta por 3 motociclistas atuando conjuntamente, um por motocicleta, sob comando de Oficial ou Subten/Sgt PM.",
+          "D) A ROCAM composta por 2 motociclistas é denominada Patrulha, independentemente da presença de Oficial ou Subten/Sgt PM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, PDF p. 463, item 6.3.3. Evidência normativa: As FT são organizadas nos escalões Companhia de Força Tática, Pelotão de Força Tática ou Grupo de Força Tática. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Operacionais.pdf, PDF p. 462, item 6.3.2 disciplina previsão de contingentes do Programa FT, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.6.3 disciplina classificação da ROCAM com três motociclistas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.6.4 disciplina classificação da ROCAM com dois motociclistas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 828,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — classificação da ROCAM com três motociclistas",
+        "text": "Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), quanto a classificação da ROCAM com três motociclistas, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A ROCAM composta por 2 motociclistas é denominada Patrulha, independentemente da presença de Oficial ou Subten/Sgt PM.",
+          "B) As FT são organizadas nos escalões Companhia de Força Tática, Pelotão de Força Tática ou Grupo de Força Tática.",
+          "C) Os contingentes do Programa FT são previstos nos QPO das OPM Territoriais em municípios que sediam, no mínimo, uma Cia PM, conforme os critérios das I-28-PM.",
+          "D) A ROCAM é considerada Equipe Tática quando composta por 3 motociclistas atuando conjuntamente, um por motocicleta, sob comando de Oficial ou Subten/Sgt PM."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.6.3. Evidência normativa: A ROCAM é considerada Equipe Tática quando composta por 3 motociclistas atuando conjuntamente, um por motocicleta, sob comando de Oficial ou Subten/Sgt PM. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.6.4 disciplina classificação da ROCAM com dois motociclistas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 463, item 6.3.3 disciplina escalões de organização das Forças Táticas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 462, item 6.3.2 disciplina previsão de contingentes do Programa FT, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 829,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — classificação da ROCAM com dois motociclistas",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar classificação da ROCAM com dois motociclistas. Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A ROCAM é considerada Equipe Tática quando composta por 3 motociclistas atuando conjuntamente, um por motocicleta, sob comando de Oficial ou Subten/Sgt PM.",
+          "B) Equipes Táticas e Patrulhas ROCAM ou Escolta devem portar fardamento, material bélico e equipamentos adequados à modalidade, incluindo HT como item obrigatório.",
+          "C) A ROCAM composta por 2 motociclistas é denominada Patrulha, independentemente da presença de Oficial ou Subten/Sgt PM.",
+          "D) As FT são organizadas nos escalões Companhia de Força Tática, Pelotão de Força Tática ou Grupo de Força Tática."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.6.4. Evidência normativa: A ROCAM composta por 2 motociclistas é denominada Patrulha, independentemente da presença de Oficial ou Subten/Sgt PM. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.6.3 disciplina classificação da ROCAM com três motociclistas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.8 disciplina equipamento obrigatório, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 463, item 6.3.3 disciplina escalões de organização das Forças Táticas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 830,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — equipamento obrigatório",
+        "text": "Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), quanto a equipamento obrigatório, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A ROCAM composta por 2 motociclistas é denominada Patrulha, independentemente da presença de Oficial ou Subten/Sgt PM.",
+          "B) Equipes Táticas e Patrulhas ROCAM ou Escolta devem portar fardamento, material bélico e equipamentos adequados à modalidade, incluindo HT como item obrigatório.",
+          "C) Ordinariamente, as FT são empregadas no município sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I.",
+          "D) A ROCAM é considerada Equipe Tática quando composta por 3 motociclistas atuando conjuntamente, um por motocicleta, sob comando de Oficial ou Subten/Sgt PM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.8. Evidência normativa: Equipes Táticas e Patrulhas ROCAM ou Escolta devem portar fardamento, material bélico e equipamentos adequados à modalidade, incluindo HT como item obrigatório. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.6.4 disciplina classificação da ROCAM com dois motociclistas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.1 disciplina emprego ordinário e nível de resposta, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.6.3 disciplina classificação da ROCAM com três motociclistas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 831,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — emprego ordinário e nível de resposta",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar emprego ordinário e nível de resposta. Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Ordinariamente, as FT são empregadas no município sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I.",
+          "B) Mediante deliberação do Subcmt PM, a Coord Op PM planeja o emprego conjunto das FT em escalões matriciais para compor Forças-Tarefas em operações de maior envergadura.",
+          "C) Quando não estiverem desenvolvendo atividades típicas de apoio tático, as FT atuam no Nível de Resposta 1, com atenção à intensificação do policiamento em locais com alto índice de criminalidade violenta.",
+          "D) Equipes Táticas e Patrulhas ROCAM ou Escolta devem portar fardamento, material bélico e equipamentos adequados à modalidade, incluindo HT como item obrigatório."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.1. Evidência normativa: Ordinariamente, as FT são empregadas no município sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Operacionais.pdf, PDF p. 466, item 6.7.1.2 disciplina planejamento de emprego conjunto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.2 disciplina emprego quando não há atividade típica de apoio tático, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 464, item 6.3.8 disciplina equipamento obrigatório, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 832,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — emprego quando não há atividade típica de apoio tático",
+        "text": "Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), quanto a emprego quando não há atividade típica de apoio tático, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Mediante deliberação do Subcmt PM, a Coord Op PM planeja o emprego conjunto das FT em escalões matriciais para compor Forças-Tarefas em operações de maior envergadura.",
+          "B) Ordinariamente, as FT são empregadas no município sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I.",
+          "C) As FT são direcionadas por Cartão de Prioridade de Patrulhamento elaborado com base nas necessidades identificadas pelo comando da OPM durante o desenvolvimento do PPI.",
+          "D) Quando não estiverem desenvolvendo atividades típicas de apoio tático, as FT atuam no Nível de Resposta 1, com atenção à intensificação do policiamento em locais com alto índice de criminalidade violenta."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.2. Evidência normativa: Quando não estiverem desenvolvendo atividades típicas de apoio tático, as FT atuam no Nível de Resposta 1, com atenção à intensificação do policiamento em locais com alto índice de criminalidade violenta. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 466, item 6.7.1.2 disciplina planejamento de emprego conjunto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.1 disciplina emprego ordinário e nível de resposta, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.3 disciplina direcionamento por CPP, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 833,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — direcionamento por CPP",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar direcionamento por CPP. Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Quando não estiverem desenvolvendo atividades típicas de apoio tático, as FT atuam no Nível de Resposta 1, com atenção à intensificação do policiamento em locais com alto índice de criminalidade violenta.",
+          "B) As instruções diárias dos efetivos FT têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada.",
+          "C) As FT são direcionadas por Cartão de Prioridade de Patrulhamento elaborado com base nas necessidades identificadas pelo comando da OPM durante o desenvolvimento do PPI.",
+          "D) Ordinariamente, as FT são empregadas no município sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.3. Evidência normativa: As FT são direcionadas por Cartão de Prioridade de Patrulhamento elaborado com base nas necessidades identificadas pelo comando da OPM durante o desenvolvimento do PPI. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.2 disciplina emprego quando não há atividade típica de apoio tático, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 465, item 6.5.2, redação dada pela O Comp nº PM3-005/02/21 disciplina duração das instruções diárias, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.1 disciplina emprego ordinário e nível de resposta, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 834,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — duração das instruções diárias",
+        "text": "Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), quanto a duração das instruções diárias, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Cabe ao Coord Op Btl, ou equivalente, coordenar as instruções aplicadas à FT e controlar os assuntos abordados.",
+          "B) As instruções diárias dos efetivos FT têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada.",
+          "C) As FT são direcionadas por Cartão de Prioridade de Patrulhamento elaborado com base nas necessidades identificadas pelo comando da OPM durante o desenvolvimento do PPI.",
+          "D) A instrução diária da FT deve abordar currículo dos CEP pertinentes e temas como Sistema Operacional, Polícia Comunitária e Direitos Humanos, estudos de caso, POP, criminalidade local, grupos criminosos, ocorrências graves, legislação, poder de polícia, APH e direção preventiva."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, PDF p. 465, item 6.5.2, redação dada pela O Comp nº PM3-005/02/21. Evidência normativa: As instruções diárias dos efetivos FT têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 466, item 6.5.4 disciplina coordenação das instruções, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.3 disciplina direcionamento por CPP, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 465, item 6.5.3 disciplina conteúdo da instrução diária, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 835,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — conteúdo da instrução diária",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar conteúdo da instrução diária. Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A instrução diária da FT deve abordar currículo dos CEP pertinentes e temas como Sistema Operacional, Polícia Comunitária e Direitos Humanos, estudos de caso, POP, criminalidade local, grupos criminosos, ocorrências graves, legislação, poder de polícia, APH e direção preventiva.",
+          "B) As instruções diárias dos efetivos FT têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada.",
+          "C) Cabe ao Coord Op Btl, ou equivalente, coordenar as instruções aplicadas à FT e controlar os assuntos abordados.",
+          "D) As FT são direcionadas por Cartão de Prioridade de Patrulhamento elaborado com base nas necessidades identificadas pelo comando da OPM durante o desenvolvimento do PPI."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, PDF p. 465, item 6.5.3. Evidência normativa: A instrução diária da FT deve abordar currículo dos CEP pertinentes e temas como Sistema Operacional, Polícia Comunitária e Direitos Humanos, estudos de caso, POP, criminalidade local, grupos criminosos, ocorrências graves, legislação, poder de polícia, APH e direção preventiva. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Operacionais.pdf, PDF p. 465, item 6.5.2, redação dada pela O Comp nº PM3-005/02/21 disciplina duração das instruções diárias, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 466, item 6.5.4 disciplina coordenação das instruções, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.3 disciplina direcionamento por CPP, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 836,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — coordenação das instruções",
+        "text": "Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), quanto a coordenação das instruções, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) As instruções diárias dos efetivos FT têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada.",
+          "B) A instrução diária da FT deve abordar currículo dos CEP pertinentes e temas como Sistema Operacional, Polícia Comunitária e Direitos Humanos, estudos de caso, POP, criminalidade local, grupos criminosos, ocorrências graves, legislação, poder de polícia, APH e direção preventiva.",
+          "C) Cada Cmdo Pol reúne semestralmente os Cmt OPM FT para avaliar o desenvolvimento do Programa e pode encaminhar propostas de aprimoramento ao Subcmt PM.",
+          "D) Cabe ao Coord Op Btl, ou equivalente, coordenar as instruções aplicadas à FT e controlar os assuntos abordados."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, PDF p. 466, item 6.5.4. Evidência normativa: Cabe ao Coord Op Btl, ou equivalente, coordenar as instruções aplicadas à FT e controlar os assuntos abordados. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 465, item 6.5.2, redação dada pela O Comp nº PM3-005/02/21 disciplina duração das instruções diárias, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 465, item 6.5.3 disciplina conteúdo da instrução diária, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 467, item 6.8.1 disciplina reunião semestral dos comandantes FT, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 837,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — reunião semestral dos comandantes FT",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar reunião semestral dos comandantes FT. Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Cabe ao Coord Op Btl, ou equivalente, coordenar as instruções aplicadas à FT e controlar os assuntos abordados.",
+          "B) Mediante deliberação do Subcmt PM, a Coord Op PM planeja o emprego conjunto das FT em escalões matriciais para compor Forças-Tarefas em operações de maior envergadura.",
+          "C) Cada Cmdo Pol reúne semestralmente os Cmt OPM FT para avaliar o desenvolvimento do Programa e pode encaminhar propostas de aprimoramento ao Subcmt PM.",
+          "D) A instrução diária da FT deve abordar currículo dos CEP pertinentes e temas como Sistema Operacional, Polícia Comunitária e Direitos Humanos, estudos de caso, POP, criminalidade local, grupos criminosos, ocorrências graves, legislação, poder de polícia, APH e direção preventiva."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, PDF p. 467, item 6.8.1. Evidência normativa: Cada Cmdo Pol reúne semestralmente os Cmt OPM FT para avaliar o desenvolvimento do Programa e pode encaminhar propostas de aprimoramento ao Subcmt PM. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 466, item 6.5.4 disciplina coordenação das instruções, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 466, item 6.7.1.2 disciplina planejamento de emprego conjunto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 465, item 6.5.3 disciplina conteúdo da instrução diária, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 838,
+        "subject": "OPERACIONAL",
+        "tag": "Força Tática",
+        "topic": "Força Tática — planejamento de emprego conjunto",
+        "text": "Considerando Diretriz nº PM3-003/02/20 (Programa de Força Tática), quanto a planejamento de emprego conjunto, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Ordinariamente, as FT são empregadas no município sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I.",
+          "B) Mediante deliberação do Subcmt PM, a Coord Op PM planeja o emprego conjunto das FT em escalões matriciais para compor Forças-Tarefas em operações de maior envergadura.",
+          "C) Quando não estiverem desenvolvendo atividades típicas de apoio tático, as FT atuam no Nível de Resposta 1, com atenção à intensificação do policiamento em locais com alto índice de criminalidade violenta.",
+          "D) Cada Cmdo Pol reúne semestralmente os Cmt OPM FT para avaliar o desenvolvimento do Programa e pode encaminhar propostas de aprimoramento ao Subcmt PM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, PDF p. 466, item 6.7.1.2. Evidência normativa: Mediante deliberação do Subcmt PM, a Coord Op PM planeja o emprego conjunto das FT em escalões matriciais para compor Forças-Tarefas em operações de maior envergadura. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.1 disciplina emprego ordinário e nível de resposta, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 464, item 6.4.1.2 disciplina emprego quando não há atividade típica de apoio tático, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 467, item 6.8.1 disciplina reunião semestral dos comandantes FT, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 839,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — certificação da Equipe Drone",
+        "text": "Durante o planejamento da estrutura ou equipe correspondente, surge dúvida sobre certificação da Equipe Drone. Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A Equipe Drone deve atuar mediante certificação emitida pelo CAvPM.",
+          "B) Para exercer a função de Piloto Remoto, o voluntário deve possuir, no mínimo, 2 anos de efetivo exercício em atividade operacional.",
+          "C) O candidato a Observador deve preencher os mesmos requisitos exigidos do candidato a Piloto Remoto, exceto o período mínimo de 2 anos de efetivo exercício em atividade operacional.",
+          "D) A renovação da habilitação do Piloto Remoto ocorre por teste de aptidão e proficiência, segundo a periodicidade e a forma definidas no PTO–Drone."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, PDF p. 439, item 6.4.3. Evidência normativa: A Equipe Drone deve atuar mediante certificação emitida pelo CAvPM. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Operacionais.pdf, PDF p. 440, item 6.6.2.1 disciplina requisito temporal para Piloto Remoto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 440, item 6.6.3 disciplina exceção temporal para Observador, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.2.2 disciplina renovação da habilitação do Piloto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 840,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — requisito temporal para Piloto Remoto",
+        "text": "Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), quanto a requisito temporal para Piloto Remoto, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos.",
+          "B) O candidato a Observador deve preencher os mesmos requisitos exigidos do candidato a Piloto Remoto, exceto o período mínimo de 2 anos de efetivo exercício em atividade operacional.",
+          "C) A renovação da habilitação do Piloto Remoto ocorre por teste de aptidão e proficiência, segundo a periodicidade e a forma definidas no PTO–Drone.",
+          "D) Para exercer a função de Piloto Remoto, o voluntário deve possuir, no mínimo, 2 anos de efetivo exercício em atividade operacional."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, PDF p. 440, item 6.6.2.1. Evidência normativa: Para exercer a função de Piloto Remoto, o voluntário deve possuir, no mínimo, 2 anos de efetivo exercício em atividade operacional. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.4 disciplina limite temporal para curso de Piloto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 440, item 6.6.3 disciplina exceção temporal para Observador, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.2.2 disciplina renovação da habilitação do Piloto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 841,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — exceção temporal para Observador",
+        "text": "Durante o planejamento ou execução de uma operação com UAS, a equipe precisa esclarecer exceção temporal para Observador. Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A renovação da habilitação do Observador ocorre por frequência a treinamento específico, na periodicidade definida pelo CAvPM.",
+          "B) Para exercer a função de Piloto Remoto, o voluntário deve possuir, no mínimo, 2 anos de efetivo exercício em atividade operacional.",
+          "C) O candidato a Observador deve preencher os mesmos requisitos exigidos do candidato a Piloto Remoto, exceto o período mínimo de 2 anos de efetivo exercício em atividade operacional.",
+          "D) O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, PDF p. 440, item 6.6.3. Evidência normativa: O candidato a Observador deve preencher os mesmos requisitos exigidos do candidato a Piloto Remoto, exceto o período mínimo de 2 anos de efetivo exercício em atividade operacional. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.3.2 disciplina renovação da habilitação do Observador, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 440, item 6.6.2.1 disciplina requisito temporal para Piloto Remoto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.4 disciplina limite temporal para curso de Piloto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 842,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — renovação da habilitação do Piloto",
+        "text": "Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), quanto a renovação da habilitação do Piloto, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A renovação da habilitação do Observador ocorre por frequência a treinamento específico, na periodicidade definida pelo CAvPM.",
+          "B) A renovação da habilitação do Piloto Remoto ocorre por teste de aptidão e proficiência, segundo a periodicidade e a forma definidas no PTO–Drone.",
+          "C) Para exercer a função de Piloto Remoto, o voluntário deve possuir, no mínimo, 2 anos de efetivo exercício em atividade operacional.",
+          "D) O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.2.2. Evidência normativa: A renovação da habilitação do Piloto Remoto ocorre por teste de aptidão e proficiência, segundo a periodicidade e a forma definidas no PTO–Drone. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.3.2 disciplina renovação da habilitação do Observador, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 440, item 6.6.2.1 disciplina requisito temporal para Piloto Remoto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.4 disciplina limite temporal para curso de Piloto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 843,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — renovação da habilitação do Observador",
+        "text": "Durante o planejamento ou execução de uma operação com UAS, a equipe precisa esclarecer renovação da habilitação do Observador. Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A renovação da habilitação do Observador ocorre por frequência a treinamento específico, na periodicidade definida pelo CAvPM.",
+          "B) A renovação da habilitação do Piloto Remoto ocorre por teste de aptidão e proficiência, segundo a periodicidade e a forma definidas no PTO–Drone.",
+          "C) O candidato a Observador deve preencher os mesmos requisitos exigidos do candidato a Piloto Remoto, exceto o período mínimo de 2 anos de efetivo exercício em atividade operacional.",
+          "D) O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.3.2. Evidência normativa: A renovação da habilitação do Observador ocorre por frequência a treinamento específico, na periodicidade definida pelo CAvPM. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.2.2 disciplina renovação da habilitação do Piloto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 440, item 6.6.3 disciplina exceção temporal para Observador, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.4 disciplina limite temporal para curso de Piloto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 844,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — limite temporal para curso de Piloto",
+        "text": "Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), quanto a limite temporal para curso de Piloto, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Para exercer a função de Piloto Remoto, o voluntário deve possuir, no mínimo, 2 anos de efetivo exercício em atividade operacional.",
+          "B) A renovação da habilitação do Piloto Remoto ocorre por teste de aptidão e proficiência, segundo a periodicidade e a forma definidas no PTO–Drone.",
+          "C) O candidato a Observador deve preencher os mesmos requisitos exigidos do candidato a Piloto Remoto, exceto o período mínimo de 2 anos de efetivo exercício em atividade operacional.",
+          "D) O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.4. Evidência normativa: O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 440, item 6.6.2.1 disciplina requisito temporal para Piloto Remoto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.2.2 disciplina renovação da habilitação do Piloto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 440, item 6.6.3 disciplina exceção temporal para Observador, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 845,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — classificação do UAS Tático",
+        "text": "Durante o planejamento ou execução de uma operação com UAS, a equipe precisa esclarecer classificação do UAS Tático. Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira, podendo ser certificado para VLOS/EVLOS acima de 400 pés ou BVLOS.",
+          "B) O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos.",
+          "C) O UAS Tático é composto por aeronave com sistema de lentes óticas ou digitais, preferencialmente com sensor termal, e características de portabilidade, transporte e operacionalidade.",
+          "D) A renovação da habilitação do Observador ocorre por frequência a treinamento específico, na periodicidade definida pelo CAvPM."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, PDF p. 441, item 6.8.2.1. Evidência normativa: O UAS Tático é composto por aeronave com sistema de lentes óticas ou digitais, preferencialmente com sensor termal, e características de portabilidade, transporte e operacionalidade. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 441, item 6.8.2.2 disciplina classificação do UAS Avançado, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.4 disciplina limite temporal para curso de Piloto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.3.2 disciplina renovação da habilitação do Observador, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 846,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — classificação do UAS Avançado",
+        "text": "Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), quanto a classificação do UAS Avançado, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O UAS Tático é composto por aeronave com sistema de lentes óticas ou digitais, preferencialmente com sensor termal, e características de portabilidade, transporte e operacionalidade.",
+          "B) O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira, podendo ser certificado para VLOS/EVLOS acima de 400 pés ou BVLOS.",
+          "C) As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM.",
+          "D) O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, PDF p. 441, item 6.8.2.2. Evidência normativa: O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira, podendo ser certificado para VLOS/EVLOS acima de 400 pés ou BVLOS. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 441, item 6.8.2.1 disciplina classificação do UAS Tático, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 442, item 6.8.3 disciplina categoria de aeronave empregada, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 441, item 6.7.4 disciplina limite temporal para curso de Piloto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 847,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — categoria de aeronave empregada",
+        "text": "Durante o planejamento ou execução de uma operação com UAS, a equipe precisa esclarecer categoria de aeronave empregada. Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM.",
+          "B) O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira, podendo ser certificado para VLOS/EVLOS acima de 400 pés ou BVLOS.",
+          "C) O emprego de drones pode compreender pronta resposta a ocorrências (DFR), desde o apoio a US em ocorrências corriqueiras até incidentes críticos, graves e complexos.",
+          "D) O UAS Tático é composto por aeronave com sistema de lentes óticas ou digitais, preferencialmente com sensor termal, e características de portabilidade, transporte e operacionalidade."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, PDF p. 442, item 6.8.3. Evidência normativa: As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Operacionais.pdf, PDF p. 441, item 6.8.2.2 disciplina classificação do UAS Avançado, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 438, item 6.3.2 disciplina missão DFR, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 441, item 6.8.2.1 disciplina classificação do UAS Tático, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 848,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — missão DFR",
+        "text": "Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), quanto a missão DFR, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM.",
+          "B) O CAvPM, com participação da DTIC, fixa parâmetros e constitui o repositório técnico de boas práticas, indicando necessidades tecnológicas para aperfeiçoamento dos UAS.",
+          "C) O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira, podendo ser certificado para VLOS/EVLOS acima de 400 pés ou BVLOS.",
+          "D) O emprego de drones pode compreender pronta resposta a ocorrências (DFR), desde o apoio a US em ocorrências corriqueiras até incidentes críticos, graves e complexos."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, PDF p. 438, item 6.3.2. Evidência normativa: O emprego de drones pode compreender pronta resposta a ocorrências (DFR), desde o apoio a US em ocorrências corriqueiras até incidentes críticos, graves e complexos. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 442, item 6.8.3 disciplina categoria de aeronave empregada, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 443, item 6.9.5.1.1 disciplina repositório técnico de boas práticas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 441, item 6.8.2.2 disciplina classificação do UAS Avançado, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 849,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — repositório técnico de boas práticas",
+        "text": "Durante o planejamento ou execução de uma operação com UAS, a equipe precisa esclarecer repositório técnico de boas práticas. Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A Coord Op PM constitui o repositório de boas práticas operacionais, registrando ocorrências referenciais e metodologias passíveis de aproveitamento por outras OPM.",
+          "B) O emprego de drones pode compreender pronta resposta a ocorrências (DFR), desde o apoio a US em ocorrências corriqueiras até incidentes críticos, graves e complexos.",
+          "C) O CAvPM, com participação da DTIC, fixa parâmetros e constitui o repositório técnico de boas práticas, indicando necessidades tecnológicas para aperfeiçoamento dos UAS.",
+          "D) As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, PDF p. 443, item 6.9.5.1.1. Evidência normativa: O CAvPM, com participação da DTIC, fixa parâmetros e constitui o repositório técnico de boas práticas, indicando necessidades tecnológicas para aperfeiçoamento dos UAS. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 443, item 6.9.5.1.2 disciplina repositório operacional de boas práticas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Operacionais.pdf, PDF p. 438, item 6.3.2 disciplina missão DFR, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 442, item 6.8.3 disciplina categoria de aeronave empregada, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 850,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — repositório operacional de boas práticas",
+        "text": "Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), quanto a repositório operacional de boas práticas, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O CAvPM, com participação da DTIC, fixa parâmetros e constitui o repositório técnico de boas práticas, indicando necessidades tecnológicas para aperfeiçoamento dos UAS.",
+          "B) A Coord Op PM constitui o repositório de boas práticas operacionais, registrando ocorrências referenciais e metodologias passíveis de aproveitamento por outras OPM.",
+          "C) A participação de PM de outros Estados e de representantes de órgãos públicos externos à PMESP em cursos, estágios e treinamentos depende de autorização expressa do Subcmt PM.",
+          "D) O emprego de drones pode compreender pronta resposta a ocorrências (DFR), desde o apoio a US em ocorrências corriqueiras até incidentes críticos, graves e complexos."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, PDF p. 443, item 6.9.5.1.2. Evidência normativa: A Coord Op PM constitui o repositório de boas práticas operacionais, registrando ocorrências referenciais e metodologias passíveis de aproveitamento por outras OPM. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Operacionais.pdf, PDF p. 443, item 6.9.5.1.1 disciplina repositório técnico de boas práticas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 448, item 6.11.2 disciplina autorização para participantes externos em treinamentos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 438, item 6.3.2 disciplina missão DFR, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 851,
+        "subject": "OPERACIONAL",
+        "tag": "Drones",
+        "topic": "Drones — autorização para participantes externos em treinamentos",
+        "text": "Durante o planejamento ou execução de uma operação com UAS, a equipe precisa esclarecer autorização para participantes externos em treinamentos. Considerando Diretriz nº PM3-005/02/24 (Programa de Policiamento com Drones), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A participação de PM de outros Estados e de representantes de órgãos públicos externos à PMESP em cursos, estágios e treinamentos depende de autorização expressa do Subcmt PM.",
+          "B) A Coord Op PM constitui o repositório de boas práticas operacionais, registrando ocorrências referenciais e metodologias passíveis de aproveitamento por outras OPM.",
+          "C) O CAvPM, com participação da DTIC, fixa parâmetros e constitui o repositório técnico de boas práticas, indicando necessidades tecnológicas para aperfeiçoamento dos UAS.",
+          "D) O emprego de drones pode compreender pronta resposta a ocorrências (DFR), desde o apoio a US em ocorrências corriqueiras até incidentes críticos, graves e complexos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, PDF p. 448, item 6.11.2. Evidência normativa: A participação de PM de outros Estados e de representantes de órgãos públicos externos à PMESP em cursos, estágios e treinamentos depende de autorização expressa do Subcmt PM. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Operacionais.pdf, PDF p. 443, item 6.9.5.1.2 disciplina repositório operacional de boas práticas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Operacionais.pdf, PDF p. 443, item 6.9.5.1.1 disciplina repositório técnico de boas práticas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Operacionais.pdf, PDF p. 438, item 6.3.2 disciplina missão DFR, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 852,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — prazo de defesa preliminar após citação",
+        "text": "Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), quanto a prazo de defesa preliminar após citação, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A investigação preliminar deve ser encerrada em prazo improrrogável de 10 dias, contados ininterruptamente do despacho de instauração.",
+          "B) Se não for possível localizar o acusado por deserção, ausência ilegal, paradeiro desconhecido ou esquiva, o presidente determina citação por edital, publicada uma única vez, com prazo de 5 dias para resposta.",
+          "C) O não atendimento da citação acarreta prosseguimento do processo à revelia; nos atos posteriores, em regra, será intimado somente o defensor, salvo comparecimento do acusado.",
+          "D) A citação informa ao acusado o prazo de 5 dias para constituir defensor e apresentar defesa preliminar por escrito."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, § 1º, item 5. Evidência normativa: A citação informa ao acusado o prazo de 5 dias para constituir defensor e apresentar defesa preliminar por escrito. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 166, I-16-PM, art. 66, § 3º disciplina prazo da investigação preliminar, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, §§ 3º e 4º disciplina citação por edital, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, § 5º disciplina efeito do não atendimento à citação, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 853,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — citação por edital",
+        "text": "Ao controlar o andamento do procedimento, o responsável precisa definir citação por edital. Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A citação informa ao acusado o prazo de 5 dias para constituir defensor e apresentar defesa preliminar por escrito.",
+          "B) O não atendimento da citação acarreta prosseguimento do processo à revelia; nos atos posteriores, em regra, será intimado somente o defensor, salvo comparecimento do acusado.",
+          "C) Se não for possível localizar o acusado por deserção, ausência ilegal, paradeiro desconhecido ou esquiva, o presidente determina citação por edital, publicada uma única vez, com prazo de 5 dias para resposta.",
+          "D) A intimação do defensor constituído é realizada por publicação em diário oficial."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, §§ 3º e 4º. Evidência normativa: Se não for possível localizar o acusado por deserção, ausência ilegal, paradeiro desconhecido ou esquiva, o presidente determina citação por edital, publicada uma única vez, com prazo de 5 dias para resposta. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, § 1º, item 5 disciplina prazo de defesa preliminar após citação, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, § 5º disciplina efeito do não atendimento à citação, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 56, inciso II disciplina intimação do defensor constituído, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 854,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — efeito do não atendimento à citação",
+        "text": "Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), quanto a efeito do não atendimento à citação, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Se não for possível localizar o acusado por deserção, ausência ilegal, paradeiro desconhecido ou esquiva, o presidente determina citação por edital, publicada uma única vez, com prazo de 5 dias para resposta.",
+          "B) O não atendimento da citação acarreta prosseguimento do processo à revelia; nos atos posteriores, em regra, será intimado somente o defensor, salvo comparecimento do acusado.",
+          "C) A citação informa ao acusado o prazo de 5 dias para constituir defensor e apresentar defesa preliminar por escrito.",
+          "D) A intimação do defensor constituído é realizada por publicação em diário oficial."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, § 5º. Evidência normativa: O não atendimento da citação acarreta prosseguimento do processo à revelia; nos atos posteriores, em regra, será intimado somente o defensor, salvo comparecimento do acusado. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, §§ 3º e 4º disciplina citação por edital, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, § 1º, item 5 disciplina prazo de defesa preliminar após citação, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 56, inciso II disciplina intimação do defensor constituído, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 855,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — intimação do defensor constituído",
+        "text": "Ao controlar o andamento do procedimento, o responsável precisa definir intimação do defensor constituído. Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A intimação do defensor constituído é realizada por publicação em diário oficial.",
+          "B) A intimação é realizada pessoalmente para o acusado, testemunhas, defensor nomeado e outras pessoas que devam participar de ato processual.",
+          "C) O não atendimento da citação acarreta prosseguimento do processo à revelia; nos atos posteriores, em regra, será intimado somente o defensor, salvo comparecimento do acusado.",
+          "D) Se não for possível localizar o acusado por deserção, ausência ilegal, paradeiro desconhecido ou esquiva, o presidente determina citação por edital, publicada uma única vez, com prazo de 5 dias para resposta."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 56, inciso II. Evidência normativa: A intimação do defensor constituído é realizada por publicação em diário oficial. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 56, inciso I disciplina intimação do acusado e testemunhas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, § 5º disciplina efeito do não atendimento à citação, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, §§ 3º e 4º disciplina citação por edital, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 856,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — intimação do acusado e testemunhas",
+        "text": "Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), quanto a intimação do acusado e testemunhas, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A intimação do defensor constituído é realizada por publicação em diário oficial.",
+          "B) No processo administrativo são admitidas todas as espécies de provas, observados, no que aplicáveis, os preceitos dos arts. 294 a 383 do CPPM.",
+          "C) O não atendimento da citação acarreta prosseguimento do processo à revelia; nos atos posteriores, em regra, será intimado somente o defensor, salvo comparecimento do acusado.",
+          "D) A intimação é realizada pessoalmente para o acusado, testemunhas, defensor nomeado e outras pessoas que devam participar de ato processual."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 56, inciso I. Evidência normativa: A intimação é realizada pessoalmente para o acusado, testemunhas, defensor nomeado e outras pessoas que devam participar de ato processual. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 56, inciso II disciplina intimação do defensor constituído, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57 disciplina admissibilidade de provas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, § 5º disciplina efeito do não atendimento à citação, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 857,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — admissibilidade de provas",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar admissibilidade de provas. Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A intimação é realizada pessoalmente para o acusado, testemunhas, defensor nomeado e outras pessoas que devam participar de ato processual.",
+          "B) Não se declara nulidade de ato processual que não tenha influído na apuração da verdade substancial ou diretamente na decisão final do processo regular.",
+          "C) No processo administrativo são admitidas todas as espécies de provas, observados, no que aplicáveis, os preceitos dos arts. 294 a 383 do CPPM.",
+          "D) A intimação do defensor constituído é realizada por publicação em diário oficial."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57. Evidência normativa: No processo administrativo são admitidas todas as espécies de provas, observados, no que aplicáveis, os preceitos dos arts. 294 a 383 do CPPM. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 56, inciso I disciplina intimação do acusado e testemunhas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57, § 1º disciplina nulidade de ato processual, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 56, inciso II disciplina intimação do defensor constituído, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 858,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — nulidade de ato processual",
+        "text": "Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), quanto a nulidade de ato processual, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) No processo administrativo são admitidas todas as espécies de provas, observados, no que aplicáveis, os preceitos dos arts. 294 a 383 do CPPM.",
+          "B) Não se declara nulidade de ato processual que não tenha influído na apuração da verdade substancial ou diretamente na decisão final do processo regular.",
+          "C) Os atos processuais devem ser registrados formalmente por escrito; também podem ser registrados por meio magnético, eletrônico, digital ou similar, sem dispensa do registro escrito.",
+          "D) A intimação é realizada pessoalmente para o acusado, testemunhas, defensor nomeado e outras pessoas que devam participar de ato processual."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57, § 1º. Evidência normativa: Não se declara nulidade de ato processual que não tenha influído na apuração da verdade substancial ou diretamente na decisão final do processo regular. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57 disciplina admissibilidade de provas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57, § 3º disciplina registro dos atos processuais, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 56, inciso I disciplina intimação do acusado e testemunhas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 859,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — registro dos atos processuais",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar registro dos atos processuais. Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Os atos processuais devem ser registrados formalmente por escrito; também podem ser registrados por meio magnético, eletrônico, digital ou similar, sem dispensa do registro escrito.",
+          "B) Não se declara nulidade de ato processual que não tenha influído na apuração da verdade substancial ou diretamente na decisão final do processo regular.",
+          "C) As peças do processo devem ser reunidas em um único processado, por ordem cronológica, com folhas numeradas e rubricadas pelo escrivão.",
+          "D) No processo administrativo são admitidas todas as espécies de provas, observados, no que aplicáveis, os preceitos dos arts. 294 a 383 do CPPM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57, § 3º. Evidência normativa: Os atos processuais devem ser registrados formalmente por escrito; também podem ser registrados por meio magnético, eletrônico, digital ou similar, sem dispensa do registro escrito. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57, § 1º disciplina nulidade de ato processual, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 163, I-16-PM, art. 58 disciplina organização das peças do processo, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57 disciplina admissibilidade de provas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 860,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — organização das peças do processo",
+        "text": "Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), quanto a organização das peças do processo, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Os atos processuais devem ser registrados formalmente por escrito; também podem ser registrados por meio magnético, eletrônico, digital ou similar, sem dispensa do registro escrito.",
+          "B) É desnecessária a autenticação de documento destinado à instrução, desde que apresente condições gráficas satisfatórias para consulta e extração de cópias legíveis.",
+          "C) Não se declara nulidade de ato processual que não tenha influído na apuração da verdade substancial ou diretamente na decisão final do processo regular.",
+          "D) As peças do processo devem ser reunidas em um único processado, por ordem cronológica, com folhas numeradas e rubricadas pelo escrivão."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 163, I-16-PM, art. 58. Evidência normativa: As peças do processo devem ser reunidas em um único processado, por ordem cronológica, com folhas numeradas e rubricadas pelo escrivão. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57, § 3º disciplina registro dos atos processuais, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 163, I-16-PM, art. 58, § 1º disciplina autenticação de cópias, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57, § 1º disciplina nulidade de ato processual, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 861,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — autenticação de cópias",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar autenticação de cópias. Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) As peças do processo devem ser reunidas em um único processado, por ordem cronológica, com folhas numeradas e rubricadas pelo escrivão.",
+          "B) A investigação preliminar deve ser encerrada em prazo improrrogável de 10 dias, contados ininterruptamente do despacho de instauração.",
+          "C) É desnecessária a autenticação de documento destinado à instrução, desde que apresente condições gráficas satisfatórias para consulta e extração de cópias legíveis.",
+          "D) Os atos processuais devem ser registrados formalmente por escrito; também podem ser registrados por meio magnético, eletrônico, digital ou similar, sem dispensa do registro escrito."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 163, I-16-PM, art. 58, § 1º. Evidência normativa: É desnecessária a autenticação de documento destinado à instrução, desde que apresente condições gráficas satisfatórias para consulta e extração de cópias legíveis. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 163, I-16-PM, art. 58 disciplina organização das peças do processo, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 166, I-16-PM, art. 66, § 3º disciplina prazo da investigação preliminar, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 162, I-16-PM, art. 57, § 3º disciplina registro dos atos processuais, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 862,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — prazo da investigação preliminar",
+        "text": "Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), quanto a prazo da investigação preliminar, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Na investigação preliminar é vedada a adoção de meios formais de apuração, como Termo de Declaração, Inquirição Sumária, Auto de Qualificação e Interrogatório e pedido de exames periciais.",
+          "B) A investigação preliminar deve ser encerrada em prazo improrrogável de 10 dias, contados ininterruptamente do despacho de instauração.",
+          "C) A citação informa ao acusado o prazo de 5 dias para constituir defensor e apresentar defesa preliminar por escrito.",
+          "D) É desnecessária a autenticação de documento destinado à instrução, desde que apresente condições gráficas satisfatórias para consulta e extração de cópias legíveis."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 166, I-16-PM, art. 66, § 3º. Evidência normativa: A investigação preliminar deve ser encerrada em prazo improrrogável de 10 dias, contados ininterruptamente do despacho de instauração. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 166, I-16-PM, art. 66, § 5º, item 2 disciplina formalidades vedadas na investigação preliminar, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, § 1º, item 5 disciplina prazo de defesa preliminar após citação, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 163, I-16-PM, art. 58, § 1º disciplina autenticação de cópias, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 863,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — indícios claros de crime militar",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar indícios claros de crime militar. Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Havendo indícios claros de crime militar, não se instaura investigação preliminar, devendo ser observado o procedimento previsto no art. 12 do CPPM.",
+          "B) A investigação preliminar deve ser encerrada em prazo improrrogável de 10 dias, contados ininterruptamente do despacho de instauração.",
+          "C) Na investigação preliminar é vedada a adoção de meios formais de apuração, como Termo de Declaração, Inquirição Sumária, Auto de Qualificação e Interrogatório e pedido de exames periciais.",
+          "D) É desnecessária a autenticação de documento destinado à instrução, desde que apresente condições gráficas satisfatórias para consulta e extração de cópias legíveis."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 166, I-16-PM, art. 66, § 4º. Evidência normativa: Havendo indícios claros de crime militar, não se instaura investigação preliminar, devendo ser observado o procedimento previsto no art. 12 do CPPM. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 166, I-16-PM, art. 66, § 3º disciplina prazo da investigação preliminar, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 166, I-16-PM, art. 66, § 5º, item 2 disciplina formalidades vedadas na investigação preliminar, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 163, I-16-PM, art. 58, § 1º disciplina autenticação de cópias, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 864,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — formalidades vedadas na investigação preliminar",
+        "text": "Considerando I-16-PM (Instruções do Processo Administrativo da Polícia Militar), quanto a formalidades vedadas na investigação preliminar, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A investigação preliminar deve ser encerrada em prazo improrrogável de 10 dias, contados ininterruptamente do despacho de instauração.",
+          "B) A citação informa ao acusado o prazo de 5 dias para constituir defensor e apresentar defesa preliminar por escrito.",
+          "C) Havendo indícios claros de crime militar, não se instaura investigação preliminar, devendo ser observado o procedimento previsto no art. 12 do CPPM.",
+          "D) Na investigação preliminar é vedada a adoção de meios formais de apuração, como Termo de Declaração, Inquirição Sumária, Auto de Qualificação e Interrogatório e pedido de exames periciais."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 166, I-16-PM, art. 66, § 5º, item 2. Evidência normativa: Na investigação preliminar é vedada a adoção de meios formais de apuração, como Termo de Declaração, Inquirição Sumária, Auto de Qualificação e Interrogatório e pedido de exames periciais. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 166, I-16-PM, art. 66, § 3º disciplina prazo da investigação preliminar, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 161, I-16-PM, art. 54, § 1º, item 5 disciplina prazo de defesa preliminar após citação, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 166, I-16-PM, art. 66, § 4º disciplina indícios claros de crime militar, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 865,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — controle de efetivo por turno",
+        "text": "Ao analisar a situação funcional e os requisitos de acesso, a autoridade precisa verificar controle de efetivo por turno. Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Na semana com dois dias sem expediente administrativo, o militar designado docente pode ministrar aula em um dos turnos se houver previsão no QTS do OAES ou da OPM Gestora do Conhecimento.",
+          "B) CMed, COdont, CRPM e UIS devem manter aviso externo e visível, próximo à recepção, com período de funcionamento e nomes e horários de atendimento dos Oficiais de Saúde.",
+          "C) Os desdobramentos de turnos devem ser controlados pelo Cmt OPM até o nível de Cia PM, mantendo no mínimo 50% do efetivo em cada turno, em todos os dias da semana.",
+          "D) O afastamento de integrante do QOS que impeça atendimento deve constar obrigatoriamente do aviso antes do início da fruição."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 1º. Evidência normativa: Os desdobramentos de turnos devem ser controlados pelo Cmt OPM até o nível de Cia PM, mantendo no mínimo 50% do efetivo em cada turno, em todos os dias da semana. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 3º, redação da Portaria PM1-001/02/26 disciplina docência em semana com dois dias sem expediente, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 1º disciplina aviso de funcionamento de unidades de saúde, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 2º disciplina aviso prévio de afastamento de profissional de saúde, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 866,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — docência em semana com dois dias sem expediente",
+        "text": "Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, quanto a docência em semana com dois dias sem expediente, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O PM designado para ministrar aulas em cursos ou estágios da Instituição deve exercer a função durante folgas decorrentes do desdobramento de turnos, ressalvada a exceção prevista para OAES ou OGC.",
+          "B) Na semana com dois dias sem expediente administrativo, o militar designado docente pode ministrar aula em um dos turnos se houver previsão no QTS do OAES ou da OPM Gestora do Conhecimento.",
+          "C) O expediente administrativo dos Órgãos de Direção Geral e Setorial pode ser adaptado às necessidades institucionais por ato específico do respectivo Comandante, Chefe ou Diretor.",
+          "D) Os desdobramentos de turnos devem ser controlados pelo Cmt OPM até o nível de Cia PM, mantendo no mínimo 50% do efetivo em cada turno, em todos os dias da semana."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 3º, redação da Portaria PM1-001/02/26. Evidência normativa: Na semana com dois dias sem expediente administrativo, o militar designado docente pode ministrar aula em um dos turnos se houver previsão no QTS do OAES ou da OPM Gestora do Conhecimento. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 331, art. 17, redação da Portaria PM1-001/02/26 disciplina docência durante folgas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 331, art. 14 disciplina adaptação de expediente de órgãos de direção, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 1º disciplina controle de efetivo por turno, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 867,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — aviso de funcionamento de unidades de saúde",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar aviso de funcionamento de unidades de saúde. Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) CMed, COdont, CRPM e UIS devem manter aviso externo e visível, próximo à recepção, com período de funcionamento e nomes e horários de atendimento dos Oficiais de Saúde.",
+          "B) O afastamento de integrante do QOS que impeça atendimento deve constar obrigatoriamente do aviso antes do início da fruição.",
+          "C) Na semana com dois dias sem expediente administrativo, o militar designado docente pode ministrar aula em um dos turnos se houver previsão no QTS do OAES ou da OPM Gestora do Conhecimento.",
+          "D) Os desdobramentos de turnos devem ser controlados pelo Cmt OPM até o nível de Cia PM, mantendo no mínimo 50% do efetivo em cada turno, em todos os dias da semana."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 1º. Evidência normativa: CMed, COdont, CRPM e UIS devem manter aviso externo e visível, próximo à recepção, com período de funcionamento e nomes e horários de atendimento dos Oficiais de Saúde. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 2º disciplina aviso prévio de afastamento de profissional de saúde, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 3º, redação da Portaria PM1-001/02/26 disciplina docência em semana com dois dias sem expediente, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 1º disciplina controle de efetivo por turno, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 868,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — aviso prévio de afastamento de profissional de saúde",
+        "text": "Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, quanto a aviso prévio de afastamento de profissional de saúde, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) CMed, COdont, CRPM e UIS devem manter aviso externo e visível, próximo à recepção, com período de funcionamento e nomes e horários de atendimento dos Oficiais de Saúde.",
+          "B) A folga mensal obrigatória não pode ser usufruída na sequência de dispensa do serviço, dispensa-recompensa, dispensa para doação de sangue ou outro afastamento temporário.",
+          "C) Na semana com dois dias sem expediente administrativo, o militar designado docente pode ministrar aula em um dos turnos se houver previsão no QTS do OAES ou da OPM Gestora do Conhecimento.",
+          "D) O afastamento de integrante do QOS que impeça atendimento deve constar obrigatoriamente do aviso antes do início da fruição."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 2º. Evidência normativa: O afastamento de integrante do QOS que impeça atendimento deve constar obrigatoriamente do aviso antes do início da fruição. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 1º disciplina aviso de funcionamento de unidades de saúde, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 330, art. 12, § 5º disciplina restrição de folga mensal após afastamentos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 3º, redação da Portaria PM1-001/02/26 disciplina docência em semana com dois dias sem expediente, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 869,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — restrição de folga mensal após afastamentos",
+        "text": "Ao organizar o regime de trabalho e a continuidade do serviço, o comando precisa verificar restrição de folga mensal após afastamentos. Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A vedação de usufruir a folga mensal obrigatória na sequência de afastamento não se aplica aos casos de início de férias ou licença-prêmio.",
+          "B) O afastamento de integrante do QOS que impeça atendimento deve constar obrigatoriamente do aviso antes do início da fruição.",
+          "C) A folga mensal obrigatória não pode ser usufruída na sequência de dispensa do serviço, dispensa-recompensa, dispensa para doação de sangue ou outro afastamento temporário.",
+          "D) CMed, COdont, CRPM e UIS devem manter aviso externo e visível, próximo à recepção, com período de funcionamento e nomes e horários de atendimento dos Oficiais de Saúde."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 330, art. 12, § 5º. Evidência normativa: A folga mensal obrigatória não pode ser usufruída na sequência de dispensa do serviço, dispensa-recompensa, dispensa para doação de sangue ou outro afastamento temporário. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 330, art. 12, § 6º disciplina exceção à restrição de sequência da folga, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 2º disciplina aviso prévio de afastamento de profissional de saúde, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 1º disciplina aviso de funcionamento de unidades de saúde, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 870,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — exceção à restrição de sequência da folga",
+        "text": "Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, quanto a exceção à restrição de sequência da folga, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A folga mensal obrigatória não pode ser usufruída na sequência de dispensa do serviço, dispensa-recompensa, dispensa para doação de sangue ou outro afastamento temporário.",
+          "B) A vedação de usufruir a folga mensal obrigatória na sequência de afastamento não se aplica aos casos de início de férias ou licença-prêmio.",
+          "C) O expediente administrativo dos Órgãos de Direção Geral e Setorial pode ser adaptado às necessidades institucionais por ato específico do respectivo Comandante, Chefe ou Diretor.",
+          "D) O afastamento de integrante do QOS que impeça atendimento deve constar obrigatoriamente do aviso antes do início da fruição."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 330, art. 12, § 6º. Evidência normativa: A vedação de usufruir a folga mensal obrigatória na sequência de afastamento não se aplica aos casos de início de férias ou licença-prêmio. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 330, art. 12, § 5º disciplina restrição de folga mensal após afastamentos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 331, art. 14 disciplina adaptação de expediente de órgãos de direção, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 2º disciplina aviso prévio de afastamento de profissional de saúde, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 871,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — adaptação de expediente de órgãos de direção",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar adaptação de expediente de órgãos de direção. Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O expediente administrativo dos Órgãos de Direção Geral e Setorial pode ser adaptado às necessidades institucionais por ato específico do respectivo Comandante, Chefe ou Diretor.",
+          "B) Na semana com dois dias sem expediente administrativo, o militar designado docente pode ministrar aula em um dos turnos se houver previsão no QTS do OAES ou da OPM Gestora do Conhecimento.",
+          "C) A vedação de usufruir a folga mensal obrigatória na sequência de afastamento não se aplica aos casos de início de férias ou licença-prêmio.",
+          "D) Para melhor aproveitamento de equipamentos, atendimentos clínicos ou atividades específicas do CMed, COdont e CRPM podem iniciar às 06h e encerrar até 23h, ressalvados serviços com plantões permanentes."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 331, art. 14. Evidência normativa: O expediente administrativo dos Órgãos de Direção Geral e Setorial pode ser adaptado às necessidades institucionais por ato específico do respectivo Comandante, Chefe ou Diretor. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 3º, redação da Portaria PM1-001/02/26 disciplina docência em semana com dois dias sem expediente, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 330, art. 12, § 6º disciplina exceção à restrição de sequência da folga, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 331, art. 15 disciplina horário de atendimento clínico, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 872,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — horário de atendimento clínico",
+        "text": "Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, quanto a horário de atendimento clínico, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O expediente administrativo dos Órgãos de Direção Geral e Setorial pode ser adaptado às necessidades institucionais por ato específico do respectivo Comandante, Chefe ou Diretor.",
+          "B) O PM designado para ministrar aulas em cursos ou estágios da Instituição deve exercer a função durante folgas decorrentes do desdobramento de turnos, ressalvada a exceção prevista para OAES ou OGC.",
+          "C) A vedação de usufruir a folga mensal obrigatória na sequência de afastamento não se aplica aos casos de início de férias ou licença-prêmio.",
+          "D) Para melhor aproveitamento de equipamentos, atendimentos clínicos ou atividades específicas do CMed, COdont e CRPM podem iniciar às 06h e encerrar até 23h, ressalvados serviços com plantões permanentes."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 331, art. 15. Evidência normativa: Para melhor aproveitamento de equipamentos, atendimentos clínicos ou atividades específicas do CMed, COdont e CRPM podem iniciar às 06h e encerrar até 23h, ressalvados serviços com plantões permanentes. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 331, art. 14 disciplina adaptação de expediente de órgãos de direção, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 331, art. 17, redação da Portaria PM1-001/02/26 disciplina docência durante folgas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 330, art. 12, § 6º disciplina exceção à restrição de sequência da folga, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 873,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — docência durante folgas",
+        "text": "Ao organizar o regime de trabalho e a continuidade do serviço, o comando precisa verificar docência durante folgas. Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Na semana com dois dias sem expediente administrativo, o militar designado docente pode ministrar aula em um dos turnos se houver previsão no QTS do OAES ou da OPM Gestora do Conhecimento.",
+          "B) Para melhor aproveitamento de equipamentos, atendimentos clínicos ou atividades específicas do CMed, COdont e CRPM podem iniciar às 06h e encerrar até 23h, ressalvados serviços com plantões permanentes.",
+          "C) O PM designado para ministrar aulas em cursos ou estágios da Instituição deve exercer a função durante folgas decorrentes do desdobramento de turnos, ressalvada a exceção prevista para OAES ou OGC.",
+          "D) Aos períodos de serviço em regime de escala podem ser acrescentados até 30 minutos para instrução e/ou avaliação."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 331, art. 17, redação da Portaria PM1-001/02/26. Evidência normativa: O PM designado para ministrar aulas em cursos ou estágios da Instituição deve exercer a função durante folgas decorrentes do desdobramento de turnos, ressalvada a exceção prevista para OAES ou OGC. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 3º, redação da Portaria PM1-001/02/26 disciplina docência em semana com dois dias sem expediente, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 331, art. 15 disciplina horário de atendimento clínico, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 331, art. 18 disciplina acréscimo ao período de serviço, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 874,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — acréscimo ao período de serviço",
+        "text": "Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, quanto a acréscimo ao período de serviço, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O PM designado para ministrar aulas em cursos ou estágios da Instituição deve exercer a função durante folgas decorrentes do desdobramento de turnos, ressalvada a exceção prevista para OAES ou OGC.",
+          "B) Aos períodos de serviço em regime de escala podem ser acrescentados até 30 minutos para instrução e/ou avaliação.",
+          "C) OPM que necessitem de regime de trabalho diverso do estabelecido devem apresentar propostas e razões para análise do EM/PM e decisão posterior do Cmdo G.",
+          "D) Para melhor aproveitamento de equipamentos, atendimentos clínicos ou atividades específicas do CMed, COdont e CRPM podem iniciar às 06h e encerrar até 23h, ressalvados serviços com plantões permanentes."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 331, art. 18. Evidência normativa: Aos períodos de serviço em regime de escala podem ser acrescentados até 30 minutos para instrução e/ou avaliação. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 331, art. 17, redação da Portaria PM1-001/02/26 disciplina docência durante folgas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 331, art. 19 disciplina propostas de regime diverso, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 331, art. 15 disciplina horário de atendimento clínico, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 875,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — propostas de regime diverso",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar propostas de regime diverso. Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) OPM que necessitem de regime de trabalho diverso do estabelecido devem apresentar propostas e razões para análise do EM/PM e decisão posterior do Cmdo G.",
+          "B) Aos períodos de serviço em regime de escala podem ser acrescentados até 30 minutos para instrução e/ou avaliação.",
+          "C) Os Órgãos de Direção, Apoio e Execução devem adequar suas Ordens, Notas, Instruções e Diretrizes à Portaria de regime de trabalho.",
+          "D) O PM designado para ministrar aulas em cursos ou estágios da Instituição deve exercer a função durante folgas decorrentes do desdobramento de turnos, ressalvada a exceção prevista para OAES ou OGC."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 331, art. 19. Evidência normativa: OPM que necessitem de regime de trabalho diverso do estabelecido devem apresentar propostas e razões para análise do EM/PM e decisão posterior do Cmdo G. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 331, art. 18 disciplina acréscimo ao período de serviço, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 331, art. 20 disciplina adequação de atos internos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 331, art. 17, redação da Portaria PM1-001/02/26 disciplina docência durante folgas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 876,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de Trabalho — adequação de atos internos",
+        "text": "Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, quanto a adequação de atos internos, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) OPM que necessitem de regime de trabalho diverso do estabelecido devem apresentar propostas e razões para análise do EM/PM e decisão posterior do Cmdo G.",
+          "B) Aos períodos de serviço em regime de escala podem ser acrescentados até 30 minutos para instrução e/ou avaliação.",
+          "C) O PM designado para ministrar aulas em cursos ou estágios da Instituição deve exercer a função durante folgas decorrentes do desdobramento de turnos, ressalvada a exceção prevista para OAES ou OGC.",
+          "D) Os Órgãos de Direção, Apoio e Execução devem adequar suas Ordens, Notas, Instruções e Diretrizes à Portaria de regime de trabalho."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 331, art. 20. Evidência normativa: Os Órgãos de Direção, Apoio e Execução devem adequar suas Ordens, Notas, Instruções e Diretrizes à Portaria de regime de trabalho. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 331, art. 19 disciplina propostas de regime diverso, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 331, art. 18 disciplina acréscimo ao período de serviço, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 331, art. 17, redação da Portaria PM1-001/02/26 disciplina docência durante folgas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 877,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — quantitativo total de cargos",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar quantitativo total de cargos. Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Os cargos de Secretário-Chefe da Casa Militar, Comandante-Geral e Subcomandante da PM são de provimento em comissão e exercidos por Oficiais PM da ativa ocupantes do último posto do QOEM.",
+          "B) O decreto de distribuição do efetivo deve ser editado no primeiro semestre do ano anterior ao de sua entrada em vigor.",
+          "C) O efetivo da PMESP é fixado em 93.802 cargos, distribuídos conforme os limites do art. 3º da Lei nº 18.442/26.",
+          "D) O excedente decorrente de diferença entre promovidos e quantitativo distribuído em QO é considerado provisório até nova distribuição de efetivo por decreto do Governador."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 11, resumo do art. 3º. Evidência normativa: O efetivo da PMESP é fixado em 93.802 cargos, distribuídos conforme os limites do art. 3º da Lei nº 18.442/26. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Juridicos-administrativos.pdf, PDF p. 18, resumo da Lei nº 18.442/26 disciplina composição de cargos de comando, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina momento de edição do decreto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina tratamento do excedente de promovidos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 878,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — momento de edição do decreto",
+        "text": "Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, quanto a momento de edição do decreto, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O efetivo da PMESP é fixado em 93.802 cargos, distribuídos conforme os limites do art. 3º da Lei nº 18.442/26.",
+          "B) O decreto de distribuição do efetivo deve ser editado no primeiro semestre do ano anterior ao de sua entrada em vigor.",
+          "C) O excedente decorrente de diferença entre promovidos e quantitativo distribuído em QO é considerado provisório até nova distribuição de efetivo por decreto do Governador.",
+          "D) O Cadete PM é promovido à graduação de Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º. Evidência normativa: O decreto de distribuição do efetivo deve ser editado no primeiro semestre do ano anterior ao de sua entrada em vigor. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Juridicos-administrativos.pdf, PDF p. 11, resumo do art. 3º disciplina quantitativo total de cargos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina tratamento do excedente de promovidos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina promoção de Cadete a Aspirante, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 879,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — tratamento do excedente de promovidos",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar tratamento do excedente de promovidos. Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O excedente decorrente de diferença entre promovidos e quantitativo distribuído em QO é considerado provisório até nova distribuição de efetivo por decreto do Governador.",
+          "B) O decreto de distribuição do efetivo deve ser editado no primeiro semestre do ano anterior ao de sua entrada em vigor.",
+          "C) O Cadete PM é promovido à graduação de Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO.",
+          "D) O efetivo da PMESP é fixado em 93.802 cargos, distribuídos conforme os limites do art. 3º da Lei nº 18.442/26."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º. Evidência normativa: O excedente decorrente de diferença entre promovidos e quantitativo distribuído em QO é considerado provisório até nova distribuição de efetivo por decreto do Governador. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina momento de edição do decreto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina promoção de Cadete a Aspirante, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Juridicos-administrativos.pdf, PDF p. 11, resumo do art. 3º disciplina quantitativo total de cargos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 880,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — promoção de Cadete a Aspirante",
+        "text": "Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, quanto a promoção de Cadete a Aspirante, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O 2º Tenente PM do QOE ou do QOM que possuir um ano no posto será promovido a 1º Tenente PM do respectivo Quadro.",
+          "B) O excedente decorrente de diferença entre promovidos e quantitativo distribuído em QO é considerado provisório até nova distribuição de efetivo por decreto do Governador.",
+          "C) O decreto de distribuição do efetivo deve ser editado no primeiro semestre do ano anterior ao de sua entrada em vigor.",
+          "D) O Cadete PM é promovido à graduação de Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º. Evidência normativa: O Cadete PM é promovido à graduação de Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina promoção de 2º Tenente do QOE/QOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina tratamento do excedente de promovidos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina momento de edição do decreto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 881,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — promoção de 2º Tenente do QOE/QOM",
+        "text": "Ao analisar a situação funcional e os requisitos de acesso, a autoridade precisa verificar promoção de 2º Tenente do QOE/QOM. Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Para relações de acesso complementares podem ser cogitados novos Subtenentes, com informações atualizadas nas mesmas datas utilizadas para as relações ordinárias.",
+          "B) O Cadete PM é promovido à graduação de Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO.",
+          "C) O 2º Tenente PM do QOE ou do QOM que possuir um ano no posto será promovido a 1º Tenente PM do respectivo Quadro.",
+          "D) Não são considerados nos limites de efetivo do art. 3º o Aspirante a Oficial, os alunos dos cursos indicados, o militar da reserva revertido ao serviço ativo e o PM temporário."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º. Evidência normativa: O 2º Tenente PM do QOE ou do QOM que possuir um ano no posto será promovido a 1º Tenente PM do respectivo Quadro. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Juridicos-administrativos.pdf, PDF p. 21, resumo do processo de promoção disciplina relação de acesso complementar QOE/QOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina promoção de Cadete a Aspirante, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina exclusões do limite de efetivo, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 882,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — exclusões do limite de efetivo",
+        "text": "Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, quanto a exclusões do limite de efetivo, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O 2º Tenente PM do QOE ou do QOM que possuir um ano no posto será promovido a 1º Tenente PM do respectivo Quadro.",
+          "B) Não são considerados nos limites de efetivo do art. 3º o Aspirante a Oficial, os alunos dos cursos indicados, o militar da reserva revertido ao serviço ativo e o PM temporário.",
+          "C) Na nova nomenclatura, QOPM passa a QOEM, QAOPM passa a QOE e QPPM passa a QP.",
+          "D) O Cadete PM é promovido à graduação de Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º. Evidência normativa: Não são considerados nos limites de efetivo do art. 3º o Aspirante a Oficial, os alunos dos cursos indicados, o militar da reserva revertido ao serviço ativo e o PM temporário. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina promoção de 2º Tenente do QOE/QOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 10, quadro de nomenclaturas disciplina nomenclatura dos quadros, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina promoção de Cadete a Aspirante, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 883,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — nomenclatura dos quadros",
+        "text": "Ao analisar a situação funcional e os requisitos de acesso, a autoridade precisa verificar nomenclatura dos quadros. Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Na nova nomenclatura, QOPM passa a QOEM, QAOPM passa a QOE e QPPM passa a QP.",
+          "B) Não são considerados nos limites de efetivo do art. 3º o Aspirante a Oficial, os alunos dos cursos indicados, o militar da reserva revertido ao serviço ativo e o PM temporário.",
+          "C) O Oficial do QOS realiza o curso de adaptação no posto de Primeiro-Tenente PM.",
+          "D) O 2º Tenente PM do QOE ou do QOM que possuir um ano no posto será promovido a 1º Tenente PM do respectivo Quadro."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 10, quadro de nomenclaturas. Evidência normativa: Na nova nomenclatura, QOPM passa a QOEM, QAOPM passa a QOE e QPPM passa a QP. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina exclusões do limite de efetivo, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina curso de adaptação para QOS, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina promoção de 2º Tenente do QOE/QOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 884,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — curso de adaptação para QOS",
+        "text": "Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, quanto a curso de adaptação para QOS, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Na nova nomenclatura, QOPM passa a QOEM, QAOPM passa a QOE e QPPM passa a QP.",
+          "B) Durante os cursos CFS, CHOE e CHO-Mus, Aluno-Oficial e Aluno-Sargento conservam prerrogativas, direitos e deveres da graduação anterior, inclusive os remuneratórios.",
+          "C) Não são considerados nos limites de efetivo do art. 3º o Aspirante a Oficial, os alunos dos cursos indicados, o militar da reserva revertido ao serviço ativo e o PM temporário.",
+          "D) O Oficial do QOS realiza o curso de adaptação no posto de Primeiro-Tenente PM."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º. Evidência normativa: O Oficial do QOS realiza o curso de adaptação no posto de Primeiro-Tenente PM. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Juridicos-administrativos.pdf, PDF p. 10, quadro de nomenclaturas disciplina nomenclatura dos quadros, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 13, resumo do art. 16 disciplina condição dos Alunos-Oficiais e Alunos-Sargentos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina exclusões do limite de efetivo, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 885,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — condição dos Alunos-Oficiais e Alunos-Sargentos",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar condição dos Alunos-Oficiais e Alunos-Sargentos. Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O Oficial do QOS realiza o curso de adaptação no posto de Primeiro-Tenente PM.",
+          "B) O Comandante-Geral PM é nomeado pelo Governador dentre oficiais da ativa ocupantes do último posto do QOEM.",
+          "C) Durante os cursos CFS, CHOE e CHO-Mus, Aluno-Oficial e Aluno-Sargento conservam prerrogativas, direitos e deveres da graduação anterior, inclusive os remuneratórios.",
+          "D) Na nova nomenclatura, QOPM passa a QOEM, QAOPM passa a QOE e QPPM passa a QP."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 13, resumo do art. 16. Evidência normativa: Durante os cursos CFS, CHOE e CHO-Mus, Aluno-Oficial e Aluno-Sargento conservam prerrogativas, direitos e deveres da graduação anterior, inclusive os remuneratórios. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina curso de adaptação para QOS, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 10, redação reproduzida do art. 141, § 1º, da CESP/89 disciplina Comandante-Geral e último posto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Juridicos-administrativos.pdf, PDF p. 10, quadro de nomenclaturas disciplina nomenclatura dos quadros, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 886,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — Comandante-Geral e último posto",
+        "text": "Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, quanto a Comandante-Geral e último posto, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Durante os cursos CFS, CHOE e CHO-Mus, Aluno-Oficial e Aluno-Sargento conservam prerrogativas, direitos e deveres da graduação anterior, inclusive os remuneratórios.",
+          "B) O Comandante-Geral PM é nomeado pelo Governador dentre oficiais da ativa ocupantes do último posto do QOEM.",
+          "C) Os cargos de Secretário-Chefe da Casa Militar, Comandante-Geral e Subcomandante da PM são de provimento em comissão e exercidos por Oficiais PM da ativa ocupantes do último posto do QOEM.",
+          "D) O Oficial do QOS realiza o curso de adaptação no posto de Primeiro-Tenente PM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 10, redação reproduzida do art. 141, § 1º, da CESP/89. Evidência normativa: O Comandante-Geral PM é nomeado pelo Governador dentre oficiais da ativa ocupantes do último posto do QOEM. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Juridicos-administrativos.pdf, PDF p. 13, resumo do art. 16 disciplina condição dos Alunos-Oficiais e Alunos-Sargentos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 18, resumo da Lei nº 18.442/26 disciplina composição de cargos de comando, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina curso de adaptação para QOS, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 887,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — composição de cargos de comando",
+        "text": "Durante o planejamento da estrutura ou equipe correspondente, surge dúvida sobre composição de cargos de comando. Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Os cargos de Secretário-Chefe da Casa Militar, Comandante-Geral e Subcomandante da PM são de provimento em comissão e exercidos por Oficiais PM da ativa ocupantes do último posto do QOEM.",
+          "B) O efetivo da PMESP é fixado em 93.802 cargos, distribuídos conforme os limites do art. 3º da Lei nº 18.442/26.",
+          "C) O Comandante-Geral PM é nomeado pelo Governador dentre oficiais da ativa ocupantes do último posto do QOEM.",
+          "D) Para relações de acesso complementares podem ser cogitados novos Subtenentes, com informações atualizadas nas mesmas datas utilizadas para as relações ordinárias."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 18, resumo da Lei nº 18.442/26. Evidência normativa: Os cargos de Secretário-Chefe da Casa Militar, Comandante-Geral e Subcomandante da PM são de provimento em comissão e exercidos por Oficiais PM da ativa ocupantes do último posto do QOEM. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 11, resumo do art. 3º disciplina quantitativo total de cargos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 10, redação reproduzida do art. 141, § 1º, da CESP/89 disciplina Comandante-Geral e último posto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Juridicos-administrativos.pdf, PDF p. 21, resumo do processo de promoção disciplina relação de acesso complementar QOE/QOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 888,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Legislação Promoção — relação de acesso complementar QOE/QOM",
+        "text": "Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, quanto a relação de acesso complementar QOE/QOM, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O 2º Tenente PM do QOE ou do QOM que possuir um ano no posto será promovido a 1º Tenente PM do respectivo Quadro.",
+          "B) Os cargos de Secretário-Chefe da Casa Militar, Comandante-Geral e Subcomandante da PM são de provimento em comissão e exercidos por Oficiais PM da ativa ocupantes do último posto do QOEM.",
+          "C) O Comandante-Geral PM é nomeado pelo Governador dentre oficiais da ativa ocupantes do último posto do QOEM.",
+          "D) Para relações de acesso complementares podem ser cogitados novos Subtenentes, com informações atualizadas nas mesmas datas utilizadas para as relações ordinárias."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 21, resumo do processo de promoção. Evidência normativa: Para relações de acesso complementares podem ser cogitados novos Subtenentes, com informações atualizadas nas mesmas datas utilizadas para as relações ordinárias. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina promoção de 2º Tenente do QOE/QOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 18, resumo da Lei nº 18.442/26 disciplina composição de cargos de comando, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 10, redação reproduzida do art. 141, § 1º, da CESP/89 disciplina Comandante-Geral e último posto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 889,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — monitoramento normativo da sistemática",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar monitoramento normativo da sistemática. Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A 6ª EM/PM revisa os POP relacionados e desenvolve indicadores estratégicos em conjunto com Coord Op PM, COPOM e DPCDH.",
+          "B) A DPCDH capacita e atualiza PM indicados, mantém controle quantitativo e nominal dos capacitados e disponibiliza a relação para consulta das OPM na Intranet.",
+          "C) A 3ª EM/PM monitora a evolução da Sistemática para identificar necessidades de atualização, aperfeiçoamento e adequação normativa.",
+          "D) A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 393, item 6.6.1. Evidência normativa: A 3ª EM/PM monitora a evolução da Sistemática para identificar necessidades de atualização, aperfeiçoamento e adequação normativa. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 393, itens 6.6.2.1 e 6.6.2.2 disciplina revisão de POP e indicadores, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 393, itens 6.6.3.1 e 6.6.3.3.1 disciplina capacitação e controle pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 393, item 6.6.3.3.2 disciplina controle de palestras pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 890,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — revisão de POP e indicadores",
+        "text": "Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), quanto a revisão de POP e indicadores, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A 3ª EM/PM monitora a evolução da Sistemática para identificar necessidades de atualização, aperfeiçoamento e adequação normativa.",
+          "B) A 6ª EM/PM revisa os POP relacionados e desenvolve indicadores estratégicos em conjunto com Coord Op PM, COPOM e DPCDH.",
+          "C) A DPCDH capacita e atualiza PM indicados, mantém controle quantitativo e nominal dos capacitados e disponibiliza a relação para consulta das OPM na Intranet.",
+          "D) A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 393, itens 6.6.2.1 e 6.6.2.2. Evidência normativa: A 6ª EM/PM revisa os POP relacionados e desenvolve indicadores estratégicos em conjunto com Coord Op PM, COPOM e DPCDH. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 393, item 6.6.1 disciplina monitoramento normativo da sistemática, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 393, itens 6.6.3.1 e 6.6.3.3.1 disciplina capacitação e controle pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 393, item 6.6.3.3.2 disciplina controle de palestras pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 891,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — capacitação e controle pela DPCDH",
+        "text": "Ao controlar o andamento do procedimento, o responsável precisa definir capacitação e controle pela DPCDH. Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A DPCDH capacita e atualiza PM indicados, mantém controle quantitativo e nominal dos capacitados e disponibiliza a relação para consulta das OPM na Intranet.",
+          "B) A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas.",
+          "C) O COPOM São Paulo mantém controle quantitativo de Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás.",
+          "D) A 6ª EM/PM revisa os POP relacionados e desenvolve indicadores estratégicos em conjunto com Coord Op PM, COPOM e DPCDH."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 393, itens 6.6.3.1 e 6.6.3.3.1. Evidência normativa: A DPCDH capacita e atualiza PM indicados, mantém controle quantitativo e nominal dos capacitados e disponibiliza a relação para consulta das OPM na Intranet. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 393, item 6.6.3.3.2 disciplina controle de palestras pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.2.4 disciplina controle de visitas pelo COPOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 393, itens 6.6.2.1 e 6.6.2.2 disciplina revisão de POP e indicadores, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 892,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — controle de palestras pela DPCDH",
+        "text": "Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), quanto a controle de palestras pela DPCDH, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A DPCDH capacita e atualiza PM indicados, mantém controle quantitativo e nominal dos capacitados e disponibiliza a relação para consulta das OPM na Intranet.",
+          "B) O COPOM São Paulo mantém controle quantitativo de Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás.",
+          "C) A Coord Op PM avalia semestralmente os programas Lar Mais Seguro, Patrulha Maria da Penha e SP Mulher Segura e encaminha relatório ao Subcmt PM via 3ª EM/PM.",
+          "D) A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 393, item 6.6.3.3.2. Evidência normativa: A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 393, itens 6.6.3.1 e 6.6.3.3.1 disciplina capacitação e controle pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.2.4 disciplina controle de visitas pelo COPOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.1 disciplina avaliação semestral dos programas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 893,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — avaliação semestral dos programas",
+        "text": "Durante a aplicação da norma ao caso concreto, o responsável precisa verificar avaliação semestral dos programas. Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) Antes de empregar Patrulhas Maria da Penha ou SP Mulher Segura em áreas deterioradas ou hostis, o Supervisor SOp, ou na ausência CFP/CGP, avalia o cenário e providencia apoio territorial compatível.",
+          "B) A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas.",
+          "C) A Coord Op PM avalia semestralmente os programas Lar Mais Seguro, Patrulha Maria da Penha e SP Mulher Segura e encaminha relatório ao Subcmt PM via 3ª EM/PM.",
+          "D) Por intermédio do COPOM São Paulo, a Coord Op PM coordena o Escritório Estadual da Cabine Lilás e promove integração entre Cabine Lilás e Espaço Lilás."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.1. Evidência normativa: A Coord Op PM avalia semestralmente os programas Lar Mais Seguro, Patrulha Maria da Penha e SP Mulher Segura e encaminha relatório ao Subcmt PM via 3ª EM/PM. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 396, item 6.7.4 disciplina avaliação prévia do risco operacional, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 393, item 6.6.3.3.2 disciplina controle de palestras pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.2.2 disciplina coordenação estadual da Cabine Lilás, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 894,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — coordenação estadual da Cabine Lilás",
+        "text": "Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), quanto a coordenação estadual da Cabine Lilás, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A Coord Op PM avalia semestralmente os programas Lar Mais Seguro, Patrulha Maria da Penha e SP Mulher Segura e encaminha relatório ao Subcmt PM via 3ª EM/PM.",
+          "B) Por intermédio do COPOM São Paulo, a Coord Op PM coordena o Escritório Estadual da Cabine Lilás e promove integração entre Cabine Lilás e Espaço Lilás.",
+          "C) O COPOM São Paulo mantém controle quantitativo de Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás.",
+          "D) A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.2.2. Evidência normativa: Por intermédio do COPOM São Paulo, a Coord Op PM coordena o Escritório Estadual da Cabine Lilás e promove integração entre Cabine Lilás e Espaço Lilás. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.1 disciplina avaliação semestral dos programas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.2.4 disciplina controle de visitas pelo COPOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 393, item 6.6.3.3.2 disciplina controle de palestras pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 895,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — controle de visitas pelo COPOM",
+        "text": "No acompanhamento institucional das ações de proteção, o responsável precisa definir controle de visitas pelo COPOM. Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O COPOM São Paulo mantém controle quantitativo de Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás.",
+          "B) As OPM devem controlar informações das ocorrências de violência doméstica, especialmente o interesse da vítima em receber Visita Solidária, para subsidiar o planejamento.",
+          "C) A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas.",
+          "D) A DPCDH capacita e atualiza PM indicados, mantém controle quantitativo e nominal dos capacitados e disponibiliza a relação para consulta das OPM na Intranet."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.2.4. Evidência normativa: O COPOM São Paulo mantém controle quantitativo de Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.4.5 disciplina planejamento das visitas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 393, item 6.6.3.3.2 disciplina controle de palestras pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 393, itens 6.6.3.1 e 6.6.3.3.1 disciplina capacitação e controle pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 896,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — dados mensais das OPM",
+        "text": "Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), quanto a dados mensais das OPM, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O COPOM São Paulo mantém controle quantitativo de Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás.",
+          "B) As OPM devem controlar informações das ocorrências de violência doméstica, especialmente o interesse da vítima em receber Visita Solidária, para subsidiar o planejamento.",
+          "C) Por intermédio do COPOM São Paulo, a Coord Op PM coordena o Escritório Estadual da Cabine Lilás e promove integração entre Cabine Lilás e Espaço Lilás.",
+          "D) Os Cmdo Pol consolidam dados e informações das palestras de sensibilização realizadas e os encaminham mensalmente à DPCDH."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.1. Evidência normativa: Os Cmdo Pol consolidam dados e informações das palestras de sensibilização realizadas e os encaminham mensalmente à DPCDH. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.2.4 disciplina controle de visitas pelo COPOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.4.5 disciplina planejamento das visitas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.2.2 disciplina coordenação estadual da Cabine Lilás, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 897,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — planejamento das visitas",
+        "text": "No acompanhamento institucional das ações de proteção, o responsável precisa definir planejamento das visitas. Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O COPOM São Paulo mantém controle quantitativo de Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás.",
+          "B) Os Cmdo Pol consolidam dados e informações das palestras de sensibilização realizadas e os encaminham mensalmente à DPCDH.",
+          "C) As OPM devem controlar informações das ocorrências de violência doméstica, especialmente o interesse da vítima em receber Visita Solidária, para subsidiar o planejamento.",
+          "D) Antes de empregar Patrulhas Maria da Penha ou SP Mulher Segura em áreas deterioradas ou hostis, o Supervisor SOp, ou na ausência CFP/CGP, avalia o cenário e providencia apoio territorial compatível."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.4.5. Evidência normativa: As OPM devem controlar informações das ocorrências de violência doméstica, especialmente o interesse da vítima em receber Visita Solidária, para subsidiar o planejamento. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.2.4 disciplina controle de visitas pelo COPOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.1 disciplina dados mensais das OPM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 396, item 6.7.4 disciplina avaliação prévia do risco operacional, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 898,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — avaliação prévia do risco operacional",
+        "text": "Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), quanto a avaliação prévia do risco operacional, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) A Coord Op PM avalia semestralmente os programas Lar Mais Seguro, Patrulha Maria da Penha e SP Mulher Segura e encaminha relatório ao Subcmt PM via 3ª EM/PM.",
+          "B) Antes de empregar Patrulhas Maria da Penha ou SP Mulher Segura em áreas deterioradas ou hostis, o Supervisor SOp, ou na ausência CFP/CGP, avalia o cenário e providencia apoio territorial compatível.",
+          "C) As OPM devem controlar informações das ocorrências de violência doméstica, especialmente o interesse da vítima em receber Visita Solidária, para subsidiar o planejamento.",
+          "D) O indicador de ligações não efetuadas mede a taxa de BOe sem registro de contato telefônico com vítimas; a favorabilidade é maior quando a taxa é menor."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 396, item 6.7.4. Evidência normativa: Antes de empregar Patrulhas Maria da Penha ou SP Mulher Segura em áreas deterioradas ou hostis, o Supervisor SOp, ou na ausência CFP/CGP, avalia o cenário e providencia apoio territorial compatível. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.1 disciplina avaliação semestral dos programas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.4.5 disciplina planejamento das visitas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 404, Anexo B, Indicador 01 disciplina indicador de ligações não efetuadas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 899,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — indicador de ligações não efetuadas",
+        "text": "No acompanhamento institucional das ações de proteção, o responsável precisa definir indicador de ligações não efetuadas. Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O indicador de ligações não efetuadas mede a taxa de BOe sem registro de contato telefônico com vítimas; a favorabilidade é maior quando a taxa é menor.",
+          "B) O indicador de PM capacitados é calculado pela razão entre PM capacitados na ativa e efetivo existente ativo da PMESP, multiplicada por 100; maior valor é mais favorável.",
+          "C) Antes de empregar Patrulhas Maria da Penha ou SP Mulher Segura em áreas deterioradas ou hostis, o Supervisor SOp, ou na ausência CFP/CGP, avalia o cenário e providencia apoio territorial compatível.",
+          "D) As OPM devem controlar informações das ocorrências de violência doméstica, especialmente o interesse da vítima em receber Visita Solidária, para subsidiar o planejamento."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 404, Anexo B, Indicador 01. Evidência normativa: O indicador de ligações não efetuadas mede a taxa de BOe sem registro de contato telefônico com vítimas; a favorabilidade é maior quando a taxa é menor. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 405, Anexo B, Indicador 02 disciplina indicador de PM capacitados, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 396, item 6.7.4 disciplina avaliação prévia do risco operacional, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.4.5 disciplina planejamento das visitas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      },
+      {
+        "id": 900,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
+        "topic": "Sistemática Proteção Violência Doméstica — indicador de PM capacitados",
+        "text": "Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), quanto a indicador de PM capacitados, assinale a alternativa que reproduz corretamente a regra aplicável.",
+        "options": [
+          "A) O indicador de ligações não efetuadas mede a taxa de BOe sem registro de contato telefônico com vítimas; a favorabilidade é maior quando a taxa é menor.",
+          "B) Antes de empregar Patrulhas Maria da Penha ou SP Mulher Segura em áreas deterioradas ou hostis, o Supervisor SOp, ou na ausência CFP/CGP, avalia o cenário e providencia apoio territorial compatível.",
+          "C) As OPM devem controlar informações das ocorrências de violência doméstica, especialmente o interesse da vítima em receber Visita Solidária, para subsidiar o planejamento.",
+          "D) O indicador de PM capacitados é calculado pela razão entre PM capacitados na ativa e efetivo existente ativo da PMESP, multiplicada por 100; maior valor é mais favorável."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 405, Anexo B, Indicador 02. Evidência normativa: O indicador de PM capacitados é calculado pela razão entre PM capacitados na ativa e efetivo existente ativo da PMESP, multiplicada por 100; maior valor é mais favorável. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 404, Anexo B, Indicador 01 disciplina indicador de ligações não efetuadas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 396, item 6.7.4 disciplina avaliação prévia do risco operacional, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.4.5 disciplina planejamento das visitas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+      }
 };
 
 window.questionsDatabase = BANCO_GERAL_QUESTOES;
