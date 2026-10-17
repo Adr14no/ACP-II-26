@@ -227,7 +227,7 @@
         <div class="w-full max-w-lg overflow-hidden rounded-2xl border border-pm-gold/50 bg-pm-cardBg text-slate-100 shadow-2xl">
             <div class="flex items-center gap-3 border-b border-pm-border px-5 py-4">
                 <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-pm-gold/50 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-sliders"></i></div>
-                <div><h3 id="modalPersonalizadoTitulo" class="text-base font-extrabold text-pm-gold">Sessão Personalizada</h3><p class="text-xs text-slate-400">Escolha uma área e a quantidade de questões</p></div>
+                <div><h3 id="modalPersonalizadoTitulo" class="text-base font-extrabold text-pm-gold">Sessão Personalizada</h3><p class="text-xs text-slate-400">Escolha a área, o tema e a quantidade de questões</p></div>
             </div>
             <div class="space-y-4 px-5 py-5">
                 <p class="text-sm leading-relaxed text-slate-300">A sessão funciona exclusivamente no <strong class="text-white">Modo Estudo</strong>, com correção imediata e fundamentação. Não há cronômetro e as provas oficiais não serão alteradas.</p>
@@ -237,6 +237,12 @@
                         <option value="JURIDICO">Assuntos Jurídico-Administrativos</option>
                         <option value="ORGANIZACIONAL">Assuntos Organizacionais</option>
                     </select>
+                </div>
+                <div><label for="personalizadoTema" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-300">Tema (TAG)</label>
+                    <select id="personalizadoTema" class="w-full rounded-xl border border-pm-border bg-pm-navy px-3 py-3 text-sm text-white outline-none focus:border-pm-gold">
+                        <option value="ALL">Todos os temas da área</option>
+                    </select>
+                    <p id="personalizadoTemaInfo" class="mt-1.5 text-xs text-slate-400">Selecione um tema para filtrar as questões pela TAG oficial.</p>
                 </div>
                 <div><label for="personalizadoQuantidade" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-300">Quantidade de questões</label>
                     <input id="personalizadoQuantidade" type="number" min="1" step="1" value="10" class="w-full rounded-xl border border-pm-border bg-pm-navy px-3 py-3 text-sm text-white outline-none focus:border-pm-gold">
@@ -891,31 +897,75 @@
             modal.classList.add('hidden'); modal.classList.remove('flex');
         }
 
+        // Lista oficial de TAGs usada no filtro do Modo Personalizado.
+        const TAGS_OFICIAIS = {
+            OPERACIONAL: [
+                'NORSOP', 'COP', 'COP MOTOROLA', 'SCIPM', 'Sistema de Comando e Controle',
+                'Policiamento de Trânsito', 'Policiamento Escolar', 'Policiamento Rural',
+                'Policiamento Comunitário', 'Força Tática', 'Drones', 'Crime Organizado',
+                'Sala de Operações', 'Radiopatrulha'
+            ],
+            JURIDICO: [
+                'RDPM', 'Sistema Correcional', 'Procedimento Disciplinar', 'Legislação Promoção'
+            ],
+            ORGANIZACIONAL: [
+                'I-16-PM', 'I-2-PM', 'I-36-PM', 'TCI', 'SisTAF', 'Regime de Trabalho',
+                'Processos Administrativos', 'PM vitima Violência Doméstica',
+                'Sistemática Proteção Violência Doméstica'
+            ]
+        };
+
+        function atualizarTemasPersonalizados() {
+            const area = document.getElementById('personalizadoArea').value;
+            const seletorTema = document.getElementById('personalizadoTema');
+            const temaAnterior = seletorTema.value;
+            const temas = TAGS_OFICIAIS[area] || [];
+            seletorTema.innerHTML = '<option value="ALL">Todos os temas da área</option>';
+            temas.forEach(tag => {
+                const option = document.createElement('option');
+                option.value = tag;
+                option.textContent = tag;
+                seletorTema.appendChild(option);
+            });
+            if (temas.includes(temaAnterior)) seletorTema.value = temaAnterior;
+            atualizarDisponibilidadePersonalizada();
+        }
+
         function atualizarDisponibilidadePersonalizada() {
             const banco = obterBancoBase();
             const area = document.getElementById('personalizadoArea').value;
-            const disponiveis = banco.filter(q => q.subject === area).length;
+            const tema = document.getElementById('personalizadoTema').value;
+            const poolArea = banco.filter(q => q.subject === area);
+            const pool = tema === 'ALL' ? poolArea : poolArea.filter(q => q.tag === tema);
             const campo = document.getElementById('personalizadoQuantidade');
-            campo.max = Math.max(1, disponiveis);
-            document.getElementById('personalizadoDisponiveis').innerText = `${disponiveis} questão(ões) disponíveis nesta área no banco atual.`;
-            if (Number(campo.value) > disponiveis) campo.value = disponiveis || 1;
+            campo.max = Math.max(1, pool.length);
+            document.getElementById('personalizadoDisponiveis').innerText = `${pool.length} questão(ões) disponíveis ${tema === 'ALL' ? 'nesta área' : `para a TAG “${tema}”`} no banco atual.`;
+            document.getElementById('personalizadoTemaInfo').innerText = tema === 'ALL'
+                ? 'Serão consideradas todas as TAGs oficiais da área selecionada.'
+                : `${pool.length} questão(ões) encontradas com a TAG “${tema}”.`;
+            if (Number(campo.value) > pool.length) campo.value = pool.length || 1;
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             const area = document.getElementById('personalizadoArea');
-            if (area) area.addEventListener('change', atualizarDisponibilidadePersonalizada);
+            const tema = document.getElementById('personalizadoTema');
+            if (area) area.addEventListener('change', atualizarTemasPersonalizados);
+            if (tema) tema.addEventListener('change', atualizarDisponibilidadePersonalizada);
+            atualizarTemasPersonalizados();
         });
 
         function iniciarSessaoPersonalizada() {
             const bancoBase = obterBancoBase();
             const area = document.getElementById('personalizadoArea').value;
+            const tema = document.getElementById('personalizadoTema').value;
             const quantidade = Number.parseInt(document.getElementById('personalizadoQuantidade').value, 10);
-            const pool = bancoBase.filter(q => q.subject === area);
+            const poolArea = bancoBase.filter(q => q.subject === area);
+            const pool = tema === 'ALL' ? poolArea : poolArea.filter(q => q.tag === tema);
             if (!Number.isInteger(quantidade) || quantidade < 1) {
                 alert('Informe uma quantidade inteira de pelo menos 1 questão.'); return;
             }
             if (quantidade > pool.length) {
-                alert(`A área selecionada possui apenas ${pool.length} questão(ões) no banco. Reduza a quantidade.`); return;
+                alert(`O filtro selecionado possui apenas ${pool.length} questão(ões) no banco. Reduza a quantidade ou escolha outro tema.`); return;
             }
 
             if (state.timerInterval) { clearInterval(state.timerInterval); state.timerInterval = null; }
@@ -946,7 +996,8 @@
             document.getElementById('btnModeExam').classList.add('hidden');
             document.getElementById('btnModeStudy').classList.add('hidden');
             document.getElementById('simuladoTitulo').innerText = 'Sessão Personalizada';
-            document.getElementById('subtituloCurso').innerText = `${area === 'OPERACIONAL' ? 'Assuntos Operacionais' : area === 'JURIDICO' ? 'Assuntos Jurídico-Administrativos' : 'Assuntos Organizacionais'} · Sessão Personalizada`;
+            const nomeAreaPersonalizada = area === 'OPERACIONAL' ? 'Assuntos Operacionais' : area === 'JURIDICO' ? 'Assuntos Jurídico-Administrativos' : 'Assuntos Organizacionais';
+            document.getElementById('subtituloCurso').innerText = `${nomeAreaPersonalizada} · ${tema === 'ALL' ? 'Todos os temas' : tema} · Sessão Personalizada`;
             document.getElementById('resultsContainer').classList.add('hidden');
             document.getElementById('questionContainer').classList.remove('hidden');
             updateSubjectCounts(); updateFilteredQuestions(); renderQuestionGrid(); displayCurrentQuestion(); updateRealtimeStats();
