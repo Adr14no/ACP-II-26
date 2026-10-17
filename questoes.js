@@ -13543,6 +13543,6 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 3,
         "explanation": "Gabarito: D. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 405, Anexo B, Indicador 02. Evidência normativa: O indicador de PM capacitados é calculado pela razão entre PM capacitados na ativa e efetivo existente ativo da PMESP, multiplicada por 100; maior valor é mais favorável. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Organizacionais.pdf, PDF p. 404, Anexo B, Indicador 01 disciplina indicador de ligações não efetuadas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 396, item 6.7.4 disciplina avaliação prévia do risco operacional, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.4.5 disciplina planejamento das visitas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
       }
-};
+}
 
 window.questionsDatabase = BANCO_GERAL_QUESTOES;
