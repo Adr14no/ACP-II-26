@@ -17316,6 +17316,756 @@ const BANCO_SIMULADOS = {
         ],
         "answer": 0,
         "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26 — Atendimento, Acolhimento e Proteção aos Policiais Militares Vítimas de Violência Doméstica e Familiar, item 6.7.4, p. 14. Trecho de suporte: ““as medidas previstas nesta NI não excluem outras providências cabíveis no âmbito administrativo, disciplinar, penal ou judicial””. A alternativa correta reproduz a regra indicada. B está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.4, p. 14. C está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.4, p. 14. D está incorreta porque não corresponde ao conteúdo normativo citado no item 6.7.4, p. 14."
+      },
+          {
+        "id": 1152,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1152 — No serviço ativo, a aquisição de munição deve ser informada a quem e em qual prazo?",
+        "options": [
+          "A) Ao Cmt da Unidade de vínculo funcional, em até 30 dias da aquisição.",
+          "B) Ao Ch CMB, em até 15 dias.",
+          "C) Ao SFPC antes da aquisição.",
+          "D) Ao Cmt da Unidade detentora do AI, em até 60 dias."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), art. 19, § 2º. Trecho de suporte: “informar ao Cmt da Unidade a que esteja funcionalmente vinculado ... em até 30 dias da data da aquisição”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1153,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1153 — Para o PM veterano, a aquisição de munição deve ser comunicada a:",
+        "options": [
+          "A) Última OPM em que serviu, sempre.",
+          "B) Cmt da Unidade detentora do seu AI.",
+          "C) Chefe do SFPC/2ª RM diretamente.",
+          "D) Comandante-Geral, por ofício."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), art. 19, § 3º. Trecho de suporte: “informar ao Cmt da Unidade detentora do seu AI”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1154,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1154 — Qual prazo vale para a comunicação de aquisição de munição, tanto para ativo como para veterano?",
+        "options": [
+          "A) 10 dias.",
+          "B) 15 dias úteis.",
+          "C) 30 dias da data da aquisição.",
+          "D) Até o fim do ano."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), art. 19, §§ 2º e 3º. Trecho de suporte: “em até 30 dias da data da aquisição”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. B está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1155,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1155 — Qual formulário serve para comunicar aquisição de munição?",
+        "options": [
+          "A) Apêndice P do Anexo IV.",
+          "B) Apêndice A-1.",
+          "C) Apêndice J.",
+          "D) Apêndice C."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), art. 19, §§ 2º e 3º. Trecho de suporte: “declaração constante no Apêndice P do Anexo IV”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1156,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1156 — A renovação da APAFI depende de prévia solicitação do interessado a quem?",
+        "options": [
+          "A) Cmt da Unidade detentora do AI, observada a regra do inciso I do art. 50.",
+          "B) Ch CMB, após a compra.",
+          "C) SFPC/2ª RM, pelo SISPROT.",
+          "D) Armeiro da Unidade."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), art. 54. Trecho de suporte: “obedecerá a regra do inciso I do artigo 50 ... mediante prévia solicitação ... ao Cmt da Unidade detentora do seu AI”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1157,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1157 — Qual apêndice corresponde ao requerimento de aquisição de material bélico de uso permitido do comércio/indústria?",
+        "options": [
+          "A) A-1.",
+          "B) A.",
+          "C) C.",
+          "D) P."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 1.1.1.1. Trecho de suporte: “requerimento ... de uso permitido ... (Apêndice A do Anexo IV)”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1158,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1158 — Qual formulário inicia a solicitação de autorização para aquisição de arma restrita no comércio/indústria?",
+        "options": [
+          "A) Apêndice D.",
+          "B) Apêndice P.",
+          "C) Apêndice A-1.",
+          "D) Apêndice J."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.1. Trecho de suporte: “formulário constante no Apêndice A-1 do Anexo IV”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. B está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1159,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1159 — Para aquisição de arma restrita no comércio, que tipo de assinatura é exigido no formulário?",
+        "options": [
+          "A) Digital do requerente e do comandante.",
+          "B) Física do requerente e do comandante competente; assinatura digital ou digitalizada é vedada.",
+          "C) Apenas física do requerente.",
+          "D) Digitalizada do comandante e física do requerente."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.1. Trecho de suporte: “assinatura física ... SENDO VEDADA A ASSINATURA DIGITAL OU DIGITALIZADA”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1160,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1160 — Quem deve tramitar pessoalmente o pedido inicial de autorização ao SFPC/2ª RM?",
+        "options": [
+          "A) O policial militar interessado.",
+          "B) O Oficial de Logística.",
+          "C) O armeiro da Unidade.",
+          "D) O comandante, sem participação do interessado."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.1. Trecho de suporte: “tramitação realizada pessoalmente pelo policial militar interessado”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1161,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1161 — A assinatura do comandante no formulário deve ser acompanhada de:",
+        "options": [
+          "A) Somente matrícula funcional.",
+          "B) Identificação nominal, cargo (posto) e função, digitados ou carimbados.",
+          "C) Reconhecimento de firma obrigatório.",
+          "D) Nome de guerra, sem posto ou função."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.2. Trecho de suporte: “identificação nominal, cargo (posto) e função, digitados ou carimbados”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1162,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1162 — Quais documentos devem acompanhar o formulário da aquisição restrita no comércio?",
+        "options": [
+          "A) Identificação pessoal do PM, GRU e comprovante de pagamento da taxa de PCE.",
+          "B) CRAF e termo de vistoria, somente.",
+          "C) AI e declaração do armeiro, sem taxa.",
+          "D) Autorização da PF e ficha SINARM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.3. Trecho de suporte: “cópia de documento de identificação ... cópia da GRU e comprovante de pagamento da taxa de aquisição de PCE”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1163,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1163 — Como se acondiciona a documentação da etapa inicial de aquisição restrita?",
+        "options": [
+          "A) Envelope de qualquer cor.",
+          "B) Pasta de elástico plástica ou de papel, azul.",
+          "C) Processo SEI antes do protocolo físico.",
+          "D) Pasta preta entregue ao CMB."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.4. Trecho de suporte: “pasta de elástico (plástico ou papel) na cor azul”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1164,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1164 — Se a quantidade pretendida exceder a prevista, qual documento deve ser preenchido?",
+        "options": [
+          "A) Apêndice B do Anexo IV.",
+          "B) Apêndice P.",
+          "C) Apêndice J.",
+          "D) Nenhum; basta justificar verbalmente."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.5. Trecho de suporte: “caso a quantidade ... seja superior à prevista, preencher o Apêndice B”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1165,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1165 — Onde pode ser protocolada a pasta azul para aquisição restrita no comércio?",
+        "options": [
+          "A) Somente na sede do SFPC, sem outras opções.",
+          "B) Pessoalmente em um dos postos de atendimento do EB listados no item 2.1.6.",
+          "C) Em qualquer OPM pelo SEI.",
+          "D) Por correio ao CMB."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.6–2.1.6.7. Trecho de suporte: “protocolar ... pessoalmente, nos seguintes postos de atendimento do EB”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1166,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1166 — Como o interessado acompanha e retira a autorização do EB após protocolar a pasta azul?",
+        "options": [
+          "A) Acompanha pelo SISPROT e retira pessoalmente no mesmo posto após a assinatura competente.",
+          "B) Recebe automaticamente por SEI.",
+          "C) Retira no CMB após publicação em boletim.",
+          "D) Acompanha no SIGMA e recebe do armeiro."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.7. Trecho de suporte: “acompanhar ... por meio do SISPROT ... retirará, pessoalmente, ... no mesmo posto”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1167,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1167 — Depois da autorização do EB, como o pedido de aquisição restrita é encaminhado ao CMB?",
+        "options": [
+          "A) Diretamente pelo interessado em papel.",
+          "B) Por expediente eletrônico consolidado no SEI, após aprovações subsidiárias e parecer do comandante.",
+          "C) Por SISPROT sem análise da Unidade.",
+          "D) Por mensagem informal ao Oficial de Logística."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.1. Trecho de suporte: “aprovações subsidiárias ... parecer do Cmt ... remessa ao CMB, exclusivamente, por expediente eletrônico ... no SEI”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1168,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1168 — Qual condição de armazenamento deve constar da declaração formal do interessado?",
+        "options": [
+          "A) Arma municiada em local acessível a adultos.",
+          "B) Cofre ou local seguro com tranca; arma desmuniciada e inacessível a menores de 25 anos e pessoas civilmente incapazes que residam ou frequentem o local.",
+          "C) Guarda no alojamento da OPM.",
+          "D) Declaração de que não possui outras armas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.1.1. Trecho de suporte: “cofre ou lugar seguro com tranca ... arma desmuniciada ... não será acessível aos menores de 25 ... ou pessoas civilmente incapazes”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1169,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1169 — Qual é a manifestação do Oficial de Logística nas aprovações subsidiárias?",
+        "options": [
+          "A) Verificar se o interessado atende ao limite para aquisição de arma restrita.",
+          "B) Atestar a aptidão psicológica apenas.",
+          "C) Verificar todas as vedações disciplinares do art. 23.",
+          "D) Emitir autorização do EB."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.2.1. Trecho de suporte: “sobre o interessado atender o limite para aquisição de arma de uso restrito”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1170,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1170 — Qual é a manifestação do Oficial de Administração de Pessoal?",
+        "options": [
+          "A) Conferir a cor da pasta e o pagamento da GRU.",
+          "B) Manifestar-se sobre vedação do inciso I do art. 23 e habilitação para uso da arma específica.",
+          "C) Verificar apenas o limite quantitativo de armas.",
+          "D) Emitir o CRAF."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.2.2. Trecho de suporte: “sobre a vedação ... prevista no inciso I do artigo 23 ... e ... habilitação para o uso de arma de fogo específica”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1171,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1171 — Qual é a manifestação do Oficial de PJMD?",
+        "options": [
+          "A) Verificar as demais vedações à aquisição previstas no art. 23.",
+          "B) Verificar apenas limite quantitativo.",
+          "C) Confirmar existência de cofre.",
+          "D) Emitir autorização do Exército."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.2.3. Trecho de suporte: “sobre as demais vedações ... previstas no artigo 23”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1172,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1172 — Quando o interessado é veterano, quem executa as providências atribuídas ao Oficial de Administração de Pessoal?",
+        "options": [
+          "A) Oficial Secretário da Unidade detentora do AI.",
+          "B) Armeiro da antiga OPM.",
+          "C) Chefe do SFPC/2ª RM.",
+          "D) O próprio interessado."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.2.2. Trecho de suporte: “providências ... adotadas pelo Oficial Secretário da Unidade detentora do AI, caso ... veterano”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1173,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1173 — Quem encaminha eletronicamente o pedido ao Chefe do CMB após digitalização em processo único?",
+        "options": [
+          "A) Cmt da Unidade ou da Unidade detentora do AI, por meio da Seção de Logística.",
+          "B) Interessado diretamente ao fornecedor.",
+          "C) Armeiro ao SIGMA.",
+          "D) Oficial de PJMD ao SFPC."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.3. Trecho de suporte: “Cmt ... por meio da Seção de Logística, encaminhará ... para o Ch CMB, eletronicamente”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1174,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1174 — O que o Chefe do CMB pode fazer ao analisar o processo?",
+        "options": [
+          "A) Somente deferir imediatamente.",
+          "B) Sanear o processo e restituí-lo via comandante para retificação/complementação ou ciência da liberação.",
+          "C) Emitir autorização do EB em lugar do SFPC.",
+          "D) Encerrar sem comunicação à Unidade."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.4. Trecho de suporte: “medidas de saneamento ... restituir ... para retificação ou complementação ... ou ciência da liberação da compra”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1175,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1175 — Após a compra da arma restrita, qual providência documental cabe ao interessado?",
+        "options": [
+          "A) Anexar ao processo SEI a nota fiscal com dados da arma e restituir ao CMB via comandante.",
+          "B) Levar a nota fiscal diretamente ao SFPC e encerrar o processo.",
+          "C) Aguardar CRAF antes de juntar nota fiscal.",
+          "D) Publicar a nota fiscal no Boletim Geral."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.3. Trecho de suporte: “anexar ao processo eletrônico no SEI a nota fiscal contendo os dados da arma ... restituindo ao CMB, via Cmt”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1176,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1176 — Quem providencia cadastro no SIGMA junto ao SFPC/2ª RM e emissão do CRAF?",
+        "options": [
+          "A) Cmt da Unidade no SINARM.",
+          "B) Chefe do CMB.",
+          "C) Vendedor da arma.",
+          "D) Oficial de Administração de Pessoal."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.4.1. Trecho de suporte: “o Ch CMB ... cadastro no SIGMA, junto ao SFPC/2ª RM, emitindo-se o CRAF”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1177,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1177 — Após conferir os dados, o comandante deve fazer o quê com o CRAF?",
+        "options": [
+          "A) Publicar em Boletim Interno Reservado e entregá-lo ao interessado.",
+          "B) Publicar em Boletim Geral ostensivo e enviar ao fornecedor.",
+          "C) Entregar antes de conferir os dados.",
+          "D) Enviar à Polícia Federal para cadastro SINARM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.4.2. Trecho de suporte: “providenciará a publicação em Boletim Interno Reservado e entregará o CRAF ao interessado”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1178,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1178 — Quando o adquirente pode retirar pessoalmente a arma junto ao fornecedor?",
+        "options": [
+          "A) Após protocolar a pasta azul.",
+          "B) Após assinatura do comandante no formulário.",
+          "C) Quando estiver de posse do CRAF.",
+          "D) Após pagar a GRU, ainda sem autorização."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.5. Trecho de suporte: “de posse do CRAF, o interessado poderá retirar a arma ... junto ao fornecedor”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. B está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1179,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1179 — Qual formulário inicia a transferência de arma restrita entre militares (SIGMA para SIGMA)?",
+        "options": [
+          "A) Apêndice A-1.",
+          "B) Apêndice C.",
+          "C) Apêndice D.",
+          "D) Apêndice P."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.5.1.1. Trecho de suporte: “formulário constante no Apêndice C do Anexo IV”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1180,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1180 — Na transferência restrita entre militares, qual conjunto consta da documentação inicial?",
+        "options": [
+          "A) GRU/PCE e pagamento, identificações de adquirente e vendedor/doador, CRAF, ficha SIGMA e, quando aplicável, aptidão psicológica/capacidade técnica.",
+          "B) Somente CRAF e comprovante de endereço.",
+          "C) Autorização da PF e ficha SINARM, sem GRU.",
+          "D) Apenas requerimento e declaração de cofre."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.5.1.3.1–3.5.1.3.5. Trecho de suporte: “GRU/PCE ... documentos de identificação ... CRAF ... ficha de cadastro ... comprovante de aptidão psicológica e capacidade técnica, quando for o caso”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1181,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1181 — Onde deve ser protocolada a pasta azul para transferência restrita entre militares?",
+        "options": [
+          "A) Em qualquer posto do EB listado para aquisição inicial.",
+          "B) Exclusivamente na sede do SFPC junto ao Comando da 2ª RM.",
+          "C) Diretamente no CMB pelo SEI.",
+          "D) Na Polícia Federal."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.5.1.6. Trecho de suporte: “pessoalmente e exclusivamente na sede do SFPC”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1182,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1182 — Quando a Etapa 2 da transferência entre militares deve ser adotada?",
+        "options": [
+          "A) Em todas as transferências.",
+          "B) Somente se a arma transferida for a primeira do acervo do adquirente.",
+          "C) Somente quando o vendedor for civil.",
+          "D) Apenas para arma de uso permitido."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.5.2.1. Trecho de suporte: “somente nos casos em que a arma ... é a primeira do acervo do adquirente”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1183,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1183 — Quando é dispensável o Termo de Vistoria Física com fotos na transferência entre militares?",
+        "options": [
+          "A) Quando a transferência ocorre entre policiais militares.",
+          "B) Sempre que o adquirente já tiver arma.",
+          "C) Em toda arma restrita.",
+          "D) Quando o vendedor é veterano."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.5.2.2. Trecho de suporte: “sendo dispensável quando a transferência se der entre policiais militares”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1184,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1184 — O que deve ocorrer com o CRAF vinculado ao cadastro anterior após transferência concluída entre militares?",
+        "options": [
+          "A) Permanece válido com o antigo proprietário.",
+          "B) Deve ser destruído pelo antigo proprietário.",
+          "C) É enviado ao fornecedor para reemissão.",
+          "D) É convertido automaticamente em CRAF do adquirente."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.5.2.9. Trecho de suporte: “CRAF vinculado ao cadastro anterior deverá ser destruído pelo antigo proprietário”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1185,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1185 — Como se inicia a transferência de arma de uso permitido de civil para PM (SINARM para SIGMA)?",
+        "options": [
+          "A) Por Parte ao Cmt da Unidade ou da Unidade detentora do AI, com a documentação prevista.",
+          "B) Por Apêndice A-1 diretamente ao SFPC.",
+          "C) Pelo civil vendedor no SIGMA, sem a OPM.",
+          "D) Por solicitação verbal ao CMB."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.7.1. Trecho de suporte: “encaminhar a solicitação ao Cmt ... por meio de Parte”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1186,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1186 — Qual documento específico integra a transferência de arma permitida de civil para PM?",
+        "options": [
+          "A) Autorização de transferência SINARM-SIGMA emitida pela Polícia Federal.",
+          "B) Ficha SIGMA emitida antes da transferência.",
+          "C) Autorização do SFPC via pasta azul obrigatória.",
+          "D) Apêndice P de comunicação de munição."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.7.1.5. Trecho de suporte: “autorização de transferência ... SINARM para SIGMA, emitida pela Polícia Federal”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1187,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1187 — Após saneamento na transferência de arma permitida de civil para PM, a OPM deve:",
+        "options": [
+          "A) Publicar a pretensão em Boletim Interno Reservado e enviar o processo digitalizado ao CMB por SEI.",
+          "B) Protocolar pasta azul no SFPC antes de publicar.",
+          "C) Emitir o CRAF sem atuação do CMB.",
+          "D) Enviar documentos ao fornecedor para alterar SIGMA."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.7.2. Trecho de suporte: “publicação ... em Boletim Interno Reservado, remetendo ... processo digitalizado diretamente ao CMB, por meio do SEI”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1188,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1188 — Quem altera o cadastro SIGMA e emite novo CRAF na transferência permitida de civil para PM?",
+        "options": [
+          "A) Polícia Federal.",
+          "B) CMB.",
+          "C) Comandante da OPM sem participação do CMB.",
+          "D) Antigo proprietário civil."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.7.3. Trecho de suporte: “o CMB providenciará a alteração no cadastro do SIGMA e emitirá novo CRAF”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1189,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1189 — Qual formulário inicia a transferência de arma restrita de civil para PM?",
+        "options": [
+          "A) Apêndice A.",
+          "B) Apêndice C.",
+          "C) Apêndice D.",
+          "D) Apêndice P."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.8.1.1. Trecho de suporte: “formulário constante no Apêndice D do Anexo IV”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. B está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1190,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1190 — Onde se protocola a pasta azul na transferência restrita de civil para PM?",
+        "options": [
+          "A) Em qualquer posto do EB listado para aquisição inicial.",
+          "B) Pessoalmente e exclusivamente na sede do SFPC junto ao Comando da 2ª RM.",
+          "C) No CMB por SEI antes da autorização do EB.",
+          "D) Na Polícia Federal."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.8.1.6. Trecho de suporte: “pessoalmente e exclusivamente na sede do SFPC”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1191,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1191 — Quando se aplica a Etapa 2 na transferência restrita de civil para PM?",
+        "options": [
+          "A) Somente quando a arma transferida for a primeira do acervo do adquirente.",
+          "B) Sempre, em toda transferência.",
+          "C) Só se a arma for permitida.",
+          "D) Apenas para veteranos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.8.2.1. Trecho de suporte: “somente nos casos em que a arma ... é a primeira do acervo do adquirente”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1192,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1192 — Qual autorização integra a documentação inicial para transferir arma restrita de civil para PM?",
+        "options": [
+          "A) Autorização SINARM-SIGMA emitida pela Polícia Federal.",
+          "B) Autorização municipal de porte.",
+          "C) Apêndice P de aquisição de munição.",
+          "D) Somente nota fiscal do civil."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.8.1.3.3. Trecho de suporte: “autorização de transferência ... SINARM para SIGMA, emitida pela Polícia Federal”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1193,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1193 — Qual assinatura é exigida no formulário de transferência restrita de civil para PM?",
+        "options": [
+          "A) Digital do requerente e física do comandante.",
+          "B) Física do requerente e do comandante competente, vedadas assinaturas digitais ou digitalizadas.",
+          "C) Apenas do vendedor civil.",
+          "D) A assinatura do comandante é dispensada para veteranos."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.8.1.1. Trecho de suporte: “assinatura física do requerente e do respectivo Cmt ... vedada assinatura digital ou digitalizada”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1194,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1194 — Qual documento pode ser exigido, quando for o caso, para aquisição/transferência de arma restrita?",
+        "options": [
+          "A) Comprovante de aptidão psicológica e capacidade técnica do adquirente.",
+          "B) Declaração do município sobre endereço.",
+          "C) Autorização de porte municipal.",
+          "D) Declaração de inexistência de armas do vendedor."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.8.1.3.5. Trecho de suporte: “comprovante de aptidão psicológica e capacidade técnica do adquirente, quando for o caso”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1195,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1195 — Quem encaminha eletronicamente ao Chefe do CMB o processo único digitalizado de aquisição/transferência restrita?",
+        "options": [
+          "A) Comandante competente, por meio da Seção de Logística.",
+          "B) Adquirente diretamente ao fornecedor.",
+          "C) Armeiro ao SIGMA.",
+          "D) Oficial de PJMD ao SINARM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.3; 3.5.2.5; 3.8.2.5. Trecho de suporte: “o Cmt ... por meio da Seção de Logística, encaminhará ... para o Ch CMB, eletronicamente”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1196,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1196 — Qual combinação de apêndices está correta?",
+        "options": [
+          "A) Aquisição restrita no comércio: A-1; transferência restrita entre militares: C; transferência restrita de civil para PM: D.",
+          "B) Aquisição restrita: C; transferência entre militares: A; civil para PM: P.",
+          "C) Aquisição restrita: D; transferência entre militares: P; civil para PM: A-1.",
+          "D) Todos usam somente Apêndice A."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.1; 3.5.1.1; 3.8.1.1. Trecho de suporte: “Apêndice A-1; Apêndice C; Apêndice D”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1197,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1197 — Qual é a diferença entre o protocolo inicial da aquisição restrita e o da transferência restrita entre militares?",
+        "options": [
+          "A) Aquisição: em postos do EB listados; transferência entre militares: exclusivamente na sede do SFPC.",
+          "B) Ambos exclusivamente na Polícia Federal.",
+          "C) Aquisição só por SEI; transferência por e-mail.",
+          "D) Transferência entre militares dispensa autorização do EB."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.6–2.1.6.7; 3.5.1.6. Trecho de suporte: “nos seguintes postos de atendimento do EB ... versus pessoalmente e exclusivamente na sede do SFPC”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1198,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1198 — Qual condição residencial aparece nos processos de aquisição restrita e transferência restrita quando há declaração formal?",
+        "options": [
+          "A) Cofre ou local seguro com tranca, arma desmuniciada e sem acesso por menores de 25 anos ou pessoas civilmente incapazes que frequentem/residam no local.",
+          "B) Arma carregada em local acessível a adultos.",
+          "C) Guarda obrigatória na OPM.",
+          "D) Qualquer móvel, sem tranca."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.1.1; 3.5.2.3.1; 3.8.2.3.1. Trecho de suporte: “cofre ou lugar seguro com tranca ... arma desmuniciada ... não será acessível aos menores de 25 ... ou pessoas civilmente incapazes”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1199,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1199 — Na transferência de arma permitida de civil para PM, como deve ser feita a vistoria física?",
+        "options": [
+          "A) Termo de Vistoria Física com fotos, realizado pelo armeiro da Unidade do adquirente.",
+          "B) Vistoria sempre dispensada.",
+          "C) Vistoria pelo vendedor, sem fotos.",
+          "D) Termo exigido apenas entre militares."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.7.1.3. Trecho de suporte: “Termo de Vistoria Física ... com fotos, realizado pelo armeiro da Unidade do policial militar adquirente”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1200,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1200 — Qual regra sobre CRAF anterior é expressamente indicada após transferência concluída?",
+        "options": [
+          "A) Nas transferências entre militares e de civil para PM de arma permitida, o CRAF anterior deve ser destruído pelo antigo proprietário.",
+          "B) O CRAF anterior sempre continua válido para o adquirente.",
+          "C) A destruição é sempre feita pelo CMB.",
+          "D) O CRAF é enviado à PF em todos os casos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.5.2.9; 3.7.4. Trecho de suporte: “CRAF vinculado ao cadastro anterior deverá ser destruído pelo antigo proprietário”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+      {
+        "id": 1201,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Aquisição, transferência e controle de material bélico",
+        "text": "QUESTÃO 1201 — Um PM da ativa comunicou a compra de munição 20 dias após a aquisição, usando a declaração do Apêndice P e encaminhando-a ao comandante da Unidade de vínculo funcional. A conduta está no prazo?",
+        "options": [
+          "A) Sim, pois o prazo é de até 30 dias da aquisição.",
+          "B) Não, porque a comunicação deve ser prévia.",
+          "C) Não, porque o prazo é de 10 dias úteis.",
+          "D) Só seria válida para veterano."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), art. 19, § 2º. Trecho de suporte: “em até 30 dias da data da aquisição”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
       }
 
 ];
