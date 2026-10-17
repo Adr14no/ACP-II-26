@@ -12418,7 +12418,7 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 3,
         "explanation": "O NORSOP distingue atividades diversas dos Programas Primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
       },
-          
+         
      {
         "id": 826,
         "subject": "OPERACIONAL",
