@@ -12417,17 +12417,8 @@ const BANCO_GERAL_QUESTOES = [
         ],
         "answer": 3,
         "explanation": "O NORSOP distingue atividades diversas dos Programas Primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
-      }
-          
-];
-
-// Estrutura de Exportação e Integração ao index.html
-const BANCO_SIMULADOS = {
-    "simulado_01": {
-        "titulo": "Simulado Geral ACP II/26 - Processo de Habilitação ao Posto de Capitão PM",
-        "questoes": BANCO_GERAL_QUESTOES
-    },
-     {
+      },
+   {
         "id": 826,
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
