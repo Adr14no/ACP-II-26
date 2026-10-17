@@ -12417,16 +12417,8 @@ const BANCO_GERAL_QUESTOES = [
         ],
         "answer": 3,
         "explanation": "O NORSOP distingue atividades diversas dos Programas Primários. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
-      }
+      },
           
-];
-
-// Estrutura de Exportação e Integração ao index.html
-const BANCO_SIMULADOS = {
-    "simulado_01": {
-        "titulo": "Simulado Geral ACP II/26 - Processo de Habilitação ao Posto de Capitão PM",
-        "questoes": BANCO_GERAL_QUESTOES
-    },
      {
         "id": 826,
         "subject": "OPERACIONAL",
@@ -18066,6 +18058,756 @@ const BANCO_SIMULADOS = {
         ],
         "answer": 0,
         "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), art. 19, § 2º. Trecho de suporte: “em até 30 dias da data da aquisição”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+      },
+           {
+        "id": 1202,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Aplicação e hierarquia normativa",
+        "text": "QUESTÃO 1202 — As I-16-PM disciplinam os procedimentos investigatórios e disciplinares. Diante de conflito concreto entre uma disposição das Instruções e norma de hierarquia superior aplicável ao caso, qual solução corresponde ao texto das I-16-PM?",
+        "options": [
+          "A) A aplicação automática das I-16-PM, por serem norma especial interna, ainda que contrariem norma superior.",
+          "B) A prevalência da norma de maior hierarquia, sem afastar a aplicação das I-16-PM no que for compatível.",
+          "C) A escolha discricionária da autoridade entre as normas, conforme conveniência administrativa.",
+          "D) A aplicação exclusiva da norma mais recente, independentemente de sua hierarquia."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 2º, caput e § 1º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: “No caso concreto, se houver divergência entre as normas, prevalecerá a de maior hierarquia.” Análise dos distratores: A transforma especialidade em prevalência absoluta; C substitui o critério hierárquico por discricionariedade; D troca hierarquia por cronologia."
+      },
+      {
+        "id": 1203,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Normas subsidiárias",
+        "text": "QUESTÃO 1203 — Ao instruir processo administrativo, o presidente identifica questão não disciplinada de modo específico pelas I-16-PM. Qual alternativa reproduz corretamente o regime subsidiário previsto no art. 2º, § 2º?",
+        "options": [
+          "A) Aplicam-se subsidiariamente apenas o CPPM e o RDPM, vedado recorrer a normas civis.",
+          "B) Aplicam-se subsidiariamente o COM, CPPM, CPP, CC, CPC e a Lei Federal nº 5.836/1972.",
+          "C) Aplicam-se subsidiariamente quaisquer normas estaduais, ainda que não previstas nas I-16-PM.",
+          "D) Aplicam-se subsidiariamente somente o CPP e o CPC, por tratarem de procedimento."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 2º, § 2º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: “Aplicam-se subsidiariamente [...] as normas do Código Penal Militar (COM), [...] CPPM, CPP, CC, CPC e a Lei Federal nº 5.836 [...]”. Análise dos distratores: A exclui normas expressamente listadas; C amplia a enumeração sem base no dispositivo; D omite COM, CPPM e Lei nº 5.836/1972."
+      },
+      {
+        "id": 1204,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Interpretação normativa",
+        "text": "QUESTÃO 1204 — Na interpretação das I-16-PM e das normas utilizadas por analogia, qual conjunto corresponde integralmente aos critérios expressamente indicados?",
+        "options": [
+          "A) Princípios do direito administrativo; desigualdade jurídica entre Administração e administrado; necessidade de poderes discricionários para atender ao interesse público; presunção de legitimidade dos atos administrativos.",
+          "B) Igualdade jurídica absoluta; vinculação integral da Administração; presunção de inocência como único critério interpretativo; prevalência do interesse particular.",
+          "C) Hierarquia militar; conveniência do comandante; sigilo obrigatório; prevalência da prova testemunhal.",
+          "D) Princípios do direito penal; igualdade entre Administração e administrado; vedação geral à discricionariedade; presunção de ilegitimidade dos atos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 3º, incisos I a IV, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O art. 3º enumera os quatro critérios indicados na alternativa A. Análise dos distratores: B altera os critérios e introduz exclusividade não prevista; C substitui a lista normativa por elementos estranhos ao artigo; D inverte desigualdade, discricionariedade e presunção de legitimidade."
+      },
+      {
+        "id": 1205,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Casos omissos",
+        "text": "QUESTÃO 1205 — A autoridade administrativa encontra lacuna nas I-16-PM e sustenta que, por isso, não pode decidir. À luz do art. 4º, qual alternativa está correta?",
+        "options": [
+          "A) Pode deixar de decidir até que a lacuna seja suprida por ato normativo específico.",
+          "B) Deve recorrer apenas à analogia, sendo vedada a utilização de jurisprudência ou usos militares.",
+          "C) Deve suprir a lacuna segundo a ordem de fontes indicada no artigo e não pode eximir-se de decidir alegando omissão normativa.",
+          "D) Deve remeter obrigatoriamente o processo ao Poder Judiciário para integração normativa."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 4º, incisos I a V e parágrafo único, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O art. 4º enumera fontes de suprimento dos casos omissos e dispõe que a autoridade não poderá eximir-se de emitir decisão alegando lacuna. Análise dos distratores: A contraria o parágrafo único; B omite fontes expressamente previstas; D cria remessa obrigatória não estabelecida pelo artigo."
+      },
+      {
+        "id": 1206,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Responsabilidade do militar",
+        "text": "QUESTÃO 1206 — Um mesmo ato irregular praticado por militar do Estado pode produzir quais modalidades de responsabilidade, segundo as I-16-PM?",
+        "options": [
+          "A) Somente responsabilidade administrativa, salvo se houver condenação criminal prévia.",
+          "B) Responsabilidade administrativa e penal, sendo sempre excluída a civil.",
+          "C) Responsabilidade civil ou administrativa, mas nunca cumulativa.",
+          "D) Responsabilidade administrativa, penal ou civil, isolada ou cumulativamente."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 5º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: “O militar do Estado que pratica ato irregular responde administrativa, penal ou civilmente, isolada ou cumulativamente.” Análise dos distratores: A condiciona indevidamente a responsabilidade administrativa; B exclui sem base a civil; C proíbe a cumulação que o artigo admite."
+      },
+      {
+        "id": 1207,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Dever de comunicar irregularidades",
+        "text": "QUESTÃO 1207 — Um policial militar toma conhecimento de fato irregular relacionado à Administração. Qual conduta corresponde ao dever estabelecido nas I-16-PM?",
+        "options": [
+          "A) Comunicar formalmente o fato aos superiores e às autoridades competentes, observados os preceitos do RDPM quando se tratar de comunicação de transgressão disciplinar ou representação.",
+          "B) Comunicar apenas verbalmente ao superior imediato, desde que o fato não envolva patrimônio público.",
+          "C) Aguardar confirmação documental da autoria antes de formalizar qualquer comunicação.",
+          "D) Encaminhar diretamente ao órgão judicial, pois a comunicação interna é facultativa."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 6º e parágrafo único, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O art. 6º estabelece ser dever de todo PM comunicar formalmente aos superiores e autoridades competentes atos ou fatos irregulares conhecidos. Análise dos distratores: B restringe a forma e o destinatário; C acrescenta condição prévia inexistente; D transforma o dever interno em faculdade e cria destinatário exclusivo."
+      },
+      {
+        "id": 1208,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Competência disciplinar",
+        "text": "QUESTÃO 1208 — Para identificar autoridades com competência disciplinar, qual referência normativa as I-16-PM determinam observar?",
+        "options": [
+          "A) Somente o rol de oficiais superiores previsto nas próprias I-16-PM, sem limites adicionais.",
+          "B) As autoridades relacionadas no art. 31, observados os limites de competência do art. 32, ambos do RDPM.",
+          "C) Qualquer oficial que tome conhecimento do fato, independentemente dos limites do RDPM.",
+          "D) Exclusivamente o Comandante-Geral, com delegação proibida."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 7º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O art. 7º remete às autoridades relacionadas no art. 31 e aos limites previstos no art. 32 do RDPM. Análise dos distratores: A inventa rol autônomo; C ignora limites normativos; D restringe competência sem suporte no artigo."
+      },
+      {
+        "id": 1209,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Motivação da decisão",
+        "text": "QUESTÃO 1209 — Ao decidir procedimento administrativo, a autoridade afirma que basta reproduzir a conclusão do encarregado, ainda que as provas dos autos apontem em sentido diverso. Qual avaliação decorre do art. 8º?",
+        "options": [
+          "A) A decisão pode limitar-se à conclusão do encarregado, desde que assinada pela autoridade competente.",
+          "B) A decisão deve decorrer logicamente das provas constantes dos autos, dos preceitos legais e dos valores e deveres éticos do RDPM, com motivação.",
+          "C) A decisão deve apoiar-se prioritariamente em fatos conhecidos fora dos autos, se forem notórios na Unidade.",
+          "D) A motivação é exigível apenas quando houver recurso do interessado."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 8º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A autoridade responsável deve motivar a decisão, que decorre logicamente das provas dos autos, preceitos legais e valores e deveres éticos do RDPM. Análise dos distratores: A dispensa análise própria; C admite fatos estranhos aos autos; D cria condição para motivação que o artigo não prevê."
+      },
+      {
+        "id": 1210,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Responsabilidade da autoridade instauradora",
+        "text": "QUESTÃO 1210 — Qual atribuição das I-16-PM é associada à autoridade instauradora?",
+        "options": [
+          "A) Realizar pessoalmente todas as diligências e redigir o relatório final.",
+          "B) Atuar somente como destinatária formal dos autos, sem fiscalizar atos processuais.",
+          "C) Fiscalizar e sanear os atos praticados no processo.",
+          "D) Decidir apenas após homologação judicial do procedimento."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 9º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: “A autoridade competente para instaurar o processo é a responsável pela fiscalização e pelo saneamento dos atos praticados.” Análise dos distratores: A transfere integralmente funções do presidente; B nega atribuição expressa; D acrescenta etapa externa não prevista."
+      },
+      {
+        "id": 1211,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Função do presidente",
+        "text": "QUESTÃO 1211 — No modelo das I-16-PM, qual alternativa descreve corretamente a função do presidente do processo administrativo?",
+        "options": [
+          "A) Promover investigações, instrução e saneamento, emitindo conclusões fundadas nas provas dos autos e nos preceitos legais e morais vigentes.",
+          "B) Limitar-se a receber as provas produzidas por terceiros e encaminhar os autos sem conclusão.",
+          "C) Substituir a autoridade instauradora na decisão final em todos os processos.",
+          "D) Atuar como defensor do acusado e selecionar apenas provas favoráveis."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 10, caput, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O art. 10 atribui ao presidente investigações, instrução, saneamento e emissão de conclusões fundadas nos autos e nos preceitos legais e morais. Análise dos distratores: B elimina atribuições expressas; C confunde instrução com decisão final; D atribui função incompatível com o papel descrito."
+      },
+      {
+        "id": 1212,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Nomeação ad hoc",
+        "text": "QUESTÃO 1212 — Em processo regular, surge necessidade de praticar ato isolado e a autoridade pretende nomear ad hoc um membro do Conselho de Disciplina para esse ato. Qual regra consta das I-16-PM?",
+        "options": [
+          "A) A nomeação ad hoc é admitida sempre que o ato for urgente.",
+          "B) A nomeação ad hoc é admitida para qualquer membro, exceto para o escrivão.",
+          "C) A nomeação ad hoc é vedada apenas para o presidente do PAD, mas permitida para membros do Conselho de Disciplina.",
+          "D) Não se admite nomeação ad hoc de membro do Conselho de Disciplina ou do presidente do PAD para ato do processo regular, exceto para o escrivão."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 10, § 3º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O § 3º veda a nomeação ad hoc para membro do Conselho de Disciplina ou presidente do PAD, ressalvando o escrivão. Análise dos distratores: A cria exceção por urgência; B inverte a exceção; C restringe indevidamente a vedação."
+      },
+      {
+        "id": 1213,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Audiência do Conselho de Disciplina",
+        "text": "QUESTÃO 1213 — No dia designado para audiência do Conselho de Disciplina, um dos membros está ausente. Conforme as I-16-PM, o colegiado pode realizar a audiência?",
+        "options": [
+          "A) Sim, desde que o presidente e o escrivão estejam presentes.",
+          "B) Sim, se a ausência for justificada e o acusado estiver acompanhado de defensor.",
+          "C) Não; as audiências somente serão realizadas com a presença da totalidade dos membros.",
+          "D) Sim, desde que o membro ausente seja substituído informalmente durante a audiência."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 10, § 4º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: “Os conselhos de disciplina somente realizarão audiências se estiver presente a totalidade de seus membros.” Análise dos distratores: A e B criam exceções não previstas; D permite substituição informal incompatível com a exigência de composição integral."
+      },
+      {
+        "id": 1214,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Substituição de membros e presidente",
+        "text": "QUESTÃO 1214 — A autoridade instauradora considera necessária a substituição de membro do Conselho de Disciplina por motivo relevante. Qual providência é prevista nas I-16-PM?",
+        "options": [
+          "A) Substituir verbalmente o membro, registrando a alteração apenas no relatório final.",
+          "B) Substituir por despacho, fundado em motivos relevantes, fazendo constar o despacho dos autos.",
+          "C) Solicitar autorização judicial prévia, pois a substituição é vedada administrativamente.",
+          "D) Determinar que os demais membros escolham substituto sem participação da autoridade instauradora."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 10, § 5º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O § 5º permite substituição por despacho, fundado em motivos relevantes, que deverá constar dos autos. Análise dos distratores: A omite a forma e o registro; C exige autorização não prevista; D transfere competência à composição do colegiado."
+      },
+      {
+        "id": 1215,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Oficial suplente",
+        "text": "QUESTÃO 1215 — Ao expedir a portaria de instauração de Conselho de Disciplina ou de PAD, a autoridade deve observar qual exigência quanto ao suplente?",
+        "options": [
+          "A) Nomear Oficial suplente do mesmo posto que o presidente do Conselho de Disciplina ou do PAD.",
+          "B) Nomear necessariamente Oficial de posto superior ao do presidente.",
+          "C) Nomear praça graduada, independentemente do posto do presidente.",
+          "D) Deixar a indicação do suplente para decisão posterior do colegiado."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 10, § 6º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A autoridade instauradora deverá nomear na Portaria Oficial suplente do mesmo posto que o presidente. Análise dos distratores: B altera o requisito de posto; C altera a categoria funcional; D posterga exigência que deve constar da Portaria."
+      },
+      {
+        "id": 1216,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Critérios de competência",
+        "text": "QUESTÃO 1216 — A autoridade precisa definir a competência administrativa para instaurar e decidir. Qual conjunto de critérios está previsto no art. 11, caput?",
+        "options": [
+          "A) Antiguidade do acusado, local de residência e conveniência da instrução.",
+          "B) Natureza criminal do fato, repercussão pública e quantidade de testemunhas.",
+          "C) Atribuição específica no processo; subordinação hierárquica-funcional entre autoridade e infrator; responsabilidade sobre patrimônio estatal danificado ou extraviado.",
+          "D) Posto da autoridade, tempo de serviço do acusado e local de lotação no momento da decisão final."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 11, incisos I a III, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O caput enumera atribuição específica, subordinação hierárquico-funcional e responsabilidade sobre patrimônio estatal danificado ou extraviado. Análise dos distratores: A, B e D substituem os critérios expressos por fatores não indicados no dispositivo."
+      },
+      {
+        "id": 1217,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Sindicância instaurada por oficial em serviço",
+        "text": "QUESTÃO 1217 — Um Oficial em serviço toma conhecimento de fato que exige apuração e instaura sindicância por dever de ofício. Qual condição se aplica ao ato?",
+        "options": [
+          "A) É nulo, pois somente Comandante de OPM pode instaurar sindicância.",
+          "B) É possível, mas o ato deve ser posteriormente aprovado por autoridade competente.",
+          "C) É válido apenas se houver autorização judicial anterior.",
+          "D) É possível somente quando o investigado for subordinado direto do Oficial e a aprovação é dispensada."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 11, § 1º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O Oficial ou Aspirante a Oficial, em serviço, pode instaurar Sindicância por dever de ofício, devendo o ato ser aprovado posteriormente por autoridade competente. Análise dos distratores: A nega a autorização expressa; C acrescenta requisito inexistente; D cria condição de subordinação direta e elimina aprovação obrigatória."
+      },
+      {
+        "id": 1218,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Delegação para presidir feitos",
+        "text": "QUESTÃO 1218 — Uma autoridade competente não pretende presidir pessoalmente determinado feito. Qual possibilidade está prevista no art. 11, § 2º?",
+        "options": [
+          "A) Delegar a atribuição a qualquer servidor civil, sem restrições.",
+          "B) Transferir automaticamente a competência decisória ao escrivão.",
+          "C) Delegar apenas depois de encerrada a instrução.",
+          "D) Delegar a Oficiais a atribuição de presidir os feitos, observadas as restrições próprias de cada espécie de processo."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 11, § 2º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: As atribuições para presidir os feitos poderão ser delegadas a Oficiais, observadas as restrições de cada espécie. Análise dos distratores: A amplia destinatários; B confunde presidência e decisão; C acrescenta marco temporal não previsto."
+      },
+      {
+        "id": 1219,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Pluralidade de unidades",
+        "text": "QUESTÃO 1219 — O mesmo fato envolve policiais militares de duas OPM distintas. À luz do art. 11, § 3º, qual solução se aplica?",
+        "options": [
+          "A) Deve haver processo único, observadas as restrições específicas, instaurado pela autoridade de cargo superior comum aos respectivos Comandantes.",
+          "B) Devem ser instaurados processos separados por cada OPM, ainda que haja autoridade comum.",
+          "C) O processo deve ser instaurado exclusivamente pela OPM do policial mais antigo.",
+          "D) A competência passa automaticamente à autoridade do local onde ocorreu a última diligência."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 11, § 3º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O dispositivo determina processo único, observadas restrições específicas, instaurado pela autoridade de cargo superior comum aos Comandantes. Análise dos distratores: B contraria a unidade processual; C usa antiguidade do envolvido como critério; D cria regra de deslocamento por diligência."
+      },
+      {
+        "id": 1220,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Avocação por autoridade superior",
+        "text": "QUESTÃO 1220 — Autoridade superior pretende avocar apuração já iniciada, justificando a medida pela preservação da hierarquia e disciplina. Qual requisito corresponde às I-16-PM?",
+        "options": [
+          "A) A avocação depende sempre da concordância do acusado.",
+          "B) A avocação somente pode ocorrer antes da instauração formal.",
+          "C) A avocação pode ocorrer, motivadamente, com ou sem procedimento já iniciado, quando circunstâncias a recomendem e seja importante à preservação da hierarquia e disciplina.",
+          "D) A avocação é automática sempre que houver repercussão pública, dispensada motivação."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 11, § 4º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A autoridade superior poderá avocar motivadamente a apuração, esteja ou não iniciado o procedimento, nas condições descritas. Análise dos distratores: A cria anuência do acusado; B restringe o momento; D elimina a motivação e substitui os requisitos por repercussão pública."
+      },
+      {
+        "id": 1221,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Infração administrativa fora do Estado",
+        "text": "QUESTÃO 1221 — Fato de natureza administrativa ocorre fora do território paulista e exige diligências no local. Quem pode determinar a apuração, conforme o art. 11, § 5º?",
+        "options": [
+          "A) Somente o Comandante da OPM de origem do acusado.",
+          "B) O Secretário da Segurança Pública ou o Comandante-Geral, caso haja necessidade de diligências no local do evento.",
+          "C) Exclusivamente o presidente do Tribunal de Justiça Militar.",
+          "D) Qualquer autoridade disciplinar local, sem necessidade de determinação superior."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 11, § 5º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O dispositivo atribui a determinação ao Secretário da Segurança Pública ou ao Comandante-Geral quando necessárias diligências no local. Análise dos distratores: A restringe o rol; C cria autoridade não indicada; D elimina a condição e o nível decisório previsto."
+      },
+      {
+        "id": 1222,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Competência após movimentação",
+        "text": "QUESTÃO 1222 — Um processo regular foi instaurado e, posteriormente, o acusado foi movimentado, alterando sua subordinação hierárquico-funcional. Qual regra se aplica à competência?",
+        "options": [
+          "A) A competência se transfere automaticamente à nova autoridade de subordinação.",
+          "B) A competência deve ser redefinida a cada alteração funcional.",
+          "C) A movimentação extingue o processo e exige nova instauração.",
+          "D) A competência se firma no momento da instauração do processo regular, sendo irrelevante alteração posterior de fato que modifique a subordinação hierárquico-funcional."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 11, § 7º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O § 7º fixa a competência no momento da instauração do processo regular e torna irrelevante alteração fática posterior da subordinação. Análise dos distratores: A e B ignoram a fixação temporal; C cria efeito extintivo não previsto."
+      },
+      {
+        "id": 1223,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Decisão final em processo regular de praça",
+        "text": "QUESTÃO 1223 — Em processo regular instaurado contra Praça, qual autoridade possui competência para a decisão final segundo as I-16-PM?",
+        "options": [
+          "A) O presidente do processo, por ser responsável pela instrução.",
+          "B) O Comandante-Geral, conforme previsto no RDPM.",
+          "C) O Comandante da OPM em que o acusado serve no momento da conclusão.",
+          "D) O Secretário da Segurança Pública em todos os processos regulares, sem distinção."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 12, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: “A decisão final no processo regular de Praça é de competência do Comandante Geral, conforme [...] RDPM.” Análise dos distratores: A confunde instrução com decisão final; C adota lotação posterior como critério; D elimina a distinção normativa entre praça e oficial."
+      },
+      {
+        "id": 1224,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Processo regular contra Oficial",
+        "text": "QUESTÃO 1224 — Segundo as I-16-PM, o processo regular contra Oficial previsto nos arts. 73 a 75 do RDPM é instaurado e decidido por quem?",
+        "options": [
+          "A) Pelo Comandante-Geral, exclusivamente.",
+          "B) Pelo Comandante da OPM, com recurso obrigatório ao Secretário.",
+          "C) Pelo Secretário da Segurança Pública.",
+          "D) Pelo Conselho de Disciplina, que delibera definitivamente."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 13, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O art. 13 atribui ao Secretário da Segurança Pública a instauração e decisão do processo regular contra Oficial ali referido. Análise dos distratores: A atribui a competência a outra autoridade; B cria recurso e competência inicial não indicados; D confunde processo contra Oficial com Conselho de Disciplina."
+      },
+      {
+        "id": 1225,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Nomeação de escrivão",
+        "text": "QUESTÃO 1225 — No Conselho de Disciplina ou no PAD, o presidente decide nomear escrivão. Qual requisito sobre a escolha consta das I-16-PM?",
+        "options": [
+          "A) A escolha deve recair sobre Subtenente ou Sargento.",
+          "B) A escolha deve recair obrigatoriamente sobre Oficial superior.",
+          "C) A escolha pode recair em qualquer civil, sem restrição de posto ou graduação.",
+          "D) A escolha deve recair em Aspirante a Oficial, salvo autorização do Comandante-Geral."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 15, caput, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O art. 15 determina que, no Conselho de Disciplina e no PAD, a escolha recaia sobre Subtenente ou Sargento. Análise dos distratores: B, C e D indicam categorias diferentes da expressamente prevista."
+      },
+      {
+        "id": 1226,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Compromisso do escrivão",
+        "text": "QUESTÃO 1226 — Ao assumir a função, qual compromisso específico deve ser prestado pelo escrivão?",
+        "options": [
+          "A) Comprometer-se a decidir o mérito e manter sigilo apenas sobre dados pessoais.",
+          "B) Comprometer-se a cumprir fielmente as normas do processo e manter seu sigilo.",
+          "C) Comprometer-se a substituir o presidente sempre que este estiver ausente.",
+          "D) Comprometer-se a produzir apenas prova documental e evitar diligências."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 15, § 1º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O escrivão deve prestar compromisso de bem e fielmente cumprir as normas relativas ao processo e manter o sigilo. Análise dos distratores: A atribui decisão de mérito e limita indevidamente o sigilo; C cria substituição automática; D restringe atribuições sem base."
+      },
+      {
+        "id": 1227,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Substituição do escrivão",
+        "text": "QUESTÃO 1227 — Havendo motivo relevante para substituir o escrivão nomeado, qual forma as I-16-PM admitem?",
+        "options": [
+          "A) Apenas nova portaria de instauração assinada pelo Comandante-Geral.",
+          "B) Deliberação verbal dos membros, sem registro nos autos.",
+          "C) Decisão judicial após incidente próprio.",
+          "D) Simples despacho nos autos, por decisão do presidente do processo administrativo."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 15, § 2º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O § 2º permite substituir o escrivão por simples despacho nos autos, havendo motivo relevante. Análise dos distratores: A exige forma não prevista; B elimina o registro; C acrescenta intervenção judicial não prevista."
+      },
+      {
+        "id": 1228,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Realização de diligências",
+        "text": "QUESTÃO 1228 — Quem realiza as diligências investigatórias e como pode envolver outros policiais militares?",
+        "options": [
+          "A) O escrivão, de modo exclusivo, sem necessidade de despacho.",
+          "B) A autoridade instauradora, necessariamente em pessoa, sem delegação.",
+          "C) O presidente realiza as diligências e, se necessário, pode determiná-las por despacho ao escrivão ou a outro PM sob seu comando.",
+          "D) O acusado escolhe o investigador responsável por cada diligência."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 16, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O art. 16 atribui as diligências ao presidente, que pode determiná-las por despacho ao escrivão ou a outro PM sob seu comando. Análise dos distratores: A torna o escrivão exclusivo; B elimina a possibilidade de determinação a outros; D cria poder de escolha para o acusado."
+      },
+      {
+        "id": 1229,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Perícia médica",
+        "text": "QUESTÃO 1229 — Para realização de perícia por médico da Polícia Militar no processo administrativo, quantos peritos bastam conforme as I-16-PM?",
+        "options": [
+          "A) Dois peritos, obrigatoriamente.",
+          "B) Basta um perito.",
+          "C) Três peritos, salvo urgência.",
+          "D) A quantidade é sempre definida pelo acusado."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 17, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O artigo dispõe que, para a realização de perícia no processo administrativo, bastará um perito. Análise dos distratores: A e C exigem pluralidade não prevista; D transfere a definição a quem não tem essa atribuição."
+      },
+      {
+        "id": 1230,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Investigação preliminar: pressuposto",
+        "text": "QUESTÃO 1230 — A autoridade toma conhecimento de fato irregular, mas ainda não dispõe de elementos suficientes para instaurar imediatamente sindicância. Qual finalidade específica pode justificar investigação preliminar?",
+        "options": [
+          "A) Colher, de modo sumaríssimo, subsídios para fundamentar a instauração ou não de sindicância ou de outro procedimento/processo disciplinar aplicável.",
+          "B) Substituir definitivamente qualquer sindicância, mesmo quando a notícia já contenha elementos suficientes.",
+          "C) Aplicar sanção disciplinar sumária antes de ouvir envolvidos.",
+          "D) Produzir exclusivamente perícias formais e interrogatórios."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 67, caput e § 1º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A investigação preliminar é meio sumaríssimo para colher subsídios quando a notícia não reúne, de pronto, elementos suficientes de convicção. Análise dos distratores: B transforma meio preparatório em substituto universal; C atribui função sancionatória; D contraria a vedação a meios formais no § 5º."
+      },
+      {
+        "id": 1231,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Investigação preliminar: competência",
+        "text": "QUESTÃO 1231 — Como deve ser instaurada a investigação preliminar e quem pode conduzi-la?",
+        "options": [
+          "A) Por decisão verbal de qualquer policial, com condução obrigatória pelo comunicante.",
+          "B) Por despacho da autoridade competente dentre as relacionadas no art. 31 do RDPM, podendo ser designado subordinado para conduzi-la, observadas as regras de hierarquia.",
+          "C) Por portaria judicial, com condução exclusiva por oficial de justiça.",
+          "D) Por despacho do encarregado, sujeito à ratificação facultativa do comandante."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 67, § 2º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A investigação preliminar será instaurada mediante despacho da autoridade competente dentre as relacionadas no art. 31 do RDPM, podendo ser designado subordinado. Análise dos distratores: A elimina a forma e a competência; C cria exigência judicial; D inverte a iniciativa e torna facultativa a competência."
+      },
+      {
+        "id": 1232,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Investigação preliminar: prazo",
+        "text": "QUESTÃO 1232 — O despacho de instauração da investigação preliminar foi publicado em determinada data. Qual regra de prazo deve orientar o encarregado?",
+        "options": [
+          "A) Dez dias úteis, prorrogáveis uma vez por igual período.",
+          "B) Trinta dias corridos, prorrogáveis por mais trinta dias.",
+          "C) Dez dias, contados ininterruptamente do despacho, improrrogáveis.",
+          "D) Quinze dias úteis, contados da primeira diligência."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 67, § 3º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O prazo é improrrogável de 10 dias, contados ininterruptamente a partir do despacho de instauração. Análise dos distratores: A altera contagem e prorrogação; B altera prazo e permite prorrogação; D troca o marco inicial e a unidade de contagem."
+      },
+      {
+        "id": 1233,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Indícios claros de crime militar",
+        "text": "QUESTÃO 1233 — Durante a análise inicial, a autoridade identifica indícios claros de crime militar. Qual providência é expressamente indicada para a investigação preliminar?",
+        "options": [
+          "A) Instaurar investigação preliminar e, paralelamente, aguardar a conclusão para avaliar o crime.",
+          "B) Instaurar investigação preliminar por prazo reduzido e depois encaminhar ao órgão criminal.",
+          "C) Converter automaticamente a investigação preliminar em sindicância.",
+          "D) Não instaurar investigação preliminar e observar os procedimentos do art. 12 do CPPM."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 67, § 4º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: Havendo indícios claros de crime militar, não será instaurada investigação preliminar, devendo ser observado o art. 12 do CPPM. Análise dos distratores: A e B admitem investigação preliminar apesar da vedação; C prevê conversão não estabelecida."
+      },
+      {
+        "id": 1234,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Atos vedados na investigação preliminar",
+        "text": "QUESTÃO 1234 — Qual conjunto de providências é compatível com a investigação preliminar descrita no art. 67, § 5º?",
+        "options": [
+          "A) Ir ao local, entrevistar pessoas e anotar dados qualificadores e informações principais, juntar documentos e provas disponíveis, sem adotar meios formais de apuração vedados.",
+          "B) Lavrar obrigatoriamente Termo de Declaração, Auto de Qualificação e Interrogatório e requisitar exames periciais.",
+          "C) Limitar-se à análise documental, sendo proibido ir ao local ou entrevistar pessoas.",
+          "D) Realizar interrogatório formal do suspeito, mas dispensar a juntada de documentos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 67, § 5º, itens 1 a 4, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O § 5º prevê visita ao local, entrevistas, juntada de documentos e relatório, vedando meios formais como termos e pedidos de exames periciais. Análise dos distratores: B e D exigem meios expressamente vedados; C exclui diligências expressamente previstas."
+      },
+      {
+        "id": 1235,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Relatório da investigação preliminar",
+        "text": "QUESTÃO 1235 — Ao encerrar investigação preliminar, como o encarregado deve formalizar suas conclusões?",
+        "options": [
+          "A) Em relatório oral, sem juntada aos autos.",
+          "B) Em peça única nos termos da I-7-PM, propondo ao final a medida adequada.",
+          "C) Em portaria de punição, que substitui a decisão da autoridade instauradora.",
+          "D) Em termo de interrogatório assinado por todas as pessoas entrevistadas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 67, § 5º, item 4, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O encarregado deve encerrar a investigação elaborando relatório em peça única nos termos da I-7-PM e propor a medida adequada. Análise dos distratores: A dispensa o relatório escrito; C transforma relatório em sanção; D substitui o relatório por ato não previsto."
+      },
+      {
+        "id": 1236,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Análise posterior ao relatório preliminar",
+        "text": "QUESTÃO 1236 — Recebido o relatório da investigação preliminar, qual providência cabe à autoridade que a instaurou?",
+        "options": [
+          "A) Arquivar obrigatoriamente, porque a investigação preliminar não admite instauração posterior de processo.",
+          "B) Aplicar diretamente a sanção, sem manifestação sobre o apurado.",
+          "C) Analisar o relatório, emitir parecer e decidir ou opinar pela instauração de procedimento/processo disciplinar ou pelo arquivamento.",
+          "D) Remeter automaticamente ao Conselho de Disciplina, independentemente do conteúdo."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 67, § 6º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A autoridade, após análise do relatório, emitirá parecer e decidirá ou opinará pela instauração de procedimento/processo ou pelo arquivamento. Análise dos distratores: A e D impõem destino automático; B atribui sanção direta sem a etapa decisória prevista."
+      },
+      {
+        "id": 1237,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Apreciação do registro",
+        "text": "QUESTÃO 1237 — A autoridade recebe documentos elaborados por Comandante de Companhia, Oficial ou Aspirante a Oficial em serviço. Em que prazo deve manifestar-se sobre legalidade, mérito e aspectos formais, segundo o art. 68?",
+        "options": [
+          "A) Em cinco dias, por despacho.",
+          "B) Em dez dias improrrogáveis, por relatório do escrivão.",
+          "C) Em quinze dias, apenas sobre a legalidade.",
+          "D) Em quarenta e oito horas, mediante decisão final de mérito."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 68, caput, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A autoridade manifestar-se-á no prazo de 5 dias sobre legalidade, mérito e aspectos formais, por despacho. Análise dos distratores: B altera prazo e forma; C altera prazo e restringe objeto; D inventa prazo e limita o ato."
+      },
+      {
+        "id": 1238,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Vício no registro",
+        "text": "QUESTÃO 1238 — Ao analisar o registro, a autoridade identifica vício ou nulidade de ato. Qual providência corresponde ao parágrafo único do art. 68?",
+        "options": [
+          "A) Prosseguir obrigatoriamente e deixar a correção para eventual recurso.",
+          "B) Arquivar automaticamente todo o procedimento, ainda que o vício seja sanável.",
+          "C) Substituir sempre o presidente e o escrivão, sem examinar a natureza do vício.",
+          "D) Adotar medidas para correção do vício ou nulidade; se os autos estiverem em ordem, determinar o prosseguimento, podendo substituir ou não presidente e escrivão."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 68, parágrafo único, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: Estando em ordem, a autoridade determina prosseguimento, substituindo ou não presidente e escrivão; caso contrário, adota medidas de correção. Análise dos distratores: A ignora dever de correção; B cria arquivamento automático; C torna obrigatória substituição não exigida."
+      },
+      {
+        "id": 1239,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Prazo para conclusão do PAD e Conselho de Disciplina",
+        "text": "QUESTÃO 1239 — Qual é o prazo ordinário previsto para encerramento dos trabalhos do presidente do PAD e dos membros do Conselho de Disciplina, contado de qual marco?",
+        "options": [
+          "A) Trinta dias contados da portaria de instauração.",
+          "B) Sessenta dias contados do recebimento dos autos.",
+          "C) Sessenta dias úteis contados da primeira audiência.",
+          "D) Noventa dias contados da citação do acusado."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 175, caput, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: Os trabalhos devem ser encerrados em 60 dias, contados do recebimento dos autos. Análise dos distratores: A altera prazo e marco; C altera a contagem e marco; D usa prazo e marco distintos."
+      },
+      {
+        "id": 1240,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Prorrogação do prazo de conclusão",
+        "text": "QUESTÃO 1240 — Há razões justificadas que impedem o término dos trabalhos no prazo ordinário do art. 175. Qual procedimento é previsto para solicitar prorrogação?",
+        "options": [
+          "A) O presidente prorroga por despacho próprio por até 90 dias, sem consulta superior.",
+          "B) O Conselho delibera por maioria e comunica a decisão ao acusado.",
+          "C) O presidente solicita à autoridade superior à instauradora, no posto de Coronel PM, indicando os motivos e os procedimentos pendentes; essa autoridade pode prorrogar por até 90 dias.",
+          "D) O escrivão solicita diretamente ao Comandante-Geral, sem fundamentação."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 175, §§ 3º e 4º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O pedido deve indicar motivos e atos pendentes e ser dirigido à autoridade superior à instauradora, no posto de Coronel PM, que pode prorrogar por até 90 dias. Análise dos distratores: A elimina autorização superior; B substitui a autoridade competente; D altera requerente, destinatário e exigência de fundamentação."
+      },
+      {
+        "id": 1241,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Excesso da prorrogação",
+        "text": "QUESTÃO 1241 — Se o prazo de prorrogação de até 90 dias previsto no art. 175, § 4º, for excedido, qual providência consta do § 5º?",
+        "options": [
+          "A) O oficial na função de Coronel PM solicitará dilação devidamente fundamentada ao Comandante-Geral, por via eletrônica.",
+          "B) O presidente encerra os trabalhos independentemente da prova produzida.",
+          "C) A autoridade instauradora concede novo prazo ilimitado por despacho simples.",
+          "D) O acusado deve requerer a prorrogação em nome do Conselho."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 175, § 5º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: Excedido o limite, o Coronel PM solicitará dilação fundamentada ao Comandante-Geral, por via eletrônica. Análise dos distratores: B impõe encerramento automático; C cria competência e prazo ilimitado; D atribui o pedido ao acusado."
+      },
+      {
+        "id": 1242,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Decisão da autoridade instauradora",
+        "text": "QUESTÃO 1242 — Após receber relatório do Conselho, a autoridade instauradora pretende decidir apenas com a frase “concordo com o relatório”, sem analisar a defesa e as provas. Qual regra do art. 176 impede essa conduta?",
+        "options": [
+          "A) A autoridade deve obrigatoriamente reproduzir o relatório integralmente.",
+          "B) A decisão pode ser sucinta e não precisa considerar a defesa.",
+          "C) A decisão deve ser tomada pelo presidente do processo, não pela autoridade instauradora.",
+          "D) A decisão deve ser fundamentada, considerar prova, razões de defesa e relatório, e não pode limitar-se a declarar concordância ou discordância com o relatório."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 176, caput e § 1º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A decisão deve ser fundamentada após apreciação do processo, provas, razões de defesa e relatório; não pode limitar-se a declarar concordância ou não. Análise dos distratores: A exige reprodução literal; B dispensa elementos expressamente exigidos; C transfere a competência decisória."
+      },
+      {
+        "id": 1243,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Prazo para decisão após relatório",
+        "text": "QUESTÃO 1243 — Qual prazo o art. 176 estabelece para a decisão da autoridade instauradora, contado de qual marco?",
+        "options": [
+          "A) Dez dias do recebimento dos autos.",
+          "B) Quinze dias da data do relatório.",
+          "C) Trinta dias da última audiência.",
+          "D) Sessenta dias da instauração do processo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 176, caput, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A decisão deve ser aposta nos autos no prazo de 15 dias da data do relatório. Análise dos distratores: A altera prazo e marco; C e D adotam prazos e marcos não previstos."
+      },
+      {
+        "id": 1244,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Fatos fora dos autos",
+        "text": "QUESTÃO 1244 — A autoridade instauradora conhece fato relevante que não foi incluído nos autos e pretende utilizá-lo para fundamentar a decisão. Qual orientação decorre do art. 176, § 2º?",
+        "options": [
+          "A) Pode considerar o fato por ser de conhecimento pessoal da autoridade.",
+          "B) Pode utilizá-lo se a decisão for favorável ao acusado.",
+          "C) Não deverá abordar fatos ou circunstâncias que, embora conhecidos, não constem dos autos.",
+          "D) Deve incluí-lo diretamente na decisão, dispensando instrução complementar."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 176, § 2º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A autoridade instauradora não deverá abordar fatos ou circunstâncias que não constem dos autos. Análise dos distratores: A e B criam exceções não previstas; D permite acrescentar fato à decisão sem constar da instrução."
+      },
+      {
+        "id": 1245,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Medidas cautelares para Oficial em processo regular",
+        "text": "QUESTÃO 1245 — Segundo o art. 112, I, nas medidas aplicáveis ao Oficial acusado em processo regular, qual conjunto corresponde ao texto das I-16-PM?",
+        "options": [
+          "A) Afastamento das atividades operacionais, inclusive de supervisão, emprego exclusivo em serviços internos em horário administrativo e suspensão da concessão de carga pessoal de arma de fogo institucional.",
+          "B) Manutenção irrestrita nas atividades operacionais, com suspensão apenas do expediente administrativo.",
+          "C) Afastamento apenas das atividades de supervisão, preservada a carga pessoal de arma institucional.",
+          "D) Transferência obrigatória para outra corporação, sem previsão de emprego interno."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 112, inciso I, alínea b, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O dispositivo prevê afastamento das atividades operacionais, inclusive supervisão, emprego em serviços internos em horário administrativo e suspensão da concessão de carga pessoal de arma institucional. Análise dos distratores: B contradiz o afastamento; C restringe o alcance e mantém carga pessoal; D cria consequência não prevista."
+      },
+      {
+        "id": 1246,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Medidas cautelares: funções vedadas a Oficial",
+        "text": "QUESTÃO 1246 — Entre as medidas do art. 112, I, qual restrição funcional está prevista para Oficial acusado em processo regular?",
+        "options": [
+          "A) Impedimento absoluto de exercer qualquer função administrativa.",
+          "B) Impedimento de ser designado para função de Comandante, Chefe ou Diretor, ressalvada a assunção obrigatória por previsão legal.",
+          "C) Impedimento apenas de comandar a OPM de origem, sem outras restrições.",
+          "D) Proibição de exercer função de instrução, mas sem restrição a planejamento operacional ou atendimento ao público."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 112, inciso I, alínea c, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A alínea c impede designação para função de Comandante, Chefe ou Diretor, exceto quando a assunção for obrigatória por lei. Análise dos distratores: A amplia para toda função administrativa; C restringe a vedação a uma OPM; D omite funções expressamente mencionadas em outras alíneas."
+      },
+      {
+        "id": 1247,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Medidas cautelares: suplência e composição",
+        "text": "QUESTÃO 1247 — Um Oficial acusado em processo regular é cogitado para integrar Conselho de Disciplina ou presidir PAD. Qual restrição consta do art. 112, I, alínea e?",
+        "options": [
+          "A) Pode integrar o Conselho se não participar da decisão final.",
+          "B) Pode presidir PAD, mas não Conselho de Disciplina.",
+          "C) Pode integrar ambos, desde que haja autorização do acusado.",
+          "D) Não deve ser designado para compor Conselho de Justiça Militar, Conselho de Justificação ou Conselho de Disciplina, nem presidir PAD ou PAE."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 112, inciso I, alínea e, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: A alínea e elenca as composições e presidências vedadas ao Oficial nas condições descritas. Análise dos distratores: A, B e C criam exceções e distinções não previstas."
+      },
+      {
+        "id": 1248,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Medidas cautelares para Aspirante",
+        "text": "QUESTÃO 1248 — Em relação ao Aspirante a Oficial acusado em processo regular, qual marco de vinculação à Unidade do presidente é indicado pelo art. 112, II, alínea a?",
+        "options": [
+          "A) Desde a representação ao Secretário até a remessa dos autos conclusos.",
+          "B) Desde a primeira audiência até a decisão da autoridade instauradora.",
+          "C) Desde a instauração do Conselho de Disciplina ou do PAD até a publicação da decisão definitiva, como adido se necessário.",
+          "D) Somente após a publicação da decisão definitiva."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, Art. 112, inciso II, alínea a, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: Para Aspirante, a vinculação ocorre desde a instauração do Conselho de Disciplina ou PAD até a publicação da decisão definitiva, como adido se necessário. Análise dos distratores: A descreve regra distinta para Oficial; B altera marcos; D inverte o momento inicial."
+      },
+      {
+        "id": 1249,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Distinção entre investigação preliminar e sindicância",
+        "text": "QUESTÃO 1249 — Qual afirmação distingue corretamente a investigação preliminar da sindicância, conforme o art. 67?",
+        "options": [
+          "A) A investigação preliminar serve à coleta sumaríssima de subsídios quando faltam elementos de convicção suficientes; não se confunde com a sindicância formal e deve observar as vedações de meios formais do § 5º.",
+          "B) A investigação preliminar é sempre posterior à sindicância e tem finalidade exclusivamente sancionatória.",
+          "C) A investigação preliminar exige todos os atos formais da sindicância, mas com prazo menor.",
+          "D) A investigação preliminar só é cabível após identificação conclusiva de autoria e materialidade."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, Art. 67, §§ 1º, 3º e 5º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O dispositivo define a investigação preliminar como meio sumaríssimo para obter subsídios quando a notícia não reúne elementos suficientes, com prazo próprio e vedação a meios formais. Análise dos distratores: B inverte a sequência e atribui finalidade sancionatória; C contradiz a vedação a meios formais; D exige conclusão prévia incompatível com a finalidade preparatória."
+      },
+      {
+        "id": 1250,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Decisão e conjunto probatório",
+        "text": "QUESTÃO 1250 — Uma autoridade considera aplicar sanção com base em sua convicção pessoal, embora a prova dos autos seja insuficiente. Qual dispositivo geral exige relação lógica entre decisão e prova?",
+        "options": [
+          "A) Art. 5º, que trata da cumulação de responsabilidades.",
+          "B) Art. 8º, que exige decisão motivada e logicamente decorrente das provas dos autos, dos preceitos legais e dos valores e deveres éticos do RDPM.",
+          "C) Art. 15, que disciplina o compromisso do escrivão.",
+          "D) Art. 67, § 3º, que fixa prazo da investigação preliminar."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, Art. 8º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O art. 8º vincula a decisão motivada às provas dos autos, aos preceitos legais e aos valores e deveres éticos do RDPM. Análise dos distratores: A, C e D tratam de matérias distintas e não sustentam o critério probatório descrito."
+      },
+      {
+        "id": 1251,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Unidade com vários envolvidos e responsabilidade patrimonial",
+        "text": "QUESTÃO 1251 — Há vários envolvidos de OPM diferentes e o fato também envolve dano ao patrimônio estatal. Qual alternativa corresponde aos critérios e à regra de competência das I-16-PM?",
+        "options": [
+          "A) Cada autoridade instaura processo separado, porque a pluralidade de OPM impede processo único.",
+          "B) A competência depende exclusivamente da autoridade responsável pelo patrimônio, sem considerar subordinação hierárquica-funcional.",
+          "C) A competência é determinada apenas pelo posto do acusado mais antigo.",
+          "D) A competência considera atribuição específica, subordinação hierárquico-funcional e responsabilidade patrimonial; havendo envolvidos de mais de uma Unidade, aplica-se a regra de processo único e autoridade comum de cargo superior."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, Art. 11, caput e § 3º, conforme “I-16-PM - 3ª Edição (atualizada até Bol G PM 213/22, de 11NOV22).pdf” e a reprodução em Assuntos Organizacionais.pdf. Trecho de suporte: O caput lista os três critérios de competência; o § 3º prevê processo único para envolvidos de mais de uma Unidade, com autoridade comum de cargo superior. Análise dos distratores: A contradiz a regra de processo único; B elimina critérios expressos; C substitui os critérios normativos por antiguidade."
       }
 
 ];
