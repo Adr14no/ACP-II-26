@@ -19,6 +19,7 @@ const BANCO_GERAL_QUESTOES = [
     {
         "id": 1,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - atribuições do CFP",
         "text": "QUESTÃO 1 — Durante o turno de serviço, o CFP verifica que diferentes Unidades de Serviço estão empregadas em programas de policiamento e atividades operacionais na área de responsabilidade. Ao constatar a necessidade de alinhar a execução dessas atividades às determinações do escalão superior, o CFP avalia as medidas de coordenação e supervisão cabíveis. Considerando a NORSOP, assinale a alternativa correta:",
         "options": [
@@ -33,6 +34,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 2,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - estrutura básica do Sistema Operacional",
         "text": "QUESTÃO 2 — A NORSOP distingue a estrutura básica do Sistema Operacional de outras classificações institucionais. Assinale a alternativa que reproduz integralmente essa estrutura.",
     "options": [
@@ -48,6 +50,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 3,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - fiscalização do atendimento de ocorrências pelo CGP",
         "text": "QUESTÃO 3 — O CGP da 2ª Companhia observa que uma viatura permanece há tempo considerável no atendimento de uma ocorrência de perturbação do sossego. Ao mesmo tempo, há outras ocorrências pendentes na Subárea. O graduado solicita à equipe informações sobre o andamento do atendimento e os motivos da permanência no local, para avaliar a situação operacional. À luz da NORSOP, assinale a alternativa correta:",
         "options": [
@@ -62,6 +65,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 4,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - princípios básicos e diretrizes básicas",
         "text": "QUESTÃO 4 — Considerando a classificação dos princípios básicos e das diretrizes básicas apresentada no material de NORSOP, analise as proposições:\n\nI. Excelência na Gestão é classificada como princípio básico.\nII. Direitos Humanos é classificado como princípio básico.\nIII. Autonomia Operacional é classificada como princípio básico.\nIV. Universalidade é classificada como diretriz básica.\n\nAssinale a alternativa que reúne apenas as proposições corretas.",
         "options": [
@@ -76,6 +80,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 5,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - Posto de Comando",
         "text": "QUESTÃO 5 — Em incidente policial estático, o Comandante do Incidente precisa organizar o Posto de Comando antes de haver uma instalação física específica. Considerando o SCIPM, assinale a alternativa correta quanto à instalação inicial e à comunicação de sua localização.",
     "options": [
@@ -91,6 +96,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 6,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - Oficial de Ligação",
         "text": "QUESTÃO 6 — Durante um incidente crítico, representantes de diferentes órgãos públicos comparecem ao local para apoiar a resposta. O Comandante do Incidente precisa designar integrante do Staff de Comando para manter a ligação com esses representantes. De acordo com a Diretriz nº PM3-003/02/23 (SCIPM), qual função corresponde a essa atribuição?",
         "options": [
@@ -105,6 +111,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 7,
         "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
         "topic": "Sistema de Comando e Controle - conceitos",
         "text": "QUESTÃO 7 — A Diretriz nº PM3-001/02/23 apresenta conceitos empregados no Sistema de Comando e Controle. Assinale a alternativa INCORRETA.",
         "options": [
@@ -119,6 +126,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 8,
         "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
         "topic": "Sistema de Comando e Controle - Sala de Operações",
         "text": "QUESTÃO 8 — Uma OPM de nível Batalhão/Companhia está revendo a distribuição das funções de comando e controle. À luz da Diretriz nº PM3-001/02/23, assinale a alternativa que delimita corretamente a atuação da Sala de Operações.",
     "options": [
@@ -133,6 +141,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 9,
         "subject": "OPERACIONAL",
+        "tag": "COP",
         "topic": "COP - temporalidade mínima das evidências digitais",
         "text": "QUESTÃO 9 — Durante a conferência das regras de armazenamento das Câmeras Operacionais Portáteis (COP), um policial precisa distinguir o prazo de temporalidade mínima dos vídeos de rotina daquele aplicável às demais evidências digitais. Conforme a Diretriz nº PM3-001/02/25, assinale a alternativa correta:",
         "options": [
@@ -147,6 +156,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 10,
         "subject": "OPERACIONAL",
+        "tag": "COP",
         "topic": "COP - recolhimento e upload em ocorrência MDIP",
         "text": "QUESTÃO 10 — Após uma ocorrência com resultado morte decorrente de intervenção policial (MDIP), o CFP verifica que os policiais envolvidos utilizaram Câmeras Operacionais Portáteis. Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta quanto ao recolhimento dos equipamentos e ao upload do conteúdo captado:",
         "options": [
@@ -161,6 +171,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 11,
         "subject": "OPERACIONAL",
+        "tag": "COP",
         "topic": "COP - ausência de gravação audiovisual",
         "text": "QUESTÃO 11 — Durante a conferência dos registros de uma ocorrência, o comandante constata que um policial militar deixou de produzir a gravação audiovisual exigida para a situação, sem justificativa registrada. De acordo com a Diretriz nº PM3-001/02/25 (COP), qual providência procedimental deve ser adotada diante da ausência injustificada de registro?",
         "options": [
@@ -175,6 +186,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 12,
         "subject": "OPERACIONAL",
+        "tag": "COP",
         "topic": "COP - acesso do policial ao próprio registro",
         "text": "QUESTÃO 12 — Um policial militar envolvido em ocorrência de grande repercussão será ouvido formalmente sobre os fatos. Antes de prestar suas declarações, solicita consultar a gravação realizada por sua própria Câmera Operacional Portátil (COP). Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
         "options": [
@@ -189,6 +201,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 13,
         "subject": "OPERACIONAL",
+        "tag": "Drones",
         "topic": "Programa de Policiamento com Drones",
         "text": "QUESTÃO 13 — No planejamento de emprego de UAS, a equipe propõe transmitir imagens ao sistema de comando e controle para apoiar a avaliação do cenário. Considerando a finalidade do Programa de Policiamento com Drones, assinale a alternativa correta.",
     "options": [
@@ -204,6 +217,7 @@ const BANCO_GERAL_QUESTOES = [
 {
   "id": 14,
   "subject": "OPERACIONAL",
+        "tag": "NORSOP",
   "topic": "NORSOP - Programas de Policiamento Primários",
   "text": "QUESTÃO 14 — Ao revisar a distribuição dos recursos humanos e materiais de uma OPM territorial, um Capitão PM precisa distinguir os Programas de Policiamento Primários dos Complementares, conforme a NORSOP. Assinale a alternativa que apresenta exclusivamente os Programas de Policiamento Primários.",
   "options": [
@@ -219,6 +233,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 15,
         "subject": "OPERACIONAL",
+        "tag": "Força Tática",
         "topic": "Programa de Força Tática - finalidade",
         "text": "QUESTÃO 15 — Durante o planejamento operacional, o Comando de um Batalhão avalia o emprego da Força Tática para reforçar a resposta a ocorrências graves e reduzir os efeitos da criminalidade violenta em áreas de maior incidência. À luz da Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
         "options": [
@@ -233,6 +248,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 16,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
         "topic": "Programa de Policiamento Escolar - adolescente apreendido em flagrante",
         "text": "QUESTÃO 16 — Durante o policiamento escolar, a equipe presencia adolescente praticando ato infracional e efetua a apreensão em flagrante. Conforme a regra reproduzida na Diretriz nº PM3-004/02/20, qual providência inicial é exigida?",
     "options": [
@@ -248,6 +264,7 @@ const BANCO_GERAL_QUESTOES = [
 {
   "id": 17,
   "subject": "OPERACIONAL",
+        "tag": "NORSOP",
   "topic": "NORSOP - segurança viária durante o policiamento",
   "text": "QUESTÃO 17 — Durante o patrulhamento, a equipe identifica obstáculo que compromete a circulação e cria risco aos usuários da via. Segundo a NORSOP, qual sequência de providências corresponde à orientação normativa?",
     "options": [
@@ -263,6 +280,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 18,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
         "topic": "Programa de Policiamento Rural - conceitos",
         "text": "QUESTÃO 18 — Na organização do policiamento em área rural, é necessário distinguir a finalidade do programa da composição da patrulha que o executa. Conforme a Diretriz nº PM3-007/02/20, assinale a alternativa correta.",
     "options": [
@@ -278,6 +296,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 19,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
         "topic": "Policiamento Comunitário - atuação junto ao CONSEG",
         "text": "QUESTÃO 19 — Ao assumir o comando de uma Subárea, um Capitão PM verifica que o Conselho Comunitário de Segurança (CONSEG) local está inativo. Considerando as atribuições de comando territorial previstas na NORSOP e as diretrizes do Programa de Policiamento Comunitário, assinale a alternativa correta.",
         "options": [
@@ -292,6 +311,7 @@ const BANCO_GERAL_QUESTOES = [
 {
   "id": 20,
   "subject": "OPERACIONAL",
+        "tag": "SCIPM",
   "topic": "SCIPM - Sala de Gerenciamento de Incidentes",
   "text": "QUESTÃO 20 — Em incidente que exige integração da PM com órgãos externos, avalia-se a instituição de Sala de Gerenciamento de Incidentes. Segundo o SCIPM, qual alternativa descreve corretamente a autoridade competente e a hipótese de instituição?",
     "options": [
@@ -306,6 +326,7 @@ const BANCO_GERAL_QUESTOES = [
 {
         "id": 21,
         "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
         "topic": "Combate ao Crime Organizado - providências de conhecimento",
         "text": "QUESTÃO 21 — Uma Unidade de Serviço identifica circunstâncias indicativas de possível atuação típica de crime organizado. Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa que distribui corretamente as providências entre a US e os policiais militares em funções de comando ou supervisão.",
     "options": [
@@ -320,6 +341,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 22,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - divisão territorial",
         "text": "QUESTÃO 22 — Ao revisar o módulo de configuração territorial de uma OPM, um oficial precisa distinguir Subárea, Setor e Subsetor. Segundo a NORSOP, qual conceito corresponde ao Subsetor?",
         "options": [
@@ -334,6 +356,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 23,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - transferência do comando",
         "text": "QUESTÃO 23 — Durante incidente crítico, a função de Comandante do Incidente será transferida a outro integrante. Qual procedimento corresponde ao elemento do SCIPM denominado Designação e Transferência do Comando por Processo?",
     "options": [
@@ -348,6 +371,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 24,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - nível de planejamento operacional",
         "text": "QUESTÃO 24 — Um comandante precisa transformar os objetivos e metas definidos nos níveis estratégico e tático em processos detalhados e padrões de trabalho a serem observados pelos escalões durante ações, operações e missões policial-militares. Segundo a NORSOP, a atividade descrita pertence a qual nível de planejamento?",
         "options": [
@@ -362,6 +386,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 25,
         "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
         "topic": "COP Motorola - modo tático ou velado",
         "text": "QUESTÃO 25 — Durante uma missão em que a disciplina de luz e som é necessária para preservar a segurança da equipe, o policial que utiliza a COP Motorola precisa acionar o modo tático, também denominado velado ou stealth. Conforme o material de COP Motorola constante de Assuntos Operacionais.pdf, qual é o efeito desse modo?",
         "options": [
@@ -376,6 +401,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 26,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - Matriz Operacional e Nível de Resposta",
         "text": "QUESTÃO 26 — Uma Unidade de Serviço da Matriz Operacional I solicita apoio tático de uma Força Tática pertencente à própria OPM territorial. A situação não exige recursos adicionais do Comando de Policiamento nem apoio especializado. Conforme a NORSOP, qual combinação corresponde ao emprego descrito?",
         "options": [
@@ -390,6 +416,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 27,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - Unidade de Comando",
         "text": "QUESTÃO 27 — Em resposta integrada, um profissional recebe orientações incompatíveis de dois supervisores. Considerando as definições do SCIPM, assinale a alternativa que expressa o elemento essencial Unidade de Comando.",
     "options": [
@@ -403,6 +430,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 28,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - planejamento estratégico",
         "text": "QUESTÃO 28 — No planejamento institucional, são definidas estratégias globais de longo prazo que direcionam o emprego combinado dos Órgãos de Direção, Apoio, Execução e Assessoria. De acordo com a NORSOP, essa atribuição caracteriza qual nível de planejamento?",
         "options": [
@@ -417,6 +445,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 29,
         "subject": "OPERACIONAL",
+        "tag": "COP",
         "topic": "COP - requerimento de evidências para procedimento apuratório",
         "text": "QUESTÃO 29 — Um policial militar na condição de acusado, por meio de seu defensor, requer acesso a registros audiovisuais da COP para subsidiar procedimento apuratório. Conforme a Diretriz nº PM3-001/02/25, a solicitação deve ser encaminhada:",
         "options": [
@@ -431,6 +460,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 30,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - Plano de Policiamento Inteligente",
         "text": "QUESTÃO 30 — Uma OPM precisa gerir os ativos operacionais disponíveis de acordo com os problemas e as peculiaridades territoriais, em processo de melhoria contínua voltado à redução criminal e ao aumento da percepção de segurança. Segundo a NORSOP, essa metodologia denomina-se:",
         "options": [
@@ -445,6 +475,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 31,
         "subject": "OPERACIONAL",
+        "tag": "Força Tática",
         "topic": "Força Tática - atendimento de solicitações emergenciais",
         "text": "QUESTÃO 31 — Durante o desenvolvimento de atividade típica, uma equipe de Força Tática recebe solicitação emergencial que exige primeiro atendimento. Considerando a Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
         "options": [
@@ -459,6 +490,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 32,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - Chefe de Planejamento",
         "text": "QUESTÃO 32 — Em um incidente crítico, o Comandante do Incidente precisa de assessoramento para elaborar os planos de ação, captar os recursos necessários, coletar e analisar informações sensíveis e registrar as ações implementadas. Segundo o SCIPM, qual função do Estado-Maior Operacional possui essas atribuições?",
         "options": [
@@ -473,6 +505,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 33,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - ação, operação e missão policial-militar",
         "text": "QUESTÃO 33 — Considerando as definições da NORSOP para as formas de atuação operacional, analise as proposições:\n\nI. Ação policial-militar caracteriza a atividade rotineira da Unidade de Serviço, voltada à prevenção criminal e ao aumento da percepção de segurança.\nII. Operação policial-militar envolve o emprego combinado de várias Unidades de Serviço, em ações simultâneas e sucessivas, com objetivo comum delimitado no tempo e no espaço.\nIII. Missão policial-militar envolve a aplicação pontual e específica de efetivos e meios, limitada no tempo e no espaço, para atender demanda imediata que afeta o serviço policial-militar.\nIV. Operação policial-militar caracteriza necessariamente a atuação isolada de uma única Unidade de Serviço, sem planejamento prévio.\n\nAssinale a alternativa correta.",
         "options": [
@@ -487,6 +520,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 34,
         "subject": "OPERACIONAL",
+        "tag": "COP",
         "topic": "COP - acionamento automático por despacho",
         "text": "QUESTÃO 34 — Uma Unidade de Serviço é despachada pelo Sistema de Informações Operacionais da PM (SIOPM) para atendimento de ocorrência. No modelo de acionamento remoto-automático por despacho previsto na Diretriz das COP, qual evento ativa a gravação da câmera vinculada à US demandada?",
         "options": [
@@ -501,6 +535,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 35,
         "subject": "OPERACIONAL",
+        "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Violência doméstica - Patrulha SP Mulher Segura",
         "text": "QUESTÃO 35 — Uma OPM organiza atendimento especializado a mulheres em situação de violência doméstica e familiar, com visitas comunitárias e solidárias, orientação preventiva e atuação voltada à proteção das vítimas. Conforme a Nota de Instrução nº PM3-002/02/26 (Sala de Operações), assinale a alternativa correta sobre a Patrulha SP Mulher Segura.",
         "options": [
@@ -515,6 +550,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 36,
         "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
         "topic": "Combate ao Crime Organizado - Plano de Contingência",
         "text": "QUESTÃO 36 — Um incidente crítico relacionado ao crime organizado alcança a área de responsabilidade de mais de um Comando de Policiamento. Conforme a Diretriz nº PM3-001/02/24, qual órgão responde pela elaboração e atualização do Plano de Contingência correspondente?",
     "options": [
@@ -530,6 +566,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 37,
         "subject": "OPERACIONAL",
+        "tag": "Drones",
         "topic": "Policiamento com Drones - Piloto Remoto em Comando",
         "text": "QUESTÃO 37 — Durante uma operação com aeronave não tripulada, surge uma questão relativa à segurança do voo e à condução da aeronave. Conforme a Diretriz nº PM3-005/02/24, qual integrante da Equipe Drone possui autoridade decisória sobre tudo o que se relacionar ao UAS enquanto estiver em voo?",
         "options": [
@@ -544,6 +581,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 38,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
         "topic": "Policiamento Comunitário - Núcleo de Mediação Comunitária",
         "text": "QUESTÃO 38 — Em uma comunidade, conflitos recorrentes entre moradores podem ser encaminhados para uma estrutura policial-militar destinada à mediação, desde que a atividade seja conduzida por policial capacitado e formalmente habilitado. Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), qual estrutura corresponde a essa descrição?",
         "options": [
@@ -558,6 +596,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 39,
         "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
         "topic": "Sistema de Comando e Controle - Unidade de Serviço",
         "text": "QUESTÃO 39 — No Sistema de Comando e Controle, uma equipe composta por policiais a pé ou embarcados executa ações em determinado território e está integrada a um Centro de Operações. Segundo a Diretriz nº PM3-001/02/23, essa fração é conceituada como:",
         "options": [
@@ -572,6 +611,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 40,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
         "topic": "Programa de Policiamento de Trânsito - princípios",
         "text": "QUESTÃO 40 — Durante fiscalização de trânsito, o policial militar constata infração administrativa, mas a situação também exige providências imediatas para garantir a segurança de usuários da via. Considerando os princípios do Programa de Policiamento de Trânsito, assinale a alternativa INCORRETA.",
         "options": [
@@ -586,6 +626,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 41,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
         "topic": "Programa de Policiamento Escolar - ordem de prioridade",
         "text": "QUESTÃO 41 — O comandante de uma OPM precisa organizar a cobertura dos estabelecimentos de ensino da Subárea e há recursos insuficientes para atendimento simultâneo de todas as escolas. Conforme a Diretriz nº PM3-004/02/20, qual ordem de prioridade deve ser observada?",
         "options": [
@@ -600,6 +641,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 42,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - instalações padronizadas",
         "text": "QUESTÃO 42 — Ao estruturar a resposta a um incidente crítico, o Comandante do Incidente estabelece instalações padronizadas conforme a complexidade do fenômeno, dotadas de segurança, denominação comum e sinalização. Assinale a alternativa que NÃO corresponde a um dos exemplos expressamente citados pelo SCIPM.",
         "options": [
@@ -614,6 +656,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 43,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - princípio da padronização",
         "text": "QUESTÃO 43 — Em incidente que exige atuação conjunta de diferentes agências, a adoção de métodos, estruturas e termos comuns facilita a interoperabilidade da força responsiva e otimiza tempo e recursos. Segundo o SCIPM, essa descrição corresponde a qual princípio?",
         "options": [
@@ -628,6 +671,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 44,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
         "topic": "Programa de Policiamento Comunitário - CONSEG",
         "text": "QUESTÃO 44 — Ao assumir uma área em que ainda não existe Conselho Comunitário de Segurança (CONSEG), o comandante avalia formas de ampliar a participação comunitária no diagnóstico e na solução dos problemas locais. Conforme a Diretriz nº PM3-005/02/20, assinale a alternativa correta.",
         "options": [
@@ -642,6 +686,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 45,
         "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
         "topic": "COP Motorola - transferência e custódia das evidências",
         "text": "QUESTÃO 45 — Ao final do turno, o policial militar responsável por uma COP precisa cumprir a rotina de transferência das gravações. Segundo a Diretriz nº PM3-001/02/25, assinale a alternativa correta quanto à sequência e à responsabilidade pelas evidências digitais.",
         "options": [
@@ -656,6 +701,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 46,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
         "topic": "Programa de Policiamento Rural - implantação",
         "text": "QUESTÃO 46 — Um comandante avalia a implantação do Programa de Policiamento Rural em uma região com propriedades agrícolas, atividades turísticas e registros esporádicos de delitos que afetam a percepção de segurança. Considerando a Diretriz nº PM3-007/02/20, analise as proposições:\n\nI. A presença de comunidades rurais cujas características se enquadrem na diretriz pode orientar a implantação do programa.\nII. Atividades sociais e econômicas rurais que possam constituir focos de ações criminosas ou refúgio de infratores são fatores relevantes.\nIII. Índices criminais ou ações delituosas que, mesmo esporádicas, afetem a percepção de segurança no ambiente rural podem justificar a implantação.\n\nAssinale a alternativa correta.",
         "options": [
@@ -670,6 +716,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 47,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - Sala de Gerenciamento de Incidentes",
         "text": "QUESTÃO 47 — Durante uma ocorrência, o Comandante do Incidente identifica a necessidade de integrar a resposta da Polícia Militar com órgãos externos. Segundo a Diretriz nº PM3-003/02/23, assinale a alternativa correta sobre a instituição da Sala de Gerenciamento de Incidentes.",
         "options": [
@@ -684,6 +731,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 48,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - Reuniões de Análise Crítica",
         "text": "QUESTÃO 48 — Considerando as etapas de análise crítica dos indicadores que subsidiam o Plano de Policiamento Inteligente (PPI), analise as proposições:\n\nI. A RAC-Nível I é desenvolvida no âmbito dos Batalhões para avaliar diagnósticos situacionais e estabelecer alternativas de solução para controle de indicadores criminais, aumento da produtividade e redução do tempo-resposta.\nII. A RAC-Nível II é realizada sob responsabilidade dos Comandos de Policiamento do Interior e de Área, para analisar indicadores de desempenho e avaliar medidas de controle, verificando alinhamento com Planos Diretores e Plano de Comando.\nIII. A RAC-Nível III ocorre no âmbito do Comando-Geral, presidida pelo Coord Op PM, para avaliar estratégias regionais em relação aos Planos Diretores e ao Plano de Comando.\n\nAssinale a alternativa correta.",
         "options": [
@@ -698,6 +746,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 49,
         "subject": "OPERACIONAL",
+        "tag": "Força Tática",
         "topic": "Programa de Força Tática - composição da Equipe Tática",
         "text": "QUESTÃO 49 — Uma OPM planeja constituir uma Equipe Tática em viatura de quatro rodas. O efetivo disponível, contudo, é inferior ao mínimo ordinário previsto ou não há Subtenente/Sargento para exercer a função de comando. Considerando a Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
         "options": [
@@ -712,6 +761,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 50,
         "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
         "topic": "Sala de Operações - Serviço de Intervenção Remota",
         "text": "QUESTÃO 50 — A Sala de Operações recebe uma demanda que não apresenta risco iminente à vida, à integridade física, ao patrimônio ou ao meio ambiente e que pode ser solucionada por orientação ou atendimento remoto. Conforme a Nota de Instrução nº PM3-002/02/26, em quais condições a demanda pode ser tratada pelo Serviço de Intervenção Remota (SIR)?",
         "options": [
@@ -723,9 +773,10 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 3,
         "explanation": "Gabarito: D. Fundamentação: Nota de Instrução nº PM3-002/02/26 (Sala de Operações), itens 6.1.8 e 6.3.7.11.1 a 6.3.7.11.3, em Assuntos Operacionais.pdf, p. 238 e 244-245. O SIR se destina a demandas não emergenciais previamente descritas, sem risco iminente, passíveis de solução remota. A e B ampliam ou restringem indevidamente os critérios; C cria condição não prevista. Trecho: “atendimento remoto de ocorrência classificada como não emergencial e previamente descrita em rol específico, caracterizada pela ausência de risco iminente [...] com o objetivo de aumentar a disponibilidade de US”."
       },
-       {
+{
         "id": 51,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - Matriz Operacional III e Nível de Resposta 4",
         "text": "QUESTÃO 51 — Uma ocorrência apresenta gravidade e complexidade que exigem recursos humanos, materiais e capacitações indisponíveis nas OPM territoriais. Para classificar corretamente o apoio, o oficial deve relacionar a Matriz Operacional e o Nível de Resposta previstos na NORSOP. Assinale a alternativa correta.",
         "options": [
@@ -740,6 +791,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 52,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - atribuições do Estado-Maior do Comandante do Incidente",
         "text": "QUESTÃO 52 — No SCIPM, o Comandante do Incidente distribui funções entre integrantes de seu Estado-Maior. Qual alternativa associa corretamente cada função à atribuição normativa correspondente?",
         "options": [
@@ -754,6 +806,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 53,
         "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
         "topic": "Sistema de C2 - definição do CC2 em operações regionais e estaduais",
         "text": "QUESTÃO 53 — A Coordenação Operacional analisa duas operações: a primeira abrange mais de uma região e envolve OPM de Matrizes Operacionais distintas; a segunda possui abrangência estadual. Considerando a Diretriz de C2, qual designação de Centro de Comando e Controle (CC2) corresponde a cada situação?",
         "options": [
@@ -768,6 +821,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 54,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - designação do Comandante do Incidente em incidentes estáticos e dinâmicos",
         "text": "QUESTÃO 54 — À luz do SCIPM, analise as proposições sobre a designação do Comandante do Incidente (Cmt Inc) em incidentes críticos policiais.\n\nI. Nos incidentes estáticos, o Cmt Inc será, em regra, policial militar da OPM da Matriz Operacional I com responsabilidade territorial sobre o local, ou da Matriz III quando se tratar de Nível de Resposta 4, conforme a natureza do fenômeno.\nII. Nos incidentes dinâmicos, o Chefe de Operações do COPOM será o Cmt Inc até a estabilização, quando o evento passa a assumir características de incidente estático.\nIII. Nos incidentes dinâmicos, o policial de maior posto ou graduação presente no local substitui automaticamente o Chefe de Operações do COPOM como Cmt Inc e assume toda a função de comando.",
         "options": [
@@ -782,6 +836,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 55,
         "subject": "OPERACIONAL",
+        "tag": "Drones",
         "topic": "Programa de Policiamento com Drones - composição e funções da Equipe Drone",
         "text": "QUESTÃO 55 — Considerando a composição mínima da Equipe Drone e as funções dos seus integrantes, analise as proposições.\n\nI. A equipe será composta, no mínimo, pelo Piloto Remoto em Comando (RPIC) e pelo Observador de UAS.\nII. O policial militar na função de Segurança é componente obrigatório em toda Equipe Drone, sem possibilidade de exceção.\nIII. O Observador auxilia a condução segura do voo pela observação visual da aeronave e do espaço aéreo e pela comunicação permanente com o RPIC, sem uso de equipamentos óticos, exceto lentes corretivas.",
         "options": [
@@ -796,6 +851,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 56,
         "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
         "topic": "Sistema de C2 - confidencialidade e disponibilidade das informações da Sala de Operações",
         "text": "QUESTÃO 56 — Na gestão das informações da Sala de Operações, devem ser distinguidas as regras de confidencialidade e disponibilidade. Analise as proposições.\n\nI. A confidencialidade exige resguardar o caráter sigiloso das informações sensíveis e reforçar o cumprimento da Lei de Acesso à Informação e da Lei Geral de Proteção de Dados.\nII. A disponibilidade autoriza fornecer informações a qualquer integrante da Instituição que as solicite, ainda que não tenha necessidade operacional de conhecê-las.\nIII. Dados preservados para consulta futura podem ser suprimidos pelo operador sempre que deixarem de ser úteis ao turno, sem anuência do Supervisor da Sala de Operações.",
         "options": [
@@ -810,6 +866,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 57,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - Plano de Ação do Incidente (PAI)",
         "text": "QUESTÃO 57 — Durante a estruturação da resposta a um incidente, o Estado-Maior precisa distinguir o Plano de Ação do Incidente (PAI) de outros instrumentos do SCIPM. Assinale a alternativa que reúne os elementos normativos próprios do PAI.",
         "options": [
@@ -824,6 +881,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 58,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
         "topic": "Programa de Policiamento Comunitário - continuidade do vínculo com a comunidade",
         "text": "QUESTÃO 58 — À luz das orientações gerais para execução do Policiamento Comunitário, analise as proposições.\n\nI. O policial empregado deve dispor de tempo suficiente para conquistar a confiança e desenvolver parcerias com a comunidade, sendo desaconselhável a substituição constante.\nII. O policial deve estar apto a coletar informações junto à comunidade e entrevistar moradores e outras partes interessadas para obter indicadores úteis ao policiamento comunitário.\nIII. O efetivo deve conhecer as características da comunidade, manter vínculos permanentes com cidadãos e lideranças e adotar postura proativa na busca de soluções, incluindo a elaboração de RAIA, se for o caso.\nIV. O policial deve receber críticas e sugestões da comunidade, mas o encaminhamento delas é dispensável quando não houver consenso entre os envolvidos.",
         "options": [
@@ -838,6 +896,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 59,
         "subject": "OPERACIONAL",
+        "tag": "COP",
         "topic": "COP - reiteração do acionamento manual quando não há acionamento remoto",
         "text": "QUESTÃO 59 — Em uma OPM cujas COP não dispõem de acionamento remoto-intencional nem remoto-automático, analise as providências previstas para reforçar a gravação de fatos de interesse policial.\n\nI. Em ocorrência despachada pelo COPOM/CAD, o despachador deve, além de transmitir os elementos-base, reiterar à Unidade de Serviço a necessidade de acionamento manual.\nII. Se a Unidade de Serviço comunicar diretamente ao COPOM/CAD uma circunstância de intervenção policial ou interação com o público, o despachador também deve reiterar o acionamento manual.\nIII. Os escalões de supervisão, como CFP e CGP ou equivalentes, devem reforçar a necessidade por rede rádio ou fiscalização direta.",
         "options": [
@@ -852,6 +911,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 60,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - emprego supletivo de Unidades de Serviço das Matrizes II e III",
         "text": "QUESTÃO 60 — Uma Unidade de Serviço vinculada à Matriz Operacional II ou III não está executando, naquele momento, sua atividade típica de policiamento ostensivo. À luz da NORSOP, qual emprego supletivo pode ser admitido?",
         "options": [
@@ -866,6 +926,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 61,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - gerenciamento dos recursos",
         "text": "QUESTÃO 61 — Durante um incidente crítico, o Comandante do Incidente precisa manter uma visão atualizada dos recursos humanos e materiais empregados e dos serviços disponíveis. Segundo o SCIPM, qual instrumento corresponde especificamente ao gerenciamento dos recursos?",
         "options": [
@@ -880,6 +941,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 62,
         "subject": "OPERACIONAL",
+        "tag": "Drones",
         "topic": "Programa de Policiamento com Drones - Oficial Coordenador de Operação de UAS",
         "text": "QUESTÃO 62 — Sobre a designação e as atribuições do Oficial Coordenador de Operação de UAS, analise as proposições.\n\nI. O Cmt Btl deve designá-lo formalmente e informar a nomeação ao CAvPM, bem como eventual alteração da designação.\nII. Cabe ao Oficial Coordenador monitorar e controlar as atividades das Equipes Drone e fiscalizar os planos de ação elaborados pelo Cmt OPM.\nIII. A autoridade decisória sobre tudo o que se relaciona ao UAS durante o voo pertence ao Oficial Coordenador, e não ao RPIC.",
         "options": [
@@ -894,6 +956,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 63,
         "subject": "OPERACIONAL",
+        "tag": "COP",
         "topic": "COP - condições de acesso à transmissão ao vivo",
         "text": "QUESTÃO 63 — A Diretriz das COP delimita quem pode acessar a funcionalidade de transmissão ao vivo. Analise as proposições.\n\nI. Cmt OPM podem acessar a partir do nível mínimo de Companhia PM.\nII. Qualquer policial militar, independentemente de função de comando ou supervisão, pode acessar livremente a transmissão.\nIII. O COPOM São Paulo ou Regional pode acessar conforme a área de atuação.\nIV. Outros representantes de OPM podem acessar quando devidamente autorizados pela Coord Op PM.",
         "options": [
@@ -908,6 +971,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 64,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
         "topic": "Programa de Policiamento de Trânsito - competência territorial e vias sob responsabilidade do Estado",
         "text": "QUESTÃO 64 — Considere dois cenários: (1) policiamento ostensivo de trânsito na Região Metropolitana ou no Interior, fora de via sob responsabilidade do Estado; (2) policiamento ostensivo de trânsito em via sob responsabilidade do Estado. Conforme a Diretriz nº PM3-006/02/20, qual distribuição de competência está correta?",
         "options": [
@@ -922,6 +986,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 65,
         "subject": "OPERACIONAL",
+        "tag": "SCIPM",
         "topic": "SCIPM - organização modular",
         "text": "QUESTÃO 65 — Ao ampliar a estrutura de resposta a um incidente crítico, o Comandante do Incidente considera incorporar novas funções e, após a redução dos riscos, desmobilizar parte da estrutura. Qual afirmação traduz a definição de organização modular do SCIPM?",
         "options": [
@@ -936,6 +1001,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 66,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
         "topic": "Programa de Policiamento Escolar - identificação de pessoas com deficiência na comunidade escolar",
         "text": "QUESTÃO 66 — No Programa de Policiamento Escolar, analise as obrigações atribuídas aos Cmt OPM quanto aos estabelecimentos de ensino que possuam pessoas com deficiência (PcD) na comunidade escolar.\n\nI. A partir do nível mínimo de Companhia PM, identificar estabelecimentos em que PcD possam necessitar de equipamentos ou procedimentos adaptados durante o atendimento de ocorrências.\nII. Manter atualizados registros referentes à quantidade de pessoas nessas condições e à natureza das respectivas deficiências.\nIII. Limitar a identificação às ocorrências realizadas dentro do estabelecimento, excluindo eventual deslocamento ao distrito policial ou hospital.",
         "options": [
@@ -950,6 +1016,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 67,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
         "topic": "Programa de Policiamento Comunitário - visitas e registro de informações",
         "text": "QUESTÃO 67 — Para potencializar os resultados do Policiamento Comunitário, a Diretriz nº PM3-005/02/20 estabelece providências específicas para as OPM. Analise as proposições.\n\nI. A sistemática de atuação relativa às visitas comunitárias deve ser estabelecida semestralmente por documento próprio de Estado-Maior, visando coletar informações para questionários divulgados pela Coord Op PM.\nII. As OPM devem coordenar visitas comunitárias ou solidárias, campanhas ou reuniões comunitárias e adotar medidas de controle do correto registro das informações no SICoordOp.\nIII. A sistemática deve ser anual, e o registro no SICoordOp é facultativo quando houver reunião presencial.",
         "options": [
@@ -964,6 +1031,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 68,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
         "topic": "Programa de Policiamento de Trânsito - emprego de Unidades de Serviço de outros programas",
         "text": "QUESTÃO 68 — Na Região Metropolitana ou no Interior, o comando avalia empregar ocasional ou programadamente uma Unidade de Serviço de outro Programa de Policiamento no policiamento ostensivo de trânsito. À luz da Diretriz nº PM3-006/02/20, analise as proposições.\n\nI. O emprego de US de outros programas ou de Atividades Operacionais Diversas é admitido desde que as atividades próprias por elas executadas não sofram solução de continuidade.\nII. O emprego excepcional do CPTran em operações próprias ou em apoio/reforço pode ocorrer em circunstâncias especiais quando houver carências técnicas apresentadas pelas OPM territoriais.\nIII. Toda US de outro programa empregada ocasionalmente no trânsito deve, por esse motivo, ser permanentemente incorporada ao efetivo específico do Programa de Policiamento de Trânsito.",
         "options": [
@@ -978,6 +1046,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 69,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP - Nível de Resposta 3",
         "text": "QUESTÃO 69 — Uma ocorrência excede a capacidade operativa das OPM territoriais subordinadas e demanda recursos humanos e meios materiais adicionais vinculados diretamente ao Comando de Policiamento. Não se trata de apoio tático por contingente da Matriz II nem de apoio especializado próprio da Matriz III. Qual classificação corresponde à NORSOP?",
         "options": [
@@ -992,6 +1061,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 70,
         "subject": "OPERACIONAL",
+        "tag": "COP",
         "topic": "COP - ordem de prioridade de distribuição quando os equipamentos são insuficientes",
         "text": "QUESTÃO 70 — Quando não é possível equipar integralmente o efetivo com COP, a Diretriz estabelece uma ordem de prioridade de distribuição. Qual alternativa reproduz corretamente a sequência normativa, incluindo a ordem interna das funções de comando e supervisão?",
         "options": [
@@ -1007,6 +1077,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 71,
         idSimulado: 71,
         subject: "OPERACIONAL",
+        "tag": "COP",
         topic: "COP — classificação de evidência relacionada a MDIP",
         text: "QUESTÃO 71 — Após uma intervenção policial com resultado morte, o policial usuário da COP encerra a gravação e precisa classificá-la no sistema de evidências digitais. Conforme a Diretriz nº PM3-001/02/25, qual procedimento corresponde à classificação normativa da evidência?",
         options: [
@@ -1021,6 +1092,7 @@ const BANCO_GERAL_QUESTOES = [
  {
         "id": 72,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP — natureza e execução dos Programas de Policiamento Complementares",
         "text": "Uma OPM territorial pretende desenvolver o Programa de Policiamento Comunitário, mas não dispõe de efetivo exclusivo para todas as atividades previstas. À luz da NORSOP, qual solução é compatível com a natureza dos Programas de Policiamento Complementares?",
         "options": [
@@ -1036,6 +1108,7 @@ const BANCO_GERAL_QUESTOES = [
     {
         id: 73,
         subject: "OPERACIONAL",
+        "tag": "NORSOP",
         topic: "NORSOP — planejamento tático",
         text: "QUESTÃO 73 — Ao revisar um plano de emprego, um comandante precisa distinguir o planejamento tático do planejamento estratégico e do operacional. Segundo a NORSOP, qual descrição corresponde ao nível tático?",
         options: [
@@ -1050,6 +1123,7 @@ const BANCO_GERAL_QUESTOES = [
     {
         id: 74,
         subject: "OPERACIONAL",
+        "tag": "NORSOP",
         topic: "NORSOP — distinção entre princípios e diretrizes básicas",
         text: "QUESTÃO 74 — Na revisão doutrinária da NORSOP, um oficial precisa identificar um conjunto formado exclusivamente por PRINCÍPIOS básicos, sem incluir diretrizes básicas. Assinale a alternativa correta.",
         options: [
@@ -1064,6 +1138,7 @@ const BANCO_GERAL_QUESTOES = [
     {
         id: 75,
         subject: "OPERACIONAL",
+        "tag": "NORSOP",
         topic: "NORSOP — Nível de Resposta 3",
         text: "QUESTÃO 75 — Uma ocorrência excede a capacidade operativa das OPM territoriais subordinadas, mas a avaliação não indica necessidade de recursos especializados próprios da Matriz Operacional III. A resposta exige emprego adicional de efetivo e meios vinculados diretamente ao Comando de Policiamento. Qual nível de resposta corresponde à situação?",
         options: [
@@ -1078,6 +1153,7 @@ const BANCO_GERAL_QUESTOES = [
     {
         id: 76,
         subject: "JURIDICO",
+        "tag": "Legislação Promoção",
         topic: "Lei nº 18.442/26 — requisito para o comando da PMESP",
         text: "QUESTÃO 76 — Considerando a regra apresentada no material autorizado sobre a Lei nº 18.442/26 para o comando da Polícia Militar, assinale a alternativa que reproduz corretamente o requisito referente ao oficial que exerce o Comando-Geral.",
         options: [
@@ -1093,6 +1169,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 77,
         idSimulado: 77,
         subject: "JURIDICO",
+        "tag": "Legislação Promoção",
         topic: "Lei nº 18.442/26 — precedência funcional entre quadros",
         text: "QUESTÃO 77 — Dois Oficiais PM da ativa possuem o mesmo posto e exercem funções que, no caso concreto, não estabelecem superioridade funcional entre si. Para a distinção de precedência funcional entre quadros, qual regra consta do material autorizado?",
         options: [
@@ -1108,6 +1185,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 78,
         idSimulado: 78,
         subject: "JURIDICO",
+        "tag": "Legislação Promoção",
         topic: "Lei nº 18.442/26 — exclusões do limite de efetivo",
         text: "QUESTÃO 78 — Ao conferir o limite de efetivo previsto no art. 3º da Lei nº 18.442/26, um oficial deve identificar as categorias que a própria norma exclui da contagem. Qual alternativa reúne o conjunto previsto no material autorizado?",
         options: [
@@ -1123,6 +1201,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 79,
         idSimulado: 79,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — conversão de permanência disciplinar em serviço extraordinário",
         text: "QUESTÃO 79 — Um policial militar, após a publicação de sanção de permanência disciplinar, requer a conversão de parte do período em prestação de serviço extraordinário. À luz dos arts. 18 e 19 do RDPM, qual alternativa reúne corretamente as condições normativas?",
         options: [
@@ -1138,6 +1217,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 80,
         idSimulado: 80,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — responsabilidade solidária do superior hierárquico",
         text: "QUESTÃO 80 — Na apuração de transgressão disciplinar de subordinado, a responsabilidade solidária do superior hierárquico, com incidência das mesmas sanções da transgressão, ocorre em qual das hipóteses previstas no RDPM?",
         options: [
@@ -1153,6 +1233,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 81,
         idSimulado: 81,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — âmbito subjetivo de aplicação",
         text: "QUESTÃO 81 — Ao delimitar o âmbito subjetivo do Regulamento Disciplinar da Polícia Militar, qual alternativa reproduz integralmente as exceções expressas no parágrafo único do art. 2º do RDPM?",
         options: [
@@ -1168,6 +1249,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 82,
         idSimulado: 82,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — critérios de antiguidade em igualdade de posto ou graduação",
         text: "QUESTÃO 82 — Dois militares do Estado estão em igualdade de posto ou graduação e não há regra específica de precedência funcional aplicável. Qual sequência reproduz os critérios de antiguidade previstos no art. 4º do RDPM?",
         options: [
@@ -1183,6 +1265,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 83,
         idSimulado: 83,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — recompensas policiais-militares",
         text: "QUESTÃO 83 — Considere as afirmações sobre as recompensas policiais-militares previstas no RDPM: I — o elogio é uma recompensa; II — o cancelamento de sanções é uma recompensa; III — a dispensa do serviço constitui recompensa policial-militar. Está correto o que se afirma em:",
         options: [
@@ -1197,6 +1280,7 @@ const BANCO_GERAL_QUESTOES = [
     {
         id: 84,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — distinção entre valores e deveres éticos",
         text: "QUESTÃO 84 — À luz dos arts. 7º e 8º do RDPM, examine as afirmações: I — cumprir os deveres de cidadão é dever ético; II — patriotismo é valor fundamental; III — preservar a natureza e o meio ambiente é dever ético; IV — civismo é dever ético, e não valor fundamental. Está correto o que se afirma em:",
         options: [
@@ -1211,6 +1295,7 @@ const BANCO_GERAL_QUESTOES = [
 {
         "id": 85,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — análise inicial da comunicação disciplinar",
         "text": "QUESTÃO 85 - Ao receber uma comunicação disciplinar, a autoridade competente verifica que ainda não há elementos suficientes para formular o Termo Acusatório. À luz da Portaria do Cmt G CORREGPM-1/360/13, assinale a alternativa INCORRETA sobre as providências possíveis nessa fase.",
         "options": [
@@ -1226,6 +1311,7 @@ const BANCO_GERAL_QUESTOES = [
     {
         id: 86,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — âmbito do Conselho de Justificação",
         text: "QUESTÃO 86 — Na definição do processo regular aplicável aos oficiais, qual alternativa corresponde ao alcance do Conselho de Justificação previsto no RDPM?",
         options: [
@@ -1240,6 +1326,7 @@ const BANCO_GERAL_QUESTOES = [
     {
         id: 87,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — escolha do processo regular conforme tempo de serviço",
         text: "QUESTÃO 87 — Uma praça possui exatamente dez anos de serviço policial-militar e há notícia de incapacidade moral para permanecer no serviço ativo. Considerando o art. 71 do RDPM, qual processo regular corresponde ao caso?",
         options: [
@@ -1254,6 +1341,7 @@ const BANCO_GERAL_QUESTOES = [
  {
         "id": 88,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — instauração e audiência de instrução e julgamento",
         "text": "QUESTÃO 88 - A autoridade policial-militar competente vislumbra o cometimento de transgressão disciplinar e decide instaurar Procedimento Disciplinar. Conforme o art. 3º da Portaria CORREGPM-1/360/13, qual providência observa os requisitos temporais e formais previstos na norma?",
         "options": [
@@ -1270,6 +1358,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 89,
         idSimulado: 89,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — prazos dos recursos disciplinares",
         text: "QUESTÃO 89 — Um militar pretende interpor Pedido de Reconsideração de Ato e, se necessário, posteriormente, Recurso Hierárquico. Qual alternativa distingue corretamente os prazos de interposição previstos nos arts. 57 e 58 do RDPM?",
         options: [
@@ -1285,6 +1374,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 90,
         idSimulado: 90,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — causas de justificação e circunstâncias atenuantes",
         text: "QUESTÃO 90 — Na análise de uma transgressão disciplinar, o encarregado deve distinguir causa de justificação de circunstância atenuante. Qual situação está expressamente prevista no art. 34 do RDPM como causa de justificação?",
         options: [
@@ -1300,6 +1390,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 91,
         idSimulado: 91,
         subject: "JURIDICO",
+        "tag": "Legislação Promoção",
         topic: "Lei nº 18.442/26 — requisitos para promoção ao QOE",
         text: "QUESTÃO 91 — Para a promoção de Subtenente PM da ativa ao posto de Segundo-Tenente PM do QOE, qual alternativa reúne os requisitos indicados no material autorizado?",
         options: [
@@ -1315,6 +1406,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 92,
         idSimulado: 92,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — limites de competência para aplicação de permanência disciplinar",
         text: "QUESTÃO 92 — Considerando os limites de competência do art. 32 do RDPM, qual alternativa reproduz corretamente os limites máximos de permanência disciplinar que podem ser aplicados pelos oficiais dos postos indicados?",
         options: [
@@ -1330,6 +1422,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 93,
         idSimulado: 93,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — detenção: hipótese e competência",
         text: "QUESTÃO 93 — Ao examinar a possibilidade de aplicar a sanção de detenção, a autoridade deve verificar tanto a hipótese de cabimento quanto a competência. Qual alternativa concilia corretamente os arts. 20, 21 e 32 do RDPM?",
         options: [
@@ -1344,6 +1437,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 94,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — interrogatório e direito ao silêncio",
         "text": "QUESTÃO 94 - Durante o interrogatório em Procedimento Disciplinar, o policial militar acusado declara que exercerá o direito de permanecer calado e não responder às perguntas formuladas. Segundo a Portaria CORREGPM-1/360/13, qual consequência deve ser atribuída a essa conduta?",
         "options": [
@@ -1358,6 +1452,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 95,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — alegações finais e memoriais",
         "text": "QUESTÃO 95 - Encerrado o interrogatório no Procedimento Disciplinar, não houve aditamento do Termo Acusatório. Considerando o art. 7º da Portaria CORREGPM-1/360/13, assinale a alternativa correta quanto à manifestação final da defesa.",
         "options": [
@@ -1372,6 +1467,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 96,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — publicação e efeitos do ato",
         "text": "QUESTÃO 96 - Concluído um Procedimento Disciplinar, a autoridade pretende publicar o ato punitivo em Boletim para que produza seus efeitos. Nos termos do art. 12 da Portaria CORREGPM-1/360/13, qual condição deve ser observada?",
         "options": [
@@ -1388,6 +1484,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 97,
         idSimulado: 97,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — prescrição da ação disciplinar",
         text: "QUESTÃO 97 — Na análise de prescrição de uma transgressão disciplinar que não constitui também infração penal, qual prazo e marco inicial devem ser adotados conforme o art. 85 do RDPM?",
         options: [
@@ -1403,6 +1500,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 98,
         idSimulado: 98,
         subject: "JURIDICO",
+        "tag": "Legislação Promoção",
         topic: "Lei nº 18.442/26 — nomeação do Subcomandante-Geral",
         text: "QUESTÃO 98 — Considerando a regra de provimento do cargo de Subcomandante-Geral da Polícia Militar apresentada no material autorizado, qual alternativa reúne corretamente o posto, o quadro e a autoridade responsável pela nomeação?",
         options: [
@@ -1418,6 +1516,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 99,
         idSimulado: 99,
         subject: "JURIDICO",
+        "tag": "RDPM",
         topic: "RDPM — distinções entre Pedido de Reconsideração e Recurso Hierárquico",
         text: "QUESTÃO 99 — Sobre os recursos disciplinares próprios previstos nos arts. 57 e 58 do RDPM, examine as afirmações: I — o Pedido de Reconsideração é dirigido à autoridade que praticou ou aprovou o ato e deve ser encaminhado diretamente a ela, uma única vez; II — o Pedido de Reconsideração tem efeito suspensivo; III — o Recurso Hierárquico é dirigido à autoridade imediatamente superior àquela que não reconsiderou o ato e pressupõe, em regra, prévia reconsideração. Está correto o que se afirma em:",
         options: [
@@ -1433,6 +1532,7 @@ const BANCO_GERAL_QUESTOES = [
         id: 100,
         idSimulado: 100,
         subject: "ORGANIZACIONAL",
+        "tag": "I-16-PM",
         topic: "I-16-PM — investigação preliminar e sindicância",
         text: "QUESTÃO 100 — Uma autoridade recebe notícia de irregularidade administrativa, mas os elementos iniciais ainda são insuficientes para decidir pela instauração imediata de sindicância. De acordo com as I-16-PM, qual providência e prazo correspondem à situação?",
         options: [
@@ -1458,9 +1558,10 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 1,
         "explanation": "Gabarito: B. O art. 1º destina o Procedimento Disciplinar à apuração de transgressões cuja complexidade não exija Sindicância e cuja gravidade não recomende Processo Regular, orientando-o pela oralidade, simplicidade, informalidade, economia processual e celeridade. A e C substituem o rito sem observar os critérios de cabimento; D desloca a apuração disciplinar para procedimento criminal não indicado pelo dispositivo. Fonte: Assuntos Jurídicos-administrativos.pdf, Portaria CORREGPM-1/360/13, art. 1º (Bol G PM 211/2013, p. 1)."
       },
-      {
+ {
         "id": 102,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "QUESTÃO 102 — Procedimento Disciplinar — sequência da audiência e oitiva de testemunhas",
         "text": "Na audiência de instrução e julgamento de um Procedimento Disciplinar, a autoridade deve observar a sequência prevista no art. 4º da Portaria CORREGPM-1/360/13. Assinale a alternativa correta.",
         "options": [
@@ -1475,6 +1576,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 103,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — nova tipificação fundada em fatos novos",
         "text": "QUESTÃO 103 — Após a produção das provas e o interrogatório, a autoridade policial-militar entende que o fato pode receber nova tipificação jurídica, fundada em fatos novos ainda não abrangidos pelo Termo Acusatório. Conforme o art. 6º da Portaria CORREGPM-1/360/13, qual providência é adequada?",
         "options": [
@@ -1489,6 +1591,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 104,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — remessa quando cabível Processo Regular",
         "text": "QUESTÃO 104 — Ao julgar um Procedimento Disciplinar, a autoridade policial-militar entende que, diante da gravidade do caso, é cabível a instauração de Processo Regular. De acordo com o art. 8º da Portaria CORREGPM-1/360/13, como deve proceder?",
         "options": [
@@ -1503,6 +1606,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 105,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — registro eletrônico dos atos",
         "text": "QUESTÃO 105 — Durante a realização de audiência de Procedimento Disciplinar, a autoridade propõe registrar o ato por meio de gravação audiovisual e armazenamento digital. Conforme o art. 13 da Portaria CORREGPM-1/360/13, assinale a alternativa correta.",
         "options": [
@@ -1517,6 +1621,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 106,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — numeração dos procedimentos",
         "text": "QUESTÃO 106 — Uma OPM de nível Batalhão está organizando os registros de Procedimentos Disciplinares instaurados no mesmo ano. Nos termos do art. 14 da Portaria CORREGPM-1/360/13, qual critério de numeração deve adotar?",
         "options": [
@@ -1531,6 +1636,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 107,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — notícia de transgressão atribuída a militar inativo",
         "text": "QUESTÃO 107 — Chega à OPM documento que noticia possível transgressão disciplinar atribuída a policial militar já inativo. Conforme o art. 15 da Portaria CORREGPM-1/360/13, para quem deve ser remetido o documento para apreciação, conforme a condição do envolvido?",
         "options": [
@@ -1545,6 +1651,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 108,
         "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
         "topic": "Lei nº 18.442/26 — destinação dos Quadros de Oficiais",
         "text": "QUESTÃO 108 — Considerando a estrutura dos Quadros prevista na Lei nº 18.442/26, assinale a alternativa que distingue corretamente a destinação do QOEM e do QOE.",
         "options": [
@@ -1559,6 +1666,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 109,
         "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
         "topic": "Lei nº 18.442/26 — critérios para definição do efetivo",
         "text": "QUESTÃO 109 — Ao definir o efetivo da Polícia Militar, a Lei nº 18.442/26 prevê a consideração de fatores territoriais, demográficos e institucionais. Qual alternativa reúne critérios indicados no material autorizado?",
         "options": [
@@ -1573,6 +1681,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 110,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — efeitos do cancelamento de sanções disciplinares",
         "text": "QUESTÃO 110 — Após requerimento do interessado, o Comandante-Geral defere o cancelamento de registros de sanções disciplinares, preenchidos os requisitos do art. 70 do RDPM. Qual efeito decorre do cancelamento, segundo o § 2º desse artigo?",
         "options": [
@@ -1587,6 +1696,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 111,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — autoridade competente para sobrestamento de férias e licença-prêmio",
         "text": "QUESTÃO 111 — Verificada uma das situações previstas no art. 80 das Instruções para os Afastamentos na Polícia Militar, é necessário sobrestar férias ou licença-prêmio do policial militar. Quem deve efetuar o sobrestamento por meio de publicação em Boletim Interno?",
         "options": [
@@ -1601,6 +1711,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 112,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — prevalência de férias e licença-prêmio previamente programadas",
         "text": "QUESTÃO 112 — Um policial militar tem férias previamente programadas e, antes do início do gozo, surge fato que poderia motivar outro afastamento regulamentar. Conforme o art. 81 das I-36-PM, qual regra geral deve ser observada?",
         "options": [
@@ -1615,6 +1726,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 113,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — direito à folga quando não cumprido o turno",
         "text": "Um policial militar sujeito a escala de serviço deixa de cumprir determinado turno. À luz do art. 85 das I-36-PM, em qual hipótese a folga a que teria direito poderá ser usufruída?",
         "options": [
@@ -1629,6 +1741,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 114,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — requisito de aprovação no TAF-3 durante a regra de transição",
         "text": "Em 2026, um policial militar realiza o TAF-3 anual. Considerando a regra de transição do Anexo C à Diretriz nº PM3-001/03/25, qual requisito de pontuação se aplica nesse período?",
         "options": [
@@ -1643,6 +1756,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 115,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — periodicidade, condição e validade do TAF-3",
         "text": "Sobre a aplicação e a validade do TAF-3, analise as afirmações:\n\nI. A aplicação anual do TAF-3 é obrigatória a todos os policiais militares e está condicionada à realização da Inspeção Anual de Saúde.\nII. O nível de condicionamento físico aferido pelo TAF-3 tem validade de um ano, contado da data da última prova da bateria.\nIII. O policial militar considerado apto no TAF-3 não pode ser reavaliado durante o prazo de validade do teste.\n\nAssinale a alternativa correta.",
         "options": [
@@ -1657,6 +1771,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 116,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — indicação da categoria de TAF-4 em caso de restrição médica",
         "text": "Um Oficial Médico do QOS considera o policial militar apto para o serviço, mas identifica restrição que exige avaliação física adaptada. Conforme a Diretriz nº PM3-001/03/25, qual providência é exigida para definir o TAF-4 aplicável?",
         "options": [
@@ -1671,6 +1786,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 117,
         "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
         "topic": "TCI — distinção entre Calendário do TCI e Calendário Técnico-Operacional",
         "text": "Na organização anual do Treinamento Continuado Institucional (TCI), a OPM precisa distinguir o Calendário do TCI do Calendário Técnico-Operacional (CTO). Conforme a Diretriz nº PM3-001/03/24, assinale a alternativa correta.",
         "options": [
@@ -1685,6 +1801,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 118,
         "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
         "topic": "TCI — finalidade e execução institucional",
         "text": "Considerando a finalidade e a missão do Treinamento Continuado Institucional (TCI), assinale a alternativa que melhor corresponde à Diretriz nº PM3-001/03/24.",
         "options": [
@@ -1699,6 +1816,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 119,
         "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
         "topic": "Regime de trabalho — autorização excepcional de horário administrativo",
         "text": "Um policial militar requer horário de expediente administrativo diferente da regra geral. Segundo o art. 16 da Portaria do Cmt G PM1-7/02/23, qual conjunto de condições deve ser observado para eventual autorização?",
         "options": [
@@ -1713,6 +1831,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 120,
         "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
         "topic": "Regime de trabalho — interrupção da contagem e fruição da folga mensal obrigatória",
         "text": "Um policial militar em escala operacional deixa de cumprir um turno por motivo que não corresponde à fruição de folga mensal obrigatória de período anterior. Depois de apurado o período de folga mensal, pretende acumulá-la para usufruir em momento posterior ao prazo previsto na Portaria. À luz do art. 12 da Portaria PM1-7/02/23, assinale a alternativa correta.",
         "options": [
@@ -1727,6 +1846,7 @@ const BANCO_GERAL_QUESTOES = [
 {
         "id": 121,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — agravantes e exceção ligada à execução do serviço",
         "text": "QUESTÃO 121 - Na análise de uma transgressão disciplinar, verifica-se que a conduta ocorreu durante a execução do serviço. À luz do art. 36 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -1741,6 +1861,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 122,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — etapas da aplicação da sanção disciplinar",
         "text": "QUESTÃO 122 - Ao examinar a aplicação de sanção disciplinar, uma autoridade pretende identificar os componentes que integram esse ato decisório, conforme o art. 37 do RDPM. Assinale a alternativa correta.",
         "options": [
@@ -1755,6 +1876,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 123,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — conteúdo do enquadramento disciplinar",
         "text": "QUESTÃO 123 - Ao elaborar o enquadramento disciplinar, a autoridade deve observar os elementos previstos no art. 38 do RDPM. Qual alternativa contém apenas elementos exigidos pelo dispositivo?",
         "options": [
@@ -1769,6 +1891,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 124,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — publicação da sanção e tratamento da advertência",
         "text": "QUESTÃO 124 - Considerando o art. 39 do RDPM, assinale a alternativa INCORRETA sobre a publicação e os efeitos do ato disciplinar.",
         "options": [
@@ -1783,6 +1906,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 125,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — independência das responsabilidades disciplinar, civil e criminal",
         "text": "QUESTÃO 125 - O mesmo fato atribuído a um policial militar é objeto de apuração criminal e pode configurar transgressão disciplinar. De acordo com o art. 44 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -1797,6 +1921,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 126,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — pluralidade de transgressões conexas e não conexas",
         "text": "QUESTÃO 126 - Um procedimento apura duas transgressões disciplinares atribuídas ao mesmo policial militar. Conforme o art. 45 do RDPM, qual critério deve orientar a aplicação das sanções?",
         "options": [
@@ -1811,6 +1936,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 127,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — transgressão envolvendo militares de mais de uma Unidade",
         "text": "QUESTÃO 127 - Uma transgressão disciplinar envolve policiais militares pertencentes a mais de uma Unidade. À luz do art. 46 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -1825,6 +1951,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 128,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — autoridades disciplinares de níveis hierárquicos diferentes",
         "text": "QUESTÃO 128 - Duas autoridades de níveis hierárquicos diferentes, ambas com ação disciplinar sobre o policial militar, tomam conhecimento da mesma transgressão. Conforme o art. 47 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -1839,6 +1966,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 129,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — interrogatório ou sanção em estado de embriaguez",
         "text": "QUESTÃO 129 - No momento em que seria interrogado em procedimento disciplinar, o policial militar apresenta sinais de embriaguez. Considerando o art. 50 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -1853,6 +1981,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 130,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — termo único da audiência",
         "text": "QUESTÃO 130 - Encerrada a audiência de instrução e julgamento de Procedimento Disciplinar, a autoridade precisa formalizar o que ocorreu. Nos termos do art. 9º da Portaria CORREGPM-1/360/13, assinale a alternativa correta.",
         "options": [
@@ -1867,6 +1996,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 131,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — aprovação do ato decisório",
         "text": "QUESTÃO 131 - A autoridade instauradora profere decisão em Procedimento Disciplinar. Conforme o art. 10 da Portaria CORREGPM-1/360/13, qual providência deve ser observada?",
         "options": [
@@ -1881,6 +2011,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 132,
         "subject": "JURIDICO",
+        "tag": "Procedimento Disciplinar",
         "topic": "Procedimento Disciplinar — suspensão dos prazos por afastamento regulamentar",
         "text": "QUESTÃO 132 - Durante a tramitação de Procedimento Disciplinar, o acusado passa a usufruir afastamento regulamentar. De acordo com o art. 11 da Portaria CORREGPM-1/360/13, qual efeito ocorre sobre os prazos?",
         "options": [
@@ -1895,6 +2026,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 133,
         "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
         "topic": "Lei nº 18.442/26 — condicionantes gerais de acesso e promoção",
         "text": "QUESTÃO 133 - Ao analisar um acesso ou promoção previstos na Lei nº 18.442/26, o setor de pessoal verifica o preenchimento dos requisitos individuais pelo militar. Qual condição geral também deve ser observada, conforme o material autorizado?",
         "options": [
@@ -1909,6 +2041,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 134,
         "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
         "topic": "Lei nº 18.442/26 — promoção de Aspirante a Oficial do QOEM",
         "text": "QUESTÃO 134 - Um Aspirante a Oficial PM concluiu com aproveitamento o estágio administrativo-operacional, mas ainda não completou um ano na graduação. Considerando o quadro de promoção reproduzido no material da Lei nº 18.442/26, assinale a alternativa correta.",
         "options": [
@@ -1923,6 +2056,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 135,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — requisição de apresentação do transgressor",
         "text": "QUESTÃO 135 - Uma autoridade disciplinar precisa aplicar sanção a policial militar que se encontra a serviço ou à disposição de outra autoridade. Nos termos do art. 49 do RDPM, qual providência é prevista?",
         "options": [
@@ -1937,6 +2071,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 136,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-2-PM",
         "topic": "I-2-PM — condições para movimentação por conveniência própria",
         "text": "QUESTÃO 136 - Um policial militar solicita movimentação por conveniência própria. Considerando o art. 9º das I-2-PM, assinale a alternativa que reúne condições expressamente previstas para o pedido.",
         "options": [
@@ -1951,6 +2086,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 137,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-2-PM",
         "topic": "I-2-PM — formalização do pedido de movimentação por conveniência própria",
         "text": "QUESTÃO 137 - Preenchidas as condições regulamentares para movimentação por conveniência própria, o policial militar pretende encaminhar seu pedido. Segundo o art. 10 das I-2-PM, qual procedimento deve adotar?",
         "options": [
@@ -1965,6 +2101,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 138,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-2-PM",
         "topic": "I-2-PM — movimentação por união de cônjuges",
         "text": "QUESTÃO 138 - Um policial militar requer movimentação com fundamento na união de cônjuges. Considerando os arts. 12 e 13 das I-2-PM, assinale a alternativa correta.",
         "options": [
@@ -1979,6 +2116,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 139,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-2-PM",
         "topic": "I-2-PM — movimentação excepcional fora dos critérios ordinários",
         "text": "QUESTÃO 139 - Em situação excepcional, a OPM considera necessária movimentação imediata que não se enquadra nos critérios ordinários de banco de dados ou de relação de prioridade de transferência. Nos termos do parágrafo único do art. 11 das I-2-PM, como deve ser instruído o caso?",
         "options": [
@@ -1993,6 +2131,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 140,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — aquisição do direito às férias anuais",
         "text": "QUESTÃO 140 - Um policial militar ingressou na PMESP após ter prestado serviço público estadual, com intervalo de oito dias entre o encerramento do vínculo anterior e a admissão na Instituição. Considerando o art. 2º das I-36-PM, assinale a alternativa correta sobre a contagem do primeiro ano para férias.",
         "options": [
@@ -2007,6 +2146,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 141,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — férias escolares e emprego do efetivo discente",
         "text": "QUESTÃO 141 - Durante o recesso escolar de um curso da PMESP, um policial militar não está usufruindo férias anuais concomitantemente, pois já as fruiu. De acordo com o art. 12 das I-36-PM, assinale a alternativa correta.",
         "options": [
@@ -2021,6 +2161,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 142,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — interrupção do bloco aquisitivo de licença-prêmio",
         "text": "QUESTÃO 142 - Na apuração do bloco aquisitivo de licença-prêmio, a OPM identifica que o policial militar acumulou 34 dias de dispensa do serviço e de licença para tratamento de saúde em pessoa da família, consideradas em conjunto, no período de cinco anos. Conforme o art. 16, inciso III, das I-36-PM, qual consequência normativa se aplica?",
         "options": [
@@ -2035,6 +2176,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 143,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — frequência e duração mínima do treinamento físico",
         "text": "QUESTÃO 143 - Ao organizar o plano de treinamento físico da OPM, o comandante precisa observar a frequência mínima e a duração das sessões previstas na Diretriz nº PM3-001/03/25. Assinale a alternativa correta.",
         "options": [
@@ -2049,6 +2191,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 144,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — destinação dos TAF-1 e TAF-2",
         "text": "QUESTÃO 144 - Um gestor de ensino precisa selecionar o teste de aptidão física adequado à finalidade pretendida. Conforme o item 6.5.4.1 da Diretriz nº PM3-001/03/25, assinale a alternativa correta.",
         "options": [
@@ -2063,6 +2206,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 145,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — aprovação de testes físicos adicionais pela EEF",
         "text": "QUESTÃO 145 - Uma OPM pretende aplicar, por necessidade fundamentada, um teste físico que não consta do rol de testes da Diretriz nº PM3-001/03/25. Qual providência é exigida pelo Anexo B?",
         "options": [
@@ -2077,6 +2221,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 146,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — pedido de pontuação mais rigorosa no TAF-2",
         "text": "QUESTÃO 146 - Uma OPM pretende adotar, no TAF-2, pontuação mais rigorosa do que a constante das tabelas da Diretriz nº PM3-001/03/25. Considerando o Anexo B, assinale a alternativa correta.",
         "options": [
@@ -2091,6 +2236,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 147,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — classificação por pontuação do TAF-3 a partir de 2029",
         "text": "QUESTÃO 147 - Um policial militar realiza o TAF-3 em 2029 e obtém 420 pontos. Considerando a tabela de conceitos prevista no Anexo C da Diretriz nº PM3-001/03/25 para vigência a partir de 1º de janeiro de 2029, qual conceito corresponde à pontuação?",
         "options": [
@@ -2105,6 +2251,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 148,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — impossibilidade de execução dos testes previstos no TAF-4",
         "text": "QUESTÃO 148 - Um policial militar apto para o serviço, mas com restrições médicas, não consegue realizar nenhum dos TAF-4 previstos para sua categoria. Conforme o Anexo D da Diretriz nº PM3-001/03/25, assinale a alternativa correta.",
         "options": [
@@ -2119,6 +2266,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 149,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
         "topic": "Portaria PM4-001/1.2/24 — comunicação de aquisição de munição",
         "text": "QUESTÃO 149 - Um policial militar da ativa adquiriu munição e precisa cumprir a obrigação de comunicação prevista na Portaria PM4-001/1.2/24, com a redação reproduzida no material autorizado. Assinale a alternativa correta.",
         "options": [
@@ -2133,6 +2281,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 150,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
         "topic": "Portaria PM4-001/1.2/24 — assinatura no pedido de autorização para arma de uso restrito",
         "text": "QUESTÃO 150 - Para solicitar autorização junto ao Exército Brasileiro para aquisição de arma de fogo de uso restrito no comércio ou indústria, o policial militar reúne o formulário do Apêndice A-1 do Anexo IV. Conforme o procedimento descrito no material autorizado, assinale a alternativa correta.",
         "options": [
@@ -2143,10 +2292,11 @@ const BANCO_GERAL_QUESTOES = [
         ],
         "answer": 1,
         "explanation": "Gabarito: B. Fonte: Assuntos Organizacionais.pdf, Portaria do Cmt G PM4-1/1.2/24, alteração publicada no Bol G PM 241/24, Anexo I, item 2.1.1. Evidência: o formulário deve conter assinaturas físicas do requerente e do comandante da Unidade a que está vinculado (ou do comandante da Unidade detentora do AI, se veterano), sendo vedada assinatura digital ou digitalizada; a tramitação para obtenção da autorização do SFPC/2ª RM deve ser realizada pessoalmente pelo interessado. A e C dispensam exigências expressas; D transfere integralmente a tramitação à OPM."
-      },
+},
 {
         "id": 151,
         "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
         "topic": "Programa de Radiopatrulha — quantidade mínima de patrulhas",
         "text": "QUESTÃO 151 - Ao revisar o Plano Diretor de uma Companhia PM territorial, o comandante verifica a distribuição das patrulhas que devem operar ininterruptamente. Considerando a Diretriz do Programa de Radiopatrulha, assinale a alternativa correta.",
         "options": [
@@ -2161,6 +2311,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 152,
         "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
         "topic": "Programa de Radiopatrulha — emprego de motocicletas",
         "text": "QUESTÃO 152 - Uma OPM avalia substituir, em parte do turno, uma patrulha em viatura de quatro rodas por patrulhamento com motocicleta. À luz da Diretriz do Programa de Radiopatrulha, assinale a alternativa correta.",
         "options": [
@@ -2175,6 +2326,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 153,
         "subject": "OPERACIONAL",
+        "tag": "Força Tática",
         "topic": "Força Tática — composição excepcional da Equipe Tática",
         "text": "QUESTÃO 153 - Durante operação de controle de multidões, o comandante avalia a composição da Equipe Tática em viatura de quatro rodas. Considerando a Diretriz do Programa de Força Tática, assinale a alternativa correta.",
         "options": [
@@ -2189,6 +2341,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 154,
         "subject": "OPERACIONAL",
+        "tag": "Força Tática",
         "topic": "Força Tática — composição da Patrulha de Escolta",
         "text": "QUESTÃO 154 - Uma equipe será organizada para executar movimentação de presos no âmbito do Programa de Força Tática. Conforme a diretriz específica, assinale a alternativa correta sobre a Patrulha de Escolta.",
         "options": [
@@ -2203,6 +2356,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 155,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
         "topic": "Programa de Policiamento Escolar — Adoção Escolar",
         "text": "QUESTÃO 155 - Uma OPM pretende adotar escola situada nas proximidades de sua sede, utilizando policiais militares do serviço administrativo para atividade preventiva cumulativa. Segundo a Diretriz do Programa de Policiamento Escolar, assinale a alternativa correta.",
         "options": [
@@ -2217,6 +2371,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 156,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
         "topic": "Programa de Policiamento Escolar — limites de atuação",
         "text": "QUESTÃO 156 - Durante reunião com a direção de uma escola, o comandante recebe pedido para que a equipe de policiamento escolar passe a resolver questões disciplinares internas dos alunos. Considerando a Diretriz do Programa de Policiamento Escolar, assinale a alternativa INCORRETA.",
         "options": [
@@ -2231,6 +2386,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 157,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
         "topic": "Programa de Policiamento Rural — fatores de implantação",
         "text": "QUESTÃO 157 - Um Comando de Policiamento avalia implantar o Programa de Policiamento Rural em determinada circunscrição. De acordo com a Diretriz nº PM3-007/02/20, qual conjunto reúne fatores expressamente considerados para orientar a implantação?",
         "options": [
@@ -2245,6 +2401,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 158,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
         "topic": "Programa de Policiamento Rural — planejamento conjunto",
         "text": "QUESTÃO 158 - No planejamento do policiamento rural, duas OPM identificam que a distribuição inicialmente proposta pode provocar sobreposição de patrulhas e desperdício de recursos. Considerando a Diretriz nº PM3-007/02/20, assinale a alternativa correta.",
         "options": [
@@ -2259,6 +2416,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 159,
         "subject": "OPERACIONAL",
+        "tag": "Drones",
         "topic": "Policiamento com Drones — custódia de evidências digitais",
         "text": "QUESTÃO 159 - Uma OPM subordinada a Comando de Policiamento empregou drone e produziu evidência digital de interesse da segurança pública. Considerando a Diretriz nº PM3-005/02/24, assinale a alternativa correta sobre armazenamento e custódia.",
         "options": [
@@ -2273,6 +2431,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 160,
         "subject": "OPERACIONAL",
+        "tag": "Drones",
         "topic": "Policiamento com Drones — proteção de dados e classificação",
         "text": "QUESTÃO 160 - Ao estabelecer procedimentos internos para o emprego operacional de drones, uma OPM precisa disciplinar o tratamento de dados e o grau inicial de sigilo das disposições da diretriz. Assinale a alternativa correta.",
         "options": [
@@ -2287,6 +2446,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 161,
         "subject": "OPERACIONAL",
+        "tag": "Drones",
         "topic": "Policiamento com Drones — indicadores de desempenho",
         "text": "QUESTÃO 161 - Na avaliação institucional do Programa de Policiamento com Drones, o Comando precisa identificar como são desenvolvidos e acompanhados os indicadores específicos de desempenho e resultados. Segundo a Diretriz nº PM3-005/02/24, assinale a alternativa correta.",
         "options": [
@@ -2301,6 +2461,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 162,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
         "topic": "Programa de Policiamento de Trânsito — composição das US territoriais",
         "text": "QUESTÃO 162 - Uma OPM territorial designa Unidade de Serviço para atuar especificamente no policiamento ostensivo de trânsito. Conforme a Diretriz nº PM3-006/02/20, assinale a alternativa correta.",
         "options": [
@@ -2315,6 +2476,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 163,
         "subject": "OPERACIONAL",
+        "tag": "Policiamento de Trânsito",
         "topic": "Programa de Policiamento de Trânsito — níveis de resposta",
         "text": "QUESTÃO 163 - Uma equipe do CPTran executa atividade típica de policiamento ostensivo de trânsito urbano e, em outra situação, é solicitada para prestar apoio especializado a uma Unidade de Serviço. À luz da Diretriz nº PM3-006/02/20, assinale a alternativa correta.",
         "options": [
@@ -2329,6 +2491,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 164,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP — Plano de Ação",
         "text": "QUESTÃO 164 - Após a fase de diagnóstico situacional, uma OPM consolida as áreas de interesse e os pontos de concentração ou fixação do policiamento para otimizar o emprego das Unidades de Serviço. Segundo a NORSOP, qual instrumento resulta desse planejamento?",
         "options": [
@@ -2343,6 +2506,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 165,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP — competência para definir regimes de trabalho",
         "text": "QUESTÃO 165 - Na elaboração de Planos Diretores de abrangência operacional, surge divergência sobre quem pode estabelecer o regime de trabalho dos Programas de Policiamento e das Atividades Operacionais Diversas. Conforme a NORSOP, assinale a alternativa correta.",
         "options": [
@@ -2357,6 +2521,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 166,
         "subject": "OPERACIONAL",
+        "tag": "NORSOP",
         "topic": "NORSOP — Supervisor Regional",
         "text": "QUESTÃO 166 - Fora do horário de expediente administrativo, uma região necessita de supervisão das atividades de polícia ostensiva e de preservação da ordem pública. Considerando a NORSOP, assinale a alternativa correta sobre o Supervisor Regional.",
         "options": [
@@ -2371,6 +2536,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 167,
         "subject": "OPERACIONAL",
+        "tag": "Drones",
         "topic": "Policiamento com Drones — habilitação do Observador de UAS",
         "text": "QUESTÃO 167 - Uma OPM pretende designar policial militar para exercer a função de Observador de UAS em Equipe Drone. Segundo a Diretriz nº PM3-005/02/24, qual requisito se aplica à habilitação desse integrante?",
         "options": [
@@ -2385,6 +2551,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 168,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — espécies de sanções disciplinares",
         "text": "QUESTÃO 168 - Ao orientar uma autoridade sobre o rol de sanções disciplinares previsto no RDPM, um oficial precisa distinguir as espécies expressamente enumeradas no regulamento. Assinale a alternativa correta.",
         "options": [
@@ -2399,6 +2566,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 169,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — conversão da permanência disciplinar em serviço extraordinário",
         "text": "QUESTÃO 169 - Um policial militar punido com permanência disciplinar solicita a conversão do cumprimento em prestação de serviço extraordinário. Considerando o art. 18 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2413,6 +2581,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 170,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — limites da prestação de serviço extraordinário",
         "text": "QUESTÃO 170 - Deferida a conversão de parte da permanência disciplinar em prestação de serviço extraordinário, a autoridade precisa fixar a duração e os limites do cumprimento. À luz do art. 19 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2427,6 +2596,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 171,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — hipóteses e limites do recolhimento disciplinar",
         "text": "QUESTÃO 171 - Em situação envolvendo policial militar, avalia-se a necessidade de recolhimento à prisão sem nota de punição publicada em boletim. Segundo o art. 26 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2441,6 +2611,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 172,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — conteúdo da comunicação disciplinar",
         "text": "QUESTÃO 172 - Um superior elabora comunicação disciplinar sobre possível transgressão de subordinado. Considerando o art. 28 do RDPM, assinale a alternativa correta quanto ao conteúdo e à forma do documento.",
         "options": [
@@ -2455,6 +2626,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 173,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — prazo para solução do procedimento disciplinar",
         "text": "QUESTÃO 173 - Após o recebimento da defesa do acusado em procedimento disciplinar, a autoridade competente precisa observar o prazo para solução e a comunicação ao signatário. Segundo o art. 29 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2469,6 +2641,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 174,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — representação contra ato de superior",
         "text": "QUESTÃO 174 - Um policial militar considera irregular, injusto ou ilegal ato praticado por superior hierárquico ou funcional e pretende apresentar representação. Conforme o art. 30 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2483,6 +2656,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 175,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — causas de justificação",
         "text": "QUESTÃO 175 - Ao apreciar uma transgressão disciplinar, a autoridade examina se há causa de justificação que impeça a aplicação de sanção. À luz do art. 34 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2497,6 +2671,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 176,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — circunstâncias atenuantes",
         "text": "QUESTÃO 176 - Na análise das circunstâncias de uma transgressão disciplinar, a autoridade precisa distinguir as atenuantes das agravantes previstas no RDPM. Assinale a alternativa que apresenta circunstância atenuante expressamente prevista no art. 35.",
         "options": [
@@ -2511,6 +2686,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 177,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — limites gerais na aplicação das sanções",
         "text": "QUESTÃO 177 - Ao aplicar sanção disciplinar, a autoridade identifica circunstâncias atenuantes e agravantes e verifica que há uma única transgressão. Considerando o art. 41 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2525,6 +2701,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 178,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — limites de sanção conforme a natureza da falta",
         "text": "QUESTÃO 178 - Ao enquadrar transgressão de natureza média, a autoridade verifica também a existência de reincidência específica. De acordo com o art. 42 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2539,6 +2716,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 179,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — início e contagem do cumprimento da sanção",
         "text": "QUESTÃO 179 - Um policial militar toma ciência da publicação da sanção disciplinar e questiona quando deverá iniciar seu cumprimento e como será computado cada dia. Segundo o art. 52 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2553,6 +2731,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 180,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — classificação do comportamento policial-militar",
         "text": "QUESTÃO 180 - Para classificar o comportamento de uma praça, a autoridade verifica que, nos últimos cinco anos, foram aplicadas até duas repreensões e não há outras sanções relevantes no período considerado. Segundo o art. 54 do RDPM, qual classificação corresponde a esse critério?",
         "options": [
@@ -2567,6 +2746,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 181,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — pedido de reconsideração de ato",
         "text": "QUESTÃO 181 - Um policial militar pretende impugnar ato disciplinar que reputa injusto. Conforme o art. 57 do RDPM, assinale a alternativa correta sobre o pedido de reconsideração de ato.",
         "options": [
@@ -2581,6 +2761,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 182,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — recurso hierárquico",
         "text": "QUESTÃO 182 - Após receber a solução do pedido de reconsideração de ato, o policial militar avalia interpor recurso hierárquico. Segundo o art. 58 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2595,6 +2776,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 183,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — revisão de atos disciplinares",
         "text": "QUESTÃO 183 - Uma autoridade examina a possibilidade de rever sanção disciplinar por irregularidade ou ilegalidade. Considerando o art. 62 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2609,6 +2791,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 184,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — dispensa do serviço e recompensas",
         "text": "QUESTÃO 184 - Um comandante avalia conceder dispensa do serviço a policial militar por motivo excepcional. De acordo com o art. 69 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2623,6 +2806,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 185,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — espécies de processo regular",
         "text": "QUESTÃO 185 - Para definir o processo regular aplicável a militar do Estado, a autoridade precisa considerar a condição funcional e o tempo de serviço policial-militar. Conforme o art. 71 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2637,6 +2821,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 186,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — composição do Conselho de Disciplina",
         "text": "QUESTÃO 186 - Instaurado Conselho de Disciplina, deve ser definida sua composição e a função de cada integrante. À luz do art. 78 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2651,6 +2836,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 187,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — concurso de agentes e competência para instauração",
         "text": "QUESTÃO 187 - Um único ato disciplinar foi praticado em concurso por policiais militares pertencentes a OPM diferentes. Considerando o art. 80 do RDPM, assinale a alternativa correta.",
         "options": [
@@ -2665,6 +2851,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 188,
         "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
         "topic": "Lei nº 18.442/26 — promoção no QOEM por turma",
         "text": "QUESTÃO 188 - Ao planejar as promoções no Quadro de Oficiais de Estado-Maior, o setor de pessoal precisa aplicar a regra de promoção por turma prevista na Lei nº 18.442/26. Assinale a alternativa correta.",
         "options": [
@@ -2679,6 +2866,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 189,
         "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
         "topic": "Lei nº 18.442/26 — requisitos para promoção a 2º Tenente do QOE/QOM",
         "text": "QUESTÃO 189 - Um Subtenente PM da ativa pretende concorrer à promoção a Segundo-Tenente PM do QOE ou do QOM. Considerando os requisitos apresentados na Lei nº 18.442/26, assinale a alternativa correta.",
         "options": [
@@ -2693,6 +2881,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 190,
         "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
         "topic": "Lei nº 18.442/26 — interstícios mínimos das praças",
         "text": "QUESTÃO 190 - Ao conferir os interstícios mínimos previstos na Lei nº 18.442/26 para promoções das praças, qual alternativa reproduz corretamente a sequência de requisitos temporais apresentada no material?",
         "options": [
@@ -2707,6 +2896,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 191,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — redução das férias anuais",
         "text": "QUESTÃO 191 - Ao elaborar o plano de férias do exercício, a Seção de Pessoal verifica que um policial militar acumulou, no exercício anterior, mais de dez não comparecimentos ao serviço em razão de situações previstas nas Instruções para os Afastamentos na PM. Qual consequência prevê o art. 11 da I-36-PM?",
         "options": [
@@ -2721,6 +2911,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 192,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — formalização e publicidade do plano de férias",
         "text": "QUESTÃO 192 - Na conferência do Plano Anual de Férias, a autoridade verifica se o documento contém as informações e a publicidade exigidas pelas Instruções para os Afastamentos na PM. Assinale a alternativa correta.",
         "options": [
@@ -2735,6 +2926,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 193,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — convalescença médica e licença para tratamento de saúde",
         "text": "QUESTÃO 193 - Um policial militar está temporariamente impossibilitado de comparecer ao serviço por motivo de saúde. O Oficial Médico PM avalia que há previsibilidade de cura em até dez dias ininterruptos. Segundo a I-36-PM, qual providência corresponde a essa hipótese?",
         "options": [
@@ -2749,6 +2941,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 194,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — providências diante de atestado médico civil",
         "text": "QUESTÃO 194 - Um policial militar recebe atestado médico civil que prescreve impossibilidade de comparecer ao serviço ou cumprir normalmente suas atribuições. Considerando o art. 23 da I-36-PM, assinale a alternativa correta.",
         "options": [
@@ -2763,6 +2956,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 195,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — internação em hospital civil ou entidade particular",
         "text": "QUESTÃO 195 - A OPM é informada de que um policial militar foi internado em hospital civil. Segundo o art. 25 da I-36-PM, qual sequência deve ser observada?",
         "options": [
@@ -2777,6 +2971,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 196,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — tentativas e realização dos testes do TAF-1",
         "text": "QUESTÃO 196 - Em processo seletivo de ingresso, um candidato não atinge o índice mínimo em um dos testes do TAF-1. Considerando o Anexo A da Diretriz nº PM3-001/03/25, assinale a alternativa correta.",
         "options": [
@@ -2791,6 +2986,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 197,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — cadastro de responsáveis pelo treinamento físico",
         "text": "QUESTÃO 197 - Uma OPM designa policial militar para exercer função de treinador físico e pretende regularizar seu acesso ao sistema institucional. Conforme a Diretriz nº PM3-001/03/25, assinale a alternativa correta.",
         "options": [
@@ -2805,6 +3001,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 198,
         "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
         "topic": "SisTAF — avaliação antropométrica antes do TAF periódico",
         "text": "QUESTÃO 198 - Antes de aplicar o TAF de avaliação periódica, o Treinador Físico da OPM organiza os procedimentos prévios e o registro dos resultados. Segundo a Diretriz nº PM3-001/03/25, assinale a alternativa correta.",
         "options": [
@@ -2819,6 +3016,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 199,
         "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
         "topic": "TCI — conceito de anamnese",
         "text": "QUESTÃO 199 - Na preparação de programa de treinamento físico, o responsável reúne informações sobre histórico de saúde, hábitos de vida, condições físicas e mentais do policial militar, por entrevista ou questionário estruturado, para identificar limitações e orientar exercícios seguros. Segundo a Diretriz do Treinamento Continuado Institucional, esse procedimento denomina-se:",
         "options": [
@@ -2833,6 +3031,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 200,
         "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
         "topic": "I-36-PM — nova inspeção após incapacidade temporária",
         "text": "QUESTÃO 200 - Um policial militar permanece temporariamente incapacitado para o serviço ou apto com restrição médica por período superior a sessenta dias. De acordo com o art. 27 da I-36-PM, qual providência deve ocorrer ao final desse período?",
         "options": [
@@ -2847,6 +3046,7 @@ const BANCO_GERAL_QUESTOES = [
 {
     "id": 201,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — solicitação de vítima ou testemunha para não ser filmada",
     "text": "QUESTÃO 201 — Durante a entrevista de uma testemunha, ela solicita que seu rosto não seja registrado pela Câmera Operacional Portátil (COP). Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
     "options": [
@@ -2861,6 +3061,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 202,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — ocorrência com vítima criança/adolescente ou crime sexual",
     "text": "QUESTÃO 202 — Em ocorrência envolvendo criança ou adolescente na condição de vítima, a equipe precisa adaptar o uso da COP para preservar direitos sensíveis. À luz da Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
     "options": [
@@ -2875,6 +3076,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 203,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — busca pessoal minuciosa",
     "text": "QUESTÃO 203 — Antes de realizar busca pessoal minuciosa, a equipe verifica a orientação específica sobre o posicionamento e o registro da COP. Segundo a Diretriz nº PM3-001/02/25, qual providência está prevista?",
     "options": [
@@ -2889,6 +3091,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 204,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — informação às partes sobre a gravação",
     "text": "QUESTÃO 204 — Ao iniciar a gravação de uma intervenção policial, o policial militar avalia se é possível informar os envolvidos sem criar risco à sua integridade física. De acordo com a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
     "options": [
@@ -2903,6 +3106,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 205,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — interrupção durante fato de interesse policial",
     "text": "QUESTÃO 205 — Durante o atendimento de uma ocorrência, o policial percebe que a gravação da COP foi interrompida. Conforme a Diretriz nº PM3-001/02/25, qual sequência corresponde à providência prevista?",
     "options": [
@@ -2917,6 +3121,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 206,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — equipamento inoperante",
     "text": "QUESTÃO 206 — Durante o serviço operacional, uma COP passa à condição de inoperante. Considerando as obrigações do operador previstas na Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
     "options": [
@@ -2931,6 +3136,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 207,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — acesso à transmissão ao vivo",
     "text": "QUESTÃO 207 — Uma OPM pretende acompanhar em tempo real imagens captadas por COP durante operação policial-militar. Segundo a Diretriz nº PM3-001/02/25, qual alternativa identifica corretamente uma hipótese de acesso à transmissão ao vivo?",
     "options": [
@@ -2945,6 +3151,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 208,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — edição de cópia para divulgação institucional",
     "text": "QUESTÃO 208 — Após ocorrência de interesse institucional, uma unidade pretende editar cópia de vídeo captado por COP para divulgação. Conforme a Diretriz nº PM3-001/02/25, a edição para esse fim:",
     "options": [
@@ -2959,6 +3166,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 209,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — propriedade e divulgação dos dados",
     "text": "QUESTÃO 209 — Uma pessoa solicita diretamente a uma equipe policial cópia de imagens captadas por COP para divulgação pública. Considerando a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
     "options": [
@@ -2973,6 +3181,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 210,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — vídeo de rotina (Video Recall)",
     "text": "QUESTÃO 210 — Ao analisar a classificação dos registros audiovisuais da COP, um oficial precisa distinguir o vídeo de rotina do vídeo intencional. De acordo com a Diretriz nº PM3-001/02/25, assinale a alternativa correta sobre o vídeo de rotina.",
     "options": [
@@ -2987,6 +3196,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 211,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — distribuição mínima quando há insuficiência de equipamentos",
     "text": "QUESTÃO 211 — A OPM possui menos COP do que policiais integrantes das Unidades de Serviço. Segundo a Diretriz nº PM3-001/02/25, qual critério mínimo deve ser garantido?",
     "options": [
@@ -3001,6 +3211,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 212,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — Oficial de Ligação",
     "text": "QUESTÃO 212 — Um Batalhão precisa designar oficial para coordenar o emprego operacional das COP, o treinamento do efetivo e o cumprimento da regulamentação pertinente. Conforme a Diretriz nº PM3-001/02/25, quem designa o Oficial de Ligação COP?",
     "options": [
@@ -3015,6 +3226,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 213,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — auditoria das evidências digitais",
     "text": "QUESTÃO 213 — A OPM realiza exame sistemático, independente e documentado dos registros captados por COP, com acesso pessoal ao SiGCED. Conforme a Diretriz nº PM3-001/02/25, essa auditoria tem, entre outros, qual objetivo?",
     "options": [
@@ -3029,6 +3241,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 214,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — cautelas no uso do áudio bidirecional",
     "text": "QUESTÃO 214 — O COPOM avalia utilizar o áudio bidirecional da COP para transmitir orientação durante atendimento policial. Segundo a Diretriz nº PM3-001/02/25, em qual situação a funcionalidade exige avaliação criteriosa para evitar prejuízo à segurança ou à atividade?",
     "options": [
@@ -3043,6 +3256,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 215,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — comunicação de acionamento remoto",
     "text": "QUESTÃO 215 — O COPOM aciona remotamente a gravação da COP de uma Unidade de Serviço. Qual providência de comunicação está expressamente prevista na Diretriz nº PM3-001/02/25?",
     "options": [
@@ -3057,6 +3271,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 216,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — finalidade exclusiva e exceções de uso",
     "text": "QUESTÃO 216 — Um policial pretende utilizar a COP para captar imagens sem relação com o serviço policial, alegando que o equipamento está disponível. À luz da Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
     "options": [
@@ -3071,6 +3286,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 217,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — finalidade da transmissão ao vivo",
     "text": "QUESTÃO 217 — Durante uma operação policial-militar, a transmissão ao vivo das imagens captadas pelas COP é utilizada para apoiar a decisão do comando. Qual finalidade é atribuída a essa funcionalidade pela Diretriz nº PM3-001/02/25?",
     "options": [
@@ -3085,6 +3301,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 218,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — término do registro de fato de interesse policial",
     "text": "QUESTÃO 218 — Após a condução de uma pessoa à delegacia, o policial avalia quando pode encerrar a gravação da COP. De acordo com a Diretriz nº PM3-001/02/25, qual situação consta expressamente como exemplo de encerramento do fato de interesse policial?",
     "options": [
@@ -3099,6 +3316,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 219,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — classificação de evidência de MDIP",
     "text": "QUESTÃO 219 — Em uma ocorrência com resultado morte decorrente de intervenção policial, o operador precisa selecionar a classificação da evidência digital produzida pela COP. Conforme o procedimento de classificação descrito na Diretriz nº PM3-001/02/25, qual etiqueta corresponde à situação?",
     "options": [
@@ -3113,6 +3331,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 220,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — proteção da captação de áudio e imagem",
     "text": "QUESTÃO 220 — Durante o serviço, o policial mantém a COP acionada, mas uma peça do uniforme cobre parcialmente a lente e o microfone. À luz da Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
     "options": [
@@ -3127,6 +3346,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 221,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — repositório de dados (Storage)",
     "text": "QUESTÃO 221 — No glossário da Diretriz nº PM3-001/02/25, é necessário distinguir repositório de dados (Storage) de outros recursos de armazenamento. Assinale a alternativa que corresponde ao conceito de Storage.",
     "options": [
@@ -3141,6 +3361,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 222,
     "subject": "OPERACIONAL",
+        "tag": "SCIPM",
     "topic": "SCIPM — gerenciamento modular de recursos",
     "text": "QUESTÃO 222 — Em incidente crítico, o Comandante do Incidente precisa ampliar a estrutura de resposta conforme o aumento da complexidade e, posteriormente, reduzir recursos quando a demanda diminuir. Considerando o elemento essencial Organização modular do SCIPM, assinale a alternativa correta.",
     "options": [
@@ -3155,6 +3376,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 223,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — cadeia de custódia da evidência digital",
     "text": "QUESTÃO 223 — Ao encaminhar uma evidência digital produzida por COP a outro órgão, a equipe precisa preservar sua confiabilidade desde a gravação até a saída do sistema. Segundo a Diretriz nº PM3-001/02/25, qual conceito corresponde a essa garantia?",
     "options": [
@@ -3169,6 +3391,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 224,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — uso obrigatório em operações específicas",
     "text": "QUESTÃO 224 — Há disponibilidade de COP para emprego em uma operação policial-militar de restauração da ordem pública. Segundo a Diretriz nº PM3-001/02/25, em qual situação o uso do equipamento é obrigatório?",
     "options": [
@@ -3183,6 +3406,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 225,
     "subject": "OPERACIONAL",
+        "tag": "COP",
     "topic": "COP — armazenamento em nuvem e armazenamento local",
     "text": "QUESTÃO 225 — Ao revisar a arquitetura de armazenamento das evidências produzidas por COP, um oficial precisa distinguir armazenamento em nuvem de armazenamento local. Conforme a Diretriz nº PM3-001/02/25, assinale a alternativa correta.",
     "options": [
@@ -3197,6 +3421,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 226,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — definição de posto e graduação",
     "text": "QUESTÃO 226 — À luz do Regulamento Disciplinar da Polícia Militar, assinale a alternativa correta quanto à distinção entre posto e graduação.",
     "options": [
@@ -3211,6 +3436,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 227,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — critérios de antiguidade em igualdade hierárquica",
     "text": "QUESTÃO 227 — Dois militares do Estado possuem o mesmo posto ou graduação. De acordo com o RDPM, qual critério aparece em primeiro lugar na ordem de definição da antiguidade?",
     "options": [
@@ -3225,6 +3451,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 228,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — precedência funcional",
     "text": "QUESTÃO 228 — Em igualdade de posto ou graduação, um militar exerce cargo que lhe atribui superioridade funcional sobre integrantes do órgão que dirige. Segundo o RDPM, a situação corresponde à:",
     "options": [
@@ -3239,6 +3466,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 229,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — deontologia policial-militar",
     "text": "QUESTÃO 229 — Conforme o RDPM, a deontologia policial-militar é constituída por:",
     "options": [
@@ -3253,6 +3481,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 230,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — valores fundamentais policiais-militares",
     "text": "QUESTÃO 230 — Considerando o rol de valores fundamentais determinantes da moral policial-militar previsto no RDPM, assinale a alternativa que contém apenas valores expressamente enumerados no art. 7º.",
     "options": [
@@ -3267,6 +3496,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 231,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — prazo de apresentação da comunicação disciplinar",
     "text": "QUESTÃO 231 — Ressalvadas as disposições relativas ao recolhimento disciplinar, em que a comunicação deve ser imediata, qual é o prazo previsto no RDPM para apresentação da comunicação disciplinar, contado da constatação ou conhecimento do fato?",
     "options": [
@@ -3281,6 +3511,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 232,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — prazo para manifestação preliminar",
     "text": "QUESTÃO 232 — Recebida a comunicação disciplinar, a autoridade competente encaminha os fatos ao militar comunicado para manifestação preliminar por escrito. Qual prazo o RDPM prevê para essa manifestação?",
     "options": [
@@ -3295,6 +3526,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 233,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — solução do procedimento disciplinar",
     "text": "QUESTÃO 233 — Após receber a defesa do acusado, a autoridade competente deve solucionar o procedimento disciplinar. Segundo o RDPM, qual é o prazo ordinário e a prorrogação máxima admitida?",
     "options": [
@@ -3309,6 +3541,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 234,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — interrupção dos prazos por afastamento",
     "text": "QUESTÃO 234 — O militar acusado encontra-se em afastamento regulamentar durante a tramitação do procedimento disciplinar. Como essa situação afeta a contagem do prazo de solução previsto no RDPM?",
     "options": [
@@ -3323,6 +3556,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 235,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — prazo para encaminhamento da representação",
     "text": "QUESTÃO 235 — Nos termos do RDPM, qual é o prazo para encaminhamento da representação contra ato praticado ou aprovado por superior hierárquico ou funcional, contado da data do ato ou fato que a motivar?",
     "options": [
@@ -3337,6 +3571,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 236,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — competência para aplicação de sanções pelo Governador",
     "text": "QUESTÃO 236 — Considerando a competência disciplinar prevista no RDPM, assinale a alternativa correta.",
     "options": [
@@ -3351,6 +3586,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 237,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — competência sancionatória do Capitão PM",
     "text": "QUESTÃO 237 — De acordo com o quadro de competências do art. 32 do RDPM, qual é o limite de permanência disciplinar que pode ser aplicado por oficial do posto de Capitão PM?",
     "options": [
@@ -3365,6 +3601,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 238,
     "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
     "topic": "Lei nº 18.442/26 — alteração da distribuição anual do efetivo",
     "text": "QUESTÃO 238 — A Lei nº 18.442/26 prevê que o quantitativo distribuído do efetivo poderá ser alterado pelo Comandante-Geral PM. Qual limite percentual consta do art. 3º, observados os limites legais?",
     "options": [
@@ -3379,6 +3616,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 239,
     "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
     "topic": "Lei nº 18.442/26 — distribuição anual do efetivo",
     "text": "QUESTÃO 239 — Segundo a Lei nº 18.442/26, a distribuição anual do efetivo por postos e graduações deve ser realizada por:",
     "options": [
@@ -3393,6 +3631,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 240,
     "subject": "JURIDICO",
+        "tag": "RDPM",
     "topic": "RDPM — critérios para aplicação das sanções",
     "text": "QUESTÃO 240 — Ao aplicar sanção disciplinar, a autoridade deve considerar os critérios expressamente previstos no RDPM. Assinale a alternativa correta.",
     "options": [
@@ -3407,6 +3646,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 241,
     "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
     "topic": "I-36-PM — dispensa para doação de sangue",
     "text": "QUESTÃO 241 — Um policial militar pretende doar sangue em banco mantido por entidade conveniada com o Estado e requerer dispensa do serviço no dia da doação. Conforme as I-36-PM, qual requisito é necessário para fazer jus à dispensa?",
     "options": [
@@ -3421,6 +3661,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 242,
     "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
     "topic": "I-36-PM — limite anual para doação de sangue",
     "text": "QUESTÃO 242 — Para preservar a higidez física do policial militar, as I-36-PM estabelecem limite para a dispensa por doação de sangue. Qual é esse limite?",
     "options": [
@@ -3435,6 +3676,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 243,
     "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
     "topic": "I-36-PM — licença para tratamento de saúde em pessoa da família",
     "text": "QUESTÃO 243 — O policial militar requer licença para tratamento de saúde em pessoa da família. Segundo as I-36-PM, qual providência deve adotar quanto ao exercício e à instrução do pedido?",
     "options": [
@@ -3449,6 +3691,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 244,
     "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
     "topic": "I-36-PM — inspeção médica em licença familiar",
     "text": "QUESTÃO 244 — No pedido de licença para tratamento de saúde em pessoa da família, o deferimento depende de qual providência prevista nas I-36-PM?",
     "options": [
@@ -3463,6 +3706,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 245,
     "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
     "topic": "I-36-PM — afastamento para missão ou estudo no país",
     "text": "QUESTÃO 245 — Um policial militar pretende afastar-se para participar, no Brasil, de congresso técnico. De acordo com as I-36-PM, qual autoridade é competente para autorizar, cessar ou prorrogar esse afastamento?",
     "options": [
@@ -3477,6 +3721,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 246,
     "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
     "topic": "I-36-PM — prazo de antecedência para processo de afastamento",
     "text": "QUESTÃO 246 — Para instruir afastamento de policial militar para evento de interesse do serviço, qual antecedência mínima as I-36-PM exigem para entrada do processo na Divisão de Recursos Humanos da DP?",
     "options": [
@@ -3491,6 +3736,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 247,
     "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
     "topic": "I-36-PM — comprovação após afastamento para evento",
     "text": "QUESTÃO 247 — Encerrado afastamento autorizado para congresso ou estudo de interesse do serviço, o policial militar deve comprovar sua participação. Qual prazo e conjunto documental estão previstos nas I-36-PM?",
     "options": [
@@ -3505,6 +3751,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 248,
     "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
     "topic": "I-36-PM — afastamento para competição desportiva",
     "text": "QUESTÃO 248 — Um policial militar, devidamente autorizado, solicita afastamento para participar de competição desportiva. Segundo as I-36-PM, em qual hipótese o afastamento ocorre sem prejuízo dos vencimentos?",
     "options": [
@@ -3519,6 +3766,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 249,
     "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
     "topic": "I-36-PM — licença sem vencimentos após tempo de exercício",
     "text": "QUESTÃO 249 — Um policial militar pretende solicitar licença sem vencimentos para tratar de interesse particular. Qual requisito temporal consta das I-36-PM?",
     "options": [
@@ -3533,6 +3781,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 250,
     "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
     "topic": "I-36-PM — limite máximo de licença sem vencimentos",
     "text": "QUESTÃO 250 — Concedida a licença sem vencimentos prevista no art. 67 das I-36-PM, qual é o prazo máximo de agregação previsto no parágrafo único?",
     "options": [
@@ -3544,9 +3793,10 @@ const BANCO_GERAL_QUESTOES = [
     "answer": 2,
     "explanation": "Gabarito: C. Fonte: I-36-PM, art. 67, parágrafo único, em Assuntos Organizacionais.pdf. A agregação correspondente à licença pode ocorrer pelo prazo máximo de dois anos. A, B e D indicam períodos diferentes do limite expresso. Dificuldade editorial: MEDIANA."
   },
- {
+{
     "id": 251,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — reativação automática durante atendimento",
     "text": "QUESTÃO 251 — Durante o atendimento de um talão, a gravação da COP é encerrada acidentalmente. A equipe permanece empenhada na ocorrência, e o encerramento não se enquadra em nenhuma hipótese autorizada de término do registro. Qual consequência decorre da Diretriz das COP?",
     "options": [
@@ -3561,6 +3811,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 252,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — reiteração do acionamento manual",
     "text": "QUESTÃO 252 — Em OPM cujas COP não dispõem de acionamento remoto intencional nem automático, uma US comunica diretamente ao COPOM/CAD que iniciará interação com o público. Além de receber a comunicação, qual providência cabe ao despachador e como se distribui a obrigação de reforço?",
     "options": [
@@ -3575,6 +3826,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 253,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — áudio bidirecional: hipótese autorizadora e cautela",
     "text": "QUESTÃO 253 — Durante atendimento, a rede de rádio convencional fica momentaneamente indisponível. O COPOM considera enviar orientação urgente pela função de áudio bidirecional, mas a equipe está em negociação sensível com uma vítima. À luz da diretriz, qual avaliação é tecnicamente correta?",
     "options": [
@@ -3589,6 +3841,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 254,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — retirada excepcional do tronco durante o turno",
     "text": "QUESTÃO 254 — Durante o turno, um policial precisa ajustar uma jaqueta que se sobrepõe à COP. A gravação não está em andamento, e outro integrante da mesma US pode guardar o equipamento. Qual conduta se ajusta à regra de permanência da COP no tronco?",
     "options": [
@@ -3603,6 +3856,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 255,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — requisição e recolhimento pelo CFP",
     "text": "QUESTÃO 255 — Em ocorrência sem grande repercussão e sem resultado lesivo, surgem indícios de ilegalidade na atuação da equipe. O CFP avalia se deve requisitar as COP e realizar o upload pessoalmente. Qual solução decorre da diretriz?",
     "options": [
@@ -3617,6 +3871,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 256,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — responsabilidade pela etiqueta eletrônica",
     "text": "QUESTÃO 256 — Uma gravação termina sem etiqueta eletrônica, e o operador sustenta que a classificação será definida pela Seção PJMD após o upload. A Coord Op PM, por sua vez, atualizou recentemente o rol de etiquetas. Qual distribuição de responsabilidades corresponde à diretriz?",
     "options": [
@@ -3631,6 +3886,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 257,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — integridade do compartilhamento após upload",
     "text": "QUESTÃO 257 — Após o upload, autoridade policial civil competente requisita evidência digital produzida pela OPM. O policial que utilizou a COP pretende encaminhar diretamente um recorte editado do arquivo, para facilitar a consulta. Qual procedimento atende à diretriz?",
     "options": [
@@ -3645,6 +3901,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 258,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — acesso individual versus reprodução do registro",
     "text": "QUESTÃO 258 — Um policial que atuou na ocorrência, na condição de testemunha, recebe autorização para consultar o registro da própria COP a fim de instruir procedimento administrativo. Durante a consulta, pretende fotografar a tela com seu telefone para estudar o conteúdo depois. Qual alternativa corresponde à norma?",
     "options": [
@@ -3659,6 +3916,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 259,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — acionamento por proximidade e gravação em curso",
     "text": "QUESTÃO 259 — Uma COP desligada aproxima-se de outra COP que já está gravando. O sistema dispõe de tecnologia de acionamento automático por proximidade. Como essa funcionalidade se relaciona com o dever de acionamento do policial?",
     "options": [
@@ -3673,6 +3931,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 260,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — comunicação de acionamento remoto à Unidade de Serviço",
     "text": "QUESTÃO 260 — Durante atendimento, o COPOM aciona remotamente a gravação da COP de uma US. O despachador considera suficiente registrar a medida no sistema, sem informar a equipe. Qual providência é exigida?",
     "options": [
@@ -3687,6 +3946,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 261,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — supervisão da distribuição e uso durante o turno",
     "text": "QUESTÃO 261 — No início do turno, o CGP acompanha a distribuição das COP e os testes iniciais; durante o serviço, constata que um policial está usando o equipamento de forma incompatível com a diretriz. Qual conjunto de atribuições está corretamente delimitado?",
     "options": [
@@ -3701,6 +3961,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 262,
     "subject": "OPERACIONAL",
+    "tag": "Força Tática",
     "topic": "Força Tática — transferência de responsabilidade e registro",
     "text": "QUESTÃO 262 — Durante atividade típica, uma Equipe Tática presta o primeiro atendimento a solicitação emergencial e conclui que outra Patrulha pode dar continuidade sem erro procedimental ou impedimento legal. Ao transferir a responsabilidade, qual obrigação documental permanece com a Equipe Tática?",
     "options": [
@@ -3715,6 +3976,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 263,
     "subject": "OPERACIONAL",
+    "tag": "Força Tática",
     "topic": "Força Tática — rodízio dos componentes da Equipe Tática",
     "text": "QUESTÃO 263 — Em revisão de escala, o comando verifica que um componente de Equipe Tática permanece na mesma função há quatro meses. A função exige capacitação técnica específica. Qual conclusão é compatível com a diretriz?",
     "options": [
@@ -3729,6 +3991,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 264,
     "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
     "topic": "Policiamento de Trânsito — recursos próprios e emprego de outras US",
     "text": "QUESTÃO 264 — Uma OPM territorial pretende empregar recursos próprios do Programa de Policiamento de Trânsito e, em período de maior demanda, utilizar ocasionalmente US de outro programa. Qual arranjo respeita os requisitos da diretriz?",
     "options": [
@@ -3743,6 +4006,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 265,
     "subject": "OPERACIONAL",
+    "tag": "Policiamento Escolar",
     "topic": "Policiamento Escolar — composição e condições de emprego da RE",
     "text": "QUESTÃO 265 — Uma OPM organiza uma Ronda Escolar com apenas um policial militar por viatura em determinado turno. Qual combinação de condições deve ser observada, segundo a diretriz vigente indicada no material?",
     "options": [
@@ -3757,6 +4021,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 266,
     "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
     "topic": "Crime organizado — planejamento de contingência e consolidação de dados",
     "text": "QUESTÃO 266 — Um incidente crítico relacionado à atuação típica do crime organizado abrange a área de mais de um Comando de Policiamento. Após a resposta, os dados também podem subsidiar revisão de práticas gerenciais. Qual alternativa reúne as atribuições previstas para a Coordenação Operacional PM?",
     "options": [
@@ -3771,6 +4036,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 267,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — autoridade para instituir a Sala de Gerenciamento de Incidentes",
     "text": "QUESTÃO 267 — Em operação de campo, o comandante identifica necessidade de integrar a PM com órgãos externos. Ele solicita a criação da Sala de Gerenciamento de Incidentes e propõe designar pessoalmente todos os representantes externos. Qual solução corresponde ao SCIPM?",
     "options": [
@@ -3785,6 +4051,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 268,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — distinção entre incidente dinâmico e manobra no local",
     "text": "QUESTÃO 268 — Em incidente crítico policial dinâmico, o Ch Op COPOM ainda exerce a função de Cmt Inc. Simultaneamente, o policial de maior posto ou mais antigo no local coordena a atuação do contingente ali presente. Qual interpretação distingue corretamente as atribuições?",
     "options": [
@@ -3799,6 +4066,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 269,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — exceção aos critérios ordinários de designação",
     "text": "QUESTÃO 269 — Chega ao COPOM notícia de incidente com pessoa que manifesta propósito suicida e mantém arma branca em sua posse. O escalão de comando pretende aplicar o critério ordinário de designação do Cmt Inc com base na natureza estática ou dinâmica. Qual tratamento a diretriz determina?",
     "options": [
@@ -3813,6 +4081,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 270,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — chegada ao incidente estático e comunicação do Posto de Comando",
     "text": "QUESTÃO 270 — Em incidente policial estático, o Cmt Inc recém-chegado já informou sua presença e identificação ao COPOM. Agora deve organizar o sítio da operação e estabelecer o Posto de Comando. Qual sequência atende às providências específicas da diretriz?",
     "options": [
@@ -3827,6 +4096,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 271,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — avaliação da complexidade e escalonamento",
     "text": "QUESTÃO 271 — Após estabelecer objetivos e medidas iniciais, o Cmt Inc avalia que a complexidade ultrapassa a capacidade operativa correspondente ao nível de resposta inicialmente adotado. Há necessidade provável de recursos das Matrizes II e III. Qual providência está alinhada ao SCIPM?",
     "options": [
@@ -3841,6 +4111,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 272,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — emprego de recursos de outras matrizes",
     "text": "QUESTÃO 272 — Uma OPM territorial enfrenta demanda que excede sua capacidade de resposta, mas ainda não há elementos que indiquem necessidade de apoio especializado de nível estadual. O comando analisa recursos das Matrizes II e III. Qual distinção deve orientar a decisão segundo a NORSOP?",
     "options": [
@@ -3855,6 +4126,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 273,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — operação planejada e transferência de responsabilidade",
     "text": "QUESTÃO 273 — Uma Equipe Tática inicia atendimento emergencial durante sua atividade típica e considera transferir a continuidade a outra Patrulha. O comando precisa distinguir a possibilidade de transferência da obrigação de documentar a ocorrência. Qual alternativa reúne as duas regras?",
     "options": [
@@ -3869,6 +4141,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 274,
     "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
     "topic": "Policiamento de Trânsito — exceção de atuação do CPTran",
     "text": "QUESTÃO 274 — Em município do Interior, a OPM territorial apresenta carência técnica para executar policiamento ostensivo de trânsito em circunstância especial. A equipe avalia a atuação do CPTran. Qual enquadramento corresponde à diretriz?",
     "options": [
@@ -3883,6 +4156,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 275,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — responsabilidades do Estado-Maior e gestão de riscos",
     "text": "QUESTÃO 275 — Durante um incidente, o Cmt Inc recebe três propostas: uma para avaliar riscos à segurança operacional dos respondedores e vítimas; outra para divulgar informações à imprensa; e uma terceira para manter interface com representantes de agências externas. Qual distribuição funcional está correta?",
     "options": [
@@ -3897,6 +4171,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 276,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — sequência da comunicação disciplinar",
     "text": "QUESTÃO 276 — Uma autoridade recebe notícia de transgressão disciplinar que não envolve recolhimento disciplinar. O comunicante tomou conhecimento do fato na segunda-feira; a autoridade, após receber manifestação preliminar, considera que houve transgressão. Qual sequência de prazos corresponde ao RDPM?",
     "options": [
@@ -3911,6 +4186,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 277,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — solução, afastamento regulamentar e ciência do comunicante",
     "text": "QUESTÃO 277 — A defesa do acusado é recebida pela autoridade competente. Antes de transcorridos 30 dias, o acusado entra em afastamento regulamentar; o signatário da comunicação ainda não foi informado da solução. Qual alternativa aplica corretamente os prazos do RDPM?",
     "options": [
@@ -3925,6 +4201,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 278,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — representação contra ato disciplinar",
     "text": "QUESTÃO 278 — Um policial considera ilegal uma sanção disciplinar e pretende apresentar representação contra o ato. Os recursos disciplinares ainda não foram solucionados, e a reclamação também discute a conveniência da punição. Qual conclusão decorre do art. 30 do RDPM?",
     "options": [
@@ -3939,6 +4216,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 279,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — reincidência específica e agravante durante o serviço",
     "text": "QUESTÃO 279 — Na análise de duas transgressões, a autoridade verifica que a nova falta foi enquadrada no mesmo item normativo de uma falta anterior e ocorreu durante a execução do serviço. A natureza da nova transgressão, contudo, é inerente à própria execução do serviço. Qual conclusão é correta?",
     "options": [
@@ -3953,6 +4231,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 280,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — causas de justificação versus atenuantes",
     "text": "QUESTÃO 280 — Na análise de uma transgressão, o militar demonstra que cumpriu ordem superior não manifestamente ilegal e, separadamente, colaborou para esclarecer os fatos. Qual tratamento jurídico distingue corretamente as duas circunstâncias?",
     "options": [
@@ -3967,6 +4246,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 281,
     "subject": "JURIDICO",
+    "tag": "I-16-PM",
     "topic": "I-16-PM — competência em procedimento com integrantes de várias Unidades",
     "text": "QUESTÃO 281 — Um mesmo fato administrativo envolve policiais militares subordinados a comandantes de duas OPM. A autoridade avalia instaurar um procedimento para cada unidade, com base na subordinação de cada envolvido. Qual solução é compatível com as I-16-PM?",
     "options": [
@@ -3981,6 +4261,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 282,
     "subject": "JURIDICO",
+    "tag": "I-16-PM",
     "topic": "I-16-PM — designação, substituição e atos do Conselho",
     "text": "QUESTÃO 282 — Em Conselho de Disciplina, um membro titular fica temporariamente impedido de comparecer à audiência. A autoridade pretende designar outro oficial apenas para aquele ato, sem formalizar a substituição, e realizar a audiência com os demais membros presentes. Qual alternativa está correta?",
     "options": [
@@ -3995,6 +4276,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 283,
     "subject": "JURIDICO",
+    "tag": "I-16-PM",
     "topic": "I-16-PM — fundamento da decisão administrativa",
     "text": "QUESTÃO 283 — Na decisão de procedimento administrativo, a autoridade pretende acolher a conclusão do presidente sem mencionar os elementos probatórios que a sustentam, afirmando que a decisão decorre da hierarquia funcional. Qual exigência das I-16-PM incide sobre a decisão?",
     "options": [
@@ -4009,6 +4291,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 284,
     "subject": "JURIDICO",
+    "tag": "I-16-PM",
     "topic": "I-16-PM — critérios de competência e responsabilidade patrimonial",
     "text": "QUESTÃO 284 — Um procedimento administrativo apura dano a bem público causado por policial militar que, à época, estava funcionalmente subordinado a outra autoridade. As atribuições específicas do processo não resolvem o conflito. Qual conjunto de critérios as I-16-PM indicam para determinar a competência administrativa?",
     "options": [
@@ -4023,6 +4306,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 285,
     "subject": "JURIDICO",
+    "tag": "I-16-PM",
     "topic": "I-16-PM — avocação e fixação da competência",
     "text": "QUESTÃO 285 — Depois da instauração de procedimento regular, o acusado é movimentado para outra OPM, alterando sua subordinação hierárquico-funcional. Uma autoridade superior pretende avocar a apuração porque surgiram circunstâncias relevantes à preservação da hierarquia e disciplina. Qual alternativa está correta?",
     "options": [
@@ -4037,6 +4321,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 286,
     "subject": "JURIDICO",
+    "tag": "I-16-PM",
     "topic": "I-16-PM — conflito de normas e aplicação subsidiária",
     "text": "QUESTÃO 286 — Durante procedimento administrativo, a norma interna parece divergir de regra legal de maior hierarquia, e o caso também exige solução para ponto não disciplinado expressamente nas I-16-PM. Qual interpretação reúne corretamente as regras de integração normativa?",
     "options": [
@@ -4051,6 +4336,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 287,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — comunicação disciplinar e dever de precisão",
     "text": "QUESTÃO 287 — Uma comunicação disciplinar descreve a ação atribuída ao militar, mas omite horário e local e acrescenta comentários pessoais do signatário sobre o caráter do acusado. A autoridade sustenta que tais omissões podem ser supridas apenas na decisão final. Qual avaliação é correta?",
     "options": [
@@ -4065,6 +4351,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 288,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — prazo e admissibilidade da representação",
     "text": "QUESTÃO 288 — Um militar pretende representar contra ato de superior que reputa injusto. O ato foi praticado há quatro dias, mas a questão não envolve sanção disciplinar nem discussão de legalidade de ato disciplinar. A quem e em que prazo deve dirigir a representação?",
     "options": [
@@ -4079,6 +4366,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 289,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — responsabilidade pela aplicação e enquadramento",
     "text": "QUESTÃO 289 — Após instrução, a autoridade decide que houve transgressão, mas pretende limitar o ato decisório à indicação do artigo violado, sem descrever a conduta nem registrar os fundamentos de fato. Considerando as regras gerais do RDPM, qual conclusão é correta?",
     "options": [
@@ -4093,6 +4381,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 290,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — competências para atos revisionais e limite temporal",
     "text": "QUESTÃO 290 — Uma autoridade de posto não excluído pelo art. 62 toma conhecimento, por via recursal, de possível ilegalidade em sanção disciplinar publicada há quatro anos e meio. Considera anular o ato e decide motivar e publicar a providência. Qual análise é correta?",
     "options": [
@@ -4107,6 +4396,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 291,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — adição e condição de integrante da OPM",
     "text": "QUESTÃO 291 — Um policial é adido temporariamente a uma OPM para exercer missão compatível com sua graduação, sem ocupar vaga do QPO. A publicação que originou a adição declara que ele permanecerá na situação como se efetivo fosse. Qual efeito decorre da I-2-PM?",
     "options": [
@@ -4121,6 +4411,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 292,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — classificação, transferência e adição",
     "text": "QUESTÃO 292 — Um oficial conclui curso de formação e recebe vaga prevista no QPO; outro policial recebe nova OPM para atender conveniência do serviço; um terceiro é vinculado temporariamente a outra OPM para missão específica compatível, sem ocupar vaga. Qual sequência identifica corretamente os atos?",
     "options": [
@@ -4135,6 +4426,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 293,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — objetivos e razões da movimentação",
     "text": "QUESTÃO 293 — Um pedido de movimentação é formulado pelo próprio policial para atender conveniência pessoal. O setor administrativo precisa classificar a razão do ato e verificar se isso altera a natureza do pedido. Qual afirmação está correta?",
     "options": [
@@ -4149,6 +4441,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 294,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — união de cônjuges e impedimentos cumulativos",
     "text": "QUESTÃO 294 — Um policial requer movimentação para o município em que o cônjuge reside e trabalha. O serviço não seria prejudicado e os documentos foram juntados, mas o requerente foi movimentado por conveniência da justiça há três anos. Qual conclusão decorre da I-2-PM?",
     "options": [
@@ -4163,6 +4456,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 295,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — competência para movimentação e posto funcional",
     "text": "QUESTÃO 295 — Dois oficiais requerem movimentação entre OPM: um Capitão exerce Comando de Companhia; o outro, também Capitão, não exerce Comando ou Chefia de OPM. Qual autoridade possui competência para movimentá-los segundo a I-2-PM?",
     "options": [
@@ -4177,6 +4471,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 296,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — prazo de apresentação conforme fundamento da movimentação",
     "text": "QUESTÃO 296 — São publicados dois atos de movimentação sem prazo especial: um por conveniência da disciplina e outro por conveniência própria. Os policiais não estão afastados nem em situação excepcional. Qual regra de apresentação deve ser aplicada?",
     "options": [
@@ -4191,6 +4486,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 297,
     "subject": "ORGANIZACIONAL",
+    "tag": "SisTAF",
     "topic": "SisTAF — credenciamento e uso do SITAF",
     "text": "QUESTÃO 297 — Uma OPM designa policial militar graduado em Educação Física por instituição externa para atuar como Treinador Físico. O policial envia o certificado à EEF e pede inclusão no SITAF. Qual afirmação distingue corretamente a solicitação individual da competência institucional?",
     "options": [
@@ -4205,6 +4501,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 298,
     "subject": "ORGANIZACIONAL",
+    "tag": "SisTAF",
     "topic": "SisTAF — avaliação antropométrica e registro dos resultados",
     "text": "QUESTÃO 298 — Antes do TAF periódico, o Treinador Físico organiza avaliação antropométrica e identifica que a balança de bioimpedância não está disponível. Qual conduta permanece de acordo com a diretriz?",
     "options": [
@@ -4219,6 +4516,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 299,
     "subject": "ORGANIZACIONAL",
+    "tag": "SisTAF",
     "topic": "SisTAF — adaptação do plano de sessão",
     "text": "QUESTÃO 299 — Em OPM com particularidades de espaço e efetivo, o Treinador Físico pretende adaptar o plano de sessão do treinamento. Qual critério limita legitimamente essa adaptação?",
     "options": [
@@ -4233,6 +4531,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 300,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — finalidade, execução e anamnese",
     "text": "QUESTÃO 300 — Na programação do Treinamento Continuado Institucional, um comandante propõe transferir as sessões para períodos de folga e aplicar anamnese apenas a policiais reprovados no TAF. Qual avaliação se harmoniza com a Diretriz do TCI?",
     "options": [
@@ -4247,6 +4546,7 @@ const BANCO_GERAL_QUESTOES = [
 {
     "id": 301,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — reativação automática e encerramento permitido",
     "text": "QUESTÃO 301 — Uma US mantém atendimento registrado em talão de ocorrência. Durante o atendimento, a gravação da COP é encerrada acidentalmente. Considerando os mecanismos de acionamento e suas exceções, assinale a alternativa INCORRETA.",
     "options": [
@@ -4261,6 +4561,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 302,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — áudio bidirecional e cautelas de uso",
     "text": "QUESTÃO 302 — Considere as hipóteses de uso do áudio bidirecional da COP.\\n\\nI. Impossibilidade momentânea de comunicação pela rede de rádio convencional.\\nII. Necessidade urgente de transmitir orientação operacional durante o atendimento da ocorrência.\\nIII. Conveniência de substituir a rede de rádio em toda ocorrência, ainda que não haja urgência.\\n\\nAssinale a alternativa que contém apenas hipóteses expressamente previstas.",
     "options": [
@@ -4275,6 +4576,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 303,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — momento de ativação do áudio bidirecional",
     "text": "QUESTÃO 303 — Ao avaliar o uso de áudio bidirecional, o supervisor identifica quatro situações. Assinale a alternativa INCORRETA à luz das cautelas normativas.",
     "options": [
@@ -4289,6 +4591,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 304,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — etiqueta eletrônica e encerramento da gravação",
     "text": "QUESTÃO 304 — Ao encerrar uma gravação, o operador identifica que o evento pode receber etiqueta eletrônica específica. Assinale a alternativa correta quanto à definição das etiquetas e à identificação do registro.",
     "options": [
@@ -4303,6 +4606,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 305,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — integridade da evidência e compartilhamento",
     "text": "QUESTÃO 305 — Uma autoridade competente requisita evidência digital armazenada no SiGCED. Considerando a cadeia de custódia e o compartilhamento, assinale a alternativa INCORRETA.",
     "options": [
@@ -4317,6 +4621,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 306,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — acesso próprio e vedação de captação",
     "text": "QUESTÃO 306 — Um policial militar, na condição de testemunha em procedimento, solicita acesso aos registros audiovisuais da ocorrência em que atuou. Pretende filmar a tela com aparelho pessoal para anexar a gravação à sua manifestação. Assinale a alternativa correta.",
     "options": [
@@ -4331,6 +4636,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 307,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — responsabilização por ausência de registro",
     "text": "QUESTÃO 307 — Durante atendimento a requisição de evidência digital, verifica-se ausência de registro audiovisual da COP por falha de acionamento ou descarga de bateria. Considerando a consequência procedimental expressamente prevista, assinale a alternativa INCORRETA.",
     "options": [
@@ -4345,6 +4651,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 308,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — retirada excepcional do equipamento",
     "text": "QUESTÃO 308 — Durante o turno, policial precisa retirar a COP da parte superior do tronco. Assinale a alternativa INCORRETA quanto às condições normativas.",
     "options": [
@@ -4359,6 +4666,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 309,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — fiscalização do uso no local",
     "text": "QUESTÃO 309 — No local de ocorrência, estão presentes um policial militar de maior graduação que não utiliza COP e o usuário do equipamento. À luz da Diretriz, assinale a alternativa correta.",
     "options": [
@@ -4373,6 +4681,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 310,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — incidente dinâmico e atribuições simultâneas",
     "text": "QUESTÃO 310 — Em incidente policial dinâmico, o Chefe de Operações do COPOM mantém o comando do incidente até sua estabilização. No local, há policial militar de maior posto ou graduação. Assinale a alternativa correta sobre a repartição de atribuições.",
     "options": [
@@ -4387,6 +4696,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 311,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — exceções aos critérios de designação do Cmt Inc",
     "text": "QUESTÃO 311 — Ocorre incidente envolvendo pessoa com propósito suicida em posse de arma branca. Considerando a exceção prevista no SCIPM, assinale a alternativa INCORRETA.",
     "options": [
@@ -4401,6 +4711,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 312,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — nível de resposta e escalonamento",
     "text": "QUESTÃO 312 — Após avaliar a complexidade de incidente, o Comandante do Incidente conclui que a capacidade operativa disponível não atende ao Nível de Resposta necessário e que poderá ser preciso empregar recursos das Matrizes II e/ou III. Assinale a alternativa correta.",
     "options": [
@@ -4415,6 +4726,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 313,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — integração com agências externas",
     "text": "QUESTÃO 313 — Durante incidente policial dinâmico, torna-se necessária a integração operacional com órgãos externos à PM. Conforme o SCIPM, assinale a alternativa INCORRETA.",
     "options": [
@@ -4429,6 +4741,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 314,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — operação policial-militar",
     "text": "QUESTÃO 314 — Considerando a definição de operação policial-militar na NORSOP, assinale a alternativa INCORRETA.",
     "options": [
@@ -4443,6 +4756,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 315,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — ação policial-militar e operação",
     "text": "QUESTÃO 315 — Analise as proposições sobre ação e operação policial-militar segundo a NORSOP.\\n\\nI. A ação caracteriza atividade rotineira da US e pode ocorrer isoladamente ou em conjunto.\\nII. A operação exige várias US, pertencentes a uma ou mais OPM.\\nIII. A operação exige que todas as ações sejam simultâneas, sendo incompatível com ações sucessivas.\\n\\nAssinale a alternativa que contém apenas proposições corretas.",
     "options": [
@@ -4457,6 +4771,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 316,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — conceitos territoriais",
     "text": "QUESTÃO 316 — Um oficial descreve a menor fração territorial dentro de uma Subárea, à qual podem ser designadas uma ou mais US, e ressalva que essa fração pode ou não integrar um Setor. Qual termo da NORSOP corresponde exatamente à descrição?",
     "options": [
@@ -4471,6 +4786,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 317,
     "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
     "topic": "Policiamento de trânsito — emprego excepcional do CPTran",
     "text": "QUESTÃO 317 — Na Região Metropolitana ou Interior, uma OPM territorial apresenta carência técnica para executar policiamento ostensivo de trânsito. Considerando as regras de emprego, assinale a alternativa correta.",
     "options": [
@@ -4485,6 +4801,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 318,
     "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
     "topic": "Policiamento de trânsito — US de outros programas",
     "text": "QUESTÃO 318 — Uma OPM territorial pretende empenhar ocasionalmente US de outro programa para executar policiamento ostensivo de trânsito. Assinale a alternativa INCORRETA.",
     "options": [
@@ -4499,6 +4816,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 319,
     "subject": "OPERACIONAL",
+    "tag": "Policiamento Escolar",
     "topic": "Policiamento escolar — prioridade e condição",
     "text": "QUESTÃO 319 — Na distribuição de recursos do Programa de Policiamento Escolar, a diretriz estabelece prioridade entre categorias de escolas e qualifica uma delas por condição específica. Assinale a alternativa que reproduz corretamente a sequência.",
     "options": [
@@ -4513,6 +4831,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 320,
     "subject": "OPERACIONAL",
+    "tag": "Força Tática",
     "topic": "Força Tática — continuidade do primeiro atendimento",
     "text": "QUESTÃO 320 — Durante atividade típica, uma equipe de Força Tática presta primeiro atendimento a solicitação emergencial. A equipe avalia transferir a continuidade para outra Patrulha. Assinale a alternativa INCORRETA.",
     "options": [
@@ -4527,6 +4846,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 321,
     "subject": "OPERACIONAL",
+    "tag": "Drones",
     "topic": "Drones — autoridade decisória e coordenação",
     "text": "QUESTÃO 321 — Durante o voo de UAS, o Oficial Coordenador de Operação e o Piloto Remoto em Comando divergem sobre medida imediata de condução da aeronave. Assinale a alternativa correta.",
     "options": [
@@ -4541,6 +4861,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 322,
     "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
     "topic": "Crime organizado — Plano de Contingência",
     "text": "QUESTÃO 322 — Um incidente crítico relacionado à atuação típica do crime organizado abrange a área de mais de um Comando de Policiamento. Assinale a alternativa INCORRETA sobre o Plano de Contingência.",
     "options": [
@@ -4555,6 +4876,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 323,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — funções do Estado-Maior",
     "text": "QUESTÃO 323 — No Estado-Maior do Comandante do Incidente, uma função assessora a elaboração dos planos de ação, a captação de recursos, a coleta e análise de informações sensíveis e o registro das ações implementadas. Assinale a alternativa correta.",
     "options": [
@@ -4569,6 +4891,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 324,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — Posto de Comando e Área de Espera",
     "text": "QUESTÃO 324 — Em incidente estático, o Cmt Inc instala uma viatura para concentrar funções de comando e informar sua localização ao COPOM/COBOM. Outro grupo de recursos recém-chegados aguarda atribuição de missão em local separado. Assinale a alternativa correta.",
     "options": [
@@ -4583,6 +4906,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 325,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — níveis de resposta",
     "text": "QUESTÃO 325 — Considerando a distinção entre Matriz Operacional e Nível de Resposta, assinale a alternativa INCORRETA.",
     "options": [
@@ -4597,6 +4921,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 326,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — comunicação disciplinar: elementos e prazo",
     "text": "QUESTÃO 326 — A comunicação disciplinar foi redigida no quarto dia após a constatação do fato. O signatário identificou pessoas, local, data e hora, mas omitiu as alegações do faltoso, embora este estivesse presente e tenha sido interpelado. Assinale a alternativa correta.",
     "options": [
@@ -4611,6 +4936,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 327,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — manifestação preliminar e dispensa",
     "text": "QUESTÃO 327 — A autoridade disciplinar entende possuir elementos de convicção suficientes para elaborar o termo acusatório sem colher manifestação preliminar do comunicado. À luz do art. 28 do RDPM, assinale a alternativa INCORRETA.",
     "options": [
@@ -4625,6 +4951,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 328,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — prazo para solução e notificação do signatário",
     "text": "QUESTÃO 328 — A defesa do acusado foi recebida pela autoridade competente. O signatário da comunicação ainda não foi notificado da solução. Assinale a alternativa INCORRETA.",
     "options": [
@@ -4639,6 +4966,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 329,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — afastamento regulamentar e interrupção",
     "text": "QUESTÃO 329 — Durante a tramitação do procedimento disciplinar, o transgressor passa a afastamento regulamentar e depois se reapresenta. Considerando o art. 29, §2º, assinale a alternativa correta.",
     "options": [
@@ -4653,6 +4981,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 330,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — representação contra ato disciplinar",
     "text": "QUESTÃO 330 — Após a solução dos recursos disciplinares, o militar pretende apresentar representação contra o ato, alegando que a autoridade aplicou incorretamente a norma, embora não discuta a legalidade do ato. Assinale a alternativa correta.",
     "options": [
@@ -4667,6 +4996,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 331,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — prazos da representação",
     "text": "QUESTÃO 331 — Uma representação é motivada por ato praticado em 3 de abril, mas o interessado só toma conhecimento formal em 7 de abril. Considerando o marco temporal do art. 30, §4º, assinale a alternativa correta.",
     "options": [
@@ -4681,6 +5011,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 332,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — reincidência específica",
     "text": "QUESTÃO 332 — Ao analisar agravantes, a autoridade verifica que o acusado praticou transgressão enquadrada em item diferente daquele da infração anterior, embora ambas tenham natureza disciplinar semelhante. Assinale a alternativa correta.",
     "options": [
@@ -4695,6 +5026,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 333,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — agravante durante a execução do serviço",
     "text": "QUESTÃO 333 — A falta foi praticada durante a execução do serviço, mas sua própria natureza é inerente à execução do serviço. Considerando o art. 36 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -4709,6 +5041,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 334,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — enquadramento disciplinar",
     "text": "QUESTÃO 334 — Na elaboração do enquadramento disciplinar, a autoridade descreve a ação ou omissão, tipifica a transgressão e registra a sanção, mas deixa de discriminar as causas de justificação e as circunstâncias atenuantes ou agravantes. Assinale a alternativa correta.",
     "options": [
@@ -4723,6 +5056,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 335,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — recurso hierárquico: condição e destinatário",
     "text": "QUESTÃO 335 — Um militar pretende interpor recurso hierárquico contra ato tido por irregular, ofensivo, injusto ou ilegal. Assinale a alternativa INCORRETA.",
     "options": [
@@ -4737,6 +5071,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 336,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — prazos do recurso hierárquico",
     "text": "QUESTÃO 336 — Assinale a alternativa que apresenta corretamente os prazos e marcos de contagem previstos para o recurso hierárquico no art. 58, §3º, do RDPM.",
     "options": [
@@ -4751,6 +5086,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 337,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — não conhecimento do recurso hierárquico",
     "text": "QUESTÃO 337 — A autoridade examina recurso hierárquico e conclui que não apresenta fatos novos capazes de modificar a decisão anterior. Assinale a alternativa correta.",
     "options": [
@@ -4765,6 +5101,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 338,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — início do cumprimento e decadência",
     "text": "QUESTÃO 338 — Solucionados os recursos disciplinares e subsistindo sanção a cumprir, assinale a alternativa INCORRETA.",
     "options": [
@@ -4779,6 +5116,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 339,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — revisão de atos disciplinares",
     "text": "QUESTÃO 339 — Uma autoridade competente toma conhecimento, de ofício, de possível ilegalidade em sanção imposta por autoridade subordinada. Considerando o art. 62 do RDPM, assinale a alternativa INCORRETA.",
     "options": [
@@ -4793,6 +5131,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 340,
     "subject": "JURIDICO",
+    "tag": "I-16-PM",
     "topic": "I-16-PM — competência e avocação",
     "text": "QUESTÃO 340 — Um procedimento foi instaurado por autoridade competente. Posteriormente, o policial envolvido é movimentado para outra OPM e autoridade superior considera necessário chamar o procedimento a si por motivo relacionado à hierarquia e à disciplina. À luz das I-16-PM, assinale a alternativa INCORRETA.",
     "options": [
@@ -4807,6 +5146,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 341,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — classificação e transferência",
     "text": "QUESTÃO 341 — Um policial militar é movimentado para ocupar vaga prevista no QPO em decorrência de promoção. Outro recebe nova OPM por conveniência do serviço, também dentro das vagas previstas no QPO. Assinale a alternativa correta quanto às espécies de movimentação.",
     "options": [
@@ -4821,6 +5161,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 342,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — adição e efeitos sobre vaga",
     "text": "QUESTÃO 342 — Um policial é vinculado temporariamente a outra OPM para exercer missão específica compatível com seu posto, sem ocupar vaga prevista no QPO. A publicação, contudo, determina que seja considerado como efetivo para todos os efeitos. Assinale a alternativa correta.",
     "options": [
@@ -4835,6 +5176,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 343,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — conveniência própria e classificação",
     "text": "QUESTÃO 343 — Assinale a alternativa INCORRETA quanto às razões de movimentação e à classificação previstas nas I-2-PM.",
     "options": [
@@ -4849,6 +5191,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 344,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — união de cônjuges: condições cumulativas",
     "text": "QUESTÃO 344 — Um policial militar requer movimentação para o município em que reside o cônjuge. A última movimentação do requerente, pelo mesmo fundamento, ocorreu há quatro anos; ambos residem e trabalham no mesmo município; não houve movimentação por conveniência da disciplina ou da justiça. Assinale a alternativa correta.",
     "options": [
@@ -4863,6 +5206,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 345,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — autoridade competente para movimentar Capitães",
     "text": "QUESTÃO 345 — Um Capitão PM exerce comando de OPM. Outro Capitão PM não exerce comando nem chefia de OPM. Considerando o art. 17 das I-2-PM, assinale a alternativa correta.",
     "options": [
@@ -4877,6 +5221,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 346,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — prazo de apresentação e marco inicial",
     "text": "QUESTÃO 346 — Um policial é movimentado por conveniência própria. O ato é publicado em Boletim Geral PM e não prevê prazo diverso. Assinale a alternativa correta.",
     "options": [
@@ -4891,6 +5236,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 347,
     "subject": "ORGANIZACIONAL",
+    "tag": "SisTAF",
     "topic": "SisTAF — avaliação antropométrica e registro",
     "text": "QUESTÃO 347 — Antes do TAF de avaliação periódica, o Treinador Físico realiza avaliação antropométrica. Assinale a alternativa INCORRETA.",
     "options": [
@@ -4905,6 +5251,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 348,
     "subject": "ORGANIZACIONAL",
+    "tag": "SisTAF",
     "topic": "SisTAF — planejamento e adaptação do plano de sessão",
     "text": "QUESTÃO 348 — A EEF divulga anualmente o treinamento físico para o ano seguinte. Uma OPM pretende adaptar um plano de sessão às suas peculiaridades. Assinale a alternativa correta.",
     "options": [
@@ -4919,6 +5266,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 349,
     "subject": "ORGANIZACIONAL",
+    "tag": "SisTAF",
     "topic": "SisTAF — credenciamento de Treinadores Físicos",
     "text": "QUESTÃO 349 — Um policial militar concluiu formação pertinente e foi indicado para exercer função de Treinador Físico. Assinale a alternativa correta quanto à materialização do credenciamento e ao sistema.",
     "options": [
@@ -4933,6 +5281,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 350,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — finalidade e individualização",
     "text": "QUESTÃO 350 — A OPM está organizando o calendário anual de treinamentos e precisa distinguir o Calendário do TCI do Calendário Técnico-Operacional (CTO). Assinale a alternativa INCORRETA.",
     "options": [
@@ -4947,6 +5296,7 @@ const BANCO_GERAL_QUESTOES = [
  {
     "id": 351,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — competência disciplinar e vínculo funcional",
     "text": "QUESTÃO 351 — Um Capitão PM, no exercício de função de comando, toma conhecimento de possível transgressão praticada por policial militar que não está sob seu comando nem integra OPM subordinada. Considerando a regra geral de competência disciplinar do RDPM, assinale a alternativa correta.",
     "options": [
@@ -4961,6 +5311,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 352,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — competência do Subcomandante da Polícia Militar",
     "text": "QUESTÃO 352 — À luz do art. 31 do RDPM, analise as proposições sobre a competência disciplinar do Subcomandante da Polícia Militar:\n\nI. Abrange todos os integrantes de seu comando.\nII. Abrange integrantes das unidades subordinadas.\nIII. Abrange praças inativas.\nIV. Abrange indistintamente todos os militares do Estado sujeitos ao Regulamento, sem exceção.",
     "options": [
@@ -4975,6 +5326,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 353,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — distinção entre competência geral e limites de aplicação",
     "text": "QUESTÃO 353 — Considerando a distribuição de competência disciplinar do art. 31 do RDPM, assinale a alternativa INCORRETA.",
     "options": [
@@ -4989,6 +5341,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 354,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — limites de competência para aplicação de sanção",
     "text": "QUESTÃO 354 — Uma autoridade possui competência disciplinar em razão do art. 31 do RDPM, mas precisa verificar se pode aplicar determinada sanção ao caso concreto. Qual leitura normativa é correta?",
     "options": [
@@ -5003,6 +5356,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 355,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — circunstâncias agravantes e inerência ao serviço",
     "text": "QUESTÃO 355 — Um policial militar pratica transgressão durante a execução do serviço. A natureza específica da conduta, contudo, faz com que ela seja inerente à própria execução do serviço. Na análise das circunstâncias agravantes, assinale a alternativa correta.",
     "options": [
@@ -5017,6 +5371,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 356,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — reincidência específica",
     "text": "QUESTÃO 356 — Para fins de reconhecimento da reincidência específica, o enquadramento da nova falta deve ser confrontado com quais referências normativas?",
     "options": [
@@ -5031,6 +5386,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 357,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — pluralidade de transgressões e agravantes",
     "text": "QUESTÃO 357 — Analise as proposições a respeito das circunstâncias agravantes previstas no RDPM:\n\nI. A prática simultânea ou a conexão de duas ou mais transgressões constitui agravante.\nII. O conluio de duas ou mais pessoas constitui agravante.\nIII. A presença de subordinado, tropa ou civil é irrelevante para a análise de agravantes.\nIV. O abuso de autoridade hierárquica ou funcional constitui agravante.",
     "options": [
@@ -5045,6 +5401,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 358,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — enquadramento disciplinar",
     "text": "QUESTÃO 358 — Ao formalizar a aplicação de sanção disciplinar, a autoridade deve observar a composição normativa do enquadramento. Assinale a alternativa que corresponde ao conteúdo exigido pelo RDPM.",
     "options": [
@@ -5059,6 +5416,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 359,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — revisão da sanção disciplinar",
     "text": "QUESTÃO 359 — Uma autoridade competente para aplicar sanção disciplinar toma conhecimento, de ofício, de possível ilegalidade em sanção aplicada por autoridade subordinada. Consideradas as exceções expressas no RDPM, assinale a alternativa correta.",
     "options": [
@@ -5073,6 +5431,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 360,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — prazo para anulação de sanção",
     "text": "QUESTÃO 360 — Ao examinar a possibilidade de anular sanção administrativa disciplinar, a autoridade deve considerar o prazo previsto no RDPM. Assinale a alternativa correta.",
     "options": [
@@ -5087,6 +5446,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 361,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — efeitos da representação disciplinar",
     "text": "QUESTÃO 361 — Após a solução dos recursos disciplinares, um policial pretende apresentar representação contra ato disciplinar que reputa injusto. Qual requisito material limita essa representação?",
     "options": [
@@ -5101,6 +5461,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 362,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — destinatário e prazo da representação",
     "text": "QUESTÃO 362 — Um policial militar pretende representar contra ato que atribui como irregular a superior hierárquico ou funcional. Considerando destinatário e prazo, assinale a alternativa correta.",
     "options": [
@@ -5115,6 +5476,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 363,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — recurso hierárquico e efeito suspensivo",
     "text": "QUESTÃO 363 — Sobre o recurso hierárquico previsto no RDPM, assinale a alternativa correta.",
     "options": [
@@ -5129,6 +5491,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 364,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — prazos do recurso hierárquico",
     "text": "QUESTÃO 364 — No processamento de recurso hierárquico, a autoridade destinatária precisa distinguir os prazos de interposição, comunicação e solução. Qual combinação corresponde ao art. 58 do RDPM?",
     "options": [
@@ -5143,6 +5506,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 365,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — não conhecimento de recurso",
     "text": "QUESTÃO 365 — Um recurso hierárquico é apresentado dentro do prazo, mas repete argumentos já examinados e não apresenta fatos novos capazes de modificar a decisão. Considerando as hipóteses de não conhecimento previstas no RDPM, assinale a alternativa correta.",
     "options": [
@@ -5157,6 +5521,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 366,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — início do cumprimento da sanção",
     "text": "QUESTÃO 366 — Após decisão sobre pedido de reconsideração, permanece sanção disciplinar a cumprir. Não foi interposto recurso hierárquico. Em que momento se inicia o prazo para o militar começar o cumprimento da sanção?",
     "options": [
@@ -5171,6 +5536,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 367,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — decadência dos prazos recursais",
     "text": "QUESTÃO 367 — A defesa sustenta que o prazo para interposição de recurso disciplinar é meramente ordinatório e pode ser prorrogado informalmente pela autoridade. À luz do RDPM, assinale a alternativa correta.",
     "options": [
@@ -5185,6 +5551,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 368,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — retificação, atenuação, agravação e anulação",
     "text": "QUESTÃO 368 — Ao rever sanção disciplinar, a autoridade identifica vício formal sanável, sem concluir pela necessidade de reduzir ou invalidar integralmente a sanção. Qual ato de revisão corresponde à definição do RDPM?",
     "options": [
@@ -5199,6 +5566,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 369,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — conceito de atenuação",
     "text": "QUESTÃO 369 — Uma autoridade revisora conclui que a sanção deve ser reduzida, seja mediante substituição por outra menos rigorosa, seja mediante diminuição do número de dias, dentro dos limites regulamentares. Qual instituto descreve essa providência?",
     "options": [
@@ -5213,6 +5581,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 370,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — conhecimento do ato e revisão de ofício",
     "text": "QUESTÃO 370 — Ao tomar conhecimento por via recursal ou de ofício de possível irregularidade na aplicação de sanção por autoridade subordinada, a autoridade revisora deve observar qual conjunto de requisitos?",
     "options": [
@@ -5227,6 +5596,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 371,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — reincidência específica versus pluralidade de faltas",
     "text": "QUESTÃO 371 — Um militar praticou duas transgressões distintas em um mesmo episódio. Não há notícia de falta anterior enquadrada no mesmo item normativo. Qual conclusão é sustentada pelo art. 36 do RDPM?",
     "options": [
@@ -5241,6 +5611,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 372,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — agravante da presença de terceiros",
     "text": "QUESTÃO 372 — Ao examinar a incidência de circunstâncias agravantes, a autoridade verifica que a transgressão foi praticada na presença de subordinado e de civil. Qual alternativa está correta?",
     "options": [
@@ -5255,6 +5626,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 373,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — conteúdo da aplicação da sanção",
     "text": "QUESTÃO 373 — Na revisão de uma solução disciplinar, constata-se que a autoridade indicou o enquadramento e publicou a sanção, mas não examinou as circunstâncias que determinaram a transgressão. Qual avaliação decorre do RDPM?",
     "options": [
@@ -5269,6 +5641,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 374,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — representação e recursos disciplinares",
     "text": "QUESTÃO 374 — Um policial apresenta representação contra ato disciplinar antes de ser solucionado o recurso hierárquico interposto no mesmo caso. Considerando a ordem normativa dos meios de impugnação, assinale a alternativa correta.",
     "options": [
@@ -5283,6 +5656,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 375,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — autoridade destinatária do recurso hierárquico",
     "text": "QUESTÃO 375 — A autoridade que praticou o ato manteve sua decisão após pedido de reconsideração. O interessado pretende interpor recurso hierárquico. A quem deve endereçá-lo, segundo o RDPM?",
     "options": [
@@ -5297,6 +5671,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 376,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — prazo decadencial e início de cumprimento",
     "text": "QUESTÃO 376 — Em um caso disciplinar, o interessado deixa transcorrer o prazo regulamentar para interpor recurso. Posteriormente, sustenta que o prazo poderia ser reaberto por simples tolerância administrativa. Qual disposição é determinante?",
     "options": [
@@ -5311,6 +5686,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 377,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — classificação e transferência",
     "text": "QUESTÃO 377 — Para fins de aplicação das I-2-PM, um ato administrativo altera a OPM em que o policial militar está funcionalmente alocado. Ao distinguir as espécies de movimentação, qual critério deve ser utilizado para diferenciar classificação e transferência?",
     "options": [
@@ -5325,6 +5701,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 378,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — adição e efeitos da publicação",
     "text": "QUESTÃO 378 — Um policial militar é movimentado na modalidade de adição para cumprir missão temporária. A publicação do ato contém declaração expressa de que ele contará como efetivo. Considerando as I-2-PM, assinale a alternativa correta.",
     "options": [
@@ -5339,6 +5716,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 379,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — fundamento da movimentação",
     "text": "QUESTÃO 379 — Ao examinar proposta de movimentação, o setor de pessoal identifica que a justificativa invocada não corresponde a necessidade do serviço nem à conveniência própria admitida nas I-2-PM. Qual conclusão está alinhada à norma?",
     "options": [
@@ -5353,6 +5731,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 380,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — movimentação por conveniência própria",
     "text": "QUESTÃO 380 — Um policial solicita movimentação por conveniência própria, mas não demonstra o preenchimento dos requisitos cumulativos exigidos para a hipótese específica que invoca. À luz das I-2-PM, qual conclusão é correta?",
     "options": [
@@ -5367,6 +5746,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 381,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — movimentação de cônjuges",
     "text": "QUESTÃO 381 — Dois policiais militares casados pretendem ser movimentados para o município em que residem e trabalham. Um deles já obteve movimentação pelo mesmo motivo há menos de cinco anos. Considerando os requisitos previstos nas I-2-PM para a hipótese específica, assinale a alternativa correta.",
     "options": [
@@ -5381,6 +5761,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 382,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — competência para movimentar Capitães",
     "text": "QUESTÃO 382 — À luz do quadro de competência das I-2-PM, indique a autoridade competente para movimentar Capitão PM que exerce função de comando ou chefia.",
     "options": [
@@ -5395,6 +5776,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 383,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — competência para movimentar Capitão sem comando",
     "text": "QUESTÃO 383 — Um Capitão PM não exerce função de comando nem de chefia. Considerando a distinção de competência prevista nas I-2-PM, quem é a autoridade competente para sua movimentação?",
     "options": [
@@ -5409,6 +5791,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 384,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — prazo de apresentação após movimentação",
     "text": "QUESTÃO 384 — Publicado ato de movimentação por conveniência do serviço ou própria, o policial militar deve observar o prazo de apresentação. Salvo disposição diversa no próprio ato, qual regra se aplica?",
     "options": [
@@ -5423,6 +5806,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 385,
     "subject": "ORGANIZACIONAL",
+    "tag": "SisTAF",
     "topic": "SisTAF — avaliação antropométrica e avaliação física",
     "text": "QUESTÃO 385 — Na organização do ciclo de avaliação física, a OPM programa o TAF periódico e pretende realizar a avaliação antropométrica depois dele, para não interferir na rotina. Considerando a sistemática do SisTAF, assinale a alternativa correta.",
     "options": [
@@ -5437,6 +5821,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 386,
     "subject": "ORGANIZACIONAL",
+    "tag": "SisTAF",
     "topic": "SisTAF — composição da avaliação antropométrica",
     "text": "QUESTÃO 386 — Ao conferir o protocolo antropométrico do SisTAF, o responsável precisa distinguir as medidas previstas do exame complementar que pode ser utilizado quando possível. Assinale a alternativa correta.",
     "options": [
@@ -5451,6 +5836,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 387,
     "subject": "ORGANIZACIONAL",
+    "tag": "SisTAF",
     "topic": "SisTAF — credenciamento dos integrantes",
     "text": "QUESTÃO 387 — Uma OPM designa policiais militares para integrar a sistemática de treinamento e avaliação física, mas ainda não os incluiu no sistema informatizado de controle. Qual providência corresponde à regra de credenciamento?",
     "options": [
@@ -5465,6 +5851,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 388,
     "subject": "ORGANIZACIONAL",
+    "tag": "SisTAF",
     "topic": "SisTAF — plano anual e adequação local",
     "text": "QUESTÃO 388 — Uma OPM propõe adequar localmente o plano de treinamento físico, alterando atividades e sequência em razão de suas características. Qual limite deve orientar essa adaptação?",
     "options": [
@@ -5479,6 +5866,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 389,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — Calendário do TCI e CTO",
     "text": "QUESTÃO 389 — Durante o planejamento anual de instrução, uma OPM confunde o Calendário do TCI com o Calendário de Treinamento Operacional (CTO). Assinale a alternativa que distingue corretamente os dois instrumentos.",
     "options": [
@@ -5493,6 +5881,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 390,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — fases de desenvolvimento",
     "text": "QUESTÃO 390 — A OPM está estruturando a implantação do TCI e precisa ordenar as fases previstas na diretriz. Qual alternativa corresponde à organização em quatro fases descrita no documento?",
     "options": [
@@ -5507,6 +5896,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 391,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — avaliação física na implantação",
     "text": "QUESTÃO 391 — Antes de iniciar a implantação do TCI na OPM, o responsável considera suficiente avaliar somente os policiais que apresentem queixa física. À luz da diretriz, assinale a alternativa correta.",
     "options": [
@@ -5521,6 +5911,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 392,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — execução do treinamento físico",
     "text": "QUESTÃO 392 — Na fase de execução do TCI, a OPM pretende desenvolver sessões de treinamento físico sem observar as orientações técnicas elaboradas pela EEF. Qual alternativa traduz a regra da diretriz?",
     "options": [
@@ -5535,6 +5926,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 393,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — participação e frequência obrigatória",
     "text": "QUESTÃO 393 — Um policial sustenta que sua participação regular no TCI o dispensa de frequentar outras modalidades de treinamento cuja frequência seja obrigatória. Qual alternativa está de acordo com a diretriz?",
     "options": [
@@ -5549,6 +5941,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 394,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — emergência policial durante instrução",
     "text": "QUESTÃO 394 — Durante sessão de TCI ocorre emergência policial relevante. O CFP identifica a necessidade de liberar parte do efetivo para atendimento, mas o responsável pela instrução ainda não encerrou a atividade. Qual procedimento está previsto?",
     "options": [
@@ -5563,6 +5956,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 395,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — execução e outras modalidades de treinamento",
     "text": "QUESTÃO 395 — Uma OPM organiza a execução do TCI em horários coincidentes com outras atividades de treinamento institucional. Considerando a diretriz, assinale a alternativa correta.",
     "options": [
@@ -5577,6 +5971,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 396,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — controle da execução",
     "text": "QUESTÃO 396 — Ao auditar a execução do TCI, uma OPM apresenta apenas declaração verbal de que as sessões ocorreram. Qual exigência de controle prevista na diretriz deve ser considerada?",
     "options": [
@@ -5591,6 +5986,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 397,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — responsabilidade do comando da OPM",
     "text": "QUESTÃO 397 — No acompanhamento do TCI, o comandante de unidade verifica baixa participação do efetivo subordinado. Qual conjunto de deveres corresponde às atribuições de comando descritas na diretriz?",
     "options": [
@@ -5605,6 +6001,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 398,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-16-PM",
     "topic": "I-16-PM — fixação da competência na instauração",
     "text": "QUESTÃO 398 — Durante procedimento administrativo, ocorre alteração posterior na situação funcional do acusado. Para determinar a competência administrativa, qual marco temporal deve ser considerado segundo as I-16-PM?",
     "options": [
@@ -5619,6 +6016,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 399,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-16-PM",
     "topic": "I-16-PM — avocação e hierarquia",
     "text": "QUESTÃO 399 — Um superior hierárquico considera necessário assumir procedimento administrativo instaurado por autoridade subordinada, invocando necessidade de preservar hierarquia e disciplina. À luz das I-16-PM, assinale a alternativa correta.",
     "options": [
@@ -5633,6 +6031,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 400,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — planejamento próprio e execução institucional",
     "text": "QUESTÃO 400 — Uma OPM afirma que, por possuir planejamento próprio para o TCI, pode alterar livremente o conteúdo das sessões técnico-operacionais e dispensar a observância da diretriz institucional. Qual alternativa corresponde à norma?",
     "options": [
@@ -5647,6 +6046,7 @@ const BANCO_GERAL_QUESTOES = [
 {
     "id": 401,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — compartilhamento requisitado e preservação da integridade",
     "text": "QUESTÃO 401 — Uma autoridade policial-militar requisita evidências digitais e relatório extraído do SiGCED. O setor responsável pretende converter os arquivos, suprimir trechos considerados irrelevantes e encaminhar somente o relatório final. À luz da Diretriz das COP, assinale a alternativa correta.",
     "options": [
@@ -5661,6 +6061,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 402,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — disponibilização digital a órgãos públicos interessados",
     "text": "QUESTÃO 402 — No atendimento a uma requisição legítima de evidências, a equipe responsável precisa definir o meio preferencial de disponibilização dos dados à autoridade solicitante. Qual alternativa reproduz a regra da Diretriz das COP, inclusive quanto aos destinatários?",
     "options": [
@@ -5675,6 +6076,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 403,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — divulgação não autorizada e bens jurídicos afetados",
     "text": "QUESTÃO 403 — Um policial repassa, sem autorização, trecho de gravação de COP a pessoa estranha ao procedimento, sob a justificativa de que o vídeo não foi editado e, portanto, sua integridade permanece preservada. Assinale a alternativa correta.",
     "options": [
@@ -5689,6 +6091,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 404,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — momento de classificação da evidência e responsabilidade do operador",
     "text": "QUESTÃO 404 — Ao encerrar uma gravação, o operador percebe que a evidência foi associada a etiqueta incompatível com o conteúdo. A lista de etiquetas havia sido atualizada pela Coordenação Operacional PM. Considerando a repartição de atribuições da Diretriz das COP, assinale a alternativa correta.",
     "options": [
@@ -5703,6 +6106,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 405,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — retirada extraordinária e guarda do equipamento",
     "text": "QUESTÃO 405 — Durante o turno, um policial precisa retirar uma peça complementar do fardamento e ajustar a posição da COP. Não há gravação em andamento. Qual alternativa reúne todas as condições expressamente previstas para a retirada excepcional do equipamento?",
     "options": [
@@ -5717,6 +6121,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 406,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — supervisão local e capacitação prévia",
     "text": "QUESTÃO 406 — Em ocorrência de interesse policial, o policial de maior posto ou graduação presente não utiliza COP. Um dos usuários sustenta que, por não portar equipamento, o superior não tem atribuição de fiscalizar seu emprego. Qual alternativa está correta?",
     "options": [
@@ -5731,6 +6136,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 407,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — áudio bidirecional e interferência na ação policial",
     "text": "QUESTÃO 407 — Durante atendimento que envolve condução de motocicleta em alta velocidade, negociação sensível com uma vítima e necessidade de disciplina de luz e som, a central cogita ativar comunicação por áudio bidirecional para orientar o policial. Considerando a Diretriz das COP, assinale a alternativa INCORRETA.",
     "options": [
@@ -5745,6 +6151,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 408,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — funções do Staff de Comando e ligação externa",
     "text": "QUESTÃO 408 — Em incidente crítico com participação de órgãos municipais, estaduais e federais, o Comandante do Incidente precisa manter contato com representantes das agências externas, enquanto outra função deverá lidar com a comunicação pública. Qual alternativa distingue corretamente essas atribuições?",
     "options": [
@@ -5759,6 +6166,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 409,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — transferência do comando e continuidade operacional",
     "text": "QUESTÃO 409 — No meio de um incidente crítico, a função de Comandante do Incidente passa a outro policial militar. O substituto conhece a área, mas não recebeu a situação atual, os objetivos em curso nem as ações já implementadas. Segundo o SCIPM, qual procedimento atende à exigência de transferência por processo?",
     "options": [
@@ -5773,6 +6181,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 410,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — padronização, organização modular e flexibilidade",
     "text": "QUESTÃO 410 — Em incidente de complexidade variável, a equipe adapta a estrutura de resposta à evolução do evento, incorpora recursos quando necessários e mantém terminologia comum entre agências. Analise as proposições:\n\nI. Flexibilidade permite adaptar o sistema às demandas contingenciais e aos eventos programados.\nII. Organização modular permite incorporar ou desmobilizar módulos conforme amplitude e complexidade.\nIII. Padronização harmoniza métodos, estruturas e termos, favorecendo a interoperabilidade.\nIV. A organização modular exige manter todos os módulos ativos até o encerramento, mesmo quando não forem mais necessários.\n\nAssinale a alternativa correta.",
     "options": [
@@ -5787,6 +6196,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 411,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — ação, operação e missão: distinções cumulativas",
     "text": "QUESTÃO 411 — Uma US executa atividade rotineira de prevenção criminal. Em outro momento, várias US são empregadas em ações simultâneas e sucessivas, sob objetivo comum delimitado no tempo e no espaço, conforme planejamento previamente elaborado. Uma terceira atuação mobiliza efetivo e meios de forma pontual para responder a demanda imediata. Qual alternativa classifica corretamente as três situações, na ordem apresentada?",
     "options": [
@@ -5801,6 +6211,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 412,
     "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
     "topic": "Policiamento de Trânsito — apoio do CPTran às OPM territoriais",
     "text": "QUESTÃO 412 — Uma OPM territorial enfrenta demanda extraordinária de fiscalização viária e apresenta deficiência técnica para determinada atividade especializada. O comando avalia solicitar apoio do CPTran. Considerando a diretriz de policiamento de trânsito, assinale a alternativa correta.",
     "options": [
@@ -5815,6 +6226,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 413,
     "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
     "topic": "Policiamento de Trânsito — emprego ocasional de US de outros programas",
     "text": "QUESTÃO 413 — Para suprir demanda pontual de policiamento de trânsito, o comandante cogita empregar US vinculadas a outros programas. Qual condição deve ser observada para que esse emprego seja compatível com a diretriz?",
     "options": [
@@ -5829,6 +6241,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 414,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — planejamento operacional e padrões de trabalho",
     "text": "QUESTÃO 414 — Um plano institucional já definiu objetivos estratégicos e táticos. O escalão responsável precisa converter esses objetivos em Planos de Ação, detalhar processos e fixar padrões de trabalho para a execução das missões. De acordo com a NORSOP, qual nível de planejamento realiza essa atividade?",
     "options": [
@@ -5843,6 +6256,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 415,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — apoio tático e escalonamento de resposta",
     "text": "QUESTÃO 415 — Uma OPM territorial emprega seus recursos ordinários, mas necessita de apoio tático por contingente capacitado e equipado para complementar as US da Matriz Operacional I. Não houve, ainda, extrapolação da capacidade que justifique recursos adicionais vinculados ao Comando de Policiamento. Qual enquadramento é compatível com a NORSOP?",
     "options": [
@@ -5857,6 +6271,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 416,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — conceito territorial de Setor e Subsetor",
     "text": "QUESTÃO 416 — Ao reorganizar a responsabilidade territorial, um comandante precisa distinguir duas frações: uma definida pelo Cmt Btl e atribuída à responsabilidade de um Cmt Pel PM; outra que constitui a menor fração territorial dentro da Subárea e pode ou não integrar um Setor. Qual alternativa identifica corretamente essas frações, na ordem descrita?",
     "options": [
@@ -5871,6 +6286,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 417,
     "subject": "OPERACIONAL",
+    "tag": "Força Tática",
     "topic": "Força Tática — primeiro atendimento e continuidade por outra patrulha",
     "text": "QUESTÃO 417 — Durante atividade típica, uma equipe de Força Tática recebe solicitação emergencial. Após o primeiro atendimento, outra patrulha pode assumir a continuidade sem violar procedimento ou impedimento legal. Qual conduta corresponde à diretriz?",
     "options": [
@@ -5885,6 +6301,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 418,
     "subject": "OPERACIONAL",
+    "tag": "Crime Organizado",
     "topic": "Crime organizado — resposta integrada em mais de um Comando de Policiamento",
     "text": "QUESTÃO 418 — Um incidente crítico relacionado à atuação típica do crime organizado abrange áreas de dois Comandos de Policiamento. O plano de resposta precisa indicar pontos sensíveis e responsáveis pelas medidas iniciais e de continuidade. Qual órgão possui a atribuição prevista para elaborar e manter atualizado esse Plano de Contingência?",
     "options": [
@@ -5899,6 +6316,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 419,
     "subject": "OPERACIONAL",
+    "tag": "Drones",
     "topic": "Drones — autoridade de voo e responsabilidade pela navegação segura",
     "text": "QUESTÃO 419 — Durante operação com UAS, o comandante da OPM determina uma trajetória que, no julgamento técnico do piloto designado, compromete a navegação segura. À luz da Diretriz do Programa de Policiamento com Drones, assinale a alternativa correta.",
     "options": [
@@ -5913,6 +6331,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 420,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — Sala de Gerenciamento de Incidentes e autoridade instituidora",
     "text": "QUESTÃO 420 — A integração com órgãos externos tornou-se necessária durante operação em campo. O comandante responsável pela execução solicita a instituição de uma Sala de Gerenciamento de Incidentes. Quem pode instituí-la, conforme o SCIPM?",
     "options": [
@@ -5927,6 +6346,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 421,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — planejamento de operação e simultaneidade/sucessividade",
     "text": "QUESTÃO 421 — Um planejamento prevê ações de várias US, de uma ou mais OPM, com execução parcialmente simultânea e parcialmente sucessiva, todas orientadas ao mesmo objetivo delimitado no tempo e no espaço. Assinale a alternativa correta.",
     "options": [
@@ -5941,6 +6361,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 422,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — Posto de Comando e informação da localização",
     "text": "QUESTÃO 422 — Em incidente policial estático, o primeiro comandante estabelece provisoriamente o Posto de Comando em uma viatura presente no local. Um integrante propõe comunicar sua localização somente após a instalação de estrutura física definitiva. Considerando o SCIPM, assinale a alternativa correta.",
     "options": [
@@ -5955,6 +6376,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 423,
     "subject": "OPERACIONAL",
+    "tag": "NORSOP",
     "topic": "NORSOP — autonomia de emprego e continuidade do programa",
     "text": "QUESTÃO 423 — O comando local pretende utilizar, de modo ocasional, uma US de programa complementar para suprir uma necessidade de trânsito. A escala proposta deixa a US sem condições de executar sua atividade própria durante o período designado. Qual conclusão decorre da diretriz de policiamento de trânsito?",
     "options": [
@@ -5969,6 +6391,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 424,
     "subject": "OPERACIONAL",
+    "tag": "SCIPM",
     "topic": "SCIPM — comando unificado e objetivos comuns",
     "text": "QUESTÃO 424 — Em incidente que exige resposta de várias agências, cada órgão mantém seus próprios objetivos incompatíveis, e os integrantes recebem orientações conflitantes. O Comandante do Incidente busca aplicar os elementos essenciais do SCIPM. Assinale a alternativa que melhor traduz a solução normativa.",
     "options": [
@@ -5983,6 +6406,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 425,
     "subject": "OPERACIONAL",
+    "tag": "COP",
     "topic": "COP — ausência de gravação e independência da apuração específica",
     "text": "QUESTÃO 425 — Em resposta a requisição de evidência digital, verifica-se que não há gravação de COP, possivelmente por falha de acionamento ou descarga da bateria. Já existe procedimento apurando a ocorrência principal. Qual providência é determinada pela Diretriz das COP?",
     "options": [
@@ -5997,6 +6421,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 426,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — limites de sanção por posto da autoridade",
     "text": "QUESTÃO 426 — Um Capitão PM, competente para aplicar sanção ao subordinado, pretende impor permanência disciplinar de 12 dias. Não há circunstância que altere a competência sancionatória prevista no RDPM. Assinale a alternativa correta.",
     "options": [
@@ -6011,6 +6436,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 427,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — limites sancionatórios de Coronel e Tenente-Coronel",
     "text": "QUESTÃO 427 — Considerando exclusivamente os limites de competência sancionatória previstos no art. 32 do RDPM para Coronel e Tenente-Coronel, assinale a alternativa INCORRETA.",
     "options": [
@@ -6025,6 +6451,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 428,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — critérios obrigatórios de julgamento disciplinar",
     "text": "QUESTÃO 428 — Na dosimetria de sanção disciplinar, a autoridade considera apenas a gravidade abstrata da transgressão e a repercussão pública, deixando de examinar os motivos determinantes, os danos, a personalidade e os antecedentes do agente. À luz do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6039,6 +6466,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 429,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — causa de justificação por obediência hierárquica",
     "text": "QUESTÃO 429 — Um policial alega ter praticado a conduta em cumprimento a ordem superior. A ordem recebida, entretanto, era manifestamente ilegal. Considerando as causas de justificação do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6053,6 +6481,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 430,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — causas de justificação e circunstâncias atenuantes",
     "text": "QUESTÃO 430 — Analise as proposições conforme os arts. 34 e 35 do RDPM:\n\nI. Motivo de força maior ou caso fortuito plenamente comprovados pode constituir causa de justificação.\nII. Ter prestado serviços relevantes é circunstância atenuante.\nIII. Colaborar na apuração da transgressão disciplinar é circunstância atenuante.\nIV. A existência de circunstância atenuante impede, por si só, o reconhecimento de causa de justificação.\n\nAssinale a alternativa correta.",
     "options": [
@@ -6067,6 +6496,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 431,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — conteúdo obrigatório do enquadramento disciplinar",
     "text": "QUESTÃO 431 — Ao elaborar o enquadramento disciplinar, a autoridade descreve a ação praticada e indica a tipificação, mas omite as alegações de defesa e a assinatura da autoridade. Qual conclusão decorre do art. 38 do RDPM?",
     "options": [
@@ -6081,6 +6511,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 432,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — publicação da sanção e efeitos",
     "text": "QUESTÃO 432 — A autoridade aplicou advertência e pretende publicá-la em boletim como as demais sanções, sob o argumento de que a publicação é sempre necessária para iniciar os efeitos do ato. Qual alternativa corresponde ao RDPM?",
     "options": [
@@ -6095,6 +6526,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 433,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — publicidade restrita das sanções por círculo",
     "text": "QUESTÃO 433 — Uma sanção foi aplicada a oficial. A autoridade pretende divulgá-la a todos os integrantes da Instituição sem examinar a natureza da transgressão ou o bem da disciplina. Considerando o art. 40 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6109,6 +6541,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 434,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — preponderância de circunstâncias e vedação de dupla sanção",
     "text": "QUESTÃO 434 — Na aplicação de sanção, as circunstâncias atenuantes preponderam. A autoridade pretende aplicar a sanção no limite máximo e, cumulativamente, impor outra sanção pela mesma transgressão. Qual alternativa está correta?",
     "options": [
@@ -6123,6 +6556,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 435,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — sanções por faltas leves, médias e graves",
     "text": "QUESTÃO 435 — Considerando os limites do art. 42 do RDPM, analise as proposições:\n\nI. Falta leve é punível com advertência ou repreensão e, na reincidência específica, com permanência disciplinar de até cinco dias.\nII. Falta média é punível com permanência disciplinar de até oito dias e, na reincidência específica, de até quinze dias.\nIII. Falta grave pode ensejar permanência de até dez dias ou detenção de até oito dias; na reincidência específica, os limites podem alcançar permanência de até vinte dias ou detenção de até quinze dias, desde que não caiba demissão ou expulsão.\nIV. A reincidência específica transforma automaticamente qualquer falta grave em demissão.\n\nAssinale a alternativa correta.",
     "options": [
@@ -6137,6 +6571,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 436,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — aprovação e publicação antes do cumprimento",
     "text": "QUESTÃO 436 — Uma sanção disciplinar foi aplicada, mas ainda não houve aprovação do ato pelo comandante competente nem publicação em boletim. Não há hipótese de recolhimento disciplinar imediato. Qual regra rege o início do cumprimento?",
     "options": [
@@ -6151,6 +6586,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 437,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — independência entre sanção disciplinar e responsabilidade civil/criminal",
     "text": "QUESTÃO 437 — O mesmo fato que constitui transgressão disciplinar também é objeto de inquérito criminal. A defesa sustenta que a Administração deve aguardar o encerramento da esfera criminal para decidir sobre a sanção disciplinar. Assinale a alternativa correta.",
     "options": [
@@ -6165,6 +6601,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 438,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — concurso de transgressões conexas e não conexas",
     "text": "QUESTÃO 438 — Um policial pratica duas transgressões sem conexão entre si. Em outro caso hipotético, duas transgressões são praticadas de forma conexa. Segundo o art. 45 do RDPM, qual tratamento distingue as situações?",
     "options": [
@@ -6179,6 +6616,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 439,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — transgressão envolvendo integrantes de mais de uma Unidade",
     "text": "QUESTÃO 439 — Uma transgressão disciplinar envolve militares do Estado pertencentes a duas Unidades distintas. Após a apuração, pode ser necessário remeter os autos à autoridade funcional superior comum. Qual autoridade possui a atribuição inicial descrita no art. 46 do RDPM?",
     "options": [
@@ -6193,6 +6631,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 440,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — concorrência de autoridades disciplinares",
     "text": "QUESTÃO 440 — Duas autoridades de níveis hierárquicos diferentes, ambas com ação disciplinar sobre o transgressor, tomam conhecimento da mesma transgressão. Considerando o art. 47 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6207,6 +6646,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 441,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — atribuições técnicas da EEF e gestão dos resultados",
     "text": "QUESTÃO 441 — Na execução do TCI, uma OPM registra os resultados das avaliações físicas, mas entende que a tabulação dos dados e a manutenção de banco próprio cabem exclusivamente ao comandante local. Considerando as atribuições da EEF, assinale a alternativa correta.",
     "options": [
@@ -6221,6 +6661,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 442,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — anamnese e questionários validados",
     "text": "QUESTÃO 442 — Durante o processo de avaliação física de uma OPM, surge dúvida sobre a fase de anamnese e a origem dos questionários que devem ser utilizados. Qual alternativa corresponde às atribuições específicas da EEF previstas na diretriz?",
     "options": [
@@ -6235,6 +6676,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 443,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — elaboração anual do Calendário de Treinamento Operacional",
     "text": "QUESTÃO 443 — Ao conferir as entregas anuais da EEF, uma unidade constata que os temas de instrução técnico-operacional foram selecionados localmente e que não houve elaboração do CTO pela Escola. Qual alternativa está correta?",
     "options": [
@@ -6249,6 +6691,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 444,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — consulta a órgão gestor de conhecimento especializado",
     "text": "QUESTÃO 444 — A EEF prepara plano de aula do TCI sobre assunto técnico especializado que está fora de sua gestão do conhecimento. Qual providência está prevista na diretriz?",
     "options": [
@@ -6263,6 +6706,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 445,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — regulamentação local por documento de Estado-Maior",
     "text": "QUESTÃO 445 — O comandante de OPM em nível de Tenente-Coronel pretende organizar as rotinas de planejamento e execução do TCI na sede do Batalhão e nas OPM subordinadas. Qual instrumento e abrangência correspondem à atribuição prevista?",
     "options": [
@@ -6277,6 +6721,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 446,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — atribuições do Cmt Cia na execução do treinamento",
     "text": "QUESTÃO 446 — No âmbito da Companhia, o comandante precisa garantir a execução do TCI conforme cronograma estabelecido pelo Batalhão. Analise as proposições:\n\nI. Definir o melhor local para a realização do treinamento físico na Companhia.\nII. Apresentar os policiais no local estabelecido pela seção P/3 ou equivalente do Batalhão, conforme o cronograma.\nIII. Supervisionar o fiel cumprimento das rotinas de treinamento na Companhia.\nIV. Alterar unilateralmente os temas do CTO, dispensando os assuntos previamente fornecidos pela EEF.\n\nAssinale a alternativa correta.",
     "options": [
@@ -6291,6 +6736,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 447,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — comunicação de problemas de planejamento e execução",
     "text": "QUESTÃO 447 — Uma OPM identifica problema recorrente no planejamento e na execução do TCI que demanda solução institucional imediata. Segundo a diretriz, a quem e por qual via devem ser comunicadas essas ocorrências no âmbito dos comandos de Órgãos de Direção e Comandos de Policiamento?",
     "options": [
@@ -6305,6 +6751,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 448,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — controle dos registros no SITAF",
     "text": "QUESTÃO 448 — Em auditoria interna, verifica-se que os treinamentos físicos foram executados, mas os registros e lançamentos no SITAF não foram fiscalizados. Qual atribuição expressa deve ser observada?",
     "options": [
@@ -6319,6 +6766,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 449,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — alterações no planejamento do treinamento físico",
     "text": "QUESTÃO 449 — Uma OPM deseja alterar a data de realização de atividade de ensino e incluir uma nova atividade no planejamento do treinamento físico. Considerando as atribuições de comando previstas na diretriz, qual providência corresponde ao procedimento indicado?",
     "options": [
@@ -6333,6 +6781,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 450,
     "subject": "ORGANIZACIONAL",
+    "tag": "TCI",
     "topic": "TCI — controle, fiscalização e operacionalização nas OPM subordinadas",
     "text": "QUESTÃO 450 — Um Comando de Policiamento sustenta que sua responsabilidade pelo TCI se encerra ao distribuir o calendário anual, cabendo à EEF executar e fiscalizar integralmente as rotinas em todas as OPM subordinadas. Qual alternativa corresponde à diretriz?",
     "options": [
@@ -6347,6 +6796,7 @@ const BANCO_GERAL_QUESTOES = [
 {
     "id": 451,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — recolhimento disciplinar antes da publicação de punição",
     "text": "QUESTÃO 451 — Em apuração inicial, a autoridade avalia a possibilidade de recolher disciplinarmente um policial militar antes da publicação de nota de punição. À luz do RDPM, analise as proposições:\n\nI. O recolhimento pode ocorrer quando houver indício de autoria de infração penal e for necessário ao bom andamento das investigações.\nII. O recolhimento também pode ser necessário à preservação da ordem e da disciplina, especialmente se o militar se mostrar agressivo, embriagado ou sob ação de substância entorpecente.\nIII. A condução do militar à autoridade competente para determinar o recolhimento pode ser efetuada por qualquer policial militar, independentemente de superioridade hierárquica.\nIV. A decisão de recolhimento deve ser fundamentada e comunicada ao Juiz Corregedor da polícia judiciária militar, observado o limite temporal previsto no dispositivo.\n\nAssinale a alternativa correta.",
     "options": [
@@ -6361,6 +6811,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 452,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — precisão e prazo da comunicação disciplinar",
     "text": "QUESTÃO 452 — Ao elaborar comunicação disciplinar, o signatário descreve o fato, mas acrescenta juízos pessoais sobre a personalidade do comunicado. O documento também é apresentado seis dias após a constatação, embora não tenha havido recolhimento disciplinar. Considerando o art. 28 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6375,6 +6826,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 453,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — manifestação preliminar e termo acusatório motivado",
     "text": "QUESTÃO 453 — A autoridade disciplinar entende que os elementos já reunidos são suficientes para elaborar o termo acusatório, sem solicitar manifestação preliminar do acusado. De acordo com o RDPM, assinale a alternativa correta.",
     "options": [
@@ -6389,6 +6841,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 454,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — prazo de solução e ciência do signatário",
     "text": "QUESTÃO 454 — Após receber a defesa do acusado, a autoridade competente precisa solucionar o procedimento disciplinar. Considerando o art. 29 do RDPM, assinale a alternativa que reúne corretamente os prazos e seus marcos iniciais.",
     "options": [
@@ -6403,6 +6856,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 455,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — representação contra ato de superior",
     "text": "QUESTÃO 455 — Um policial militar considera irregular e ilegal ato praticado por superior hierárquico. Quando se tratar especificamente de representação contra ato disciplinar, qual alternativa está de acordo com o RDPM?",
     "options": [
@@ -6417,6 +6871,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 456,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — competência disciplinar e exercício interino",
     "text": "QUESTÃO 456 — Um oficial exerce interinamente função de posto igual ou superior ao de Capitão. À luz do art. 31 do RDPM, assinale a alternativa correta sobre a competência disciplinar.",
     "options": [
@@ -6431,6 +6886,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 457,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — causas de justificação e limites da ordem superior",
     "text": "QUESTÃO 457 — Em procedimento disciplinar, o acusado sustenta que cumpriu determinação de superior, embora a ordem recebida fosse manifestamente ilegal. Considerando as causas de justificação do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6445,6 +6901,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 458,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — distinção entre circunstâncias atenuantes e agravantes",
     "text": "QUESTÃO 458 — Na individualização de sanção disciplinar, são apontados: prestação de serviços relevantes; colaboração na apuração; prática simultânea de duas transgressões; e cometimento da falta na presença de civil. Segundo o RDPM, como devem ser classificados esses elementos, na ordem apresentada?",
     "options": [
@@ -6459,6 +6916,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 459,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — agravante inerente à execução do serviço",
     "text": "QUESTÃO 459 — A transgressão foi praticada durante a execução do serviço. A defesa sustenta que a circunstância agravante correspondente não pode ser aplicada porque, pela própria natureza, a falta é inerente à execução do serviço. À luz do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6473,6 +6931,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 460,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — conteúdo do enquadramento disciplinar",
     "text": "QUESTÃO 460 — Ao redigir o enquadramento disciplinar, a autoridade descreve a ação ou omissão, tipifica a transgressão, registra as circunstâncias relevantes e decide sobre a sanção, mas omite as alegações de defesa do transgressor. Considerando o art. 38 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6487,6 +6946,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 461,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — advertência e publicação oficial",
     "text": "QUESTÃO 461 — A autoridade decide aplicar advertência a um policial militar. Sobre a publicidade e o registro dessa sanção, assinale a alternativa correta conforme o RDPM.",
     "options": [
@@ -6501,6 +6961,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 462,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — publicidade das sanções por círculo hierárquico",
     "text": "QUESTÃO 462 — Uma sanção foi aplicada a um Subtenente PM. Considerando a regra geral de publicidade do art. 40 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6515,6 +6976,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 463,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — limites na aplicação de sanção",
     "text": "QUESTÃO 463 — Na análise das circunstâncias de uma transgressão, a autoridade constata preponderância de atenuantes e, em outro caso, preponderância de agravantes. Qual alternativa traduz corretamente os limites do art. 41 do RDPM?",
     "options": [
@@ -6529,6 +6991,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 464,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — limites de sanção segundo a gravidade da falta",
     "text": "QUESTÃO 464 — Considere uma falta grave sem hipótese de demissão ou expulsão e com reincidência específica. De acordo com o art. 42 do RDPM, qual faixa sancionatória está prevista?",
     "options": [
@@ -6543,6 +7006,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 465,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — aprovação e publicação prévias ao cumprimento",
     "text": "QUESTÃO 465 — Uma sanção disciplinar foi aplicada por autoridade funcional imediatamente superior ao transgressor, mas ainda não houve publicação em boletim nem aprovação do ato pela autoridade competente. Em regra, o cumprimento pode começar?",
     "options": [
@@ -6557,6 +7021,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 466,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — concurso de transgressões conexas e não conexas",
     "text": "QUESTÃO 466 — Em um mesmo contexto, são identificadas duas transgressões sem conexão entre si. Em outro caso, duas transgressões foram praticadas de forma conexa, sendo uma de menor gravidade. Conforme o art. 45 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6571,6 +7036,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 467,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — concorrência de autoridades disciplinares",
     "text": "QUESTÃO 467 — Duas autoridades de níveis hierárquicos diferentes, ambas com ação disciplinar sobre o mesmo policial militar, tomam conhecimento da transgressão. A autoridade superior determina que a inferior apure o fato. Sobre a punição resultante, assinale a alternativa correta.",
     "options": [
@@ -6585,6 +7051,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 468,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — requisição de apresentação do transgressor",
     "text": "QUESTÃO 468 — A autoridade competente pretende aplicar sanção a policial militar que está prestando serviço ou à disposição de outra autoridade. Segundo o RDPM, qual providência é prevista?",
     "options": [
@@ -6599,6 +7066,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 469,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — estado de embriaguez e ato disciplinar",
     "text": "QUESTÃO 469 — Um policial militar apresenta sinais de embriaguez quando seria ouvido em procedimento disciplinar. À luz do art. 50 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6613,6 +7081,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 470,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — cumprimento de sanção durante afastamento regulamentar",
     "text": "QUESTÃO 470 — Um policial militar está em afastamento regulamentar quando se decide pelo cumprimento de sanção disciplinar. Qual alternativa corresponde ao art. 51 do RDPM?",
     "options": [
@@ -6627,6 +7096,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 471,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — contagem do cumprimento e afastamento durante a sanção",
     "text": "QUESTÃO 471 — Após a publicação da sanção, o policial militar inicia seu cumprimento e, durante esse período, passa a usufruir afastamento regulamentar. Considerando o art. 52 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6641,6 +7111,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 472,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — classificação do comportamento da praça",
     "text": "QUESTÃO 472 — Para classificar o comportamento de uma praça, a autoridade examina os períodos de referência e as sanções publicadas. Qual alternativa reproduz corretamente uma das categorias do art. 54 do RDPM?",
     "options": [
@@ -6655,6 +7126,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 473,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — pedido de reconsideração de ato",
     "text": "QUESTÃO 473 — O policial militar pretende impugnar ato disciplinar que considera irregular, ofensivo, injusto ou ilegal. Segundo o art. 57 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6669,6 +7141,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 474,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — pressupostos do recurso hierárquico",
     "text": "QUESTÃO 474 — Um pedido de reconsideração foi solucionado, mas o interessado pretende interpor recurso hierárquico. Considerando o art. 58 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6683,6 +7156,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 475,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — prazos do recurso hierárquico e não conhecimento",
     "text": "QUESTÃO 475 — Sobre o recurso hierárquico, assinale a alternativa que apresenta corretamente os prazos previstos no art. 58 do RDPM.",
     "options": [
@@ -6697,6 +7171,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 476,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — encerramento da revisão administrativa do ato disciplinar",
     "text": "QUESTÃO 476 — Após a solução do recurso hierárquico, o recorrente pretende formular novo recurso administrativo para rediscutir o mesmo ato disciplinar. Considerando o art. 59 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6711,6 +7186,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 477,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — natureza dos prazos recursais",
     "text": "QUESTÃO 477 — Ao orientar um militar estadual sobre a interposição de recurso disciplinar, a autoridade deve esclarecer a natureza dos prazos regulamentares. De acordo com o art. 61 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6725,6 +7201,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 478,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — revisão de sanção e prazo de anulação",
     "text": "QUESTÃO 478 — Uma autoridade toma conhecimento, por via recursal, de possível ilegalidade em sanção disciplinar anteriormente aplicada. À luz do art. 62 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6739,6 +7216,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 479,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — conceito de atenuação da sanção",
     "text": "QUESTÃO 479 — A autoridade revisora avalia reduzir a sanção proposta ou aplicada, substituindo-a por outra menos rigorosa ou diminuindo o número de dias. Segundo o RDPM, qual conceito corresponde a essa providência?",
     "options": [
@@ -6753,6 +7231,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 480,
     "subject": "JURIDICO",
+    "tag": "RDPM",
     "topic": "RDPM — vedação de agravação motivada por recurso",
     "text": "QUESTÃO 480 — Após a interposição de recurso disciplinar, a autoridade revisora conclui que seria conveniente ampliar o número de dias da sanção. Considerando o art. 65 do RDPM, assinale a alternativa correta.",
     "options": [
@@ -6767,6 +7246,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 481,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — primeiro período de férias e aproveitamento de serviço público anterior",
     "text": "QUESTÃO 481 — Um policial militar ingressa na PMESP após ter prestado serviço público estadual anterior. Entre a cessação desse vínculo e o ingresso na Instituição houve interrupção de exatamente dez dias. O primeiro ano de exercício funcional será completado em dezembro. Considerando as I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6781,6 +7261,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 482,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — desdobramento e base de cálculo do adicional de férias",
     "text": "QUESTÃO 482 — Um policial militar usufruirá férias anuais parceladas em dois períodos. A administração precisa definir o adicional e a forma de pagamento, bem como avaliar hipótese de recebimento indevido. Conforme as I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6795,6 +7276,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 483,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — conteúdo obrigatório do Plano Anual de Férias",
     "text": "QUESTÃO 483 — Ao elaborar o Plano Anual de Férias para o exercício seguinte, uma OPM precisa verificar os elementos que devem constar do planejamento. À luz do art. 5º das I-36-PM, assinale a alternativa INCORRETA.",
     "options": [
@@ -6809,6 +7291,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 484,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — alteração do Plano Anual de Férias no SIPA",
     "text": "QUESTÃO 484 — O Comandante de uma OPM pretende adiar férias já programadas por relevante interesse do serviço. O período ainda não começou. Qual alternativa descreve corretamente o procedimento previsto nas I-36-PM?",
     "options": [
@@ -6823,6 +7306,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 485,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — transferência de OPM e plano de férias do Aspirante",
     "text": "QUESTÃO 485 — Um policial militar é movimentado para outra OPM após já ter usufruído parte das férias anuais. Paralelamente, a APMBB organiza o plano de férias dos Aspirantes-a-Oficial PM no último ano do CFO. Considerando o art. 7º das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6837,6 +7321,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 486,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — competência para elaborar e conceder férias",
     "text": "QUESTÃO 486 — Ao revisar a concessão de férias de um oficial que desempenha função equivalente à de Comandante de Companhia, surge dúvida sobre a autoridade concedente e a necessidade de aprovação. Conforme o art. 8º das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6851,6 +7336,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 487,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — verificação do gozo das férias anuais",
     "text": "QUESTÃO 487 — Ao verificar inconsistências entre o plano de férias e os registros de pagamento do adicional de um terço, o comando precisa identificar a autoridade responsável pela conferência global do efetivo. Segundo as I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6865,6 +7351,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 488,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — concessão e fruição da licença-prêmio",
     "text": "QUESTÃO 488 — O período aquisitivo de licença-prêmio de um policial militar foi encerrado. Ele ainda não formulou requerimento para fruição. Considerando o art. 14 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6879,6 +7366,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 489,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — licença-prêmio e pedido de transferência para a reserva",
     "text": "QUESTÃO 489 — Um policial militar pretende requerer transferência para a reserva, mas ainda possui parcelas de licença-prêmio não fruídas. À luz do art. 14 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6893,6 +7381,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 490,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — interrupção do bloco aquisitivo por detenção",
     "text": "QUESTÃO 490 — Uma sanção de detenção é publicada durante o período aquisitivo de licença-prêmio. Considerando a regra temporal específica do art. 16 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6907,6 +7396,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 491,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — limite acumulado de afastamentos e interrupção da licença-prêmio",
     "text": "QUESTÃO 491 — No período aquisitivo de cinco anos, um policial militar acumula dispensas do serviço, licença para tratamento de saúde em pessoa da família e licença para tratamento da própria saúde. O total das ausências consideradas alcança 31 dias, sem que a licença de saúde decorra de lesão em serviço ou doença profissional. Conforme o art. 16 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6921,6 +7411,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 492,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — suspensão da contagem por repreensão e permanência disciplinar",
     "text": "QUESTÃO 492 — Para formação do bloco aquisitivo de licença-prêmio, devem ser distinguidos os efeitos da repreensão e da permanência disciplinar aplicadas a partir de 20MAI05. À luz do art. 17 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6935,6 +7426,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 493,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — afastamentos que não interrompem nem suspendem o bloco aquisitivo",
     "text": "QUESTÃO 493 — Na análise de um bloco aquisitivo de licença-prêmio, a autoridade examina períodos de férias, licença-paternidade e licença para tratamento de saúde decorrente de lesão sofrida em serviço, devidamente comprovada e regularizada. Segundo o art. 18 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6949,6 +7441,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 494,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — competência e registro de pareceres de saúde",
     "text": "QUESTÃO 494 — Para concessão de afastamento de saúde, a OPM recebe atestado emitido por médico civil e pretende utilizá-lo diretamente como fundamento administrativo. Considerando o art. 22 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6963,6 +7456,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 495,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — apresentação para inspeção por Junta de Saúde",
     "text": "QUESTÃO 495 — Um policial militar deverá ser submetido a exame por Junta de Saúde, mas não consegue locomover-se até o local designado. À luz do art. 26 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -6977,6 +7471,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 496,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — nova inspeção após incapacidade temporária",
     "text": "QUESTÃO 496 — Um policial militar permanece por 61 dias na condição de incapaz temporariamente para o serviço ou apto com restrição médica ao serviço policial-militar. Segundo as I-36-PM, qual providência deve ocorrer ao final desse período?",
     "options": [
@@ -6991,6 +7486,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 497,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — marco inicial da prorrogação de licença de saúde",
     "text": "QUESTÃO 497 — A licença para tratamento de saúde de um policial militar termina em 14 de junho, e o parecer médico reconhece a necessidade de prorrogação. O policial permanece eventualmente baixado em hospital durante parte do período. Conforme o art. 28 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -7005,6 +7501,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 498,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — termo inicial do período de luto",
     "text": "QUESTÃO 498 — O falecimento de familiar ocorre em dia no qual o policial militar já cumpriu o serviço e se encontra de folga. Em outra hipótese, a morte somente é descoberta depois do desaparecimento da pessoa. Segundo o art. 39 das I-36-PM, assinale a alternativa correta quanto ao início do luto.",
     "options": [
@@ -7019,6 +7516,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 499,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — licença para tratamento de saúde em pessoa da família",
     "text": "QUESTÃO 499 — Um policial militar solicita prorrogação de licença para tratamento de saúde em pessoa da família. O requerimento é protocolado na Diretoria de Pessoal com antecedência inferior a dez dias do término da licença em fruição. Considerando o art. 50 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -7033,6 +7531,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 500,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — prazos para instrução e comprovação de afastamento para evento",
     "text": "QUESTÃO 500 — Um policial militar autorizado a participar de evento técnico fora de sua sede retorna ao serviço, mas não apresenta no prazo a documentação comprobatória de participação e os relatórios exigidos. Considerando os arts. 61 e 62 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -7047,6 +7546,7 @@ const BANCO_GERAL_QUESTOES = [
 {
     id: 501,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — acionamento manual e remoto",
     text: "QUESTÃO 501 — Durante atendimento ainda em andamento, a gravação de uma COP é encerrada acidentalmente. Considerando as regras de acionamento remoto e de continuidade do registro, qual providência corresponde à Diretriz nº PM3-001/02/25?",
     options: [
@@ -7061,6 +7561,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 502,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — dúvida sobre necessidade de gravação",
     text: "QUESTÃO 502 — Em interação com cidadão, o policial não consegue determinar de imediato se a situação se enquadra nos exemplos expressos de fato de interesse policial. Qual conduta está de acordo com a Diretriz das COP?",
     options: [
@@ -7075,6 +7576,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 503,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — manutenção da gravação",
     text: "QUESTÃO 503 — Uma equipe encerra a abordagem e libera os envolvidos, sem condução ou outra providência pendente. À luz das hipóteses de encerramento, qual alternativa está correta?",
     options: [
@@ -7089,6 +7591,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 504,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — proteção de direitos sensíveis",
     text: "QUESTÃO 504 — Vítima solicita que sua imagem não seja captada durante entrevista, mas o fato permanece de interesse policial. Qual procedimento atende à regra específica?",
     options: [
@@ -7103,6 +7606,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 505,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — busca pessoal minuciosa",
     text: "QUESTÃO 505 — Na realização de busca pessoal minuciosa, a equipe entende ser necessário adaptar temporariamente o posicionamento da COP. Qual exigência específica consta da Diretriz?",
     options: [
@@ -7117,6 +7621,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 506,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — interrupção durante atendimento",
     text: "QUESTÃO 506 — A COP deixa de gravar durante o atendimento de uma ocorrência, embora tenha sido acionada corretamente no início. A falha persiste após o reacionamento. Qual conjunto de providências é normativamente compatível?",
     options: [
@@ -7131,6 +7636,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 507,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — equipamento inoperante",
     text: "QUESTÃO 507 — No início do turno, o usuário constata que a COP está inoperante. Qual providência reúne os deveres previstos para essa situação?",
     options: [
@@ -7145,6 +7651,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 508,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — informação às partes",
     text: "QUESTÃO 508 — Ao iniciar a gravação de uma intervenção, o policial avalia que informar as partes naquele momento pode prejudicar sua integridade física. Qual interpretação corresponde à norma?",
     options: [
@@ -7159,6 +7666,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 509,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — áudio bidirecional",
     text: "QUESTÃO 509 — O COPOM pretende utilizar o áudio bidirecional para transmitir orientação ao policial que está manuseando armamento durante ação crítica. Qual análise é mais adequada?",
     options: [
@@ -7173,6 +7681,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 510,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — transmissão ao vivo",
     text: "QUESTÃO 510 — Sobre o acesso à transmissão ao vivo das imagens das COP, assinale a alternativa correta.",
     options: [
@@ -7187,6 +7696,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 511,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — modo tático",
     text: "QUESTÃO 511 — Durante operação em que a disciplina de luz e som é necessária à segurança da equipe, o comandante avalia o uso do modo tático da COP. Qual afirmação está correta?",
     options: [
@@ -7201,6 +7711,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 512,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — classificação PJM e PJ",
     text: "QUESTÃO 512 — Uma ocorrência apresenta indícios de possível ilícito penal militar decorrente de intervenção policial, com resultado lesivo. Qual critério de classificação se alinha à Diretriz das COP?",
     options: [
@@ -7215,6 +7726,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 513,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — classificação de busca domiciliar",
     text: "QUESTÃO 513 — Em ação de busca domiciliar não precedida de mandado judicial, a equipe precisa classificar a evidência digital. Qual exigência específica acompanha a subetiqueta BD?",
     options: [
@@ -7229,6 +7741,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 514,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — autoridade responsável pelo rol de etiquetas",
     text: "QUESTÃO 514 — Uma OPM pretende incluir uma nova subetiqueta eletrônica e definir parâmetros próprios de aplicação. Qual órgão, segundo a Diretriz, é responsável por definir, atualizar e divulgar o rol completo?",
     options: [
@@ -7243,6 +7756,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 515,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — temporalidade mínima",
     text: "QUESTÃO 515 — Após o upload, a equipe questiona os prazos mínimos de disponibilidade das evidências digitais. Qual alternativa reproduz os períodos previstos?",
     options: [
@@ -7257,6 +7771,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 516,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — custódia após upload",
     text: "QUESTÃO 516 — Realizado o upload das gravações no sistema de armazenamento, quem assume a responsabilidade pela administração e custódia das evidências digitais produzidas pelo efetivo da respectiva OPM?",
     options: [
@@ -7271,6 +7786,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 517,
     subject: "OPERACIONAL",
+    tag: "COP",
     topic: "COP — acesso pelo próprio policial",
     text: "QUESTÃO 517 — Policial que atuou na ocorrência solicita acesso ao registro audiovisual para instruir procedimento em que figura como testemunha. Qual limitação está expressamente prevista?",
     options: [
@@ -7285,6 +7801,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 518,
     subject: "OPERACIONAL",
+    tag: "SCIPM",
     topic: "SCIPM — campo de aplicação",
     text: "QUESTÃO 518 — Uma OPM participa de operação emergencial de polícia ostensiva e preservação da ordem pública, sem participação inicial de bombeiros ou defesa civil. A complexidade não é elevada. A metodologia do SCIPM é aplicável?",
     options: [
@@ -7299,6 +7816,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 519,
     subject: "OPERACIONAL",
+    tag: "SCIPM",
     topic: "SCIPM — incidente estático e dinâmico",
     text: "QUESTÃO 519 — Um incidente tem causadores em movimento, de modo que seus impactos não se limitam a uma área geográfica delimitada, dificultando contenção e isolamento iniciais. Como a diretriz caracteriza essa situação?",
     options: [
@@ -7313,6 +7831,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 520,
     subject: "OPERACIONAL",
+    tag: "SCIPM",
     topic: "SCIPM — Comandante do Incidente",
     text: "QUESTÃO 520 — No teatro de operações, discute-se quem estabelece os objetivos da missão e os planos de ação, supervisiona as ações, define o staff e providencia recursos internos e externos. Qual definição corresponde à função descrita?",
     options: [
@@ -7327,6 +7846,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 521,
     subject: "OPERACIONAL",
+    tag: "SCIPM",
     topic: "SCIPM — Posto de Comando x Sala de Gerenciamento",
     text: "QUESTÃO 521 — Autoridades político-estratégicas acompanham operação de local externo ao sítio, mantêm contato bilateral com o Posto de Comando e transmitem diretivas ao comandante. Qual estrutura corresponde à descrição?",
     options: [
@@ -7341,6 +7861,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 522,
     subject: "OPERACIONAL",
+    tag: "SCIPM",
     topic: "SCIPM — consciência situacional",
     text: "QUESTÃO 522 — Um comandante constrói compreensão individual dos acontecimentos e elementos do ambiente, delimitados no tempo e espaço, para projetar riscos futuros e antecipá-los. Qual conceito é descrito?",
     options: [
@@ -7355,6 +7876,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 523,
     subject: "OPERACIONAL",
+    tag: "SCIPM",
     topic: "SCIPM — imagem operacional comum",
     text: "QUESTÃO 523 — Integrantes de diferentes órgãos compartilham a compreensão dos acontecimentos e do ambiente, formando uma imagem mental comum que favorece sinergia e segurança coletiva. Trata-se de:",
     options: [
@@ -7369,6 +7891,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 524,
     subject: "OPERACIONAL",
+    tag: "SCIPM",
     topic: "SCIPM — conceito de operação policial-militar",
     text: "QUESTÃO 524 — Uma ação emprega várias Unidades de Serviço de uma ou mais OPM, simultânea e sucessivamente, em localidade determinada, para objetivo comum único, delimitado no tempo e espaço. Como se caracteriza?",
     options: [
@@ -7383,6 +7906,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 525,
     subject: "OPERACIONAL",
+    tag: "SCIPM",
     topic: "SCIPM — instalações padronizadas",
     text: "QUESTÃO 525 — O comandante estabelece estruturas físicas para organizar o sítio da operação, com segurança, denominação comum e sinalização, em função da complexidade do incidente. Qual interpretação é compatível com o SCIPM?",
     options: [
@@ -7397,6 +7921,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 526,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — legitimidade recursal",
     text: "QUESTÃO 526 — Um militar considera que ato de superior prejudicou subordinado sob sua responsabilidade, embora não tenha sido dirigido pessoalmente contra ele. À luz do RDPM, quem pode interpor recurso disciplinar?",
     options: [
@@ -7411,6 +7936,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 527,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — destinatário do pedido de reconsideração",
     text: "QUESTÃO 527 — O militar pretende impugnar ato disciplinar que reputa injusto. Qual é o destinatário e o limite de apresentação do pedido de reconsideração de ato?",
     options: [
@@ -7425,6 +7951,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 528,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — prazo e efeito suspensivo da reconsideração",
     text: "QUESTÃO 528 — Sobre o pedido de reconsideração de ato disciplinar, assinale a alternativa correta.",
     options: [
@@ -7439,6 +7966,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 529,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — prazo de solução da reconsideração",
     text: "QUESTÃO 529 — Recebido o pedido de reconsideração, qual prazo máximo a autoridade recorrida tem para solucioná-lo, com despacho fundamentado publicado e ciência ao interessado?",
     options: [
@@ -7453,6 +7981,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 530,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — ausência de solução oficial",
     text: "QUESTÃO 530 — Passaram-se 30 dias desde a solicitação de reconsideração, sem que o subordinado tenha recebido oficialmente conhecimento da solução. Qual consequência prevê o RDPM?",
     options: [
@@ -7467,6 +7996,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 531,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — requisitos de conhecimento da reconsideração",
     text: "QUESTÃO 531 — Qual hipótese autoriza o não conhecimento do pedido de reconsideração, nos termos do RDPM?",
     options: [
@@ -7481,6 +8011,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 532,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — destinatário do recurso hierárquico",
     text: "QUESTÃO 532 — Após solução desfavorável do pedido de reconsideração, o militar pretende interpor recurso hierárquico. A quem deve endereçá-lo?",
     options: [
@@ -7495,6 +8026,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 533,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — pressuposto do recurso hierárquico",
     text: "QUESTÃO 533 — Em regra, quando o recurso hierárquico pode ser interposto?",
     options: [
@@ -7509,6 +8041,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 534,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — prazos do recurso hierárquico",
     text: "QUESTÃO 534 — Qual alternativa reúne corretamente os prazos do recurso hierárquico previstos no RDPM?",
     options: [
@@ -7523,6 +8056,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 535,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — dever de comunicação do recurso",
     text: "QUESTÃO 535 — Recebido recurso hierárquico, qual providência compete à autoridade que o recebe?",
     options: [
@@ -7537,6 +8071,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 536,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — limites materiais do recurso hierárquico",
     text: "QUESTÃO 536 — Qual conteúdo é vedado no recurso hierárquico?",
     options: [
@@ -7551,6 +8086,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 537,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — recurso hierárquico não conhecido",
     text: "QUESTÃO 537 — O recurso hierárquico é considerado intempestivo. Qual consequência procedimental está prevista?",
     options: [
@@ -7565,6 +8101,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 538,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — encerramento da revisão administrativa",
     text: "QUESTÃO 538 — Solucionado o recurso hierárquico, qual é a regra quanto à possibilidade de revisão administrativa do ato disciplinar?",
     options: [
@@ -7579,6 +8116,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 539,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — início do cumprimento da sanção",
     text: "QUESTÃO 539 — Solucionados os recursos disciplinares e subsistindo sanção a cumprir, em qual prazo o militar deve iniciar seu cumprimento?",
     options: [
@@ -7593,6 +8131,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 540,
     subject: "JURIDICO",
+    tag: "RDPM",
     topic: "RDPM — revisão e agravamento",
     text: "QUESTÃO 540 — No âmbito da revisão de atos disciplinares, qual afirmação está correta?",
     options: [
@@ -7607,6 +8146,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 541,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "I-36-PM — licença sem vencimentos: requisito temporal",
     text: "QUESTÃO 541 — Policial militar com quatro anos e onze meses de efetivo exercício requer licença sem vencimentos para tratar de interesse particular. À luz das I-36-PM, qual requisito temporal está previsto para a concessão dessa licença?",
     options: [
@@ -7621,6 +8161,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 542,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "I-36-PM — hipóteses de indeferimento",
     text: "QUESTÃO 542 — Qual alternativa apresenta hipótese expressamente prevista para indeferir pedido de licença sem vencimentos disciplinada pelas I-36-PM?",
     options: [
@@ -7635,6 +8176,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 543,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "I-36-PM — documentação da licença",
     text: "QUESTÃO 543 — Para instruir pedido inicial de licença sem vencimentos prevista na seção do art. 67, qual conjunto documental é exigido pelo art. 69?",
     options: [
@@ -7649,6 +8191,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 544,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "I-36-PM — prorrogação da licença",
     text: "QUESTÃO 544 — Para pedir prorrogação da licença sem vencimentos, qual regra documental e temporal é aplicável?",
     options: [
@@ -7663,6 +8206,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 545,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "I-36-PM — início do gozo",
     text: "QUESTÃO 545 — Publicada a concessão da licença sem vencimentos, o interessado pretende iniciar o afastamento no 18º dia. Qual é a consequência prevista pela norma?",
     options: [
@@ -7677,6 +8221,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 546,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "I-36-PM — exercício durante a espera",
     text: "QUESTÃO 546 — Enquanto aguarda a concessão da licença sem vencimentos pleiteada, o policial militar questiona se deve permanecer no exercício das funções. Qual resposta decorre das I-36-PM?",
     options: [
@@ -7691,6 +8236,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 547,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "I-36-PM — competência para indeferir",
     text: "QUESTÃO 547 — Em pedido de licença sem vencimentos, o indeferimento decorre da inconveniência do afastamento ao interesse do serviço. A quem compete decidir, segundo o art. 71?",
     options: [
@@ -7705,6 +8251,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 548,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "I-36-PM — assunção de função pública durante licença",
     text: "QUESTÃO 548 — Durante licença sem vencimentos, o policial militar assume temporariamente emprego público em outra esfera de poder. Qual consequência normativa está prevista?",
     options: [
@@ -7719,6 +8266,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 549,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "I-36-PM — sustação e sobrestamento",
     text: "QUESTÃO 549 — Para fins das I-36-PM, qual distinção entre sustação e sobrestamento está correta?",
     options: [
@@ -7733,6 +8281,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 550,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "I-36-PM — prevalência de afastamentos",
     text: "QUESTÃO 550 — O policial militar já iniciou determinado afastamento e, durante sua fruição, surge direito a outro afastamento que se estenderia além do período inicialmente previsto. Qual regra geral consta das I-36-PM?",
     options: [
@@ -7747,6 +8296,7 @@ const BANCO_GERAL_QUESTOES = [
  {
     id: 551,
     subject: "OPERACIONAL",
+    tag: "Radiopatrulha",
     topic: "Programa de Radiopatrulha — continuidade e distribuição",
     text: "QUESTÃO 551 — Ao revisar a escala de uma Companhia PM territorial, o comandante propõe interromper o Programa de Radiopatrulha durante parte da madrugada para concentrar o efetivo em ações planejadas. À luz da Diretriz do Programa de Radiopatrulha, qual avaliação está correta?",
     options: [
@@ -7761,6 +8311,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 552,
     subject: "OPERACIONAL",
+    tag: "Radiopatrulha",
     topic: "Programa de Radiopatrulha — efetivo mínimo por Companhia",
     text: "QUESTÃO 552 — Em auditoria de escala, verifica-se que uma Companhia PM mantém duas Patrulhas em operação contínua e justifica que a terceira será acionada apenas quando o volume de ocorrências aumentar. Considerando a quantidade mínima prevista para o Programa de Radiopatrulha, assinale a alternativa correta.",
     options: [
@@ -7775,6 +8326,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 553,
     subject: "OPERACIONAL",
+    tag: "Radiopatrulha",
     topic: "Programa de Radiopatrulha — nível de resposta",
     text: "QUESTÃO 553 — Uma Patrulha de Radiopatrulha recebe chamado que exige resposta imediata e, após avaliar a gravidade e a complexidade, solicita apoio de outras Unidades de Serviço. Qual enquadramento corresponde à Diretriz do Programa de Radiopatrulha?",
     options: [
@@ -7789,6 +8341,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 554,
     subject: "OPERACIONAL",
+    tag: "Radiopatrulha",
     topic: "Programa de Radiopatrulha — composição da Patrulha e motocicletas",
     text: "QUESTÃO 554 — Ao elaborar o Plano Diretor, uma OPM prevê Patrulhas em viaturas de quatro rodas e em motocicletas. Qual alternativa reúne corretamente os parâmetros da Diretriz do Programa de Radiopatrulha?",
     options: [
@@ -7803,6 +8356,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 555,
     subject: "OPERACIONAL",
+    tag: "Radiopatrulha",
     topic: "Programa de Radiopatrulha — atualização do SIOPM",
     text: "QUESTÃO 555 — Durante um turno, o CFP altera a composição de uma Patrulha e modifica seu território de atuação. Para cumprir a Diretriz do Programa de Radiopatrulha, qual providência relativa ao SIOPM deve ser adotada?",
     options: [
@@ -7817,6 +8371,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 556,
     subject: "OPERACIONAL",
+    tag: "Policiamento de Trânsito",
     topic: "Programa de Policiamento de Trânsito — fiscalização e convênio",
     text: "QUESTÃO 556 — Uma OPM é instada a intensificar a fiscalização administrativa de trânsito em vias municipais. Considerando a Diretriz do Programa de Policiamento de Trânsito, qual condição específica deve ser observada para o exercício da fiscalização e controle das normas de trânsito?",
     options: [
@@ -7831,6 +8386,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 557,
     subject: "OPERACIONAL",
+    tag: "Policiamento de Trânsito",
     topic: "Programa de Policiamento de Trânsito — princípios",
     text: "QUESTÃO 557 — Durante uma operação, a equipe precisa escolher entre preservar a fluidez dos veículos e adotar medida que reduza risco à integridade física de pedestres. À luz dos princípios do policiamento ostensivo de trânsito, qual orientação prevalece?",
     options: [
@@ -7845,6 +8401,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 558,
     subject: "OPERACIONAL",
+    tag: "Policiamento de Trânsito",
     topic: "Programa de Policiamento de Trânsito — caráter educativo-preventivo",
     text: "QUESTÃO 558 — Em fiscalização de trânsito, um policial orienta preventivamente os usuários sobre a utilização segura da via e, diante de descumprimento intencional da legislação, avalia a adoção de providência repressiva. Qual proposição corresponde à Diretriz do PPT?",
     options: [
@@ -7859,6 +8416,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 559,
     subject: "OPERACIONAL",
+    tag: "Policiamento de Trânsito",
     topic: "Programa de Policiamento de Trânsito — obrigatoriedade da autuação",
     text: "QUESTÃO 559 — Durante o policiamento, o PM constata infração administrativa de trânsito. Não há motivo de força maior nem impossibilidade absoluta decorrente da necessidade de garantir a segurança do trânsito. Qual conduta é compatível com a Diretriz?",
     options: [
@@ -7873,6 +8431,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 560,
     subject: "OPERACIONAL",
+    tag: "Policiamento de Trânsito",
     topic: "Programa de Policiamento de Trânsito — missão e execução",
     text: "QUESTÃO 560 — Ao planejar o emprego do PPT, um comandante precisa distinguir as OPM expressamente incumbidas de executar o policiamento ostensivo de trânsito da possibilidade de atuação territorial complementar. Qual alternativa reproduz essa distinção?",
     options: [
@@ -7887,6 +8446,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 561,
     subject: "OPERACIONAL",
+    tag: "Sala de Operações",
     topic: "Sala de Operações — missão e integração",
     text: "QUESTÃO 561 — Uma OPM de escalão Batalhão estrutura equipe para monitorar ocorrências, apoiar as Unidades de Serviço e transmitir informações qualificadas aos escalões de comando. Segundo a Nota de Instrução da Sala de Operações, qual descrição é correta?",
     options: [
@@ -7901,6 +8461,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 562,
     subject: "OPERACIONAL",
+    tag: "Sala de Operações",
     topic: "Sala de Operações — Equipe SOp",
     text: "QUESTÃO 562 — Para organizar o emprego de pessoal na Sala de Operações, o comandante analisa se a equipe pode ser formada por um único policial militar e quais funções deverá desempenhar. Conforme a Nota de Instrução nº PM3-002/02/26, qual alternativa está correta?",
     options: [
@@ -7915,6 +8476,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 563,
     subject: "OPERACIONAL",
+    tag: "Sala de Operações",
     topic: "Sala de Operações — segurança e disponibilidade da informação",
     text: "QUESTÃO 563 — Um integrante da SOp recebe pedido de dados sensíveis e, ao final do turno, identifica registros que podem precisar ser consultados posteriormente. Qual procedimento atende à regra de disponibilidade da informação?",
     options: [
@@ -7929,6 +8491,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 564,
     subject: "OPERACIONAL",
+    tag: "Sala de Operações",
     topic: "Sala de Operações — Serviço de Intervenção Remota",
     text: "QUESTÃO 564 — A SOp recebe uma ocorrência que consta de rol específico e foi classificada como não emergencial. A análise preliminar não identifica risco iminente à vida, integridade física, patrimônio ou meio ambiente. Qual enquadramento corresponde ao Serviço de Intervenção Remota (SIR)?",
     options: [
@@ -7943,6 +8506,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 565,
     subject: "OPERACIONAL",
+    tag: "Sala de Operações",
     topic: "Sala de Operações — Espaço Lilás e busca ativa",
     text: "QUESTÃO 565 — Uma SOp identifica registros recentes de naturezas A98 e A99 na circunscrição da OPM. Qual providência corresponde às atribuições do Espaço Lilás previstas na Nota de Instrução da Sala de Operações?",
     options: [
@@ -7957,6 +8521,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 566,
     subject: "ORGANIZACIONAL",
+    tag: "Sistemática Proteção Violência Doméstica",
     topic: "Sistemática de Proteção à Mulher — princípios gerais",
     text: "QUESTÃO 566 — Na avaliação de um procedimento de atendimento a mulher em situação de violência doméstica, a equipe precisa compatibilizar articulação institucional, acolhimento e qualificação do efetivo. Qual conjunto está de acordo com a Nota de Instrução nº PM3-001/02/26?",
     options: [
@@ -7971,6 +8536,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 567,
     subject: "ORGANIZACIONAL",
+    tag: "Sistemática Proteção Violência Doméstica",
     topic: "Sistemática de Proteção à Mulher — atendimento da ocorrência",
     text: "QUESTÃO 567 — Em ocorrência de violência doméstica, a vítima está presente e há risco atual à sua vida ou integridade física, embora não tenha ocorrido agressão física naquele momento. Conforme a Nota de Instrução nº PM3-001/02/26, qual providência deve ser considerada?",
     options: [
@@ -7985,6 +8551,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 568,
     subject: "ORGANIZACIONAL",
+    tag: "Sistemática Proteção Violência Doméstica",
     topic: "Sistemática de Proteção à Mulher — exceção à apresentação",
     text: "QUESTÃO 568 — Em atendimento a ocorrência de violência doméstica, a equipe avalia a possibilidade de não apresentar o caso ao distrito policial. Qual condição normativa deve estar presente para que essa exceção seja admitida?",
     options: [
@@ -7999,6 +8566,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 569,
     subject: "ORGANIZACIONAL",
+    tag: "Sistemática Proteção Violência Doméstica",
     topic: "Sistemática de Proteção à Mulher — vítima ausente",
     text: "QUESTÃO 569 — A equipe é acionada para ocorrência de violência doméstica, mas a vítima já não está no local. Não há contato imediato com o denunciante e nenhuma testemunha foi localizada. Qual conduta se harmoniza com a Nota de Instrução?",
     options: [
@@ -8013,6 +8581,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 570,
     subject: "ORGANIZACIONAL",
+    tag: "Sistemática Proteção Violência Doméstica",
     topic: "Sistemática de Proteção à Mulher — registro e qualificação",
     text: "QUESTÃO 570 — Ao final de atendimento de violência doméstica, o autor da agressão não está presente no local. Qual procedimento de registro deve ser observado?",
     options: [
@@ -8027,6 +8596,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 571,
     subject: "ORGANIZACIONAL",
+    tag: "Sistemática Proteção Violência Doméstica",
     topic: "Sistemática de Proteção à Mulher — FONAR",
     text: "QUESTÃO 571 — A equipe elabora BO eletrônico durante o atendimento e a vítima está presente. Em outra ocorrência, por impossibilidade de elaboração do BOe, o registro é feito fisicamente por meio do formulário PMO-58. Qual procedimento é exigido pela Nota de Instrução?",
     options: [
@@ -8041,6 +8611,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 572,
     subject: "ORGANIZACIONAL",
+    tag: "Sistemática Proteção Violência Doméstica",
     topic: "Sistemática de Proteção à Mulher — medidas protetivas",
     text: "QUESTÃO 572 — Durante o atendimento, a vítima manifesta interesse pelas medidas de proteção indicadas no FONAR. Para evitar informação incorreta sobre seus efeitos, o policial militar deve esclarecer que:",
     options: [
@@ -8055,6 +8626,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 573,
     subject: "ORGANIZACIONAL",
+    tag: "Sistemática Proteção Violência Doméstica",
     topic: "Sistemática de Proteção à Mulher — medida protetiva existente",
     text: "QUESTÃO 573 — No atendimento, a equipe identifica que já existe medida protetiva imposta em face do agressor. Não foram identificados outros fatores de risco. Qual procedimento é determinado pela Nota de Instrução?",
     options: [
@@ -8069,6 +8641,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 574,
     subject: "ORGANIZACIONAL",
+    tag: "Sala de Operações",
     topic: "Sala de Operações e proteção à mulher — Patrulha SP Mulher Segura",
     text: "QUESTÃO 574 — Uma OPM planeja visitas comunitárias e solidárias a mulheres em situação de violência doméstica. Qual descrição corresponde à Patrulha “SP Mulher Segura” na Nota de Instrução da Sala de Operações?",
     options: [
@@ -8083,6 +8656,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 575,
     subject: "ORGANIZACIONAL",
+    tag: "Sistemática Proteção Violência Doméstica",
     topic: "Sistemática de Proteção à Mulher — Visita Solidária",
     text: "QUESTÃO 575 — Ao encerrar uma ocorrência de violência doméstica, a equipe considera a conveniência de uma Visita Solidária à residência da vítima. Qual registro é expressamente exigido pela Nota de Instrução para subsidiar essa avaliação?",
     options: [
@@ -8097,6 +8671,7 @@ const BANCO_GERAL_QUESTOES = [
  {
     id: 576,
     subject: "OPERACIONAL",
+    tag: "Força Tática",
     topic: "Força Tática — composição da Equipe Tática",
     text: "QUESTÃO 576 — Uma Equipe Tática em viatura de quatro rodas será empregada em circunstâncias ordinárias. Qual composição está de acordo com a Diretriz, inclusive quanto à função de comando?",
     options: [
@@ -8111,6 +8686,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 577,
     subject: "OPERACIONAL",
+    tag: "Força Tática",
     topic: "Força Tática — emprego em Nível de Resposta 1 e 2",
     text: "QUESTÃO 577 — Em período no qual não desenvolve atividade típica de apoio tático, uma Força Tática recebe missão de intensificar o policiamento em local de elevada criminalidade violenta. Como a Diretriz enquadra esse emprego?",
     options: [
@@ -8125,6 +8701,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 578,
     subject: "OPERACIONAL",
+    tag: "Força Tática",
     topic: "Força Tática — ROCAM",
     text: "QUESTÃO 578 — Uma ROCAM está constituída por dois motociclistas, ainda que haja Oficial ou Subtenente/Sargento presente. Qual classificação decorre da Diretriz?",
     options: [
@@ -8139,6 +8716,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 579,
     subject: "OPERACIONAL",
+    tag: "Força Tática",
     topic: "Força Tática — efetivo insuficiente",
     text: "QUESTÃO 579 — Uma OPM não consegue compor Unidade de Serviço de Força Tática com pelo menos três policiais militares ou não dispõe de Subtenente/Sargento para comandá-la. Qual emprego do efetivo disponível é previsto?",
     options: [
@@ -8153,6 +8731,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 580,
     subject: "OPERACIONAL",
+    tag: "Drones",
     topic: "Drones — composição da Equipe Drone",
     text: "QUESTÃO 580 — Para constituir uma Equipe Drone, a OPM propõe designar apenas um Piloto Remoto em Comando, por entender que o observador é facultativo. À luz da Diretriz, qual avaliação é correta?",
     options: [
@@ -8167,6 +8746,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 581,
     subject: "OPERACIONAL",
+    tag: "Drones",
     topic: "Drones — distinção entre RPA e SUA",
     text: "QUESTÃO 581 — Na classificação adotada pela Diretriz do Programa de Policiamento com Drones, qual alternativa distingue corretamente RPA de SUA?",
     options: [
@@ -8181,6 +8761,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 582,
     subject: "OPERACIONAL",
+    tag: "Drones",
     topic: "Drones — missão emergencial",
     text: "QUESTÃO 582 — Uma operação com drone exige providências imediatas e inviabiliza o cumprimento dos prazos para informação prévia ao DECEA previstos na ICA 100-40. Qual condição a Diretriz associa à classificação como missão emergencial?",
     options: [
@@ -8195,6 +8776,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 583,
     subject: "OPERACIONAL",
+    tag: "Drones",
     topic: "Drones — evidência digital",
     text: "QUESTÃO 583 — Durante o emprego de UAS, a equipe produz registro audiovisual destinado a subsidiar procedimento administrativo ou judicial. Para enquadrá-lo como evidência digital, qual característica é expressamente prevista?",
     options: [
@@ -8209,6 +8791,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 584,
     subject: "OPERACIONAL",
+    tag: "Policiamento Rural",
     topic: "Policiamento Rural — fatores de implantação",
     text: "QUESTÃO 584 — Uma OPM avalia implantar o Programa de Policiamento Rural. Qual conjunto reúne fatores que a Diretriz aponta como orientadores da implantação?",
     options: [
@@ -8223,6 +8806,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 585,
     subject: "OPERACIONAL",
+    tag: "Policiamento Rural",
     topic: "Policiamento Rural — articulação comunitária",
     text: "QUESTÃO 585 — Em reunião voltada à segurança de uma comunidade rural, qual finalidade corresponde à concepção do Programa de Policiamento Rural?",
     options: [
@@ -8237,6 +8821,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 586,
     subject: "OPERACIONAL",
+    tag: "Policiamento Escolar",
     topic: "Policiamento Escolar — prioridade nos horários de entrada e saída",
     text: "QUESTÃO 586 — Uma equipe de policiamento escolar observa aumento de circulação de pedestres nos horários de entrada e saída dos alunos. Qual atuação está expressamente prevista para esse período?",
     options: [
@@ -8251,6 +8836,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 587,
     subject: "OPERACIONAL",
+    tag: "Policiamento Escolar",
     topic: "Policiamento Escolar — atuação preventiva",
     text: "QUESTÃO 587 — Durante o planejamento do policiamento escolar, o comandante propõe que as equipes compareçam apenas após registro de ocorrência criminal no entorno da unidade. Qual avaliação melhor corresponde à finalidade do programa?",
     options: [
@@ -8265,6 +8851,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 588,
     subject: "OPERACIONAL",
+    tag: "Força Tática",
     topic: "Força Tática — instruções diárias",
     text: "QUESTÃO 588 — A chefia propõe substituir as instruções diárias do efetivo de Força Tática por uma única instrução mensal de longa duração. Qual regra da Diretriz deve orientar a decisão?",
     options: [
@@ -8279,6 +8866,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 589,
     subject: "OPERACIONAL",
+    tag: "Drones",
     topic: "Drones — missões programadas",
     text: "QUESTÃO 589 — Uma operação planejada com drone não caracteriza urgência ou emergência. Como a Diretriz diferencia esse cenário das missões emergenciais?",
     options: [
@@ -8293,6 +8881,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 590,
     subject: "OPERACIONAL",
+    tag: "Policiamento Rural",
     topic: "Policiamento Rural — recursos e necessidade operacional",
     text: "QUESTÃO 590 — Na implantação do policiamento ostensivo geral em ambiente rural por OPM territorial, qual critério de organização deve ser considerado conforme a Diretriz?",
     options: [
@@ -8307,6 +8896,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 591,
     subject: "ORGANIZACIONAL",
+    tag: "I-2-PM",
     topic: "Movimentação — conceito e objetivos",
     text: "QUESTÃO 591 — Uma movimentação é proposta para atender à conveniência do serviço e preencher vaga prevista no QPO. Qual alternativa expressa corretamente o conceito e um dos objetivos da movimentação?",
     options: [
@@ -8321,6 +8911,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 592,
     subject: "ORGANIZACIONAL",
+    tag: "I-2-PM",
     topic: "Movimentação — espécies",
     text: "QUESTÃO 592 — Um PM promovido precisa receber uma das vagas previstas no QPO; em outro caso, um PM receberá nova OPM para atender à conveniência do serviço. Como a I-2-PM distingue esses atos?",
     options: [
@@ -8335,6 +8926,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 593,
     subject: "ORGANIZACIONAL",
+    tag: "I-2-PM",
     topic: "Movimentação — trânsito",
     text: "QUESTÃO 593 — Após movimentação que exige mudança de sede, o policial militar solicita trânsito. Qual hipótese, segundo as regras de trânsito reproduzidas nas fontes organizacionais, impede sua concessão?",
     options: [
@@ -8349,6 +8941,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 594,
     subject: "ORGANIZACIONAL",
+    tag: "I-2-PM",
     topic: "Movimentação — ajuda de custo",
     text: "QUESTÃO 594 — Um policial militar é movimentado entre municípios diferentes por conveniência do serviço. Qual providência administrativa a OPM de destino deve adotar, segundo a I-2-PM?",
     options: [
@@ -8363,6 +8956,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 595,
     subject: "ORGANIZACIONAL",
+    tag: "I-2-PM",
     topic: "Movimentação — transporte de pessoal e bagagem",
     text: "QUESTÃO 595 — Em movimentação não realizada por conveniência própria, qual OPM deve providenciar a requisição de transporte pessoal e de bagagem, conforme a I-2-PM?",
     options: [
@@ -8377,6 +8971,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 596,
     subject: "ORGANIZACIONAL",
+    tag: "Regime de Trabalho",
     topic: "Regime de trabalho — jornada mínima",
     text: "QUESTÃO 596 — Na conferência do regime de trabalho, um setor propõe considerar suficiente jornada semanal inferior a 40 horas, desde que a escala operacional seja cumprida. Qual regra deve prevalecer?",
     options: [
@@ -8391,6 +8986,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 597,
     subject: "ORGANIZACIONAL",
+    tag: "Regime de Trabalho",
     topic: "Regime de trabalho — escala de serviço",
     text: "QUESTÃO 597 — Quem pode expedir a escala de serviço, segundo a Portaria que disciplina o regime de trabalho policial-militar?",
     options: [
@@ -8405,6 +9001,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 598,
     subject: "ORGANIZACIONAL",
+    tag: "Regime de Trabalho",
     topic: "Regime de trabalho — discriminação do efetivo",
     text: "QUESTÃO 598 — Na organização administrativa de uma OPM, quais situações devem constar da discriminação de pessoal exigida pela Portaria de regime de trabalho?",
     options: [
@@ -8419,6 +9016,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 599,
     subject: "ORGANIZACIONAL",
+    tag: "I-2-PM",
     topic: "Afastamentos — fruição do trânsito",
     text: "QUESTÃO 599 — Um policial militar tem direito ao trânsito decorrente de movimentação. Qual prazo de fruição aparece na regra de trânsito constante das fontes organizacionais?",
     options: [
@@ -8433,6 +9031,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     id: 600,
     subject: "ORGANIZACIONAL",
+    tag: "I-36-PM",
     topic: "Afastamentos — instruções e escopo",
     text: "QUESTÃO 600 — Uma OPM precisa organizar os afastamentos de seu efetivo. Qual abordagem é compatível com a existência das I-36-PM no conjunto normativo de Assuntos Organizacionais?",
     options: [
@@ -8447,6 +9046,7 @@ const BANCO_GERAL_QUESTOES = [
  {
         "id": 601,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — pluralidade de transgressões",
         "text": "Um policial militar pratica duas transgressões sem conexão entre si. Segundo o RDPM, a solução disciplinar deve observar que:",
         "options": [
@@ -8461,6 +9061,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 602,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — transgressões envolvendo unidades distintas",
         "text": "Uma transgressão disciplinar envolve policiais militares pertencentes a mais de uma Unidade. A competência inicial para apurar ou determinar a apuração é de:",
         "options": [
@@ -8475,6 +9076,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 603,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — autoridades disciplinares concorrentes",
         "text": "Duas autoridades de níveis hierárquicos diferentes, ambas com ação disciplinar sobre o transgressor, tomam conhecimento da mesma transgressão. Assinale a alternativa CORRETA.",
         "options": [
@@ -8489,6 +9091,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 604,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — interrogatório e estado de embriaguez",
         "text": "Durante a apuração disciplinar, o militar apresenta sinais de embriaguez. De acordo com o RDPM, a autoridade deverá observar que:",
         "options": [
@@ -8503,6 +9106,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 605,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — cumprimento de sanção após afastamento",
         "text": "Militar punido encontra-se afastado regulamentarmente do serviço. Em regra, o cumprimento da sanção disciplinar deverá ocorrer:",
         "options": [
@@ -8517,6 +9121,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 606,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — interrupção de afastamento regulamentar",
         "text": "A interrupção de afastamento regulamentar para cumprimento de sanção disciplinar somente poderá ocorrer quando determinada pelo:",
         "options": [
@@ -8531,6 +9136,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 607,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — prazo para início do cumprimento",
         "text": "Publicado o ato sancionatório e cientificado o punido, qual é o prazo máximo ordinário para início do cumprimento da sanção disciplinar?",
         "options": [
@@ -8545,6 +9151,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 608,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — contagem do cumprimento da sanção",
         "text": "Para a contagem do tempo de cumprimento da sanção disciplinar, o RDPM estabelece que:",
         "options": [
@@ -8559,6 +9166,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 609,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — classificação do comportamento",
         "text": "Para fins disciplinares, a classificação no comportamento 'excelente' corresponde à situação em que, no período de:",
         "options": [
@@ -8573,6 +9181,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 610,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — comportamento ótimo",
         "text": "Qual situação corresponde à classificação de comportamento 'ótimo' prevista no RDPM?",
         "options": [
@@ -8587,6 +9196,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 611,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — equivalência para comportamento",
         "text": "Para a classificação do comportamento policial-militar, o RDPM estabelece expressamente que:",
         "options": [
@@ -8601,6 +9211,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 612,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — data-base do comportamento",
         "text": "Para classificar, reclassificar ou melhorar o comportamento, qual referência temporal deve ser utilizada?",
         "options": [
@@ -8615,6 +9226,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 613,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — comportamento inicial",
         "text": "Ao ser admitida na Polícia Militar, a praça policial-militar será classificada inicialmente no comportamento:",
         "options": [
@@ -8629,6 +9241,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 614,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — legitimidade para recursos disciplinares",
         "text": "Segundo o RDPM, poderá interpor recurso disciplinar o militar do Estado que considere prejudicado, ofendido ou injustiçado por ato de superior hierárquico:",
         "options": [
@@ -8643,6 +9256,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 615,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — espécies de recursos",
         "text": "O RDPM enumera como recursos disciplinares:",
         "options": [
@@ -8657,6 +9271,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 616,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — destinatário da reconsideração",
         "text": "O pedido de reconsideração de ato deve ser dirigido:",
         "options": [
@@ -8671,6 +9286,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 617,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — frequência e efeito da reconsideração",
         "text": "Sobre o pedido de reconsideração de ato, assinale a alternativa CORRETA.",
         "options": [
@@ -8685,6 +9301,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 618,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — prazo de solução da reconsideração",
         "text": "Recebido o pedido de reconsideração de ato, a autoridade destinatária deverá solucioná-lo no prazo máximo de:",
         "options": [
@@ -8699,6 +9316,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 619,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — não conhecimento da reconsideração",
         "text": "Qual hipótese autoriza o não conhecimento do pedido de reconsideração de ato, nos termos do RDPM?",
         "options": [
@@ -8713,6 +9331,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 620,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — recurso hierárquico e pressuposto",
         "text": "Em regra, a interposição de recurso hierárquico deve ser precedida de:",
         "options": [
@@ -8727,6 +9346,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 621,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — prazo de interposição hierárquica",
         "text": "O prazo para interposição do recurso hierárquico é de:",
         "options": [
@@ -8741,6 +9361,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 622,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — prazos do recurso hierárquico",
         "text": "Assinale a sequência correta dos prazos previstos para o recurso hierárquico: interposição, comunicação e solução.",
         "options": [
@@ -8755,6 +9376,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 623,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — limites materiais do recurso hierárquico",
         "text": "Ao formular recurso hierárquico, o recorrente deverá observar que o recurso:",
         "options": [
@@ -8769,6 +9391,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 624,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — encerramento da revisão administrativa",
         "text": "Solucionado o recurso hierárquico, a possibilidade administrativa de revisão do ato disciplinar sofrido:",
         "options": [
@@ -8783,6 +9406,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 625,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — início do cumprimento após recursos",
         "text": "Solucionados os recursos disciplinares, havendo sanção a cumprir, o militar iniciará seu cumprimento dentro de três dias:",
         "options": [
@@ -8797,6 +9421,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 626,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — natureza dos prazos recursais",
         "text": "Os prazos para interposição dos recursos disciplinares previstos no RDPM são:",
         "options": [
@@ -8811,6 +9436,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 627,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — revisão dos atos disciplinares",
         "text": "Ao tomar conhecimento de possível irregularidade ou ilegalidade em sanção disciplinar própria ou de autoridade subordinada, a autoridade competente poderá, nos termos do RDPM, praticar quais atos de revisão?",
         "options": [
@@ -8825,6 +9451,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 628,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — prazo para anulação",
         "text": "A anulação de sanção administrativa disciplinar, nos termos do RDPM, somente poderá ser feita no prazo de:",
         "options": [
@@ -8839,6 +9466,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 629,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — retificação",
         "text": "No sistema de revisão dos atos disciplinares, retificação é:",
         "options": [
@@ -8853,6 +9481,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 630,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — agravamento de sanção",
         "text": "Sobre a agravação da sanção disciplinar, assinale a alternativa CORRETA.",
         "options": [
@@ -8867,6 +9496,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 631,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — anulação e efeitos",
         "text": "A anulação de sanção disciplinar caracteriza-se pela:",
         "options": [
@@ -8881,6 +9511,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 632,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — recompensas policiais-militares",
         "text": "Segundo o RDPM, constituem recompensas policiais-militares:",
         "options": [
@@ -8895,6 +9526,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 633,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — elogio individual",
         "text": "O elogio individual, no âmbito do RDPM:",
         "options": [
@@ -8909,6 +9541,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 634,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — dispensa do serviço",
         "text": "Quanto à dispensa do serviço, o RDPM estabelece que ela:",
         "options": [
@@ -8923,6 +9556,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 635,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — cancelamento de sanções",
         "text": "O cancelamento de sanções disciplinares consiste em:",
         "options": [
@@ -8937,6 +9571,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 636,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — competência e requisitos do cancelamento",
         "text": "O cancelamento de sanções disciplinares é ato do Comandante-Geral, praticado a pedido do interessado, e exige, entre outros requisitos expressos:",
         "options": [
@@ -8951,6 +9586,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 637,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — processo regular aplicável a oficiais",
         "text": "Para os oficiais, o processo regular previsto no RDPM é:",
         "options": [
@@ -8965,6 +9601,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 638,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — processo regular aplicável a praças",
         "text": "De acordo com o art. 71 do RDPM, a modalidade de processo regular para praça com dez ou mais anos de serviço policial-militar é:",
         "options": [
@@ -8979,6 +9616,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 639,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — processo regular para praça com menos de dez anos",
         "text": "A praça com menos de dez anos de serviço policial-militar, para fins do processo regular previsto no RDPM, submete-se ao:",
         "options": [
@@ -8993,6 +9631,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 640,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — medidas durante processo regular",
         "text": "Durante processo regular, havendo possibilidade de prejuízo à hierarquia, à disciplina ou à apuração do fato, o militar:",
         "options": [
@@ -9007,6 +9646,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 641,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — Conselho de Justificação",
         "text": "O Conselho de Justificação destina-se a apurar, na forma da legislação específica:",
         "options": [
@@ -9021,6 +9661,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 642,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — Conselho de Disciplina: instauração",
         "text": "O Conselho de Disciplina poderá ser instaurado:",
         "options": [
@@ -9035,6 +9676,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 643,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — composição do Conselho de Disciplina",
         "text": "A composição ordinária do Conselho de Disciplina prevista no RDPM é de:",
         "options": [
@@ -9049,6 +9691,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 644,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — independência do Conselho de Disciplina",
         "text": "A instauração do Conselho de Disciplina depende de inquérito policial, processo criminal ou sentença criminal transitada em julgado?",
         "options": [
@@ -9063,6 +9706,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 645,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — concurso de agentes no Conselho de Disciplina",
         "text": "Quando os atos motivadores do Conselho de Disciplina tiverem sido praticados em concurso de agentes, o RDPM determina que:",
         "options": [
@@ -9077,6 +9721,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 646,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — decisão da autoridade instauradora",
         "text": "Após apreciar o Conselho de Disciplina, as provas, as razões de defesa e o relatório, a autoridade instauradora deverá proferir decisão fundamentada no prazo de:",
         "options": [
@@ -9091,6 +9736,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 647,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — decisão final do Comandante-Geral",
         "text": "Recebidos os autos do Conselho de Disciplina, o Comandante-Geral deverá emitir decisão final, fundamentada, dentro do prazo de:",
         "options": [
@@ -9105,6 +9751,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 648,
         "subject": "JURIDICO",
+        "tag": "RDPM",
         "topic": "RDPM — prescrição da ação disciplinar",
         "text": "Como regra geral, a ação disciplinar da Administração prescreve em:",
         "options": [
@@ -9119,6 +9766,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 649,
         "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
         "topic": "Lei nº 18.442/2026 — promoção de Subtenente do QOE/QOM",
         "text": "Conforme o material da Lei nº 18.442/2026, qual conjunto corresponde aos requisitos indicados para promoção de Subtenente PM a 2º Tenente PM do QOE ou QOM?",
         "options": [
@@ -9133,6 +9781,7 @@ const BANCO_GERAL_QUESTOES = [
       {
         "id": 650,
         "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
         "topic": "Lei nº 18.442/2026 — datas-base e descontos no interstício",
         "text": "No cálculo da antiguidade e do interstício para promoção a 2º Tenente PM do QOE/QOM, o material da Lei nº 18.442/2026 indica descontos de determinados períodos. Assinale a alternativa que reúne apenas períodos expressamente mencionados para desconto.",
         "options": [
@@ -9147,6 +9796,7 @@ const BANCO_GERAL_QUESTOES = [
 {
     "id": 651,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — espécies de movimentação",
     "text": "Considerando as definições de classificação, transferência, adição, desligamento e situação à disposição, assinale a alternativa que reproduz corretamente uma dessas distinções.",
     "options": [
@@ -9161,6 +9811,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 652,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — adição e situação à disposição",
     "text": "Um policial militar será vinculado a outra OPM para frequentar curso com duração exata de 30 dias, sem integrar o efetivo dessa OPM. Segundo a I-2-PM, qual enquadramento corresponde à definição normativa?",
     "options": [
@@ -9175,6 +9826,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 653,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — razões de movimentação e classificação",
     "text": "Analise as proposições sobre as razões de movimentação e a espécie classificação, conforme a I-2-PM.\n\nI. A movimentação pode decorrer de conveniência do serviço, própria, da disciplina ou da justiça.\nII. A classificação pode ocorrer por conveniência da disciplina ou da justiça, desde que fundamentada.\nIII. A classificação somente se fará por conveniência do serviço ou própria.\n\nAssinale a alternativa correta.",
     "options": [
@@ -9189,6 +9841,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 654,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — requisitos para conveniência própria",
     "text": "Uma praça solicita movimentação por conveniência própria. Está no comportamento bom, mas responde a IPM cuja apuração recomenda sua permanência na OPM e ainda não cumpriu o prazo mínimo de permanência previsto em edital. À luz da I-2-PM, assinale a conclusão correta.",
     "options": [
@@ -9203,6 +9856,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 655,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — movimentação por união de cônjuges",
     "text": "À luz dos arts. 12 a 14 da I-2-PM, qual situação atende às condições específicas para movimentação por união de cônjuges?",
     "options": [
@@ -9217,6 +9871,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 656,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — competência para movimentar oficiais",
     "text": "Um Capitão PM exerce comando de OPM; outro Capitão PM não exerce comando nem chefia de OPM. Conforme o rol de competências do art. 17 da I-2-PM, a movimentação entre OPM compete, respectivamente, a:",
     "options": [
@@ -9231,6 +9886,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 657,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — encaminhamento de expedientes",
     "text": "Na tramitação dos pedidos, propostas e expedientes sobre movimentação, a I-2-PM distingue o canal conforme a categoria funcional. Assinale a alternativa correta.",
     "options": [
@@ -9245,6 +9901,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 658,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — prazo de apresentação por motivo da movimentação",
     "text": "Após a publicação da movimentação, um policial militar foi movimentado por conveniência própria. Não há determinação de prazo diverso e não incide a hipótese especial do art. 22. Qual prazo geral de apresentação à nova OPM consta da redação alterada do art. 21?",
     "options": [
@@ -9259,6 +9916,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 659,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — afastamentos antes da apresentação",
     "text": "Foi publicada a movimentação de uma praça, mas ela ainda não se apresentou à nova OPM. Embora conste do plano de férias, o início da fruição não estava previsto até o dia posterior à publicação. Conforme o art. 23 da I-2-PM, a praça:",
     "options": [
@@ -9273,6 +9931,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 660,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — apresentação anterior à publicação",
     "text": "Em regra, a apresentação à nova OPM ocorre após a publicação da movimentação. Qual alternativa reproduz corretamente uma hipótese excepcional prevista no art. 25 da I-2-PM?",
     "options": [
@@ -9287,6 +9946,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 661,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — inclusão e exclusão do efetivo",
     "text": "Na execução dos atos decorrentes da movimentação, assinale a alternativa CORRETA quanto à inclusão e à exclusão.",
     "options": [
@@ -9301,6 +9961,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 662,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — ajuda de custo e transporte",
     "text": "Uma movimentação por conveniência do serviço determina mudança de sede de exercício para município diverso. Segundo os arts. 29 e 30 da I-2-PM, quais providências estão previstas, respectivamente, para a OPM de destino e para a OPM de origem?",
     "options": [
@@ -9315,6 +9976,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 663,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — retificação ou revogação de movimentação",
     "text": "Depois de publicada a movimentação, o policial militar já se apresentou à nova OPM. A Administração identifica razão para alterar o destino. Nos termos do art. 34 da I-2-PM, a providência juridicamente compatível é:",
     "options": [
@@ -9329,6 +9991,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 664,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — movimentação por disciplina e por justiça",
     "text": "Assinale a alternativa que distingue corretamente a movimentação por conveniência da disciplina da movimentação por conveniência da justiça.",
     "options": [
@@ -9343,6 +10006,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 665,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-2-PM",
     "topic": "I-2-PM — adido e vaga da OPM de origem",
     "text": "Considere dois militares: um foi promovido e aguarda classificação; outro está adido a uma OPM e não se encontra agregado. Conforme os arts. 35 e 36 da I-2-PM, assinale a alternativa correta.",
     "options": [
@@ -9357,6 +10021,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 666,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — redução de férias por não comparecimentos",
     "text": "No exercício anterior ao das férias, um policial militar acumulou 11 não comparecimentos ao serviço, considerados em conjunto, exclusivamente por hipóteses enumeradas no art. 11 das I-36-PM. Não houve afastamento ininterrupto durante todo o exercício. Qual consequência normativa decorre dessa contagem?",
     "options": [
@@ -9371,6 +10036,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 667,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — alteração do Plano Anual de Férias",
     "text": "Antes do início das férias de um policial militar, surge relevante interesse do serviço que exige alteração da data programada. Conforme as I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -9385,6 +10051,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 668,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — licença-prêmio e transferência para a reserva",
     "text": "Um policial militar possui parcelas de licença-prêmio não usufruídas e pretende protocolar pedido de transferência para a reserva. Segundo o art. 14 das I-36-PM, assinale a alternativa CORRETA.",
     "options": [
@@ -9399,6 +10066,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 669,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — interrupção do bloco aquisitivo de licença-prêmio",
     "text": "Para fins de formação do bloco aquisitivo de licença-prêmio, o policial militar acumula 18 dias de dispensa do serviço e 14 dias de licença para tratamento de saúde em pessoa da família dentro do período de cinco anos. Não há LTS decorrente de lesão em serviço nem outra causa de interrupção. À luz do art. 16, III e § 3º, qual consequência é correta?",
     "options": [
@@ -9413,6 +10081,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 670,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — interrupção e suspensão da licença-prêmio",
     "text": "Considerando a distinção entre efeito interruptivo e suspensivo na formação do bloco aquisitivo de licença-prêmio, assinale a alternativa correta para a sanção de repreensão aplicada a partir de 20 de maio de 2005.",
     "options": [
@@ -9427,6 +10096,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 671,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — causas que não interrompem nem suspendem licença-prêmio",
     "text": "Qual alternativa reúne exclusivamente afastamentos que o art. 18 das I-36-PM exclui dos efeitos de interrupção ou suspensão do exercício para aquisição do bloco de licença-prêmio?",
     "options": [
@@ -9441,6 +10111,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 672,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — convalescença médica e licença para tratamento de saúde",
     "text": "Um Oficial Médico PM avalia policial militar cuja recuperação é previsível em até dez dias. Em outro caso, o exame indica que não há previsão de cura nesse prazo. Conforme os arts. 20 e 21 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -9455,6 +10126,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 673,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — atestado médico civil não ratificado",
     "text": "Um policial militar apresenta atestado médico civil, mas o Oficial Médico PM não o ratifica. Há lapso entre o primeiro ato de serviço a que deveria comparecer e o contato com o Oficial Médico PM. Segundo o art. 24 das I-36-PM, qual providência está prevista para regularizar o afastamento não ratificado?",
     "options": [
@@ -9469,6 +10141,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 674,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — trânsito por mudança de sede",
     "text": "Um policial militar é transferido por conveniência do serviço para OPM situada em município diverso, para preencher vaga prevista no QPO. A distância oficial entre os marcos zero dos municípios é de exatamente 150 km. Se preenchida a finalidade de efetiva transferência da residência, qual regra de trânsito se aplica?",
     "options": [
@@ -9483,6 +10156,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 675,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — hipóteses de não concessão do trânsito",
     "text": "Qual movimentação, por si só, enquadra-se expressamente em hipótese na qual o trânsito não será concedido, conforme o art. 37 das I-36-PM?",
     "options": [
@@ -9497,6 +10171,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 676,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — núpcias e união estável",
     "text": "Sobre a fruição do afastamento por núpcias, assinale a alternativa que corresponde integralmente às regras do art. 38 das I-36-PM.",
     "options": [
@@ -9511,6 +10186,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 677,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — luto: duração e termo inicial",
     "text": "Um policial militar já cumpriu seu turno e está de folga quando recebe notícia do falecimento do pai. Qual regra combina corretamente duração e início da fruição do luto?",
     "options": [
@@ -9525,6 +10201,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 678,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — licença-adoção",
     "text": "Um policial militar obtém judicialmente a guarda de criança de sete anos para fins de adoção. Para requerer a licença-adoção prevista no art. 40 das I-36-PM, deverá observar que:",
     "options": [
@@ -9539,6 +10216,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 679,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — licença-paternidade em nascimento múltiplo",
     "text": "Na mesma data, nasce mais de um filho de um policial militar. Ele já havia trabalhado e está de folga no dia do nascimento. Conforme o art. 48 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -9553,6 +10231,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 680,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — licença para tratamento de saúde em pessoa da família",
     "text": "Para fins de licença para tratamento de saúde em pessoa da família, qual conjunto corresponde à definição expressa do art. 49 das I-36-PM?",
     "options": [
@@ -9567,6 +10246,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 681,
     "subject": "ORGANIZACIONAL",
+    "tag": "I-36-PM",
     "topic": "I-36-PM — licença sem vencimentos e prorrogação",
     "text": "Um policial militar já usufrui licença sem vencimentos e pretende prorrogá-la. À luz dos arts. 69 a 74 das I-36-PM, assinale a alternativa correta.",
     "options": [
@@ -9581,6 +10261,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 682,
     "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
     "topic": "Regime de trabalho — conceito, jornada mínima e escala",
     "text": "À luz dos arts. 1º a 5º da Portaria do Cmt G PM1-7/02/23, assinale a alternativa que integra corretamente as disposições gerais.",
     "options": [
@@ -9595,6 +10276,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 683,
     "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
     "topic": "Regime de trabalho — desdobramento do expediente administrativo",
     "text": "Na OPM que adota o expediente das 08h às 18h, de segunda a sexta-feira, o controle do art. 7º da Portaria PM1-7/02/23 deve observar qual configuração?",
     "options": [
@@ -9609,6 +10291,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 684,
     "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
     "topic": "Regime de trabalho — semana com dois dias sem expediente",
     "text": "Na semana há dois dias sem expediente administrativo em razão de feriado e ponto facultativo. Um policial está submetido ao expediente administrativo geral. Qual consequência decorre do art. 7º, § 2º, da Portaria PM1-7/02/23?",
     "options": [
@@ -9623,6 +10306,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 685,
     "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
     "topic": "Regime de trabalho — vedação de afastamento em dias consecutivos",
     "text": "Um policial militar sujeito a horário de expediente pretende ausentar-se da OPM por dois dias consecutivos na mesma semana, alegando que cumprirá escala operacional fora da sede e receberá folga decorrente dessa escala. Como a Portaria PM1-7/02/23 trata a situação?",
     "options": [
@@ -9637,6 +10321,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 686,
     "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
     "topic": "Regime de trabalho — OAES",
     "text": "Em um Órgão de Apoio de Ensino Superior, pretende-se aglutinar as folgas parciais do desdobramento semanal em um dia diverso da sexta-feira. Considerando a regra geral do art. 9º da Portaria PM1-7/02/23, assinale a alternativa correta.",
     "options": [
@@ -9651,6 +10336,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 687,
     "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
     "topic": "Regime de trabalho — integrantes do QOS",
     "text": "Um Oficial de Saúde presta atendimento ao público em unidade integrada de saúde, sem exercer exclusivamente funções de direção, chefia ou atividades administrativas. Qual composição de jornada se ajusta ao art. 10 da Portaria PM1-7/02/23?",
     "options": [
@@ -9665,6 +10351,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 688,
     "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
     "topic": "Regime de trabalho — benefício do militar estudante",
     "text": "Um militar estudante cumpre expediente das 09h às 18h e obtém o benefício de entrar até uma hora após o início ou sair até uma hora antes do término. Entre o período de aulas e o expediente da unidade há 90 minutos. Qual combinação de condições está correta?",
     "options": [
@@ -9679,6 +10366,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 689,
     "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
     "topic": "Regime de trabalho — escalas e folga mensal obrigatória",
     "text": "Um policial cumpre escala 24x48, em regime ininterrupto. Considerando o art. 12 da Portaria PM1-7/02/23, assinale a alternativa correta sobre a folga mensal obrigatória.",
     "options": [
@@ -9693,6 +10381,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 690,
     "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
     "topic": "Regime de trabalho — expediente excepcional individualizado",
     "text": "Um policial requer horário administrativo diverso do previsto na Portaria PM1-7/02/23. Qual alternativa reproduz os requisitos cumulativos e a natureza jurídica da autorização prevista no art. 16?",
     "options": [
@@ -9707,6 +10396,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 691,
     "subject": "ORGANIZACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
     "topic": "Sistemática de Proteção à Mulher — conceito e princípios de atendimento",
     "text": "Considerando a Nota de Instrução nº PM3-001/02/26, qual alternativa combina corretamente a definição da Sistemática e o padrão de atendimento exigido?",
     "options": [
@@ -9721,6 +10411,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 692,
     "subject": "ORGANIZACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
     "topic": "Programa Lar Mais Seguro — seleção de palestrantes",
     "text": "Para selecionar policial militar palestrante no Programa Lar Mais Seguro, a Nota de Instrução nº PM3-001/02/26 estabelece um conjunto de requisitos. Assinale a alternativa que corresponde integralmente ao item 6.4.1.2.",
     "options": [
@@ -9735,6 +10426,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 693,
     "subject": "ORGANIZACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
     "topic": "Patrulha Maria da Penha — composição de emprego e prioridade",
     "text": "Na organização do Programa Patrulha Maria da Penha, assinale a alternativa que reproduz corretamente as atribuições da Companhia PM territorial.",
     "options": [
@@ -9749,6 +10441,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 694,
     "subject": "ORGANIZACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
     "topic": "Programa SP Mulher Segura — visitas, CPP e documentação",
     "text": "Sobre a Patrulha SP Mulher Segura, analise as proposições.\n\nI. A US é designada para os turnos matutino e vespertino, conforme o quantitativo de viaturas específicas disponíveis na OPM.\nII. O Espaço Lilás define o CPP da US empregada no programa.\nIII. Visita Solidária ou Comunitária decorrente de ocorrência A98 ou A99 deve ser registrada em BOe complementar vinculado ao registro original, com detalhamento da modalidade e consignação das orientações, condições constatadas e encaminhamentos.\n\nAssinale a alternativa correta.",
     "options": [
@@ -9763,6 +10456,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 695,
     "subject": "ORGANIZACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
     "topic": "Visita Solidária — consentimento, quantidade e prazos",
     "text": "Uma ocorrência foi registrada e a vítima consentiu com a Visita Solidária, com consentimento consignado em BOe. Qual sequência está de acordo com a Nota de Instrução nº PM3-001/02/26?",
     "options": [
@@ -9777,6 +10471,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 696,
     "subject": "ORGANIZACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
     "topic": "Visita Comunitária — identificação do alvo e escuta ativa",
     "text": "Qual alternativa distingue corretamente a Visita Comunitária da Visita Solidária, conforme os itens 6.4.4 e 6.4.5 da Nota de Instrução nº PM3-001/02/26?",
     "options": [
@@ -9791,6 +10486,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 697,
     "subject": "ORGANIZACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
     "topic": "Atendimento de ocorrência — vítima presente e risco atual ou iminente",
     "text": "Durante atendimento de ocorrência de violência doméstica, a vítima está presente e relata ameaças, mas não houve agressão física. A equipe identifica risco atual ou iminente à vida ou à integridade física da mulher ou de familiares. Conforme a Nota de Instrução nº PM3-001/02/26, assinale a alternativa correta.",
     "options": [
@@ -9805,6 +10501,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 698,
     "subject": "ORGANIZACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
     "topic": "Atendimento de ocorrência — vítima ausente, BO A98 e FONAR",
     "text": "Em ocorrência de possível violência doméstica, a vítima está ausente do local e não há testemunhas nem contato com o denunciante. Qual conjunto de providências é compatível com os itens 6.5.1.2 a 6.5.4 da Nota de Instrução nº PM3-001/02/26?",
     "options": [
@@ -9819,6 +10516,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 699,
     "subject": "ORGANIZACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
     "topic": "FONAR e medida protetiva — informação à vítima",
     "text": "Durante o atendimento, a vítima manifesta interesse pelas medidas de proteção indicadas no FONAR e a equipe constata que já existe medida protetiva imposta em face do agressor. Segundo a Nota de Instrução nº PM3-001/02/26, qual combinação de providências é correta?",
     "options": [
@@ -9833,6 +10531,7 @@ const BANCO_GERAL_QUESTOES = [
   {
     "id": 700,
     "subject": "ORGANIZACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
     "topic": "Sistemática de Proteção à Mulher — coordenação de patrulhas e risco operacional",
     "text": "Na mesma Companhia PM territorial atuam simultaneamente uma Patrulha Maria da Penha e uma Patrulha SP Mulher Segura. Além disso, há necessidade de emprego em região com elevada desordem social e histórico de hostilidade à atuação policial. Qual alternativa está integralmente de acordo com a Nota de Instrução nº PM3-001/02/26?",
     "options": [
@@ -9844,7 +10543,6 @@ const BANCO_GERAL_QUESTOES = [
     "answer": 1,
     "explanation": "Gabarito: B. Fundamentação: Assuntos Organizacionais.pdf, Nota de Instrução nº PM3-001/02/26, itens 6.7.4 a 6.7.6, PDF p. 396. A SP Mulher Segura prioriza prevenção, visitas e articulação; Maria da Penha prioriza atendimento de ocorrências. A avaliação prévia cabe ao Supervisor SOp ou, na ausência, CFP/CGP, com apoio territorial compatível; as viaturas SP Mulher Segura têm uso restrito aos programas especificados. A inverte prioridades; C elimina a prioridade e amplia o uso; D atribui competência diversa."
   }
-
           
 ];
 
