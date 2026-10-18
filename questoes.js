@@ -19558,7 +19558,1507 @@ const BANCO_GERAL_QUESTOES = [
             ],
             "answer": 0,
             "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, arts. 9º, § 1º e 10; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “conclusão ... meramente opinativa; decisão ... submetida à aprovação ... Comandante de Unidade”. O art. 9º, § 1º, qualifica a conclusão como opinativa; o art. 10 exige aprovação da decisão da autoridade instauradora. B: B e C confundem opinião com decisão e eliminam aprovação. C: D cria vinculação e publicação imediata contrárias aos arts. 10 e 12. D: Não corresponde ao comando e não encontra suporte no dispositivo citado."
-          }
+          },
+    {
+        "id": 1302,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1302 — Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa INCORRETA sobre Área anômica.",
+        "options": [
+          "a) Conjunto coordenado de estratégias e táticas de polícia ostensiva e preservação da ordem pública destinado a combater e neutralizar movimentos de insurgência criminal.",
+          "b) Rede transnacional ou nacional estruturada para atividades ilícitas, como tráfico de drogas e de armas.",
+          "c) Ambiente caracterizado por interferência apenas sutil ou velada de criminosos na vida cotidiana, mediante imposição de normas de comportamento.",
+          "d) Associação de quatro ou mais pessoas estruturalmente ordenada, com divisão de tarefas, ainda que informal, para obter vantagem de qualquer natureza mediante infrações penais transnacionais ou com penas máximas superiores a quatro anos."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C é INCORRETA: altera a regra documentada para Área anômica. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.1, p. 5. Evidência: “interferência aguda [...] mediante a imposição de normas de comportamento visando ao controle territorial e social”. A descreve outra previsão verdadeira — Contrainsurgência criminal (Diretriz nº PM3-001/02/24, item 6.1.6, p. 6) —, não a regra incorreta apontada no comando. B descreve outra previsão verdadeira — Crime organizado (Diretriz nº PM3-001/02/24, item 6.1.4, p. 5) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Organização criminosa (ORCRIM) (Diretriz nº PM3-001/02/24, item 6.1.4.2, p. 6) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1303,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1303 — À luz de Diretriz nº PM3-001/02/24, quanto a Área emblemática, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Ampliar a capacidade operativa da PM por atuação conjugada e sistêmica nos domínios terrestre, aéreo, aquático e cibernético.",
+          "b) Ambiente marcado por interferência sutil ou velada de criminosos na vida cotidiana, gerando óbices à prestação de serviços públicos e medo do crime por intimidação.",
+          "c) Documento que representa planejamento prévio para situação futura eventual, estabelecendo condutas ou linhas de ação para providências operacionais ou administrativas.",
+          "d) Planejamento e execução de ações repressivas às atividades de terrorismo criminal, fundamentadas na produção de conhecimento e na coleta e análise de dados."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Área emblemática. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.2, p. 5. Evidência normativa: “interferência sutil ou velada [...] potencializando, por meio da intimidação, o medo do crime”. A não responde corretamente ao comando porque descreve Objetivo de capacidade operativa, previsto em Diretriz nº PM3-001/02/24, item 4.2, p. 4, e não Área emblemática. C não responde corretamente ao comando porque descreve Plano de Contingência, previsto em Diretriz nº PM3-001/02/24, item 6.1.11, p. 6, e não Área emblemática. D não responde corretamente ao comando porque descreve Contraterrorismo criminal, previsto em Diretriz nº PM3-001/02/24, item 6.1.8, p. 6, e não Área emblemática."
+      },
+      {
+        "id": 1304,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1304 — À luz de Diretriz nº PM3-001/02/24, quanto a Criminalidade ultraviolenta, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Manifestação criminosa relacionada ou não ao crime organizado, caracterizada por violência exacerbada ou grave ameaça à vida, às instituições públicas ou ao Estado.",
+          "b) Estabelecer a doutrina de combate ao crime organizado na PMESP, sistematizando mecanismos de prevenção e repressão imediata.",
+          "c) Identificar e promover estratégias para desarticular a cadeia logística e a estrutura financeira do crime organizado, impedindo financiamento ilícito e lavagem de dinheiro.",
+          "d) Ambiente caracterizado por interferência aguda de criminosos ou organizações criminosas na vida cotidiana da comunidade, mediante imposição de normas de comportamento e controle territorial e social."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Criminalidade ultraviolenta. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.3, p. 5. Evidência normativa: “violência exacerbada ou grave ameaça diretamente imposta à vida [...] às instituições públicas ou ao próprio Estado”. B não responde corretamente ao comando porque descreve Finalidade da Diretriz, previsto em Diretriz nº PM3-001/02/24, item 2, p. 2, e não Criminalidade ultraviolenta. C não responde corretamente ao comando porque descreve Missão de desarticulação logística, previsto em Diretriz nº PM3-001/02/24, item 5.3, p. 4, e não Criminalidade ultraviolenta. D não responde corretamente ao comando porque descreve Área anômica, previsto em Diretriz nº PM3-001/02/24, item 6.1.1, p. 5, e não Criminalidade ultraviolenta."
+      },
+      {
+        "id": 1305,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1305 — À luz de Diretriz nº PM3-001/02/24, quanto a Crime organizado, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Rede transnacional ou nacional estruturada para atividades ilícitas, como tráfico de drogas e de armas.",
+          "b) Manifestação criminosa relacionada ou não ao crime organizado, caracterizada por violência exacerbada ou grave ameaça à vida, às instituições públicas ou ao Estado.",
+          "c) Conflito de grupos criminosos que disputam poder com o Estado para obter liberdade de realizar ações ilegais longe da fiscalização e do controle estatal.",
+          "d) Proteger a economia lícita, garantindo o livre exercício da atividade econômica no Estado de São Paulo sem interferência do crime organizado."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Crime organizado. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.4, p. 5. Evidência normativa: “rede transnacional ou nacional estruturada para atividades ilícitas”. B não responde corretamente ao comando porque descreve Criminalidade ultraviolenta, previsto em Diretriz nº PM3-001/02/24, item 6.1.3, p. 5, e não Crime organizado. C não responde corretamente ao comando porque descreve Insurgência criminal, previsto em Diretriz nº PM3-001/02/24, item 6.1.5, p. 6, e não Crime organizado. D não responde corretamente ao comando porque descreve Objetivo de proteção econômica, previsto em Diretriz nº PM3-001/02/24, item 4.5, p. 4, e não Crime organizado."
+      },
+      {
+        "id": 1306,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1306 — Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa INCORRETA sobre Grupo criminoso organizado.",
+        "options": [
+          "a) Ampliar a capacidade operativa da PM por atuação conjugada e sistêmica nos domínios terrestre, aéreo, aquático e cibernético.",
+          "b) Identificar e promover estratégias para desarticular a cadeia logística e a estrutura financeira do crime organizado, impedindo financiamento ilícito e lavagem de dinheiro.",
+          "c) Proteger a economia lícita, garantindo o livre exercício da atividade econômica no Estado de São Paulo sem interferência do crime organizado.",
+          "d) Grupo estruturado de 2 ou mais pessoas que atuam concertadamente para cometer infrações graves visando benefício econômico ou material."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D é INCORRETA: altera a regra documentada para Grupo criminoso organizado. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.4.1, p. 5. Evidência: “grupo estruturado de 3 ou mais pessoas [...] com a intenção de obter [...] benefício econômico ou material”. A descreve outra previsão verdadeira — Objetivo de capacidade operativa (Diretriz nº PM3-001/02/24, item 4.2, p. 4) —, não a regra incorreta apontada no comando. B descreve outra previsão verdadeira — Missão de desarticulação logística (Diretriz nº PM3-001/02/24, item 5.3, p. 4) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Objetivo de proteção econômica (Diretriz nº PM3-001/02/24, item 4.5, p. 4) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1307,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1307 — Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa INCORRETA sobre Organização criminosa (ORCRIM).",
+        "options": [
+          "a) Associação de 3 ou mais pessoas, sem necessidade de divisão de tarefas, voltada a obter vantagem por infrações penais.",
+          "b) Ambiente caracterizado por interferência aguda de criminosos ou organizações criminosas na vida cotidiana da comunidade, mediante imposição de normas de comportamento e controle territorial e social.",
+          "c) Manifestação criminosa relacionada ou não ao crime organizado, caracterizada por violência exacerbada ou grave ameaça à vida, às instituições públicas ou ao Estado.",
+          "d) Estabelecer mecanismos para identificar, prevenir, monitorar e responder a atividades terroristas e criminosas nas regiões circunscritas aos Cmdo Pol."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Organização criminosa (ORCRIM). Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.4.2, p. 6. Evidência: “associação de 4 ou mais pessoas estruturalmente ordenada e caracterizada pela divisão de tarefas”. B descreve outra previsão verdadeira — Área anômica (Diretriz nº PM3-001/02/24, item 6.1.1, p. 5) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Criminalidade ultraviolenta (Diretriz nº PM3-001/02/24, item 6.1.3, p. 5) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Área de atuação da missão (Diretriz nº PM3-001/02/24, item 5.1, p. 4) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1308,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1308 — À luz de Diretriz nº PM3-001/02/24, quanto a Insurgência criminal, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Ampliar a capacidade operativa da PM por atuação conjugada e sistêmica nos domínios terrestre, aéreo, aquático e cibernético.",
+          "b) Conflito de grupos criminosos que disputam poder com o Estado para obter liberdade de realizar ações ilegais longe da fiscalização e do controle estatal.",
+          "c) Estabelecer mecanismos para identificar, prevenir, monitorar e responder a atividades terroristas e criminosas nas regiões circunscritas aos Cmdo Pol.",
+          "d) Ambiente marcado por interferência sutil ou velada de criminosos na vida cotidiana, gerando óbices à prestação de serviços públicos e medo do crime por intimidação."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Insurgência criminal. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.5, p. 6. Evidência normativa: “grupos criminosos que disputam poder com o Estado”. A não responde corretamente ao comando porque descreve Objetivo de capacidade operativa, previsto em Diretriz nº PM3-001/02/24, item 4.2, p. 4, e não Insurgência criminal. C não responde corretamente ao comando porque descreve Área de atuação da missão, previsto em Diretriz nº PM3-001/02/24, item 5.1, p. 4, e não Insurgência criminal. D não responde corretamente ao comando porque descreve Área emblemática, previsto em Diretriz nº PM3-001/02/24, item 6.1.2, p. 5, e não Insurgência criminal."
+      },
+      {
+        "id": 1309,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1309 — À luz de Diretriz nº PM3-001/02/24, quanto a Contrainsurgência criminal, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Rede transnacional ou nacional estruturada para atividades ilícitas, como tráfico de drogas e de armas.",
+          "b) Conflito de grupos criminosos que disputam poder com o Estado para obter liberdade de realizar ações ilegais longe da fiscalização e do controle estatal.",
+          "c) Ambiente caracterizado por interferência aguda de criminosos ou organizações criminosas na vida cotidiana da comunidade, mediante imposição de normas de comportamento e controle territorial e social.",
+          "d) Conjunto coordenado de estratégias e táticas de polícia ostensiva e preservação da ordem pública destinado a combater e neutralizar movimentos de insurgência criminal."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Contrainsurgência criminal. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.6, p. 6. Evidência normativa: “conjunto de estratégias e táticas coordenadas [...] para combater e neutralizar movimentos de insurgência criminal”. A não responde corretamente ao comando porque descreve Crime organizado, previsto em Diretriz nº PM3-001/02/24, item 6.1.4, p. 5, e não Contrainsurgência criminal. B não responde corretamente ao comando porque descreve Insurgência criminal, previsto em Diretriz nº PM3-001/02/24, item 6.1.5, p. 6, e não Contrainsurgência criminal. C não responde corretamente ao comando porque descreve Área anômica, previsto em Diretriz nº PM3-001/02/24, item 6.1.1, p. 5, e não Contrainsurgência criminal."
+      },
+      {
+        "id": 1310,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1310 — À luz de Diretriz nº PM3-001/02/24, quanto a Terrorismo criminal, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Associação de quatro ou mais pessoas estruturalmente ordenada, com divisão de tarefas, ainda que informal, para obter vantagem de qualquer natureza mediante infrações penais transnacionais ou com penas máximas superiores a quatro anos.",
+          "b) Documento que representa planejamento prévio para situação futura eventual, estabelecendo condutas ou linhas de ação para providências operacionais ou administrativas.",
+          "c) Planejamento e execução de ações repressivas às atividades de terrorismo criminal, fundamentadas na produção de conhecimento e na coleta e análise de dados.",
+          "d) Terror imposto pelo crime organizado para criar fatos políticos, influenciar decisões políticas, demonstrar força e desacreditar forças de segurança."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Terrorismo criminal. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.7, p. 6. Evidência normativa: “criar fatos políticos que influenciem em decisões políticas, demonstrar força e desacreditar as forças de segurança”. A não responde corretamente ao comando porque descreve Organização criminosa (ORCRIM), previsto em Diretriz nº PM3-001/02/24, item 6.1.4.2, p. 6, e não Terrorismo criminal. B não responde corretamente ao comando porque descreve Plano de Contingência, previsto em Diretriz nº PM3-001/02/24, item 6.1.11, p. 6, e não Terrorismo criminal. C não responde corretamente ao comando porque descreve Contraterrorismo criminal, previsto em Diretriz nº PM3-001/02/24, item 6.1.8, p. 6, e não Terrorismo criminal."
+      },
+      {
+        "id": 1311,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1311 — Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa INCORRETA sobre Contraterrorismo criminal.",
+        "options": [
+          "a) Planejamento e execução de ações preventivas sem produção de conhecimento, coleta ou análise de dados.",
+          "b) Ampliar a capacidade operativa da PM por atuação conjugada e sistêmica nos domínios terrestre, aéreo, aquático e cibernético.",
+          "c) Planejamento elaborado a partir do diagnóstico situacional, com sobreposição de camadas de dados para identificar áreas de interesse e pontos de concentração ou fixação do policiamento.",
+          "d) Porções do espaço público com aglomeração permanente de usuários e traficantes de drogas, onde ocorre consumo ostensivo e indiscriminado de drogas lícitas e ilícitas."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Contraterrorismo criminal. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.8, p. 6. Evidência: “ações repressivas [...] alicerçadas por meio de produção de conhecimento, coleta e análise de dados”. B descreve outra previsão verdadeira — Objetivo de capacidade operativa (Diretriz nº PM3-001/02/24, item 4.2, p. 4) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Plano de Ação (Diretriz nº PM3-001/02/24, item 6.1.10, p. 6) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Cenas Abertas de Uso (Diretriz nº PM3-001/02/24, item 6.1.12, p. 6-7) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1312,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1312 — À luz de Diretriz nº PM3-001/02/24, quanto a Lavagem de dinheiro, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Ocultação ou dissimulação da natureza, origem, localização, disposição, movimentação ou propriedade de bens, direitos ou valores provenientes de infração penal.",
+          "b) Manifestação criminosa relacionada ou não ao crime organizado, caracterizada por violência exacerbada ou grave ameaça à vida, às instituições públicas ou ao Estado.",
+          "c) Expandir a consciência situacional e a imagem operacional comum para tomada de decisão e pronta resposta ao crime organizado.",
+          "d) Proteger a economia lícita, garantindo o livre exercício da atividade econômica no Estado de São Paulo sem interferência do crime organizado."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Lavagem de dinheiro. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.9, p. 6. Evidência normativa: “ocultação ou dissimilação da natureza, origem, localização, disposição, movimentação ou propriedade”. B não responde corretamente ao comando porque descreve Criminalidade ultraviolenta, previsto em Diretriz nº PM3-001/02/24, item 6.1.3, p. 5, e não Lavagem de dinheiro. C não responde corretamente ao comando porque descreve Objetivo de consciência situacional, previsto em Diretriz nº PM3-001/02/24, item 4.3, p. 4, e não Lavagem de dinheiro. D não responde corretamente ao comando porque descreve Objetivo de proteção econômica, previsto em Diretriz nº PM3-001/02/24, item 4.5, p. 4, e não Lavagem de dinheiro."
+      },
+      {
+        "id": 1313,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1313 — À luz de Diretriz nº PM3-001/02/24, quanto a Plano de Ação, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Grupo estruturado de três ou mais pessoas que atuam concertadamente para cometer uma ou mais infrações graves, visando benefício econômico ou material, direto ou indireto.",
+          "b) Conjunto coordenado de estratégias e táticas de polícia ostensiva e preservação da ordem pública destinado a combater e neutralizar movimentos de insurgência criminal.",
+          "c) Planejamento elaborado a partir do diagnóstico situacional, com sobreposição de camadas de dados para identificar áreas de interesse e pontos de concentração ou fixação do policiamento.",
+          "d) Ambiente marcado por interferência sutil ou velada de criminosos na vida cotidiana, gerando óbices à prestação de serviços públicos e medo do crime por intimidação."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Plano de Ação. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.10, p. 6. Evidência normativa: “planejamento realizado a partir das informações obtidas na fase de diagnóstico situacional”. A não responde corretamente ao comando porque descreve Grupo criminoso organizado, previsto em Diretriz nº PM3-001/02/24, item 6.1.4.1, p. 5, e não Plano de Ação. B não responde corretamente ao comando porque descreve Contrainsurgência criminal, previsto em Diretriz nº PM3-001/02/24, item 6.1.6, p. 6, e não Plano de Ação. D não responde corretamente ao comando porque descreve Área emblemática, previsto em Diretriz nº PM3-001/02/24, item 6.1.2, p. 5, e não Plano de Ação."
+      },
+      {
+        "id": 1314,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1314 — Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa INCORRETA sobre Plano de Contingência.",
+        "options": [
+          "a) Documento de planejamento posterior a uma situação já ocorrida, destinado apenas a registrar providências administrativas.",
+          "b) Grupo estruturado de três ou mais pessoas que atuam concertadamente para cometer uma ou mais infrações graves, visando benefício econômico ou material, direto ou indireto.",
+          "c) Ambiente caracterizado por interferência aguda de criminosos ou organizações criminosas na vida cotidiana da comunidade, mediante imposição de normas de comportamento e controle territorial e social.",
+          "d) Manifestação criminosa relacionada ou não ao crime organizado, caracterizada por violência exacerbada ou grave ameaça à vida, às instituições públicas ou ao Estado."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Plano de Contingência. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.11, p. 6. Evidência: “planejamento prévio para uma situação futura que eventualmente venha a ocorrer”. B descreve outra previsão verdadeira — Grupo criminoso organizado (Diretriz nº PM3-001/02/24, item 6.1.4.1, p. 5) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Área anômica (Diretriz nº PM3-001/02/24, item 6.1.1, p. 5) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Criminalidade ultraviolenta (Diretriz nº PM3-001/02/24, item 6.1.3, p. 5) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1315,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1315 — À luz de Diretriz nº PM3-001/02/24, quanto a Cenas Abertas de Uso, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Porções do espaço público com aglomeração permanente de usuários e traficantes de drogas, onde ocorre consumo ostensivo e indiscriminado de drogas lícitas e ilícitas.",
+          "b) Estabelecer mecanismos para identificar, prevenir, monitorar e responder a atividades terroristas e criminosas nas regiões circunscritas aos Cmdo Pol.",
+          "c) Planejamento elaborado a partir do diagnóstico situacional, com sobreposição de camadas de dados para identificar áreas de interesse e pontos de concentração ou fixação do policiamento.",
+          "d) Ampliar a capacidade operativa da PM por atuação conjugada e sistêmica nos domínios terrestre, aéreo, aquático e cibernético."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Cenas Abertas de Uso. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.12, p. 6-7. Evidência normativa: “aglomeração permanente de usuários e traficantes de drogas”. B não responde corretamente ao comando porque descreve Área de atuação da missão, previsto em Diretriz nº PM3-001/02/24, item 5.1, p. 4, e não Cenas Abertas de Uso. C não responde corretamente ao comando porque descreve Plano de Ação, previsto em Diretriz nº PM3-001/02/24, item 6.1.10, p. 6, e não Cenas Abertas de Uso. D não responde corretamente ao comando porque descreve Objetivo de capacidade operativa, previsto em Diretriz nº PM3-001/02/24, item 4.2, p. 4, e não Cenas Abertas de Uso."
+      },
+      {
+        "id": 1316,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1316 — À luz de Diretriz nº PM3-001/02/24, quanto a Finalidade da Diretriz, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Identificar e promover estratégias para desarticular a cadeia logística e a estrutura financeira do crime organizado, impedindo financiamento ilícito e lavagem de dinheiro.",
+          "b) Rede transnacional ou nacional estruturada para atividades ilícitas, como tráfico de drogas e de armas.",
+          "c) Estabelecer a doutrina de combate ao crime organizado na PMESP, sistematizando mecanismos de prevenção e repressão imediata.",
+          "d) Ambiente caracterizado por interferência aguda de criminosos ou organizações criminosas na vida cotidiana da comunidade, mediante imposição de normas de comportamento e controle territorial e social."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Finalidade da Diretriz. Fundamentação: Diretriz nº PM3-001/02/24, item 2, p. 2. Evidência normativa: “sistematizando os mecanismos de prevenção e repressão imediata”. A não responde corretamente ao comando porque descreve Missão de desarticulação logística, previsto em Diretriz nº PM3-001/02/24, item 5.3, p. 4, e não Finalidade da Diretriz. B não responde corretamente ao comando porque descreve Crime organizado, previsto em Diretriz nº PM3-001/02/24, item 6.1.4, p. 5, e não Finalidade da Diretriz. D não responde corretamente ao comando porque descreve Área anômica, previsto em Diretriz nº PM3-001/02/24, item 6.1.1, p. 5, e não Finalidade da Diretriz."
+      },
+      {
+        "id": 1317,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1317 — À luz de Diretriz nº PM3-001/02/24, quanto a Objetivo de capacidade operativa, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Ampliar a capacidade operativa da PM por atuação conjugada e sistêmica nos domínios terrestre, aéreo, aquático e cibernético.",
+          "b) Terror imposto pelo crime organizado para criar fatos políticos, influenciar decisões políticas, demonstrar força e desacreditar forças de segurança.",
+          "c) Associação de quatro ou mais pessoas estruturalmente ordenada, com divisão de tarefas, ainda que informal, para obter vantagem de qualquer natureza mediante infrações penais transnacionais ou com penas máximas superiores a quatro anos.",
+          "d) Manifestação criminosa relacionada ou não ao crime organizado, caracterizada por violência exacerbada ou grave ameaça à vida, às instituições públicas ou ao Estado."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Objetivo de capacidade operativa. Fundamentação: Diretriz nº PM3-001/02/24, item 4.2, p. 4. Evidência normativa: “atuação conjugada e sistêmica nos domínios terrestre, aéreo, aquático e cibernético”. B não responde corretamente ao comando porque descreve Terrorismo criminal, previsto em Diretriz nº PM3-001/02/24, item 6.1.7, p. 6, e não Objetivo de capacidade operativa. C não responde corretamente ao comando porque descreve Organização criminosa (ORCRIM), previsto em Diretriz nº PM3-001/02/24, item 6.1.4.2, p. 6, e não Objetivo de capacidade operativa. D não responde corretamente ao comando porque descreve Criminalidade ultraviolenta, previsto em Diretriz nº PM3-001/02/24, item 6.1.3, p. 5, e não Objetivo de capacidade operativa."
+      },
+      {
+        "id": 1318,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1318 — À luz de Diretriz nº PM3-001/02/24, quanto a Objetivo de consciência situacional, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Ocultação ou dissimulação da natureza, origem, localização, disposição, movimentação ou propriedade de bens, direitos ou valores provenientes de infração penal.",
+          "b) Expandir a consciência situacional e a imagem operacional comum para tomada de decisão e pronta resposta ao crime organizado.",
+          "c) Conjunto coordenado de estratégias e táticas de polícia ostensiva e preservação da ordem pública destinado a combater e neutralizar movimentos de insurgência criminal.",
+          "d) Porções do espaço público com aglomeração permanente de usuários e traficantes de drogas, onde ocorre consumo ostensivo e indiscriminado de drogas lícitas e ilícitas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Objetivo de consciência situacional. Fundamentação: Diretriz nº PM3-001/02/24, item 4.3, p. 4. Evidência normativa: “expansão da consciência situacional e da imagem operacional comum”. A não responde corretamente ao comando porque descreve Lavagem de dinheiro, previsto em Diretriz nº PM3-001/02/24, item 6.1.9, p. 6, e não Objetivo de consciência situacional. C não responde corretamente ao comando porque descreve Contrainsurgência criminal, previsto em Diretriz nº PM3-001/02/24, item 6.1.6, p. 6, e não Objetivo de consciência situacional. D não responde corretamente ao comando porque descreve Cenas Abertas de Uso, previsto em Diretriz nº PM3-001/02/24, item 6.1.12, p. 6-7, e não Objetivo de consciência situacional."
+      },
+      {
+        "id": 1319,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1319 — À luz de Diretriz nº PM3-001/02/24, quanto a Missão de desarticulação logística, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Identificar e promover estratégias para desarticular a cadeia logística e a estrutura financeira do crime organizado, impedindo financiamento ilícito e lavagem de dinheiro.",
+          "b) Documento que representa planejamento prévio para situação futura eventual, estabelecendo condutas ou linhas de ação para providências operacionais ou administrativas.",
+          "c) Proteger a economia lícita, garantindo o livre exercício da atividade econômica no Estado de São Paulo sem interferência do crime organizado.",
+          "d) Ampliar a capacidade operativa da PM por atuação conjugada e sistêmica nos domínios terrestre, aéreo, aquático e cibernético."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Missão de desarticulação logística. Fundamentação: Diretriz nº PM3-001/02/24, item 5.3, p. 4. Evidência normativa: “desarticular a cadeia logística e a estrutura financeira do crime organizado”. B não responde corretamente ao comando porque descreve Plano de Contingência, previsto em Diretriz nº PM3-001/02/24, item 6.1.11, p. 6, e não Missão de desarticulação logística. C não responde corretamente ao comando porque descreve Objetivo de proteção econômica, previsto em Diretriz nº PM3-001/02/24, item 4.5, p. 4, e não Missão de desarticulação logística. D não responde corretamente ao comando porque descreve Objetivo de capacidade operativa, previsto em Diretriz nº PM3-001/02/24, item 4.2, p. 4, e não Missão de desarticulação logística."
+      },
+      {
+        "id": 1320,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1320 — À luz de Diretriz nº PM3-001/02/24, quanto a Área de atuação da missão, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Grupo estruturado de três ou mais pessoas que atuam concertadamente para cometer uma ou mais infrações graves, visando benefício econômico ou material, direto ou indireto.",
+          "b) Identificar e promover estratégias para desarticular a cadeia logística e a estrutura financeira do crime organizado, impedindo financiamento ilícito e lavagem de dinheiro.",
+          "c) Estabelecer mecanismos para identificar, prevenir, monitorar e responder a atividades terroristas e criminosas nas regiões circunscritas aos Cmdo Pol.",
+          "d) Ambiente marcado por interferência sutil ou velada de criminosos na vida cotidiana, gerando óbices à prestação de serviços públicos e medo do crime por intimidação."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Área de atuação da missão. Fundamentação: Diretriz nº PM3-001/02/24, item 5.1, p. 4. Evidência normativa: “nas regiões circunscritas aos Cmdo Pol”. A não responde corretamente ao comando porque descreve Grupo criminoso organizado, previsto em Diretriz nº PM3-001/02/24, item 6.1.4.1, p. 5, e não Área de atuação da missão. B não responde corretamente ao comando porque descreve Missão de desarticulação logística, previsto em Diretriz nº PM3-001/02/24, item 5.3, p. 4, e não Área de atuação da missão. D não responde corretamente ao comando porque descreve Área emblemática, previsto em Diretriz nº PM3-001/02/24, item 6.1.2, p. 5, e não Área de atuação da missão."
+      },
+      {
+        "id": 1321,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Doutrina de Combate ao Crime Organizado",
+        "text": "QUESTÃO 1321 — Considerando a Diretriz nº PM3-001/02/24, assinale a alternativa INCORRETA sobre Objetivo de proteção econômica.",
+        "options": [
+          "a) Proteger a economia lícita, restringindo o livre exercício da atividade econômica para evitar a interferência do crime organizado.",
+          "b) Manifestação criminosa relacionada ou não ao crime organizado, caracterizada por violência exacerbada ou grave ameaça à vida, às instituições públicas ou ao Estado.",
+          "c) Grupo estruturado de três ou mais pessoas que atuam concertadamente para cometer uma ou mais infrações graves, visando benefício econômico ou material, direto ou indireto.",
+          "d) Conflito de grupos criminosos que disputam poder com o Estado para obter liberdade de realizar ações ilegais longe da fiscalização e do controle estatal."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Objetivo de proteção econômica. Fundamentação: Diretriz nº PM3-001/02/24, item 4.5, p. 4. Evidência: “garantindo o livre exercício da atividade econômica [...] sem a interferência do crime organizado”. B descreve outra previsão verdadeira — Criminalidade ultraviolenta (Diretriz nº PM3-001/02/24, item 6.1.3, p. 5) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Grupo criminoso organizado (Diretriz nº PM3-001/02/24, item 6.1.4.1, p. 5) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Insurgência criminal (Diretriz nº PM3-001/02/24, item 6.1.5, p. 6) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1322,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1322 — À luz de Diretriz nº PM3-004/02/20, quanto a Policiamento Ostensivo Escolar, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Modalidade em que OPM de qualquer escalão opta por empregar efetivo administrativo em atuação preventiva em escolas próximas à sua sede.",
+          "b) Desenvolver ações policiais permanentes, preventivas ou repressivas imediatas, no perímetro escolar de segurança.",
+          "c) A Ronda Escolar deve atuar obrigatoriamente com CPP, que determina ações, operações ou missões policial-militares do turno.",
+          "d) Policiamento ostensivo junto aos estabelecimentos de ensino e suas proximidades, voltado às necessidades de segurança da comunidade escolar."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Policiamento Ostensivo Escolar. Fundamentação: Diretriz nº PM3-004/02/20, item 6.1.1, p. 2. Evidência normativa: “junto aos estabelecimentos de ensino e em suas proximidades”. A não responde corretamente ao comando porque descreve Adoção Escolar, previsto em Diretriz nº PM3-004/02/20, item 6.2.2.2, p. 3, e não Policiamento Ostensivo Escolar. B não responde corretamente ao comando porque descreve Finalidade do Programa, previsto em Diretriz nº PM3-004/02/20, item 4.1, p. 1, e não Policiamento Ostensivo Escolar. C não responde corretamente ao comando porque descreve Cartão Prioridade de Patrulhamento, previsto em Diretriz nº PM3-004/02/20, item 6.3.3, p. 3, e não Policiamento Ostensivo Escolar."
+      },
+      {
+        "id": 1323,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1323 — À luz de Diretriz nº PM3-004/02/20, quanto a Programa de Policiamento Escolar, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Outros programas e atividades operacionais podem atuar nos períodos de maior demanda escolar, desde que suas atividades típicas não sofram solução de continuidade.",
+          "b) O CPP deve orientar os policiais a contatar a direção e os funcionários das escolas durante as rondas para coletar informações úteis ao policiamento.",
+          "c) Quando a Ronda Escolar é composta por apenas um policial militar, é obrigatório o uso de rádio transceptor portátil (HT).",
+          "d) Programa que tem por objetivo organizar o desenvolvimento do Policiamento Ostensivo Escolar."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Programa de Policiamento Escolar. Fundamentação: Diretriz nº PM3-004/02/20, item 6.1.2, p. 2. Evidência normativa: “organizar o desenvolvimento do Policiamento Ostensivo Escolar”. A não responde corretamente ao comando porque descreve Atuação de outros programas, previsto em Diretriz nº PM3-004/02/20, item 6.2.2.3, p. 3, e não Programa de Policiamento Escolar. B não responde corretamente ao comando porque descreve Contato com direção escolar, previsto em Diretriz nº PM3-004/02/20, item 6.3.4, p. 3, e não Programa de Policiamento Escolar. C não responde corretamente ao comando porque descreve Rádio HT na equipe unitária, previsto em Diretriz nº PM3-004/02/20, item 6.3.2, p. 3, e não Programa de Policiamento Escolar."
+      },
+      {
+        "id": 1324,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1324 — À luz de Diretriz nº PM3-004/02/20, quanto a Perímetro Escolar de Segurança, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Atuação em ocorrência com emprego de recursos locais, considerando uma US isolada e/ou apoio de outras US da Matriz Operacional I, inclusive de OPM limítrofe.",
+          "b) Área contígua às escolas da rede pública estadual que tem prioridade especial nas ações de prevenção e repressão policial.",
+          "c) A Ronda Escolar atua com prejuízo do atendimento de ocorrências, exceto as geradas nas escolas ou perímetros escolares e as de flagrante delito.",
+          "d) Policiamento ostensivo junto aos estabelecimentos de ensino e suas proximidades, voltado às necessidades de segurança da comunidade escolar."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Perímetro Escolar de Segurança. Fundamentação: Diretriz nº PM3-004/02/20, item 6.1.3, p. 2. Evidência normativa: “Área contígua aos estabelecimentos de ensino da rede pública estadual”. A não responde corretamente ao comando porque descreve Nível de Resposta 1, previsto em Diretriz nº PM3-004/02/20, item 6.1.6, p. 2, e não Perímetro Escolar de Segurança. C não responde corretamente ao comando porque descreve Atendimento de ocorrências pela RE, previsto em Diretriz nº PM3-004/02/20, item 6.3.6, p. 3, e não Perímetro Escolar de Segurança. D não responde corretamente ao comando porque descreve Policiamento Ostensivo Escolar, previsto em Diretriz nº PM3-004/02/20, item 6.1.1, p. 2, e não Perímetro Escolar de Segurança."
+      },
+      {
+        "id": 1325,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1325 — À luz de Diretriz nº PM3-004/02/20, quanto a PROERD, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Área contígua às escolas da rede pública estadual que tem prioridade especial nas ações de prevenção e repressão policial.",
+          "b) O perímetro escolar busca garantir tranquilidade de professores, pais e alunos e evitar mau uso das cercanias por infratores, vendedores ambulantes e pessoas estranhas à comunidade escolar.",
+          "c) Atividade exclusiva do PPE, implantada em municípios com no mínimo 15.000 habitantes, conforme necessidade operacional e disponibilidade de recursos consignadas nos Planos Diretores.",
+          "d) Programa que ministra lições a crianças e adolescentes, com participação de pais e educadores, para promover cultura de paz, cidadania e prevenção ao uso de drogas e à violência."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a PROERD. Fundamentação: Diretriz nº PM3-004/02/20, item 6.1.4, p. 2. Evidência normativa: “ministrar lições a crianças e adolescentes, mediante envolvimento de pais e educadores”. A não responde corretamente ao comando porque descreve Perímetro Escolar de Segurança, previsto em Diretriz nº PM3-004/02/20, item 6.1.3, p. 2, e não PROERD. B não responde corretamente ao comando porque descreve Perímetro e prioridade, previsto em Diretriz nº PM3-004/02/20, item 6.1.3, p. 2, e não PROERD. C não responde corretamente ao comando porque descreve Ronda Escolar (implantação), previsto em Diretriz nº PM3-004/02/20, item 6.2.2.1, p. 2, e não PROERD."
+      },
+      {
+        "id": 1326,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1326 — À luz de Diretriz nº PM3-004/02/20, quanto a Finalidade do Programa, assinale a alternativa CORRETA.",
+        "options": [
+          "a) A Ronda Escolar emprega um ou dois policiais militares por viatura, em cada turno de serviço, para policiamento escolar exclusivo.",
+          "b) Desenvolver ações policiais permanentes, preventivas ou repressivas imediatas, no perímetro escolar de segurança.",
+          "c) Como referência, a Ronda Escolar atende em média oito escolas, podendo variar conforme a dinâmica do policiamento escolar na OPM.",
+          "d) Aproximar as OPM territoriais das Diretorias Regionais de Ensino para levantar prioridades, aferir resultados, corrigir planos e interagir com a comunidade escolar."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Finalidade do Programa. Fundamentação: Diretriz nº PM3-004/02/20, item 4.1, p. 1. Evidência normativa: “ações policiais permanentes, preventivas ou repressivas imediatas”. A não responde corretamente ao comando porque descreve Efetivo da Ronda Escolar, previsto em Diretriz nº PM3-004/02/20, item 6.3.1, p. 3, e não Finalidade do Programa. C não responde corretamente ao comando porque descreve Referência de escolas atendidas, previsto em Diretriz nº PM3-004/02/20, item 6.3.3, p. 3, e não Finalidade do Programa. D não responde corretamente ao comando porque descreve Articulação com ensino, previsto em Diretriz nº PM3-004/02/20, item 4.2, p. 1, e não Finalidade do Programa."
+      },
+      {
+        "id": 1327,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1327 — À luz de Diretriz nº PM3-004/02/20, quanto a Articulação com ensino, assinale a alternativa CORRETA.",
+        "options": [
+          "a) A Ronda Escolar deve atuar obrigatoriamente com CPP, que determina ações, operações ou missões policial-militares do turno.",
+          "b) A direção de cada escola atendida pela Ronda Escolar deve ser contatada, no mínimo, uma vez por semana, com os devidos registros.",
+          "c) Aproximar as OPM territoriais das Diretorias Regionais de Ensino para levantar prioridades, aferir resultados, corrigir planos e interagir com a comunidade escolar.",
+          "d) A comunidade escolar compreende alunos e familiares, professores e funcionários das escolas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Articulação com ensino. Fundamentação: Diretriz nº PM3-004/02/20, item 4.2, p. 1. Evidência normativa: “levantamento de prioridades, a aferição de resultados, a correção de planos”. A não responde corretamente ao comando porque descreve Cartão Prioridade de Patrulhamento, previsto em Diretriz nº PM3-004/02/20, item 6.3.3, p. 3, e não Articulação com ensino. B não responde corretamente ao comando porque descreve Periodicidade mínima do contato, previsto em Diretriz nº PM3-004/02/20, item 6.3.5, p. 3, e não Articulação com ensino. D não responde corretamente ao comando porque descreve Comunidade escolar, previsto em Diretriz nº PM3-004/02/20, item 6.1.1, p. 2, e não Articulação com ensino."
+      },
+      {
+        "id": 1328,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1328 — Considerando a Diretriz nº PM3-004/02/20, assinale a alternativa INCORRETA sobre Ronda Escolar (implantação).",
+        "options": [
+          "a) Atividade exclusiva do PPE, implantada em municípios com no mínimo 50.000 habitantes, independentemente da disponibilidade de recursos.",
+          "b) Aproximar as OPM territoriais das Diretorias Regionais de Ensino para levantar prioridades, aferir resultados, corrigir planos e interagir com a comunidade escolar.",
+          "c) Programa que ministra lições a crianças e adolescentes, com participação de pais e educadores, para promover cultura de paz, cidadania e prevenção ao uso de drogas e à violência.",
+          "d) Programa que tem por objetivo organizar o desenvolvimento do Policiamento Ostensivo Escolar."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Ronda Escolar (implantação). Fundamentação: Diretriz nº PM3-004/02/20, item 6.2.2.1, p. 2. Evidência: “municípios que possuam, no mínimo, 15.000 habitantes”. B descreve outra previsão verdadeira — Articulação com ensino (Diretriz nº PM3-004/02/20, item 4.2, p. 1) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — PROERD (Diretriz nº PM3-004/02/20, item 6.1.4, p. 2) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Programa de Policiamento Escolar (Diretriz nº PM3-004/02/20, item 6.1.2, p. 2) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1329,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1329 — À luz de Diretriz nº PM3-004/02/20, quanto a Adoção Escolar, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Programa que ministra lições a crianças e adolescentes, com participação de pais e educadores, para promover cultura de paz, cidadania e prevenção ao uso de drogas e à violência.",
+          "b) Atividade exclusiva do PPE, implantada em municípios com no mínimo 15.000 habitantes, conforme necessidade operacional e disponibilidade de recursos consignadas nos Planos Diretores.",
+          "c) Modalidade em que OPM de qualquer escalão opta por empregar efetivo administrativo em atuação preventiva em escolas próximas à sua sede.",
+          "d) Policiamento ostensivo junto aos estabelecimentos de ensino e suas proximidades, voltado às necessidades de segurança da comunidade escolar."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Adoção Escolar. Fundamentação: Diretriz nº PM3-004/02/20, item 6.2.2.2, p. 3. Evidência normativa: “emprego de efetivo administrativo para a atuação preventiva”. A não responde corretamente ao comando porque descreve PROERD, previsto em Diretriz nº PM3-004/02/20, item 6.1.4, p. 2, e não Adoção Escolar. B não responde corretamente ao comando porque descreve Ronda Escolar (implantação), previsto em Diretriz nº PM3-004/02/20, item 6.2.2.1, p. 2, e não Adoção Escolar. D não responde corretamente ao comando porque descreve Policiamento Ostensivo Escolar, previsto em Diretriz nº PM3-004/02/20, item 6.1.1, p. 2, e não Adoção Escolar."
+      },
+      {
+        "id": 1330,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1330 — Considerando a Diretriz nº PM3-004/02/20, assinale a alternativa INCORRETA sobre Efetivo da Ronda Escolar.",
+        "options": [
+          "a) Modalidade em que OPM de qualquer escalão opta por empregar efetivo administrativo em atuação preventiva em escolas próximas à sua sede.",
+          "b) O CPP deve orientar os policiais a contatar a direção e os funcionários das escolas durante as rondas para coletar informações úteis ao policiamento.",
+          "c) A Ronda Escolar deve atuar obrigatoriamente com CPP, que determina ações, operações ou missões policial-militares do turno.",
+          "d) A Ronda Escolar emprega três ou quatro policiais militares por viatura, em cada turno de serviço."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D é INCORRETA: altera a regra documentada para Efetivo da Ronda Escolar. Fundamentação: Diretriz nº PM3-004/02/20, item 6.3.1, p. 3. Evidência: “1 ou 2 policiais militares, por viatura [...] em cada turno de serviço”. A descreve outra previsão verdadeira — Adoção Escolar (Diretriz nº PM3-004/02/20, item 6.2.2.2, p. 3) —, não a regra incorreta apontada no comando. B descreve outra previsão verdadeira — Contato com direção escolar (Diretriz nº PM3-004/02/20, item 6.3.4, p. 3) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Cartão Prioridade de Patrulhamento (Diretriz nº PM3-004/02/20, item 6.3.3, p. 3) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1331,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1331 — Considerando a Diretriz nº PM3-004/02/20, assinale a alternativa INCORRETA sobre Rádio HT na equipe unitária.",
+        "options": [
+          "a) Quando a Ronda Escolar é composta por apenas um policial militar, o uso de rádio transceptor portátil (HT) é facultativo.",
+          "b) A direção de cada escola atendida pela Ronda Escolar deve ser contatada, no mínimo, uma vez por semana, com os devidos registros.",
+          "c) Outros programas e atividades operacionais podem atuar nos períodos de maior demanda escolar, desde que suas atividades típicas não sofram solução de continuidade.",
+          "d) Como referência, a Ronda Escolar atende em média oito escolas, podendo variar conforme a dinâmica do policiamento escolar na OPM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Rádio HT na equipe unitária. Fundamentação: Diretriz nº PM3-004/02/20, item 6.3.2, p. 3. Evidência: “no caso de RE composta por apenas 1 policial militar, é obrigatório o uso de rádio transceptor portátil (HT)”. B descreve outra previsão verdadeira — Periodicidade mínima do contato (Diretriz nº PM3-004/02/20, item 6.3.5, p. 3) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Atuação de outros programas (Diretriz nº PM3-004/02/20, item 6.2.2.3, p. 3) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Referência de escolas atendidas (Diretriz nº PM3-004/02/20, item 6.3.3, p. 3) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1332,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1332 — À luz de Diretriz nº PM3-004/02/20, quanto a Cartão Prioridade de Patrulhamento, assinale a alternativa CORRETA.",
+        "options": [
+          "a) A comunidade escolar compreende alunos e familiares, professores e funcionários das escolas.",
+          "b) O perímetro escolar busca garantir tranquilidade de professores, pais e alunos e evitar mau uso das cercanias por infratores, vendedores ambulantes e pessoas estranhas à comunidade escolar.",
+          "c) Área contígua às escolas da rede pública estadual que tem prioridade especial nas ações de prevenção e repressão policial.",
+          "d) A Ronda Escolar deve atuar obrigatoriamente com CPP, que determina ações, operações ou missões policial-militares do turno."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Cartão Prioridade de Patrulhamento. Fundamentação: Diretriz nº PM3-004/02/20, item 6.3.3, p. 3. Evidência normativa: “deve atuar obrigatoriamente com Cartão Prioridade de Patrulhamento (CPP)”. A não responde corretamente ao comando porque descreve Comunidade escolar, previsto em Diretriz nº PM3-004/02/20, item 6.1.1, p. 2, e não Cartão Prioridade de Patrulhamento. B não responde corretamente ao comando porque descreve Perímetro e prioridade, previsto em Diretriz nº PM3-004/02/20, item 6.1.3, p. 2, e não Cartão Prioridade de Patrulhamento. C não responde corretamente ao comando porque descreve Perímetro Escolar de Segurança, previsto em Diretriz nº PM3-004/02/20, item 6.1.3, p. 2, e não Cartão Prioridade de Patrulhamento."
+      },
+      {
+        "id": 1333,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1333 — Considerando a Diretriz nº PM3-004/02/20, assinale a alternativa INCORRETA sobre Referência de escolas atendidas.",
+        "options": [
+          "a) Atuação em ocorrência com emprego de recursos locais, considerando uma US isolada e/ou apoio de outras US da Matriz Operacional I, inclusive de OPM limítrofe.",
+          "b) Como referência, a Ronda Escolar atende em média dezoito escolas, sem variação conforme a dinâmica local.",
+          "c) Programa que tem por objetivo organizar o desenvolvimento do Policiamento Ostensivo Escolar.",
+          "d) O perímetro escolar busca garantir tranquilidade de professores, pais e alunos e evitar mau uso das cercanias por infratores, vendedores ambulantes e pessoas estranhas à comunidade escolar."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B é INCORRETA: altera a regra documentada para Referência de escolas atendidas. Fundamentação: Diretriz nº PM3-004/02/20, item 6.3.3, p. 3. Evidência: “Em média, 8 escolas, quantidade que pode variar”. A descreve outra previsão verdadeira — Nível de Resposta 1 (Diretriz nº PM3-004/02/20, item 6.1.6, p. 2) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Programa de Policiamento Escolar (Diretriz nº PM3-004/02/20, item 6.1.2, p. 2) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Perímetro e prioridade (Diretriz nº PM3-004/02/20, item 6.1.3, p. 2) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1334,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1334 — À luz de Diretriz nº PM3-004/02/20, quanto a Contato com direção escolar, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Atividade exclusiva do PPE, implantada em municípios com no mínimo 15.000 habitantes, conforme necessidade operacional e disponibilidade de recursos consignadas nos Planos Diretores.",
+          "b) A direção de cada escola atendida pela Ronda Escolar deve ser contatada, no mínimo, uma vez por semana, com os devidos registros.",
+          "c) Quando a Ronda Escolar é composta por apenas um policial militar, é obrigatório o uso de rádio transceptor portátil (HT).",
+          "d) O CPP deve orientar os policiais a contatar a direção e os funcionários das escolas durante as rondas para coletar informações úteis ao policiamento."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Contato com direção escolar. Fundamentação: Diretriz nº PM3-004/02/20, item 6.3.4, p. 3. Evidência normativa: “entrem em contato com a direção e demais funcionários das escolas”. A não responde corretamente ao comando porque descreve Ronda Escolar (implantação), previsto em Diretriz nº PM3-004/02/20, item 6.2.2.1, p. 2, e não Contato com direção escolar. B não responde corretamente ao comando porque descreve Periodicidade mínima do contato, previsto em Diretriz nº PM3-004/02/20, item 6.3.5, p. 3, e não Contato com direção escolar. C não responde corretamente ao comando porque descreve Rádio HT na equipe unitária, previsto em Diretriz nº PM3-004/02/20, item 6.3.2, p. 3, e não Contato com direção escolar."
+      },
+      {
+        "id": 1335,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1335 — Considerando a Diretriz nº PM3-004/02/20, assinale a alternativa INCORRETA sobre Periodicidade mínima do contato.",
+        "options": [
+          "a) Modalidade em que OPM de qualquer escalão opta por empregar efetivo administrativo em atuação preventiva em escolas próximas à sua sede.",
+          "b) Aproximar as OPM territoriais das Diretorias Regionais de Ensino para levantar prioridades, aferir resultados, corrigir planos e interagir com a comunidade escolar.",
+          "c) A direção de cada escola atendida pela Ronda Escolar deve ser contatada, no mínimo, uma vez por mês.",
+          "d) Programa que ministra lições a crianças e adolescentes, com participação de pais e educadores, para promover cultura de paz, cidadania e prevenção ao uso de drogas e à violência."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C é INCORRETA: altera a regra documentada para Periodicidade mínima do contato. Fundamentação: Diretriz nº PM3-004/02/20, item 6.3.5, p. 3. Evidência: “uma vez por semana, no mínimo”. A descreve outra previsão verdadeira — Adoção Escolar (Diretriz nº PM3-004/02/20, item 6.2.2.2, p. 3) —, não a regra incorreta apontada no comando. B descreve outra previsão verdadeira — Articulação com ensino (Diretriz nº PM3-004/02/20, item 4.2, p. 1) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — PROERD (Diretriz nº PM3-004/02/20, item 6.1.4, p. 2) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1336,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1336 — Considerando a Diretriz nº PM3-004/02/20, assinale a alternativa INCORRETA sobre Atendimento de ocorrências pela RE.",
+        "options": [
+          "a) A Ronda Escolar deve atuar obrigatoriamente com CPP, que determina ações, operações ou missões policial-militares do turno.",
+          "b) Atividade exclusiva do PPE, implantada em municípios com no mínimo 15.000 habitantes, conforme necessidade operacional e disponibilidade de recursos consignadas nos Planos Diretores.",
+          "c) A Ronda Escolar emprega um ou dois policiais militares por viatura, em cada turno de serviço, para policiamento escolar exclusivo.",
+          "d) A Ronda Escolar deve atender indistintamente todas as ocorrências, inclusive as externas ao perímetro escolar, sem exceções."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D é INCORRETA: altera a regra documentada para Atendimento de ocorrências pela RE. Fundamentação: Diretriz nº PM3-004/02/20, item 6.3.6, p. 3. Evidência: “exceto quanto às geradas nas escolas [...] bem como as que se tratarem de flagrante delito”. A descreve outra previsão verdadeira — Cartão Prioridade de Patrulhamento (Diretriz nº PM3-004/02/20, item 6.3.3, p. 3) —, não a regra incorreta apontada no comando. B descreve outra previsão verdadeira — Ronda Escolar (implantação) (Diretriz nº PM3-004/02/20, item 6.2.2.1, p. 2) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Efetivo da Ronda Escolar (Diretriz nº PM3-004/02/20, item 6.3.1, p. 3) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1337,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1337 — À luz de Diretriz nº PM3-004/02/20, quanto a Atuação de outros programas, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Aproximar as OPM territoriais das Diretorias Regionais de Ensino para levantar prioridades, aferir resultados, corrigir planos e interagir com a comunidade escolar.",
+          "b) Outros programas e atividades operacionais podem atuar nos períodos de maior demanda escolar, desde que suas atividades típicas não sofram solução de continuidade.",
+          "c) Área contígua às escolas da rede pública estadual que tem prioridade especial nas ações de prevenção e repressão policial.",
+          "d) A Ronda Escolar emprega um ou dois policiais militares por viatura, em cada turno de serviço, para policiamento escolar exclusivo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Atuação de outros programas. Fundamentação: Diretriz nº PM3-004/02/20, item 6.2.2.3, p. 3. Evidência normativa: “desde que o desenvolvimento de suas atividades típicas não sofra solução de continuidade”. A não responde corretamente ao comando porque descreve Articulação com ensino, previsto em Diretriz nº PM3-004/02/20, item 4.2, p. 1, e não Atuação de outros programas. C não responde corretamente ao comando porque descreve Perímetro Escolar de Segurança, previsto em Diretriz nº PM3-004/02/20, item 6.1.3, p. 2, e não Atuação de outros programas. D não responde corretamente ao comando porque descreve Efetivo da Ronda Escolar, previsto em Diretriz nº PM3-004/02/20, item 6.3.1, p. 3, e não Atuação de outros programas."
+      },
+      {
+        "id": 1338,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1338 — À luz de Diretriz nº PM3-004/02/20, quanto a Comunidade escolar, assinale a alternativa CORRETA.",
+        "options": [
+          "a) A comunidade escolar compreende alunos e familiares, professores e funcionários das escolas.",
+          "b) A direção de cada escola atendida pela Ronda Escolar deve ser contatada, no mínimo, uma vez por semana, com os devidos registros.",
+          "c) Modalidade em que OPM de qualquer escalão opta por empregar efetivo administrativo em atuação preventiva em escolas próximas à sua sede.",
+          "d) A Ronda Escolar deve atuar obrigatoriamente com CPP, que determina ações, operações ou missões policial-militares do turno."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Comunidade escolar. Fundamentação: Diretriz nº PM3-004/02/20, item 6.1.1, p. 2. Evidência normativa: “composta por alunos e seus familiares, professores e funcionários das escolas”. B não responde corretamente ao comando porque descreve Periodicidade mínima do contato, previsto em Diretriz nº PM3-004/02/20, item 6.3.5, p. 3, e não Comunidade escolar. C não responde corretamente ao comando porque descreve Adoção Escolar, previsto em Diretriz nº PM3-004/02/20, item 6.2.2.2, p. 3, e não Comunidade escolar. D não responde corretamente ao comando porque descreve Cartão Prioridade de Patrulhamento, previsto em Diretriz nº PM3-004/02/20, item 6.3.3, p. 3, e não Comunidade escolar."
+      },
+      {
+        "id": 1339,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1339 — À luz de Diretriz nº PM3-004/02/20, quanto a Nível de Resposta 1, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Outros programas e atividades operacionais podem atuar nos períodos de maior demanda escolar, desde que suas atividades típicas não sofram solução de continuidade.",
+          "b) O CPP deve orientar os policiais a contatar a direção e os funcionários das escolas durante as rondas para coletar informações úteis ao policiamento.",
+          "c) Atuação em ocorrência com emprego de recursos locais, considerando uma US isolada e/ou apoio de outras US da Matriz Operacional I, inclusive de OPM limítrofe.",
+          "d) O perímetro escolar busca garantir tranquilidade de professores, pais e alunos e evitar mau uso das cercanias por infratores, vendedores ambulantes e pessoas estranhas à comunidade escolar."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Nível de Resposta 1. Fundamentação: Diretriz nº PM3-004/02/20, item 6.1.6, p. 2. Evidência normativa: “uma US atuando unicamente [...] e/ou com o apoio de outras US da Matriz Operacional I”. A não responde corretamente ao comando porque descreve Atuação de outros programas, previsto em Diretriz nº PM3-004/02/20, item 6.2.2.3, p. 3, e não Nível de Resposta 1. B não responde corretamente ao comando porque descreve Contato com direção escolar, previsto em Diretriz nº PM3-004/02/20, item 6.3.4, p. 3, e não Nível de Resposta 1. D não responde corretamente ao comando porque descreve Perímetro e prioridade, previsto em Diretriz nº PM3-004/02/20, item 6.1.3, p. 2, e não Nível de Resposta 1."
+      },
+      {
+        "id": 1340,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1340 — À luz de Diretriz nº PM3-004/02/20, quanto a Missão dos Cmdo Pol, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Os Cmdo Pol, por meio das OPM subordinadas, devem executar o Programa de Policiamento Escolar conforme a Diretriz.",
+          "b) Programa que tem por objetivo organizar o desenvolvimento do Policiamento Ostensivo Escolar.",
+          "c) Atuação em ocorrência com emprego de recursos locais, considerando uma US isolada e/ou apoio de outras US da Matriz Operacional I, inclusive de OPM limítrofe.",
+          "d) Desenvolver ações policiais permanentes, preventivas ou repressivas imediatas, no perímetro escolar de segurança."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Missão dos Cmdo Pol. Fundamentação: Diretriz nº PM3-004/02/20, item 5, p. 2. Evidência normativa: “Os Cmdo Pol, por meio de suas OPM subordinadas, deverão executar o Programa”. B não responde corretamente ao comando porque descreve Programa de Policiamento Escolar, previsto em Diretriz nº PM3-004/02/20, item 6.1.2, p. 2, e não Missão dos Cmdo Pol. C não responde corretamente ao comando porque descreve Nível de Resposta 1, previsto em Diretriz nº PM3-004/02/20, item 6.1.6, p. 2, e não Missão dos Cmdo Pol. D não responde corretamente ao comando porque descreve Finalidade do Programa, previsto em Diretriz nº PM3-004/02/20, item 4.1, p. 1, e não Missão dos Cmdo Pol."
+      },
+      {
+        "id": 1341,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Programa de Policiamento Escolar",
+        "text": "QUESTÃO 1341 — À luz de Diretriz nº PM3-004/02/20, quanto a Perímetro e prioridade, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Programa que ministra lições a crianças e adolescentes, com participação de pais e educadores, para promover cultura de paz, cidadania e prevenção ao uso de drogas e à violência.",
+          "b) O perímetro escolar busca garantir tranquilidade de professores, pais e alunos e evitar mau uso das cercanias por infratores, vendedores ambulantes e pessoas estranhas à comunidade escolar.",
+          "c) Quando a Ronda Escolar é composta por apenas um policial militar, é obrigatório o uso de rádio transceptor portátil (HT).",
+          "d) Atividade exclusiva do PPE, implantada em municípios com no mínimo 15.000 habitantes, conforme necessidade operacional e disponibilidade de recursos consignadas nos Planos Diretores."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Perímetro e prioridade. Fundamentação: Diretriz nº PM3-004/02/20, item 6.1.3, p. 2. Evidência normativa: “garantir a tranquilidade de professores, pais e alunos”. A não responde corretamente ao comando porque descreve PROERD, previsto em Diretriz nº PM3-004/02/20, item 6.1.4, p. 2, e não Perímetro e prioridade. C não responde corretamente ao comando porque descreve Rádio HT na equipe unitária, previsto em Diretriz nº PM3-004/02/20, item 6.3.2, p. 3, e não Perímetro e prioridade. D não responde corretamente ao comando porque descreve Ronda Escolar (implantação), previsto em Diretriz nº PM3-004/02/20, item 6.2.2.1, p. 2, e não Perímetro e prioridade."
+      },
+      {
+        "id": 1342,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1342 — À luz de Diretriz nº PM3-001/03/25, quanto a Finalidade da Diretriz SisTAF, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Os policiais militares membros da SisTAF devem ser previamente credenciados pela EEF.",
+          "b) Indivíduo que concorra à vaga para realizar curso ou estágio na PMESP.",
+          "c) Avaliar o nível de condicionamento físico, aferir a condição física para ingresso e selecionar candidatos a cursos e estágios.",
+          "d) Estabelecer doutrina institucional para treinamento e avaliação física do policial militar e disciplinar a realização e aplicação dos TAF na PMESP."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Finalidade da Diretriz SisTAF. Fundamentação: Diretriz nº PM3-001/03/25, item 2, p. 2. Evidência normativa: “disciplinar a realização e a aplicação dos Testes de Aptidão Física (TAF)”. A não responde corretamente ao comando porque descreve Credenciamento de membros, previsto em Diretriz nº PM3-001/03/25, item 6.4.2, p. 6, e não Finalidade da Diretriz SisTAF. B não responde corretamente ao comando porque descreve Candidato, previsto em Diretriz nº PM3-001/03/25, item 6.1.4, p. 3, e não Finalidade da Diretriz SisTAF. C não responde corretamente ao comando porque descreve Objetivo dos TAF, previsto em Diretriz nº PM3-001/03/25, item 4.3, p. 3, e não Finalidade da Diretriz SisTAF."
+      },
+      {
+        "id": 1343,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1343 — À luz de Diretriz nº PM3-001/03/25, quanto a Aptidão física, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Os membros da SisTAF podem ser convocados pela DEC, por solicitação da EEF, para treinamentos, atualizações, aplicação de TAF e atividades de ensino relacionadas.",
+          "b) Sistema utilizado pelas OPM para inclusão de dados de treinamentos, avaliações antropométricas, TAF e outras informações necessárias ao controle e acompanhamento.",
+          "c) Conjunto de atributos relacionados com a capacidade das pessoas realizarem alguma atividade física.",
+          "d) O gerenciamento dos treinamentos físicos e da realização dos TAF nas OPM ocorre por meio da SisTAF."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Aptidão física. Fundamentação: Diretriz nº PM3-001/03/25, item 6.1.1, p. 3. Evidência normativa: “conjunto de atributos relacionados com a capacidade das pessoas realizarem alguma atividade física”. A não responde corretamente ao comando porque descreve Convocação de membros, previsto em Diretriz nº PM3-001/03/25, item 6.4.4, p. 7, e não Aptidão física. B não responde corretamente ao comando porque descreve SITAF, previsto em Diretriz nº PM3-001/03/25, item 6.4.2.1, p. 6, e não Aptidão física. D não responde corretamente ao comando porque descreve Gerenciamento da SisTAF, previsto em Diretriz nº PM3-001/03/25, item 6.4.1, p. 6, e não Aptidão física."
+      },
+      {
+        "id": 1344,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1344 — À luz de Diretriz nº PM3-001/03/25, quanto a Atividade física, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Qualquer movimento corporal que propicia dispêndio energético acima do nível de repouso.",
+          "b) Deve ocorrer obrigatoriamente antes do TAF periódico e tabular IMC, circunferência abdominal e percentual de gordura corporal.",
+          "c) Estabelecer doutrina institucional para treinamento e avaliação física do policial militar e disciplinar a realização e aplicação dos TAF na PMESP.",
+          "d) Enquanto a solução tecnológica não estiver definitivamente implantada, a EEF disponibilizará na Intranet PM os trâmites de registro, frequência e tabulação dos treinamentos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Atividade física. Fundamentação: Diretriz nº PM3-001/03/25, item 6.1.2, p. 3. Evidência normativa: “qualquer movimento corporal que propicia um dispêndio energético acima do nível de repouso”. B não responde corretamente ao comando porque descreve Avaliação antropométrica, previsto em Diretriz nº PM3-001/03/25, item 6.5.1.1, p. 7, e não Atividade física. C não responde corretamente ao comando porque descreve Finalidade da Diretriz SisTAF, previsto em Diretriz nº PM3-001/03/25, item 2, p. 2, e não Atividade física. D não responde corretamente ao comando porque descreve Solução provisória de registro, previsto em Diretriz nº PM3-001/03/25, item 6.4.3, p. 7, e não Atividade física."
+      },
+      {
+        "id": 1345,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1345 — À luz de Diretriz nº PM3-001/03/25, quanto a Avaliado, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Promover manutenção e melhoria da saúde e qualidade de vida, aptidão física para o desempenho operacional e manutenção das técnicas de defesa pessoal policial.",
+          "b) Atividade física sistematizada que objetiva incrementar a aptidão física.",
+          "c) Qualquer movimento corporal que propicia dispêndio energético acima do nível de repouso.",
+          "d) Policial militar submetido à avaliação física ou ao TAF."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Avaliado. Fundamentação: Diretriz nº PM3-001/03/25, item 6.1.3, p. 3. Evidência normativa: “policial militar submetido à avaliação física ou ao TAF”. A não responde corretamente ao comando porque descreve Objetivo do treinamento físico, previsto em Diretriz nº PM3-001/03/25, item 6.5.2.1, p. 7, e não Avaliado. B não responde corretamente ao comando porque descreve Exercício físico, previsto em Diretriz nº PM3-001/03/25, item 6.1.6, p. 4, e não Avaliado. C não responde corretamente ao comando porque descreve Atividade física, previsto em Diretriz nº PM3-001/03/25, item 6.1.2, p. 3, e não Avaliado."
+      },
+      {
+        "id": 1346,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1346 — À luz de Diretriz nº PM3-001/03/25, quanto a Candidato, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Membros credenciados executam, aperfeiçoam, avaliam e controlam o treinamento físico e os TAF nas OPM.",
+          "b) Estado de aptidão física do indivíduo, aferido por meio da prática de testes físicos.",
+          "c) Implementar e executar medidas de treinamento e avaliações físicas para elevar a aptidão dos policiais e monitorar seu progresso individual.",
+          "d) Indivíduo que concorra à vaga para realizar curso ou estágio na PMESP."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Candidato. Fundamentação: Diretriz nº PM3-001/03/25, item 6.1.4, p. 3. Evidência normativa: “indivíduo que concorra à vaga para realizar curso ou estágio na PMESP”. A não responde corretamente ao comando porque descreve Responsabilidade dos membros, previsto em Diretriz nº PM3-001/03/25, item 6.4.2, p. 6, e não Candidato. B não responde corretamente ao comando porque descreve Condicionamento físico, previsto em Diretriz nº PM3-001/03/25, item 6.1.5, p. 3, e não Candidato. C não responde corretamente ao comando porque descreve Missão das OPM, previsto em Diretriz nº PM3-001/03/25, item 5, p. 3, e não Candidato."
+      },
+      {
+        "id": 1347,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1347 — À luz de Diretriz nº PM3-001/03/25, quanto a Condicionamento físico, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Quem injustificadamente deixar de frequentar treinamentos e atualizações da EEF poderá ser descredenciado do SITAF e impedido de aplicar treinamentos e avaliações.",
+          "b) Policial formado em Educação Física por outra instituição pode solicitar cadastro no SITAF, enviando certificado à EEF, que analisa os requisitos técnicos e legais.",
+          "c) Os policiais militares membros da SisTAF devem ser previamente credenciados pela EEF.",
+          "d) Estado de aptidão física do indivíduo, aferido por meio da prática de testes físicos."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Condicionamento físico. Fundamentação: Diretriz nº PM3-001/03/25, item 6.1.5, p. 3. Evidência normativa: “estado de aptidão física do indivíduo, aferido por meio da prática de testes físicos”. A não responde corretamente ao comando porque descreve Descredenciamento, previsto em Diretriz nº PM3-001/03/25, item 6.4.5, p. 7, e não Condicionamento físico. B não responde corretamente ao comando porque descreve Cadastro de formados fora da EEF, previsto em Diretriz nº PM3-001/03/25, item 6.4.2.3, p. 7, e não Condicionamento físico. C não responde corretamente ao comando porque descreve Credenciamento de membros, previsto em Diretriz nº PM3-001/03/25, item 6.4.2, p. 6, e não Condicionamento físico."
+      },
+      {
+        "id": 1348,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1348 — À luz de Diretriz nº PM3-001/03/25, quanto a Exercício físico, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Os membros da SisTAF podem ser convocados pela DEC, por solicitação da EEF, para treinamentos, atualizações, aplicação de TAF e atividades de ensino relacionadas.",
+          "b) Os resultados das avaliações antropométricas devem ser inseridos obrigatoriamente no SITAF pelo Treinador Físico.",
+          "c) Atividade física sistematizada que objetiva incrementar a aptidão física.",
+          "d) Conjunto de atributos relacionados com a capacidade das pessoas realizarem alguma atividade física."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Exercício físico. Fundamentação: Diretriz nº PM3-001/03/25, item 6.1.6, p. 4. Evidência normativa: “atividade física sistematizada que objetiva incrementar a aptidão física”. A não responde corretamente ao comando porque descreve Convocação de membros, previsto em Diretriz nº PM3-001/03/25, item 6.4.4, p. 7, e não Exercício físico. B não responde corretamente ao comando porque descreve Registro antropométrico, previsto em Diretriz nº PM3-001/03/25, item 6.5.1.2, p. 7, e não Exercício físico. D não responde corretamente ao comando porque descreve Aptidão física, previsto em Diretriz nº PM3-001/03/25, item 6.1.1, p. 3, e não Exercício físico."
+      },
+      {
+        "id": 1349,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1349 — À luz de Diretriz nº PM3-001/03/25, quanto a Objetivo dos TAF, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Atividade física sistematizada que objetiva incrementar a aptidão física.",
+          "b) Policial militar submetido à avaliação física ou ao TAF.",
+          "c) Estabelecer doutrina institucional para treinamento e avaliação física do policial militar e disciplinar a realização e aplicação dos TAF na PMESP.",
+          "d) Avaliar o nível de condicionamento físico, aferir a condição física para ingresso e selecionar candidatos a cursos e estágios."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Objetivo dos TAF. Fundamentação: Diretriz nº PM3-001/03/25, item 4.3, p. 3. Evidência normativa: “avaliar o nível de condicionamento físico [...] aferir o condicionamento físico para o ingresso [...] selecionar candidatos”. A não responde corretamente ao comando porque descreve Exercício físico, previsto em Diretriz nº PM3-001/03/25, item 6.1.6, p. 4, e não Objetivo dos TAF. B não responde corretamente ao comando porque descreve Avaliado, previsto em Diretriz nº PM3-001/03/25, item 6.1.3, p. 3, e não Objetivo dos TAF. C não responde corretamente ao comando porque descreve Finalidade da Diretriz SisTAF, previsto em Diretriz nº PM3-001/03/25, item 2, p. 2, e não Objetivo dos TAF."
+      },
+      {
+        "id": 1350,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1350 — À luz de Diretriz nº PM3-001/03/25, quanto a Missão das OPM, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Estado de aptidão física do indivíduo, aferido por meio da prática de testes físicos.",
+          "b) O gerenciamento dos treinamentos físicos e da realização dos TAF nas OPM ocorre por meio da SisTAF.",
+          "c) Implementar e executar medidas de treinamento e avaliações físicas para elevar a aptidão dos policiais e monitorar seu progresso individual.",
+          "d) Sistema utilizado pelas OPM para inclusão de dados de treinamentos, avaliações antropométricas, TAF e outras informações necessárias ao controle e acompanhamento."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Missão das OPM. Fundamentação: Diretriz nº PM3-001/03/25, item 5, p. 3. Evidência normativa: “implementar e executar as medidas de treinamento e avaliações físicas”. A não responde corretamente ao comando porque descreve Condicionamento físico, previsto em Diretriz nº PM3-001/03/25, item 6.1.5, p. 3, e não Missão das OPM. B não responde corretamente ao comando porque descreve Gerenciamento da SisTAF, previsto em Diretriz nº PM3-001/03/25, item 6.4.1, p. 6, e não Missão das OPM. D não responde corretamente ao comando porque descreve SITAF, previsto em Diretriz nº PM3-001/03/25, item 6.4.2.1, p. 6, e não Missão das OPM."
+      },
+      {
+        "id": 1351,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1351 — À luz de Diretriz nº PM3-001/03/25, quanto a Gerenciamento da SisTAF, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Membros credenciados executam, aperfeiçoam, avaliam e controlam o treinamento físico e os TAF nas OPM.",
+          "b) O gerenciamento dos treinamentos físicos e da realização dos TAF nas OPM ocorre por meio da SisTAF.",
+          "c) Enquanto a solução tecnológica não estiver definitivamente implantada, a EEF disponibilizará na Intranet PM os trâmites de registro, frequência e tabulação dos treinamentos.",
+          "d) Deve ocorrer obrigatoriamente antes do TAF periódico e tabular IMC, circunferência abdominal e percentual de gordura corporal."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Gerenciamento da SisTAF. Fundamentação: Diretriz nº PM3-001/03/25, item 6.4.1, p. 6. Evidência normativa: “o gerenciamento dos Treinamentos Físicos (TF) e [...] TAF nas OPM acontece por meio da SisTAF”. A não responde corretamente ao comando porque descreve Responsabilidade dos membros, previsto em Diretriz nº PM3-001/03/25, item 6.4.2, p. 6, e não Gerenciamento da SisTAF. C não responde corretamente ao comando porque descreve Solução provisória de registro, previsto em Diretriz nº PM3-001/03/25, item 6.4.3, p. 7, e não Gerenciamento da SisTAF. D não responde corretamente ao comando porque descreve Avaliação antropométrica, previsto em Diretriz nº PM3-001/03/25, item 6.5.1.1, p. 7, e não Gerenciamento da SisTAF."
+      },
+      {
+        "id": 1352,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1352 — Considerando a Diretriz nº PM3-001/03/25, assinale a alternativa INCORRETA sobre Credenciamento de membros.",
+        "options": [
+          "a) Os policiais militares membros da SisTAF podem atuar sem credenciamento prévio pela EEF.",
+          "b) Enquanto a solução tecnológica não estiver definitivamente implantada, a EEF disponibilizará na Intranet PM os trâmites de registro, frequência e tabulação dos treinamentos.",
+          "c) Os resultados das avaliações antropométricas devem ser inseridos obrigatoriamente no SITAF pelo Treinador Físico.",
+          "d) Quem injustificadamente deixar de frequentar treinamentos e atualizações da EEF poderá ser descredenciado do SITAF e impedido de aplicar treinamentos e avaliações."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Credenciamento de membros. Fundamentação: Diretriz nº PM3-001/03/25, item 6.4.2, p. 6. Evidência: “deverão ser credenciados previamente pela EEF”. B descreve outra previsão verdadeira — Solução provisória de registro (Diretriz nº PM3-001/03/25, item 6.4.3, p. 7) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Registro antropométrico (Diretriz nº PM3-001/03/25, item 6.5.1.2, p. 7) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Descredenciamento (Diretriz nº PM3-001/03/25, item 6.4.5, p. 7) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1353,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1353 — À luz de Diretriz nº PM3-001/03/25, quanto a Responsabilidade dos membros, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Membros credenciados executam, aperfeiçoam, avaliam e controlam o treinamento físico e os TAF nas OPM.",
+          "b) Indivíduo que concorra à vaga para realizar curso ou estágio na PMESP.",
+          "c) Conjunto de atributos relacionados com a capacidade das pessoas realizarem alguma atividade física.",
+          "d) Avaliar o nível de condicionamento físico, aferir a condição física para ingresso e selecionar candidatos a cursos e estágios."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Responsabilidade dos membros. Fundamentação: Diretriz nº PM3-001/03/25, item 6.4.2, p. 6. Evidência normativa: “responsáveis por executar, aperfeiçoar, avaliar e controlar o treinamento físico e os TAF”. B não responde corretamente ao comando porque descreve Candidato, previsto em Diretriz nº PM3-001/03/25, item 6.1.4, p. 3, e não Responsabilidade dos membros. C não responde corretamente ao comando porque descreve Aptidão física, previsto em Diretriz nº PM3-001/03/25, item 6.1.1, p. 3, e não Responsabilidade dos membros. D não responde corretamente ao comando porque descreve Objetivo dos TAF, previsto em Diretriz nº PM3-001/03/25, item 4.3, p. 3, e não Responsabilidade dos membros."
+      },
+      {
+        "id": 1354,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1354 — Considerando a Diretriz nº PM3-001/03/25, assinale a alternativa INCORRETA sobre SITAF.",
+        "options": [
+          "a) O SITAF é utilizado exclusivamente pela EEF, não sendo ferramenta digital para inclusão de dados pelas OPM.",
+          "b) Indivíduo que concorra à vaga para realizar curso ou estágio na PMESP.",
+          "c) Estabelecer doutrina institucional para treinamento e avaliação física do policial militar e disciplinar a realização e aplicação dos TAF na PMESP.",
+          "d) Qualquer movimento corporal que propicia dispêndio energético acima do nível de repouso."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para SITAF. Fundamentação: Diretriz nº PM3-001/03/25, item 6.4.2.1, p. 6. Evidência: “ferramenta digital utilizada por todas as OPM para a inclusão dos dados e informações”. B descreve outra previsão verdadeira — Candidato (Diretriz nº PM3-001/03/25, item 6.1.4, p. 3) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Finalidade da Diretriz SisTAF (Diretriz nº PM3-001/03/25, item 2, p. 2) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Atividade física (Diretriz nº PM3-001/03/25, item 6.1.2, p. 3) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1355,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1355 — Considerando a Diretriz nº PM3-001/03/25, assinale a alternativa INCORRETA sobre Cadastro de formados fora da EEF.",
+        "options": [
+          "a) Estado de aptidão física do indivíduo, aferido por meio da prática de testes físicos.",
+          "b) O policial formado em Educação Física por outra instituição é cadastrado automaticamente, sem envio de certificado ou análise da EEF.",
+          "c) Policial militar submetido à avaliação física ou ao TAF.",
+          "d) Avaliar o nível de condicionamento físico, aferir a condição física para ingresso e selecionar candidatos a cursos e estágios."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B é INCORRETA: altera a regra documentada para Cadastro de formados fora da EEF. Fundamentação: Diretriz nº PM3-001/03/25, item 6.4.2.3, p. 7. Evidência: “deverá [...] enviar o certificado de conclusão de curso à EEF, que analisará”. A descreve outra previsão verdadeira — Condicionamento físico (Diretriz nº PM3-001/03/25, item 6.1.5, p. 3) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Avaliado (Diretriz nº PM3-001/03/25, item 6.1.3, p. 3) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Objetivo dos TAF (Diretriz nº PM3-001/03/25, item 4.3, p. 3) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1356,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1356 — À luz de Diretriz nº PM3-001/03/25, quanto a Solução provisória de registro, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Enquanto a solução tecnológica não estiver definitivamente implantada, a EEF disponibilizará na Intranet PM os trâmites de registro, frequência e tabulação dos treinamentos.",
+          "b) Deve ocorrer obrigatoriamente antes do TAF periódico e tabular IMC, circunferência abdominal e percentual de gordura corporal.",
+          "c) Policial militar submetido à avaliação física ou ao TAF.",
+          "d) Estabelecer doutrina institucional para treinamento e avaliação física do policial militar e disciplinar a realização e aplicação dos TAF na PMESP."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Solução provisória de registro. Fundamentação: Diretriz nº PM3-001/03/25, item 6.4.3, p. 7. Evidência normativa: “a EEF disponibilizará na página da Intranet PM os trâmites de registro”. B não responde corretamente ao comando porque descreve Avaliação antropométrica, previsto em Diretriz nº PM3-001/03/25, item 6.5.1.1, p. 7, e não Solução provisória de registro. C não responde corretamente ao comando porque descreve Avaliado, previsto em Diretriz nº PM3-001/03/25, item 6.1.3, p. 3, e não Solução provisória de registro. D não responde corretamente ao comando porque descreve Finalidade da Diretriz SisTAF, previsto em Diretriz nº PM3-001/03/25, item 2, p. 2, e não Solução provisória de registro."
+      },
+      {
+        "id": 1357,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1357 — À luz de Diretriz nº PM3-001/03/25, quanto a Convocação de membros, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Implementar e executar medidas de treinamento e avaliações físicas para elevar a aptidão dos policiais e monitorar seu progresso individual.",
+          "b) Estado de aptidão física do indivíduo, aferido por meio da prática de testes físicos.",
+          "c) Qualquer movimento corporal que propicia dispêndio energético acima do nível de repouso.",
+          "d) Os membros da SisTAF podem ser convocados pela DEC, por solicitação da EEF, para treinamentos, atualizações, aplicação de TAF e atividades de ensino relacionadas."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Convocação de membros. Fundamentação: Diretriz nº PM3-001/03/25, item 6.4.4, p. 7. Evidência normativa: “poderão ser convocados pela DEC, por solicitação da EEF”. A não responde corretamente ao comando porque descreve Missão das OPM, previsto em Diretriz nº PM3-001/03/25, item 5, p. 3, e não Convocação de membros. B não responde corretamente ao comando porque descreve Condicionamento físico, previsto em Diretriz nº PM3-001/03/25, item 6.1.5, p. 3, e não Convocação de membros. C não responde corretamente ao comando porque descreve Atividade física, previsto em Diretriz nº PM3-001/03/25, item 6.1.2, p. 3, e não Convocação de membros."
+      },
+      {
+        "id": 1358,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1358 — Considerando a Diretriz nº PM3-001/03/25, assinale a alternativa INCORRETA sobre Descredenciamento.",
+        "options": [
+          "a) Enquanto a solução tecnológica não estiver definitivamente implantada, a EEF disponibilizará na Intranet PM os trâmites de registro, frequência e tabulação dos treinamentos.",
+          "b) Sistema utilizado pelas OPM para inclusão de dados de treinamentos, avaliações antropométricas, TAF e outras informações necessárias ao controle e acompanhamento.",
+          "c) Deve ocorrer obrigatoriamente antes do TAF periódico e tabular IMC, circunferência abdominal e percentual de gordura corporal.",
+          "d) O policial militar que injustificadamente deixar de frequentar treinamentos e atualizações deverá permanecer credenciado no SITAF."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D é INCORRETA: altera a regra documentada para Descredenciamento. Fundamentação: Diretriz nº PM3-001/03/25, item 6.4.5, p. 7. Evidência: “poderão ser descredenciados do SITAF”. A descreve outra previsão verdadeira — Solução provisória de registro (Diretriz nº PM3-001/03/25, item 6.4.3, p. 7) —, não a regra incorreta apontada no comando. B descreve outra previsão verdadeira — SITAF (Diretriz nº PM3-001/03/25, item 6.4.2.1, p. 6) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Avaliação antropométrica (Diretriz nº PM3-001/03/25, item 6.5.1.1, p. 7) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1359,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1359 — Considerando a Diretriz nº PM3-001/03/25, assinale a alternativa INCORRETA sobre Avaliação antropométrica.",
+        "options": [
+          "a) A avaliação antropométrica é facultativa e realizada somente depois da aplicação do TAF periódico.",
+          "b) Estabelecer doutrina institucional para treinamento e avaliação física do policial militar e disciplinar a realização e aplicação dos TAF na PMESP.",
+          "c) Os membros da SisTAF podem ser convocados pela DEC, por solicitação da EEF, para treinamentos, atualizações, aplicação de TAF e atividades de ensino relacionadas.",
+          "d) Os resultados das avaliações antropométricas devem ser inseridos obrigatoriamente no SITAF pelo Treinador Físico."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Avaliação antropométrica. Fundamentação: Diretriz nº PM3-001/03/25, item 6.5.1.1, p. 7. Evidência: “aferição realizada, obrigatoriamente, antes da aplicação do TAF [...] índice de massa corporal [...] circunferência abdominal [...] percentual de gordura corporal”. B descreve outra previsão verdadeira — Finalidade da Diretriz SisTAF (Diretriz nº PM3-001/03/25, item 2, p. 2) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Convocação de membros (Diretriz nº PM3-001/03/25, item 6.4.4, p. 7) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Registro antropométrico (Diretriz nº PM3-001/03/25, item 6.5.1.2, p. 7) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1360,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1360 — Considerando a Diretriz nº PM3-001/03/25, assinale a alternativa INCORRETA sobre Registro antropométrico.",
+        "options": [
+          "a) Os resultados das avaliações antropométricas podem ser mantidos fora do SITAF, a critério do Treinador Físico.",
+          "b) Policial militar submetido à avaliação física ou ao TAF.",
+          "c) Promover manutenção e melhoria da saúde e qualidade de vida, aptidão física para o desempenho operacional e manutenção das técnicas de defesa pessoal policial.",
+          "d) Conjunto de atributos relacionados com a capacidade das pessoas realizarem alguma atividade física."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Registro antropométrico. Fundamentação: Diretriz nº PM3-001/03/25, item 6.5.1.2, p. 7. Evidência: “serão obrigatoriamente inseridos no SITAF pelo Treinador Físico”. B descreve outra previsão verdadeira — Avaliado (Diretriz nº PM3-001/03/25, item 6.1.3, p. 3) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Objetivo do treinamento físico (Diretriz nº PM3-001/03/25, item 6.5.2.1, p. 7) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Aptidão física (Diretriz nº PM3-001/03/25, item 6.1.1, p. 3) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1361,
+        "subject": "ORGANIZACIONAL",
+        "tag": "SisTAF",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
+        "text": "QUESTÃO 1361 — À luz de Diretriz nº PM3-001/03/25, quanto a Objetivo do treinamento físico, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Promover manutenção e melhoria da saúde e qualidade de vida, aptidão física para o desempenho operacional e manutenção das técnicas de defesa pessoal policial.",
+          "b) Policial militar submetido à avaliação física ou ao TAF.",
+          "c) Atividade física sistematizada que objetiva incrementar a aptidão física.",
+          "d) O gerenciamento dos treinamentos físicos e da realização dos TAF nas OPM ocorre por meio da SisTAF."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Objetivo do treinamento físico. Fundamentação: Diretriz nº PM3-001/03/25, item 6.5.2.1, p. 7. Evidência normativa: “manutenção e a melhoria do estado de saúde [...] aptidão físicas necessárias para o bom desempenho operacional”. B não responde corretamente ao comando porque descreve Avaliado, previsto em Diretriz nº PM3-001/03/25, item 6.1.3, p. 3, e não Objetivo do treinamento físico. C não responde corretamente ao comando porque descreve Exercício físico, previsto em Diretriz nº PM3-001/03/25, item 6.1.6, p. 4, e não Objetivo do treinamento físico. D não responde corretamente ao comando porque descreve Gerenciamento da SisTAF, previsto em Diretriz nº PM3-001/03/25, item 6.4.1, p. 6, e não Objetivo do treinamento físico."
+      },
+      {
+        "id": 1362,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1362 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Finalidade da Nota de Instrução, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Ambiente integrado à SOp voltado à prevenção e ao enfrentamento da violência doméstica e familiar, acolhimento, escuta ativa e orientação das mulheres.",
+          "b) Para atendimento remoto, deve inexistir perigo à vida, à integridade física, ao patrimônio público ou particular e risco de degradação ambiental significativa.",
+          "c) Disciplinar o funcionamento da Sala de Operações na PMESP, as atividades vinculadas e os parâmetros de seleção e capacitação do efetivo.",
+          "d) Promover melhoria da percepção de segurança por assessoramento ao processo decisório e potencialização do emprego eficiente dos recursos operacionais."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Finalidade da Nota de Instrução. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 2, p. 1. Evidência normativa: “Disciplinar o funcionamento da Sala de Operações (SOp) [...] e os parâmetros de seleção e capacitação do seu efetivo”. A não responde corretamente ao comando porque descreve Espaço Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 2-3, e não Finalidade da Nota de Instrução. B não responde corretamente ao comando porque descreve Requisito de segurança do SIR, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.11.1, p. 9, e não Finalidade da Nota de Instrução. D não responde corretamente ao comando porque descreve Objetivo de percepção de segurança, previsto em Nota de Instrução nº PM3-002/02/26, item 4.3, p. 2, e não Finalidade da Nota de Instrução."
+      },
+      {
+        "id": 1363,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1363 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Objetivo de consciência situacional, assinale a alternativa CORRETA.",
+        "options": [
+          "a) É passível de SIR o acidente de trânsito sem vítimas, sem partes embriagadas e sem ilícitos administrativos.",
+          "b) Ampliar a consciência situacional e a tomada de decisão dos escalões de comando e supervisão e dos policiais que executam o policiamento ostensivo.",
+          "c) Se o solicitante insistir no atendimento presencial por US, o COPOM deve ser imediatamente informado para as providências cabíveis.",
+          "d) O Serviço de Informação Remota pode atender demandas que não exijam intervenção presencial imediata, respeitados os requisitos estabelecidos na Nota."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Objetivo de consciência situacional. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 4.1, p. 2. Evidência normativa: “ampliar a consciência situacional e tomada de decisão dos escalões de comando e supervisão”. A não responde corretamente ao comando porque descreve Exemplo de SIR: acidente de trânsito, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.12.5, p. 10, e não Objetivo de consciência situacional. C não responde corretamente ao comando porque descreve Insistência por atendimento presencial, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.3, p. 10, e não Objetivo de consciência situacional. D não responde corretamente ao comando porque descreve SIR: finalidade de atendimento, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.11, p. 9, e não Objetivo de consciência situacional."
+      },
+      {
+        "id": 1364,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1364 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Objetivo de vantagem operacional, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Disciplinar o funcionamento da Sala de Operações na PMESP, as atividades vinculadas e os parâmetros de seleção e capacitação do efetivo.",
+          "b) Nas ocorrências passíveis de SIR, o efetivo deve inserir os dados e encerrar a ocorrência no SIOPM, inclusive se o solicitante dispensar o atendimento.",
+          "c) É terminantemente vedado encerrar no SIOPM ocorrência de perturbação do sossego sem que tenha sido realizado atendimento remoto ao solicitante.",
+          "d) Aumentar a vantagem operacional na prevenção e repressão imediata de ilícitos penais e administrativos e na mitigação de incivilidades indutoras de crimes."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Objetivo de vantagem operacional. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 4.2, p. 2. Evidência normativa: “aumentar a vantagem operacional [...] prevenção e [...] repressão imediata”. A não responde corretamente ao comando porque descreve Finalidade da Nota de Instrução, previsto em Nota de Instrução nº PM3-002/02/26, item 2, p. 1, e não Objetivo de vantagem operacional. B não responde corretamente ao comando porque descreve Registro e encerramento no SIOPM, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.2, p. 10, e não Objetivo de vantagem operacional. C não responde corretamente ao comando porque descreve Vedação de encerramento sem atendimento remoto, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.15, p. 10, e não Objetivo de vantagem operacional."
+      },
+      {
+        "id": 1365,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1365 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Equipe SOp, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Aumentar a vantagem operacional na prevenção e repressão imediata de ilícitos penais e administrativos e na mitigação de incivilidades indutoras de crimes.",
+          "b) Unidade de Serviço composta por um ou mais policiais militares designados na SOp para monitoramento, coordenação, comunicação e apoio às ocorrências e aos meios empregados no território, integrada ao COPOM.",
+          "c) A atuação de apoio ocorre mediante solicitação da autoridade responsável pelo comando em campo ou quando necessária integração com órgãos externos, a critério do Cmt OPM.",
+          "d) Missão de prevenção primária voltada ao enfrentamento da violência doméstica e familiar, executada por policiais capacitados no Programa Lar Mais Seguro."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Equipe SOp. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.1, p. 2. Evidência normativa: “Unidade de Serviço (US) composta por um ou mais policiais militares [...] devidamente integrada ao COPOM”. A não responde corretamente ao comando porque descreve Objetivo de vantagem operacional, previsto em Nota de Instrução nº PM3-002/02/26, item 4.2, p. 2, e não Equipe SOp. C não responde corretamente ao comando porque descreve Atuação em incidente crítico, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.17, p. 10, e não Equipe SOp. D não responde corretamente ao comando porque descreve DEJEM Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.3, p. 3, e não Equipe SOp."
+      },
+      {
+        "id": 1366,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1366 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Espaço Lilás, assinale a alternativa CORRETA.",
+        "options": [
+          "a) A SOp é prevista como estrutura organizacional integrante do QPO no escalão Btl e instalada em espaço físico livre de ruídos.",
+          "b) Ambiente integrado à SOp voltado à prevenção e ao enfrentamento da violência doméstica e familiar, acolhimento, escuta ativa e orientação das mulheres.",
+          "c) Consiste no levantamento sistemático e proativo das ocorrências A98 (violência doméstica) e A99 (medida protetiva) na circunscrição da OPM.",
+          "d) O SIR pressupõe possibilidade de solução por orientação, mediação ou atendimento remoto ao solicitante."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Espaço Lilás. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 2-3. Evidência normativa: “ambiente integrado à Sala de Operações [...] voltado ao serviço de prevenção e enfrentamento à violência doméstica e familiar”. A não responde corretamente ao comando porque descreve Critério de instalação, previsto em Nota de Instrução nº PM3-002/02/26, item 6.4.1, p. 11, e não Espaço Lilás. C não responde corretamente ao comando porque descreve Busca ativa do Espaço Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 3, e não Espaço Lilás. D não responde corretamente ao comando porque descreve Solução remota de demanda, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.11.3, p. 9, e não Espaço Lilás."
+      },
+      {
+        "id": 1367,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1367 — Considerando a Nota de Instrução nº PM3-002/02/26, assinale a alternativa INCORRETA sobre Busca ativa do Espaço Lilás.",
+        "options": [
+          "a) Consiste no levantamento de ocorrências A98 (medida protetiva) e A99 (violência doméstica) na circunscrição da OPM.",
+          "b) A SOp pode apoiar captação, análise e difusão de informações no gerenciamento de incidente crítico, especialmente nas comunicações operacionais.",
+          "c) Disciplinar o funcionamento da Sala de Operações na PMESP, as atividades vinculadas e os parâmetros de seleção e capacitação do efetivo.",
+          "d) Aumentar a vantagem operacional na prevenção e repressão imediata de ilícitos penais e administrativos e na mitigação de incivilidades indutoras de crimes."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Busca ativa do Espaço Lilás. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 3. Evidência: “busca ativa de ocorrências das naturezas A98 [...] e A99”. B descreve outra previsão verdadeira — Apoio a incidente crítico (Nota de Instrução nº PM3-002/02/26, item 6.3.7.16, p. 10) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Finalidade da Nota de Instrução (Nota de Instrução nº PM3-002/02/26, item 2, p. 1) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Objetivo de vantagem operacional (Nota de Instrução nº PM3-002/02/26, item 4.2, p. 2) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1368,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1368 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a DEJEM Lilás, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Missão de prevenção primária voltada ao enfrentamento da violência doméstica e familiar, executada por policiais capacitados no Programa Lar Mais Seguro.",
+          "b) A SOp pode apoiar captação, análise e difusão de informações no gerenciamento de incidente crítico, especialmente nas comunicações operacionais.",
+          "c) Se o solicitante insistir no atendimento presencial por US, o COPOM deve ser imediatamente informado para as providências cabíveis.",
+          "d) Ampliar a consciência situacional e a tomada de decisão dos escalões de comando e supervisão e dos policiais que executam o policiamento ostensivo."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a DEJEM Lilás. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.3, p. 3. Evidência normativa: “missão de prevenção primária [...] executada por policiais militares capacitados no Programa ‘Lar mais Seguro’”. B não responde corretamente ao comando porque descreve Apoio a incidente crítico, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.16, p. 10, e não DEJEM Lilás. C não responde corretamente ao comando porque descreve Insistência por atendimento presencial, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.3, p. 10, e não DEJEM Lilás. D não responde corretamente ao comando porque descreve Objetivo de consciência situacional, previsto em Nota de Instrução nº PM3-002/02/26, item 4.1, p. 2, e não DEJEM Lilás."
+      },
+      {
+        "id": 1369,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1369 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Objetivo de percepção de segurança, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Promover melhoria da percepção de segurança por assessoramento ao processo decisório e potencialização do emprego eficiente dos recursos operacionais.",
+          "b) Unidade de Serviço composta por um ou mais policiais militares designados na SOp para monitoramento, coordenação, comunicação e apoio às ocorrências e aos meios empregados no território, integrada ao COPOM.",
+          "c) Disciplinar o funcionamento da Sala de Operações na PMESP, as atividades vinculadas e os parâmetros de seleção e capacitação do efetivo.",
+          "d) Missão de prevenção primária voltada ao enfrentamento da violência doméstica e familiar, executada por policiais capacitados no Programa Lar Mais Seguro."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Objetivo de percepção de segurança. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 4.3, p. 2. Evidência normativa: “melhoria da percepção de segurança por meio do assessoramento ao processo decisório”. B não responde corretamente ao comando porque descreve Equipe SOp, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.1, p. 2, e não Objetivo de percepção de segurança. C não responde corretamente ao comando porque descreve Finalidade da Nota de Instrução, previsto em Nota de Instrução nº PM3-002/02/26, item 2, p. 1, e não Objetivo de percepção de segurança. D não responde corretamente ao comando porque descreve DEJEM Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.3, p. 3, e não Objetivo de percepção de segurança."
+      },
+      {
+        "id": 1370,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1370 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Critério de instalação, assinale a alternativa CORRETA.",
+        "options": [
+          "a) O Serviço de Informação Remota pode atender demandas que não exijam intervenção presencial imediata, respeitados os requisitos estabelecidos na Nota.",
+          "b) A SOp é prevista como estrutura organizacional integrante do QPO no escalão Btl e instalada em espaço físico livre de ruídos.",
+          "c) É passível de SIR o acidente de trânsito sem vítimas, sem partes embriagadas e sem ilícitos administrativos.",
+          "d) Consiste no levantamento sistemático e proativo das ocorrências A98 (violência doméstica) e A99 (medida protetiva) na circunscrição da OPM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Critério de instalação. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.4.1, p. 11. Evidência normativa: “prevista como estrutura organizacional integrante do QPO (escalão Btl) e instalada em espaço físico livre de ruídos”. A não responde corretamente ao comando porque descreve SIR: finalidade de atendimento, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.11, p. 9, e não Critério de instalação. C não responde corretamente ao comando porque descreve Exemplo de SIR: acidente de trânsito, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.12.5, p. 10, e não Critério de instalação. D não responde corretamente ao comando porque descreve Busca ativa do Espaço Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 3, e não Critério de instalação."
+      },
+      {
+        "id": 1371,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1371 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a SIR: finalidade de atendimento, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Nas ocorrências passíveis de SIR, o efetivo deve inserir os dados e encerrar a ocorrência no SIOPM, inclusive se o solicitante dispensar o atendimento.",
+          "b) É terminantemente vedado encerrar no SIOPM ocorrência de perturbação do sossego sem que tenha sido realizado atendimento remoto ao solicitante.",
+          "c) O SIR pressupõe possibilidade de solução por orientação, mediação ou atendimento remoto ao solicitante.",
+          "d) O Serviço de Informação Remota pode atender demandas que não exijam intervenção presencial imediata, respeitados os requisitos estabelecidos na Nota."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a SIR: finalidade de atendimento. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.11, p. 9. Evidência normativa: “que não exijam, de pronto, intervenção presencial”. A não responde corretamente ao comando porque descreve Registro e encerramento no SIOPM, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.2, p. 10, e não SIR: finalidade de atendimento. B não responde corretamente ao comando porque descreve Vedação de encerramento sem atendimento remoto, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.15, p. 10, e não SIR: finalidade de atendimento. C não responde corretamente ao comando porque descreve Solução remota de demanda, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.11.3, p. 9, e não SIR: finalidade de atendimento."
+      },
+      {
+        "id": 1372,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1372 — Considerando a Nota de Instrução nº PM3-002/02/26, assinale a alternativa INCORRETA sobre Requisito de segurança do SIR.",
+        "options": [
+          "a) Nas ocorrências passíveis de SIR, o efetivo deve inserir os dados e encerrar a ocorrência no SIOPM, inclusive se o solicitante dispensar o atendimento.",
+          "b) O SIR pode ser utilizado mesmo quando houver perigo à vida ou à integridade física, desde que a demanda possa ser orientada remotamente.",
+          "c) Se a ocorrência de perturbação do sossego estiver pendente de despacho no SIOPM por uma hora ou mais, deverá ser executado o SIR.",
+          "d) A SOp pode apoiar captação, análise e difusão de informações no gerenciamento de incidente crítico, especialmente nas comunicações operacionais."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B é INCORRETA: altera a regra documentada para Requisito de segurança do SIR. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.11.1, p. 9. Evidência: “inexistência de perigo à vida humana, à integridade física [...] nem risco de significativa degradação ao meio ambiente”. A descreve outra previsão verdadeira — Registro e encerramento no SIOPM (Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.2, p. 10) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Perturbação do sossego pendente (Nota de Instrução nº PM3-002/02/26, item 6.3.7.14, p. 10) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Apoio a incidente crítico (Nota de Instrução nº PM3-002/02/26, item 6.3.7.16, p. 10) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1373,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1373 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Solução remota de demanda, assinale a alternativa CORRETA.",
+        "options": [
+          "a) O SIR pressupõe possibilidade de solução por orientação, mediação ou atendimento remoto ao solicitante.",
+          "b) Ambiente integrado à SOp voltado à prevenção e ao enfrentamento da violência doméstica e familiar, acolhimento, escuta ativa e orientação das mulheres.",
+          "c) Promover melhoria da percepção de segurança por assessoramento ao processo decisório e potencialização do emprego eficiente dos recursos operacionais.",
+          "d) Ampliar a consciência situacional e a tomada de decisão dos escalões de comando e supervisão e dos policiais que executam o policiamento ostensivo."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Solução remota de demanda. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.11.3, p. 9. Evidência normativa: “possibilidade de solução da demanda por orientação, mediação ou atendimento remoto”. B não responde corretamente ao comando porque descreve Espaço Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 2-3, e não Solução remota de demanda. C não responde corretamente ao comando porque descreve Objetivo de percepção de segurança, previsto em Nota de Instrução nº PM3-002/02/26, item 4.3, p. 2, e não Solução remota de demanda. D não responde corretamente ao comando porque descreve Objetivo de consciência situacional, previsto em Nota de Instrução nº PM3-002/02/26, item 4.1, p. 2, e não Solução remota de demanda."
+      },
+      {
+        "id": 1374,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1374 — Considerando a Nota de Instrução nº PM3-002/02/26, assinale a alternativa INCORRETA sobre Exemplo de SIR: acidente de trânsito.",
+        "options": [
+          "a) É passível de SIR o acidente de trânsito com vítimas, partes embriagadas e ilícitos administrativos.",
+          "b) Aumentar a vantagem operacional na prevenção e repressão imediata de ilícitos penais e administrativos e na mitigação de incivilidades indutoras de crimes.",
+          "c) Ambiente integrado à SOp voltado à prevenção e ao enfrentamento da violência doméstica e familiar, acolhimento, escuta ativa e orientação das mulheres.",
+          "d) Disciplinar o funcionamento da Sala de Operações na PMESP, as atividades vinculadas e os parâmetros de seleção e capacitação do efetivo."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Exemplo de SIR: acidente de trânsito. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.12.5, p. 10. Evidência: “acidente de trânsito sem vítimas, sem partes embriagadas e sem ilícitos administrativos”. B descreve outra previsão verdadeira — Objetivo de vantagem operacional (Nota de Instrução nº PM3-002/02/26, item 4.2, p. 2) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Espaço Lilás (Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 2-3) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Finalidade da Nota de Instrução (Nota de Instrução nº PM3-002/02/26, item 2, p. 1) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1375,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1375 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Providência de orientação BO, assinale a alternativa CORRETA.",
+        "options": [
+          "a) O SIR pressupõe possibilidade de solução por orientação, mediação ou atendimento remoto ao solicitante.",
+          "b) Nas ocorrências passíveis de SIR com caso pendente identificado, o efetivo deve orientar o solicitante a elaborar digitalmente o boletim na Delegacia Eletrônica da Polícia Civil.",
+          "c) Se o solicitante insistir no atendimento presencial por US, o COPOM deve ser imediatamente informado para as providências cabíveis.",
+          "d) A SOp pode apoiar captação, análise e difusão de informações no gerenciamento de incidente crítico, especialmente nas comunicações operacionais."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Providência de orientação BO. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.1, p. 10. Evidência normativa: “orientar o solicitante a elaborar de forma digital o boletim de ocorrência na Polícia Civil [...] ‘Delegacia Eletrônica’”. A não responde corretamente ao comando porque descreve Solução remota de demanda, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.11.3, p. 9, e não Providência de orientação BO. C não responde corretamente ao comando porque descreve Insistência por atendimento presencial, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.3, p. 10, e não Providência de orientação BO. D não responde corretamente ao comando porque descreve Apoio a incidente crítico, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.16, p. 10, e não Providência de orientação BO."
+      },
+      {
+        "id": 1376,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1376 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Registro e encerramento no SIOPM, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Nas ocorrências passíveis de SIR, o efetivo deve inserir os dados e encerrar a ocorrência no SIOPM, inclusive se o solicitante dispensar o atendimento.",
+          "b) Disciplinar o funcionamento da Sala de Operações na PMESP, as atividades vinculadas e os parâmetros de seleção e capacitação do efetivo.",
+          "c) É terminantemente vedado encerrar no SIOPM ocorrência de perturbação do sossego sem que tenha sido realizado atendimento remoto ao solicitante.",
+          "d) Unidade de Serviço composta por um ou mais policiais militares designados na SOp para monitoramento, coordenação, comunicação e apoio às ocorrências e aos meios empregados no território, integrada ao COPOM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Registro e encerramento no SIOPM. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.2, p. 10. Evidência normativa: “inserir os dados da ocorrência e proceder ao seu encerramento no SIOPM, inclusive [...] dispensa do atendimento”. B não responde corretamente ao comando porque descreve Finalidade da Nota de Instrução, previsto em Nota de Instrução nº PM3-002/02/26, item 2, p. 1, e não Registro e encerramento no SIOPM. C não responde corretamente ao comando porque descreve Vedação de encerramento sem atendimento remoto, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.15, p. 10, e não Registro e encerramento no SIOPM. D não responde corretamente ao comando porque descreve Equipe SOp, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.1, p. 2, e não Registro e encerramento no SIOPM."
+      },
+      {
+        "id": 1377,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1377 — Considerando a Nota de Instrução nº PM3-002/02/26, assinale a alternativa INCORRETA sobre Insistência por atendimento presencial.",
+        "options": [
+          "a) O SIR pressupõe possibilidade de solução por orientação, mediação ou atendimento remoto ao solicitante.",
+          "b) Se o solicitante insistir no atendimento presencial por US, o efetivo deve encerrar a ocorrência sem informar o COPOM.",
+          "c) O Serviço de Informação Remota pode atender demandas que não exijam intervenção presencial imediata, respeitados os requisitos estabelecidos na Nota.",
+          "d) Nas ocorrências passíveis de SIR com caso pendente identificado, o efetivo deve orientar o solicitante a elaborar digitalmente o boletim na Delegacia Eletrônica da Polícia Civil."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B é INCORRETA: altera a regra documentada para Insistência por atendimento presencial. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.3, p. 10. Evidência: “informar imediatamente o COPOM [...] caso o solicitante insista no atendimento presencial por US”. A descreve outra previsão verdadeira — Solução remota de demanda (Nota de Instrução nº PM3-002/02/26, item 6.3.7.11.3, p. 9) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — SIR: finalidade de atendimento (Nota de Instrução nº PM3-002/02/26, item 6.3.7.11, p. 9) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Providência de orientação BO (Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.1, p. 10) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1378,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1378 — Considerando a Nota de Instrução nº PM3-002/02/26, assinale a alternativa INCORRETA sobre Perturbação do sossego pendente.",
+        "options": [
+          "a) Se a ocorrência de perturbação do sossego estiver pendente de despacho no SIOPM por menos de 15 minutos, deverá ser executado o SIR obrigatoriamente.",
+          "b) Nas ocorrências passíveis de SIR, o efetivo deve inserir os dados e encerrar a ocorrência no SIOPM, inclusive se o solicitante dispensar o atendimento.",
+          "c) É passível de SIR o acidente de trânsito sem vítimas, sem partes embriagadas e sem ilícitos administrativos.",
+          "d) É terminantemente vedado encerrar no SIOPM ocorrência de perturbação do sossego sem que tenha sido realizado atendimento remoto ao solicitante."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Perturbação do sossego pendente. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.14, p. 10. Evidência: “tempo de pendência de despacho no SIOPM seja igual ou superior a 1 (uma) hora”. B descreve outra previsão verdadeira — Registro e encerramento no SIOPM (Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.2, p. 10) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Exemplo de SIR: acidente de trânsito (Nota de Instrução nº PM3-002/02/26, item 6.3.7.12.5, p. 10) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Vedação de encerramento sem atendimento remoto (Nota de Instrução nº PM3-002/02/26, item 6.3.7.15, p. 10) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1379,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1379 — Considerando a Nota de Instrução nº PM3-002/02/26, assinale a alternativa INCORRETA sobre Vedação de encerramento sem atendimento remoto.",
+        "options": [
+          "a) A SOp pode apoiar captação, análise e difusão de informações no gerenciamento de incidente crítico, especialmente nas comunicações operacionais.",
+          "b) É permitido encerrar no SIOPM ocorrência de perturbação do sossego sem atendimento remoto ao solicitante.",
+          "c) Se o solicitante insistir no atendimento presencial por US, o COPOM deve ser imediatamente informado para as providências cabíveis.",
+          "d) Disciplinar o funcionamento da Sala de Operações na PMESP, as atividades vinculadas e os parâmetros de seleção e capacitação do efetivo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B é INCORRETA: altera a regra documentada para Vedação de encerramento sem atendimento remoto. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.15, p. 10. Evidência: “é terminantemente vedado [...] encerrar [...] sem que tenha sido realizado o atendimento remoto”. A descreve outra previsão verdadeira — Apoio a incidente crítico (Nota de Instrução nº PM3-002/02/26, item 6.3.7.16, p. 10) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Insistência por atendimento presencial (Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.3, p. 10) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Finalidade da Nota de Instrução (Nota de Instrução nº PM3-002/02/26, item 2, p. 1) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1380,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1380 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Apoio a incidente crítico, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Ampliar a consciência situacional e a tomada de decisão dos escalões de comando e supervisão e dos policiais que executam o policiamento ostensivo.",
+          "b) A SOp pode apoiar captação, análise e difusão de informações no gerenciamento de incidente crítico, especialmente nas comunicações operacionais.",
+          "c) Ambiente integrado à SOp voltado à prevenção e ao enfrentamento da violência doméstica e familiar, acolhimento, escuta ativa e orientação das mulheres.",
+          "d) É terminantemente vedado encerrar no SIOPM ocorrência de perturbação do sossego sem que tenha sido realizado atendimento remoto ao solicitante."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Apoio a incidente crítico. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.16, p. 10. Evidência normativa: “estrutura de apoio nos processos de captação, análise e difusão de informações”. A não responde corretamente ao comando porque descreve Objetivo de consciência situacional, previsto em Nota de Instrução nº PM3-002/02/26, item 4.1, p. 2, e não Apoio a incidente crítico. C não responde corretamente ao comando porque descreve Espaço Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 2-3, e não Apoio a incidente crítico. D não responde corretamente ao comando porque descreve Vedação de encerramento sem atendimento remoto, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.15, p. 10, e não Apoio a incidente crítico."
+      },
+      {
+        "id": 1381,
+        "subject": "OPERACIONAL",
+        "tag": "Sala de Operações",
+        "topic": "Funcionamento da Sala de Operações",
+        "text": "QUESTÃO 1381 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Atuação em incidente crítico, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Missão de prevenção primária voltada ao enfrentamento da violência doméstica e familiar, executada por policiais capacitados no Programa Lar Mais Seguro.",
+          "b) Unidade de Serviço composta por um ou mais policiais militares designados na SOp para monitoramento, coordenação, comunicação e apoio às ocorrências e aos meios empregados no território, integrada ao COPOM.",
+          "c) A atuação de apoio ocorre mediante solicitação da autoridade responsável pelo comando em campo ou quando necessária integração com órgãos externos, a critério do Cmt OPM.",
+          "d) O Serviço de Informação Remota pode atender demandas que não exijam intervenção presencial imediata, respeitados os requisitos estabelecidos na Nota."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Atuação em incidente crítico. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.17, p. 10. Evidência normativa: “mediante solicitação da autoridade [...] ou quando houver necessidade de integração com órgãos externos [...] a critério do Cmt OPM”. A não responde corretamente ao comando porque descreve DEJEM Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.3, p. 3, e não Atuação em incidente crítico. B não responde corretamente ao comando porque descreve Equipe SOp, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.1, p. 2, e não Atuação em incidente crítico. D não responde corretamente ao comando porque descreve SIR: finalidade de atendimento, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.11, p. 9, e não Atuação em incidente crítico."
+      },
+      {
+        "id": 1382,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1382 — À luz de Diretriz nº PM3-001/03/24, quanto a Finalidade do TCI, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Concomitância dos horários de serviço entre pelotões operacionais de OPM territoriais, permitindo treinamento diário sem comprometer a continuidade do serviço.",
+          "b) Proporção relativa dos componentes do peso corporal, incluindo massa magra e massa gorda, analisando também peso, altura, IMC e percentuais de gordura.",
+          "c) Coleta sistemática de informações sobre histórico de saúde, hábitos de vida, condições físicas e mentais, por entrevista ou questionário estruturado.",
+          "d) Estabelecer parâmetros técnicos e doutrinários para o desenvolvimento do Treinamento Continuado Institucional na PMESP."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Finalidade do TCI. Fundamentação: Diretriz nº PM3-001/03/24, item 2, p. 1. Evidência normativa: “Estabelecer parâmetros técnicos e doutrinários para o desenvolvimento do TCI”. A não responde corretamente ao comando porque descreve Sobreposição de horário, previsto em Diretriz nº PM3-001/03/24, item 6.1.7, p. 3, e não Finalidade do TCI. B não responde corretamente ao comando porque descreve Composição corporal, previsto em Diretriz nº PM3-001/03/24, item 6.1.4, p. 2, e não Finalidade do TCI. C não responde corretamente ao comando porque descreve Anamnese, previsto em Diretriz nº PM3-001/03/24, item 6.1.1, p. 2, e não Finalidade do TCI."
+      },
+      {
+        "id": 1383,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1383 — À luz de Diretriz nº PM3-001/03/24, quanto a Objetivo de padronização, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Policial militar formado, preferencialmente no CBEF ou bacharel em Educação Física por outra instituição, que assessora o Regimental nos assuntos de educação física e TTOp na OPM.",
+          "b) Desenvolver modelo institucional padronizado de treinamento físico e técnico-operacional durante o turno de serviço, de modo contínuo e programado para todo o efetivo.",
+          "c) Conjunto estruturado de ações destinado a difundir normas vigentes e promover padronização e proficiência na execução da atividade policial-militar.",
+          "d) Policial militar formado preferencialmente no CBEF ou bacharel em Educação Física por outra instituição, que auxilia o responsável pelo treinamento executando localmente treinamento e avaliação física."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Objetivo de padronização. Fundamentação: Diretriz nº PM3-001/03/24, item 4.1, p. 2. Evidência normativa: “modelo institucional padronizado [...] durante o turno de serviço, de modo contínuo e programado”. A não responde corretamente ao comando porque descreve Responsável pelo Treinamento da OPM, previsto em Diretriz nº PM3-001/03/24, item 6.1.6, p. 3, e não Objetivo de padronização. C não responde corretamente ao comando porque descreve Treinamento Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.12, p. 3, e não Objetivo de padronização. D não responde corretamente ao comando porque descreve Treinador Físico da OPM, previsto em Diretriz nº PM3-001/03/24, item 6.1.9, p. 3, e não Objetivo de padronização."
+      },
+      {
+        "id": 1384,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1384 — À luz de Diretriz nº PM3-001/03/24, quanto a Objetivo de saúde, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Modalidade facultativa de ensino que conjuga variadas formas de treinamento e é executada exclusivamente durante o turno de serviço do policial militar.",
+          "b) Conjunto sistemático e planejado de ações e atividades físicas para desenvolver e aprimorar capacidades físicas, melhorar saúde e qualidade de vida.",
+          "c) Estabelecer parâmetros técnicos e doutrinários para o desenvolvimento do Treinamento Continuado Institucional na PMESP.",
+          "d) Promover a saúde física e mental do policial militar."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Objetivo de saúde. Fundamentação: Diretriz nº PM3-001/03/24, item 4.2, p. 2. Evidência normativa: “promover a saúde física e mental do policial militar”. A não responde corretamente ao comando porque descreve Treinamento Durante o Serviço, previsto em Diretriz nº PM3-001/03/24, item 6.1.14, p. 4, e não Objetivo de saúde. B não responde corretamente ao comando porque descreve Treinamento Físico, previsto em Diretriz nº PM3-001/03/24, item 6.1.11, p. 3, e não Objetivo de saúde. C não responde corretamente ao comando porque descreve Finalidade do TCI, previsto em Diretriz nº PM3-001/03/24, item 2, p. 1, e não Objetivo de saúde."
+      },
+      {
+        "id": 1385,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1385 — À luz de Diretriz nº PM3-001/03/24, quanto a Missão do TCI, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Promover a saúde física e mental do policial militar.",
+          "b) A aptidão física e a competência técnica contribuem para profissionalismo, preservação da imagem institucional e reconhecimento social da legitimidade policial.",
+          "c) Coordenar, executar, monitorar e controlar o TCI por meio dos Órgãos de Direção, Cmdo Pol e OPM subordinadas, para participação rotineira do efetivo nas instruções programadas.",
+          "d) Calendário anual elaborado pela EEF, composto por assuntos de interesse institucional para instruções técnico-operacionais aplicadas no TCI."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Missão do TCI. Fundamentação: Diretriz nº PM3-001/03/24, item 5, p. 2. Evidência normativa: “Coordenação, execução, monitoramento e controle do TCI”. A não responde corretamente ao comando porque descreve Objetivo de saúde, previsto em Diretriz nº PM3-001/03/24, item 4.2, p. 2, e não Missão do TCI. B não responde corretamente ao comando porque descreve Benefício do TCI para a instituição, previsto em Diretriz nº PM3-001/03/24, item 3.4, p. 2, e não Missão do TCI. D não responde corretamente ao comando porque descreve Calendário Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.3, p. 2, e não Missão do TCI."
+      },
+      {
+        "id": 1386,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1386 — À luz de Diretriz nº PM3-001/03/24, quanto a Anamnese, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Programação anual de treinamentos físicos e técnico-operacionais a serem desenvolvidos nas OPM.",
+          "b) Oficial PM formado no CBEF pela EEF, encarregado de assessorar e coordenar treinamentos e avaliações físicas nos Órgãos de Direção, Cmdo Pol e OPM subordinadas.",
+          "c) Testes destinados a analisar a saúde cardiovascular, com verificação da pressão arterial sistêmica e aferição da frequência cardíaca em repouso.",
+          "d) Coleta sistemática de informações sobre histórico de saúde, hábitos de vida, condições físicas e mentais, por entrevista ou questionário estruturado."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Anamnese. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.1, p. 2. Evidência normativa: “processo de coleta sistemática de informações sobre o histórico de saúde [...] condições físicas e mentais”. A não responde corretamente ao comando porque descreve Calendário do TCI, previsto em Diretriz nº PM3-001/03/24, item 6.1.2, p. 2, e não Anamnese. B não responde corretamente ao comando porque descreve Regimental de treinamento, previsto em Diretriz nº PM3-001/03/24, item 6.1.5, p. 3, e não Anamnese. C não responde corretamente ao comando porque descreve Testes hemodinâmicos, previsto em Diretriz nº PM3-001/03/24, item 6.1.8, p. 3, e não Anamnese."
+      },
+      {
+        "id": 1387,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1387 — À luz de Diretriz nº PM3-001/03/24, quanto a Calendário do TCI, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Programação anual de treinamentos físicos e técnico-operacionais a serem desenvolvidos nas OPM.",
+          "b) Concomitância dos horários de serviço entre pelotões operacionais de OPM territoriais, permitindo treinamento diário sem comprometer a continuidade do serviço.",
+          "c) Policial militar designado para desenvolver TTDPV, TPOP, TDPP e TTDPP, observados os requisitos de capacitação e especialização exigidos para cada modalidade.",
+          "d) Modalidade prática de ensino para consolidar técnicas de controle físico de pessoas e uso combinado de equipamentos de menor potencial ofensivo."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Calendário do TCI. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.2, p. 2. Evidência normativa: “programação anual de treinamentos físicos e técnico-operacionais”. B não responde corretamente ao comando porque descreve Sobreposição de horário, previsto em Diretriz nº PM3-001/03/24, item 6.1.7, p. 3, e não Calendário do TCI. C não responde corretamente ao comando porque descreve Treinador Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.10, p. 3, e não Calendário do TCI. D não responde corretamente ao comando porque descreve Treinamento de Defesa Pessoal Policial, previsto em Diretriz nº PM3-001/03/24, item 6.1.13, p. 4, e não Calendário do TCI."
+      },
+      {
+        "id": 1388,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1388 — Considerando a Diretriz nº PM3-001/03/24, assinale a alternativa INCORRETA sobre Calendário Técnico-Operacional.",
+        "options": [
+          "a) Desenvolver modelo institucional padronizado de treinamento físico e técnico-operacional durante o turno de serviço, de modo contínuo e programado para todo o efetivo.",
+          "b) Coordenar, executar, monitorar e controlar o TCI por meio dos Órgãos de Direção, Cmdo Pol e OPM subordinadas, para participação rotineira do efetivo nas instruções programadas.",
+          "c) Calendário anual elaborado pelo Cmdo Pol, composto exclusivamente por avaliações físicas e sem assuntos técnico-operacionais.",
+          "d) Programação anual de treinamentos físicos e técnico-operacionais a serem desenvolvidos nas OPM."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C é INCORRETA: altera a regra documentada para Calendário Técnico-Operacional. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.3, p. 2. Evidência: “calendário anual elaborado pela EEF”. A descreve outra previsão verdadeira — Objetivo de padronização (Diretriz nº PM3-001/03/24, item 4.1, p. 2) —, não a regra incorreta apontada no comando. B descreve outra previsão verdadeira — Missão do TCI (Diretriz nº PM3-001/03/24, item 5, p. 2) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Calendário do TCI (Diretriz nº PM3-001/03/24, item 6.1.2, p. 2) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1389,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1389 — À luz de Diretriz nº PM3-001/03/24, quanto a Composição corporal, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Proporção relativa dos componentes do peso corporal, incluindo massa magra e massa gorda, analisando também peso, altura, IMC e percentuais de gordura.",
+          "b) Estabelecer parâmetros técnicos e doutrinários para o desenvolvimento do Treinamento Continuado Institucional na PMESP.",
+          "c) Coordenar, executar, monitorar e controlar o TCI por meio dos Órgãos de Direção, Cmdo Pol e OPM subordinadas, para participação rotineira do efetivo nas instruções programadas.",
+          "d) Calendário anual elaborado pela EEF, composto por assuntos de interesse institucional para instruções técnico-operacionais aplicadas no TCI."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Composição corporal. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.4, p. 2. Evidência normativa: “proporção relativa de diferentes componentes que constituem o peso total do corpo”. B não responde corretamente ao comando porque descreve Finalidade do TCI, previsto em Diretriz nº PM3-001/03/24, item 2, p. 1, e não Composição corporal. C não responde corretamente ao comando porque descreve Missão do TCI, previsto em Diretriz nº PM3-001/03/24, item 5, p. 2, e não Composição corporal. D não responde corretamente ao comando porque descreve Calendário Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.3, p. 2, e não Composição corporal."
+      },
+      {
+        "id": 1390,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1390 — Considerando a Diretriz nº PM3-001/03/24, assinale a alternativa INCORRETA sobre Regimental de treinamento.",
+        "options": [
+          "a) Concomitância dos horários de serviço entre pelotões operacionais de OPM territoriais, permitindo treinamento diário sem comprometer a continuidade do serviço.",
+          "b) Proporção relativa dos componentes do peso corporal, incluindo massa magra e massa gorda, analisando também peso, altura, IMC e percentuais de gordura.",
+          "c) Praça PM formada em qualquer área, encarregada apenas de executar localmente os exercícios físicos nas OPM.",
+          "d) Policial militar formado preferencialmente no CBEF ou bacharel em Educação Física por outra instituição, que auxilia o responsável pelo treinamento executando localmente treinamento e avaliação física."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C é INCORRETA: altera a regra documentada para Regimental de treinamento. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.5, p. 3. Evidência: “Oficial PM formado no Curso de Bacharelado em Educação Física [...] encarregado de assessorar e coordenar”. A descreve outra previsão verdadeira — Sobreposição de horário (Diretriz nº PM3-001/03/24, item 6.1.7, p. 3) —, não a regra incorreta apontada no comando. B descreve outra previsão verdadeira — Composição corporal (Diretriz nº PM3-001/03/24, item 6.1.4, p. 2) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Treinador Físico da OPM (Diretriz nº PM3-001/03/24, item 6.1.9, p. 3) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1391,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1391 — À luz de Diretriz nº PM3-001/03/24, quanto a Responsável pelo Treinamento da OPM, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Conjunto sistemático e planejado de ações e atividades físicas para desenvolver e aprimorar capacidades físicas, melhorar saúde e qualidade de vida.",
+          "b) Testes destinados a analisar a saúde cardiovascular, com verificação da pressão arterial sistêmica e aferição da frequência cardíaca em repouso.",
+          "c) Policial militar formado, preferencialmente no CBEF ou bacharel em Educação Física por outra instituição, que assessora o Regimental nos assuntos de educação física e TTOp na OPM.",
+          "d) Modalidade facultativa de ensino que conjuga variadas formas de treinamento e é executada exclusivamente durante o turno de serviço do policial militar."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Responsável pelo Treinamento da OPM. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.6, p. 3. Evidência normativa: “encarregado de assessorar o Regimental [...] nos assuntos ligados à educação física e Treinamento Técnico-Operacional na OPM”. A não responde corretamente ao comando porque descreve Treinamento Físico, previsto em Diretriz nº PM3-001/03/24, item 6.1.11, p. 3, e não Responsável pelo Treinamento da OPM. B não responde corretamente ao comando porque descreve Testes hemodinâmicos, previsto em Diretriz nº PM3-001/03/24, item 6.1.8, p. 3, e não Responsável pelo Treinamento da OPM. D não responde corretamente ao comando porque descreve Treinamento Durante o Serviço, previsto em Diretriz nº PM3-001/03/24, item 6.1.14, p. 4, e não Responsável pelo Treinamento da OPM."
+      },
+      {
+        "id": 1392,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1392 — Considerando a Diretriz nº PM3-001/03/24, assinale a alternativa INCORRETA sobre Sobreposição de horário.",
+        "options": [
+          "a) O preparo técnico-profissional favorece decisões rápidas e assertivas em emergências e ambientes adversos, aumentando a segurança operacional de policiais e terceiros.",
+          "b) Período de alternância dos horários dos pelotões, que impede que qualquer pelotão treine durante o turno de serviço.",
+          "c) Conjunto sistemático e planejado de ações e atividades físicas para desenvolver e aprimorar capacidades físicas, melhorar saúde e qualidade de vida.",
+          "d) Modalidade prática de ensino para consolidar técnicas de controle físico de pessoas e uso combinado de equipamentos de menor potencial ofensivo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B é INCORRETA: altera a regra documentada para Sobreposição de horário. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.7, p. 3. Evidência: “período de concomitância do horário de serviço entre os pelotões operacionais”. A descreve outra previsão verdadeira — Causa da necessidade de TCI (Diretriz nº PM3-001/03/24, item 3.3, p. 1-2) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Treinamento Físico (Diretriz nº PM3-001/03/24, item 6.1.11, p. 3) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Treinamento de Defesa Pessoal Policial (Diretriz nº PM3-001/03/24, item 6.1.13, p. 4) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1393,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1393 — Considerando a Diretriz nº PM3-001/03/24, assinale a alternativa INCORRETA sobre Testes hemodinâmicos.",
+        "options": [
+          "a) Desenvolver modelo institucional padronizado de treinamento físico e técnico-operacional durante o turno de serviço, de modo contínuo e programado para todo o efetivo.",
+          "b) Modalidade facultativa de ensino que conjuga variadas formas de treinamento e é executada exclusivamente durante o turno de serviço do policial militar.",
+          "c) A aptidão física e a competência técnica contribuem para profissionalismo, preservação da imagem institucional e reconhecimento social da legitimidade policial.",
+          "d) Testes destinados a avaliar a força muscular, compostos por aferição da massa corporal e da circunferência abdominal."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D é INCORRETA: altera a regra documentada para Testes hemodinâmicos. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.8, p. 3. Evidência: “verificação da pressão arterial sistêmica [...] e [...] frequência cardíaca em repouso”. A descreve outra previsão verdadeira — Objetivo de padronização (Diretriz nº PM3-001/03/24, item 4.1, p. 2) —, não a regra incorreta apontada no comando. B descreve outra previsão verdadeira — Treinamento Durante o Serviço (Diretriz nº PM3-001/03/24, item 6.1.14, p. 4) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Benefício do TCI para a instituição (Diretriz nº PM3-001/03/24, item 3.4, p. 2) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1394,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1394 — À luz de Diretriz nº PM3-001/03/24, quanto a Treinador Físico da OPM, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Policial militar designado para desenvolver TTDPV, TPOP, TDPP e TTDPP, observados os requisitos de capacitação e especialização exigidos para cada modalidade.",
+          "b) Policial militar formado preferencialmente no CBEF ou bacharel em Educação Física por outra instituição, que auxilia o responsável pelo treinamento executando localmente treinamento e avaliação física.",
+          "c) Calendário anual elaborado pela EEF, composto por assuntos de interesse institucional para instruções técnico-operacionais aplicadas no TCI.",
+          "d) Policial militar formado, preferencialmente no CBEF ou bacharel em Educação Física por outra instituição, que assessora o Regimental nos assuntos de educação física e TTOp na OPM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Treinador Físico da OPM. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.9, p. 3. Evidência normativa: “encarregado de auxiliar o Responsável pelo Treinamento da OPM, executando, in loco, o treinamento e a avaliação física”. A não responde corretamente ao comando porque descreve Treinador Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.10, p. 3, e não Treinador Físico da OPM. C não responde corretamente ao comando porque descreve Calendário Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.3, p. 2, e não Treinador Físico da OPM. D não responde corretamente ao comando porque descreve Responsável pelo Treinamento da OPM, previsto em Diretriz nº PM3-001/03/24, item 6.1.6, p. 3, e não Treinador Físico da OPM."
+      },
+      {
+        "id": 1395,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1395 — À luz de Diretriz nº PM3-001/03/24, quanto a Treinador Técnico-Operacional, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Testes destinados a analisar a saúde cardiovascular, com verificação da pressão arterial sistêmica e aferição da frequência cardíaca em repouso.",
+          "b) O preparo técnico-profissional favorece decisões rápidas e assertivas em emergências e ambientes adversos, aumentando a segurança operacional de policiais e terceiros.",
+          "c) Conjunto estruturado de ações destinado a difundir normas vigentes e promover padronização e proficiência na execução da atividade policial-militar.",
+          "d) Policial militar designado para desenvolver TTDPV, TPOP, TDPP e TTDPP, observados os requisitos de capacitação e especialização exigidos para cada modalidade."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Treinador Técnico-Operacional. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.10, p. 3. Evidência normativa: “Treinamento de Tiro Defensivo [...] Procedimento Operacional Padrão [...] Defesa Pessoal Policial [...] Técnicas de Direção Policial Preventiva”. A não responde corretamente ao comando porque descreve Testes hemodinâmicos, previsto em Diretriz nº PM3-001/03/24, item 6.1.8, p. 3, e não Treinador Técnico-Operacional. B não responde corretamente ao comando porque descreve Causa da necessidade de TCI, previsto em Diretriz nº PM3-001/03/24, item 3.3, p. 1-2, e não Treinador Técnico-Operacional. C não responde corretamente ao comando porque descreve Treinamento Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.12, p. 3, e não Treinador Técnico-Operacional."
+      },
+      {
+        "id": 1396,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1396 — À luz de Diretriz nº PM3-001/03/24, quanto a Treinamento Físico, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Coordenar, executar, monitorar e controlar o TCI por meio dos Órgãos de Direção, Cmdo Pol e OPM subordinadas, para participação rotineira do efetivo nas instruções programadas.",
+          "b) Modalidade facultativa de ensino que conjuga variadas formas de treinamento e é executada exclusivamente durante o turno de serviço do policial militar.",
+          "c) Estabelecer parâmetros técnicos e doutrinários para o desenvolvimento do Treinamento Continuado Institucional na PMESP.",
+          "d) Conjunto sistemático e planejado de ações e atividades físicas para desenvolver e aprimorar capacidades físicas, melhorar saúde e qualidade de vida."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. A alternativa D corresponde a Treinamento Físico. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.11, p. 3. Evidência normativa: “conjunto sistemático e planejado de ações e atividades físicas”. A não responde corretamente ao comando porque descreve Missão do TCI, previsto em Diretriz nº PM3-001/03/24, item 5, p. 2, e não Treinamento Físico. B não responde corretamente ao comando porque descreve Treinamento Durante o Serviço, previsto em Diretriz nº PM3-001/03/24, item 6.1.14, p. 4, e não Treinamento Físico. C não responde corretamente ao comando porque descreve Finalidade do TCI, previsto em Diretriz nº PM3-001/03/24, item 2, p. 1, e não Treinamento Físico."
+      },
+      {
+        "id": 1397,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1397 — Considerando a Diretriz nº PM3-001/03/24, assinale a alternativa INCORRETA sobre Treinamento Técnico-Operacional.",
+        "options": [
+          "a) Policial militar formado, preferencialmente no CBEF ou bacharel em Educação Física por outra instituição, que assessora o Regimental nos assuntos de educação física e TTOp na OPM.",
+          "b) Testes destinados a analisar a saúde cardiovascular, com verificação da pressão arterial sistêmica e aferição da frequência cardíaca em repouso.",
+          "c) Conjunto de ações destinado exclusivamente ao aprimoramento da condição física, sem difusão de normas vigentes.",
+          "d) Policial militar designado para desenvolver TTDPV, TPOP, TDPP e TTDPP, observados os requisitos de capacitação e especialização exigidos para cada modalidade."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C é INCORRETA: altera a regra documentada para Treinamento Técnico-Operacional. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.12, p. 3. Evidência: “difusão das normas vigentes e [...] padronização e proficiência”. A descreve outra previsão verdadeira — Responsável pelo Treinamento da OPM (Diretriz nº PM3-001/03/24, item 6.1.6, p. 3) —, não a regra incorreta apontada no comando. B descreve outra previsão verdadeira — Testes hemodinâmicos (Diretriz nº PM3-001/03/24, item 6.1.8, p. 3) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Treinador Técnico-Operacional (Diretriz nº PM3-001/03/24, item 6.1.10, p. 3) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1398,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1398 — À luz de Diretriz nº PM3-001/03/24, quanto a Treinamento de Defesa Pessoal Policial, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Modalidade prática de ensino para consolidar técnicas de controle físico de pessoas e uso combinado de equipamentos de menor potencial ofensivo.",
+          "b) Concomitância dos horários de serviço entre pelotões operacionais de OPM territoriais, permitindo treinamento diário sem comprometer a continuidade do serviço.",
+          "c) Proporção relativa dos componentes do peso corporal, incluindo massa magra e massa gorda, analisando também peso, altura, IMC e percentuais de gordura.",
+          "d) Policial militar designado para desenvolver TTDPV, TPOP, TDPP e TTDPP, observados os requisitos de capacitação e especialização exigidos para cada modalidade."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. A alternativa A corresponde a Treinamento de Defesa Pessoal Policial. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.13, p. 4. Evidência normativa: “consolidar técnicas de controle físico de pessoas e do uso combinado dos equipamentos de menor potencial ofensivo”. B não responde corretamente ao comando porque descreve Sobreposição de horário, previsto em Diretriz nº PM3-001/03/24, item 6.1.7, p. 3, e não Treinamento de Defesa Pessoal Policial. C não responde corretamente ao comando porque descreve Composição corporal, previsto em Diretriz nº PM3-001/03/24, item 6.1.4, p. 2, e não Treinamento de Defesa Pessoal Policial. D não responde corretamente ao comando porque descreve Treinador Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.10, p. 3, e não Treinamento de Defesa Pessoal Policial."
+      },
+      {
+        "id": 1399,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1399 — Considerando a Diretriz nº PM3-001/03/24, assinale a alternativa INCORRETA sobre Treinamento Durante o Serviço.",
+        "options": [
+          "a) Conjunto estruturado de ações destinado a difundir normas vigentes e promover padronização e proficiência na execução da atividade policial-militar.",
+          "b) Modalidade obrigatória executada exclusivamente fora do turno de serviço do policial militar.",
+          "c) Estabelecer parâmetros técnicos e doutrinários para o desenvolvimento do Treinamento Continuado Institucional na PMESP.",
+          "d) O preparo técnico-profissional favorece decisões rápidas e assertivas em emergências e ambientes adversos, aumentando a segurança operacional de policiais e terceiros."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B é INCORRETA: altera a regra documentada para Treinamento Durante o Serviço. Fundamentação: Diretriz nº PM3-001/03/24, item 6.1.14, p. 4. Evidência: “modalidade de ensino [...] de caráter facultativo e executado, exclusivamente, durante o turno de serviço”. A descreve outra previsão verdadeira — Treinamento Técnico-Operacional (Diretriz nº PM3-001/03/24, item 6.1.12, p. 3) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Finalidade do TCI (Diretriz nº PM3-001/03/24, item 2, p. 1) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Causa da necessidade de TCI (Diretriz nº PM3-001/03/24, item 3.3, p. 1-2) —, não a regra incorreta apontada no comando."
+      },
+      {
+        "id": 1400,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1400 — À luz de Diretriz nº PM3-001/03/24, quanto a Causa da necessidade de TCI, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Coleta sistemática de informações sobre histórico de saúde, hábitos de vida, condições físicas e mentais, por entrevista ou questionário estruturado.",
+          "b) O preparo técnico-profissional favorece decisões rápidas e assertivas em emergências e ambientes adversos, aumentando a segurança operacional de policiais e terceiros.",
+          "c) Modalidade facultativa de ensino que conjuga variadas formas de treinamento e é executada exclusivamente durante o turno de serviço do policial militar.",
+          "d) Desenvolver modelo institucional padronizado de treinamento físico e técnico-operacional durante o turno de serviço, de modo contínuo e programado para todo o efetivo."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. A alternativa B corresponde a Causa da necessidade de TCI. Fundamentação: Diretriz nº PM3-001/03/24, item 3.3, p. 1-2. Evidência normativa: “tomada rápida de decisões, com maior assertividade [...] potencializando a segurança operacional”. A não responde corretamente ao comando porque descreve Anamnese, previsto em Diretriz nº PM3-001/03/24, item 6.1.1, p. 2, e não Causa da necessidade de TCI. C não responde corretamente ao comando porque descreve Treinamento Durante o Serviço, previsto em Diretriz nº PM3-001/03/24, item 6.1.14, p. 4, e não Causa da necessidade de TCI. D não responde corretamente ao comando porque descreve Objetivo de padronização, previsto em Diretriz nº PM3-001/03/24, item 4.1, p. 2, e não Causa da necessidade de TCI."
+      },
+      {
+        "id": 1401,
+        "subject": "ORGANIZACIONAL",
+        "tag": "TCI",
+        "topic": "Treinamento Continuado Institucional",
+        "text": "QUESTÃO 1401 — À luz de Diretriz nº PM3-001/03/24, quanto a Benefício do TCI para a instituição, assinale a alternativa CORRETA.",
+        "options": [
+          "a) Coordenar, executar, monitorar e controlar o TCI por meio dos Órgãos de Direção, Cmdo Pol e OPM subordinadas, para participação rotineira do efetivo nas instruções programadas.",
+          "b) Policial militar formado, preferencialmente no CBEF ou bacharel em Educação Física por outra instituição, que assessora o Regimental nos assuntos de educação física e TTOp na OPM.",
+          "c) A aptidão física e a competência técnica contribuem para profissionalismo, preservação da imagem institucional e reconhecimento social da legitimidade policial.",
+          "d) Calendário anual elaborado pela EEF, composto por assuntos de interesse institucional para instruções técnico-operacionais aplicadas no TCI."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. A alternativa C corresponde a Benefício do TCI para a instituição. Fundamentação: Diretriz nº PM3-001/03/24, item 3.4, p. 2. Evidência normativa: “preservação da imagem institucional e [...] reconhecimento social da legitimidade policial”. A não responde corretamente ao comando porque descreve Missão do TCI, previsto em Diretriz nº PM3-001/03/24, item 5, p. 2, e não Benefício do TCI para a instituição. B não responde corretamente ao comando porque descreve Responsável pelo Treinamento da OPM, previsto em Diretriz nº PM3-001/03/24, item 6.1.6, p. 3, e não Benefício do TCI para a instituição. D não responde corretamente ao comando porque descreve Calendário Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.3, p. 2, e não Benefício do TCI para a instituição."
+      }
 
 ];
 
