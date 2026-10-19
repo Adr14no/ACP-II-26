@@ -109,20 +109,20 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.4.2.2.3, conforme o material disponibilizado: o Oficial de Ligação é o elo do Comandante do Incidente com representantes de agências externas envolvidas na resposta. A e B correspondem a outras funções do Staff; D atribui à Seção de Planejamento uma função de ligação que o dispositivo indica para o Oficial de Ligação."
       },
       {
-        "id": 7,
-        "subject": "OPERACIONAL",
-        "tag": "Sistema de Comando e Controle",
-        "topic": "Sistema de Comando e Controle - conceitos",
-        "text": "QUESTÃO 7 — A Diretriz nº PM3-001/02/23 apresenta conceitos empregados no Sistema de Comando e Controle. Assinale a alternativa INCORRETA.",
-        "options": [
-          "a) Consciência Situacional é o conhecimento e a compreensão dos acontecimentos, circunstâncias e elementos do ambiente, delimitados no tempo e no espaço, permitindo construir imagem mental coerente e projetar riscos futuros.",
-          "b) Imagem Operacional Comum corresponde à compreensão compartilhada entre pessoas engajadas na mesma missão, produzindo uma imagem mental comum dos acontecimentos e do ambiente.",
-          "c) Diagnóstico Situacional envolve a identificação de fatores positivos e negativos que afetam a ordem pública no território da OPM, com base em indicadores.",
-          "d) Consciência Situacional é exclusivamente um relatório estatístico mensal produzido pela Seção de Inteligência, sem relação com a percepção do ambiente ou a projeção de riscos."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.1.6 (Consciência Situacional), 6.1.8 (Imagem Operacional Comum) e 6.1.7 (Diagnóstico Situacional), conforme Assuntos Operacionais.pdf. A alternativa D não corresponde à definição normativa; A, B e C reproduzem, de forma resumida, os conceitos apresentados no material."
-      },
+    "id": 7,
+    "subject": "OPERACIONAL",
+    "tag": "Sistema de Comando e Controle",
+    "topic": "Sistema de Comando e Controle - conceitos",
+    "text": "QUESTÃO 7 — Considerando as definições da Diretriz nº PM3-001/02/23, assinale a alternativa INCORRETA.",
+    "options": [
+      "a) Consciência Situacional é o conhecimento e a compreensão compartilhados entre os integrantes de uma mesma missão, formando uma imagem comum dos acontecimentos e do ambiente.",
+      "b) Imagem Operacional Comum é o conhecimento e a compreensão compartilhados entre pessoas engajadas em uma mesma missão, favorecendo uma compreensão comum e a sinergia das ações.",
+      "c) Diagnóstico Situacional é o processo de identificação dos fatores positivos e negativos que afetam a ordem pública no território da OPM, elaborado a partir de indicadores.",
+      "d) Consciência Situacional é o conhecimento e a compreensão que uma pessoa desenvolve sobre os acontecimentos e elementos do ambiente, delimitados no tempo e no espaço, permitindo projetar riscos futuros."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.1.6 a 6.1.8, Assuntos Operacionais.pdf, p. 200. O item 6.1.6 define Consciência Situacional como conhecimento e compreensão desenvolvidos por uma pessoa, incluindo a projeção de riscos futuros. A alternativa A transfere para Consciência Situacional a característica de compreensão compartilhada própria da Imagem Operacional Comum, definida no item 6.1.8. B corresponde à definição da Imagem Operacional Comum; C corresponde ao item 6.1.7; D corresponde ao item 6.1.6. Auditoria: distratores paralelos e conceitos extraídos da mesma norma; resposta única."
+  },
       {
         "id": 8,
         "subject": "OPERACIONAL",
@@ -169,20 +169,21 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-001/02/25, itens 6.4.6 e 6.11.3. Em ocorrências de MDIP, o policial deve entregar a COP ao CFP ou equivalente, que deverá requisitar e recolher os equipamentos e providenciar pessoalmente o upload, sempre que possível em ato contínuo ao recebimento, sem prejuízo do gerenciamento da ocorrência. A atribui a tarefa ao CGP; B ignora o procedimento específico; D confunde o recolhimento/upload com a administração e custódia que passam ao Chefe da Seção PJMD após o upload."
       },
       {
-        "id": 11,
-        "subject": "OPERACIONAL",
-        "tag": "COP",
-        "topic": "COP - ausência de gravação audiovisual",
-        "text": "QUESTÃO 11 — Durante a conferência dos registros de uma ocorrência, o comandante constata que um policial militar deixou de produzir a gravação audiovisual exigida para a situação, sem justificativa registrada. De acordo com a Diretriz nº PM3-001/02/25 (COP), qual providência procedimental deve ser adotada diante da ausência injustificada de registro?",
-        "options": [
-          "a) Instaurar imediatamente Processo Disciplinar de Rito Sumário, sem apuração preliminar.",
-          "b) Instaurar Investigação Preliminar (IP), conforme o procedimento previsto na diretriz.",
-          "c) Encaminhar obrigatoriamente o caso a Conselho de Disciplina, independentemente das circunstâncias.",
-          "d) Arquivar a ocorrência administrativa se houver registro escrito elaborado pela equipe."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/25 (COP), item 6.12, conforme o material de Assuntos Operacionais.pdf. O dispositivo indicado no material prevê Investigação Preliminar diante da ausência injustificada de registro. As demais alternativas antecipam procedimento diverso, impõem consequência não demonstrada ou afastam a apuração."
-      },
+    "id": 11,
+    "subject": "OPERACIONAL",
+    "tag": "COP",
+    "topic": "COP - ausência de registro audiovisual",
+    "text": "QUESTÃO 11 — Durante o atendimento a uma requisição de evidência digital, identifica-se que não há registro audiovisual da COP em razão de falha de acionamento ou descarga de bateria, sem prejuízo da apuração da própria ocorrência. Conforme a Diretriz nº PM3-001/02/25, qual providência deve ser adotada especificamente para apurar a ausência do registro?",
+    "options": [
+      "a) Instaurar procedimento disciplinar, que substitui a investigação específica da ausência do registro audiovisual.",
+      "b) Instaurar obrigatoriamente Investigação Preliminar (IP) para apuração específica do fato, independentemente da existência de outro procedimento que apure a ocorrência em si.",
+      "c) Instaurar Inquérito Policial Militar (IPM) em todos os casos, ainda que não haja indício de crime militar relacionado ao uso da COP.",
+      "d) Instaurar Processo Regular sempre que a ausência do registro decorrer de falha de acionamento ou descarga de bateria, independentemente da complexidade e das circunstâncias."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/25, item 6.8.9, Assuntos Operacionais.pdf, p. 40. Trecho normativo: identificada, no atendimento a requisição de evidência digital, a ausência de registro audiovisual da COP decorrente de falha de acionamento, descarga de bateria ou uso em desacordo com as normas aplicáveis, deverá ser obrigatoriamente instaurada Investigação Preliminar (IP) para apuração específica do fato, independentemente da existência de outro procedimento apurando a ocorrência em si. A alternativa A confunde a IP específica com o procedimento disciplinar previsto para indícios de infração disciplinar no item 6.9.7. C generaliza o IPM, que o item 6.9.9 vincula à existência de indícios de crime militar relacionado ao uso da COP. D transforma o Processo Regular em consequência automática, embora o item 6.9.8 o trate como procedimento que pode compreender a apuração conforme o caso."
+  },
+
       {
         "id": 12,
         "subject": "OPERACIONAL",
@@ -230,21 +231,21 @@ const BANCO_GERAL_QUESTOES = [
   "explanation": "Gabarito: A. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, item 6.4.1.1, conforme Assuntos Operacionais.pdf. Os Programas de Policiamento Primários são o Programa de Radiopatrulha e o Programa de Força Tática. O item 6.4.1.2 classifica Escolar, Comunitário, Trânsito e Rural como Programas Complementares; Atividades Operacionais Diversas constituem categoria própria, não um Programa Primário."
 },
 
-      {
-        "id": 15,
-        "subject": "OPERACIONAL",
-        "tag": "Força Tática",
-        "topic": "Programa de Força Tática - finalidade",
-        "text": "QUESTÃO 15 — Durante o planejamento operacional, o Comando de um Batalhão avalia o emprego da Força Tática para reforçar a resposta a ocorrências graves e reduzir os efeitos da criminalidade violenta em áreas de maior incidência. À luz da Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
-        "options": [
-          "a) O Programa de Força Tática destina-se prioritariamente à guarda fixa de instalações administrativas e à escolta rotineira de autoridades.",
-          "b) O Programa de Força Tática organiza o policiamento ostensivo e os apoios táticos executados pelas Forças Táticas, oferecendo suporte especializado a ocorrências e incidentes graves ou passíveis de repercussão.",
-          "c) O Programa de Força Tática tem como finalidade substituir permanentemente as Unidades de Serviço do Programa de Radiopatrulha no atendimento ordinário.",
-          "d) O Programa de Força Tática é destinado exclusivamente a operações de busca e salvamento sob comando do Corpo de Bombeiros."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-003/02/20 (Programa de Força Tática), itens 4.1, 4.2 e 6.1.1, conforme Assuntos Operacionais.pdf. A diretriz prevê controle de indicadores de criminalidade violenta, suporte operacional especializado e organização do policiamento e dos apoios táticos. As demais alternativas restringem ou alteram a finalidade descrita."
-      },
+        {
+    "id": 15,
+    "subject": "OPERACIONAL",
+    "tag": "Força Tática",
+    "topic": "Programa de Força Tática - finalidade",
+    "text": "QUESTÃO 15 — À luz da Diretriz nº PM3-003/02/20, quanto à finalidade do Programa de Força Tática, assinale a alternativa correta.",
+    "options": [
+      "a) Organizar o emprego das Forças Táticas para reforçar o policiamento ostensivo e prestar apoio tático especializado em ocorrências graves, incidentes críticos e situações que demandem efetivo, armamento ou equipamento diferenciados.",
+      "b) Organizar o emprego das Forças Táticas como modalidade ordinária de patrulhamento, substituindo a Radiopatrulha sempre que houver aumento da demanda de ocorrências.",
+      "c) Organizar o emprego das Forças Táticas prioritariamente para executar operações planejadas, excluindo o apoio imediato em ocorrências graves não previstas no planejamento.",
+      "d) Organizar o emprego das Forças Táticas como força de reserva destinada apenas a reforçar operações de outras OPM, sem atuação própria no policiamento ostensivo."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-003/02/20 (Programa de Força Tática), itens 2, 3.1 e 3.2, Assuntos Operacionais.pdf, seção “Programa de Força Tática”. A sintetiza a finalidade e a situação que justificam o emprego tático diferenciado. B transforma o reforço em substituição do policiamento ordinário; C exclui o emprego em ocorrências graves não planejadas; D restringe indevidamente a Força Tática a apoio de operações de outras OPM."
+  },
       {
         "id": 16,
         "subject": "OPERACIONAL",
@@ -639,20 +640,21 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.5.2.1, em Assuntos Operacionais.pdf, p. 452. A ordem prevista é escolas estaduais, municipais — especialmente onde não houver Guarda Municipal ou Patrimonial — e particulares. A, B e D alteram a ordem ou eliminam a condição expressamente indicada para as municipais. Trecho: “escolas estaduais, municipais (especialmente onde não houver Guarda Municipal ou Patrimonial) e particulares”."
       },
       {
-        "id": 42,
-        "subject": "OPERACIONAL",
-        "tag": "SCIPM",
-        "topic": "SCIPM - instalações padronizadas",
-        "text": "QUESTÃO 42 — Ao estruturar a resposta a um incidente crítico, o Comandante do Incidente estabelece instalações padronizadas conforme a complexidade do fenômeno, dotadas de segurança, denominação comum e sinalização. Assinale a alternativa que NÃO corresponde a um dos exemplos expressamente citados pelo SCIPM.",
-        "options": [
-          "a) Posto de Comando.",
-          "b) Base de Apoio.",
-          "c) Área de Concentração de Vítimas.",
-          "d) Sala de Gerenciamento de Incidentes."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.9, em Assuntos Operacionais.pdf, p. 146. Trecho: “São exemplos: Posto de Comando, Base de Apoio, Área de Espera, Área de Concentração de Vítimas, etc.” O CONSEG é uma estrutura de participação comunitária prevista em outra diretriz, não um dos exemplos de instalação padronizada citados pelo SCIPM."
-      },
+    "id": 42,
+    "subject": "OPERACIONAL",
+    "tag": "SCIPM",
+    "topic": "SCIPM - instalações padronizadas",
+    "text": "QUESTÃO 42 — A Diretriz nº PM3-003/02/23 distingue as instalações padronizadas do SCIPM de outras estruturas de coordenação e comando. Assinale a alternativa que apresenta exclusivamente exemplos de instalações padronizadas expressamente citados no item 6.2.4.9.",
+    "options": [
+      "a) Posto de Comando, Base de Apoio, Área de Espera e Área de Concentração de Vítimas.",
+      "b) Posto de Comando, Sala de Gerenciamento de Incidentes, Área de Espera e Área de Concentração de Vítimas.",
+      "c) Base de Apoio, Sala de Gerenciamento de Incidentes, Centro de Operações e Área de Espera.",
+      "d) Posto de Comando, Base de Apoio, Centro de Operações e Sala de Gerenciamento de Incidentes."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), item 6.2.4.9, Assuntos Operacionais.pdf, p. 147. Trecho normativo: as instalações padronizadas são estabelecidas pelo Cmt Inc conforme a complexidade, dotadas de segurança e fácil localização; são exemplos Posto de Comando, Base de Apoio, Área de Espera e Área de Concentração de Vítimas. B, C e D inserem a Sala de Gerenciamento de Incidentes ou o Centro de Operações no conjunto expressamente exemplificado pelo item 6.2.4.9. A Sala de Gerenciamento de Incidentes é definida separadamente na mesma diretriz como estrutura localizada fora do sítio da operação; o Centro de Operações aparece como referência de localização/contiguidade, não como exemplo nessa enumeração."
+  },
+
       {
         "id": 43,
         "subject": "OPERACIONAL",
@@ -744,35 +746,35 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: D. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, itens 6.8.1.1 a 6.8.1.3, em Assuntos Operacionais.pdf, p. 259. As três proposições descrevem corretamente os níveis e suas finalidades. Trechos: “RAC-I: desenvolvida no âmbito dos Btl”; “RAC-II: realizada sob a responsabilidade dos Cmt Pol Int e Cmt Pol Área”; e “RAC-III: ocorre no âmbito do Cmdo G, presidida pelo Coord Op PM”."
       },
       {
-        "id": 49,
-        "subject": "OPERACIONAL",
-        "tag": "Força Tática",
-        "topic": "Programa de Força Tática - composição da Equipe Tática",
-        "text": "QUESTÃO 49 — Uma OPM planeja constituir uma Equipe Tática em viatura de quatro rodas. O efetivo disponível, contudo, é inferior ao mínimo ordinário previsto ou não há Subtenente/Sargento para exercer a função de comando. Considerando a Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
-        "options": [
-          "a) A equipe pode atuar normalmente como Força Tática com dois policiais militares, desde que um Cabo ou Soldado assuma o comando.",
-          "b) A equipe deve ser composta ordinariamente por três ou quatro policiais, sendo a função de comando exercida por Oficial ou Subtenente/Sargento; se não for possível compor o mínimo de três ou faltar graduado habilitado para comandá-la, o efetivo disponível deve atuar em ações preventivas, não de apoio tático.",
-          "c) A composição ordinária exige cinco policiais militares, e o comando pode ser exercido por qualquer integrante, conforme antiguidade.",
-          "d) A composição é livre conforme a disponibilidade, pois a diretriz não diferencia ações preventivas de apoio tático quando há efetivo reduzido."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-003/02/20 (Programa de Força Tática), itens 6.3.5.1 e 6.3.5.4, em Assuntos Operacionais.pdf, p. 463. A equipe ordinária em viatura de quatro rodas é composta por três ou quatro policiais, com comando por Oficial ou Subtenente/Sargento; é vedado o comando por Cabo/Soldado. Se não houver mínimo de três ou graduado para comandar, o efetivo deve ser empregado em ações preventivas, e não em apoio tático. Trecho: “em circunstâncias ordinárias, a Equipe Tática será composta por 3 ou 4 policiais militares [...] sendo vedado o exercício da função de comando por Cb/Sd PM”; e, se faltar o mínimo de três ou graduado para comandá-la, “o efetivo disponível deverá ser empregado em ações [...] de caráter preventivo e não de apoio tático”."
-      },
-      {
-        "id": 50,
-        "subject": "OPERACIONAL",
-        "tag": "Sala de Operações",
-        "topic": "Sala de Operações - Serviço de Intervenção Remota",
-        "text": "QUESTÃO 50 — A Sala de Operações recebe uma demanda que não apresenta risco iminente à vida, à integridade física, ao patrimônio ou ao meio ambiente e que pode ser solucionada por orientação ou atendimento remoto. Conforme a Nota de Instrução nº PM3-002/02/26, em quais condições a demanda pode ser tratada pelo Serviço de Intervenção Remota (SIR)?",
-        "options": [
-          "a) Sempre que houver ocorrência criminal, independentemente da necessidade de providências presenciais ou de risco iminente.",
-          "b) Somente após uma Unidade de Serviço comparecer ao local e constatar pessoalmente a inexistência de risco.",
-          "c) Apenas quando o solicitante dispensar qualquer registro nos sistemas corporativos e aceitar o encerramento sem orientação.",
-          "d) Quando se tratar de ocorrência não emergencial previamente descrita em rol específico, sem risco iminente e passível de atendimento inicial, triagem ou solução por orientação, mediação ou comunicação remota."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. Fundamentação: Nota de Instrução nº PM3-002/02/26 (Sala de Operações), itens 6.1.8 e 6.3.7.11.1 a 6.3.7.11.3, em Assuntos Operacionais.pdf, p. 238 e 244-245. O SIR se destina a demandas não emergenciais previamente descritas, sem risco iminente, passíveis de solução remota. A e B ampliam ou restringem indevidamente os critérios; C cria condição não prevista. Trecho: “atendimento remoto de ocorrência classificada como não emergencial e previamente descrita em rol específico, caracterizada pela ausência de risco iminente [...] com o objetivo de aumentar a disponibilidade de US”."
-      },
+    "id": 49,
+    "subject": "OPERACIONAL",
+    "tag": "Força Tática",
+    "topic": "Programa de Força Tática - composição da Equipe Tática",
+    "text": "QUESTÃO 49 — Uma OPM planeja empregar Equipe Tática em viatura de quatro rodas, mas dispõe de efetivo reduzido e não consegue designar Subtenente ou Sargento para o comando. Conforme a Diretriz nº PM3-003/02/20, assinale a alternativa correta.",
+    "options": [
+      "a) A equipe pode atuar em apoio tático com três policiais, desde que o mais antigo, ainda que Cabo ou Soldado, assuma o comando.",
+      "b) A composição ordinária é de três ou quatro policiais, com comando por Oficial ou Subtenente/Sargento; se faltar o mínimo de três ou não houver graduado habilitado para comandar, o efetivo disponível deve ser empregado em ações preventivas, e não em apoio tático.",
+      "c) A equipe deve ser composta por quatro policiais em qualquer circunstância, mas, na falta de Subtenente/Sargento, o comando pode ser exercido por Oficial de outra equipe sem alteração do emprego tático.",
+      "d) A equipe pode atuar em apoio tático com dois policiais se houver Oficial acompanhando a ocorrência, pois a exigência de três integrantes se aplica apenas ao patrulhamento preventivo."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-003/02/20, itens 6.3.5.1 e 6.3.5.4, Assuntos Operacionais.pdf, p. 463. O texto prevê composição ordinária de três ou quatro policiais e veda o comando por Cabo/Soldado; se não houver mínimo de três ou graduado para comandar, o efetivo disponível deve atuar em ações preventivas, não de apoio tático. A mantém o efetivo, mas altera a habilitação para comando; C altera a composição e introduz substituição não indicada; D cria exceção para emprego com dois policiais e Oficial acompanhante que não consta do trecho citado."
+  },
+  {
+    "id": 50,
+    "subject": "OPERACIONAL",
+    "tag": "Sala de Operações",
+    "topic": "Sala de Operações - Serviço de Intervenção Remota",
+    "text": "QUESTÃO 50 — A Sala de Operações recebe uma demanda sem risco iminente aparente, mas ainda precisa definir se o atendimento pode ocorrer pelo Serviço de Intervenção Remota (SIR). Conforme a Nota de Instrução nº PM3-002/02/26, assinale a alternativa correta.",
+    "options": [
+      "a) A ausência de risco iminente é suficiente para encaminhar a demanda ao SIR, ainda que a ocorrência não esteja prevista no rol específico do serviço.",
+      "b) A demanda pode ser encaminhada ao SIR se for não emergencial e estiver no rol específico, mesmo quando a solução exigir necessariamente providência presencial.",
+      "c) O SIR pode atender demandas não emergenciais previstas no rol específico, desde que não haja risco iminente e a natureza da ocorrência permita atendimento inicial, triagem ou solução remota por orientação, mediação ou comunicação.",
+      "d) O SIR somente pode ser acionado depois de uma Unidade de Serviço comparecer ao local e confirmar a possibilidade de solução remota."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. Fundamentação: Nota de Instrução nº PM3-002/02/26, itens 6.1.8 e 6.3.7.11.1 a 6.3.7.11.3, Assuntos Operacionais.pdf, pp. 238 e 244–245. O serviço abrange ocorrência não emergencial previamente descrita em rol específico, sem risco iminente e passível de atendimento inicial, triagem ou solução remota. A omite a exigência do rol; B admite demanda que exige providência presencial; D cria comparecimento presencial prévio obrigatório, não indicado como condição geral."
+  }
 {
         "id": 51,
         "subject": "OPERACIONAL",
@@ -16349,21 +16351,22 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 1,
         "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 3. Trecho de suporte: ““Seção Correcional [...] Seção ou Setor [...] e Plantão de Polícia Judiciária Militar e Disciplina””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 3. C está incorreta porque contraria ou amplia indevidamente a regra do item 3. D está incorreta porque contraria ou amplia indevidamente a regra do item 3."
       },
-      {
-        "id": 1088,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Instauração e atualização de Investigação Preliminar",
-        "text": "QUESTÃO 1088 — Qual recurso foi indicado para orientar a atualização dos prefixos?",
-        "options": [
-          "a) Manual impresso encaminhado por cada Comando de Policiamento.",
-          "b) Vídeo orientador existente na plataforma.",
-          "c) Curso presencial obrigatório na Corregedoria PM.",
-          "d) Circular publicada exclusivamente no Diário Oficial."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 3. Trecho de suporte: ““conforme vídeo orientador existente na plataforma””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 3. C está incorreta porque contraria ou amplia indevidamente a regra do item 3. D está incorreta porque contraria ou amplia indevidamente a regra do item 3."
-      },
+     {
+    "id": 1188,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Material Bélico",
+    "topic": "Aquisição, transferência e controle de material bélico",
+    "text": "QUESTÃO 1188 — Na transferência de propriedade de arma de fogo de uso restrito entre militares, concluída a transferência, qual providência a Portaria do Cmt G PM4-1/1.2/24 atribui expressamente ao antigo proprietário?",
+    "options": [
+      "a) Providenciar a alteração do cadastro SIGMA e a emissão do novo CRAF em nome do adquirente.",
+      "b) Destruir o CRAF vinculado ao cadastro anterior.",
+      "c) Publicar a transferência em Boletim Interno Reservado e entregar o novo CRAF ao adquirente.",
+      "d) Encaminhar o processo eletrônico consolidado ao Chefe do CMB para saneamento documental."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. Fundamentação: Portaria do Cmt G PM4-1/1.2/24, com alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, item 3.7.4, Assuntos Organizacionais.pdf, p. 291. Trecho normativo: concluída a transferência de propriedade da arma de fogo, o CRAF vinculado ao cadastro anterior deverá ser destruído pelo antigo proprietário. A atribui ao CMB a alteração no SIGMA e a emissão do novo CRAF, conforme item 3.7.3. C atribui ao Cmt da Unidade a publicação e entrega do CRAF, conforme fluxo previsto nos itens da transferência. D descreve etapa de tramitação/saneamento do processo, não a providência expressamente atribuída ao antigo proprietário no item 3.7.4."
+  },
+
       {
         "id": 1089,
         "subject": "JURIDICO",
@@ -17999,21 +18002,22 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 0,
         "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.1.6–2.1.6.7; 3.5.1.6. Trecho de suporte: “nos seguintes postos de atendimento do EB ... versus pessoalmente e exclusivamente na sede do SFPC”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
       },
-      {
-        "id": 1198,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Material Bélico",
-        "topic": "Aquisição, transferência e controle de material bélico",
-        "text": "QUESTÃO 1198 — Qual condição residencial aparece nos processos de aquisição restrita e transferência restrita quando há declaração formal?",
-        "options": [
-          "A) Cofre ou local seguro com tranca, arma desmuniciada e sem acesso por menores de 25 anos ou pessoas civilmente incapazes que frequentem/residam no local.",
-          "B) Arma carregada em local acessível a adultos.",
-          "C) Guarda obrigatória na OPM.",
-          "D) Qualquer móvel, sem tranca."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.1.1; 3.5.2.3.1; 3.8.2.3.1. Trecho de suporte: “cofre ou lugar seguro com tranca ... arma desmuniciada ... não será acessível aos menores de 25 ... ou pessoas civilmente incapazes”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
-      },
+       {
+    "id": 1198,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Material Bélico",
+    "topic": "Aquisição, transferência e controle de material bélico",
+    "text": "QUESTÃO 1198 — Conforme a Portaria do Cmt G PM4-1/1.2/24, com as alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, itens 2.2.1.1, 3.5.2.3.1 e 3.8.2.3.1, qual condição deve constar da declaração formal relativa à guarda residencial da arma de fogo?",
+    "options": [
+      "a) Haver cofre ou lugar seguro com tranca na residência para guardar a arma desmuniciada, garantindo que não seja acessível a menores de 25 anos nem a pessoas civilmente incapazes que residam ou frequentem o local.",
+      "b) Haver cofre ou lugar seguro com tranca na residência para guardar a arma desmuniciada, garantindo que não seja acessível a menores de 21 anos nem a pessoas civilmente incapazes que residam ou frequentem o local.",
+      "c) Haver cofre ou lugar seguro com tranca na residência para guardar a arma desmuniciada, garantindo que não seja acessível a menores de 25 anos nem a pessoas civilmente incapazes que residam permanentemente no local.",
+      "d) Haver cofre ou lugar seguro com tranca na residência para guardar a arma municiada, garantindo que não seja acessível a menores de 25 anos nem a pessoas civilmente incapazes que residam ou frequentem o local."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. Fundamentação: Portaria do Cmt G PM4-1/1.2/24, com as alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, itens 2.2.1.1, 3.5.2.3.1 e 3.8.2.3.1, Assuntos Organizacionais.pdf, pp. 289–290. Trecho normativo: declaração formal de que há cofre ou lugar seguro com tranca na residência para armazenamento de arma de fogo desmuniciada, garantindo que não seja acessível a menores de 25 anos ou a pessoas civilmente incapazes que residam ou frequentem o local. B altera a idade expressamente indicada; C exclui pessoas que apenas frequentem o local, embora a regra as inclua; D altera a condição de armazenamento ao admitir arma municiada."
+  }
+
       {
         "id": 1199,
         "subject": "ORGANIZACIONAL",
@@ -19559,7 +19563,7 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 0,
             "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, arts. 9º, § 1º e 10; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “conclusão ... meramente opinativa; decisão ... submetida à aprovação ... Comandante de Unidade”. O art. 9º, § 1º, qualifica a conclusão como opinativa; o art. 10 exige aprovação da decisão da autoridade instauradora. B: B e C confundem opinião com decisão e eliminam aprovação. C: D cria vinculação e publicação imediata contrárias aos arts. 10 e 12. D: Não corresponde ao comando e não encontra suporte no dispositivo citado."
           },
-     {
+    {
         "id": 1302,
         "subject": "OPERACIONAL",
         "tag": "Crime Organizado",
@@ -24059,7 +24063,6 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 1,
         "explanation": "Gabarito: B. I é INCORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.1. II é CORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.2. III é INCORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.2. O comando exige identificar as proposições incorretas; a alternativa indicada é a única que reúne exatamente o conjunto exigido."
       }
-
 
 ];
 
