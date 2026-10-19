@@ -23956,8 +23956,1509 @@ const BANCO_GERAL_QUESTOES = [
         ],
         "answer": 1,
         "explanation": "Gabarito: B. I é INCORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.1. II é CORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.2. III é INCORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.2. O comando exige identificar as proposições incorretas; a alternativa indicada é a única que reúne exatamente o conjunto exigido."
-      }
-
+      },
+          
+          {
+            "id": 1602,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — Comandante-Geral",
+            "text": "QUESTÃO 1602 — Segundo a Lei nº 18.442/26, quanto à nomenclatura dos Quadros da Polícia Militar, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Os oficiais do antigo Quadro de Oficiais Policiais Militares (QOPM) passam a integrar o Quadro de Oficiais de Estado-Maior (QOEM).",
+              "b) Os oficiais do antigo Quadro Auxiliar de Oficiais da Polícia Militar (QAOPM) passam a integrar o Quadro de Oficiais Especialistas (QOE).",
+              "c) As praças do antigo Quadro de Praças Policiais Militares (QPPM) passam a integrar o Quadro de Praças (QP).",
+              "Os oficiais do antigo Quadro de Oficiais Policiais Militares (QOPM) passam a integrar o Quadro de Oficiais Especialistas (QOE)."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26, conforme o quadro de nomenclatura antiga e nova reproduzido em Assuntos Juridicos-administrativos.pdf, p. 10. A alternativa D troca o destino dos oficiais do antigo QOPM pelo QOE, nomenclatura atribuída aos oficiais do antigo QAOPM.”"
+          },
+          {
+            "id": 1603,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — efetivo total",
+            "text": "QUESTÃO 1603 — Segundo a Lei nº 18.442/26, assinale a alternativa INCORRETA sobre o efetivo fixado para a Polícia Militar.",
+            "options": [
+              "a) O efetivo é fixado em 93.802 cargos.",
+              "b) A composição indicada inclui 74 Coronéis PM e 1.734 Subtenentes PM.",
+              "c) Os 93.802 cargos abrangem Oficiais e Praças, mas a distribuição anual prevista no art. 3º alcança somente os postos de Oficiais.",
+              "d) A composição indicada inclui 11.870 Sargentos PM e 73.895 Cabos PM e Soldados PM."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 11; art. 3º da Lei nº 18.442/26. Regra normativa considerada: “Esse Efetivo é Fixado em 93.802 [...] cargos”, distribuídos entre Coronéis, Oficiais, Subtenentes, Sargentos, Cabos e Soldados. Justificativa: A alternativa indicada como incorreta afirma: “Os 93.802 cargos abrangem Oficiais e Praças, mas a distribuição anual prevista no art. 3º alcança somente os postos de Oficiais.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: “Esse Efetivo é Fixado em 93.802 [...] cargos”, distribuídos entre Coronéis, Oficiais, Subtenentes, Sargentos, Cabos e Soldados."
+          },
+          {
+            "id": 1604,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — distribuição anual do efetivo",
+            "text": "QUESTÃO 1604 — Segundo a Lei nº 18.442/26, Quanto à distribuição anual do efetivo por postos e graduações, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A distribuição é anual e realizada por decreto do Governador.",
+              "b) A distribuição anual é realizada por decreto do Governador, editado no primeiro semestre do próprio ano em que entra em vigor.",
+              "c) Devem ser observados os limites do art. 3º e a disponibilidade orçamentária e financeira.",
+              "d) O decreto de distribuição deve ser editado no primeiro semestre do ano antecedente à sua entrada em vigor."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 12; art. 3º da Lei nº 18.442/26. Regra normativa considerada: O material indica distribuição anual por decreto do Governador, observados os limites legais e a disponibilidade orçamentária e financeira; o decreto é editado no primeiro semestre do ano antecedente. Justificativa: A alternativa indicada como incorreta afirma: “A distribuição anual é realizada por decreto do Governador, editado no primeiro semestre do próprio ano em que entra em vigor.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material indica distribuição anual por decreto do Governador, observados os limites legais e a disponibilidade orçamentária e financeira; o decreto é editado no primeiro semestre do ano antecedente."
+          },
+          {
+            "id": 1605,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — alteração do quantitativo distribuído",
+            "text": "QUESTÃO 1605 — Segundo a Lei nº 18.442/26, Sobre a possibilidade de alteração do quantitativo distribuído do efetivo, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) O quantitativo distribuído pode ser alterado pelo Comandante-Geral PM.",
+              "b) A alteração está limitada a até 20%.",
+              "c) A alteração deve observar os limites do art. 3º.",
+              "d) O Comandante-Geral pode alterar em até 20% a distribuição anual, desde que respeite o limite global, sem necessidade de observar a distribuição por posto ou graduação."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 12; art. 3º da Lei nº 18.442/26. Regra normativa considerada: “Esse quantitativo distribuído poderá ser alterado em até 20% pelo Comandante-Geral PM, observados os limites do artigo 3º.” Justificativa: A alternativa indicada como incorreta afirma: “O Comandante-Geral pode alterar em até 20% a distribuição anual, desde que respeite o limite global, sem necessidade de observar a distribuição por posto ou graduação.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: “Esse quantitativo distribuído poderá ser alterado em até 20% pelo Comandante-Geral PM, observados os limites do artigo 3º.”"
+          },
+          {
+            "id": 1606,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — exclusões do limite de efetivo",
+            "text": "QUESTÃO 1606 — Segundo a Lei nº 18.442/26, Assinale a alternativa INCORRETA quanto às categorias que não são consideradas nos limites de efetivo previstos no art. 3º da Lei nº 18.442/26.",
+            "options": [
+              "a) O Aspirante a Oficial PM não é considerado nesses limites.",
+              "b) O Aluno-Oficial PM do CHOE é excluído dos limites de efetivo, mas o Aluno-Sargento PM permanece incluído.",
+              "c) O militar da reserva revertido ao serviço ativo não é considerado nesses limites.",
+              "d) O policial militar temporário não é considerado nesses limites, tendo regime jurídico disciplinado em legislação específica."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 12; art. 3º, parágrafo único, conforme o dispositivo citado. Regra normativa considerada: O material enumera Aspirante a Oficial, Cadete e alunos de cursos indicados, militar da reserva revertido ao serviço ativo e PM temporário entre as exclusões. Justificativa: A alternativa indicada como incorreta afirma: “O Aluno-Oficial PM do CHOE é excluído dos limites de efetivo, mas o Aluno-Sargento PM permanece incluído.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material enumera Aspirante a Oficial, Cadete e alunos de cursos indicados, militar da reserva revertido ao serviço ativo e PM temporário entre as exclusões."
+          },
+          {
+            "id": 1607,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — excedente decorrente das promoções",
+            "text": "QUESTÃO 1607 — Segundo a Lei nº 18.442/26, Quando o número de militares promovidos difere do montante distribuído em Quadro de Organização, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) O eventual excedente é considerado provisório.",
+              "b) O excedente permanece provisório até nova distribuição do efetivo por decreto do Governador do Estado.",
+              "c) A regra deve ser aplicada respeitando os limites fixados no art. 3º.",
+              "d) O excedente decorrente de promoções é provisório até nova distribuição do efetivo por ato do Comandante-Geral PM."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 12; art. 3º da Lei nº 18.442/26. Regra normativa considerada: O material estabelece que o eventual excedente será considerado provisório até nova distribuição do efetivo por decreto do Governador. Justificativa: A alternativa indicada como incorreta afirma: “O excedente decorrente de promoções é provisório até nova distribuição do efetivo por ato do Comandante-Geral PM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material estabelece que o eventual excedente será considerado provisório até nova distribuição do efetivo por decreto do Governador."
+          },
+          {
+            "id": 1608,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — composição dos Quadros",
+            "text": "QUESTÃO 1608 — Segundo a Lei nº 18.442/26, Considerando a estrutura dos Quadros do efetivo de carreira, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) O QOM destina-se a atividades técnico-musicais e culturais, sendo composto por militares oriundos do QP que concluíram o CHOE.",
+              "b) O QOEM destina-se às funções de comando, chefia e direção dos órgãos da Polícia Militar.",
+              "c) O QOE destina-se a atividades complementares às previstas para o QOEM.",
+              "d) O QOS destina-se a atividades de saúde e assessoramento técnico dos órgãos de saúde da Polícia Militar."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 14; estrutura dos Quadros da Lei nº 18.442/26. Regra normativa considerada: O quadro-resumo atribui ao QOEM comando, chefia e direção; ao QOE atividades complementares; ao QOS atividades de saúde e assessoramento técnico; e ao QOM atividades técnico-musicais. Justificativa: A alternativa indicada como incorreta afirma: “O QOM destina-se a atividades técnico-musicais e culturais, sendo composto por militares oriundos do QP que concluíram o CHOE.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O quadro-resumo atribui ao QOEM comando, chefia e direção; ao QOE atividades complementares; ao QOS atividades de saúde e assessoramento técnico; e ao QOM atividades técnico-musicais."
+          },
+          {
+            "id": 1609,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — condição de alunos em cursos",
+            "text": "QUESTÃO 1609 — Segundo a Lei nº 18.442/26, Durante os cursos de formação e habilitação indicados na Lei nº 18.442/26, assinale a alternativa INCORRETA sobre a condição dos alunos.",
+            "options": [
+              "a) Durante CFS, CHOE e CHO-Mus, o Aluno-Sargento conserva prerrogativas, direitos e deveres da graduação ocupada antes da matrícula.",
+              "b) A conservação indicada inclui direitos de natureza remuneratória.",
+              "c) Durante o CFO, o Cadete PM conserva as prerrogativas, os direitos e os deveres da graduação ocupada antes da matrícula, inclusive os remuneratórios.",
+              "d) O Aluno-Oficial conserva prerrogativas, direitos e deveres da graduação ocupada antes da matrícula, nos termos do material."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 13; quadro de condição especial e transitória dos alunos. Regra normativa considerada: O material menciona Aluno-Oficial e Aluno-Sargento nos cursos CFS, CHOE e CHO-Mus, inclusive quanto a direitos remuneratórios, e ressalta que não incluiu Cadete PM nessa condição transitória. Justificativa: A alternativa indicada como incorreta afirma: “Durante o CFO, o Cadete PM conserva as prerrogativas, os direitos e os deveres da graduação ocupada antes da matrícula, inclusive os remuneratórios.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material menciona Aluno-Oficial e Aluno-Sargento nos cursos CFS, CHOE e CHO-Mus, inclusive quanto a direitos remuneratórios, e ressalta que não incluiu Cadete PM nessa condição transitória."
+          },
+          {
+            "id": 1610,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — promoção de Cadete",
+            "text": "QUESTÃO 1610 — Segundo a Lei nº 18.442/26, Assinale a alternativa INCORRETA sobre a promoção do Cadete PM à graduação de Aspirante a Oficial PM.",
+            "options": [
+              "a) A promoção ocorre após o cumprimento, com aproveitamento, dos requisitos do CFO.",
+              "b) A regra está vinculada ao Quadro de Oficiais de Estado-Maior.",
+              "c) O Cadete PM é promovido a Aspirante após concluir o CFO, ainda que não tenha cumprido com aproveitamento todos os requisitos do curso.",
+              "d) O aproveitamento nos requisitos do CFO é condição expressamente indicada no material."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 16; quadro de acesso e promoção, art. 8º conforme o dispositivo citado. Regra normativa considerada: O material estabelece que o Cadete PM será promovido a Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO. Justificativa: A alternativa indicada como incorreta afirma: “O Cadete PM é promovido a Aspirante após concluir o CFO, ainda que não tenha cumprido com aproveitamento todos os requisitos do curso.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material estabelece que o Cadete PM será promovido a Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO."
+          },
+          {
+            "id": 1611,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — promoção de Aspirante a Oficial",
+            "text": "QUESTÃO 1611 — Segundo a Lei nº 18.442/26, Sobre a promoção do Aspirante a Oficial PM ao posto de 1º Tenente PM do QOEM, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A promoção do Aspirante a Oficial PM ao posto de 1º Tenente do QOEM ocorre por antiguidade, desde que tenha cumprido o estágio administrativo-operacional e um ano na graduação.",
+              "b) É necessário cumprir com aproveitamento o estágio administrativo-operacional.",
+              "c) É necessário possuir, no mínimo, um ano na graduação de Aspirante a Oficial PM.",
+              "d) A promoção indicada é por merecimento intelectual."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 16; quadro de promoção do QOEM. Regra normativa considerada: O material reúne aproveitamento no estágio administrativo-operacional, mínimo de um ano na graduação e promoção por merecimento intelectual. Justificativa: A alternativa indicada como incorreta afirma: “A promoção do Aspirante a Oficial PM ao posto de 1º Tenente do QOEM ocorre por antiguidade, desde que tenha cumprido o estágio administrativo-operacional e um ano na graduação.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material reúne aproveitamento no estágio administrativo-operacional, mínimo de um ano na graduação e promoção por merecimento intelectual."
+          },
+          {
+            "id": 1612,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — promoção por turma no QOEM",
+            "text": "QUESTÃO 1612 — Segundo a Lei nº 18.442/26, Considerando a regra de promoção por turma do QOEM, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Deve processar-se, no mínimo, a promoção de uma turma por ano-base.",
+              "b) A regra se aplica a cada posto do respectivo Quadro.",
+              "c) A promoção por turma depende de vaga e de disponibilidade orçamentária e financeira.",
+              "d) A regra exige, no mínimo, a promoção de uma turma por ano-base para o conjunto dos postos do QOEM, sem referência a cada posto do respectivo Quadro."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 17; art. 8º, I, da Lei nº 18.442/26 conforme o dispositivo citado. Regra normativa considerada: O material indica promoção mínima de uma turma por ano-base para cada posto, desde que haja vaga e disponibilidade orçamentária e financeira. Justificativa: A alternativa indicada como incorreta afirma: “A regra exige, no mínimo, a promoção de uma turma por ano-base para o conjunto dos postos do QOEM, sem referência a cada posto do respectivo Quadro.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material indica promoção mínima de uma turma por ano-base para cada posto, desde que haja vaga e disponibilidade orçamentária e financeira."
+          },
+          {
+            "id": 1613,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — acesso e promoção em geral",
+            "text": "QUESTÃO 1613 — Segundo a Lei nº 18.442/26, Sobre as condições gerais para ingresso, acesso e promoção aos Quadros, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) O acesso e a promoção são condicionados à existência de vagas.",
+              "b) O acesso e a promoção dependem de vaga e disponibilidade orçamentária e financeira, mas não se condicionam ao cumprimento das regras do Sistema de Ensino PMESP.",
+              "c) Também se exige disponibilidade orçamentária e financeira, na forma do Decreto de Distribuição.",
+              "d) Deve ser cumprida a legislação que disciplina promoções e o Sistema de Ensino PMESP."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 16; condições gerais de acesso e promoção. Regra normativa considerada: O material condiciona o acesso e a promoção, em qualquer hipótese, à existência de vagas, disponibilidade orçamentária e financeira e cumprimento da legislação aplicável. Justificativa: A alternativa indicada como incorreta afirma: “O acesso e a promoção dependem de vaga e disponibilidade orçamentária e financeira, mas não se condicionam ao cumprimento das regras do Sistema de Ensino PMESP.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material condiciona o acesso e a promoção, em qualquer hipótese, à existência de vagas, disponibilidade orçamentária e financeira e cumprimento da legislação aplicável."
+          },
+          {
+            "id": 1614,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — interstício de 2º Sargento",
+            "text": "QUESTÃO 1614 — Segundo a Lei nº 18.442/26, Considerando os interstícios mínimos indicados para promoção das Praças, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) O 2º Sgt PM deve contar, no mínimo, com três anos na graduação para promoção a 1º Sgt PM.",
+              "b) O 3º Sgt PM deve contar, no mínimo, com dois anos na graduação para promoção a 2º Sgt PM.",
+              "c) O Soldado PM deve contar, no mínimo, com cinco anos na graduação para promoção a Cabo PM.",
+              "d) O Soldado PM deve contar, no mínimo, três anos na graduação para promoção a Cabo PM."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 16; quadro de promoção das Praças, art. 8º conforme o dispositivo citado. Regra normativa considerada: O quadro resume os interstícios de três anos para 2º Sgt, dois anos para 3º Sgt e cinco anos para Soldado PM. Justificativa: A alternativa indicada como incorreta afirma: “O Soldado PM deve contar, no mínimo, três anos na graduação para promoção a Cabo PM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O quadro resume os interstícios de três anos para 2º Sgt, dois anos para 3º Sgt e cinco anos para Soldado PM."
+          },
+          {
+            "id": 1615,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — promoção de Subtenente ao QOE/QOM",
+            "text": "QUESTÃO 1615 — Segundo a Lei nº 18.442/26, Sobre a promoção de Subtenente PM ao posto de 2º Tenente PM do QOE ou do QOM, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) É exigido, no mínimo, quatro anos de interstício na graduação de Subtenente PM.",
+              "b) A promoção do Subtenente ao QOE/QOM exige quatro anos de interstício, mas o curso de habilitação pode ser substituído por experiência profissional equivalente.",
+              "c) É exigida a conclusão, com aproveitamento, do CHOE ou do CHO-MUS, conforme o Quadro.",
+              "d) A promoção depende de o Subtenente PM da ativa alcançar lugar correspondente às vagas existentes na relação de acesso."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, pp. 21–22; requisitos para promoção a 2º Tenente do QOE/QOM. Regra normativa considerada: O material exige Subtenente da ativa, quatro anos de interstício, conclusão com aproveitamento do CHOE ou CHO-MUS e posição correspondente às vagas na relação de acesso. Justificativa: A alternativa indicada como incorreta afirma: “A promoção do Subtenente ao QOE/QOM exige quatro anos de interstício, mas o curso de habilitação pode ser substituído por experiência profissional equivalente.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material exige Subtenente da ativa, quatro anos de interstício, conclusão com aproveitamento do CHOE ou CHO-MUS e posição correspondente às vagas na relação de acesso."
+          },
+          {
+            "id": 1616,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — relação de acesso QOE/QOM",
+            "text": "QUESTÃO 1616 — Segundo a Lei nº 18.442/26, Sobre a organização das relações de acesso para promoção de Subtenentes a 2º Tenentes do QOE/QOM, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A relação de acesso é organizada duas vezes por ano.",
+              "b) Na segunda quinzena de março, organiza-se a relação para promoções de 21 de abril e 9 de julho.",
+              "c) As relações de acesso são organizadas duas vezes por ano: na primeira quinzena de março e na primeira quinzena de agosto.",
+              "d) Na segunda quinzena de agosto, organiza-se a relação para promoções de 7 de setembro e 15 de dezembro."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 21; quadro de organização das relações de acesso QOE/QOM. Regra normativa considerada: O material prevê organização duas vezes por ano: segunda quinzena de março e segunda quinzena de agosto, com as datas de promoção indicadas. Justificativa: A alternativa indicada como incorreta afirma: “As relações de acesso são organizadas duas vezes por ano: na primeira quinzena de março e na primeira quinzena de agosto.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material prevê organização duas vezes por ano: segunda quinzena de março e segunda quinzena de agosto, com as datas de promoção indicadas."
+          },
+          {
+            "id": 1617,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — descontos no interstício QOE/QOM",
+            "text": "QUESTÃO 1617 — Segundo a Lei nº 18.442/26, Para contagem da antiguidade e do interstício de Subtenente PM à promoção a 2º Tenente do QOE/QOM, assinale a alternativa INCORRETA sobre períodos descontados.",
+            "options": [
+              "a) Para o interstício, desconta-se todo o período de licença para tratamento de saúde em pessoa da família, ainda que não ultrapasse 12 meses.",
+              "b) Desconta-se o tempo de fruição de licença para tratar de interesse particular.",
+              "c) Desconta-se o tempo que ultrapassar 12 meses, consecutivos ou não, em licença para tratamento de saúde em pessoa da família.",
+              "d) Desconta-se o tempo durante o qual se tenha concretizado ausência ilegal ou deserção."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 22; quadro de requisitos de antiguidade e interstício QOE/QOM. Regra normativa considerada: O material enumera licença para interesse particular, excesso de 12 meses de licença para saúde em pessoa da família, ausência ilegal/deserção, pena privativa de liberdade com trânsito em julgado e suspensão judicial transitada em julgado. Justificativa: A alternativa indicada como incorreta afirma: “Para o interstício, desconta-se todo o período de licença para tratamento de saúde em pessoa da família, ainda que não ultrapasse 12 meses.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material enumera licença para interesse particular, excesso de 12 meses de licença para saúde em pessoa da família, ausência ilegal/deserção, pena privativa de liberdade com trânsito em julgado e suspensão judicial transitada em julgado."
+          },
+          {
+            "id": 1618,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — aferição de idoneidade moral",
+            "text": "QUESTÃO 1618 — Segundo a Lei nº 18.442/26, Sobre a aferição de idoneidade moral para promoção a 2º Tenente do QOE/QOM, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A idoneidade moral é aferida pela Comissão de Promoções de Praças com base apenas nos registros disciplinares, sem utilizar o conceito do respectivo Comandante.",
+              "b) A idoneidade moral é aferida pela Comissão de Promoções de Praças.",
+              "c) A Comissão utiliza como subsídios o conceito emitido pelo respectivo Comandante do candidato e os registros disciplinares.",
+              "d) A idoneidade moral integra os requisitos descritos para a promoção."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 22; requisitos à promoção a 2º Tenente do QOE/QOM. Regra normativa considerada: O material atribui a aferição à Comissão de Promoções de Praças, utilizando conceito do Comandante e registros disciplinares. Justificativa: A alternativa indicada como incorreta afirma: “A idoneidade moral é aferida pela Comissão de Promoções de Praças com base apenas nos registros disciplinares, sem utilizar o conceito do respectivo Comandante.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material atribui a aferição à Comissão de Promoções de Praças, utilizando conceito do Comandante e registros disciplinares."
+          },
+          {
+            "id": 1619,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — merecimento QOE/QOM",
+            "text": "QUESTÃO 1619 — Segundo a Lei nº 18.442/26, Sobre os quesitos mínimos considerados para aferição do merecimento na promoção a 2º Tenente do QOE/QOM, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A avaliação de desempenho integra os quesitos indicados.",
+              "b) Os cursos realizados na PMESP e em outras instituições oficiais integram os quesitos indicados.",
+              "c) O merecimento considera avaliação de desempenho, cursos e TAF, mas exclui elogios, punições disciplinares e condenações penais transitadas em julgado.",
+              "d) O resultado do TAF e a média final de aprovação no CHOE ou CHO-MUS integram os quesitos indicados."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 23; quadro de merecimento QOE/QOM. Regra normativa considerada: O material relaciona avaliação de desempenho, elogios, cursos, TAF, média final do curso, punições disciplinares e condenações penais transitadas em julgado. Justificativa: A alternativa indicada como incorreta afirma: “O merecimento considera avaliação de desempenho, cursos e TAF, mas exclui elogios, punições disciplinares e condenações penais transitadas em julgado.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material relaciona avaliação de desempenho, elogios, cursos, TAF, média final do curso, punições disciplinares e condenações penais transitadas em julgado."
+          },
+          {
+            "id": 1620,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — nomenclatura dos Quadros",
+            "text": "QUESTÃO 1620 — Segundo a Lei nº 18.442/26, Considerando as alterações de nomenclatura dos Quadros trazidas pela Lei nº 18.442/26, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Os Oficiais do antigo QOPM passam a integrar o QOEM.",
+              "b) Na nova nomenclatura, o antigo QOPM passa a integrar o QOEM, o QAOPM passa a integrar o QP e o QPPM passa a integrar o QOE.",
+              "c) Os Oficiais do antigo QAOPM passam a integrar o QOE.",
+              "d) As Praças do antigo QPPM passam a integrar o QP."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 10; quadro de nomenclatura antiga e nomenclatura da Lei nº 18.442/26. Regra normativa considerada: O quadro indica QOPM → QOEM; QAOPM → QOE; QPPM → QP. Justificativa: A alternativa indicada como incorreta afirma: “Na nova nomenclatura, o antigo QOPM passa a integrar o QOEM, o QAOPM passa a integrar o QP e o QPPM passa a integrar o QOE.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O quadro indica QOPM → QOEM; QAOPM → QOE; QPPM → QP."
+          },
+          {
+            "id": 1621,
+            "subject": "JURIDICO",
+            "tag": "Legislação Promoção",
+            "topic": "Lei nº 18.442/26 — cargos de provimento em comissão",
+            "text": "QUESTÃO 1621 — Segundo a Lei nº 18.442/26, Sobre os cargos indicados no material como de provimento em comissão, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) O cargo de Comandante-Geral é indicado entre os cargos de provimento em comissão.",
+              "b) O cargo de Subcomandante da Polícia Militar é indicado entre esses cargos.",
+              "c) O cargo de Secretário-Chefe da Casa Militar aparece no conjunto indicado.",
+              "d) Os cargos de Comandante-Geral, Subcomandante-Geral e Secretário-Chefe da Casa Militar são de provimento em comissão, exceto o de Subcomandante-Geral."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 18; quadro de cargos de comando. Regra normativa considerada: O material apresenta os cargos de Secretário-Chefe da Casa Militar, Comandante-Geral e Subcomandante da Polícia Militar como de provimento em comissão. Justificativa: A alternativa indicada como incorreta afirma: “Os cargos de Comandante-Geral, Subcomandante-Geral e Secretário-Chefe da Casa Militar são de provimento em comissão, exceto o de Subcomandante-Geral.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material apresenta os cargos de Secretário-Chefe da Casa Militar, Comandante-Geral e Subcomandante da Polícia Militar como de provimento em comissão."
+          },
+          {
+            "id": 1622,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — conceituação de Polícia Comunitária",
+            "text": "QUESTÃO 1622 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), assinale a alternativa INCORRETA sobre Polícia Comunitária.",
+            "options": [
+              "a) É princípio básico do Sistema de Policiamento PM.",
+              "b) A Polícia Comunitária é filosofia institucional aplicável aos níveis operacionais e táticos, cabendo sua internalização aos policiais formalmente designados ao programa.",
+              "c) Deve ser entendida como filosofia que abrange todos os níveis organizacionais da Polícia Militar.",
+              "d) Deve ser internalizada por todos os integrantes da Instituição."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 416; Diretriz nº PM3-005/02/20, item 6.1.1. Regra normativa considerada: “Princípio básico do Sistema de Policiamento PM [...] filosofia que abrange todos os níveis organizacionais [...] e deve ser internalizada por todos os seus integrantes.” Justificativa: A alternativa indicada como incorreta afirma: “A Polícia Comunitária é filosofia institucional aplicável aos níveis operacionais e táticos, cabendo sua internalização aos policiais formalmente designados ao programa.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: “Princípio básico do Sistema de Policiamento PM [...] filosofia que abrange todos os níveis organizacionais [...] e deve ser internalizada por todos os seus integrantes.”"
+          },
+          {
+            "id": 1623,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — policiamento ostensivo comunitário",
+            "text": "QUESTÃO 1623 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Sobre o conceito de Policiamento Ostensivo Comunitário, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) É direcionado a localidades específicas, estabelecidas conforme critérios estratégicos.",
+              "b) Busca níveis aceitáveis de segurança pública e qualidade de vida.",
+              "c) Utiliza respaldo, cooperação, parceria, participação e coleta de informações junto às comunidades.",
+              "d) O Policiamento Ostensivo Comunitário dirige-se a localidades específicas e busca cooperação e participação, mas a coleta de informações deve ocorrer apenas em reuniões formalmente agendadas."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 416; item 6.1.2. Regra normativa considerada: O item 6.1.2 descreve atuação direcionada a localidades específicas, com respaldo, cooperação, parceria, participação e coleta de informações para segurança e qualidade de vida. Justificativa: A alternativa indicada como incorreta afirma: “O Policiamento Ostensivo Comunitário dirige-se a localidades específicas e busca cooperação e participação, mas a coleta de informações deve ocorrer apenas em reuniões formalmente agendadas.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.1.2 descreve atuação direcionada a localidades específicas, com respaldo, cooperação, parceria, participação e coleta de informações para segurança e qualidade de vida."
+          },
+          {
+            "id": 1624,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — Patrulha Comunitária",
+            "text": "QUESTÃO 1624 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Assinale a alternativa INCORRETA sobre a Patrulha Comunitária (Ptr Com).",
+            "options": [
+              "a) A Ptr Com é uma US de policiais designados e treinados para o Programa, podendo ser empregada cumulativamente em outros programas quando houver falta de efetivo.",
+              "b) É uma Unidade de Serviço.",
+              "c) É composta por policiais militares designados e treinados para a atuação no Programa de Policiamento Comunitário.",
+              "d) A atuação descrita para a Ptr Com é exclusiva no Programa de Policiamento Comunitário."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 416; item 6.1.4. Regra normativa considerada: O item 6.1.4 define Ptr Com como US composta por policiais designados e treinados para atuação exclusiva no Programa. Justificativa: A alternativa indicada como incorreta afirma: “A Ptr Com é uma US de policiais designados e treinados para o Programa, podendo ser empregada cumulativamente em outros programas quando houver falta de efetivo.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.1.4 define Ptr Com como US composta por policiais designados e treinados para atuação exclusiva no Programa."
+          },
+          {
+            "id": 1625,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — BCS",
+            "text": "QUESTÃO 1625 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Quanto à Base Comunitária de Segurança (BCS), assinale a alternativa INCORRETA.",
+            "options": [
+              "a) É uma edificação policial-militar fixa.",
+              "b) É instalada segundo critérios de acessibilidade, visibilidade e existência de comunidade que necessite de atendimento policial-militar.",
+              "c) A BCS é edificação policial-militar fixa, mas sua instalação deve ocorrer exclusivamente em imóvel próprio, sem possibilidade de instalação em prédio ocupado por OPM.",
+              "d) Serve como ícone de referência da Polícia Militar nas atividades de Polícia Comunitária."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 416; item 6.1.5. Regra normativa considerada: O item 6.1.5 define BCS como edificação fixa; a definição de veículo trailer ou van corresponde à BCM, no item 6.1.7. Justificativa: A alternativa indicada como incorreta afirma: “A BCS é edificação policial-militar fixa, mas sua instalação deve ocorrer exclusivamente em imóvel próprio, sem possibilidade de instalação em prédio ocupado por OPM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.1.5 define BCS como edificação fixa; a definição de veículo trailer ou van corresponde à BCM, no item 6.1.7."
+          },
+          {
+            "id": 1626,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — BCSD",
+            "text": "QUESTÃO 1626 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Assinale a alternativa INCORRETA sobre a Base Comunitária de Segurança Distrital (BCSD).",
+            "options": [
+              "a) É variante da BCS aplicável aos Distritos Municipais.",
+              "b) É constituída por um policial militar que reside no local.",
+              "c) A BCSD é constituída por um policial militar residente no distrito, que presta atendimento ao público a partir de uma instalação policial-militar distinta de sua residência.",
+              "d) O policial presta atendimento ao público a partir de sua residência."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 416; item 6.1.6. Regra normativa considerada: O item 6.1.6 define BCSD como variante aplicável aos Distritos Municipais, constituída por um policial residente no local e que presta atendimento a partir da residência. Justificativa: A alternativa indicada como incorreta afirma: “A BCSD é constituída por um policial militar residente no distrito, que presta atendimento ao público a partir de uma instalação policial-militar distinta de sua residência.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.1.6 define BCSD como variante aplicável aos Distritos Municipais, constituída por um policial residente no local e que presta atendimento a partir da residência."
+          },
+          {
+            "id": 1627,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — visita comunitária",
+            "text": "QUESTÃO 1627 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Sobre a visita comunitária, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A visita comunitária consiste em contato periódico com a comunidade, mas pressupõe que os interlocutores sejam vítimas de delito previamente identificadas.",
+              "b) Consiste em contato periódico de policial militar com integrantes da comunidade.",
+              "c) O policial pode pertencer ou não ao Programa de Policiamento Comunitário.",
+              "d) A visita busca estreitar relações e criar vínculos de confiança mútua."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, pp. 416–417; item 6.1.8. Regra normativa considerada: O item 6.1.8 define visita comunitária como contato periódico com a comunidade para estreitar relações; o contato com vítima previamente identificada é visita solidária, no item 6.1.9. Justificativa: A alternativa indicada como incorreta afirma: “A visita comunitária consiste em contato periódico com a comunidade, mas pressupõe que os interlocutores sejam vítimas de delito previamente identificadas.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.1.8 define visita comunitária como contato periódico com a comunidade para estreitar relações; o contato com vítima previamente identificada é visita solidária, no item 6.1.9."
+          },
+          {
+            "id": 1628,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — visita solidária",
+            "text": "QUESTÃO 1628 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Assinale a alternativa INCORRETA sobre a visita solidária.",
+            "options": [
+              "a) É contato de policial militar com vítima de delito previamente identificada.",
+              "b) Busca demonstrar solidariedade e orientar sobre medidas de prevenção primária.",
+              "c) Pode coletar dados de interesse e evidenciar esforços institucionais para garantir a segurança das partes e preservar a ordem pública local.",
+              "d) A visita solidária é contato com vítima de delito previamente identificada, destinado à orientação preventiva e à coleta de dados, sem objetivo de demonstrar solidariedade pelo ocorrido."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 417; item 6.1.9. Regra normativa considerada: O item 6.1.9 prevê solidariedade, orientação preventiva, coleta de dados e demonstração dos esforços de segurança. Justificativa: A alternativa indicada como incorreta afirma: “A visita solidária é contato com vítima de delito previamente identificada, destinado à orientação preventiva e à coleta de dados, sem objetivo de demonstrar solidariedade pelo ocorrido.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.1.9 prevê solidariedade, orientação preventiva, coleta de dados e demonstração dos esforços de segurança."
+          },
+          {
+            "id": 1629,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — campanha comunitária",
+            "text": "QUESTÃO 1629 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Sobre a campanha comunitária, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) É evento desenvolvido pelo policiamento ostensivo comunitário.",
+              "b) A campanha comunitária é evento do policiamento ostensivo comunitário cuja coordenação é definida pelo Cmt OPM, sendo a reunião comunitária utilizada apenas para divulgação posterior.",
+              "c) Sua coordenação é definida em reunião comunitária.",
+              "d) Conta com supervisão dos comandantes de OPM."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 417; item 6.1.10. Regra normativa considerada: O item 6.1.10 define campanha comunitária como evento do policiamento ostensivo comunitário, com coordenação definida em reunião comunitária e supervisão dos Cmt OPM. Justificativa: A alternativa indicada como incorreta afirma: “A campanha comunitária é evento do policiamento ostensivo comunitário cuja coordenação é definida pelo Cmt OPM, sendo a reunião comunitária utilizada apenas para divulgação posterior.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.1.10 define campanha comunitária como evento do policiamento ostensivo comunitário, com coordenação definida em reunião comunitária e supervisão dos Cmt OPM."
+          },
+          {
+            "id": 1630,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — reunião comunitária",
+            "text": "QUESTÃO 1630 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Assinale a alternativa INCORRETA quanto à reunião comunitária.",
+            "options": [
+              "a) Pode reunir entidades públicas ou privadas, lideranças e demais interessados em segurança pública local.",
+              "b) Destina-se a discutir alternativas de solução de problemas que afetam determinada comunidade.",
+              "c) Visa definir ações para alterar o ambiente comunitário e melhorar a qualidade de vida.",
+              "d) A reunião comunitária reúne entidades públicas ou privadas e lideranças locais, mas sua coordenação deve ser definida previamente pelo Comando de Policiamento, sem deliberação dos participantes."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 417; item 6.1.11. Regra normativa considerada: O item 6.1.11 inclui entidades públicas e privadas, lideranças e interessados, com discussão de soluções e definição de ações comunitárias. Justificativa: A alternativa indicada como incorreta afirma: “A reunião comunitária reúne entidades públicas ou privadas e lideranças locais, mas sua coordenação deve ser definida previamente pelo Comando de Policiamento, sem deliberação dos participantes.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.1.11 inclui entidades públicas e privadas, lideranças e interessados, com discussão de soluções e definição de ações comunitárias."
+          },
+          {
+            "id": 1631,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — execução complementar",
+            "text": "QUESTÃO 1631 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Sobre a execução do policiamento ostensivo comunitário por outras Unidades de Serviço, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Pode ocorrer por demais Programas de Policiamento e Atividades Operacionais Diversas.",
+              "b) O policiamento ostensivo comunitário pode ser executado por outras US, mas apenas quando estiverem formalmente vinculadas à estrutura de BCS, BCSD ou BCM.",
+              "c) Essa atuação complementar pode caracterizar visitas comunitárias ou solidárias, campanhas ou reuniões comunitárias.",
+              "d) Na execução complementar, busca-se respaldo, cooperação, parceria, participação e coleta de informações junto à comunidade."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, pp. 417–418 e 421; itens 6.2.1.2 e 6.4.1. Regra normativa considerada: A diretriz prevê execução exclusiva por BCS/BCSD/BCM e execução complementar por demais programas e atividades operacionais. Justificativa: A alternativa indicada como incorreta afirma: “O policiamento ostensivo comunitário pode ser executado por outras US, mas apenas quando estiverem formalmente vinculadas à estrutura de BCS, BCSD ou BCM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz prevê execução exclusiva por BCS/BCSD/BCM e execução complementar por demais programas e atividades operacionais."
+          },
+          {
+            "id": 1632,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — nível de resposta",
+            "text": "QUESTÃO 1632 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Assinale a alternativa INCORRETA sobre o nível de resposta das US empregadas no policiamento ostensivo comunitário.",
+            "options": [
+              "a) Qualquer US empregada no policiamento ostensivo comunitário atuará no Nível de Resposta 1.",
+              "b) A US atuará sob fiscalização do CFP.",
+              "c) As US empregadas no policiamento ostensivo comunitário atuam no Nível de Resposta 1, sob fiscalização do CGP, auxiliado pelo CFP.",
+              "d) O CFP será auxiliado pelo CGP."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 418; item 6.2.2. Regra normativa considerada: O item 6.2.2 fixa Nível de Resposta 1, fiscalização do CFP e auxílio do CGP. Justificativa: A alternativa indicada como incorreta afirma: “As US empregadas no policiamento ostensivo comunitário atuam no Nível de Resposta 1, sob fiscalização do CGP, auxiliado pelo CFP.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.2.2 fixa Nível de Resposta 1, fiscalização do CFP e auxílio do CGP."
+          },
+          {
+            "id": 1633,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — coordenação do programa",
+            "text": "QUESTÃO 1633 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Sobre a coordenação do Programa de Policiamento Comunitário, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A coordenação do Programa incumbe ao Cmt Cia PM, auxiliado pelos policiais de menor graduação designados para cada estrutura.",
+              "b) A coordenação incumbe ao Cmt Cia PM.",
+              "c) O comandante é auxiliado pelos policiais militares de maior graduação designados para atuar em cada estrutura.",
+              "d) A diretriz atribui a coordenação do programa ao nível de Companhia PM."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 418; item 6.2.3. Regra normativa considerada: O item 6.2.3 atribui a coordenação ao Cmt Cia PM, auxiliado pelos policiais de maior graduação designados em cada estrutura. Justificativa: A alternativa indicada como incorreta afirma: “A coordenação do Programa incumbe ao Cmt Cia PM, auxiliado pelos policiais de menor graduação designados para cada estrutura.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.2.3 atribui a coordenação ao Cmt Cia PM, auxiliado pelos policiais de maior graduação designados em cada estrutura."
+          },
+          {
+            "id": 1634,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — instalação de BCS",
+            "text": "QUESTÃO 1634 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Assinale a alternativa INCORRETA sobre a competência para deliberar acerca da instalação e desativação de BCS.",
+            "options": [
+              "a) A instalação de BCS é deliberada pelo Subcomandante PM após manifestação do respectivo Cmdo Pol, cabendo ao Comando de Policiamento emitir a decisão final.",
+              "b) A competência está vinculada ao Subcomandante PM.",
+              "c) O Subcomandante PM analisa propostas encaminhadas pelos Comandos de Policiamento.",
+              "d) O apoio e envolvimento comunitário constituem condição prévia para a instalação."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 418; itens 6.3.1.1 e 6.3.1.2. Regra normativa considerada: A diretriz vincula a deliberação ao Subcmt PM e exige apoio e envolvimento comunitário como condição prévia. Justificativa: A alternativa indicada como incorreta afirma: “A instalação de BCS é deliberada pelo Subcomandante PM após manifestação do respectivo Cmdo Pol, cabendo ao Comando de Policiamento emitir a decisão final.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz vincula a deliberação ao Subcmt PM e exige apoio e envolvimento comunitário como condição prévia."
+          },
+          {
+            "id": 1635,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — instalação de BCSD",
+            "text": "QUESTÃO 1635 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Assinale a alternativa INCORRETA sobre os critérios de instalação de BCSD.",
+            "options": [
+              "a) A BCSD destina-se a distritos municipais cuja distância dificulte o acesso rápido e pronto de US para atendimento ao público.",
+              "b) É critério preferencial população superior a 2.000 habitantes.",
+              "c) A BCSD observa população preferencialmente superior a 2.000 habitantes e distância superior a 10 km, sendo a avaliação de segurança do imóvel atribuída ao Cmt Btl.",
+              "d) É critério distância superior a 10 quilômetros do município-sede."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 419; item 6.3.2.2 e subitens. Regra normativa considerada: O item 6.3.2.2 lista distância que dificulte o acesso, população preferencialmente superior a 2.000 habitantes, distância superior a 10 km, regularização e avaliação de segurança. Justificativa: A alternativa indicada como incorreta afirma: “A BCSD observa população preferencialmente superior a 2.000 habitantes e distância superior a 10 km, sendo a avaliação de segurança do imóvel atribuída ao Cmt Btl.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.3.2.2 lista distância que dificulte o acesso, população preferencialmente superior a 2.000 habitantes, distância superior a 10 km, regularização e avaliação de segurança."
+          },
+          {
+            "id": 1636,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — seleção de policial para BCSD",
+            "text": "QUESTÃO 1636 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Sobre a seleção do policial militar para atuar em BCSD, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Recomenda-se que possua entre 5 e 25 anos de serviço.",
+              "b) Para a BCSD, recomenda-se de 5 a 25 anos de serviço e comportamento mínimo bom, mas a manifestação escrita de voluntariedade pode ser substituída por indicação do comandante.",
+              "c) É vedado empregar policial com menos de dois anos de serviço em atividade própria de policiamento ostensivo.",
+              "d) Deve apresentar boa conduta e estar, no mínimo, no comportamento “bom”."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 419; item 6.3.2.4. Regra normativa considerada: A diretriz recomenda de 5 a 25 anos, veda menos de 2 anos em atividade de policiamento ostensivo, exige comportamento mínimo bom e voluntariedade escrita. Justificativa: A alternativa indicada como incorreta afirma: “Para a BCSD, recomenda-se de 5 a 25 anos de serviço e comportamento mínimo bom, mas a manifestação escrita de voluntariedade pode ser substituída por indicação do comandante.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz recomenda de 5 a 25 anos, veda menos de 2 anos em atividade de policiamento ostensivo, exige comportamento mínimo bom e voluntariedade escrita."
+          },
+          {
+            "id": 1637,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — afastamento da BCSD",
+            "text": "QUESTÃO 1637 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Assinale a alternativa INCORRETA sobre o afastamento do policial militar de BCSD.",
+            "options": [
+              "a) Para afastar-se do distrito por motivo particular durante o turno, deve solicitar autorização ao escalão superior.",
+              "b) Fora do turno, se precisar afastar-se do distrito, deve cientificar o escalão superior pelo meio mais rápido definido pelo Cmt Cia PM.",
+              "c) O patrulhamento preventivo nas áreas rurais do distrito não é considerado afastamento, mas deve ser comunicado ao COPOM/CAD.",
+              "d) Durante o turno, o afastamento por motivo particular exige autorização do escalão superior; fora do turno, exige autorização prévia, e não mera ciência."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, pp. 419–420; itens 6.3.2.8 a 6.3.2.10. Regra normativa considerada: A diretriz diferencia autorização durante o turno e ciência fora do turno, e exige comunicação ao COPOM/CAD para patrulhamento rural. Justificativa: A alternativa indicada como incorreta afirma: “Durante o turno, o afastamento por motivo particular exige autorização do escalão superior; fora do turno, exige autorização prévia, e não mera ciência.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz diferencia autorização durante o turno e ciência fora do turno, e exige comunicação ao COPOM/CAD para patrulhamento rural."
+          },
+          {
+            "id": 1638,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — BCM e composição da Ptr Com",
+            "text": "QUESTÃO 1638 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Sobre a composição da Patrulha Comunitária empregada com BCM, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A Ptr Com será composta, no mínimo, por três policiais militares.",
+              "b) A Ptr Com da BCM deve ter no mínimo três policiais, mas a função de motorista pode ser acumulada pelo auxiliar sem designação específica.",
+              "c) A composição mínima compreende encarregado, motorista e auxiliar.",
+              "d) A patrulha pode ser reforçada segundo a necessidade operacional e a disponibilidade de recursos humanos e materiais."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 420; item 6.3.3.1. Regra normativa considerada: O item 6.3.3.1 estabelece mínimo de três policiais: encarregado, motorista e auxiliar, admitindo reforço conforme necessidade e disponibilidade. Justificativa: A alternativa indicada como incorreta afirma: “A Ptr Com da BCM deve ter no mínimo três policiais, mas a função de motorista pode ser acumulada pelo auxiliar sem designação específica.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.3.3.1 estabelece mínimo de três policiais: encarregado, motorista e auxiliar, admitindo reforço conforme necessidade e disponibilidade."
+          },
+          {
+            "id": 1639,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — mobilidade da BCM",
+            "text": "QUESTÃO 1639 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Assinale a alternativa INCORRETA sobre as limitações de mobilidade e emprego da BCM.",
+            "options": [
+              "a) A mobilidade deve restringir-se aos deslocamentos entre a OPM e os Pontos de Estacionamento.",
+              "b) Há exceção para eventual prestação de socorro de emergência e/ou atendimento de ocorrência ou incidente grave.",
+              "c) É vedado utilizar a BCM em patrulhamento motorizado, operações de controle de multidões e operações de bloqueio.",
+              "d) A BCM pode ser utilizada em patrulhamento motorizado entre os Pontos de Estacionamento, desde que não seja empregada em operações de bloqueio."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 420; itens 6.3.3.4 a 6.3.3.6. Regra normativa considerada: A diretriz restringe a mobilidade entre OPM e PE, prevê exceção para socorro/emergência ou ocorrência/incidente grave e veda os usos listados. Justificativa: A alternativa indicada como incorreta afirma: “A BCM pode ser utilizada em patrulhamento motorizado entre os Pontos de Estacionamento, desde que não seja empregada em operações de bloqueio.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz restringe a mobilidade entre OPM e PE, prevê exceção para socorro/emergência ou ocorrência/incidente grave e veda os usos listados."
+          },
+          {
+            "id": 1640,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — visitas e reuniões comunitárias: controle",
+            "text": "QUESTÃO 1640 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Sobre visitas, campanhas e reuniões comunitárias, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) As visitas comunitárias e solidárias devem ser registradas no SICoordOp, mas campanhas e reuniões comunitárias são registradas apenas em relatório local.",
+              "b) As atividades devem ser coordenadas, supervisionadas e controladas pela respectiva OPM.",
+              "c) Devem produzir indicadores vinculados ao Programa de Policiamento Comunitário.",
+              "d) As medidas de controle devem abranger o correto registro de informações junto ao SICoordOp."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, pp. 421–423; itens 6.4.2 e 6.5.4.2. Regra normativa considerada: A diretriz exige coordenação, supervisão e controle pela OPM e medidas para registro correto no SICoordOp, inclusive nas atividades complementares. Justificativa: A alternativa indicada como incorreta afirma: “As visitas comunitárias e solidárias devem ser registradas no SICoordOp, mas campanhas e reuniões comunitárias são registradas apenas em relatório local.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz exige coordenação, supervisão e controle pela OPM e medidas para registro correto no SICoordOp, inclusive nas atividades complementares."
+          },
+          {
+            "id": 1641,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Diretriz PM3-005/02/20 — atribuições da Coord Op PM",
+            "text": "QUESTÃO 1641 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Assinale a alternativa INCORRETA quanto às atribuições da Coord Op PM no Programa de Policiamento Comunitário.",
+            "options": [
+              "a) Monitorar e supervisionar o desenvolvimento do programa por meio do Guia de Indicadores.",
+              "b) Definir sistemática semestral de coleta de dados sobre percepção de segurança e outros temas de polícia comunitária.",
+              "c) A Coord Op PM monitora indicadores e planejamento, além de centralizar o cadastro atualizado e o controle imobiliário das BCS e BCSD.",
+              "d) Promover ajustes para que o SICoordOp receba informações sobre visitas, campanhas e reuniões comunitárias."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 423; itens 6.6.1.1 a 6.6.1.5. Regra normativa considerada: A Coord Op PM monitora o programa, define coleta semestral de dados, promove ajustes do SICoordOp, compartilha indicadores e desenvolve planejamento estratégico. Justificativa: A alternativa indicada como incorreta afirma: “A Coord Op PM monitora indicadores e planejamento, além de centralizar o cadastro atualizado e o controle imobiliário das BCS e BCSD.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A Coord Op PM monitora o programa, define coleta semestral de dados, promove ajustes do SICoordOp, compartilha indicadores e desenvolve planejamento estratégico."
+          },
+          {
+            "id": 1642,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — níveis de planejamento",
+            "text": "QUESTÃO 1642 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Considerando os níveis de planejamento definidos na NORSOP, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) O nível estratégico, no âmbito do Comando-Geral, estabelece estratégias globais de longo prazo.",
+              "b) O planejamento estratégico-operacional dos Comandos de Policiamento versa sobre questões do policiamento das OPM subordinadas.",
+              "c) O nível estratégico estabelece metas globais de longo prazo, enquanto o nível operacional desenvolve Planos de Ação; este último, contudo, não fixa padrões de trabalho para os escalões.",
+              "d) O nível tático desdobra o planejamento estratégico em objetivos setoriais de médio prazo."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.3.1 a 6.3.3. Regra normativa considerada: A NORSOP distingue estratégia global de longo prazo, planejamento tático com objetivos setoriais e nível operacional que desenvolve Planos de Ação e padrões de trabalho. Justificativa: A alternativa indicada como incorreta afirma: “O nível estratégico estabelece metas globais de longo prazo, enquanto o nível operacional desenvolve Planos de Ação; este último, contudo, não fixa padrões de trabalho para os escalões.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A NORSOP distingue estratégia global de longo prazo, planejamento tático com objetivos setoriais e nível operacional que desenvolve Planos de Ação e padrões de trabalho."
+          },
+          {
+            "id": 1643,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — nível operacional",
+            "text": "QUESTÃO 1643 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Assinale a alternativa INCORRETA sobre o nível operacional de planejamento.",
+            "options": [
+              "a) O nível operacional desenvolve Planos de Ação e padrões de trabalho, mas suas estratégias globais de longo prazo são estabelecidas no âmbito do Comando-Geral.",
+              "b) Consiste no desenvolvimento dos Planos de Ação.",
+              "c) Detalha processos e fixa padrões de trabalho a serem observados pelos diferentes escalões.",
+              "d) Aplica-se durante ações, operações ou missões policial-militares."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.3.3. Regra normativa considerada: O nível operacional desenvolve Planos de Ação e detalha processos e padrões; estratégias globais de longo prazo pertencem ao nível estratégico. Justificativa: A alternativa indicada como incorreta afirma: “O nível operacional desenvolve Planos de Ação e padrões de trabalho, mas suas estratégias globais de longo prazo são estabelecidas no âmbito do Comando-Geral.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O nível operacional desenvolve Planos de Ação e detalha processos e padrões; estratégias globais de longo prazo pertencem ao nível estratégico."
+          },
+          {
+            "id": 1644,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — programas primários",
+            "text": "QUESTÃO 1644 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre a classificação dos Programas de Policiamento, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Radiopatrulha é Programa de Policiamento Primário.",
+              "b) Força Tática é Programa de Policiamento Primário.",
+              "c) Os programas primários têm prioridade de desenvolvimento em relação aos demais programas e atividades operacionais diversas.",
+              "d) Radiopatrulha e Força Tática são programas primários; Policiamento Escolar é complementar, enquanto Policiamento Comunitário é primário quando executado por BCS."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.4.1.1 e 6.4.1.2. Regra normativa considerada: A NORSOP classifica Radiopatrulha e Força Tática como primários; Escolar e Comunitário estão entre os complementares. Justificativa: A alternativa indicada como incorreta afirma: “Radiopatrulha e Força Tática são programas primários; Policiamento Escolar é complementar, enquanto Policiamento Comunitário é primário quando executado por BCS.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A NORSOP classifica Radiopatrulha e Força Tática como primários; Escolar e Comunitário estão entre os complementares."
+          },
+          {
+            "id": 1645,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — programas complementares",
+            "text": "QUESTÃO 1645 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Assinale a alternativa INCORRETA sobre os Programas de Policiamento Complementares.",
+            "options": [
+              "a) São desenvolvidos segundo critérios de necessidade e disponibilidade.",
+              "b) Os programas complementares são desenvolvidos conforme necessidade e disponibilidade, e recebem prioridade sobre os primários quando há efetivo específico previsto em Plano Diretor.",
+              "c) Podem ser executados de forma híbrida, com efetivo e meios específicos ou aproveitando estruturas de outros programas, conforme as diretrizes.",
+              "d) Entre os exemplos indicados estão Escolar, Comunitário, Trânsito e Rural."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.4.1.2. Regra normativa considerada: A NORSOP prevê programas complementares por necessidade e disponibilidade, inclusive de forma híbrida, e prioriza os primários. Justificativa: A alternativa indicada como incorreta afirma: “Os programas complementares são desenvolvidos conforme necessidade e disponibilidade, e recebem prioridade sobre os primários quando há efetivo específico previsto em Plano Diretor.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A NORSOP prevê programas complementares por necessidade e disponibilidade, inclusive de forma híbrida, e prioriza os primários."
+          },
+          {
+            "id": 1646,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — atividades operacionais diversas",
+            "text": "QUESTÃO 1646 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre as Atividades Operacionais Diversas, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Compreendem atividades não definidas como Programas de Policiamento.",
+              "b) Podem ser preventivas primárias ou secundárias, rotineiras ou esporádicas.",
+              "c) Podem atender necessidades específicas de OPM e conduzir projetos ou programas educacionais e comunitários.",
+              "d) As Atividades Operacionais Diversas abrangem atividades não definidas como programas, incluindo projetos e atividades extraordinárias, e também incluem Radiopatrulha e Força Tática quando executadas em caráter preventivo."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.4.1.3 a 6.4.1.3.3. Regra normativa considerada: A NORSOP define atividades diversas como as demais atividades não definidas como programas, citando escoltas, policiamentos específicos, projetos e jornadas extraordinárias. Justificativa: A alternativa indicada como incorreta afirma: “As Atividades Operacionais Diversas abrangem atividades não definidas como programas, incluindo projetos e atividades extraordinárias, e também incluem Radiopatrulha e Força Tática quando executadas em caráter preventivo.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A NORSOP define atividades diversas como as demais atividades não definidas como programas, citando escoltas, policiamentos específicos, projetos e jornadas extraordinárias."
+          },
+          {
+            "id": 1647,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — indicadores de desempenho",
+            "text": "QUESTÃO 1647 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Assinale a alternativa INCORRETA sobre a avaliação dos Programas de Policiamento.",
+            "options": [
+              "a) A eficiência, eficácia e efetividade são avaliadas mediante indicadores de desempenho.",
+              "b) A Coord Op PM define indicadores e prazos, mas as memórias de cálculo são estabelecidas individualmente por cada OPM e apenas comunicadas ao Comando-Geral.",
+              "c) A coleta, consolidação e análise de dados ocorrem por ocasião das Reuniões de Análise Crítica.",
+              "d) O Guia de Indicadores é ferramenta tecnológica para monitorar indicadores de desempenho."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.4.1.5 e 6.5.1–6.5.3. Regra normativa considerada: A Coord Op PM, por determinação do Comando-Geral, estabelece indicadores e memórias de cálculo; as OPM coletam e registram dados conforme prazos e orientações. Justificativa: A alternativa indicada como incorreta afirma: “A Coord Op PM define indicadores e prazos, mas as memórias de cálculo são estabelecidas individualmente por cada OPM e apenas comunicadas ao Comando-Geral.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A Coord Op PM, por determinação do Comando-Geral, estabelece indicadores e memórias de cálculo; as OPM coletam e registram dados conforme prazos e orientações."
+          },
+          {
+            "id": 1648,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — circunscrições territoriais",
+            "text": "QUESTÃO 1648 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre as circunscrições territoriais da NORSOP, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Região é espaço territorial atribuído à responsabilidade de um Comando de Policiamento.",
+              "b) Área é espaço territorial atribuído à responsabilidade de OPM de escalão Batalhão ou equivalente.",
+              "c) Subsetor é a menor fração territorial dentro de uma Subárea, podendo ou não integrar um Setor; sua responsabilidade exclusiva é atribuída ao Cmt Pel para gestão localizada.",
+              "d) Subárea é espaço territorial atribuído à responsabilidade de OPM de escalão Companhia ou equivalente."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.6.1.1 a 6.6.1.5. Regra normativa considerada: A definição de Setor, e não Subsetor, é fração definida pelo Cmt Btl e atribuída à responsabilidade exclusiva de Cmt Pel; Subsetor é a menor fração dentro de Subárea. Justificativa: A alternativa indicada como incorreta afirma: “Subsetor é a menor fração territorial dentro de uma Subárea, podendo ou não integrar um Setor; sua responsabilidade exclusiva é atribuída ao Cmt Pel para gestão localizada.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A definição de Setor, e não Subsetor, é fração definida pelo Cmt Btl e atribuída à responsabilidade exclusiva de Cmt Pel; Subsetor é a menor fração dentro de Subárea."
+          },
+          {
+            "id": 1649,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — Setor",
+            "text": "QUESTÃO 1649 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Assinale a alternativa INCORRETA sobre o Setor territorial.",
+            "options": [
+              "a) Setor é fração territorial definida pelo Cmt Btl e atribuída à responsabilidade exclusiva de Cmt Pel, sendo necessariamente a menor fração territorial dentro da Subárea.",
+              "b) É fração territorial definida pelo Cmt Btl.",
+              "c) Pode abranger parcela de uma Subárea ou partes de Subáreas limítrofes.",
+              "d) É atribuída à responsabilidade exclusiva de Cmt Pel para gestão operacional localizada."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.6.1.4–6.6.1.5. Regra normativa considerada: O item 6.6.1.4 define Setor; a menor fração territorial é Subsetor, descrita no item 6.6.1.5. Justificativa: A alternativa indicada como incorreta afirma: “Setor é fração territorial definida pelo Cmt Btl e atribuída à responsabilidade exclusiva de Cmt Pel, sendo necessariamente a menor fração territorial dentro da Subárea.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.6.1.4 define Setor; a menor fração territorial é Subsetor, descrita no item 6.6.1.5."
+          },
+          {
+            "id": 1650,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — Módulo 1",
+            "text": "QUESTÃO 1650 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre o Módulo 1 de configuração territorial, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) No Módulo 1, Setores e Subsetores são fixos e vinculados a uma Cia PM, mas sua quantidade é definida por padrão institucional uniforme, sem relação com a disponibilidade de meios.",
+              "b) É denominado Configuração Territorial Básica.",
+              "c) Prevê Setores e Subsetores fixos.",
+              "d) Essas estruturas são necessariamente vinculadas a uma Cia PM."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.6.2.1. Regra normativa considerada: A NORSOP vincula a quantidade e dimensão das estruturas à disponibilidade de recursos humanos e meios materiais para cobertura preventiva. Justificativa: A alternativa indicada como incorreta afirma: “No Módulo 1, Setores e Subsetores são fixos e vinculados a uma Cia PM, mas sua quantidade é definida por padrão institucional uniforme, sem relação com a disponibilidade de meios.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A NORSOP vincula a quantidade e dimensão das estruturas à disponibilidade de recursos humanos e meios materiais para cobertura preventiva."
+          },
+          {
+            "id": 1651,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — Módulo 2 e AISP",
+            "text": "QUESTÃO 1651 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Assinale a alternativa INCORRETA sobre o Módulo 2, Configuração Territorial com base em AISP.",
+            "options": [
+              "a) Além de Setores e Subsetores fixos, podem ser alocados recursos adicionais em AISP.",
+              "b) As AISP funcionam como complemento ao policiamento ostensivo.",
+              "c) No Módulo 2, as AISP complementam os Setores e Subsetores fixos e podem variar no tempo e no espaço, desde que permaneçam fora dos limites territoriais da Subárea.",
+              "d) As AISP desse módulo não se confundem com as AISP atribuídas a uma US em Cartão de Prioridade de Patrulhamento."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.6.2.2. Regra normativa considerada: O item 6.6.2.2 permite AISP predefinidas que podem variar no tempo e no espaço, nos limites de uma Subárea. Justificativa: A alternativa indicada como incorreta afirma: “No Módulo 2, as AISP complementam os Setores e Subsetores fixos e podem variar no tempo e no espaço, desde que permaneçam fora dos limites territoriais da Subárea.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.6.2.2 permite AISP predefinidas que podem variar no tempo e no espaço, nos limites de uma Subárea."
+          },
+          {
+            "id": 1652,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — Módulo 3",
+            "text": "QUESTÃO 1652 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre o Módulo 3, Configuração Territorial Amplificada, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A Subárea é a fração mínima para distribuição de US no território.",
+              "b) No Módulo 3, a Subárea é a fração mínima de distribuição de US, podendo ser subdividida em Setores fixos quando houver recursos humanos suficientes.",
+              "c) A Subárea não pode ser dividida em Setores ou Subsetores nesse módulo.",
+              "d) Nas OPM do Interior, a distribuição de US fica limitada ao território do município em que atuam."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.6.2.3.1. Regra normativa considerada: O Módulo 3 define Subárea como fração mínima e proíbe sua divisão em Setores ou Subsetores. Justificativa: A alternativa indicada como incorreta afirma: “No Módulo 3, a Subárea é a fração mínima de distribuição de US, podendo ser subdividida em Setores fixos quando houver recursos humanos suficientes.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O Módulo 3 define Subárea como fração mínima e proíbe sua divisão em Setores ou Subsetores."
+          },
+          {
+            "id": 1653,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — respostas vetoriais externas",
+            "text": "QUESTÃO 1653 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Assinale a alternativa INCORRETA sobre respostas vetoriais externas.",
+            "options": [
+              "a) Podem ocorrer quando uma OPM precisa atuar fora da circunscrição da Região em que está inserida.",
+              "b) O planejamento compete à autoridade policial-militar superior comum às OPM interessadas.",
+              "c) A autoridade superior comum pode delegar o planejamento a uma das OPM envolvidas.",
+              "d) As respostas vetoriais externas são planejadas pela autoridade superior comum e registradas na plataforma indicada pela Coord Op PM, mas somente quando as OPM envolvidas forem limítrofes."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.7.1.2.1 e 6.7.1.2.2. Regra normativa considerada: As ações, operações ou missões desencadeadas devem ser registradas na plataforma eletrônica indicada pela Coord Op PM. Justificativa: A alternativa indicada como incorreta afirma: “As respostas vetoriais externas são planejadas pela autoridade superior comum e registradas na plataforma indicada pela Coord Op PM, mas somente quando as OPM envolvidas forem limítrofes.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: As ações, operações ou missões desencadeadas devem ser registradas na plataforma eletrônica indicada pela Coord Op PM."
+          },
+          {
+            "id": 1654,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — PPI",
+            "text": "QUESTÃO 1654 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre o Plano de Policiamento Inteligente (PPI), assinale a alternativa INCORRETA.",
+            "options": [
+              "a) É metodologia para gerir ativos operacionais de acordo com problemas e peculiaridades territoriais.",
+              "b) O PPI gere ativos operacionais conforme problemas e peculiaridades territoriais, buscando reduzir a criminalidade; o aumento da percepção de segurança não integra sua finalidade.",
+              "c) Busca redução criminal e aumento da percepção de segurança em processo de melhoria contínua.",
+              "d) A análise crítica dos indicadores que subsidiam o PPI inclui reuniões de análise crítica em níveis I, II e III."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.8.1. Regra normativa considerada: O item 6.8.1 define o PPI como metodologia para gerir ativos operacionais, adequada aos problemas e peculiaridades territoriais. Justificativa: A alternativa indicada como incorreta afirma: “O PPI gere ativos operacionais conforme problemas e peculiaridades territoriais, buscando reduzir a criminalidade; o aumento da percepção de segurança não integra sua finalidade.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.8.1 define o PPI como metodologia para gerir ativos operacionais, adequada aos problemas e peculiaridades territoriais."
+          },
+          {
+            "id": 1655,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — RAC-I",
+            "text": "QUESTÃO 1655 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Assinale a alternativa INCORRETA sobre a Reunião de Análise Crítica — Nível I (RAC-I).",
+            "options": [
+              "a) É desenvolvida no âmbito dos Batalhões.",
+              "b) Avalia diagnósticos situacionais.",
+              "c) Busca alternativas de solução para controle de indicadores criminais, aumento da produtividade e redução do tempo-resposta.",
+              "d) A RAC-I é desenvolvida no âmbito dos Batalhões para avaliar diagnósticos situacionais, sob responsabilidade dos Cmt Pol Int e Cmt Pol Área."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.8.1.1 e 6.8.1.3. Regra normativa considerada: A RAC-I é desenvolvida no âmbito dos Btl; a RAC-III ocorre no âmbito do Cmdo G e é presidida pela Coord Op PM. Justificativa: A alternativa indicada como incorreta afirma: “A RAC-I é desenvolvida no âmbito dos Batalhões para avaliar diagnósticos situacionais, sob responsabilidade dos Cmt Pol Int e Cmt Pol Área.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A RAC-I é desenvolvida no âmbito dos Btl; a RAC-III ocorre no âmbito do Cmdo G e é presidida pela Coord Op PM."
+          },
+          {
+            "id": 1656,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — RAC-II",
+            "text": "QUESTÃO 1656 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre a RAC-II, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A RAC-II é de responsabilidade dos Cmt Pol Int e Cmt Pol Área, mas ocorre no âmbito do Comando-Geral e é presidida pela Coord Op PM.",
+              "b) É realizada sob responsabilidade dos Cmt Pol Int e Cmt Pol Área.",
+              "c) Analisa indicadores de desempenho e medidas de controle dos indicadores criminais.",
+              "d) Examina especialmente os indicadores de letalidade violenta, roubo-outros, furto de veículos e roubo de veículos."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.8.1.2 e 6.8.1.3. Regra normativa considerada: A RAC-II está sob responsabilidade dos Cmt Pol Int e Cmt Pol Área; o âmbito do Cmdo G e a presidência da Coord Op PM correspondem à RAC-III. Justificativa: A alternativa indicada como incorreta afirma: “A RAC-II é de responsabilidade dos Cmt Pol Int e Cmt Pol Área, mas ocorre no âmbito do Comando-Geral e é presidida pela Coord Op PM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A RAC-II está sob responsabilidade dos Cmt Pol Int e Cmt Pol Área; o âmbito do Cmdo G e a presidência da Coord Op PM correspondem à RAC-III."
+          },
+          {
+            "id": 1657,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — Diagnóstico Situacional",
+            "text": "QUESTÃO 1657 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Assinale a alternativa INCORRETA sobre o Diagnóstico Situacional.",
+            "options": [
+              "a) É processo de identificação de fatores positivos e negativos que afetam a ordem pública.",
+              "b) Considera o território circunscrito pela OPM.",
+              "c) O Diagnóstico Situacional identifica fatores positivos e negativos que afetam a ordem pública, com base em indicadores demográficos, geocriminais e operacionais, excluídos os socioeconômicos e gerenciais.",
+              "d) É elaborado a partir de indicadores demográficos, socioeconômicos, geocriminais, operacionais e gerenciais, além de outros do Guia de Indicadores."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.8.2. Regra normativa considerada: O item 6.8.2 enumera indicadores demográficos, socioeconômicos, geocriminais, operacionais e gerenciais. Justificativa: A alternativa indicada como incorreta afirma: “O Diagnóstico Situacional identifica fatores positivos e negativos que afetam a ordem pública, com base em indicadores demográficos, geocriminais e operacionais, excluídos os socioeconômicos e gerenciais.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.8.2 enumera indicadores demográficos, socioeconômicos, geocriminais, operacionais e gerenciais."
+          },
+          {
+            "id": 1658,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — ação policial-militar",
+            "text": "QUESTÃO 1658 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre a ação policial-militar, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Caracteriza atividade rotineira da US.",
+              "b) Pode ser executada isoladamente ou em conjunto.",
+              "c) A ação policial-militar é atividade rotineira da US, isolada ou em conjunto; caracteriza-se, porém, pelo emprego combinado de várias US em ações simultâneas e sucessivas com objetivo único.",
+              "d) É voltada à prevenção criminal e ao aumento da percepção de segurança, podendo abranger pontos de estacionamento, patrulhamento orientado e saturação."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.8.4.1–6.8.4.2. Regra normativa considerada: A descrição de emprego combinado de várias US, ações simultâneas/sucessivas e objetivo único delimitado corresponde à operação policial-militar, não à ação. Justificativa: A alternativa indicada como incorreta afirma: “A ação policial-militar é atividade rotineira da US, isolada ou em conjunto; caracteriza-se, porém, pelo emprego combinado de várias US em ações simultâneas e sucessivas com objetivo único.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A descrição de emprego combinado de várias US, ações simultâneas/sucessivas e objetivo único delimitado corresponde à operação policial-militar, não à ação."
+          },
+          {
+            "id": 1659,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — operação policial-militar",
+            "text": "QUESTÃO 1659 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Assinale a alternativa INCORRETA sobre a operação policial-militar.",
+            "options": [
+              "a) A operação policial-militar envolve várias US em ações simultâneas e sucessivas; pode, contudo, ser definida como aplicação pontual de meios para demanda imediata de baixa complexidade.",
+              "b) Emprega várias US pertencentes a uma ou mais OPM.",
+              "c) Desenvolve ações simultâneas e sucessivas em determinada localidade para objetivo comum único.",
+              "d) É delimitada no tempo e no espaço e planejada por Programação Antecipada ou Esboço Emergencial."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.8.4.2 e 6.8.4.3. Regra normativa considerada: A aplicação pontual e específica para demanda imediata é a definição de missão policial-militar, não de operação. Justificativa: A alternativa indicada como incorreta afirma: “A operação policial-militar envolve várias US em ações simultâneas e sucessivas; pode, contudo, ser definida como aplicação pontual de meios para demanda imediata de baixa complexidade.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A aplicação pontual e específica para demanda imediata é a definição de missão policial-militar, não de operação."
+          },
+          {
+            "id": 1660,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — missão policial-militar",
+            "text": "QUESTÃO 1660 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre a missão policial-militar, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Envolve aplicação pontual e específica de efetivos e meios.",
+              "b) É limitada no tempo e no espaço.",
+              "c) Destina-se a atender demanda imediata que afeta o serviço policial-militar.",
+              "d) A missão policial-militar atende demanda imediata e é limitada no tempo e no espaço, sendo planejada necessariamente por Programação Antecipada ou Esboço Emergencial."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.8.4.2–6.8.4.3. Regra normativa considerada: A missão pode ser cotidiana e de baixa complexidade; o emprego combinado de várias US com ações simultâneas e sucessivas define operação. Justificativa: A alternativa indicada como incorreta afirma: “A missão policial-militar atende demanda imediata e é limitada no tempo e no espaço, sendo planejada necessariamente por Programação Antecipada ou Esboço Emergencial.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A missão pode ser cotidiana e de baixa complexidade; o emprego combinado de várias US com ações simultâneas e sucessivas define operação."
+          },
+          {
+            "id": 1661,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — fiscalização operacional",
+            "text": "QUESTÃO 1661 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Assinale a alternativa INCORRETA sobre fiscalização do emprego operacional.",
+            "options": [
+              "a) É atribuição de oficiais e graduados em funções de comando e supervisão, bem como dos Cmt OPM.",
+              "b) A fiscalização do emprego operacional cabe a oficiais, graduados e Cmt OPM; o monitoramento rotineiro, porém, é executado exclusivamente por esses mesmos agentes, sem gestão da Coord Op Btl ou Div Op.",
+              "c) Deve permitir visualizar presencialmente ou remotamente o cumprimento dos Planos de Ação.",
+              "d) Pode exigir atuação imediata na realocação de esforços operacionais ou correção de procedimentos."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.8.5.1.1. Regra normativa considerada: A NORSOP atribui fiscalização a oficiais e graduados em comando e supervisão e aos Cmt OPM; a gestão direta do monitoramento cabe a Coord Op Btl e Div Op dos Cmdo Pol. Justificativa: A alternativa indicada como incorreta afirma: “A fiscalização do emprego operacional cabe a oficiais, graduados e Cmt OPM; o monitoramento rotineiro, porém, é executado exclusivamente por esses mesmos agentes, sem gestão da Coord Op Btl ou Div Op.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A NORSOP atribui fiscalização a oficiais e graduados em comando e supervisão e aos Cmt OPM; a gestão direta do monitoramento cabe a Coord Op Btl e Div Op dos Cmdo Pol."
+          },
+          {
+            "id": 1662,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — armas e munições",
+            "text": "QUESTÃO 1662 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), assinale a alternativa INCORRETA sobre os dados a observar em ocorrências com armas e munições apreendidas.",
+            "options": [
+              "a) Podem ser registrados detalhes audiovisuais que revelem origem, logomarca, capacidade, calibre e sinais gravados na arma.",
+              "b) Devem ser observadas partes de armas desmontadas e acessórios de customização ou aperfeiçoamento.",
+              "c) Pode ser relevante identificar provável utilização de impressora 3D para fabricar acessórios, observando peças, desenhos, medidas e referências.",
+              "d) A diretriz orienta registrar detalhes sobre origem, calibre, acessórios e sinais de fabricação; o modo de transporte da arma é relevante apenas quando houver identificação prévia de organização criminosa."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.4.2.3.1 a 6.4.2.3.4. Regra normativa considerada: A diretriz inclui sinais de origem, partes desmontadas, acessórios, possível fabricação 3D e modo de transporte no BOe. Justificativa: A alternativa indicada como incorreta afirma: “A diretriz orienta registrar detalhes sobre origem, calibre, acessórios e sinais de fabricação; o modo de transporte da arma é relevante apenas quando houver identificação prévia de organização criminosa.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz inclui sinais de origem, partes desmontadas, acessórios, possível fabricação 3D e modo de transporte no BOe."
+          },
+          {
+            "id": 1663,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — tráfico de pessoas",
+            "text": "QUESTÃO 1663 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Sobre os indicadores de tráfico de pessoas, órgãos ou exploração do trabalho, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Devem ser observadas evidências de recrutamento, transporte, alojamento ou acolhimento mediante coação, sequestro, fraude ou abuso de autoridade.",
+              "b) A diretriz considera recrutamento, transporte e alojamento mediante coação ou fraude, mas a retenção de documentos só é relevante quando houver travessia de fronteira internacional.",
+              "c) É relevante verificar eventual aproveitamento da condição de vulnerabilidade da vítima.",
+              "d) A retirada da vítima do ambiente de origem sem dinheiro ou documentos pode reduzir sua capacidade de mobilidade."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.4.2.4.1–6.4.2.4.3. Regra normativa considerada: A diretriz destaca retenção de dinheiro ou documentos pelo aliciador/transportador como indicador que reduz a mobilidade da vítima. Justificativa: A alternativa indicada como incorreta afirma: “A diretriz considera recrutamento, transporte e alojamento mediante coação ou fraude, mas a retenção de documentos só é relevante quando houver travessia de fronteira internacional.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz destaca retenção de dinheiro ou documentos pelo aliciador/transportador como indicador que reduz a mobilidade da vítima."
+          },
+          {
+            "id": 1664,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — exploração de mão de obra",
+            "text": "QUESTÃO 1664 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre os contextos mencionados para exploração de mão de obra escrava ou situação análoga.",
+            "options": [
+              "a) A diretriz menciona atividades agropecuárias.",
+              "b) Também menciona construção civil.",
+              "c) A diretriz cita atividades agropecuárias e construção civil como ambientes de exploração de mão de obra, mas não inclui oficinas de costura.",
+              "d) Oficinas de costura são igualmente citadas."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.4.2.4.3.2. Regra normativa considerada: O item menciona, em geral, ambientes agropecuários, construção civil e oficinas de costura. Justificativa: A alternativa indicada como incorreta afirma: “A diretriz cita atividades agropecuárias e construção civil como ambientes de exploração de mão de obra, mas não inclui oficinas de costura.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item menciona, em geral, ambientes agropecuários, construção civil e oficinas de costura."
+          },
+          {
+            "id": 1665,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — crimes ambientais",
+            "text": "QUESTÃO 1665 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Sobre ações contra o meio ambiente como indicadores de atuação do crime organizado, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Nas ações contra o meio ambiente, devem ser observados origem dos materiais e correlação com outras cargas; os dados do vendedor são dispensáveis quando o comprador está identificado.",
+              "b) A diretriz menciona desmatamento ilegal.",
+              "c) Também inclui tráfico de animais silvestres, mineração, extração de madeira e pesca ilegais.",
+              "d) Devem ser observados documentos de origem falsificados."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.4.2.5.1–6.4.2.5.3. Regra normativa considerada: A diretriz manda observar dados sobre origem dos materiais, vendedor e comprador, bem como correlação com outras cargas apreendidas. Justificativa: A alternativa indicada como incorreta afirma: “Nas ações contra o meio ambiente, devem ser observados origem dos materiais e correlação com outras cargas; os dados do vendedor são dispensáveis quando o comprador está identificado.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz manda observar dados sobre origem dos materiais, vendedor e comprador, bem como correlação com outras cargas apreendidas."
+          },
+          {
+            "id": 1666,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — crimes cibernéticos",
+            "text": "QUESTÃO 1666 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre circunstâncias cibernéticas a identificar segundo a Diretriz nº PM3-001/02/24.",
+            "options": [
+              "a) A diretriz prevê identificar centrais de fraude on-line e pornografia infantil digital, mas o levantamento de vítimas de cyberbullying e assédio é atribuição exclusiva da inteligência cibernética.",
+              "b) Centrais de fraudes on-line podem envolver extorsões, ameaças digitais, fraude de cartão e phishing.",
+              "c) A diretriz prevê identificar centrais de produção e distribuição de materiais obtidos mediante violações de direitos autorais.",
+              "d) Também prevê identificar centrais de produção ou distribuição de pornografia infantil digital."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.4.2.6.1 a 6.4.2.6.4. Regra normativa considerada: O item 6.4.2.6.4 inclui identificar vítimas de cyberbullying, extorsão ou assédio on-line, inclusive por meio do Policiamento Escolar e Comunitário. Justificativa: A alternativa indicada como incorreta afirma: “A diretriz prevê identificar centrais de fraude on-line e pornografia infantil digital, mas o levantamento de vítimas de cyberbullying e assédio é atribuição exclusiva da inteligência cibernética.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.4.2.6.4 inclui identificar vítimas de cyberbullying, extorsão ou assédio on-line, inclusive por meio do Policiamento Escolar e Comunitário."
+          },
+          {
+            "id": 1667,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — homicídios",
+            "text": "QUESTÃO 1667 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Sobre os procedimentos de coleta de dados em homicídios com possível ligação ao crime organizado, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A identificação da vítima deve ser buscada quando possível, preservando-se o local de crime.",
+              "b) Podem ser verificados antecedentes criminais e histórico de envolvimento com infrações e organizações criminosas.",
+              "c) Em homicídios, deve-se identificar a vítima quando possível e preservar o local; a verificação de antecedentes deve anteceder a adoção de medidas de preservação do local.",
+              "d) Testemunhas e pessoas conhecidas da vítima podem auxiliar a levantar circunstâncias que ensejaram ou motivaram o homicídio."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.4.2.7.1 a 6.4.2.7.3. Regra normativa considerada: A diretriz expressamente condiciona a identificação da vítima à preservação necessária do local de crime. Justificativa: A alternativa indicada como incorreta afirma: “Em homicídios, deve-se identificar a vítima quando possível e preservar o local; a verificação de antecedentes deve anteceder a adoção de medidas de preservação do local.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz expressamente condiciona a identificação da vítima à preservação necessária do local de crime."
+          },
+          {
+            "id": 1668,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — comunicação pela US",
+            "text": "QUESTÃO 1668 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre a providência da Unidade de Serviço que identifica circunstâncias indicativas de crime organizado.",
+            "options": [
+              "a) A US deve cientificar imediatamente o escalão superior.",
+              "b) A US que identifica circunstâncias indicativas de crime organizado deve cientificar imediatamente a Agência de Área, cabendo ao escalão superior apenas validar a informação.",
+              "c) A providência ocorre quando as circunstâncias são identificadas durante atividades rotineiras de polícia ostensiva e preservação da ordem pública.",
+              "d) A obrigação se refere às circunstâncias elencadas na diretriz."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.4.3. Regra normativa considerada: O item 6.4.3 determina ciência imediata do escalão superior ao identificar as circunstâncias elencadas. Justificativa: A alternativa indicada como incorreta afirma: “A US que identifica circunstâncias indicativas de crime organizado deve cientificar imediatamente a Agência de Área, cabendo ao escalão superior apenas validar a informação.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.4.3 determina ciência imediata do escalão superior ao identificar as circunstâncias elencadas."
+          },
+          {
+            "id": 1669,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — atribuições de comando e supervisão",
+            "text": "QUESTÃO 1669 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Sobre as providências dos oficiais e graduados em funções de comando e supervisão, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Devem cientificar a Agência de Área.",
+              "b) Devem reportar o fato.",
+              "c) Devem providenciar o envio dos dados e informações obtidos para monitoramento.",
+              "d) Oficiais e graduados em comando ou supervisão devem cientificar a Agência de Área e encaminhar dados para monitoramento, mas a comunicação inicial do fato cabe exclusivamente à Correg PM."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.4.4. Regra normativa considerada: O item 6.4.4 estabelece ciência à Agência de Área, relato do fato e envio de dados para monitoramento. Justificativa: A alternativa indicada como incorreta afirma: “Oficiais e graduados em comando ou supervisão devem cientificar a Agência de Área e encaminhar dados para monitoramento, mas a comunicação inicial do fato cabe exclusivamente à Correg PM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.4.4 estabelece ciência à Agência de Área, relato do fato e envio de dados para monitoramento."
+          },
+          {
+            "id": 1670,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — contraterrorismo criminal",
+            "text": "QUESTÃO 1670 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre as ações de contraterrorismo criminal.",
+            "options": [
+              "a) Devem ser objeto de Plano de Contingência.",
+              "b) As ações de contraterrorismo criminal devem ser objeto de Plano de Contingência e executadas preponderantemente pelas Matrizes II ou III, ficando a pronta resposta da Matriz I condicionada à autorização prévia da Coord Op PM.",
+              "c) Devem ser executadas preponderantemente por US das Matrizes Operacionais II ou III.",
+              "d) Não se exclui a pronta resposta pela Matriz Operacional I, ainda que em caráter precário."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.4.5. Regra normativa considerada: O item 6.4.5 prevê Plano de Contingência e emprego preponderante de US das Matrizes II ou III, sem prejuízo da pronta resposta da Matriz I. Justificativa: A alternativa indicada como incorreta afirma: “As ações de contraterrorismo criminal devem ser objeto de Plano de Contingência e executadas preponderantemente pelas Matrizes II ou III, ficando a pronta resposta da Matriz I condicionada à autorização prévia da Coord Op PM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.4.5 prevê Plano de Contingência e emprego preponderante de US das Matrizes II ou III, sem prejuízo da pronta resposta da Matriz I."
+          },
+          {
+            "id": 1671,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — contrainsurgência criminal",
+            "text": "QUESTÃO 1671 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Sobre ações de contrainsurgência criminal, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Devem ser previamente planejadas.",
+              "b) Devem estar previstas em Plano de Contingência.",
+              "c) O Plano de Contingência é desenvolvido pela Coord Op PM com participação do CIPM.",
+              "d) As ações de contrainsurgência devem ser planejadas e previstas em Plano de Contingência, desenvolvido pela Coord Op PM com participação da Correg PM."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.4.6. Regra normativa considerada: O item 6.4.6 determina planejamento prévio e Plano de Contingência desenvolvido pela Coord Op PM com participação do CIPM. Justificativa: A alternativa indicada como incorreta afirma: “As ações de contrainsurgência devem ser planejadas e previstas em Plano de Contingência, desenvolvido pela Coord Op PM com participação da Correg PM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.4.6 determina planejamento prévio e Plano de Contingência desenvolvido pela Coord Op PM com participação do CIPM."
+          },
+          {
+            "id": 1672,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — Corregedoria",
+            "text": "QUESTÃO 1672 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre atribuições da Correg PM na doutrina de combate ao crime organizado.",
+            "options": [
+              "a) A Correg PM deve monitorar e prevenir tentativas de cooptação e infiltração, mas o amparo ao policial vítima de ações do crime organizado compete exclusivamente ao CIPM.",
+              "b) Deve estabelecer ações de monitoramento, análise e fiscalização, conjugando atuação repressiva e preventiva.",
+              "c) Busca evitar tentativas de cooptação de policiais e infiltração de criminosos na Instituição.",
+              "d) Deve estabelecer estratégias de amparo ao policial militar vítima de ações da criminalidade organizada."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.5.2.1–6.5.2.2. Regra normativa considerada: A diretriz prevê monitoramento, análise, fiscalização, prevenção, amparo e tratamento preventivo de riscos. Justificativa: A alternativa indicada como incorreta afirma: “A Correg PM deve monitorar e prevenir tentativas de cooptação e infiltração, mas o amparo ao policial vítima de ações do crime organizado compete exclusivamente ao CIPM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz prevê monitoramento, análise, fiscalização, prevenção, amparo e tratamento preventivo de riscos."
+          },
+          {
+            "id": 1673,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — investigação de crimes contra policiais",
+            "text": "QUESTÃO 1673 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Sobre o procedimento apuratório relacionado a crimes contra policiais militares em serviço ou em razão dele, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A Correg PM manterá divisão especializada dedicada a apoiar a investigação criminal desses crimes.",
+              "b) O procedimento somente será concluído com elucidação da autoria e materialidade delitivas.",
+              "c) O procedimento apuratório de crime contra policial em serviço deve buscar elucidação de autoria e materialidade; se houver impossibilidade técnica, o encerramento motivado cabe ao Comandante-Geral.",
+              "d) Na impossibilidade técnica de continuidade da apuração, o encerramento deve ser motivado pelo Subcomandante PM."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.5.2.2.1–6.5.2.2.2. Regra normativa considerada: O item prevê conclusão com elucidação de autoria e materialidade; na impossibilidade técnica, encerramento motivado pelo Subcmt PM. Justificativa: A alternativa indicada como incorreta afirma: “O procedimento apuratório de crime contra policial em serviço deve buscar elucidação de autoria e materialidade; se houver impossibilidade técnica, o encerramento motivado cabe ao Comandante-Geral.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item prevê conclusão com elucidação de autoria e materialidade; na impossibilidade técnica, encerramento motivado pelo Subcmt PM."
+          },
+          {
+            "id": 1674,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — CIPM e contrainsurgência",
+            "text": "QUESTÃO 1674 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre atribuições do CIPM.",
+            "options": [
+              "a) Deve identificar áreas de insurgência criminal e propor ao Cmt G operações de contrainsurgência com participação da Coord Op PM.",
+              "b) Deve manter histórico crítico das fases de operações de contrainsurgência e contraterrorismo realizadas.",
+              "c) O CIPM identifica áreas de insurgência e propõe operações ao Cmt G com participação da Coord Op PM, mas o histórico crítico das operações é mantido exclusivamente pela Coord Op PM.",
+              "d) Por intermédio da Escola de Inteligência, deve desenvolver cursos de especialização em inteligência cibernética e financeira."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.5.3.2–6.5.3.4. Regra normativa considerada: O CIPM tem atribuições de identificação, proposição, registro histórico e desenvolvimento de cursos de especialização. Justificativa: A alternativa indicada como incorreta afirma: “O CIPM identifica áreas de insurgência e propõe operações ao Cmt G com participação da Coord Op PM, mas o histórico crítico das operações é mantido exclusivamente pela Coord Op PM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O CIPM tem atribuições de identificação, proposição, registro histórico e desenvolvimento de cursos de especialização."
+          },
+          {
+            "id": 1675,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — credenciamento de atividades críticas",
+            "text": "QUESTÃO 1675 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Sobre a segurança orgânica e o credenciamento de atividades críticas para o combate ao crime organizado, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) As regras de seleção e credenciamento abrangem patrulhamento tático e operadores de radiocomunicação, mas não alcançam policiais designados a funções de confiança de Cmt Btl ou superior.",
+              "b) O CIPM deve estabelecer regras de seleção e credenciamento para atividades consideradas críticas.",
+              "c) Entre os grupos citados estão integrantes de unidades com atribuição de patrulhamento tático ou outras modalidades empregadas no combate ao crime organizado.",
+              "d) Também são citados integrantes de Centros de Operações e operadores de radiocomunicação com acesso a bases policiais sensíveis."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.5.3.6.1–6.5.3.6.3. Regra normativa considerada: A diretriz inclui entre os grupos sujeitos a regras de seleção e credenciamento policiais em funções de confiança de comandantes de nível Batalhão ou superior. Justificativa: A alternativa indicada como incorreta afirma: “As regras de seleção e credenciamento abrangem patrulhamento tático e operadores de radiocomunicação, mas não alcançam policiais designados a funções de confiança de Cmt Btl ou superior.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz inclui entre os grupos sujeitos a regras de seleção e credenciamento policiais em funções de confiança de comandantes de nível Batalhão ou superior."
+          },
+          {
+            "id": 1676,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — CComSoc e desinformação",
+            "text": "QUESTÃO 1676 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre as atribuições do CComSoc no combate ao crime organizado.",
+            "options": [
+              "a) Deve estruturar departamento especializado em operações de combate à desinformação.",
+              "b) Deve elaborar estratégias de comunicação social para públicos interno e externo.",
+              "c) Pode desenvolver operações de combate à desinformação em áreas anômicas ou emblemáticas, pautadas na transparência e na verdade.",
+              "d) O CComSoc desenvolve operações de combate à desinformação e estratégias de comunicação, devendo pautar suas ações pelo sigilo institucional, ainda que isso afaste a transparência e a verdade previstas na diretriz."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.5.4.1–6.5.4.7. Regra normativa considerada: O CComSoc deve planejar operações psicológicas estratégicas e designar Oficial PM como porta-voz, além das atribuições de comunicação e combate à desinformação. Justificativa: A alternativa indicada como incorreta afirma: “O CComSoc desenvolve operações de combate à desinformação e estratégias de comunicação, devendo pautar suas ações pelo sigilo institucional, ainda que isso afaste a transparência e a verdade previstas na diretriz.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O CComSoc deve planejar operações psicológicas estratégicas e designar Oficial PM como porta-voz, além das atribuições de comunicação e combate à desinformação."
+          },
+          {
+            "id": 1677,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — Coord Op PM e Plano de Contingência",
+            "text": "QUESTÃO 1677 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Sobre o Plano de Contingência para incidentes críticos de crime organizado, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A Coord Op PM deve elaborar e manter atualizado o Plano.",
+              "b) A Coord Op PM elabora e atualiza Plano de Contingência para incidentes que envolvam mais de um Cmdo Pol, mas somente após solicitação formal de uma das OPM envolvidas.",
+              "c) A regra abrange incidentes relacionados à atuação típica do crime organizado que envolvam a área de mais de um Comando de Policiamento.",
+              "d) O Plano deve indicar pontos sensíveis e responsáveis pelas medidas iniciais e de continuidade."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.5.5.4. Regra normativa considerada: O item 6.5.5.4 atribui à Coord Op PM a elaboração e atualização do plano para incidentes que envolvam mais de um Cmdo Pol. Justificativa: A alternativa indicada como incorreta afirma: “A Coord Op PM elabora e atualiza Plano de Contingência para incidentes que envolvam mais de um Cmdo Pol, mas somente após solicitação formal de uma das OPM envolvidas.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.5.5.4 atribui à Coord Op PM a elaboração e atualização do plano para incidentes que envolvam mais de um Cmdo Pol."
+          },
+          {
+            "id": 1678,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — relatórios gerenciais",
+            "text": "QUESTÃO 1678 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre o acompanhamento e a melhoria do emprego operacional na diretriz de combate ao crime organizado.",
+            "options": [
+              "a) A Coord Op PM monitora ocorrências críticas com envolvimento do crime organizado.",
+              "b) Deve manter o Subcomandante PM informado sobre o desenvolvimento das ocorrências e operações.",
+              "c) As informações coletadas podem ser incorporadas para analisar e aprimorar o emprego de efetivo, inclusive mediante Reuniões de Análise Crítica — Nível III.",
+              "d) A Coord Op PM monitora ocorrências críticas, mantém o Subcmt PM informado e pode usar RAC-III para aprimorar o emprego, mas o relatório gerencial padrão é elaborado e preenchido exclusivamente pelo CIPM."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.5.5.1, 6.5.5.5–6.5.5.6. Regra normativa considerada: A diretriz prevê incorporar informações, aproveitar RAC-III e disponibilizar relatório gerencial padrão a ser preenchido periodicamente pelos Cmdo Pol. Justificativa: A alternativa indicada como incorreta afirma: “A Coord Op PM monitora ocorrências críticas, mantém o Subcmt PM informado e pode usar RAC-III para aprimorar o emprego, mas o relatório gerencial padrão é elaborado e preenchido exclusivamente pelo CIPM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz prevê incorporar informações, aproveitar RAC-III e disponibilizar relatório gerencial padrão a ser preenchido periodicamente pelos Cmdo Pol."
+          },
+          {
+            "id": 1679,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — formação e educação continuada",
+            "text": "QUESTÃO 1679 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Sobre as atribuições da DEC no combate ao crime organizado, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Deve desenvolver e inserir disciplina específica sobre o tema nos currículos de cursos de formação, aperfeiçoamento e especialização.",
+              "b) A DEC deve inserir disciplina específica nos currículos e prever abordagem semestral nas INPO, mas os congressos sobre combate ao crime organizado são anuais, e não semestrais.",
+              "c) Deve desenvolver congressos semestrais com a temática Combate ao Crime Organizado.",
+              "d) Deve prever semestralmente a abordagem do tema nas INPO."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.5.6.1–6.5.6.4. Regra normativa considerada: A DEC tem atribuições de disciplina específica, congressos semestrais, educação continuada e abordagem semestral nas INPO. Justificativa: A alternativa indicada como incorreta afirma: “A DEC deve inserir disciplina específica nos currículos e prever abordagem semestral nas INPO, mas os congressos sobre combate ao crime organizado são anuais, e não semestrais.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A DEC tem atribuições de disciplina específica, congressos semestrais, educação continuada e abordagem semestral nas INPO."
+          },
+          {
+            "id": 1680,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — proteção cibernética",
+            "text": "QUESTÃO 1680 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre as atribuições da DTIC na diretriz de combate ao crime organizado.",
+            "options": [
+              "a) Deve, em conjunto com o CIPM, estabelecer sistema institucional de proteção de dados frente a ameaças cibernéticas promovidas pelo crime organizado.",
+              "b) Deve criar, atualizar e revisar o Plano de Defesa Cibernética da PMESP.",
+              "c) A DTIC estabelece sistema de proteção de dados e revisa o Plano de Defesa Cibernética, mas a função de Organização Gestora do Conhecimento do Curso de Defesa Cibernética cabe ao CIPM.",
+              "d) É indicada como Organização Gestora do Conhecimento do Curso de Defesa Cibernética da PMESP."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.5.9.1–6.5.9.3. Regra normativa considerada: A DTIC cuida da proteção de dados, do Plano de Defesa Cibernética e da OGC do curso; o Plano de Contingência intercomandos é atribuição da Coord Op PM. Justificativa: A alternativa indicada como incorreta afirma: “A DTIC estabelece sistema de proteção de dados e revisa o Plano de Defesa Cibernética, mas a função de Organização Gestora do Conhecimento do Curso de Defesa Cibernética cabe ao CIPM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A DTIC cuida da proteção de dados, do Plano de Defesa Cibernética e da OGC do curso; o Plano de Contingência intercomandos é atribuição da Coord Op PM."
+          },
+          {
+            "id": 1681,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Diretriz PM3-001/02/24 — Comando e Controle pelo COPOM",
+            "text": "QUESTÃO 1681 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre as atribuições da Coord Op PM por intermédio do COPOM.",
+            "options": [
+              "a) Por intermédio do COPOM, a Coord Op PM integra os Comandos de Policiamento para ampliar a consciência situacional estadual, mas a consolidação das ferramentas de C2 restringe-se aos COPOM da Capital.",
+              "b) Integrar os Comandos de Policiamento para obter e promover consciência situacional do Teatro de Operações do Estado.",
+              "c) Buscar o desenvolvimento de ações policial-militares imediatas e qualificadas.",
+              "d) Consolidar ferramentas de Comando e Controle e auxiliar COPOM Regionais na estruturação, com foco no combate ao crime organizado."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.5.5.8.1–6.5.5.8.2. Regra normativa considerada: A diretriz prevê integração de todos os Cmdo Pol e consciência situacional de todo o Teatro de Operações estadual. Justificativa: A alternativa indicada como incorreta afirma: “Por intermédio do COPOM, a Coord Op PM integra os Comandos de Policiamento para ampliar a consciência situacional estadual, mas a consolidação das ferramentas de C2 restringe-se aos COPOM da Capital.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz prevê integração de todos os Cmdo Pol e consciência situacional de todo o Teatro de Operações estadual."
+          },
+          {
+            "id": 1682,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — perímetro escolar de segurança",
+            "text": "QUESTÃO 1682 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Sobre o conceito de Perímetro Escolar de Segurança, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) O Perímetro Escolar de Segurança é área contígua aos estabelecimentos da rede pública estadual, com prioridade especial de prevenção e repressão, abrangendo somente os acessos internos ao terreno escolar.",
+              "b) É área contígua aos estabelecimentos de ensino da rede pública estadual.",
+              "c) Possui prioridade especial nas ações de prevenção e repressão policial.",
+              "d) Busca garantir tranquilidade de professores, pais e alunos e evitar mau uso das cercanias por infratores, vendedores ambulantes e pessoas estranhas à comunidade escolar."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.1.3. Regra normativa considerada: O item define perímetro como área contígua ao estabelecimento e menciona uso indevido das cercanias. Justificativa: A alternativa indicada como incorreta afirma: “O Perímetro Escolar de Segurança é área contígua aos estabelecimentos da rede pública estadual, com prioridade especial de prevenção e repressão, abrangendo somente os acessos internos ao terreno escolar.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item define perímetro como área contígua ao estabelecimento e menciona uso indevido das cercanias."
+          },
+          {
+            "id": 1683,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — Ronda Escolar",
+            "text": "QUESTÃO 1683 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Assinale a alternativa INCORRETA sobre a implantação da Ronda Escolar (RE).",
+            "options": [
+              "a) A RE é atividade exclusiva do Programa de Policiamento Escolar.",
+              "b) É implantada em municípios com, no mínimo, 15.000 habitantes.",
+              "c) A RE é atividade exclusiva do PPE e pode ser implantada em municípios com no mínimo 10.000 habitantes, conforme necessidade operacional e disponibilidade de meios.",
+              "d) A implantação depende de critérios de necessidade operacional e disponibilidade de recursos humanos e materiais, consignados nos Planos Diretores."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.2.2.1. Regra normativa considerada: A diretriz prevê mínimo de 15.000 habitantes e critérios de necessidade e disponibilidade registrados nos Planos Diretores. Justificativa: A alternativa indicada como incorreta afirma: “A RE é atividade exclusiva do PPE e pode ser implantada em municípios com no mínimo 10.000 habitantes, conforme necessidade operacional e disponibilidade de meios.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz prevê mínimo de 15.000 habitantes e critérios de necessidade e disponibilidade registrados nos Planos Diretores."
+          },
+          {
+            "id": 1684,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — Adoção Escolar",
+            "text": "QUESTÃO 1684 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Sobre a Adoção Escolar, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Pode ser adotada por OPM de qualquer escalão.",
+              "b) A Adoção Escolar emprega cumulativamente um ou dois policiais administrativos em escolas a menos de 500 metros, medidos a partir do limite territorial da OPM, e não da sede.",
+              "c) Caracteriza-se pela designação de um ou dois policiais militares do serviço administrativo.",
+              "d) O policiamento é realizado cumulativamente em estabelecimentos situados a menos de 500 metros da sede da OPM."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 6.2.2.2 e 6.4.1. Regra normativa considerada: A diretriz define Adoção Escolar como emprego cumulativo de 1 ou 2 policiais do serviço administrativo em escolas a menos de 500 m da sede. Justificativa: A alternativa indicada como incorreta afirma: “A Adoção Escolar emprega cumulativamente um ou dois policiais administrativos em escolas a menos de 500 metros, medidos a partir do limite territorial da OPM, e não da sede.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz define Adoção Escolar como emprego cumulativo de 1 ou 2 policiais do serviço administrativo em escolas a menos de 500 m da sede."
+          },
+          {
+            "id": 1685,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — composição da RE",
+            "text": "QUESTÃO 1685 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Assinale a alternativa INCORRETA sobre a composição e o equipamento da Ronda Escolar.",
+            "options": [
+              "a) O efetivo por viatura será de um ou dois policiais militares em cada turno.",
+              "b) A RE atua de forma exclusiva em escolas estaduais, municipais e/ou particulares, no Nível de Resposta 1.",
+              "c) Se a RE for composta por apenas um policial militar, é obrigatório o uso de rádio transceptor portátil (HT).",
+              "d) A RE é composta por um ou dois policiais por viatura e deve portar EPI completo; quando houver apenas um policial, o HT é recomendável, mas não obrigatório."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 6.3.1–6.3.2, redação atualizada em 10SET26. Regra normativa considerada: A diretriz atualizada estabelece efetivo de 1 ou 2 policiais por viatura, EPI completo e HT obrigatório quando houver apenas um policial. Justificativa: A alternativa indicada como incorreta afirma: “A RE é composta por um ou dois policiais por viatura e deve portar EPI completo; quando houver apenas um policial, o HT é recomendável, mas não obrigatório.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz atualizada estabelece efetivo de 1 ou 2 policiais por viatura, EPI completo e HT obrigatório quando houver apenas um policial."
+          },
+          {
+            "id": 1686,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — CPP da Ronda Escolar",
+            "text": "QUESTÃO 1686 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Sobre o Cartão de Prioridade de Patrulhamento da RE, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A RE deve atuar obrigatoriamente com CPP.",
+              "b) O CPP da RE define ações e missões do turno e toma como referência média oito escolas, número que deve ser mantido mesmo quando a dinâmica local recomendar redução.",
+              "c) O CPP determina ações, operações ou missões a executar durante o turno.",
+              "d) Como referência, são atendidas em média oito escolas, quantidade variável conforme a dinâmica do policiamento na OPM."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.3.3. Regra normativa considerada: O item 6.3.3 trata oito escolas como média de referência, cuja quantidade pode variar conforme a dinâmica local. Justificativa: A alternativa indicada como incorreta afirma: “O CPP da RE define ações e missões do turno e toma como referência média oito escolas, número que deve ser mantido mesmo quando a dinâmica local recomendar redução.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.3.3 trata oito escolas como média de referência, cuja quantidade pode variar conforme a dinâmica local."
+          },
+          {
+            "id": 1687,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — contato com escolas",
+            "text": "QUESTÃO 1687 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Assinale a alternativa INCORRETA sobre os contatos da Ronda Escolar com os estabelecimentos atendidos.",
+            "options": [
+              "a) O CPP deve prever orientações para contato com direção e funcionários das escolas.",
+              "b) A finalidade inclui coletar informações úteis ao policiamento escolar.",
+              "c) A direção de cada escola atendida pela RE deve ser contatada ao menos uma vez por semana, com os devidos registros.",
+              "d) A direção de cada escola atendida pela RE deve ser contatada ao menos uma vez por mês, com registro dos contatos realizados."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 6.3.4–6.3.5. Regra normativa considerada: A diretriz exige contato mínimo semanal com a direção de cada escola atendida e registro correspondente. Justificativa: A alternativa indicada como incorreta afirma: “A direção de cada escola atendida pela RE deve ser contatada ao menos uma vez por mês, com registro dos contatos realizados.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz exige contato mínimo semanal com a direção de cada escola atendida e registro correspondente."
+          },
+          {
+            "id": 1688,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — atendimento de ocorrências pela RE",
+            "text": "QUESTÃO 1688 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Sobre o atendimento de ocorrências pela Ronda Escolar, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A RE presta primeiro atendimento às ocorrências com que se deparar, mas fora do perímetro escolar deve fazê-lo apenas em flagrantes ou quando houver solicitação do CFP.",
+              "b) A RE atua com prejuízo do atendimento de ocorrências, ressalvadas as geradas nas escolas ou perímetros escolares e as de flagrante delito.",
+              "c) Nos demais tipos de ocorrência com que se deparar, a RE presta primeiro atendimento independentemente da natureza.",
+              "d) Quando não houver flagrante, deve verificar com o CFP, por intermédio do CGP, a viabilidade de continuidade por US de outro programa ou atividade."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 6.3.6–6.3.7. Regra normativa considerada: A diretriz exige primeiro atendimento às ocorrências com que a RE se deparar, independentemente da natureza, e disciplina a continuidade quando não houver flagrante. Justificativa: A alternativa indicada como incorreta afirma: “A RE presta primeiro atendimento às ocorrências com que se deparar, mas fora do perímetro escolar deve fazê-lo apenas em flagrantes ou quando houver solicitação do CFP.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz exige primeiro atendimento às ocorrências com que a RE se deparar, independentemente da natureza, e disciplina a continuidade quando não houver flagrante."
+          },
+          {
+            "id": 1689,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — rotatividade e afastamentos",
+            "text": "QUESTÃO 1689 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Assinale a alternativa INCORRETA sobre o efetivo da Ronda Escolar.",
+            "options": [
+              "a) Os policiais devem ser empregados prioritariamente na função, evitando desvio para outras atividades.",
+              "b) Deve ser obstada a rotatividade dos policiais empenhados na RE.",
+              "c) Os afastamentos regulares da RE devem, preferencialmente, coincidir com o recesso escolar; em situações excepcionais, a substituição deve ser feita por policial indicado apenas após o início do afastamento.",
+              "d) É desejável que afastamentos regulares acompanhem o recesso escolar."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 6.3.8–6.3.10. Regra normativa considerada: O item 6.3.10 admite, em casos excepcionais e a critério do Cmt OPM, substituição por policial previamente selecionado. Justificativa: A alternativa indicada como incorreta afirma: “Os afastamentos regulares da RE devem, preferencialmente, coincidir com o recesso escolar; em situações excepcionais, a substituição deve ser feita por policial indicado apenas após o início do afastamento.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.3.10 admite, em casos excepcionais e a critério do Cmt OPM, substituição por policial previamente selecionado."
+          },
+          {
+            "id": 1690,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — coordenação do PPE",
+            "text": "QUESTÃO 1690 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Sobre a coordenação do policiamento ostensivo escolar, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Em regra, a coordenação ocorre no âmbito da Cia PM.",
+              "b) É vedado centralizar a coordenação no Batalhão.",
+              "c) A coordenação do PPE ocorre, em regra, no âmbito de Cia PM, podendo ser delegada ao Cmt Pel ou Gp em municípios do CPM/CPI; a centralização no Btl é admitida por decisão do Cmt Btl.",
+              "d) Nos municípios abrangidos pelo CPM e CPI, a coordenação pode ser delegada ao Cmt Pel PM ou Gp PM, quando necessário."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.5.1. Regra normativa considerada: A diretriz estabelece coordenação em regra no âmbito de Cia PM e veda centralização no Btl, admitindo delegação indicada. Justificativa: A alternativa indicada como incorreta afirma: “A coordenação do PPE ocorre, em regra, no âmbito de Cia PM, podendo ser delegada ao Cmt Pel ou Gp em municípios do CPM/CPI; a centralização no Btl é admitida por decisão do Cmt Btl.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz estabelece coordenação em regra no âmbito de Cia PM e veda centralização no Btl, admitindo delegação indicada."
+          },
+          {
+            "id": 1691,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — prioridade das escolas",
+            "text": "QUESTÃO 1691 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Assinale a alternativa INCORRETA sobre a ordem de prioridade para cobertura escolar.",
+            "options": [
+              "a) A prioridade deve ser escolas estaduais, particulares e, por último, municipais, especialmente quando não houver Guarda Municipal ou Patrimonial.",
+              "b) Deve-se buscar, dentro do possível, atender todas as escolas da Subárea.",
+              "c) A prioridade começa pelas escolas estaduais.",
+              "d) Em seguida vêm as municipais, especialmente onde não houver Guarda Municipal ou Patrimonial, e depois as particulares."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.5.2.1. Regra normativa considerada: A ordem literal é estaduais, municipais (especialmente sem Guarda Municipal ou Patrimonial) e particulares. Justificativa: A alternativa indicada como incorreta afirma: “A prioridade deve ser escolas estaduais, particulares e, por último, municipais, especialmente quando não houver Guarda Municipal ou Patrimonial.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A ordem literal é estaduais, municipais (especialmente sem Guarda Municipal ou Patrimonial) e particulares."
+          },
+          {
+            "id": 1692,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — instrução do efetivo",
+            "text": "QUESTÃO 1692 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Sobre a instrução do efetivo do policiamento escolar, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) A instrução deve ser permanente e voltada ao trato com crianças e adolescentes.",
+              "b) Deve priorizar orientação e prevenção à criminalidade, observando o ECA.",
+              "c) Deve abordar temas atuais que influenciam crianças e adolescentes, como bullying e uso de mídias sociais.",
+              "d) A instrução do efetivo do PPE deve ser permanente e abordar o trato com crianças e adolescentes; temas como bullying e mídias sociais ficam restritos às atividades do PROERD."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.5.2.2. Regra normativa considerada: A diretriz prevê instrução permanente sobre trato com crianças/adolescentes e temas atuais como bullying e mídias sociais. Justificativa: A alternativa indicada como incorreta afirma: “A instrução do efetivo do PPE deve ser permanente e abordar o trato com crianças e adolescentes; temas como bullying e mídias sociais ficam restritos às atividades do PROERD.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz prevê instrução permanente sobre trato com crianças/adolescentes e temas atuais como bullying e mídias sociais."
+          },
+          {
+            "id": 1693,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — reuniões semestrais",
+            "text": "QUESTÃO 1693 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Assinale a alternativa INCORRETA sobre as reuniões para aperfeiçoamento do PPE.",
+            "options": [
+              "a) Devem ocorrer reuniões semestrais envolvendo todo o efetivo designado ao policiamento escolar.",
+              "b) As reuniões de aperfeiçoamento do PPE devem ocorrer trimestralmente e envolver todo o efetivo e os instrutores do PROERD.",
+              "c) Os instrutores do PROERD também devem participar dessas reuniões.",
+              "d) As reuniões buscam aperfeiçoamento constante do Programa de Policiamento Escolar."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.5.2.3. Regra normativa considerada: O item 6.5.2.3 determina participação de todo o efetivo designado e dos instrutores do PROERD. Justificativa: A alternativa indicada como incorreta afirma: “As reuniões de aperfeiçoamento do PPE devem ocorrer trimestralmente e envolver todo o efetivo e os instrutores do PROERD.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.5.2.3 determina participação de todo o efetivo designado e dos instrutores do PROERD."
+          },
+          {
+            "id": 1694,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — registros por escola",
+            "text": "QUESTÃO 1694 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Sobre os registros eletrônicos específicos de cada escola, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Devem conter histórico de interesse sobre problemas surgidos e soluções adotadas.",
+              "b) Podem incluir ocorrências relevantes e outros dados julgados importantes.",
+              "c) Servem para subsidiar o aprimoramento do PPE.",
+              "d) Os registros eletrônicos por escola devem conter ocorrências relevantes e soluções adotadas, mas não precisam registrar problemas surgidos ou outros dados julgados importantes."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.5.2.5. Regra normativa considerada: A diretriz prevê registros eletrônicos com histórico de problemas, soluções, ocorrências relevantes e outros dados importantes. Justificativa: A alternativa indicada como incorreta afirma: “Os registros eletrônicos por escola devem conter ocorrências relevantes e soluções adotadas, mas não precisam registrar problemas surgidos ou outros dados julgados importantes.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz prevê registros eletrônicos com histórico de problemas, soluções, ocorrências relevantes e outros dados importantes."
+          },
+          {
+            "id": 1695,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — estudo das instalações escolares",
+            "text": "QUESTÃO 1695 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Assinale a alternativa INCORRETA sobre os estudos das instalações escolares e áreas adjacentes.",
+            "options": [
+              "a) Devem ser consideradas condições de instalações internas e áreas externas.",
+              "b) Os estudos de segurança devem considerar instalações internas e áreas adjacentes, mas a iluminação pública e os pontos de parada de ônibus são excluídos da avaliação.",
+              "c) Entre os itens internos estão muros ou cercas, iluminação, entulhos e controle de portões.",
+              "d) Entre os itens externos estão iluminação pública, terrenos baldios, pavimentação e necessidade de faixas de pedestres ou redutores de velocidade."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 6.5.2.7.1–6.5.2.7.2. Regra normativa considerada: A diretriz detalha itens de segurança interna e externa, incluindo iluminação pública, terrenos baldios, pavimentação e dispositivos de trânsito. Justificativa: A alternativa indicada como incorreta afirma: “Os estudos de segurança devem considerar instalações internas e áreas adjacentes, mas a iluminação pública e os pontos de parada de ônibus são excluídos da avaliação.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz detalha itens de segurança interna e externa, incluindo iluminação pública, terrenos baldios, pavimentação e dispositivos de trânsito."
+          },
+          {
+            "id": 1696,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — pessoas com deficiência",
+            "text": "QUESTÃO 1696 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Assinale a alternativa INCORRETA sobre os registros relativos a pessoas com deficiência na comunidade escolar.",
+            "options": [
+              "a) Os Cmt OPM, no mínimo no nível de Cia PM, devem identificar estabelecimentos com pessoas com deficiência que possam necessitar de adaptação no atendimento.",
+              "b) Devem manter atualizados os registros da quantidade de pessoas nessas condições.",
+              "c) Os Cmt OPM no mínimo no nível de Cia devem identificar escolas com PcD que possam necessitar de adaptação; a atualização dos registros é exigida apenas quanto à quantidade, não quanto à natureza das deficiências.",
+              "d) Os registros devem indicar a natureza das respectivas deficiências."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.5.2.9, redação atualizada pela O Comp nº 001/02/26. Regra normativa considerada: A norma exige identificar previamente os estabelecimentos e manter atualizados os registros da quantidade e natureza das deficiências. Justificativa: A alternativa indicada como incorreta afirma: “Os Cmt OPM no mínimo no nível de Cia devem identificar escolas com PcD que possam necessitar de adaptação; a atualização dos registros é exigida apenas quanto à quantidade, não quanto à natureza das deficiências.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A norma exige identificar previamente os estabelecimentos e manter atualizados os registros da quantidade e natureza das deficiências."
+          },
+          {
+            "id": 1697,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — atividades típicas",
+            "text": "QUESTÃO 1697 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Sobre as atividades típicas do policiamento ostensivo escolar, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Entre as atividades típicas estão a prevenção de infrações e vandalismo, travessia de escolares e verificação de suspeitos; o levantamento de estabelecimentos a menos de 50 metros dos portões substitui o parâmetro de 100 metros.",
+              "b) Incluem prevenção e repressão imediata às infrações penais, especialmente tráfico de drogas e corrupção de crianças e adolescentes.",
+              "c) Incluem prevenção de vandalismo e invasões aos estabelecimentos escolares.",
+              "d) Incluem travessia de escolares e orientação de tráfego nos horários de entrada e saída."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 6.6.1–6.6.7. Regra normativa considerada: A diretriz inclui verificação de indivíduos suspeitos no perímetro e levantamento de bares, jogos eletrônicos e vendedores ambulantes a menos de 100 m dos portões. Justificativa: A alternativa indicada como incorreta afirma: “Entre as atividades típicas estão a prevenção de infrações e vandalismo, travessia de escolares e verificação de suspeitos; o levantamento de estabelecimentos a menos de 50 metros dos portões substitui o parâmetro de 100 metros.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz inclui verificação de indivíduos suspeitos no perímetro e levantamento de bares, jogos eletrônicos e vendedores ambulantes a menos de 100 m dos portões."
+          },
+          {
+            "id": 1698,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — regime de trabalho",
+            "text": "QUESTÃO 1698 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Assinale a alternativa INCORRETA sobre o regime de trabalho do efetivo do PPE.",
+            "options": [
+              "a) A OPM pode adotar regimes 5x2 ou 6x1 e ajustar turnos conforme situações específicas; a escala 12x36 pode ser autorizada excepcionalmente pelo Cmt OPM.",
+              "b) Devem ser considerados horários letivos e atividades aos finais de semana, entre outros fatores locais.",
+              "c) A OPM pode optar por regimes de 5x2 ou 6x1, conforme necessidades locais avaliadas e disponibilidade de meios.",
+              "d) É permitida adequação dos turnos, observada a norma institucional, quando necessária a situações específicas."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 6.8.1–6.8.4. Regra normativa considerada: O item 6.8.4 veda aplicar escalas de serviço no regime de 12x36 horas. Justificativa: A alternativa indicada como incorreta afirma: “A OPM pode adotar regimes 5x2 ou 6x1 e ajustar turnos conforme situações específicas; a escala 12x36 pode ser autorizada excepcionalmente pelo Cmt OPM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.8.4 veda aplicar escalas de serviço no regime de 12x36 horas."
+          },
+          {
+            "id": 1699,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — designação do efetivo",
+            "text": "QUESTÃO 1699 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Sobre a designação de policiais militares para atividades vinculadas ao PPE, assinale a alternativa INCORRETA.",
+            "options": [
+              "a) Devem ser considerados critérios de conduta aceitável.",
+              "b) A voluntariedade integra os critérios de designação.",
+              "c) A designação do efetivo do PPE considera conduta aceitável, voluntariedade e facilidade no trato com crianças e adolescentes; a voluntariedade pode ser dispensada quando houver necessidade de serviço.",
+              "d) A facilidade no trato com crianças e adolescentes é critério indicado."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.10.7. Regra normativa considerada: O item 6.10.7 indica conduta aceitável, voluntariedade e facilidade no trato com crianças e adolescentes. Justificativa: A alternativa indicada como incorreta afirma: “A designação do efetivo do PPE considera conduta aceitável, voluntariedade e facilidade no trato com crianças e adolescentes; a voluntariedade pode ser dispensada quando houver necessidade de serviço.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.10.7 indica conduta aceitável, voluntariedade e facilidade no trato com crianças e adolescentes."
+          },
+          {
+            "id": 1700,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — trato com adolescentes",
+            "text": "QUESTÃO 1700 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), assinale a alternativa INCORRETA sobre a apreensão e o encaminhamento de adolescente.",
+            "options": [
+              "a) O adolescente apreendido por força de ordem judicial deve ser encaminhado desde logo à autoridade judiciária.",
+              "b) A vedação do art. 178 alcança apenas veículos sem compartimento separado, não se aplicando quando o compartimento fechado implicar risco à integridade física ou mental.",
+              "c) O adolescente apreendido em flagrante de ato infracional deve ser encaminhado desde logo à autoridade policial competente.",
+              "d) Na falta de repartição especializada, o adolescente deve aguardar apresentação ao Ministério Público em dependência separada da destinada a maiores."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 2.14, 2.16 e 2.17. Regra normativa considerada: O item 2.17 proíbe condução ou transporte em compartimento fechado em condições atentatórias à dignidade ou que impliquem risco à integridade física ou mental. Justificativa: A alternativa indicada como incorreta limita indevidamente a vedação do transporte em compartimento fechado. A norma citada estabelece: O item 2.17 proíbe condução ou transporte em compartimento fechado em condições atentatórias à dignidade ou que impliquem risco à integridade física ou mental."
+          },
+          {
+            "id": 1701,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Escolar",
+            "topic": "Diretriz PM3-004/02/20 — liberdade e identificação de adolescente",
+            "text": "QUESTÃO 1701 — Segundo o Estatuto da Criança e do Adolescente (ECA), conforme reproduzido no anexo da Diretriz nº PM3-004/02/20, Assinale a alternativa INCORRETA sobre as prescrições do ECA reproduzidas no anexo da Diretriz de Policiamento Escolar.",
+            "options": [
+              "a) O adolescente somente pode ser privado de liberdade em flagrante de ato infracional ou por ordem escrita e fundamentada da autoridade judiciária competente.",
+              "b) O adolescente tem direito à identificação dos responsáveis por sua apreensão e deve ser informado de seus direitos.",
+              "c) O adolescente civilmente identificado não será submetido à identificação compulsória, salvo para confrontação quando houver dúvida fundada.",
+              "d) A privação de liberdade de adolescente depende de flagrante de ato infracional ou ordem judicial escrita e fundamentada, admitindo-se ordem verbal quando confirmada posteriormente por escrito."
+            ],
+            "answer": 3,
+            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 2.11–2.12. Regra normativa considerada: O anexo reproduz o art. 106 do ECA: flagrante ou ordem escrita e fundamentada; também reproduz o direito à identificação dos responsáveis e a exceção de confrontação. Justificativa: A alternativa indicada como incorreta afirma: “A privação de liberdade de adolescente depende de flagrante de ato infracional ou ordem judicial escrita e fundamentada, admitindo-se ordem verbal quando confirmada posteriormente por escrito.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O anexo reproduz o art. 106 do ECA: flagrante ou ordem escrita e fundamentada; também reproduz o direito à identificação dos responsáveis e a exceção de confrontação."
+          }
+       
 ];
 
 window.questionsDatabase = BANCO_GERAL_QUESTOES;
