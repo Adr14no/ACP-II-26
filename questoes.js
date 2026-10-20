@@ -7350,7 +7350,7 @@ const BANCO_GERAL_QUESTOES = [
         ],
         "answer": 1,
         "explanation": "Gabarito: B. Fundamentação: I-36-PM, art. 14, §§ 3º a 5º, Assuntos Organizacionais.pdf, PDF p. 10. A OPM deve cientificar o policial que não pediu o gozo, mas a solicitação é responsabilidade do interessado; o pedido prévio e oportuno de todas as parcelas não fruídas, por PM P-118 devidamente protocolada, deve anteceder a transferência para a reserva. A atribui à OPM o dever de requerer e preserva o gozo após a inatividade; C posterga a ciência e dispensa o pedido prévio; D transforma a indenização em automática, contrariando a hipótese específica do § 6º."
-      }
+      },
   {
     "id": 490,
     "subject": "ORGANIZACIONAL",
