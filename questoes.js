@@ -2506,20 +2506,20 @@ const BANCO_GERAL_QUESTOES = [
     "answer": 1,
     "explanation": "Gabarito: B. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, itens 6.9.4.1 e 6.9.4.2, Assuntos Operacionais.pdf, p. 262. A função é exercida fora do expediente administrativo, em regra por Cap QOPM, com possibilidade de emprego de Ten QOPM em função de Cap PM; abrange supervisão regional e apoio às US. A, C e D restringem ou alteram a função."
   },
-  {
+   {
     "id": 167,
     "subject": "OPERACIONAL",
     "tag": "Drones",
-    "topic": "Policiamento com Drones — habilitação do Observador de UAS",
-    "text": "QUESTÃO 167 - Uma OPM pretende designar policial militar para exercer a função de Observador de UAS em Equipe Drone. Segundo a Diretriz nº PM3-005/02/24, qual requisito se aplica à habilitação desse integrante?",
+    "topic": "Policiamento com Drones — seleção, habilitação e renovação da habilitação do Observador de UAS",
+    "text": "QUESTÃO 167 — Uma OPM seleciona policial militar para a função de Observador de UAS em Equipe Drone. Considerando a Diretriz nº PM3-005/02/24, assinale a alternativa que reúne corretamente as particularidades de seleção, habilitação inicial e renovação da habilitação do Observador.",
     "options": [
-      "a) Basta a designação verbal do comandante da ocorrência, sem curso ou renovação de habilitação.",
-      "b) A habilitação depende exclusivamente de experiência anterior em patrulhamento com motocicleta.",
-      "c) O Observador deve possuir habilitação de Piloto Remoto em Comando e renovar essa habilitação por teste de proficiência anual.",
-      "d) A habilitação depende da conclusão, com aproveitamento, do curso de especialização profissional desenvolvido pela PM; a renovação ocorre por treinamento específico e periodicidade definida pelo CAvPM."
+      "a) O candidato deve cumprir os mesmos requisitos de seleção do Piloto Remoto, inclusive o período mínimo de dois anos de exercício operacional; a habilitação exige curso de especialização e a renovação segue treinamento definido pelo CAvPM.",
+      "b) O candidato observa os mesmos requisitos de seleção do Piloto Remoto, exceto o período mínimo de dois anos; a habilitação depende de curso de especialização com aproveitamento e a renovação ocorre por treinamento específico, na periodicidade definida pelo CAvPM.",
+      "c) O candidato fica dispensado dos requisitos de seleção aplicáveis ao Piloto Remoto; a habilitação depende de curso de especialização com aproveitamento e a renovação ocorre por teste de aptidão e proficiência conforme o PTO–Drone.",
+      "d) O candidato observa os mesmos requisitos de seleção do Piloto Remoto, exceto o período mínimo de dois anos; a habilitação decorre de certificação direta do CAvPM e a renovação ocorre por teste de aptidão e proficiência conforme o PTO–Drone."
     ],
-    "answer": 3,
-    "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-005/02/24, itens 6.7.3.1 e 6.7.3.2, Assuntos Operacionais.pdf, p. 441. A habilitação do Observador depende de conclusão com aproveitamento do curso de especialização profissional; a renovação se dá por treinamento específico conforme periodicidade definida pelo CAvPM. A e B eliminam requisitos; C confunde a função e o processo de renovação."
+    "answer": 1,
+    "explanation": "Gabarito provisório: B. Fundamentação: Diretriz nº PM3-005/02/24, itens 6.6.2, 6.6.3, 6.7.3.1 e 6.7.3.2, Assuntos Operacionais.pdf, PDF pp. 440–441. O item 6.6.3 aplica ao Observador os requisitos de seleção do Piloto Remoto, exceto o período mínimo de dois anos de efetivo exercício operacional. Os itens 6.7.3.1–6.7.3.2 condicionam a habilitação à conclusão, com aproveitamento, do curso de especialização profissional desenvolvido pela PM e preveem renovação por treinamento específico, segundo periodicidade definida pelo CAvPM. A incorre na inclusão do período de dois anos; C dispensa indevidamente os demais requisitos de seleção e troca o regime de renovação pelo do Piloto; D troca o requisito de curso e o regime de renovação do Observador pelos de certificação/teste associados a outras etapas ou função. PENDÊNCIA: a questão tem proximidade temática com as questões 842, 843, 1421 e 1427; a decisão de manter ambas deve ser feita após revisão editorial de duplicidade. Dificuldade estimada: DIFÍCIL. Formato: alternativa CORRETA. Status editorial: PENDENTE — não exportar."
   },
   {
     "id": 168,
@@ -2656,21 +2656,21 @@ const BANCO_GERAL_QUESTOES = [
     "answer": 1,
     "explanation": "Gabarito: B. Fundamentação: RDPM, art. 35, inciso VIII, Assuntos Juridicos-administrativos.pdf, p. 92. A colaboração na apuração é atenuante. A e C constam como agravantes no art. 36; D corresponde ao conluio, também agravante."
   },
-  {
-    "id": 177,
-    "subject": "JURIDICO",
-    "tag": "RDPM",
-    "topic": "RDPM — limites gerais na aplicação das sanções",
-    "text": "QUESTÃO 177 - Ao aplicar sanção disciplinar, a autoridade identifica circunstâncias atenuantes e agravantes e verifica que há uma única transgressão. Considerando o art. 41 do RDPM, assinale a alternativa correta.",
-    "options": [
-      "a) A existência de circunstância atenuante autoriza sempre a aplicação da sanção em seu limite máximo.",
-      "b) A mesma transgressão pode receber duas sanções, desde que uma seja publicada de forma reservada.",
-      "c) Quando as circunstâncias atenuantes preponderarem, a sanção não será aplicada em seu limite máximo; quando as agravantes preponderarem, poderá ser aplicada até o limite máximo, e não se aplica mais de uma sanção pela mesma transgressão.",
-      "d) As circunstâncias agravantes impedem a aplicação da sanção em seu limite máximo."
-    ],
-    "answer": 2,
-    "explanation": "Gabarito: C. Fundamentação: RDPM, art. 41, incisos I a III, Assuntos Juridicos-administrativos.pdf, p. 94. O artigo estabelece os três limites reproduzidos em C. A e D invertem o efeito das circunstâncias; B contraria a regra de uma única sanção pela mesma transgressão."
-  },
+   {
+        "id": 177,
+        "subject": "JURIDICO",
+        "tag": "RDPM",
+        "topic": "RDPM — limites gerais na aplicação das sanções disciplinares",
+        "text": "QUESTÃO 177 — Ao aplicar sanção disciplinar por uma transgressão, a autoridade verifica a preponderância de circunstâncias atenuantes ou agravantes. Considerando o art. 41 do RDPM, assinale a alternativa correta.",
+        "options": [
+          "a) Se as atenuantes preponderarem, a sanção poderá alcançar o limite máximo; se as agravantes preponderarem, não poderá alcançar esse limite; pela mesma transgressão, aplica-se uma única sanção.",
+          "b) Se as atenuantes preponderarem, a sanção não será aplicada no limite máximo; se as agravantes preponderarem, poderá ser aplicada até esse limite; pela mesma transgressão, não se aplica mais de uma sanção disciplinar.",
+          "c) Se as atenuantes preponderarem, a sanção não será aplicada no limite máximo; se as agravantes preponderarem, poderá ser aplicada até esse limite; podem ser aplicadas duas sanções pela mesma transgressão quando tiverem espécies distintas.",
+          "d) Se as atenuantes preponderarem, a sanção não será aplicada no limite máximo; se as agravantes preponderarem, poderá ser aplicada até esse limite; a vedação de mais de uma sanção vale apenas quando as sanções forem da mesma espécie."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: RDPM, art. 41, incisos I a III, Assuntos Juridicos-administrativos.pdf, PDF p. 94. O artigo determina que, com preponderância de atenuantes, a sanção não alcance o limite máximo; com preponderância de agravantes, poderá alcançá-lo; e que não se aplique mais de uma sanção pela mesma transgressão. A inverte os efeitos das circunstâncias; C e D criam exceções à vedação de cumulação que o artigo não prevê."
+      },
   {
     "id": 178,
     "subject": "JURIDICO",
@@ -3211,20 +3211,20 @@ const BANCO_GERAL_QUESTOES = [
     "answer": 2,
     "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, item 6.1.6 e subitens 6.1.6.1 a 6.1.6.5, em Assuntos Operacionais.pdf. A auditoria busca verificar conformidade técnica, fiscalizar aspectos pedagógicos, disciplinares e procedimentais, identificar boas práticas, promover melhorias e extrair indicadores. A, B e D atribuem consequências decisórias não previstas. Dificuldade editorial: DIFÍCIL."
   },
-  {
+    {
     "id": 214,
     "subject": "OPERACIONAL",
     "tag": "COP",
-    "topic": "COP — cautelas no uso do áudio bidirecional",
-    "text": "QUESTÃO 214 — O COPOM avalia utilizar o áudio bidirecional da COP para transmitir orientação durante atendimento policial. Segundo a Diretriz nº PM3-001/02/25, em qual situação a funcionalidade exige avaliação criteriosa para evitar prejuízo à segurança ou à atividade?",
+    "topic": "COP — áudio bidirecional: hipóteses de uso e cautelas de ativação",
+    "text": "QUESTÃO 214 — Considerando a Diretriz nº PM3-001/02/25, qual situação corresponde a uma hipótese de uso restrito do áudio bidirecional, distinguindo-se das situações em que a ativação deve ser evitada?",
     "options": [
-      "a) Apenas quando a ocorrência já estiver formalmente encerrada.",
-      "b) Somente quando a equipe estiver em deslocamento sem atendimento de ocorrência.",
-      "c) Em ações críticas que demandem atenção plena, em situações que exijam disciplina de luz e som e em negociações ou entrevistas sensíveis, entre outras hipóteses previstas.",
-      "d) Exclusivamente quando o equipamento estiver conectado à doca."
+      "a) Impossibilidade momentânea de comunicação pela rede de rádio convencional, que inviabilize o contato por esse meio.",
+      "b) Ação crítica que demande atenção plena do policial, como manuseio de armamento ou condução de motocicleta em alta velocidade.",
+      "c) Situação que exija disciplina de luz e som, na qual a emissão sonora possa comprometer a eficácia e a segurança da ação.",
+      "d) Negociação sensível, entrevista ou diálogo estratégico em que a intervenção remota possa gerar ruído ou constrangimento."
     ],
-    "answer": 2,
-    "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, item 6.6.1.2 e subitens, em Assuntos Operacionais.pdf. A diretriz manda avaliar criteriosamente o uso do áudio bidirecional, incluindo ações críticas, disciplina de luz/som e diálogos sensíveis. A, B e D restringem a análise a situações que não correspondem ao rol normativo. Dificuldade editorial: DIFÍCIL."
+    "answer": 0,
+    "explanation": "Gabarito provisório: A. Fundamentação: Diretriz nº PM3-001/02/25, itens 6.6.1.1.1 e 6.6.1.2.1–6.6.1.2.3, Assuntos Operacionais.pdf, PDF pp. 36–37. O item 6.6.1.1.1 inclui a impossibilidade momentânea de comunicação via rede de rádio convencional entre as hipóteses de uso restrito. B corresponde a cautela do item 6.6.1.2.1; C, ao item 6.6.1.2.2; D, ao item 6.6.1.2.3. As três últimas são situações em que se deve evitar a ativação no momento inadequado, e não hipóteses autorizadoras. PENDÊNCIA: há proximidade temática com as questões 253, 303, 407, 509 e 910; avaliar substituição de uma questão existente ou retirada de duplicatas antes de aprovar. Dificuldade estimada: MEDIANA. Formato: alternativa CORRETA. Status editorial: PENDENTE — não exportar."
   },
   {
     "id": 215,
@@ -4310,16 +4310,16 @@ const BANCO_GERAL_QUESTOES = [
     "id": 287,
     "subject": "JURIDICO",
     "tag": "RDPM",
-    "topic": "RDPM — comunicação disciplinar e dever de precisão",
-    "text": "QUESTÃO 287 — Uma comunicação disciplinar descreve a ação atribuída ao militar, mas omite horário e local e acrescenta comentários pessoais do signatário sobre o caráter do acusado. A autoridade sustenta que tais omissões podem ser supridas apenas na decisão final. Qual avaliação é correta?",
+    "topic": "RDPM — comunicação disciplinar: requisitos formais do art. 28",
+    "text": "QUESTÃO 287 — À luz do art. 28 do RDPM, assinale a alternativa que reproduz corretamente os requisitos de conteúdo e forma da comunicação disciplinar.",
     "options": [
-      "a) A comunicação deve conter dados para identificar pessoas/coisas, local, data e hora, circunstâncias e alegações do faltoso quando presente e interpelado, sem comentários ou opiniões pessoais.",
-      "b) A comunicação pode omitir local e hora se houver testemunha, mas deve conter juízo de valor sobre a personalidade do acusado para orientar a sanção.",
-      "c) A comunicação deve conter apenas a tipificação e a assinatura do comunicante; os elementos circunstanciais são facultativos quando houver BOe.",
-      "d) A comunicação deve ser extensa e incluir conclusão sobre a sanção cabível, ainda que não registre as alegações do faltoso."
+      "a) Deve ser clara, concisa e precisa, identificar pessoas ou coisas envolvidas, indicar local, data e hora, caracterizar as circunstâncias e registrar as alegações do faltoso quando presente e interpelado, sem comentários ou opiniões pessoais.",
+      "b) Deve ser clara, concisa e precisa, identificar pessoas ou coisas envolvidas, indicar local e data, caracterizar as circunstâncias e registrar as alegações do faltoso quando presente, admitindo a omissão do horário se houver testemunhas.",
+      "c) Deve ser clara, concisa e precisa, identificar pessoas ou coisas envolvidas, indicar local, data e hora, caracterizar as circunstâncias e registrar as alegações do faltoso ainda que ausente, admitindo comentários pessoais objetivos.",
+      "d) Deve ser clara, concisa e precisa, identificar pessoas ou coisas envolvidas, indicar local, data e hora, registrar a tipificação e as circunstâncias, cabendo à autoridade acrescentar as alegações do faltoso e as opiniões pessoais do signatário."
     ],
     "answer": 0,
-    "explanation": "Gabarito: A. Fonte: LC nº 893/01 (RDPM), art. 28, caput. O dispositivo exige clareza, concisão e precisão, dados de identificação, local/data/hora, circunstâncias e alegações do faltoso quando presentes e interpelado, vedando comentários/opiniões pessoais. B e C dispensam elementos obrigatórios e admitem juízo pessoal; D exige conclusão sancionatória e permite omissão de alegações. Classificação editorial: DIFÍCIL."
+    "explanation": "Gabarito provisório: A. Fundamentação: Lei Complementar nº 893/01 (RDPM), art. 28, Assuntos Juridicos-administrativos.pdf, PDF p. 88. O dispositivo exige clareza, concisão e precisão; dados capazes de identificar pessoas ou coisas; local, data e hora; caracterização das circunstâncias; alegações do faltoso quando presente e ao ser interpelado pelo signatário; e ausência de comentários ou opiniões pessoais. B omite a hora, exigida expressamente, e cria exceção por testemunhas não prevista no artigo. C altera a condição de registro das alegações e admite comentários pessoais, contrariando o dispositivo. D transfere à autoridade o registro das alegações e admite opiniões pessoais, em desconformidade com o art. 28. PENDÊNCIA: há forte sobreposição de conteúdo com as questões 172 e 452; decidir se esta questão substituirá uma delas ou será retirada, para evitar duplicidade. Dificuldade estimada: MEDIANA. Formato: alternativa CORRETA. Status editorial: PENDENTE — não exportar."
   },
   {
     "id": 288,
@@ -6497,20 +6497,20 @@ const BANCO_GERAL_QUESTOES = [
     "explanation": "Gabarito: A. Fundamentação: RDPM, art. 39, caput e parágrafo único. A publicação é, em regra, divulgação oficial do ato e dá início a seus efeitos, mas o parágrafo único dispõe especificamente que a advertência não deverá constar de publicação em boletim, figurando nos registros indicados conforme se trate de oficial ou praça. B ignora a exceção; C elimina os registros previstos; D acrescenta requisitos inexistentes."
   },
   {
-    "id": 433,
-    "subject": "JURIDICO",
-    "tag": "RDPM",
-    "topic": "RDPM — publicidade restrita das sanções por círculo",
-    "text": "QUESTÃO 433 — Uma sanção foi aplicada a oficial. A autoridade pretende divulgá-la a todos os integrantes da Instituição sem examinar a natureza da transgressão ou o bem da disciplina. Considerando o art. 40 do RDPM, assinale a alternativa correta.",
-    "options": [
-      "a) Todas as sanções de oficiais devem ser divulgadas indistintamente a todos os integrantes da PM.",
-      "b) As sanções de oficiais, aspirantes-a-oficial, alunos-oficiais, subtenentes e sargentos são publicadas somente para conhecimento dos integrantes de seus respectivos círculos e superiores, podendo haver divulgação geral se as circunstâncias ou a natureza da transgressão e o bem da disciplina assim recomendarem.",
-      "c) A divulgação restrita aplica-se somente às praças, não alcançando oficiais ou aspirantes-a-oficial.",
-      "d) A divulgação geral depende exclusivamente de requerimento do punido e não pode ser determinada pela autoridade."
-    ],
-    "answer": 1,
-    "explanation": "Gabarito: B. Fundamentação: RDPM, art. 40. O artigo prevê a publicação restrita para conhecimento dos respectivos círculos e superiores, com possibilidade de conhecimento geral nas condições ali indicadas. A torna a divulgação geral automática; C restringe o rol de destinatários; D cria requisito não previsto."
-  },
+        "id": 433,
+        "subject": "JURIDICO",
+        "tag": "RDPM",
+        "topic": "RDPM — publicidade restrita das sanções disciplinares e hipótese de divulgação geral",
+        "text": "QUESTÃO 433 — Uma autoridade pretende dar conhecimento geral de sanção aplicada a um sargento, sem avaliar as circunstâncias ou a natureza da transgressão nem o bem da disciplina. À luz do art. 40 do RDPM, assinale a alternativa CORRETA.",
+        "options": [
+          "a) A sanção é publicada para o círculo do punido e seus superiores, podendo ser divulgada em geral se as circunstâncias, a natureza da transgressão e o bem da disciplina recomendarem.",
+          "b) A sanção é publicada para conhecimento geral sempre que aplicada a graduado, independentemente das circunstâncias, da natureza da transgressão ou do bem da disciplina.",
+          "c) A sanção é publicada apenas para o círculo do punido e seus superiores, sem possibilidade de divulgação geral, ainda que as circunstâncias ou o bem da disciplina recomendem.",
+          "d) A publicação restrita aplica-se a oficiais e aspirantes-a-oficial, mas não alcança subtenentes e sargentos, mesmo quando a sanção decorre de transgressão disciplinar."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Lei Complementar nº 893/01 (RDPM), art. 40; Assuntos Juridicos-administrativos.pdf, PDF p. 94. Trecho de suporte: “As sanções de oficiais, aspirantes-a-oficial, alunos-oficiais, subtenentes e sargentos serão publicadas somente para conhecimento dos integrantes dos seus respectivos círculos e superiores hierárquicos, podendo ser dadas ao conhecimento geral se as circunstâncias ou a natureza da transgressão e o bem da disciplina assim o recomendarem.” A preserva a regra e a exceção. B inverte a regra ao tornar geral a divulgação de forma automática. C elimina a exceção expressa. D exclui subtenentes e sargentos do rol literal do artigo. Dificuldade editorial: MEDIANA; exige reconhecer a regra de publicidade restrita e a exceção condicionada. Formato: caso prático / alternativa CORRETA. Duplicidade: comparada com questões RDPM próximas do banco; não foi identificada duplicata literal, embora o tema de publicação de sanções apareça em outras questões. Auditoria do gabarito: segunda conferência do art. 40; nenhuma resposta concorrente."
+      },
   {
     "id": 434,
     "subject": "JURIDICO",
@@ -6983,14 +6983,14 @@ const BANCO_GERAL_QUESTOES = [
     "topic": "RDPM — aprovação e publicação prévias ao cumprimento",
     "text": "QUESTÃO 465 — Uma sanção disciplinar foi aplicada por autoridade funcional imediatamente superior ao transgressor, mas ainda não houve publicação em boletim nem aprovação do ato pela autoridade competente. Em regra, o cumprimento pode começar?",
     "options": [
-      "a) Sim, porque a assinatura do enquadramento é suficiente para iniciar o cumprimento.",
-      "b) Sim, desde que o transgressor tenha tomado ciência verbal da decisão.",
-      "c) Não; o início depende da aprovação do ato pelo Comandante da Unidade ou pela autoridade funcional imediatamente superior, quando a sanção for por ela aplicada, e de prévia publicação em boletim, ressalvada a necessidade de recolhimento disciplinar prevista no Regulamento.",
-      "d) Não, pois a sanção só pode ser cumprida após o trânsito em julgado de ação penal sobre os mesmos fatos."
-    ],
-    "answer": 2,
-    "explanation": "Gabarito: C. Fundamentação: RDPM, art. 43. O início do cumprimento depende da aprovação indicada no dispositivo e da prévia publicação em boletim, ressalvada a necessidade de recolhimento disciplinar prevista no Regulamento. O artigo não exige trânsito em julgado criminal para o início da sanção administrativa."
-  },
+       "a) O cumprimento pode começar após a ciência verbal do transgressor, desde que a publicação em boletim seja providenciada antes do término da sanção.",
+          "b) O cumprimento depende de aprovação do ato pela autoridade competente e de prévia publicação em boletim, ressalvada a necessidade de recolhimento disciplinar prevista no Regulamento.",
+          "c) O cumprimento depende da aprovação do ato pela autoridade competente, mas a publicação em boletim pode ocorrer depois do início da sanção, salvo se houver recolhimento disciplinar.",
+          "d) O cumprimento depende de aprovação do Comandante da Unidade em todos os casos e de prévia publicação em boletim, sem exceção para recolhimento disciplinar."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Lei Complementar nº 893/01 (RDPM), art. 43, em Assuntos Juridicos-administrativos.pdf, PDF p. 94. O dispositivo condiciona o início do cumprimento à aprovação do ato pelo Comandante da Unidade ou pela autoridade funcional imediatamente superior, quando a sanção tiver sido aplicada por ela, e à prévia publicação em boletim, ressalvada a necessidade de recolhimento disciplinar prevista no Regulamento. A substitui os requisitos por ciência verbal; C afasta a exigência de publicação prévia; D restringe a aprovação ao Comandante da Unidade e elimina a exceção expressa."
+      },
   {
     "id": 466,
     "subject": "JURIDICO",
@@ -7337,20 +7337,20 @@ const BANCO_GERAL_QUESTOES = [
     "explanation": "Gabarito: A. Fundamentação: I-36-PM, art. 14, caput e §§ 1º e 2º, Assuntos Organizacionais.pdf. A licença-prêmio é de 90 dias a cada cinco anos de exercício funcional ininterrupto; a OPM detentora do Assentamento Individual insere as informações em até 30 dias do fechamento, independentemente de requerimento. B altera o período e cria requerimento; C altera a duração; D transfere a responsabilidade e elimina o prazo."
   },
   {
-    "id": 489,
-    "subject": "ORGANIZACIONAL",
-    "tag": "I-36-PM",
-    "topic": "I-36-PM — licença-prêmio e pedido de transferência para a reserva",
-    "text": "QUESTÃO 489 — Um policial militar pretende requerer transferência para a reserva, mas ainda possui parcelas de licença-prêmio não fruídas. À luz do art. 14 das I-36-PM, assinale a alternativa correta.",
-    "options": [
-      "a) O pedido de transferência para a reserva preserva automaticamente todas as parcelas não fruídas, independentemente de requerimento de gozo.",
-      "b) A OPM detentora do Assentamento Individual deve cientificar o policial sobre o direito se não houver pedido de gozo antes da transferência; cabe ao interessado solicitar a fruição, e a apresentação do requerimento de transferência para a reserva sem pedido prévio e oportuno de todas as parcelas não fruídas, pela planilha PM P-118 devidamente protocolada, implica perda do direito à licença-prêmio.",
-      "c) A indenização de licença-prêmio decorre automaticamente do pedido de transferência para a reserva, desde que as parcelas estejam registradas no Assentamento Individual.",
-      "d) As parcelas não fruídas podem ser requeridas após a publicação da inatividade, sem necessidade de pedido prévio ou observância de prazo prescricional."
-    ],
-    "answer": 1,
-    "explanation": "Gabarito: B. Fundamentação: I-36-PM, art. 14, §§ 3º a 6º. A OPM deve cientificar o interessado que não tenha requerido o gozo antes da transferência para a reserva, mas cabe a ele solicitar a fruição. A apresentação do pedido de reserva sem pedido prévio e oportuno de todas as parcelas não fruídas, por PM P-118 protocolada, implica perda do direito; a indenização prevista no § 6º é hipótese específica e sujeita à prescrição quinquenal."
-  },
+        "id": 489,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-36-PM",
+        "topic": "I-36-PM — licença-prêmio antes da transferência para a reserva",
+        "text": "QUESTÃO 489 — Um policial militar possui parcelas de licença-prêmio não fruídas e pretende requerer transferência para a reserva. Considerando o art. 14, §§ 3º a 5º, das I-36-PM, assinale a alternativa correta.",
+        "options": [
+          "a) A OPM deve requerer a fruição em nome do policial e protocolar a planilha PM P-118; apresentado o pedido de transferência, as parcelas não fruídas permanecem preservadas para gozo após a inatividade.",
+          "b) A OPM deve cientificar o policial que não tenha requerido o gozo antes da transferência, mas cabe ao interessado solicitar a fruição; o pedido de todas as parcelas não fruídas, pela planilha PM P-118 protocolada, deve anteceder oportunamente o requerimento de transferência.",
+          "c) A OPM deve cientificar o policial apenas após a publicação da inatividade; o interessado poderá requerer o gozo das parcelas não fruídas depois da transferência, sem necessidade de protocolo prévio da planilha PM P-118.",
+          "d) A OPM deve indenizar automaticamente as parcelas não fruídas quando o policial requerer a reserva; a planilha PM P-118 é necessária somente se houver discordância quanto ao cálculo da indenização."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-36-PM, art. 14, §§ 3º a 5º, Assuntos Organizacionais.pdf, PDF p. 10. A OPM deve cientificar o policial que não pediu o gozo, mas a solicitação é responsabilidade do interessado; o pedido prévio e oportuno de todas as parcelas não fruídas, por PM P-118 devidamente protocolada, deve anteceder a transferência para a reserva. A atribui à OPM o dever de requerer e preserva o gozo após a inatividade; C posterga a ciência e dispensa o pedido prévio; D transforma a indenização em automática, contrariando a hipótese específica do § 6º."
+      }
   {
     "id": 490,
     "subject": "ORGANIZACIONAL",
@@ -7756,21 +7756,21 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 1,
             "explanation": "Diretriz nº PM3-001/02/25, item 6.8.5, Assuntos Operacionais.pdf, p. 39. O usuário pode ter acesso em condições especificadas, mas não pode captar por outro equipamento nem extrair, editar ou transferir os dados. A proíbe o acesso; C autoriza cópia; D restringe indevidamente."
           },
-          {
-            "id": 518,
-            "subject": "OPERACIONAL",
-            "tag": "SCIPM",
-            "topic": "SCIPM — campo de aplicação",
-            "text": "QUESTÃO 518 — Uma OPM participa de operação emergencial de polícia ostensiva e preservação da ordem pública, sem participação inicial de bombeiros ou defesa civil. A complexidade não é elevada. A metodologia do SCIPM é aplicável?",
-            "options": [
-              "a) Não, porque só se aplica quando três ou mais agências estão presentes.",
-              "b) Não, porque depende de classificação como incidente dinâmico.",
-              "c) Sim. As OPM envolvidas em operações emergenciais de polícia ostensiva e preservação da ordem pública e/ou de bombeiros e defesa civil devem empregar a metodologia, independentemente do nível de resposta exigido pela complexidade.",
-              "d) Somente se houver ordem judicial para instalação do Posto de Comando."
-            ],
-            "answer": 2,
-            "explanation": "Diretriz nº PM3-003/02/23, Assuntos Operacionais.pdf, p. 75-76. A metodologia se destina a operações emergenciais abrangidas e independe do nível de resposta exigido. A, B e D criam condicionantes ausentes."
-          },
+           {
+        "id": 518,
+        "subject": "OPERACIONAL",
+        "tag": "SCIPM",
+        "topic": "SCIPM — campo de aplicação e nível de resposta",
+        "text": "QUESTÃO 518 — Uma OPM participa de operação emergencial de polícia ostensiva e preservação da ordem pública. A ocorrência não exige resposta de alta complexidade nem envolve, inicialmente, outros órgãos. À luz da Diretriz nº PM3-003/02/23, assinale a alternativa CORRETA quanto à aplicação da metodologia do SCIPM.",
+        "options": [
+          "a) A metodologia deve ser empregada apenas quando a complexidade exigir o nível máximo de resposta e a instalação de estrutura ampliada de comando.",
+          "b) A metodologia deve ser empregada nas operações emergenciais abrangidas pela Diretriz, independentemente do nível de resposta exigido pela complexidade do incidente.",
+          "c) A metodologia deve ser empregada somente quando a operação envolver simultaneamente a Polícia Militar, o Corpo de Bombeiros e a Defesa Civil.",
+          "d) A metodologia deve ser empregada nas operações planejadas e emergenciais, desde que haja determinação formal para instalar Posto de Comando."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fonte autorizada: Diretriz nº PM3-003/02/23, seção de aplicação e campo de destinação do SCIPM, Assuntos Operacionais.pdf, PDF p. 75. Trecho de suporte: as OPM envolvidas em operações emergenciais de polícia ostensiva e preservação da ordem pública e/ou de bombeiros e defesa civil devem empregar a metodologia nas operações de resposta a incidentes críticos; o SCIPM destina-se à gestão padronizada dessas demandas “independentemente do nível de resposta exigido pela sua complexidade”. A acrescenta condição de complexidade máxima; C torna obrigatória a presença simultânea de três órgãos, requisito não indicado; D estende a regra a operações planejadas e condiciona sua aplicação à instalação formal de Posto de Comando, condições não estabelecidas no trecho. Auditoria de unicidade: apenas B conserva o âmbito emergencial e a independência do nível de resposta. Duplicidade: busca no banco não encontrou questão que reproduza a mesma combinação de âmbito emergencial e independência da complexidade; existem outras questões SCIPM sobre funções e instalações, com objetos diferentes."
+      },
           {
             "id": 519,
             "subject": "OPERACIONAL",
@@ -9736,21 +9736,21 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 1,
             "explanation": "Gabarito: B. Fundamento: material de Assuntos Jurídicos-Administrativos, Lei nº 18.442/2026, art. 14 e quadro-resumo correspondente (p. 21 do PDF). O material indica quatro anos, curso correspondente concluído com aproveitamento, idoneidade moral, primeira terça parte, comportamento ótimo, aptidão sem restrições e não estar agregado. A, C e D alteram requisitos ou introduzem condições não indicadas."
           },
-          {
-            "id": 650,
-            "subject": "JURIDICO",
-            "tag": "Legislação Promoção",
-            "topic": "Lei nº 18.442/2026 — datas-base e descontos no interstício",
-            "text": "QUESTÃO 650 — No cálculo da antiguidade e do interstício para promoção a 2º Tenente PM do QOE/QOM, o material da Lei nº 18.442/2026 indica descontos de determinados períodos. Assinale a alternativa que reúne apenas períodos expressamente mencionados para desconto.",
-            "options": [
-              "A) Toda licença para tratamento da própria saúde, qualquer afastamento regulamentar e todo período de férias.",
-              "B) Qualquer licença para tratar de pessoa da família, desde o primeiro dia, e toda licença-prêmio usufruída.",
-              "C) Período de curso de formação, férias anuais e afastamento para exercer função administrativa.",
-              "D) Licença para tratar de interesse particular; parcela que exceder 12 meses, consecutivos ou não, de licença para tratar de saúde em pessoa da família; ausência ilegal ou deserção; cumprimento de pena privativa de liberdade por sentença transitada em julgado; e suspensão do exercício por sentença judicial transitada em julgado."
-            ],
-            "answer": 3,
-            "explanation": "Gabarito: D. Fundamento: material de Assuntos Jurídicos-Administrativos, Lei nº 18.442/2026, art. 14 e quadro-resumo correspondente (p. 22 do PDF). São indicados os períodos listados na alternativa D. A, B e C incluem períodos não apontados no trecho ou eliminam o limite de 12 meses aplicável à licença para saúde em pessoa da família."
-          },
+           {
+        "id": 650,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Lei nº 18.442/2026 — descontos na contagem da antiguidade e do interstício",
+        "text": "QUESTÃO 650 — Para a promoção a Segundo-Tenente PM do QOE/QOM, a Lei nº 18.442/2026 prevê descontos na contagem da antiguidade e do interstício. Assinale a alternativa que reúne apenas os períodos expressamente previstos para desconto.",
+        "options": [
+             "a) Licença para tratar de interesse particular; todo o período de licença para tratar da saúde de pessoa da família; férias anuais; ausência ilegal ou deserção; e cumprimento de pena privativa de liberdade por sentença transitada em julgado.",
+          "b) Licença para tratar de interesse particular; período que exceder 12 meses, consecutivos ou não, de licença para tratar da saúde de pessoa da família; ausência ilegal ou deserção; cumprimento de pena privativa de liberdade por sentença transitada em julgado; e suspensão do exercício por sentença judicial transitada em julgado.",
+          "c) Licença-prêmio usufruída; período que exceder 12 meses de licença para tratamento da própria saúde; ausência ilegal ou deserção; cumprimento de pena privativa de liberdade por decisão ainda recorrível; e suspensão do exercício determinada administrativamente.",
+          "d) Licença para tratar de interesse particular; período de até 12 meses de licença para tratar da saúde de pessoa da família; férias anuais; cumprimento de pena privativa de liberdade por sentença transitada em julgado; e qualquer afastamento temporário do serviço."
+        ],
+        "answer": 0,
+         "explanation": "Gabarito: B. Fundamentação: Lei nº 18.442/2026, regra de antiguidade e interstício para promoção a Segundo-Tenente PM do QOE/QOM, reproduzida em Assuntos Juridicos-administrativos.pdf, PDF p. 22. O material indica o desconto do tempo de licença para tratar de interesse particular; do tempo que ultrapassar 12 meses, consecutivos ou não, de licença para tratar da saúde de pessoa da família; da ausência ilegal ou deserção; do cumprimento de pena privativa de liberdade por sentença transitada em julgado; e do cumprimento de suspensão do exercício por sentença judicial transitada em julgado. A elimina o limite de 12 meses e acrescenta férias; C altera o tipo de licença e a exigência de decisão transitada em julgado; D inverte o limite aplicável à licença familiar e acrescenta férias e qualquer afastamento temporário."
+      },
           {
             "id": 651,
             "subject": "ORGANIZACIONAL",
@@ -10291,21 +10291,21 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 0,
             "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, Portaria PM1-7/02/23, art. 10, II, alíneas a e b, §§ 1º–5º, PDF p. 329. Para atendimento ao público, a norma prevê mínimo de seis horas diárias/30 semanais efetivas e dez horas para encargos móveis; avisos devem indicar horários e afastamentos antes da fruição. B, C e D alteram a composição ou ignoram o dever de informação."
           },
-          {
-            "id": 688,
-            "subject": "ORGANIZACIONAL",
-            "tag": "Regime de Trabalho",
-            "topic": "Regime de trabalho — benefício do militar estudante",
-            "text": "QUESTÃO 688 — Um militar estudante cumpre expediente das 09h às 18h e obtém o benefício de entrar até uma hora após o início ou sair até uma hora antes do término. Entre o período de aulas e o expediente da unidade há 90 minutos. Qual combinação de condições está correta?",
-            "options": [
-              "A) O benefício independe de comprovante de matrícula e pode ser usufruído durante férias escolares, desde que o curso seja oficial.",
-              "B) O benefício exige intervalo inferior a 60 minutos entre aulas e expediente e pode ser concedido em qualquer dia da semana.",
-              "C) O benefício pode ser concedido a critério da Administração quando o intervalo entre aulas e expediente for igual ou inferior a 90 minutos; exige comprovante anual ou semestral de matrícula, ocorre apenas em dias letivos e, no regime das 09h às 18h, o beneficiário não faz jus à folga parcial do art. 7º, II.",
-              "D) O benefício é obrigatório para todo militar estudante, sem necessidade de comprovar frequência semestral."
-            ],
-            "answer": 2,
-            "explanation": "Gabarito: C. Fundamentação: Assuntos Organizacionais.pdf, Portaria PM1-7/02/23, art. 11, caput e §§ 1º–7º, PDF pp. 329–330. O limite é igual ou inferior a 90 minutos; requer comprovante de matrícula, só vale em dias letivos e exige comprovação semestral de frequência. Pelo § 7º, quem usufrui o benefício no expediente do art. 6º, II, não recebe a folga parcial do art. 7º, II. A, B e D alteram requisitos e efeitos."
-          },
+           {
+        "id": 689,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Regime de Trabalho",
+        "topic": "Regime de trabalho — folga mensal obrigatória na escala 24x48",
+        "text": "QUESTÃO 689 — Um policial militar está fixado em escala 24x48. Considerando o art. 12 da Portaria PM1-7/02/23, assinale a alternativa CORRETA sobre a apuração e a fruição da folga mensal obrigatória.",
+        "options": [
+          "a) A folga é devida após nove serviços cumpridos ininterruptamente; o não cumprimento de turno interrompe a apuração, ressalvado o gozo de folga obrigatória de período anterior, e a folga deve ser usufruída nos 30 dias subsequentes, sem acumulação futura.",
+          "b) A folga é devida após 14 serviços cumpridos ininterruptamente; o não cumprimento de turno interrompe a apuração, ressalvado o gozo de folga obrigatória de período anterior, e a folga deve ser usufruída nos 30 dias subsequentes, sem acumulação futura.",
+          "c) A folga é devida após nove serviços, ainda que não cumpridos ininterruptamente; o não cumprimento de turno não interrompe a apuração se houver justificativa, e a folga pode ser acumulada para o mês seguinte.",
+          "d) A folga é devida após nove serviços cumpridos ininterruptamente; entretanto, pode ser usufruída imediatamente após dispensa-recompensa e acumulada para fruição futura se a escala da OPM assim exigir."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Portaria PM1-7/02/23, art. 12, § 2º, item 2, e §§ 3º a 8º; Assuntos Organizacionais.pdf, PDF p. 330. Trechos de suporte: para o turno 24x48, a folga é definida após nove serviços cumpridos em regime de escala, de forma ininterrupta; o não cumprimento de turno interrompe a contagem, exceto o gozo de folga obrigatória relativa a período anterior; a fruição deve ocorrer nos 30 dias subsequentes e não pode ser acumulada para o futuro. B aplica ao turno 24x48 a contagem de 14 serviços prevista para turnos 12x36 ou 12x24/12x48. C elimina a exigência de continuidade e permite acúmulo contrário ao § 4º. D contraria a vedação do § 5º à fruição na sequência de dispensa-recompensa e a proibição de acumulação. Dificuldade editorial: DIFÍCIL, pois exige distinguir o número de serviços por regime e integrar as regras de interrupção e fruição. Formato: caso prático / alternativa CORRETA. Duplicidade: comparada com questões sobre escalas e folga mensal; o foco específico em 24x48 e a combinação de apuração, interrupção e fruição diferenciam o item."
+      },
           {
             "id": 689,
             "subject": "ORGANIZACIONAL",
@@ -12271,21 +12271,21 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 0,
             "explanation": "O item 6.4.1.3 define Atividades Operacionais Diversas como demais atividades não definidas como programas, rotineiras ou esporádicas. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
           },
-          {
-            "id": 822,
-            "subject": "OPERACIONAL",
-            "tag": "Policiamento Comunitário",
-            "topic": "NORSOP — organização dos programas",
-            "text": "QUESTÃO 822 — Qual afirmação corresponde à regra dos Programas Complementares?",
-            "options": [
-              "A) São desenvolvidos mediante necessidade e disponibilidade e podem adotar forma híbrida conforme as respectivas diretrizes",
-              "B) Devem sempre contar com efetivo e meios exclusivos",
-              "C) Têm prioridade sobre Radiopatrulha e Força Tática",
-              "D) Não podem ser executados por OPM territoriais"
-            ],
-            "answer": 0,
-            "explanation": "O item 6.4.1.2 prevê necessidade, disponibilidade e possibilidade de desenvolvimento híbrido. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
-          },
+           {
+        "id": 822,
+        "subject": "OPERACIONAL",
+        "tag": "NORSOP",
+        "topic": "NORSOP — Programas de Policiamento Complementares",
+        "text": "QUESTÃO 822 — Considerando o item 6.4.1.2 da NORSOP, assinale a alternativa correta sobre os Programas de Policiamento Complementares.",
+        "options": [
+          "a) São desenvolvidos conforme critérios de necessidade e disponibilidade e podem adotar forma híbrida, com efetivo e meios específicos ou aproveitamento das estruturas de outros programas, conforme as respectivas diretrizes.",
+          "b) São desenvolvidos conforme critérios de necessidade e disponibilidade, mas exigem efetivo e meios exclusivos, sem aproveitamento das estruturas de outros programas.",
+          "c) São desenvolvidos conforme critérios de necessidade e disponibilidade e podem adotar forma híbrida, desde que tenham prioridade de emprego sobre Radiopatrulha e Força Tática.",
+          "d) São desenvolvidos conforme critérios de necessidade e disponibilidade, mas a forma híbrida somente é admitida quando não houver diretriz específica para o programa."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: NORSOP, item 6.4.1.2, Assuntos Operacionais.pdf, PDF p. 255. A norma prevê desenvolvimento conforme necessidade e disponibilidade e permite forma híbrida: efetivo e meios próprios ou aproveitamento de estruturas de outros programas, nos termos das respectivas diretrizes. B elimina a possibilidade de aproveitamento; C acrescenta prioridade não prevista; D condiciona a forma híbrida a requisito que não consta do item."
+      },
           {
             "id": 823,
             "subject": "OPERACIONAL",
@@ -15782,20 +15782,20 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 3,
         "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (papel da CPRv): “A CPRv atua de forma complementar às OPM territoriais e ambientais, ordinariamente no Nível 1 e excepcionalmente no Nível 4 para apoio especializado.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A CPRv atua exclusivamente no Nível 4, sem emprego preventivo ordinário.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel da CPRv. B: incorreta para o comando, pois afirma: “A CPRv substitui permanentemente as OPM territoriais no ambiente rural.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel da CPRv. C: incorreta para o comando, pois afirma: “A CPRv só pode atuar após determinação judicial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre papel da CPRv. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
       },
-      {
-        "id": 1056,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento Rural",
-        "topic": "planejamento integrado",
-        "text": "QUESTÃO 1056 — Considerando planejamento integrado e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
+       {
+        "id": 1156,
+        "subject": "ORGANIZACIONAL",
+        "tag": "Material Bélico",
+        "topic": "Material Bélico — renovação da APAFI e autoridade destinatária",
+        "text": "QUESTÃO 1156 — Um policial militar veterano pretende renovar a APAFI relativa à arma vinculada ao seu Assentamento Individual. Considerando o art. 54 da Portaria do Cmt G PM4-1/1.2/24, com a redação publicada no Bol G PM 241, de 20DEZ24, a solicitação prévia deve ser dirigida a quem?",
         "options": [
-          "A) O planejamento deve ser feito separadamente, sem coordenação entre as OPM.",
-          "B) O planejamento cabe exclusivamente à OPM territorial, vedada integração especializada.",
-          "C) O planejamento deve ser realizado conjuntamente entre as OPM territoriais e as especializadas envolvidas.",
-          "D) O planejamento cabe exclusivamente à OPM especializada, sem participação territorial."
+          "a) Ao Comandante da Unidade detentora do Assentamento Individual do interessado, observada a regra do inciso I do art. 50 da mesma Portaria.",
+          "b) Ao Comandante da Unidade à qual o veterano esteja funcionalmente vinculado, ainda que não detenha seu Assentamento Individual.",
+          "c) Ao Chefe do Centro de Material Bélico, que encaminhará a solicitação ao comandante competente.",
+          "d) Ao Chefe do SFPC/2ª RM, por meio do SISPROT, para que autorize diretamente a renovação."
         ],
-        "answer": 2,
-        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (planejamento integrado): “O planejamento deve ser realizado conjuntamente entre as OPM territoriais e as especializadas envolvidas.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O planejamento deve ser feito separadamente, sem coordenação entre as OPM.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre planejamento integrado. B: incorreta para o comando, pois afirma: “O planejamento cabe exclusivamente à OPM territorial, vedada integração especializada.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre planejamento integrado. D: incorreta para o comando, pois afirma: “O planejamento cabe exclusivamente à OPM especializada, sem participação territorial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre planejamento integrado. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Portaria do Cmt G PM4-1/1.2/24, art. 54, com redação dada pela alteração publicada no Bol G PM 241, de 20DEZ24; Assuntos Organizacionais.pdf, PDF p. 287. Trecho de suporte: “A renovação da APAFI obedecerá a regra do inciso I do artigo 50 desta Portaria, mediante prévia solicitação do interessado ao Cmt da Unidade detentora do seu AI.” A reproduz o destinatário expresso. B confunde essa regra com a referência à Unidade funcionalmente vinculada aplicável ao policial da ativa em outros procedimentos da Portaria. C atribui ao Chefe do CMB a recepção da solicitação de renovação sem suporte no art. 54. D confunde a autoridade destinatária da solicitação de renovação com a atuação do SFPC/2ª RM em procedimentos de autorização de aquisição. Dificuldade editorial: FÁCIL, por cobrança literal de destinatário normativo. Formato: caso prático curto / alternativa CORRETA. Duplicidade: comparada com as questões 1166 e 1174; tratam de etapas distintas (acompanhamento da autorização e saneamento processual), não repetem a regra de renovação da APAFI. Auditoria do gabarito: segunda conferência do art. 54; nenhuma alternativa concorrente. ."
       },
       {
         "id": 1057,
@@ -16247,20 +16247,20 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 2,
         "explanation": "Gabarito: C. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 3. Trecho de suporte: ““até 01OUT24, as OPM deverão proceder a imediata atualização””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 3. B está incorreta porque contraria ou amplia indevidamente a regra do item 3. D está incorreta porque contraria ou amplia indevidamente a regra do item 3."
       },
-      {
+        {
         "id": 1087,
         "subject": "JURIDICO",
         "tag": "Sistema Correcional",
-        "topic": "Instauração e atualização de Investigação Preliminar",
-        "text": "QUESTÃO 1087 — Quais estruturas são expressamente mencionadas para atualização de prefixos?",
+        "topic": "Sistema Correcional — atualização dos prefixos das estruturas de Polícia Judiciária Militar e Disciplina",
+        "text": "QUESTÃO 1087 — Nos termos da Nota CORREGPM-12243/280/24, quais estruturas deveriam ter seus prefixos atualizados junto ao Sistema Correcional até 01OUT24?",
         "options": [
-          "a) Somente a Corregedoria PM e as Seções de Justiça Militar.",
-          "b) Seção Correcional de Polícia Judiciária Militar e Disciplina, Seção ou Setor de Polícia Judiciária Militar e Disciplina e Plantão de Polícia Judiciária Militar e Disciplina.",
-          "c) Apenas os cartórios e as unidades prisionais militares.",
-          "d) Somente as OPM que ainda utilizavam exclusivamente o SIJD."
+          "a) A Seção Correcional de Polícia Judiciária Militar e Disciplina, a Seção ou Setor de Polícia Judiciária Militar e Disciplina e o Plantão de Polícia Judiciária Militar e Disciplina.",
+          "b) A Seção Correcional de Polícia Judiciária Militar e Disciplina, a Seção de Fiscalização Ostensiva da Corregedoria PM e os cartórios de Justiça Militar.",
+          "c) A Seção ou Setor de Polícia Judiciária Militar e Disciplina, os cartórios de Justiça Militar e as unidades responsáveis pelo cadastro de sanções disciplinares.",
+          "d) O Plantão de Polícia Judiciária Militar e Disciplina, a Seção de Fiscalização Ostensiva da Corregedoria PM e todas as OPM que ainda utilizassem exclusivamente o SIJD."
         ],
-        "answer": 1,
-        "explanation": "Gabarito: B. Fundamentação: Nota CORREGPM-12243/280/24 — Sistema Correcional: Instauração e Atualização de Investigação Preliminar, item 3. Trecho de suporte: ““Seção Correcional [...] Seção ou Setor [...] e Plantão de Polícia Judiciária Militar e Disciplina””. A alternativa correta corresponde à regra expressa no documento. A está incorreta porque contraria ou amplia indevidamente a regra do item 3. C está incorreta porque contraria ou amplia indevidamente a regra do item 3. D está incorreta porque contraria ou amplia indevidamente a regra do item 3."
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota CORREGPM-12243/280/24, item 3; Assuntos Juridicos-administrativos.pdf, PDF p. 29. Trecho de suporte: “as OPM deverão proceder a imediata atualização de seus prefixos da Seção Correcional de Polícia Judiciária Militar e Disciplina, Seção ou Setor de Polícia Judiciária Militar e Disciplina e Plantão de Polícia Judiciária Militar e Disciplina junto ao Sistema Correcional”. A contém as três estruturas indicadas. B e D substituem estruturas expressamente mencionadas por Seção de Fiscalização Ostensiva, que aparece no item 1.4 em outro contexto. C substitui o Plantão por cartórios e unidades de cadastro, não indicados no item 3 para essa atualização. Dificuldade editorial: MEDIANA; exige distinguir estruturas de atuação correcional próximas no mesmo documento. Formato: alternativa CORRETA. Duplicidade: verificação temática no banco; questão focaliza especificamente a atualização de prefixos determinada pelo item 3, sem duplicata literal identificada. Auditoria do gabarito: conferência do item 3 e confronto com o item 1.4; nenhuma resposta concorrente.."
       },
       {
         "id": 1089,
@@ -17447,20 +17447,20 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 1,
         "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.1. Trecho de suporte: “aprovações subsidiárias ... parecer do Cmt ... remessa ao CMB, exclusivamente, por expediente eletrônico ... no SEI”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
       },
-      {
+        {
         "id": 1168,
         "subject": "ORGANIZACIONAL",
         "tag": "Material Bélico",
-        "topic": "Aquisição, transferência e controle de material bélico",
-        "text": "QUESTÃO 1168 — Qual condição de armazenamento deve constar da declaração formal do interessado?",
+        "topic": "Aquisição, transferência e controle de material bélico — armazenamento residencial",
+        "text": "QUESTÃO 1168 — Considerando a Portaria do Cmt G PM4-1/1.2/24, qual declaração formal deve constar da documentação para aquisição de arma de fogo quanto às condições de armazenamento na residência?",
         "options": [
-          "A) Arma municiada em local acessível a adultos.",
-          "B) Cofre ou local seguro com tranca; arma desmuniciada e inacessível a menores de 25 anos e pessoas civilmente incapazes que residam ou frequentem o local.",
-          "C) Guarda no alojamento da OPM.",
-          "D) Declaração de que não possui outras armas."
+          "a) Declaração de que há local seguro com tranca para guardar a arma desmuniciada, sem acesso a menores de 18 anos e a pessoas civilmente incapazes que residam no imóvel.",
+          "b) Declaração de que há cofre ou local seguro com tranca para guardar a arma desmuniciada, sem acesso a menores de 25 anos ou a pessoas civilmente incapazes que residam ou frequentem o local.",
+          "c) Declaração de que há cofre ou local seguro com tranca para guardar a arma municiada, sem acesso a menores de 25 anos ou a pessoas civilmente incapazes que residam ou frequentem o local.",
+          "d) Declaração de que há cofre ou local seguro com tranca para guardar a arma desmuniciada, sem acesso a menores de 25 anos, ressalvadas as pessoas civilmente incapazes que apenas frequentem o local."
         ],
         "answer": 1,
-        "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 2.2.1.1. Trecho de suporte: “cofre ou lugar seguro com tranca ... arma desmuniciada ... não será acessível aos menores de 25 ... ou pessoas civilmente incapazes”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
+        "explanation": "Gabarito: B. Fonte autorizada: Portaria do Cmt G PM4-1/1.2/24, Anexo I, item 2.2.1.1, Assuntos Organizacionais.pdf, PDF p. 288; a mesma exigência também aparece nos itens 3.5.2.3.1 e 3.8.2.3.1. Trecho de suporte: a declaração deve informar que há “cofre ou lugar seguro com tranca” para armazenamento de arma de fogo “desmuniciada”, garantindo que não será acessível a menores de 25 anos ou a pessoas civilmente incapazes que residam ou frequentem o local. A altera a idade de referência e restringe o alcance às pessoas que residem no imóvel; C altera a condição de a arma estar desmuniciada; D exclui indevidamente pessoas civilmente incapazes que frequentem o local. Auditoria de unicidade: apenas B reproduz todos os elementos da regra. Duplicidade: busca temática no banco não identificou questão com o mesmo requisito específico; há questões próximas sobre aquisição de material bélico, mas com objetos distintos."
       },
       {
         "id": 1169,
@@ -20342,20 +20342,20 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 0,
         "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Registro antropométrico. Fundamentação: Diretriz nº PM3-001/03/25, item 6.5.1.2, p. 7. Evidência: “serão obrigatoriamente inseridos no SITAF pelo Treinador Físico”. B descreve outra previsão verdadeira — Avaliado (Diretriz nº PM3-001/03/25, item 6.1.3, p. 3) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Objetivo do treinamento físico (Diretriz nº PM3-001/03/25, item 6.5.2.1, p. 7) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Aptidão física (Diretriz nº PM3-001/03/25, item 6.1.1, p. 3) —, não a regra incorreta apontada no comando."
       },
-      {
+          {
         "id": 1361,
         "subject": "ORGANIZACIONAL",
         "tag": "SisTAF",
-        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física",
-        "text": "QUESTÃO 1361 — À luz de Diretriz nº PM3-001/03/25, quanto a Objetivo do treinamento físico, assinale a alternativa CORRETA.",
+        "topic": "Doutrina e Sistemática de Treinamento e Avaliação Física — objetivo do treinamento físico",
+        "text": "QUESTÃO 1361 — Considerando a Diretriz nº PM3-001/03/25, assinale a alternativa que expressa o objetivo específico do Treinamento Físico (TF), distinguindo-o das finalidades gerais da sistemática e dos Testes de Aptidão Física (TAF).",
         "options": [
-          "a) Promover manutenção e melhoria da saúde e qualidade de vida, aptidão física para o desempenho operacional e manutenção das técnicas de defesa pessoal policial.",
-          "b) Policial militar submetido à avaliação física ou ao TAF.",
-          "c) Atividade física sistematizada que objetiva incrementar a aptidão física.",
-          "d) O gerenciamento dos treinamentos físicos e da realização dos TAF nas OPM ocorre por meio da SisTAF."
+          "a) Promover a manutenção e a melhoria do estado de saúde, elevar a qualidade de vida, desenvolver a aptidão necessária ao desempenho operacional e manter as técnicas de defesa pessoal policial.",
+          "b) Avaliar o nível de condicionamento físico do policial militar, aferir a condição física para ingresso na Instituição e selecionar candidatos a cursos e estágios.",
+          "c) Sistematizar o treinamento físico e a avaliação física em toda a Polícia Militar, estabelecendo a organização institucional para aplicação e acompanhamento dessas atividades.",
+          "d) Incrementar a aptidão física por meio de atividades físicas sistematizadas, com vistas à avaliação do condicionamento, ao ingresso na Instituição e à seleção para cursos e estágios."
         ],
         "answer": 0,
-        "explanation": "Gabarito: A. A alternativa A corresponde a Objetivo do treinamento físico. Fundamentação: Diretriz nº PM3-001/03/25, item 6.5.2.1, p. 7. Evidência normativa: “manutenção e a melhoria do estado de saúde [...] aptidão físicas necessárias para o bom desempenho operacional”. B não responde corretamente ao comando porque descreve Avaliado, previsto em Diretriz nº PM3-001/03/25, item 6.1.3, p. 3, e não Objetivo do treinamento físico. C não responde corretamente ao comando porque descreve Exercício físico, previsto em Diretriz nº PM3-001/03/25, item 6.1.6, p. 4, e não Objetivo do treinamento físico. D não responde corretamente ao comando porque descreve Gerenciamento da SisTAF, previsto em Diretriz nº PM3-001/03/25, item 6.4.1, p. 6, e não Objetivo do treinamento físico."
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/03/25, item 6.5.2.1, Assuntos Organizacionais.pdf, PDF p. 338 (fl. 7). Trecho de suporte: o TF tem por objetivo promover a manutenção e a melhoria do estado de saúde, elevar a qualidade de vida, proporcionar as condições de aptidão física necessárias ao desempenho operacional e manter as técnicas de defesa pessoal policial. B reproduz as finalidades dos TAF indicadas no item 4.3, não o objetivo específico do TF. C corresponde ao objetivo geral de sistematização institucional do item 4.2, não ao objetivo específico do TF. D combina a definição de exercício físico do item 6.1.6 com finalidades de avaliação/seleção dos TAF, não com o objetivo específico do TF do item 6.5.2.1. Auditoria editorial: as alternativas tratam de finalidades próximas e documentadas na mesma Diretriz; o gabarito exige distinguir objetivo do TF, objetivo geral da sistemática e finalidades dos TAF. Dificuldade estimada: DIFÍCIL. Formato: alternativa CORRETA. Duplicidade: verificada por comparação textual e temática com o banco; relacionada, mas não duplicada, em relação à questão 1349 (objetivos dos TAF). Segunda conferência do gabarito realizada; sem resposta concorrente identificada. Status editorial: APROVADA para exportação."
       },
       {
         "id": 1362,
@@ -20958,116 +20958,116 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: C. A alternativa C corresponde a Benefício do TCI para a instituição. Fundamentação: Diretriz nº PM3-001/03/24, item 3.4, p. 2. Evidência normativa: “preservação da imagem institucional e [...] reconhecimento social da legitimidade policial”. A não responde corretamente ao comando porque descreve Missão do TCI, previsto em Diretriz nº PM3-001/03/24, item 5, p. 2, e não Benefício do TCI para a instituição. B não responde corretamente ao comando porque descreve Responsável pelo Treinamento da OPM, previsto em Diretriz nº PM3-001/03/24, item 6.1.6, p. 3, e não Benefício do TCI para a instituição. D não responde corretamente ao comando porque descreve Calendário Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.3, p. 2, e não Benefício do TCI para a instituição."
       },
       {
-        "id": 1402,
-        "subject": "OPERACIONAL",
-        "tag": "Força Tática",
-        "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1402 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O Programa de Força Tática prevê controle de indicadores de criminalidade violenta e suporte operacional especializado.\nII. A Equipe Tática ordinária em viatura de quatro rodas é composta por três ou quatro policiais militares.\nIII. A diretriz determina que a Equipe Tática ordinária seja comandada exclusivamente por Soldado PM.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Diretriz nº PM3-003/02/20, itens 4.1, 4.2 e 6.1.1; Assuntos Operacionais.pdf. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.1; Assuntos Operacionais.pdf, p. 463. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.1; Assuntos Operacionais.pdf, p. 463. A proposição contraria o conteúdo normativo indicado: O comando da Equipe Tática ordinária cabe a Oficial ou Subtenente/Sargento PM, nos termos da diretriz. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1403,
-        "subject": "OPERACIONAL",
-        "tag": "Força Tática",
-        "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1403 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A composição da Equipe Tática nunca pode ultrapassar quatro integrantes, sem exceção.\nII. A Patrulha de Escolta é composta por dois a quatro policiais, e seu encarregado é o de maior posto ou graduação.\nIII. A ROCAM com três motociclistas é sempre classificada como Patrulha, independentemente da atuação conjunta.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.2; Assuntos Operacionais.pdf, p. 463. A proposição contraria o conteúdo normativo indicado: A composição excepcional da Equipe Tática pode chegar a cinco integrantes, nas condições previstas na diretriz. II é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.7.2; Assuntos Operacionais.pdf, p. 464. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.6.3; Assuntos Operacionais.pdf, p. 464. A proposição contraria o conteúdo normativo indicado: A ROCAM com três motociclistas atuando conjuntamente, um por motocicleta, sob comando previsto, é considerada Equipe Tática. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1404,
-        "subject": "OPERACIONAL",
-        "tag": "Força Tática",
-        "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1404 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A ROCAM composta por dois motociclistas é denominada Patrulha, independentemente da presença de Oficial ou Subtenente/Sargento PM.\nII. As Equipes Táticas e as Patrulhas ROCAM ou de Escolta devem portar fardamento, material bélico e equipamentos adequados, incluindo HT como item obrigatório.\nIII. Ordinariamente, as Forças Táticas são empregadas no município-sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.6.4; Assuntos Operacionais.pdf, p. 464. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.8; Assuntos Operacionais.pdf, p. 464. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.4.1.1; Assuntos Operacionais.pdf, p. 464. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1405,
-        "subject": "OPERACIONAL",
-        "tag": "Força Tática",
-        "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1405 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Quando não desenvolvem atividades típicas de apoio tático, as Forças Táticas permanecem obrigatoriamente no Nível de Resposta 4.\nII. O emprego da Força Tática dispensa Cartão de Prioridade de Patrulhamento e não se relaciona às necessidades identificadas no PPI.\nIII. As instruções diárias dos efetivos de Força Tática têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.4.1.2; Assuntos Operacionais.pdf, p. 464. A proposição contraria o conteúdo normativo indicado: Quando não desenvolvem atividades típicas de apoio tático, as Forças Táticas atuam no Nível de Resposta 1, com atenção à intensificação do policiamento em locais de maior incidência criminal. II é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.4.1.3; Assuntos Operacionais.pdf, p. 464. A proposição contraria o conteúdo normativo indicado: As Forças Táticas são direcionadas por Cartão de Prioridade de Patrulhamento elaborado com base nas necessidades identificadas pelo comando da OPM durante o PPI. III é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.5.2; Assuntos Operacionais.pdf, p. 465. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1406,
-        "subject": "OPERACIONAL",
-        "tag": "Força Tática",
-        "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1406 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Cabe exclusivamente ao encarregado da viatura, sem coordenação superior, definir e controlar todas as instruções da Força Tática.\nII. Cada Comando de Policiamento reúne semestralmente os comandantes de OPM com Força Tática para avaliar o desenvolvimento do Programa.\nIII. A Força Tática deve prestar primeiro atendimento a solicitações emergenciais surgidas durante atividades típicas e pode providenciar a continuidade por outra Patrulha, conforme o caso.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.5.4; Assuntos Operacionais.pdf, p. 466. A proposição contraria o conteúdo normativo indicado: Cabe ao Coordenador Operacional de Batalhão, ou equivalente, coordenar as instruções aplicadas à Força Tática e controlar os assuntos abordados. II é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.8.1; Assuntos Operacionais.pdf, p. 467. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.8.2; Assuntos Operacionais.pdf, p. 467. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1407,
-        "subject": "OPERACIONAL",
-        "tag": "Força Tática",
-        "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1407 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A continuidade por outra Patrulha deve ocorrer automaticamente, mesmo que implique erro procedimental ou impedimento legal.\nII. A diretriz exige rodízio semanal de todos os componentes, inclusive quando a função exige capacitação técnica específica.\nIII. O Programa de Força Tática exclui o controle de indicadores de criminalidade violenta e não prevê suporte operacional especializado.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, itens 6.8.2 e 6.8.3; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: A continuidade do atendimento por outra Patrulha depende de avaliação do caso e não pode implicar erro procedimental nem impedimento legal ou regulamentar. II é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.8.4; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: A regra prevê rodízio periódico dos componentes da Equipe Tática em período não superior a três meses, ressalvada função que exija capacitação técnica específica. III é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, itens 4.1, 4.2 e 6.1.1; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: O Programa de Força Tática prevê controle de indicadores de criminalidade violenta e suporte operacional especializado. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1408,
-        "subject": "OPERACIONAL",
-        "tag": "Força Tática",
-        "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1408 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A Equipe Tática ordinária em viatura de quatro rodas é composta por três ou quatro policiais militares.\nII. A diretriz determina que a Equipe Tática ordinária seja comandada exclusivamente por Soldado PM.\nIII. A composição excepcional da Equipe Tática pode chegar a cinco integrantes, nas condições previstas na diretriz.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.1; Assuntos Operacionais.pdf, p. 463. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.1; Assuntos Operacionais.pdf, p. 463. A proposição contraria o conteúdo normativo indicado: O comando da Equipe Tática ordinária cabe a Oficial ou Subtenente/Sargento PM, nos termos da diretriz. III é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.2; Assuntos Operacionais.pdf, p. 463. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
+    "id": 1402,
+    "subject": "OPERACIONAL",
+    "tag": "Força Tática",
+    "topic": "Força Tática — organização, composição e emprego",
+    "text": "QUESTÃO 1402 — Considerando a Diretriz nº PM3-003/02/20 (Programa de Força Tática), analise as proposições:\n\nI. O Programa de Força Tática prevê controle de indicadores de criminalidade violenta e suporte operacional especializado.\nII. A Equipe Tática ordinária em viatura de quatro rodas é composta por três ou quatro policiais militares.\nIII. A diretriz determina que a Equipe Tática ordinária seja comandada exclusivamente por Soldado PM.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Diretriz nº PM3-003/02/20, itens 4.1, 4.2 e 6.1.1; Assuntos Operacionais.pdf. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.1; Assuntos Operacionais.pdf, p. 463. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.1; Assuntos Operacionais.pdf, p. 463. A proposição contraria o conteúdo normativo indicado: O comando da Equipe Tática ordinária cabe a Oficial ou Subtenente/Sargento PM, nos termos da diretriz. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1403,
+    "subject": "OPERACIONAL",
+    "tag": "Força Tática",
+    "topic": "Força Tática — organização, composição e emprego",
+    "text": "QUESTÃO 1403 — Considerando a Diretriz nº PM3-003/02/20 (Programa de Força Tática), analise as proposições:\n\nI. A composição da Equipe Tática nunca pode ultrapassar quatro integrantes, sem exceção.\nII. A Patrulha de Escolta é composta por dois a quatro policiais, e seu encarregado é o de maior posto ou graduação.\nIII. A ROCAM com três motociclistas é sempre classificada como Patrulha, independentemente da atuação conjunta.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.2; Assuntos Operacionais.pdf, p. 463. A proposição contraria o conteúdo normativo indicado: A composição excepcional da Equipe Tática pode chegar a cinco integrantes, nas condições previstas na diretriz. II é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.7.2; Assuntos Operacionais.pdf, p. 464. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.6.3; Assuntos Operacionais.pdf, p. 464. A proposição contraria o conteúdo normativo indicado: A ROCAM com três motociclistas atuando conjuntamente, um por motocicleta, sob comando previsto, é considerada Equipe Tática. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1404,
+    "subject": "OPERACIONAL",
+    "tag": "Força Tática",
+    "topic": "Força Tática — organização, composição e emprego",
+    "text": "QUESTÃO 1404 — Considerando a Diretriz nº PM3-003/02/20 (Programa de Força Tática), analise as proposições:\n\nI. A ROCAM composta por dois motociclistas é denominada Patrulha, independentemente da presença de Oficial ou Subtenente/Sargento PM.\nII. As Equipes Táticas e as Patrulhas ROCAM ou de Escolta devem portar fardamento, material bélico e equipamentos adequados, incluindo HT como item obrigatório.\nIII. Ordinariamente, as Forças Táticas são empregadas no município-sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.6.4; Assuntos Operacionais.pdf, p. 464. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.8; Assuntos Operacionais.pdf, p. 464. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.4.1.1; Assuntos Operacionais.pdf, p. 464. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1405,
+    "subject": "OPERACIONAL",
+    "tag": "Força Tática",
+    "topic": "Força Tática — organização, composição e emprego",
+    "text": "QUESTÃO 1405 — Considerando a Diretriz nº PM3-003/02/20 (Programa de Força Tática), analise as proposições:\n\nI. Quando não desenvolvem atividades típicas de apoio tático, as Forças Táticas permanecem obrigatoriamente no Nível de Resposta 4.\nII. O emprego da Força Tática dispensa Cartão de Prioridade de Patrulhamento e não se relaciona às necessidades identificadas no PPI.\nIII. As instruções diárias dos efetivos de Força Tática têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.4.1.2; Assuntos Operacionais.pdf, p. 464. A proposição contraria o conteúdo normativo indicado: Quando não desenvolvem atividades típicas de apoio tático, as Forças Táticas atuam no Nível de Resposta 1, com atenção à intensificação do policiamento em locais de maior incidência criminal. II é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.4.1.3; Assuntos Operacionais.pdf, p. 464. A proposição contraria o conteúdo normativo indicado: As Forças Táticas são direcionadas por Cartão de Prioridade de Patrulhamento elaborado com base nas necessidades identificadas pelo comando da OPM durante o PPI. III é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.5.2; Assuntos Operacionais.pdf, p. 465. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1406,
+    "subject": "OPERACIONAL",
+    "tag": "Força Tática",
+    "topic": "Força Tática — organização, composição e emprego",
+    "text": "QUESTÃO 1406 — Considerando a Diretriz nº PM3-003/02/20 (Programa de Força Tática), analise as proposições:\n\nI. Cabe exclusivamente ao encarregado da viatura, sem coordenação superior, definir e controlar todas as instruções da Força Tática.\nII. Cada Comando de Policiamento reúne semestralmente os comandantes de OPM com Força Tática para avaliar o desenvolvimento do Programa.\nIII. A Força Tática deve prestar primeiro atendimento a solicitações emergenciais surgidas durante atividades típicas e pode providenciar a continuidade por outra Patrulha, conforme o caso.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.5.4; Assuntos Operacionais.pdf, p. 466. A proposição contraria o conteúdo normativo indicado: Cabe ao Coordenador Operacional de Batalhão, ou equivalente, coordenar as instruções aplicadas à Força Tática e controlar os assuntos abordados. II é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.8.1; Assuntos Operacionais.pdf, p. 467. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.8.2; Assuntos Operacionais.pdf, p. 467. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1407,
+    "subject": "OPERACIONAL",
+    "tag": "Força Tática",
+    "topic": "Força Tática — organização, composição e emprego",
+    "text": "QUESTÃO 1407 — Considerando a Diretriz nº PM3-003/02/20 (Programa de Força Tática), analise as proposições:\n\nI. A continuidade por outra Patrulha deve ocorrer automaticamente, mesmo que implique erro procedimental ou impedimento legal.\nII. A diretriz exige rodízio semanal de todos os componentes, inclusive quando a função exige capacitação técnica específica.\nIII. O Programa de Força Tática exclui o controle de indicadores de criminalidade violenta e não prevê suporte operacional especializado.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, itens 6.8.2 e 6.8.3; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: A continuidade do atendimento por outra Patrulha depende de avaliação do caso e não pode implicar erro procedimental nem impedimento legal ou regulamentar. II é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.8.4; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: A regra prevê rodízio periódico dos componentes da Equipe Tática em período não superior a três meses, ressalvada função que exija capacitação técnica específica. III é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, itens 4.1, 4.2 e 6.1.1; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: O Programa de Força Tática prevê controle de indicadores de criminalidade violenta e suporte operacional especializado. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1408,
+    "subject": "OPERACIONAL",
+    "tag": "Força Tática",
+    "topic": "Força Tática — organização, composição e emprego",
+    "text": "QUESTÃO 1408 — Considerando a Diretriz nº PM3-003/02/20 (Programa de Força Tática), analise as proposições:\n\nI. A Equipe Tática ordinária em viatura de quatro rodas é composta por três ou quatro policiais militares.\nII. A diretriz determina que a Equipe Tática ordinária seja comandada exclusivamente por Soldado PM.\nIII. A composição excepcional da Equipe Tática pode chegar a cinco integrantes, nas condições previstas na diretriz.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.1; Assuntos Operacionais.pdf, p. 463. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.1; Assuntos Operacionais.pdf, p. 463. A proposição contraria o conteúdo normativo indicado: O comando da Equipe Tática ordinária cabe a Oficial ou Subtenente/Sargento PM, nos termos da diretriz. III é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.3.5.2; Assuntos Operacionais.pdf, p. 463. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
       {
         "id": 1409,
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
         "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1409 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A Patrulha de Escolta é composta por dois a quatro policiais, e seu encarregado é o de maior posto ou graduação.\nII. A ROCAM com três motociclistas é sempre classificada como Patrulha, independentemente da atuação conjunta.\nIII. A ROCAM composta por dois motociclistas somente é denominada Patrulha quando comandada por Oficial PM.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1409 — Considerando a DIRETRIZ Nº PM3-003/02/20 - Força Tática, analise as proposições:\n\nI. A Patrulha de Escolta é composta por dois a quatro policiais, e seu encarregado é o de maior posto ou graduação.\nII. A ROCAM com três motociclistas é sempre classificada como Patrulha, independentemente da atuação conjunta.\nIII. A ROCAM composta por dois motociclistas somente é denominada Patrulha quando comandada por Oficial PM.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21082,7 +21082,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
         "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1410 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. As Equipes Táticas e as Patrulhas ROCAM ou de Escolta devem portar fardamento, material bélico e equipamentos adequados, incluindo HT como item obrigatório.\nII. Ordinariamente, as Forças Táticas são empregadas no município-sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I.\nIII. Quando não desenvolvem atividades típicas de apoio tático, as Forças Táticas permanecem obrigatoriamente no Nível de Resposta 4.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1410 — Considerando a DIRETRIZ Nº PM3-003/02/20 - Força Tática, analise as proposições:\n\nI. As Equipes Táticas e as Patrulhas ROCAM ou de Escolta devem portar fardamento, material bélico e equipamentos adequados, incluindo HT como item obrigatório.\nII. Ordinariamente, as Forças Táticas são empregadas no município-sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I.\nIII. Quando não desenvolvem atividades típicas de apoio tático, as Forças Táticas permanecem obrigatoriamente no Nível de Resposta 4.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21097,7 +21097,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
         "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1411 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O emprego da Força Tática dispensa Cartão de Prioridade de Patrulhamento e não se relaciona às necessidades identificadas no PPI.\nII. As instruções diárias dos efetivos de Força Tática têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada.\nIII. Cabe exclusivamente ao encarregado da viatura, sem coordenação superior, definir e controlar todas as instruções da Força Tática.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1411 — Considerando a DIRETRIZ Nº PM3-003/02/20 - Força Tática, analise as proposições:\n\nI. O emprego da Força Tática dispensa Cartão de Prioridade de Patrulhamento e não se relaciona às necessidades identificadas no PPI.\nII. As instruções diárias dos efetivos de Força Tática têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada.\nIII. Cabe exclusivamente ao encarregado da viatura, sem coordenação superior, definir e controlar todas as instruções da Força Tática.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21112,7 +21112,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
         "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1412 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Cada Comando de Policiamento reúne semestralmente os comandantes de OPM com Força Tática para avaliar o desenvolvimento do Programa.\nII. A Força Tática deve prestar primeiro atendimento a solicitações emergenciais surgidas durante atividades típicas e pode providenciar a continuidade por outra Patrulha, conforme o caso.\nIII. A continuidade do atendimento por outra Patrulha depende de avaliação do caso e não pode implicar erro procedimental nem impedimento legal ou regulamentar.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1412 — Considerando a DIRETRIZ Nº PM3-003/02/20 - Força Tática, analise as proposições:\n\nI. Cada Comando de Policiamento reúne semestralmente os comandantes de OPM com Força Tática para avaliar o desenvolvimento do Programa.\nII. A Força Tática deve prestar primeiro atendimento a solicitações emergenciais surgidas durante atividades típicas e pode providenciar a continuidade por outra Patrulha, conforme o caso.\nIII. A continuidade do atendimento por outra Patrulha depende de avaliação do caso e não pode implicar erro procedimental nem impedimento legal ou regulamentar.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21127,7 +21127,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
         "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1413 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A diretriz exige rodízio semanal de todos os componentes, inclusive quando a função exige capacitação técnica específica.\nII. O Programa de Força Tática exclui o controle de indicadores de criminalidade violenta e não prevê suporte operacional especializado.\nIII. A Equipe Tática ordinária em viatura de quatro rodas é composta por três ou quatro policiais militares.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1413 — Considerando a DIRETRIZ Nº PM3-003/02/20 - Força Tática, analise as proposições:\n\nI. A diretriz exige rodízio semanal de todos os componentes, inclusive quando a função exige capacitação técnica específica.\nII. O Programa de Força Tática exclui o controle de indicadores de criminalidade violenta e não prevê suporte operacional especializado.\nIII. A Equipe Tática ordinária em viatura de quatro rodas é composta por três ou quatro policiais militares.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21142,7 +21142,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
         "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1414 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A diretriz determina que a Equipe Tática ordinária seja comandada exclusivamente por Soldado PM.\nII. A composição excepcional da Equipe Tática pode chegar a cinco integrantes, nas condições previstas na diretriz.\nIII. A Patrulha de Escolta é composta por dois a quatro policiais, e seu encarregado é o de maior posto ou graduação.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1414 — Considerando a DIRETRIZ Nº PM3-003/02/20 - Força Tática, analise as proposições:\n\nI. A diretriz determina que a Equipe Tática ordinária seja comandada exclusivamente por Soldado PM.\nII. A composição excepcional da Equipe Tática pode chegar a cinco integrantes, nas condições previstas na diretriz.\nIII. A Patrulha de Escolta é composta por dois a quatro policiais, e seu encarregado é o de maior posto ou graduação.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21157,7 +21157,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
         "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1415 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A ROCAM com três motociclistas é sempre classificada como Patrulha, independentemente da atuação conjunta.\nII. A ROCAM composta por dois motociclistas somente é denominada Patrulha quando comandada por Oficial PM.\nIII. O HT é facultativo para Equipes Táticas e Patrulhas ROCAM ou de Escolta, segundo a diretriz citada.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1415 — Considerando a DIRETRIZ Nº PM3-003/02/20 - Força Tática, analise as proposições:\n\nI. A ROCAM com três motociclistas é sempre classificada como Patrulha, independentemente da atuação conjunta.\nII. A ROCAM composta por dois motociclistas somente é denominada Patrulha quando comandada por Oficial PM.\nIII. O HT é facultativo para Equipes Táticas e Patrulhas ROCAM ou de Escolta, segundo a diretriz citada.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21172,7 +21172,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
         "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1416 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Ordinariamente, as Forças Táticas são empregadas no município-sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I.\nII. Quando não desenvolvem atividades típicas de apoio tático, as Forças Táticas permanecem obrigatoriamente no Nível de Resposta 4.\nIII. As Forças Táticas são direcionadas por Cartão de Prioridade de Patrulhamento elaborado com base nas necessidades identificadas pelo comando da OPM durante o PPI.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1416 — Considerando a DIRETRIZ Nº PM3-003/02/20 - Força Tática, analise as proposições:\n\nI. Ordinariamente, as Forças Táticas são empregadas no município-sede em ações de Nível de Resposta 2, prestando apoio tático aos programas da Matriz Operacional I.\nII. Quando não desenvolvem atividades típicas de apoio tático, as Forças Táticas permanecem obrigatoriamente no Nível de Resposta 4.\nIII. As Forças Táticas são direcionadas por Cartão de Prioridade de Patrulhamento elaborado com base nas necessidades identificadas pelo comando da OPM durante o PPI.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21187,7 +21187,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
         "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1417 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. As instruções diárias dos efetivos de Força Tática têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada.\nII. Cabe exclusivamente ao encarregado da viatura, sem coordenação superior, definir e controlar todas as instruções da Força Tática.\nIII. Os Comandos de Policiamento devem reunir os comandantes de Força Tática apenas a cada cinco anos, sem avaliação do Programa.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1417 — Considerando a DIRETRIZ Nº PM3-003/02/20 - Força Tática, analise as proposições:\n\nI. As instruções diárias dos efetivos de Força Tática têm duração máxima de 60 minutos e podem ocorrer de forma descentralizada.\nII. Cabe exclusivamente ao encarregado da viatura, sem coordenação superior, definir e controlar todas as instruções da Força Tática.\nIII. Os Comandos de Policiamento devem reunir os comandantes de Força Tática apenas a cada cinco anos, sem avaliação do Programa.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21202,7 +21202,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Força Tática",
         "topic": "Força Tática — organização, composição e emprego",
-        "text": "QUESTÃO 1418 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A Força Tática deve prestar primeiro atendimento a solicitações emergenciais surgidas durante atividades típicas e pode providenciar a continuidade por outra Patrulha, conforme o caso.\nII. A continuidade do atendimento por outra Patrulha depende de avaliação do caso e não pode implicar erro procedimental nem impedimento legal ou regulamentar.\nIII. A diretriz exige rodízio semanal de todos os componentes, inclusive quando a função exige capacitação técnica específica.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1418 — Considerando a DIRETRIZ Nº PM3-003/02/20 - Força Tática, analise as proposições:\n\nI. A Força Tática deve prestar primeiro atendimento a solicitações emergenciais surgidas durante atividades típicas e pode providenciar a continuidade por outra Patrulha, conforme o caso.\nII. A continuidade do atendimento por outra Patrulha depende de avaliação do caso e não pode implicar erro procedimental nem impedimento legal ou regulamentar.\nIII. A diretriz exige rodízio semanal de todos os componentes, inclusive quando a função exige capacitação técnica específica.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21217,7 +21217,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1419 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O Programa de Policiamento com Drones tem por finalidade substituir o Sistema de Comando e Controle e dispensar avaliação de risco operacional.\nII. A composição mínima da Equipe Drone exclui o Observador de UAS e exige dois Oficiais Coordenadores.\nIII. A equipe deve ser preferencialmente integrada por policial militar na função de Segurança.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1419 — Considerando a DIRETRIZ Nº PM3-005/02/24 - Policiamento com Drones, analise as proposições:\n\nI. O Programa de Policiamento com Drones tem por finalidade substituir o Sistema de Comando e Controle e dispensar avaliação de risco operacional.\nII. A composição mínima da Equipe Drone exclui o Observador de UAS e exige dois Oficiais Coordenadores.\nIII. A equipe deve ser preferencialmente integrada por policial militar na função de Segurança.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e III.",
           "b) Apenas II e III.",
@@ -21232,7 +21232,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1420 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O Observador de UAS detém, por regra, a autoridade decisória final sobre a condução da aeronave em voo.\nII. A Equipe Drone deve atuar mediante certificação emitida pelo CAvPM.\nIII. Para exercer a função de Piloto Remoto, o voluntário deve possuir no mínimo dois anos de efetivo exercício em atividade operacional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1420 — Considerando a DIRETRIZ Nº PM3-005/02/24 - Policiamento com Drones, analise as proposições:\n\nI. O Observador de UAS detém, por regra, a autoridade decisória final sobre a condução da aeronave em voo.\nII. A Equipe Drone deve atuar mediante certificação emitida pelo CAvPM.\nIII. Para exercer a função de Piloto Remoto, o voluntário deve possuir no mínimo dois anos de efetivo exercício em atividade operacional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) I, II e III.",
           "b) Apenas I e II.",
@@ -21247,7 +21247,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1421 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O candidato a Observador deve cumprir obrigatoriamente o mesmo período mínimo de dois anos de efetivo exercício operacional exigido do Piloto Remoto.\nII. A renovação da habilitação do Piloto Remoto ocorre exclusivamente por declaração de experiência, sem teste de aptidão ou proficiência.\nIII. A renovação da habilitação do Observador ocorre por teste de proficiência idêntico ao do Piloto Remoto, sem treinamento específico.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1421 — Considerando a DIRETRIZ Nº PM3-005/02/24 - Policiamento com Drones, analise as proposições:\n\nI. O candidato a Observador deve cumprir obrigatoriamente o mesmo período mínimo de dois anos de efetivo exercício operacional exigido do Piloto Remoto.\nII. A renovação da habilitação do Piloto Remoto ocorre exclusivamente por declaração de experiência, sem teste de aptidão ou proficiência.\nIII. A renovação da habilitação do Observador ocorre por teste de proficiência idêntico ao do Piloto Remoto, sem treinamento específico.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e III.",
           "b) Apenas II e III.",
@@ -21262,7 +21262,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1422 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos.\nII. O UAS Tático é definido obrigatoriamente por sensores ótico e termal, maior autonomia e proteção contra água e poeira, sem requisito de portabilidade.\nIII. O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1422 — Considerando a DIRETRIZ Nº PM3-005/02/24 - Policiamento com Drones, analise as proposições:\n\nI. O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos.\nII. O UAS Tático é definido obrigatoriamente por sensores ótico e termal, maior autonomia e proteção contra água e poeira, sem requisito de portabilidade.\nIII. O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) I, II e III.",
           "b) Apenas I e II.",
@@ -21277,7 +21277,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1423 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM.\nII. O emprego de drones é limitado a treinamentos e não pode apoiar pronta resposta a ocorrências reais.\nIII. A Coord Op PM é a única responsável pelo repositório técnico de boas práticas e pela fixação de parâmetros de tecnologia UAS.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1423 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM.\nII. O emprego de drones é limitado a treinamentos e não pode apoiar pronta resposta a ocorrências reais.\nIII. A Coord Op PM é a única responsável pelo repositório técnico de boas práticas e pela fixação de parâmetros de tecnologia UAS.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e III.",
           "b) Apenas II e III.",
@@ -21292,7 +21292,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1424 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A Coord Op PM constitui o repositório de boas práticas operacionais, registrando ocorrências referenciais e metodologias aproveitáveis por outras OPM.\nII. A participação de PM de outros Estados e de representantes de órgãos públicos externos à PMESP em cursos, estágios e treinamentos depende de autorização expressa do Subcmt PM.\nIII. O Programa de Policiamento com Drones tem por finalidade substituir o Sistema de Comando e Controle e dispensar avaliação de risco operacional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1424 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. A Coord Op PM constitui o repositório de boas práticas operacionais, registrando ocorrências referenciais e metodologias aproveitáveis por outras OPM.\nII. A participação de PM de outros Estados e de representantes de órgãos públicos externos à PMESP em cursos, estágios e treinamentos depende de autorização expressa do Subcmt PM.\nIII. O Programa de Policiamento com Drones tem por finalidade substituir o Sistema de Comando e Controle e dispensar avaliação de risco operacional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) I, II e III.",
           "b) Apenas I e II.",
@@ -21307,7 +21307,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1425 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A composição mínima da Equipe Drone exclui o Observador de UAS e exige dois Oficiais Coordenadores.\nII. A equipe deve ser preferencialmente integrada por policial militar na função de Segurança.\nIII. O Observador de UAS detém, por regra, a autoridade decisória final sobre a condução da aeronave em voo.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1425 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. A composição mínima da Equipe Drone exclui o Observador de UAS e exige dois Oficiais Coordenadores.\nII. A equipe deve ser preferencialmente integrada por policial militar na função de Segurança.\nIII. O Observador de UAS detém, por regra, a autoridade decisória final sobre a condução da aeronave em voo.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e III.",
           "b) Apenas II e III.",
@@ -21322,7 +21322,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1426 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A Equipe Drone deve atuar mediante certificação emitida pelo CAvPM.\nII. Para exercer a função de Piloto Remoto, o voluntário deve possuir no mínimo dois anos de efetivo exercício em atividade operacional.\nIII. O candidato a Observador deve preencher os requisitos exigidos do candidato a Piloto Remoto, exceto o período mínimo de dois anos de efetivo exercício operacional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1426 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. A Equipe Drone deve atuar mediante certificação emitida pelo CAvPM.\nII. Para exercer a função de Piloto Remoto, o voluntário deve possuir no mínimo dois anos de efetivo exercício em atividade operacional.\nIII. O candidato a Observador deve preencher os requisitos exigidos do candidato a Piloto Remoto, exceto o período mínimo de dois anos de efetivo exercício operacional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) I, II e III.",
           "b) Apenas I e II.",
@@ -21337,7 +21337,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1427 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A renovação da habilitação do Piloto Remoto ocorre exclusivamente por declaração de experiência, sem teste de aptidão ou proficiência.\nII. A renovação da habilitação do Observador ocorre por teste de proficiência idêntico ao do Piloto Remoto, sem treinamento específico.\nIII. O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1427 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. A renovação da habilitação do Piloto Remoto ocorre exclusivamente por declaração de experiência, sem teste de aptidão ou proficiência.\nII. A renovação da habilitação do Observador ocorre por teste de proficiência idêntico ao do Piloto Remoto, sem treinamento específico.\nIII. O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e III.",
           "b) Apenas II e III.",
@@ -21352,7 +21352,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1428 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O UAS Tático é definido obrigatoriamente por sensores ótico e termal, maior autonomia e proteção contra água e poeira, sem requisito de portabilidade.\nII. O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira.\nIII. As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1428 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. O UAS Tático é definido obrigatoriamente por sensores ótico e termal, maior autonomia e proteção contra água e poeira, sem requisito de portabilidade.\nII. O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira.\nIII. As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) I, II e III.",
           "b) Apenas I e II.",
@@ -21367,7 +21367,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1429 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O emprego de drones é limitado a treinamentos e não pode apoiar pronta resposta a ocorrências reais.\nII. A Coord Op PM é a única responsável pelo repositório técnico de boas práticas e pela fixação de parâmetros de tecnologia UAS.\nIII. O CAvPM constitui exclusivamente o repositório de boas práticas operacionais, sem registro de ocorrências referenciais pela Coord Op PM.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1429 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. O emprego de drones é limitado a treinamentos e não pode apoiar pronta resposta a ocorrências reais.\nII. A Coord Op PM é a única responsável pelo repositório técnico de boas práticas e pela fixação de parâmetros de tecnologia UAS.\nIII. O CAvPM constitui exclusivamente o repositório de boas práticas operacionais, sem registro de ocorrências referenciais pela Coord Op PM.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e III.",
           "b) Apenas II e III.",
@@ -21382,7 +21382,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1430 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A participação de PM de outros Estados e de representantes de órgãos públicos externos à PMESP em cursos, estágios e treinamentos depende de autorização expressa do Subcmt PM.\nII. O Programa de Policiamento com Drones tem por finalidade substituir o Sistema de Comando e Controle e dispensar avaliação de risco operacional.\nIII. A composição mínima da Equipe Drone inclui Piloto Remoto em Comando (RPIC) e Observador de UAS.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1430 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. A participação de PM de outros Estados e de representantes de órgãos públicos externos à PMESP em cursos, estágios e treinamentos depende de autorização expressa do Subcmt PM.\nII. O Programa de Policiamento com Drones tem por finalidade substituir o Sistema de Comando e Controle e dispensar avaliação de risco operacional.\nIII. A composição mínima da Equipe Drone inclui Piloto Remoto em Comando (RPIC) e Observador de UAS.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) I, II e III.",
           "b) Apenas I e II.",
@@ -21397,7 +21397,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1431 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A equipe deve ser preferencialmente integrada por policial militar na função de Segurança.\nII. O Observador de UAS detém, por regra, a autoridade decisória final sobre a condução da aeronave em voo.\nIII. A Equipe Drone pode atuar sem certificação do CAvPM sempre que houver autorização verbal do comandante local.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1431 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. A equipe deve ser preferencialmente integrada por policial militar na função de Segurança.\nII. O Observador de UAS detém, por regra, a autoridade decisória final sobre a condução da aeronave em voo.\nIII. A Equipe Drone pode atuar sem certificação do CAvPM sempre que houver autorização verbal do comandante local.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e III.",
           "b) Apenas II e III.",
@@ -21412,7 +21412,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1432 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Para exercer a função de Piloto Remoto, o voluntário deve possuir no mínimo dois anos de efetivo exercício em atividade operacional.\nII. O candidato a Observador deve preencher os requisitos exigidos do candidato a Piloto Remoto, exceto o período mínimo de dois anos de efetivo exercício operacional.\nIII. A renovação da habilitação do Piloto Remoto ocorre exclusivamente por declaração de experiência, sem teste de aptidão ou proficiência.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1432 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. Para exercer a função de Piloto Remoto, o voluntário deve possuir no mínimo dois anos de efetivo exercício em atividade operacional.\nII. O candidato a Observador deve preencher os requisitos exigidos do candidato a Piloto Remoto, exceto o período mínimo de dois anos de efetivo exercício operacional.\nIII. A renovação da habilitação do Piloto Remoto ocorre exclusivamente por declaração de experiência, sem teste de aptidão ou proficiência.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) I, II e III.",
           "b) Apenas I e II.",
@@ -21427,7 +21427,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1433 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A renovação da habilitação do Observador ocorre por teste de proficiência idêntico ao do Piloto Remoto, sem treinamento específico.\nII. O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos.\nIII. O UAS Tático é definido obrigatoriamente por sensores ótico e termal, maior autonomia e proteção contra água e poeira, sem requisito de portabilidade.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1433 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. A renovação da habilitação do Observador ocorre por teste de proficiência idêntico ao do Piloto Remoto, sem treinamento específico.\nII. O limite de tempo de serviço para frequentar o Curso de Especialização Profissional de Formação de Piloto Remoto é de 25 anos.\nIII. O UAS Tático é definido obrigatoriamente por sensores ótico e termal, maior autonomia e proteção contra água e poeira, sem requisito de portabilidade.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e III.",
           "b) Apenas II e III.",
@@ -21442,7 +21442,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1434 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira.\nII. As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM.\nIII. O emprego de drones pode compreender pronta resposta a ocorrências (DFR), desde ocorrências corriqueiras até incidentes críticos, graves e complexos.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1434 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. O UAS Avançado possui, no mínimo, sensores ótico e termal, maior autonomia de voo e proteção contra água e poeira.\nII. As aeronaves do Programa são, em regra, da subcategoria RPAS, admitindo-se excepcional e justificadamente a subcategoria SUA conforme especificações do CAvPM.\nIII. O emprego de drones pode compreender pronta resposta a ocorrências (DFR), desde ocorrências corriqueiras até incidentes críticos, graves e complexos.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) I, II e III.",
           "b) Apenas I e II.",
@@ -21457,7 +21457,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Drones",
         "topic": "Policiamento com Drones — equipe, habilitação e emprego",
-        "text": "QUESTÃO 1435 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A Coord Op PM é a única responsável pelo repositório técnico de boas práticas e pela fixação de parâmetros de tecnologia UAS.\nII. O CAvPM constitui exclusivamente o repositório de boas práticas operacionais, sem registro de ocorrências referenciais pela Coord Op PM.\nIII. A participação de PM de outros Estados e de representantes de órgãos públicos externos à PMESP em cursos, estágios e treinamentos depende de autorização expressa do Subcmt PM.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1435 — Considerando a Diretriz nº PM3-005/02/24, analise as proposições:\n\nI. A Coord Op PM é a única responsável pelo repositório técnico de boas práticas e pela fixação de parâmetros de tecnologia UAS.\nII. O CAvPM constitui exclusivamente o repositório de boas práticas operacionais, sem registro de ocorrências referenciais pela Coord Op PM.\nIII. A participação de PM de outros Estados e de representantes de órgãos públicos externos à PMESP em cursos, estágios e treinamentos depende de autorização expressa do Subcmt PM.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e III.",
           "b) Apenas II e III.",
@@ -21472,7 +21472,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1436 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A 3ª EM/PM monitora a evolução da Sistemática para identificar necessidades de desenvolvimento e aperfeiçoamento.\nII. A 6ª EM/PM não participa da revisão dos POP nem do desenvolvimento de indicadores da Sistemática.\nIII. A DPCDH capacita e atualiza policiais militares indicados e mantém controle quantitativo das capacitações nos termos da Sistemática.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1436 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. A 3ª EM/PM monitora a evolução da Sistemática para identificar necessidades de desenvolvimento e aperfeiçoamento.\nII. A 6ª EM/PM não participa da revisão dos POP nem do desenvolvimento de indicadores da Sistemática.\nIII. A DPCDH capacita e atualiza policiais militares indicados e mantém controle quantitativo das capacitações nos termos da Sistemática.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21487,7 +21487,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1437 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas.\nII. A Coord Op PM avalia esses programas apenas a cada dois anos e encaminha o relatório diretamente às OPM, sem via 3ª EM/PM.\nIII. A coordenação estadual da Cabine Lilás é atribuída exclusivamente a cada OPM territorial, sem atuação do COPOM São Paulo.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1437 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas.\nII. A Coord Op PM avalia esses programas apenas a cada dois anos e encaminha o relatório diretamente às OPM, sem via 3ª EM/PM.\nIII. A coordenação estadual da Cabine Lilás é atribuída exclusivamente a cada OPM territorial, sem atuação do COPOM São Paulo.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21502,7 +21502,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1438 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O COPOM São Paulo mantém controle quantitativo das Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás.\nII. Os Comandos de Policiamento consolidam dados e informações das palestras de sensibilização e os encaminham mensalmente à DPCDH.\nIII. As OPM devem desconsiderar o interesse da vítima em receber Visita Solidária ao planejar as ações.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1438 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. O COPOM São Paulo mantém controle quantitativo das Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás.\nII. Os Comandos de Policiamento consolidam dados e informações das palestras de sensibilização e os encaminham mensalmente à DPCDH.\nIII. As OPM devem desconsiderar o interesse da vítima em receber Visita Solidária ao planejar as ações.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21517,7 +21517,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1439 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Em áreas deterioradas ou hostis, o emprego dessas patrulhas dispensa avaliação prévia do cenário e apoio territorial.\nII. O indicador de ligações não efetuadas mede a taxa de BOe sem registro de contato telefônico com as vítimas; menor taxa é mais favorável.\nIII. O indicador de policiais militares capacitados é calculado dividindo o efetivo ativo existente pelo número de PM capacitados, sem multiplicação por 100.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1439 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. Em áreas deterioradas ou hostis, o emprego dessas patrulhas dispensa avaliação prévia do cenário e apoio territorial.\nII. O indicador de ligações não efetuadas mede a taxa de BOe sem registro de contato telefônico com as vítimas; menor taxa é mais favorável.\nIII. O indicador de policiais militares capacitados é calculado dividindo o efetivo ativo existente pelo número de PM capacitados, sem multiplicação por 100.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21532,7 +21532,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1440 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A Patrulha SP Mulher Segura é uma Unidade de Serviço composta por policiais militares, preferencialmente um masculino e um feminino, capacitados pelo Programa Lar Mais Seguro.\nII. A atuação integrada ao Espaço Lilás pode incluir visitas solidárias por telefone, videochamada ou presencialmente, com acolhimento e orientação preventiva.\nIII. As visitas visam acolher a vítima, orientar sobre medidas de prevenção primária e informar sobre a rede de proteção disponível.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1440 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. A Patrulha SP Mulher Segura é uma Unidade de Serviço composta por policiais militares, preferencialmente um masculino e um feminino, capacitados pelo Programa Lar Mais Seguro.\nII. A atuação integrada ao Espaço Lilás pode incluir visitas solidárias por telefone, videochamada ou presencialmente, com acolhimento e orientação preventiva.\nIII. As visitas visam acolher a vítima, orientar sobre medidas de prevenção primária e informar sobre a rede de proteção disponível.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21547,7 +21547,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1441 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A diretriz determina que o apoio territorial seja providenciado somente depois de concluída a visita à vítima.\nII. A avaliação semestral da Coord Op PM abrange exclusivamente o Programa Lar Mais Seguro, excluindo os demais programas citados.\nIII. A 3ª EM/PM monitora a evolução da Sistemática para identificar necessidades de desenvolvimento e aperfeiçoamento.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1441 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. A diretriz determina que o apoio territorial seja providenciado somente depois de concluída a visita à vítima.\nII. A avaliação semestral da Coord Op PM abrange exclusivamente o Programa Lar Mais Seguro, excluindo os demais programas citados.\nIII. A 3ª EM/PM monitora a evolução da Sistemática para identificar necessidades de desenvolvimento e aperfeiçoamento.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21562,7 +21562,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1442 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A 6ª EM/PM não participa da revisão dos POP nem do desenvolvimento de indicadores da Sistemática.\nII. A DPCDH capacita e atualiza policiais militares indicados e mantém controle quantitativo das capacitações nos termos da Sistemática.\nIII. A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1442 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. A 6ª EM/PM não participa da revisão dos POP nem do desenvolvimento de indicadores da Sistemática.\nII. A DPCDH capacita e atualiza policiais militares indicados e mantém controle quantitativo das capacitações nos termos da Sistemática.\nIII. A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21577,7 +21577,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1443 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A Coord Op PM avalia esses programas apenas a cada dois anos e encaminha o relatório diretamente às OPM, sem via 3ª EM/PM.\nII. A coordenação estadual da Cabine Lilás é atribuída exclusivamente a cada OPM territorial, sem atuação do COPOM São Paulo.\nIII. O COPOM São Paulo não mantém qualquer controle quantitativo das visitas realizadas pelo Espaço Lilás.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1443 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. A Coord Op PM avalia esses programas apenas a cada dois anos e encaminha o relatório diretamente às OPM, sem via 3ª EM/PM.\nII. A coordenação estadual da Cabine Lilás é atribuída exclusivamente a cada OPM territorial, sem atuação do COPOM São Paulo.\nIII. O COPOM São Paulo não mantém qualquer controle quantitativo das visitas realizadas pelo Espaço Lilás.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21592,7 +21592,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1444 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Os Comandos de Policiamento consolidam dados e informações das palestras de sensibilização e os encaminham mensalmente à DPCDH.\nII. As OPM devem desconsiderar o interesse da vítima em receber Visita Solidária ao planejar as ações.\nIII. Antes do emprego de Patrulhas Maria da Penha ou SP Mulher Segura em áreas deterioradas ou hostis, o Supervisor SOp — ou, na ausência, CFP/CGP — avalia o cenário e providencia apoio territorial compatível.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1444 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. Os Comandos de Policiamento consolidam dados e informações das palestras de sensibilização e os encaminham mensalmente à DPCDH.\nII. As OPM devem desconsiderar o interesse da vítima em receber Visita Solidária ao planejar as ações.\nIII. Antes do emprego de Patrulhas Maria da Penha ou SP Mulher Segura em áreas deterioradas ou hostis, o Supervisor SOp — ou, na ausência, CFP/CGP — avalia o cenário e providencia apoio territorial compatível.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21607,7 +21607,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1445 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O indicador de ligações não efetuadas mede a taxa de BOe sem registro de contato telefônico com as vítimas; menor taxa é mais favorável.\nII. O indicador de policiais militares capacitados é calculado dividindo o efetivo ativo existente pelo número de PM capacitados, sem multiplicação por 100.\nIII. A Patrulha SP Mulher Segura deve ser composta exclusivamente por policiais femininas, sem capacitação específica.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1445 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. O indicador de ligações não efetuadas mede a taxa de BOe sem registro de contato telefônico com as vítimas; menor taxa é mais favorável.\nII. O indicador de policiais militares capacitados é calculado dividindo o efetivo ativo existente pelo número de PM capacitados, sem multiplicação por 100.\nIII. A Patrulha SP Mulher Segura deve ser composta exclusivamente por policiais femininas, sem capacitação específica.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21622,7 +21622,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1446 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A atuação integrada ao Espaço Lilás pode incluir visitas solidárias por telefone, videochamada ou presencialmente, com acolhimento e orientação preventiva.\nII. As visitas visam acolher a vítima, orientar sobre medidas de prevenção primária e informar sobre a rede de proteção disponível.\nIII. A diretriz determina que o apoio territorial seja providenciado somente depois de concluída a visita à vítima.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+        "text": "QUESTÃO 1446 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. A atuação integrada ao Espaço Lilás pode incluir visitas solidárias por telefone, videochamada ou presencialmente, com acolhimento e orientação preventiva.\nII. As visitas visam acolher a vítima, orientar sobre medidas de prevenção primária e informar sobre a rede de proteção disponível.\nIII. A diretriz determina que o apoio territorial seja providenciado somente depois de concluída a visita à vítima.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
         "options": [
           "a) Apenas II e III.",
           "b) I, II e III.",
@@ -21637,7 +21637,7 @@ const BANCO_GERAL_QUESTOES = [
         "subject": "OPERACIONAL",
         "tag": "Sistemática Proteção Violência Doméstica",
         "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1447 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A avaliação semestral da Coord Op PM abrange exclusivamente o Programa Lar Mais Seguro, excluindo os demais programas citados.\nII. A 3ª EM/PM monitora a evolução da Sistemática para identificar necessidades de desenvolvimento e aperfeiçoamento.\nIII. A 6ª EM/PM não participa da revisão dos POP nem do desenvolvimento de indicadores da Sistemática.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "text": "QUESTÃO 1447 — Considerando a NOTA DE INSTRUÇÃO Nº PM3-001/02/26, analise as proposições:\n\nI. A avaliação semestral da Coord Op PM abrange exclusivamente o Programa Lar Mais Seguro, excluindo os demais programas citados.\nII. A 3ª EM/PM monitora a evolução da Sistemática para identificar necessidades de desenvolvimento e aperfeiçoamento.\nIII. A 6ª EM/PM não participa da revisão dos POP nem do desenvolvimento de indicadores da Sistemática.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
         "options": [
           "a) Apenas I e II.",
           "b) Apenas I e III.",
@@ -21648,800 +21648,815 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: B. I é INCORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.7.1, PDF p. 394. A proposição contraria o conteúdo normativo indicado: A avaliação semestral da Coord Op PM abrange os programas Lar Mais Seguro, Patrulha Maria da Penha e SP Mulher Segura. II é CORRETA; fundamento: Assuntos Organizacionais.pdf, itens relativos à governança da Sistemática, PDF p. 393. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.2.1–6.6.2.2, PDF p. 393. A proposição contraria o conteúdo normativo indicado: A 6ª EM/PM revisa os Procedimentos Operacionais Padrão relacionados e desenvolve indicadores de desempenho da Sistemática. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
       },
       {
-        "id": 1448,
-        "subject": "OPERACIONAL",
-        "tag": "Sistemática Proteção Violência Doméstica",
-        "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1448 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A DPCDH capacita e atualiza policiais militares indicados e mantém controle quantitativo das capacitações nos termos da Sistemática.\nII. A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas.\nIII. A Coord Op PM avalia semestralmente os programas Lar Mais Seguro, Patrulha Maria da Penha e SP Mulher Segura e encaminha relatório ao Subcmt PM via 3ª EM/PM.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.3.1 e 6.6.3.3.1, PDF p. 393. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.3.3.2, PDF p. 393. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.7.1, PDF p. 394. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1449,
-        "subject": "OPERACIONAL",
-        "tag": "Sistemática Proteção Violência Doméstica",
-        "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1449 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A coordenação estadual da Cabine Lilás é atribuída exclusivamente a cada OPM territorial, sem atuação do COPOM São Paulo.\nII. O COPOM São Paulo não mantém qualquer controle quantitativo das visitas realizadas pelo Espaço Lilás.\nIII. Os Comandos de Policiamento consolidam dados e informações das palestras de sensibilização e os encaminham mensalmente à DPCDH.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é INCORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.7.2.2, PDF p. 394. A proposição contraria o conteúdo normativo indicado: Por intermédio do COPOM São Paulo, a Coord Op PM coordena o Escritório Estadual da Cabine Lilás e promove integração entre Cabine Lilás e Espaço Lilás. II é INCORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.7.2.4, PDF p. 394. A proposição contraria o conteúdo normativo indicado: O COPOM São Paulo mantém controle quantitativo das Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás. III é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.8.1, PDF p. 395. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1450,
-        "subject": "OPERACIONAL",
-        "tag": "Sistemática Proteção Violência Doméstica",
-        "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1450 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. As OPM devem desconsiderar o interesse da vítima em receber Visita Solidária ao planejar as ações.\nII. Antes do emprego de Patrulhas Maria da Penha ou SP Mulher Segura em áreas deterioradas ou hostis, o Supervisor SOp — ou, na ausência, CFP/CGP — avalia o cenário e providencia apoio territorial compatível.\nIII. O indicador de ligações não efetuadas mede a taxa de BOe sem registro de contato telefônico com as vítimas; menor taxa é mais favorável.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é INCORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.8.4.5, PDF p. 395. A proposição contraria o conteúdo normativo indicado: As OPM devem controlar informações das ocorrências de violência doméstica, especialmente o interesse da vítima em receber Visita Solidária, para subsidiar o planejamento. II é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.7.4, PDF p. 396. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Assuntos Organizacionais.pdf, Anexo B, Indicador 01, PDF p. 404. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1451,
-        "subject": "OPERACIONAL",
-        "tag": "Sistemática Proteção Violência Doméstica",
-        "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1451 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O indicador de policiais militares capacitados é calculado dividindo o efetivo ativo existente pelo número de PM capacitados, sem multiplicação por 100.\nII. A Patrulha SP Mulher Segura deve ser composta exclusivamente por policiais femininas, sem capacitação específica.\nIII. A atuação integrada ao Espaço Lilás limita as visitas solidárias ao comparecimento presencial, vedando contato telefônico ou videochamada.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é INCORRETA; fundamento: Assuntos Organizacionais.pdf, Anexo B, Indicador 02, PDF p. 405. A proposição contraria o conteúdo normativo indicado: O indicador de policiais militares capacitados é calculado pela razão entre PM capacitados na ativa e efetivo ativo existente da PMESP, multiplicada por 100. II é INCORRETA; fundamento: Diretriz/Nota de Instrução nº PM3-002/02/26, item 6.1.5; Assuntos Operacionais.pdf, p. 238. A proposição contraria o conteúdo normativo indicado: A Patrulha SP Mulher Segura é uma Unidade de Serviço composta por policiais militares, preferencialmente um masculino e um feminino, capacitados pelo Programa Lar Mais Seguro. III é INCORRETA; fundamento: Assuntos Operacionais.pdf, item 6.3.7.10 e subitens. A proposição contraria o conteúdo normativo indicado: A atuação integrada ao Espaço Lilás pode incluir visitas solidárias por telefone, videochamada ou presencialmente, com acolhimento e orientação preventiva. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1452,
-        "subject": "OPERACIONAL",
-        "tag": "Sistemática Proteção Violência Doméstica",
-        "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
-        "text": "QUESTÃO 1452 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. As visitas visam acolher a vítima, orientar sobre medidas de prevenção primária e informar sobre a rede de proteção disponível.\nII. A diretriz determina que o apoio territorial seja providenciado somente depois de concluída a visita à vítima.\nIII. A avaliação semestral da Coord Op PM abrange os programas Lar Mais Seguro, Patrulha Maria da Penha e SP Mulher Segura.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é CORRETA; fundamento: Assuntos Operacionais.pdf, item 6.3.7.10.1–6.3.7.10.3. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.7.4, PDF p. 396. A proposição contraria o conteúdo normativo indicado: Antes de empregar patrulhas especializadas em contexto de risco, a norma prevê avaliação do cenário e providência de apoio territorial compatível. III é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.7.1, PDF p. 394. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1453,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1453 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A fluidez do tráfego tem prioridade sobre a proteção à vida e à incolumidade física das pessoas.\nII. O policiamento de trânsito deve privilegiar o caráter educativo-preventivo, com medidas repressivas complementares quando constatado descumprimento intencional.\nIII. A autuação é facultativa sempre que o policial considerar mais conveniente priorizar a fluidez, sem necessidade de justificativa.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) I, II e III.",
-          "b) Apenas I e II.",
-          "c) Apenas I e III.",
-          "d) Apenas II e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição contraria o conteúdo normativo indicado: A proteção à vida e à incolumidade física das pessoas tem prioridade, inclusive em relação à fluidez do tráfego. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição contraria o conteúdo normativo indicado: Constatada infração de trânsito, a autuação é obrigatória, ressalvadas força maior plenamente justificada ou impossibilidade absoluta decorrente da necessidade de garantir a segurança do trânsito. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1454,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1454 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Nas vias sob responsabilidade do Estado, a diretriz prevê atuação das OPM subordinadas ao CPRv em todo o Estado, conforme as condições nela previstas.\nII. O policiamento de trânsito no território é prioritariamente realizado pelas OPM subordinadas ao CPM/CPI, conforme a organização prevista na diretriz.\nIII. O CPTran pode atuar excepcionalmente em operação própria, apoio ou reforço diante de circunstâncias especiais e carência técnica, nos termos da diretriz.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e III.",
-          "b) Apenas II e III.",
-          "c) I, II e III.",
-          "d) Apenas I e II."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.3.1.1.2.1 e 6.3.1.2; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1455,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1455 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Unidades de Serviço de outros programas nunca podem ser empregadas em policiamento de trânsito, mesmo que suas atividades próprias permaneçam contínuas.\nII. Recursos específicos de policiamento de trânsito podem compor a Matriz Operacional I independentemente de necessidade, disponibilidade ou requisitos.\nIII. A composição prevista para as Unidades de Serviço territoriais do Programa de Policiamento de Trânsito é de dois policiais militares por US.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) I, II e III.",
-          "b) Apenas I e II.",
-          "c) Apenas I e III.",
-          "d) Apenas II e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Unidades de Serviço de outros programas podem ser empregadas ocasional ou programadamente em policiamento de trânsito, desde que suas atividades próprias não sofram solução de continuidade. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.1; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Recursos específicos de policiamento de trânsito podem compor a Matriz Operacional I, observados necessidade, disponibilidade, consignação e requisitos previstos. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1456,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1456 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A diretriz limita a patrulha de trânsito exclusivamente a viaturas de quatro rodas.\nII. O emprego ordinário em atividades típicas de trânsito ocorre no Nível de Resposta 1.\nIII. O apoio especializado excepcional caracteriza o Nível de Resposta 4, nos termos da diretriz do Programa de Policiamento de Trânsito.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e III.",
-          "b) Apenas II e III.",
-          "c) I, II e III.",
-          "d) Apenas I e II."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição contraria o conteúdo normativo indicado: A patrulha de trânsito pode atuar a pé ou em viatura de duas ou quatro rodas, conforme o Plano Diretor. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.1; Assuntos Operacionais.pdf, p. 486. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.2; Assuntos Operacionais.pdf, p. 486. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1457,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1457 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Na Região Metropolitana e no Interior, a diretriz atribui prioritariamente o policiamento territorial ao Corpo de Bombeiros, sem participação das OPM do CPM/CPI.\nII. O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Primário na NORSOP.\nIII. O emprego de outras US em policiamento de trânsito depende da interrupção obrigatória de suas atividades próprias.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) I, II e III.",
-          "b) Apenas I e II.",
-          "c) Apenas I e III.",
-          "d) Apenas II e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Na Região Metropolitana e no Interior, a diretriz prevê prioritariamente OPM subordinadas ao CPM/CPI para a atuação territorial, conforme o recorte de competência indicado. II é INCORRETA; fundamento: NORSOP, item 6.4.1.2.3; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Complementar na NORSOP. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: O emprego de outras US em policiamento de trânsito depende da preservação da continuidade de suas atividades próprias. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1458,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1458 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O caráter educativo-preventivo e a proteção prioritária à vida integram os princípios apresentados para o Programa de Policiamento de Trânsito.\nII. A diretriz proíbe o CPTran de prestar apoio ou reforço às OPM territoriais em qualquer hipótese.\nIII. A proteção à vida e à incolumidade física das pessoas tem prioridade, inclusive em relação à fluidez do tráfego.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e III.",
-          "b) Apenas II e III.",
-          "c) I, II e III.",
-          "d) Apenas I e II."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: A atuação excepcional do CPTran pode envolver apoio ou reforço às OPM territoriais, conforme as circunstâncias e condições previstas. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1459,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1459 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O policiamento de trânsito deve privilegiar o caráter educativo-preventivo, com medidas repressivas complementares quando constatado descumprimento intencional.\nII. A autuação é facultativa sempre que o policial considerar mais conveniente priorizar a fluidez, sem necessidade de justificativa.\nIII. Nas vias sob responsabilidade do Estado, a diretriz atribui exclusivamente às OPM territoriais subordinadas ao CPM/CPI, excluindo o CPRv.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) I, II e III.",
-          "b) Apenas I e II.",
-          "c) Apenas I e III.",
-          "d) Apenas II e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição contraria o conteúdo normativo indicado: Constatada infração de trânsito, a autuação é obrigatória, ressalvadas força maior plenamente justificada ou impossibilidade absoluta decorrente da necessidade de garantir a segurança do trânsito. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Nas vias sob responsabilidade do Estado, a diretriz prevê atuação das OPM subordinadas ao CPRv em todo o Estado, conforme as condições nela previstas. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1460,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1460 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O policiamento de trânsito no território é prioritariamente realizado pelas OPM subordinadas ao CPM/CPI, conforme a organização prevista na diretriz.\nII. O CPTran pode atuar excepcionalmente em operação própria, apoio ou reforço diante de circunstâncias especiais e carência técnica, nos termos da diretriz.\nIII. Unidades de Serviço de outros programas nunca podem ser empregadas em policiamento de trânsito, mesmo que suas atividades próprias permaneçam contínuas.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e III.",
-          "b) Apenas II e III.",
-          "c) I, II e III.",
-          "d) Apenas I e II."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.3.1.1.2.1 e 6.3.1.2; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Unidades de Serviço de outros programas podem ser empregadas ocasional ou programadamente em policiamento de trânsito, desde que suas atividades próprias não sofram solução de continuidade. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1461,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1461 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Recursos específicos de policiamento de trânsito podem compor a Matriz Operacional I independentemente de necessidade, disponibilidade ou requisitos.\nII. A composição prevista para as Unidades de Serviço territoriais do Programa de Policiamento de Trânsito é de dois policiais militares por US.\nIII. A diretriz limita a patrulha de trânsito exclusivamente a viaturas de quatro rodas.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) I, II e III.",
-          "b) Apenas I e II.",
-          "c) Apenas I e III.",
-          "d) Apenas II e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.1; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Recursos específicos de policiamento de trânsito podem compor a Matriz Operacional I, observados necessidade, disponibilidade, consignação e requisitos previstos. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição contraria o conteúdo normativo indicado: A patrulha de trânsito pode atuar a pé ou em viatura de duas ou quatro rodas, conforme o Plano Diretor. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1462,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1462 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O emprego ordinário em atividades típicas de trânsito ocorre no Nível de Resposta 1.\nII. O apoio especializado excepcional caracteriza o Nível de Resposta 4, nos termos da diretriz do Programa de Policiamento de Trânsito.\nIII. Na Região Metropolitana e no Interior, a diretriz prevê prioritariamente OPM subordinadas ao CPM/CPI para a atuação territorial, conforme o recorte de competência indicado.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e III.",
-          "b) Apenas II e III.",
-          "c) I, II e III.",
-          "d) Apenas I e II."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.1; Assuntos Operacionais.pdf, p. 486. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.2; Assuntos Operacionais.pdf, p. 486. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1463,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1463 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Primário na NORSOP.\nII. O emprego de outras US em policiamento de trânsito depende da interrupção obrigatória de suas atividades próprias.\nIII. O caráter educativo-preventivo e a proteção prioritária à vida integram os princípios apresentados para o Programa de Policiamento de Trânsito.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) I, II e III.",
-          "b) Apenas I e II.",
-          "c) Apenas I e III.",
-          "d) Apenas II e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é INCORRETA; fundamento: NORSOP, item 6.4.1.2.3; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Complementar na NORSOP. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: O emprego de outras US em policiamento de trânsito depende da preservação da continuidade de suas atividades próprias. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1464,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1464 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A diretriz proíbe o CPTran de prestar apoio ou reforço às OPM territoriais em qualquer hipótese.\nII. A proteção à vida e à incolumidade física das pessoas tem prioridade, inclusive em relação à fluidez do tráfego.\nIII. O policiamento de trânsito deve privilegiar o caráter educativo-preventivo, com medidas repressivas complementares quando constatado descumprimento intencional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e III.",
-          "b) Apenas II e III.",
-          "c) I, II e III.",
-          "d) Apenas I e II."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: A atuação excepcional do CPTran pode envolver apoio ou reforço às OPM territoriais, conforme as circunstâncias e condições previstas. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1465,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1465 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A autuação é facultativa sempre que o policial considerar mais conveniente priorizar a fluidez, sem necessidade de justificativa.\nII. Nas vias sob responsabilidade do Estado, a diretriz atribui exclusivamente às OPM territoriais subordinadas ao CPM/CPI, excluindo o CPRv.\nIII. O policiamento de trânsito no território é sempre atribuição exclusiva do CPTran, sem atuação prioritária das OPM subordinadas ao CPM/CPI.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) I, II e III.",
-          "b) Apenas I e II.",
-          "c) Apenas I e III.",
-          "d) Apenas II e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição contraria o conteúdo normativo indicado: Constatada infração de trânsito, a autuação é obrigatória, ressalvadas força maior plenamente justificada ou impossibilidade absoluta decorrente da necessidade de garantir a segurança do trânsito. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Nas vias sob responsabilidade do Estado, a diretriz prevê atuação das OPM subordinadas ao CPRv em todo o Estado, conforme as condições nela previstas. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.3.1.1.2.1 e 6.3.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: O policiamento de trânsito no território é prioritariamente realizado pelas OPM subordinadas ao CPM/CPI, conforme a organização prevista na diretriz. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1466,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1466 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O CPTran pode atuar excepcionalmente em operação própria, apoio ou reforço diante de circunstâncias especiais e carência técnica, nos termos da diretriz.\nII. Unidades de Serviço de outros programas nunca podem ser empregadas em policiamento de trânsito, mesmo que suas atividades próprias permaneçam contínuas.\nIII. Recursos específicos de policiamento de trânsito podem compor a Matriz Operacional I, observados necessidade, disponibilidade, consignação e requisitos previstos.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e III.",
-          "b) Apenas II e III.",
-          "c) I, II e III.",
-          "d) Apenas I e II."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Unidades de Serviço de outros programas podem ser empregadas ocasional ou programadamente em policiamento de trânsito, desde que suas atividades próprias não sofram solução de continuidade. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.1; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1467,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1467 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A composição prevista para as Unidades de Serviço territoriais do Programa de Policiamento de Trânsito é de dois policiais militares por US.\nII. A diretriz limita a patrulha de trânsito exclusivamente a viaturas de quatro rodas.\nIII. O emprego ordinário em atividades típicas de trânsito ocorre exclusivamente no Nível de Resposta 4.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) I, II e III.",
-          "b) Apenas I e II.",
-          "c) Apenas I e III.",
-          "d) Apenas II e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição contraria o conteúdo normativo indicado: A patrulha de trânsito pode atuar a pé ou em viatura de duas ou quatro rodas, conforme o Plano Diretor. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.1; Assuntos Operacionais.pdf, p. 486. A proposição contraria o conteúdo normativo indicado: O emprego ordinário em atividades típicas de trânsito ocorre no Nível de Resposta 1. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1468,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1468 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O apoio especializado excepcional caracteriza o Nível de Resposta 4, nos termos da diretriz do Programa de Policiamento de Trânsito.\nII. Na Região Metropolitana e no Interior, a diretriz prevê prioritariamente OPM subordinadas ao CPM/CPI para a atuação territorial, conforme o recorte de competência indicado.\nIII. O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Primário na NORSOP.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e III.",
-          "b) Apenas II e III.",
-          "c) I, II e III.",
-          "d) Apenas I e II."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.2; Assuntos Operacionais.pdf, p. 486. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: NORSOP, item 6.4.1.2.3; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Complementar na NORSOP. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1469,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento de Trânsito",
-        "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
-        "text": "QUESTÃO 1469 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O emprego de outras US em policiamento de trânsito depende da interrupção obrigatória de suas atividades próprias.\nII. O caráter educativo-preventivo e a proteção prioritária à vida integram os princípios apresentados para o Programa de Policiamento de Trânsito.\nIII. A diretriz proíbe o CPTran de prestar apoio ou reforço às OPM territoriais em qualquer hipótese.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) I, II e III.",
-          "b) Apenas I e II.",
-          "c) Apenas I e III.",
-          "d) Apenas II e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: O emprego de outras US em policiamento de trânsito depende da preservação da continuidade de suas atividades próprias. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: A atuação excepcional do CPTran pode envolver apoio ou reforço às OPM territoriais, conforme as circunstâncias e condições previstas. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1470,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1470 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 30 horas para o regime de trabalho nela disciplinado.\nII. A escala de serviço é expedida a partir do nível de Comandante de Companhia PM, conforme a Portaria.\nIII. O regime de expediente administrativo das 08h às 18h é desdobrado em turnos de cinco horas.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 2º; Assuntos Organizacionais.pdf, p. 327. A proposição contraria o conteúdo normativo indicado: A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 40 horas para o regime de trabalho nela disciplinado. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 3º; Assuntos Organizacionais.pdf, p. 327. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Portaria PM1-7/02/23, arts. 6º, I, e 7º, I; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1471,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1471 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. No desdobramento dos turnos, todos os dez turnos são obrigatórios e não há previsão de folgas.\nII. A regra exige manter no máximo 25% do efetivo em cada turno.\nIII. Nas semanas com dois dias sem expediente administrativo, a Portaria autoriza livremente a concessão das folgas previstas, sem exceção ou condição.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, I, alíneas a e b; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: No desdobramento dos turnos, são obrigatórios oito dos dez turnos, e os dois restantes correspondem a folgas, observadas as regras aplicáveis. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 1º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: O controle do efetivo deve manter no mínimo 50% do efetivo em cada turno, conforme a regra indicada. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, §§ 2º e 3º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: Nas semanas com dois dias sem expediente administrativo por feriados, pontos facultativos ou outras causas autorizadas, as folgas previstas são vedadas, ressalvada a hipótese docente normativa. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1472,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1472 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A exceção docente na semana com dois dias sem expediente exige designação e previsão no QTS pertinente.\nII. A vedação de afastamento em dias consecutivos não admite qualquer exceção, inclusive em caso fortuito ou força maior.\nIII. A regra geral do OAES prevê 07h30–17h30 de segunda a quinta e 07h30–12h30 na sexta-feira.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 3º; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 8º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: A vedação de afastamento em dias consecutivos admite exceção por caso fortuito ou força maior, nos termos do art. 8º. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 9º; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1473,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1473 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Para atendimento ao público pelos integrantes do QOS, a norma prevê mínimo de seis horas diárias e 30 horas semanais efetivas, e dez horas para encargos móveis, nos termos do art. 10.\nII. O benefício de horário do militar estudante aplica-se apenas quando o deslocamento excede duas horas, sem comprovação de matrícula.\nIII. A folga mensal obrigatória pode ser acumulada indefinidamente e usufruída a qualquer tempo futuro.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 10; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 11; Assuntos Organizacionais.pdf, pp. 329–330. A proposição contraria o conteúdo normativo indicado: O benefício de horário do militar estudante exige que o deslocamento esteja dentro do limite igual ou inferior a 90 minutos, além dos requisitos documentais e letivos previstos. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, §§ 3º–4º; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: A folga mensal obrigatória deve ser usufruída nos 30 dias subsequentes ao período de apuração e não pode ser acumulada para período futuro. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1474,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1474 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Para o regime 24x48, a folga mensal obrigatória ocorre após nove serviços ininterruptos, conforme a regra indicada.\nII. O não cumprimento do turno por qualquer causa interrompe a contagem, exceto o gozo da folga mensal obrigatória relativa a período anterior.\nIII. A folga mensal obrigatória pode sempre ser usufruída imediatamente após qualquer afastamento temporário, sem restrições.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 2º, item 2; Assuntos Organizacionais.pdf, p. 330. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 3º; Assuntos Organizacionais.pdf, p. 330. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 5º; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: A folga mensal obrigatória não pode ser usufruída na sequência de dispensa do serviço, dispensa-recompensa, dispensa para doação de sangue ou outro afastamento temporário, ressalvadas as exceções normativas. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1475,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1475 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O expediente dos Órgãos de Direção Geral e Setorial só pode ser adaptado por decisão individual de cada policial militar.\nII. Podem ser acrescentados até 30 minutos aos períodos de serviço em regime de escala para instrução e/ou avaliação.\nIII. A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 30 horas para o regime de trabalho nela disciplinado.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 14; Assuntos Organizacionais.pdf, p. 331. A proposição contraria o conteúdo normativo indicado: O expediente dos Órgãos de Direção Geral e Setorial pode ser adaptado às necessidades institucionais por ato específico do respectivo Comandante, Chefe ou Diretor. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 18; Assuntos Organizacionais.pdf, p. 331. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 2º; Assuntos Organizacionais.pdf, p. 327. A proposição contraria o conteúdo normativo indicado: A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 40 horas para o regime de trabalho nela disciplinado. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1476,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1476 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A escala de serviço é expedida a partir do nível de Comandante de Companhia PM, conforme a Portaria.\nII. O regime de expediente administrativo das 08h às 18h é desdobrado em turnos de cinco horas.\nIII. No desdobramento dos turnos, são obrigatórios oito dos dez turnos, e os dois restantes correspondem a folgas, observadas as regras aplicáveis.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 3º; Assuntos Organizacionais.pdf, p. 327. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Portaria PM1-7/02/23, arts. 6º, I, e 7º, I; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, I, alíneas a e b; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1477,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1477 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A regra exige manter no máximo 25% do efetivo em cada turno.\nII. Nas semanas com dois dias sem expediente administrativo, a Portaria autoriza livremente a concessão das folgas previstas, sem exceção ou condição.\nIII. A exceção docente na semana com dois dias sem expediente exige designação e previsão no QTS pertinente.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 1º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: O controle do efetivo deve manter no mínimo 50% do efetivo em cada turno, conforme a regra indicada. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, §§ 2º e 3º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: Nas semanas com dois dias sem expediente administrativo por feriados, pontos facultativos ou outras causas autorizadas, as folgas previstas são vedadas, ressalvada a hipótese docente normativa. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 3º; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1478,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1478 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A vedação de afastamento em dias consecutivos não admite qualquer exceção, inclusive em caso fortuito ou força maior.\nII. A regra geral do OAES prevê 07h30–17h30 de segunda a quinta e 07h30–12h30 na sexta-feira.\nIII. Para atendimento ao público pelos integrantes do QOS, a norma prevê mínimo de seis horas diárias e 30 horas semanais efetivas, e dez horas para encargos móveis, nos termos do art. 10.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 8º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: A vedação de afastamento em dias consecutivos admite exceção por caso fortuito ou força maior, nos termos do art. 8º. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 9º; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 10; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1479,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1479 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O benefício de horário do militar estudante aplica-se apenas quando o deslocamento excede duas horas, sem comprovação de matrícula.\nII. A folga mensal obrigatória pode ser acumulada indefinidamente e usufruída a qualquer tempo futuro.\nIII. Para o regime 24x48, a folga mensal obrigatória ocorre após três serviços ininterruptos.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 11; Assuntos Organizacionais.pdf, pp. 329–330. A proposição contraria o conteúdo normativo indicado: O benefício de horário do militar estudante exige que o deslocamento esteja dentro do limite igual ou inferior a 90 minutos, além dos requisitos documentais e letivos previstos. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, §§ 3º–4º; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: A folga mensal obrigatória deve ser usufruída nos 30 dias subsequentes ao período de apuração e não pode ser acumulada para período futuro. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 2º, item 2; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: Para o regime 24x48, a folga mensal obrigatória ocorre após nove serviços ininterruptos, conforme a regra indicada. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1480,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1480 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O não cumprimento do turno por qualquer causa interrompe a contagem, exceto o gozo da folga mensal obrigatória relativa a período anterior.\nII. A folga mensal obrigatória pode sempre ser usufruída imediatamente após qualquer afastamento temporário, sem restrições.\nIII. O expediente dos Órgãos de Direção Geral e Setorial pode ser adaptado às necessidades institucionais por ato específico do respectivo Comandante, Chefe ou Diretor.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 3º; Assuntos Organizacionais.pdf, p. 330. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 5º; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: A folga mensal obrigatória não pode ser usufruída na sequência de dispensa do serviço, dispensa-recompensa, dispensa para doação de sangue ou outro afastamento temporário, ressalvadas as exceções normativas. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 14; Assuntos Organizacionais.pdf, p. 331. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1481,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1481 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Podem ser acrescentados até 30 minutos aos períodos de serviço em regime de escala para instrução e/ou avaliação.\nII. A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 30 horas para o regime de trabalho nela disciplinado.\nIII. A escala de serviço é expedida exclusivamente pelo Comando-Geral, sem atribuição nos escalões de Companhia PM.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 18; Assuntos Organizacionais.pdf, p. 331. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 2º; Assuntos Organizacionais.pdf, p. 327. A proposição contraria o conteúdo normativo indicado: A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 40 horas para o regime de trabalho nela disciplinado. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 3º; Assuntos Organizacionais.pdf, p. 327. A proposição contraria o conteúdo normativo indicado: A escala de serviço é expedida a partir do nível de Comandante de Companhia PM, conforme a Portaria. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1482,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1482 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O regime de expediente administrativo das 08h às 18h é desdobrado em turnos de cinco horas.\nII. No desdobramento dos turnos, são obrigatórios oito dos dez turnos, e os dois restantes correspondem a folgas, observadas as regras aplicáveis.\nIII. A regra exige manter no máximo 25% do efetivo em cada turno.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Portaria PM1-7/02/23, arts. 6º, I, e 7º, I; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, I, alíneas a e b; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 1º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: O controle do efetivo deve manter no mínimo 50% do efetivo em cada turno, conforme a regra indicada. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1483,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1483 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Nas semanas com dois dias sem expediente administrativo, a Portaria autoriza livremente a concessão das folgas previstas, sem exceção ou condição.\nII. A exceção docente na semana com dois dias sem expediente exige designação e previsão no QTS pertinente.\nIII. A vedação de afastamento em dias consecutivos não admite qualquer exceção, inclusive em caso fortuito ou força maior.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, §§ 2º e 3º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: Nas semanas com dois dias sem expediente administrativo por feriados, pontos facultativos ou outras causas autorizadas, as folgas previstas são vedadas, ressalvada a hipótese docente normativa. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 3º; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 8º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: A vedação de afastamento em dias consecutivos admite exceção por caso fortuito ou força maior, nos termos do art. 8º. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1484,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1484 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A regra geral do OAES prevê 07h30–17h30 de segunda a quinta e 07h30–12h30 na sexta-feira.\nII. Para atendimento ao público pelos integrantes do QOS, a norma prevê mínimo de seis horas diárias e 30 horas semanais efetivas, e dez horas para encargos móveis, nos termos do art. 10.\nIII. O benefício de horário do militar estudante exige que o deslocamento esteja dentro do limite igual ou inferior a 90 minutos, além dos requisitos documentais e letivos previstos.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 9º; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 10; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 11; Assuntos Organizacionais.pdf, pp. 329–330. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1485,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Regime de Trabalho",
-        "topic": "Regime de Trabalho — jornada, escalas e folgas",
-        "text": "QUESTÃO 1485 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A folga mensal obrigatória pode ser acumulada indefinidamente e usufruída a qualquer tempo futuro.\nII. Para o regime 24x48, a folga mensal obrigatória ocorre após três serviços ininterruptos.\nIII. O não cumprimento do turno por qualquer causa interrompe a contagem, exceto o gozo da folga mensal obrigatória relativa a período anterior.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, §§ 3º–4º; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: A folga mensal obrigatória deve ser usufruída nos 30 dias subsequentes ao período de apuração e não pode ser acumulada para período futuro. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 2º, item 2; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: Para o regime 24x48, a folga mensal obrigatória ocorre após nove serviços ininterruptos, conforme a regra indicada. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 3º; Assuntos Organizacionais.pdf, p. 330. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1486,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1486 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A Corregedoria PM tem atribuição exclusiva de manter arquivos físicos, sendo vedado banco de dados funcional informatizado e integrado.\nII. A partir de 01JAN15, os dados referentes às Investigações Preliminares instauradas pelas OPM passaram a ser inseridos no SIJD.\nIII. O Sistema Correcional está em implantação para substituir gradualmente o SIJD em suas funcionalidades e disponibilizar outras ferramentas de gestão.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A Corregedoria PM tem atribuição de organizar e manter banco de dados funcional informatizado e integrado, nos termos do Decreto Estadual 38.318/90 citado no documento. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.2; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1487,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1487 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O documento determina que as Seções Correcionais continuem exclusivamente fora do ambiente virtual do Sistema Correcional.\nII. A partir de 01OUT24, a instauração de Investigações Preliminares no novo módulo é facultativa e o SIJD permanece como via obrigatória única.\nIII. No novo módulo, as investigações não recebem número e devem ser instruídas exclusivamente em papel, com assinatura manuscrita.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: Desde a publicação da Nota CORREGPM-4694/280/24, as Seções Correcionais e Seções/Setores de Polícia Judiciária Militar e Disciplina operam no ambiente virtual do Sistema Correcional. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A contar de 01OUT24, todas as Investigações Preliminares devem ser instauradas obrigatoriamente por meio do novo módulo do Sistema Correcional. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: No novo módulo, as investigações recebem número, são instruídas digitalmente e finalizadas com assinatura eletrônica. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1488,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1488 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. Transitoriamente, ao instaurar investigação no novo módulo, deve ser informado o número da última Investigação Preliminar cadastrada no SIJD para continuidade do numerador.\nII. As Investigações Preliminares instauradas no SIJD devem ser obrigatoriamente transferidas ao novo módulo para encerramento, segundo o item 2.4.\nIII. O material prevê que, até 01OUT24, as OPM observassem os procedimentos transitórios especificados na determinação.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.2; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: As Investigações Preliminares instauradas no SIJD devem ser encerradas naquele sistema. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1489,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1489 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A tramitação digital do Sistema Correcional objetiva aprimorar a gestão institucional na área de polícia judiciária militar e disciplina.\nII. O novo módulo permite apenas a abertura digital, mas exige que toda a instrução e tramitação ocorram fora do sistema.\nIII. A determinação de instauração obrigatória pelo novo módulo passou a valer a partir de 01JAN15.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.3–1.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O novo módulo permite que as Investigações Preliminares sejam instruídas digitalmente e tramitem pelo mesmo meio. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A determinação de instauração obrigatória pelo novo módulo é datada a partir de 01OUT24. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1490,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1490 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O SIJD foi o sistema no qual se inseriam os dados de Investigações Preliminares a partir de 01JAN15, antes da transição indicada no documento.\nII. O Sistema Correcional disponibiliza ferramentas para aprimorar a gestão institucional na área de polícia judiciária militar e disciplina.\nIII. As Seções e Setores mencionados estão impedidos de tramitar documentos afetos à Seção de Fiscalização Ostensiva no ambiente virtual do Sistema Correcional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.2–1.3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: As Seções e Setores mencionados operam no ambiente virtual do Sistema Correcional, com tramitação de documentos afetos à Seção de Fiscalização Ostensiva da Corregedoria PM, conforme o texto. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1491,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1491 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A implantação do Sistema Correcional apaga os dados históricos do SIJD e torna inválidas todas as investigações anteriormente instauradas.\nII. A Corregedoria PM tem atribuição de organizar e manter banco de dados funcional informatizado e integrado, nos termos do Decreto Estadual 38.318/90 citado no documento.\nIII. A inserção dos dados de Investigações Preliminares no SIJD começou apenas em 01OUT24.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3 e item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A implantação do Sistema Correcional é gradual e substitui funcionalidades do SIJD, não sendo descrita como uma desativação retroativa dos dados históricos. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.2; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A partir de 01JAN15, os dados referentes às Investigações Preliminares instauradas pelas OPM passaram a ser inseridos no SIJD. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1492,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1492 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O Sistema Correcional está em implantação para substituir gradualmente o SIJD em suas funcionalidades e disponibilizar outras ferramentas de gestão.\nII. Desde a publicação da Nota CORREGPM-4694/280/24, as Seções Correcionais e Seções/Setores de Polícia Judiciária Militar e Disciplina operam no ambiente virtual do Sistema Correcional.\nIII. A contar de 01OUT24, todas as Investigações Preliminares devem ser instauradas obrigatoriamente por meio do novo módulo do Sistema Correcional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1493,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1493 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. No novo módulo, as investigações não recebem número e devem ser instruídas exclusivamente em papel, com assinatura manuscrita.\nII. O procedimento transitório determina reiniciar o numerador do zero, sem informar o último número cadastrado no SIJD.\nIII. As Investigações Preliminares instauradas no SIJD devem ser encerradas naquele sistema.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: No novo módulo, as investigações recebem número, são instruídas digitalmente e finalizadas com assinatura eletrônica. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.2; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: Transitoriamente, ao instaurar investigação no novo módulo, deve ser informado o número da última Investigação Preliminar cadastrada no SIJD para continuidade do numerador. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1494,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1494 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O material estabelece que os procedimentos transitórios só começariam depois de 01OUT25.\nII. A tramitação digital do Sistema Correcional objetiva aprimorar a gestão institucional na área de polícia judiciária militar e disciplina.\nIII. O novo módulo permite que as Investigações Preliminares sejam instruídas digitalmente e tramitem pelo mesmo meio.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 3; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O material prevê que, até 01OUT24, as OPM observassem os procedimentos transitórios especificados na determinação. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.3–1.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1495,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1495 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A determinação de instauração obrigatória pelo novo módulo passou a valer a partir de 01JAN15.\nII. O documento afirma que os dados de Investigações Preliminares sempre foram inseridos exclusivamente no Sistema Correcional desde 2015.\nIII. O Sistema Correcional foi concebido para tratar apenas de recursos humanos e não disponibiliza ferramentas relacionadas à polícia judiciária militar e disciplina.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A determinação de instauração obrigatória pelo novo módulo é datada a partir de 01OUT24. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.2–1.3; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O SIJD foi o sistema no qual se inseriam os dados de Investigações Preliminares a partir de 01JAN15, antes da transição indicada no documento. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O Sistema Correcional disponibiliza ferramentas para aprimorar a gestão institucional na área de polícia judiciária militar e disciplina. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1496,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1496 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. As Seções e Setores mencionados operam no ambiente virtual do Sistema Correcional, com tramitação de documentos afetos à Seção de Fiscalização Ostensiva da Corregedoria PM, conforme o texto.\nII. A implantação do Sistema Correcional apaga os dados históricos do SIJD e torna inválidas todas as investigações anteriormente instauradas.\nIII. A Corregedoria PM tem atribuição de organizar e manter banco de dados funcional informatizado e integrado, nos termos do Decreto Estadual 38.318/90 citado no documento.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3 e item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A implantação do Sistema Correcional é gradual e substitui funcionalidades do SIJD, não sendo descrita como uma desativação retroativa dos dados históricos. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1497,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1497 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A partir de 01JAN15, os dados referentes às Investigações Preliminares instauradas pelas OPM passaram a ser inseridos no SIJD.\nII. O Sistema Correcional foi criado para substituir instantaneamente o SIJD, sem implantação gradual ou novas ferramentas.\nIII. O documento determina que as Seções Correcionais continuem exclusivamente fora do ambiente virtual do Sistema Correcional.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.2; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O Sistema Correcional está em implantação para substituir gradualmente o SIJD em suas funcionalidades e disponibilizar outras ferramentas de gestão. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: Desde a publicação da Nota CORREGPM-4694/280/24, as Seções Correcionais e Seções/Setores de Polícia Judiciária Militar e Disciplina operam no ambiente virtual do Sistema Correcional. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1498,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1498 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. A contar de 01OUT24, todas as Investigações Preliminares devem ser instauradas obrigatoriamente por meio do novo módulo do Sistema Correcional.\nII. No novo módulo, as investigações recebem número, são instruídas digitalmente e finalizadas com assinatura eletrônica.\nIII. O procedimento transitório determina reiniciar o numerador do zero, sem informar o último número cadastrado no SIJD.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.2; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: Transitoriamente, ao instaurar investigação no novo módulo, deve ser informado o número da última Investigação Preliminar cadastrada no SIJD para continuidade do numerador. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1499,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1499 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. As Investigações Preliminares instauradas no SIJD devem ser obrigatoriamente transferidas ao novo módulo para encerramento, segundo o item 2.4.\nII. O material prevê que, até 01OUT24, as OPM observassem os procedimentos transitórios especificados na determinação.\nIII. A tramitação digital do Sistema Correcional objetiva eliminar a gestão institucional de polícia judiciária militar e disciplina.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: As Investigações Preliminares instauradas no SIJD devem ser encerradas naquele sistema. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.3–1.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A tramitação digital do Sistema Correcional objetiva aprimorar a gestão institucional na área de polícia judiciária militar e disciplina. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
-      {
-        "id": 1500,
-        "subject": "JURIDICO",
-        "tag": "Sistema Correcional",
-        "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
-        "text": "QUESTÃO 1500 — Considerando as disposições normativas indicadas, analise as proposições:\n\nI. O novo módulo permite que as Investigações Preliminares sejam instruídas digitalmente e tramitem pelo mesmo meio.\nII. A determinação de instauração obrigatória pelo novo módulo é datada a partir de 01OUT24.\nIII. O SIJD foi o sistema no qual se inseriam os dados de Investigações Preliminares a partir de 01JAN15, antes da transição indicada no documento.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) I, II e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.2–1.3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
-      },
+    "id": 1448,
+    "subject": "OPERACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
+    "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
+    "text": "QUESTÃO 1448 — Considerando as normas institucionais da Sistemática de Proteção à Mulher em situação de violência doméstica e familiar, analise as proposições:\n\nI. A DPCDH capacita e atualiza policiais militares indicados e mantém controle quantitativo das capacitações nos termos da Sistemática.\nII. A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas.\nIII. A Coord Op PM avalia semestralmente os programas Lar Mais Seguro, Patrulha Maria da Penha e SP Mulher Segura e encaminha relatório ao Subcmt PM via 3ª EM/PM.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.3.1 e 6.6.3.3.1, PDF p. 393. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.3.3.2, PDF p. 393. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.7.1, PDF p. 394. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1449,
+    "subject": "OPERACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
+    "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
+    "text": "QUESTÃO 1449 — Considerando as normas institucionais da Sistemática de Proteção à Mulher em situação de violência doméstica e familiar, analise as proposições:\n\nI. A coordenação estadual da Cabine Lilás é atribuída exclusivamente a cada OPM territorial, sem atuação do COPOM São Paulo.\nII. O COPOM São Paulo não mantém qualquer controle quantitativo das visitas realizadas pelo Espaço Lilás.\nIII. Os Comandos de Policiamento consolidam dados e informações das palestras de sensibilização e os encaminham mensalmente à DPCDH.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é INCORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.7.2.2, PDF p. 394. A proposição contraria o conteúdo normativo indicado: Por intermédio do COPOM São Paulo, a Coord Op PM coordena o Escritório Estadual da Cabine Lilás e promove integração entre Cabine Lilás e Espaço Lilás. II é INCORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.7.2.4, PDF p. 394. A proposição contraria o conteúdo normativo indicado: O COPOM São Paulo mantém controle quantitativo das Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás. III é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.8.1, PDF p. 395. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1450,
+    "subject": "OPERACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
+    "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
+    "text": "QUESTÃO 1450 — Considerando as normas institucionais da Sistemática de Proteção à Mulher em situação de violência doméstica e familiar, analise as proposições:\n\nI. As OPM devem desconsiderar o interesse da vítima em receber Visita Solidária ao planejar as ações.\nII. Antes do emprego de Patrulhas Maria da Penha ou SP Mulher Segura em áreas deterioradas ou hostis, o Supervisor SOp — ou, na ausência, CFP/CGP — avalia o cenário e providencia apoio territorial compatível.\nIII. O indicador de ligações não efetuadas mede a taxa de BOe sem registro de contato telefônico com as vítimas; menor taxa é mais favorável.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é INCORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.8.4.5, PDF p. 395. A proposição contraria o conteúdo normativo indicado: As OPM devem controlar informações das ocorrências de violência doméstica, especialmente o interesse da vítima em receber Visita Solidária, para subsidiar o planejamento. II é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.7.4, PDF p. 396. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Assuntos Organizacionais.pdf, Anexo B, Indicador 01, PDF p. 404. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1451,
+    "subject": "OPERACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
+    "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
+    "text": "QUESTÃO 1451 — Considerando as normas institucionais da Sistemática de Proteção à Mulher em situação de violência doméstica e familiar, analise as proposições:\n\nI. O indicador de policiais militares capacitados é calculado dividindo o efetivo ativo existente pelo número de PM capacitados, sem multiplicação por 100.\nII. A Patrulha SP Mulher Segura deve ser composta exclusivamente por policiais femininas, sem capacitação específica.\nIII. A atuação integrada ao Espaço Lilás limita as visitas solidárias ao comparecimento presencial, vedando contato telefônico ou videochamada.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é INCORRETA; fundamento: Assuntos Organizacionais.pdf, Anexo B, Indicador 02, PDF p. 405. A proposição contraria o conteúdo normativo indicado: O indicador de policiais militares capacitados é calculado pela razão entre PM capacitados na ativa e efetivo ativo existente da PMESP, multiplicada por 100. II é INCORRETA; fundamento: Diretriz/Nota de Instrução nº PM3-002/02/26, item 6.1.5; Assuntos Operacionais.pdf, p. 238. A proposição contraria o conteúdo normativo indicado: A Patrulha SP Mulher Segura é uma Unidade de Serviço composta por policiais militares, preferencialmente um masculino e um feminino, capacitados pelo Programa Lar Mais Seguro. III é INCORRETA; fundamento: Assuntos Operacionais.pdf, item 6.3.7.10 e subitens. A proposição contraria o conteúdo normativo indicado: A atuação integrada ao Espaço Lilás pode incluir visitas solidárias por telefone, videochamada ou presencialmente, com acolhimento e orientação preventiva. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1452,
+    "subject": "OPERACIONAL",
+    "tag": "Sistemática Proteção Violência Doméstica",
+    "topic": "Sistemática de Proteção à Mulher — governança, visitas e indicadores",
+    "text": "QUESTÃO 1452 — Considerando as normas institucionais da Sistemática de Proteção à Mulher em situação de violência doméstica e familiar, analise as proposições:\n\nI. As visitas visam acolher a vítima, orientar sobre medidas de prevenção primária e informar sobre a rede de proteção disponível.\nII. A diretriz determina que o apoio territorial seja providenciado somente depois de concluída a visita à vítima.\nIII. A avaliação semestral da Coord Op PM abrange os programas Lar Mais Seguro, Patrulha Maria da Penha e SP Mulher Segura.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é CORRETA; fundamento: Assuntos Operacionais.pdf, item 6.3.7.10.1–6.3.7.10.3. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.7.4, PDF p. 396. A proposição contraria o conteúdo normativo indicado: Antes de empregar patrulhas especializadas em contexto de risco, a norma prevê avaliação do cenário e providência de apoio territorial compatível. III é CORRETA; fundamento: Assuntos Organizacionais.pdf, item 6.6.7.1, PDF p. 394. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1453,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1453 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. A fluidez do tráfego tem prioridade sobre a proteção à vida e à incolumidade física das pessoas.\nII. O policiamento de trânsito deve privilegiar o caráter educativo-preventivo, com medidas repressivas complementares quando constatado descumprimento intencional.\nIII. A autuação é facultativa sempre que o policial considerar mais conveniente priorizar a fluidez, sem necessidade de justificativa.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) I, II e III.",
+      "b) Apenas I e II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição contraria o conteúdo normativo indicado: A proteção à vida e à incolumidade física das pessoas tem prioridade, inclusive em relação à fluidez do tráfego. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição contraria o conteúdo normativo indicado: Constatada infração de trânsito, a autuação é obrigatória, ressalvadas força maior plenamente justificada ou impossibilidade absoluta decorrente da necessidade de garantir a segurança do trânsito. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1454,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1454 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. Nas vias sob responsabilidade do Estado, a diretriz prevê atuação das OPM subordinadas ao CPRv em todo o Estado, conforme as condições nela previstas.\nII. O policiamento de trânsito no território é prioritariamente realizado pelas OPM subordinadas ao CPM/CPI, conforme a organização prevista na diretriz.\nIII. O CPTran pode atuar excepcionalmente em operação própria, apoio ou reforço diante de circunstâncias especiais e carência técnica, nos termos da diretriz.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e III.",
+      "b) Apenas II e III.",
+      "c) I, II e III.",
+      "d) Apenas I e II."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.3.1.1.2.1 e 6.3.1.2; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1455,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1455 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. Unidades de Serviço de outros programas nunca podem ser empregadas em policiamento de trânsito, mesmo que suas atividades próprias permaneçam contínuas.\nII. Recursos específicos de policiamento de trânsito podem compor a Matriz Operacional I independentemente de necessidade, disponibilidade ou requisitos.\nIII. A composição prevista para as Unidades de Serviço territoriais do Programa de Policiamento de Trânsito é de dois policiais militares por US.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) I, II e III.",
+      "b) Apenas I e II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Unidades de Serviço de outros programas podem ser empregadas ocasional ou programadamente em policiamento de trânsito, desde que suas atividades próprias não sofram solução de continuidade. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.1; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Recursos específicos de policiamento de trânsito podem compor a Matriz Operacional I, observados necessidade, disponibilidade, consignação e requisitos previstos. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1456,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1456 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. A diretriz limita a patrulha de trânsito exclusivamente a viaturas de quatro rodas.\nII. O emprego ordinário em atividades típicas de trânsito ocorre no Nível de Resposta 1.\nIII. O apoio especializado excepcional caracteriza o Nível de Resposta 4, nos termos da diretriz do Programa de Policiamento de Trânsito.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e III.",
+      "b) Apenas II e III.",
+      "c) I, II e III.",
+      "d) Apenas I e II."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição contraria o conteúdo normativo indicado: A patrulha de trânsito pode atuar a pé ou em viatura de duas ou quatro rodas, conforme o Plano Diretor. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.1; Assuntos Operacionais.pdf, p. 486. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.2; Assuntos Operacionais.pdf, p. 486. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1457,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1457 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. Na Região Metropolitana e no Interior, a diretriz atribui prioritariamente o policiamento territorial ao Corpo de Bombeiros, sem participação das OPM do CPM/CPI.\nII. O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Primário na NORSOP.\nIII. O emprego de outras US em policiamento de trânsito depende da interrupção obrigatória de suas atividades próprias.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) I, II e III.",
+      "b) Apenas I e II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Na Região Metropolitana e no Interior, a diretriz prevê prioritariamente OPM subordinadas ao CPM/CPI para a atuação territorial, conforme o recorte de competência indicado. II é INCORRETA; fundamento: NORSOP, item 6.4.1.2.3; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Complementar na NORSOP. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: O emprego de outras US em policiamento de trânsito depende da preservação da continuidade de suas atividades próprias. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1458,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1458 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. O caráter educativo-preventivo e a proteção prioritária à vida integram os princípios apresentados para o Programa de Policiamento de Trânsito.\nII. A diretriz proíbe o CPTran de prestar apoio ou reforço às OPM territoriais em qualquer hipótese.\nIII. A proteção à vida e à incolumidade física das pessoas tem prioridade, inclusive em relação à fluidez do tráfego.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e III.",
+      "b) Apenas II e III.",
+      "c) I, II e III.",
+      "d) Apenas I e II."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: A atuação excepcional do CPTran pode envolver apoio ou reforço às OPM territoriais, conforme as circunstâncias e condições previstas. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1459,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1459 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. O policiamento de trânsito deve privilegiar o caráter educativo-preventivo, com medidas repressivas complementares quando constatado descumprimento intencional.\nII. A autuação é facultativa sempre que o policial considerar mais conveniente priorizar a fluidez, sem necessidade de justificativa.\nIII. Nas vias sob responsabilidade do Estado, a diretriz atribui exclusivamente às OPM territoriais subordinadas ao CPM/CPI, excluindo o CPRv.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) I, II e III.",
+      "b) Apenas I e II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição contraria o conteúdo normativo indicado: Constatada infração de trânsito, a autuação é obrigatória, ressalvadas força maior plenamente justificada ou impossibilidade absoluta decorrente da necessidade de garantir a segurança do trânsito. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Nas vias sob responsabilidade do Estado, a diretriz prevê atuação das OPM subordinadas ao CPRv em todo o Estado, conforme as condições nela previstas. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1460,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1460 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. O policiamento de trânsito no território é prioritariamente realizado pelas OPM subordinadas ao CPM/CPI, conforme a organização prevista na diretriz.\nII. O CPTran pode atuar excepcionalmente em operação própria, apoio ou reforço diante de circunstâncias especiais e carência técnica, nos termos da diretriz.\nIII. Unidades de Serviço de outros programas nunca podem ser empregadas em policiamento de trânsito, mesmo que suas atividades próprias permaneçam contínuas.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e III.",
+      "b) Apenas II e III.",
+      "c) I, II e III.",
+      "d) Apenas I e II."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.3.1.1.2.1 e 6.3.1.2; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Unidades de Serviço de outros programas podem ser empregadas ocasional ou programadamente em policiamento de trânsito, desde que suas atividades próprias não sofram solução de continuidade. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1461,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1461 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. Recursos específicos de policiamento de trânsito podem compor a Matriz Operacional I independentemente de necessidade, disponibilidade ou requisitos.\nII. A composição prevista para as Unidades de Serviço territoriais do Programa de Policiamento de Trânsito é de dois policiais militares por US.\nIII. A diretriz limita a patrulha de trânsito exclusivamente a viaturas de quatro rodas.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) I, II e III.",
+      "b) Apenas I e II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.1; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Recursos específicos de policiamento de trânsito podem compor a Matriz Operacional I, observados necessidade, disponibilidade, consignação e requisitos previstos. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição contraria o conteúdo normativo indicado: A patrulha de trânsito pode atuar a pé ou em viatura de duas ou quatro rodas, conforme o Plano Diretor. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1462,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1462 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. O emprego ordinário em atividades típicas de trânsito ocorre no Nível de Resposta 1.\nII. O apoio especializado excepcional caracteriza o Nível de Resposta 4, nos termos da diretriz do Programa de Policiamento de Trânsito.\nIII. Na Região Metropolitana e no Interior, a diretriz prevê prioritariamente OPM subordinadas ao CPM/CPI para a atuação territorial, conforme o recorte de competência indicado.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e III.",
+      "b) Apenas II e III.",
+      "c) I, II e III.",
+      "d) Apenas I e II."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.1; Assuntos Operacionais.pdf, p. 486. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.2; Assuntos Operacionais.pdf, p. 486. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1463,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1463 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Primário na NORSOP.\nII. O emprego de outras US em policiamento de trânsito depende da interrupção obrigatória de suas atividades próprias.\nIII. O caráter educativo-preventivo e a proteção prioritária à vida integram os princípios apresentados para o Programa de Policiamento de Trânsito.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) I, II e III.",
+      "b) Apenas I e II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é INCORRETA; fundamento: NORSOP, item 6.4.1.2.3; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Complementar na NORSOP. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: O emprego de outras US em policiamento de trânsito depende da preservação da continuidade de suas atividades próprias. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1464,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1464 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. A diretriz proíbe o CPTran de prestar apoio ou reforço às OPM territoriais em qualquer hipótese.\nII. A proteção à vida e à incolumidade física das pessoas tem prioridade, inclusive em relação à fluidez do tráfego.\nIII. O policiamento de trânsito deve privilegiar o caráter educativo-preventivo, com medidas repressivas complementares quando constatado descumprimento intencional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e III.",
+      "b) Apenas II e III.",
+      "c) I, II e III.",
+      "d) Apenas I e II."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: A atuação excepcional do CPTran pode envolver apoio ou reforço às OPM territoriais, conforme as circunstâncias e condições previstas. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1465,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1465 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. A autuação é facultativa sempre que o policial considerar mais conveniente priorizar a fluidez, sem necessidade de justificativa.\nII. Nas vias sob responsabilidade do Estado, a diretriz atribui exclusivamente às OPM territoriais subordinadas ao CPM/CPI, excluindo o CPRv.\nIII. O policiamento de trânsito no território é sempre atribuição exclusiva do CPTran, sem atuação prioritária das OPM subordinadas ao CPM/CPI.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) I, II e III.",
+      "b) Apenas I e II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.2.3; Assuntos Operacionais.pdf, p. 483. A proposição contraria o conteúdo normativo indicado: Constatada infração de trânsito, a autuação é obrigatória, ressalvadas força maior plenamente justificada ou impossibilidade absoluta decorrente da necessidade de garantir a segurança do trânsito. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Nas vias sob responsabilidade do Estado, a diretriz prevê atuação das OPM subordinadas ao CPRv em todo o Estado, conforme as condições nela previstas. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.3.1.1.2.1 e 6.3.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: O policiamento de trânsito no território é prioritariamente realizado pelas OPM subordinadas ao CPM/CPI, conforme a organização prevista na diretriz. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1466,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1466 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. O CPTran pode atuar excepcionalmente em operação própria, apoio ou reforço diante de circunstâncias especiais e carência técnica, nos termos da diretriz.\nII. Unidades de Serviço de outros programas nunca podem ser empregadas em policiamento de trânsito, mesmo que suas atividades próprias permaneçam contínuas.\nIII. Recursos específicos de policiamento de trânsito podem compor a Matriz Operacional I, observados necessidade, disponibilidade, consignação e requisitos previstos.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e III.",
+      "b) Apenas II e III.",
+      "c) I, II e III.",
+      "d) Apenas I e II."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: Unidades de Serviço de outros programas podem ser empregadas ocasional ou programadamente em policiamento de trânsito, desde que suas atividades próprias não sofram solução de continuidade. III é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.1; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1467,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1467 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. A composição prevista para as Unidades de Serviço territoriais do Programa de Policiamento de Trânsito é de dois policiais militares por US.\nII. A diretriz limita a patrulha de trânsito exclusivamente a viaturas de quatro rodas.\nIII. O emprego ordinário em atividades típicas de trânsito ocorre exclusivamente no Nível de Resposta 4.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) I, II e III.",
+      "b) Apenas I e II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.1; Assuntos Operacionais.pdf, p. 485. A proposição contraria o conteúdo normativo indicado: A patrulha de trânsito pode atuar a pé ou em viatura de duas ou quatro rodas, conforme o Plano Diretor. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.1; Assuntos Operacionais.pdf, p. 486. A proposição contraria o conteúdo normativo indicado: O emprego ordinário em atividades típicas de trânsito ocorre no Nível de Resposta 1. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1468,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1468 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. O apoio especializado excepcional caracteriza o Nível de Resposta 4, nos termos da diretriz do Programa de Policiamento de Trânsito.\nII. Na Região Metropolitana e no Interior, a diretriz prevê prioritariamente OPM subordinadas ao CPM/CPI para a atuação territorial, conforme o recorte de competência indicado.\nIII. O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Primário na NORSOP.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e III.",
+      "b) Apenas II e III.",
+      "c) I, II e III.",
+      "d) Apenas I e II."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.4.2.5.2; Assuntos Operacionais.pdf, p. 486. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1; Assuntos Operacionais.pdf, p. 484. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: NORSOP, item 6.4.1.2.3; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: O Programa de Policiamento de Trânsito é classificado como Programa de Policiamento Complementar na NORSOP. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1469,
+    "subject": "OPERACIONAL",
+    "tag": "Policiamento de Trânsito",
+    "topic": "Programa de Policiamento de Trânsito — princípios, competência e emprego",
+    "text": "QUESTÃO 1469 — Considerando a Diretriz nº PM3-006/02/20 (Programa de Policiamento de Trânsito), analise as proposições:\n\nI. O emprego de outras US em policiamento de trânsito depende da interrupção obrigatória de suas atividades próprias.\nII. O caráter educativo-preventivo e a proteção prioritária à vida integram os princípios apresentados para o Programa de Policiamento de Trânsito.\nIII. A diretriz proíbe o CPTran de prestar apoio ou reforço às OPM territoriais em qualquer hipótese.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) I, II e III.",
+      "b) Apenas I e II.",
+      "c) Apenas I e III.",
+      "d) Apenas II e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.1.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: O emprego de outras US em policiamento de trânsito depende da preservação da continuidade de suas atividades próprias. II é CORRETA; fundamento: Diretriz nº PM3-006/02/20, itens 6.2.1–6.2.2; Assuntos Operacionais.pdf, p. 483. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Diretriz nº PM3-006/02/20, item 6.3.1.1.2.2; Assuntos Operacionais.pdf, p. 484. A proposição contraria o conteúdo normativo indicado: A atuação excepcional do CPTran pode envolver apoio ou reforço às OPM territoriais, conforme as circunstâncias e condições previstas. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1470,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1470 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 30 horas para o regime de trabalho nela disciplinado.\nII. A escala de serviço é expedida a partir do nível de Comandante de Companhia PM, conforme a Portaria.\nIII. O regime de expediente administrativo das 08h às 18h é desdobrado em turnos de cinco horas.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 2º; Assuntos Organizacionais.pdf, p. 327. A proposição contraria o conteúdo normativo indicado: A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 40 horas para o regime de trabalho nela disciplinado. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 3º; Assuntos Organizacionais.pdf, p. 327. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Portaria PM1-7/02/23, arts. 6º, I, e 7º, I; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1471,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1471 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. No desdobramento dos turnos, todos os dez turnos são obrigatórios e não há previsão de folgas.\nII. A regra exige manter no máximo 25% do efetivo em cada turno.\nIII. Nas semanas com dois dias sem expediente administrativo, a Portaria autoriza livremente a concessão das folgas previstas, sem exceção ou condição.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, I, alíneas a e b; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: No desdobramento dos turnos, são obrigatórios oito dos dez turnos, e os dois restantes correspondem a folgas, observadas as regras aplicáveis. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 1º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: O controle do efetivo deve manter no mínimo 50% do efetivo em cada turno, conforme a regra indicada. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, §§ 2º e 3º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: Nas semanas com dois dias sem expediente administrativo por feriados, pontos facultativos ou outras causas autorizadas, as folgas previstas são vedadas, ressalvada a hipótese docente normativa. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1472,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1472 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. A exceção docente na semana com dois dias sem expediente exige designação e previsão no QTS pertinente.\nII. A vedação de afastamento em dias consecutivos não admite qualquer exceção, inclusive em caso fortuito ou força maior.\nIII. A regra geral do OAES prevê 07h30–17h30 de segunda a quinta e 07h30–12h30 na sexta-feira.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 3º; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 8º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: A vedação de afastamento em dias consecutivos admite exceção por caso fortuito ou força maior, nos termos do art. 8º. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 9º; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1473,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1473 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. Para atendimento ao público pelos integrantes do QOS, a norma prevê mínimo de seis horas diárias e 30 horas semanais efetivas, e dez horas para encargos móveis, nos termos do art. 10.\nII. O benefício de horário do militar estudante aplica-se apenas quando o deslocamento excede duas horas, sem comprovação de matrícula.\nIII. A folga mensal obrigatória pode ser acumulada indefinidamente e usufruída a qualquer tempo futuro.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 10; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 11; Assuntos Organizacionais.pdf, pp. 329–330. A proposição contraria o conteúdo normativo indicado: O benefício de horário do militar estudante exige que o deslocamento esteja dentro do limite igual ou inferior a 90 minutos, além dos requisitos documentais e letivos previstos. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, §§ 3º–4º; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: A folga mensal obrigatória deve ser usufruída nos 30 dias subsequentes ao período de apuração e não pode ser acumulada para período futuro. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1474,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1474 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. Para o regime 24x48, a folga mensal obrigatória ocorre após nove serviços ininterruptos, conforme a regra indicada.\nII. O não cumprimento do turno por qualquer causa interrompe a contagem, exceto o gozo da folga mensal obrigatória relativa a período anterior.\nIII. A folga mensal obrigatória pode sempre ser usufruída imediatamente após qualquer afastamento temporário, sem restrições.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 2º, item 2; Assuntos Organizacionais.pdf, p. 330. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 3º; Assuntos Organizacionais.pdf, p. 330. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 5º; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: A folga mensal obrigatória não pode ser usufruída na sequência de dispensa do serviço, dispensa-recompensa, dispensa para doação de sangue ou outro afastamento temporário, ressalvadas as exceções normativas. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1475,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1475 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. O expediente dos Órgãos de Direção Geral e Setorial só pode ser adaptado por decisão individual de cada policial militar.\nII. Podem ser acrescentados até 30 minutos aos períodos de serviço em regime de escala para instrução e/ou avaliação.\nIII. A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 30 horas para o regime de trabalho nela disciplinado.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 14; Assuntos Organizacionais.pdf, p. 331. A proposição contraria o conteúdo normativo indicado: O expediente dos Órgãos de Direção Geral e Setorial pode ser adaptado às necessidades institucionais por ato específico do respectivo Comandante, Chefe ou Diretor. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 18; Assuntos Organizacionais.pdf, p. 331. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 2º; Assuntos Organizacionais.pdf, p. 327. A proposição contraria o conteúdo normativo indicado: A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 40 horas para o regime de trabalho nela disciplinado. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1476,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1476 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. A escala de serviço é expedida a partir do nível de Comandante de Companhia PM, conforme a Portaria.\nII. O regime de expediente administrativo das 08h às 18h é desdobrado em turnos de cinco horas.\nIII. No desdobramento dos turnos, são obrigatórios oito dos dez turnos, e os dois restantes correspondem a folgas, observadas as regras aplicáveis.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 3º; Assuntos Organizacionais.pdf, p. 327. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Portaria PM1-7/02/23, arts. 6º, I, e 7º, I; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, I, alíneas a e b; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1477,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1477 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. A regra exige manter no máximo 25% do efetivo em cada turno.\nII. Nas semanas com dois dias sem expediente administrativo, a Portaria autoriza livremente a concessão das folgas previstas, sem exceção ou condição.\nIII. A exceção docente na semana com dois dias sem expediente exige designação e previsão no QTS pertinente.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 1º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: O controle do efetivo deve manter no mínimo 50% do efetivo em cada turno, conforme a regra indicada. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, §§ 2º e 3º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: Nas semanas com dois dias sem expediente administrativo por feriados, pontos facultativos ou outras causas autorizadas, as folgas previstas são vedadas, ressalvada a hipótese docente normativa. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 3º; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1478,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1478 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. A vedação de afastamento em dias consecutivos não admite qualquer exceção, inclusive em caso fortuito ou força maior.\nII. A regra geral do OAES prevê 07h30–17h30 de segunda a quinta e 07h30–12h30 na sexta-feira.\nIII. Para atendimento ao público pelos integrantes do QOS, a norma prevê mínimo de seis horas diárias e 30 horas semanais efetivas, e dez horas para encargos móveis, nos termos do art. 10.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 8º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: A vedação de afastamento em dias consecutivos admite exceção por caso fortuito ou força maior, nos termos do art. 8º. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 9º; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 10; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1479,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1479 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. O benefício de horário do militar estudante aplica-se apenas quando o deslocamento excede duas horas, sem comprovação de matrícula.\nII. A folga mensal obrigatória pode ser acumulada indefinidamente e usufruída a qualquer tempo futuro.\nIII. Para o regime 24x48, a folga mensal obrigatória ocorre após três serviços ininterruptos.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 11; Assuntos Organizacionais.pdf, pp. 329–330. A proposição contraria o conteúdo normativo indicado: O benefício de horário do militar estudante exige que o deslocamento esteja dentro do limite igual ou inferior a 90 minutos, além dos requisitos documentais e letivos previstos. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, §§ 3º–4º; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: A folga mensal obrigatória deve ser usufruída nos 30 dias subsequentes ao período de apuração e não pode ser acumulada para período futuro. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 2º, item 2; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: Para o regime 24x48, a folga mensal obrigatória ocorre após nove serviços ininterruptos, conforme a regra indicada. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1480,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1480 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. O não cumprimento do turno por qualquer causa interrompe a contagem, exceto o gozo da folga mensal obrigatória relativa a período anterior.\nII. A folga mensal obrigatória pode sempre ser usufruída imediatamente após qualquer afastamento temporário, sem restrições.\nIII. O expediente dos Órgãos de Direção Geral e Setorial pode ser adaptado às necessidades institucionais por ato específico do respectivo Comandante, Chefe ou Diretor.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 3º; Assuntos Organizacionais.pdf, p. 330. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 5º; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: A folga mensal obrigatória não pode ser usufruída na sequência de dispensa do serviço, dispensa-recompensa, dispensa para doação de sangue ou outro afastamento temporário, ressalvadas as exceções normativas. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 14; Assuntos Organizacionais.pdf, p. 331. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1481,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1481 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. Podem ser acrescentados até 30 minutos aos períodos de serviço em regime de escala para instrução e/ou avaliação.\nII. A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 30 horas para o regime de trabalho nela disciplinado.\nIII. A escala de serviço é expedida exclusivamente pelo Comando-Geral, sem atribuição nos escalões de Companhia PM.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 18; Assuntos Organizacionais.pdf, p. 331. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 2º; Assuntos Organizacionais.pdf, p. 327. A proposição contraria o conteúdo normativo indicado: A Portaria PM1-7/02/23 estabelece carga horária semanal mínima de 40 horas para o regime de trabalho nela disciplinado. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 3º; Assuntos Organizacionais.pdf, p. 327. A proposição contraria o conteúdo normativo indicado: A escala de serviço é expedida a partir do nível de Comandante de Companhia PM, conforme a Portaria. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1482,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1482 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. O regime de expediente administrativo das 08h às 18h é desdobrado em turnos de cinco horas.\nII. No desdobramento dos turnos, são obrigatórios oito dos dez turnos, e os dois restantes correspondem a folgas, observadas as regras aplicáveis.\nIII. A regra exige manter no máximo 25% do efetivo em cada turno.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Portaria PM1-7/02/23, arts. 6º, I, e 7º, I; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, I, alíneas a e b; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 1º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: O controle do efetivo deve manter no mínimo 50% do efetivo em cada turno, conforme a regra indicada. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1483,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1483 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. Nas semanas com dois dias sem expediente administrativo, a Portaria autoriza livremente a concessão das folgas previstas, sem exceção ou condição.\nII. A exceção docente na semana com dois dias sem expediente exige designação e previsão no QTS pertinente.\nIII. A vedação de afastamento em dias consecutivos não admite qualquer exceção, inclusive em caso fortuito ou força maior.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, §§ 2º e 3º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: Nas semanas com dois dias sem expediente administrativo por feriados, pontos facultativos ou outras causas autorizadas, as folgas previstas são vedadas, ressalvada a hipótese docente normativa. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 7º, § 3º; Assuntos Organizacionais.pdf, p. 328. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 8º; Assuntos Organizacionais.pdf, p. 328. A proposição contraria o conteúdo normativo indicado: A vedação de afastamento em dias consecutivos admite exceção por caso fortuito ou força maior, nos termos do art. 8º. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1484,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1484 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. A regra geral do OAES prevê 07h30–17h30 de segunda a quinta e 07h30–12h30 na sexta-feira.\nII. Para atendimento ao público pelos integrantes do QOS, a norma prevê mínimo de seis horas diárias e 30 horas semanais efetivas, e dez horas para encargos móveis, nos termos do art. 10.\nIII. O benefício de horário do militar estudante exige que o deslocamento esteja dentro do limite igual ou inferior a 90 minutos, além dos requisitos documentais e letivos previstos.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é CORRETA; fundamento: Portaria PM1-7/02/23, art. 9º; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Portaria PM1-7/02/23, art. 10; Assuntos Organizacionais.pdf, p. 329. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 11; Assuntos Organizacionais.pdf, pp. 329–330. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1485,
+    "subject": "ORGANIZACIONAL",
+    "tag": "Regime de Trabalho",
+    "topic": "Regime de Trabalho — jornada, escalas e folgas",
+    "text": "QUESTÃO 1485 — Considerando a Portaria PM1-7/02/23, analise as proposições:\n\nI. A folga mensal obrigatória pode ser acumulada indefinidamente e usufruída a qualquer tempo futuro.\nII. Para o regime 24x48, a folga mensal obrigatória ocorre após três serviços ininterruptos.\nIII. O não cumprimento do turno por qualquer causa interrompe a contagem, exceto o gozo da folga mensal obrigatória relativa a período anterior.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, §§ 3º–4º; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: A folga mensal obrigatória deve ser usufruída nos 30 dias subsequentes ao período de apuração e não pode ser acumulada para período futuro. II é INCORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 2º, item 2; Assuntos Organizacionais.pdf, p. 330. A proposição contraria o conteúdo normativo indicado: Para o regime 24x48, a folga mensal obrigatória ocorre após nove serviços ininterruptos, conforme a regra indicada. III é CORRETA; fundamento: Portaria PM1-7/02/23, art. 12, § 3º; Assuntos Organizacionais.pdf, p. 330. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1486,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1486 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. A Corregedoria PM tem atribuição exclusiva de manter arquivos físicos, sendo vedado banco de dados funcional informatizado e integrado.\nII. A partir de 01JAN15, os dados referentes às Investigações Preliminares instauradas pelas OPM passaram a ser inseridos no SIJD.\nIII. O Sistema Correcional está em implantação para substituir gradualmente o SIJD em suas funcionalidades e disponibilizar outras ferramentas de gestão.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A Corregedoria PM tem atribuição de organizar e manter banco de dados funcional informatizado e integrado, nos termos do Decreto Estadual 38.318/90 citado no documento. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.2; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1487,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1487 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. O documento determina que as Seções Correcionais continuem exclusivamente fora do ambiente virtual do Sistema Correcional.\nII. A partir de 01OUT24, a instauração de Investigações Preliminares no novo módulo é facultativa e o SIJD permanece como via obrigatória única.\nIII. No novo módulo, as investigações não recebem número e devem ser instruídas exclusivamente em papel, com assinatura manuscrita.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: Desde a publicação da Nota CORREGPM-4694/280/24, as Seções Correcionais e Seções/Setores de Polícia Judiciária Militar e Disciplina operam no ambiente virtual do Sistema Correcional. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A contar de 01OUT24, todas as Investigações Preliminares devem ser instauradas obrigatoriamente por meio do novo módulo do Sistema Correcional. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: No novo módulo, as investigações recebem número, são instruídas digitalmente e finalizadas com assinatura eletrônica. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1488,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1488 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. Transitoriamente, ao instaurar investigação no novo módulo, deve ser informado o número da última Investigação Preliminar cadastrada no SIJD para continuidade do numerador.\nII. As Investigações Preliminares instauradas no SIJD devem ser obrigatoriamente transferidas ao novo módulo para encerramento, segundo o item 2.4.\nIII. O material prevê que, até 01OUT24, as OPM observassem os procedimentos transitórios especificados na determinação.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.2; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: As Investigações Preliminares instauradas no SIJD devem ser encerradas naquele sistema. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1489,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1489 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. A tramitação digital do Sistema Correcional objetiva aprimorar a gestão institucional na área de polícia judiciária militar e disciplina.\nII. O novo módulo permite apenas a abertura digital, mas exige que toda a instrução e tramitação ocorram fora do sistema.\nIII. A determinação de instauração obrigatória pelo novo módulo passou a valer a partir de 01JAN15.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.3–1.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O novo módulo permite que as Investigações Preliminares sejam instruídas digitalmente e tramitem pelo mesmo meio. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A determinação de instauração obrigatória pelo novo módulo é datada a partir de 01OUT24. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1490,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1490 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. O SIJD foi o sistema no qual se inseriam os dados de Investigações Preliminares a partir de 01JAN15, antes da transição indicada no documento.\nII. O Sistema Correcional disponibiliza ferramentas para aprimorar a gestão institucional na área de polícia judiciária militar e disciplina.\nIII. As Seções e Setores mencionados estão impedidos de tramitar documentos afetos à Seção de Fiscalização Ostensiva no ambiente virtual do Sistema Correcional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.2–1.3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: As Seções e Setores mencionados operam no ambiente virtual do Sistema Correcional, com tramitação de documentos afetos à Seção de Fiscalização Ostensiva da Corregedoria PM, conforme o texto. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1491,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1491 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. A implantação do Sistema Correcional apaga os dados históricos do SIJD e torna inválidas todas as investigações anteriormente instauradas.\nII. A Corregedoria PM tem atribuição de organizar e manter banco de dados funcional informatizado e integrado, nos termos do Decreto Estadual 38.318/90 citado no documento.\nIII. A inserção dos dados de Investigações Preliminares no SIJD começou apenas em 01OUT24.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3 e item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A implantação do Sistema Correcional é gradual e substitui funcionalidades do SIJD, não sendo descrita como uma desativação retroativa dos dados históricos. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.2; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A partir de 01JAN15, os dados referentes às Investigações Preliminares instauradas pelas OPM passaram a ser inseridos no SIJD. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1492,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1492 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. O Sistema Correcional está em implantação para substituir gradualmente o SIJD em suas funcionalidades e disponibilizar outras ferramentas de gestão.\nII. Desde a publicação da Nota CORREGPM-4694/280/24, as Seções Correcionais e Seções/Setores de Polícia Judiciária Militar e Disciplina operam no ambiente virtual do Sistema Correcional.\nIII. A contar de 01OUT24, todas as Investigações Preliminares devem ser instauradas obrigatoriamente por meio do novo módulo do Sistema Correcional.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1493,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1493 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. No novo módulo, as investigações não recebem número e devem ser instruídas exclusivamente em papel, com assinatura manuscrita.\nII. O procedimento transitório determina reiniciar o numerador do zero, sem informar o último número cadastrado no SIJD.\nIII. As Investigações Preliminares instauradas no SIJD devem ser encerradas naquele sistema.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: No novo módulo, as investigações recebem número, são instruídas digitalmente e finalizadas com assinatura eletrônica. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.2; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: Transitoriamente, ao instaurar investigação no novo módulo, deve ser informado o número da última Investigação Preliminar cadastrada no SIJD para continuidade do numerador. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1494,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1494 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. O material estabelece que os procedimentos transitórios só começariam depois de 01OUT25.\nII. A tramitação digital do Sistema Correcional objetiva aprimorar a gestão institucional na área de polícia judiciária militar e disciplina.\nIII. O novo módulo permite que as Investigações Preliminares sejam instruídas digitalmente e tramitem pelo mesmo meio.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 3; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O material prevê que, até 01OUT24, as OPM observassem os procedimentos transitórios especificados na determinação. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.3–1.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1495,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1495 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. A determinação de instauração obrigatória pelo novo módulo passou a valer a partir de 01JAN15.\nII. O documento afirma que os dados de Investigações Preliminares sempre foram inseridos exclusivamente no Sistema Correcional desde 2015.\nIII. O Sistema Correcional foi concebido para tratar apenas de recursos humanos e não disponibiliza ferramentas relacionadas à polícia judiciária militar e disciplina.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A determinação de instauração obrigatória pelo novo módulo é datada a partir de 01OUT24. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.2–1.3; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O SIJD foi o sistema no qual se inseriam os dados de Investigações Preliminares a partir de 01JAN15, antes da transição indicada no documento. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O Sistema Correcional disponibiliza ferramentas para aprimorar a gestão institucional na área de polícia judiciária militar e disciplina. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1496,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1496 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. As Seções e Setores mencionados operam no ambiente virtual do Sistema Correcional, com tramitação de documentos afetos à Seção de Fiscalização Ostensiva da Corregedoria PM, conforme o texto.\nII. A implantação do Sistema Correcional apaga os dados históricos do SIJD e torna inválidas todas as investigações anteriormente instauradas.\nIII. A Corregedoria PM tem atribuição de organizar e manter banco de dados funcional informatizado e integrado, nos termos do Decreto Estadual 38.318/90 citado no documento.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 1,
+    "explanation": "Gabarito: B. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3 e item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A implantação do Sistema Correcional é gradual e substitui funcionalidades do SIJD, não sendo descrita como uma desativação retroativa dos dados históricos. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa b corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1497,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1497 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. A partir de 01JAN15, os dados referentes às Investigações Preliminares instauradas pelas OPM passaram a ser inseridos no SIJD.\nII. O Sistema Correcional foi criado para substituir instantaneamente o SIJD, sem implantação gradual ou novas ferramentas.\nIII. O documento determina que as Seções Correcionais continuem exclusivamente fora do ambiente virtual do Sistema Correcional.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.2; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O Sistema Correcional está em implantação para substituir gradualmente o SIJD em suas funcionalidades e disponibilizar outras ferramentas de gestão. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: Desde a publicação da Nota CORREGPM-4694/280/24, as Seções Correcionais e Seções/Setores de Polícia Judiciária Militar e Disciplina operam no ambiente virtual do Sistema Correcional. O comando solicita as proposições incorretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1498,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1498 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. A contar de 01OUT24, todas as Investigações Preliminares devem ser instauradas obrigatoriamente por meio do novo módulo do Sistema Correcional.\nII. No novo módulo, as investigações recebem número, são instruídas digitalmente e finalizadas com assinatura eletrônica.\nIII. O procedimento transitório determina reiniciar o numerador do zero, sem informar o último número cadastrado no SIJD.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 0,
+    "explanation": "Gabarito: A. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.2; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: Transitoriamente, ao instaurar investigação no novo módulo, deve ser informado o número da última Investigação Preliminar cadastrada no SIJD para continuidade do numerador. O comando solicita as proposições corretas; somente a alternativa a corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1499,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1499 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. As Investigações Preliminares instauradas no SIJD devem ser obrigatoriamente transferidas ao novo módulo para encerramento, segundo o item 2.4.\nII. O material prevê que, até 01OUT24, as OPM observassem os procedimentos transitórios especificados na determinação.\nIII. A tramitação digital do Sistema Correcional objetiva eliminar a gestão institucional de polícia judiciária militar e disciplina.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: As Investigações Preliminares instauradas no SIJD devem ser encerradas naquele sistema. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.3–1.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: A tramitação digital do Sistema Correcional objetiva aprimorar a gestão institucional na área de polícia judiciária militar e disciplina. O comando solicita as proposições incorretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1500,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1500 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. O novo módulo permite que as Investigações Preliminares sejam instruídas digitalmente e tramitem pelo mesmo meio.\nII. A determinação de instauração obrigatória pelo novo módulo é datada a partir de 01OUT24.\nIII. O SIJD foi o sistema no qual se inseriam os dados de Investigações Preliminares a partir de 01JAN15, antes da transição indicada no documento.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+    "options": [
+      "a) Apenas I e II.",
+      "b) Apenas I e III.",
+      "c) Apenas II e III.",
+      "d) I, II e III."
+    ],
+    "answer": 3,
+    "explanation": "Gabarito: D. I é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. II é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 2.1; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, itens 1.2–1.3; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa d corresponde ao conjunto exigido."
+  },
+  {
+    "id": 1501,
+    "subject": "JURIDICO",
+    "tag": "Sistema Correcional",
+    "topic": "Sistema Correcional — instauração e tramitação de Investigações Preliminares",
+    "text": "QUESTÃO 1501 — Considerando a Nota CORREGPM-12243/280/24, analise as proposições:\n\nI. O Sistema Correcional foi concebido para tratar apenas de recursos humanos e não disponibiliza ferramentas relacionadas à polícia judiciária militar e disciplina.\nII. As Seções e Setores mencionados estão impedidos de tramitar documentos afetos à Seção de Fiscalização Ostensiva no ambiente virtual do Sistema Correcional.\nIII. A implantação do Sistema Correcional é gradual e substitui funcionalidades do SIJD, não sendo descrita como uma desativação retroativa dos dados históricos.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+    "options": [
+      "a) Apenas II e III.",
+      "b) I, II e III.",
+      "c) Apenas I e II.",
+      "d) Apenas I e III."
+    ],
+    "answer": 2,
+    "explanation": "Gabarito: C. I é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: O Sistema Correcional disponibiliza ferramentas para aprimorar a gestão institucional na área de polícia judiciária militar e disciplina. II é INCORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.4; Assuntos Jurídicos-administrativos.pdf. A proposição contraria o conteúdo normativo indicado: As Seções e Setores mencionados operam no ambiente virtual do Sistema Correcional, com tramitação de documentos afetos à Seção de Fiscalização Ostensiva da Corregedoria PM, conforme o texto. III é CORRETA; fundamento: Nota CORREGPM-12243/280/24, item 1.3 e item 2.4; Assuntos Jurídicos-administrativos.pdf. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições incorretas; somente a alternativa c corresponde ao conjunto exigido."
+  },
         {
         "id": 1501,
         "subject": "JURIDICO",
@@ -24003,21 +24018,21 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 1,
             "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 12; art. 3º da Lei nº 18.442/26. Regra normativa considerada: O material indica distribuição anual por decreto do Governador, observados os limites legais e a disponibilidade orçamentária e financeira; o decreto é editado no primeiro semestre do ano antecedente. Justificativa: A alternativa indicada como incorreta afirma: “A distribuição anual é realizada por decreto do Governador, editado no primeiro semestre do próprio ano em que entra em vigor.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O material indica distribuição anual por decreto do Governador, observados os limites legais e a disponibilidade orçamentária e financeira; o decreto é editado no primeiro semestre do ano antecedente."
           },
-          {
-            "id": 1605,
-            "subject": "JURIDICO",
-            "tag": "Legislação Promoção",
-            "topic": "Lei nº 18.442/26 — alteração do quantitativo distribuído",
-            "text": "QUESTÃO 1605 — Segundo a Lei nº 18.442/26, Sobre a possibilidade de alteração do quantitativo distribuído do efetivo, assinale a alternativa INCORRETA.",
-            "options": [
-              "a) O quantitativo distribuído pode ser alterado pelo Comandante-Geral PM.",
-              "b) A alteração está limitada a até 20%.",
-              "c) A alteração deve observar os limites do art. 3º.",
-              "d) O Comandante-Geral pode alterar em até 20% a distribuição anual, desde que respeite o limite global, sem necessidade de observar a distribuição por posto ou graduação."
-            ],
-            "answer": 3,
-            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Lei nº 18.442/26; localização no material de apoio: Assuntos Juridicos-administrativos.pdf, p. 12; art. 3º da Lei nº 18.442/26. Regra normativa considerada: “Esse quantitativo distribuído poderá ser alterado em até 20% pelo Comandante-Geral PM, observados os limites do artigo 3º.” Justificativa: A alternativa indicada como incorreta afirma: “O Comandante-Geral pode alterar em até 20% a distribuição anual, desde que respeite o limite global, sem necessidade de observar a distribuição por posto ou graduação.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: “Esse quantitativo distribuído poderá ser alterado em até 20% pelo Comandante-Geral PM, observados os limites do artigo 3º.”"
-          },
+             {
+        "id": 1605,
+        "subject": "JURIDICO",
+        "tag": "Legislação Promoção",
+        "topic": "Lei nº 18.442/2026 — alteração do quantitativo distribuído",
+        "text": "QUESTÃO 1605 — À luz da Lei nº 18.442/2026 e da regra sobre alteração do quantitativo distribuído do efetivo, assinale a alternativa correta.",
+        "options": [
+          "a) O Comandante-Geral PM pode alterar o quantitativo distribuído em até 20%, observados os limites do art. 3º.",
+          "b) O Governador do Estado pode alterar o quantitativo distribuído em até 20%, observados os limites do art. 3º.",
+          "c) O Comandante-Geral PM pode alterar o quantitativo distribuído em até 20%, dispensada a observância dos limites do art. 3º.",
+          "d) Cada Comandante de OPM pode alterar o quantitativo distribuído em até 20%, desde que respeitado o limite global do efetivo."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Lei nº 18.442/2026, regra sobre alteração do quantitativo distribuído, conforme Assuntos Juridicos-administrativos.pdf, PDF p. 12. O material estabelece que o quantitativo pode ser alterado em até 20% pelo Comandante-Geral PM, observados os limites do art. 3º. B atribui a alteração a autoridade diversa; C dispensa a observância dos limites expressamente exigidos; D transfere a competência aos Comandantes de OPM, o que não consta da regra."
+      },
           {
             "id": 1606,
             "subject": "JURIDICO",
@@ -24363,21 +24378,21 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 3,
             "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 417; item 6.1.9. Regra normativa considerada: O item 6.1.9 prevê solidariedade, orientação preventiva, coleta de dados e demonstração dos esforços de segurança. Justificativa: A alternativa indicada como incorreta afirma: “A visita solidária é contato com vítima de delito previamente identificada, destinado à orientação preventiva e à coleta de dados, sem objetivo de demonstrar solidariedade pelo ocorrido.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.1.9 prevê solidariedade, orientação preventiva, coleta de dados e demonstração dos esforços de segurança."
           },
-          {
-            "id": 1629,
-            "subject": "OPERACIONAL",
-            "tag": "Policiamento Comunitário",
-            "topic": "Diretriz PM3-005/02/20 — campanha comunitária",
-            "text": "QUESTÃO 1629 — Segundo a Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), Sobre a campanha comunitária, assinale a alternativa INCORRETA.",
-            "options": [
-              "a) É evento desenvolvido pelo policiamento ostensivo comunitário.",
-              "b) A campanha comunitária é evento do policiamento ostensivo comunitário cuja coordenação é definida pelo Cmt OPM, sendo a reunião comunitária utilizada apenas para divulgação posterior.",
-              "c) Sua coordenação é definida em reunião comunitária.",
-              "d) Conta com supervisão dos comandantes de OPM."
-            ],
-            "answer": 1,
-            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário); localização no material de apoio: Assuntos Operacionais.pdf, p. 417; item 6.1.10. Regra normativa considerada: O item 6.1.10 define campanha comunitária como evento do policiamento ostensivo comunitário, com coordenação definida em reunião comunitária e supervisão dos Cmt OPM. Justificativa: A alternativa indicada como incorreta afirma: “A campanha comunitária é evento do policiamento ostensivo comunitário cuja coordenação é definida pelo Cmt OPM, sendo a reunião comunitária utilizada apenas para divulgação posterior.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.1.10 define campanha comunitária como evento do policiamento ostensivo comunitário, com coordenação definida em reunião comunitária e supervisão dos Cmt OPM."
-          },
+            {
+        "id": 1629,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — campanha comunitária",
+        "text": "QUESTÃO 1629 — Segundo a Diretriz nº PM3-005/02/20, assinale a alternativa que descreve CORRETAMENTE a campanha comunitária.",
+        "options": [
+          "a) É evento desenvolvido pelo policiamento ostensivo comunitário, com coordenação definida em reunião comunitária, supervisão dos Cmt OPM e finalidade de mobilizar a comunidade em torno de questões locais de interesse da segurança pública.",
+          "b) É evento desenvolvido pelo policiamento ostensivo comunitário, com coordenação definida pelo Cmt OPM, supervisão em reunião comunitária e finalidade de mobilizar a comunidade em torno de questões locais de interesse da segurança pública.",
+          "c) É evento desenvolvido pelo policiamento ostensivo comunitário, com coordenação definida em reunião comunitária e supervisão dos Cmt OPM, envolvendo pessoas físicas ou jurídicas diretamente beneficiadas por questões locais de interesse da segurança pública.",
+          "d) É atividade organizada para reunir entidades públicas ou privadas e lideranças comunitárias, discutir alternativas para problemas locais e definir ações destinadas à melhoria da qualidade de vida."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20, item 6.1.10, em Assuntos Operacionais.pdf, PDF p. 417. A campanha comunitária é evento desenvolvido pelo policiamento ostensivo comunitário, com coordenação definida em reunião comunitária e supervisão dos Cmt OPM, destinado a mobilizar a comunidade em geral e envolvendo pessoas físicas ou jurídicas diretamente beneficiadas por questões locais de segurança pública. B troca o responsável pela definição da coordenação e o contexto de supervisão. D descreve, em vez disso, a reunião comunitária, conceituada no item 6.1.11."
+      },
           {
             "id": 1630,
             "subject": "OPERACIONAL",
@@ -24678,21 +24693,21 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 0,
             "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.6.1.4–6.6.1.5. Regra normativa considerada: O item 6.6.1.4 define Setor; a menor fração territorial é Subsetor, descrita no item 6.6.1.5. Justificativa: A alternativa indicada como incorreta afirma: “Setor é fração territorial definida pelo Cmt Btl e atribuída à responsabilidade exclusiva de Cmt Pel, sendo necessariamente a menor fração territorial dentro da Subárea.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.6.1.4 define Setor; a menor fração territorial é Subsetor, descrita no item 6.6.1.5."
           },
-          {
-            "id": 1650,
-            "subject": "OPERACIONAL",
-            "tag": "NORSOP",
-            "topic": "NORSOP — Módulo 1",
-            "text": "QUESTÃO 1650 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre o Módulo 1 de configuração territorial, assinale a alternativa INCORRETA.",
-            "options": [
-              "a) No Módulo 1, Setores e Subsetores são fixos e vinculados a uma Cia PM, mas sua quantidade é definida por padrão institucional uniforme, sem relação com a disponibilidade de meios.",
-              "b) É denominado Configuração Territorial Básica.",
-              "c) Prevê Setores e Subsetores fixos.",
-              "d) Essas estruturas são necessariamente vinculadas a uma Cia PM."
-            ],
-            "answer": 0,
-            "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), item 6.6.2.1. Regra normativa considerada: A NORSOP vincula a quantidade e dimensão das estruturas à disponibilidade de recursos humanos e meios materiais para cobertura preventiva. Justificativa: A alternativa indicada como incorreta afirma: “No Módulo 1, Setores e Subsetores são fixos e vinculados a uma Cia PM, mas sua quantidade é definida por padrão institucional uniforme, sem relação com a disponibilidade de meios.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A NORSOP vincula a quantidade e dimensão das estruturas à disponibilidade de recursos humanos e meios materiais para cobertura preventiva."
-          },
+           {
+        "id": 1650,
+        "subject": "OPERACIONAL",
+        "tag": "NORSOP",
+        "topic": "NORSOP — Módulos de configuração territorial",
+        "text": "QUESTÃO 1650 — Considerando a NORSOP, instituída pela Diretriz nº PM3-001/02/20, analise as proposições sobre os módulos de configuração territorial:\n\nI. O Módulo 1 denomina-se Configuração Territorial Básica.\nII. No Módulo 1, os Setores e Subsetores são fixos e necessariamente vinculados a uma Cia PM.\nIII. No Módulo 1, a quantidade e a dimensão dessas estruturas dependem da disponibilidade de recursos humanos e meios materiais.\nIV. A alocação de recursos adicionais em AISP, como complemento aos Setores e Subsetores fixos, caracteriza o Módulo 1.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
+        "options": [
+          "a) Apenas IV.",
+          "b) Apenas I e III.",
+          "c) Apenas II e IV.",
+          "d) Apenas I, II e III."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, itens 6.6.2.1 e 6.6.2.2; Assuntos Operacionais.pdf, PDF p. 257. Trechos de suporte: o item 6.6.2.1 denomina o Módulo 1 “Configuração Territorial Básica”, estabelece Setores e Subsetores fixos, vinculados a uma Cia PM, e relaciona quantidade e dimensão à disponibilidade de recursos humanos e meios materiais. O item 6.6.2.2 define a alocação de recursos adicionais em AISP como característica do Módulo 2. I, II e III são corretas; IV atribui ao Módulo 1 uma característica descrita para o Módulo 2, sendo a única incorreta. As alternativas B, C e D incluem ao menos uma proposição correta entre as indicadas como incorretas. Dificuldade editorial: DIFÍCIL, pois exige discriminar a classificação dos módulos e avaliar conjuntamente quatro proposições. Formato: proposições I–IV / INCORRETAS. Duplicidade: comparada com as questões 1651 e 1652, que tratam especificamente dos Módulos 2 e 3; esta questão testa o Módulo 1 e sua distinção do Módulo 2, sem duplicação literal. Auditoria do gabarito: segunda conferência dos itens 6.6.2.1 e 6.6.2.2; apenas IV é incorreta."
+      },
           {
             "id": 1651,
             "subject": "OPERACIONAL",
@@ -24828,21 +24843,21 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 0,
             "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.8.4.2 e 6.8.4.3. Regra normativa considerada: A aplicação pontual e específica para demanda imediata é a definição de missão policial-militar, não de operação. Justificativa: A alternativa indicada como incorreta afirma: “A operação policial-militar envolve várias US em ações simultâneas e sucessivas; pode, contudo, ser definida como aplicação pontual de meios para demanda imediata de baixa complexidade.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A aplicação pontual e específica para demanda imediata é a definição de missão policial-militar, não de operação."
           },
-          {
-            "id": 1660,
-            "subject": "OPERACIONAL",
-            "tag": "NORSOP",
-            "topic": "NORSOP — missão policial-militar",
-            "text": "QUESTÃO 1660 — Segundo a NORSOP, instituída pela Diretriz nº PM3-001/02/20, Sobre a missão policial-militar, assinale a alternativa INCORRETA.",
-            "options": [
-              "a) Envolve aplicação pontual e específica de efetivos e meios.",
-              "b) É limitada no tempo e no espaço.",
-              "c) Destina-se a atender demanda imediata que afeta o serviço policial-militar.",
-              "d) A missão policial-militar atende demanda imediata e é limitada no tempo e no espaço, sendo planejada necessariamente por Programação Antecipada ou Esboço Emergencial."
-            ],
-            "answer": 3,
-            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: NORSOP (Diretriz nº PM3-001/02/20), itens 6.8.4.2–6.8.4.3. Regra normativa considerada: A missão pode ser cotidiana e de baixa complexidade; o emprego combinado de várias US com ações simultâneas e sucessivas define operação. Justificativa: A alternativa indicada como incorreta afirma: “A missão policial-militar atende demanda imediata e é limitada no tempo e no espaço, sendo planejada necessariamente por Programação Antecipada ou Esboço Emergencial.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A missão pode ser cotidiana e de baixa complexidade; o emprego combinado de várias US com ações simultâneas e sucessivas define operação."
-          },
+         {
+        "id": 1660,
+        "subject": "OPERACIONAL",
+        "tag": "NORSOP",
+        "topic": "NORSOP — distinção entre missão e operação policial-militar",
+        "text": "QUESTÃO 1660 — À luz dos itens 6.8.4.2 e 6.8.4.3 da NORSOP, assinale a alternativa que caracteriza a missão policial-militar, e não a operação policial-militar.",
+        "options": [
+          "a) Emprego combinado de várias US de uma ou mais OPM, em ações simultâneas e sucessivas, para atingir objetivo comum delimitado no tempo e no espaço.",
+          "b) Aplicação pontual e específica de efetivos e meios, limitada no tempo e no espaço, destinada a atender demanda imediata que afeta o serviço policial-militar.",
+          "c) Emprego de várias US com base nos requisitos de força, resistência, amplitude e velocidade, mediante ações simultâneas e sucessivas em determinada localidade.",
+          "d) Planejamento formal por Programação Antecipada ou Esboço Emergencial, eventualmente com níveis de comando integrados entre diferentes OPM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: NORSOP, itens 6.8.4.2 e 6.8.4.3, Assuntos Operacionais.pdf, PDF p. 260. A missão é a aplicação pontual e específica de efetivos e meios para atender demanda imediata, limitada no tempo e no espaço. A e C descrevem características da operação policial-militar; D também reproduz elementos de planejamento previstos para a operação, não a definição da missão."
+      },
           {
             "id": 1661,
             "subject": "OPERACIONAL",
@@ -24889,20 +24904,20 @@ const BANCO_GERAL_QUESTOES = [
             "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), itens 6.4.2.4.1–6.4.2.4.3. Regra normativa considerada: A diretriz destaca retenção de dinheiro ou documentos pelo aliciador/transportador como indicador que reduz a mobilidade da vítima. Justificativa: A alternativa indicada como incorreta afirma: “A diretriz considera recrutamento, transporte e alojamento mediante coação ou fraude, mas a retenção de documentos só é relevante quando houver travessia de fronteira internacional.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: A diretriz destaca retenção de dinheiro ou documentos pelo aliciador/transportador como indicador que reduz a mobilidade da vítima."
           },
           {
-            "id": 1664,
-            "subject": "OPERACIONAL",
-            "tag": "Crime Organizado",
-            "topic": "Diretriz PM3-001/02/24 — exploração de mão de obra",
-            "text": "QUESTÃO 1664 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre os contextos mencionados para exploração de mão de obra escrava ou situação análoga.",
-            "options": [
-              "a) A diretriz menciona atividades agropecuárias.",
-              "b) Também menciona construção civil.",
-              "c) A diretriz cita atividades agropecuárias e construção civil como ambientes de exploração de mão de obra, mas não inclui oficinas de costura.",
-              "d) Oficinas de costura são igualmente citadas."
-            ],
-            "answer": 2,
-            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.4.2.4.3.2. Regra normativa considerada: O item menciona, em geral, ambientes agropecuários, construção civil e oficinas de costura. Justificativa: A alternativa indicada como incorreta afirma: “A diretriz cita atividades agropecuárias e construção civil como ambientes de exploração de mão de obra, mas não inclui oficinas de costura.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item menciona, em geral, ambientes agropecuários, construção civil e oficinas de costura."
-          },
+        "id": 1664,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Diretriz PM3-001/02/24 — contextos de exploração de mão de obra escrava ou análoga",
+        "text": "QUESTÃO 1664 — Segundo a Diretriz nº PM3-001/02/24, assinale a alternativa que reproduz CORRETAMENTE os contextos mencionados para a exploração de mão de obra escrava ou em situação análoga.",
+        "options": [
+         "a) Atividades agropecuárias, construção civil e oficinas de costura.",
+          "b) Atividades agropecuárias, mineração e oficinas de costura.",
+          "c) Construção civil, transporte de cargas e extração ilegal de madeira.",
+          "d) Oficinas de costura, comércio varejista e pesca ilegal."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/24, item 6.4.2.4.3.2, em Assuntos Operacionais.pdf, PDF p. 224. O item menciona expressamente ambientes de atividades agropecuárias, construção civil e oficinas de costura. B substitui construção civil por mineração; C e D combinam atividades não incluídas nessa enumeração, sendo mineração, extração ilegal de madeira e pesca ilegal mencionadas no trecho relativo a ações contra o meio ambiente, e não como os ambientes enumerados para exploração de mão de obra escrava ou análoga."
+      },
           {
             "id": 1665,
             "subject": "OPERACIONAL",
@@ -24963,36 +24978,36 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 1,
             "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.4.3. Regra normativa considerada: O item 6.4.3 determina ciência imediata do escalão superior ao identificar as circunstâncias elencadas. Justificativa: A alternativa indicada como incorreta afirma: “A US que identifica circunstâncias indicativas de crime organizado deve cientificar imediatamente a Agência de Área, cabendo ao escalão superior apenas validar a informação.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.4.3 determina ciência imediata do escalão superior ao identificar as circunstâncias elencadas."
           },
-          {
-            "id": 1669,
-            "subject": "OPERACIONAL",
-            "tag": "Crime Organizado",
-            "topic": "Diretriz PM3-001/02/24 — atribuições de comando e supervisão",
-            "text": "QUESTÃO 1669 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Sobre as providências dos oficiais e graduados em funções de comando e supervisão, assinale a alternativa INCORRETA.",
-            "options": [
-              "a) Devem cientificar a Agência de Área.",
-              "b) Devem reportar o fato.",
-              "c) Devem providenciar o envio dos dados e informações obtidos para monitoramento.",
-              "d) Oficiais e graduados em comando ou supervisão devem cientificar a Agência de Área e encaminhar dados para monitoramento, mas a comunicação inicial do fato cabe exclusivamente à Correg PM."
-            ],
-            "answer": 3,
-            "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.4.4. Regra normativa considerada: O item 6.4.4 estabelece ciência à Agência de Área, relato do fato e envio de dados para monitoramento. Justificativa: A alternativa indicada como incorreta afirma: “Oficiais e graduados em comando ou supervisão devem cientificar a Agência de Área e encaminhar dados para monitoramento, mas a comunicação inicial do fato cabe exclusivamente à Correg PM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.4.4 estabelece ciência à Agência de Área, relato do fato e envio de dados para monitoramento."
-          },
+         {
+        "id": 1669,
+        "subject": "OPERACIONAL",
+        "tag": "Crime Organizado",
+        "topic": "Combate ao crime organizado — deveres dos oficiais e graduados em funções de comando e supervisão",
+        "text": "QUESTÃO 1669 — Segundo a Diretriz nº PM3-001/02/24, relativa ao combate ao crime organizado, assinale a alternativa CORRETA quanto às providências dos oficiais e graduados que exercem funções de comando e supervisão quando identificadas as circunstâncias abrangidas pela Diretriz.",
+        "options": [
+          "a) Devem cientificar a Agência de Área, reportar o fato e providenciar o envio dos dados e informações obtidos para o devido monitoramento.",
+          "b) Devem cientificar exclusivamente o escalão superior, cabendo à Agência de Área solicitar posteriormente os dados necessários ao monitoramento.",
+          "c) Devem comunicar o fato à Correg PM e encaminhar os dados somente depois da instauração de procedimento de polícia judiciária militar.",
+          "d) Devem cientificar a Agência de Área, mas o envio de dados para monitoramento é atribuição exclusiva das Unidades de Serviço que identificaram inicialmente as circunstâncias."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/24, item 6.4.4; Assuntos Operacionais.pdf, PDF p. 226 (fl. 12). Trecho de suporte: “os oficiais e graduados na função de comando e supervisão deverão cientificar a Agência de Área, reportando o fato e providenciando o envio dos dados e informações obtidas para o devido monitoramento”. A reproduz as três providências. B transfere a comunicação para o escalão superior, aproximando indevidamente a regra do item 6.4.3, que trata das US que identificam circunstâncias durante atividades rotineiras. C atribui a comunicação à Correg PM e condiciona o envio à instauração de procedimento, requisitos não previstos no item 6.4.4. D omite o dever específico dos oficiais e graduados de providenciar o envio das informações. Dificuldade editorial: MEDIANA. Formato: alternativa CORRETA. Duplicidade: comparação com a questão 1670, que trata de contraterrorismo criminal e Plano de Contingência; conteúdo distinto. Auditoria do gabarito: conferência dos itens 6.4.3–6.4.5; nenhuma alternativa concorrente."
+      },
           {
             "id": 1670,
             "subject": "OPERACIONAL",
             "tag": "Crime Organizado",
             "topic": "Diretriz PM3-001/02/24 — contraterrorismo criminal",
-            "text": "QUESTÃO 1670 — Segundo a Diretriz nº PM3-001/02/24 (combate ao crime organizado), Assinale a alternativa INCORRETA sobre as ações de contraterrorismo criminal.",
-            "options": [
-              "a) Devem ser objeto de Plano de Contingência.",
-              "b) As ações de contraterrorismo criminal devem ser objeto de Plano de Contingência e executadas preponderantemente pelas Matrizes II ou III, ficando a pronta resposta da Matriz I condicionada à autorização prévia da Coord Op PM.",
-              "c) Devem ser executadas preponderantemente por US das Matrizes Operacionais II ou III.",
-              "d) Não se exclui a pronta resposta pela Matriz Operacional I, ainda que em caráter precário."
-            ],
-            "answer": 1,
-            "explanation": "Gabarito: B (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-001/02/24 (combate ao crime organizado), item 6.4.5. Regra normativa considerada: O item 6.4.5 prevê Plano de Contingência e emprego preponderante de US das Matrizes II ou III, sem prejuízo da pronta resposta da Matriz I. Justificativa: A alternativa indicada como incorreta afirma: “As ações de contraterrorismo criminal devem ser objeto de Plano de Contingência e executadas preponderantemente pelas Matrizes II ou III, ficando a pronta resposta da Matriz I condicionada à autorização prévia da Coord Op PM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.4.5 prevê Plano de Contingência e emprego preponderante de US das Matrizes II ou III, sem prejuízo da pronta resposta da Matriz I."
-          },
+            "text": "QUESTÃO 1670 — Segundo a Diretriz nº PM3-001/02/24, qual alternativa descreve corretamente o planejamento e o emprego operacional nas ações de contraterrorismo criminal?",
+        "options": [
+          "a) Devem ser objeto de plano de contingência e executadas preponderantemente por US das Matrizes Operacionais II ou III, sem prejuízo da pronta resposta pela Matriz I, ainda que em caráter precário.",
+          "b) Devem ser objeto de plano de contingência e executadas exclusivamente por US das Matrizes Operacionais II ou III, vedada a pronta resposta pela Matriz I.",
+          "c) Podem ser executadas preponderantemente pela Matriz Operacional I, ficando o emprego das Matrizes II ou III reservado às hipóteses de reforço formalmente autorizado.",
+          "d) Devem ser objeto de plano de contingência, mas a pronta resposta pela Matriz Operacional I depende de autorização prévia da Coord Op PM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/24, item 6.4.5, Assuntos Operacionais.pdf, PDF p. 226. O dispositivo determina plano de contingência, emprego preponderante de US das Matrizes II ou III e preserva a pronta resposta da Matriz I, ainda que precária. B está incorreta porque exclui a pronta resposta da Matriz I; C inverte a matriz de emprego preponderante; D acrescenta exigência de autorização prévia não prevista no item."
+      },
           {
             "id": 1671,
             "subject": "OPERACIONAL",
@@ -25413,21 +25428,21 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 0,
             "explanation": "Gabarito: A (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), itens 6.8.1–6.8.4. Regra normativa considerada: O item 6.8.4 veda aplicar escalas de serviço no regime de 12x36 horas. Justificativa: A alternativa indicada como incorreta afirma: “A OPM pode adotar regimes 5x2 ou 6x1 e ajustar turnos conforme situações específicas; a escala 12x36 pode ser autorizada excepcionalmente pelo Cmt OPM.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.8.4 veda aplicar escalas de serviço no regime de 12x36 horas."
           },
-          {
-            "id": 1699,
-            "subject": "OPERACIONAL",
-            "tag": "Policiamento Escolar",
-            "topic": "Diretriz PM3-004/02/20 — designação do efetivo",
-            "text": "QUESTÃO 1699 — Segundo a Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), Sobre a designação de policiais militares para atividades vinculadas ao PPE, assinale a alternativa INCORRETA.",
-            "options": [
-              "a) Devem ser considerados critérios de conduta aceitável.",
-              "b) A voluntariedade integra os critérios de designação.",
-              "c) A designação do efetivo do PPE considera conduta aceitável, voluntariedade e facilidade no trato com crianças e adolescentes; a voluntariedade pode ser dispensada quando houver necessidade de serviço.",
-              "d) A facilidade no trato com crianças e adolescentes é critério indicado."
-            ],
-            "answer": 2,
-            "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-004/02/20 (Programa de Policiamento Escolar), item 6.10.7. Regra normativa considerada: O item 6.10.7 indica conduta aceitável, voluntariedade e facilidade no trato com crianças e adolescentes. Justificativa: A alternativa indicada como incorreta afirma: “A designação do efetivo do PPE considera conduta aceitável, voluntariedade e facilidade no trato com crianças e adolescentes; a voluntariedade pode ser dispensada quando houver necessidade de serviço.” Isso altera ou restringe a regra indicada na fonte. A norma citada estabelece: O item 6.10.7 indica conduta aceitável, voluntariedade e facilidade no trato com crianças e adolescentes."
-          },
+           {
+        "id": 1699,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Escolar",
+        "topic": "Diretriz PM3-004/02/20 — critérios para designação do efetivo do PPE",
+        "text": "QUESTÃO 1699 — Considerando a Diretriz nº PM3-004/02/20, assinale a alternativa que reproduz os critérios expressamente indicados para a designação de policiais militares às atividades vinculadas ao Programa de Policiamento Escolar (PPE).",
+        "options": [
+          "a) Conduta aceitável, voluntariedade e facilidade no trato com crianças e adolescentes.",
+          "b) Conduta aceitável, voluntariedade e experiência mínima de dois anos em atividade própria de policiamento escolar.",
+          "c) Voluntariedade, formação específica em proteção da infância e disponibilidade exclusiva para o horário letivo.",
+          "d) Conduta aceitável, facilidade no trato com crianças e adolescentes e autorização para dispensar a voluntariedade quando houver necessidade de serviço."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fonte autorizada: Diretriz nº PM3-004/02/20, item 6.10.7, Assuntos Operacionais.pdf, PDF p. 456. Trecho de suporte: os policiais militares serão designados para atividades vinculadas ao PPE segundo critérios de “conduta aceitável, voluntariedade e facilidade no trato com crianças e adolescentes”. B acrescenta requisito de experiência mínima não previsto nesse item; C substitui os critérios expressos por formação específica e dedicação exclusiva não previstas; D cria uma dispensa da voluntariedade que não consta do dispositivo. Auditoria de unicidade: apenas A reproduz o conjunto de critérios indicado. Duplicidade: questões sobre designação e efetivo do PPE foram comparadas; os itens próximos abordam regime de trabalho, composição ou outros aspectos e não reproduzem este conjunto específico."
+      },
           {
             "id": 1700,
             "subject": "OPERACIONAL",
