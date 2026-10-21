@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071020">
+<title>Movimentação de Policiais Militares — PMESP</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--highlight:#fff09a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef2f7;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--header);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+.top{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:#aab6c8;font-weight:500;font-size:12px;margin-top:3px}.back{margin-left:auto;color:#fff;text-decoration:none;border:1px solid #35435c;border-radius:8px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(120deg,#101d35,#172d4f);color:#fff;padding:28px 20px}.hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(23px,4vw,36px);line-height:1.15;margin:10px 0}.hero p{color:#c6d0df;margin:0;max-width:780px;line-height:1.6}
+main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:sticky;top:65px;z-index:8;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;box-shadow:0 4px 18px #14223b0c}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
+.notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
+.doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
+.doc::after{content:attr(data-watermark);position:fixed;right:12px;bottom:16px;z-index:5;pointer-events:none;color:#0b1326;opacity:.12;font-size:11px;font-weight:800;letter-spacing:.05em;transform:rotate(-12deg);background:#fff8;padding:8px;border:1px solid #0b132622;border-radius:4px}
+.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
+
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal{width:min(760px,100%);max-height:88vh;overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:16px;box-shadow:0 25px 80px #0007;display:flex;flex-direction:column}
+.modal-head{padding:18px 20px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}
+.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:6px 0 0;color:#c6d0df;font-size:13px;line-height:1.5}
+.modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
+.note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
+.note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
+.warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
+.storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
+.btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
+@media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
+
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+
+.material-picker-backdrop{position:fixed;inset:0;z-index:120;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}.material-picker-backdrop.open{display:flex}.material-picker{width:min(560px,100%);background:#fff;border:1px solid #cbd5e1;border-radius:14px;overflow:hidden;box-shadow:0 25px 80px #0007}.material-picker-head{padding:16px 18px;background:#101d35;color:#fff;border-bottom:3px solid var(--gold)}.material-picker-head h2{margin:0;font-size:18px}.material-picker-list{padding:14px;display:grid;gap:9px}.material-option{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#26364d;border:1px solid var(--line);border-radius:9px;padding:13px;font-weight:750}.material-option:hover{border-color:var(--gold);background:#fffbed}.material-picker-foot{padding:12px 14px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;background:#f8fafc}
+</style>
+</head>
+<body>
+<header><div class="top"><div aria-hidden="true" style="width:40px;height:40px;border:1px solid #d4af37;border-radius:10px;display:grid;place-items:center;color:#d4af37;font-size:20px">§</div><div class="brand">PLATAFORMA DE APERFEIÇOAMENTO<small>Polícia Militar do Estado de São Paulo</small></div><a class="back" href="plataformaACP.html">← Área de estudos</a></div></header>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Biblioteca de normas · Assuntos Organizacionais</div><h1>Movimentação de Policiais Militares</h1><p>Instruções sobre movimentação de oficiais e praças da Polícia Militar · Texto transcrito do material fornecido; confira a publicação oficial e suas atualizações.</p></div></section>
+<main>
+<div class="tools">
+<input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
+<button class="btn" id="find">Localizar</button><button class="btn gold" type="button" id="open-material-picker">Escolher material de apoio ↗</button><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
+</div>
+<div class="notice"><strong>Transcrição para estudo:</strong> as marcações e anotações são salvas apenas neste navegador. Ainda não há login nem sincronização entre dispositivos. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="ACESSO EXPERIMENTAL · MOVIMENTAÇÃO PMESP">
+<h2 class="section-heading">CAPÍTULO I — Da Finalidade</h2>
+<p class="legal-article">Artigo 1º - A finalidade destas instruções é a de estabelecer normas gerais para a movimentação de oficiais e praças da Polícia Militar.</p>
+<h2 class="section-heading">CAPÍTULO II — Da Conceituação</h2>
+<p class="legal-article">Artigo 2º - Organização Policial Militar (OPM), para fins destas instruções, constitui-se nos Órgãos de Direção, Apoio e Execução previstos no decreto de organização da Polícia Militar.</p>
+<p class="legal-article">Artigo 3º - Quadro Particular de Organização é o documento que estabelece a estrutura e o desdobramento organizacional de uma OPM, fixando o efetivo necessário ao desempenho de suas atribuições.</p>
+<p class="legal-article">Artigo 4º - Movimentação é a denominação genérica do ato administrativo que tem por objetivo alocar os oficiais e praças nas OPM para propiciar o cumprimento das missões afetas à Corporação, estabelecendo a situação funcional do policial militar.</p>
+<p class="legal-article">Artigo 5º - Agregação é a situação de inatividade temporária do policial militar que, nesse período, fica excluído do estado efetivo da OPM e da Corporação.</p>
+<h2 class="section-heading">CAPÍTULO III — Dos Objetivos</h2>
+<p class="legal-article">Artigo 6º - A movimentação deverá ser realizada tendo um dos seguintes objetivos:</p>
+<p>I - o atendimento da conveniência do serviço e o preenchimento das vagas previstas nos QPO, assegurando às OPM o efetivo necessário ao desempenho de suas missões;</p>
+<p>II - a necessidade da freqüência aos cursos e estágios, assegurando o aprimoramento profissional;</p>
+<p>III - o exercício de função ou cumprimento de missão específica, por interesse do serviço;</p>
+<p>IV - o atendimento, respeitado o interesse do serviço, da conveniência do policial militar;</p>
+<p>V - o atendimento da conveniência da disciplina, afastando o policial militar de OPM ou localidade na qual sua permanência seja inconveniente ou incompatível com o interesse policial-militar; e</p>
+<p>VI - o atendimento às determinações judiciais.</p>
+<h2 class="section-heading">CAPÍTULO IV — Da Movimentação</h2>
+<p class="legal-article">Artigo 7º - Constituem espécies de movimentação:</p>
+<p>I - classificação: ato que atribui ao policial militar uma das vagas previstas nos QPO em decorrência de promoção, reversão ao serviço ativo, reintegração e término de curso ou estágio de formação;</p>
+<p>II - transferência: atribuição de nova OPM ao policial militar, a fim de atender à conveniência do serviço ou conveniência própria, dentro das vagas previstas no QPO;</p>
+<p>III - adição: ato através do qual o policial militar fica vinculado temporariamente a outra OPM, sem ocupar vaga prevista no QPO, para freqüência de curso ou estágio de duração superior a 30 (trinta) dias, exercício de função ou missão específica compatível com seu posto ou graduação, ou ainda, para controle da situação funcional do agregado;</p>
+<p>III – adição: ato que vincula temporariamente o policial militar a uma OPM para: (NR). (Redação alterada pelo Bol G PM 156/11).</p>
+<p>a) freqüência a curso ou estágio de duração superior a 30 (trinta) dias;</p>
+<p>b) exercício de função ou missão específica compatível com o seu posto ou graduação;</p>
+<p>c) controle da situação funcional do agregado e dos policiais recolhidos presos ao PMRG. (Redação inserida pelo Bol G PM 156/11).</p>
+<p>IV – desligamento: ato através do qual o policial militar se desvincula da OPM ao qual estava adido; e</p>
+<p>V – à disposição: situação especial e transitória do policial militar que, sem integrar o efetivo de uma OPM, está a ela vinculado apenas para freqüência de curso ou estágio de duração igual ou inferior a 30 (trinta) dias, ficando o controle dessa situação funcional a cargo da OPM de origem.</p>
+<p>Parágrafo único – O policial militar que estiver adido a uma OPM poderá permanecer nessa situação como se efetivo fosse, sendo considerado para todos os efeitos como seu integrante, devendo tal circunstância constar na publicação que originou a adição.</p>
+<p class="legal-article">Artigo 8º - As movimentações poderão ser processadas pelas seguintes razões:</p>
+<p>I – conveniência do serviço, quando forem decorrentes do interesse do serviço;</p>
+<p>II – conveniência própria, quando solicitada pelo policial militar;</p>
+<p>III – conveniência da disciplina; ou</p>
+<p>IV – conveniência da justiça.</p>
+<p>Parágrafo único – As classificações somente se farão por conveniência do serviço ou própria.</p>
+<h3 class="section-heading">Seção I — Da Movimentação por Conveniência Própria</h3>
+<h3 class="section-heading">Subseção I — Disposições Gerais</h3>
+<p class="legal-article">Artigo 9º - São condições para a movimentação por conveniência própria:</p>
+<p>I – estar, no mínimo, no bom comportamento, se praça;</p>
+<p>II – não estar respondendo a processo disciplinar ou IPM que, por força regulamentar ou de conveniência para as apurações, recomende a permanência na OPM;</p>
+<p>III – ter cumprido o prazo mínimo estabelecido em edital ou instrução de concurso para permanência na OPM ou área, a contar da data de sua classificação.</p>
+<p>§ 1º - O Aspirante-a-Oficial PM não pode pleitear movimentação por conveniência própria.</p>
+<p>§ 2º - A opção de OPM, quando do término de curso, não é considerada como pedido do interessado.</p>
+<p>§ 3º - A movimentação de policial militar para OPM da qual haja sido movimentado fica condicionada ao parecer favorável do Comandante da OPM de destino.</p>
+<p class="legal-article">Artigo 10 – O pedido de movimentação por conveniência própria deve ser instruído através do formulário PM P-74 e somente encaminhado, nos termos do</p>
+<p class="legal-article">artigo 18, se preenchidas as condições previstas no artigo anterior.</p>
+<p class="legal-article">Artigo 11 – Preenchidas as condições, o policial militar será movimentado ou incluído no banco de dados (oficial) ou na relação de prioridade de transferência (praça).</p>
+<p>Parágrafo único – O caso que excepcione as normas previstas para o banco de dados ou para a relação de prioridade de transferência deve ser instruído com a documentação comprobatória que justifique a necessidade imediata da movimentação e encaminhado para análise e decisão, nos termos do artigo 18.</p>
+<h3 class="section-heading">Subseção II — União de Cônjuges</h3>
+<p class="legal-article">Artigo 12 – A movimentação nos termos do artigo 130 da Constituição Estadual será feita para o município onde o cônjuge tem sua residência.</p>
+<p>Parágrafo único – A critério da Administração, será definida a OPM (de policiamento ostensivo, rodoviário, florestal ou bombeiro) para a qual deva ser feita a movimentação, dentre aquelas que abrangem o município de residência do cônjuge.</p>
+<p class="legal-article">Artigo 13 – Fica a movimentação sujeita ainda às seguintes condições:</p>
+<p>I – não prejudique o serviço;</p>
+<p>II – não tenha havido movimentação, nos últimos 5 (cinco) anos, pelo mesmo fundamento;</p>
+<p>III – o município de exercício do cônjuge e sua residência sejam os mesmos;</p>
+<p>IV – não haja sido movimentado por conveniência da disciplina ou da justiça.</p>
+<p>Parágrafo único – Quando os cônjuges prestarem serviços no mesmo município e um deles for movimentado, por conveniência própria, para OPM localizada em município diverso, o outro não poderá pleitear sua movimentação nos termos do artigo 130 da Constituição Estadual.</p>
+<p class="legal-article">Artigo 14 – O policial militar deverá juntar ao formulário PM P-74:</p>
+<p>I – cópia autenticada da certidão de casamento;</p>
+<p>II – certidão expedida pelo órgão onde o cônjuge, servidor público, presta serviços, com esclarecimentos de sua situação funcional (cargo que ocupa, município de exercício e se é efetivo, concursado ou nomeado, etc.);</p>
+<p>III – comprovante de residência do cônjuge na localidade pleiteada.</p>
+<h3 class="section-heading">Seção II — Da Movimentação por Conveniência da Disciplina</h3>
+<p class="legal-article">Artigo 15 – A movimentação por conveniência da disciplina ocorrerá quando a permanência do policial militar em sua OPM tornar-se nociva ou prejudicial à disciplina, vindo a comprometer o conceito dos seus pares e da Corporação, e deverá estar vinculada ao processo ou procedimento administrativo que apurar os fatos.</p>
+<h3 class="section-heading">Seção III — Da Movimentação por Conveniência da Justiça</h3>
+<p class="legal-article">Artigo 16 – A movimentação será considerada por conveniência da justiça quando efetivada em atendimento a decisão judicial ou decorrente do interesse da justiça.</p>
+<h2 class="section-heading">CAPÍTULO V — Da Competência</h2>
+<p class="legal-article">Artigo 17 – São competentes para efetivar a movimentação de policiais militares entre as diversas OPM:</p>
+<p>I – Governador do Estado, para a movimentação de Coronéis;</p>
+<p>II – Secretário da Segurança Pública, para a movimentação de Tenentes Coronéis e Majores;</p>
+<p>III – Comandante Geral, para a movimentação de Capitães e Tenentes que estejam no Comando ou Chefia de OPM;</p>
+<p>IV – Chefe do Estado Maior da Polícia Militar, para a movimentação de Capitães e Tenentes que não estejam no Comando ou Chefia de OPM; e</p>
+<p>V – Diretor de Pessoal, para a movimentação de Praças.</p>
+<p>Parágrafo único – A movimentação interna, no âmbito das OPM, é de competência do respectivo Comandante, observado o disposto no artigo 31 destas Instruções.</p>
+<p class="legal-article">Artigo 18 – Os pedidos, propostas e outros expedientes sobre movimentação devem ser encaminhados:</p>
+<p>I – à PM-1 quando tratar de Oficiais Superiores; e</p>
+<p>II – à Diretoria de Pessoal, nos demais casos.</p>
+<p class="legal-article">Artigo 19 – A documentação referente à movimentação de Oficiais e Praças entre OPM subordinadas deve obedecer ao seguinte trâmite:</p>
+<p>I – no âmbito das Diretorias, do CPC, COM, CPI-1 a 7, CPChq, CPRv, CPFM e CCB: o Diretor ou Comandante encaminha o expediente para análise, homologação e publicação do ato; e</p>
+<p>II – no âmbito dos CPA: o Comandante, com a aprovação do Comandante do CPC ou COM, encaminha o expediente para os fins previstos no inciso anterior.</p>
+<p>Parágrafo único – A movimentação a que se refere este artigo não pode ser homologada e publicada pelas autoridades previstas no artigo 17 se a proposta contrariar estas Instruções, o QPO, a política de pessoal vigente na Corporação ou outros dispositivos regulamentares.</p>
+<h2 class="section-heading">CAPÍTULO VI — Da Publicação</h2>
+<p class="legal-article">Artigo 20 – A movimentação será publicada em Diário Oficial ou Boletim Geral PM.</p>
+<h2 class="section-heading">CAPÍTULO VII — Da Apresentação</h2>
+<p class="legal-article">Artigo 21 – O policial militar movimentado deve ser apresentado à sua nova OPM:</p>
+<p>I – de imediato, quando movimentado por conveniência da disciplina ou conveniência da justiça; e</p>
+<p>II – no prazo de 10 (dez) dias, quando a movimentação for por conveniência do serviço ou conveniência própria, salvo se determinado de forma diversa.</p>
+<p>II – no prazo de 5 (cinco) dias, quando a movimentação for por conveniência do serviço ou própria, salvo se expressamente o ato prever de forma diversa. (NR dada pela Portaria do Cmt G PM1-2/02/16, de 10AGO16)</p>
+<p>Parágrafo único – O prazo para a apresentação à nova OPM é contado da publicação do ato.</p>
+<p class="legal-article">Artigo 22 – Caso o policial militar esteja afastado regularmente do serviço (férias, licença, dispensa convalescença, etc.), em cumprimento de punição, no exercício da função de detentor executivo ou respondendo a processo administrativo ou IPM e seja imprescindível sua presença na OPM para a elucidação dos fatos, o prazo será contado a partir da conclusão do afastamento do cumprimento da punição, da passagem da carga ou da solução do processo administrativo ou IPM.</p>
+<p>Parágrafo único – O Comando da OPM de origem dará ciência ao Diretor, Comandante ou Chefe da OPM de destino, esclarecendo os motivos e informando a data prevista para a apresentação.</p>
+<p class="legal-article">Artigo 23 – Não poderá ser concedido qualquer afastamento, tal como férias, licença-prêmio, dispensa, mesmo em caráter excepcional, ao policial militar que tenha tido publicada sua movimentação mas ainda não haja sido apresentado.</p>
+<p>Parágrafo único – Se o policial militar constar do plano de férias e não estiver previsto o início de fruição desse afastamento até o dia posterior ao da publicação da sua movimentação, somente poderá iniciar o gozo das férias após a apresentação na nova OPM.</p>
+<p class="legal-article">Artigo 24 – Caso a apresentação não seja efetuada no prazo estabelecido, a OPM de destino deverá comunicar o fato ao Chefe do Estado Maior da Polícia Militar ou Diretor de Pessoal, nos termos do artigo 18 destas Instruções.</p>
+<p class="legal-article">Artigo 25 – O policial militar só pode ser apresentado à nova OPM após a publicação da movimentação, salvo:</p>
+<p>I – se determinado pelas autoridades constantes no artigo 17;</p>
+<p>II – se determinado pelas autoridades constantes no artigo 19, desde que:</p>
+<p>a) a movimentação seja no âmbito da respectiva jurisdição;</p>
+<p>b) a permanência na OPM seja prejudicial à disciplina ou ocorra motivo de força maior; e</p>
+<p>c) haja vaga na OPM de destino.</p>
+<p>§ 1º - No caso da apresentação ser anterior à publicação, a OPM de origem deve comunicar a medida no prazo de 24 (vinte e quatro) horas, nos termos do</p>
+<p class="legal-article">artigo 18 destas Instruções.</p>
+<p>§ 2º - O pedido de apresentação imediata de policial militar com destino a OPM fora do âmbito da jurisdição deve ser encaminhado, nos termos do artigo 18, desde que enquadrado na alínea “b” do inciso II deste artigo.</p>
+<p class="legal-article">Artigo 26 – O policial militar ao receber o ofício de apresentação deve comparecer:</p>
+<p>I – imediatamente à nova OPM, durante o horário de expediente da data constante do ofício, desde que a movimentação seja no âmbito da Capital, Região Metropolitana ou da região correspondente ao CPI onde estiver localizada a OPM de origem;</p>
+<p>II – no prazo de 24 (vinte e quatro) horas à nova OPM, caso a movimentação ocorra para localidade diversa do previsto no inciso anterior e não faça jus a trânsito; e</p>
+<p>III – se fizer jus a trânsito, a apresentação será na data estipulada no ofício, observadas as disposições dos incisos anteriores.</p>
+<p>§ 1º - O ofício de apresentação deve ser entregue ao policial militar, preferencialmente, no início do expediente, devendo nele constar, se houver, informações adicionais sobre diárias e auxílio-alimentação a que faz jus, apresentação em juízo, férias e outros afastamentos.</p>
+<p>§ 2º - Entregue o ofício de apresentação ao policial militar a OPM de destino deve ser cientificada desse fato.</p>
+<p class="legal-article">Artigo 26 - O policial militar ao receber o ofício de apresentação deve comparecer à nova OPM:</p>
+<p>I - imediatamente, durante o horário de expediente da data constante do ofício, desde que a movimentação seja no âmbito da Capital ou Região Metropolitana;</p>
+<p>II - no prazo de 24 (vinte e quatro) horas, caso a movimentação ocorra para localidade diversa do previsto no inciso anterior.</p>
+<p>§ 1º - O ofício de apresentação deverá ser entregue ao policial militar, preferencialmente, no início do expediente, devendo nele constar, dentre outros dados relevantes, datas para apresentação em juízo, direito a férias e outros afastamentos, cabendo à OPM de origem realizar os lançamentos relativos às vantagens de frequência até à data da efetiva apresentação, de acordo com procedimento administrativo padrão relativo a pagamento.</p>
+<p>§ 2º - No momento da entrega do ofício, o interessado deverá consignar ciência na cópia do documento, certificando que foi informado acerca da data, hora e local em que deve se apresentar na OPM de destino.</p>
+<p>§ 3º - Entregue o ofício de apresentação ao policial militar, a OPM de origem deverá, imediatamente, comunicar esse fato à OPM de destino.</p>
+<p>§ 4º - A OPM de destino, por sua vez, controlará a apresentação do policial militar, atentando para o cumprimento dos prazos definidos neste artigo ou, se for o caso, no ato de movimentação.</p>
+<p>§ 5º - Caso a apresentação não ocorra na data estabelecida, a OPM de destino adotará as providências necessárias para localização do policial militar e, se for o caso, tomará as medidas para apuração da responsabilidade disciplinar e penal militar. (NR dada pela Portaria do Cmt G PM1-2/02/16, de 10AGO16)</p>
+<p class="legal-article">Artigo 27 – Os Oficiais e Aspirantes-a-Oficial devem ser apresentados nas Diretorias, CPC, COM, CPI-1 a 7, CPChq, CPRv, CPFM e CCB, enquanto as Praças devem ser apresentadas nos Órgãos imediatamente subordinados.</p>
+<p>Parágrafo único – Excetuam-se do disposto neste artigo as movimentações que ocorram no âmbito daqueles Órgãos.</p>
+<p class="legal-article">Artigo 27 - O policial militar movimentado deverá ser apresentado diretamente ao Comandante, Diretor ou Chefe de sua OPM de destino.</p>
+<p>Parágrafo único - Quando o policial militar for movimentado para assumir Comando de OPM, deverá ser apresentado ao Comandante, Diretor ou Chefe da unidade imediatamente superior à OPM de destino. (NR dada pela Portaria do Cmt G PM1-2/02/16, de 10AGO16)</p>
+<p class="legal-article">Artigo 27-A - O policial militar deverá apresentar-se à OPM de destino utilizando os uniformes descritos nos incisos III (B-3.1 e B-3.2) e IV (B-4.1), do</p>
+<p class="legal-article">artigo 17 do Regulamento de Uniformes da Polícia Militar do Estado de São Paulo (R-5-PM), baixado por meio do Decreto 28.057, de 29 de dezembro de 1987 e suas alterações, devendo o B-4.1 ser utilizado na sua composição básica, vedado o uso das peças complementares ou substitutivas específicas previstas no nº 3, item 1, inciso IV do artigo 17. (Redação acrescentada pela Portaria do Cmt G PM1-2/02/16, de 10AGO16)</p>
+<h2 class="section-heading">CAPÍTULO VIII — Dos Atos Decorrentes da Movimentação</h2>
+<p class="legal-article">Artigo 28 – São atos administrativos decorrentes da movimentação, praticados pelo Diretor, Comandante ou Chefe da OPM:</p>
+<p>I – inclusão: ato pelo qual a autoridade integra no estado efetivo da OPM o policial militar que para ela tenha sido movimentado e apresentado;</p>
+<p>II – exclusão: ato pelo qual a autoridade exclui o policial militar do estado efetivo da OPM; e</p>
+<p>III – designação: ato pelo qual a autoridade estabelece a função a ser desempenhada pelo policial militar.</p>
+<p>§ 1º - A inclusão e a exclusão são a contar da efetiva apresentação do policial militar.</p>
+<p>§ 1º - Em qualquer dos casos de movimentação previstos no artigo 7º destas Instruções, a inclusão e a exclusão são realizados a contar da efetiva apresentação e recebimento do policial militar, momento no qual, independente de publicação, será realizada sua inserção no sistema corporativo de controle de pessoal da OPM de destino. (NR dada pela Portaria do Cmt G PM1-2/02/16, de 10AGO16)</p>
+<p>§ 2º - Os atos devem ser publicados em boletim interno da OPM e, no caso do policial militar adido, deve constar somente a data da apresentação ou retorno, com menção à especial situação de adido.</p>
+<p class="legal-article">Artigo 29 – Processada a movimentação, desde que entre municípios diferentes e exceto por conveniência própria, a OPM de destino do policial militar, no ato da sua apresentação, deve encaminhar expediente ao Centro de Despesa de Pessoal para fins de ajuda de custo, observado o procedimento administrativo padrão pertinente.</p>
+<p class="legal-article">Artigo 30 – A OPM de origem, desde que a movimentação não tenha sido por conveniência própria, deve providenciar requisição de transporte pessoal e de bagagem, de acordo com a legislação em vigor.</p>
+<h2 class="section-heading">CAPÍTULO IX — Das Prescrições Diversas</h2>
+<p class="legal-article">Artigo 31 – Os Comandantes de OPM devem restringir ao máximo as movimentações internas que impliquem no pagamento de ajuda de custo, por exemplo, movimentação de Cia, Pel ou P PM, por conveniência do serviço, entre municípios diversos.</p>
+<p>Parágrafo único – Havendo necessidade, o pedido de movimentação deve ser encaminhado ao Diretor de Pessoal devidamente justificado, para análise da disponibilidade orçamentária própria. (Revogado pelo Bol G PM 156/11).</p>
+<p class="legal-article">Artigo 32 - O pedido para a movimentação de policial militar deve estar instruído com a documentação comprobatória de sua liberação para a OPM pretendida.</p>
+<p class="legal-article">Artigo 33 - A PM-1 e a Diretoria de Pessoal devem manter grade de efetivo das OPM, permanentemente atualizada, para assessoramento do Comando quanto às vagas disponíveis.</p>
+<p class="legal-article">Artigo 34 - A movimentação publicada somente pode ser revogada ou retificada caso o policial militar, por motivo justificável, não tiver sido apresentado à nova OPM.</p>
+<p>Parágrafo único - Caso o policial militar já tenha sido apresentado, deve ser proposta nova movimentação, observados os critérios estabelecidos nestas Instruções.</p>
+<p class="legal-article">Artigo 35 - O policial militar promovido e aguardando a classificação permanece em sua OPM, nesse interregno, na condição de adido como se efetivo fosse, concorrendo normalmente às substituições e exercendo função própria de seu posto ou graduação, se houver.</p>
+<p class="legal-article">Artigo 36 - O policial militar adido, exceto o agregado, continua ocupando a vaga da sua OPM de origem.</p>
+<p class="legal-article">Artigo 37 - Após a conclusão de curso de especialização, o policial militar deve, preferencialmente, servir em OPM que permita a aplicação dos conhecimentos adquiridos.</p>
+<p class="legal-article">Artigo 38 - Ficam revogadas as disposições em contrário, em especial as I-2- PM, publicadas no Bol G PM 039, de 27Fev98, alteradas pela publicação contida no item 1 do Bol G PM 076, de 23Abr98, o item 2 do Bol G PM 130, de 13Jul98, e o item 1 do Bol G PM 084, de 5Mai99</p>
+</section>
+</main>
+
+<div id="notes-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notes-title">
+ <section class="modal">
+  <div class="modal-head"><h2 id="notes-title">Gerenciar minhas anotações</h2><p>Selecione exatamente quais anotações deseja excluir. Esta área afeta somente as anotações do Movimentação de Policiais Militares neste navegador.</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Atenção:</strong> ainda não existe sistema de perfis nem sincronização. As anotações e marcações ficam armazenadas localmente neste navegador. Se limpar os dados deste dispositivo ou navegador, elas poderão ser perdidas permanentemente. Para evitar acúmulo, exclua periodicamente o que não precisa mais.</div>
+   <div class="storage-line"><span>Dados locais desta norma (estimativa)</span><strong id="storage-size">Calculando…</strong></div>
+   <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0"><label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:700"><input type="checkbox" id="select-all-notes"> Selecionar todas as anotações</label><span id="notes-count" style="font-size:12px;color:#64748b"></span></div>
+   <div id="notes-list"></div>
+   <div id="notes-empty" class="warning-box" style="display:none">Não há anotações salvas nesta norma.</div>
+  </div>
+  <div class="modal-actions">
+   <button type="button" class="btn" id="close-notes">Fechar</button>
+   <button type="button" class="btn danger" id="delete-selected">Excluir selecionadas</button>
+   <button type="button" class="btn danger" id="clear-all-notes">Apagar todas as anotações</button>
+   <button type="button" class="btn gold" id="clear-page-data">Limpar todos os dados salvos do Movimentação de Policiais Militares</button>
+  </div>
+ </section>
+</div>
+<div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
+ <section class="modal" style="max-width:560px">
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>Biblioteca experimental — sem sistema de perfis</p></div>
+  <div class="modal-body">
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do Movimentação de Policiais Militares são guardados apenas neste navegador e neste dispositivo. Eles ainda não estão vinculados a uma conta nem sincronizados. Limpar os dados salvos pode apagar essas informações definitivamente.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar todos os dados salvos desta norma. Isso não limpa o cache geral do navegador nem afeta outras normas.</p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+ </section>
+</div>
+
+
+<div class="material-picker-backdrop" id="material-picker-modal" role="dialog" aria-modal="true" aria-labelledby="material-picker-title">
+ <div class="material-picker">
+  <div class="material-picker-head"><h2 id="material-picker-title">Movimentação de Policiais Militares — PMESP</h2></div>
+  <div class="material-picker-list">
+   <a class="material-option" href="#document" id="material-option-norma">Norma — texto integral nesta página <span>↓</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1yS5Yf4kSdtA2ZEXX5HIOV6-Smowhg-RE/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo 1 <span>↗</span></a>
+   <a class="material-option" href="https://drive.google.com/file/d/1L3NSAqs0vblf5bbjbEH97EiCuL7VoKPM/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resumo 2 <span>↗</span></a>
+  </div>
+  <div class="material-picker-foot"><button class="btn" type="button" id="close-material-picker">Fechar</button></div>
+ </div>
+</div>
+
+<footer>Plataforma de Aperfeiçoamento · Biblioteca de normas · Protótipo experimental</footer>
+
+<script>
+(() => {
+ const modal=document.getElementById('material-picker-modal');
+ const open=document.getElementById('open-material-picker');
+ const close=document.getElementById('close-material-picker');
+ if(!modal||!open||!close)return;
+ const hide=()=>{modal.classList.remove('open');open.focus();};
+ open.addEventListener('click',()=>modal.classList.add('open'));
+ close.addEventListener('click',hide);
+ const norma=document.getElementById('material-option-norma');
+ norma.addEventListener('click',()=>{modal.classList.remove('open');});
+ modal.addEventListener('click',e=>{if(e.target===modal)hide();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))hide();});
+})();
+</script>
+
+<script>
+(() => {
+ const doc = document.getElementById('document');
+ const key = 'biblioteca-pmesp-movimentacao-v2';
+ const notesKey = key + '-notes';
+ const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+ let saved = load(key, []);
+ let notes = load(notesKey, []);
+ function textNodes(root) {
+   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+     return n.parentElement.closest('script,style,mark') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+   }});
+   const arr=[]; while(walker.nextNode()) arr.push(walker.currentNode); return arr;
+ }
+ function restoreHighlights() {
+   // Anchors are based on exact selected text plus its occurrence number; document-version changes may require review.
+   for (const h of saved) {
+     const nodes=textNodes(doc); let remaining=h.occurrence || 0, found=false;
+     for (const n of nodes) {
+       const i=n.nodeValue.indexOf(h.text);
+       if(i>=0) { if(remaining>0){remaining--;continue;}
+         const range=document.createRange();range.setStart(n,i);range.setEnd(n,i+h.text.length);
+         const mark=document.createElement('mark');mark.className='user-highlight';mark.dataset.id=h.id;
+         try{range.surroundContents(mark);found=true;}catch{} if(found)break;
+       }
+     }
+   }
+ }
+ function getSelectionText(){return window.getSelection()?.toString().trim() || '';}
+ function occurrenceFor(text){let count=0;const nodes=textNodes(doc);for(const n of nodes){let from=0,i;while((i=n.nodeValue.indexOf(text,from))!==-1){count++;from=i+text.length;}}return Math.max(0,count-1);}
+ document.getElementById('highlight').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione primeiro um trecho da norma.');return;}
+   if(saved.some(x=>x.text===text)){alert('Esse trecho já está marcado.');return;}
+   saved.push({id:Date.now().toString(36),text,occurrence:occurrenceFor(text),createdAt:new Date().toISOString()});
+   localStorage.setItem(key,JSON.stringify(saved)); location.reload();
+ });
+ document.getElementById('note').addEventListener('click',()=>{
+   const text=getSelectionText(); if(!text){alert('Selecione o trecho ao qual deseja vincular a anotação.');return;}
+   const existing=notes.find(n=>n.text===text);
+   const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
+   if(value===null)return;
+   if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
+   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+ });
+ const notesModal=document.getElementById('notes-modal');
+ const warningModal=document.getElementById('warning-modal');
+ const notesList=document.getElementById('notes-list');
+ const notesCount=document.getElementById('notes-count');
+ const selectAll=document.getElementById('select-all-notes');
+ const bytesFor = value => new Blob([value || '']).size;
+ function formatBytes(n){return n<1024?`${n} bytes`:`${(n/1024).toFixed(2)} KB`;}
+ function updateStorageSize(){
+   let total=0;
+   try { total=bytesFor(localStorage.getItem(key))+bytesFor(localStorage.getItem(notesKey)); } catch {}
+   document.getElementById('storage-size').textContent=formatBytes(total);
+ }
+ function renderNotes(){
+   notes=load(notesKey,[]);
+   notesList.replaceChildren();
+   document.getElementById('notes-empty').style.display=notes.length?'none':'block';
+   notesCount.textContent=`${notes.length} anotação(ões)`;
+   selectAll.checked=notes.length>0 && notes.every(n=>document.getElementById('note-check-'+n.id)?.checked);
+   notes.forEach((n,i)=>{
+     const item=document.createElement('label');item.className='note-item';
+     const check=document.createElement('input');check.type='checkbox';check.className='note-check';check.id='note-check-'+n.id;check.value=n.id;
+     const content=document.createElement('span');content.className='note-content';
+     const title=document.createElement('strong');title.textContent=`Anotação ${i+1}`;
+     const excerpt=document.createElement('p');excerpt.textContent='Trecho: '+n.text;
+     const note=document.createElement('p');note.textContent='Sua anotação: '+(n.note||'(sem texto)');
+     content.append(title,excerpt,note);item.append(check,content);notesList.append(item);
+   });
+   selectAll.checked=false;
+   updateStorageSize();
+ }
+ function openNotes(){document.getElementById('notes-title').textContent='Minhas anotações';renderNotes();notesModal.classList.add('open');}
+ function closeNotes(){notesModal.classList.remove('open');}
+ document.getElementById('notes').addEventListener('click',openNotes);
+ document.getElementById('delete-notes-shortcut').addEventListener('click',()=>{openNotes();document.getElementById('notes-title').textContent='Excluir anotações';});
+ document.getElementById('close-notes').addEventListener('click',closeNotes);
+ notesModal.addEventListener('click',e=>{if(e.target===notesModal)closeNotes();});
+ selectAll.addEventListener('change',()=>notesList.querySelectorAll('.note-check').forEach(c=>c.checked=selectAll.checked));
+ notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
+ document.getElementById('delete-selected').addEventListener('click',()=>{
+   const ids=[...notesList.querySelectorAll('.note-check:checked')].map(c=>c.value);
+   if(!ids.length){alert('Selecione uma ou mais anotações para excluir.');return;}
+   if(!confirm(`Excluir ${ids.length} anotação(ões) selecionada(s)? Esta ação não pode ser desfeita.`))return;
+   notes=load(notesKey,[]).filter(n=>!ids.includes(n.id));
+   localStorage.setItem(notesKey,JSON.stringify(notes));renderNotes();
+ });
+ document.getElementById('clear-all-notes').addEventListener('click',()=>{
+   if(!notes.length){alert('Não há anotações para apagar.');return;}
+   if(!confirm('Apagar TODAS as anotações do Movimentação de Policiais Militares? Os grifos amarelos serão preservados.'))return;
+   localStorage.removeItem(notesKey);notes=[];renderNotes();
+ });
+ document.getElementById('clear-page-data').addEventListener('click',()=>{
+   if(!confirm('ATENÇÃO: apagar todos os dados locais do Movimentação de Policiais Militares, incluindo TODAS as anotações e TODOS os grifos amarelos? Essa ação não pode ser desfeita.'))return;
+   localStorage.removeItem(notesKey);localStorage.removeItem(key);notes=[];saved=[];closeNotes();alert('Todos os dados locais do Movimentação de Policiais Militares foram apagados. Outras normas não foram afetadas.');location.reload();
+ });
+ document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('movimentacao-storage-warning-dismissed','1');});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('movimentacao-storage-warning-dismissed','1');openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('movimentacao-storage-warning-dismissed','1');}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
+ if(!sessionStorage.getItem('movimentacao-storage-warning-dismissed')) warningModal.classList.add('open');
+ document.getElementById('find').addEventListener('click',()=>{
+   const q=document.getElementById('search').value.trim(); if(!q)return;
+   const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
+   while((n=walker.nextNode())){if(n.parentElement.closest('mark'))continue;const i=n.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR'));if(i>=0){hit=n;break;}}
+   if(hit){const r=document.createRange();r.setStart(hit,hit.nodeValue.toLocaleLowerCase('pt-BR').indexOf(q.toLocaleLowerCase('pt-BR')));r.setEnd(hit,r.startOffset+q.length);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);hit.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else alert('Expressão não encontrada no texto.');
+ });
+ document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('find').click();});
+ restoreHighlights();
+})();
+</script>
+</body>
+</html>
