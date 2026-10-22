@@ -15,8 +15,8 @@ main{max-width:1100px;margin:22px auto;padding:0 16px 60px}.tools{position:stick
 .tools input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit}.btn{border:1px solid #c5cedb;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;font-size:13px;cursor:pointer;color:#26364d}.btn.gold{background:var(--gold);border-color:var(--gold);color:#101827}.btn:focus-visible,a:focus-visible{outline:3px solid #6ca8ff;outline-offset:2px}
 .notice{margin:14px 0;background:#fff9e5;border:1px solid #f1d982;border-radius:10px;padding:12px 14px;color:#65521c;font-size:13px;line-height:1.5}
 .doc{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,4vw,42px);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}
-.doc::after{content:attr(data-watermark);position:fixed;left:50%;top:52%;z-index:5;pointer-events:none;color:#0b1326;opacity:.10;font-size:clamp(16px,2vw,25px);font-weight:800;letter-spacing:.08em;white-space:nowrap;transform:translate(-50%,-50%) rotate(-24deg);background:#ffffff20;padding:12px 18px;border:1px solid #0b132610;border-radius:4px;max-width:90vw;overflow:hidden}
-.doc p{white-space:normal;line-height:1.72;font-size:15px;margin:0 0 14px;overflow-wrap:anywhere}.doc p br{line-height:1.9}.doc .section-heading{font-size:20px;line-height:1.35;color:#13294a;border-bottom:1px solid #d8b94d;padding:18px 0 9px;margin:24px 0 15px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 14px;border-radius:0 7px 7px 0}.doc .subheading{font-weight:800;color:#273e60;margin-top:20px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
+.doc::after{content:attr(data-watermark);position:fixed;top:50%;left:50%;right:auto;bottom:auto;transform:translate(-50%,-50%) rotate(-25deg);z-index:5;pointer-events:none;user-select:none;color:#0b1326;opacity:.13;font-size:clamp(15px,2.2vw,24px);font-weight:800;letter-spacing:.08em;text-align:center;overflow-wrap:anywhere;white-space:normal;width:min(82vw,900px);background:transparent;padding:12px;border:0;border-radius:0}
+.doc p{white-space:normal;line-height:1.78;font-size:15px;margin:0 0 12px;overflow-wrap:anywhere;text-align:left}.doc p br{line-height:1.9}.doc .section-heading{font-size:clamp(18px,2.1vw,21px);font-weight:800;line-height:1.4;color:#13294a;background:linear-gradient(90deg,#f8fafc 0%,#fff 92%);border-left:4px solid #d4af37;border-bottom:1px solid #d8b94d;padding:13px 16px 11px;margin:30px 0 17px;border-radius:0 7px 0 0;scroll-margin-top:150px}.doc .legal-article{background:#f8fafc;border-left:3px solid #d4af37;padding:12px 16px;border-radius:0 7px 7px 0;margin:12px 0 16px;line-height:1.8}.doc .subheading{display:block;font-weight:750;color:#334b6b;margin:18px 0 9px;padding:8px 12px;border-bottom:1px solid #d9e0ea;line-height:1.5;scroll-margin-top:150px}.doc mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}
 footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
 
 .modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,20,.78);display:none;align-items:center;justify-content:center;padding:16px}
@@ -27,14 +27,46 @@ footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
 .modal-body{padding:16px 20px;overflow:auto}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid var(--line);background:#f8fafc}
 .note-item{border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;display:flex;gap:10px;align-items:flex-start}
 .note-item input{margin-top:4px;width:17px;height:17px;accent-color:#b59226;flex-shrink:0}
+.note-editor-label{display:block;font-size:13px;font-weight:800;color:#27364c;margin:14px 0 7px}.note-editor-text{width:100%;min-height:130px;resize:vertical;border:1px solid #cbd5e1;border-radius:9px;padding:12px;font:inherit;line-height:1.55;color:#202938}.selected-excerpt{background:#f8fafc;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:12px;font-size:13px;line-height:1.55;max-height:150px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
 .note-content{min-width:0;flex:1;overflow-wrap:anywhere}.note-content strong{display:block;font-size:13px;color:#27364c}.note-content p{font-size:13px;line-height:1.5;margin:6px 0 0;white-space:pre-wrap}
 .warning-box{background:#fff7dc;border:1px solid #e8ce73;color:#624f16;border-radius:10px;padding:12px;font-size:13px;line-height:1.55;margin-bottom:14px}
 .storage-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#64748b;margin:8px 0}
 .btn.danger{border-color:#d99a9a;color:#9f2424;background:#fff}.btn.danger:hover{background:#fff0f0}
 @media(max-width:600px){.modal-actions .btn{flex:1}.modal-head{padding:15px}.modal-body{padding:13px}.modal-actions{padding:12px}}
 
-@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px}}
-@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc::after{position:fixed}}
+@media(max-width:600px){.top{padding:11px 12px}.brand{font-size:13px}.back{padding:8px;font-size:12px}.hero{padding:22px 16px}.tools{top:59px}.tools input{min-width:100%;order:-1}.doc p{font-size:14px;line-height:1.76}.doc .section-heading{margin-top:24px;padding:11px 12px}.doc .legal-article{padding:10px 12px}.doc .subheading{padding:7px 10px}}
+@media print{header,.hero,.tools,.notice,footer{display:none!important}body{background:#fff}.doc{border:0;box-shadow:none}.doc .section-heading{break-after:avoid}.doc .legal-article{break-inside:avoid}.doc::after{position:fixed;top:50%;left:50%;right:auto;bottom:auto;transform:translate(-50%,-50%) rotate(-25deg);width:80%;font-size:22pt;opacity:.16;color:#6b7280;background:transparent;border:0;padding:0;z-index:9999;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* Padronização tipográfica conforme a página-mestre I-16-PM; apenas classes visuais. */
+.doc .section-heading,.doc .hierarchy-title{
+ font-size:clamp(18px,2.1vw,21px);font-weight:800;line-height:1.4;color:#13294a;
+ background:linear-gradient(90deg,#f8fafc 0%,#fff 92%);border-left:4px solid #d4af37;
+ border-bottom:1px solid #d8b94d;padding:13px 16px 11px;margin:30px 0 17px;
+ border-radius:0 7px 0 0;scroll-margin-top:150px
+}
+.doc .legal-article,.doc .article-auto,.doc .article-continuation{
+ background:#f8fafc;border-left:3px solid #d4af37;padding:8px 16px;margin:0;
+ line-height:1.78;border-radius:0
+}
+.doc .legal-article,.doc .article-auto{padding-top:12px;font-weight:500}
+.doc .legal-article:has(+ .article-continuation),.doc .article-auto:has(+ .article-continuation){margin-bottom:0;border-radius:0}
+.doc .article-continuation{border-top:0;padding-top:5px;padding-bottom:5px}
+.doc .article-continuation:last-child{margin-bottom:16px}
+.doc .subheading,.doc .hierarchy-subtitle{
+ display:block;font-weight:750;color:#334b6b;margin:14px 0 6px;padding:7px 12px;
+ border-bottom:1px solid #d9e0ea;line-height:1.5;scroll-margin-top:150px
+}
+.doc p.revoked-article{text-decoration:line-through;text-decoration-thickness:1.5px;text-decoration-color:#8b1e1e;color:#6b7280;background:#f3f4f6}
+@media(max-width:600px){
+ .doc .section-heading,.doc .hierarchy-title{margin-top:24px;padding:11px 12px}
+ .doc .legal-article,.doc .article-auto,.doc .article-continuation{padding-left:12px;padding-right:12px}
+ .doc .subheading,.doc .hierarchy-subtitle{padding:7px 10px}
+}
+@media print{
+ .doc .section-heading,.doc .hierarchy-title{break-after:avoid}
+ .doc .legal-article,.doc .article-auto{break-inside:avoid}
+}
+
 </style>
 </head>
 <body>
@@ -45,8 +77,8 @@ footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
 <input id="search" type="search" placeholder="Pesquisar palavra ou expressão na norma…" aria-label="Pesquisar no documento">
 <button class="btn" id="find">Localizar</button><a class="btn gold" href="https://drive.google.com/file/d/1IWcTPi4yEbejmBU3hYqnUIc25nJAyNnQ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center">Abrir resumo do RDPM ↗</a><button class="btn gold" id="highlight">Marcar trecho em amarelo</button><button class="btn" id="note">Anotar trecho</button><button class="btn" id="notes">Minhas anotações</button><button class="btn danger" id="delete-notes-shortcut" title="Abrir a lista para selecionar quais anotações excluir">Excluir anotações</button>
 </div>
-<div class="notice"><strong>Anotações sincronizadas:</strong> seus grifos e anotações são associados à sua conta. Use a mesma conta em outros dispositivos para acessar seus dados. O texto abaixo mantém a ordem e o conteúdo do arquivo enviado; a extração pode conter erros ou versões históricas sobrepostas, por isso confira a fonte oficial.</div>
-<section class="doc" id="document" data-watermark="PLATAFORMA PMESP">
+<div class="notice">O texto abaixo mantém a ordem da normatização original, a extração pode conter erros, por isso em caso de dúvidas consulte a fonte oficial.</div>
+<section class="doc" id="document" data-watermark="PLATAFORMA APERFEIÇOAMENTO · AGUARDANDO AUTENTICAÇÃO">
 <p class="subheading">LEI COMPLEMENTAR No 893, DE 09 DE MARÇO DE 2001.</p>
 <p>Institui o Regulamento Disciplinar da Polícia Militar.</p>
 <p>O GOVERNADOR DO ESTADO DE SÃO PAULO:</p>
@@ -1189,12 +1221,12 @@ footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
 </div>
 <div id="warning-modal" class="modal-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="warning-title">
  <section class="modal" style="max-width:560px">
-  <div class="modal-head"><h2 id="warning-title">Aviso sobre armazenamento local</h2><p>RDPM — sincronização da conta</p></div>
+  <div class="modal-head"><h2 id="warning-title">Aviso sobre salvamento e sincronização</h2><p>Biblioteca de normas — sincronização da conta</p></div>
   <div class="modal-body">
-   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações da RDPM são vinculados à sua conta autenticada e sincronizados com a nuvem. Aguarde a confirmação de sincronização antes de sair da página.</div>
-   <p style="font-size:13px;line-height:1.6;color:#475569">Recomendamos revisar e excluir anotações antigas periodicamente. Use “Minhas anotações” para apagar itens específicos ou limpar os dados salvos do RDPM. Isso não afeta outras normas.</p>
+   <div class="warning-box"><strong>Importante:</strong> seus grifos e anotações do RDPM são vinculados à sua conta autenticada e sincronizados com a nuvem. Aguarde a confirmação de sincronização antes de sair da página.</div>
+   <p style="font-size:13px;line-height:1.6;color:#475569">Use “Minhas anotações” para consultar, editar ou excluir suas anotações. A exclusão dos dados do RDPM não afeta as demais normas.</p>
   </div>
-  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
+  <div class="modal-actions"><button type="button" class="btn gold" id="dismiss-warning">Entendi</button><button type="button" class="btn" id="never-show-warning">Não mostrar novamente</button><button type="button" class="btn" id="open-notes-from-warning">Revisar anotações</button></div>
  </section>
 </div>
 
@@ -1202,6 +1234,27 @@ footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
 <script>
 (() => {
  const doc = document.getElementById('document');
+ function applyNormativeLayout() {
+   const paragraphs = [...doc.querySelectorAll('p')];
+   for (let i = 0; i < paragraphs.length; i++) {
+     const p = paragraphs[i];
+     const raw = (p.innerText || p.textContent || '').replace(/\s+/g, ' ').trim();
+     if (!raw) continue;
+     if (/^Artigo\s+\d+/i.test(raw) && !p.classList.contains('legal-article')) p.classList.add('article-auto');
+     const prev = p.previousElementSibling;
+     if (prev && prev.matches('.section-heading') && !/^Artigo\s+\d+/i.test(raw)) p.classList.add('hierarchy-subtitle');
+     if (/^(TÍTULO\s+[IVXLCDM0-9]+|CAPÍTULO\s+[IVXLCDM0-9]+|SEÇÃO\s+(?:ÚNICA|[IVXLCDM0-9]+)|SUBSEÇÃO\s+(?:ÚNICA|[IVXLCDM0-9]+))\b/i.test(raw)) p.classList.add('hierarchy-title');
+   }
+   // Agrupa visualmente os parágrafos que continuam um artigo; o texto não é alterado.
+   let insideArticle = false;
+   for (const el of [...doc.children]) {
+     if (el.matches('h2.section-heading,.hierarchy-title')) { insideArticle = false; continue; }
+     if (el.matches('p.legal-article,p.article-auto')) { insideArticle = true; continue; }
+     if (el.matches('p.hierarchy-subtitle,.subheading')) { insideArticle = false; continue; }
+     if (insideArticle && el.matches('p') && !/^Artigo\s+\d+/i.test((el.innerText || el.textContent || '').trim())) el.classList.add('article-continuation');
+   }
+ }
+ applyNormativeLayout();
  const key = 'biblioteca-pmesp-rdpm-v1';
  const notesKey = key + '-notes';
  const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
@@ -1274,7 +1327,7 @@ footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
    const value=prompt('Sua anotação para o trecho selecionado:',existing?.note||'');
    if(value===null)return;
    if(existing) existing.note=value; else notes.push({id:Date.now().toString(36),text,note:value,createdAt:new Date().toISOString()});
-   localStorage.setItem(notesKey,JSON.stringify(notes)); alert('Anotação salva neste navegador.');
+   localStorage.setItem(notesKey,JSON.stringify(notes)); if(typeof window.setRDPMCloudStatus==='function') window.setRDPMCloudStatus('Anotação salva. Sincronizando com sua conta…');
  });
  const notesModal=document.getElementById('notes-modal');
  const warningModal=document.getElementById('warning-modal');
@@ -1316,13 +1369,13 @@ footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
  notesList.addEventListener('change',e=>{if(e.target.classList.contains('note-check')){const all=[...notesList.querySelectorAll('.note-check')];selectAll.checked=all.length>0&&all.every(c=>c.checked);}});
  async function persistDeletion(successMessage){
    try {
-     if (typeof window.syncI16Cloud !== 'function') throw new Error('Rotina de sincronização não carregada.');
-     await window.syncI16Cloud();
-     setSyncStatus(successMessage);
+     if (typeof window.syncRDPMCloud !== 'function') throw new Error('Rotina de sincronização do RDPM não carregada.');
+     await window.syncRDPMCloud();
+     if (typeof window.setRDPMCloudStatus === 'function') window.setRDPMCloudStatus(successMessage);
      return true;
    } catch (error) {
      console.error('Falha ao confirmar exclusão no Firestore:', error);
-     setSyncStatus('A exclusão ficou apenas no navegador. O Firebase não confirmou a gravação; tente novamente.', true);
+     if (typeof window.setRDPMCloudStatus === 'function') window.setRDPMCloudStatus('A exclusão ficou apenas no navegador. O Firebase não confirmou a gravação; tente novamente.', true);
      alert('Não foi possível confirmar a exclusão no Firebase. Seus dados podem continuar no banco. Verifique a conexão e as regras do Firestore antes de continuar.');
      return false;
    }
@@ -1354,11 +1407,15 @@ footer{text-align:center;color:#6b7789;font-size:12px;padding:20px}
    const ok=await persistDeletion('Todos os dados da RDPM foram apagados e sincronizados.');
    if(ok){closeNotes();alert('Todos os dados salvos da RDPM foram apagados desta conta. Outras normas não foram afetadas.');}
  });
- document.getElementById('dismiss-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('i16-storage-warning-dismissed','1');});
- document.getElementById('open-notes-from-warning').addEventListener('click',()=>{warningModal.classList.remove('open');sessionStorage.setItem('i16-storage-warning-dismissed','1');openNotes();});
- warningModal.addEventListener('click',e=>{if(e.target===warningModal){warningModal.classList.remove('open');sessionStorage.setItem('i16-storage-warning-dismissed','1');}});
- document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))warningModal.classList.remove('open');}});
- if(!sessionStorage.getItem('i16-storage-warning-dismissed')) warningModal.classList.add('open');
+ const warningNeverShowKey='rdpm-storage-warning-never-show-v1';
+ const warningDismissedKey='rdpm-storage-warning-dismissed-v1';
+ function dismissWarning(){warningModal.classList.remove('open');sessionStorage.setItem(warningDismissedKey,'1');}
+ document.getElementById('dismiss-warning').addEventListener('click',dismissWarning);
+ document.getElementById('never-show-warning').addEventListener('click',()=>{localStorage.setItem(warningNeverShowKey,'1');dismissWarning();});
+ document.getElementById('open-notes-from-warning').addEventListener('click',()=>{dismissWarning();openNotes();});
+ warningModal.addEventListener('click',e=>{if(e.target===warningModal)dismissWarning();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(notesModal.classList.contains('open'))closeNotes();else if(warningModal.classList.contains('open'))dismissWarning();}});
+ if(!localStorage.getItem(warningNeverShowKey)&&!sessionStorage.getItem(warningDismissedKey)) warningModal.classList.add('open');
  document.getElementById('find').addEventListener('click',()=>{
    const q=document.getElementById('search').value.trim(); if(!q)return;
    const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n,hit=null;
@@ -1397,6 +1454,30 @@ let activeUid = null;
 let ready = false;
 let saveTimer = null;
 let cloudDocRef = null;
+let currentWatermarkEmail = "E-MAIL NÃO DISPONÍVEL";
+
+// Ao copiar trechos da norma, inclui uma identificação textual da conta autenticada.
+document.addEventListener("copy", event => {
+  const selection = window.getSelection();
+  if (!selection || selection.isCollapsed || !event.clipboardData) return;
+  const range = selection.getRangeAt(0);
+  const node = range.commonAncestorContainer;
+  const element = node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement;
+  if (!element || !element.closest("#document")) return;
+  const copiedContent = document.createElement("div");
+  copiedContent.appendChild(range.cloneContents());
+  const attribution = document.createElement("p");
+  attribution.style.cssText = "margin-top:16px;padding-top:8px;border-top:1px solid #999;font-size:10pt;color:#555";
+  const label = document.createElement("strong");
+  label.textContent = "Cópia identificada para: ";
+  attribution.appendChild(label);
+  attribution.appendChild(document.createTextNode(currentWatermarkEmail));
+  copiedContent.appendChild(attribution);
+  event.clipboardData.setData("text/plain", selection.toString() + "\n\n[Cópia identificada para: " + currentWatermarkEmail + "]");
+  event.clipboardData.setData("text/html", copiedContent.innerHTML);
+  event.preventDefault();
+});
+
 
 function readLocal(key, fallback) {
   try {
@@ -1431,6 +1512,7 @@ function setSyncStatus(message, isError = false) {
   status.textContent = message;
   status.style.borderColor = isError ? "#ef4444" : "#d4af37";
 }
+window.setRDPMCloudStatus = setSyncStatus;
 
 async function saveCloudData() {
   if (!ready || !cloudDocRef) return;
@@ -1451,7 +1533,7 @@ async function saveCloudData() {
 }
 
 // Exposto para que os botões de exclusão aguardem a confirmação real do Firestore.
-window.syncI16Cloud = async function() {
+window.syncRDPMCloud = async function() {
   if (!ready || !cloudDocRef) {
     throw new Error("A sincronização com o Firebase ainda não está pronta.");
   }
@@ -1486,9 +1568,9 @@ onAuthStateChanged(auth, async user => {
   if (activeUid === user.uid && ready) return;
   activeUid = user.uid;
   ready = false;
-  const watermarkEmail = user.email || user.displayName || "USUÁRIO AUTENTICADO";
-  document.getElementById("document").setAttribute("data-watermark", "PLATAFORMA PMESP · " + watermarkEmail);
-  cloudDocRef = doc(db, "users", user.uid, "libraryData", "i16pm");
+  currentWatermarkEmail = user.email || user.displayName || "USUÁRIO AUTENTICADO";
+  document.getElementById("document").setAttribute("data-watermark", "PLATAFORMA APERFEIÇOAMENTO · " + currentWatermarkEmail);
+  cloudDocRef = doc(db, "users", user.uid, "libraryData", "rdpm");
   setSyncStatus("Carregando suas anotações…");
 
   try {
@@ -1516,12 +1598,12 @@ onAuthStateChanged(auth, async user => {
       if (needsMergeSave) scheduleCloudSave();
       setSyncStatus("Anotações carregadas da sua conta.");
       // The page's original script loads its data at startup, so reload once if cloud data changed local state.
-      if (localChanged && !sessionStorage.getItem("i16pm-cloud-hydrated")) {
-        sessionStorage.setItem("i16pm-cloud-hydrated", "1");
+      if (localChanged && !sessionStorage.getItem("rdpm-cloud-hydrated")) {
+        sessionStorage.setItem("rdpm-cloud-hydrated", "1");
         location.reload();
         return;
       }
-      sessionStorage.removeItem("i16pm-cloud-hydrated");
+      sessionStorage.removeItem("rdpm-cloud-hydrated");
     } else {
       // First visit: keep any local data and create the user's cloud record.
       ready = true;
