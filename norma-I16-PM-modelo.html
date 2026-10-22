@@ -885,7 +885,7 @@ onAuthStateChanged(auth, async user => {
   activeUid = user.uid;
   ready = false;
   currentWatermarkEmail = user.email || user.displayName || "USUÁRIO AUTENTICADO";
-  document.getElementById("document").setAttribute("data-watermark", "PLATAFORMA PMESP · " + currentWatermarkEmail);
+  document.getElementById("document").setAttribute("data-watermark", "Plataforma Aperfeiçoamento · " + currentWatermarkEmail);
   cloudDocRef = doc(db, "users", user.uid, "libraryData", "i16pm");
   setSyncStatus("Carregando suas anotações…");
 
