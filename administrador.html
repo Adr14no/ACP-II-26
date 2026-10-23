@@ -12,9 +12,56 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
 @media(max-width:1120px){.layout{grid-template-columns:1fr}.preview-toolbar{top:65px}.bottomgrid{grid-template-columns:1fr}}
 @media(max-width:700px){.app{display:block}aside{padding:10px}.brand{padding:4px 7px 12px}.nav{grid-template-columns:repeat(2,minmax(0,1fr))}.nav button{font-size:11px;padding:7px}.side-note{display:none}.top{padding:10px}.wrap{padding:10px}.intro{flex-direction:column}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.preview-wrap{padding:7px}.doc-content{padding:14px}.doc-tools{position:static}}
 @media print{body{background:#fff}.app aside,.top,.intro,.callout,.editor-card,.bottomgrid,.preview-toolbar,.preview-caption,.footer-note{display:none!important}.app{display:block}.wrap{padding:0;max-width:none}.layout{display:block}.preview-card{border:0;box-shadow:none}.preview-card>.cardhead{display:none}.preview-wrap{padding:0;background:#fff}.doc{border:0;box-shadow:none;min-height:0}.doc:after{position:fixed}.doc-tools{display:none!important}.doc-content .section-heading,.doc-content .hierarchy-title{break-after:avoid}.doc-content .legal-article{break-inside:avoid}}
+
+/* Controle de acesso do painel administrativo */
+.admin-access-guard {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #071020;
+  color: #e7edf6;
+}
+.admin-access-card {
+  width: min(480px, 100%);
+  padding: 28px;
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+  background: #0b1326;
+  text-align: center;
+}
+.admin-access-card h2 {
+  margin: 0 0 12px;
+  color: #d4af37;
+}
+.admin-access-card p {
+  line-height: 1.7;
+}
+.admin-access-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 7px;
+  background: #d4af37;
+  color: #071020;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 </style>
 </head>
 <body>
+
+<div id="adminAccessGuard" class="admin-access-guard" role="status" aria-live="polite">
+  <div class="admin-access-card">
+    <h2>Verificando acesso administrativo</h2>
+    <p>Aguarde enquanto verificamos sua autenticação e suas permissões.</p>
+  </div>
+</div>
+
 <div class="app">
 <aside>
   <div class="brand"><em>◆</em> Plataforma<br>Aperfeiçoamento<small>PMESP · PROTÓTIPO</small></div>
@@ -194,7 +241,62 @@ $('copyJson').onclick=async()=>{try{await navigator.clipboard.writeText(JSON.str
 function buildStandalone(){const d=data();const safeContent=sanitizeHtml(d.contentHtml);return `<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(d.code)} — ${escapeHtml(d.title)}</title><style>
 :root{--navy:#0b1326;--gold:#d4af37;--line:#d9e0ea;--ink:#202938}*{box-sizing:border-box}body{margin:0;background:#eef2f7;color:var(--ink);font:15px/1.7 Inter,system-ui,Arial,sans-serif}.doc{position:relative;max-width:1050px;margin:28px auto;background:#fff;border:1px solid var(--line);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}.doc:after{content:attr(data-watermark);position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-25deg);z-index:2;pointer-events:none;color:#0b1326;opacity:.055;font-weight:900;font-size:38px;white-space:nowrap}.head{background:linear-gradient(135deg,#071020,#172c4e);color:#fff;padding:22px;border-bottom:3px solid var(--gold)}.brand{color:#e7d18b;font-size:11px;letter-spacing:1px;font-weight:bold}.head h1{font:700 28px/1.25 Georgia,serif;margin:14px 0 7px}.head p{font-size:12px;margin:0;color:#e3eaf4}.content{position:relative;z-index:1;padding:24px 32px}.hierarchy-title{text-align:center;background:#f0f3f8;padding:10px;border-block:1px solid var(--line);font-weight:850;margin:24px 0 15px}.hierarchy-subtitle{text-align:center;font-weight:750}.section-heading{font-weight:850;background:#eef2f7;border-left:4px solid var(--gold);padding:10px 13px}.legal-article,.article-auto{background:#f8fafc;border-left:3px solid var(--gold);padding:11px 15px;border-radius:0 6px 6px 0;margin:11px 0 15px;text-align:justify}.content p{text-align:justify}.foot{border-top:1px solid var(--line);padding:12px 20px;font-size:10px;color:#64748b}@media(max-width:600px){.doc{margin:0}.content{padding:14px}.head h1{font-size:21px}}@media print{body{background:#fff}.doc{margin:0;border:0;box-shadow:none}.head{break-after:avoid}.legal-article{break-inside:avoid}}
-</style></head><body><article class="doc" data-watermark="${escapeHtml(d.watermark||'PLATAFORMA APERFEIÇOAMENTO')}"><header class="head"><div class="brand">◆ PLATAFORMA APERFEIÇOAMENTO · PMESP</div><h1>${escapeHtml(d.title)}</h1><p>${escapeHtml(d.code)}${d.edition?' · '+escapeHtml(d.edition):''}</p><p style="margin-top:7px">${escapeHtml(d.description)}</p></header><main class="content">${safeContent}</main><footer class="foot">${escapeHtml(d.code)} · Exportação de demonstração — requer revisão antes de publicação.</footer></article></body></html>`}
+</style></head><body><article class="doc" data-watermark="${escapeHtml(d.watermark||'PLATAFORMA APERFEIÇOAMENTO')}"><header class="head"><div class="brand">◆ PLATAFORMA APERFEIÇOAMENTO · PMESP</div><h1>${escapeHtml(d.title)}</h1><p>${escapeHtml(d.code)}${d.edition?' · '+escapeHtml(d.edition):''}</p><p style="margin-top:7px">${escapeHtml(d.description)}</p></header><main class="content">${safeContent}</main><footer class="foot">${escapeHtml(d.code)} · Exportação de demonstração — requer revisão antes de publicação.</footer></article>
+<script type="module">
+  import { watchAdminAccess } from "./admin-normas-firestore.js";
+
+  const guard = document.getElementById("adminAccessGuard");
+  let latestCheck = 0;
+
+  function showBlockedAccess(title, message) {
+    guard.innerHTML = `
+      <div class="admin-access-card">
+        <h2>${title}</h2>
+        <p>${message}</p>
+        <a href="index.html">Voltar ao login</a>
+      </div>
+    `;
+    guard.style.display = "flex";
+  }
+
+  watchAdminAccess(async ({ user, isAdmin, error }) => {
+    const checkId = ++latestCheck;
+
+    if (!user) {
+      showBlockedAccess(
+        "Autenticação necessária",
+        "Entre na plataforma com sua conta para acessar o painel administrativo."
+      );
+      return;
+    }
+
+    const isPasswordAccount = user.providerData.some(
+      provider => provider.providerId === "password"
+    );
+
+    if (isPasswordAccount && !user.emailVerified) {
+      showBlockedAccess(
+        "Confirme seu e-mail",
+        "Esta conta ainda não confirmou o endereço de e-mail. Confirme-o antes de acessar o painel."
+      );
+      return;
+    }
+
+    if (error || !isAdmin) {
+      showBlockedAccess(
+        "Acesso restrito",
+        "Esta conta não possui autorização administrativa ativa. Se acredita que isso é um erro, entre em contato com o responsável pela plataforma."
+      );
+      return;
+    }
+
+    // Evita liberar a interface caso uma verificação mais recente já tenha começado.
+    if (checkId !== latestCheck) return;
+    guard.style.display = "none";
+  });
+</script>
+
+</body></html>`}
 $('downloadHtml').onclick=()=>{const blob=new Blob([buildStandalone()],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=(($('code').value.trim()||'pagina-normativa').replace(/[^a-z0-9_-]+/gi,'-'))+'-previa.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);toast('HTML de pré-visualização exportado. Não foi publicado.')}
 $('reset').onclick=()=>{if(!confirm('Restaurar os dados demonstrativos iniciais? As alterações desta sessão serão perdidas.'))return;$('title').value='TÍTULO DEMONSTRATIVO DA NORMA';$('code').value='NORMA-EXEMPLO';$('edition').value='Versão de demonstração';$('description').value='Conteúdo fictício utilizado para aprovar o padrão visual e funcional de uma página normativa.';$('course').selectedIndex=0;$('subject').selectedIndex=0;$('category').selectedIndex=0;$('order').value='10';$('tags').value='norma-exemplo, demonstração';$('watermark').value='PLATAFORMA APERFEIÇOAMENTO · PRÉVIA';$('showSearch').checked=true;$('normText').innerHTML=initialContent;materials=[];notes=[];renderMaterials();update();toast('Exemplo restaurado.')};
 $('toolSearch').onclick=()=>{$('searchTerm').focus()};
