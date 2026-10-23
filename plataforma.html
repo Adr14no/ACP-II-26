@@ -75,6 +75,10 @@
                             <span class="flex h-8 w-8 items-center justify-center rounded-full border border-pm-gold/70 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-user"></i></span>
                             <span>Perfil</span>
                         </a>
+                        <a id="adminPanelLinkLanding" href="administrador.html" hidden title="Painel administrativo" aria-label="Painel administrativo" class="hidden inline-flex items-center gap-2 rounded-xl border border-pm-gold/50 bg-pm-navy/70 px-3 py-2 text-xs font-bold text-pm-gold transition hover:border-pm-gold sm:text-sm">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Administração</span>
+                        </a>
                     </div>
                 </div>
             </header>
@@ -294,6 +298,10 @@
                 <a href="perfil-usuario.html" title="Abrir perfil e segurança da conta" aria-label="Perfil do usuário" class="group flex items-center gap-2 rounded-xl border border-pm-gold/50 bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-slate-200 transition hover:border-pm-gold hover:text-pm-gold">
                     <span class="flex h-8 w-8 items-center justify-center rounded-full border border-pm-gold/70 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-user"></i></span>
                     <span>Perfil</span>
+                </a>
+                <a id="adminPanelLinkCourse" href="administrador.html" hidden title="Painel administrativo" aria-label="Painel administrativo" class="hidden group items-center gap-2 rounded-xl border border-pm-gold/50 bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-pm-gold transition hover:border-pm-gold hover:text-pm-gold">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Administração</span>
                 </a>
                 <button type="button" onclick="voltarSelecaoCursos()" title="Voltar à seleção de cursos" class="rounded-xl border border-pm-border bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-slate-200 transition hover:border-pm-gold/60 hover:text-pm-gold">
                     <i class="fa-solid fa-layer-group mr-1.5"></i> Cursos
@@ -1489,20 +1497,10 @@
     </script>
 
     <script type="module">
-      import { initializeApp, getApps, getApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
-      import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+      import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+      import { auth } from "./firebase-config.js";
+      import { isAdminUser } from "./admin-access.js";
 
-      const firebaseConfig = {
-        apiKey: "AIzaSyANcW27P7NHL_qJtjTg8n683P0I7sm5Z6Y",
-        authDomain: "plataforma-aperfeicoamento.firebaseapp.com",
-        projectId: "plataforma-aperfeicoamento",
-        storageBucket: "plataforma-aperfeicoamento.firebasestorage.app",
-        messagingSenderId: "750933864503",
-        appId: "1:750933864503:web:9bfdfbbb5a7b87de8e0fb2"
-      };
-
-      const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
-      const auth = getAuth(app);
       auth.languageCode = 'pt-BR';
       const guard = document.getElementById('authGuard');
       let accessDecisionMade = false;
@@ -1536,8 +1534,29 @@
           return;
         }
 
+        // Libera a plataforma normalmente; a checagem administrativa é complementar.
         accessDecisionMade = true;
         if (guard) guard.remove();
+
+        // A autorização real das operações administrativas continua protegida pelas regras do Firestore.
+        // Se a consulta falhar, o usuário mantém o acesso normal aos cursos, sem receber o link administrativo.
+        isAdminUser(user).then((admin) => {
+          if (!admin) return;
+
+          const landingLink = document.getElementById('adminPanelLinkLanding');
+          const courseLink = document.getElementById('adminPanelLinkCourse');
+
+          if (landingLink) {
+            landingLink.hidden = false;
+            landingLink.classList.remove('hidden');
+          }
+          if (courseLink) {
+            courseLink.hidden = false;
+            courseLink.classList.remove('hidden');
+          }
+        }).catch((error) => {
+          console.error('Falha ao verificar permissões administrativas:', error);
+        });
       }, (error) => {
         console.error('Falha ao verificar autenticação:', error);
         accessDecisionMade = true;
