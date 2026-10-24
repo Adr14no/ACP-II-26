@@ -97,6 +97,7 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
       </select>
       <button id="refreshDrafts">Atualizar lista</button>
       <button id="loadDraft">Abrir rascunho selecionado</button>
+      <button id="deleteDraft" class="danger">Excluir rascunho selecionado</button>
       <span id="firebaseStatus" class="status">Firebase: aguardando verificação</span>
     </div>
     <div class="intro">
@@ -305,6 +306,9 @@ update();renderMaterials();validate();
 </script>
 
 <script type="module">
+  import { deleteDoc, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+  import { auth, db } from "./firebase-config.js";
+  import { isAdminUser } from "./admin-access.js";
   import {
     saveNormaDraft,
     updateNormaDraft,
@@ -318,9 +322,30 @@ update();renderMaterials();validate();
   const draftSelect = document.getElementById("savedDrafts");
   const firebaseStatus = document.getElementById("firebaseStatus");
   const newDraftButton = document.getElementById("newDraft");
+  const deleteDraftButton = document.getElementById("deleteDraft");
   let currentDraftId = null;
   let adminReady = false;
   let accessSequence = 0;
+
+  // Exclusão protegida: revalida o administrador e permite apagar somente
+  // documentos cujo status atual no Firestore seja exatamente "draft".
+  async function deleteNormaDraft(normaId) {
+    const user = auth.currentUser;
+    if (!user || !(await isAdminUser(user))) {
+      throw new Error("Acesso restrito a administradores ativos.");
+    }
+
+    const ref = doc(db, "normas", String(normaId));
+    const snapshot = await getDoc(ref);
+    if (!snapshot.exists()) {
+      throw new Error("O rascunho não foi encontrado; atualize a lista.");
+    }
+    if (snapshot.data().status !== "draft") {
+      throw new Error("Este documento não é um rascunho e não pode ser excluído por este botão.");
+    }
+
+    await deleteDoc(ref);
+  }
 
   // Desvincula o editor do rascunho aberto sem apagar o documento no Firebase.
   // O próximo clique em "Salvar rascunho" criará um novo documento independente.
@@ -351,6 +376,7 @@ update();renderMaterials();validate();
     adminReady = false;
     saveButton.disabled = true;
     newDraftButton.disabled = true;
+    deleteDraftButton.disabled = true;
     document.getElementById("refreshDrafts").disabled = true;
     document.getElementById("loadDraft").disabled = true;
     firebaseStatus.textContent = "Firebase: acesso bloqueado";
@@ -464,6 +490,53 @@ update();renderMaterials();validate();
     }
   });
 
+  deleteDraftButton.addEventListener("click", async () => {
+    if (!adminReady) {
+      notify("O painel ainda não confirmou seu acesso administrativo.");
+      return;
+    }
+
+    const id = draftSelect.value;
+    if (!id) {
+      notify("Selecione na lista o rascunho que deseja excluir.");
+      return;
+    }
+
+    const selectedOption = draftSelect.options[draftSelect.selectedIndex];
+    const draftLabel = selectedOption?.textContent?.trim() || "o rascunho selecionado";
+    const confirmed = confirm(
+      `Tem certeza de que deseja excluir o rascunho:\n\n${draftLabel}\n\n` +
+      "Esta ação é permanente e não poderá ser desfeita. Normas publicadas não podem ser excluídas por este botão."
+    );
+    if (!confirmed) return;
+
+    deleteDraftButton.disabled = true;
+    const originalLabel = deleteDraftButton.textContent;
+    deleteDraftButton.textContent = "Excluindo…";
+
+    try {
+      await deleteNormaDraft(id);
+
+      if (currentDraftId === id) {
+        // O documento aberto foi removido: limpa o editor para impedir que
+        // o próximo salvamento tente atualizar o ID excluído.
+        window.__paResetEditorToExample?.({
+          confirmAction: false
+        });
+      }
+
+      await refreshDraftList();
+      draftSelect.value = "";
+      notify("Rascunho excluído permanentemente do Firebase.");
+    } catch (error) {
+      console.error("Erro ao excluir rascunho:", error);
+      notify(error?.message || "Não foi possível excluir o rascunho.");
+    } finally {
+      deleteDraftButton.disabled = false;
+      deleteDraftButton.textContent = originalLabel;
+    }
+  });
+
   document.getElementById("loadDraft").addEventListener("click", async () => {
     if (!adminReady) return;
     const id = draftSelect.value;
@@ -517,6 +590,7 @@ update();renderMaterials();validate();
     newDraftButton.disabled = false;
     document.getElementById("refreshDrafts").disabled = false;
     document.getElementById("loadDraft").disabled = false;
+    deleteDraftButton.disabled = false;
     firebaseStatus.textContent = "Firebase: administrador autorizado";
     firebaseStatus.className = "status ok";
     await refreshDraftList();
