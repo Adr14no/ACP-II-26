@@ -86,7 +86,7 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
 <main class="main">
   <header class="top">
     <div><div class="crumb">Administração / Páginas normativas / Protótipo</div><strong>Editor de páginas baseado na I-16-PM</strong></div>
-    <div class="top-actions"><span id="status" class="status">Demonstração local</span><button id="saveDraft" class="primary">Salvar rascunho no Firebase</button><button class="primary" id="downloadHtml">Exportar HTML</button></div>
+    <div class="top-actions"><span id="status" class="status">Demonstração local</span><button id="newDraft">Novo rascunho</button><button id="saveDraft" class="primary">Salvar rascunho no Firebase</button><button class="primary" id="downloadHtml">Exportar HTML</button></div>
   </header>
 
   <div class="wrap">
@@ -269,7 +269,37 @@ function buildStandalone(){const d=data();const safeContent=sanitizeHtml(d.conte
 
 </body></html>`}
 $('downloadHtml').onclick=()=>{const blob=new Blob([buildStandalone()],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=(($('code').value.trim()||'pagina-normativa').replace(/[^a-z0-9_-]+/gi,'-'))+'-previa.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);toast('HTML de pré-visualização exportado. Não foi publicado.')}
-$('reset').onclick=()=>{if(!confirm('Restaurar os dados demonstrativos iniciais? As alterações desta sessão serão perdidas.'))return;$('title').value='TÍTULO DEMONSTRATIVO DA NORMA';$('code').value='NORMA-EXEMPLO';$('edition').value='Versão de demonstração';$('description').value='Conteúdo fictício utilizado para aprovar o padrão visual e funcional de uma página normativa.';$('course').selectedIndex=0;$('subject').selectedIndex=0;$('category').selectedIndex=0;$('order').value='10';$('tags').value='norma-exemplo, demonstração';$('watermark').value='PLATAFORMA APERFEIÇOAMENTO · PRÉVIA';$('showSearch').checked=true;$('normText').innerHTML=initialContent;materials=[];notes=[];renderMaterials();update();toast('Exemplo restaurado.')};
+function resetEditorToExample({confirmAction=true, confirmMessage='Restaurar os dados demonstrativos iniciais? As alterações desta sessão serão perdidas.'}={}) {
+  if (confirmAction && !confirm(confirmMessage)) return false;
+
+  $('title').value='TÍTULO DEMONSTRATIVO DA NORMA';
+  $('code').value='NORMA-EXEMPLO';
+  $('edition').value='Versão de demonstração';
+  $('description').value='Conteúdo fictício utilizado para aprovar o padrão visual e funcional de uma página normativa.';
+  $('course').selectedIndex=0;
+  $('subject').selectedIndex=0;
+  $('category').selectedIndex=0;
+  $('order').value='10';
+  $('tags').value='norma-exemplo, demonstração';
+  $('watermark').value='PLATAFORMA APERFEIÇOAMENTO · PRÉVIA';
+  $('showSearch').checked=true;
+  $('normText').innerHTML=initialContent;
+  materials=[];
+  notes=[];
+  renderMaterials();
+
+  // Ao restaurar o exemplo, desassocia o editor do rascunho anteriormente aberto.
+  // Assim, o próximo salvamento cria um novo documento em vez de sobrescrever o anterior.
+  if (typeof window.__paClearCurrentDraft === 'function') {
+    window.__paClearCurrentDraft();
+  }
+
+  update();
+  toast('Exemplo restaurado. O próximo salvamento criará um novo rascunho.');
+  return true;
+}
+window.__paResetEditorToExample = resetEditorToExample;
+$('reset').onclick=()=>resetEditorToExample();
 $('toolSearch').onclick=()=>{$('searchTerm').focus()};
 update();renderMaterials();validate();
 </script>
@@ -287,9 +317,20 @@ update();renderMaterials();validate();
   const saveButton = document.getElementById("saveDraft");
   const draftSelect = document.getElementById("savedDrafts");
   const firebaseStatus = document.getElementById("firebaseStatus");
+  const newDraftButton = document.getElementById("newDraft");
   let currentDraftId = null;
   let adminReady = false;
   let accessSequence = 0;
+
+  // Desvincula o editor do rascunho aberto sem apagar o documento no Firebase.
+  // O próximo clique em "Salvar rascunho" criará um novo documento independente.
+  window.__paClearCurrentDraft = () => {
+    currentDraftId = null;
+    draftSelect.value = "";
+    const status = document.getElementById("status");
+    status.textContent = "Novo rascunho";
+    status.className = "status";
+  };
 
   function notify(message) {
     const toast = document.getElementById("toast");
@@ -309,6 +350,7 @@ update();renderMaterials();validate();
     guard.style.display = "flex";
     adminReady = false;
     saveButton.disabled = true;
+    newDraftButton.disabled = true;
     document.getElementById("refreshDrafts").disabled = true;
     document.getElementById("loadDraft").disabled = true;
     firebaseStatus.textContent = "Firebase: acesso bloqueado";
@@ -405,6 +447,23 @@ update();renderMaterials();validate();
 
   document.getElementById("refreshDrafts").addEventListener("click", refreshDraftList);
 
+  newDraftButton.addEventListener("click", () => {
+    if (!adminReady) {
+      notify("O painel ainda não confirmou seu acesso administrativo.");
+      return;
+    }
+
+    const started = window.__paResetEditorToExample?.({
+      confirmAction: true,
+      confirmMessage: "Iniciar um novo rascunho? O editor voltará ao conteúdo demonstrativo. O rascunho salvo anteriormente será preservado no Firebase."
+    });
+
+    if (started) {
+      draftSelect.value = "";
+      notify("Novo rascunho iniciado. Edite o conteúdo e salve para criar um documento separado.");
+    }
+  });
+
   document.getElementById("loadDraft").addEventListener("click", async () => {
     if (!adminReady) return;
     const id = draftSelect.value;
@@ -455,6 +514,7 @@ update();renderMaterials();validate();
     adminReady = true;
     guard.style.display = "none";
     saveButton.disabled = false;
+    newDraftButton.disabled = false;
     document.getElementById("refreshDrafts").disabled = false;
     document.getElementById("loadDraft").disabled = false;
     firebaseStatus.textContent = "Firebase: administrador autorizado";
