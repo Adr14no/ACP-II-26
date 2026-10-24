@@ -662,20 +662,21 @@ const BANCO_GERAL_QUESTOES = [
     "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-003/02/23 (SCIPM), itens 6.2.3.1 a 6.2.3.3, em Assuntos Operacionais.pdf, p. 145. A descreve Flexibilidade; B descreve Unidade de esforços; D descreve Organização modular, que é elemento essencial e não o princípio solicitado. Trecho: “Padronização: a padronização de métodos, estruturas e termos permite a interoperabilidade da força responsiva com as diversas agências envolvidas, otimizando tempo e recursos”."
   },
   {
-    "id": 44,
-    "subject": "OPERACIONAL",
-    "tag": "Policiamento Comunitário",
-    "topic": "Programa de Policiamento Comunitário - CONSEG",
-    "text": "QUESTÃO 44 — Ao assumir uma área em que ainda não existe Conselho Comunitário de Segurança (CONSEG), o comandante avalia formas de ampliar a participação comunitária no diagnóstico e na solução dos problemas locais. Conforme a Diretriz nº PM3-005/02/20, assinale a alternativa correta.",
-    "options": [
-      "a) A atuação junto aos CONSEG deve ser estimulada, inclusive a composição nas Áreas e Subáreas em que ainda não existam, como forma de integrar esforços em prol da segurança pública.",
-      "b) A criação de CONSEG é atribuição exclusiva dos moradores e não deve ser estimulada pela OPM.",
-      "c) A participação da Polícia Militar limita-se ao envio de estatísticas, sendo vedado o envolvimento em reuniões ou mobilização comunitária.",
-      "d) Uma vez constituído o CONSEG, a diretoria passa a definir e comandar diretamente o emprego das Unidades de Serviço."
-    ],
-    "answer": 0,
-    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-005/02/20 (Programa de Policiamento Comunitário), itens 6.4.3 e 6.4.4, em Assuntos Operacionais.pdf, p. 421. A OPM deve estimular a composição dos CONSEG onde ainda não existam e mobilizar pessoas e entidades para contribuir com a segurança pública. B e C negam a integração prevista; D transfere indevidamente o comando operacional à diretoria comunitária. Trecho: “a atuação das OPM junto aos CONSEG [...] devendo ser estimulada a sua composição nas Áreas e Subáreas onde ainda não existam”."
-  },
+            "id": 44,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Comunitário",
+            "topic": "Programa de Policiamento Comunitário — finalidade do Programa Vizinhança Solidária",
+            "text": "QUESTÃO 44 — Em uma localidade, moradores que vivem, trabalham ou estudam na mesma região pretendem organizar ações preventivas e assumir maior responsabilidade coletiva pela segurança pessoal e comunitária. Conforme a definição do Programa Vizinhança Solidária constante da NORSOP, qual descrição corresponde ao programa?",
+            "options": [
+              "a) Conjunto de medidas destinado a estimular a mudança de comportamento da comunidade diante de fatos que afetem a convivência harmônica e mobilizar ações de prevenção primária.",
+              "b) Estrutura policial-militar de mediação formal de conflitos, acionada para resolver divergências entre moradores mediante procedimentos próprios.",
+              "c) Modalidade de policiamento ostensivo que exige uma patrulha exclusiva e permanente para cada grupo de moradores cadastrados.",
+              "d) Sistema de reunião de órgãos públicos voltado exclusivamente à definição do emprego de recursos operacionais em incidentes críticos."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: NORSOP, glossário — Programa Vizinhança Solidária; Assuntos Operacionais.pdf, PDF p. 391. A reproduz a finalidade do programa: estimular mudança de comportamento diante de fatos que afetem a convivência harmônica, conscientizar sobre responsabilidade na segurança pessoal e coletiva e mobilizar ações de prevenção primária. B descreve uma estrutura de mediação, não o PVS; C acrescenta exigência de patrulha exclusiva e permanente; D descreve coordenação interagências de incidentes críticos, não a definição do programa."
+          },
+
   {
     "id": 45,
     "subject": "OPERACIONAL",
@@ -2491,21 +2492,22 @@ const BANCO_GERAL_QUESTOES = [
     "answer": 2,
     "explanation": "Gabarito: C. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, itens 6.10.1 e 6.10.2, Assuntos Operacionais.pdf, p. 263. Embora os Comandos de Policiamento tenham autonomia para descrever regimes nos Planos Diretores, a decisão para estabelecer o regime de todos os programas e atividades cabe exclusivamente aos Coronéis PM na função de comandante. A, B e D deslocam a competência."
   },
-  {
-    "id": 166,
-    "subject": "OPERACIONAL",
-    "tag": "NORSOP",
-    "topic": "NORSOP — Supervisor Regional",
-    "text": "QUESTÃO 166 - Fora do horário de expediente administrativo, uma região necessita de supervisão das atividades de polícia ostensiva e de preservação da ordem pública. Considerando a NORSOP, assinale a alternativa correta sobre o Supervisor Regional.",
-    "options": [
-      "a) A função é exercida exclusivamente por Subtenente PM e limita-se à fiscalização de uma Companhia.",
-      "b) A função é exercida, em regra, por Capitão QOPM fora do expediente administrativo; eventualmente, pode ser empregado Tenente QOPM que esteja em função de Capitão PM, conforme as peculiaridades regionais.",
-      "c) A função é exercida apenas durante o expediente administrativo, por Oficial Superior de Sobreaviso.",
-      "d) O Supervisor Regional atua somente após autorização judicial e não pode acompanhar ou apoiar Unidades de Serviço."
-    ],
-    "answer": 1,
-    "explanation": "Gabarito: B. Fundamentação: NORSOP, Diretriz nº PM3-001/02/20, itens 6.9.4.1 e 6.9.4.2, Assuntos Operacionais.pdf, p. 262. A função é exercida fora do expediente administrativo, em regra por Cap QOPM, com possibilidade de emprego de Ten QOPM em função de Cap PM; abrange supervisão regional e apoio às US. A, C e D restringem ou alteram a função."
-  },
+   {
+            "id": 166,
+            "subject": "OPERACIONAL",
+            "tag": "NORSOP",
+            "topic": "NORSOP — emprego do Supervisor Regional",
+            "text": "QUESTÃO 166 — Fora do expediente administrativo, o Comando de Policiamento precisa manter supervisão regional das atividades de polícia ostensiva e de preservação da ordem pública. De acordo com a NORSOP, qual alternativa descreve corretamente o emprego do Supervisor Regional?",
+            "options": [
+              "a) Em regra, por Capitão QOPM; excepcionalmente, por Tenente QOPM que esteja em função de Capitão PM, consideradas as peculiaridades regionais.",
+              "b) Em regra, por Tenente QOPM; excepcionalmente, por Capitão QOPM, conforme a disponibilidade de efetivo da OPM.",
+              "c) Por Capitão QOPM exclusivamente durante o expediente administrativo, ficando a supervisão fora desse período a cargo do CFP.",
+              "d) Por Tenente QOPM sempre que designado, ainda que não esteja em função de Capitão PM e independentemente das peculiaridades regionais."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: NORSOP, itens 6.9.4.1 e 6.9.4.2; Assuntos Operacionais.pdf, PDF p. 262. A descreve a regra geral (Cap QOPM) e a possibilidade excepcional de emprego de Ten QOPM em função de Cap PM, conforme peculiaridades regionais. B inverte a regra geral e a exceção; C restringe a função ao expediente administrativo, contrariando o contexto de supervisão fora desse horário; D elimina a condição de estar em função de Capitão PM e desconsidera as peculiaridades regionais."
+          },
+
    {
     "id": 167,
     "subject": "OPERACIONAL",
@@ -3842,20 +3844,21 @@ const BANCO_GERAL_QUESTOES = [
     "explanation": "Gabarito: C. Fonte: Diretriz nº PM3-001/02/25, itens 6.4.6.5 e 6.11.3, Assuntos Operacionais.pdf, fl. 22. Indícios de má conduta ou ilegalidade são hipótese autônoma de entrega/recolhimento; nos casos listados, o CFP ou equivalente requisita e recolhe a COP e realiza pessoalmente o upload, quando possível em ato contínuo. A exige cumulação inexistente; B cria condição externa; D desloca a providência do CFP e posterga o upload. Classificação editorial: EXTREMAMENTE DIFÍCIL."
   },
   {
-    "id": 256,
-    "subject": "OPERACIONAL",
-    "tag": "COP",
-    "topic": "COP — responsabilidade pela etiqueta eletrônica",
-    "text": "QUESTÃO 256 — Uma gravação termina sem etiqueta eletrônica, e o operador sustenta que a classificação será definida pela Seção PJMD após o upload. A Coord Op PM, por sua vez, atualizou recentemente o rol de etiquetas. Qual distribuição de responsabilidades corresponde à diretriz?",
-    "options": [
-      "a) A Coord Op PM define, atualiza e divulga o rol e seus parâmetros; o operador deve identificar adequadamente o registro conforme os critérios vigentes no encerramento da gravação.",
-      "b) O Chefe da Seção PJMD define o rol completo e classifica os registros após o upload, enquanto o operador responde apenas pela integridade física da câmera.",
-      "c) O encarregado do procedimento apuratório escolhe a etiqueta segundo a finalidade probatória, cabendo à Coord Op PM somente publicar estatísticas de utilização.",
-      "d) O fornecedor do sistema estabelece as etiquetas técnicas e doutrinárias; o operador pode omitir a classificação quando não houver requisição de evidência."
-    ],
-    "answer": 0,
-    "explanation": "Gabarito: A. Fonte: Diretriz nº PM3-001/02/25, itens 6.7.2 e 6.7.3, Assuntos Operacionais.pdf. A Coord Op PM define, atualiza e divulga rol e parâmetros; o operador responde pela identificação correta segundo os critérios vigentes no encerramento, sendo vedada omissão ou classificação indevida. B e C deslocam competências; D transfere a definição ao fornecedor e cria dispensa não prevista. Classificação editorial: DIFÍCIL."
-  },
+            "id": 256,
+            "subject": "OPERACIONAL",
+            "tag": "COP",
+            "topic": "COP — divisão de responsabilidades na classificação das evidências digitais",
+            "text": "QUESTÃO 256 — No encerramento de uma gravação da COP, o operador deixa de atribuir a etiqueta eletrônica e afirma que a Seção PJMD classificará o vídeo depois do upload. Qual alternativa descreve corretamente a divisão de responsabilidades prevista na Diretriz nº PM3-001/02/25?",
+            "options": [
+              "a) A Coord Op PM define, atualiza e divulga o rol e seus parâmetros; o operador identifica adequadamente o registro segundo os critérios vigentes no encerramento da gravação.",
+              "b) A Coord Op PM classifica individualmente cada vídeo após o upload, enquanto o operador apenas mantém o equipamento carregado.",
+              "c) A Seção PJMD define o rol de etiquetas e pode dispensar a classificação quando a gravação não for requisitada para procedimento.",
+              "d) A autoridade encarregada do procedimento escolhe a etiqueta após examinar o mérito probatório, cabendo ao operador somente iniciar a gravação."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/25, itens 6.7.2 e 6.7.3; Assuntos Operacionais.pdf, PDF p. 38. A Coord Op PM define, atualiza e divulga o rol completo; a classificação correta é responsabilidade do operador e não pode ser omitida. B desloca a classificação individual para a Coord Op PM; C transfere a definição do rol à PJMD e cria dispensa inexistente; D transfere a escolha ao encarregado do procedimento."
+          },
+
   {
     "id": 257,
     "subject": "OPERACIONAL",
@@ -4966,21 +4969,22 @@ const BANCO_GERAL_QUESTOES = [
     "answer": 2,
     "explanation": "Gabarito: C. Fundamentação: RDPM, art. 30, §§1º e 2º, Assuntos Jurídicos-administrativos.pdf. A amplia o objeto para qualquer discordância de mérito; B transforma representação em recurso substitutivo; D nega a hipótese que o §2º admite sob condições."
   },
-  {
-    "id": 331,
-    "subject": "JURIDICO",
-    "tag": "RDPM",
-    "topic": "RDPM — prazos da representação",
-    "text": "QUESTÃO 331 — Uma representação é motivada por ato praticado em 3 de abril, mas o interessado só toma conhecimento formal em 7 de abril. Considerando o marco temporal do art. 30, §4º, assinale a alternativa correta.",
-    "options": [
-      "a) O prazo de cinco dias conta-se da data do ato ou fato que motivar a representação, não da ciência formal posterior.",
-      "b) O prazo de cinco dias conta-se necessariamente da ciência formal, ainda que posterior à data do ato ou fato.",
-      "c) O prazo de dez dias conta-se do recebimento da solução dos recursos disciplinares.",
-      "d) O prazo de cinco dias começa somente depois de autorização da autoridade funcional imediatamente superior."
-    ],
-    "answer": 0,
-    "explanation": "Gabarito: A. Fundamentação: RDPM, art. 30, §4º, Assuntos Jurídicos-administrativos.pdf. B troca o marco inicial expresso; C altera prazo e evento inicial; D cria autorização prévia não prevista."
-  },
+    {
+            "id": 331,
+            "subject": "JURIDICO",
+            "tag": "RDPM",
+            "topic": "RDPM — termo inicial do prazo para representação",
+            "text": "QUESTÃO 331 — Um policial militar pretende encaminhar representação por ato que reputa irregular. Embora tenha tomado ciência formal posteriormente, o ato que motiva a representação ocorreu antes. Segundo o art. 30, § 4º, do RDPM, a contagem do prazo de cinco dias começa:",
+            "options": [
+              "a) Na data do ato ou fato que motivar a representação.",
+              "b) Na data em que o interessado receber ciência formal, ainda que posterior ao ato ou fato.",
+              "c) Na data em que forem solucionados todos os recursos disciplinares, em qualquer espécie de representação.",
+              "d) Na data em que a autoridade funcional imediatamente superior autorizar o encaminhamento."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: RDPM, art. 30, § 4º; Assuntos Jurídicos-administrativos.pdf, PDF p. 90. O prazo de cinco dias é contado da data do ato ou fato que motivar a representação. B troca o marco temporal expresso; C generaliza a condição do § 2º para qualquer representação e substitui o termo inicial do § 4º; D cria autorização prévia não prevista."
+          },
+
   {
     "id": 332,
     "subject": "JURIDICO",
@@ -6631,21 +6635,22 @@ const BANCO_GERAL_QUESTOES = [
     "answer": 1,
     "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/03/24 (TCI), itens 6.5.5.3.3 e 6.5.5.3.6, em Assuntos Organizacionais.pdf. A EEF gere resultados de avaliação/reavaliação física e tabula os dados, mantendo banco próprio. A e C negam ou transferem atribuições expressas; D cria condição de acesso inexistente."
   },
-  {
-    "id": 442,
-    "subject": "ORGANIZACIONAL",
-    "tag": "TCI",
-    "topic": "TCI — anamnese e questionários validados",
-    "text": "QUESTÃO 442 — Durante o processo de avaliação física de uma OPM, surge dúvida sobre a fase de anamnese e a origem dos questionários que devem ser utilizados. Qual alternativa corresponde às atribuições específicas da EEF previstas na diretriz?",
-    "options": [
-      "a) A EEF deve incluir questionários validados pelo CAPS para a fase de anamnese, estruturar a anamnese e disponibilizá-la às OPM por canal técnico.",
-      "b) Cada policial deve elaborar sua própria anamnese e encaminhá-la diretamente ao SITAF, sem instrumento institucional.",
-      "c) Os questionários são definidos exclusivamente pelo comandante da OPM, sem validação ou apoio da EEF.",
-      "d) A anamnese só pode ser realizada depois de encerrado o ciclo anual do TCI."
-    ],
-    "answer": 0,
-    "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/03/24 (TCI), itens 6.5.5.3.4 e 6.5.5.3.5, em Assuntos Organizacionais.pdf. A EEF inclui questionários validados pelo CAPS para a anamnese, estrutura o instrumento e o disponibiliza às OPM por canal técnico. B e C transferem a responsabilidade sem base; D altera o momento do procedimento."
-  },
+   {
+            "id": 442,
+            "subject": "ORGANIZACIONAL",
+            "tag": "TCI",
+            "topic": "TCI — atribuições da EEF na fase de anamnese",
+            "text": "QUESTÃO 442 — Ao preparar o instrumento institucional de anamnese para o TCI, a equipe precisa definir quem incorpora os questionários validados e como o instrumento será disponibilizado às OPM. Conforme a Diretriz nº PM3-001/03/24, qual alternativa está correta?",
+            "options": [
+              "a) A EEF inclui os questionários validados pelo CAPS, estrutura a anamnese e a disponibiliza às OPM por canal técnico.",
+              "b) Cada OPM seleciona livremente os questionários, sem validação do CAPS ou coordenação da EEF.",
+              "c) O CAPS deve realizar individualmente todas as entrevistas de anamnese e encaminhar o resultado diretamente ao SITAF.",
+              "d) A anamnese somente pode ser estruturada após a conclusão do ciclo anual do TCI."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/03/24, itens 6.5.5.3.4 e 6.5.5.3.5; Assuntos Organizacionais.pdf, PDF p. 449. Os itens atribuem à EEF a inclusão de questionários validados pelo CAPS, a estruturação da anamnese e sua disponibilização às OPM por canal técnico. B remove a validação e a coordenação; C transforma validação em execução de todas as entrevistas; D acrescenta condição temporal inexistente."
+          },
+
   {
     "id": 443,
     "subject": "ORGANIZACIONAL",
@@ -6736,21 +6741,22 @@ const BANCO_GERAL_QUESTOES = [
     "answer": 1,
     "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/03/24 (TCI), item 6.6.2.4, em Assuntos Organizacionais.pdf. A diretriz atribui aos comandantes, chefes e diretores a fiscalização do registro e lançamento no SITAF tanto dos dados dos treinamentos físicos quanto dos TAF desenvolvidos. A e C restringem a atribuição ou o conteúdo; D cria dispensa não prevista."
   },
-  {
-    "id": 449,
-    "subject": "ORGANIZACIONAL",
-    "tag": "TCI",
-    "topic": "TCI — alterações no planejamento do treinamento físico",
-    "text": "QUESTÃO 449 — Uma OPM deseja alterar a data de realização de atividade de ensino e incluir uma nova atividade no planejamento do treinamento físico. Considerando as atribuições de comando previstas na diretriz, qual providência corresponde ao procedimento indicado?",
-    "options": [
-      "a) O comandante local altera diretamente o planejamento, sem comunicação a escalão superior ou canal técnico.",
-      "b) As alterações são solicitadas à DEC, via canal de comando, abrangendo data de realização e inclusão ou exclusão de atividade de ensino, bem como aumento ou diminuição de turmas.",
-      "c) Toda alteração depende de autorização judicial e deve ser requerida por cada participante.",
-      "d) A EEF deve ser comunicada somente depois da alteração, para registro histórico."
-    ],
-    "answer": 1,
-    "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/03/24 (TCI), item 6.6.2.3, em Assuntos Organizacionais.pdf. O dispositivo prevê solicitação à DEC, via canal de comando, para alterações de data, inclusão/exclusão de atividade de ensino e aumento/diminuição de turmas. A dispensa o canal previsto; C cria exigência judicial; D posterga a solicitação."
-  },
+    {
+            "id": 449,
+            "subject": "ORGANIZACIONAL",
+            "tag": "TCI",
+            "topic": "TCI — alterações no planejamento do treinamento físico",
+            "text": "QUESTÃO 449 — Uma OPM precisa alterar a data de uma atividade de ensino e reduzir o número de turmas previsto no planejamento do treinamento físico. Conforme a Diretriz nº PM3-001/03/24, qual procedimento deve adotar?",
+            "options": [
+              "a) Solicitar à DEC, via canal de comando, as alterações relativas à data, inclusão ou exclusão de atividades e aumento ou diminuição de turmas.",
+              "b) Alterar diretamente o planejamento e comunicar a DEC somente após a execução da atividade.",
+              "c) Encaminhar o pedido à EEF, via canal de comando, pois a EEF autoriza toda alteração de calendário de ensino.",
+              "d) Submeter a alteração diretamente ao SITAF, que substitui a decisão do escalão de comando."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/03/24, item 6.6.2.3; Assuntos Organizacionais.pdf, PDF p. 343. O dispositivo prevê solicitação à DEC, via canal de comando, para alterar data, incluir ou excluir atividade de ensino e aumentar ou diminuir turmas. B inverte a sequência; C confunde a comunicação técnica à EEF com o pedido formal à DEC; D confunde sistema de registro com autoridade decisória."
+          },
+
   {
     "id": 450,
     "subject": "ORGANIZACIONAL",
@@ -6992,20 +6998,21 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: B. Fundamentação: Lei Complementar nº 893/01 (RDPM), art. 43, em Assuntos Juridicos-administrativos.pdf, PDF p. 94. O dispositivo condiciona o início do cumprimento à aprovação do ato pelo Comandante da Unidade ou pela autoridade funcional imediatamente superior, quando a sanção tiver sido aplicada por ela, e à prévia publicação em boletim, ressalvada a necessidade de recolhimento disciplinar prevista no Regulamento. A substitui os requisitos por ciência verbal; C afasta a exigência de publicação prévia; D restringe a aprovação ao Comandante da Unidade e elimina a exceção expressa."
       },
   {
-    "id": 466,
-    "subject": "JURIDICO",
-    "tag": "RDPM",
-    "topic": "RDPM — concurso de transgressões conexas e não conexas",
-    "text": "QUESTÃO 466 — Em um mesmo contexto, são identificadas duas transgressões sem conexão entre si. Em outro caso, duas transgressões foram praticadas de forma conexa, sendo uma de menor gravidade. Conforme o art. 45 do RDPM, assinale a alternativa correta.",
-    "options": [
-      "a) Em ambos os casos, aplica-se somente a sanção correspondente à transgressão mais grave.",
-      "b) As transgressões sem conexão recebem sanções correspondentes isoladamente; quando conexas, as de menor gravidade são consideradas circunstâncias agravantes da transgressão principal.",
-      "c) As transgressões conexas devem ser sancionadas isoladamente, enquanto as não conexas se convertem em agravantes da principal.",
-      "d) A existência de mais de uma transgressão impede a aplicação de sanção até que haja decisão judicial."
-    ],
-    "answer": 1,
-    "explanation": "Gabarito: B. Fundamentação: RDPM, art. 45. A regra distingue expressamente a pluralidade sem conexão, em que as sanções são impostas isoladamente, da prática conexa, em que as transgressões de menor gravidade são consideradas circunstâncias agravantes da transgressão principal."
-  },
+            "id": 466,
+            "subject": "JURIDICO",
+            "tag": "RDPM",
+            "topic": "RDPM — apuração de transgressão envolvendo militares de mais de uma Unidade",
+            "text": "QUESTÃO 466 — Uma transgressão disciplinar envolve policiais militares pertencentes a duas OPM, e o fato ocorreu na área territorial de um terceiro comando. Segundo o art. 46 do RDPM, a quem cabe apurar ou determinar a apuração?",
+            "options": [
+              "a) Ao comandante do policiamento da área territorial onde ocorreu o fato, que poderá, ao final, remeter os autos à autoridade funcional superior comum aos envolvidos, se necessário.",
+              "b) Exclusivamente ao comandante da OPM do policial militar de maior posto, independentemente do local do fato.",
+              "c) À autoridade funcional superior comum, que deve instaurar a apuração diretamente em todos os casos, sem atuação do comando territorial.",
+              "d) À autoridade judicial competente, cabendo às OPM apenas preservar documentos até o encerramento do processo judicial."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: RDPM, art. 46; Assuntos Jurídicos-administrativos.pdf, PDF p. 95. O artigo atribui ao comandante do policiamento da área territorial onde ocorreu o fato a apuração ou determinação da apuração e prevê remessa dos autos à autoridade funcional superior comum, se necessário. B usa critério de posto não previsto; C elimina a competência territorial expressa; D transfere a apuração disciplinar à autoridade judicial."
+          },
+
   {
     "id": 467,
     "subject": "JURIDICO",
@@ -7730,16 +7737,16 @@ const BANCO_GERAL_QUESTOES = [
             "id": 516,
             "subject": "OPERACIONAL",
             "tag": "COP",
-            "topic": "COP — custódia após upload",
-            "text": "QUESTÃO 516 — Realizado o upload das gravações no sistema de armazenamento, quem assume a responsabilidade pela administração e custódia das evidências digitais produzidas pelo efetivo da respectiva OPM?",
+            "topic": "COP Motorola — responsabilidade pela custódia após upload",
+            "text": "QUESTÃO 516 — Ao término do turno, uma equipe transfere as gravações da COP para o sistema de armazenamento. Segundo a Diretriz nº PM3-001/02/25, quem passa a responder pela administração e custódia das evidências digitais produzidas pelo efetivo da respectiva OPM?",
             "options": [
-              "a) O Chefe da Seção PJMD, com atribuições de controlar acessos, salvaguardar a integridade e providenciar compartilhamento íntegro quando requisitado.",
-              "b) O policial usuário, exclusivamente, até que a evidência seja juntada ao processo judicial.",
-              "c) O despachador do COPOM, independentemente da OPM de origem.",
-              "d) A CDCA, que passa a administrar toda evidência assim que ocorre o upload."
+              "a) O Chefe da Seção PJMD, inclusive quanto ao controle de acesso, à integridade e ao compartilhamento íntegro quando requisitado por autoridade competente.",
+              "b) O policial usuário, até que haja decisão judicial definitiva sobre todas as ocorrências gravadas no turno.",
+              "c) O COPOM, por ser responsável pelo despacho da ocorrência e pela recepção dos dados de serviço.",
+              "d) A CDCA, que assume a custódia de toda gravação assim que o sistema confirma o upload."
             ],
             "answer": 0,
-            "explanation": "Diretriz nº PM3-001/02/25, item 6.8.3 e subitens, Assuntos Operacionais.pdf, p. 39. Após o upload, a responsabilidade passa ao Chefe da Seção PJMD. B, C e D indicam responsáveis diferentes dos previstos."
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/25, item 6.8.3 e subitens; Assuntos Operacionais.pdf, PDF p. 39. O item transfere a responsabilidade de administração e custódia ao Chefe da Seção PJMD e enumera controle de acesso, salvaguarda da integridade e compartilhamento sem edição. B mantém a responsabilidade no usuário após o upload; C confunde despacho com custódia; D confunde a atribuição da CDCA em matéria de difusão de conteúdo com a custódia prevista no item."
           },
           {
             "id": 517,
@@ -7996,21 +8003,22 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 3,
             "explanation": "RDPM, art. 58, § 1º, combinado com art. 57, § 4º, Assuntos Jurídicos-administrativos.pdf, p. 98-99. A interposição é precedida de reconsideração e, em regra, depende do conhecimento do resultado, ressalvada a hipótese do § 4º. A e B invertem a sequência; C elimina o prazo."
           },
-          {
+           {
             "id": 534,
             "subject": "JURIDICO",
             "tag": "RDPM",
-            "topic": "RDPM — prazos do recurso hierárquico",
-            "text": "QUESTÃO 534 — Qual alternativa reúne corretamente os prazos do recurso hierárquico previstos no RDPM?",
+            "topic": "RDPM — limites materiais e hipóteses de não conhecimento do recurso hierárquico",
+            "text": "QUESTÃO 534 — Ao redigir recurso hierárquico, o militar pretende incluir críticas a fatos alheios ao ato recorrido e repetir argumentos já apreciados, sem apresentar fato novo. À luz do art. 58, §§ 5º e 6º, do RDPM, qual afirmação está correta?",
             "options": [
-              "a) Interposição em 10 dias; comunicação em 5 dias; solução em 30 dias.",
-              "b) Interposição em 5 dias do conhecimento da solução ou do vencimento do prazo legal; comunicação em 3 dias do protocolo da OPM destinatária; solução em 10 dias do recebimento no protocolo dessa OPM.",
-              "c) Interposição em 3 dias; comunicação em 10 dias; solução em 5 dias, todos contados da publicação da sanção.",
-              "d) Interposição em 5 dias da aplicação da sanção; comunicação em 3 dias da ciência do recorrente; solução em 10 dias da publicação."
+              "a) O recurso pode abordar qualquer assunto administrativo relacionado ao recorrente, desde que redigido respeitosamente.",
+              "b) O recurso não pode tratar de assunto estranho ao ato ou fato que o motivou nem versar sobre matéria impertinente ou fútil; também não será conhecido se não apresentar fatos novos que modifiquem a decisão.",
+              "c) A autoridade deve conhecer do recurso sempre que houver pedido expresso, mesmo que seja intempestivo ou procrastinador.",
+              "d) A vedação a assunto estranho se aplica ao pedido de reconsideração, mas não ao recurso hierárquico."
             ],
             "answer": 1,
-            "explanation": "RDPM, art. 58, § 3º, itens 1 a 3, Assuntos Jurídicos-administrativos.pdf, p. 99. Os prazos e marcos são os descritos na alternativa B. A e C alteram os prazos; D altera os marcos temporais."
+            "explanation": "Gabarito: B. Fundamentação: RDPM, art. 58, §§ 5º e 6º; Assuntos Jurídicos-administrativos.pdf, PDF p. 99. O § 5º veda matéria estranha ao ato ou fato motivador e matéria impertinente ou fútil; o § 6º prevê não conhecimento do recurso intempestivo, procrastinador ou sem fatos novos capazes de modificar a decisão. A amplia indevidamente o objeto do recurso; C exige conhecimento mesmo diante de hipóteses de não conhecimento expressas; D exclui indevidamente o recurso hierárquico do alcance do § 5º."
           },
+
           {
             "id": 535,
             "subject": "JURIDICO",
@@ -11656,36 +11664,38 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 0,
             "explanation": "O subitem 6.4.1.2.2 lista expressamente o Programa Comunitário. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
           },
-          {
+            {
             "id": 781,
             "subject": "OPERACIONAL",
             "tag": "Policiamento de Trânsito",
-            "topic": "NORSOP — classificação e desenvolvimento do programa",
-            "text": "QUESTÃO 781 — No NORSOP, o Programa de Policiamento de Trânsito é classificado como:",
+            "topic": "Programa de Policiamento de Trânsito — condição para fiscalização e controle",
+            "text": "QUESTÃO 781 — A OPM participa de ações de segurança viária e pretende exercer fiscalização de trânsito com possibilidade de imposição das correspondentes sanções administrativas. À luz da Diretriz nº PM3-006/02/20, qual condição é destacada para o exercício dessa fiscalização?",
             "options": [
-              "A) Primário",
-              "B) Complementar",
-              "C) Atividade Operacional Diversa",
-              "D) Apoio administrativo"
+              "a) A existência de convênio específico com os órgãos ou entidades executivos de trânsito e rodoviários competentes.",
+              "b) A autorização individual do comandante da OPM, que substitui o convênio quando a ação ocorre em via municipal.",
+              "c) A designação de policial militar especializado, independentemente de convênio com os órgãos executivos competentes.",
+              "d) A inclusão da atividade no Plano Diretor, suficiente para autorizar a imposição de sanções administrativas sem outro instrumento."
             ],
-            "answer": 1,
-            "explanation": "O item 6.4.1.2.3 o inclui entre os Programas Complementares. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-006/02/20, item 3.2; Assuntos Operacionais.pdf, PDF p. 482. O item explica que, para fiscalização e controle do cumprimento das normas de trânsito com possibilidade de imposição das sanções administrativas correspondentes pelos órgãos competentes, é necessária a existência de convênio específico. B, C e D substituem o instrumento exigido por designação ou planejamento interno, que não são apresentados como substitutos do convênio."
           },
-          {
+
+           {
             "id": 782,
             "subject": "OPERACIONAL",
             "tag": "Policiamento de Trânsito",
-            "topic": "NORSOP — classificação e desenvolvimento do programa",
-            "text": "QUESTÃO 782 — Qual objetivo é atribuído ao Programa de Policiamento de Trânsito?",
+            "topic": "Programa de Policiamento de Trânsito — autorização e registro do plano de emprego",
+            "text": "QUESTÃO 782 — Uma OPM Territorial pretende desenvolver o Programa de Policiamento de Trânsito (PPT) com contingente próprio, em razão de necessidade operacional e disponibilidade de meios. Conforme a Diretriz nº PM3-006/02/20, qual providência é prevista após a autorização do Subcomandante PM?",
             "options": [
-              "A) Organizar o desenvolvimento do Policiamento Ostensivo de Trânsito",
-              "B) Organizar o policiamento ostensivo geral",
-              "C) Organizar exclusivamente o policiamento escolar",
-              "D) Organizar apenas a atividade de inteligência"
+              "a) Obtida a autorização do Subcmt PM, o Cmdo Pol deve consignar o plano de emprego do contingente nos respectivos Planos Diretores.",
+              "b) O Cmt Btl autoriza o PPT e registra o plano exclusivamente no PPI, dispensando a consignação no Plano Diretor.",
+              "c) O Subcmt PM autoriza o PPT, mas o plano de emprego é encaminhado à DEC para aprovação curricular, sem registro no Plano Diretor.",
+              "d) O Cmdo Pol pode iniciar o PPT por necessidade operacional e solicitar autorização ao Subcmt PM somente após o primeiro ciclo de execução."
             ],
             "answer": 0,
-            "explanation": "A definição do programa refere-se ao desenvolvimento do Policiamento Ostensivo de Trânsito. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-006/02/20, itens 5 e 6.7.2; Assuntos Operacionais.pdf, PDF p. 489. A diretriz permite às OPM Territoriais desenvolver o PPT conforme necessidade operacional e disponibilidade de meios e determina que, obtida autorização do Subcmt PM, o plano de emprego seja consignado pelo Cmdo Pol nos Planos Diretores. B transfere a autorização ao Cmt Btl e substitui o Plano Diretor pelo PPI; C desloca a aprovação à DEC e elimina o registro no Plano Diretor; D inverte a sequência ao prever autorização posterior ao início do programa."
           },
+
           {
             "id": 783,
             "subject": "OPERACIONAL",
@@ -11720,17 +11730,18 @@ const BANCO_GERAL_QUESTOES = [
             "id": 785,
             "subject": "OPERACIONAL",
             "tag": "Policiamento de Trânsito",
-            "topic": "NORSOP — classificação e desenvolvimento do programa",
-            "text": "QUESTÃO 785 — A OPM não dispõe de estrutura exclusiva para executar o Programa de Trânsito. Qual regra geral do NORSOP pode ser aplicada aos complementares?",
+            "topic": "Programa de Policiamento de Trânsito — avaliação periódica de eficácia",
+            "text": "QUESTÃO 785 — O Comando de Policiamento revisa periodicamente a execução do Programa de Policiamento de Trânsito (PPT) e identifica necessidade de ajuste. Conforme a Diretriz nº PM3-006/02/20, qual parâmetro deve orientar essa avaliação?",
             "options": [
-              "A) É vedado aproveitar estrutura de outro programa",
-              "B) Pode haver desenvolvimento híbrido, conforme previsão nas diretrizes",
-              "C) O programa passa automaticamente a ser primário",
-              "D) O programa deve ser suspenso em toda a área"
+              "a) Avaliar periodicamente a eficácia do PPT com base no Guia de Indicadores dos Programas de Policiamento e propor alterações quando necessário.",
+              "b) Avaliar a eficácia do PPT exclusivamente ao fim do exercício anual, com base no número de autuações e sem uso do Guia de Indicadores.",
+              "c) Avaliar a eficácia apenas após alteração do Plano Diretor, usando indicadores escolhidos exclusivamente pela OPM executora.",
+              "d) Considerar a eficácia comprovada quando a autorização de emprego for concedida e o plano de emprego for registrado no Plano Diretor."
             ],
-            "answer": 1,
-            "explanation": "Os Programas Complementares podem ser desenvolvidos de forma híbrida, conforme suas diretrizes. Fonte: Assuntos Operacionais.pdf, NORSOP, item 6.4.1.1 a 6.4.1.3, fls. 6–7."
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-006/02/20, item 6.7.5; Assuntos Operacionais.pdf, PDF p. 489. O dispositivo determina avaliação periódica da eficácia do PPT com base no Guia de Indicadores dos Programas de Policiamento, com propostas de alteração quando necessárias. B acrescenta periodicidade anual exclusiva e limita a avaliação a autuações; C substitui a referência normativa por indicadores escolhidos apenas pela OPM; D confunde autorização e registro do plano com avaliação da eficácia."
           },
+
           {
             "id": 786,
             "subject": "OPERACIONAL",
@@ -12106,20 +12117,20 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 0,
             "explanation": "A localização conjunta é excepcional e condicionada a estação e recursos materiais exclusivos. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
           },
-          {
+           {
             "id": 811,
             "subject": "OPERACIONAL",
             "tag": "Sala de Operações",
-            "topic": "Nota de Instrução PM3-002/02/26 — finalidade, estrutura e funcionamento",
-            "text": "QUESTÃO 811 — Qual conjunto de atividades é citado como serviço essencial da Sala de Operações?",
+            "topic": "Sala de Operações — serviços essenciais de comando e controle",
+            "text": "QUESTÃO 811 — Ao revisar o plano de funcionamento da Sala de Operações, o oficial precisa conferir a combinação de atividades e serviços essenciais de comando e controle. Conforme os itens 6.3.1 e 6.3.2 da Diretriz nº PM3-001/02/23, assinale o conjunto compatível com a norma.",
             "options": [
-              "A) Assessoramento, videopatrulhamento, controle, comando, análise de dados e informações, monitoramento da rede-rádio e outras atividades",
-              "B) Somente manutenção de viaturas e controle de combustível",
-              "C) Exclusivamente lavratura de autos de infração",
-              "D) Apenas arquivo físico e protocolo administrativo"
+              "a) Comando, controle e assessoramento, acompanhados de monitoramento da rede-rádio, análise de dados e informações e videopatrulhamento.",
+              "b) Comando, unidade de comando e amplitude, acompanhados de planejamento estratégico, gestão de pessoal e controle de escalas.",
+              "c) Diagnóstico situacional, imagem operacional comum e C4ISR, acompanhados de definição de prioridades de policiamento e distribuição de efetivo.",
+              "d) COPOM Online, Infocrim e Fotocrim, acompanhados de monitoramento de mídias sociais e informações obtidas em reuniões comunitárias."
             ],
             "answer": 0,
-            "explanation": "O trecho enumera essas funções como serviços essenciais. Fonte: Assuntos Operacionais.pdf, Nota de Instrução nº PM3-002/02/26 — Sala de Operações, itens 2 e 3; seção sobre estruturação das SOp (Assuntos Operacionais.pdf, fls. do documento)."
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.3.1.1–6.3.1.3 e 6.3.2.1–6.3.2.3; Assuntos Operacionais.pdf, PDF p. 202. A reúne as atividades essenciais de comando, controle e assessoramento e os serviços de monitoramento da rede-rádio, análise de dados/informações e videopatrulhamento. B combina atividades e princípios verdadeiros, mas não apresenta o conjunto de serviços essenciais indicado no comando; C reúne conceitos de diagnóstico, imagem operacional comum e arquitetura C4ISR, não as atividades e serviços pedidos; D lista fontes de informação do planejamento (COPOM Online, Infocrim, Fotocrim, mídias sociais e iniciativas comunitárias), não o conjunto solicitado."
           },
           {
             "id": 812,
@@ -12950,17 +12961,18 @@ const BANCO_GERAL_QUESTOES = [
             "id": 867,
             "subject": "ORGANIZACIONAL",
             "tag": "Regime de Trabalho",
-            "topic": "Regime de Trabalho — aviso de funcionamento de unidades de saúde",
-            "text": "QUESTÃO 867 — Durante a aplicação da norma ao caso concreto, o responsável precisa verificar aviso de funcionamento de unidades de saúde. Considerando Portaria do Cmt G PM1-7/02/23, na redação reproduzida no material autorizado, assinale a alternativa que reproduz corretamente a regra aplicável.",
+            "topic": "Regime de Trabalho — aviso de funcionamento das unidades de saúde",
+            "text": "QUESTÃO 867 — A Portaria do Cmt G PM1-7/02/23 estabelece informações que devem estar disponíveis ao público nas unidades de saúde. Qual conjunto deve constar do aviso externo e visível, próximo à recepção, conforme o art. 10, § 1º?",
             "options": [
-              "A) CMed, COdont, CRPM e UIS devem manter aviso externo e visível, próximo à recepção, com período de funcionamento e nomes e horários de atendimento dos Oficiais de Saúde.",
-              "B) O afastamento de integrante do QOS que impeça atendimento deve constar obrigatoriamente do aviso antes do início da fruição.",
-              "C) Na semana com dois dias sem expediente administrativo, o militar designado docente pode ministrar aula em um dos turnos se houver previsão no QTS do OAES ou da OPM Gestora do Conhecimento.",
-              "D) Os desdobramentos de turnos devem ser controlados pelo Cmt OPM até o nível de Cia PM, mantendo no mínimo 50% do efetivo em cada turno, em todos os dias da semana."
+              "a) Período de funcionamento da unidade e nomes e horários de atendimento dos Oficiais de Saúde.",
+              "b) Nome do Oficial de Saúde de maior posto, escala integral de todos os policiais da OPM e justificativa de cada afastamento.",
+              "c) Apenas o horário de abertura e fechamento, sem identificação dos profissionais ou horários de atendimento.",
+              "d) Horários de atendimento dos Oficiais de Saúde, com publicação obrigatória de dados pessoais e motivos de afastamento."
             ],
             "answer": 0,
-            "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 1º. Evidência normativa: CMed, COdont, CRPM e UIS devem manter aviso externo e visível, próximo à recepção, com período de funcionamento e nomes e horários de atendimento dos Oficiais de Saúde. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 329, art. 10, § 2º disciplina aviso prévio de afastamento de profissional de saúde, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 3º, redação da Portaria PM1-001/02/26 disciplina docência em semana com dois dias sem expediente, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 328, art. 7º, § 1º disciplina controle de efetivo por turno, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Cmt G PM1-7/02/23, art. 10, § 1º; Assuntos Organizacionais.pdf, PDF p. 329. O dispositivo exige aviso externo e visível, próximo à recepção, com período de funcionamento e nomes e horários de atendimento dos Oficiais de Saúde. B acrescenta informações não previstas; C omite campos exigidos; D inclui dados pessoais e motivos de afastamento que não integram o conjunto do § 1º."
           },
+
           {
             "id": 868,
             "subject": "ORGANIZACIONAL",
@@ -13141,21 +13153,22 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 0,
             "explanation": "Gabarito: A. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º. Evidência normativa: O excedente decorrente de diferença entre promovidos e quantitativo distribuído em QO é considerado provisório até nova distribuição de efetivo por decreto do Governador. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina momento de edição do decreto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina promoção de Cadete a Aspirante, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Juridicos-administrativos.pdf, PDF p. 11, resumo do art. 3º disciplina quantitativo total de cargos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
           },
-          {
+            {
             "id": 880,
             "subject": "JURIDICO",
             "tag": "Legislação Promoção",
-            "topic": "Legislação Promoção — promoção de Cadete a Aspirante",
-            "text": "QUESTÃO 880 — Considerando Lei nº 18.442/26, conforme o material autorizado de Assuntos Jurídicos-administrativos, quanto a promoção de Cadete a Aspirante, assinale a alternativa que reproduz corretamente a regra aplicável.",
+            "topic": "Lei nº 18.442/26 — categorias excluídas dos limites de distribuição do efetivo",
+            "text": "QUESTÃO 880 — Para aplicar os limites quantitativos do art. 3º da Lei nº 18.442/26, a seção responsável confere quais categorias não são computadas nesses limites. Qual alternativa apresenta apenas categorias expressamente excluídas no texto reproduzido no material autorizado?",
             "options": [
-              "A) O 2º Tenente PM do QOE ou do QOM que possuir um ano no posto será promovido a 1º Tenente PM do respectivo Quadro.",
-              "B) O excedente decorrente de diferença entre promovidos e quantitativo distribuído em QO é considerado provisório até nova distribuição de efetivo por decreto do Governador.",
-              "C) O decreto de distribuição do efetivo deve ser editado no primeiro semestre do ano anterior ao de sua entrada em vigor.",
-              "D) O Cadete PM é promovido à graduação de Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO."
+              "a) Aspirante a Oficial PM, Cadete PM, Aluno-Oficial PM, Aluno-Sargento PM e Aluno-Soldado PM.",
+              "b) Coronéis PM, demais Oficiais PM e Subtenentes PM, por estarem em postos e graduações de comando.",
+              "c) Sargentos PM, Cabos PM e Soldados PM, por integrarem o efetivo de praças.",
+              "d) Oficiais dos Quadros QOEM, QOE, QOE-Mus e QOS, por integrarem quadros distintos."
             ],
-            "answer": 3,
-            "explanation": "Gabarito: D. Fundamentação: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º. Evidência normativa: O Cadete PM é promovido à graduação de Aspirante a Oficial PM após cumprir, com aproveitamento, os requisitos do CFO. A alternativa correta resolve o aspecto específico indicado no enunciado. A: Assuntos Juridicos-administrativos.pdf, PDF p. 16, resumo do art. 8º disciplina promoção de 2º Tenente do QOE/QOM, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. B: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina tratamento do excedente de promovidos, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Juridicos-administrativos.pdf, PDF p. 12, resumo do art. 3º disciplina momento de edição do decreto, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Lei nº 18.442/26, art. 3º, conforme conteúdo reproduzido em Assuntos Jurídicos-administrativos.pdf, PDF p. 12. O documento lista como não considerados nos limites o Aspirante a Oficial PM, Cadete PM, Aluno-Oficial PM, Aluno-Sargento PM, Aluno-Soldado PM, militar da reserva revertido ao serviço ativo e PM temporário. B, C e D indicam postos, graduações ou quadros cuja distribuição integra os quantitativos previstos no artigo, não as categorias excluídas."
           },
+
           {
             "id": 881,
             "subject": "JURIDICO",
@@ -13370,17 +13383,18 @@ const BANCO_GERAL_QUESTOES = [
             "id": 895,
             "subject": "ORGANIZACIONAL",
             "tag": "Sistemática Proteção Violência Doméstica",
-            "topic": "Sistemática Proteção Violência Doméstica — controle de visitas pelo COPOM",
-            "text": "QUESTÃO 895 — No acompanhamento institucional das ações de proteção, o responsável precisa definir controle de visitas pelo COPOM. Considerando Nota de Instrução nº PM3-001/02/26 (Sistemática de Proteção à Mulher e Defesa contra a Violência Doméstica e Familiar), assinale a alternativa que reproduz corretamente a regra aplicável.",
+            "topic": "Sistemática de Proteção — atribuições de controle das visitas",
+            "text": "QUESTÃO 895 — Na consolidação dos indicadores de atendimento do Espaço Lilás, é necessário identificar qual órgão mantém o controle quantitativo das Visitas Solidárias e Comunitárias realizadas pelas OPM por meio desse espaço. Conforme a Diretriz aplicável, a atribuição cabe a:",
             "options": [
-              "A) O COPOM São Paulo mantém controle quantitativo de Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás.",
-              "B) As OPM devem controlar informações das ocorrências de violência doméstica, especialmente o interesse da vítima em receber Visita Solidária, para subsidiar o planejamento.",
-              "C) A DPCDH mantém controle, por OPM, da quantidade de palestras de sensibilização realizadas.",
-              "D) A DPCDH capacita e atualiza PM indicados, mantém controle quantitativo e nominal dos capacitados e disponibiliza a relação para consulta das OPM na Intranet."
+              "a) COPOM São Paulo, quanto ao controle quantitativo das visitas realizadas nas OPM pelo Espaço Lilás.",
+              "b) DPCDH, quanto ao controle quantitativo das visitas, palestras e capacitações em todas as OPM.",
+              "c) Cmt de cada OPM, exclusivamente, sem consolidação ou controle centralizado.",
+              "d) EEF, como parte do acompanhamento das ações de saúde e treinamento continuado."
             ],
             "answer": 0,
-            "explanation": "Gabarito: A. Fundamentação: Assuntos Organizacionais.pdf, PDF p. 394, item 6.6.7.2.4. Evidência normativa: O COPOM São Paulo mantém controle quantitativo de Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás. A alternativa correta resolve o aspecto específico indicado no enunciado. B: Assuntos Organizacionais.pdf, PDF p. 395, item 6.6.8.4.5 disciplina planejamento das visitas, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. C: Assuntos Organizacionais.pdf, PDF p. 393, item 6.6.3.3.2 disciplina controle de palestras pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado. D: Assuntos Organizacionais.pdf, PDF p. 393, itens 6.6.3.1 e 6.6.3.3.1 disciplina capacitação e controle pela DPCDH, regra relacionada, mas não correspondente ao aspecto exigido no enunciado."
+            "explanation": "Gabarito: A. Fundamentação: Diretriz/Nota de Instrução nº PM3-001/02/26, item 6.6.7.2.4; Assuntos Organizacionais.pdf, PDF p. 394. O item atribui ao COPOM São Paulo o controle quantitativo das Visitas Solidárias e Comunitárias realizadas nas OPM pelo Espaço Lilás. B confunde essa atribuição com competências da DPCDH sobre sensibilização/capacitação; C exclui o controle indicado no item; D trata de atribuições da EEF sem relação com visitas."
           },
+
           {
             "id": 896,
             "subject": "ORGANIZACIONAL",
@@ -14987,21 +15001,22 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 0,
         "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (seleção automática de gravação): “A seleção automática considera o nível de bateria e a existência de gravação ainda não enviada.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “A seleção automática ocorre somente quando o usuário escolhe manualmente cada arquivo.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre seleção automática de gravação. C: incorreta para o comando, pois afirma: “A seleção automática considera apenas a matrícula do usuário, independentemente da bateria.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre seleção automática de gravação. D: incorreta para o comando, pois afirma: “A seleção automática depende exclusivamente da localização da viatura no mapa.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre seleção automática de gravação. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
       },
-      {
-        "id": 1003,
-        "subject": "OPERACIONAL",
-        "tag": "COP MOTOROLA",
-        "topic": "pré-gravação",
-        "text": "QUESTÃO 1003 — Considerando pré-gravação e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
-        "options": [
-          "A) O sistema mantém pré-gravação de 60 segundos.",
-          "B) O sistema mantém pré-gravação de 30 segundos.",
-          "C) O sistema mantém pré-gravação de 120 segundos.",
-          "D) O sistema mantém pré-gravação de 90 segundos."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, POP 5.28.01/5.28.02, PDF pp. 2–6 e 9–10. Regra aplicável ao ponto perguntado (pré-gravação): “O sistema mantém pré-gravação de 90 segundos.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O sistema mantém pré-gravação de 60 segundos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre pré-gravação. B: incorreta para o comando, pois afirma: “O sistema mantém pré-gravação de 30 segundos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre pré-gravação. C: incorreta para o comando, pois afirma: “O sistema mantém pré-gravação de 120 segundos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre pré-gravação. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
-      },
+     {
+            "id": 1003,
+            "subject": "OPERACIONAL",
+            "tag": "COP MOTOROLA",
+            "topic": "COP Motorola — duração da pré-gravação",
+            "text": "QUESTÃO 1003 — Ao conferir as configurações da COP Motorola, o policial precisa verificar a duração do trecho captado antes do acionamento da gravação. Conforme o POP 5.28.01/5.28.02, qual é a duração da pré-gravação prevista no sistema?",
+            "options": [
+              "a) 30 segundos.",
+              "b) 60 segundos.",
+              "c) 90 segundos.",
+              "d) 120 segundos."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C. Fundamentação: POP 5.28.01/5.28.02, Assuntos Operacionais.pdf, páginas do procedimento de funcionamento e uso da COP Motorola (PDF pp. 2–6 e 9–10). O procedimento estabelece pré-gravação de 90 segundos. A, B e D indicam durações diferentes da prevista. As alternativas são paralelas e exigem conhecimento do parâmetro específico, não inferência pelo contexto."
+          },
+
       {
         "id": 1004,
         "subject": "OPERACIONAL",
@@ -15812,36 +15827,38 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 1,
         "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (CPP): “As ações e os locais de atuação das Unidades de Serviço devem ser previstos em Cartões de Prioridade de Patrulhamento.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O CPP é exigido apenas para operações urbanas, não para policiamento rural.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre CPP. C: incorreta para o comando, pois afirma: “O CPP deve ser elaborado exclusivamente após o encerramento da operação.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre CPP. D: incorreta para o comando, pois afirma: “As ações rurais são dispensadas de previsão em CPP.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre CPP. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
       },
+     {
+            "id": 1058,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Rural",
+            "topic": "Policiamento Rural — fontes de informação para planejamento",
+            "text": "QUESTÃO 1058 — Ao elaborar o diagnóstico situacional para orientar o emprego no ambiente rural, a equipe precisa selecionar fontes previstas na Diretriz nº PM3-007/02/20. Qual combinação corresponde à orientação normativa?",
+            "options": [
+              "a) Combinar dados georreferenciados obtidos em Sistemas Inteligentes com informações oriundas das comunidades rurais relevantes ao Programa.",
+              "b) Combinar dados georreferenciados de Sistemas Inteligentes com informações comunitárias apenas quando confirmadas por boletim de ocorrência.",
+              "c) Utilizar informações comunitárias como fonte principal, excluindo os dados georreferenciados dos Sistemas Inteligentes.",
+              "d) Utilizar Sistemas Inteligentes georreferenciados apenas para estatísticas estaduais, sem considerar informações das comunidades rurais."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, seção sobre planejamento e fontes de informação; Assuntos Operacionais.pdf, PDF pp. 475–479. A corresponde à orientação de considerar sistemas inteligentes georreferenciados e informações provenientes da comunidade. B e D impõem exclusividade não prevista; C substitui fontes de planejamento por dados financeiros e restringe a interlocução comunitária sem fundamento na diretriz."
+          },
+
       {
-        "id": 1058,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento Rural",
-        "topic": "fontes para planejamento",
-        "text": "QUESTÃO 1058 — Considerando fontes para planejamento e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
-        "options": [
-          "A) O planejamento considera sistemas inteligentes georreferenciados e informações provenientes da comunidade.",
-          "B) O planejamento depende exclusivamente de estatísticas estaduais agregadas, sem georreferenciamento.",
-          "C) O planejamento deve ignorar informações comunitárias e considerar somente mapas impressos.",
-          "D) O planejamento se limita a dados financeiros dos estabelecimentos rurais."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (fontes para planejamento): “O planejamento considera sistemas inteligentes georreferenciados e informações provenientes da comunidade.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “O planejamento depende exclusivamente de estatísticas estaduais agregadas, sem georreferenciamento.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fontes para planejamento. C: incorreta para o comando, pois afirma: “O planejamento deve ignorar informações comunitárias e considerar somente mapas impressos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fontes para planejamento. D: incorreta para o comando, pois afirma: “O planejamento se limita a dados financeiros dos estabelecimentos rurais.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre fontes para planejamento. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
-      },
-      {
-        "id": 1059,
-        "subject": "OPERACIONAL",
-        "tag": "Policiamento Rural",
-        "topic": "RAC mensal",
-        "text": "QUESTÃO 1059 — Considerando RAC mensal e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
-        "options": [
-          "A) A participação é semanal e restrita aos comandantes territoriais.",
-          "B) A participação mensal cabe apenas ao comandante do COPOM.",
-          "C) A participação ocorre uma vez por ano, em reunião estadual única.",
-          "D) Os comandantes das OPM de Policiamento Ambiental e Rodoviário devem participar ao menos uma vez por mês das RAC de Nível I junto aos Batalhões Territoriais abrangidos."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-007/02/20, PDF pp. 475–479; item indicado na explicação. Regra aplicável ao ponto perguntado (RAC mensal): “Os comandantes das OPM de Policiamento Ambiental e Rodoviário devem participar ao menos uma vez por mês das RAC de Nível I junto aos Batalhões Territoriais abrangidos.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A participação é semanal e restrita aos comandantes territoriais.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre RAC mensal. B: incorreta para o comando, pois afirma: “A participação mensal cabe apenas ao comandante do COPOM.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre RAC mensal. C: incorreta para o comando, pois afirma: “A participação ocorre uma vez por ano, em reunião estadual única.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre RAC mensal. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
-      },
+            "id": 1059,
+            "subject": "OPERACIONAL",
+            "tag": "Policiamento Rural",
+            "topic": "Policiamento Rural — participação nas RAC de Nível I",
+            "text": "QUESTÃO 1059 — Na programação das Reuniões de Análise Crítica (RAC) de Nível I, a OPM precisa observar a participação das unidades especializadas de policiamento ambiental e rodoviário. Conforme a Diretriz nº PM3-007/02/20, qual periodicidade e participação são previstas?",
+            "options": [
+              "a) Os comandantes das OPM de Policiamento Ambiental e Rodoviário devem participar ao menos uma vez por mês das RAC de Nível I junto aos Batalhões Territoriais abrangidos.",
+              "b) A participação deve ocorrer semanalmente, mas apenas quando convocada pelo COPOM estadual.",
+              "c) A participação deve ocorrer trimestralmente e exclusivamente em RAC de Nível II dos respectivos comandos especializados.",
+              "d) A participação deve ocorrer uma vez por ano em reunião estadual, sem integração com os Batalhões Territoriais."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, seção sobre RAC de Nível I; Assuntos Operacionais.pdf, PDF pp. 475–479. A reproduz a exigência de participação ao menos mensal dos comandantes das OPM de Policiamento Ambiental e Rodoviário junto aos Batalhões Territoriais abrangidos. B, C e D alteram frequência, nível ou âmbito de participação sem suporte na regra citada."
+          },
+
       {
         "id": 1060,
         "subject": "OPERACIONAL",
@@ -15933,21 +15950,21 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (comunicações integradas): “Comunicações integradas consistem em canais e frequências comuns e interconectados, sob gerenciamento de um Centro de Operações.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Comunicações integradas são apenas a publicação posterior de relatórios administrativos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comunicações integradas. C: incorreta para o comando, pois afirma: “Comunicações integradas se limitam à comunicação com autoridades externas à PM.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comunicações integradas. D: incorreta para o comando, pois afirma: “Comunicações integradas significam que cada OPM utiliza frequências isoladas e sem interconexão.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comunicações integradas. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
       },
       {
-        "id": 1066,
-        "subject": "OPERACIONAL",
-        "tag": "Sistema de Comando e Controle",
-        "topic": "comando",
-        "text": "QUESTÃO 1066 — Considerando comando e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
-        "options": [
-          "A) Comando envolve o exercício da autoridade regulamentar sobre planejamento e execução das ações, missões e operações, com definição de objetivos, estruturas, recursos, coordenação e controle.",
-          "B) Comando se limita ao armazenamento das gravações depois do encerramento da ocorrência.",
-          "C) Comando é exclusivamente a transmissão técnica de imagens, sem poder de direcionamento de recursos.",
-          "D) Comando é apenas a análise estatística posterior, sem autoridade sobre execução."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (comando): “Comando envolve o exercício da autoridade regulamentar sobre planejamento e execução das ações, missões e operações, com definição de objetivos, estruturas, recursos, coordenação e controle.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “Comando se limita ao armazenamento das gravações depois do encerramento da ocorrência.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comando. C: incorreta para o comando, pois afirma: “Comando é exclusivamente a transmissão técnica de imagens, sem poder de direcionamento de recursos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comando. D: incorreta para o comando, pois afirma: “Comando é apenas a análise estatística posterior, sem autoridade sobre execução.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre comando. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
-      },
-      {
+            "id": 1066,
+            "subject": "OPERACIONAL",
+            "tag": "Sistema de Comando e Controle",
+            "topic": "Sistema C2 — alcance do conceito de comando",
+            "text": "QUESTÃO 1066 — Na Diretriz nº PM3-001/02/23, o conceito de comando é empregado para delimitar a autoridade sobre planejamento e execução das ações, missões e operações. Qual alternativa preserva esse alcance?",
+            "options": [
+              "a) Exercício da autoridade regulamentar sobre o planejamento e a execução das ações, com definição de objetivos, estruturas e processos, direcionamento de recursos, coordenação e controle.",
+              "b) Regulação da distribuição e do emprego de recursos operacionais, com gerenciamento de riscos e desenvolvimento de linhas de ação alternativas.",
+              "c) Coleta e análise de dados, prospecção de cenários e desenvolvimento de linhas de ação para subsidiar a decisão da autoridade competente.",
+              "d) Metodologia baseada em cadeia de comando e fluxo de informações para formar consciência situacional e otimizar o processo decisório."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, item 6.3.1.1; Assuntos Operacionais.pdf, PDF p. 202. O item define comando como exercício da autoridade regulamentar sobre planejamento e execução, com objetivos, estruturas e processos, direcionamento de recursos, coordenação e controle. B descreve controle, tratado no item 6.3.1.2; C descreve assessoramento, previsto no item 6.3.1.3; D descreve a metodologia de Comando e Controle do item 6.1.5, e não a atividade específica de comando."
+          },
+     {
         "id": 1067,
         "subject": "OPERACIONAL",
         "tag": "Sistema de Comando e Controle",
@@ -15962,21 +15979,22 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 3,
         "explanation": "Gabarito: D. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (ferramentas C2): “Imagens de drones, Olho de Águia, transmissões ao vivo das COP e imagens de sistemas de videopatrulhamento podem ser ferramentas de Comando e Controle.” A alternativa D reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “Drones são excluídos expressamente das ferramentas de Comando e Controle.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ferramentas C2. B: incorreta para o comando, pois afirma: “Somente imagens captadas por câmeras privadas podem ser ferramentas de Comando e Controle.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ferramentas C2. C: incorreta para o comando, pois afirma: “Apenas comunicações telefônicas convencionais podem ser ferramentas de Comando e Controle.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre ferramentas C2. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
       },
-      {
-        "id": 1068,
-        "subject": "OPERACIONAL",
-        "tag": "Sistema de Comando e Controle",
-        "topic": "vedação de destacamento comercial",
-        "text": "QUESTÃO 1068 — Considerando vedação de destacamento comercial e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
-        "options": [
-          "A) A vedação alcança apenas condomínios fechados, não empresas ou entidades com fins lucrativos.",
-          "B) É permitido destacar policial militar em central comercial se o serviço for prestado sem remuneração direta ao policial.",
-          "C) É vedado destacar policial militar em centro de controle operacional ou central de videomonitoramento de empresa, condomínio fechado ou entidade que represente interesse individual/comercial ou tenha fins lucrativos.",
-          "D) A vedação pode ser afastada por decisão do responsável privado pelo sistema de câmeras."
-        ],
-        "answer": 2,
-        "explanation": "Gabarito: C. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (vedação de destacamento comercial): “É vedado destacar policial militar em centro de controle operacional ou central de videomonitoramento de empresa, condomínio fechado ou entidade que represente interesse individual/comercial ou tenha fins lucrativos.” A alternativa C reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “A vedação alcança apenas condomínios fechados, não empresas ou entidades com fins lucrativos.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre vedação de destacamento comercial. B: incorreta para o comando, pois afirma: “É permitido destacar policial militar em central comercial se o serviço for prestado sem remuneração direta ao policial.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre vedação de destacamento comercial. D: incorreta para o comando, pois afirma: “A vedação pode ser afastada por decisão do responsável privado pelo sistema de câmeras.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre vedação de destacamento comercial. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
-      },
+       {
+            "id": 1068,
+            "subject": "OPERACIONAL",
+            "tag": "Sistema de Comando e Controle",
+            "topic": "Sistema C2 — vedação ao destacamento em centrais privadas",
+            "text": "QUESTÃO 1068 — Uma empresa oferece espaço e acesso às câmeras de seu centro de controle e solicita que um policial militar permaneça ali para acompanhar exclusivamente seu sistema de videomonitoramento. À luz da Diretriz nº PM3-001/02/23, qual regra deve orientar a decisão?",
+            "options": [
+              "a) O destacamento é vedado quando o centro ou a central representa interesse individual/comercial ou pertence a entidade com fins lucrativos, inclusive empresa ou condomínio fechado.",
+              "b) O destacamento é permitido se o policial não receber remuneração direta da empresa e continuar vinculado à OPM de origem.",
+              "c) A vedação alcança apenas condomínios residenciais fechados, não empresas nem outras entidades com fins lucrativos.",
+              "d) A entidade privada pode autorizar o destacamento por decisão própria, desde que disponibilize as imagens ao COPOM."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, item 6.10.1; Assuntos Operacionais.pdf, PDF p. 211. A regra veda destacar policial em CCO/central de videomonitoramento de empresa, condomínio fechado ou entidade que represente interesse individual/comercial ou tenha fins lucrativos. B cria exceção remuneratória; C restringe indevidamente o alcance; D atribui poder de autorização à entidade privada sem previsão."
+          },
+
       {
         "id": 1069,
         "subject": "OPERACIONAL",
@@ -15993,20 +16011,21 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: B. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (VPtr por roteiro): “O videopatrulhamento deve ser realizado por roteiro preestabelecido, em formato de CPP, desenvolvido pelo método de planejamento operacional indicado na diretriz.” A alternativa B reproduz a regra específica exigida pelo enunciado. A: incorreta para o comando, pois afirma: “O videopatrulhamento substitui o CPP e não se vincula ao método de planejamento operacional.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre VPtr por roteiro. C: incorreta para o comando, pois afirma: “O videopatrulhamento deve ser feito sem roteiro, conforme decisão espontânea do operador.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre VPtr por roteiro. D: incorreta para o comando, pois afirma: “O roteiro de videopatrulhamento é elaborado somente depois de captadas as imagens.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre VPtr por roteiro. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
       },
       {
-        "id": 1070,
-        "subject": "OPERACIONAL",
-        "tag": "Sistema de Comando e Controle",
-        "topic": "custódia após upload",
-        "text": "QUESTÃO 1070 — Considerando custódia após upload e a disciplina da fonte indicada, assinale a alternativa que corresponde à regra aplicável.",
-        "options": [
-          "A) Após o upload da evidência ao SiGCED, a administração e custódia das evidências digitais captadas pelo OpVPtr passam ao Chefe da Seção PJMD.",
-          "B) Após o upload, a custódia passa ao responsável pela empresa fornecedora da câmera.",
-          "C) Após o upload, a custódia passa automaticamente ao operador que visualizou primeiro a imagem.",
-          "D) Após o upload, a custódia permanece exclusivamente com o policial que fez o download, sem atribuição da Seção PJMD."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Assuntos Operacionais.pdf, Diretriz PM3-001/02/23, PDF pp. 198–214; item indicado na explicação. Regra aplicável ao ponto perguntado (custódia após upload): “Após o upload da evidência ao SiGCED, a administração e custódia das evidências digitais captadas pelo OpVPtr passam ao Chefe da Seção PJMD.” A alternativa A reproduz a regra específica exigida pelo enunciado. B: incorreta para o comando, pois afirma: “Após o upload, a custódia passa ao responsável pela empresa fornecedora da câmera.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre custódia após upload. C: incorreta para o comando, pois afirma: “Após o upload, a custódia passa automaticamente ao operador que visualizou primeiro a imagem.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre custódia após upload. D: incorreta para o comando, pois afirma: “Após o upload, a custódia permanece exclusivamente com o policial que fez o download, sem atribuição da Seção PJMD.” Essa formulação corresponde a outro parâmetro ou contradiz a regra específica acima; não substitui a disciplina normativa sobre custódia após upload. Auditoria editorial: gabarito original preservado nesta revisão; a conferência normativa independente e a validação humana permanecem pendentes."
-      },
+            "id": 1070,
+            "subject": "OPERACIONAL",
+            "tag": "Sistema de Comando e Controle",
+            "topic": "Sistema C2 — requisitos do policial destacado em CCO de outro órgão",
+            "text": "QUESTÃO 1070 — Um policial militar é designado para trabalhar presencialmente em Centro de Controle Operacional pertencente a outro órgão público. Conforme a Diretriz nº PM3-001/02/23, qual condição integra o regime dessa sistemática?",
+            "options": [
+              "a) Permanecer dedicado exclusivamente às atividades de polícia ostensiva e preservação da ordem pública, integrado à rede de comunicações e aos sistemas inteligentes da PM, além de acessar os sistemas do CCO conforme instrumento legal firmado.",
+              "b) Executar prioritariamente as tarefas administrativas do órgão anfitrião, mantendo acesso aos sistemas da PM apenas quando houver autorização verbal do operador local.",
+              "c) Cumprir a escala de serviço do órgão anfitrião, independentemente do regime de trabalho institucional, e dispensar integração à rede de comunicações da PM.",
+              "d) Atuar como operador dos sistemas do outro órgão, ficando dispensado das atividades de polícia ostensiva e da previsão em instrumento jurídico."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.5.4.3.1–6.5.4.3.5; Assuntos Operacionais.pdf, PDF p. 205. A reúne os requisitos do policial destacado em CCO de outro órgão: dedicação exclusiva às atividades de polícia ostensiva e preservação da ordem pública, integração à rede e aos sistemas da PM e acesso aos sistemas tecnológicos do CCO mediante instrumento legal. B subordina as funções à prioridade administrativa do órgão anfitrião e admite autorização verbal; C afasta o regime institucional e a integração; D exclui as missões policiais e o instrumento jurídico exigido."
+          },
+
       {
         "id": 1071,
         "subject": "OPERACIONAL",
@@ -17792,21 +17811,22 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 1,
         "explanation": "Gabarito: B. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.8.1.6. Trecho de suporte: “pessoalmente e exclusivamente na sede do SFPC”. A está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado."
       },
-      {
-        "id": 1191,
-        "subject": "ORGANIZACIONAL",
-        "tag": "Material Bélico",
-        "topic": "Aquisição, transferência e controle de material bélico",
-        "text": "QUESTÃO 1191 — Quando se aplica a Etapa 2 na transferência restrita de civil para PM?",
-        "options": [
-          "A) Somente quando a arma transferida for a primeira do acervo do adquirente.",
-          "B) Em toda transferência de arma restrita de civil para policial militar.",
-          "C) Apenas quando a arma transferida for de uso permitido.",
-          "D) Quando o adquirente for veterano, independentemente de ser a primeira arma do acervo."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fonte: Portaria do Cmt G PM4-1/1.2/24, alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), Anexo I, 3.8.2.1. Trecho de suporte: “somente nos casos em que a arma ... é a primeira do acervo do adquirente”. B está incorreta porque não corresponde à regra expressa no dispositivo citado. C está incorreta porque não corresponde à regra expressa no dispositivo citado. D está incorreta porque não corresponde à regra expressa no dispositivo citado.\n\nReformulação editorial de distratores (gabarito original preservado):\nB: amplia a aplicação da Etapa 2 para além da condição de primeira arma do acervo.\nC: substitui a condição relativa à primeira arma por uma distinção de categoria da arma.\nD: introduz a condição de veterano em lugar do critério expresso sobre o acervo.\nStatus: EM REVISÃO. As reformulações se baseiam no contraste com a regra citada na explicação original; ainda exigem cotejo individual com a fonte normativa e segunda conferência antes de aprovação."
-      },
+        {
+            "id": 1191,
+            "subject": "ORGANIZACIONAL",
+            "tag": "Material Bélico",
+            "topic": "Material bélico — condição de aplicação da Etapa 2 em transferência restrita",
+            "text": "QUESTÃO 1191 — Ao instruir transferência de arma de uso restrito de civil para policial militar, o setor responsável precisa decidir se incide a Etapa 2 descrita na norma. Qual condição específica determina sua aplicação?",
+            "options": [
+              "a) A Etapa 2 incide somente quando a arma transferida é a primeira do acervo do adquirente.",
+              "b) A Etapa 2 incide quando a arma transferida é a primeira arma restrita do acervo, ainda que o adquirente já possua outras armas permitidas.",
+              "c) A Etapa 2 incide sempre que a transferência envolver arma de uso restrito, independentemente do acervo do adquirente.",
+              "d) A Etapa 2 incide quando o adquirente não possui arma do mesmo calibre, ainda que já tenha outras armas em seu acervo."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Cmt G PM4-1/1.2/24, com alterações publicadas no Bol G PM 241, de 20DEZ24 (Nota PM4-3/1.2/24), item 3.8.2.1; Assuntos Organizacionais.pdf, PDF p. 291. O item prevê a Etapa 2 somente quando a arma transferida é a primeira do acervo do adquirente. B substitui a condição de primeira arma do acervo pela de primeira arma restrita; C transforma a condição restrita em aplicação universal; D troca o critério do acervo total por ausência de arma do mesmo calibre."
+          },
+
       {
         "id": 1192,
         "subject": "ORGANIZACIONAL",
@@ -19278,20 +19298,21 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 17, parágrafo único; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “instaurados antes ... seguirão o rito e a forma ... CORREGPM-004/305/01”. O parágrafo único preserva o rito e a forma da Portaria anterior para procedimentos já instaurados. B: B ignora a regra de transição. C: C cria escolha não prevista. D: D exclui a portaria expressamente indicada."
       },
       {
-        "id": 1290,
-        "subject": "JURIDICO",
-        "tag": "Procedimento Disciplinar",
-        "topic": "Advertência à testemunha",
-        "text": "QUESTÃO 1290 — Antes de colher os dados de qualificação e o relato da testemunha, qual advertência a autoridade deve fazer conforme o § 2º do art. 4º?",
-        "options": [
-          "a) Alertá-la sobre as implicações de faltar com a verdade ou omiti-la.",
-          "b) Informá-la de que pode omitir fatos sem consequência se não tiver presenciado todos os acontecimentos.",
-          "c) Adverti-la de que deve concordar com a versão constante do Termo Acusatório.",
-          "d) Informá-la de que seu depoimento será necessariamente escrito."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 2º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “A testemunha, alertada sobre as implicações de faltar com a verdade ou de omiti-la”. O § 2º exige que a testemunha seja alertada sobre as implicações de faltar com a verdade ou omiti-la. B: B autoriza omissão sem apoio na norma. C: C exige concordância com a acusação, o que não está previsto. D: D contradiz a regra de depoimento oral do § 3º."
-      },
+            "id": 1290,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Procedimento Disciplinar — advertência e qualificação da testemunha",
+            "text": "QUESTÃO 1290 — Antes de colher a qualificação e o depoimento de uma testemunha no Procedimento Disciplinar, qual providência deve ser adotada pela autoridade policial-militar, nos termos do art. 4º, § 2º, da Portaria CORREGPM-1/360/13?",
+            "options": [
+              "a) Alertar a testemunha sobre as implicações de faltar com a verdade ou omiti-la e colher os dados de qualificação e as razões de ciência do relato.",
+              "b) Informar que o depoimento deve ser previamente redigido pela testemunha, podendo ser lido em audiência sem questionamentos.",
+              "c) Esclarecer que a contradita apresentada pela defesa sempre determina a exclusão da testemunha, independentemente da hipótese legal.",
+              "d) Limitar a qualificação ao nome e à residência, dispensando profissão, relações com as partes e razões de ciência."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Cmt G CORREGPM-1/360/13, art. 4º, §§ 2º e 3º, e § 6º; Assuntos Jurídicos-administrativos.pdf, PDF p. 35. O § 2º exige advertir a testemunha sobre as implicações de faltar com a verdade ou omiti-la e colher os dados de qualificação e as razões de ciência. B contraria o § 3º, que determina depoimento oral e não permite à testemunha trazê-lo por escrito; C amplia indevidamente os efeitos da contradita, pois a exclusão ocorre apenas nas hipóteses especificadas no § 6º; D omite dados expressamente relacionados no § 2º, incluindo profissão, relações com as partes e razões de ciência."
+          },
+
       {
         "id": 1291,
         "subject": "JURIDICO",
@@ -19323,35 +19344,36 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 7º, § 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “Havendo mais de um acusado, o tempo ... para a defesa de cada um será individual”. O § 1º determina tempo individual para cada acusado. B: B transforma tempo individual em compartilhado. C: C cria condição ausente. D: D elimina o prazo normativo."
       },
       {
-        "id": 1293,
-        "subject": "JURIDICO",
-        "tag": "Procedimento Disciplinar",
-        "topic": "Nova tipificação e instrução delegada",
-        "text": "QUESTÃO 1293 — A nova tipificação depende de fatos novos, mas a instrução foi delegada. Qual afirmação é segura conforme a Portaria?",
-        "options": [
-          "a) A regra de aditamento na própria audiência contém ressalva expressa para a instrução delegada.",
-          "b) O instrutor delegado pode aditar a acusação e proferir a decisão final, sem retorno à autoridade delegante.",
-          "c) A instrução delegada impede a apresentação de testemunhas adicionais após o aditamento.",
-          "d) A nova tipificação é vedada quando a instrução tiver sido delegada, ainda que a Portaria preveja ressalva procedimental."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 6º, parágrafo único, c/c art. 4º, § 1º; Assuntos Juridicos-administrativos.pdf, p. PDF 36, BOL G PM 211, de 06NOV13. Trecho normativo: “exceto quando a instrução ocorrer nos moldes do § 1º do artigo 4º”. O parágrafo único do art. 6º excepciona a regra de aditamento na própria audiência quando a instrução é delegada. B: B atribui poderes não descritos. C: C amplia a ressalva para eliminar direitos sem base. D: D cria proibição absoluta não estabelecida.\n\nReformulação editorial de distratores (gabarito original preservado):\nB: atribui ao instrutor poderes não descritos na ressalva normativa.\nC: amplia a ressalva relativa ao aditamento para eliminar direito que a regra citada não exclui.\nD: converte a ressalva procedimental em proibição absoluta.\nStatus: EM REVISÃO. As reformulações se baseiam no contraste com a regra citada na explicação original; ainda exigem cotejo individual com a fonte normativa e segunda conferência antes de aprovação."
-      },
-      {
-        "id": 1294,
-        "subject": "JURIDICO",
-        "tag": "Procedimento Disciplinar",
-        "topic": "Ressalvas ao resumo",
-        "text": "QUESTÃO 1294 — A defesa entende que o resumo não refletiu adequadamente um aspecto relevante. Qual faculdade possui?",
-        "options": [
-          "a) Requerer que suas ressalvas sejam consignadas no termo.",
-          "b) Exigir transcrição integral em todos os casos.",
-          "c) Substituir unilateralmente o termo oficial por memorial.",
-          "d) Excluir o depoimento sem contradita."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 4º, § 7º; Assuntos Juridicos-administrativos.pdf, p. PDF 35, BOL G PM 211, de 06NOV13. Trecho normativo: “acusado ou defensor constituído requerer a consignação de suas ressalvas”. O § 7º permite requerer a consignação de ressalvas. B: B converte resumo em transcrição obrigatória. C: C atribui substituição unilateral. D: D confunde ressalva com exclusão."
-      },
+            "id": 1293,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Procedimento Disciplinar — aditamento do Termo Acusatório em instrução delegada",
+            "text": "QUESTÃO 1293 — Após o interrogatório, a autoridade policial-militar entende que os fatos novos exigem nova tipificação legal. A instrução do Procedimento Disciplinar, porém, foi delegada nos termos do art. 4º, § 1º, da Portaria CORREGPM-1/360/13. Qual regra deve ser observada?",
+            "options": [
+              "a) A possibilidade de aditamento do Termo Acusatório na própria audiência, prevista no art. 6º, parágrafo único, contém exceção para a instrução delegada.",
+              "b) O instrutor delegado pode aditar a acusação e proferir definitivamente a decisão, sem remessa à autoridade competente.",
+              "c) A instrução delegada torna vedada, em qualquer hipótese, a nova tipificação legal após o interrogatório.",
+              "d) O aditamento autoriza automaticamente a exclusão das testemunhas de defesa anteriormente arroladas."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Cmt G CORREGPM-1/360/13, art. 6º, caput e parágrafo único, c/c art. 4º, § 1º; Assuntos Jurídicos-administrativos.pdf, PDF p. 36. O parágrafo único prevê aditamento na própria audiência quando a nova tipificação se fundar em fatos novos, exceto quando a instrução ocorrer nos moldes do § 1º do art. 4º. B atribui poderes decisórios não previstos ao instrutor; C transforma a exceção procedimental em proibição absoluta de nova tipificação; D cria consequência sem suporte no dispositivo."
+          },
+
+     {
+            "id": 1294,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Procedimento Disciplinar — registro resumido do depoimento e ressalvas",
+            "text": "QUESTÃO 1294 — Durante a audiência, o acusado e seu defensor entendem que o resumo do depoimento não refletiu adequadamente um fato relevante à defesa. Conforme o art. 4º, § 7º, da Portaria CORREGPM-1/360/13, qual providência podem requerer?",
+            "options": [
+              "a) A consignação de ressalvas no termo, sem substituir unilateralmente o registro oficial.",
+              "b) A transcrição integral e literal de todo o depoimento, obrigatória em qualquer audiência.",
+              "c) A exclusão automática do depoimento, ainda que a testemunha não esteja em hipótese legal de exclusão.",
+              "d) A substituição do termo de audiência por declaração escrita elaborada exclusivamente pela defesa."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Cmt G CORREGPM-1/360/13, art. 4º, § 7º; Assuntos Jurídicos-administrativos.pdf, PDF p. 35. O dispositivo prevê redução resumida dos depoimentos, com registro de fatos objetivos relacionados à acusação ou relevantes à defesa, podendo acusado ou defensor requerer consignação de ressalvas. B transforma resumo em transcrição integral obrigatória; C atribui efeito de exclusão não previsto; D permite substituição unilateral do termo, que a norma não autoriza."
+          },
       {
         "id": 1295,
         "subject": "JURIDICO",
@@ -19368,20 +19390,20 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, arts. 10 e 12; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “aprovação ... pelo Comandante de Unidade; somente após ... situação recursal ... publicado em Boletim”. O art. 10 exige aprovação e o art. 12 condiciona a publicação ao marco recursal; são exigências distintas. B: B antecipa publicação e posterga aprovação. C: C inverte a sequência sem base. D: D inventa dispensa de aprovação."
       },
       {
-        "id": 1296,
-        "subject": "JURIDICO",
-        "tag": "Procedimento Disciplinar",
-        "topic": "Efeito da publicação",
-        "text": "QUESTÃO 1296 — Após a publicação em Boletim, qual efeito a Portaria indica?",
-        "options": [
-          "a) O ato passa a gerar efeitos, incluindo cumprimento do corretivo e reflexos secundários.",
-          "b) A publicação é apenas informativa e não produz efeitos.",
-          "c) O corretivo deve ser cumprido antes da publicação.",
-          "d) A publicação reabre automaticamente prazo de defesa."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. Fundamentação: Portaria do Comandante-Geral CORREGPM-1/360/13, art. 12; Assuntos Juridicos-administrativos.pdf, p. PDF 37, BOL G PM 211, de 06NOV13. Trecho normativo: “a partir daí, gerar seus efeitos (cumprimento do corretivo e demais reflexos secundários)”. O art. 12 afirma que o ato gera efeitos a partir da publicação. B: B nega efeito expresso. C: C antecipa o efeito. D: D cria reabertura de prazo sem previsão."
-      },
+            "id": 1296,
+            "subject": "JURIDICO",
+            "tag": "Procedimento Disciplinar",
+            "topic": "Procedimento Disciplinar — momento de produção dos efeitos do ato",
+            "text": "QUESTÃO 1296 — Em um Procedimento Disciplinar, a autoridade verifica que a decisão ainda está sujeita a recurso com efeito suspensivo. De acordo com o art. 12 da Portaria do Cmt G CORREGPM-1/360/13, qual providência observa a condição para publicação do ato?",
+            "options": [
+              "a) Aguardar decisão da qual não caiba mais recurso próprio com efeito suspensivo, ou a decadência dos prazos recursais, certificando a circunstância nos autos antes da publicação.",
+              "b) Publicar imediatamente após a assinatura da decisão, deixando a análise dos recursos para a fase de cumprimento.",
+              "c) Publicar o ato após a apresentação do recurso, pois a interposição encerra a possibilidade de efeito suspensivo.",
+              "d) Publicar somente depois de concluído eventual processo judicial relativo aos mesmos fatos, ainda que os prazos recursais administrativos já tenham decaído."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Portaria do Cmt G CORREGPM-1/360/13, art. 12; Assuntos Jurídicos-administrativos.pdf, PDF p. 37. O artigo condiciona a publicação à emissão de decisão da qual não caiba recurso próprio com efeito suspensivo, ou à decadência dos prazos recursais, devendo isso ser cientificado nos autos. B antecipa a publicação; C inverte o efeito da interposição; D cria requisito de encerramento judicial não previsto no dispositivo."
+          },
       {
         "id": 1297,
         "subject": "JURIDICO",
@@ -19652,21 +19674,22 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 0,
         "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Plano de Contingência. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.11, p. 6. Evidência: “planejamento prévio para uma situação futura que eventualmente venha a ocorrer”. B descreve outra previsão verdadeira — Grupo criminoso organizado (Diretriz nº PM3-001/02/24, item 6.1.4.1, p. 5) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Área anômica (Diretriz nº PM3-001/02/24, item 6.1.1, p. 5) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Criminalidade ultraviolenta (Diretriz nº PM3-001/02/24, item 6.1.3, p. 5) —, não a regra incorreta apontada no comando."
       },
-      {
-        "id": 1315,
-        "subject": "OPERACIONAL",
-        "tag": "Crime Organizado",
-        "topic": "Doutrina de Combate ao Crime Organizado",
-        "text": "QUESTÃO 1315 — À luz de Diretriz nº PM3-001/02/24, quanto a Cenas Abertas de Uso, assinale a alternativa CORRETA.",
-        "options": [
-          "a) Porções do espaço público com aglomeração permanente de usuários e traficantes de drogas, onde ocorre consumo ostensivo e indiscriminado de drogas lícitas e ilícitas.",
-          "b) Estabelecer mecanismos para identificar, prevenir, monitorar e responder a atividades terroristas e criminosas nas regiões circunscritas aos Cmdo Pol.",
-          "c) Planejamento elaborado a partir do diagnóstico situacional, com sobreposição de camadas de dados para identificar áreas de interesse e pontos de concentração ou fixação do policiamento.",
-          "d) Ampliar a capacidade operativa da PM por atuação conjugada e sistêmica nos domínios terrestre, aéreo, aquático e cibernético."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. A alternativa A corresponde a Cenas Abertas de Uso. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.12, p. 6-7. Evidência normativa: “aglomeração permanente de usuários e traficantes de drogas”. B não responde corretamente ao comando porque descreve Área de atuação da missão, previsto em Diretriz nº PM3-001/02/24, item 5.1, p. 4, e não Cenas Abertas de Uso. C não responde corretamente ao comando porque descreve Plano de Ação, previsto em Diretriz nº PM3-001/02/24, item 6.1.10, p. 6, e não Cenas Abertas de Uso. D não responde corretamente ao comando porque descreve Objetivo de capacidade operativa, previsto em Diretriz nº PM3-001/02/24, item 4.2, p. 4, e não Cenas Abertas de Uso."
-      },
+        {
+            "id": 1315,
+            "subject": "OPERACIONAL",
+            "tag": "Crime Organizado",
+            "topic": "Doutrina de Combate ao Crime Organizado — conceito de Cenas Abertas de Uso",
+            "text": "QUESTÃO 1315 — Na aplicação da Diretriz nº PM3-001/02/24, uma equipe precisa classificar uma área pública em que se verifica concentração persistente de usuários e traficantes, com consumo ostensivo de drogas. Qual conceito corresponde à situação descrita?",
+            "options": [
+              "a) Cenas Abertas de Uso: porções do espaço público com aglomeração permanente de usuários e traficantes, nas quais ocorre consumo ostensivo e indiscriminado de drogas lícitas e ilícitas.",
+              "b) Plano de Ação: sobreposição de camadas de dados e definição de medidas de emprego a partir do diagnóstico situacional.",
+              "c) Área de atuação da missão: região circunscrita ao Comando de Policiamento na qual se desenvolvem as ações previstas na diretriz.",
+              "d) Capacidade operativa: combinação sistêmica de recursos nos domínios terrestre, aéreo, aquático e cibernético."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/24, item 6.1.12; Assuntos Operacionais.pdf, PDF p. 220. A reproduz o conceito de Cenas Abertas de Uso. B descreve Plano de Ação (item 6.1.10); C trata da área de atuação da missão (item 5.1); D corresponde ao objetivo relacionado à ampliação da capacidade operativa (item 4.2). Os distratores são conceitos da mesma Diretriz, mas não definem a situação do enunciado."
+          },
+
       {
         "id": 1316,
         "subject": "OPERACIONAL",
@@ -20417,51 +20440,54 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 1,
         "explanation": "Gabarito: B. A alternativa B corresponde a Equipe SOp. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.1, p. 2. Evidência normativa: “Unidade de Serviço (US) composta por um ou mais policiais militares [...] devidamente integrada ao COPOM”. A não responde corretamente ao comando porque descreve Objetivo de vantagem operacional, previsto em Nota de Instrução nº PM3-002/02/26, item 4.2, p. 2, e não Equipe SOp. C não responde corretamente ao comando porque descreve Atuação em incidente crítico, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.17, p. 10, e não Equipe SOp. D não responde corretamente ao comando porque descreve DEJEM Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.3, p. 3, e não Equipe SOp."
       },
+       {
+            "id": 1366,
+            "subject": "OPERACIONAL",
+            "tag": "Sala de Operações",
+            "topic": "Sala de Operações — definição e finalidade do Espaço Lilás",
+            "text": "QUESTÃO 1366 — Uma Sala de Operações mantém ambiente destinado ao acolhimento, à escuta ativa e à orientação de mulheres, no contexto de prevenção e enfrentamento da violência doméstica e familiar. Como a Nota de Instrução nº PM3-002/02/26 denomina e caracteriza esse ambiente?",
+            "options": [
+              "a) Espaço Lilás, ambiente integrado à SOp voltado à prevenção e ao enfrentamento da violência doméstica e familiar.",
+              "b) DEJEM Lilás, missão de prevenção primária executada por policiais capacitados no Programa “Lar Mais Seguro”.",
+              "c) Busca ativa, levantamento sistemático das ocorrências A98 e A99 na circunscrição da OPM.",
+              "d) Estratégia de Policiamento com Tecnologia, emprego de inovações tecnológicas inter-relacionadas."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.2; Assuntos Operacionais.pdf, PDF pp. 237–238. A descreve o Espaço Lilás. B define DEJEM Lilás; C define Busca ativa; D define Estratégia de Policiamento com Tecnologia, conforme os itens 6.1.3 e 6.1.4."
+          },
+
       {
-        "id": 1366,
-        "subject": "OPERACIONAL",
-        "tag": "Sala de Operações",
-        "topic": "Funcionamento da Sala de Operações",
-        "text": "QUESTÃO 1366 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Espaço Lilás, assinale a alternativa CORRETA.",
-        "options": [
-          "a) A SOp é prevista como estrutura organizacional integrante do QPO no escalão Btl e instalada em espaço físico livre de ruídos.",
-          "b) Ambiente integrado à SOp voltado à prevenção e ao enfrentamento da violência doméstica e familiar, acolhimento, escuta ativa e orientação das mulheres.",
-          "c) Consiste no levantamento sistemático e proativo das ocorrências A98 (violência doméstica) e A99 (medida protetiva) na circunscrição da OPM.",
-          "d) O SIR pressupõe possibilidade de solução por orientação, mediação ou atendimento remoto ao solicitante."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. A alternativa B corresponde a Espaço Lilás. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 2-3. Evidência normativa: “ambiente integrado à Sala de Operações [...] voltado ao serviço de prevenção e enfrentamento à violência doméstica e familiar”. A não responde corretamente ao comando porque descreve Critério de instalação, previsto em Nota de Instrução nº PM3-002/02/26, item 6.4.1, p. 11, e não Espaço Lilás. C não responde corretamente ao comando porque descreve Busca ativa do Espaço Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 3, e não Espaço Lilás. D não responde corretamente ao comando porque descreve Solução remota de demanda, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.11.3, p. 9, e não Espaço Lilás."
-      },
+            "id": 1367,
+            "subject": "OPERACIONAL",
+            "tag": "Sala de Operações",
+            "topic": "Sala de Operações — conceito de Busca ativa do Espaço Lilás",
+            "text": "QUESTÃO 1367 — Conforme a Nota de Instrução nº PM3-002/02/26, qual descrição corresponde à Busca ativa realizada no Espaço Lilás?",
+            "options": [
+              "a) Levantamento sistemático e proativo, na circunscrição da OPM, das ocorrências A98 (violência doméstica) e A99 (medida protetiva), para subsidiar visitas e ações preventivas.",
+              "b) Missão de prevenção primária executada por policiais capacitados no Programa “Lar Mais Seguro”, denominada DEJEM Lilás.",
+              "c) Ambiente integrado à SOp para acolhimento, escuta ativa e orientação de mulheres em situação de violência doméstica e familiar.",
+              "d) Atividade que emprega tecnologias inter-relacionadas, como sensores e sistemas informatizados, para desenvolver estratégias de policiamento."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.2, PDF p. 238. A definição de Busca ativa envolve o levantamento sistemático e proativo das naturezas A98 e A99 na circunscrição da OPM. B define DEJEM Lilás (item 6.1.3); C define Espaço Lilás (item 6.1.2, definição do ambiente); D corresponde à Estratégia de Policiamento com Tecnologia (item 6.1.4). Os distratores são conceitos da mesma Nota, paralelos ao comando."
+          },
+
       {
-        "id": 1367,
-        "subject": "OPERACIONAL",
-        "tag": "Sala de Operações",
-        "topic": "Funcionamento da Sala de Operações",
-        "text": "QUESTÃO 1367 — Considerando a Nota de Instrução nº PM3-002/02/26, assinale a alternativa INCORRETA sobre Busca ativa do Espaço Lilás.",
-        "options": [
-          "a) Consiste no levantamento de ocorrências A98 (medida protetiva) e A99 (violência doméstica) na circunscrição da OPM.",
-          "b) A SOp pode apoiar captação, análise e difusão de informações no gerenciamento de incidente crítico, especialmente nas comunicações operacionais.",
-          "c) Disciplinar o funcionamento da Sala de Operações na PMESP, as atividades vinculadas e os parâmetros de seleção e capacitação do efetivo.",
-          "d) Aumentar a vantagem operacional na prevenção e repressão imediata de ilícitos penais e administrativos e na mitigação de incivilidades indutoras de crimes."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. A alternativa A é INCORRETA: altera a regra documentada para Busca ativa do Espaço Lilás. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 3. Evidência: “busca ativa de ocorrências das naturezas A98 [...] e A99”. B descreve outra previsão verdadeira — Apoio a incidente crítico (Nota de Instrução nº PM3-002/02/26, item 6.3.7.16, p. 10) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Finalidade da Nota de Instrução (Nota de Instrução nº PM3-002/02/26, item 2, p. 1) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Objetivo de vantagem operacional (Nota de Instrução nº PM3-002/02/26, item 4.2, p. 2) —, não a regra incorreta apontada no comando."
-      },
-      {
-        "id": 1368,
-        "subject": "OPERACIONAL",
-        "tag": "Sala de Operações",
-        "topic": "Funcionamento da Sala de Operações",
-        "text": "QUESTÃO 1368 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a DEJEM Lilás, assinale a alternativa CORRETA.",
-        "options": [
-          "a) Missão de prevenção primária voltada ao enfrentamento da violência doméstica e familiar, executada por policiais capacitados no Programa Lar Mais Seguro.",
-          "b) A SOp pode apoiar captação, análise e difusão de informações no gerenciamento de incidente crítico, especialmente nas comunicações operacionais.",
-          "c) Se o solicitante insistir no atendimento presencial por US, o COPOM deve ser imediatamente informado para as providências cabíveis.",
-          "d) Ampliar a consciência situacional e a tomada de decisão dos escalões de comando e supervisão e dos policiais que executam o policiamento ostensivo."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. A alternativa A corresponde a DEJEM Lilás. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.3, p. 3. Evidência normativa: “missão de prevenção primária [...] executada por policiais militares capacitados no Programa ‘Lar mais Seguro’”. B não responde corretamente ao comando porque descreve Apoio a incidente crítico, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.16, p. 10, e não DEJEM Lilás. C não responde corretamente ao comando porque descreve Insistência por atendimento presencial, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.3, p. 10, e não DEJEM Lilás. D não responde corretamente ao comando porque descreve Objetivo de consciência situacional, previsto em Nota de Instrução nº PM3-002/02/26, item 4.1, p. 2, e não DEJEM Lilás."
-      },
+            "id": 1368,
+            "subject": "OPERACIONAL",
+            "tag": "Sala de Operações",
+            "topic": "Sala de Operações — conceito de DEJEM Lilás",
+            "text": "QUESTÃO 1368 — A OPM pretende empregar policiais capacitados no Programa “Lar Mais Seguro” em missão de prevenção primária voltada ao enfrentamento da violência doméstica e familiar. Conforme a Nota de Instrução nº PM3-002/02/26, essa modalidade é denominada:",
+            "options": [
+              "a) DEJEM Lilás.",
+              "b) Espaço Lilás.",
+              "c) Busca ativa do Espaço Lilás.",
+              "d) Estratégia de Policiamento com Tecnologia."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.1.3; Assuntos Operacionais.pdf, PDF p. 238. DEJEM Lilás é a missão de prevenção primária direcionada ao enfrentamento à violência doméstica e familiar, executada por policiais capacitados no Programa “Lar Mais Seguro”. B designa ambiente integrado à SOp; C é o levantamento sistemático de ocorrências A98/A99; D é atividade que emprega inovações tecnológicas inter-relacionadas."
+          },
+
       {
         "id": 1369,
         "subject": "OPERACIONAL",
@@ -20627,21 +20653,22 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 1,
         "explanation": "Gabarito: B. A alternativa B é INCORRETA: altera a regra documentada para Vedação de encerramento sem atendimento remoto. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.15, p. 10. Evidência: “é terminantemente vedado [...] encerrar [...] sem que tenha sido realizado o atendimento remoto”. A descreve outra previsão verdadeira — Apoio a incidente crítico (Nota de Instrução nº PM3-002/02/26, item 6.3.7.16, p. 10) —, não a regra incorreta apontada no comando. C descreve outra previsão verdadeira — Insistência por atendimento presencial (Nota de Instrução nº PM3-002/02/26, item 6.3.7.13.3, p. 10) —, não a regra incorreta apontada no comando. D descreve outra previsão verdadeira — Finalidade da Nota de Instrução (Nota de Instrução nº PM3-002/02/26, item 2, p. 1) —, não a regra incorreta apontada no comando."
       },
-      {
-        "id": 1380,
-        "subject": "OPERACIONAL",
-        "tag": "Sala de Operações",
-        "topic": "Funcionamento da Sala de Operações",
-        "text": "QUESTÃO 1380 — À luz de Nota de Instrução nº PM3-002/02/26, quanto a Apoio a incidente crítico, assinale a alternativa CORRETA.",
-        "options": [
-          "a) Ampliar a consciência situacional e a tomada de decisão dos escalões de comando e supervisão e dos policiais que executam o policiamento ostensivo.",
-          "b) A SOp pode apoiar captação, análise e difusão de informações no gerenciamento de incidente crítico, especialmente nas comunicações operacionais.",
-          "c) Ambiente integrado à SOp voltado à prevenção e ao enfrentamento da violência doméstica e familiar, acolhimento, escuta ativa e orientação das mulheres.",
-          "d) É terminantemente vedado encerrar no SIOPM ocorrência de perturbação do sossego sem que tenha sido realizado atendimento remoto ao solicitante."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. A alternativa B corresponde a Apoio a incidente crítico. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.16, p. 10. Evidência normativa: “estrutura de apoio nos processos de captação, análise e difusão de informações”. A não responde corretamente ao comando porque descreve Objetivo de consciência situacional, previsto em Nota de Instrução nº PM3-002/02/26, item 4.1, p. 2, e não Apoio a incidente crítico. C não responde corretamente ao comando porque descreve Espaço Lilás, previsto em Nota de Instrução nº PM3-002/02/26, item 6.1.2, p. 2-3, e não Apoio a incidente crítico. D não responde corretamente ao comando porque descreve Vedação de encerramento sem atendimento remoto, previsto em Nota de Instrução nº PM3-002/02/26, item 6.3.7.15, p. 10, e não Apoio a incidente crítico."
-      },
+       {
+            "id": 1380,
+            "subject": "OPERACIONAL",
+            "tag": "Sala de Operações",
+            "topic": "Sala de Operações — apoio informacional a incidente crítico",
+            "text": "QUESTÃO 1380 — Durante um incidente crítico, a Sala de Operações é acionada para apoiar a estrutura responsável pelo gerenciamento da ocorrência. Qual atuação está prevista na Nota de Instrução nº PM3-002/02/26, item 6.3.7.16?",
+            "options": [
+              "a) Assumir o comando tático das equipes em campo e substituir a autoridade responsável pelo incidente.",
+              "b) Apoiar os processos de captação, análise e difusão de informações, especialmente no que se refere às comunicações operacionais.",
+              "c) Realizar exclusivamente acolhimento e orientação de mulheres no ambiente do Espaço Lilás.",
+              "d) Encerrar obrigatoriamente toda ocorrência de perturbação do sossego sem atendimento remoto, independentemente da solicitação."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B. Fundamentação: Nota de Instrução nº PM3-002/02/26, item 6.3.7.16; Assuntos Operacionais.pdf, PDF p. 241. O item prevê a SOp como estrutura de apoio à captação, análise e difusão de informações no gerenciamento de incidente crítico. A transfere comando de campo; C descreve função do Espaço Lilás; D formula regra absoluta que não corresponde ao item perguntado."
+          },
+
       {
         "id": 1381,
         "subject": "OPERACIONAL",
@@ -20687,21 +20714,22 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 1,
         "explanation": "Gabarito: B. A alternativa B corresponde a Objetivo de padronização. Fundamentação: Diretriz nº PM3-001/03/24, item 4.1, p. 2. Evidência normativa: “modelo institucional padronizado [...] durante o turno de serviço, de modo contínuo e programado”. A não responde corretamente ao comando porque descreve Responsável pelo Treinamento da OPM, previsto em Diretriz nº PM3-001/03/24, item 6.1.6, p. 3, e não Objetivo de padronização. C não responde corretamente ao comando porque descreve Treinamento Técnico-Operacional, previsto em Diretriz nº PM3-001/03/24, item 6.1.12, p. 3, e não Objetivo de padronização. D não responde corretamente ao comando porque descreve Treinador Físico da OPM, previsto em Diretriz nº PM3-001/03/24, item 6.1.9, p. 3, e não Objetivo de padronização."
       },
-      {
-        "id": 1384,
-        "subject": "ORGANIZACIONAL",
-        "tag": "TCI",
-        "topic": "Treinamento Continuado Institucional",
-        "text": "QUESTÃO 1384 — À luz de Diretriz nº PM3-001/03/24, quanto a Objetivo de saúde, assinale a alternativa CORRETA.",
-        "options": [
-          "a) Modalidade facultativa de ensino que conjuga variadas formas de treinamento e é executada exclusivamente durante o turno de serviço do policial militar.",
-          "b) Conjunto sistemático e planejado de ações e atividades físicas para desenvolver e aprimorar capacidades físicas, melhorar saúde e qualidade de vida.",
-          "c) Estabelecer parâmetros técnicos e doutrinários para o desenvolvimento do Treinamento Continuado Institucional na PMESP.",
-          "d) Promover a saúde física e mental do policial militar."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. A alternativa D corresponde a Objetivo de saúde. Fundamentação: Diretriz nº PM3-001/03/24, item 4.2, p. 2. Evidência normativa: “promover a saúde física e mental do policial militar”. A não responde corretamente ao comando porque descreve Treinamento Durante o Serviço, previsto em Diretriz nº PM3-001/03/24, item 6.1.14, p. 4, e não Objetivo de saúde. B não responde corretamente ao comando porque descreve Treinamento Físico, previsto em Diretriz nº PM3-001/03/24, item 6.1.11, p. 3, e não Objetivo de saúde. C não responde corretamente ao comando porque descreve Finalidade do TCI, previsto em Diretriz nº PM3-001/03/24, item 2, p. 1, e não Objetivo de saúde."
-      },
+       {
+            "id": 1384,
+            "subject": "ORGANIZACIONAL",
+            "tag": "TCI",
+            "topic": "TCI — objetivos institucionais",
+            "text": "QUESTÃO 1384 — A Diretriz nº PM3-001/03/24 estabelece objetivos distintos para o Treinamento Continuado Institucional. Qual alternativa corresponde especificamente ao objetivo de saúde?",
+            "options": [
+              "a) Prevenir e reprimir infrações administrativas e penais praticadas em via pública.",
+              "b) Promover a saúde física e mental do policial militar.",
+              "c) Ampliar a eficiência e a segurança operacional por meio de treinamento continuado.",
+              "d) Organizar o desenvolvimento do Policiamento Ostensivo de Trânsito."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/03/24, item 4.2; Assuntos Organizacionais.pdf, PDF p. 443. O item 4.2 estabelece como objetivo promover a saúde física e mental do policial militar. A corresponde a objetivo do Programa de Policiamento de Trânsito; C corresponde ao objetivo de eficiência e segurança operacional do TCI (item 4.3), não ao objetivo de saúde; D define o objetivo do Programa de Policiamento de Trânsito."
+          },
+
       {
         "id": 1385,
         "subject": "ORGANIZACIONAL",
@@ -21032,21 +21060,22 @@ const BANCO_GERAL_QUESTOES = [
     "answer": 2,
     "explanation": "Gabarito: C. I é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.5.4; Assuntos Operacionais.pdf, p. 466. A proposição contraria o conteúdo normativo indicado: Cabe ao Coordenador Operacional de Batalhão, ou equivalente, coordenar as instruções aplicadas à Força Tática e controlar os assuntos abordados. II é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.8.1; Assuntos Operacionais.pdf, p. 467. A proposição reproduz o conteúdo normativo indicado. III é CORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.8.2; Assuntos Operacionais.pdf, p. 467. A proposição reproduz o conteúdo normativo indicado. O comando solicita as proposições corretas; somente a alternativa c corresponde ao conjunto exigido."
   },
-  {
-    "id": 1407,
-    "subject": "OPERACIONAL",
-    "tag": "Força Tática",
-    "topic": "Força Tática — organização, composição e emprego",
-    "text": "QUESTÃO 1407 — Considerando a Diretriz nº PM3-003/02/20 (Programa de Força Tática), analise as proposições:\n\nI. A continuidade por outra Patrulha deve ocorrer automaticamente, mesmo que implique erro procedimental ou impedimento legal.\nII. A diretriz exige rodízio semanal de todos os componentes, inclusive quando a função exige capacitação técnica específica.\nIII. O Programa de Força Tática exclui o controle de indicadores de criminalidade violenta e não prevê suporte operacional especializado.\n\nAssinale a alternativa que reúne apenas as proposições INCORRETAS.",
-    "options": [
-      "a) Apenas II e III.",
-      "b) I, II e III.",
-      "c) Apenas I e II.",
-      "d) Apenas I e III."
-    ],
-    "answer": 1,
-    "explanation": "Gabarito: B. I é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, itens 6.8.2 e 6.8.3; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: A continuidade do atendimento por outra Patrulha depende de avaliação do caso e não pode implicar erro procedimental nem impedimento legal ou regulamentar. II é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, item 6.8.4; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: A regra prevê rodízio periódico dos componentes da Equipe Tática em período não superior a três meses, ressalvada função que exija capacitação técnica específica. III é INCORRETA; fundamento: Diretriz nº PM3-003/02/20, itens 4.1, 4.2 e 6.1.1; Assuntos Operacionais.pdf. A proposição contraria o conteúdo normativo indicado: O Programa de Força Tática prevê controle de indicadores de criminalidade violenta e suporte operacional especializado. O comando solicita as proposições incorretas; somente a alternativa b corresponde ao conjunto exigido."
-  },
+ {
+            "id": 1407,
+            "subject": "OPERACIONAL",
+            "tag": "Força Tática",
+            "topic": "Força Tática — registro da ocorrência quando há transferência de responsabilidade",
+            "text": "QUESTÃO 1407 — Uma Equipe Tática presta o primeiro atendimento a uma ocorrência, mas transfere a responsabilidade de continuidade a outra Patrulha. Conforme a Diretriz nº PM3-003/02/20, qual registro deve ser produzido pela Unidade de Serviço que transfere o atendimento?",
+            "options": [
+              "a) Relatório de serviço com os dados preliminares, pois a responsabilidade foi transferida a outra Patrulha.",
+              "b) Boletim de Ocorrência completo, ainda que o atendimento tenha sido transferido antes de seu término, sem registro complementar.",
+              "c) Apenas comunicação verbal ao COPOM, ficando dispensado qualquer registro escrito pela Unidade que iniciou o atendimento.",
+              "d) Relatório de serviço somente se a Patrulha que recebeu a ocorrência solicitar formalmente, sem exigência normativa própria."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-003/02/20, item 6.8.3; Assuntos Operacionais.pdf, PDF p. 467. O item determina que as US elaborem BO nas ocorrências atendidas até o término e, quando a responsabilidade for transferida a outra Patrulha, registrem os dados preliminares em relatório de serviço. B ignora a distinção prevista; C e D dispensam o registro exigido ou condicionam-no a pedido não previsto."
+          },
+
   {
     "id": 1408,
     "subject": "OPERACIONAL",
@@ -22637,21 +22666,22 @@ const BANCO_GERAL_QUESTOES = [
         "answer": 2,
         "explanation": "Gabarito: C. I é INCORRETA; referência: Assuntos Operacionais.pdf — NORSOP, item 6.2.2.2. II é CORRETA; referência: Assuntos Operacionais.pdf — Diretriz nº PM3-003/02/20, itens 4.1 e 4.2. III é CORRETA; referência: Assuntos Operacionais.pdf — Diretriz nº PM3-003/02/20, item 6.8.2. O comando exige identificar as proposições corretas; a alternativa indicada é a única que reúne exatamente o conjunto exigido."
       },
-      {
-        "id": 1513,
-        "subject": "OPERACIONAL",
-        "tag": "Força Tática",
-        "topic": "Força Tática — matriz operacional, níveis de resposta e emprego",
-        "text": "QUESTÃO 1513. Considerando estritamente os dispositivos indicados, analise as proposições e assinale a alternativa que reúne apenas as proposições INCORRETAS:\n\nI. A continuação do atendimento por outra Patrulha é obrigatória em todos os casos, mesmo quando houver impedimento legal ou regulamentar.\nII. O Programa de Força Tática organiza o policiamento ostensivo e os apoios táticos executados pelas Forças Táticas.\nIII. O Nível de Resposta 3 corresponde ao apoio tático ordinário de contingentes da própria OPM territorial, sem recursos adicionais.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) Apenas I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 3,
-        "explanation": "Gabarito: D. I é INCORRETA; referência: Assuntos Operacionais.pdf — Diretriz nº PM3-003/02/20, item 6.8.2. II é CORRETA; referência: Assuntos Operacionais.pdf — Diretriz nº PM3-003/02/20, itens 4.1 e 6.1.1. III é INCORRETA; referência: Assuntos Operacionais.pdf — NORSOP, item 6.2.2.3. O comando exige identificar as proposições incorretas; a alternativa indicada é a única que reúne exatamente o conjunto exigido."
-      },
+     {
+            "id": 1513,
+            "subject": "OPERACIONAL",
+            "tag": "Força Tática",
+            "topic": "Força Tática — instrução diária e duração máxima",
+            "text": "QUESTÃO 1513 — Na elaboração da rotina de instrução diária de uma Equipe de Força Tática, o comandante precisa observar o limite temporal previsto na Diretriz nº PM3-003/02/20. Qual duração máxima consta do item 6.5.2, considerada sua redação atualizada?",
+            "options": [
+              "a) 30 minutos, sem possibilidade de descentralização.",
+              "b) 45 minutos, com realização obrigatória na sede do Batalhão.",
+              "c) 60 minutos, podendo a instrução ocorrer de forma descentralizada.",
+              "d) 90 minutos, desde que todas as equipes estejam reunidas simultaneamente."
+            ],
+            "answer": 2,
+            "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-003/02/20, item 6.5.2, com redação dada pela O Comp nº PM3-005/02/21; Assuntos Operacionais.pdf, PDF p. 465. A redação atualizada fixa duração máxima de 60 minutos para as instruções diárias, que podem ocorrer de forma descentralizada. A, B e D indicam limites ou condições que não correspondem ao texto atualizado."
+          },
+
       {
         "id": 1514,
         "subject": "OPERACIONAL",
@@ -23088,20 +23118,20 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: A. I é INCORRETA; referência: Assuntos Operacionais.pdf — Diretriz nº PM3-005/02/24, item 6.5.2. II é CORRETA; referência: Assuntos Operacionais.pdf — Diretriz nº PM3-005/02/24, itens 6.4.2 e 6.5. III é CORRETA; referência: Assuntos Operacionais.pdf — Diretriz nº PM3-001/02/23, item 6.7.2.1. O comando exige identificar as proposições corretas; a alternativa indicada é a única que reúne exatamente o conjunto exigido."
       },
       {
-        "id": 1543,
-        "subject": "OPERACIONAL",
-        "tag": "Drones",
-        "topic": "Drones — autoridade, segurança de voo e integração ao C2",
-        "text": "QUESTÃO 1543. Considerando estritamente os dispositivos indicados, analise as proposições e assinale a alternativa que reúne apenas as proposições INCORRETAS:\n\nI. A Coord Op PM não possui atribuição integradora com órgãos externos envolvidos no Sistema C2.\nII. O CAvPM deve envidar esforços junto à DTIC, DL e DF para aquisição das UAS utilizadas pelos CFP ou função equivalente.\nIII. A integração das imagens de UAS e aeronaves tripuladas às plataformas de C2 é atribuída exclusivamente ao RPIC de cada voo.",
-        "options": [
-          "a) Apenas I e II.",
-          "b) Apenas I e III.",
-          "c) Apenas II e III.",
-          "d) Apenas I, II e III."
-        ],
-        "answer": 1,
-        "explanation": "Gabarito: B. I é INCORRETA; referência: Assuntos Operacionais.pdf — Diretriz nº PM3-001/02/23, item 6.9.3.2.4. II é CORRETA; referência: Assuntos Operacionais.pdf — Diretriz nº PM3-001/02/23, atribuições do CAvPM. III é INCORRETA; referência: Assuntos Operacionais.pdf — Diretriz nº PM3-001/02/23, atribuições do CAvPM. O comando exige identificar as proposições incorretas; a alternativa indicada é a única que reúne exatamente o conjunto exigido."
-      },
+            "id": 1543,
+            "subject": "OPERACIONAL",
+            "tag": "Sistema de Comando e Controle",
+            "topic": "Sistema C2 — regulamentação de acesso às ferramentas inteligentes",
+            "text": "QUESTÃO 1543 — Uma OPM está definindo os níveis de privilégio dos policiais militares designados para uma Sala de Operações e para um CC2. Segundo a Diretriz nº PM3-001/02/23, qual órgão deve regulamentar a política de acesso às ferramentas inteligentes em conjunto com a DTIC?",
+            "options": [
+              "a) CIPM.",
+              "b) Coord Op PM, exclusivamente, por intermédio do COPOM.",
+              "c) 4ª EM/PM, sem participação de órgão técnico de tecnologia da informação.",
+              "d) CAvPM, por ser responsável pela integração de imagens de UAS e aeronaves tripuladas."
+            ],
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, item 6.9.1.1; Assuntos Operacionais.pdf, PDF p. 208. O item atribui ao CIPM, em conjunto com a DTIC, a regulamentação da política de acesso e dos níveis de privilégios das ferramentas inteligentes para policiais designados às Estruturas de C2. B descreve atribuições da Coord Op PM por intermédio do COPOM; C confunde planejamento orçamentário/material com política de acesso; D trata da integração de imagens de UAS, não da política de privilégios."
+          },
       {
         "id": 1544,
         "subject": "OPERACIONAL",
@@ -23943,20 +23973,21 @@ const BANCO_GERAL_QUESTOES = [
         "explanation": "Gabarito: A. I é INCORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.2.1. II é INCORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.2.1. III é CORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.1. O comando exige identificar as proposições incorretas; a alternativa indicada é a única que reúne exatamente o conjunto exigido."
       },
       {
-        "id": 1600,
-        "subject": "ORGANIZACIONAL",
-        "tag": "SisTAF",
-        "topic": "SisTAF — credenciamento, treinamento físico e TAF",
-        "text": "QUESTÃO 1600. Considerando estritamente os dispositivos indicados, analise as proposições e assinale a alternativa que reúne apenas as proposições CORRETAS:\n\nI. O credenciamento dos Treinadores Físicos é realizado pela emissão de escala de serviço, sem inclusão no SITAF ou substituto.\nII. O material atribui à EEF o credenciamento prévio dos policiais militares membros do SisTAF.\nIII. O sistema permite às OPM inserir dados e informações relativos aos treinamentos físicos realizados.",
-        "options": [
-          "a) Apenas II e III.",
-          "b) Apenas I, II e III.",
-          "c) Apenas I e II.",
-          "d) Apenas I e III."
-        ],
-        "answer": 0,
-        "explanation": "Gabarito: A. I é INCORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.2.1. II é CORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.2. III é CORRETA; referência: Assuntos Organizacionais.pdf — Diretriz nº PM3-001/03/25, item 6.4.2.1. O comando exige identificar as proposições corretas; a alternativa indicada é a única que reúne exatamente o conjunto exigido."
-      },
+            "id": 1600,
+            "subject": "ORGANIZACIONAL",
+            "tag": "SisTAF",
+            "topic": "SisTAF — credenciamento de Treinadores Físicos e registro de dados",
+            "text": "QUESTÃO 1600 — A OPM pretende registrar os dados dos treinamentos físicos e verificar se um policial militar foi credenciado como Treinador Físico. Considerando a Diretriz nº PM3-001/03/25, analise as proposições.\n\nI. O credenciamento se materializa pela emissão de escala de serviço, sem necessidade de inclusão em sistema.\nII. A EEF controla e inclui policiais militares no SITAF ou sistema que venha a substituí-lo.\nIII. O SITAF é utilizado pelas OPM para inserir dados dos treinamentos físicos, avaliações antropométricas, TAF e outras informações necessárias ao acompanhamento.\n\nAssinale a alternativa que reúne apenas as proposições CORRETAS.",
+            "options": [
+              "a) Apenas I.",
+              "b) Apenas II e III.",
+              "c) Apenas I e III.",
+              "d) I, II e III."
+            ],
+            "answer": 1,
+            "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/03/25, item 6.4.2.1; Assuntos Organizacionais.pdf, PDF p. 337. I é falsa porque o credenciamento ocorre por inclusão no SITAF ou sistema substituto. II é verdadeira: cabe à EEF controlar e incluir policiais no sistema. III é verdadeira: o SITAF registra treinamentos, avaliações antropométricas, TAF e demais dados necessários. A inclui apenas a falsa; C inclui I; D também inclui I."
+          },
+
       {
         "id": 1601,
         "subject": "ORGANIZACIONAL",
@@ -25998,21 +26029,22 @@ const BANCO_GERAL_QUESTOES = [
             "answer": 2,
             "explanation": "Gabarito: C. Diretriz nº PM3-003/02/23, item 6.2.3, incisos 6.2.3.1 a 6.2.3.3: os princípios do SCIPM são flexibilidade, padronização e unidade de esforços. B enumera as fases mencionadas no item 3.3, não os princípios. A reúne princípios do Sistema de Comando e Controle da Diretriz nº PM3-001/02/23, item 6.2.2. D corresponde às atividades essenciais do C2 no item 6.3.1 daquela Diretriz."
       },
-      {
+       {
             "id": 1737,
             "subject": "OPERACIONAL",
             "tag": "SCIPM",
-            "topic": "SCIPM — finalidade do fluxo de informações no ICS",
-            "text": "QUESTÃO 1737 — Na contextualização da Diretriz sobre a origem do ICS, qual finalidade do fluxo de informações é destacada?",
+            "topic": "SCIPM — fluxo de informações e tomada de decisão no ICS",
+            "text": "QUESTÃO 1737 — A Diretriz nº PM3-003/02/23 apresenta a origem histórica da metodologia do Incident Command System (ICS). Qual relação entre fluxo de informações e gestão do incidente é destacada no item 3.2?",
             "options": [
-                  "a) A metodologia do ICS restringe o fluxo de informações ao comando político, sem conexão com operadores.",
-                  "b) A metodologia do ICS surgiu para substituir a comunicação operacional por relatórios posteriores ao incidente.",
-                  "c) A metodologia do ICS foi concebida para centralizar exclusivamente a gestão de pessoal, sem influência sobre decisões.",
-                  "d) A metodologia histórica do ICS surgiu para apoiar o fluxo de informações voltado à tomada de decisão e à otimização dos recursos disponíveis."
+              "a) Apoiar o fluxo de informações voltado à tomada de decisão e à otimização dos recursos disponíveis.",
+              "b) Uniformizar exclusivamente a elaboração de relatórios posteriores, sem interferir no processo decisório durante o incidente.",
+              "c) Centralizar a comunicação no comando político-estratégico, limitando a difusão de informações às equipes operacionais.",
+              "d) Priorizar a gestão administrativa de pessoal e materiais, sem relação com o fluxo de informações operacionais."
             ],
-            "answer": 3,
-            "explanation": "Gabarito: D. Diretriz nº PM3-003/02/23, item 3.2: a contextualização histórica relaciona o ICS à metodologia de atendimento de ocorrências críticas por fluxo de informações para tomada de decisão e otimização dos recursos. B, C e A negam ou restringem os elementos expressamente descritos, substituindo o fluxo decisório por relatório posterior, gestão exclusiva de pessoal ou comunicação apenas política."
-      },
+            "answer": 0,
+            "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-003/02/23, item 3.2; Assuntos Operacionais.pdf, PDF p. 141. O item relaciona a metodologia a fluxo de informações destinado à tomada de decisão e à otimização dos recursos disponíveis. B restringe indevidamente os destinatários; C desloca o fluxo para o período posterior; D elimina sua função decisória."
+          },
+
       {
             "id": 1738,
             "subject": "OPERACIONAL",
@@ -26437,17 +26469,18 @@ const BANCO_GERAL_QUESTOES = [
             "id": 1766,
             "subject": "ORGANIZACIONAL",
             "tag": "I-2-PM",
-            "topic": "Movimentação de policiais militares — RPT",
-            "text": "QUESTÃO 1766 — Na sigla utilizada pelas I-2-PM, RPT corresponde a:",
+            "topic": "I-2-PM — movimentação e instrumentos de priorização",
+            "text": "QUESTÃO 1766 — Após preencher as condições previstas para movimentação por conveniência própria, um oficial e uma praça são analisados em situação equivalente. Conforme o art. 11 das I-2-PM, qual encaminhamento distingue corretamente as duas situações?",
             "options": [
-                  "a) Relação de Prioridade de Transferência, prevista para praça após preenchidas as condições do art. 9º.",
-                  "b) Banco de Dados de Oficiais, utilizado indistintamente para oficiais e praças.",
-                  "c) Relação de Prioridade de Transferência, utilizada exclusivamente para oficiais superiores.",
-                  "d) Registro de Preferência de Transferência, que garante movimentação imediata à OPM indicada."
+              "a) Ambos são incluídos na Relação de Prioridade de Transferência (RPT), sem distinção por categoria funcional.",
+              "b) O oficial pode ser movimentado ou incluído no banco de dados; a praça pode ser movimentada ou incluída na RPT.",
+              "c) O oficial é incluído na RPT e a praça no banco de dados, por serem instrumentos de aplicação inversa.",
+              "d) Ambos devem ser movimentados imediatamente para a OPM indicada, pois o preenchimento das condições assegura a escolha da unidade."
             ],
-            "answer": 0,
-            "explanation": "Gabarito: A. I-2-PM, art. 11: preenchidas as condições, o oficial será movimentado ou incluído no banco de dados, e a praça será movimentada ou incluída na Relação de Prioridade de Transferência (RPT). B confunde os dois instrumentos; C inverte a categoria funcional a que se destina a RPT; D altera a denominação e atribui efeito automático que o artigo não prevê."
-      },
+            "answer": 1,
+            "explanation": "Gabarito: B. Fundamentação: I-2-PM, art. 11; Assuntos Organizacionais.pdf, PDF p. 58. O artigo distingue banco de dados para oficial e Relação de Prioridade de Transferência para praça, sem excluir a possibilidade de movimentação. A e C invertem ou eliminam a distinção; D transforma a possibilidade normativa em garantia de movimentação imediata para a OPM escolhida."
+          },
+
       {
             "id": 1767,
             "subject": "ORGANIZACIONAL",
