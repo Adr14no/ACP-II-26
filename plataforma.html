@@ -44,6 +44,31 @@
       #authGuard .auth-guard-card{max-width:440px;border:1px solid #d4af37;border-radius:16px;padding:28px;background:#1a2744;box-shadow:0 20px 60px rgba(0,0,0,.35)}
       #authGuard p{line-height:1.6;color:#cbd5e1}
         /* Layout ACP: identidade neutra, sem associação visual oficial à PMESP. */
+        .progress-dashboard { background:linear-gradient(145deg,#071a2a 0%,#061321 72%);border:1px solid rgba(48,75,99,.65);box-shadow:0 14px 32px rgba(0,0,0,.22); }
+        .progress-heading { display:flex;align-items:center;gap:9px;margin:0 0 12px;padding-bottom:10px;border-bottom:1px solid rgba(148,163,184,.16);font-size:11px;font-weight:800;letter-spacing:.055em;text-transform:uppercase;color:#dbe4ef; }
+        .progress-heading-icon { display:grid;place-items:center;color:#f0b429;font-size:15px; }
+        .progress-main { display:grid;grid-template-columns:minmax(100px, .9fr) minmax(0,1.1fr);align-items:center;gap:14px;padding:2px 0 12px; }
+        .progress-ring { position:relative;width:clamp(104px,9vw,142px);aspect-ratio:1;justify-self:center; }
+        .progress-ring svg { width:100%;height:100%;transform:rotate(-90deg);overflow:visible; }
+        .progress-ring circle { fill:none;stroke-width:9; }
+        .progress-ring-track { stroke:#1b2c40; }
+        .progress-ring-value { stroke:#f2b51d;stroke-linecap:round;stroke-dasharray:307.876;stroke-dashoffset:307.876;transition:stroke-dashoffset .35s ease;filter:drop-shadow(0 0 3px rgba(242,181,29,.2)); }
+        .progress-ring-center { position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px; }
+        .progress-ring-center strong { font-size:clamp(22px,2vw,31px);line-height:1.1;font-weight:900;color:#f8fafc; }
+        .progress-ring-center span { font-size:10px;color:#cbd5e1; }
+        .progress-legend { display:grid;gap:11px; }
+        .progress-legend-row { display:grid;grid-template-columns:12px 24px minmax(0,1fr);align-items:center;gap:8px;font-size:11px;color:#d1dbe7;white-space:nowrap; }
+        .progress-legend-row strong { color:#f1f5f9;font-size:12px;font-weight:800;text-align:right; }
+        .progress-dot { width:10px;height:10px;border-radius:50%;display:block; }
+        .progress-dot.correct { background:#10b981; } .progress-dot.wrong { background:#ef4444; } .progress-dot.unanswered { background:#f5b91b; } .progress-dot.remaining { background:#7b8da3; }
+        .progress-footer { display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(148,163,184,.16);padding-top:12px; }
+        .progress-footer > div { display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0; }
+        .progress-footer > div+div { border-left:1px solid rgba(148,163,184,.16); }
+        .progress-footer span { font-size:9px;text-transform:uppercase;letter-spacing:.04em;color:#cbd5e1;text-align:center; }
+        .progress-footer strong { font-size:22px;line-height:1.1;font-weight:900;color:#f5b91b; }
+        .progress-footer > div+div strong { color:#22b8f0; }
+        .progress-hidden { display:none !important; }
+        @media(max-width:500px) { .progress-main { grid-template-columns:110px minmax(0,1fr);gap:8px; } .progress-legend {gap:8px;} .progress-legend-row {font-size:10px;gap:5px;} .progress-footer strong {font-size:19px;} }
         /* Ajustes visuais pós-validação do mockup. */
         @media (min-width: 1100px) {
             body:has(#questionContainer) .exam-main { grid-template-columns:minmax(0,1fr) 360px !important; gap:18px !important; padding:18px 22px !important; }
@@ -601,28 +626,30 @@
         <aside class="flex flex-col gap-4">
 
             <!-- Painel de Progresso: visível no Modo Estudo; oculto no Modo Prova -->
-            <div id="progressPanel" class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg">
-                <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-2">
-                    <i class="fa-solid fa-chart-pie text-pm-gold"></i> Painel de Progresso
-                </h3>
-                <div class="grid grid-cols-3 gap-2 text-center text-xs mb-3">
-                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
-                        <div class="text-emerald-400 font-bold text-lg" id="statCorrect">0</div>
-                        <div class="text-[10px] text-slate-400">Acertos</div>
+            <div id="progressPanel" class="progress-dashboard rounded-2xl p-4 sm:p-5">
+                <h3 class="progress-heading"><span class="progress-heading-icon"><i class="fa-solid fa-chart-pie"></i></span> Painel de Progresso</h3>
+                <div class="progress-main">
+                    <div class="progress-ring" id="progressRing" role="img" aria-label="Progresso do simulado: 0 por cento">
+                        <svg viewBox="0 0 120 120" aria-hidden="true">
+                            <circle class="progress-ring-track" cx="60" cy="60" r="49"></circle>
+                            <circle id="progressRingValue" class="progress-ring-value" cx="60" cy="60" r="49"></circle>
+                        </svg>
+                        <div class="progress-ring-center"><strong id="progressRingPercent">0%</strong><span>Concluído</span></div>
                     </div>
-                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
-                        <div class="text-rose-400 font-bold text-lg" id="statWrong">0</div>
-                        <div class="text-[10px] text-slate-400">Erros</div>
-                    </div>
-                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
-                        <div class="text-amber-400 font-bold text-lg" id="statPending">0</div>
-                        <div class="text-[10px] text-slate-400">Pendentes</div>
+                    <div class="progress-legend">
+                        <div class="progress-legend-row"><span class="progress-dot correct"></span><strong id="statCorrect">0</strong><span>Acertos</span></div>
+                        <div class="progress-legend-row"><span class="progress-dot wrong"></span><strong id="statWrong">0</strong><span>Erros</span></div>
+                        <div class="progress-legend-row"><span class="progress-dot unanswered"></span><strong id="statPending">0</strong><span>Não respondidas</span></div>
+                        <div class="progress-legend-row"><span class="progress-dot remaining"></span><strong id="statRemaining">0</strong><span>Restantes</span></div>
                     </div>
                 </div>
-                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden border border-pm-border mb-1">
-                    <div id="progBar" class="bg-pm-gold h-full w-0 transition-all duration-300"></div>
+                <div class="progress-footer">
+                    <div><span>Pontuação atual</span><strong id="progressScore">0/0</strong></div>
+                    <div><span>Nota estimada</span><strong id="progressGrade">0.0%</strong></div>
                 </div>
-                <div class="text-[11px] text-slate-400 text-right font-mono" id="progPercent">0% concluído</div>
+                <div class="progress-hidden" aria-hidden="true">
+                    <div id="progBar"></div><span id="progPercent">0% concluído</span>
+                </div>
             </div>
 
             <!-- Cartão de Respostas Interativo -->
