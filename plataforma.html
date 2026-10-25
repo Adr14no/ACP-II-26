@@ -357,10 +357,24 @@ body:has(#questionContainer) #questionsGrid button{min-height:38px}
   #modalInstrucoes .mobile-panel-tabs { display:none !important; }
 }
 
+
+/* ACP dashboard — paleta institucional azul-marinho e dourado */
+.acp-dashboard{display:block}.acp-dashboard[hidden]{display:none!important}
+.acp-welcome{position:relative;overflow:hidden;padding:clamp(22px,3vw,32px);border:1px solid rgba(234,191,58,.28);border-radius:20px;background:linear-gradient(115deg,#172b49,#0d1b30 68%,#0b1729);box-shadow:0 20px 45px #0003}
+.acp-welcome:after{content:"ACP";position:absolute;right:22px;bottom:-42px;font-weight:1000;font-size:clamp(90px,12vw,140px);letter-spacing:.04em;color:rgba(234,191,58,.045);pointer-events:none}
+.acp-tag{display:inline-flex;padding:5px 9px;border:1px solid rgba(234,191,58,.25);border-radius:999px;color:#f5d46a;background:#eabf3a12;font-size:10px;font-weight:850;letter-spacing:.08em}
+.acp-welcome h2{font-size:clamp(25px,3vw,36px);font-weight:900;margin:13px 0 8px;color:#f8fafc}.acp-welcome p{max-width:680px;color:#c4cfdd;margin:0}
+.acp-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:21px}.acp-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:11px;padding:11px 15px;border:1px solid rgba(234,191,58,.22);background:#13243d;color:#dce5f1;font-weight:800}.acp-btn-gold{background:linear-gradient(135deg,#f2cf59,#d9a92b);color:#111b2a;border-color:#f3d66e;box-shadow:0 8px 24px #eabf3a20}
+.acp-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:17px}.acp-metric,.acp-panel{border:1px solid rgba(255,255,255,.075);background:linear-gradient(145deg,#101f37,#0b182b);border-radius:16px;box-shadow:0 12px 30px #0002}.acp-metric{padding:17px}.acp-metric>div:first-child{display:flex;align-items:center;justify-content:space-between;gap:8px;color:#aab7ca;font-size:11px;font-weight:800;text-transform:uppercase}.acp-metric>div:first-child i{color:#eabf3a}.acp-metric strong{display:block;font-size:29px;letter-spacing:-.04em;margin:9px 0 3px;color:#f8fafc}.acp-metric small,.acp-muted{color:#aab7ca;font-size:12px}.acp-track{height:6px;background:#24334b;border-radius:99px;overflow:hidden}.acp-track i{height:100%;width:0;display:block;background:linear-gradient(90deg,#b78b20,#f5d46a);transition:width .2s}
+.acp-dashboard-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(280px,1fr);gap:15px;margin-top:16px}.acp-panel{padding:20px}.acp-panel h3{font-size:16px;font-weight:850;margin:0 0 4px;color:#f8fafc}.acp-muted{margin:0 0 14px}.acp-area{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:13px 0;border:0;border-top:1px solid #ffffff10;background:transparent;color:#f8fafc}.acp-area:hover strong,.acp-arrow{color:#f5d46a}.acp-area-icon{width:42px;height:42px;flex:none;display:grid;place-items:center;border-radius:12px;border:1px solid rgba(234,191,58,.3);background:#eabf3a10;color:#eabf3a;font-size:17px}.acp-area span:nth-child(2){min-width:0;flex:1}.acp-area strong,.acp-area small{display:block}.acp-area strong{font-size:12px}.acp-area small{font-size:11px;color:#aab7ca;margin-top:3px}.acp-step{display:flex;gap:11px;margin-top:16px;align-items:flex-start}.acp-step>b{width:27px;height:27px;flex:none;border-radius:8px;background:#eabf3a18;border:1px solid rgba(234,191,58,.2);color:#f5d46a;display:grid;place-items:center;font-size:12px}.acp-step strong,.acp-step small{display:block}.acp-step strong{font-size:12px}.acp-step small{color:#aab7ca;font-size:11px;margin-top:2px}.acp-note{margin-top:18px;padding:11px;border:1px solid rgba(234,191,58,.15);border-radius:10px;background:#eabf3a08;color:#c5d0df;font-size:11px}.acp-note i{color:#f5d46a;margin-right:5px}
+body.acp-dashboard-mode nav.bg-pm-lightBg,body.acp-dashboard-mode main.exam-main{display:none!important}
+@media(max-width:1050px){.acp-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.acp-dashboard-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.acp-dashboard{padding-top:15px;padding-bottom:24px}.acp-welcome{padding:22px 18px}.acp-metrics{gap:9px}.acp-metric{padding:12px}.acp-metric>div:first-child{font-size:9px}.acp-metric strong{font-size:24px}.acp-dashboard-grid{grid-template-columns:1fr}.acp-panel{padding:16px}.acp-actions .acp-btn{flex:1}}
+
 </style>
 
 </head>
-<body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
+<body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy" class="acp-dashboard-mode">
     <aside class="exam-brand-rail" aria-label="Navegação ACP">
         <div class="exam-brand-lockup">
             <div class="exam-brand-mark" aria-hidden="true"><svg width="76" height="54" viewBox="0 0 76 54" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A" fill-opacity=".92"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
@@ -417,6 +431,39 @@ body:has(#questionContainer) #questionsGrid button{min-height:38px}
                     </div>
                 </div>
             </header>
+
+<!-- Painel inicial ACP: permanece nesta página e utiliza os dados reais da aplicação -->
+<section id="acpDashboard" class="acp-dashboard mx-auto max-w-7xl w-full px-4 py-6 sm:px-6 lg:px-8">
+  <div class="acp-welcome">
+    <span class="acp-tag"><i class="fa-solid fa-shield-halved mr-1"></i> ÁREA DO ALUNO · ACP</span>
+    <h2 id="acpWelcomeName">Bem-vindo à ACP.</h2>
+    <p>Continue seu aperfeiçoamento profissional. Acompanhe suas estatísticas e acesse as questões nas três áreas oficiais de estudo.</p>
+    <div class="acp-actions">
+      <button type="button" id="acpCreateQuiz" class="acp-btn acp-btn-gold"><i class="fa-solid fa-play"></i> Criar novo simulado</button>
+      <button type="button" id="acpContinueQuiz" class="acp-btn"><i class="fa-solid fa-book-open"></i> Continuar questões</button>
+    </div>
+  </div>
+  <div class="acp-metrics">
+    <article class="acp-metric"><div>Questões respondidas <i class="fa-solid fa-list-check"></i></div><strong id="acpMetricAnswered">0</strong><small>Na sessão atual</small></article>
+    <article class="acp-metric"><div>Taxa de acerto <i class="fa-solid fa-bullseye"></i></div><strong id="acpMetricAccuracy">—</strong><div class="acp-track"><i id="acpMetricAccuracyBar"></i></div></article>
+    <article class="acp-metric"><div>Questões pendentes <i class="fa-regular fa-clock"></i></div><strong id="acpMetricPending">0</strong><small>Da seleção atual</small></article>
+    <article class="acp-metric"><div>Questões disponíveis <i class="fa-solid fa-layer-group"></i></div><strong id="acpMetricTotal">0</strong><small>No banco carregado</small></article>
+  </div>
+  <div class="acp-dashboard-grid">
+    <section class="acp-panel"><h3>Áreas de estudo da ACP</h3><p class="acp-muted">Acesse as categorias que correspondem ao conteúdo existente na plataforma.</p>
+      <button class="acp-area" type="button" data-acp-area="JURIDICO"><span class="acp-area-icon"><i class="fa-solid fa-scale-balanced"></i></span><span><strong>Assuntos Jurídico-Administrativos</strong><small>Normas, legislação e diretrizes cadastradas</small></span><i class="fa-solid fa-arrow-right acp-arrow"></i></button>
+      <button class="acp-area" type="button" data-acp-area="ORGANIZACIONAL"><span class="acp-area-icon"><i class="fa-solid fa-building-columns"></i></span><span><strong>Assuntos Organizacionais</strong><small>Conteúdos organizacionais cadastrados</small></span><i class="fa-solid fa-arrow-right acp-arrow"></i></button>
+      <button class="acp-area" type="button" data-acp-area="OPERACIONAL"><span class="acp-area-icon"><i class="fa-solid fa-crosshairs"></i></span><span><strong>Assuntos Operacionais</strong><small>Doutrina e conteúdos operacionais cadastrados</small></span><i class="fa-solid fa-arrow-right acp-arrow"></i></button>
+    </section>
+    <section class="acp-panel"><h3>Como começar</h3><p class="acp-muted">Tudo acontece na própria página, sem abrir uma aplicação de simulado separada.</p>
+      <div class="acp-step"><b>1</b><span><strong>Escolha a área ou crie um simulado</strong><small>Use o banco de questões já carregado pela ACP.</small></span></div>
+      <div class="acp-step"><b>2</b><span><strong>Responda e marque questões</strong><small>Navegue pelas questões e utilize o cartão de respostas.</small></span></div>
+      <div class="acp-step"><b>3</b><span><strong>Acompanhe seu desempenho</strong><small>As estatísticas acima são calculadas a partir do estado real da sessão.</small></span></div>
+      <div class="acp-note"><i class="fa-solid fa-circle-info"></i> As métricas desta tela não inventam histórico anterior; representam a sessão e o banco atualmente carregados.</div>
+    </section>
+  </div>
+</section>
+
 
             <!-- Banner com imagem da bandeira paulista; manter bandeira-sp-banner.png na raiz do repositório -->
             <section class="relative isolate overflow-hidden border-b border-pm-border/70">
@@ -934,6 +981,21 @@ body:has(#questionContainer) #questionsGrid button{min-height:38px}
         let cursoAtivo = cursoInicial;
 
         document.addEventListener("DOMContentLoaded", function() {
+            const dashboard = document.getElementById('acpDashboard');
+            const showQuestions = (newSimulado = false, area = null) => {
+                document.body.classList.remove('acp-dashboard-mode');
+                if (dashboard) dashboard.hidden = true;
+                if (area) setSubjectFilter(area);
+                if (newSimulado) {
+                    if (typeof confirmarNovoSimulado === 'function') confirmarNovoSimulado();
+                    else if (typeof gerarEIniciarNovoSimulado === 'function') gerarEIniciarNovoSimulado();
+                }
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            };
+            document.getElementById('acpCreateQuiz')?.addEventListener('click', () => showQuestions(true));
+            document.getElementById('acpContinueQuiz')?.addEventListener('click', () => showQuestions(false));
+            document.querySelectorAll('[data-acp-area]').forEach(button => button.addEventListener('click', () => showQuestions(true, button.dataset.acpArea)));
+
             if (!cursoInicial) {
                 document.getElementById('courseLanding').classList.remove('hidden');
                 if (acessoCAOBloqueado) abrirModalCAOConstrucao();
@@ -1362,6 +1424,7 @@ body:has(#questionContainer) #questionsGrid button{min-height:38px}
             document.getElementById('resultsContainer').classList.add('hidden');
             document.getElementById('questionContainer').classList.remove('hidden');
             updateSubjectCounts(); updateFilteredQuestions(); renderQuestionGrid(); displayCurrentQuestion(); updateRealtimeStats();
+            document.getElementById('acpMetricTotal') && (document.getElementById('acpMetricTotal').textContent = questionsDatabase.length);
             saveStateToLocalStorage();
         }
 
@@ -1734,6 +1797,16 @@ body:has(#questionContainer) #questionsGrid button{min-height:38px}
 
             const pending = total - answered;
             const pct = total > 0 ? Math.round((answered / total) * 100) : 0;
+            const acpAnswered = document.getElementById('acpMetricAnswered');
+            if (acpAnswered) acpAnswered.textContent = answered;
+            const acpPending = document.getElementById('acpMetricPending');
+            if (acpPending) acpPending.textContent = pending;
+            const acpTotal = document.getElementById('acpMetricTotal');
+            if (acpTotal) acpTotal.textContent = total;
+            const acpAccuracy = document.getElementById('acpMetricAccuracy');
+            if (acpAccuracy) acpAccuracy.textContent = answered ? `${Math.round(correct / answered * 100)}%` : '—';
+            const acpAccuracyBar = document.getElementById('acpMetricAccuracyBar');
+            if (acpAccuracyBar) acpAccuracyBar.style.width = (answered ? correct / answered * 100 : 0) + '%';
 
             const progressPanel = document.getElementById('progressPanel');
             // O progresso só aparece no Modo Estudo.
@@ -1999,6 +2072,10 @@ body:has(#questionContainer) #questionsGrid button{min-height:38px}
         // Libera a plataforma normalmente; a checagem administrativa é complementar.
         accessDecisionMade = true;
         if (guard) guard.remove();
+        const acpGreetingName = (user.displayName || user.email?.split('@')[0] || 'aluno').trim().split(/[\\s._-]+/).filter(Boolean)[0] || 'aluno';
+        const acpWelcome = document.getElementById('acpWelcomeName');
+        if (acpWelcome) acpWelcome.textContent = `Bem-vindo, ${acpGreetingName}.`;
+
 
         // Migra o histórico local do navegador para a conta autenticada e mantém o cache de 72 horas.
         try {
