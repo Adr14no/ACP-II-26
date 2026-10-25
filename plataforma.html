@@ -44,37 +44,81 @@
       #authGuard .auth-guard-card{max-width:440px;border:1px solid #d4af37;border-radius:16px;padding:28px;background:#1a2744;box-shadow:0 20px 60px rgba(0,0,0,.35)}
       #authGuard p{line-height:1.6;color:#cbd5e1}
         /* Layout ACP: identidade neutra, sem associação visual oficial à PMESP. */
-        @media (min-width: 1280px) {
-            body:has(#questionContainer) { padding-left: 174px; }
+        /* ACP redesign: shell lateral, cabeçalho enxuto e área de questão ampla. */
+        @media (min-width: 1100px) {
+            body:has(#questionContainer) { padding-left: 226px; }
             body:has(#questionContainer) > .exam-brand-rail { display:flex; }
             body:has(#questionContainer) > header { padding-left: 0; }
+            body:has(#questionContainer) > nav { display:none; }
+            body:has(#questionContainer) .exam-main { max-width:none; width:100%; padding:20px 24px; grid-template-columns:minmax(0,1fr) 390px; gap:20px; }
+            body:has(#questionContainer) .exam-main > section { grid-column:1; min-width:0; }
+            body:has(#questionContainer) .exam-main > aside { grid-column:2; min-width:0; }
+            body:has(#questionContainer) > header > div { max-width:none; padding:12px 24px; flex-direction:row; }
+            body:has(#questionContainer) > header > div > div:first-child { gap:12px; }
+            body:has(#questionContainer) > header > div > div:first-child .exam-header-brandmark { display:grid; }
+            body:has(#questionContainer) > header > div > div:last-child { margin-left:auto; }
+            body:has(#questionContainer) .exam-header-controls > a,
+            body:has(#questionContainer) .exam-header-controls > button:not(#finalizeExamTop),
+            body:has(#questionContainer) .exam-header-controls > div:not(#timerDisplayWrap) { display:none !important; }
+            body:has(#questionContainer) .exam-header-controls #timerDisplayWrap { display:flex; }
+            body:has(#questionContainer) .exam-question-toolbar { display:flex; }
         }
         .exam-brand-rail {
-            display:none; position:fixed; z-index:40; inset:0 auto 0 0; width:174px;
-            flex-direction:column; align-items:center; justify-content:flex-start; gap:18px;
-            padding:24px 12px; overflow:hidden; background:#071629;
-            border-right:1px solid rgba(212,175,55,.25);
+            display:none; position:fixed; z-index:60; inset:0 auto 0 0; width:226px;
+            flex-direction:column; align-items:stretch; gap:12px; padding:24px 14px 18px;
+            overflow-y:auto; background:#061321; border-right:1px solid rgba(212,175,55,.25);
         }
         .exam-brand-rail::before {
             content:""; position:absolute; inset:0; background:
-              linear-gradient(180deg,rgba(5,16,32,.45),rgba(5,16,32,.92)),
-              url("bandeira-sp-banner-v2.png") center/cover no-repeat; opacity:.72;
+              linear-gradient(180deg,rgba(3,12,24,.45),rgba(3,12,24,.94)),
+              url("bandeira-sp-banner-v2.png") center/cover no-repeat; opacity:.85;
         }
         .exam-brand-rail > * { position:relative; z-index:1; }
-        .exam-brand-mark { width:66px;height:66px;border-radius:18px;display:grid;place-items:center;
-            border:1px solid rgba(212,175,55,.75);background:rgba(7,19,38,.78);color:#d4af37;font-size:28px; }
-        .exam-brand-name { text-align:center;font-size:12px;font-weight:900;letter-spacing:.12em;color:#f8fafc; }
-        .exam-brand-sub { text-align:center;font-size:10px;line-height:1.6;color:#cbd5e1; }
-        @media (max-width:1279px) { .exam-brand-rail { display:none !important; } }
+        .exam-brand-lockup { display:flex;flex-direction:column;align-items:center;gap:9px;padding:8px 4px 22px;border-bottom:1px solid rgba(148,163,184,.18); }
+        .exam-brand-mark { width:72px;height:58px;display:grid;place-items:center;color:#f0b429;font-size:40px; }
+        .exam-brand-name { text-align:center;font-size:28px;line-height:1;font-weight:900;letter-spacing:.03em;color:#f8fafc; }
+        .exam-brand-sub { text-align:center;font-size:11px;line-height:1.6;color:#cbd5e1;letter-spacing:.08em; }
+        .exam-side-links { display:grid;gap:6px;margin-top:8px; }
+        .exam-side-links a,.exam-side-links button { display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:1px solid transparent;border-radius:10px;background:transparent;color:#dbe5f3;text-align:left;font-size:13px;font-weight:700; }
+        .exam-side-links a:hover,.exam-side-links button:hover { border-color:rgba(212,175,55,.38);background:rgba(212,175,55,.09);color:#f5c64c; }
+        .exam-side-links .side-primary { border-left:3px solid #e8b923;background:rgba(212,175,55,.12);color:#f5c64c; }
+        .exam-side-links .side-divider { height:1px;background:rgba(148,163,184,.18);margin:8px 0; }
+        .exam-side-bottom { margin-top:auto;padding:18px 6px 0;font-size:10px;line-height:1.7;color:#cbd5e1;text-align:center; }
+        .exam-header-controls { display:flex;align-items:center;justify-content:flex-end;gap:12px; }
+        .exam-header-brandmark { display:none; width:42px;height:42px;place-items:center;border:1px solid rgba(212,175,55,.55);border-radius:12px;color:#f0b429;font-size:24px; }
+        .exam-question-toolbar { display:none;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid rgba(148,163,184,.18); }
+        .exam-question-toolbar .exam-modes { display:flex;gap:6px;flex-wrap:wrap; }
+        .exam-question-toolbar .exam-filters { display:flex;gap:6px;flex-wrap:wrap; }
+        @media (max-width:1099px) {
+            .exam-brand-rail { display:none !important; }
+            body:has(#questionContainer) > nav { display:block; }
+            body:has(#questionContainer) .exam-main { grid-template-columns:1fr; }
+            body:has(#questionContainer) .exam-main > aside { grid-column:1; }
+            body:has(#questionContainer) .exam-question-toolbar { display:flex; }
+        }
     </style>
 
 </head>
 <body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
-    <aside class="exam-brand-rail" aria-label="Identidade visual do ambiente ACP">
-        <div class="exam-brand-mark"><i class="fa-solid fa-graduation-cap"></i></div>
-        <div class="exam-brand-name">ACP</div>
-        <div class="exam-brand-sub">AMBIENTE DE<br>PREPARAÇÃO<br>PROFISSIONAL</div>
-        <div style="margin-top:auto;text-align:center;font-size:10px;line-height:1.6;color:#cbd5e1">Estudo contínuo.<br>Evolução profissional.</div>
+    <aside class="exam-brand-rail" aria-label="Navegação ACP">
+        <div class="exam-brand-lockup">
+            <div class="exam-brand-mark" aria-hidden="true"><svg width="76" height="54" viewBox="0 0 76 54" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A" fill-opacity=".92"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div class="exam-brand-name">ACP</div>
+            <div class="exam-brand-sub">AMBIENTE DE<br>PREPARAÇÃO<br>PROFISSIONAL</div>
+        </div>
+        <div class="exam-side-links">
+            <button type="button" class="side-primary" onclick="document.getElementById('questionContainer')?.scrollIntoView({behavior:'smooth',block:'start'})"><i class="fa-regular fa-rectangle-list"></i> Simulado</button>
+            <a href="perfil-usuario.html"><i class="fa-regular fa-chart-bar"></i> Desempenho / Perfil</a>
+            <button type="button" onclick="voltarSelecaoCursos()"><i class="fa-solid fa-layer-group"></i> Cursos</button>
+            <button type="button" onclick="abrirModalPersonalizado()"><i class="fa-solid fa-sliders"></i> Personalizado</button>
+            <button type="button" onclick="confirmarNovoSimulado()"><i class="fa-solid fa-rotate"></i> Novo Simulado</button>
+            <div class="side-divider"></div>
+            <button type="button" onclick="setMode('exam')"><i class="fa-solid fa-file-pen"></i> Modo Prova</button>
+            <button type="button" onclick="setMode('study')"><i class="fa-solid fa-book-open"></i> Modo Estudo</button>
+            <div class="side-divider"></div>
+            <a id="adminPanelLinkSidebar" href="administrador.html" hidden><i class="fa-solid fa-shield-halved"></i> Administração</a>
+        </div>
+        <div class="exam-side-bottom">ESTUDO CONTÍNUO<br>EVOLUÇÃO PROFISSIONAL</div>
     </aside>
     <div id="authGuard" role="status" aria-live="polite">
       <div class="auth-guard-card">
@@ -312,9 +356,7 @@
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-4 text-center md:text-left">
-                <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl border border-pm-gold/60 bg-pm-navy text-pm-gold shadow-inner" aria-hidden="true">
-                    <i class="fa-solid fa-graduation-cap text-2xl"></i>
-                </div>
+                <div class="exam-header-brandmark" aria-hidden="true"><i class="fa-solid fa-book-open"></i></div>
                 <div>
                     <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Plataforma de Aperfeiçoamento</h1>
                     <h2 id="simuladoTitulo" class="text-base sm:text-lg font-extrabold text-white">ACP</h2>
@@ -323,7 +365,7 @@
             </div>
 
             <!-- Seletor de cursos e controles do simulado -->
-            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            <div class="exam-header-controls">
                 <a href="perfil-usuario.html" title="Abrir perfil e segurança da conta" aria-label="Perfil do usuário" class="group flex items-center gap-2 rounded-xl border border-pm-gold/50 bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-slate-200 transition hover:border-pm-gold hover:text-pm-gold">
                     <span class="flex h-8 w-8 items-center justify-center rounded-full border border-pm-gold/70 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-user"></i></span>
                     <span>Perfil</span>
@@ -335,7 +377,7 @@
                 <button type="button" onclick="voltarSelecaoCursos()" title="Voltar à seleção de cursos" class="rounded-xl border border-pm-border bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-slate-200 transition hover:border-pm-gold/60 hover:text-pm-gold">
                     <i class="fa-solid fa-layer-group mr-1.5"></i> Cursos
                 </button>
-                <div class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
+                <div id="timerDisplayWrap" class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
                     <div id="timerDisplay" class="flex items-center gap-2 font-mono font-bold text-xl text-pm-gold">
                         <i class="fa-regular fa-clock text-base text-slate-400"></i>
                         <span>02:30:00</span>
@@ -356,7 +398,7 @@
         </div>
     </header>
 
-    <!-- Barra de Navegação e Filtros -->
+    <!-- Barra de Navegação e Filtros (mantida para telas menores) -->
     <nav class="bg-pm-lightBg border-b border-pm-border py-3 px-4">
         <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
             <!-- Alternador de Modos -->
@@ -392,6 +434,10 @@
 
             <!-- Card da Questão Ativa -->
             <div id="questionContainer" class="bg-pm-cardBg border border-pm-border rounded-xl shadow-xl p-5 sm:p-7 flex flex-col justify-between min-h-[500px]">
+                <div class="exam-question-toolbar" id="examQuestionToolbar" aria-label="Modos e filtros de questões">
+                    <div class="exam-modes" id="examModesMount"></div>
+                    <div class="exam-filters" id="examFiltersMount"></div>
+                </div>
                 <div>
                     <!-- Cabeçalho da Questão -->
                     <div class="flex flex-wrap items-center justify-between border-b border-pm-border/60 pb-3 mb-4 gap-2">
@@ -1569,6 +1615,23 @@
       import { isAdminUser } from "./admin-access.js";
 
       auth.languageCode = 'pt-BR';
+      // Move os controles existentes para os novos pontos de layout sem recriar suas funções.
+      const examNav = document.querySelector('body > nav');
+      const toolbar = document.getElementById('examQuestionToolbar');
+      if (examNav && toolbar && window.matchMedia('(min-width: 1100px)').matches) {
+        const navInner = examNav.firstElementChild;
+        const modeGroup = navInner?.children[0];
+        const filtersGroup = navInner?.children[1];
+        if (modeGroup) document.getElementById('examModesMount')?.appendChild(modeGroup);
+        if (filtersGroup) document.getElementById('examFiltersMount')?.appendChild(filtersGroup);
+      }
+      const oldAdminLink = document.getElementById('adminPanelLinkCourse');
+      const sideAdminLink = document.getElementById('adminPanelLinkSidebar');
+      if (oldAdminLink && sideAdminLink) {
+        const syncAdminVisibility = () => { sideAdminLink.hidden = oldAdminLink.hidden; };
+        new MutationObserver(syncAdminVisibility).observe(oldAdminLink, {attributes:true, attributeFilter:['hidden','class']});
+        syncAdminVisibility();
+      }
       const guard = document.getElementById('authGuard');
       let accessDecisionMade = false;
 
