@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071326">
+<title>Banco de Questões ACP | Avaliação de Competência Profissional</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{--navy:#071326;--navy2:#0b1b32;--card:#101f37;--card2:#142642;--gold:#eabf3a;--gold2:#f5d46a;--white:#f8fafc;--muted:#aab7ca;--line:rgba(234,191,58,.2)}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% -10%,#1b3151 0,transparent 42%),var(--navy);color:var(--white);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.shell{min-height:100vh;display:flex}.sidebar{width:252px;position:fixed;inset:0 auto 0 0;background:linear-gradient(180deg,#081326,#050d1a);border-right:1px solid var(--line);padding:22px 15px;display:flex;flex-direction:column;z-index:20}.brand{display:flex;align-items:center;gap:11px;padding:4px 8px 22px;border-bottom:1px solid var(--line)}.logo{width:46px;height:42px;flex:none}.eyebrow{font-size:9px;color:var(--gold);font-weight:900;letter-spacing:.15em;text-transform:uppercase}.brand h1{font-size:24px;line-height:1.05;margin:3px 0;font-weight:950;letter-spacing:.08em}.brand p{font-size:10px;color:var(--muted);margin:0}.nav{display:grid;gap:6px;margin-top:20px}.nav a{display:flex;align-items:center;gap:12px;padding:12px 13px;border:1px solid transparent;border-radius:12px;color:#aab7ca;font-weight:650}.nav a:hover,.nav a.active{color:var(--gold2);background:linear-gradient(100deg,rgba(234,191,58,.14),rgba(234,191,58,.035));border-color:rgba(234,191,58,.25)}.ico{width:19px;text-align:center;font-size:17px}.sidefoot{margin-top:auto;border-top:1px solid var(--line);padding-top:15px}.user{padding:12px;background:#0d1a2e;border:1px solid rgba(255,255,255,.07);border-radius:13px;display:flex;align-items:center;gap:10px}.avatar{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,#eabf3a,#8e6617);color:#091326;font-weight:900}.user small{display:block;color:var(--muted);font-size:11px}main{margin-left:252px;width:calc(100% - 252px);min-width:0}.topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 28px;background:rgba(7,19,38,.87);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}.top-title{font-size:17px;font-weight:850}.top-title small{display:block;color:var(--muted);font-size:11px;font-weight:500}.top-actions{display:flex;align-items:center;gap:9px}.pill{border:1px solid var(--line);background:#0d1b30;color:var(--gold2);border-radius:10px;padding:8px 11px;font-size:12px;font-weight:800}.menu-toggle{display:none}.content{max-width:1500px;padding:26px;margin:auto}.hero{position:relative;overflow:hidden;padding:30px;border:1px solid rgba(234,191,58,.25);border-radius:20px;background:linear-gradient(115deg,#172b49,#0d1b30 68%,#0b1729);box-shadow:0 20px 45px #0003}.hero:after{content:"ACP";position:absolute;right:22px;bottom:-42px;font-weight:1000;font-size:140px;letter-spacing:.04em;color:rgba(234,191,58,.045);pointer-events:none}.tag{display:inline-flex;padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:var(--gold2);background:#eabf3a12;font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.08em}.hero h2{font-size:clamp(24px,3vw,36px);margin:13px 0 8px;line-height:1.15}.hero p{max-width:700px;color:#c4cfdd;margin:0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:21px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:11px;padding:11px 15px;border:1px solid var(--line);background:#13243d;color:#dce5f1;font-weight:800}.btn.primary{background:linear-gradient(135deg,#f2cf59,#d9a92b);color:#111b2a;border-color:#f3d66e;box-shadow:0 8px 24px #eabf3a20}.btn:hover{filter:brightness(1.08)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:27px 0 14px}.section-head h3{margin:0;font-size:17px}.section-head p{margin:3px 0 0;color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{border:1px solid rgba(255,255,255,.075);background:linear-gradient(145deg,#101f37,#0b182b);border-radius:16px;padding:20px;box-shadow:0 12px 30px #0002;display:flex;flex-direction:column;min-height:225px;transition:.2s}.card:hover{transform:translateY(-2px);border-color:var(--line)}.card-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:13px;border:1px solid rgba(234,191,58,.35);background:#eabf3a10;color:var(--gold);font-size:21px;margin-bottom:15px}.card h4{margin:0 0 7px;font-size:16px}.card p{margin:0;color:var(--muted);font-size:12px;line-height:1.65}.card .card-action{margin-top:auto;padding-top:19px;color:var(--gold2);font-size:12px;font-weight:850}.info-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:15px;margin-top:17px}.panel{padding:20px;border:1px solid rgba(255,255,255,.075);background:linear-gradient(145deg,#101f37,#0b182b);border-radius:16px}.panel h3{margin:0 0 5px;font-size:16px}.panel p{margin:0;color:var(--muted);font-size:12px}.step{display:flex;gap:12px;margin-top:16px;align-items:flex-start}.step-number{width:27px;height:27px;flex:none;border-radius:8px;background:#eabf3a18;border:1px solid var(--line);color:var(--gold2);display:grid;place-items:center;font-size:12px;font-weight:900}.step strong{display:block;font-size:12px}.step span{display:block;color:var(--muted);font-size:11px;margin-top:2px}.scrim{display:none;position:fixed;inset:0;background:#020713aa;z-index:15}.auth-error{max-width:600px;margin:12vh auto;padding:25px;border:1px solid var(--line);border-radius:18px;background:var(--card);display:none}.footer{padding:24px 0 8px;text-align:center;color:#8190a7;font-size:10px}
+@media(max-width:1050px){.sidebar{width:225px}.shell main{margin-left:225px;width:calc(100% - 225px)}.content{padding:20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.info-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.sidebar{width:min(290px,86vw);transform:translateX(-105%);transition:transform .25s ease;box-shadow:18px 0 45px #0007}.sidebar.open{transform:translateX(0)}.scrim.show{display:block}.shell main{margin:0;width:100%}.topbar{padding:12px 15px}.menu-toggle{display:inline-grid;place-items:center;width:39px;height:39px;border:1px solid var(--line);border-radius:10px;background:#102039;color:var(--gold);font-size:19px}.top-title{font-size:15px}.top-actions .pill{display:none}.content{padding:15px}.hero{padding:22px 19px}.hero:after{font-size:95px;right:6px}.hero p{font-size:13px}.grid{grid-template-columns:1fr}.card{min-height:0}.card .card-action{padding-top:13px}.panel{padding:16px}.section-head{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="scrim" id="scrim"></div>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+  <div><div class="brand">
+    <svg class="logo" viewBox="0 0 76 54" fill="none" aria-hidden="true"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg>
+    <div><div class="eyebrow">Plataforma de Aperfeiçoamento</div><h1>ACP</h1><p>Avaliação de Competência Profissional</p></div>
+  </div>
+  <nav class="nav">
+    <a href="plataformaACP.html"><span class="ico"><i class="fa-solid fa-house"></i></span>Início da ACP</a>
+    <a class="active" href="banco-questoes.html"><span class="ico"><i class="fa-solid fa-list-check"></i></span>Banco de questões</a>
+    <a href="perfil-usuario.html"><span class="ico"><i class="fa-regular fa-user"></i></span>Perfil do usuário</a>
+  </nav></div>
+  <div class="sidefoot"><div class="user"><div class="avatar" id="userInitials">ACP</div><div><strong id="sidebarUser">Área do aluno</strong><small id="sidebarEmail">Conta autenticada</small></div></div><p style="font-size:10px;color:#8190a7;margin:12px 4px 0">Elaborado pelo 1º Ten PM Adriano</p></div>
+</aside>
+<main id="appMain">
+<header class="topbar"><div style="display:flex;align-items:center;gap:11px"><button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button><div class="top-title">Banco de questões<small id="headerGreeting">Avaliação de Competência Profissional</small></div></div><div class="top-actions"><span class="pill"><i class="fa-solid fa-shield-halved"></i> Área de estudos ACP</span><a class="pill" href="plataforma.html?curso=ACP">Abrir simulados</a></div></header>
+<div class="content" id="appContent">
+<section class="hero"><span class="tag"><i class="fa-solid fa-book-open"></i>&nbsp; Banco de questões ACP</span><h2 id="welcomeTitle">Bem-vindo à ACP.</h2><p>Retome sua preparação profissional e escolha uma das três áreas oficiais de estudo. A resolução das questões acontece no ambiente de simulado da plataforma, preservando o banco de questões e os recursos já existentes.</p><div class="actions"><a class="btn primary" href="plataforma.html?curso=ACP"><i class="fa-solid fa-play"></i> Acessar banco de questões</a><a class="btn" href="perfil-usuario.html"><i class="fa-regular fa-chart-bar"></i> Ver meu perfil</a></div></section>
+<div class="section-head"><div><h3>Áreas de estudo</h3><p>Organização conforme a página oficial plataformaACP.html.</p></div></div>
+<div class="grid">
+<a class="card" href="plataforma.html?curso=ACP#personalizado"><div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div><h4>Assuntos Jurídico-Administrativos</h4><p>Legislação, normas, diretrizes e referências aplicadas à atividade policial e à administração pública.</p><div class="card-action">Acessar questões <i class="fa-solid fa-arrow-right"></i></div></a>
+<a class="card" href="plataforma.html?curso=ACP#personalizado"><div class="card-icon"><i class="fa-solid fa-building-columns"></i></div><h4>Assuntos Organizacionais</h4><p>Organização, gestão, administração e assuntos institucionais, conforme os conteúdos cadastrados.</p><div class="card-action">Acessar questões <i class="fa-solid fa-arrow-right"></i></div></a>
+<a class="card" href="plataforma.html?curso=ACP#personalizado"><div class="card-icon"><i class="fa-solid fa-crosshairs"></i></div><h4>Assuntos Operacionais</h4><p>Doutrina, diretrizes, procedimentos e emprego operacional, conforme o banco oficial da ACP.</p><div class="card-action">Acessar questões <i class="fa-solid fa-arrow-right"></i></div></a>
+</div>
+<div class="info-grid">
+<div class="panel"><h3>Como começar</h3><p>O banco oficial e a lógica de resolução permanecem na plataforma existente.</p><div class="step"><div class="step-number">1</div><div><strong>Escolha a área de estudo</strong><span>Use uma das três categorias oficiais da ACP.</span></div></div><div class="step"><div class="step-number">2</div><div><strong>Configure o simulado</strong><span>Na página de questões, selecione o modo e os filtros disponíveis.</span></div></div><div class="step"><div class="step-number">3</div><div><strong>Responda e acompanhe seu estudo</strong><span>Use os recursos de navegação, revisão e desempenho disponíveis no simulado.</span></div></div></div>
+<div class="panel"><h3>Importante</h3><p>Esta página é a nova entrada visual para o banco de questões. Ela encaminha para a aplicação de questões já existente, sem criar um banco paralelo ou substituir o histórico.</p><div style="margin-top:16px"><a class="btn primary" style="width:100%" href="plataforma.html?curso=ACP"><i class="fa-solid fa-arrow-right"></i> Ir para o simulado</a></div></div>
+</div>
+<div class="footer">ACP — Avaliação de Competência Profissional · Elaborado pelo 1º Ten PM Adriano</div>
+</div>
+</main></div>
+<div class="auth-error" id="authError"><h2 id="authTitle">Acesso à ACP</h2><p id="authMessage">Verificando sua sessão.</p><p style="margin-top:16px"><a class="btn primary" href="index.html">Voltar ao login</a></p></div>
+<script>
+const sidebar=document.getElementById('sidebar'),scrim=document.getElementById('scrim');function closeMenu(){sidebar.classList.remove('open');scrim.classList.remove('show')}document.getElementById('menuToggle').addEventListener('click',()=>{sidebar.classList.add('open');scrim.classList.add('show')});scrim.addEventListener('click',closeMenu);document.querySelectorAll('.sidebar a').forEach(a=>a.addEventListener('click',closeMenu));
+</script>
+<script type="module">
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+import { auth } from "./firebase-config.js";
+let decided=false;
+onAuthStateChanged(auth,(user)=>{
+ if(decided)return;
+ if(!user){decided=true;document.getElementById('appMain').style.display='none';document.getElementById('authError').style.display='block';document.getElementById('authTitle').textContent='Acesso não autenticado';document.getElementById('authMessage').textContent='Entre com sua conta para acessar o banco de questões da ACP.';return;}
+ decided=true;
+ const display=(user.displayName||'').trim();
+ const fallback=(user.email||'').split('@')[0]||'aluno';
+ const name=display||fallback;
+ const first=name.split(/[\s._-]+/).filter(Boolean)[0]||'aluno';
+ document.getElementById('welcomeTitle').textContent='Bem-vindo, '+first+'.';
+ document.getElementById('headerGreeting').textContent='Olá, '+name+' · Avaliação de Competência Profissional';
+ document.getElementById('sidebarUser').textContent=name;
+ document.getElementById('sidebarEmail').textContent=user.email||'Conta autenticada';
+ document.getElementById('userInitials').textContent=name.split(/\s+/).slice(0,2).map(part=>part[0]).join('').toUpperCase();
+});
+</script>
+</body></html>
