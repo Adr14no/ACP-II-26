@@ -44,6 +44,22 @@
       #authGuard .auth-guard-card{max-width:440px;border:1px solid #d4af37;border-radius:16px;padding:28px;background:#1a2744;box-shadow:0 20px 60px rgba(0,0,0,.35)}
       #authGuard p{line-height:1.6;color:#cbd5e1}
         /* Layout ACP: identidade neutra, sem associação visual oficial à PMESP. */
+        /* Ajustes visuais pós-validação do mockup. */
+        @media (min-width: 1100px) {
+            body:has(#questionContainer) .exam-main { grid-template-columns:minmax(0,1fr) 360px !important; gap:18px !important; padding:18px 22px !important; }
+            body:has(#questionContainer) #questionContainer { min-height:0 !important; padding:22px 24px !important; }
+            body:has(#questionContainer) #questionContainer .exam-question-toolbar { margin-bottom:10px; }
+            body:has(#questionContainer) #questionContainer #qText { font-size:1.05rem; line-height:1.65; }
+            body:has(#questionContainer) #qOptions > * { padding-top:12px !important; padding-bottom:12px !important; }
+            body:has(#questionContainer) #progressPanel { padding:16px !important; }
+            body:has(#questionContainer) #questionsGrid { grid-template-columns:repeat(5,minmax(0,1fr)) !important; max-height:260px !important; gap:7px !important; }
+            body:has(#questionContainer) .exam-brand-rail::before { background:linear-gradient(180deg,rgba(3,12,24,.08),rgba(3,12,24,.62)),url("bandeira-sp-banner-v2.png") center/cover no-repeat; opacity:1; }
+        }
+        .exam-header-brandmark { display:grid !important; width:48px;height:48px;flex:0 0 48px;place-items:center;border:1px solid rgba(234,191,58,.65);border-radius:13px;background:rgba(5,16,32,.65);color:#f0b429;font-size:27px; }
+        .exam-header-brandmark svg { width:42px;height:32px; }
+        #questionInfoPanel { display:block; }
+        #questionInfoPanel .info-row { display:flex;align-items:flex-start;gap:12px;padding:7px 0;color:#cbd5e1;font-size:12px; }
+        #questionInfoPanel .info-row i { width:15px;color:#eabf3a;margin-top:2px; }
         /* ACP redesign: shell lateral, cabeçalho enxuto e área de questão ampla. */
         @media (min-width: 1100px) {
             body:has(#questionContainer) { padding-left: 226px; }
@@ -357,7 +373,7 @@
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-4 text-center md:text-left">
-                <div class="exam-header-brandmark" aria-hidden="true"><i class="fa-solid fa-book-open"></i></div>
+                <div class="exam-header-brandmark" aria-hidden="true"><svg viewBox="0 0 76 54" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A" fill-opacity=".92"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
                 <div>
                     <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Plataforma de Aperfeiçoamento</h1>
                     <h2 id="simuladoTitulo" class="text-base sm:text-lg font-extrabold text-white">ACP</h2>
@@ -612,6 +628,18 @@
 
                 <!-- Grid de Botões Numéricos -->
                 <div id="questionsGrid" class="grid grid-cols-5 sm:grid-cols-10 lg:grid-cols-5 gap-2 overflow-y-auto max-h-[380px] pr-1 custom-scrollbar"></div>
+            </div>
+
+            <!-- Informações da questão selecionada -->
+            <div id="questionInfoPanel" class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg">
+                <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-clipboard-list text-pm-gold"></i> Informações da questão
+                </h3>
+                <div class="border-t border-pm-border/70 pt-2">
+                    <div class="info-row"><i class="fa-solid fa-layer-group"></i><span><strong class="text-slate-400 font-medium">Área:</strong> <span id="infoQuestionSubject">—</span></span></div>
+                    <div class="info-row"><i class="fa-regular fa-bookmark"></i><span><strong class="text-slate-400 font-medium">Assunto:</strong> <span id="infoQuestionTopic">—</span></span></div>
+                    <div class="info-row"><i class="fa-solid fa-list-check"></i><span><strong class="text-slate-400 font-medium">Situação:</strong> <span id="infoQuestionStatus">—</span></span></div>
+                </div>
             </div>
 
         </aside>
@@ -1271,6 +1299,12 @@
             };
             document.getElementById('qBadgeSubject').innerText = `${subjNames[q.subject] || q.subject} | ${q.topic}`;
             document.getElementById('qText').innerText = q.text;
+            const infoSubject = document.getElementById('infoQuestionSubject');
+            const infoTopic = document.getElementById('infoQuestionTopic');
+            const infoStatus = document.getElementById('infoQuestionStatus');
+            if (infoSubject) infoSubject.textContent = subjNames[q.subject] || q.subject || 'Não informado';
+            if (infoTopic) infoTopic.textContent = q.topic || 'Não informado';
+            if (infoStatus) infoStatus.textContent = state.userAnswers[targetIdx] !== null && state.userAnswers[targetIdx] !== undefined ? 'Respondida' : 'Pendente';
 
             const flagBtn = document.getElementById('qMarkFlag');
             if (state.flagged[targetIdx]) {
