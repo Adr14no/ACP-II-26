@@ -1053,7 +1053,7 @@
             document.getElementById('timerDisplay').parentElement.classList.remove('hidden');
             document.getElementById('btnModeExam').classList.remove('hidden');
             document.getElementById('btnModeStudy').classList.remove('hidden');
-            document.getElementById('simuladoTitulo').innerText = cursoAtivo === 'CAO' ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP II/26 — Capitão PM';
+            document.getElementById('simuladoTitulo').innerText = cursoAtivo === 'CAO' ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP';
             document.getElementById('subtituloCurso').innerText = cursoAtivo === 'CAO' ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
             document.querySelectorAll('button[onclick="finishExam()"]')[0].innerHTML = '<i class="fa-solid fa-flag-checkered"></i> Finalizar Prova';
             let bancoBase = obterBancoBase();
