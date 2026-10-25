@@ -45,6 +45,25 @@ async function loadQuestionHistory(course) {
   return entries;
 }
 
+
+async function mergeQuestionHistory(entries, course) {
+  if (!activeUser) return [];
+  const ref = userDoc(historyDocId(course));
+  let merged = [];
+  await runTransaction(db, async tx => {
+    const snap = await tx.get(ref);
+    const current = cleanHistory(snap.exists() ? snap.data().entries : []);
+    merged = cleanHistory([...current, ...(Array.isArray(entries) ? entries : [])]);
+    tx.set(ref, {
+      course: courseCode(course),
+      entries: merged,
+      updatedAt: serverTimestamp(),
+      schemaVersion: 1
+    }, { merge: true });
+  });
+  return merged;
+}
+
 async function recordQuestionUsage(questions, course) {
   if (!activeUser || !Array.isArray(questions) || questions.length === 0) return false;
   const ref = userDoc(historyDocId(course));
@@ -118,6 +137,7 @@ onAuthStateChanged(auth, user => {
 window.studyProgress = {
   ready: () => authReady,
   loadQuestionHistory,
+  mergeQuestionHistory,
   recordQuestionUsage,
   saveExamResult,
   getProgressSummary
