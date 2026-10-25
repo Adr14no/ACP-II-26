@@ -1778,6 +1778,7 @@
 
           const landingLink = document.getElementById('adminPanelLinkLanding');
           const courseLink = document.getElementById('adminPanelLinkCourse');
+          const sidebarLink = document.getElementById('adminPanelLinkSidebar');
 
           if (landingLink) {
             landingLink.hidden = false;
@@ -1786,6 +1787,10 @@
           if (courseLink) {
             courseLink.hidden = false;
             courseLink.classList.remove('hidden');
+          }
+          if (sidebarLink) {
+            sidebarLink.hidden = false;
+            sidebarLink.classList.remove('hidden');
           }
         }).catch((error) => {
           console.error('Falha ao verificar permissões administrativas:', error);
