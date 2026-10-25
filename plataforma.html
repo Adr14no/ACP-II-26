@@ -346,6 +346,17 @@ body:has(#questionContainer) #questionsGrid button{min-height:38px}
 @media(max-width:1099px){body:has(#questionContainer){padding-bottom:calc(88px + env(safe-area-inset-bottom))!important}body:has(#questionContainer) .exam-main{display:grid!important;grid-template-columns:minmax(0,1fr)!important}body:has(#questionContainer) .exam-main>aside{display:flex!important;gap:0!important}body:has(#questionContainer) .exam-main>aside>#progressPanel,body:has(#questionContainer) .exam-main>aside>#answerSheetPanel,body:has(#questionContainer) .exam-main>aside>#questionInfoPanel{display:none!important;margin:0!important}body:has(#questionContainer) .exam-main>aside>#progressPanel.mobile-panel-active,body:has(#questionContainer) .exam-main>aside>#answerSheetPanel.mobile-panel-active,body:has(#questionContainer) .exam-main>aside>#questionInfoPanel.mobile-panel-active{display:block!important}body:has(#questionContainer) .exam-main>aside>#progressPanel.progress-hidden{display:none!important}.mobile-panel-tabs{display:flex;position:fixed;z-index:180;left:10px;right:10px;bottom:calc(8px + env(safe-area-inset-bottom));gap:5px;padding:6px;border:1px solid rgba(212,175,55,.28);border-radius:16px;background:rgba(5,15,30,.96);backdrop-filter:blur(18px);box-shadow:0 12px 34px rgba(0,0,0,.48),0 0 22px rgba(212,175,55,.06)}body:has(#questionContainer) #questionContainer{min-height:0!important;padding:16px!important}body:has(#questionContainer) #qText{font-size:15px!important;line-height:1.65!important}body:has(#questionContainer) #qOptions>*{padding:11px 10px!important}body:has(#questionContainer) #questionsGrid{grid-template-columns:repeat(5,minmax(0,1fr))!important;max-height:48vh!important}body:has(#questionContainer) #progressPanel{padding:14px!important}body:has(#questionContainer) .progress-main{grid-template-columns:minmax(95px,.85fr) minmax(0,1.15fr)}body:has(#questionContainer) .exam-question-toolbar{gap:8px}}
 @media(max-width:390px){body:has(#questionContainer) .platform-brand-copy .brand-title{font-size:16px}body:has(#questionContainer) .platform-brand-copy .brand-subtitle{font-size:8px}body:has(#questionContainer) .exam-header-controls #finalizeExamTop{font-size:9px!important;padding:6px!important}body:has(#questionContainer) .progress-main{grid-template-columns:90px minmax(0,1fr)}}
 
+
+/* Correção emergencial: o modal de instruções deve ficar acima das abas fixas móveis. */
+#modalInstrucoes { z-index: 300 !important; }
+#modalInstrucoes > div { max-height: calc(100dvh - 24px); }
+#modalInstrucoes > div > div:last-child { position:relative; z-index:1; }
+@media (max-width:1099px) {
+  #modalInstrucoes { padding:12px 12px calc(12px + env(safe-area-inset-bottom)) !important; }
+  #modalInstrucoes > div { max-height:calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom)) !important; margin:auto !important; }
+  #modalInstrucoes .mobile-panel-tabs { display:none !important; }
+}
+
 </style>
 
 </head>
