@@ -1533,6 +1533,20 @@
             document.getElementById('statCorrect').innerText = correct;
             document.getElementById('statWrong').innerText = wrong;
             document.getElementById('statPending').innerText = pending;
+            const remaining = Math.max(0, questionsDatabase.length - answered);
+            const ringPercent = Math.max(0, Math.min(100, Number(pct) || 0));
+            const ring = document.getElementById('progressRingValue');
+            if (ring) ring.style.strokeDashoffset = String(307.876 * (1 - ringPercent / 100));
+            const ringPercentLabel = document.getElementById('progressRingPercent');
+            if (ringPercentLabel) ringPercentLabel.textContent = `${ringPercent}%`;
+            const ringElement = document.getElementById('progressRing');
+            if (ringElement) ringElement.setAttribute('aria-label', `Progresso do simulado: ${ringPercent} por cento`);
+            const remainingElement = document.getElementById('statRemaining');
+            if (remainingElement) remainingElement.textContent = remaining;
+            const scoreElement = document.getElementById('progressScore');
+            if (scoreElement) scoreElement.textContent = `${correct}/${questionsDatabase.length}`;
+            const gradeElement = document.getElementById('progressGrade');
+            if (gradeElement) gradeElement.textContent = `${(questionsDatabase.length ? correct / questionsDatabase.length * 10 : 0).toFixed(1)}`;
             document.getElementById('progBar').style.width = `${pct}%`;
             document.getElementById('progPercent').innerText = `${pct}% concluído`;
         }
