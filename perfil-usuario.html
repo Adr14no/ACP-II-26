@@ -39,6 +39,7 @@
       </div>
       <div class="status-row"><span class="status-label">Acertos acumulados</span><span id="statCorrect" class="status-value">—</span></div>
       <div class="status-row"><span class="status-label">Erros acumulados</span><span id="statIncorrect" class="status-value">—</span></div>
+      <div class="status-row"><span class="status-label">Questões não respondidas</span><span id="statUnanswered" class="status-value">—</span></div>
       <h3 style="font-size:12px;margin:18px 0 8px;color:#dce4ed">Atividade recente</h3>
       <div id="recentResults" class="recent-list"><div class="recent-meta">Carregando resultados...</div></div>
       <div class="notice" id="statsNotice" role="status" aria-live="polite"></div>
@@ -112,7 +113,8 @@ async function loadStudyStats(){
   $('statBest').textContent=`${summary.bestPercent.toFixed(1)}%`;
   $('statQuestions').textContent=String(summary.totalQuestions);
   $('statCorrect').textContent=String(summary.totalCorrect);
-  $('statIncorrect').textContent=String(Math.max(0, summary.totalQuestions - summary.totalCorrect));
+  $('statIncorrect').textContent=String(summary.totalIncorrect);
+  $('statUnanswered').textContent=String(summary.totalUnanswered);
   recent.replaceChildren();
   if(!summary.recentResults.length){
    const empty=document.createElement('div');empty.className='recent-meta';empty.textContent='Nenhum simulado concluído foi registrado nesta conta ainda.';recent.appendChild(empty);return;
@@ -123,7 +125,10 @@ async function loadStudyStats(){
    const title=document.createElement('div');title.style.fontWeight='750';title.textContent=`${item.course||'ACP'} · ${item.mode==='personalizado'?'Personalizado':'Simulado'}`;
    const meta=document.createElement('div');meta.className='recent-meta';
    const date=Number(item.completedAtMs)?new Date(Number(item.completedAtMs)).toLocaleDateString('pt-BR'):'Data não disponível';
-   meta.textContent=`${date} · ${Number(item.score||0)} acertos · ${Math.max(0, Number(item.total||0)-Number(item.score||0))} erros`;
+   const answered=Number.isFinite(Number(item.answered))?Number(item.answered):Number(item.total||0);
+   const incorrect=Number.isFinite(Number(item.incorrect))?Number(item.incorrect):Math.max(0,Number(item.total||0)-Number(item.score||0));
+   const unanswered=Number.isFinite(Number(item.unanswered))?Number(item.unanswered):0;
+   meta.textContent=`${date} · ${Number(item.score||0)} acertos · ${incorrect} erros · ${unanswered} em branco · ${answered} respondidas`;
    left.append(title,meta);
    const result=document.createElement('div');result.style.fontWeight='800';result.style.color='var(--gold2)';result.textContent=`${Number(item.percent||0).toFixed(1)}%`;
    row.append(left,result);recent.appendChild(row);
