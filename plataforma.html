@@ -1443,6 +1443,8 @@
             }
 
             let score = 0;
+            let answered = 0;
+            let incorrect = 0;
             let opScore = 0, opTotal = 0;
             let orgScore = 0, orgTotal = 0;
             let jurScore = 0, jurTotal = 0;
@@ -1454,15 +1456,21 @@
                 if (q.subject === 'ORGANIZACIONAL') orgTotal++;
                 if (q.subject === 'JURIDICO') jurTotal++;
 
-                const isCorrect = state.userAnswers[idx] === q.answer;
+                const hasAnswer = state.userAnswers[idx] !== null && state.userAnswers[idx] !== undefined && state.userAnswers[idx] !== '';
+                if (hasAnswer) answered++;
+
+                const isCorrect = hasAnswer && state.userAnswers[idx] === q.answer;
                 if (isCorrect) {
                     score++;
                     if (q.subject === 'OPERACIONAL') opScore++;
                     if (q.subject === 'ORGANIZACIONAL') orgScore++;
                     if (q.subject === 'JURIDICO') jurScore++;
+                } else if (hasAnswer) {
+                    incorrect++;
                 }
             });
 
+            const unanswered = Math.max(0, total - answered);
             const percent = total > 0 ? ((score / total) * 100).toFixed(1) : 0;
             const grade = total > 0 ? ((score / total) * 10).toFixed(1) : 0;
 
@@ -1498,6 +1506,9 @@
                     mode: sessaoPersonalizadaAtiva ? 'personalizado' : (state.mode || 'exam'),
                     score,
                     total,
+                    answered,
+                    incorrect,
+                    unanswered,
                     percent: Number(percent),
                     grade: Number(grade),
                     elapsedSeconds: Math.max(0, elapsedSecs),
