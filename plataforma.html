@@ -167,7 +167,7 @@
                 <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
                     <div class="flex items-center gap-3">
                         <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-header text-pm-gold shadow-lg">
-                            <i class="fa-solid fa-graduation-cap text-xl"></i>
+                            <svg viewBox="0 0 76 54" width="38" height="30" fill="none" aria-hidden="true"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg>
                         </div>
                         <div class="min-w-0">
                             <h1 class="text-sm font-black tracking-tight text-white sm:text-base">Plataforma <span class="text-pm-gold">de Aperfeiçoamento</span></h1>
@@ -210,7 +210,7 @@
                             <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wide text-emerald-300"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>Disponível</span>
                         </div>
                         <p class="text-[9px] font-bold uppercase tracking-[0.2em] text-pm-gold">Curso ativo</p>
-                        <h3 class="mt-1 text-2xl font-black text-white sm:text-3xl">ACP II/26</h3>
+                        <h3 class="mt-1 text-2xl font-black text-white sm:text-3xl">ACP</h3>
                         <p class="mt-1 text-xs font-semibold text-slate-200">Aperfeiçoamento · Capitão PM</p>
                         <p class="mt-3 flex-1 text-xs leading-relaxed text-slate-400">Simulados de 50 questões, Modo Prova, Modo Estudo, fundamentação, cronômetro e acompanhamento de desempenho.</p>
                         <button type="button" onclick="entrarNoCurso('ACP')" class="mt-4 w-full rounded-lg bg-pm-gold px-4 py-3 text-xs font-extrabold text-pm-navy shadow-lg transition hover:bg-pm-goldHover focus:outline-none focus:ring-2 focus:ring-pm-gold"><i class="fa-solid fa-arrow-right-to-bracket mr-2"></i>Entrar no ACP</button>
@@ -286,7 +286,7 @@
                     <i class="fa-solid fa-circle-info"></i>
                 </div>
                 <div class="min-w-0">
-                    <h3 class="text-base sm:text-lg font-black text-pm-gold uppercase tracking-wider">Bem-vindo ao Simulado ACP II/26</h3>
+                    <h3 class="text-base sm:text-lg font-black text-pm-gold uppercase tracking-wider">Bem-vindo ao Simulado ACP</h3>
                     <p class="text-xs text-slate-400">Instruções rápidas de utilização</p>
                 </div>
             </div>
@@ -755,7 +755,7 @@
             const subtituloCurso = document.getElementById('subtituloCurso');
             if (subtituloCurso) subtituloCurso.innerText = isCAO ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
             const modalTitulo = document.querySelector('#modalInstrucoes h3');
-            if (modalTitulo) modalTitulo.innerText = isCAO ? 'Bem-vindo ao Simulado CAO' : 'Bem-vindo ao Simulado ACP II/26';
+            if (modalTitulo) modalTitulo.innerText = isCAO ? 'Bem-vindo ao Simulado CAO' : 'Bem-vindo ao Simulado ACP';
             const objetivo = document.querySelector('#modalInstrucoes section p:nth-child(2)');
             if (objetivo) objetivo.innerText = isCAO
                 ? 'Treinar para o Curso de Aperfeiçoamento de Oficiais (CAO), identificar dificuldades e revisar os conteúdos estudados.'
@@ -766,7 +766,7 @@
             if (resultadoSubtitulo) resultadoSubtitulo.innerText = isCAO
                 ? 'Curso de Aperfeiçoamento de Oficiais — PMESP'
                 : 'ACP — Avaliação de Competência Profissional';
-            document.title = `Plataforma de Aperfeiçoamento | ${isCAO ? 'CAO' : 'ACP II/26'}`;
+            document.title = `Plataforma de Aperfeiçoamento | ${isCAO ? 'CAO' : 'ACP'}`;
         }
 
         // CONTROLE DO MODAL DE INSTRUÇÕES
