@@ -1036,6 +1036,10 @@
             questionsDatabase = sortearQuestoesProporcionalmente(bancoBase, TOTAL_QUESTOES);
             if (questionsDatabase.length !== TOTAL_QUESTOES) return;
             registrarQuestoesUtilizadas(questionsDatabase);
+            // Persiste no Firestore quando houver sessão autenticada; o histórico local segue como cache offline.
+            window.studyProgress?.recordQuestionUsage(questionsDatabase, cursoAtivo).catch(error => {
+                console.warn('Não foi possível sincronizar o histórico de questões com o Firestore:', error);
+            });
 
             state.userAnswers = new Array(questionsDatabase.length).fill(null);
             state.flagged = new Array(questionsDatabase.length).fill(false);
@@ -1485,6 +1489,28 @@
             document.getElementById('labelJurScore').innerText = `${jurScore}/${jurTotal} (${jurPct}%)`;
             document.getElementById('barJurScore').style.width = `${jurPct}%`;
 
+            // Registra resultados reais apenas quando a prova é finalizada pelo usuário.
+            // finishExam(false) é usado em restaurações e não deve criar tentativa duplicada.
+            if (shouldSave) {
+                window.studyProgress?.saveExamResult({
+                    shouldSave: true,
+                    course: cursoAtivo,
+                    mode: sessaoPersonalizadaAtiva ? 'personalizado' : (state.mode || 'exam'),
+                    score,
+                    total,
+                    percent: Number(percent),
+                    grade: Number(grade),
+                    elapsedSeconds: Math.max(0, elapsedSecs),
+                    subjects: {
+                        OPERACIONAL: { correct: opScore, total: opTotal, percent: opPct },
+                        ORGANIZACIONAL: { correct: orgScore, total: orgTotal, percent: orgPct },
+                        JURIDICO: { correct: jurScore, total: jurTotal, percent: jurPct }
+                    }
+                }).catch(error => {
+                    console.warn('Não foi possível salvar o resultado no Firestore:', error);
+                });
+            }
+
             document.getElementById('questionContainer').classList.add('hidden');
             document.getElementById('resultsContainer').classList.remove('hidden');
         }
@@ -1499,6 +1525,7 @@
     <script type="module">
       import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
       import { auth } from "./firebase-config.js";
+      import "./user-progress-firestore.js";
       import { isAdminUser } from "./admin-access.js";
 
       auth.languageCode = 'pt-BR';
@@ -1537,6 +1564,19 @@
         // Libera a plataforma normalmente; a checagem administrativa é complementar.
         accessDecisionMade = true;
         if (guard) guard.remove();
+
+        // Migra o histórico local do navegador para a conta autenticada e mantém o cache de 72 horas.
+        try {
+          await window.studyProgress?.ready();
+          if (window.studyProgress && typeof carregarHistoricoQuestoes === 'function') {
+            const localHistory = carregarHistoricoQuestoes();
+            const mergedHistory = await window.studyProgress.mergeQuestionHistory(localHistory, cursoAtivo);
+            localStorage.setItem(QUESTION_HISTORY_KEY, JSON.stringify(mergedHistory));
+          }
+        } catch (error) {
+          // A plataforma continua utilizável; o histórico local permanece disponível se o Firestore falhar.
+          console.warn('Não foi possível carregar/migrar o histórico do Firestore:', error);
+        }
 
         // A autorização real das operações administrativas continua protegida pelas regras do Firestore.
         // Se a consulta falhar, o usuário mantém o acesso normal aos cursos, sem receber o link administrativo.
