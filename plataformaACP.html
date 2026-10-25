@@ -27,18 +27,23 @@
     .subject-card { transition: border-color .18s ease, transform .18s ease; }
     .subject-card:hover { border-color: rgba(212,175,55,.7); transform: translateY(-2px); }
     .focus-ring:focus-visible { outline: 2px solid #d4af37; outline-offset: 3px; }
-  </style>
+          .platform-brand-symbol { width:40px;height:40px;display:grid;place-items:center;flex:0 0 40px; }
+        .platform-brand-copy { display:flex;flex-direction:column;gap:2px; }
+        .platform-brand-copy .brand-eyebrow { font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;color:#eabf3a; }
+        .platform-brand-copy .brand-title { font-size:18px;line-height:1.05;font-weight:900;color:#f8fafc; }
+        .platform-brand-copy .brand-subtitle { font-size:11px;color:#cbd5e1; }
+</style>
 </head>
 <body class="min-h-screen text-sl-100 selection:bg-pm-gold selection:text-pm-navy">
   <!-- CABEÇALHO INSTITUCIONAL -->
   <header class="sticky top-0 z-40 border-b border-pm-border bg-pm-header/95 shadow-lg backdrop-blur">
     <div class="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6 lg:px-8">
       <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-card text-pm-gold">
-        <i class="fa-solid fa-graduation-cap text-lg"></i>
+        <svg viewBox="0 0 76 54" width="36" height="30" fill="none" aria-hidden="true"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A" fill-opacity=".96"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg>
       </div>
       <div class="min-w-0">
         <h1 class="text-sm font-black tracking-tight text-white sm:text-base">Plataforma <span class="text-pm-gold">de Aperfeiçoamento</span></h1>
-        <p class="text-[10px] text-slate-400 sm:text-xs">Polícia Militar do Estado de São Paulo</p>
+        <p class="text-[10px] text-slate-400 sm:text-xs">ACP — Avaliação de Competência Profissional</p>
       </div>
       <div class="ml-auto flex items-center gap-2">
         <a href="perfil-usuario.html" title="Abrir perfil e segurança da conta" aria-label="Perfil do usuário" class="focus-ring inline-flex items-center gap-2 rounded-lg border border-pm-gold/50 bg-pm-navy/70 px-2.5 py-2 text-xs font-bold text-slate-200 transition hover:border-pm-gold hover:text-pm-gold sm:px-3 sm:text-sm">
