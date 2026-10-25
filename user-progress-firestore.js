@@ -117,9 +117,10 @@ async function getProgressSummary() {
     }
   });
   results.sort((a, b) => Number(b.completedAtMs || 0) - Number(a.completedAtMs || 0));
-  const totalQuestions = results.reduce((sum, item) => sum + (Number.isFinite(Number(item.answered)) ? Number(item.answered) : Number(item.total || 0)), 0);
+  // Registros antigos não guardavam quantas questões foram respondidas; não inferir erros a partir deles.
+  const totalQuestions = results.reduce((sum, item) => sum + (Number.isFinite(Number(item.answered)) ? Number(item.answered) : 0), 0);
   const totalCorrect = results.reduce((sum, item) => sum + Number(item.score || 0), 0);
-  const totalIncorrect = results.reduce((sum, item) => sum + (Number.isFinite(Number(item.incorrect)) ? Number(item.incorrect) : Math.max(0, Number(item.total || 0) - Number(item.score || 0))), 0);
+  const totalIncorrect = results.reduce((sum, item) => sum + (Number.isFinite(Number(item.incorrect)) ? Number(item.incorrect) : 0), 0);
   const totalUnanswered = results.reduce((sum, item) => sum + (Number.isFinite(Number(item.unanswered)) ? Number(item.unanswered) : 0), 0);
   return {
     attempts: results.length,
