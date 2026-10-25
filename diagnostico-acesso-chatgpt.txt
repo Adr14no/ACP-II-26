@@ -1,0 +1,1 @@
+Arquivo temporario para testar a permissao de escrita da integracao ChatGPT. Pode ser removido apos o teste.
