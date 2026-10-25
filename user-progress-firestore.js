@@ -92,6 +92,9 @@ async function saveExamResult(result) {
     mode: String(result.mode || "exam"),
     score: Number(result.score || 0),
     total: Number(result.total || 0),
+    answered: Number.isFinite(Number(result.answered)) ? Number(result.answered) : Number(result.total || 0),
+    incorrect: Number.isFinite(Number(result.incorrect)) ? Number(result.incorrect) : Math.max(0, Number(result.total || 0) - Number(result.score || 0)),
+    unanswered: Number.isFinite(Number(result.unanswered)) ? Number(result.unanswered) : 0,
     percent: Number(result.percent || 0),
     grade: Number(result.grade || 0),
     elapsedSeconds: Number(result.elapsedSeconds || 0),
@@ -114,12 +117,16 @@ async function getProgressSummary() {
     }
   });
   results.sort((a, b) => Number(b.completedAtMs || 0) - Number(a.completedAtMs || 0));
-  const totalQuestions = results.reduce((sum, item) => sum + Number(item.total || 0), 0);
+  const totalQuestions = results.reduce((sum, item) => sum + (Number.isFinite(Number(item.answered)) ? Number(item.answered) : Number(item.total || 0)), 0);
   const totalCorrect = results.reduce((sum, item) => sum + Number(item.score || 0), 0);
+  const totalIncorrect = results.reduce((sum, item) => sum + (Number.isFinite(Number(item.incorrect)) ? Number(item.incorrect) : Math.max(0, Number(item.total || 0) - Number(item.score || 0))), 0);
+  const totalUnanswered = results.reduce((sum, item) => sum + (Number.isFinite(Number(item.unanswered)) ? Number(item.unanswered) : 0), 0);
   return {
     attempts: results.length,
     totalQuestions,
     totalCorrect,
+    totalIncorrect,
+    totalUnanswered,
     averagePercent: results.length ? results.reduce((sum, item) => sum + Number(item.percent || 0), 0) / results.length : 0,
     bestPercent: results.length ? Math.max(...results.map(item => Number(item.percent || 0))) : 0,
     recentResults: results.slice(0, 10)
