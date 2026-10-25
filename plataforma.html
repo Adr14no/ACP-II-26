@@ -175,6 +175,19 @@
             body:has(#questionContainer) .exam-question-toolbar { display:flex; }
         }
 
+        .exam-finalize-mount { display:none;flex:0 0 auto; }
+        .exam-finalize-mount #finalizeExamTop { display:flex !important;margin-left:0 !important;white-space:nowrap; }
+        @media (min-width:1100px) {
+            body:has(#questionContainer) .exam-finalize-mount { display:flex;align-items:center;margin-left:auto; }
+            body:has(#questionContainer) .exam-question-toolbar { gap:12px; }
+            body:has(#questionContainer) #qOptions > div { font-size:12.5px !important;line-height:1.5 !important; }
+            body:has(#questionContainer) #qOptions > div > div:first-child {
+                width:29px !important;height:29px !important;min-width:29px !important;
+                font-size:13px !important;font-weight:800 !important;
+            }
+            body:has(#questionContainer) #qText { font-size:16px !important;line-height:1.62 !important; }
+            body:has(#questionContainer) #finalizeExamTop { font-size:11px !important;padding:8px 11px !important; }
+        }
         /* ACP visual refresh — composição inspirada na referência aprovada */
         :root { --acp-gold:#f4b91f; --acp-blue:#12345a; --acp-line:rgba(55,104,151,.42); }
         body:has(#questionContainer) { background:#06101e !important; }
@@ -609,6 +622,7 @@
                 <div class="exam-question-toolbar" id="examQuestionToolbar" aria-label="Modos e filtros de questões">
                     <div class="exam-modes" id="examModesMount"></div>
                     <div class="exam-filters" id="examFiltersMount"></div>
+                    <div class="exam-finalize-mount" id="examFinalizeMount"></div>
                 </div>
                 <div>
                     <!-- Cabeçalho da Questão -->
@@ -1830,8 +1844,10 @@
         const navInner = examNav.firstElementChild;
         const modeGroup = navInner?.children[0];
         const filtersGroup = navInner?.children[1];
+        const finalizeButton = document.getElementById('finalizeExamTop');
         if (modeGroup) document.getElementById('examModesMount')?.appendChild(modeGroup);
         if (filtersGroup) document.getElementById('examFiltersMount')?.appendChild(filtersGroup);
+        if (finalizeButton) document.getElementById('examFinalizeMount')?.appendChild(finalizeButton);
       }
       const oldAdminLink = document.getElementById('adminPanelLinkCourse');
       const sideAdminLink = document.getElementById('adminPanelLinkSidebar');
