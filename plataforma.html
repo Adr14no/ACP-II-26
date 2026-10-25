@@ -188,6 +188,53 @@
             body:has(#questionContainer) #qText { font-size:16px !important;line-height:1.62 !important; }
             body:has(#questionContainer) #finalizeExamTop { font-size:11px !important;padding:8px 11px !important; }
         }
+        .mobile-nav-toggle { display:none; }
+        .mobile-nav-backdrop { display:none; }
+        @media (max-width:1099px) {
+            body:has(#questionContainer) { padding-left:0 !important;padding-bottom:18px; }
+            body:has(#questionContainer) > .exam-brand-rail {
+                display:flex !important;position:fixed;z-index:220;inset:0 auto 0 0;width:min(290px,84vw);
+                padding:22px 14px 18px !important;transform:translateX(-105%);transition:transform .22s ease;
+                box-shadow:16px 0 45px rgba(0,0,0,.45);background:#061321;
+            }
+            body:has(#questionContainer) > .exam-brand-rail.mobile-open { transform:translateX(0); }
+            body:has(#questionContainer) .exam-brand-rail::before {
+                background:linear-gradient(180deg,rgba(3,12,24,.08),rgba(3,12,24,.30)),url("bandeira-sp-banner-v2.png") center/cover no-repeat !important;opacity:1 !important;
+            }
+            body:has(#questionContainer) .mobile-nav-backdrop.open { display:block;position:fixed;z-index:210;inset:0;background:rgba(2,8,18,.68);backdrop-filter:blur(2px); }
+            body:has(#questionContainer) .mobile-nav-toggle { display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;border:1px solid rgba(244,185,31,.5);border-radius:10px;background:#0a1a2d;color:#f4b91f; }
+            body:has(#questionContainer) > header { padding:8px 10px !important; }
+            body:has(#questionContainer) > header > div { display:flex !important;flex-direction:row !important;align-items:center !important;gap:10px !important;min-height:60px;padding:0 !important; }
+            body:has(#questionContainer) .platform-brand-lockup { gap:8px;min-width:0; }
+            body:has(#questionContainer) .platform-brand-symbol { width:34px;height:32px;flex-basis:34px; }
+            body:has(#questionContainer) .platform-brand-symbol svg { width:34px;height:28px; }
+            body:has(#questionContainer) .platform-brand-copy .brand-eyebrow { font-size:8px;letter-spacing:.1em; }
+            body:has(#questionContainer) .platform-brand-copy .brand-title { font-size:19px; }
+            body:has(#questionContainer) .platform-brand-copy .brand-subtitle { font-size:9px; }
+            body:has(#questionContainer) .exam-header-controls { display:flex;align-items:center;gap:6px;margin-left:auto; }
+            body:has(#questionContainer) .exam-header-controls > a,
+            body:has(#questionContainer) .exam-header-controls > button:not(#finalizeExamTop),
+            body:has(#questionContainer) .exam-header-controls > div:not(#timerDisplayWrap) { display:none !important; }
+            body:has(#questionContainer) .exam-header-controls #timerDisplayWrap { padding:6px 7px !important;gap:4px !important; }
+            body:has(#questionContainer) .exam-header-controls #timerDisplay { font-size:13px !important;gap:4px !important; }
+            body:has(#questionContainer) .exam-header-controls #toggleTimerBtn { padding:3px 5px !important; }
+            body:has(#questionContainer) .exam-header-controls #finalizeExamTop { display:flex !important;font-size:10px !important;padding:7px 8px !important;gap:4px !important; }
+            body:has(#questionContainer) .exam-main { grid-template-columns:minmax(0,1fr) !important;padding:12px !important;gap:12px !important; }
+            body:has(#questionContainer) .exam-main > section,body:has(#questionContainer) .exam-main > aside { grid-column:1 !important;min-width:0; }
+            body:has(#questionContainer) #questionContainer { min-height:0 !important;padding:15px 13px !important; }
+            body:has(#questionContainer) .exam-question-toolbar { display:flex;flex-direction:column;align-items:stretch;gap:8px; }
+            body:has(#questionContainer) .exam-question-toolbar .exam-modes,
+            body:has(#questionContainer) .exam-question-toolbar .exam-filters { display:flex;flex-wrap:wrap;gap:5px; }
+            body:has(#questionContainer) .exam-question-toolbar button { font-size:10px !important;padding:6px 8px !important; }
+            body:has(#questionContainer) .exam-finalize-mount { display:none !important; }
+            body:has(#questionContainer) #qText { font-size:15px !important;line-height:1.6 !important;margin:16px 0 !important; }
+            body:has(#questionContainer) #qOptions > div { font-size:12px !important;line-height:1.5 !important;padding:11px !important;min-height:0 !important; }
+            body:has(#questionContainer) #qOptions > div > div:first-child { width:27px !important;height:27px !important;min-width:27px !important;font-size:12px !important; }
+            body:has(#questionContainer) #progressPanel,body:has(#questionContainer) #answerSheetPanel,body:has(#questionContainer) #questionInfoPanel { padding:13px !important; }
+            body:has(#questionContainer) #questionsGrid { grid-template-columns:repeat(5,minmax(0,1fr)) !important;max-height:230px !important;overflow-y:auto; }
+            body:has(#questionContainer) #questionsGrid button { min-height:34px !important; }
+            body:has(#questionContainer) > footer { padding:8px 12px !important;flex-wrap:wrap;gap:6px !important;font-size:9px !important; }
+        }
         /* ACP visual refresh — composição inspirada na referência aprovada */
         :root { --acp-gold:#f4b91f; --acp-blue:#12345a; --acp-line:rgba(55,104,151,.42); }
         body:has(#questionContainer) { background:#06101e !important; }
@@ -305,6 +352,7 @@
         </div>
         <div class="exam-side-bottom">ESTUDO CONTÍNUO<br>EVOLUÇÃO PROFISSIONAL</div>
     </aside>
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop" aria-hidden="true"></div>
     <div id="authGuard" role="status" aria-live="polite">
       <div class="auth-guard-card">
         <h2 style="font-size:1.25rem;font-weight:800;color:#d4af37;margin:0 0 10px">Verificando acesso</h2>
@@ -540,6 +588,7 @@
     <!-- Cabeçalho Principal -->
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <button type="button" id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Abrir menu lateral" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
             <div class="platform-brand-lockup">
                 <div class="platform-brand-symbol" aria-hidden="true"><svg viewBox="0 0 76 54" width="46" height="42" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A" fill-opacity=".96"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
                 <div class="platform-brand-copy">
@@ -1838,6 +1887,23 @@
 
       auth.languageCode = 'pt-BR';
       // Move os controles existentes para os novos pontos de layout sem recriar suas funções.
+      const mobileNav = document.querySelector('.exam-brand-rail');
+      const mobileNavToggle = document.getElementById('mobileNavToggle');
+      const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
+      const closeMobileNav = () => {
+        mobileNav?.classList.remove('mobile-open');
+        mobileNavBackdrop?.classList.remove('open');
+        mobileNavToggle?.setAttribute('aria-expanded', 'false');
+        if (mobileNavToggle) mobileNavToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      };
+      mobileNavToggle?.addEventListener('click', () => {
+        const isOpen = mobileNav?.classList.toggle('mobile-open');
+        mobileNavBackdrop?.classList.toggle('open', !!isOpen);
+        mobileNavToggle.setAttribute('aria-expanded', String(!!isOpen));
+        mobileNavToggle.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+      });
+      mobileNavBackdrop?.addEventListener('click', closeMobileNav);
+      mobileNav?.querySelectorAll('a,button').forEach(link => link.addEventListener('click', closeMobileNav));
       const examNav = document.querySelector('body > nav');
       const toolbar = document.getElementById('examQuestionToolbar');
       if (examNav && toolbar && window.matchMedia('(min-width: 1100px)').matches) {
