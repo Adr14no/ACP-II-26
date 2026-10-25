@@ -53,13 +53,27 @@
             body:has(#questionContainer) #qOptions > * { padding-top:12px !important; padding-bottom:12px !important; }
             body:has(#questionContainer) #progressPanel { padding:16px !important; }
             body:has(#questionContainer) #questionsGrid { grid-template-columns:repeat(5,minmax(0,1fr)) !important; max-height:260px !important; gap:7px !important; }
-            body:has(#questionContainer) .exam-brand-rail::before { background:linear-gradient(180deg,rgba(3,12,24,.08),rgba(3,12,24,.62)),url("bandeira-sp-banner-v2.png") center/cover no-repeat; opacity:1; }
+            body:has(#questionContainer) .exam-brand-rail::before { background:linear-gradient(180deg,rgba(3,12,24,.02),rgba(3,12,24,.34)),url("bandeira-sp-banner-v2.png") center/cover no-repeat; opacity:1; }
+            body:has(#questionContainer) .exam-brand-rail { background:#061321; }
+            body:has(#questionContainer) #progressPanel { background:linear-gradient(145deg,#122641,#09182b) !important;border:1px solid rgba(234,191,58,.32) !important;box-shadow:0 14px 30px rgba(0,0,0,.24) !important;border-radius:16px !important; }
+            body:has(#questionContainer) #progressPanel > div.grid > div { background:linear-gradient(180deg,#0b1a2e,#071323) !important;border-color:rgba(148,163,184,.23) !important;border-radius:12px !important;padding:12px 8px !important; }
+            body:has(#questionContainer) #progressPanel #progBar { background:linear-gradient(90deg,#f3c746,#d99a1b) !important;box-shadow:0 0 12px rgba(234,191,58,.25); }
+            body:has(#questionContainer) #questionsGrid { gap:8px !important; }
+            body:has(#questionContainer) #questionsGrid button { min-height:36px;border-radius:9px !important;box-shadow:inset 0 1px rgba(255,255,255,.04); }
+            body:has(#questionContainer) #questionInfoPanel { background:linear-gradient(145deg,#122641,#09182b) !important;border-color:rgba(234,191,58,.26) !important;border-radius:16px !important; }
         }
         .exam-header-brandmark { display:grid !important; width:48px;height:48px;flex:0 0 48px;place-items:center;border:1px solid rgba(234,191,58,.65);border-radius:13px;background:rgba(5,16,32,.65);color:#f0b429;font-size:27px; }
         .exam-header-brandmark svg { width:42px;height:32px; }
         #questionInfoPanel { display:block; }
         #questionInfoPanel .info-row { display:flex;align-items:flex-start;gap:12px;padding:7px 0;color:#cbd5e1;font-size:12px; }
         #questionInfoPanel .info-row i { width:15px;color:#eabf3a;margin-top:2px; }
+        .platform-brand-lockup { display:flex;align-items:center;gap:12px; }
+        .platform-brand-symbol { width:46px;height:42px;flex:0 0 46px;display:grid;place-items:center; }
+        .platform-brand-copy { display:flex;flex-direction:column;gap:2px; }
+        .platform-brand-copy .brand-eyebrow { font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;color:#eabf3a; }
+        .platform-brand-copy .brand-title { font-size:20px;line-height:1.05;font-weight:900;letter-spacing:.03em;color:#f8fafc; }
+        .platform-brand-copy .brand-subtitle { font-size:11px;color:#cbd5e1;letter-spacing:.02em; }
+        @media (max-width:700px) { .platform-brand-copy .brand-title {font-size:17px;} .platform-brand-copy .brand-eyebrow{font-size:9px;} }
         /* ACP redesign: shell lateral, cabeçalho enxuto e área de questão ampla. */
         @media (min-width: 1100px) {
             body:has(#questionContainer) { padding-left: 226px; }
@@ -280,7 +294,7 @@
             <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-slate-300 p-4 sm:px-6 sm:py-5 leading-relaxed overflow-y-auto overscroll-contain flex-1">
                 <section>
                     <p class="font-bold text-white mb-1">🎯 1. OBJETIVO</p>
-                    <p>Treinar para a ACP II/26 — Capitão PM, identificar dificuldades e revisar os conteúdos estudados.</p>
+                    <p>Treinar para a ACP, identificar dificuldades e revisar os conteúdos estudados.</p>
                 </section>
                 <section>
                     <p class="font-bold text-white mb-1">📝 2. NOVO SIMULADO</p>
@@ -372,12 +386,12 @@
     <!-- Cabeçalho Principal -->
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-4 text-center md:text-left">
-                <div class="exam-header-brandmark" aria-hidden="true"><svg viewBox="0 0 76 54" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A" fill-opacity=".92"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
-                <div>
-                    <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Plataforma de Aperfeiçoamento</h1>
-                    <h2 id="simuladoTitulo" class="text-base sm:text-lg font-extrabold text-white">ACP</h2>
-                    <p id="subtituloCurso" class="text-xs text-slate-300">Avaliação de Competência Profissional</p>
+            <div class="platform-brand-lockup">
+                <div class="platform-brand-symbol" aria-hidden="true"><svg viewBox="0 0 76 54" width="46" height="42" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A" fill-opacity=".96"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
+                <div class="platform-brand-copy">
+                    <span class="brand-eyebrow">Plataforma de Aperfeiçoamento</span>
+                    <h1 id="simuladoTitulo" class="brand-title">ACP</h1>
+                    <p id="subtituloCurso" class="brand-subtitle">Avaliação de Competência Profissional</p>
                 </div>
             </div>
 
@@ -514,7 +528,7 @@
                         🏆
                     </div>
                     <h2 class="text-2xl font-black text-white">Relatório Final de Desempenho</h2>
-                    <p class="text-sm text-slate-300">Avaliação de Competência Profissional ACP II/26 — PMESP</p>
+                    <p class="text-sm text-slate-300">ACP — Avaliação de Competência Profissional</p>
                 </div>
 
                 <!-- Quadro Geral de Pontuação -->
@@ -650,7 +664,7 @@
     <footer class="bg-pm-header border-t border-pm-border py-3 px-3 text-center text-xs text-slate-400 mt-auto">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
             <span>Plataforma de Aperfeiçoamento</span>
-            <span class="text-pm-gold font-semibold">Elaborado pelo 1° Ten PM Adriano</span>
+            <span class="text-pm-gold font-semibold">Ambiente independente de preparação profissional</span>
         </div>
     </footer>
 
@@ -658,8 +672,8 @@
     <script>
         const TOTAL_QUESTOES = cursoInicial === 'CAO' ? 100 : 50;
         const TEMPO_PROVA_SEGUNDOS = TOTAL_QUESTOES * 3 * 60;
-        let STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_SIMULADO_CAO_STATE' : 'PMESP_SIMULADO_ACP_STATE';
-        let MODAL_STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_MODAL_INSTRUCOES_VISTO_CAO' : 'PMESP_MODAL_INSTRUCOES_VISTO_ACP';
+        let STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_SIMULADO_CAO_STATE' : 'ACP_SIMULADO_STATE';
+        let MODAL_STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_MODAL_INSTRUCOES_VISTO_CAO' : 'ACP_MODAL_INSTRUCOES_VISTO';
 
         let questionsDatabase = [];
         let sessaoPersonalizadaAtiva = false;
@@ -736,7 +750,7 @@
 
         function configurarIdentidadeCurso() {
             const isCAO = cursoAtivo === 'CAO';
-            const titulo = isCAO ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP II/26 — Capitão PM';
+            const titulo = isCAO ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP';
             document.getElementById('simuladoTitulo').innerText = titulo;
             const subtituloCurso = document.getElementById('subtituloCurso');
             if (subtituloCurso) subtituloCurso.innerText = isCAO ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
@@ -745,13 +759,13 @@
             const objetivo = document.querySelector('#modalInstrucoes section p:nth-child(2)');
             if (objetivo) objetivo.innerText = isCAO
                 ? 'Treinar para o Curso de Aperfeiçoamento de Oficiais (CAO), identificar dificuldades e revisar os conteúdos estudados.'
-                : 'Treinar para a ACP II/26 — Capitão PM, identificar dificuldades e revisar os conteúdos estudados.';
+                : 'Treinar para a ACP, identificar dificuldades e revisar os conteúdos estudados.';
             const instrucoes = document.querySelectorAll('#modalInstrucoes section p:nth-child(2)');
             if (instrucoes[1]) instrucoes[1].innerHTML = `Ao iniciar um novo simulado, o cronômetro e as respostas são reiniciados, ocorrendo o sorteio de <strong class="text-white">${TOTAL_QUESTOES} questões</strong>. Para gerar outro conjunto, utilize o botão <strong class="text-white">Novo Simulado</strong>.`;
             const resultadoSubtitulo = document.querySelector('#resultsContainer .text-center p');
             if (resultadoSubtitulo) resultadoSubtitulo.innerText = isCAO
                 ? 'Curso de Aperfeiçoamento de Oficiais — PMESP'
-                : 'Avaliação de Competência Profissional ACP II/26 — PMESP';
+                : 'ACP — Avaliação de Competência Profissional';
             document.title = `Plataforma de Aperfeiçoamento | ${isCAO ? 'CAO' : 'ACP II/26'}`;
         }
 
