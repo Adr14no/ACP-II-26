@@ -61,6 +61,7 @@
             body:has(#questionContainer) .exam-header-controls > button:not(#finalizeExamTop),
             body:has(#questionContainer) .exam-header-controls > div:not(#timerDisplayWrap) { display:none !important; }
             body:has(#questionContainer) .exam-header-controls #timerDisplayWrap { display:flex; }
+            body:has(#questionContainer) .exam-header-controls #finalizeExamTop { display:flex !important; }
             body:has(#questionContainer) .exam-question-toolbar { display:flex; }
         }
         .exam-brand-rail {
@@ -360,7 +361,7 @@
                 <div>
                     <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Plataforma de Aperfeiçoamento</h1>
                     <h2 id="simuladoTitulo" class="text-base sm:text-lg font-extrabold text-white">ACP</h2>
-                    <p id="subtituloCurso" class="text-xs text-slate-300">Ambiente de preparação para avaliações profissionais</p>
+                    <p id="subtituloCurso" class="text-xs text-slate-300">Avaliação de Competência Profissional</p>
                 </div>
             </div>
 
@@ -420,7 +421,7 @@
                 <button onclick="setSubjectFilter('JURIDICO')" id="filterJURIDICO" class="px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap">Jurídico-Admin (<span id="cntJur">0</span>)</button>
             </div>
 
-            <button onclick="finishExam()" class="ml-auto bg-red-600/80 hover:bg-red-600 text-white px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold shadow transition flex items-center gap-2">
+            <button id="finalizeExamTop" onclick="finishExam()" class="ml-auto bg-red-600/80 hover:bg-red-600 text-white px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold shadow transition flex items-center gap-2">
                 <i class="fa-solid fa-flag-checkered"></i> Finalizar Prova
             </button>
         </div>
