@@ -1135,10 +1135,30 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
         }
 
         function restaurarInterface() {
+            // Normaliza filtros antigos guardados no navegador e evita uma lista vazia após atualização do banco.
+            const filtrosValidos = ['ALL', 'OPERACIONAL', 'ORGANIZACIONAL', 'JURIDICO'];
+            if (!filtrosValidos.includes(state.activeFilter)) state.activeFilter = 'ALL';
+
+            if (!Array.isArray(state.userAnswers)) state.userAnswers = [];
+            if (!Array.isArray(state.flagged)) state.flagged = [];
+            if (!Array.isArray(state.studyLocked)) state.studyLocked = [];
+            state.userAnswers = Array.from({ length: questionsDatabase.length }, (_, i) => state.userAnswers[i] ?? null);
+            state.flagged = Array.from({ length: questionsDatabase.length }, (_, i) => Boolean(state.flagged[i]));
+            state.studyLocked = Array.from({ length: questionsDatabase.length }, (_, i) => Boolean(state.studyLocked[i]));
+
             updateSubjectCounts();
             updateFilteredQuestions();
+            if (questionsDatabase.length > 0 && state.filteredQuestions.length === 0) {
+                state.activeFilter = 'ALL';
+                state.currentIndex = 0;
+                updateFilteredQuestions();
+            }
+            if (!Number.isInteger(state.currentIndex) || state.currentIndex < 0 || state.currentIndex >= state.filteredQuestions.length) {
+                state.currentIndex = 0;
+            }
+
             setMode(state.mode);
-            setSubjectFilter(state.activeFilter, false); 
+            setSubjectFilter(state.activeFilter, false);
             renderQuestionGrid();
             displayCurrentQuestion();
 
@@ -1599,7 +1619,33 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
         }
 
         function displayCurrentQuestion() {
-            if (state.filteredQuestions.length === 0) return;
+            if (!Array.isArray(state.filteredQuestions) || state.filteredQuestions.length === 0) {
+                // Não deixa o painel parecer vazio se o navegador restaurou um filtro antigo.
+                if (Array.isArray(questionsDatabase) && questionsDatabase.length > 0) {
+                    state.activeFilter = 'ALL';
+                    state.currentIndex = 0;
+                    updateFilteredQuestions();
+                    if (state.filteredQuestions.length > 0) {
+                        renderQuestionGrid();
+                        return displayCurrentQuestion();
+                    }
+                }
+
+                const badge = document.getElementById('qBadgeNum');
+                const subject = document.getElementById('qBadgeSubject');
+                const questionText = document.getElementById('qText');
+                const options = document.getElementById('qOptions');
+                if (badge) badge.textContent = 'Questões indisponíveis';
+                if (subject) subject.textContent = 'Verificação do banco de questões';
+                if (questionText) questionText.textContent = 'Não foi possível exibir as questões. Recarregue a página. Se o problema persistir, verifique se questoes.js foi publicado junto com plataforma.html e informe o erro exibido no Console do navegador.';
+                if (options) options.innerHTML = '';
+                console.error('Painel de questões sem itens.', {
+                    curso: cursoAtivo,
+                    bancoCarregado: Array.isArray(questionsDatabase) ? questionsDatabase.length : 'inválido',
+                    filtro: state.activeFilter
+                });
+                return;
+            }
 
             const q = state.filteredQuestions[state.currentIndex];
             const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
