@@ -285,6 +285,24 @@
         .app-main .app-content-actions .app-new-sim span{display:inline!important}
       }
 
+    
+      /* Mobile: reserva espaço real para o cabeçalho fixo e mantém Novo Simulado totalmente visível */
+      @media(max-width:850px){
+        .app-main{padding-top:96px!important}
+        .app-main>header.bg-pm-header{height:96px!important;min-height:96px!important;overflow:visible!important}
+        .app-main>header.bg-pm-header .app-header-inner{height:96px!important;min-height:96px!important;max-height:96px!important;overflow:visible!important}
+        .app-main .app-content-actions{position:relative!important;z-index:45!important;display:flex!important;min-height:52px!important;height:auto!important;padding:8px 12px!important;margin:0!important;background:#0b1326!important;overflow:visible!important;visibility:visible!important;opacity:1!important}
+        .app-main .app-content-actions .app-new-sim{position:relative!important;display:inline-flex!important;visibility:visible!important;opacity:1!important;height:38px!important;min-height:38px!important;max-height:38px!important;line-height:1.2!important;padding:8px 12px!important;overflow:visible!important;clip:auto!important;transform:none!important}
+      }
+      @media(max-width:560px){
+        .app-main{padding-top:104px!important}
+        .app-main>header.bg-pm-header{height:104px!important;min-height:104px!important}
+        .app-main>header.bg-pm-header .app-header-inner{height:104px!important;min-height:104px!important;max-height:104px!important;align-items:center!important}
+        .app-main .app-content-actions{min-height:52px!important;padding:8px 10px!important;justify-content:flex-end!important}
+        .app-main .app-content-actions .app-new-sim{height:38px!important;min-height:38px!important;max-height:38px!important;max-width:100%!important;white-space:nowrap!important;font-size:11px!important}
+        .app-main>nav.bg-pm-lightBg{position:relative!important;z-index:1!important}
+      }
+
     </style>
 
 </head>
