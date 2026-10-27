@@ -184,6 +184,27 @@
         .app-main .app-new-sim{padding:9px 10px!important}
       }
 
+    
+      /* Identidade oficial da Plataforma ACP e distribuição de ações conforme a referência */
+      .app-platform-logo{display:grid;place-items:center;padding:7px}
+      .app-platform-logo svg{display:block;width:100%;height:100%;max-width:46px;max-height:34px}
+      .app-sidebar-mark.app-platform-logo{width:43px;height:43px;flex:0 0 43px;border:1px solid rgba(234,191,58,.55);background:linear-gradient(145deg,#142642,#09162a);border-radius:12px;color:transparent;font-size:0}
+      .app-header-title-mark.app-platform-logo{width:42px;height:42px;flex:0 0 42px;border:1px solid rgba(234,191,58,.55);background:linear-gradient(145deg,#142642,#09162a);border-radius:12px}
+      .app-sidebar-nav .app-nav-active{color:#f5d46a;background:linear-gradient(100deg,rgba(234,191,58,.14),rgba(234,191,58,.035));border:1px solid rgba(234,191,58,.25);box-shadow:inset 3px 0 #eabf3a}
+      .app-sidebar-nav a,.app-sidebar-nav button{border:1px solid transparent;border-radius:12px}
+      .app-sidebar-nav a:hover,.app-sidebar-nav button:hover{background:#12213a;color:#fff}
+      .app-sidebar-label{color:#687a94!important;font-weight:900!important;letter-spacing:.15em!important}
+      .app-main header .app-header-inner{background:rgba(7,19,38,.9)}
+      .app-main>header.bg-pm-header{background:rgba(7,19,38,.94)!important;border-bottom:1px solid rgba(255,255,255,.06)!important}
+      .app-main header .app-header-title h1{color:#eabf3a!important}
+      .app-main .app-top-actions{gap:10px}
+      .app-main .app-top-actions .app-new-sim,.app-main .app-top-actions .app-customize-sim{display:none!important}
+      .app-content-actions{grid-column:1/-1;display:flex;justify-content:flex-end;align-items:center;min-height:0;margin-bottom:-10px}
+      .app-content-actions .app-new-sim{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:10px 16px;min-height:40px;background:#eabf3a;color:#071326;border:1px solid #eabf3a;border-radius:10px;font-size:12px;font-weight:800;box-shadow:0 5px 16px #0002;transition:background .15s}
+      .app-content-actions .app-new-sim:hover{background:#f5d46a}
+      .app-sidebar .app-sidebar-nav button[title="Personalizar sessão"] .app-nav-icon{color:#eabf3a}
+      @media(max-width:850px){.app-content-actions{margin-bottom:0}.app-content-actions .app-new-sim{min-height:38px}}
+
     </style>
 
 </head>
@@ -314,7 +335,7 @@
     <div class="app-shell" id="appShell">
       <aside class="app-sidebar" aria-label="Menu principal">
         <div class="app-sidebar-brand">
-          <div class="app-sidebar-mark" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="app-sidebar-mark app-platform-logo" aria-label="Logotipo da Plataforma de Aperfeiçoamento"><svg viewBox="0 0 76 54" fill="none" role="img" aria-hidden="true"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
           <div class="app-sidebar-brand-copy"><strong>PLATAFORMA DE</strong><strong>APERFEIÇOAMENTO</strong><small>Ambiente de estudos</small></div>
         </div>
         <button type="button" class="app-sidebar-collapse" id="appSidebarCollapse" aria-label="Recolher menu" title="Recolher menu"><i class="fa-solid fa-angles-left" aria-hidden="true"></i></button>
@@ -322,6 +343,7 @@
         <nav class="app-sidebar-nav">
           <a href="bancoQuestoes.html?curso=ACP" class="app-nav-active" title="Banco de questões"><span class="app-nav-icon"><i class="fa-solid fa-grip" aria-hidden="true"></i></span><span class="app-nav-label">Banco de questões</span></a>
           <button type="button" onclick="voltarSelecaoCursos()" title="Cursos"><span class="app-nav-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><span class="app-nav-label">Cursos</span></button>
+          <button type="button" onclick="abrirModalPersonalizado()" title="Personalizar sessão"><span class="app-nav-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></span><span class="app-nav-label">Personalizar sessão</span></button>
         </nav>
         <div class="app-sidebar-label">CONTA</div>
         <nav class="app-sidebar-nav">
@@ -339,7 +361,7 @@
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="app-header-inner max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="app-header-title">
-                <div class="app-header-title-mark" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="app-header-title-mark app-platform-logo" aria-label="Logotipo da Plataforma de Aperfeiçoamento"><svg viewBox="0 0 76 54" fill="none" role="img" aria-hidden="true"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
                 <div>
                     <h1>Banco de Questões</h1>
                     <h2 id="simuladoTitulo">ACP II/26 - Capitão PM</h2>
@@ -358,14 +380,7 @@
                     </button>
                 </div>
 
-                <button type="button" onclick="abrirModalPersonalizado()" title="Personalizar sessão" class="app-customize-sim">
-                    <i class="fa-solid fa-sliders" aria-hidden="true"></i><span>Personalizar sessão</span>
-                </button>
 
-                <!-- Botão Novo Simulado Sempre Visível -->
-                <button onclick="confirmarNovoSimulado()" title="Limpar tudo e iniciar novo sorteio" class="app-new-sim bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2 border border-amber-400/40">
-                    <i class="fa-solid fa-arrows-rotate"></i> Novo Simulado
-                </button>
             </div>
         </div>
     </header>
@@ -397,6 +412,11 @@
 
     <!-- Conteúdo Principal -->
     <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div class="app-content-actions">
+            <button onclick="confirmarNovoSimulado()" title="Limpar tudo e iniciar novo sorteio" class="app-new-sim">
+                <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i><span>Novo Simulado</span>
+            </button>
+        </div>
 
         <!-- Área de Exibição de Questões e Resultados -->
         <section class="lg:col-span-3 flex flex-col gap-4">
