@@ -128,6 +128,62 @@
         .app-main #qText{text-align:left;font-size:15px}
       }
 
+    
+      /* Ajuste fiel à proposta visual anexada: paleta, cartões, controles e hierarquia */
+      .app-shell{background:#0b1326;color:#edf2f9}
+      .app-sidebar{background:#071020;border-right-color:#1c2a44}
+      .app-sidebar-brand{border-bottom-color:#1d2b45}
+      .app-main{background:#0b1326}
+      .app-main>header.bg-pm-header{background:#071020!important;border-bottom:1px solid #1d2b45!important;box-shadow:0 8px 24px #00000012!important}
+      .app-main header .app-header-title-mark{background:#18243a;border-color:#8b7126;border-radius:12px}
+      .app-main header .app-header-title h1{color:#d4af37}
+      .app-main header .app-header-title h2{color:#fff}
+      .app-main header .app-header-title p{color:#aab6ca}
+      .app-main>nav.bg-pm-lightBg{background:#101c33!important;border-bottom:1px solid #2a3c66!important}
+      .app-main main{background:#0b1326!important}
+      .app-main #questionContainer,.app-main main aside>div.bg-pm-cardBg,.app-main #progressPanel,.app-main #modalPersonalizado>div{
+        background:#14213b!important;border-color:#2a3c66!important;border-radius:15px!important;box-shadow:0 10px 35px #00000012!important
+      }
+      .app-main #questionContainer{padding:25px 27px 20px!important;min-height:540px}
+      .app-main #qText{font-size:19px!important;line-height:1.65!important;letter-spacing:-.012em!important;font-weight:600!important;color:#edf2f9!important;margin-top:23px!important;margin-bottom:22px!important}
+      .app-main #qBadgeNum{background:#d4af37!important;color:#101827!important;border-radius:6px!important}
+      .app-main #qBadgeSubject{background:#21304b!important;color:#c8d5e8!important;border-color:#30415f!important;border-radius:6px!important}
+      .app-main #qOptions>div{min-height:63px;padding:15px 16px!important;border-radius:11px!important;line-height:1.55!important}
+      .app-main #qOptions>div:not([class*="emerald-"]):not([class*="rose-"]){background:#101c33!important;border-color:#30415f!important;color:#dce4f0!important}
+      .app-main #qOptions>div:not([class*="emerald-"]):not([class*="rose-"]):hover{background:#172640!important;border-color:#657ba4!important}
+      .app-main #qOptions>div[class*="blue-"]{background:#282d37!important;border-color:#d4af37!important;color:#fff!important}
+      .app-main #studyExplanation{background:#102d2d!important;border-color:#315a56!important;border-radius:10px!important;color:#ccebe2!important}
+      .app-main #qMarkFlag{border-radius:8px!important;padding:7px 10px!important}
+      .app-main #btnPrev{background:#15233d!important;border-radius:9px!important}
+      .app-main #btnNext{background:#d4af37!important;border-color:#d4af37!important;color:#101827!important;border-radius:9px!important}
+      .app-main #btnNext:hover{background:#f0cf62!important}
+      .app-main #progressPanel,.app-main main aside>div.bg-pm-cardBg{padding:18px!important}
+      .app-main #progressPanel h3,.app-main main aside h3{color:#c8d5e8!important}
+      .app-main #progressPanel .bg-pm-navy,.app-main main aside .bg-pm-navy{background:#101c33!important;border-color:#2a3c66!important}
+      .app-main #progBar{background:#d4af37!important}
+      .app-main #questionsGrid button{border-radius:7px!important;min-height:32px}
+      .app-main .app-customize-sim{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:10px 14px;min-height:40px;border:1px solid #2a3c66;border-radius:9px;background:#15233d;color:#edf2f9;font-size:12px;font-weight:700;white-space:nowrap;transition:background .15s,border-color .15s,color .15s}
+      .app-main .app-customize-sim:hover{border-color:#657ba4;background:#1b2a47;color:#fff}
+      .app-main .app-customize-sim i{color:#d4af37}
+      .app-main .app-new-sim{border-radius:9px!important;padding:10px 14px!important;min-height:40px;box-shadow:none!important}
+      .app-main #modalPersonalizado>div{background:#14213b!important;border-color:#2a3c66!important}
+      .app-main #modalPersonalizado>div>div:first-child{border-bottom-color:#2a3c66!important}
+      .app-main #modalPersonalizado h3{color:#d4af37!important}
+      .app-main #modalPersonalizado select,.app-main #modalPersonalizado input{background:#101c33!important;border-color:#2a3c66!important;border-radius:9px!important}
+      .app-main footer{background:#071020!important;border-top-color:#1d2b45!important}
+      @media(max-width:850px){
+        .app-main #questionContainer{padding:21px!important}
+        .app-main #qText{font-size:17px!important}
+        .app-main .app-customize-sim{padding:9px 11px;font-size:11px}
+      }
+      @media(max-width:560px){
+        .app-main #questionContainer{padding:18px!important}
+        .app-main #qText{font-size:16px!important;line-height:1.6!important}
+        .app-main .app-customize-sim span{display:inline}
+        .app-main .app-customize-sim{gap:6px;padding:9px 10px}
+        .app-main .app-new-sim{padding:9px 10px!important}
+      }
+
     </style>
 
 </head>
@@ -266,7 +322,6 @@
         <nav class="app-sidebar-nav">
           <a href="bancoQuestoes.html?curso=ACP" class="app-nav-active" title="Banco de questões"><span class="app-nav-icon"><i class="fa-solid fa-grip" aria-hidden="true"></i></span><span class="app-nav-label">Banco de questões</span></a>
           <button type="button" onclick="voltarSelecaoCursos()" title="Cursos"><span class="app-nav-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><span class="app-nav-label">Cursos</span></button>
-          <button type="button" onclick="abrirModalPersonalizado()" title="Personalizar sessão"><span class="app-nav-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></span><span class="app-nav-label">Personalizar sessão</span></button>
         </nav>
         <div class="app-sidebar-label">CONTA</div>
         <nav class="app-sidebar-nav">
@@ -302,6 +357,10 @@
                         <i class="fa-solid fa-pause"></i>
                     </button>
                 </div>
+
+                <button type="button" onclick="abrirModalPersonalizado()" title="Personalizar sessão" class="app-customize-sim">
+                    <i class="fa-solid fa-sliders" aria-hidden="true"></i><span>Personalizar sessão</span>
+                </button>
 
                 <!-- Botão Novo Simulado Sempre Visível -->
                 <button onclick="confirmarNovoSimulado()" title="Limpar tudo e iniciar novo sorteio" class="app-new-sim bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2 border border-amber-400/40">
