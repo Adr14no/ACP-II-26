@@ -667,6 +667,7 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
     firebaseStatus.textContent = "Firebase: administrador autorizado";
     firebaseStatus.className = "status ok";
     await refreshDraftList();
+    await refreshVideoAdminDrafts().catch(() => {});
   });
 </script>
 </body>
