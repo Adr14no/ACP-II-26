@@ -107,13 +107,19 @@ export async function saveExamResult(result) {
 }
 
 export async function getProgressSummary() {
-  if (!activeUser) return { attempts: 0, totalQuestions: 0, totalCorrect: 0, averagePercent: 0, bestPercent: 0, recentResults: [] };
+  if (!activeUser) return { attempts: 0, totalQuestions: 0, totalCorrect: 0, totalIncorrect: 0, totalUnanswered: 0, averagePercent: 0, bestPercent: 0, studiedSubjects: [], recentResults: [] };
   const snap = await getDocs(collection(db, "users", activeUser.uid, LIBRARY_COLLECTION));
   const results = [];
+  const studiedSubjects = new Set();
   snap.forEach(item => {
     const data = item.data();
     if (data?.recordType === "examResult" && Number.isFinite(Number(data.percent))) {
       results.push({ ...data, id: item.id });
+      if (data.subjects && typeof data.subjects === "object") {
+        Object.entries(data.subjects).forEach(([subject, values]) => {
+          if (values && (Number(values.total || 0) > 0 || Number(values.correct || 0) > 0)) studiedSubjects.add(subject);
+        });
+      }
     }
   });
   results.sort((a, b) => Number(b.completedAtMs || 0) - Number(a.completedAtMs || 0));
@@ -128,6 +134,7 @@ export async function getProgressSummary() {
     totalCorrect,
     totalIncorrect,
     totalUnanswered,
+    studiedSubjects: [...studiedSubjects],
     averagePercent: results.length ? results.reduce((sum, item) => sum + Number(item.percent || 0), 0) / results.length : 0,
     bestPercent: results.length ? Math.max(...results.map(item => Number(item.percent || 0))) : 0,
     recentResults: results.slice(0, 10)
