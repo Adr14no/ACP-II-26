@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Protótipo — Editor de páginas normativas | Plataforma Aperfeiçoamento</title>
+<style>
+:root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--gold-soft:#f7edc7;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--bg:#eef2f7;--highlight:#fff09a;--green:#166534;--red:#a12b2b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+button,input,textarea,select{font:inherit}button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:7px;padding:8px 11px;cursor:pointer;font-weight:650}button:hover{border-color:#9aa9bd}button.primary{background:var(--gold);border-color:#c3a02f;color:#111827}button.dark{background:var(--navy);color:#fff;border-color:var(--navy)}button:disabled{opacity:.45;cursor:not-allowed}
+.app{min-height:100vh;display:grid;grid-template-columns:235px minmax(0,1fr)}aside{background:linear-gradient(180deg,var(--header),#102644);color:#e7edf6;padding:20px 13px}.brand{padding:4px 9px 22px;font-size:17px;font-weight:800;line-height:1.25}.brand em{font-style:normal;color:var(--gold)}.brand small{display:block;font-size:10px;letter-spacing:2px;color:#aab8cc;margin-top:7px}.nav{display:grid;gap:5px}.nav button{text-align:left;background:transparent;border-color:transparent;color:#d7e2f0;font-weight:550}.nav button.active,.nav button:hover{background:var(--gold);color:#111827}.side-note{margin:22px 8px 0;color:#b8c5d7;font-size:11px;line-height:1.6}.main{min-width:0}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:#fff;padding:13px 22px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.crumb{font-size:11px;color:var(--muted)}.top strong{font-size:15px}.top-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.status{display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:99px;background:#edf1f5;color:#52677c;font-size:11px;font-weight:700}.status.ok{background:#e4f5ec;color:#14744b}.wrap{padding:20px;max-width:1750px;margin:auto}.intro{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:16px}.intro h1{font-size:24px;line-height:1.2;margin:0 0 6px}.muted{color:var(--muted)}.small{font-size:12px}.callout{background:#fff8df;border:1px solid #ead99a;border-radius:8px;padding:10px 12px;color:#5b4a13;font-size:12px;margin-bottom:14px}.layout{display:grid;grid-template-columns:minmax(340px,.9fr) minmax(420px,1.1fr);gap:15px;align-items:start}.card{background:#fff;border:1px solid var(--line);border-radius:11px;overflow:hidden;box-shadow:0 5px 22px #10243a08;min-width:0}.cardhead{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 15px;border-bottom:1px solid var(--line)}.cardhead h2{font-size:14px;margin:0}.cardbody{padding:15px}.tabs{display:flex;gap:3px;overflow:auto;border-bottom:1px solid var(--line);padding:0 9px}.tabs button{border:0;border-radius:0;white-space:nowrap;background:white;font-size:12px}.tabs button.active{border-bottom:3px solid var(--gold)}.panel{display:none}.panel.active{display:block}.fields{display:grid;grid-template-columns:1fr 1fr;gap:11px}.field{display:flex;flex-direction:column;gap:5px;min-width:0}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:800;color:#30445c}.field input,.field select,.field textarea{width:100%;border:1px solid #cbd5e1;border-radius:6px;padding:9px;background:#fff;color:var(--ink)}.field textarea{min-height:78px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid #d4af3755;border-color:#b99a2e}.hint{font-size:11px;color:var(--muted)}.editor-toolbar{display:flex;gap:5px;flex-wrap:wrap;background:#f6f8fb;border:1px solid var(--line);padding:7px;border-bottom:0;border-radius:7px 7px 0 0}.editor-toolbar button{padding:5px 8px;font-size:12px}.editor{border:1px solid var(--line);border-radius:0 0 7px 7px;min-height:300px;padding:14px;line-height:1.7;outline:none;background:white}.editor:focus{border-color:#b99a2e}.editor h2,.editor h3{text-align:center}.checkline{display:flex;align-items:center;gap:8px;font-size:12px;margin-top:7px}.checkline input{width:auto}.preview-toolbar{position:sticky;top:58px;z-index:10;background:#fff;display:flex;gap:6px;flex-wrap:wrap;padding:9px;border-bottom:1px solid var(--line)}.preview-toolbar input{flex:1;min-width:130px;border:1px solid var(--line);border-radius:6px;padding:8px}.preview-wrap{padding:15px;background:#eef2f7}.doc{position:relative;background:#fff;border:1px solid #d9e0ea;box-shadow:0 8px 30px #172d4f0b;overflow:hidden;min-height:520px}.doc:after{content:attr(data-watermark);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-25deg);z-index:2;pointer-events:none;user-select:none;color:#0b1326;opacity:.055;font-weight:900;font-size:clamp(18px,3vw,38px);letter-spacing:2px;white-space:nowrap}.doc-header{background:linear-gradient(135deg,#071020,#172c4e);color:#fff;padding:17px 20px;border-bottom:3px solid var(--gold)}.doc-brand{font-size:11px;letter-spacing:1.3px;text-transform:uppercase;color:#e7d18b;font-weight:800}.doc-header h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(18px,2.3vw,27px);line-height:1.25;margin:14px 0 7px}.doc-header p{margin:0;color:#e3eaf4;font-size:12px}.doc-tools{position:relative;z-index:3;display:flex;gap:5px;flex-wrap:wrap;padding:8px;border-bottom:1px solid var(--line);background:#fff}.doc-tools button{font-size:10px;padding:6px 8px}.doc-content{position:relative;z-index:1;padding:20px clamp(16px,3vw,32px);line-height:1.8;color:#202938}.doc-content .hierarchy-title{font-weight:850;text-align:center;background:#f0f3f8;border-top:1px solid #d9e0ea;border-bottom:1px solid #d9e0ea;padding:10px 12px;margin:24px 0 15px;letter-spacing:.25px;scroll-margin-top:145px}.doc-content .hierarchy-subtitle{text-align:center;font-weight:750;margin:10px 0;color:#26354b;scroll-margin-top:145px}.doc-content .section-heading{font-size:16px;font-weight:850;background:#eef2f7;border-left:4px solid var(--gold);padding:10px 13px;margin:25px 0 14px;scroll-margin-top:145px}.doc-content .legal-article,.doc-content .article-auto{background:#f8fafc;border-left:3px solid var(--gold);padding:11px 15px;border-radius:0 6px 6px 0;margin:11px 0 15px;line-height:1.8;text-align:justify;scroll-margin-top:145px}.doc-content p{text-align:justify;margin:10px 0}.doc-content mark.user-highlight{background:var(--highlight);padding:0 .05em;border-radius:2px}.doc-foot{border-top:1px solid var(--line);padding:12px 20px;color:var(--muted);font-size:10px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}.preview-caption{font-size:11px;color:var(--muted);margin:10px 2px 0}.bottomgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:15px}.tablewrap{overflow:auto}.table{border-collapse:collapse;width:100%;font-size:12px}.table th,.table td{text-align:left;padding:9px;border-bottom:1px solid #e7edf3;vertical-align:top}.table th{font-size:10px;text-transform:uppercase;color:var(--muted)}.material-item{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;border:1px solid var(--line);padding:9px;border-radius:7px;margin-top:7px}.modalback{display:none;position:fixed;inset:0;background:#061020aa;z-index:50;align-items:center;justify-content:center;padding:18px}.modal{width:min(600px,100%);max-height:88vh;overflow:auto;background:#fff;border-radius:10px;box-shadow:0 20px 80px #0004}.modal .cardhead{position:sticky;top:0;background:white}.toast{display:none;position:fixed;bottom:18px;right:18px;background:#102644;color:white;padding:12px 15px;border-radius:8px;z-index:100;max-width:360px;box-shadow:0 8px 25px #0003}.danger{color:#a12b2b}.footer-note{font-size:11px;color:var(--muted);margin:14px 2px 0}
+@media(max-width:1120px){.layout{grid-template-columns:1fr}.preview-toolbar{top:65px}.bottomgrid{grid-template-columns:1fr}}
+@media(max-width:700px){.app{display:block}aside{padding:10px}.brand{padding:4px 7px 12px}.nav{grid-template-columns:repeat(2,minmax(0,1fr))}.nav button{font-size:11px;padding:7px}.side-note{display:none}.top{padding:10px}.wrap{padding:10px}.intro{flex-direction:column}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.preview-wrap{padding:7px}.doc-content{padding:14px}.doc-tools{position:static}}
+@media print{body{background:#fff}.app aside,.top,.intro,.callout,.editor-card,.bottomgrid,.preview-toolbar,.preview-caption,.footer-note{display:none!important}.app{display:block}.wrap{padding:0;max-width:none}.layout{display:block}.preview-card{border:0;box-shadow:none}.preview-card>.cardhead{display:none}.preview-wrap{padding:0;background:#fff}.doc{border:0;box-shadow:none;min-height:0}.doc:after{position:fixed}.doc-tools{display:none!important}.doc-content .section-heading,.doc-content .hierarchy-title{break-after:avoid}.doc-content .legal-article{break-inside:avoid}}
+
+/* Controle de acesso do painel administrativo */
+.admin-access-guard {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #071020;
+  color: #e7edf6;
+}
+.admin-access-card {
+  width: min(480px, 100%);
+  padding: 28px;
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+  background: #0b1326;
+  text-align: center;
+}
+.admin-access-card h2 { margin: 0 0 12px; color: #d4af37; }
+.admin-access-card p { line-height: 1.7; }
+.admin-access-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 7px;
+  background: #d4af37;
+  color: #071020;
+  font-weight: 800;
+  text-decoration: none;
+}
+.draft-controls {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.draft-controls select {
+  min-width: 220px;
+  max-width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 8px;
+  background: #fff;
+}
+
+
+.video-admin-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.9fr);gap:16px;align-items:start}
+.va-player{aspect-ratio:16/9;border-radius:9px;background:linear-gradient(135deg,#071020,#19395d);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px;overflow:hidden;background-size:cover;background-position:center}
+.va-player strong{display:block;font-size:17px}.va-player p{font-size:12px;color:#d9e4f1;margin:7px 0 0}.va-play{width:52px;height:52px;border:1px solid #ffffff80;border-radius:50%;background:#ffffff17;display:grid;place-items:center;margin:0 auto 13px;padding-left:3px}
+.va-preview-copy{padding:16px 3px 2px}.va-preview-copy h2{font-size:19px;margin:10px 0 6px}.va-preview-copy p{color:#536176;white-space:pre-wrap}.va-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.va-tags span{background:#f1f4f8;padding:4px 8px;border-radius:99px;font-size:11px;color:#536176}.va-draft-list{display:grid;gap:8px}.va-draft{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px;border:1px solid var(--line);border-radius:8px}.va-draft strong{display:block}.va-draft .hint{overflow-wrap:anywhere}.va-draft-actions{display:flex;gap:6px;flex-wrap:wrap}
+@media(max-width:1050px){.video-admin-grid{grid-template-columns:1fr}}@media(max-width:600px){.va-draft{align-items:flex-start;flex-direction:column}.va-draft-actions{width:100%}}
+
+</style>
+</head>
+<body>
+
+<div id="adminAccessGuard" class="admin-access-guard" role="status" aria-live="polite">
+  <div class="admin-access-card">
+    <h2>Verificando acesso administrativo</h2>
+    <p>Aguarde enquanto verificamos sua autenticação e suas permissões.</p>
+  </div>
+</div>
+
+<div class="app">
+<aside>
+  <div class="brand"><em>◆</em> Plataforma<br>Aperfeiçoamento<small>PMESP · PROTÓTIPO</small></div>
+  <nav class="nav">
+    <button class="active" data-tab="editor">Editor de página</button>
+    <button data-tab="metadados">Classificação</button>
+    <button data-tab="materiais">Materiais</button>
+    <button data-tab="validacao">Validação</button>
+    <!-- VIDEOAULAS — escopo atual: manter a aba administrativa e o gerenciamento de rascunhos já implementados nesta branch. Etapas futuras: catálogo do aluno, fluxo próprio de publicação/despublicação e player responsivo. -->
+      <button data-tab="videos">Vídeos e aulas</button>
+  </nav>
+  <div class="side-note">Protótipo para aprovação visual.<br>Dados de demonstração.<br><br>Conectado ao Firebase quando autorizado.<br>Salvar não publica a norma.</div>
+</aside>
+<main class="main">
+  <header class="top">
+    <div><div class="crumb">Administração / Páginas normativas / Protótipo</div><strong>Editor de páginas baseado na I-16-PM</strong></div>
+    <div class="top-actions"><span id="status" class="status">Demonstração local</span><button id="newDraft">Novo rascunho</button><button id="saveDraft" class="primary">Salvar rascunho no Firebase</button><button class="primary" id="downloadHtml">Exportar HTML</button></div>
+  </header>
+
+  <div class="wrap">
+    <div id="normAdminView">
+    <div class="draft-controls" aria-label="Rascunhos armazenados no Firebase">
+      <label for="savedDrafts"><strong>Rascunhos no Firebase:</strong></label>
+      <select id="savedDrafts">
+        <option value="">Carregue a lista de rascunhos</option>
+      </select>
+      <button id="refreshDrafts">Atualizar lista</button>
+      <button id="loadDraft">Abrir rascunho selecionado</button>
+      <button id="deleteDraft" class="danger">Excluir rascunho selecionado</button>
+      <span id="firebaseStatus" class="status">Firebase: aguardando verificação</span>
+    </div>
+    <div class="intro">
+      <div><h1>Protótipo de criação de páginas normativas</h1><div class="muted">Edite os campos à esquerda e confira a renderização à direita antes de aprovar o padrão.</div></div>
+      <button class="dark" id="reset">Restaurar exemplo</button>
+    </div>
+    <div class="callout"><strong>Importante:</strong> o texto exibido é fictício e serve apenas para demonstrar a estrutura. Antes de publicar uma norma real, o texto deverá ser importado da fonte oficial e comparado integralmente. Salvar rascunho envia os dados ao Firebase; não publica a norma.</div>
+    <div class="layout">
+      <section class="card editor-card">
+        <div class="cardhead"><h2>Dados da página</h2><span class="status">Editor</span></div>
+        <div class="tabs" id="leftTabs">
+          <button class="active" data-panel="p-content">Conteúdo</button><button data-panel="p-meta">Metadados</button><button data-panel="p-mats">Materiais</button><button data-panel="p-check">Validação</button>
+        </div>
+        <div class="cardbody">
+          <div class="panel active" id="p-content">
+            <div class="fields">
+              <div class="field full"><label for="title">Título exibido *</label><input id="title" value="TÍTULO DEMONSTRATIVO DA NORMA"></div>
+              <div class="field"><label for="code">Código da norma *</label><input id="code" value="NORMA-EXEMPLO"></div>
+              <div class="field"><label for="edition">Edição / ano</label><input id="edition" value="Versão de demonstração"></div>
+              <div class="field full"><label for="description">Descrição editorial (não normativa)</label><textarea id="description">Conteúdo fictício utilizado para aprovar o padrão visual e funcional de uma página normativa.</textarea></div>
+              <div class="field full"><label for="normText">Conteúdo HTML de demonstração *</label>
+                <div class="editor-toolbar">
+                  <button data-cmd="bold"><b>B</b></button><button data-cmd="italic"><i>I</i></button><button data-cmd="insertUnorderedList">Lista</button><button data-insert="article">＋ Artigo demonstrativo</button><button data-insert="chapter">＋ Capítulo demonstrativo</button>
+                </div>
+                <div id="normText" class="editor" contenteditable="true" aria-label="Editor de conteúdo normativo">
+                  <p class="hierarchy-title">TÍTULO I</p>
+                  <p class="hierarchy-title">CAPÍTULO I</p>
+                  <p class="hierarchy-subtitle">DISPOSIÇÕES DEMONSTRATIVAS</p>
+                  <p class="section-heading">Seção I — Exemplo de hierarquia</p>
+                  <p class="legal-article"><strong>Art. 1º</strong> Este texto é fictício e serve exclusivamente para demonstrar a aparência da página. Não corresponde a uma norma oficial e não deve ser utilizado como fundamento normativo.</p>
+                  <p class="legal-article"><strong>Art. 2º</strong> A estrutura visual deve preservar integralmente a redação da norma de origem quando for utilizada para conteúdo oficial.</p>
+                  <p>§ 1º Este parágrafo é apenas um exemplo de formatação.</p>
+                  <p>I — Inciso demonstrativo, sem valor normativo.</p>
+                  <p class="legal-article"><strong>Art. 3º</strong> A numeração, os títulos, os incisos e as alíneas reais deverão vir da fonte oficial, sem geração automática que altere o texto original.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel" id="p-meta">
+            <div class="fields">
+              <div class="field"><label for="course">Curso</label><select id="course"><option>ACP — Aperfeiçoamento (Capitão PM)</option><option>CAO — Aperfeiçoamento de Oficiais</option><option>Geral</option></select></div>
+              <div class="field"><label for="subject">Matéria</label><select id="subject"><option>Organizacional</option><option>Operacional</option><option>Jurídico-Administrativo</option><option>Legislação</option></select></div>
+              <div class="field"><label for="category">Categoria</label><select id="category"><option>Normas institucionais</option><option>Legislação</option><option>Procedimentos</option><option>Material complementar</option></select></div>
+              <div class="field"><label for="order">Ordem de exibição</label><input id="order" type="number" value="10" min="0"></div>
+              <div class="field full"><label for="tags">Tags (separadas por vírgula)</label><input id="tags" value="norma-exemplo, demonstração"></div>
+              <div class="field full"><label for="watermark">Texto da marca d'água</label><input id="watermark" value="PLATAFORMA APERFEIÇOAMENTO · PRÉVIA"></div>
+              <label class="checkline"><input id="showSearch" type="checkbox" checked> Exibir ferramentas de pesquisa e marcação na prévia</label>
+            </div>
+          </div>
+          <div class="panel" id="p-mats">
+            <div class="fields">
+              <div class="field full"><label for="matTitle">Título do material</label><input id="matTitle" placeholder="Ex.: Material complementar"></div>
+              <div class="field"><label for="matType">Tipo</label><select id="matType"><option>PDF</option><option>Resumo</option><option>Vídeo</option><option>Link externo</option><option>Apostila</option></select></div>
+              <div class="field"><label for="matUrl">URL</label><input id="matUrl" placeholder="https://..."></div>
+              <div class="field full"><label for="matDesc">Descrição</label><textarea id="matDesc" placeholder="Descrição do material"></textarea></div>
+              <div class="field full"><button class="primary" id="addMaterial">Adicionar material demonstrativo</button></div>
+            </div>
+            <div id="materialsList"></div>
+            <p class="hint">Os materiais ficam apenas nesta demonstração e são exportados como metadados. A associação persistente será definida na implementação real.</p>
+          </div>
+          <div class="panel" id="p-check">
+            <p class="small">Validações básicas para a demonstração. Elas não substituem conferência jurídica nem comparação com a fonte oficial.</p>
+            <div id="validationResults"></div>
+            <button id="runValidation" class="primary">Executar validação básica</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card preview-card">
+        <div class="cardhead"><h2>Pré-visualização baseada na I-16-PM</h2><span class="status ok">Atualização ao editar</span></div>
+        <div class="preview-toolbar">
+          <input id="searchTerm" type="search" placeholder="Pesquisar palavra ou expressão na página…" aria-label="Pesquisar no documento">
+          <button id="findText">Localizar</button><button id="highlightText">Marcar seleção</button><button id="addNote">Anotar seleção</button><button id="showNotes">Anotações</button>
+        </div>
+        <div class="preview-wrap">
+          <article class="doc" id="doc" data-watermark="PLATAFORMA APERFEIÇOAMENTO · PRÉVIA">
+            <header class="doc-header">
+              <div class="doc-brand">◆ Plataforma Aperfeiçoamento · PMESP</div>
+              <h2 id="previewTitle">TÍTULO DEMONSTRATIVO DA NORMA</h2>
+              <p id="previewMeta">NORMA-EXEMPLO · Versão de demonstração</p>
+              <p id="previewDescription" style="margin-top:7px">Conteúdo fictício utilizado para aprovar o padrão visual.</p>
+            </header>
+            <div class="doc-tools" id="docTools">
+              <button id="toolSearch">Pesquisar nesta página</button><button id="toolHighlight">Marcar trecho em amarelo</button><button id="toolNote">Anotar trecho</button><button id="toolMaterials">Material de apoio (<span id="materialCount">0</span>)</button>
+            </div>
+            <div class="doc-content" id="previewContent"></div>
+            <footer class="doc-foot"><span id="footerCode">NORMA-EXEMPLO</span><span>PRÉ-VISUALIZAÇÃO · NÃO PUBLICADO</span></footer>
+          </article>
+          <div class="preview-caption">A prévia replica padrões visuais identificados no modelo I-16-PM. A homologação exige comparação visual em navegador e verificação de todas as funcionalidades.</div>
+        </div>
+      </section>
+    </div>
+    <div class="bottomgrid">
+      <section class="card"><div class="cardhead"><h2>Resumo dos metadados</h2><button id="copyJson">Copiar JSON</button></div><div class="cardbody"><pre id="jsonSummary" style="white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;margin:0;color:#334155"></pre></div></section>
+      <section class="card"><div class="cardhead"><h2>Materiais associados</h2><span class="status">Demonstração</span></div><div class="cardbody"><div id="materialsSummary" class="small muted">Nenhum material associado.</div></div></section>
+    </div>
+
+    </div>
+    <section id="videoAdminView" style="display:none">
+      <div class="intro">
+        <div><h1>Vídeos e páginas de aulas</h1><div class="muted">Crie páginas de aulas a partir de vídeos já gravados ou hospedados, com classificação pedagógica e pré-visualização.</div></div>
+        <span class="status">Área de vídeos</span>
+      </div>
+      <div class="callout"><strong>Integração Firestore:</strong> os rascunhos de aulas são salvos na coleção <code>videoAulas</code>, separados das normas. A gravação exige autenticação e perfil administrativo ativo; salvar não publica a aula.</div>
+      <div class="video-admin-grid">
+        <section class="card">
+          <div class="cardhead"><h2>Dados da página de aula</h2><span class="status">Editor</span></div>
+          <div class="cardbody">
+            <div class="fields">
+              <div class="field full"><label for="vaTitle">Título da aula *</label><input id="vaTitle" placeholder="Ex.: Fundamentos da Radiopatrulha"></div>
+              <div class="field full"><label for="vaUrl">Link do vídeo hospedado *</label><input id="vaUrl" type="url" placeholder="https://www.youtube.com/watch?v=..."><span class="hint">YouTube, Vimeo ou outro endereço HTTPS autorizado.</span></div>
+              <div class="field full"><label for="vaDescription">Descrição e objetivos</label><textarea id="vaDescription" placeholder="Descreva os objetivos de aprendizagem da aula."></textarea></div>
+              <div class="field"><label for="vaCourse">Curso *</label><select id="vaCourse"><option value="">Selecione…</option><option>ACP — Aperfeiçoamento</option><option>CAO — Aperfeiçoamento de Oficiais</option><option>CFP — Formação de Praças</option><option>Geral</option></select></div>
+              <div class="field"><label for="vaSubject">Matéria *</label><select id="vaSubject"><option value="">Selecione…</option><option>Operacional</option><option>Organizacional</option><option>Jurídico-Administrativo</option><option>Doutrinária</option></select></div>
+              <div class="field"><label for="vaCategory">Categoria *</label><select id="vaCategory"><option value="">Selecione…</option><option>Policiamento Comunitário</option><option>Radiopatrulha</option><option>Gerenciamento de Incidentes</option><option>Legislação</option><option>Procedimentos Operacionais</option><option>Formação Institucional</option></select></div>
+              <div class="field"><label for="vaDuration">Duração</label><input id="vaDuration" placeholder="Ex.: 18 min"></div>
+              <div class="field"><label for="vaInstructor">Instrutor / responsável</label><input id="vaInstructor" placeholder="Nome ou função"></div>
+              <div class="field full"><label for="vaTags">Tags (separadas por vírgula)</label><input id="vaTags" placeholder="radiopatrulha, abordagem, procedimento"></div>
+            </div>
+            <div class="section-actions"><button id="vaReset">Limpar</button><button class="primary" id="vaSave">Salvar rascunho</button><button class="dark" id="vaExport">Exportar página HTML</button></div>
+            <p class="hint">Os rascunhos ficam no Firestore. A publicação continua separada e não é realizada por este botão.</p>
+          </div>
+        </section>
+        <section class="card">
+          <div class="cardhead"><h2>Pré-visualização da aula</h2><span class="status">Ao vivo</span></div>
+          <div class="cardbody">
+            <div id="vaPlayer" class="va-player"><div><div class="va-play">▶</div><strong id="vaPreviewTitle">Sua aula aparecerá aqui</strong><p id="vaPreviewHint">Cole o link do vídeo para conferir a página.</p></div></div>
+            <div class="va-preview-copy"><span id="vaPreviewCategory" class="status">Categoria da aula</span><h2 id="vaPreviewHeading">Título da aula</h2><p id="vaPreviewDescription">A descrição da aula será exibida aqui.</p><div id="vaPreviewMeta" class="hint">Curso · Matéria · Duração</div><div id="vaPreviewTags" class="va-tags"></div><div id="vaUrlMessage" class="hint" style="margin-top:12px"></div></div>
+          </div>
+        </section>
+      </div>
+      <section class="card" style="margin-top:18px">
+        <div class="cardhead"><h2>Rascunhos de aulas</h2><span id="vaFirestoreStatus" class="status">Conectando ao Firestore…</span></div>
+        <div class="cardbody"><div id="vaDraftList" class="va-draft-list"><p class="hint">Carregando rascunhos do Firestore…</p></div></div>
+      </section>
+    </section>
+    <div class="footer-note">Protótipo de aprovação visual. Não substitui o modelo oficial, não confirma vigência normativa e não realiza publicação automática. O acesso administrativo é verificado separadamente.</div>
+  </div>
+</main>
+</div>
+<div class="modalback" id="modal"><div class="modal"><div class="cardhead"><h2 id="modalTitle">Janela</h2><button id="closeModal">Fechar</button></div><div class="cardbody" id="modalBody"></div></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const $=id=>document.getElementById(id);
+const initialContent=$('normText').innerHTML;
+let materials=[],notes=[];
+const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function toast(msg){$('toast').textContent=msg;$('toast').style.display='block';clearTimeout(window.__toastTimer);window.__toastTimer=setTimeout(()=>$('toast').style.display='none',3200)}
+function data(){return {title:$('title').value.trim(),code:$('code').value.trim(),edition:$('edition').value.trim(),description:$('description').value,course:$('course').value,subject:$('subject').value,category:$('category').value,order:Number($('order').value||0),tags:$('tags').value.split(',').map(s=>s.trim()).filter(Boolean),watermark:$('watermark').value.trim(),showSearch:$('showSearch').checked,contentHtml:$('normText').innerHTML,materials:materials.slice(),prototypeOnly:true}}
+window.__paGetNormaData = data;
+function sanitizeHtml(input){
+ const parser=new DOMParser();
+ const parsed=parser.parseFromString(String(input||''),'text/html');
+ parsed.querySelectorAll('script,iframe,object,embed,form,base,meta,link').forEach(el=>el.remove());
+ parsed.body.querySelectorAll('*').forEach(el=>{
+   [...el.attributes].forEach(attr=>{
+     const name=attr.name.toLowerCase(), value=attr.value.trim().toLowerCase();
+     if(name.startsWith('on') || ((name==='href'||name==='src'||name==='xlink:href') && value.startsWith('javascript:')) || name==='srcdoc') el.removeAttribute(attr.name);
+   });
+ });
+ return parsed.body.innerHTML;
+}
+function update(){
+ const d=data();
+ $('previewTitle').textContent=d.title||'Título não informado';
+ $('previewMeta').textContent=[d.code,d.edition].filter(Boolean).join(' · ');
+ $('previewDescription').textContent=d.description;
+ $('previewContent').innerHTML=sanitizeHtml(d.contentHtml);
+ $('doc').dataset.watermark=d.watermark||'PRÉVIA';
+ $('footerCode').textContent=d.code||'CÓDIGO NÃO INFORMADO';
+ $('docTools').style.display=d.showSearch?'flex':'none';
+ $('materialCount').textContent=materials.length;
+ $('jsonSummary').textContent=JSON.stringify(d,null,2);
+ $('materialsSummary').innerHTML=materials.length?materials.map(m=>`<div class="material-item"><div><b>${escapeHtml(m.title)}</b><div class="hint">${escapeHtml(m.type)} · ${escapeHtml(m.url||'Sem URL')}</div></div></div>`).join(''):'Nenhum material associado.';
+ $('status').textContent='Alterações não salvas';
+ $('status').className='status';
+}
+['title','code','edition','description','course','subject','category','order','tags','watermark','showSearch'].forEach(id=>$(id).addEventListener('input',update));
+$('normText').addEventListener('input',update);
+document.querySelectorAll('#leftTabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('#leftTabs~.cardbody .panel').forEach(p=>p.classList.remove('active'));['p-content','p-meta','p-mats','p-check'].forEach(id=>$(id).classList.toggle('active',id===b.dataset.panel))});
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));const isVideos=b.dataset.tab==='videos';$('normAdminView').style.display=isVideos?'none':'block';$('videoAdminView').style.display=isVideos?'block':'none';const map={editor:'p-content',metadados:'p-meta',materiais:'p-mats',validacao:'p-check'};if(!isVideos){document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x.dataset.panel===map[b.dataset.tab]));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===map[b.dataset.tab]))}else{updateVideoAdminPreview();renderVideoAdminDrafts()}document.querySelector('.top .crumb').textContent=isVideos?'Administração / Vídeos e aulas / Protótipo':'Administração / Páginas normativas / Protótipo';document.querySelector('.top strong').textContent=isVideos?'Editor de páginas de aulas':'Editor de páginas baseado na I-16-PM';$('saveDraft').style.display=isVideos?'none':'';$('newDraft').style.display=isVideos?'none':'';$('downloadHtml').style.display=isVideos?'none':''});
+document.querySelectorAll('[data-cmd]').forEach(b=>b.onclick=()=>{ $('normText').focus();document.execCommand(b.dataset.cmd,false,null);update()});
+document.querySelectorAll('[data-insert]').forEach(b=>b.onclick=()=>{const type=b.dataset.insert;const s=type==='article'?'<p class="legal-article"><strong>Art. [NUMERAÇÃO ORIGINAL]</strong> [Insira aqui o texto proveniente da fonte oficial.]</p>':'<p class="hierarchy-title">CAPÍTULO [IDENTIFICAÇÃO ORIGINAL]</p>';document.execCommand('insertHTML',false,s);update();toast('Inserido marcador demonstrativo; confira a fonte oficial antes de usar conteúdo normativo.')});
+$('addMaterial').onclick=()=>{const title=$('matTitle').value.trim(),url=$('matUrl').value.trim();if(!title)return toast('Informe o título do material.');if(url&&!/^https?:\/\//i.test(url))return toast('A URL deve começar com http:// ou https://.');materials.push({title,type:$('matType').value,url,description:$('matDesc').value});$('matTitle').value='';$('matUrl').value='';$('matDesc').value='';renderMaterials();update();toast('Material adicionado apenas à demonstração.')};
+window.__paMaterialsReplace = items => { materials = items.map(item => ({title:String(item.title||''),type:String(item.type||''),url:String(item.url||''),description:String(item.description||'')})); renderMaterials(); };
+window.__paRefreshEditor = () => { update(); validate(); };
+function renderMaterials(){$('materialsList').innerHTML=materials.map((m,i)=>`<div class="material-item"><div><b>${escapeHtml(m.title)}</b><div class="hint">${escapeHtml(m.type)} · ${escapeHtml(m.url||'Sem URL')}</div></div><button data-remove-material="${i}">Remover</button></div>`).join('')||'<p class="hint">Nenhum material adicionado.</p>';document.querySelectorAll('[data-remove-material]').forEach(b=>b.onclick=()=>{materials.splice(Number(b.dataset.removeMaterial),1);renderMaterials();update()})}
+function openModal(title,content){$('modalTitle').textContent=title;$('modalBody').innerHTML=content;$('modal').style.display='flex'}
+function closeModal(){$('modal').style.display='none'}
+$('closeModal').onclick=closeModal;$('modal').onclick=e=>{if(e.target===$('modal'))closeModal()};
+function searchInPreview(){const q=$('searchTerm').value.trim();if(!q)return toast('Digite um termo para localizar.');const root=$('previewContent');const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let node;while(node=walker.nextNode()){if(node.parentElement.closest('script,style,mark'))continue;const ix=node.nodeValue.toLocaleLowerCase().indexOf(q.toLocaleLowerCase());if(ix>=0){const range=document.createRange();range.setStart(node,ix);range.setEnd(node,ix+q.length);const sel=getSelection();sel.removeAllRanges();sel.addRange(range);node.parentElement.scrollIntoView({behavior:'smooth',block:'center'});return toast('Trecho localizado na prévia.')}}toast('Termo não encontrado na prévia.')}
+$('findText').onclick=searchInPreview;$('toolSearch').onclick=()=>{$('searchTerm').focus();$('searchTerm').scrollIntoView({behavior:'smooth',block:'center'})};
+function highlightSelection(){const sel=getSelection();if(!sel||sel.isCollapsed||!$('previewContent').contains(sel.anchorNode))return toast('Selecione um trecho na prévia antes de marcar.');try{const range=sel.getRangeAt(0);const mark=document.createElement('mark');mark.className='user-highlight';range.surroundContents(mark);sel.removeAllRanges();toast('Realce demonstrativo aplicado à prévia. Não altera o texto-fonte do editor.')}catch(e){toast('Não foi possível marcar uma seleção que atravessa elementos. Selecione um trecho menor.')}}
+$('highlightText').onclick=highlightSelection;$('toolHighlight').onclick=highlightSelection;
+function addNote(){const quote=getSelection()?.toString()||'';openModal('Anotação demonstrativa',`<div class="field"><label>Trecho selecionado</label><textarea id="noteQuote">${escapeHtml(quote)}</textarea></div><div class="field" style="margin-top:10px"><label>Anotação</label><textarea id="noteBody" placeholder="Escreva uma observação"></textarea></div><p class="hint">A anotação fica apenas na memória desta sessão; não é sincronizada.</p><button class="primary" id="saveNote">Guardar anotação na demonstração</button>`);$('saveNote').onclick=()=>{const body=$('noteBody').value.trim();if(!body)return toast('Escreva uma anotação.');notes.push({quote:$('noteQuote').value,body,createdAt:new Date().toISOString()});closeModal();toast('Anotação adicionada à demonstração.');}}
+$('addNote').onclick=addNote;$('toolNote').onclick=addNote;
+$('showNotes').onclick=()=>openModal('Anotações desta sessão',notes.length?notes.map((n,i)=>`<div class="material-item"><div><b>${escapeHtml(n.body)}</b><div class="hint">Trecho: ${escapeHtml(n.quote||'Nenhum trecho selecionado')}</div></div><button data-del-note="${i}">Excluir</button></div>`).join(''):'<p>Nenhuma anotação nesta sessão.</p>');
+$('modalBody').addEventListener('click',e=>{const b=e.target.closest('[data-del-note]');if(b){notes.splice(Number(b.dataset.delNote),1);$('showNotes').click()}});
+$('toolMaterials').onclick=()=>openModal('Materiais de apoio',materials.length?materials.map(m=>`<div class="material-item"><div><b>${escapeHtml(m.title)}</b><div class="hint">${escapeHtml(m.type)} · ${escapeHtml(m.description||'') }<br>${escapeHtml(m.url||'Sem URL')}</div></div>${m.url?`<button data-open-url="${escapeHtml(m.url)}">Abrir</button>`:''}</div>`).join(''):'<p>Nenhum material associado.</p>');
+$('modalBody').addEventListener('click',e=>{const b=e.target.closest('[data-open-url]');if(b&&/^https?:\/\//i.test(b.dataset.openUrl))window.open(b.dataset.openUrl,'_blank','noopener,noreferrer')});
+function validate(){const d=data(),results=[];if(!d.title)results.push(['Erro','O título está vazio.']);if(!d.code)results.push(['Erro','O código da norma está vazio.']);if(!d.contentHtml.trim())results.push(['Erro','O conteúdo está vazio.']);if(!/<(p|h[1-6]|ol|ul)\b/i.test(d.contentHtml))results.push(['Aviso','Não foi detectada uma estrutura básica de parágrafos, títulos ou listas.']);if(/\[NUMERAÇÃO ORIGINAL\]|\[IDENTIFICAÇÃO ORIGINAL\]|\[Insira aqui/i.test(d.contentHtml))results.push(['Aviso','Existem marcadores de demonstração no conteúdo.']);results.push(['Atenção','Esta validação não compara o texto com a fonte normativa oficial.']);$('validationResults').innerHTML=results.map(([k,v])=>`<div class="material-item"><div><b>${escapeHtml(k)}</b><div>${escapeHtml(v)}</div></div></div>`).join('');return results}
+$('runValidation').onclick=()=>{const r=validate();toast('Validação básica concluída; confira os avisos apresentados.')};
+$('saveDraft').onclick=()=>{toast('Preparando salvamento seguro no Firebase…')};
+$('copyJson').onclick=async()=>{try{await navigator.clipboard.writeText(JSON.stringify(data(),null,2));toast('JSON copiado.')}catch(e){openModal('JSON dos metadados',`<textarea style="width:100%;min-height:250px">${escapeHtml(JSON.stringify(data(),null,2))}</textarea>`)}};
+function buildStandalone(){const d=data();const safeContent=sanitizeHtml(d.contentHtml);return `<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(d.code)} — ${escapeHtml(d.title)}</title><style>
+:root{--navy:#0b1326;--gold:#d4af37;--line:#d9e0ea;--ink:#202938}*{box-sizing:border-box}body{margin:0;background:#eef2f7;color:var(--ink);font:15px/1.7 Inter,system-ui,Arial,sans-serif}.doc{position:relative;max-width:1050px;margin:28px auto;background:#fff;border:1px solid var(--line);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}.doc:after{content:attr(data-watermark);position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-25deg);z-index:2;pointer-events:none;color:#0b1326;opacity:.055;font-weight:900;font-size:38px;white-space:nowrap}.head{background:linear-gradient(135deg,#071020,#172c4e);color:#fff;padding:22px;border-bottom:3px solid var(--gold)}.brand{color:#e7d18b;font-size:11px;letter-spacing:1px;font-weight:bold}.head h1{font:700 28px/1.25 Georgia,serif;margin:14px 0 7px}.head p{font-size:12px;margin:0;color:#e3eaf4}.content{position:relative;z-index:1;padding:24px 32px}.hierarchy-title{text-align:center;background:#f0f3f8;padding:10px;border-block:1px solid var(--line);font-weight:850;margin:24px 0 15px}.hierarchy-subtitle{text-align:center;font-weight:750}.section-heading{font-weight:850;background:#eef2f7;border-left:4px solid var(--gold);padding:10px 13px}.legal-article,.article-auto{background:#f8fafc;border-left:3px solid var(--gold);padding:11px 15px;border-radius:0 6px 6px 0;margin:11px 0 15px;text-align:justify}.content p{text-align:justify}.foot{border-top:1px solid var(--line);padding:12px 20px;font-size:10px;color:#64748b}@media(max-width:600px){.doc{margin:0}.content{padding:14px}.head h1{font-size:21px}}@media print{body{background:#fff}.doc{margin:0;border:0;box-shadow:none}.head{break-after:avoid}.legal-article{break-inside:avoid}}
+</style></head><body><article class="doc" data-watermark="${escapeHtml(d.watermark||'PLATAFORMA APERFEIÇOAMENTO')}"><header class="head"><div class="brand">◆ PLATAFORMA APERFEIÇOAMENTO · PMESP</div><h1>${escapeHtml(d.title)}</h1><p>${escapeHtml(d.code)}${d.edition?' · '+escapeHtml(d.edition):''}</p><p style="margin-top:7px">${escapeHtml(d.description)}</p></header><main class="content">${safeContent}</main><footer class="foot">${escapeHtml(d.code)} · Exportação de demonstração — requer revisão antes de publicação.</footer></article>
+
+
+</body></html>`}
+$('downloadHtml').onclick=()=>{const blob=new Blob([buildStandalone()],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=(($('code').value.trim()||'pagina-normativa').replace(/[^a-z0-9_-]+/gi,'-'))+'-previa.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);toast('HTML de pré-visualização exportado. Não foi publicado.')}
+function resetEditorToExample({confirmAction=true, confirmMessage='Restaurar os dados demonstrativos iniciais? As alterações desta sessão serão perdidas.'}={}) {
+  if (confirmAction && !confirm(confirmMessage)) return false;
+
+  $('title').value='TÍTULO DEMONSTRATIVO DA NORMA';
+  $('code').value='NORMA-EXEMPLO';
+  $('edition').value='Versão de demonstração';
+  $('description').value='Conteúdo fictício utilizado para aprovar o padrão visual e funcional de uma página normativa.';
+  $('course').selectedIndex=0;
+  $('subject').selectedIndex=0;
+  $('category').selectedIndex=0;
+  $('order').value='10';
+  $('tags').value='norma-exemplo, demonstração';
+  $('watermark').value='PLATAFORMA APERFEIÇOAMENTO · PRÉVIA';
+  $('showSearch').checked=true;
+  $('normText').innerHTML=initialContent;
+  materials=[];
+  notes=[];
+  renderMaterials();
+
+  // Ao restaurar o exemplo, desassocia o editor do rascunho anteriormente aberto.
+  // Assim, o próximo salvamento cria um novo documento em vez de sobrescrever o anterior.
+  if (typeof window.__paClearCurrentDraft === 'function') {
+    window.__paClearCurrentDraft();
+  }
+
+  update();
+  toast('Exemplo restaurado. O próximo salvamento criará um novo rascunho.');
+  return true;
+}
+window.__paResetEditorToExample = resetEditorToExample;
+$('reset').onclick=()=>resetEditorToExample();
+$('toolSearch').onclick=()=>{$('searchTerm').focus()};
+update();renderMaterials();validate();
+
+const va$=id=>document.getElementById(id);
+let videoAdminDrafts=[]; let editingVideoAdminId=null;
+function vaEscape(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function vaForm(){return {title:va$('vaTitle').value.trim(),url:va$('vaUrl').value.trim(),description:va$('vaDescription').value.trim(),course:va$('vaCourse').value,subject:va$('vaSubject').value,category:va$('vaCategory').value,duration:va$('vaDuration').value.trim(),instructor:va$('vaInstructor').value.trim(),tags:va$('vaTags').value.split(',').map(x=>x.trim()).filter(Boolean)}}
+function vaParseUrl(raw){try{const u=new URL(raw);return ['https:','http:'].includes(u.protocol)?u:null}catch{return null}}
+function vaYouTubeId(u){if(!u)return '';if(u.hostname==='youtu.be')return u.pathname.split('/').filter(Boolean)[0]||'';if(/(^|\.)youtube\.com$/i.test(u.hostname)||/(^|\.)youtube-nocookie\.com$/i.test(u.hostname)){if(u.pathname==='/watch')return u.searchParams.get('v')||'';const m=u.pathname.match(/^\/(?:embed|shorts|live)\/([^/?]+)/);return m?m[1]:''}return ''}
+function updateVideoAdminPreview(){const d=vaForm();va$('vaPreviewTitle').textContent=d.title||'Sua aula aparecerá aqui';va$('vaPreviewHeading').textContent=d.title||'Título da aula';va$('vaPreviewDescription').textContent=d.description||'A descrição da aula será exibida aqui.';va$('vaPreviewCategory').textContent=d.category||'Categoria da aula';va$('vaPreviewMeta').textContent=[d.course,d.subject,d.duration].filter(Boolean).join(' · ')||'Curso · Matéria · Duração';va$('vaPreviewTags').innerHTML=d.tags.map(t=>'<span>'+vaEscape(t)+'</span>').join('');const u=vaParseUrl(d.url),id=vaYouTubeId(u);let message='';if(d.url){if(!u)message='URL inválida. Informe um endereço HTTP ou HTTPS.';else if(id)message='YouTube reconhecido. O player incorporado precisa ser aberto dentro de uma página servida por HTTP/HTTPS para fornecer a identificação de origem exigida pelo YouTube.';else if(u.hostname.includes('vimeo.com'))message='Link Vimeo reconhecido. Confirme se o vídeo permite incorporação.';else message='URL identificada. A incorporação depende das permissões do provedor.'}va$('vaUrlMessage').textContent=message;va$('vaPlayer').style.backgroundImage='';va$('vaPlayer').innerHTML='<div><div class="va-play">▶</div><strong>'+vaEscape(d.title||'Sua aula aparecerá aqui')+'</strong><p>'+vaEscape(id?'YouTube · '+id:(d.duration||'Vídeo hospedado'))+'</p>'+(u?'<a style="display:inline-block;margin-top:12px;color:#f3df91" target="_blank" rel="noopener" href="'+vaEscape(u.href)+'">Abrir vídeo original ↗</a>':'')+'</div>'}
+['vaTitle','vaUrl','vaDescription','vaCourse','vaSubject','vaCategory','vaDuration','vaInstructor','vaTags'].forEach(id=>va$(id).addEventListener('input',updateVideoAdminPreview));
+function renderVideoAdminDrafts(){const el=va$('vaDraftList');el.innerHTML=videoAdminDrafts.length?videoAdminDrafts.map((d,i)=>'<div class="va-draft"><div><strong>'+vaEscape(d.title)+'</strong><div class="hint">'+vaEscape([d.course,d.subject,d.category].filter(Boolean).join(' · '))+' · '+vaEscape(d.status||'draft')+'</div></div><div class="va-draft-actions"><button data-va-load="'+i+'">Editar</button><button data-va-export="'+i+'" class="primary">Exportar HTML</button><button data-va-delete="'+i+'">Excluir</button></div></div>').join(''):'<p class="hint">Nenhum rascunho de aula encontrado no Firestore.</p>';el.querySelectorAll('[data-va-load]').forEach(b=>b.onclick=()=>{const d=videoAdminDrafts[Number(b.dataset.vaLoad)];editingVideoAdminId=d.id;for(const [k,id] of Object.entries({title:'vaTitle',url:'vaUrl',description:'vaDescription',course:'vaCourse',subject:'vaSubject',category:'vaCategory',duration:'vaDuration',instructor:'vaInstructor'}))va$(id).value=d[k]||'';va$('vaTags').value=(d.tags||[]).join(', ');va$('vaSave').textContent='Atualizar rascunho';updateVideoAdminPreview();window.scrollTo({top:0,behavior:'smooth'})});el.querySelectorAll('[data-va-delete]').forEach(b=>b.onclick=async()=>{const d=videoAdminDrafts[Number(b.dataset.vaDelete)];if(!confirm('Excluir permanentemente o rascunho “'+d.title+'”?'))return;try{await window.__paVideoStore.remove(d.id);if(editingVideoAdminId===d.id){editingVideoAdminId=null;va$('vaSave').textContent='Salvar rascunho'}await refreshVideoAdminDrafts();renderVideoAdminDrafts();toast('Rascunho excluído do Firestore.')}catch(e){console.error(e);toast(e?.message||'Não foi possível excluir o rascunho.')}});el.querySelectorAll('[data-va-export]').forEach(b=>b.onclick=()=>exportVideoAdminPage(videoAdminDrafts[Number(b.dataset.vaExport)]))}
+async function refreshVideoAdminDrafts(){const status=va$('vaFirestoreStatus');try{if(!window.__paVideoStore)throw new Error('Módulo ainda inicializando');videoAdminDrafts=await window.__paVideoStore.list();status.textContent='Firestore · '+videoAdminDrafts.length+' rascunho(s)';status.className='status ok'}catch(e){status.textContent='Firestore indisponível';status.className='status';console.error('Falha ao listar aulas:',e);throw e}}
+async function saveVideoAdminDraft(){const d=vaForm(),u=vaParseUrl(d.url);if(!d.title||!u||!d.course||!d.subject||!d.category){toast('Preencha título, URL válida, curso, matéria e categoria.');return}const btn=va$('vaSave'),label=btn.textContent;btn.disabled=true;btn.textContent='Salvando…';try{if(!window.__paVideoStore)throw new Error('O módulo de integração ainda está inicializando. Tente novamente.');if(editingVideoAdminId){await window.__paVideoStore.update(editingVideoAdminId,d);toast('Rascunho atualizado no Firestore. A aula não foi publicada.')}else{editingVideoAdminId=await window.__paVideoStore.save(d);toast('Rascunho salvo no Firestore. A aula não foi publicada.')}await refreshVideoAdminDrafts();renderVideoAdminDrafts();}catch(e){console.error('Falha ao salvar aula:',e);toast(e?.message||'Falha ao salvar aula no Firestore.')}finally{btn.disabled=false;btn.textContent=label}}
+function exportVideoAdminPage(d=vaForm()){const u=vaParseUrl(d.url);if(!d.title||!u){toast('Informe título e URL válida antes de exportar.');return}const id=vaYouTubeId(u);let embed='';if(id)embed='https://www.youtube.com/embed/'+encodeURIComponent(id)+'?origin='+encodeURIComponent(location.origin);else if(u.hostname==='vimeo.com'||u.hostname==='www.vimeo.com'){const m=u.pathname.match(/\/(\d+)/);if(m)embed='https://player.vimeo.com/video/'+m[1]}const player=embed?'<iframe src="'+vaEscape(embed)+'" title="Vídeo da aula" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>':'<p>O provedor não foi reconhecido para incorporação automática. <a href="'+vaEscape(u.href)+'" target="_blank" rel="noopener">Abrir vídeo original</a></p>';const html='<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="strict-origin-when-cross-origin"><title>'+vaEscape(d.title)+'</title><style>body{margin:0;background:#f2f5f9;color:#202938;font:16px/1.6 system-ui,Arial}.head{background:linear-gradient(120deg,#071020,#183456);color:white;padding:25px max(20px,calc((100% - 900px)/2));border-bottom:4px solid #d4af37}.brand{font-size:11px;letter-spacing:1.5px;color:#f3df91;font-weight:800}.head h1{margin:12px 0 6px}.head p{color:#d8e2ef}.wrap{max-width:900px;margin:25px auto;padding:0 18px}.player{position:relative;aspect-ratio:16/9;background:#071020;border-radius:10px;overflow:hidden}.player iframe{width:100%;height:100%;border:0}.description,.meta{background:white;border:1px solid #dce3ec;border-radius:10px;padding:18px;margin-top:16px}.tags span{display:inline-block;background:#f1f4f8;border-radius:99px;padding:4px 9px;margin:4px;font-size:12px}footer{max-width:900px;margin:20px auto;padding:18px;color:#64748b;font-size:11px}</style></head><body><header class="head"><div class="brand">◆ PLATAFORMA APERFEIÇOAMENTO · PMESP</div><h1>'+vaEscape(d.title)+'</h1><p>'+vaEscape(d.course)+' · '+vaEscape(d.subject)+' · '+vaEscape(d.category)+'</p></header><main class="wrap"><section class="player">'+player+'</section><section class="description"><h2>Sobre esta aula</h2><p>'+vaEscape(d.description||'Descrição não informada.')+'</p><div class="tags">'+(d.tags||[]).map(t=>'<span>'+vaEscape(t)+'</span>').join('')+'</div></section><section class="meta"><b>Duração:</b> '+vaEscape(d.duration||'Não informada')+' · <b>Instrutor:</b> '+vaEscape(d.instructor||'Não informado')+'</section></main><footer>Prévia exportada do editor administrativo. A publicação depende da revisão e do fluxo oficial.</footer></body></html>';const blob=new Blob([html],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=(d.title.replace(/[^a-z0-9_-]+/gi,'-')||'pagina-aula')+'.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);toast('HTML de prévia exportado. Para testar o player, abra a página por HTTP/HTTPS, não como arquivo local.')}
+va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVideoAdminPage();va$('vaReset').onclick=()=>{editingVideoAdminId=null;['vaTitle','vaUrl','vaDescription','vaDuration','vaInstructor','vaTags'].forEach(id=>va$(id).value='');['vaCourse','vaSubject','vaCategory'].forEach(id=>va$(id).selectedIndex=0);va$('vaSave').textContent='Salvar rascunho';updateVideoAdminPreview()};updateVideoAdminPreview();
+
+</script>
+
+<script type="module">
+  import { deleteDoc, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+  import { auth, db } from "./firebase-config.js";
+  import { saveVideoDraft, updateVideoDraft, listVideoDrafts, deleteVideoDraft } from "./admin-videos-firestore.js";
+  import { isAdminUser } from "./admin-access.js";
+  import {
+    saveNormaDraft,
+    updateNormaDraft,
+    listNormaDrafts,
+    getNormaDraft,
+    watchAdminAccess
+  } from "./admin-normas-firestore.js";
+
+  // API usada pelo editor visual de vídeos. Todas as operações revalidam o perfil admin.
+  window.__paVideoStore = {
+    save: saveVideoDraft,
+    update: updateVideoDraft,
+    list: listVideoDrafts,
+    remove: deleteVideoDraft
+  };
+
+  const guard = document.getElementById("adminAccessGuard");
+  const saveButton = document.getElementById("saveDraft");
+  const draftSelect = document.getElementById("savedDrafts");
+  const firebaseStatus = document.getElementById("firebaseStatus");
+  const newDraftButton = document.getElementById("newDraft");
+  const deleteDraftButton = document.getElementById("deleteDraft");
+  let currentDraftId = null;
+  let adminReady = false;
+  let accessSequence = 0;
+
+  // Exclusão protegida: revalida o administrador e permite apagar somente
+  // documentos cujo status atual no Firestore seja exatamente "draft".
+  async function deleteNormaDraft(normaId) {
+    const user = auth.currentUser;
+    if (!user || !(await isAdminUser(user))) {
+      throw new Error("Acesso restrito a administradores ativos.");
+    }
+
+    const ref = doc(db, "normas", String(normaId));
+    const snapshot = await getDoc(ref);
+    if (!snapshot.exists()) {
+      throw new Error("O rascunho não foi encontrado; atualize a lista.");
+    }
+    if (snapshot.data().status !== "draft") {
+      throw new Error("Este documento não é um rascunho e não pode ser excluído por este botão.");
+    }
+
+    await deleteDoc(ref);
+  }
+
+  // Desvincula o editor do rascunho aberto sem apagar o documento no Firebase.
+  // O próximo clique em "Salvar rascunho" criará um novo documento independente.
+  window.__paClearCurrentDraft = () => {
+    currentDraftId = null;
+    draftSelect.value = "";
+    const status = document.getElementById("status");
+    status.textContent = "Novo rascunho";
+    status.className = "status";
+  };
+
+  function notify(message) {
+    const toast = document.getElementById("toast");
+    toast.textContent = message;
+    toast.style.display = "block";
+    clearTimeout(window.__toastTimer);
+    window.__toastTimer = setTimeout(() => toast.style.display = "none", 4000);
+  }
+
+  function blockAccess(title, message) {
+    guard.innerHTML = `
+      <div class="admin-access-card">
+        <h2>${title}</h2>
+        <p>${message}</p>
+        <a href="index.html">Voltar ao login</a>
+      </div>`;
+    guard.style.display = "flex";
+    adminReady = false;
+    saveButton.disabled = true;
+    newDraftButton.disabled = true;
+    deleteDraftButton.disabled = true;
+    document.getElementById("refreshDrafts").disabled = true;
+    document.getElementById("loadDraft").disabled = true;
+    firebaseStatus.textContent = "Firebase: acesso bloqueado";
+    firebaseStatus.className = "status";
+  }
+
+  function fillEditor(draft) {
+    const setValue = (id, value) => {
+      const element = document.getElementById(id);
+      if (element && value !== undefined && value !== null) element.value = value;
+    };
+
+    setValue("title", draft.title);
+    setValue("code", draft.code);
+    setValue("edition", draft.edition);
+    setValue("description", draft.description);
+    setValue("course", draft.course);
+    setValue("subject", draft.subject);
+    setValue("category", draft.category);
+    setValue("order", draft.order);
+    setValue("tags", Array.isArray(draft.tags) ? draft.tags.join(", ") : "");
+    setValue("watermark", draft.watermark);
+    document.getElementById("showSearch").checked = draft.showSearch !== false;
+
+    // O conteúdo é novamente sanitizado pelo módulo antes de ser salvo.
+    document.getElementById("normText").innerHTML = String(draft.contentHtml || "");
+    window.__paMaterialsReplace(Array.isArray(draft.materials) ? draft.materials : []);
+    window.__paRefreshEditor();
+    currentDraftId = draft.id;
+    document.getElementById("status").textContent = "Rascunho carregado do Firebase";
+    document.getElementById("status").className = "status ok";
+    notify("Rascunho carregado. As próximas alterações serão salvas nesse documento.");
+  }
+
+  async function refreshDraftList() {
+    if (!adminReady) return;
+    const previous = draftSelect.value;
+    draftSelect.innerHTML = '<option value="">Selecione um rascunho</option>';
+
+    try {
+      const drafts = await listNormaDrafts();
+      for (const draft of drafts) {
+        const option = document.createElement("option");
+        option.value = draft.id;
+        option.textContent = `${draft.code || "Sem código"} — ${draft.title || "Sem título"}`;
+        draftSelect.appendChild(option);
+      }
+      if (previous && [...draftSelect.options].some(option => option.value === previous)) {
+        draftSelect.value = previous;
+      }
+      firebaseStatus.textContent = `Firebase: ${drafts.length} rascunho(s)`;
+      firebaseStatus.className = "status ok";
+      if (!drafts.length) notify("Ainda não há rascunhos no Firebase.");
+    } catch (error) {
+      console.error("Erro ao listar rascunhos:", error);
+      firebaseStatus.textContent = "Firebase: falha ao listar";
+      firebaseStatus.className = "status";
+      notify("Não foi possível listar rascunhos. Confira as regras do Firestore e, se solicitado, o índice da consulta.");
+    }
+  }
+
+  saveButton.addEventListener("click", async () => {
+    if (!adminReady) {
+      notify("O painel ainda não confirmou seu acesso administrativo.");
+      return;
+    }
+
+    const payload = window.__paGetNormaData();
+    saveButton.disabled = true;
+    const originalLabel = saveButton.textContent;
+    saveButton.textContent = "Salvando…";
+
+    try {
+      if (currentDraftId) {
+        await updateNormaDraft(currentDraftId, payload);
+        notify("Rascunho atualizado no Firebase. A norma não foi publicada.");
+      } else {
+        currentDraftId = await saveNormaDraft(payload);
+        notify("Rascunho salvo no Firebase. A norma não foi publicada.");
+      }
+
+      document.getElementById("status").textContent = "Rascunho salvo no Firebase";
+      document.getElementById("status").className = "status ok";
+      await refreshDraftList();
+      draftSelect.value = currentDraftId;
+    } catch (error) {
+      console.error("Erro ao salvar rascunho:", error);
+      notify(error?.message || "Falha ao salvar no Firebase. Confira o console e as regras do Firestore.");
+    } finally {
+      saveButton.disabled = false;
+      saveButton.textContent = originalLabel;
+    }
+  });
+
+  document.getElementById("refreshDrafts").addEventListener("click", refreshDraftList);
+
+  newDraftButton.addEventListener("click", () => {
+    if (!adminReady) {
+      notify("O painel ainda não confirmou seu acesso administrativo.");
+      return;
+    }
+
+    const started = window.__paResetEditorToExample?.({
+      confirmAction: true,
+      confirmMessage: "Iniciar um novo rascunho? O editor voltará ao conteúdo demonstrativo. O rascunho salvo anteriormente será preservado no Firebase."
+    });
+
+    if (started) {
+      draftSelect.value = "";
+      notify("Novo rascunho iniciado. Edite o conteúdo e salve para criar um documento separado.");
+    }
+  });
+
+  deleteDraftButton.addEventListener("click", async () => {
+    if (!adminReady) {
+      notify("O painel ainda não confirmou seu acesso administrativo.");
+      return;
+    }
+
+    const id = draftSelect.value;
+    if (!id) {
+      notify("Selecione na lista o rascunho que deseja excluir.");
+      return;
+    }
+
+    const selectedOption = draftSelect.options[draftSelect.selectedIndex];
+    const draftLabel = selectedOption?.textContent?.trim() || "o rascunho selecionado";
+    const confirmed = confirm(
+      `Tem certeza de que deseja excluir o rascunho:\n\n${draftLabel}\n\n` +
+      "Esta ação é permanente e não poderá ser desfeita. Normas publicadas não podem ser excluídas por este botão."
+    );
+    if (!confirmed) return;
+
+    deleteDraftButton.disabled = true;
+    const originalLabel = deleteDraftButton.textContent;
+    deleteDraftButton.textContent = "Excluindo…";
+
+    try {
+      await deleteNormaDraft(id);
+
+      if (currentDraftId === id) {
+        // O documento aberto foi removido: limpa o editor para impedir que
+        // o próximo salvamento tente atualizar o ID excluído.
+        window.__paResetEditorToExample?.({
+          confirmAction: false
+        });
+      }
+
+      await refreshDraftList();
+      draftSelect.value = "";
+      notify("Rascunho excluído permanentemente do Firebase.");
+    } catch (error) {
+      console.error("Erro ao excluir rascunho:", error);
+      notify(error?.message || "Não foi possível excluir o rascunho.");
+    } finally {
+      deleteDraftButton.disabled = false;
+      deleteDraftButton.textContent = originalLabel;
+    }
+  });
+
+  document.getElementById("loadDraft").addEventListener("click", async () => {
+    if (!adminReady) return;
+    const id = draftSelect.value;
+    if (!id) {
+      notify("Selecione um rascunho primeiro.");
+      return;
+    }
+
+    try {
+      const draft = await getNormaDraft(id);
+      if (!draft) {
+        notify("O rascunho não foi encontrado.");
+        return;
+      }
+      fillEditor(draft);
+    } catch (error) {
+      console.error("Erro ao carregar rascunho:", error);
+      notify(error?.message || "Não foi possível carregar o rascunho.");
+    }
+  });
+
+  watchAdminAccess(async ({ user, isAdmin, error }) => {
+    const thisCheck = ++accessSequence;
+
+    if (!user) {
+      blockAccess("Autenticação necessária",
+        "Entre na plataforma com sua conta para acessar o painel administrativo.");
+      return;
+    }
+
+    const isPasswordAccount = user.providerData.some(
+      provider => provider.providerId === "password"
+    );
+
+    if (isPasswordAccount && !user.emailVerified) {
+      blockAccess("Confirme seu e-mail",
+        "Esta conta ainda não confirmou o endereço de e-mail. Confirme-o antes de acessar o painel.");
+      return;
+    }
+
+    if (error || !isAdmin) {
+      blockAccess("Acesso restrito",
+        "Esta conta não possui autorização administrativa ativa. Se acredita que isso é um erro, entre em contato com o responsável pela plataforma.");
+      return;
+    }
+
+    if (thisCheck !== accessSequence) return;
+    adminReady = true;
+    guard.style.display = "none";
+    saveButton.disabled = false;
+    newDraftButton.disabled = false;
+    document.getElementById("refreshDrafts").disabled = false;
+    document.getElementById("loadDraft").disabled = false;
+    deleteDraftButton.disabled = false;
+    firebaseStatus.textContent = "Firebase: administrador autorizado";
+    firebaseStatus.className = "status ok";
+    await refreshDraftList();
+    await refreshVideoAdminDrafts().catch(() => {});
+  });
+</script>
+</body>
+</html>
