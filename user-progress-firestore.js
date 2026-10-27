@@ -2,7 +2,7 @@
  // Usa somente o Firebase do projeto e limita os dados ao UID autenticado.
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 import {
-  collection, doc, getDoc, getDocs, runTransaction, serverTimestamp, setDoc
+  collection, doc, getDoc, getDocs, runTransaction, serverTimestamp, setDoc, Timestamp
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 import { auth, db } from "./firebase-config.js";
 
@@ -17,6 +17,13 @@ function courseCode(course) {
   return String(course || "ACP").toUpperCase() === "CAO" ? "CAO" : "ACP";
 }
 function historyDocId(course) { return `questionHistory_${courseCode(course)}`; }
+function compactHistoryKey(key) {
+  if (typeof key !== "string") return "";
+  // Compatibilidade com chaves antigas "matéria::id::enunciado": descarta o enunciado.
+  const parts = key.split("::");
+  if (parts.length >= 2 && parts[0] && parts[1]) return parts[0] + "::" + parts[1];
+  return key;
+}
 function cleanHistory(entries) {
   const cutoff = Date.now() - HISTORY_WINDOW_MS;
   const byKey = new Map();
@@ -24,8 +31,10 @@ function cleanHistory(entries) {
     if (!entry || typeof entry.key !== "string" || !Number.isFinite(Number(entry.usedAt))) return;
     const usedAt = Number(entry.usedAt);
     if (usedAt < cutoff) return;
-    const previous = byKey.get(entry.key);
-    if (!previous || previous.usedAt < usedAt) byKey.set(entry.key, { key: entry.key, usedAt });
+    const key = compactHistoryKey(entry.key);
+    if (!key) return;
+    const previous = byKey.get(key);
+    if (!previous || previous.usedAt < usedAt) byKey.set(key, { key, usedAt });
   });
   return [...byKey.values()];
 }
@@ -34,7 +43,9 @@ function userDoc(id) {
   return doc(db, "users", activeUser.uid, LIBRARY_COLLECTION, id);
 }
 function stableKey(q) {
-  return [q?.subject || "", q?.id !== undefined ? q.id : "", q?.text || ""].join("::").trim();
+  const id = q?.id !== undefined && q.id !== null && String(q.id).trim() ? q.id : q?.idSimulado;
+  if (id === undefined || id === null || !String(id).trim()) return "";
+  return String(q?.subject || "GERAL").trim() + "::" + String(id).trim();
 }
 
 export async function loadQuestionHistory(course) {
@@ -58,7 +69,8 @@ async function mergeQuestionHistory(entries, course) {
       course: courseCode(course),
       entries: merged,
       updatedAt: serverTimestamp(),
-      schemaVersion: 1
+      expiresAt: Timestamp.fromMillis(Date.now() + HISTORY_WINDOW_MS),
+      schemaVersion: 2
     }, { merge: true });
   });
   return merged;
@@ -77,7 +89,8 @@ export async function recordQuestionUsage(questions, course) {
       course: courseCode(course),
       entries: merged,
       updatedAt: serverTimestamp(),
-      schemaVersion: 1
+      expiresAt: Timestamp.fromMillis(now + HISTORY_WINDOW_MS),
+      schemaVersion: 2
     }, { merge: true });
   });
   return true;
