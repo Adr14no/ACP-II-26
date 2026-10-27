@@ -2,7 +2,7 @@
  // Usa somente o Firebase do projeto e limita os dados ao UID autenticado.
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 import {
-  collection, doc, getDoc, getDocs, runTransaction, serverTimestamp, setDoc, Timestamp
+  collection, deleteDoc, doc, getDoc, getDocs, runTransaction, serverTimestamp, setDoc, Timestamp
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 import { auth, db } from "./firebase-config.js";
 
@@ -51,11 +51,45 @@ function stableKey(q) {
 export async function loadQuestionHistory(course) {
   if (!activeUser) return [];
   const ref = userDoc(historyDocId(course));
-  const snap = await getDoc(ref);
-  const entries = cleanHistory(snap.exists() ? snap.data().entries : []);
+  let entries = [];
+
+  // A transação lê e limpa o documento no servidor, evitando sobrescrever
+  // alterações concorrentes feitas por outra sessão do mesmo usuário.
+  await runTransaction(db, async tx => {
+    const snap = await tx.get(ref);
+    if (!snap.exists()) {
+      entries = [];
+      return;
+    }
+
+    const rawEntries = snap.data().entries;
+    const cleanedEntries = cleanHistory(rawEntries);
+    entries = cleanedEntries;
+
+    // Se a limpeza/compactação não mudou nada, não gera uma gravação desnecessária.
+    if (JSON.stringify(Array.isArray(rawEntries) ? rawEntries : []) === JSON.stringify(cleanedEntries)) {
+      return;
+    }
+
+    // O documento é exclusivo do histórico de questões. Se tudo venceu ou era inválido,
+    // removê-lo por inteiro economiza mais dados; resultados de simulados ficam intactos.
+    if (cleanedEntries.length === 0) {
+      tx.delete(ref);
+      return;
+    }
+
+    const now = Date.now();
+    tx.set(ref, {
+      course: courseCode(course),
+      entries: cleanedEntries,
+      updatedAt: serverTimestamp(),
+      expiresAt: Timestamp.fromMillis(now + HISTORY_WINDOW_MS),
+      schemaVersion: 2
+    }, { merge: true });
+  });
+
   return entries;
 }
-
 
 async function mergeQuestionHistory(entries, course) {
   if (!activeUser) return [];
