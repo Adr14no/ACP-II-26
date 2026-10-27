@@ -70,16 +70,26 @@
   #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav .app-nav-icon { width: auto !important; flex-basis: auto !important; }
 }
 @media (max-width: 560px) {
-  #appShell > .app-sidebar { flex-basis: 54px !important; width: 54px !important; padding: 12px 4px !important; }
-  #appShell > .app-sidebar .app-sidebar-brand { justify-content: center !important; padding: 0 0 15px !important; }
+  #appShell > .app-sidebar { flex-basis: 174px !important; width: 174px !important; padding: 12px 8px !important; }
+  #appShell > .app-sidebar .app-sidebar-brand { justify-content: flex-start !important; padding: 0 4px 15px !important; }
   #appShell > .app-sidebar .app-sidebar-brand-copy,
-  #appShell > .app-sidebar .app-sidebar-label,
-  #appShell > .app-sidebar .app-sidebar-nav .app-nav-label,
-  #appShell > .app-sidebar .app-sidebar-user-copy { display: none !important; }
+  #appShell > .app-sidebar .app-sidebar-user-copy { display: block !important; }
+  #appShell > .app-sidebar .app-sidebar-label { display: block !important; font-size: 8px !important; margin: 16px 4px 7px !important; letter-spacing: .07em !important; }
+  #appShell > .app-sidebar .app-sidebar-nav .app-nav-label { display: inline !important; }
   #appShell > .app-sidebar .app-sidebar-nav a,
-  #appShell > .app-sidebar .app-sidebar-nav button { justify-content: center !important; padding: 11px 3px !important; }
-  #appShell > .app-sidebar .app-sidebar-nav .app-nav-icon { width: auto !important; flex-basis: auto !important; }
-  #appShell > .app-main { width: calc(100% - 54px) !important; }
+  #appShell > .app-sidebar .app-sidebar-nav button { justify-content: flex-start !important; padding: 9px 5px !important; gap: 6px !important; font-size: 11px !important; }
+  #appShell > .app-sidebar .app-sidebar-nav .app-nav-icon { width: 17px !important; flex: 0 0 17px !important; font-size: 13px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar { flex-basis: 48px !important; width: 48px !important; padding: 12px 4px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-brand { justify-content: center !important; padding: 0 0 15px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-brand-copy,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-label,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav .app-nav-label,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-user-copy { display: none !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav a,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav button { justify-content: center !important; padding: 11px 3px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav .app-nav-icon { width: auto !important; flex-basis: auto !important; }
+  #appShell > .app-main { width: calc(100% - 174px) !important; }
+  #appShell.sidebar-collapsed > .app-main { width: calc(100% - 48px) !important; }
   #appShell > .app-main > header.bg-pm-header .app-header-inner { padding: 8px !important; }
   #appShell > .app-main .app-header-title { flex-basis: 100% !important; }
   #appShell > .app-main .app-header-title h1 { font-size: 9px !important; }
