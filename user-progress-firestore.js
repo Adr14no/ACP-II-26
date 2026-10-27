@@ -2,7 +2,7 @@
  // Usa somente o Firebase do projeto e limita os dados ao UID autenticado.
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 import {
-  collection, deleteDoc, doc, getDoc, getDocs, runTransaction, serverTimestamp, setDoc, Timestamp
+  collection, doc, getDocs, runTransaction, serverTimestamp, setDoc, Timestamp
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 import { auth, db } from "./firebase-config.js";
 
