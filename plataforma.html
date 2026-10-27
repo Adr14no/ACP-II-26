@@ -199,7 +199,7 @@
         if (!notice) return;
         const key = 'pa-desktop-experience-notice-dismissed-v1';
         try { if (localStorage.getItem(key) === '1') return; } catch (_) {}
-        window.setTimeout(() => notice.classList.remove('hidden'), 900);
+        window.showDesktopExperienceNotice = () => window.setTimeout(() => notice.classList.remove('hidden'), 500);
         const dismiss = () => {
           notice.classList.add('hidden');
           try { localStorage.setItem(key, '1'); } catch (_) {}
@@ -302,6 +302,7 @@
 
         accessDecisionMade = true;
         if (guard) guard.remove();
+        window.showDesktopExperienceNotice?.();
       }, error => {
         console.error('Falha ao verificar autenticação:', error);
         accessDecisionMade = true;
