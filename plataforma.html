@@ -787,19 +787,30 @@
         const QUESTION_HISTORY_WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
 
         function chaveEstavelQuestao(q) {
-            // Inclui matéria, ID e enunciado para reduzir colisões caso IDs se repitam.
-            return [q.subject || "", q.id !== undefined ? q.id : "", q.text || ""]
-                .join("::")
-                .trim();
+            // Chave compacta: matéria + ID estável; não replica o enunciado no histórico.
+            const id = q?.id !== undefined && q.id !== null && String(q.id).trim() ? q.id : q?.idSimulado;
+            if (id === undefined || id === null || !String(id).trim()) return "";
+            return String(q?.subject || "GERAL").trim() + "::" + String(id).trim();
         }
 
         function carregarHistoricoQuestoes() {
             try {
                 const raw = localStorage.getItem(QUESTION_HISTORY_KEY);
                 const parsed = raw ? JSON.parse(raw) : [];
-                return Array.isArray(parsed)
-                    ? parsed.filter(item => item && typeof item.key === "string" && Number.isFinite(item.usedAt))
-                    : [];
+                if (!Array.isArray(parsed)) return [];
+                const corte = Date.now() - QUESTION_HISTORY_WINDOW_MS;
+                const compactado = new Map();
+                parsed.forEach(item => {
+                    if (!item || typeof item.key !== "string" || !Number.isFinite(Number(item.usedAt)) || Number(item.usedAt) < corte) return;
+                    const partes = item.key.split("::");
+                    const key = partes.length >= 2 && partes[0] && partes[1] ? partes[0] + "::" + partes[1] : item.key;
+                    const anterior = compactado.get(key);
+                    if (!anterior || Number(anterior.usedAt) < Number(item.usedAt)) compactado.set(key, { key, usedAt: Number(item.usedAt) });
+                });
+                const historico = [...compactado.values()];
+                // Persiste a migração do formato antigo (com enunciado) para o formato compacto.
+                if (raw !== JSON.stringify(historico)) localStorage.setItem(QUESTION_HISTORY_KEY, JSON.stringify(historico));
+                return historico;
             } catch (e) {
                 console.warn("Não foi possível ler o histórico de questões:", e);
                 return [];
