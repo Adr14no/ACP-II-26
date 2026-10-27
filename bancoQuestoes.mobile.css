@@ -178,3 +178,23 @@
   #appShell>.app-main>nav.bg-pm-lightBg{padding-left:8px!important;padding-right:8px!important}
   #appShell>.app-main>main{padding:8px!important}
 }
+
+
+/* Filtros sem contorno permanente: apenas o filtro ativo mantém borda */
+.app-main nav button[id^="filter"]{border-color:transparent!important;box-shadow:none!important}
+.app-main nav button[id^="filter"]:hover{border-color:transparent!important}
+.app-main nav button[id^="filter"].filter-active,
+.app-main nav button[id^="filter"][aria-pressed="true"]{border:1px solid #d4af37!important;box-shadow:0 0 0 1px rgba(212,175,55,.08)!important}
+.app-main nav button[id^="filter"]#filterALL{border-color:#d4af37!important}
+.app-main nav button[id^="filter"]:not(#filterALL){border-color:transparent!important}
+.app-main nav button[id^="filter"]:not(#filterALL).filter-active,
+.app-main nav button[id^="filter"]:not(#filterALL)[aria-pressed="true"]{border-color:#d4af37!important}
+@media(max-width:850px){
+  /* Authentication gate must cover every mobile header/sidebar stacking context */
+  html body #authGuard{position:fixed!important;inset:0!important;z-index:2147483647!important;
+    isolation:isolate!important;display:flex!important;align-items:center!important;justify-content:center!important;
+    background:#0b1326!important;pointer-events:auto!important}
+  html body #authGuard[hidden],html body #authGuard.is-hidden{display:none!important}
+  html body #appShell:not(.auth-ready){visibility:hidden!important}
+  #appShell>.app-main>header.bg-pm-header{z-index:100!important}
+}
