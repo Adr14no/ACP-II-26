@@ -44,6 +44,82 @@
       #authGuard{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;background:#0b1326;color:#f1f5f9;text-align:center;font-family:Arial,sans-serif}
       #authGuard .auth-guard-card{max-width:440px;border:1px solid #d4af37;border-radius:16px;padding:28px;background:#1a2744;box-shadow:0 20px 60px rgba(0,0,0,.35)}
       #authGuard p{line-height:1.6;color:#cbd5e1}
+    
+      /* Layout desktop do Banco de Questões — camada visual, sem alterar a lógica do simulado */
+      .app-shell{display:flex;align-items:stretch;min-height:100vh}
+      .app-sidebar{width:244px;flex:0 0 244px;position:sticky;top:0;align-self:flex-start;height:100vh;overflow-y:auto;background:#071020;border-right:1px solid #1d2b45;padding:22px 14px;display:flex;flex-direction:column;transition:width .2s ease,flex-basis .2s ease}
+      .app-sidebar-brand{display:flex;align-items:center;gap:12px;padding:0 8px 25px;border-bottom:1px solid #1d2b45}
+      .app-sidebar-brand-copy strong{display:block;font-size:12px;letter-spacing:.11em;color:#f1f5f9}
+      .app-sidebar-brand-copy small{display:block;color:#aab6ca;font-size:11px;margin-top:3px}
+      .app-sidebar-label{display:block!important;font-size:10px!important;line-height:1.4!important;color:#7787a2!important;letter-spacing:.14em!important;text-transform:uppercase!important;font-weight:700!important;margin:25px 12px 9px!important;white-space:nowrap}
+      .app-sidebar-nav{display:grid;gap:5px}
+      .app-sidebar-nav a,.app-sidebar-nav button{width:100%;border:0;background:transparent;color:#aab6ca;text-align:left;text-decoration:none;padding:11px 12px;border-radius:9px;display:flex;align-items:center;gap:12px;font-size:13px;cursor:pointer;transition:background .15s,color .15s}
+      .app-sidebar-nav a:hover,.app-sidebar-nav button:hover{background:#121f36;color:#fff}
+      .app-sidebar-nav .app-nav-active{background:#1b2a47;color:#d4af37;box-shadow:inset 3px 0 #d4af37}
+      .app-nav-icon{width:20px;flex:0 0 20px;text-align:center;font-size:16px}
+      .app-sidebar-collapse{width:36px;height:34px;flex:0 0 34px;align-self:flex-end;margin:12px 0 5px;background:#101c33;color:#aab6ca;border:1px solid #2a3c66;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer;overflow:hidden}
+      .app-sidebar-collapse:hover{border-color:#d4af37;color:#d4af37}
+      .app-sidebar-bottom{margin-top:auto}
+      .app-sidebar-user{display:flex;align-items:center;gap:10px;padding:13px 8px 0;margin-top:18px;border-top:1px solid #1d2b45}
+      .app-sidebar-avatar{width:34px;height:34px;flex:0 0 34px;border-radius:50%;background:#283958;color:#f0cf62;display:grid;place-items:center;font-size:12px;font-weight:800}
+      .app-sidebar-user-copy strong{display:block;font-size:12px;color:#f1f5f9}
+      .app-sidebar-user-copy small{display:block;color:#aab6ca;font-size:10px}
+      .app-main{min-width:0;flex:1;display:flex;flex-direction:column}
+      .app-main header .app-header-inner{max-width:none!important;padding-left:28px!important;padding-right:28px!important;flex-direction:row!important;align-items:center!important}
+      .app-main header .app-brand-lockup{display:none!important}
+      .app-main nav .app-filter-inner{max-width:none!important}
+      .app-main main{max-width:none!important;padding-left:28px!important;padding-right:28px!important;grid-template-columns:minmax(0,1fr) 278px!important;gap:20px!important}
+      .app-main main>section{grid-column:span 1!important;min-width:0}
+      .app-main main>aside{grid-column:span 1!important;min-width:0}
+      .app-main #questionContainer{padding:26px!important;min-height:540px}
+      .app-main #qText{font-size:16px;line-height:1.75;max-width:1100px}
+      .app-main #questionsGrid{grid-template-columns:repeat(5,minmax(0,1fr))!important;max-height:400px}
+      .app-main footer{margin-top:auto}
+      .app-shell.sidebar-collapsed .app-sidebar{width:78px;flex-basis:78px;padding-left:9px;padding-right:9px}
+      .app-shell.sidebar-collapsed .app-sidebar-brand{justify-content:center;padding-left:0;padding-right:0}
+      .app-shell.sidebar-collapsed .app-sidebar-brand-copy,.app-shell.sidebar-collapsed .app-sidebar-label,.app-shell.sidebar-collapsed .app-sidebar-nav .app-nav-label,.app-shell.sidebar-collapsed .app-sidebar-user-copy{display:none!important}
+      .app-shell.sidebar-collapsed .app-sidebar-collapse{width:36px;height:34px;align-self:center;font-size:13px}
+      .app-shell.sidebar-collapsed .app-sidebar-nav a,.app-shell.sidebar-collapsed .app-sidebar-nav button{justify-content:center;padding:12px 5px}
+      .app-shell.sidebar-collapsed .app-nav-icon{width:auto;flex-basis:auto}
+      .app-shell.sidebar-collapsed .app-sidebar-user{justify-content:center}
+      .app-main .app-top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+      .app-main .app-new-sim{background:#d4af37!important;color:#0b1326!important;border-color:#d4af37!important}
+      .app-main .app-new-sim:hover{background:#b59226!important}
+      .app-main .app-finish-sim{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:#b83232;color:#fff;border:1px solid #e35e5e;border-radius:10px;padding:10px 12px;font-size:12px;font-weight:700;box-shadow:0 5px 15px #0002}
+      .app-main .app-finish-sim:hover{background:#d13c3c}
+      .app-main .app-progress-ring{width:92px;height:92px;position:relative;flex:0 0 92px}
+      .app-main .app-progress-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+      .app-main .app-progress-ring circle{fill:none;stroke-width:9}
+      .app-main .app-progress-ring .track{stroke:#2a3c66}
+      .app-main .app-progress-ring .value{stroke:#d4af37;stroke-linecap:round;stroke-dasharray:251.2;stroke-dashoffset:251.2;transition:stroke-dashoffset .25s ease}
+      .app-main .app-progress-ring-label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+      @media(max-width:1100px){
+        .app-sidebar{width:210px;flex-basis:210px}
+        .app-main main{grid-template-columns:minmax(0,1fr) 245px!important;padding-left:18px!important;padding-right:18px!important}
+        .app-main header .app-header-inner{padding-left:18px!important;padding-right:18px!important}
+      }
+      @media(max-width:850px){
+        .app-sidebar{width:72px;flex-basis:72px;padding:18px 9px}
+        .app-sidebar-brand{justify-content:center;padding:0 0 20px}
+        .app-sidebar-brand-copy,.app-sidebar-label,.app-sidebar-nav .app-nav-label,.app-sidebar-user-copy{display:none!important}
+        .app-sidebar-nav a,.app-sidebar-nav button{justify-content:center;padding:12px 5px}
+        .app-sidebar-nav .app-nav-icon{width:auto;flex-basis:auto}
+        .app-sidebar-collapse{display:flex;width:34px;height:32px}
+        .app-sidebar-user{justify-content:center}
+        .app-main main{grid-template-columns:minmax(0,1fr)!important}
+        .app-main main>aside{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+        .app-main header .app-header-inner{flex-wrap:wrap!important}
+      }
+      @media(max-width:560px){
+        .app-sidebar{width:54px;flex-basis:54px;padding:13px 5px}
+        .app-sidebar-collapse{width:30px;height:30px}
+        .app-main header .app-header-inner{padding:12px!important}
+        .app-main main{padding:14px 10px!important}
+        .app-main main>aside{grid-template-columns:minmax(0,1fr)}
+        .app-main #questionContainer{padding:17px!important}
+        .app-main #qText{text-align:left;font-size:15px}
+      }
+
     </style>
 
 </head>
@@ -171,29 +247,35 @@
         </div>
     </div>
 
+    <div class="app-shell" id="appShell">
+      <aside class="app-sidebar" aria-label="Menu principal">
+        <div class="app-sidebar-brand">
+          <div class="app-sidebar-brand-copy"><strong>PLATAFORMA</strong><small>Ambiente de estudos</small></div>
+        </div>
+        <button type="button" class="app-sidebar-collapse" id="appSidebarCollapse" aria-label="Recolher menu" title="Recolher menu"><i class="fa-solid fa-angles-left" aria-hidden="true"></i></button>
+        <div class="app-sidebar-label">AMBIENTE DE ESTUDOS</div>
+        <nav class="app-sidebar-nav">
+          <a href="bancoQuestoes.html?curso=ACP" class="app-nav-active" title="Banco de questões"><span class="app-nav-icon"><i class="fa-solid fa-grip" aria-hidden="true"></i></span><span class="app-nav-label">Banco de questões</span></a>
+          <button type="button" onclick="voltarSelecaoCursos()" title="Cursos"><span class="app-nav-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><span class="app-nav-label">Cursos</span></button>
+          <button type="button" onclick="abrirModalPersonalizado()" title="Personalizar sessão"><span class="app-nav-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></span><span class="app-nav-label">Personalizar sessão</span></button>
+        </nav>
+        <div class="app-sidebar-label">CONTA</div>
+        <nav class="app-sidebar-nav">
+          <a href="perfil-usuario.html" title="Meu perfil"><span class="app-nav-icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span><span class="app-nav-label">Meu perfil</span></a>
+        </nav>
+        <div class="app-sidebar-bottom">
+          <div class="app-sidebar-user">
+            <div class="app-sidebar-avatar">ACP</div>
+            <div class="app-sidebar-user-copy"><strong>Área do aluno</strong><small>ACP II/26</small></div>
+          </div>
+        </div>
+      </aside>
+      <div class="app-main">
     <!-- Cabeçalho Principal -->
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-4 text-center md:text-left">
-                <div class="w-14 h-14 rounded-full bg-pm-gold/10 border-2 border-pm-gold flex items-center justify-center flex-shrink-0 shadow-inner overflow-hidden">
-                    <img src="pmesp.png" alt="Brasão PMESP" class="w-full h-full object-cover scale-100">
-                </div>
-                <div>
-                    <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Plataforma de Aperfeiçoamento</h1>
-                    <h2 id="simuladoTitulo" class="text-base sm:text-lg font-extrabold text-white">ACP II/26 - Capitão PM</h2>
-                    <p id="subtituloCurso" class="text-xs text-slate-300">Ambiente de preparação para avaliações profissionais</p>
-                </div>
-            </div>
-
+        <div class="app-header-inner max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <!-- Seletor de cursos e controles do simulado -->
-            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-                <a href="perfil-usuario.html" title="Abrir perfil e segurança da conta" aria-label="Perfil do usuário" class="group flex items-center gap-2 rounded-xl border border-pm-gold/50 bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-slate-200 transition hover:border-pm-gold hover:text-pm-gold">
-                    <span class="flex h-8 w-8 items-center justify-center rounded-full border border-pm-gold/70 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-user"></i></span>
-                    <span>Perfil</span>
-                </a>
-                <button type="button" onclick="voltarSelecaoCursos()" title="Voltar à seleção de cursos" class="rounded-xl border border-pm-border bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-slate-200 transition hover:border-pm-gold/60 hover:text-pm-gold">
-                    <i class="fa-solid fa-layer-group mr-1.5"></i> Cursos
-                </button>
+            <div class="app-top-actions flex flex-wrap items-center justify-center gap-2 sm:gap-3">
                 <div class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
                     <div id="timerDisplay" class="flex items-center gap-2 font-mono font-bold text-xl text-pm-gold">
                         <i class="fa-regular fa-clock text-base text-slate-400"></i>
@@ -204,11 +286,8 @@
                     </button>
                 </div>
 
-                <button type="button" onclick="abrirModalPersonalizado()" title="Criar sessão de estudo por área e quantidade" class="rounded-xl border border-pm-gold/60 bg-pm-gold/10 px-3.5 py-2 text-xs sm:text-sm font-bold text-pm-gold transition hover:bg-pm-gold hover:text-pm-navy flex items-center gap-2">
-                    <i class="fa-solid fa-sliders"></i> Personalizado
-                </button>
                 <!-- Botão Novo Simulado Sempre Visível -->
-                <button onclick="confirmarNovoSimulado()" title="Limpar tudo e iniciar novo sorteio" class="bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2 border border-amber-400/40">
+                <button onclick="confirmarNovoSimulado()" title="Limpar tudo e iniciar novo sorteio" class="app-new-sim bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2 border border-amber-400/40">
                     <i class="fa-solid fa-arrows-rotate"></i> Novo Simulado
                 </button>
             </div>
@@ -217,7 +296,7 @@
 
     <!-- Barra de Navegação e Filtros -->
     <nav class="bg-pm-lightBg border-b border-pm-border py-3 px-4">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+        <div class="app-filter-inner max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
             <!-- Alternador de Modos -->
             <div class="flex items-center bg-pm-navy rounded-lg p-1 border border-pm-border">
                 <button id="btnModeExam" onclick="setMode('exam')" class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow">
@@ -237,9 +316,6 @@
                 <button onclick="setSubjectFilter('JURIDICO')" id="filterJURIDICO" class="px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap">Jurídico-Admin (<span id="cntJur">0</span>)</button>
             </div>
 
-            <button onclick="finishExam()" class="ml-auto bg-red-600/80 hover:bg-red-600 text-white px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold shadow transition flex items-center gap-2">
-                <i class="fa-solid fa-flag-checkered"></i> Finalizar Prova
-            </button>
         </div>
     </nav>
 
@@ -381,12 +457,31 @@
 
         <!-- Barra Lateral: Painel de Controle e Cartão de Respostas -->
         <aside class="flex flex-col gap-4">
+            <button onclick="finishExam()" class="app-finish-sim" title="Finalizar e apresentar o resultado do simulado">
+                <i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> Finalizar simulado
+            </button>
 
             <!-- Painel de Progresso: visível no Modo Estudo; oculto no Modo Prova -->
             <div id="progressPanel" class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg">
                 <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-2">
                     <i class="fa-solid fa-chart-pie text-pm-gold"></i> Painel de Progresso
                 </h3>
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <div class="app-progress-ring">
+                        <svg viewBox="0 0 100 100" aria-hidden="true">
+                            <circle class="track" cx="50" cy="50" r="40"></circle>
+                            <circle class="value" id="progressRing" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <div class="app-progress-ring-label">
+                            <strong id="progressRingPercent" class="text-xl font-black text-white">0%</strong>
+                            <span class="text-[9px] text-slate-400">concluído</span>
+                        </div>
+                    </div>
+                    <div class="text-xs text-slate-300 leading-relaxed">
+                        <div class="font-bold text-white mb-1">Seu progresso</div>
+                        <div><span id="progressRingAnswered">0</span> de <span id="progressRingTotal">50</span> respondidas</div>
+                    </div>
+                </div>
                 <div class="grid grid-cols-3 gap-2 text-center text-xs mb-3">
                     <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
                         <div class="text-emerald-400 font-bold text-lg" id="statCorrect">0</div>
@@ -438,6 +533,9 @@
         </div>
     </footer>
 
+      </div><!-- /.app-main -->
+    </div><!-- /.app-shell -->
+
     <!-- Script de Lógica Principal -->
     <script>
         const TOTAL_QUESTOES = cursoInicial === 'CAO' ? 100 : 50;
@@ -468,6 +566,18 @@
         let cursoAtivo = cursoInicial;
 
         document.addEventListener("DOMContentLoaded", function() {
+            const appShell = document.getElementById('appShell');
+            const sidebarToggle = document.getElementById('appSidebarCollapse');
+            if (appShell && sidebarToggle) {
+                sidebarToggle.addEventListener('click', () => {
+                    const collapsed = appShell.classList.toggle('sidebar-collapsed');
+                    sidebarToggle.innerHTML = collapsed
+                        ? '<i class="fa-solid fa-angles-right" aria-hidden="true"></i>'
+                        : '<i class="fa-solid fa-angles-left" aria-hidden="true"></i>';
+                    sidebarToggle.setAttribute('aria-label', collapsed ? 'Expandir menu' : 'Recolher menu');
+                    sidebarToggle.title = collapsed ? 'Expandir menu' : 'Recolher menu';
+                });
+            }
             if (!cursoInicial || acessoCAOBloqueado) {
                 window.location.replace('plataforma.html');
                 return;
@@ -1282,6 +1392,14 @@
             document.getElementById('statPending').innerText = pending;
             document.getElementById('progBar').style.width = `${pct}%`;
             document.getElementById('progPercent').innerText = `${pct}% concluído`;
+            const progressRing = document.getElementById('progressRing');
+            if (progressRing) progressRing.style.strokeDashoffset = 251.2 - (251.2 * pct / 100);
+            const progressRingPercent = document.getElementById('progressRingPercent');
+            if (progressRingPercent) progressRingPercent.textContent = `${pct}%`;
+            const progressRingAnswered = document.getElementById('progressRingAnswered');
+            if (progressRingAnswered) progressRingAnswered.textContent = answered;
+            const progressRingTotal = document.getElementById('progressRingTotal');
+            if (progressRingTotal) progressRingTotal.textContent = total;
         }
 
         function startTimer() {
