@@ -246,3 +246,27 @@ html body #modalInstrucoes>div{
   border-color:#d4af37!important;
   box-shadow:none!important;
 }
+
+
+/* Navegação das questões no celular: Anterior e Próxima lado a lado,
+   com o contador em uma linha própria para evitar apertos e quebras. */
+@media (max-width: 560px) {
+  #appShell #questionContainer ~ .question-navigation { display: grid !important; }
+  #appShell #btnPrev,
+  #appShell #btnNext {
+    flex: initial !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    justify-content: center !important;
+    padding: 10px 8px !important;
+    white-space: nowrap !important;
+  }
+  #appShell #btnPrev { order: 1 !important; }
+  #appShell #btnNext { order: 2 !important; }
+  #appShell #qCounterSummary {
+    order: 3 !important;
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
