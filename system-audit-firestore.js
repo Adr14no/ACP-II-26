@@ -1,6 +1,6 @@
 import {
   addDoc, collection, getDocs, limit, orderBy, query, serverTimestamp,
-  Timestamp, where
+  Timestamp
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 import { auth, db } from "./firebase-config.js";
 
@@ -39,11 +39,10 @@ export async function listAuditEvents({ email = "", type = "", max = 250 } = {})
   const user = auth.currentUser;
   if (!user?.uid) throw new Error("Autenticação necessária.");
   // A autorização final é aplicada pelas regras do Firestore.
-  const constraints = [orderBy("clientTime", "desc"), limit(max)];
-  if (type) constraints.unshift(where("type", "==", type));
-  const snapshot = await getDocs(query(collection(db, LOGS), ...constraints));
+  const snapshot = await getDocs(query(collection(db, LOGS), orderBy("clientTime", "desc"), limit(max)));
   const normalizedEmail = email.trim().toLowerCase();
   return snapshot.docs.map(docSnap => ({ id: docSnap.id, ...docSnap.data() }))
-    .filter(row => !normalizedEmail || String(row.email || "").toLowerCase().includes(normalizedEmail))
+    .filter(row => (!normalizedEmail || String(row.email || "").toLowerCase().includes(normalizedEmail))
+      && (!type || row.type === type))
     .map(row => ({ ...row, formattedTime: brTime(row.clientTime || row.createdAt) }));
 }
