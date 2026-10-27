@@ -1488,11 +1488,16 @@
             });
 
             const studyExpBox = document.getElementById('studyExplanation');
-            if (state.mode === 'study' && selectedOpt !== null) {
+            const showStudyExplanation = state.mode === 'study' && selectedOpt !== null;
+            if (showStudyExplanation) {
                 studyExpBox.classList.remove('hidden');
+                studyExpBox.style.display = 'block';
                 document.getElementById('studyExplanationText').innerText = q.explanation;
             } else {
+                // Oculta explicitamente em Modo Prova, independente do CSS/responsividade.
                 studyExpBox.classList.add('hidden');
+                studyExpBox.style.display = 'none';
+                document.getElementById('studyExplanationText').innerText = '';
             }
 
             document.getElementById('btnPrev').disabled = state.currentIndex === 0;
