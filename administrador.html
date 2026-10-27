@@ -339,7 +339,7 @@ function buildStandalone(){const d=data();const safeContent=sanitizeHtml(d.conte
 </body></html>`}
 $('downloadHtml').onclick=()=>{const blob=new Blob([buildStandalone()],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=(($('code').value.trim()||'pagina-normativa').replace(/[^a-z0-9_-]+/gi,'-'))+'-previa.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);toast('HTML de pré-visualização exportado. Não foi publicado.')}
 function resetEditorToExample({confirmAction=true, confirmMessage='Restaurar os dados demonstrativos iniciais? As alterações desta sessão serão perdidas.'}={}) {
-  if (confirmAction && !confirm(confirmMessage)) return false;
+  if (confirmAction) return false; // As confirmações são exibidas pelo modal padronizado antes de chamar esta função.
 
   $('title').value='TÍTULO DEMONSTRATIVO DA NORMA';
   $('code').value='NORMA-EXEMPLO';
@@ -566,17 +566,20 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
 
   document.getElementById("refreshDrafts").addEventListener("click", refreshDraftList);
 
-  newDraftButton.addEventListener("click", () => {
+  newDraftButton.addEventListener("click", async () => {
     if (!adminReady) {
       notify("O painel ainda não confirmou seu acesso administrativo.");
       return;
     }
 
-    const started = window.__paResetEditorToExample?.({
-      confirmAction: true,
-      confirmMessage: "Iniciar um novo rascunho? O editor voltará ao conteúdo demonstrativo. O rascunho salvo anteriormente será preservado no Firebase."
-    });
-
+    const confirmed = await window.paConfirm(
+      "Iniciar novo rascunho",
+      "O editor voltará ao conteúdo demonstrativo. O rascunho salvo anteriormente será preservado no Firebase.",
+      "Iniciar rascunho",
+      false
+    );
+    if (!confirmed) return;
+    const started = window.__paResetEditorToExample?.({ confirmAction: false });
     if (started) {
       draftSelect.value = "";
       notify("Novo rascunho iniciado. Edite o conteúdo e salve para criar um documento separado.");
