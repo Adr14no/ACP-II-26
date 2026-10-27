@@ -30,6 +30,93 @@ main{margin-left:252px;width:calc(100% - 252px);min-width:0}.topbar{position:sti
 .profile-embed-wrap{width:100%;min-height:1100px;overflow:hidden;border:1px solid rgba(234,191,58,.18);border-radius:18px;background:#071326;box-shadow:0 18px 45px #0003}.profile-frame{display:block;width:100%;height:1250px;border:0;background:var(--navy)}
 .modal-box{width:min(1120px,100%);max-height:92vh;margin:2vh auto}.modal-head{padding:22px 24px}.modal-head h2{font-size:22px}.modal-head p{font-size:13px}.modal-tools{padding:17px 22px}.modal-list{padding:20px 22px;grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;gap:12px}.material-row{min-height:82px;padding:16px}.material-row .number{width:44px;height:44px}.material-row strong{font-size:14px}.material-row small{font-size:12px;line-height:1.45}.modal-foot{padding:14px 22px}
 @media(max-width:720px){.profile-embed-wrap{min-height:1450px}.profile-frame{height:1550px}.modal-box{max-height:94vh;margin:0}.modal-head{padding:16px}.modal-list{grid-template-columns:1fr;padding:13px;gap:9px}.material-row{min-height:72px;padding:12px}.modal-tools{padding:12px}.modal-foot{padding:11px 14px}}
+
+
+/* Correção mobile dos modais: impedir sobreposição de títulos e descrições.
+   Os cartões podem crescer conforme o texto e a lista rola dentro do modal. */
+@media (max-width: 720px) {
+  .modal-backdrop {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  .modal-box {
+    width: 100%;
+    max-height: calc(100dvh - 20px);
+    height: auto;
+    min-height: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-head {
+    flex: 0 0 auto;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 0;
+  }
+  .modal-head .subject-icon {
+    flex: 0 0 56px;
+  }
+  .modal-heading {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .modal-head h2,
+  .modal-head p {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+  .modal-close {
+    flex: 0 0 36px;
+  }
+  .modal-tools,
+  .modal-foot {
+    flex: 0 0 auto;
+  }
+  .modal-list,
+  .bizu-grid {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    grid-auto-rows: max-content;
+    align-content: start;
+  }
+  .material-row,
+  .bizu-row {
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    align-items: center;
+  }
+  .material-row > span,
+  .bizu-row > span {
+    min-width: 0;
+    flex: 1 1 0%;
+    overflow-wrap: anywhere;
+  }
+  .material-row strong,
+  .material-row small,
+  .bizu-row strong,
+  .bizu-row small {
+    display: block;
+    position: static;
+    height: auto;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-height: 1.45;
+  }
+  .material-row strong,
+  .bizu-row strong {
+    margin: 0;
+  }
+  .material-row small,
+  .bizu-row small {
+    margin-top: 4px;
+  }
+}
 </style></head><body><div class="scrim" id="scrim"></div><div class="shell">
 <aside class="sidebar" id="sidebar"><div><div class="brand"><svg class="logo" viewBox="0 0 76 54" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg><div><div class="eyebrow">Plataforma de Aperfeiçoamento</div><h1>ACP</h1><p>Avaliação de Competência Profissional</p></div></div><div class="nav-label">Ambiente de estudo</div><nav class="nav" id="nav"><button class="active" data-page="dashboard"><span class="ico">◫</span>Painel inicial</button><button data-page="materias"><span class="ico">▤</span>Matérias e materiais</button><button data-page="bizus"><span class="ico">✦</span>Bizu - Mastigado</button><button data-page="perfil"><span class="ico">◎</span>Perfil & Estatísticas</button><a class="nav-link" href="bancoQuestoes.html?curso=ACP"><span class="ico">▣</span>Banco de questões <span class="nav-arrow">↗</span></a><a class="nav-link" href="plataforma.html"><span class="ico">▦</span>Cursos <span class="nav-arrow">↗</span></a></nav></div><div class="sidefoot"><div class="user"><div class="avatar" id="sideAvatar">ACP</div><div><strong id="sideName">Perfil do aluno</strong><small>Área de estudos</small></div></div><p style="font-size:10px;color:#8190a7;margin:12px 4px 0">Plataforma de Aperfeiçoamento</p></div></aside><main><header class="topbar"><div style="display:flex;align-items:center;gap:13px"><button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button><div class="top-title" id="topTitle">Painel inicial<small>ACP · Área de Estudos</small></div></div></header><div class="content">
 <section class="page active" id="page-dashboard">
@@ -485,90 +572,3 @@ onAuthStateChanged(auth, async user => {
   showStatsError("Não foi possível verificar a sessão. Volte ao login e entre novamente.");
 });
 </script></body></html>
-
-
-/* Correção mobile dos modais: impedir sobreposição de títulos e descrições.
-   Os cartões podem crescer conforme o texto e a lista rola dentro do modal. */
-@media (max-width: 720px) {
-  .modal-backdrop {
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    overflow-y: auto;
-  }
-  .modal-box {
-    width: 100%;
-    max-height: calc(100dvh - 20px);
-    height: auto;
-    min-height: 0;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .modal-head {
-    flex: 0 0 auto;
-    align-items: flex-start;
-    gap: 10px;
-    min-width: 0;
-  }
-  .modal-head .subject-icon {
-    flex: 0 0 56px;
-  }
-  .modal-heading {
-    min-width: 0;
-    overflow-wrap: anywhere;
-  }
-  .modal-head h2,
-  .modal-head p {
-    overflow-wrap: anywhere;
-    word-break: normal;
-  }
-  .modal-close {
-    flex: 0 0 36px;
-  }
-  .modal-tools,
-  .modal-foot {
-    flex: 0 0 auto;
-  }
-  .modal-list,
-  .bizu-grid {
-    flex: 1 1 auto;
-    min-height: 0;
-    overflow-y: auto;
-    grid-auto-rows: max-content;
-    align-content: start;
-  }
-  .material-row,
-  .bizu-row {
-    min-width: 0;
-    min-height: 0;
-    height: auto;
-    align-items: center;
-  }
-  .material-row > span,
-  .bizu-row > span {
-    min-width: 0;
-    flex: 1 1 0%;
-    overflow-wrap: anywhere;
-  }
-  .material-row strong,
-  .material-row small,
-  .bizu-row strong,
-  .bizu-row small {
-    display: block;
-    position: static;
-    height: auto;
-    white-space: normal;
-    overflow-wrap: anywhere;
-    word-break: normal;
-    line-height: 1.45;
-  }
-  .material-row strong,
-  .bizu-row strong {
-    margin: 0;
-  }
-  .material-row small,
-  .bizu-row small {
-    margin-top: 4px;
-  }
-}
