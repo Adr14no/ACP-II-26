@@ -213,3 +213,36 @@
   #appShell>.app-main>nav.bg-pm-lightBg .app-filter-inner{gap:16px!important}
   #appShell>.app-main>nav.bg-pm-lightBg .app-filter-inner>div:last-child{margin-top:5px!important}
 }
+
+/* Correção definitiva: o pop-up inicial é #modalInstrucoes, não #authGuard.
+   Ele deve ficar acima do cabeçalho sticky e de qualquer stacking context. */
+html body #modalInstrucoes{
+  position:fixed!important;
+  inset:0!important;
+  z-index:2147483646!important;
+  isolation:isolate!important;
+}
+html body #modalInstrucoes.hidden{display:none!important}
+html body #modalInstrucoes:not(.hidden){display:flex!important}
+html body #modalInstrucoes>div{
+  max-height:calc(100dvh - 24px)!important;
+  overflow-y:auto!important;
+}
+@media(max-width:850px){
+  html body #modalInstrucoes{align-items:center!important;padding:12px!important}
+  html body #modalInstrucoes>div{max-height:calc(100dvh - 24px)!important}
+}
+/* Inativos não têm borda nem realce de hover; o selecionado usa aria-pressed. */
+#appShell>.app-main>nav button[id^="filter"]{
+  border-color:transparent!important;
+  box-shadow:none!important;
+  outline:none!important;
+}
+#appShell>.app-main>nav button[id^="filter"]:hover{
+  border-color:transparent!important;
+  box-shadow:none!important;
+}
+#appShell>.app-main>nav button[id^="filter"][aria-pressed="true"]{
+  border-color:#d4af37!important;
+  box-shadow:none!important;
+}
