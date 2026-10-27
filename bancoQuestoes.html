@@ -1402,7 +1402,17 @@
                 'JURIDICO': 'Assuntos Jurídico-Administrativos'
             };
             document.getElementById('qBadgeSubject').innerText = `${subjNames[q.subject] || q.subject} | ${q.topic}`;
-            document.getElementById('qText').innerText = q.text;
+            const questionTextElement = document.getElementById('qText');
+            const isMobileQuestionLayout = window.matchMedia('(max-width: 850px)').matches;
+            if (isMobileQuestionLayout) {
+                // Em telas pequenas, cada proposição romana começa em uma nova linha.
+                questionTextElement.innerText = q.text.replace(/\\s*\\((i{1,3})\\)\\s*/gi,
+                    (match, roman) => `\\n${roman.toUpperCase()}- `);
+                questionTextElement.style.whiteSpace = 'pre-line';
+            } else {
+                questionTextElement.innerText = q.text;
+                questionTextElement.style.whiteSpace = '';
+            }
 
             const flagBtn = document.getElementById('qMarkFlag');
             if (state.flagged[targetIdx]) {
