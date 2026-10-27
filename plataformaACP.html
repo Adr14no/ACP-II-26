@@ -14,8 +14,8 @@ main{margin-left:252px;width:calc(100% - 252px);min-width:0}.topbar{position:sti
 <aside class="sidebar" id="sidebar"><div><div class="brand"><svg class="logo" viewBox="0 0 76 54" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg><div><div class="eyebrow">Plataforma de Aperfeiçoamento</div><h1>ACP</h1><p>Avaliação de Competência Profissional</p></div></div><div class="nav-label">Ambiente de estudo</div><nav class="nav" id="nav"><button class="active" data-page="dashboard"><span class="ico">◫</span>Painel inicial</button><button data-page="materias"><span class="ico">▤</span>Matérias e materiais</button><button data-page="bizus"><span class="ico">✦</span>Bizu - Mastigado</button><button data-page="perfil"><span class="ico">◎</span>Perfil & Estatísticas</button><a class="nav-link" href="plataforma.html?curso=ACP"><span class="ico">▣</span>Banco de questões <span class="nav-arrow">↗</span></a></nav></div><div class="sidefoot"><div class="user"><div class="avatar" id="sideAvatar">ACP</div><div><strong id="sideName">Perfil do aluno</strong><small>Área de estudos</small></div></div><p style="font-size:10px;color:#8190a7;margin:12px 4px 0">Plataforma de Aperfeiçoamento</p></div></aside><main><header class="topbar"><div style="display:flex;align-items:center;gap:11px"><button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button><div class="top-title" id="topTitle">Painel inicial<small>ACP · Área de Estudos</small></div></div><div class="top-actions"><span class="pill">AMBIENTE ACP</span><a class="pill" style="text-decoration:none" href="plataforma.html?curso=ACP"><i class="fa-solid fa-file-lines"></i> Banco de questões ↗</a></div></header><div class="content">
 <section class="page active" id="page-dashboard">
 <div class="hero"><span class="tag">Área do aluno · ACP</span><div class="profile-line" style="margin-top:14px"><div class="profile-avatar" id="welcomeAvatar">A</div><div class="profile-copy"><h2 style="margin:0">Bem-vindo, <span class="gold" id="welcomeName">[Nome do perfil]</span></h2><small>Seu ambiente de estudos e aperfeiçoamento profissional</small></div></div><p style="margin-top:12px">Acesse as matérias, consulte os materiais de referência e revise os bizus em um único ambiente.</p></div>
-<div class="section-head"><div><h3>Estatísticas do usuário</h3><p>Indicadores pessoais — serão ligados ao histórico autenticado na etapa de integração.</p></div></div>
-<div class="metrics"><div class="metric"><div class="metric-top"><span>Questões respondidas</span><span class="metric-icon">✓</span></div><strong>—</strong><small>Aguardando integração do histórico</small></div><div class="metric"><div class="metric-top"><span>Taxa de acerto</span><span class="metric-icon">◎</span></div><strong>—</strong><small>Aguardando integração do histórico</small></div><div class="metric"><div class="metric-top"><span>Matérias estudadas</span><span class="metric-icon">▤</span></div><strong>—</strong><small>Aguardando integração do histórico</small></div><div class="metric"><div class="metric-top"><span>Progresso geral</span><span class="metric-icon">↗</span></div><strong>—</strong><small>Aguardando integração do histórico</small></div></div>
+<div class="section-head"><div><h3>Estatísticas do usuário</h3><p>Indicadores calculados a partir dos simulados concluídos na sua conta.</p></div></div>
+<div class="metrics"><div class="metric"><div class="metric-top"><span>Questões respondidas</span><span class="metric-icon">✓</span></div><strong id="metricAnswered">0</strong><small id="metricAnsweredNote">Questões respondidas em simulados concluídos</small></div><div class="metric"><div class="metric-top"><span>Taxa de acerto</span><span class="metric-icon">◎</span></div><strong id="metricAccuracy">0%</strong><small id="metricAccuracyNote">Acertos sobre questões respondidas</small></div><div class="metric"><div class="metric-top"><span>Matérias estudadas</span><span class="metric-icon">▤</span></div><strong id="metricSubjects">0</strong><small id="metricSubjectsNote">Matérias identificadas nos resultados</small></div><div class="metric"><div class="metric-top"><span>Progresso geral</span><span class="metric-icon">↗</span></div><strong id="metricProgress">0%</strong><small id="metricProgressNote">Média dos resultados dos simulados</small></div></div>
 <div class="section-head"><div><h3>Matérias e áreas de estudo</h3><p>Selecione uma área para consultar as normas, os textos e os resumos disponíveis.</p></div></div>
 <div class="subjects-grid"><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>Assuntos Jurídico-Administrativos</h3><p>Legislação, normas e diretrizes aplicadas à atividade policial e à administração pública.</p><button class="btn" data-category="juridico">Ver materiais →</button></article><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-building-columns"></i></div><h3>Assuntos Organizacionais</h3><p>Organização, gestão, administração e assuntos institucionais da PMESP.</p><button class="btn" data-category="organizacional">Ver materiais →</button></article><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-crosshairs"></i></div><h3>Assuntos Operacionais</h3><p>Doutrina, programas de policiamento, diretrizes e procedimentos operacionais.</p><button class="btn" data-category="operacional">Ver materiais →</button></article></div>
 <div class="section-head"><div><h3>Bizus para revisão</h3><p>Acesse os materiais de revisão organizados por matéria.</p></div></div>
@@ -24,7 +24,7 @@ main{margin-left:252px;width:calc(100% - 252px);min-width:0}.topbar{position:sti
 </section>
 <section class="page" id="page-materias"><div class="section-head"><div><h3>Matérias e materiais</h3><p>Selecione uma das três áreas para localizar normas, textos integrais e materiais de revisão.</p></div></div><div class="subjects-grid"><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>Assuntos Jurídico-Administrativos</h3><p>Legislação, normas e diretrizes.</p><button class="btn" data-category="juridico">Ver materiais →</button></article><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-building-columns"></i></div><h3>Assuntos Organizacionais</h3><p>Estrutura e gestão institucional.</p><button class="btn" data-category="organizacional">Ver materiais →</button></article><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-crosshairs"></i></div><h3>Assuntos Operacionais</h3><p>Doutrina e procedimentos operacionais.</p><button class="btn" data-category="operacional">Ver materiais →</button></article></div></section>
 <section class="page" id="page-bizus"><div class="section-head"><div><h3>Bizu - Mastigado</h3><p>Catálogo de revisão. Os links marcados para preenchimento continuam pendentes no arquivo-fonte.</p></div></div><div class="notice">Selecione um item para consultar a descrição e abrir o material correspondente.</div><div id="bizusInline" class="resource-grid" style="margin-top:14px"></div></section>
-<section class="page" id="page-perfil"><div class="section-head"><div><h3>Perfil & Estatísticas</h3><p>Identificação e indicadores pessoais.</p></div></div><div class="panel"><div class="profile-line"><div class="profile-avatar" id="profileAvatar">A</div><div class="profile-copy"><h3 id="profileName" style="margin:0">[Nome do perfil]</h3><small id="profileEmail">Nome e e-mail serão obtidos da autenticação na integração.</small></div></div><div class="notice" style="margin-top:18px">Os indicadores estão em branco de propósito: não há dados reais de progresso disponíveis nesta prévia isolada. Eles serão conectados ao histórico do usuário na etapa de integração.</div></div></section>
+<section class="page" id="page-perfil"><div class="section-head"><div><h3>Perfil & Estatísticas</h3><p>Identificação e indicadores pessoais.</p></div></div><div class="panel"><div class="profile-line"><div class="profile-avatar" id="profileAvatar">A</div><div class="profile-copy"><h3 id="profileName" style="margin:0">[Nome do perfil]</h3><small id="profileEmail">Nome e e-mail serão obtidos da autenticação na integração.</small></div></div><div class="notice" id="profileDataNotice" style="margin-top:18px">Carregando os dados do perfil e as estatísticas da sua conta...</div></div></section>
 <section class="page" id="page-detail"><button class="btn back" id="detailBack">← Voltar</button><div class="panel"><span class="kind" id="detailKind">MATERIAL</span><h2 id="detailTitle" style="font-size:22px;margin:12px 0 6px"></h2><p id="detailMeta" class="sub"></p><div id="detailActions" class="modal-actions"></div></div></section>
 </div></main></div><div class="toast" id="toast"></div>
 <div class="modal-backdrop" id="materialsModal" role="presentation"><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="materialsTitle"><header class="modal-head"><div class="subject-icon"><i id="materialsIcon" class="fa-solid fa-book-open"></i></div><div class="modal-heading"><h2 id="materialsTitle">Matéria</h2><p id="materialsDescription">Pesquise e selecione um material.</p></div><button class="modal-close" data-close="materialsModal" aria-label="Fechar">×</button></header><div class="modal-tools"><input id="materialsSearch" type="search" placeholder="Pesquisar por nome, código ou assunto..."><p id="materialsCount" style="font-size:11px;color:var(--muted);margin:7px 0 0"></p></div><div class="modal-list" id="materialsList"></div><div class="modal-foot">A lista apresenta somente os materiais da área selecionada.</div></section></div>
@@ -393,6 +393,67 @@ function openBizuDetail(m){document.getElementById("bizuDetailTitle").textConten
 document.getElementById("openBizus").addEventListener("click",openBizuModal);
 document.querySelector('[data-page="bizus"]').addEventListener("click",()=>{const grid=document.getElementById("bizusInline");grid.innerHTML="";BIZU_MATERIAS.slice(0,9).forEach((m,i)=>{const a=document.createElement("article");a.className="resource";a.innerHTML='<span class="kind">BIZU · '+String(i+1).padStart(2,"0")+'</span><h3></h3><p></p><div class="resource-foot"><span>Material de revisão</span><button class="open-resource">Abrir →</button></div>';a.querySelector("h3").textContent=m.titulo;a.querySelector("p").textContent=m.descricao;a.querySelector("button").onclick=()=>openBizuDetail(m);grid.append(a)});if(BIZU_MATERIAS.length>9){const b=document.createElement("button");b.className="btn";b.textContent="Ver todas as matérias de bizu";b.onclick=openBizuModal;grid.append(b)}});
 document.getElementById("detailBack").onclick=()=>go("materias");
-// Esta prévia isolada não tem sessão Firebase disponível. O nome fica explicitamente como campo a conectar.
-const displayName=localStorage.getItem("acpDisplayName")||"[Nome do perfil]";document.getElementById("welcomeName").textContent=displayName;document.getElementById("profileName").textContent=displayName;document.getElementById("sideName").textContent=displayName==="[Nome do perfil]"?"Perfil do aluno":displayName;const initial=displayName==="[Nome do perfil]"?"A":displayName.trim().charAt(0).toUpperCase();["welcomeAvatar","profileAvatar","sideAvatar"].forEach(id=>{document.getElementById(id).textContent=initial});
+// Identidade e estatísticas são preenchidas pelo módulo de integração Firebase abaixo.
+</script>
+<script type="module">
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+import { auth } from "./firebase-config.js";
+import "./user-progress-firestore.js";
+
+const $ = id => document.getElementById(id);
+function setMetric(id, value) { const el = $(id); if (el) el.textContent = value; }
+function setProfileName(name, email) {
+  const displayName = (name || "").trim() || (email ? email.split("@")[0] : "") || "Aluno";
+  $("welcomeName").textContent = displayName;
+  $("profileName").textContent = displayName;
+  $("sideName").textContent = displayName;
+  $("profileEmail").textContent = email || "Conta autenticada";
+  const initial = displayName.charAt(0).toLocaleUpperCase("pt-BR");
+  ["welcomeAvatar", "profileAvatar", "sideAvatar"].forEach(id => { $(id).textContent = initial; });
+}
+function showStatsError(message) {
+  const notice = $("profileDataNotice");
+  if (notice) { notice.textContent = message; notice.style.display = "block"; }
+  setMetric("metricAnswered", "—");
+  setMetric("metricAccuracy", "—");
+  setMetric("metricSubjects", "—");
+  setMetric("metricProgress", "—");
+}
+async function loadStats() {
+  try {
+    await window.studyProgress?.ready();
+    if (!window.studyProgress?.getProgressSummary) throw new Error("O módulo de progresso não ficou disponível.");
+    const summary = await window.studyProgress.getProgressSummary();
+    const accuracy = summary.totalQuestions > 0 ? (summary.totalCorrect / summary.totalQuestions) * 100 : 0;
+    setMetric("metricAnswered", String(summary.totalQuestions || 0));
+    setMetric("metricAccuracy", accuracy.toFixed(1) + "%");
+    setMetric("metricSubjects", String((summary.studiedSubjects || []).length));
+    setMetric("metricProgress", Number(summary.averagePercent || 0).toFixed(1) + "%");
+    setMetric("metricAnsweredNote", summary.attempts ? "Em " + summary.attempts + " simulado(s) concluído(s)" : "Conclua um simulado para iniciar seu histórico");
+    setMetric("metricAccuracyNote", summary.totalQuestions ? summary.totalCorrect + " acertos em " + summary.totalQuestions + " respostas" : "Ainda sem respostas registradas");
+    setMetric("metricSubjectsNote", (summary.studiedSubjects || []).length ? "Identificadas nos resultados salvos" : "As matérias aparecem após concluir simulados");
+    setMetric("metricProgressNote", summary.attempts ? "Média dos resultados dos simulados" : "Ainda sem resultados registrados");
+    const notice = $("profileDataNotice");
+    if (notice) {
+      notice.textContent = summary.attempts
+        ? "Perfil conectado. Estatísticas sincronizadas com os simulados salvos na sua conta."
+        : "Perfil conectado. Ainda não há simulados concluídos salvos nesta conta; os indicadores serão preenchidos após o primeiro resultado.";
+      notice.style.display = "block";
+    }
+  } catch (error) {
+    console.error("Falha ao carregar estatísticas do ACP:", error);
+    showStatsError("Não foi possível carregar as estatísticas. Verifique as regras do Firestore e tente atualizar a página.");
+  }
+}
+onAuthStateChanged(auth, async user => {
+  if (!user) { location.replace("index.html?motivo=sessao"); return; }
+  const isPassword = user.providerData.some(provider => provider.providerId === "password");
+  if (isPassword && !user.emailVerified) { location.replace("index.html?motivo=confirmar-email"); return; }
+  setProfileName(user.displayName, user.email);
+  await loadStats();
+}, error => {
+  console.error("Falha ao verificar sessão do ACP:", error);
+  setProfileName("", "");
+  showStatsError("Não foi possível verificar a sessão. Volte ao login e entre novamente.");
+});
 </script></body></html>
