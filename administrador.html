@@ -89,6 +89,7 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
     <button data-tab="validacao">Validação</button>
     <!-- VIDEOAULAS — escopo atual: manter a aba administrativa e o gerenciamento de rascunhos já implementados nesta branch. Etapas futuras: catálogo do aluno, fluxo próprio de publicação/despublicação e player responsivo. -->
       <button data-tab="videos">Vídeos e aulas</button>
+    <button data-tab="logs">Log do sistema</button>
   </nav>
   <div class="side-note">Protótipo para aprovação visual.<br>Dados de demonstração.<br><br>Conectado ao Firebase quando autorizado.<br>Salvar não publica a norma.</div>
 </aside>
@@ -99,6 +100,15 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
   </header>
 
   <div class="wrap">
+    <section id="auditAdminView" style="display:none">
+      <div class="intro"><div><h1>Log do sistema</h1><div class="muted">Histórico de autenticação e eventos registrados pela plataforma.</div></div><button class="primary" id="auditRefresh">Atualizar registros</button></div>
+      <div class="callout"><strong>Nota:</strong> a saída só é exata quando o usuário encerra a sessão explicitamente. Fechar o navegador ou perder conexão pode impedir o registro da saída; nesses casos, a última atividade é apenas uma referência.</div>
+      <div class="bottomgrid" style="margin-top:0;margin-bottom:15px">
+        <section class="card"><div class="cardhead"><h2>Eventos carregados</h2></div><div class="cardbody"><strong id="auditCount" style="font-size:28px">—</strong><div class="muted small">Registros disponíveis nesta consulta</div></div></section>
+        <section class="card"><div class="cardhead"><h2>Pesquisar histórico</h2></div><div class="cardbody"><div class="fields"><div class="field"><label for="auditEmail">E-mail do usuário</label><input id="auditEmail" type="search" placeholder="Filtrar por e-mail"></div><div class="field"><label for="auditType">Tipo de evento</label><select id="auditType"><option value="">Todos os eventos</option><option value="login">Login</option><option value="logout">Logout explícito</option><option value="heartbeat">Atividade recente</option></select></div></div><button id="auditApply" class="primary" style="margin-top:12px">Aplicar filtros</button></div></section>
+      </div>
+      <section class="card"><div class="cardhead"><h2>Atividade recente</h2><span id="auditStatus" class="status">Aguardando autorização</span></div><div class="tablewrap"><table class="table"><thead><tr><th>Data e hora (Brasília)</th><th>Usuário</th><th>Evento</th><th>Detalhes</th></tr></thead><tbody id="auditRows"><tr><td colspan="4">Os registros aparecerão após carregar o histórico.</td></tr></tbody></table></div></section>
+    </section>
     <div id="normAdminView">
     <div class="draft-controls" aria-label="Rascunhos armazenados no Firebase">
       <label for="savedDrafts"><strong>Rascunhos no Firebase:</strong></label>
@@ -288,7 +298,7 @@ function update(){
 ['title','code','edition','description','course','subject','category','order','tags','watermark','showSearch'].forEach(id=>$(id).addEventListener('input',update));
 $('normText').addEventListener('input',update);
 document.querySelectorAll('#leftTabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('#leftTabs~.cardbody .panel').forEach(p=>p.classList.remove('active'));['p-content','p-meta','p-mats','p-check'].forEach(id=>$(id).classList.toggle('active',id===b.dataset.panel))});
-document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));const isVideos=b.dataset.tab==='videos';$('normAdminView').style.display=isVideos?'none':'block';$('videoAdminView').style.display=isVideos?'block':'none';const map={editor:'p-content',metadados:'p-meta',materiais:'p-mats',validacao:'p-check'};if(!isVideos){document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x.dataset.panel===map[b.dataset.tab]));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===map[b.dataset.tab]))}else{updateVideoAdminPreview();renderVideoAdminDrafts()}document.querySelector('.top .crumb').textContent=isVideos?'Administração / Vídeos e aulas / Protótipo':'Administração / Páginas normativas / Protótipo';document.querySelector('.top strong').textContent=isVideos?'Editor de páginas de aulas':'Editor de páginas baseado na I-16-PM';$('saveDraft').style.display=isVideos?'none':'';$('newDraft').style.display=isVideos?'none':'';$('downloadHtml').style.display=isVideos?'none':''});
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));const isVideos=b.dataset.tab==='videos',isLogs=b.dataset.tab==='logs';$('normAdminView').style.display=(isVideos||isLogs)?'none':'block';$('videoAdminView').style.display=isVideos?'block':'none';$('auditAdminView').style.display=isLogs?'block':'none';const map={editor:'p-content',metadados:'p-meta',materiais:'p-mats',validacao:'p-check'};if(!isVideos&&!isLogs){document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x.dataset.panel===map[b.dataset.tab]));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===map[b.dataset.tab]))}else if(isVideos){updateVideoAdminPreview();renderVideoAdminDrafts()}else{loadAuditEvents()}document.querySelector('.top .crumb').textContent=isVideos?'Administração / Vídeos e aulas / Protótipo':isLogs?'Administração / Log do sistema':'Administração / Páginas normativas / Protótipo';document.querySelector('.top strong').textContent=isVideos?'Editor de páginas de aulas':isLogs?'Auditoria de acessos':'Editor de páginas baseado na I-16-PM';$('saveDraft').style.display=(isVideos||isLogs)?'none':'';$('newDraft').style.display=(isVideos||isLogs)?'none':'';$('downloadHtml').style.display=(isVideos||isLogs)?'none':''});
 document.querySelectorAll('[data-cmd]').forEach(b=>b.onclick=()=>{ $('normText').focus();document.execCommand(b.dataset.cmd,false,null);update()});
 document.querySelectorAll('[data-insert]').forEach(b=>b.onclick=()=>{const type=b.dataset.insert;const s=type==='article'?'<p class="legal-article"><strong>Art. [NUMERAÇÃO ORIGINAL]</strong> [Insira aqui o texto proveniente da fonte oficial.]</p>':'<p class="hierarchy-title">CAPÍTULO [IDENTIFICAÇÃO ORIGINAL]</p>';document.execCommand('insertHTML',false,s);update();toast('Inserido marcador demonstrativo; confira a fonte oficial antes de usar conteúdo normativo.')});
 $('addMaterial').onclick=()=>{const title=$('matTitle').value.trim(),url=$('matUrl').value.trim();if(!title)return toast('Informe o título do material.');if(url&&!/^https?:\/\//i.test(url))return toast('A URL deve começar com http:// ou https://.');materials.push({title,type:$('matType').value,url,description:$('matDesc').value});$('matTitle').value='';$('matUrl').value='';$('matDesc').value='';renderMaterials();update();toast('Material adicionado apenas à demonstração.')};
@@ -375,6 +385,7 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
   import { auth, db } from "./firebase-config.js";
   import { saveVideoDraft, updateVideoDraft, listVideoDrafts, deleteVideoDraft } from "./admin-videos-firestore.js";
   import { isAdminUser } from "./admin-access.js";
+  import { listAuditEvents } from "./system-audit-firestore.js";
   import {
     saveNormaDraft,
     updateNormaDraft,
@@ -631,6 +642,31 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
       notify(error?.message || "Não foi possível carregar o rascunho.");
     }
   });
+
+  const auditRows = document.getElementById("auditRows");
+  const auditStatus = document.getElementById("auditStatus");
+  function escapeAudit(value) { return String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+  async function loadAuditEvents() {
+    if (!adminReady) { auditStatus.textContent = "Acesso não autorizado"; return; }
+    auditStatus.textContent = "Carregando…"; auditStatus.className = "status";
+    auditRows.innerHTML = '<tr><td colspan="4">Consultando Firestore…</td></tr>';
+    try {
+      const events = await listAuditEvents({ email: document.getElementById("auditEmail").value, type: document.getElementById("auditType").value, max: 250 });
+      document.getElementById("auditCount").textContent = String(events.length);
+      auditRows.innerHTML = events.length ? events.map(event => {
+        const labels = {login:"Login",logout:"Logout explícito",heartbeat:"Atividade recente"};
+        const detail = event.type === "heartbeat" ? "Última atividade registrada; não comprova presença atual." : event.type === "login" ? "Autenticação concluída" : event.type === "logout" ? "Sessão encerrada explicitamente" : "Evento registrado";
+        return '<tr><td>'+escapeAudit(event.formattedTime)+'</td><td><strong>'+escapeAudit(event.displayName || "Sem nome")+'</strong><div class="hint">'+escapeAudit(event.email || event.uid || "Usuário não identificado")+'</div></td><td>'+escapeAudit(labels[event.type] || event.type || "Evento")+'</td><td>'+escapeAudit(detail)+'</td></tr>';
+      }).join("") : '<tr><td colspan="4">Nenhum registro encontrado. Verifique as regras do Firestore e se a gravação de eventos já está ativa.</td></tr>';
+      auditStatus.textContent = "Atualizado · "+events.length+" evento(s)"; auditStatus.className = "status ok";
+    } catch (error) {
+      console.error("Falha ao consultar log do sistema:", error);
+      auditRows.innerHTML = '<tr><td colspan="4">Não foi possível consultar os registros. Confirme as regras de leitura da coleção systemLogs.</td></tr>';
+      auditStatus.textContent = "Falha ao consultar"; auditStatus.className = "status";
+    }
+  }
+  document.getElementById("auditRefresh").addEventListener("click", loadAuditEvents);
+  document.getElementById("auditApply").addEventListener("click", loadAuditEvents);
 
   watchAdminAccess(async ({ user, isAdmin, error }) => {
     const thisCheck = ++accessSequence;
