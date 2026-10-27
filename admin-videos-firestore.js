@@ -41,7 +41,7 @@ function normalize(input, user) {
 function detectProvider(url) {
   const u = new URL(url);
   if (u.hostname === "youtu.be" || /(^|\.)youtube(-nocookie)?\.com$/i.test(u.hostname)) return "youtube";
-  if (/(^|\\.)vimeo\\.com$/i.test(u.hostname)) return "vimeo";
+  if (/(^|\.)vimeo\.com$/i.test(u.hostname)) return "vimeo";
   return "external";
 }
 export async function saveVideoDraft(input) {
