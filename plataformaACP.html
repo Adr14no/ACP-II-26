@@ -485,3 +485,90 @@ onAuthStateChanged(auth, async user => {
   showStatsError("Não foi possível verificar a sessão. Volte ao login e entre novamente.");
 });
 </script></body></html>
+
+
+/* Correção mobile dos modais: impedir sobreposição de títulos e descrições.
+   Os cartões podem crescer conforme o texto e a lista rola dentro do modal. */
+@media (max-width: 720px) {
+  .modal-backdrop {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  .modal-box {
+    width: 100%;
+    max-height: calc(100dvh - 20px);
+    height: auto;
+    min-height: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-head {
+    flex: 0 0 auto;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 0;
+  }
+  .modal-head .subject-icon {
+    flex: 0 0 56px;
+  }
+  .modal-heading {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .modal-head h2,
+  .modal-head p {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+  .modal-close {
+    flex: 0 0 36px;
+  }
+  .modal-tools,
+  .modal-foot {
+    flex: 0 0 auto;
+  }
+  .modal-list,
+  .bizu-grid {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    grid-auto-rows: max-content;
+    align-content: start;
+  }
+  .material-row,
+  .bizu-row {
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    align-items: center;
+  }
+  .material-row > span,
+  .bizu-row > span {
+    min-width: 0;
+    flex: 1 1 0%;
+    overflow-wrap: anywhere;
+  }
+  .material-row strong,
+  .material-row small,
+  .bizu-row strong,
+  .bizu-row small {
+    display: block;
+    position: static;
+    height: auto;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-height: 1.45;
+  }
+  .material-row strong,
+  .bizu-row strong {
+    margin: 0;
+  }
+  .material-row small,
+  .bizu-row small {
+    margin-top: 4px;
+  }
+}
