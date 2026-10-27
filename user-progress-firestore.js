@@ -37,7 +37,7 @@ function stableKey(q) {
   return [q?.subject || "", q?.id !== undefined ? q.id : "", q?.text || ""].join("::").trim();
 }
 
-async function loadQuestionHistory(course) {
+export async function loadQuestionHistory(course) {
   if (!activeUser) return [];
   const ref = userDoc(historyDocId(course));
   const snap = await getDoc(ref);
@@ -64,7 +64,7 @@ async function mergeQuestionHistory(entries, course) {
   return merged;
 }
 
-async function recordQuestionUsage(questions, course) {
+export async function recordQuestionUsage(questions, course) {
   if (!activeUser || !Array.isArray(questions) || questions.length === 0) return false;
   const ref = userDoc(historyDocId(course));
   const now = Date.now();
@@ -83,7 +83,7 @@ async function recordQuestionUsage(questions, course) {
   return true;
 }
 
-async function saveExamResult(result) {
+export async function saveExamResult(result) {
   if (!activeUser || !result || result.shouldSave === false) return false;
   const id = `exam_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
   await setDoc(userDoc(id), {
