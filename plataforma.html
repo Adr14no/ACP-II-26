@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:,">
     <title>Plataforma de Aperfeiçoamento</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -53,6 +54,15 @@
         <p style="margin:0">Aguarde enquanto confirmamos sua autenticação.</p>
       </div>
     </div>
+    <script id="auth-guard-timeout">
+      // Fallback independente: informa falhas de carregamento de módulos sem liberar o conteúdo protegido.
+      window.setTimeout(() => {
+        const guard = document.getElementById('authGuard');
+        if (guard && document.body.contains(guard) && guard.querySelector('h2')?.textContent === 'Verificando acesso') {
+          guard.innerHTML = '<div class="auth-guard-card"><h2 style="font-size:1.25rem;font-weight:800;color:#d4af37;margin:0 0 10px">Não foi possível carregar a plataforma</h2><p style="margin:0 0 18px">A verificação de acesso não foi concluída. Atualize a página; se o problema persistir, informe o erro do Console ao suporte.</p><a href="index.html" style="display:inline-block;padding:11px 18px;border-radius:9px;background:#d4af37;color:#0b1326;font-weight:800;text-decoration:none">Voltar ao login</a></div>';
+        }
+      }, 12000);
+    </script>
 
 
     <!-- Página inicial da Plataforma de Aperfeiçoamento: cursos e materiais -->
@@ -1521,12 +1531,12 @@
     <script type="module">
       import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
       import { auth } from "./firebase-config.js";
-      import { recordQuestionUsage, saveExamResult, loadQuestionHistory, loadExamResults, getProgressSummary } from "./user-progress-firestore.js";
+      import { recordQuestionUsage, saveExamResult, loadQuestionHistory, getProgressSummary } from "./user-progress-firestore.js";
       import { isAdminUser } from "./admin-access.js";
 
       auth.languageCode = 'pt-BR';
       // Ponte controlada entre scripts clássicos do simulado e módulos Firebase.
-      window.studyProgress = { recordQuestionUsage, saveExamResult, loadQuestionHistory, loadExamResults, getProgressSummary };
+      window.studyProgress = { recordQuestionUsage, saveExamResult, loadQuestionHistory, getProgressSummary };
       const guard = document.getElementById('authGuard');
       let accessDecisionMade = false;
 
