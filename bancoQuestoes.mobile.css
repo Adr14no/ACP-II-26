@@ -192,3 +192,24 @@
   html body #authGuard[hidden],html body #authGuard.is-hidden{display:none!important}
   #appShell>.app-main>header.bg-pm-header{z-index:100!important}
 }
+
+
+/* Ajuste final dos filtros: sem borda nos inativos; dourado apenas no ativo */
+.app-main nav button[id^="filter"]{
+  border:1px solid transparent!important;
+  outline:0!important;
+  box-shadow:none!important;
+}
+.app-main nav button[id^="filter"]:hover{
+  border-color:transparent!important;
+  box-shadow:none!important;
+}
+.app-main nav button[id^="filter"][class~="border-pm-gold"]{
+  border-color:#d4af37!important;
+  box-shadow:0 0 0 1px rgba(212,175,55,.08)!important;
+}
+@media(max-width:850px){
+  /* Aumenta o respiro entre Modo Prova/Estudo e os filtros */
+  #appShell>.app-main>nav.bg-pm-lightBg .app-filter-inner{gap:16px!important}
+  #appShell>.app-main>nav.bg-pm-lightBg .app-filter-inner>div:last-child{margin-top:5px!important}
+}
