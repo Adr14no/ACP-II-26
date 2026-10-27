@@ -274,3 +274,28 @@ html body #modalInstrucoes>div{
     order: initial !important;
   }
 }
+
+/* Posicionamento final da navegação mobile: os dois botões na mesma linha. */
+@media (max-width: 560px) {
+  #appShell .app-main div:has(> #btnPrev):has(> #qCounterSummary):has(> #btnNext) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    grid-template-rows: auto auto !important;
+    align-items: center !important;
+    column-gap: 10px !important;
+    row-gap: 12px !important;
+  }
+  #appShell #btnPrev {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+  #appShell #btnNext {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+  #appShell #qCounterSummary {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    text-align: center !important;
+  }
+}
