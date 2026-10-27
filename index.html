@@ -202,18 +202,9 @@
 </div>
 
 <script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, sendEmailVerification, signOut, GoogleAuthProvider, signInWithPopup, updateProfile } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
-const firebaseConfig = {
-  apiKey: "AIzaSyANcW27P7NHL_qJtjTg8n683P0I7sm5Z6Y",
-  authDomain: "plataforma-aperfeicoamento.firebaseapp.com",
-  projectId: "plataforma-aperfeicoamento",
-  storageBucket: "plataforma-aperfeicoamento.firebasestorage.app",
-  messagingSenderId: "750933864503",
-  appId: "1:750933864503:web:9bfdfbbb5a7b87de8e0fb2"
-};
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+import { auth } from "./firebase-config.js";
+import { recordAuditEvent } from "./system-audit-firestore.js";
 // Solicita ao Firebase os modelos de e-mail em português do Brasil.
 auth.languageCode = 'pt-BR';
 const googleProvider = new GoogleAuthProvider();
@@ -333,6 +324,7 @@ document.getElementById('enterPlatform').addEventListener('click', async () => {
       showNotice(notice, resendMessage, true);
       return;
     }
+    await recordAuditEvent("login", { provider: "password" });
     showNotice(notice, 'E-mail confirmado. Redirecionando para a plataforma…');
     window.setTimeout(() => { window.location.href = 'plataforma.html'; }, 900);
   } catch (error) { showNotice(notice, friendlyError(error), true); }
@@ -361,6 +353,7 @@ googleButton.setAttribute('aria-label', 'Entrar com Google');
 googleButton.addEventListener('click', async () => {
   try {
     const result = await signInWithPopup(auth, googleProvider);
+    await recordAuditEvent("login", { provider: "google" });
     showNotice(notice, 'Login com Google confirmado para ' + (result.user.email || 'sua conta') + '. Redirecionando…');
     window.setTimeout(() => { window.location.href = 'plataforma.html'; }, 900);
   } catch (error) { showNotice(notice, friendlyError(error), true); }
