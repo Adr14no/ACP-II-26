@@ -1321,9 +1321,11 @@
             ['ALL', 'OPERACIONAL', 'ORGANIZACIONAL', 'JURIDICO'].forEach(c => {
                 const btn = document.getElementById('filter' + c);
                 if (c === cat) {
-                    btn.className = "px-3 py-1 text-xs rounded-full border border-pm-gold text-pm-gold font-medium bg-pm-gold/10 whitespace-nowrap shadow";
+                    btn.className = "px-3 py-1 text-xs rounded-full border border-pm-gold text-pm-gold font-medium bg-pm-gold/10 whitespace-nowrap";
+                    btn.setAttribute('aria-pressed', 'true');
                 } else {
-                    btn.className = "px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap";
+                    btn.className = "px-3 py-1 text-xs rounded-full border border-transparent text-slate-300 whitespace-nowrap";
+                    btn.setAttribute('aria-pressed', 'false');
                 }
             });
 
