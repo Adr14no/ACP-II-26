@@ -175,6 +175,41 @@
         </div>
     </div>
 
+    <!-- Aviso discreto e não bloqueante sobre a melhor experiência em computador. -->
+    <section id="desktopExperienceNotice" class="fixed inset-x-3 bottom-3 z-[250] hidden sm:inset-x-auto sm:bottom-5 sm:right-5 sm:w-[min(430px,calc(100vw-2rem))]" aria-labelledby="desktopNoticeTitle" role="status">
+      <div class="overflow-hidden rounded-2xl border border-pm-gold/50 bg-pm-cardBg text-slate-100 shadow-2xl ring-1 ring-black/20">
+        <div class="flex items-start gap-3 p-4 sm:p-5">
+          <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-desktop text-lg" aria-hidden="true"></i></div>
+          <div class="min-w-0 flex-1">
+            <h3 id="desktopNoticeTitle" class="text-sm font-black text-pm-gold sm:text-base">Dica para estudar melhor</h3>
+            <p class="mt-1 text-sm leading-relaxed text-slate-200">A plataforma funciona no celular, mas no computador você aproveita melhor as questões, os materiais e a leitura dos conteúdos.</p>
+            <div class="mt-3 flex flex-wrap items-center gap-2">
+              <button id="desktopNoticeDismiss" type="button" class="rounded-lg bg-pm-gold px-4 py-2 text-xs font-extrabold text-pm-navy transition hover:bg-pm-goldHover focus:outline-none focus:ring-2 focus:ring-pm-gold">Entendi</button>
+              <button id="desktopNoticeLater" type="button" class="rounded-lg border border-pm-border px-3 py-2 text-xs font-bold text-slate-300 transition hover:border-pm-gold/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-pm-gold">Agora não</button>
+            </div>
+          </div>
+          <button id="desktopNoticeClose" type="button" aria-label="Fechar aviso" class="rounded-lg p-1 text-slate-400 transition hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-pm-gold"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (() => {
+        const notice = document.getElementById('desktopExperienceNotice');
+        if (!notice) return;
+        const key = 'pa-desktop-experience-notice-dismissed-v1';
+        try { if (localStorage.getItem(key) === '1') return; } catch (_) {}
+        window.setTimeout(() => notice.classList.remove('hidden'), 900);
+        const dismiss = () => {
+          notice.classList.add('hidden');
+          try { localStorage.setItem(key, '1'); } catch (_) {}
+        };
+        ['desktopNoticeDismiss','desktopNoticeLater','desktopNoticeClose'].forEach(id =>
+          document.getElementById(id)?.addEventListener('click', dismiss)
+        );
+      })();
+    </script>
+
     <!-- Navegação do seletor de cursos: o ambiente de questões fica em página independente. -->
     <script>
       function entrarNoCurso(curso) {
