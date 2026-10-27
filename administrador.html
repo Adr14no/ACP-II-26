@@ -61,6 +61,13 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
   background: #fff;
 }
 
+
+.video-admin-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.9fr);gap:16px;align-items:start}
+.va-player{aspect-ratio:16/9;border-radius:9px;background:linear-gradient(135deg,#071020,#19395d);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px;overflow:hidden;background-size:cover;background-position:center}
+.va-player strong{display:block;font-size:17px}.va-player p{font-size:12px;color:#d9e4f1;margin:7px 0 0}.va-play{width:52px;height:52px;border:1px solid #ffffff80;border-radius:50%;background:#ffffff17;display:grid;place-items:center;margin:0 auto 13px;padding-left:3px}
+.va-preview-copy{padding:16px 3px 2px}.va-preview-copy h2{font-size:19px;margin:10px 0 6px}.va-preview-copy p{color:#536176;white-space:pre-wrap}.va-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.va-tags span{background:#f1f4f8;padding:4px 8px;border-radius:99px;font-size:11px;color:#536176}.va-draft-list{display:grid;gap:8px}.va-draft{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px;border:1px solid var(--line);border-radius:8px}.va-draft strong{display:block}.va-draft .hint{overflow-wrap:anywhere}.va-draft-actions{display:flex;gap:6px;flex-wrap:wrap}
+@media(max-width:1050px){.video-admin-grid{grid-template-columns:1fr}}@media(max-width:600px){.va-draft{align-items:flex-start;flex-direction:column}.va-draft-actions{width:100%}}
+
 </style>
 </head>
 <body>
@@ -80,6 +87,7 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
     <button data-tab="metadados">Classificação</button>
     <button data-tab="materiais">Materiais</button>
     <button data-tab="validacao">Validação</button>
+    <button data-tab="videos">Vídeos e aulas</button>
   </nav>
   <div class="side-note">Protótipo para aprovação visual.<br>Dados de demonstração.<br><br>Conectado ao Firebase quando autorizado.<br>Salvar não publica a norma.</div>
 </aside>
@@ -90,6 +98,7 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
   </header>
 
   <div class="wrap">
+    <div id="normAdminView">
     <div class="draft-controls" aria-label="Rascunhos armazenados no Firebase">
       <label for="savedDrafts"><strong>Rascunhos no Firebase:</strong></label>
       <select id="savedDrafts">
@@ -194,6 +203,46 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
       <section class="card"><div class="cardhead"><h2>Resumo dos metadados</h2><button id="copyJson">Copiar JSON</button></div><div class="cardbody"><pre id="jsonSummary" style="white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;margin:0;color:#334155"></pre></div></section>
       <section class="card"><div class="cardhead"><h2>Materiais associados</h2><span class="status">Demonstração</span></div><div class="cardbody"><div id="materialsSummary" class="small muted">Nenhum material associado.</div></div></section>
     </div>
+
+    </div>
+    <section id="videoAdminView" style="display:none">
+      <div class="intro">
+        <div><h1>Vídeos e páginas de aulas</h1><div class="muted">Crie páginas de aulas a partir de vídeos já gravados ou hospedados, com classificação pedagógica e pré-visualização.</div></div>
+        <span class="status">Área de vídeos</span>
+      </div>
+      <div class="callout"><strong>Integração Firestore:</strong> os rascunhos de aulas são salvos na coleção <code>videoAulas</code>, separados das normas. A gravação exige autenticação e perfil administrativo ativo; salvar não publica a aula.</div>
+      <div class="video-admin-grid">
+        <section class="card">
+          <div class="cardhead"><h2>Dados da página de aula</h2><span class="status">Editor</span></div>
+          <div class="cardbody">
+            <div class="fields">
+              <div class="field full"><label for="vaTitle">Título da aula *</label><input id="vaTitle" placeholder="Ex.: Fundamentos da Radiopatrulha"></div>
+              <div class="field full"><label for="vaUrl">Link do vídeo hospedado *</label><input id="vaUrl" type="url" placeholder="https://www.youtube.com/watch?v=..."><span class="hint">YouTube, Vimeo ou outro endereço HTTPS autorizado.</span></div>
+              <div class="field full"><label for="vaDescription">Descrição e objetivos</label><textarea id="vaDescription" placeholder="Descreva os objetivos de aprendizagem da aula."></textarea></div>
+              <div class="field"><label for="vaCourse">Curso *</label><select id="vaCourse"><option value="">Selecione…</option><option>ACP — Aperfeiçoamento</option><option>CAO — Aperfeiçoamento de Oficiais</option><option>CFP — Formação de Praças</option><option>Geral</option></select></div>
+              <div class="field"><label for="vaSubject">Matéria *</label><select id="vaSubject"><option value="">Selecione…</option><option>Operacional</option><option>Organizacional</option><option>Jurídico-Administrativo</option><option>Doutrinária</option></select></div>
+              <div class="field"><label for="vaCategory">Categoria *</label><select id="vaCategory"><option value="">Selecione…</option><option>Policiamento Comunitário</option><option>Radiopatrulha</option><option>Gerenciamento de Incidentes</option><option>Legislação</option><option>Procedimentos Operacionais</option><option>Formação Institucional</option></select></div>
+              <div class="field"><label for="vaDuration">Duração</label><input id="vaDuration" placeholder="Ex.: 18 min"></div>
+              <div class="field"><label for="vaInstructor">Instrutor / responsável</label><input id="vaInstructor" placeholder="Nome ou função"></div>
+              <div class="field full"><label for="vaTags">Tags (separadas por vírgula)</label><input id="vaTags" placeholder="radiopatrulha, abordagem, procedimento"></div>
+            </div>
+            <div class="section-actions"><button id="vaReset">Limpar</button><button class="primary" id="vaSave">Salvar rascunho</button><button class="dark" id="vaExport">Exportar página HTML</button></div>
+            <p class="hint">Os rascunhos ficam no Firestore. A publicação continua separada e não é realizada por este botão.</p>
+          </div>
+        </section>
+        <section class="card">
+          <div class="cardhead"><h2>Pré-visualização da aula</h2><span class="status">Ao vivo</span></div>
+          <div class="cardbody">
+            <div id="vaPlayer" class="va-player"><div><div class="va-play">▶</div><strong id="vaPreviewTitle">Sua aula aparecerá aqui</strong><p id="vaPreviewHint">Cole o link do vídeo para conferir a página.</p></div></div>
+            <div class="va-preview-copy"><span id="vaPreviewCategory" class="status">Categoria da aula</span><h2 id="vaPreviewHeading">Título da aula</h2><p id="vaPreviewDescription">A descrição da aula será exibida aqui.</p><div id="vaPreviewMeta" class="hint">Curso · Matéria · Duração</div><div id="vaPreviewTags" class="va-tags"></div><div id="vaUrlMessage" class="hint" style="margin-top:12px"></div></div>
+          </div>
+        </section>
+      </div>
+      <section class="card" style="margin-top:18px">
+        <div class="cardhead"><h2>Rascunhos de aulas</h2><span id="vaFirestoreStatus" class="status">Conectando ao Firestore…</span></div>
+        <div class="cardbody"><div id="vaDraftList" class="va-draft-list"><p class="hint">Carregando rascunhos do Firestore…</p></div></div>
+      </section>
+    </section>
     <div class="footer-note">Protótipo de aprovação visual. Não substitui o modelo oficial, não confirma vigência normativa e não realiza publicação automática. O acesso administrativo é verificado separadamente.</div>
   </div>
 </main>
@@ -238,7 +287,7 @@ function update(){
 ['title','code','edition','description','course','subject','category','order','tags','watermark','showSearch'].forEach(id=>$(id).addEventListener('input',update));
 $('normText').addEventListener('input',update);
 document.querySelectorAll('#leftTabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('#leftTabs~.cardbody .panel').forEach(p=>p.classList.remove('active'));['p-content','p-meta','p-mats','p-check'].forEach(id=>$(id).classList.toggle('active',id===b.dataset.panel))});
-document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));const map={editor:'p-content',metadados:'p-meta',materiais:'p-mats',validacao:'p-check'};document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x.dataset.panel===map[b.dataset.tab]));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===map[b.dataset.tab]))});
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));const isVideos=b.dataset.tab==='videos';$('normAdminView').style.display=isVideos?'none':'block';$('videoAdminView').style.display=isVideos?'block':'none';const map={editor:'p-content',metadados:'p-meta',materiais:'p-mats',validacao:'p-check'};if(!isVideos){document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x.dataset.panel===map[b.dataset.tab]));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===map[b.dataset.tab]))}else{updateVideoAdminPreview();renderVideoAdminDrafts()}document.querySelector('.top .crumb').textContent=isVideos?'Administração / Vídeos e aulas / Protótipo':'Administração / Páginas normativas / Protótipo';document.querySelector('.top strong').textContent=isVideos?'Editor de páginas de aulas':'Editor de páginas baseado na I-16-PM';$('saveDraft').style.display=isVideos?'none':'';$('newDraft').style.display=isVideos?'none':'';$('downloadHtml').style.display=isVideos?'none':''});
 document.querySelectorAll('[data-cmd]').forEach(b=>b.onclick=()=>{ $('normText').focus();document.execCommand(b.dataset.cmd,false,null);update()});
 document.querySelectorAll('[data-insert]').forEach(b=>b.onclick=()=>{const type=b.dataset.insert;const s=type==='article'?'<p class="legal-article"><strong>Art. [NUMERAÇÃO ORIGINAL]</strong> [Insira aqui o texto proveniente da fonte oficial.]</p>':'<p class="hierarchy-title">CAPÍTULO [IDENTIFICAÇÃO ORIGINAL]</p>';document.execCommand('insertHTML',false,s);update();toast('Inserido marcador demonstrativo; confira a fonte oficial antes de usar conteúdo normativo.')});
 $('addMaterial').onclick=()=>{const title=$('matTitle').value.trim(),url=$('matUrl').value.trim();if(!title)return toast('Informe o título do material.');if(url&&!/^https?:\/\//i.test(url))return toast('A URL deve começar com http:// ou https://.');materials.push({title,type:$('matType').value,url,description:$('matDesc').value});$('matTitle').value='';$('matUrl').value='';$('matDesc').value='';renderMaterials();update();toast('Material adicionado apenas à demonstração.')};
@@ -303,11 +352,27 @@ window.__paResetEditorToExample = resetEditorToExample;
 $('reset').onclick=()=>resetEditorToExample();
 $('toolSearch').onclick=()=>{$('searchTerm').focus()};
 update();renderMaterials();validate();
+
+const va$=id=>document.getElementById(id);
+let videoAdminDrafts=[]; let editingVideoAdminId=null;
+function vaEscape(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function vaForm(){return {title:va$('vaTitle').value.trim(),url:va$('vaUrl').value.trim(),description:va$('vaDescription').value.trim(),course:va$('vaCourse').value,subject:va$('vaSubject').value,category:va$('vaCategory').value,duration:va$('vaDuration').value.trim(),instructor:va$('vaInstructor').value.trim(),tags:va$('vaTags').value.split(',').map(x=>x.trim()).filter(Boolean)}}
+function vaParseUrl(raw){try{const u=new URL(raw);return ['https:','http:'].includes(u.protocol)?u:null}catch{return null}}
+function vaYouTubeId(u){if(!u)return '';if(u.hostname==='youtu.be')return u.pathname.split('/').filter(Boolean)[0]||'';if(/(^|\.)youtube\.com$/i.test(u.hostname)||/(^|\.)youtube-nocookie\.com$/i.test(u.hostname)){if(u.pathname==='/watch')return u.searchParams.get('v')||'';const m=u.pathname.match(/^\/(?:embed|shorts|live)\/([^/?]+)/);return m?m[1]:''}return ''}
+function updateVideoAdminPreview(){const d=vaForm();va$('vaPreviewTitle').textContent=d.title||'Sua aula aparecerá aqui';va$('vaPreviewHeading').textContent=d.title||'Título da aula';va$('vaPreviewDescription').textContent=d.description||'A descrição da aula será exibida aqui.';va$('vaPreviewCategory').textContent=d.category||'Categoria da aula';va$('vaPreviewMeta').textContent=[d.course,d.subject,d.duration].filter(Boolean).join(' · ')||'Curso · Matéria · Duração';va$('vaPreviewTags').innerHTML=d.tags.map(t=>'<span>'+vaEscape(t)+'</span>').join('');const u=vaParseUrl(d.url),id=vaYouTubeId(u);let message='';if(d.url){if(!u)message='URL inválida. Informe um endereço HTTP ou HTTPS.';else if(id)message='YouTube reconhecido. O player incorporado precisa ser aberto dentro de uma página servida por HTTP/HTTPS para fornecer a identificação de origem exigida pelo YouTube.';else if(u.hostname.includes('vimeo.com'))message='Link Vimeo reconhecido. Confirme se o vídeo permite incorporação.';else message='URL identificada. A incorporação depende das permissões do provedor.'}va$('vaUrlMessage').textContent=message;va$('vaPlayer').style.backgroundImage='';va$('vaPlayer').innerHTML='<div><div class="va-play">▶</div><strong>'+vaEscape(d.title||'Sua aula aparecerá aqui')+'</strong><p>'+vaEscape(id?'YouTube · '+id:(d.duration||'Vídeo hospedado'))+'</p>'+(u?'<a style="display:inline-block;margin-top:12px;color:#f3df91" target="_blank" rel="noopener" href="'+vaEscape(u.href)+'">Abrir vídeo original ↗</a>':'')+'</div>'}
+['vaTitle','vaUrl','vaDescription','vaCourse','vaSubject','vaCategory','vaDuration','vaInstructor','vaTags'].forEach(id=>va$(id).addEventListener('input',updateVideoAdminPreview));
+function renderVideoAdminDrafts(){const el=va$('vaDraftList');el.innerHTML=videoAdminDrafts.length?videoAdminDrafts.map((d,i)=>'<div class="va-draft"><div><strong>'+vaEscape(d.title)+'</strong><div class="hint">'+vaEscape([d.course,d.subject,d.category].filter(Boolean).join(' · '))+' · '+vaEscape(d.status||'draft')+'</div></div><div class="va-draft-actions"><button data-va-load="'+i+'">Editar</button><button data-va-export="'+i+'" class="primary">Exportar HTML</button><button data-va-delete="'+i+'">Excluir</button></div></div>').join(''):'<p class="hint">Nenhum rascunho de aula encontrado no Firestore.</p>';el.querySelectorAll('[data-va-load]').forEach(b=>b.onclick=()=>{const d=videoAdminDrafts[Number(b.dataset.vaLoad)];editingVideoAdminId=d.id;for(const [k,id] of Object.entries({title:'vaTitle',url:'vaUrl',description:'vaDescription',course:'vaCourse',subject:'vaSubject',category:'vaCategory',duration:'vaDuration',instructor:'vaInstructor'}))va$(id).value=d[k]||'';va$('vaTags').value=(d.tags||[]).join(', ');va$('vaSave').textContent='Atualizar rascunho';updateVideoAdminPreview();window.scrollTo({top:0,behavior:'smooth'})});el.querySelectorAll('[data-va-delete]').forEach(b=>b.onclick=async()=>{const d=videoAdminDrafts[Number(b.dataset.vaDelete)];if(!confirm('Excluir permanentemente o rascunho “'+d.title+'”?'))return;try{await window.__paVideoStore.remove(d.id);if(editingVideoAdminId===d.id){editingVideoAdminId=null;va$('vaSave').textContent='Salvar rascunho'}await refreshVideoAdminDrafts();renderVideoAdminDrafts();toast('Rascunho excluído do Firestore.')}catch(e){console.error(e);toast(e?.message||'Não foi possível excluir o rascunho.')}});el.querySelectorAll('[data-va-export]').forEach(b=>b.onclick=()=>exportVideoAdminPage(videoAdminDrafts[Number(b.dataset.vaExport)]))}
+async function refreshVideoAdminDrafts(){const status=va$('vaFirestoreStatus');try{if(!window.__paVideoStore)throw new Error('Módulo ainda inicializando');videoAdminDrafts=await window.__paVideoStore.list();status.textContent='Firestore · '+videoAdminDrafts.length+' rascunho(s)';status.className='status ok'}catch(e){status.textContent='Firestore indisponível';status.className='status';console.error('Falha ao listar aulas:',e);throw e}}
+async function saveVideoAdminDraft(){const d=vaForm(),u=vaParseUrl(d.url);if(!d.title||!u||!d.course||!d.subject||!d.category){toast('Preencha título, URL válida, curso, matéria e categoria.');return}const btn=va$('vaSave'),label=btn.textContent;btn.disabled=true;btn.textContent='Salvando…';try{if(!window.__paVideoStore)throw new Error('O módulo de integração ainda está inicializando. Tente novamente.');if(editingVideoAdminId){await window.__paVideoStore.update(editingVideoAdminId,d);toast('Rascunho atualizado no Firestore. A aula não foi publicada.')}else{editingVideoAdminId=await window.__paVideoStore.save(d);toast('Rascunho salvo no Firestore. A aula não foi publicada.')}await refreshVideoAdminDrafts();renderVideoAdminDrafts();}catch(e){console.error('Falha ao salvar aula:',e);toast(e?.message||'Falha ao salvar aula no Firestore.')}finally{btn.disabled=false;btn.textContent=label}}
+function exportVideoAdminPage(d=vaForm()){const u=vaParseUrl(d.url);if(!d.title||!u){toast('Informe título e URL válida antes de exportar.');return}const id=vaYouTubeId(u);let embed='';if(id)embed='https://www.youtube.com/embed/'+encodeURIComponent(id)+'?origin='+encodeURIComponent(location.origin);else if(u.hostname==='vimeo.com'||u.hostname==='www.vimeo.com'){const m=u.pathname.match(/\/(\d+)/);if(m)embed='https://player.vimeo.com/video/'+m[1]}const player=embed?'<iframe src="'+vaEscape(embed)+'" title="Vídeo da aula" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>':'<p>O provedor não foi reconhecido para incorporação automática. <a href="'+vaEscape(u.href)+'" target="_blank" rel="noopener">Abrir vídeo original</a></p>';const html='<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="strict-origin-when-cross-origin"><title>'+vaEscape(d.title)+'</title><style>body{margin:0;background:#f2f5f9;color:#202938;font:16px/1.6 system-ui,Arial}.head{background:linear-gradient(120deg,#071020,#183456);color:white;padding:25px max(20px,calc((100% - 900px)/2));border-bottom:4px solid #d4af37}.brand{font-size:11px;letter-spacing:1.5px;color:#f3df91;font-weight:800}.head h1{margin:12px 0 6px}.head p{color:#d8e2ef}.wrap{max-width:900px;margin:25px auto;padding:0 18px}.player{position:relative;aspect-ratio:16/9;background:#071020;border-radius:10px;overflow:hidden}.player iframe{width:100%;height:100%;border:0}.description,.meta{background:white;border:1px solid #dce3ec;border-radius:10px;padding:18px;margin-top:16px}.tags span{display:inline-block;background:#f1f4f8;border-radius:99px;padding:4px 9px;margin:4px;font-size:12px}footer{max-width:900px;margin:20px auto;padding:18px;color:#64748b;font-size:11px}</style></head><body><header class="head"><div class="brand">◆ PLATAFORMA APERFEIÇOAMENTO · PMESP</div><h1>'+vaEscape(d.title)+'</h1><p>'+vaEscape(d.course)+' · '+vaEscape(d.subject)+' · '+vaEscape(d.category)+'</p></header><main class="wrap"><section class="player">'+player+'</section><section class="description"><h2>Sobre esta aula</h2><p>'+vaEscape(d.description||'Descrição não informada.')+'</p><div class="tags">'+(d.tags||[]).map(t=>'<span>'+vaEscape(t)+'</span>').join('')+'</div></section><section class="meta"><b>Duração:</b> '+vaEscape(d.duration||'Não informada')+' · <b>Instrutor:</b> '+vaEscape(d.instructor||'Não informado')+'</section></main><footer>Prévia exportada do editor administrativo. A publicação depende da revisão e do fluxo oficial.</footer></body></html>';const blob=new Blob([html],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=(d.title.replace(/[^a-z0-9_-]+/gi,'-')||'pagina-aula')+'.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);toast('HTML de prévia exportado. Para testar o player, abra a página por HTTP/HTTPS, não como arquivo local.')}
+va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVideoAdminPage();va$('vaReset').onclick=()=>{editingVideoAdminId=null;['vaTitle','vaUrl','vaDescription','vaDuration','vaInstructor','vaTags'].forEach(id=>va$(id).value='');['vaCourse','vaSubject','vaCategory'].forEach(id=>va$(id).selectedIndex=0);va$('vaSave').textContent='Salvar rascunho';updateVideoAdminPreview()};updateVideoAdminPreview();
+
 </script>
 
 <script type="module">
   import { deleteDoc, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
   import { auth, db } from "./firebase-config.js";
+  import { saveVideoDraft, updateVideoDraft, listVideoDrafts, deleteVideoDraft } from "./admin-videos-firestore.js";
   import { isAdminUser } from "./admin-access.js";
   import {
     saveNormaDraft,
@@ -316,6 +381,14 @@ update();renderMaterials();validate();
     getNormaDraft,
     watchAdminAccess
   } from "./admin-normas-firestore.js";
+
+  // API usada pelo editor visual de vídeos. Todas as operações revalidam o perfil admin.
+  window.__paVideoStore = {
+    save: saveVideoDraft,
+    update: updateVideoDraft,
+    list: listVideoDrafts,
+    remove: deleteVideoDraft
+  };
 
   const guard = document.getElementById("adminAccessGuard");
   const saveButton = document.getElementById("saveDraft");
@@ -594,6 +667,7 @@ update();renderMaterials();validate();
     firebaseStatus.textContent = "Firebase: administrador autorizado";
     firebaseStatus.className = "status ok";
     await refreshDraftList();
+    await refreshVideoAdminDrafts().catch(() => {});
   });
 </script>
 </body>
