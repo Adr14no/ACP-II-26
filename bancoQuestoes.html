@@ -468,12 +468,10 @@
         let cursoAtivo = cursoInicial;
 
         document.addEventListener("DOMContentLoaded", function() {
-            if (!cursoInicial) {
-                document.getElementById('courseLanding').classList.remove('hidden');
-                if (acessoCAOBloqueado) abrirModalCAOConstrucao();
+            if (!cursoInicial || acessoCAOBloqueado) {
+                window.location.replace('plataforma.html');
                 return;
             }
-            document.getElementById('courseLanding').classList.add('hidden');
             configurarIdentidadeCurso();
             verificarModalInstrucoes();
             carregarOuInicializarSimulado();
