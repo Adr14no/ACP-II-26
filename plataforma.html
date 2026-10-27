@@ -201,12 +201,9 @@
     <script type="module">
       import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
       import { auth } from "./firebase-config.js";
-      import { recordQuestionUsage, saveExamResult, loadQuestionHistory, getProgressSummary } from "./user-progress-firestore.js";
       import { isAdminUser } from "./admin-access.js";
 
       auth.languageCode = 'pt-BR';
-      // Ponte controlada entre scripts clássicos do simulado e módulos Firebase.
-      window.studyProgress = { recordQuestionUsage, saveExamResult, loadQuestionHistory, getProgressSummary };
       const guard = document.getElementById('authGuard');
       let accessDecisionMade = false;
 
@@ -258,3 +255,4 @@
     </script>
 
 </body>
+</html>
