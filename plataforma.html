@@ -43,361 +43,10 @@
       #authGuard{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;background:#0b1326;color:#f1f5f9;text-align:center;font-family:Arial,sans-serif}
       #authGuard .auth-guard-card{max-width:440px;border:1px solid #d4af37;border-radius:16px;padding:28px;background:#1a2744;box-shadow:0 20px 60px rgba(0,0,0,.35)}
       #authGuard p{line-height:1.6;color:#cbd5e1}
-        /* Layout ACP: identidade neutra, sem associação visual oficial à PMESP. */
-        .progress-dashboard { background:linear-gradient(145deg,#071a2a 0%,#061321 72%);border:1px solid rgba(48,75,99,.65);box-shadow:0 14px 32px rgba(0,0,0,.22); }
-        .progress-heading { display:flex;align-items:center;gap:9px;margin:0 0 12px;padding-bottom:10px;border-bottom:1px solid rgba(148,163,184,.16);font-size:11px;font-weight:800;letter-spacing:.055em;text-transform:uppercase;color:#dbe4ef; }
-        .progress-heading-icon { display:grid;place-items:center;color:#f0b429;font-size:15px; }
-        .progress-main { display:grid;grid-template-columns:minmax(100px, .9fr) minmax(0,1.1fr);align-items:center;gap:14px;padding:2px 0 12px; }
-        .progress-ring { position:relative;width:clamp(104px,9vw,142px);aspect-ratio:1;justify-self:center; }
-        .progress-ring svg { width:100%;height:100%;transform:rotate(-90deg);overflow:visible; }
-        .progress-ring circle { fill:none;stroke-width:9; }
-        .progress-ring-track { stroke:#1b2c40; }
-        .progress-ring-value { stroke:#f2b51d;stroke-linecap:round;stroke-dasharray:307.876;stroke-dashoffset:307.876;transition:stroke-dashoffset .35s ease;filter:drop-shadow(0 0 3px rgba(242,181,29,.2)); }
-        .progress-ring-center { position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px; }
-        .progress-ring-center strong { font-size:clamp(22px,2vw,31px);line-height:1.1;font-weight:900;color:#f8fafc; }
-        .progress-ring-center span { font-size:10px;color:#cbd5e1; }
-        .progress-legend { display:grid;gap:11px; }
-        .progress-legend-row { display:grid;grid-template-columns:12px 24px minmax(0,1fr);align-items:center;gap:8px;font-size:11px;color:#d1dbe7;white-space:nowrap; }
-        .progress-legend-row strong { color:#f1f5f9;font-size:12px;font-weight:800;text-align:right; }
-        .progress-dot { width:10px;height:10px;border-radius:50%;display:block; }
-        .progress-dot.correct { background:#10b981; } .progress-dot.wrong { background:#ef4444; } .progress-dot.unanswered { background:#f5b91b; } .progress-dot.remaining { background:#7b8da3; }
-        .progress-footer { display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(148,163,184,.16);padding-top:12px; }
-        .progress-footer > div { display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0; }
-        .progress-footer > div+div { border-left:1px solid rgba(148,163,184,.16); }
-        .progress-footer span { font-size:9px;text-transform:uppercase;letter-spacing:.04em;color:#cbd5e1;text-align:center; }
-        .progress-footer strong { font-size:22px;line-height:1.1;font-weight:900;color:#f5b91b; }
-        .progress-footer > div+div strong { color:#22b8f0; }
-        .progress-hidden { display:none !important; }
-        @media(max-width:500px) { .progress-main { grid-template-columns:110px minmax(0,1fr);gap:8px; } .progress-legend {gap:8px;} .progress-legend-row {font-size:10px;gap:5px;} .progress-footer strong {font-size:19px;} }
-        /* Refinamento de composição: proporção equilibrada e painéis compactos. */
-        @media (min-width:1100px) {
-            body:has(#questionContainer) .exam-main {
-                max-width:1640px !important;
-                margin-left:auto !important;
-                margin-right:auto !important;
-                grid-template-columns:minmax(0,1fr) 390px !important;
-                align-items:start !important;
-                gap:18px !important;
-                padding:22px 22px !important;
-            }
-            body:has(#questionContainer) .exam-main > section { grid-column:1; }
-            body:has(#questionContainer) .exam-main > aside { grid-column:2; gap:12px !important; }
-            body:has(#questionContainer) #questionContainer { min-height:520px !important; }
-            body:has(#questionContainer) #progressPanel { display:block !important; }
-            body:has(#questionContainer) #answerSheetPanel { flex:initial !important; }
-            body:has(#questionContainer) #questionsGrid { max-height:300px !important; }
-        }
-        @media (min-width:1100px) and (max-width:1450px) {
-            body:has(#questionContainer) .exam-main { grid-template-columns:minmax(0,1fr) 340px !important; padding:18px 16px !important; }
-        }
-        .exam-footer-credit { color:#d7b64a;font-weight:700;letter-spacing:.015em; }
-        /* Ajustes visuais pós-validação do mockup. */
-        @media (min-width: 1100px) {
-            body:has(#questionContainer) .exam-main { grid-template-columns:minmax(0,1fr) 360px !important; gap:18px !important; padding:18px 22px !important; }
-            body:has(#questionContainer) #questionContainer { min-height:0 !important; padding:22px 24px !important; }
-            body:has(#questionContainer) #questionContainer .exam-question-toolbar { margin-bottom:10px; }
-            body:has(#questionContainer) #questionContainer #qText { font-size:1.05rem; line-height:1.65; }
-            body:has(#questionContainer) #qOptions > * { padding-top:12px !important; padding-bottom:12px !important; }
-            body:has(#questionContainer) #progressPanel { padding:16px !important; }
-            body:has(#questionContainer) #questionsGrid { grid-template-columns:repeat(5,minmax(0,1fr)) !important; max-height:260px !important; gap:7px !important; }
-            body:has(#questionContainer) .exam-brand-rail::before { background:linear-gradient(180deg,rgba(3,12,24,.02),rgba(3,12,24,.34)),url("bandeira-sp-banner-v2.png") center/cover no-repeat; opacity:1; }
-            body:has(#questionContainer) .exam-brand-rail { background:#061321; }
-            body:has(#questionContainer) #progressPanel { background:linear-gradient(145deg,#122641,#09182b) !important;border:1px solid rgba(234,191,58,.32) !important;box-shadow:0 14px 30px rgba(0,0,0,.24) !important;border-radius:16px !important; }
-            body:has(#questionContainer) #progressPanel > div.grid > div { background:linear-gradient(180deg,#0b1a2e,#071323) !important;border-color:rgba(148,163,184,.23) !important;border-radius:12px !important;padding:12px 8px !important; }
-            body:has(#questionContainer) #progressPanel #progBar { background:linear-gradient(90deg,#f3c746,#d99a1b) !important;box-shadow:0 0 12px rgba(234,191,58,.25); }
-            body:has(#questionContainer) #questionsGrid { gap:8px !important; }
-            body:has(#questionContainer) #questionsGrid button { min-height:36px;border-radius:9px !important;box-shadow:inset 0 1px rgba(255,255,255,.04); }
-            body:has(#questionContainer) #questionInfoPanel { background:linear-gradient(145deg,#122641,#09182b) !important;border-color:rgba(234,191,58,.26) !important;border-radius:16px !important; }
-        }
-        .exam-header-brandmark { display:grid !important; width:48px;height:48px;flex:0 0 48px;place-items:center;border:1px solid rgba(234,191,58,.65);border-radius:13px;background:rgba(5,16,32,.65);color:#f0b429;font-size:27px; }
-        .exam-header-brandmark svg { width:42px;height:32px; }
-        #questionInfoPanel { display:block; }
-        #questionInfoPanel .info-row { display:flex;align-items:flex-start;gap:12px;padding:7px 0;color:#cbd5e1;font-size:12px; }
-        #questionInfoPanel .info-row i { width:15px;color:#eabf3a;margin-top:2px; }
-        .platform-brand-lockup { display:flex;align-items:center;gap:12px; }
-        .platform-brand-symbol { width:46px;height:42px;flex:0 0 46px;display:grid;place-items:center; }
-        .platform-brand-copy { display:flex;flex-direction:column;gap:2px; }
-        .platform-brand-copy .brand-eyebrow { font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;color:#eabf3a; }
-        .platform-brand-copy .brand-title { font-size:20px;line-height:1.05;font-weight:900;letter-spacing:.03em;color:#f8fafc; }
-        .platform-brand-copy .brand-subtitle { font-size:11px;color:#cbd5e1;letter-spacing:.02em; }
-        @media (max-width:700px) { .platform-brand-copy .brand-title {font-size:17px;} .platform-brand-copy .brand-eyebrow{font-size:9px;} }
-        /* ACP redesign: shell lateral, cabeçalho enxuto e área de questão ampla. */
-        @media (min-width: 1100px) {
-            body:has(#questionContainer) { padding-left: 226px; }
-            body:has(#questionContainer) > .exam-brand-rail { display:flex; }
-            body:has(#questionContainer) > header { padding-left: 0; }
-            body:has(#questionContainer) > nav { display:none; }
-            body:has(#questionContainer) .exam-main { max-width:none; width:100%; padding:20px 24px; grid-template-columns:minmax(0,1fr) 390px; gap:20px; }
-            body:has(#questionContainer) .exam-main > section { grid-column:1; min-width:0; }
-            body:has(#questionContainer) .exam-main > aside { grid-column:2; min-width:0; }
-            body:has(#questionContainer) > header > div { max-width:none; padding:12px 24px; flex-direction:row; }
-            body:has(#questionContainer) > header > div > div:first-child { gap:12px; }
-            body:has(#questionContainer) > header > div > div:first-child .exam-header-brandmark { display:grid; }
-            body:has(#questionContainer) > header > div > div:last-child { margin-left:auto; }
-            body:has(#questionContainer) .exam-header-controls > a,
-            body:has(#questionContainer) .exam-header-controls > button:not(#finalizeExamTop),
-            body:has(#questionContainer) .exam-header-controls > div:not(#timerDisplayWrap) { display:none !important; }
-            body:has(#questionContainer) .exam-header-controls #timerDisplayWrap { display:flex; }
-            body:has(#questionContainer) .exam-header-controls #finalizeExamTop { display:flex !important; }
-            body:has(#questionContainer) .exam-question-toolbar { display:flex; }
-        }
-        .exam-brand-rail {
-            display:none; position:fixed; z-index:60; inset:0 auto 0 0; width:226px;
-            flex-direction:column; align-items:stretch; gap:12px; padding:24px 14px 18px;
-            overflow-y:auto; background:#061321; border-right:1px solid rgba(212,175,55,.25);
-        }
-        .exam-brand-rail::before {
-            content:""; position:absolute; inset:0; background:
-              linear-gradient(180deg,rgba(3,12,24,.45),rgba(3,12,24,.94)),
-              url("bandeira-sp-banner-v2.png") center/cover no-repeat; opacity:.85;
-        }
-        .exam-brand-rail > * { position:relative; z-index:1; }
-        .exam-brand-lockup { display:flex;flex-direction:column;align-items:center;gap:9px;padding:8px 4px 22px;border-bottom:1px solid rgba(148,163,184,.18); }
-        .exam-brand-mark { width:72px;height:58px;display:grid;place-items:center;color:#f0b429;font-size:40px; }
-        .exam-brand-name { text-align:center;font-size:28px;line-height:1;font-weight:900;letter-spacing:.03em;color:#f8fafc; }
-        .exam-brand-sub { text-align:center;font-size:11px;line-height:1.6;color:#cbd5e1;letter-spacing:.08em; }
-        .exam-side-links { display:grid;gap:6px;margin-top:8px; }
-        .exam-side-links a,.exam-side-links button { display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:1px solid transparent;border-radius:10px;background:transparent;color:#dbe5f3;text-align:left;font-size:13px;font-weight:700; }
-        .exam-side-links a:hover,.exam-side-links button:hover { border-color:rgba(212,175,55,.38);background:rgba(212,175,55,.09);color:#f5c64c; }
-        .exam-side-links .side-primary { border-left:3px solid #e8b923;background:rgba(212,175,55,.12);color:#f5c64c; }
-        .exam-side-links .side-divider { height:1px;background:rgba(148,163,184,.18);margin:8px 0; }
-        .exam-side-bottom { margin-top:auto;padding:18px 6px 0;font-size:10px;line-height:1.7;color:#cbd5e1;text-align:center; }
-        .exam-header-controls { display:flex;align-items:center;justify-content:flex-end;gap:12px; }
-        .exam-header-brandmark { display:none; width:42px;height:42px;place-items:center;border:1px solid rgba(212,175,55,.55);border-radius:12px;color:#f0b429;font-size:24px; }
-        .exam-question-toolbar { display:none;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid rgba(148,163,184,.18); }
-        .exam-question-toolbar .exam-modes { display:flex;gap:6px;flex-wrap:wrap; }
-        .exam-question-toolbar .exam-filters { display:flex;gap:6px;flex-wrap:wrap; }
-        @media (max-width:1099px) {
-            .exam-brand-rail { display:none !important; }
-            body:has(#questionContainer) > nav { display:block; }
-            body:has(#questionContainer) .exam-main { grid-template-columns:1fr; }
-            body:has(#questionContainer) .exam-main > aside { grid-column:1; }
-            body:has(#questionContainer) .exam-question-toolbar { display:flex; }
-        }
-
-        .exam-finalize-mount { display:none;flex:0 0 auto; }
-        .exam-finalize-mount #finalizeExamTop { display:flex !important;margin-left:0 !important;white-space:nowrap; }
-        @media (min-width:1100px) {
-            body:has(#questionContainer) .exam-finalize-mount { display:flex;align-items:center;margin-left:auto; }
-            body:has(#questionContainer) .exam-question-toolbar { gap:12px; }
-            body:has(#questionContainer) #qOptions > div { font-size:12.5px !important;line-height:1.5 !important; }
-            body:has(#questionContainer) #qOptions > div > div:first-child {
-                width:29px !important;height:29px !important;min-width:29px !important;
-                font-size:13px !important;font-weight:800 !important;
-            }
-            body:has(#questionContainer) #qText { font-size:16px !important;line-height:1.62 !important; }
-            body:has(#questionContainer) #finalizeExamTop { font-size:11px !important;padding:8px 11px !important; }
-        }
-        .mobile-nav-toggle { display:none; }
-        .mobile-nav-backdrop { display:none; }
-        @media (max-width:1099px) {
-            body:has(#questionContainer) { padding-left:0 !important;padding-bottom:18px; }
-            body:has(#questionContainer) > .exam-brand-rail {
-                display:flex !important;position:fixed;z-index:220;inset:0 auto 0 0;width:min(290px,84vw);
-                padding:22px 14px 18px !important;transform:translateX(-105%);transition:transform .22s ease;
-                box-shadow:16px 0 45px rgba(0,0,0,.45);background:#061321;
-            }
-            body:has(#questionContainer) > .exam-brand-rail.mobile-open { transform:translateX(0); }
-            body:has(#questionContainer) .exam-brand-rail::before {
-                background:linear-gradient(180deg,rgba(3,12,24,.08),rgba(3,12,24,.30)),url("bandeira-sp-banner-v2.png") center/cover no-repeat !important;opacity:1 !important;
-            }
-            body:has(#questionContainer) .mobile-nav-backdrop.open { display:block;position:fixed;z-index:210;inset:0;background:rgba(2,8,18,.68);backdrop-filter:blur(2px); }
-            body:has(#questionContainer) .mobile-nav-toggle { display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;border:1px solid rgba(244,185,31,.5);border-radius:10px;background:#0a1a2d;color:#f4b91f; }
-            body:has(#questionContainer) > header { padding:8px 10px !important; }
-            body:has(#questionContainer) > header > div { display:flex !important;flex-direction:row !important;align-items:center !important;gap:10px !important;min-height:60px;padding:0 !important; }
-            body:has(#questionContainer) .platform-brand-lockup { gap:8px;min-width:0; }
-            body:has(#questionContainer) .platform-brand-symbol { width:34px;height:32px;flex-basis:34px; }
-            body:has(#questionContainer) .platform-brand-symbol svg { width:34px;height:28px; }
-            body:has(#questionContainer) .platform-brand-copy .brand-eyebrow { font-size:8px;letter-spacing:.1em; }
-            body:has(#questionContainer) .platform-brand-copy .brand-title { font-size:19px; }
-            body:has(#questionContainer) .platform-brand-copy .brand-subtitle { font-size:9px; }
-            body:has(#questionContainer) .exam-header-controls { display:flex;align-items:center;gap:6px;margin-left:auto; }
-            body:has(#questionContainer) .exam-header-controls > a,
-            body:has(#questionContainer) .exam-header-controls > button:not(#finalizeExamTop),
-            body:has(#questionContainer) .exam-header-controls > div:not(#timerDisplayWrap) { display:none !important; }
-            body:has(#questionContainer) .exam-header-controls #timerDisplayWrap { padding:6px 7px !important;gap:4px !important; }
-            body:has(#questionContainer) .exam-header-controls #timerDisplay { font-size:13px !important;gap:4px !important; }
-            body:has(#questionContainer) .exam-header-controls #toggleTimerBtn { padding:3px 5px !important; }
-            body:has(#questionContainer) .exam-header-controls #finalizeExamTop { display:flex !important;font-size:10px !important;padding:7px 8px !important;gap:4px !important; }
-            body:has(#questionContainer) .exam-main { grid-template-columns:minmax(0,1fr) !important;padding:12px !important;gap:12px !important; }
-            body:has(#questionContainer) .exam-main > section,body:has(#questionContainer) .exam-main > aside { grid-column:1 !important;min-width:0; }
-            body:has(#questionContainer) #questionContainer { min-height:0 !important;padding:15px 13px !important; }
-            body:has(#questionContainer) .exam-question-toolbar { display:flex;flex-direction:column;align-items:stretch;gap:8px; }
-            body:has(#questionContainer) .exam-question-toolbar .exam-modes,
-            body:has(#questionContainer) .exam-question-toolbar .exam-filters { display:flex;flex-wrap:wrap;gap:5px; }
-            body:has(#questionContainer) .exam-question-toolbar button { font-size:10px !important;padding:6px 8px !important; }
-            body:has(#questionContainer) .exam-finalize-mount { display:none !important; }
-            body:has(#questionContainer) #qText { font-size:15px !important;line-height:1.6 !important;margin:16px 0 !important; }
-            body:has(#questionContainer) #qOptions > div { font-size:12px !important;line-height:1.5 !important;padding:11px !important;min-height:0 !important; }
-            body:has(#questionContainer) #qOptions > div > div:first-child { width:27px !important;height:27px !important;min-width:27px !important;font-size:12px !important; }
-            body:has(#questionContainer) #progressPanel,body:has(#questionContainer) #answerSheetPanel,body:has(#questionContainer) #questionInfoPanel { padding:13px !important; }
-            body:has(#questionContainer) #questionsGrid { grid-template-columns:repeat(5,minmax(0,1fr)) !important;max-height:230px !important;overflow-y:auto; }
-            body:has(#questionContainer) #questionsGrid button { min-height:34px !important; }
-            body:has(#questionContainer) > footer { padding:8px 12px !important;flex-wrap:wrap;gap:6px !important;font-size:9px !important; }
-        }
-        /* ACP visual refresh — composição inspirada na referência aprovada */
-        :root { --acp-gold:#f4b91f; --acp-blue:#12345a; --acp-line:rgba(55,104,151,.42); }
-        body:has(#questionContainer) { background:#06101e !important; }
-        body:has(#questionContainer) > header { background:linear-gradient(110deg,#071629 0%,#10223d 54%,#071321 100%) !important; border-bottom:1px solid rgba(244,185,31,.2); }
-        body:has(#questionContainer) > header > div { min-height:82px; }
-        body:has(#questionContainer) .platform-brand-lockup { gap:14px; }
-        body:has(#questionContainer) .platform-brand-symbol { width:62px;height:56px;flex-basis:62px;filter:drop-shadow(0 0 10px rgba(244,185,31,.14)); }
-        body:has(#questionContainer) .platform-brand-copy .brand-eyebrow { font-size:11px;letter-spacing:.16em; }
-        body:has(#questionContainer) .platform-brand-copy .brand-title { font-size:27px;letter-spacing:.02em; }
-        body:has(#questionContainer) .platform-brand-copy .brand-subtitle { font-size:12px; }
-        @media (min-width:1100px) {
-            body:has(#questionContainer) { padding-left:202px !important; }
-            body:has(#questionContainer) > .exam-brand-rail { width:202px !important; padding:22px 12px 18px !important; }
-            body:has(#questionContainer) .exam-brand-rail::before {
-                background:linear-gradient(180deg,rgba(3,12,24,.06) 0%,rgba(3,12,24,.18) 45%,rgba(3,12,24,.22) 100%),url("bandeira-sp-banner-v2.png") center bottom/cover no-repeat !important;
-                opacity:1 !important;
-            }
-            body:has(#questionContainer) .exam-brand-lockup { padding-bottom:24px; }
-            body:has(#questionContainer) .exam-brand-mark { width:92px;height:70px; }
-            body:has(#questionContainer) .exam-brand-mark svg { width:92px;height:66px; }
-            body:has(#questionContainer) .exam-brand-name { font-size:32px;letter-spacing:.04em; }
-            body:has(#questionContainer) .exam-brand-sub { font-size:11px; }
-            body:has(#questionContainer) .exam-main {
-                width:100% !important;max-width:none !important;margin:0 !important;
-                grid-template-columns:minmax(0,1fr) 430px !important;
-                gap:18px !important;padding:20px 22px !important;align-items:start !important;
-            }
-            body:has(#questionContainer) .exam-main > section { min-width:0; }
-            body:has(#questionContainer) .exam-main > aside { min-width:0;gap:14px !important; }
-            body:has(#questionContainer) #questionContainer {
-                min-height:690px !important;padding:24px 24px 20px !important;
-                background:linear-gradient(145deg,rgba(20,42,73,.98),rgba(8,24,43,.99)) !important;
-                border:1px solid var(--acp-line) !important;border-radius:16px !important;
-                box-shadow:0 18px 42px rgba(0,0,0,.24),inset 0 1px rgba(255,255,255,.025) !important;
-            }
-            body:has(#questionContainer) #questionContainer > div:first-child { width:100%; }
-            body:has(#questionContainer) .exam-question-toolbar {
-                padding-bottom:15px;margin-bottom:18px;border-bottom:1px solid rgba(100,145,185,.2);
-                align-items:center;
-            }
-            body:has(#questionContainer) #qText {
-                font-size:clamp(16px,1.12vw,20px) !important;line-height:1.72 !important;
-                text-align:left !important;margin:24px 0 24px !important;
-                padding-left:16px;border-left:4px solid var(--acp-gold);
-                color:#f1f5fb !important;
-            }
-            body:has(#questionContainer) #qOptions { display:grid;gap:10px !important;margin-bottom:22px !important; }
-            body:has(#questionContainer) #qOptions > div {
-                min-height:68px;padding:16px 17px !important;border-radius:13px !important;
-                border-color:rgba(62,111,157,.43) !important;
-                background:linear-gradient(110deg,rgba(4,19,35,.82),rgba(7,25,45,.72)) !important;
-                font-size:14px !important;line-height:1.55 !important;
-                transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease;
-            }
-            body:has(#questionContainer) #qOptions > div:hover {
-                transform:translateY(-1px);border-color:rgba(244,185,31,.75) !important;
-                box-shadow:0 6px 18px rgba(0,0,0,.15);
-            }
-            body:has(#questionContainer) #qOptions > div > div:first-child {
-                width:34px !important;height:34px !important;min-width:34px !important;
-                display:grid;place-items:center;border:1.5px solid #8da6c3 !important;
-                border-radius:50% !important;font-weight:800;font-size:16px !important;
-                background:rgba(3,13,26,.7);
-            }
-            body:has(#questionContainer) #progressPanel,
-            body:has(#questionContainer) #answerSheetPanel,
-            body:has(#questionContainer) #questionInfoPanel {
-                border-radius:15px !important;border:1px solid var(--acp-line) !important;
-                box-shadow:0 12px 28px rgba(0,0,0,.2) !important;
-            }
-            body:has(#questionContainer) #progressPanel { padding:17px !important; }
-            body:has(#questionContainer) #answerSheetPanel { padding:17px !important;background:linear-gradient(145deg,#102440,#08172a) !important; }
-            body:has(#questionContainer) #questionInfoPanel { background:linear-gradient(145deg,#102440,#08172a) !important; }
-            body:has(#questionContainer) #questionsGrid { grid-template-columns:repeat(5,minmax(0,1fr)) !important;max-height:unset !important;gap:7px !important; }
-            body:has(#questionContainer) #questionsGrid button {
-                min-height:38px;border-radius:9px !important;border:1px solid rgba(71,117,162,.5) !important;
-                background:rgba(4,17,32,.8);font-weight:700;transition:all .15s ease;
-            }
-            body:has(#questionContainer) #questionsGrid button:hover { border-color:var(--acp-gold) !important;transform:translateY(-1px); }
-            body:has(#questionContainer) .exam-main > section > div:last-child { border-radius:14px; }
-            body:has(#questionContainer) > footer { background:linear-gradient(90deg,#071629,#132743,#071629) !important;border-top-color:rgba(244,185,31,.2) !important; }
-        }
-        @media (min-width:1100px) and (max-width:1450px) {
-            body:has(#questionContainer) .exam-main { grid-template-columns:minmax(0,1fr) 365px !important;gap:14px !important;padding:16px !important; }
-            body:has(#questionContainer) #questionContainer { padding:20px !important; }
-            body:has(#questionContainer) #qOptions > div { min-height:58px;padding:13px !important; }
-            body:has(#questionContainer) #qText { font-size:16px !important;margin:18px 0 !important; }
-        }
-        @media (max-width:1099px) {
-            body:has(#questionContainer) .exam-main { gap:14px !important; }
-            body:has(#questionContainer) #questionContainer { background:linear-gradient(145deg,#142a49,#08182c) !important;border-radius:15px !important; }
-            body:has(#questionContainer) #qText { border-left:3px solid var(--acp-gold);padding-left:12px;text-align:left !important; }
-        }
-    
-/* ACP responsive layout v2: desktop stacked panels, mobile fixed panel tabs. */
-body:has(#questionContainer) .exam-main{min-width:0}
-body:has(#questionContainer) .exam-main>aside{display:flex!important;flex-direction:column!important;align-items:stretch;gap:14px!important;min-width:0}
-body:has(#questionContainer) #progressPanel,body:has(#questionContainer) #answerSheetPanel,body:has(#questionContainer) #questionInfoPanel{min-width:0;overflow:hidden;border-radius:16px!important;border:1px solid rgba(212,175,55,.24)!important;background:linear-gradient(150deg,rgba(24,42,70,.98),rgba(7,19,37,.98))!important;box-shadow:0 12px 28px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.025)!important}
-body:has(#questionContainer) #progressPanel.progress-hidden{display:none!important}
-body:has(#questionContainer) #answerSheetPanel{flex:none!important}
-body:has(#questionContainer) #questionInfoPanel{display:block}
-body:has(#questionContainer) #questionContainer{border-color:rgba(212,175,55,.28)!important;background:linear-gradient(155deg,#172743 0%,#101c31 72%,#0b1628 100%)!important;box-shadow:0 18px 42px rgba(0,0,0,.22),0 0 24px rgba(212,175,55,.035)!important}
-body:has(#questionContainer) #questionsGrid button{min-height:38px}
-.mobile-panel-tabs{display:none}
-.mobile-panel-tab{display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:56px;padding:7px 3px;border:1px solid transparent;border-radius:11px;color:#aebbd0;background:transparent;font-size:10px;font-weight:800}
-.mobile-panel-tab i{font-size:16px}
-.mobile-panel-tab[aria-selected="true"]{color:#f4c84a;background:rgba(212,175,55,.12);border-color:rgba(212,175,55,.25);text-shadow:0 0 12px rgba(212,175,55,.18)}
-@media(min-width:1100px){body:has(#questionContainer) .exam-main{grid-template-columns:minmax(0,1fr) minmax(310px,360px)!important;align-items:start!important;gap:20px!important}body:has(#questionContainer) .exam-main>aside{position:sticky;top:104px;max-height:calc(100vh - 124px);overflow-y:auto;padding:2px 5px 8px 0;scrollbar-width:thin}body:has(#questionContainer) #progressPanel{flex:none}body:has(#questionContainer) #questionsGrid{max-height:245px!important}}
-@media(max-width:1099px){body:has(#questionContainer){padding-bottom:calc(88px + env(safe-area-inset-bottom))!important}body:has(#questionContainer) .exam-main{display:grid!important;grid-template-columns:minmax(0,1fr)!important}body:has(#questionContainer) .exam-main>aside{display:flex!important;gap:0!important}body:has(#questionContainer) .exam-main>aside>#progressPanel,body:has(#questionContainer) .exam-main>aside>#answerSheetPanel,body:has(#questionContainer) .exam-main>aside>#questionInfoPanel{display:none!important;margin:0!important}body:has(#questionContainer) .exam-main>aside>#progressPanel.mobile-panel-active,body:has(#questionContainer) .exam-main>aside>#answerSheetPanel.mobile-panel-active,body:has(#questionContainer) .exam-main>aside>#questionInfoPanel.mobile-panel-active{display:block!important}body:has(#questionContainer) .exam-main>aside>#progressPanel.progress-hidden{display:none!important}.mobile-panel-tabs{display:flex;position:fixed;z-index:180;left:10px;right:10px;bottom:calc(8px + env(safe-area-inset-bottom));gap:5px;padding:6px;border:1px solid rgba(212,175,55,.28);border-radius:16px;background:rgba(5,15,30,.96);backdrop-filter:blur(18px);box-shadow:0 12px 34px rgba(0,0,0,.48),0 0 22px rgba(212,175,55,.06)}body:has(#questionContainer) #questionContainer{min-height:0!important;padding:16px!important}body:has(#questionContainer) #qText{font-size:15px!important;line-height:1.65!important}body:has(#questionContainer) #qOptions>*{padding:11px 10px!important}body:has(#questionContainer) #questionsGrid{grid-template-columns:repeat(5,minmax(0,1fr))!important;max-height:48vh!important}body:has(#questionContainer) #progressPanel{padding:14px!important}body:has(#questionContainer) .progress-main{grid-template-columns:minmax(95px,.85fr) minmax(0,1.15fr)}body:has(#questionContainer) .exam-question-toolbar{gap:8px}}
-@media(max-width:390px){body:has(#questionContainer) .platform-brand-copy .brand-title{font-size:16px}body:has(#questionContainer) .platform-brand-copy .brand-subtitle{font-size:8px}body:has(#questionContainer) .exam-header-controls #finalizeExamTop{font-size:9px!important;padding:6px!important}body:has(#questionContainer) .progress-main{grid-template-columns:90px minmax(0,1fr)}}
-
-
-/* Correção emergencial: o modal de instruções deve ficar acima das abas fixas móveis. */
-#modalInstrucoes { z-index: 300 !important; }
-#modalInstrucoes > div { max-height: calc(100dvh - 24px); }
-#modalInstrucoes > div > div:last-child { position:relative; z-index:1; }
-@media (max-width:1099px) {
-  #modalInstrucoes { padding:12px 12px calc(12px + env(safe-area-inset-bottom)) !important; }
-  #modalInstrucoes > div { max-height:calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom)) !important; margin:auto !important; }
-  #modalInstrucoes .mobile-panel-tabs { display:none !important; }
-}
-
-
-/* ACP dashboard — paleta institucional azul-marinho e dourado */
-.acp-dashboard{display:block}.acp-dashboard[hidden]{display:none!important}
-.acp-welcome{position:relative;overflow:hidden;padding:clamp(22px,3vw,32px);border:1px solid rgba(234,191,58,.28);border-radius:20px;background:linear-gradient(115deg,#172b49,#0d1b30 68%,#0b1729);box-shadow:0 20px 45px #0003}
-.acp-welcome:after{content:"ACP";position:absolute;right:22px;bottom:-42px;font-weight:1000;font-size:clamp(90px,12vw,140px);letter-spacing:.04em;color:rgba(234,191,58,.045);pointer-events:none}
-.acp-tag{display:inline-flex;padding:5px 9px;border:1px solid rgba(234,191,58,.25);border-radius:999px;color:#f5d46a;background:#eabf3a12;font-size:10px;font-weight:850;letter-spacing:.08em}
-.acp-welcome h2{font-size:clamp(25px,3vw,36px);font-weight:900;margin:13px 0 8px;color:#f8fafc}.acp-welcome p{max-width:680px;color:#c4cfdd;margin:0}
-.acp-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:21px}.acp-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:11px;padding:11px 15px;border:1px solid rgba(234,191,58,.22);background:#13243d;color:#dce5f1;font-weight:800}.acp-btn-gold{background:linear-gradient(135deg,#f2cf59,#d9a92b);color:#111b2a;border-color:#f3d66e;box-shadow:0 8px 24px #eabf3a20}
-.acp-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:17px}.acp-metric,.acp-panel{border:1px solid rgba(255,255,255,.075);background:linear-gradient(145deg,#101f37,#0b182b);border-radius:16px;box-shadow:0 12px 30px #0002}.acp-metric{padding:17px}.acp-metric>div:first-child{display:flex;align-items:center;justify-content:space-between;gap:8px;color:#aab7ca;font-size:11px;font-weight:800;text-transform:uppercase}.acp-metric>div:first-child i{color:#eabf3a}.acp-metric strong{display:block;font-size:29px;letter-spacing:-.04em;margin:9px 0 3px;color:#f8fafc}.acp-metric small,.acp-muted{color:#aab7ca;font-size:12px}.acp-track{height:6px;background:#24334b;border-radius:99px;overflow:hidden}.acp-track i{height:100%;width:0;display:block;background:linear-gradient(90deg,#b78b20,#f5d46a);transition:width .2s}
-.acp-dashboard-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(280px,1fr);gap:15px;margin-top:16px}.acp-panel{padding:20px}.acp-panel h3{font-size:16px;font-weight:850;margin:0 0 4px;color:#f8fafc}.acp-muted{margin:0 0 14px}.acp-area{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:13px 0;border:0;border-top:1px solid #ffffff10;background:transparent;color:#f8fafc}.acp-area:hover strong,.acp-arrow{color:#f5d46a}.acp-area-icon{width:42px;height:42px;flex:none;display:grid;place-items:center;border-radius:12px;border:1px solid rgba(234,191,58,.3);background:#eabf3a10;color:#eabf3a;font-size:17px}.acp-area span:nth-child(2){min-width:0;flex:1}.acp-area strong,.acp-area small{display:block}.acp-area strong{font-size:12px}.acp-area small{font-size:11px;color:#aab7ca;margin-top:3px}.acp-step{display:flex;gap:11px;margin-top:16px;align-items:flex-start}.acp-step>b{width:27px;height:27px;flex:none;border-radius:8px;background:#eabf3a18;border:1px solid rgba(234,191,58,.2);color:#f5d46a;display:grid;place-items:center;font-size:12px}.acp-step strong,.acp-step small{display:block}.acp-step strong{font-size:12px}.acp-step small{color:#aab7ca;font-size:11px;margin-top:2px}.acp-note{margin-top:18px;padding:11px;border:1px solid rgba(234,191,58,.15);border-radius:10px;background:#eabf3a08;color:#c5d0df;font-size:11px}.acp-note i{color:#f5d46a;margin-right:5px}
-body.acp-dashboard-mode nav.bg-pm-lightBg,body.acp-dashboard-mode main.exam-main{display:none!important}
-body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible!important;opacity:1!important}
-#acpDashboard[hidden]{display:none!important}
-@media(max-width:1050px){.acp-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.acp-dashboard-grid{grid-template-columns:1fr}}
-@media(max-width:600px){.acp-dashboard{padding-top:15px;padding-bottom:24px}.acp-welcome{padding:22px 18px}.acp-metrics{gap:9px}.acp-metric{padding:12px}.acp-metric>div:first-child{font-size:9px}.acp-metric strong{font-size:24px}.acp-dashboard-grid{grid-template-columns:1fr}.acp-panel{padding:16px}.acp-actions .acp-btn{flex:1}}
-
-</style>
+    </style>
 
 </head>
-<body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy acp-dashboard-mode">
-    <aside class="exam-brand-rail" aria-label="Navegação ACP">
-        <div class="exam-brand-lockup">
-            <div class="exam-brand-mark" aria-hidden="true"><svg width="76" height="54" viewBox="0 0 76 54" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A" fill-opacity=".92"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
-            <div class="exam-brand-name">ACP</div>
-            <div class="exam-brand-sub">AMBIENTE DE<br>PREPARAÇÃO<br>PROFISSIONAL</div>
-        </div>
-        <div class="exam-side-links">
-            <button type="button" class="side-primary" onclick="document.getElementById('questionContainer')?.scrollIntoView({behavior:'smooth',block:'start'})"><i class="fa-regular fa-rectangle-list"></i> Simulado</button>
-            <a href="perfil-usuario.html"><i class="fa-regular fa-chart-bar"></i> Desempenho / Perfil</a>
-            <button type="button" onclick="voltarSelecaoCursos()"><i class="fa-solid fa-layer-group"></i> Cursos</button>
-            <button type="button" onclick="abrirModalPersonalizado()"><i class="fa-solid fa-sliders"></i> Personalizado</button>
-            <button type="button" onclick="confirmarNovoSimulado()"><i class="fa-solid fa-rotate"></i> Novo Simulado</button>
-            <div class="side-divider"></div>
-            <button type="button" onclick="setMode('exam')"><i class="fa-solid fa-file-pen"></i> Modo Prova</button>
-            <button type="button" onclick="setMode('study')"><i class="fa-solid fa-book-open"></i> Modo Estudo</button>
-            <div class="side-divider"></div>
-            <a id="adminPanelLinkSidebar" href="administrador.html" hidden><i class="fa-solid fa-shield-halved"></i> Administração</a>
-        </div>
-        <div class="exam-side-bottom">ESTUDO CONTÍNUO<br>EVOLUÇÃO PROFISSIONAL</div>
-    </aside>
-    <div class="mobile-nav-backdrop" id="mobileNavBackdrop" aria-hidden="true"></div>
+<body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
     <div id="authGuard" role="status" aria-live="polite">
       <div class="auth-guard-card">
         <h2 style="font-size:1.25rem;font-weight:800;color:#d4af37;margin:0 0 10px">Verificando acesso</h2>
@@ -414,7 +63,7 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
                 <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
                     <div class="flex items-center gap-3">
                         <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-header text-pm-gold shadow-lg">
-                            <svg viewBox="0 0 76 54" width="38" height="30" fill="none" aria-hidden="true"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg>
+                            <i class="fa-solid fa-graduation-cap text-xl"></i>
                         </div>
                         <div class="min-w-0">
                             <h1 class="text-sm font-black tracking-tight text-white sm:text-base">Plataforma <span class="text-pm-gold">de Aperfeiçoamento</span></h1>
@@ -427,45 +76,11 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
                             <span>Perfil</span>
                         </a>
                         <a id="adminPanelLinkLanding" href="administrador.html" hidden title="Painel administrativo" aria-label="Painel administrativo" class="hidden inline-flex items-center gap-2 rounded-xl border border-pm-gold/50 bg-pm-navy/70 px-3 py-2 text-xs font-bold text-pm-gold transition hover:border-pm-gold sm:text-sm">
-                            <i class="fa-solid fa-shield-halved"></i>
-                            <span>Administração</span>
+                            <i class="fa-solid fa-shield-halved"></i><span>Administração</span>
                         </a>
                     </div>
                 </div>
             </header>
-
-<!-- Painel inicial ACP: permanece nesta página e utiliza os dados reais da aplicação -->
-<section id="acpDashboard" class="acp-dashboard mx-auto max-w-7xl w-full px-4 py-6 sm:px-6 lg:px-8">
-  <div class="acp-welcome">
-    <span class="acp-tag"><i class="fa-solid fa-shield-halved mr-1"></i> ÁREA DO ALUNO · ACP</span>
-    <h2 id="acpWelcomeName">Bem-vindo à ACP.</h2>
-    <p>Continue seu aperfeiçoamento profissional. Acompanhe suas estatísticas e acesse as questões nas três áreas oficiais de estudo.</p>
-    <div class="acp-actions">
-      <button type="button" id="acpCreateQuiz" class="acp-btn acp-btn-gold"><i class="fa-solid fa-play"></i> Criar novo simulado</button>
-      <button type="button" id="acpContinueQuiz" class="acp-btn"><i class="fa-solid fa-book-open"></i> Continuar questões</button>
-    </div>
-  </div>
-  <div class="acp-metrics">
-    <article class="acp-metric"><div>Questões respondidas <i class="fa-solid fa-list-check"></i></div><strong id="acpMetricAnswered">0</strong><small>Na sessão atual</small></article>
-    <article class="acp-metric"><div>Taxa de acerto <i class="fa-solid fa-bullseye"></i></div><strong id="acpMetricAccuracy">—</strong><div class="acp-track"><i id="acpMetricAccuracyBar"></i></div></article>
-    <article class="acp-metric"><div>Questões pendentes <i class="fa-regular fa-clock"></i></div><strong id="acpMetricPending">0</strong><small>Da seleção atual</small></article>
-    <article class="acp-metric"><div>Questões disponíveis <i class="fa-solid fa-layer-group"></i></div><strong id="acpMetricTotal">0</strong><small>No banco carregado</small></article>
-  </div>
-  <div class="acp-dashboard-grid">
-    <section class="acp-panel"><h3>Áreas de estudo da ACP</h3><p class="acp-muted">Acesse as categorias que correspondem ao conteúdo existente na plataforma.</p>
-      <button class="acp-area" type="button" data-acp-area="JURIDICO"><span class="acp-area-icon"><i class="fa-solid fa-scale-balanced"></i></span><span><strong>Assuntos Jurídico-Administrativos</strong><small>Normas, legislação e diretrizes cadastradas</small></span><i class="fa-solid fa-arrow-right acp-arrow"></i></button>
-      <button class="acp-area" type="button" data-acp-area="ORGANIZACIONAL"><span class="acp-area-icon"><i class="fa-solid fa-building-columns"></i></span><span><strong>Assuntos Organizacionais</strong><small>Conteúdos organizacionais cadastrados</small></span><i class="fa-solid fa-arrow-right acp-arrow"></i></button>
-      <button class="acp-area" type="button" data-acp-area="OPERACIONAL"><span class="acp-area-icon"><i class="fa-solid fa-crosshairs"></i></span><span><strong>Assuntos Operacionais</strong><small>Doutrina e conteúdos operacionais cadastrados</small></span><i class="fa-solid fa-arrow-right acp-arrow"></i></button>
-    </section>
-    <section class="acp-panel"><h3>Como começar</h3><p class="acp-muted">Tudo acontece na própria página, sem abrir uma aplicação de simulado separada.</p>
-      <div class="acp-step"><b>1</b><span><strong>Escolha a área ou crie um simulado</strong><small>Use o banco de questões já carregado pela ACP.</small></span></div>
-      <div class="acp-step"><b>2</b><span><strong>Responda e marque questões</strong><small>Navegue pelas questões e utilize o cartão de respostas.</small></span></div>
-      <div class="acp-step"><b>3</b><span><strong>Acompanhe seu desempenho</strong><small>As estatísticas acima são calculadas a partir do estado real da sessão.</small></span></div>
-      <div class="acp-note"><i class="fa-solid fa-circle-info"></i> As métricas desta tela não inventam histórico anterior; representam a sessão e o banco atualmente carregados.</div>
-    </section>
-  </div>
-</section>
-
 
             <!-- Banner com imagem da bandeira paulista; manter bandeira-sp-banner.png na raiz do repositório -->
             <section class="relative isolate overflow-hidden border-b border-pm-border/70">
@@ -490,7 +105,7 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
                             <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wide text-emerald-300"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>Disponível</span>
                         </div>
                         <p class="text-[9px] font-bold uppercase tracking-[0.2em] text-pm-gold">Curso ativo</p>
-                        <h3 class="mt-1 text-2xl font-black text-white sm:text-3xl">ACP</h3>
+                        <h3 class="mt-1 text-2xl font-black text-white sm:text-3xl">ACP II/26</h3>
                         <p class="mt-1 text-xs font-semibold text-slate-200">Aperfeiçoamento · Capitão PM</p>
                         <p class="mt-3 flex-1 text-xs leading-relaxed text-slate-400">Simulados de 50 questões, Modo Prova, Modo Estudo, fundamentação, cronômetro e acompanhamento de desempenho.</p>
                         <button type="button" onclick="entrarNoCurso('ACP')" class="mt-4 w-full rounded-lg bg-pm-gold px-4 py-3 text-xs font-extrabold text-pm-navy shadow-lg transition hover:bg-pm-goldHover focus:outline-none focus:ring-2 focus:ring-pm-gold"><i class="fa-solid fa-arrow-right-to-bracket mr-2"></i>Entrar no ACP</button>
@@ -566,7 +181,7 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
                     <i class="fa-solid fa-circle-info"></i>
                 </div>
                 <div class="min-w-0">
-                    <h3 class="text-base sm:text-lg font-black text-pm-gold uppercase tracking-wider">Bem-vindo ao Simulado ACP</h3>
+                    <h3 class="text-base sm:text-lg font-black text-pm-gold uppercase tracking-wider">Bem-vindo ao Simulado ACP II/26</h3>
                     <p class="text-xs text-slate-400">Instruções rápidas de utilização</p>
                 </div>
             </div>
@@ -574,7 +189,7 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
             <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-slate-300 p-4 sm:px-6 sm:py-5 leading-relaxed overflow-y-auto overscroll-contain flex-1">
                 <section>
                     <p class="font-bold text-white mb-1">🎯 1. OBJETIVO</p>
-                    <p>Treinar para a ACP, identificar dificuldades e revisar os conteúdos estudados.</p>
+                    <p>Treinar para a ACP II/26 — Capitão PM, identificar dificuldades e revisar os conteúdos estudados.</p>
                 </section>
                 <section>
                     <p class="font-bold text-white mb-1">📝 2. NOVO SIMULADO</p>
@@ -666,30 +281,27 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
     <!-- Cabeçalho Principal -->
     <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <button type="button" id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Abrir menu lateral" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
-            <div class="platform-brand-lockup">
-                <div class="platform-brand-symbol" aria-hidden="true"><svg viewBox="0 0 76 54" width="46" height="42" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A" fill-opacity=".96"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
-                <div class="platform-brand-copy">
-                    <span class="brand-eyebrow">Plataforma de Aperfeiçoamento</span>
-                    <h1 id="simuladoTitulo" class="brand-title">ACP</h1>
-                    <p id="subtituloCurso" class="brand-subtitle">Avaliação de Competência Profissional</p>
+            <div class="flex items-center gap-4 text-center md:text-left">
+                <div class="w-14 h-14 rounded-full bg-pm-gold/10 border-2 border-pm-gold flex items-center justify-center flex-shrink-0 shadow-inner overflow-hidden">
+                    <img src="pmesp.png" alt="Brasão PMESP" class="w-full h-full object-cover scale-100">
+                </div>
+                <div>
+                    <h1 class="text-xs sm:text-sm font-bold text-pm-gold uppercase tracking-widest">Plataforma de Aperfeiçoamento</h1>
+                    <h2 id="simuladoTitulo" class="text-base sm:text-lg font-extrabold text-white">ACP II/26 - Capitão PM</h2>
+                    <p id="subtituloCurso" class="text-xs text-slate-300">Ambiente de preparação para avaliações profissionais</p>
                 </div>
             </div>
 
             <!-- Seletor de cursos e controles do simulado -->
-            <div class="exam-header-controls">
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
                 <a href="perfil-usuario.html" title="Abrir perfil e segurança da conta" aria-label="Perfil do usuário" class="group flex items-center gap-2 rounded-xl border border-pm-gold/50 bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-slate-200 transition hover:border-pm-gold hover:text-pm-gold">
                     <span class="flex h-8 w-8 items-center justify-center rounded-full border border-pm-gold/70 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-user"></i></span>
                     <span>Perfil</span>
                 </a>
-                <a id="adminPanelLinkCourse" href="administrador.html" hidden title="Painel administrativo" aria-label="Painel administrativo" class="hidden group items-center gap-2 rounded-xl border border-pm-gold/50 bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-pm-gold transition hover:border-pm-gold hover:text-pm-gold">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <span>Administração</span>
-                </a>
                 <button type="button" onclick="voltarSelecaoCursos()" title="Voltar à seleção de cursos" class="rounded-xl border border-pm-border bg-pm-navy/70 px-3 py-2 text-xs sm:text-sm font-bold text-slate-200 transition hover:border-pm-gold/60 hover:text-pm-gold">
                     <i class="fa-solid fa-layer-group mr-1.5"></i> Cursos
                 </button>
-                <div id="timerDisplayWrap" class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
+                <div class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
                     <div id="timerDisplay" class="flex items-center gap-2 font-mono font-bold text-xl text-pm-gold">
                         <i class="fa-regular fa-clock text-base text-slate-400"></i>
                         <span>02:30:00</span>
@@ -710,7 +322,7 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
         </div>
     </header>
 
-    <!-- Barra de Navegação e Filtros (mantida para telas menores) -->
+    <!-- Barra de Navegação e Filtros -->
     <nav class="bg-pm-lightBg border-b border-pm-border py-3 px-4">
         <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
             <!-- Alternador de Modos -->
@@ -732,25 +344,20 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
                 <button onclick="setSubjectFilter('JURIDICO')" id="filterJURIDICO" class="px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap">Jurídico-Admin (<span id="cntJur">0</span>)</button>
             </div>
 
-            <button id="finalizeExamTop" onclick="finishExam()" class="ml-auto bg-red-600/80 hover:bg-red-600 text-white px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold shadow transition flex items-center gap-2">
+            <button onclick="finishExam()" class="ml-auto bg-red-600/80 hover:bg-red-600 text-white px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold shadow transition flex items-center gap-2">
                 <i class="fa-solid fa-flag-checkered"></i> Finalizar Prova
             </button>
         </div>
     </nav>
 
     <!-- Conteúdo Principal -->
-    <main class="exam-main flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+    <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
 
         <!-- Área de Exibição de Questões e Resultados -->
         <section class="lg:col-span-3 flex flex-col gap-4">
 
             <!-- Card da Questão Ativa -->
             <div id="questionContainer" class="bg-pm-cardBg border border-pm-border rounded-xl shadow-xl p-5 sm:p-7 flex flex-col justify-between min-h-[500px]">
-                <div class="exam-question-toolbar" id="examQuestionToolbar" aria-label="Modos e filtros de questões">
-                    <div class="exam-modes" id="examModesMount"></div>
-                    <div class="exam-filters" id="examFiltersMount"></div>
-                    <div class="exam-finalize-mount" id="examFinalizeMount"></div>
-                </div>
                 <div>
                     <!-- Cabeçalho da Questão -->
                     <div class="flex flex-wrap items-center justify-between border-b border-pm-border/60 pb-3 mb-4 gap-2">
@@ -810,7 +417,7 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
                         🏆
                     </div>
                     <h2 class="text-2xl font-black text-white">Relatório Final de Desempenho</h2>
-                    <p class="text-sm text-slate-300">ACP — Avaliação de Competência Profissional</p>
+                    <p class="text-sm text-slate-300">Avaliação de Competência Profissional ACP II/26 — PMESP</p>
                 </div>
 
                 <!-- Quadro Geral de Pontuação -->
@@ -883,34 +490,32 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
         <aside class="flex flex-col gap-4">
 
             <!-- Painel de Progresso: visível no Modo Estudo; oculto no Modo Prova -->
-            <div id="progressPanel" class="progress-dashboard rounded-2xl p-4 sm:p-5">
-                <h3 class="progress-heading"><span class="progress-heading-icon"><i class="fa-solid fa-chart-pie"></i></span> Painel de Progresso</h3>
-                <div class="progress-main">
-                    <div class="progress-ring" id="progressRing" role="img" aria-label="Progresso do simulado: 0 por cento">
-                        <svg viewBox="0 0 120 120" aria-hidden="true">
-                            <circle class="progress-ring-track" cx="60" cy="60" r="49"></circle>
-                            <circle id="progressRingValue" class="progress-ring-value" cx="60" cy="60" r="49"></circle>
-                        </svg>
-                        <div class="progress-ring-center"><strong id="progressRingPercent">0%</strong><span>Concluído</span></div>
+            <div id="progressPanel" class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg">
+                <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-chart-pie text-pm-gold"></i> Painel de Progresso
+                </h3>
+                <div class="grid grid-cols-3 gap-2 text-center text-xs mb-3">
+                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
+                        <div class="text-emerald-400 font-bold text-lg" id="statCorrect">0</div>
+                        <div class="text-[10px] text-slate-400">Acertos</div>
                     </div>
-                    <div class="progress-legend">
-                        <div class="progress-legend-row"><span class="progress-dot correct"></span><strong id="statCorrect">0</strong><span>Acertos</span></div>
-                        <div class="progress-legend-row"><span class="progress-dot wrong"></span><strong id="statWrong">0</strong><span>Erros</span></div>
-                        <div class="progress-legend-row"><span class="progress-dot unanswered"></span><strong id="statPending">0</strong><span>Não respondidas</span></div>
-                        <div class="progress-legend-row"><span class="progress-dot remaining"></span><strong id="statRemaining">0</strong><span>Restantes</span></div>
+                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
+                        <div class="text-rose-400 font-bold text-lg" id="statWrong">0</div>
+                        <div class="text-[10px] text-slate-400">Erros</div>
+                    </div>
+                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
+                        <div class="text-amber-400 font-bold text-lg" id="statPending">0</div>
+                        <div class="text-[10px] text-slate-400">Pendentes</div>
                     </div>
                 </div>
-                <div class="progress-footer">
-                    <div><span>Pontuação atual</span><strong id="progressScore">0/0</strong></div>
-                    <div><span>Nota estimada</span><strong id="progressGrade">0.0%</strong></div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden border border-pm-border mb-1">
+                    <div id="progBar" class="bg-pm-gold h-full w-0 transition-all duration-300"></div>
                 </div>
-                <div class="progress-hidden" aria-hidden="true">
-                    <div id="progBar"></div><span id="progPercent">0% concluído</span>
-                </div>
+                <div class="text-[11px] text-slate-400 text-right font-mono" id="progPercent">0% concluído</div>
             </div>
 
             <!-- Cartão de Respostas Interativo -->
-            <div id="answerSheetPanel" class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg flex flex-col">
+            <div class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg flex-1 flex flex-col">
                 <div class="flex items-center justify-between mb-3">
                     <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-2">
                         <i class="fa-solid fa-grip text-pm-gold"></i> Cartão de Respostas
@@ -928,18 +533,6 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
                 <div id="questionsGrid" class="grid grid-cols-5 sm:grid-cols-10 lg:grid-cols-5 gap-2 overflow-y-auto max-h-[380px] pr-1 custom-scrollbar"></div>
             </div>
 
-            <!-- Informações da questão selecionada -->
-            <div id="questionInfoPanel" class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg">
-                <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-2">
-                    <i class="fa-solid fa-clipboard-list text-pm-gold"></i> Informações da questão
-                </h3>
-                <div class="border-t border-pm-border/70 pt-2">
-                    <div class="info-row"><i class="fa-solid fa-layer-group"></i><span><strong class="text-slate-400 font-medium">Área:</strong> <span id="infoQuestionSubject">—</span></span></div>
-                    <div class="info-row"><i class="fa-regular fa-bookmark"></i><span><strong class="text-slate-400 font-medium">Assunto:</strong> <span id="infoQuestionTopic">—</span></span></div>
-                    <div class="info-row"><i class="fa-solid fa-list-check"></i><span><strong class="text-slate-400 font-medium">Situação:</strong> <span id="infoQuestionStatus">—</span></span></div>
-                </div>
-            </div>
-
         </aside>
 
     </main>
@@ -948,8 +541,7 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
     <footer class="bg-pm-header border-t border-pm-border py-3 px-3 text-center text-xs text-slate-400 mt-auto">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
             <span>Plataforma de Aperfeiçoamento</span>
-            <span class="exam-footer-credit">Elaborado pelo 1º Ten PM Adriano</span>
-            <span class="text-pm-gold font-semibold">Ambiente independente de preparação profissional</span>
+            <span class="text-pm-gold font-semibold">Elaborado pelo 1° Ten PM Adriano</span>
         </div>
     </footer>
 
@@ -957,8 +549,8 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
     <script>
         const TOTAL_QUESTOES = cursoInicial === 'CAO' ? 100 : 50;
         const TEMPO_PROVA_SEGUNDOS = TOTAL_QUESTOES * 3 * 60;
-        let STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_SIMULADO_CAO_STATE' : 'ACP_SIMULADO_STATE';
-        let MODAL_STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_MODAL_INSTRUCOES_VISTO_CAO' : 'ACP_MODAL_INSTRUCOES_VISTO';
+        let STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_SIMULADO_CAO_STATE' : 'PMESP_SIMULADO_ACP_STATE';
+        let MODAL_STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_MODAL_INSTRUCOES_VISTO_CAO' : 'PMESP_MODAL_INSTRUCOES_VISTO_ACP';
 
         let questionsDatabase = [];
         let sessaoPersonalizadaAtiva = false;
@@ -983,21 +575,6 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
         let cursoAtivo = cursoInicial;
 
         document.addEventListener("DOMContentLoaded", function() {
-            const dashboard = document.getElementById('acpDashboard');
-            const showQuestions = (newSimulado = false, area = null) => {
-                document.body.classList.remove('acp-dashboard-mode');
-                if (dashboard) dashboard.hidden = true;
-                if (area) setSubjectFilter(area);
-                if (newSimulado) {
-                    if (typeof confirmarNovoSimulado === 'function') confirmarNovoSimulado();
-                    else if (typeof gerarEIniciarNovoSimulado === 'function') gerarEIniciarNovoSimulado();
-                }
-                window.scrollTo({top: 0, behavior: 'smooth'});
-            };
-            document.getElementById('acpCreateQuiz')?.addEventListener('click', () => showQuestions(true));
-            document.getElementById('acpContinueQuiz')?.addEventListener('click', () => showQuestions(false));
-            document.querySelectorAll('[data-acp-area]').forEach(button => button.addEventListener('click', () => showQuestions(true, button.dataset.acpArea)));
-
             if (!cursoInicial) {
                 document.getElementById('courseLanding').classList.remove('hidden');
                 if (acessoCAOBloqueado) abrirModalCAOConstrucao();
@@ -1011,7 +588,7 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
 
         function entrarNoCurso(curso) {
             if (curso === 'ACP') {
-                window.location.href = 'plataforma.html?curso=ACP';
+                window.location.href = 'plataformaACP.html';
                 return;
             }
             if (curso === 'CAO') {
@@ -1050,23 +627,23 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
 
         function configurarIdentidadeCurso() {
             const isCAO = cursoAtivo === 'CAO';
-            const titulo = isCAO ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP';
+            const titulo = isCAO ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP II/26 — Capitão PM';
             document.getElementById('simuladoTitulo').innerText = titulo;
             const subtituloCurso = document.getElementById('subtituloCurso');
             if (subtituloCurso) subtituloCurso.innerText = isCAO ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
             const modalTitulo = document.querySelector('#modalInstrucoes h3');
-            if (modalTitulo) modalTitulo.innerText = isCAO ? 'Bem-vindo ao Simulado CAO' : 'Bem-vindo ao Simulado ACP';
+            if (modalTitulo) modalTitulo.innerText = isCAO ? 'Bem-vindo ao Simulado CAO' : 'Bem-vindo ao Simulado ACP II/26';
             const objetivo = document.querySelector('#modalInstrucoes section p:nth-child(2)');
             if (objetivo) objetivo.innerText = isCAO
                 ? 'Treinar para o Curso de Aperfeiçoamento de Oficiais (CAO), identificar dificuldades e revisar os conteúdos estudados.'
-                : 'Treinar para a ACP, identificar dificuldades e revisar os conteúdos estudados.';
+                : 'Treinar para a ACP II/26 — Capitão PM, identificar dificuldades e revisar os conteúdos estudados.';
             const instrucoes = document.querySelectorAll('#modalInstrucoes section p:nth-child(2)');
             if (instrucoes[1]) instrucoes[1].innerHTML = `Ao iniciar um novo simulado, o cronômetro e as respostas são reiniciados, ocorrendo o sorteio de <strong class="text-white">${TOTAL_QUESTOES} questões</strong>. Para gerar outro conjunto, utilize o botão <strong class="text-white">Novo Simulado</strong>.`;
             const resultadoSubtitulo = document.querySelector('#resultsContainer .text-center p');
             if (resultadoSubtitulo) resultadoSubtitulo.innerText = isCAO
                 ? 'Curso de Aperfeiçoamento de Oficiais — PMESP'
-                : 'ACP — Avaliação de Competência Profissional';
-            document.title = `Plataforma de Aperfeiçoamento | ${isCAO ? 'CAO' : 'ACP'}`;
+                : 'Avaliação de Competência Profissional ACP II/26 — PMESP';
+            document.title = `Plataforma de Aperfeiçoamento | ${isCAO ? 'CAO' : 'ACP II/26'}`;
         }
 
         // CONTROLE DO MODAL DE INSTRUÇÕES
@@ -1135,30 +712,10 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
         }
 
         function restaurarInterface() {
-            // Normaliza filtros antigos guardados no navegador e evita uma lista vazia após atualização do banco.
-            const filtrosValidos = ['ALL', 'OPERACIONAL', 'ORGANIZACIONAL', 'JURIDICO'];
-            if (!filtrosValidos.includes(state.activeFilter)) state.activeFilter = 'ALL';
-
-            if (!Array.isArray(state.userAnswers)) state.userAnswers = [];
-            if (!Array.isArray(state.flagged)) state.flagged = [];
-            if (!Array.isArray(state.studyLocked)) state.studyLocked = [];
-            state.userAnswers = Array.from({ length: questionsDatabase.length }, (_, i) => state.userAnswers[i] ?? null);
-            state.flagged = Array.from({ length: questionsDatabase.length }, (_, i) => Boolean(state.flagged[i]));
-            state.studyLocked = Array.from({ length: questionsDatabase.length }, (_, i) => Boolean(state.studyLocked[i]));
-
             updateSubjectCounts();
             updateFilteredQuestions();
-            if (questionsDatabase.length > 0 && state.filteredQuestions.length === 0) {
-                state.activeFilter = 'ALL';
-                state.currentIndex = 0;
-                updateFilteredQuestions();
-            }
-            if (!Number.isInteger(state.currentIndex) || state.currentIndex < 0 || state.currentIndex >= state.filteredQuestions.length) {
-                state.currentIndex = 0;
-            }
-
             setMode(state.mode);
-            setSubjectFilter(state.activeFilter, false);
+            setSubjectFilter(state.activeFilter, false); 
             renderQuestionGrid();
             displayCurrentQuestion();
 
@@ -1252,6 +809,11 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
                 if (!anterior || item.usedAt > anterior.usedAt) porChave.set(item.key, item);
             });
             localStorage.setItem(QUESTION_HISTORY_KEY, JSON.stringify([...porChave.values()]));
+            // Sincroniza histórico com a conta autenticada; localStorage continua como fallback.
+            if (window.studyProgress?.recordQuestionUsage) {
+                window.studyProgress.recordQuestionUsage(questoes, cursoAtivo || 'ACP')
+                    .catch(error => console.warn('Não foi possível sincronizar o histórico no Firestore:', error));
+            }
         }
 
         function sortearQuestoesProporcionalmente(bancoBruto, totalSimulado = 50) {
@@ -1446,7 +1008,6 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
             document.getElementById('resultsContainer').classList.add('hidden');
             document.getElementById('questionContainer').classList.remove('hidden');
             updateSubjectCounts(); updateFilteredQuestions(); renderQuestionGrid(); displayCurrentQuestion(); updateRealtimeStats();
-            document.getElementById('acpMetricTotal') && (document.getElementById('acpMetricTotal').textContent = questionsDatabase.length);
             saveStateToLocalStorage();
         }
 
@@ -1463,7 +1024,7 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
             document.getElementById('timerDisplay').parentElement.classList.remove('hidden');
             document.getElementById('btnModeExam').classList.remove('hidden');
             document.getElementById('btnModeStudy').classList.remove('hidden');
-            document.getElementById('simuladoTitulo').innerText = cursoAtivo === 'CAO' ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP';
+            document.getElementById('simuladoTitulo').innerText = cursoAtivo === 'CAO' ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP II/26 — Capitão PM';
             document.getElementById('subtituloCurso').innerText = cursoAtivo === 'CAO' ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
             document.querySelectorAll('button[onclick="finishExam()"]')[0].innerHTML = '<i class="fa-solid fa-flag-checkered"></i> Finalizar Prova';
             let bancoBase = obterBancoBase();
@@ -1475,10 +1036,6 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
             questionsDatabase = sortearQuestoesProporcionalmente(bancoBase, TOTAL_QUESTOES);
             if (questionsDatabase.length !== TOTAL_QUESTOES) return;
             registrarQuestoesUtilizadas(questionsDatabase);
-            // Persiste no Firestore quando houver sessão autenticada; o histórico local segue como cache offline.
-            window.studyProgress?.recordQuestionUsage(questionsDatabase, cursoAtivo).catch(error => {
-                console.warn('Não foi possível sincronizar o histórico de questões com o Firestore:', error);
-            });
 
             state.userAnswers = new Array(questionsDatabase.length).fill(null);
             state.flagged = new Array(questionsDatabase.length).fill(false);
@@ -1619,33 +1176,7 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
         }
 
         function displayCurrentQuestion() {
-            if (!Array.isArray(state.filteredQuestions) || state.filteredQuestions.length === 0) {
-                // Não deixa o painel parecer vazio se o navegador restaurou um filtro antigo.
-                if (Array.isArray(questionsDatabase) && questionsDatabase.length > 0) {
-                    state.activeFilter = 'ALL';
-                    state.currentIndex = 0;
-                    updateFilteredQuestions();
-                    if (state.filteredQuestions.length > 0) {
-                        renderQuestionGrid();
-                        return displayCurrentQuestion();
-                    }
-                }
-
-                const badge = document.getElementById('qBadgeNum');
-                const subject = document.getElementById('qBadgeSubject');
-                const questionText = document.getElementById('qText');
-                const options = document.getElementById('qOptions');
-                if (badge) badge.textContent = 'Questões indisponíveis';
-                if (subject) subject.textContent = 'Verificação do banco de questões';
-                if (questionText) questionText.textContent = 'Não foi possível exibir as questões. Recarregue a página. Se o problema persistir, verifique se questoes.js foi publicado junto com plataforma.html e informe o erro exibido no Console do navegador.';
-                if (options) options.innerHTML = '';
-                console.error('Painel de questões sem itens.', {
-                    curso: cursoAtivo,
-                    bancoCarregado: Array.isArray(questionsDatabase) ? questionsDatabase.length : 'inválido',
-                    filtro: state.activeFilter
-                });
-                return;
-            }
+            if (state.filteredQuestions.length === 0) return;
 
             const q = state.filteredQuestions[state.currentIndex];
             const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
@@ -1660,12 +1191,6 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
             };
             document.getElementById('qBadgeSubject').innerText = `${subjNames[q.subject] || q.subject} | ${q.topic}`;
             document.getElementById('qText').innerText = q.text;
-            const infoSubject = document.getElementById('infoQuestionSubject');
-            const infoTopic = document.getElementById('infoQuestionTopic');
-            const infoStatus = document.getElementById('infoQuestionStatus');
-            if (infoSubject) infoSubject.textContent = subjNames[q.subject] || q.subject || 'Não informado';
-            if (infoTopic) infoTopic.textContent = q.topic || 'Não informado';
-            if (infoStatus) infoStatus.textContent = state.userAnswers[targetIdx] !== null && state.userAnswers[targetIdx] !== undefined ? 'Respondida' : 'Pendente';
 
             const flagBtn = document.getElementById('qMarkFlag');
             if (state.flagged[targetIdx]) {
@@ -1845,39 +1370,14 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
 
             const pending = total - answered;
             const pct = total > 0 ? Math.round((answered / total) * 100) : 0;
-            const acpAnswered = document.getElementById('acpMetricAnswered');
-            if (acpAnswered) acpAnswered.textContent = answered;
-            const acpPending = document.getElementById('acpMetricPending');
-            if (acpPending) acpPending.textContent = pending;
-            const acpTotal = document.getElementById('acpMetricTotal');
-            if (acpTotal) acpTotal.textContent = total;
-            const acpAccuracy = document.getElementById('acpMetricAccuracy');
-            if (acpAccuracy) acpAccuracy.textContent = answered ? `${Math.round(correct / answered * 100)}%` : '—';
-            const acpAccuracyBar = document.getElementById('acpMetricAccuracyBar');
-            if (acpAccuracyBar) acpAccuracyBar.style.width = (answered ? correct / answered * 100 : 0) + '%';
 
             const progressPanel = document.getElementById('progressPanel');
-            // O progresso só aparece no Modo Estudo.
-            if (progressPanel) progressPanel.classList.toggle('progress-hidden', state.mode !== 'study');
+            if (progressPanel) progressPanel.classList.toggle('hidden', state.mode === 'exam');
 
             document.getElementById('countAnswered').innerText = answered;
             document.getElementById('statCorrect').innerText = correct;
             document.getElementById('statWrong').innerText = wrong;
             document.getElementById('statPending').innerText = pending;
-            const remaining = Math.max(0, questionsDatabase.length - answered);
-            const ringPercent = Math.max(0, Math.min(100, Number(pct) || 0));
-            const ring = document.getElementById('progressRingValue');
-            if (ring) ring.style.strokeDashoffset = String(307.876 * (1 - ringPercent / 100));
-            const ringPercentLabel = document.getElementById('progressRingPercent');
-            if (ringPercentLabel) ringPercentLabel.textContent = `${ringPercent}%`;
-            const ringElement = document.getElementById('progressRing');
-            if (ringElement) ringElement.setAttribute('aria-label', `Progresso do simulado: ${ringPercent} por cento`);
-            const remainingElement = document.getElementById('statRemaining');
-            if (remainingElement) remainingElement.textContent = remaining;
-            const scoreElement = document.getElementById('progressScore');
-            if (scoreElement) scoreElement.textContent = `${correct}/${questionsDatabase.length}`;
-            const gradeElement = document.getElementById('progressGrade');
-            if (gradeElement) gradeElement.textContent = `${(questionsDatabase.length ? correct / questionsDatabase.length * 10 : 0).toFixed(1)}`;
             document.getElementById('progBar').style.width = `${pct}%`;
             document.getElementById('progPercent').innerText = `${pct}% concluído`;
         }
@@ -1939,8 +1439,6 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
             }
 
             let score = 0;
-            let answered = 0;
-            let incorrect = 0;
             let opScore = 0, opTotal = 0;
             let orgScore = 0, orgTotal = 0;
             let jurScore = 0, jurTotal = 0;
@@ -1952,21 +1450,15 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
                 if (q.subject === 'ORGANIZACIONAL') orgTotal++;
                 if (q.subject === 'JURIDICO') jurTotal++;
 
-                const hasAnswer = state.userAnswers[idx] !== null && state.userAnswers[idx] !== undefined && state.userAnswers[idx] !== '';
-                if (hasAnswer) answered++;
-
-                const isCorrect = hasAnswer && state.userAnswers[idx] === q.answer;
+                const isCorrect = state.userAnswers[idx] === q.answer;
                 if (isCorrect) {
                     score++;
                     if (q.subject === 'OPERACIONAL') opScore++;
                     if (q.subject === 'ORGANIZACIONAL') orgScore++;
                     if (q.subject === 'JURIDICO') jurScore++;
-                } else if (hasAnswer) {
-                    incorrect++;
                 }
             });
 
-            const unanswered = Math.max(0, total - answered);
             const percent = total > 0 ? ((score / total) * 100).toFixed(1) : 0;
             const grade = total > 0 ? ((score / total) * 10).toFixed(1) : 0;
 
@@ -1993,29 +1485,26 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
             document.getElementById('labelJurScore').innerText = `${jurScore}/${jurTotal} (${jurPct}%)`;
             document.getElementById('barJurScore').style.width = `${jurPct}%`;
 
-            // Registra resultados reais apenas quando a prova é finalizada pelo usuário.
-            // finishExam(false) é usado em restaurações e não deve criar tentativa duplicada.
-            if (shouldSave) {
-                window.studyProgress?.saveExamResult({
-                    shouldSave: true,
-                    course: cursoAtivo,
+            // Salva uma tentativa concluída no Firestore, isolada pelo UID em user-progress-firestore.js.
+            if (shouldSave && window.studyProgress?.saveExamResult) {
+                const answered = state.userAnswers.filter(answer => answer !== undefined && answer !== null && answer !== '').length;
+                const incorrect = Math.max(0, score >= 0 ? answered - score : 0);
+                const unanswered = Math.max(0, total - answered);
+                const sessionId = (globalThis.crypto?.randomUUID?.() || `s${Date.now()}${Math.random().toString(36).slice(2, 10)}`);
+                window.studyProgress.saveExamResult({
+                    sessionId,
+                    course: cursoAtivo || 'ACP',
                     mode: sessaoPersonalizadaAtiva ? 'personalizado' : (state.mode || 'exam'),
-                    score,
-                    total,
-                    answered,
-                    incorrect,
-                    unanswered,
-                    percent: Number(percent),
-                    grade: Number(grade),
+                    total, correct: score, score, answered, incorrect, unanswered,
+                    percent: Number(percent), grade: Number(grade),
                     elapsedSeconds: Math.max(0, elapsedSecs),
+                    completedAtMs: Date.now(),
                     subjects: {
                         OPERACIONAL: { correct: opScore, total: opTotal, percent: opPct },
                         ORGANIZACIONAL: { correct: orgScore, total: orgTotal, percent: orgPct },
                         JURIDICO: { correct: jurScore, total: jurTotal, percent: jurPct }
                     }
-                }).catch(error => {
-                    console.warn('Não foi possível salvar o resultado no Firestore:', error);
-                });
+                }).catch(error => console.warn('Não foi possível salvar o resultado no Firestore:', error));
             }
 
             document.getElementById('questionContainer').classList.add('hidden');
@@ -2032,65 +1521,17 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
     <script type="module">
       import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
       import { auth } from "./firebase-config.js";
-      import "./user-progress-firestore.js";
+      import { recordQuestionUsage, saveExamResult, loadQuestionHistory, loadExamResults, getProgressSummary } from "./user-progress-firestore.js";
       import { isAdminUser } from "./admin-access.js";
 
       auth.languageCode = 'pt-BR';
-      // Move os controles existentes para os novos pontos de layout sem recriar suas funções.
-      const mobileNav = document.querySelector('.exam-brand-rail');
-      const mobileNavToggle = document.getElementById('mobileNavToggle');
-      const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
-      const closeMobileNav = () => {
-        mobileNav?.classList.remove('mobile-open');
-        mobileNavBackdrop?.classList.remove('open');
-        mobileNavToggle?.setAttribute('aria-expanded', 'false');
-        if (mobileNavToggle) mobileNavToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
-      };
-      mobileNavToggle?.addEventListener('click', () => {
-        const isOpen = mobileNav?.classList.toggle('mobile-open');
-        mobileNavBackdrop?.classList.toggle('open', !!isOpen);
-        mobileNavToggle.setAttribute('aria-expanded', String(!!isOpen));
-        mobileNavToggle.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
-      });
-      mobileNavBackdrop?.addEventListener('click', closeMobileNav);
-      mobileNav?.querySelectorAll('a,button').forEach(link => link.addEventListener('click', closeMobileNav));
-      const mobilePanelTabs = document.getElementById('mobilePanelTabs');
-      const mobilePanelButtons = [...(mobilePanelTabs?.querySelectorAll('[data-panel]') || [])];
-      const setMobilePanel = (panelId) => {
-        ['progressPanel','answerSheetPanel','questionInfoPanel'].forEach(id => document.getElementById(id)?.classList.toggle('mobile-panel-active', id === panelId));
-        mobilePanelButtons.forEach(button => button.setAttribute('aria-selected', String(button.dataset.panel === panelId)));
-      };
-      mobilePanelButtons.forEach(button => button.addEventListener('click', () => {
-        if (button.dataset.panel === 'progressPanel' && document.getElementById('progressPanel')?.classList.contains('progress-hidden')) {
-          setMobilePanel('answerSheetPanel'); return;
-        }
-        setMobilePanel(button.dataset.panel);
-      }));
-      setMobilePanel('progressPanel');
-      const examNav = document.querySelector('body > nav');
-      const toolbar = document.getElementById('examQuestionToolbar');
-      if (examNav && toolbar && window.matchMedia('(min-width: 1100px)').matches) {
-        const navInner = examNav.firstElementChild;
-        const modeGroup = navInner?.children[0];
-        const filtersGroup = navInner?.children[1];
-        const finalizeButton = document.getElementById('finalizeExamTop');
-        if (modeGroup) document.getElementById('examModesMount')?.appendChild(modeGroup);
-        if (filtersGroup) document.getElementById('examFiltersMount')?.appendChild(filtersGroup);
-        if (finalizeButton) document.getElementById('examFinalizeMount')?.appendChild(finalizeButton);
-      }
-      const oldAdminLink = document.getElementById('adminPanelLinkCourse');
-      const sideAdminLink = document.getElementById('adminPanelLinkSidebar');
-      if (oldAdminLink && sideAdminLink) {
-        const syncAdminVisibility = () => { sideAdminLink.hidden = oldAdminLink.hidden; };
-        new MutationObserver(syncAdminVisibility).observe(oldAdminLink, {attributes:true, attributeFilter:['hidden','class']});
-        syncAdminVisibility();
-      }
+      // Ponte controlada entre scripts clássicos do simulado e módulos Firebase.
+      window.studyProgress = { recordQuestionUsage, saveExamResult, loadQuestionHistory, loadExamResults, getProgressSummary };
       const guard = document.getElementById('authGuard');
       let accessDecisionMade = false;
 
       function showAccessMessage(title, message, showLoginLink = true) {
         if (!guard) return;
-        // Mantém o bloqueio visível; não há redirecionamento automático.
         guard.innerHTML = `
           <div class="auth-guard-card">
             <h2 style="font-size:1.25rem;font-weight:800;color:#d4af37;margin:0 0 10px">${title}</h2>
@@ -2101,76 +1542,39 @@ body.acp-dashboard-mode #acpDashboard{display:block!important;visibility:visible
       }
 
       onAuthStateChanged(auth, async (user) => {
-        // Evita que o segundo evento disparado por signOut sobrescreva a mensagem específica.
         if (accessDecisionMade) return;
         if (!user) {
           accessDecisionMade = true;
-          showAccessMessage('Acesso não autenticado', 'Para visualizar a plataforma, entre com sua conta. Se você acabou de se cadastrar, confirme primeiro o endereço de e-mail. Esta mensagem permanecerá na tela até você clicar em “Voltar ao login”.');
+          showAccessMessage('Acesso não autenticado', 'Para visualizar a plataforma, entre com sua conta. Se você acabou de se cadastrar, confirme primeiro o endereço de e-mail.');
           return;
         }
 
-        const isPasswordAccount = user.providerData.some((provider) => provider.providerId === 'password');
+        const isPasswordAccount = user.providerData.some(provider => provider.providerId === 'password');
         if (isPasswordAccount && !user.emailVerified) {
           accessDecisionMade = true;
-          showAccessMessage('Confirme seu e-mail', 'Esta conta ainda não confirmou o endereço de e-mail. O acesso aos cursos está bloqueado. Volte ao login, solicite o envio do link e confirme a mensagem recebida antes de acessar os cursos. Esta tela não será fechada automaticamente.');
+          showAccessMessage('Confirme seu e-mail', 'Esta conta ainda não confirmou o endereço de e-mail. Volte ao login, solicite o envio do link e confirme a mensagem recebida antes de acessar os cursos.');
           try { await signOut(auth); } catch (error) { console.error('Falha ao encerrar sessão não confirmada:', error); }
           return;
         }
 
-        // Libera a plataforma normalmente; a checagem administrativa é complementar.
-        accessDecisionMade = true;
-        if (guard) guard.remove();
-        const acpGreetingName = (user.displayName || user.email?.split('@')[0] || 'aluno').trim().split(/[\\s._-]+/).filter(Boolean)[0] || 'aluno';
-        const acpWelcome = document.getElementById('acpWelcomeName');
-        if (acpWelcome) acpWelcome.textContent = `Bem-vindo, ${acpGreetingName}.`;
-
-
-        // Migra o histórico local do navegador para a conta autenticada e mantém o cache de 72 horas.
+        // Link de administração é apenas uma conveniência visual; a autorização real exige regras Firestore.
         try {
-          await window.studyProgress?.ready();
-          if (window.studyProgress && typeof carregarHistoricoQuestoes === 'function') {
-            const localHistory = carregarHistoricoQuestoes();
-            const mergedHistory = await window.studyProgress.mergeQuestionHistory(localHistory, cursoAtivo);
-            localStorage.setItem(QUESTION_HISTORY_KEY, JSON.stringify(mergedHistory));
+          const adminLink = document.getElementById('adminPanelLinkLanding');
+          if (adminLink && await isAdminUser(user)) {
+            adminLink.hidden = false;
+            adminLink.classList.remove('hidden');
           }
         } catch (error) {
-          // A plataforma continua utilizável; o histórico local permanece disponível se o Firestore falhar.
-          console.warn('Não foi possível carregar/migrar o histórico do Firestore:', error);
+          console.warn('Não foi possível verificar o perfil administrativo:', error);
         }
 
-        // A autorização real das operações administrativas continua protegida pelas regras do Firestore.
-        // Se a consulta falhar, o usuário mantém o acesso normal aos cursos, sem receber o link administrativo.
-        isAdminUser(user).then((admin) => {
-          if (!admin) return;
-
-          const landingLink = document.getElementById('adminPanelLinkLanding');
-          const courseLink = document.getElementById('adminPanelLinkCourse');
-          const sidebarLink = document.getElementById('adminPanelLinkSidebar');
-
-          if (landingLink) {
-            landingLink.hidden = false;
-            landingLink.classList.remove('hidden');
-          }
-          if (courseLink) {
-            courseLink.hidden = false;
-            courseLink.classList.remove('hidden');
-          }
-          if (sidebarLink) {
-            sidebarLink.hidden = false;
-            sidebarLink.classList.remove('hidden');
-          }
-        }).catch((error) => {
-          console.error('Falha ao verificar permissões administrativas:', error);
-        });
-      }, (error) => {
+        accessDecisionMade = true;
+        if (guard) guard.remove();
+      }, error => {
         console.error('Falha ao verificar autenticação:', error);
         accessDecisionMade = true;
-        showAccessMessage('Não foi possível verificar o acesso', 'Ocorreu um erro ao consultar sua sessão. Esta mensagem permanecerá na tela. Volte ao login e tente novamente.');
+        showAccessMessage('Não foi possível verificar o acesso', 'Ocorreu um erro ao consultar sua sessão. Volte ao login e tente novamente.');
       });
     </script>
 
-<nav class="mobile-panel-tabs" id="mobilePanelTabs" aria-label="Painéis do simulado" role="tablist">
-<button type="button" class="mobile-panel-tab" data-panel="progressPanel" role="tab" aria-selected="true"><i class="fa-solid fa-chart-pie"></i><span>Progresso</span></button>
-<button type="button" class="mobile-panel-tab" data-panel="answerSheetPanel" role="tab" aria-selected="false"><i class="fa-solid fa-grip"></i><span>Respostas</span></button>
-<button type="button" class="mobile-panel-tab" data-panel="questionInfoPanel" role="tab" aria-selected="false"><i class="fa-solid fa-circle-info"></i><span>Informações</span></button></nav>
 </body>
