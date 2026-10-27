@@ -2,6 +2,18 @@ import { addDoc, collection, deleteDoc, doc, getDoc, getDocs, orderBy, query, se
 import { auth, db } from "./firebase-config.js";
 import { isAdminUser } from "./admin-access.js";
 
+/**
+ * ROADMAP — VIDEOAULAS (IMPLEMENTAR EM ETAPA FUTURA; NÃO ATIVAR NESTA ENTREGA)
+ * 1. Criar fluxo explícito de publicação/despublicação; salvar rascunho NÃO deve publicar.
+ * 2. Criar catálogo/página do aluno que liste somente aulas publicadas e filtre por curso/matéria/categoria.
+ * 3. Implementar reprodução segura e compatível com YouTube/Vimeo/links externos, com estados de erro e responsividade.
+ * 4. Definir edição, revisão, publicação e arquivamento, além de validação dos campos e URLs.
+ * 5. Revisar as regras REAIS do Firestore antes de ativar: apenas administradores ativos podem criar/editar/excluir;
+ *    alunos só podem ler documentos publicados; impedir acesso público aos rascunhos e escrita por usuários comuns.
+ * 6. Criar/verificar índice para a consulta status == "draft" + updatedAt desc, se o Firestore solicitar.
+ * 7. Testar com conta administrativa, aluno comum e usuário deslogado antes de liberar.
+ * IMPORTANTE: comentários documentam trabalho futuro; não substituem regras de segurança no servidor.
+ */
 const VIDEOS_COLLECTION = "videoAulas";
 const MAX = { title: 250, url: 2000, description: 5000, course: 200, subject: 200, category: 200, duration: 80, instructor: 250, tag: 80 };
 
