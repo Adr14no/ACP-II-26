@@ -202,6 +202,7 @@
       import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
       import { auth } from "./firebase-config.js";
       import { isAdminUser } from "./admin-access.js";
+      import { recordAuditEvent } from "./system-audit-firestore.js";
 
       auth.languageCode = 'pt-BR';
       const guard = document.getElementById('authGuard');
@@ -232,6 +233,16 @@
           showAccessMessage('Confirme seu e-mail', 'Esta conta ainda não confirmou o endereço de e-mail. Volte ao login, solicite o envio do link e confirme a mensagem recebida antes de acessar os cursos.');
           try { await signOut(auth); } catch (error) { console.error('Falha ao encerrar sessão não confirmada:', error); }
           return;
+        }
+
+        // Registra atividade recente; não é prova de que a pessoa esteja diante da tela.
+        await recordAuditEvent("heartbeat", { page: "plataforma.html" });
+        if (!window.__paAuditHeartbeat) {
+          window.__paAuditHeartbeat = window.setInterval(() => {
+            if (document.visibilityState === "visible") {
+              recordAuditEvent("heartbeat", { page: "plataforma.html" });
+            }
+          }, 5 * 60 * 1000);
         }
 
         // Link de administração é apenas uma conveniência visual; a autorização real exige regras Firestore.
