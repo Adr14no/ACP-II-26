@@ -106,7 +106,7 @@ async function saveExamResult(result) {
   return true;
 }
 
-async function getProgressSummary() {
+export async function getProgressSummary() {
   if (!activeUser) return { attempts: 0, totalQuestions: 0, totalCorrect: 0, averagePercent: 0, bestPercent: 0, recentResults: [] };
   const snap = await getDocs(collection(db, "users", activeUser.uid, LIBRARY_COLLECTION));
   const results = [];
