@@ -1566,13 +1566,10 @@
                 displayCurrentQuestion();
                 renderQuestionGrid();
 
-                // No celular, retorna ao topo após trocar de questão para
-                // deixar o cabeçalho fixo e o início da nova questão visíveis.
-                if (window.matchMedia('(max-width: 850px)').matches) {
-                    requestAnimationFrame(() => {
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                    });
-                }
+                // Em celular e computador, retorna ao cabeçalho após trocar de questão.
+                requestAnimationFrame(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
             }
         }
 
