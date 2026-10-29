@@ -1603,7 +1603,9 @@
                 state.studyLocked[targetIdx] = true;
                 const answeredQuestion = questionsDatabase[targetIdx];
                 const isCorrect = optIdx === answeredQuestion?.answer;
-                window.collectiveQuestionStats?.recordAnswer(answeredQuestion, isCorrect).then(renderCollectiveStats).catch(error => {
+                window.collectiveQuestionStats?.recordAnswer(answeredQuestion, isCorrect).then(() => {
+                    refreshCollectiveStats(answeredQuestion, optIdx, 'study');
+                }).catch(error => {
                     console.warn('Não foi possível registrar a estatística coletiva:', error);
                     const message = document.getElementById('collectiveStatsMessage');
                     if (message) message.textContent = 'Sua resposta foi registrada no estudo, mas não foi possível atualizar a estatística coletiva.';
