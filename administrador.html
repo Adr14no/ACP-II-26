@@ -75,6 +75,10 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
 .editor-tools-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:800;margin-right:3px}
 .editor-normative-inserts button{background:#fff8dc;border-color:#e2c65d;color:#202938;font-weight:750}
 .editor-format-area{border:1px solid var(--line);border-bottom:0;background:#f8fafc}
+/* Mantém os controles de formatação acessíveis enquanto o texto normativo é percorrido. */
+.editor-card{overflow:visible}
+.editor-format-area{position:sticky;top:78px;z-index:18;box-shadow:0 5px 12px #10243a0b}
+@media(max-width:700px){.editor-format-area{top:62px}.editor-stylebar{gap:6px;padding:7px}.editor-format-toolbar{padding:7px!important}}
 .editor-stylebar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:9px 10px;border-bottom:1px solid var(--line)}
 .editor-stylebar label{font-size:10px;text-transform:uppercase;letter-spacing:.8px;font-weight:800;color:var(--muted)}
 .editor-stylebar select{min-width:150px;flex:1;border:1px solid var(--line);border-radius:6px;padding:7px;background:#fff}
@@ -471,10 +475,10 @@ function validate(){const d=data(),results=[];if(!d.title)results.push(['Erro','
 $('runValidation').onclick=()=>{const r=validate();toast('Validação básica concluída; confira os avisos apresentados.')};
 $('saveDraft').onclick=()=>{toast('Preparando salvamento seguro no Firebase…')};
 $('copyJson').onclick=async()=>{try{await navigator.clipboard.writeText(JSON.stringify(data(),null,2));toast('JSON copiado.')}catch(e){openModal('JSON dos metadados',`<textarea style="width:100%;min-height:250px">${escapeHtml(JSON.stringify(data(),null,2))}</textarea>`)}};
-function buildStandalone(){const d=data();const safeContent=sanitizeHtml(d.contentHtml);return `<!doctype html>
+function buildStandalone(){const d=data();const safeContent=sanitizeHtml(d.contentHtml);const exportUser=String(window.__paAuthenticatedUserLabel||'Usuário autenticado').trim();const exportWatermark=[d.watermark||'PLATAFORMA APERFEIÇOAMENTO',exportUser].filter(Boolean).join(' · ');return `<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(d.code)} — ${escapeHtml(d.title)}</title><style>
 :root{--navy:#0b1326;--gold:#d4af37;--line:#d9e0ea;--ink:#202938}*{box-sizing:border-box}body{margin:0;background:#eef2f7;color:var(--ink);font:15px/1.7 Inter,system-ui,Arial,sans-serif}.doc{position:relative;max-width:1050px;margin:28px auto;background:#fff;border:1px solid var(--line);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}.doc:after{content:attr(data-watermark);position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-25deg);z-index:2;pointer-events:none;color:#0b1326;opacity:.055;font-weight:900;font-size:38px;white-space:nowrap}.head{background:linear-gradient(135deg,#071020,#172c4e);color:#fff;padding:22px;border-bottom:3px solid var(--gold)}.brand{color:#e7d18b;font-size:11px;letter-spacing:1px;font-weight:bold}.head h1{font:700 28px/1.25 Georgia,serif;margin:14px 0 7px}.head p{font-size:12px;margin:0;color:#e3eaf4}.content{position:relative;z-index:1;padding:24px 32px}.hierarchy-title{text-align:center;background:#f0f3f8;padding:10px;border-block:1px solid var(--line);font-weight:850;margin:24px 0 15px}.hierarchy-subtitle{text-align:center;font-weight:750}.section-heading{font-weight:850;background:#eef2f7;border-left:4px solid var(--gold);padding:10px 13px}.legal-article,.article-auto{background:#f8fafc;border-left:3px solid var(--gold);padding:11px 15px;border-radius:0 6px 6px 0;margin:11px 0 15px;text-align:justify}.content p{text-align:justify}.footnotes{margin-top:28px;padding-top:12px;border-top:1px solid var(--line);font-size:.9em}.footnotes h3{font-size:1em;margin:0 0 8px}.footnotes li{padding:3px 0}.footnote-ref{font-size:.75em;vertical-align:super}.footnote-ref a,.footnote-back{color:#8a6b08;text-decoration:none;font-weight:700}.foot{border-top:1px solid var(--line);padding:12px 20px;font-size:10px;color:#64748b}@media(max-width:600px){.doc{margin:0}.content{padding:14px}.head h1{font-size:21px}}@media print{body{background:#fff}.doc{margin:0;border:0;box-shadow:none}.head{break-after:avoid}.legal-article{break-inside:avoid}}
-</style></head><body><article class="doc" data-watermark="${escapeHtml(d.watermark||'PLATAFORMA APERFEIÇOAMENTO')}"><header class="head"><div class="brand">◆ PLATAFORMA APERFEIÇOAMENTO · PMESP</div><h1>${escapeHtml(d.title)}</h1><p>${escapeHtml(d.code)}${d.edition?' · '+escapeHtml(d.edition):''}</p><p style="margin-top:7px">${escapeHtml(d.description)}</p></header><main class="content">${safeContent}</main><footer class="foot">${escapeHtml(d.code)} · Exportação de demonstração — requer revisão antes de publicação.</footer></article>
+</style></head><body><article class="doc" data-watermark="${escapeHtml(exportWatermark)}"><header class="head"><div class="brand">◆ PLATAFORMA APERFEIÇOAMENTO · PMESP</div><h1>${escapeHtml(d.title)}</h1><p>${escapeHtml(d.code)}${d.edition?' · '+escapeHtml(d.edition):''}</p><p style="margin-top:7px">${escapeHtml(d.description)}</p></header><main class="content">${safeContent}</main><footer class="foot">${escapeHtml(d.code)} · Exportação de demonstração — requer revisão antes de publicação.</footer></article>
 
 
 
@@ -843,6 +847,8 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
 
     if (thisCheck !== accessSequence) return;
     adminReady = true;
+    // Disponibiliza apenas o nome/e-mail autenticado para personalizar a marca d'água exportada.
+    window.__paAuthenticatedUserLabel = String(user.displayName || user.email || "Usuário autenticado").trim();
     guard.style.display = "none";
     saveButton.disabled = false;
     newDraftButton.disabled = false;
