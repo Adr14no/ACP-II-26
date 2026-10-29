@@ -11,7 +11,9 @@ async function requireAdmin() {
 }
 function assertFirestorePermission(error) {
   if (error?.code === "permission-denied") {
-    throw new Error("O Firestore negou a operação. Publique as regras atualizadas de firestore.rules no projeto Firebase e confirme que sua conta está em admins com active=true.");
+    const friendly = new Error("O Firestore negou a operação. Publique as regras atualizadas de firestore.rules no projeto Firebase e confirme que sua conta está em admins com active=true.");
+    friendly.code = "permission-denied";
+    throw friendly;
   }
   throw error;
 }
