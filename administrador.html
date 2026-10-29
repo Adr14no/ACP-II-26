@@ -388,22 +388,48 @@ document.querySelectorAll('[data-insert]').forEach(b=>{
   const hasSelection=!!(sel&&sel.rangeCount&&!sel.isCollapsed&&editor.contains(sel.anchorNode)&&editor.contains(sel.focusNode));
   if(hasSelection){
    const range=sel.getRangeAt(0);
-   const selectedText=range.toString();
-   const wrapper=document.createElement('p');
-   wrapper.className=type==='article'?'legal-article':'hierarchy-title';
+   const selectedText=range.toString().trim();
    if(type==='article'){
-    wrapper.innerHTML='<strong>Art. [NUMERAÇÃO ORIGINAL]</strong> '+escapeHtml(selectedText).replace(/\n/g,'<br>');
+    // Preserve o parágrafo e seu HTML; apenas aplique o destaque de artigo.
+    let block=sel.anchorNode.nodeType===1?sel.anchorNode:sel.anchorNode.parentElement;
+    while(block&&block!==editor&&!/^(P|DIV|LI|BLOCKQUOTE)$/.test(block.tagName))block=block.parentElement;
+    const endBlock=(sel.focusNode.nodeType===1?sel.focusNode:sel.focusNode.parentElement);
+    let end=endBlock;
+    while(end&&end!==editor&&!/^(P|DIV|LI|BLOCKQUOTE)$/.test(end.tagName))end=end.parentElement;
+    if(block&&block!==editor&&block===end){
+     block.classList.remove('hierarchy-title','hierarchy-subtitle','section-heading','article-auto');
+     block.classList.add('legal-article');
+     if(!/^\s*<strong>\s*Art(?:igo)?\.?\s*\d*/i.test(block.innerHTML)){
+      const label=document.createElement('strong');
+      label.textContent='Art. [NUMERAÇÃO ORIGINAL] ';
+      block.insertBefore(label,block.firstChild);
+     }
+     rememberNormEditorRange();update();
+     toast('Artigo formatado sem remover o texto selecionado. Preencha a numeração.');
+     return;
+    }
+    // Seleção atravessando blocos: substitui o trecho selecionado por um único bloco de artigo estilizado.
+    range.deleteContents();
+    const wrapper=document.createElement('p');
+    wrapper.className='legal-article';
+    const label=document.createElement('strong');
+    label.textContent='Art. [NUMERAÇÃO ORIGINAL] ';
+    wrapper.appendChild(label);
+    wrapper.appendChild(document.createTextNode(selectedText));
+    range.insertNode(wrapper);
+    const spacer=document.createElement('p');spacer.innerHTML='<br>';wrapper.after(spacer);
+    const nextRange=document.createRange();nextRange.setStart(spacer,0);nextRange.collapse(true);
+    sel.removeAllRanges();sel.addRange(nextRange);
    }else{
+    range.deleteContents();
+    const wrapper=document.createElement('p');
+    wrapper.className='hierarchy-title';
     wrapper.textContent=selectedText;
+    range.insertNode(wrapper);
+    const spacer=document.createElement('p');spacer.innerHTML='<br>';wrapper.after(spacer);
+    const nextRange=document.createRange();nextRange.setStart(spacer,0);nextRange.collapse(true);
+    sel.removeAllRanges();sel.addRange(nextRange);
    }
-   range.deleteContents();
-   range.insertNode(wrapper);
-   const spacer=document.createElement('p');
-   spacer.innerHTML='<br>';
-   wrapper.after(spacer);
-   const nextRange=document.createRange();
-   nextRange.setStart(spacer,0);nextRange.collapse(true);
-   sel.removeAllRanges();sel.addRange(nextRange);
    rememberNormEditorRange();update();
    toast(type==='article'?'Texto selecionado convertido em artigo. Confira a numeração.':'Texto selecionado convertido em título de capítulo.');
    return;
