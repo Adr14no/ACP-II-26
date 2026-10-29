@@ -98,7 +98,7 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
 :root{--navy:#071326;--header:#071326;--gold:#eabf3a;--gold-soft:#f5d46a;--card:#101f37;--ink:#f8fafc;--muted:#aab7ca;--line:rgba(234,191,58,.18);--bg:#071326;--highlight:#fff09a;--green:#45c49a;--red:#fb7185}
 html{background:#071326}
 body{background:radial-gradient(ellipse at 75% -10%,#1b3151 0,transparent 42%),#071326!important;color:#f8fafc!important;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-.app{grid-template-columns:252px minmax(0,1fr)!important;background:transparent}
+.app{display:block!important;min-height:100vh;background:transparent}
 #adminSidebar{position:fixed;inset:0 auto 0 0;width:252px;overflow-y:auto;background:linear-gradient(180deg,#081326,#050d1a)!important;border-right:1px solid rgba(234,191,58,.2);padding:22px 15px!important;z-index:30}
 #adminSidebar .brand{display:flex;align-items:center;gap:11px;padding:4px 8px 22px!important;border-bottom:1px solid rgba(234,191,58,.18);font-size:0;line-height:1.1}
 #adminSidebar .brand:before{content:"ACP";width:46px;height:42px;display:grid;place-items:center;flex:none;border:1px solid rgba(234,191,58,.55);border-radius:12px;background:linear-gradient(145deg,#142642,#09162a);color:#f5d46a;font-size:15px;font-weight:950;letter-spacing:.08em}
@@ -118,7 +118,7 @@ body{background:radial-gradient(ellipse at 75% -10%,#1b3151 0,transparent 42%),#
 #adminSidebar .nav button[data-tab="notificacoes"]:before{content:"♢"}
 #adminSidebar .nav button.active,#adminSidebar .nav button:hover{color:#f5d46a!important;background:linear-gradient(100deg,rgba(234,191,58,.14),rgba(234,191,58,.035))!important;border-color:rgba(234,191,58,.25)!important;box-shadow:inset 3px 0 #eabf3a}
 #adminSidebar .side-note{margin:24px 8px 0;color:#8392a9;font-size:10px;line-height:1.7;border-top:1px solid rgba(255,255,255,.07);padding-top:14px}
-.main{margin-left:0;width:100%;min-width:0;background:transparent}
+.main{margin-left:252px;width:calc(100% - 252px);min-width:0;background:transparent}
 .top{position:sticky;top:0;z-index:25;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:rgba(7,19,38,.9)!important;backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)!important;padding:15px 26px!important;color:#f8fafc}
 .admin-top-title{min-width:0}
 .crumb{font-size:10px!important;color:#aab7ca!important;letter-spacing:.04em}
