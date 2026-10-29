@@ -70,6 +70,7 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
 @media(max-width:1050px){.video-admin-grid{grid-template-columns:1fr}}@media(max-width:600px){.va-draft{align-items:flex-start;flex-direction:column}.va-draft-actions{width:100%}}
 
 </style>
+  <link rel="stylesheet" href="administrador.mobile.css">
 </head>
 <body>
 
@@ -80,8 +81,8 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
   </div>
 </div>
 
-<div class="app">
-<aside>
+<div class="app" id="adminApp">
+<aside id="adminSidebar" aria-label="Menu administrativo">
   <div class="brand"><em>◆</em> Plataforma<br>Aperfeiçoamento</div>
   <nav class="nav">
     <button class="active" data-tab="editor">Editor de página</button>
@@ -94,9 +95,11 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
   </nav>
   <div class="side-note">Protótipo para aprovação visual.<br>Dados de demonstração.<br><br>Conectado ao Firebase quando autorizado.<br>Salvar não publica a norma.</div>
 </aside>
+<div class="admin-mobile-backdrop" id="adminMobileBackdrop" aria-hidden="true"></div>
 <main class="main">
   <header class="top">
-    <div><div class="crumb" id="adminHeaderCrumb">Console de Integração/Criação</div><strong id="adminHeaderTitle">Administração</strong></div>
+    <button type="button" id="adminMobileMenuToggle" class="admin-mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" title="Abrir menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    <div class="admin-top-title"><div class="crumb" id="adminHeaderCrumb">Console de Integração/Criação</div><strong id="adminHeaderTitle">Administração</strong></div>
     <div class="top-actions"><a class="back-to-courses" href="plataforma.html" aria-label="Voltar à seleção de cursos"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span>Voltar aos cursos</span></a><span id="status" class="status">Demonstração local</span><button id="newDraft">Novo rascunho</button><button id="saveDraft" class="primary">Salvar rascunho no Firebase</button><button class="primary" id="downloadHtml">Exportar HTML</button></div>
   </header>
 
@@ -337,6 +340,43 @@ function buildStandalone(){const d=data();const safeContent=sanitizeHtml(d.conte
 :root{--navy:#0b1326;--gold:#d4af37;--line:#d9e0ea;--ink:#202938}*{box-sizing:border-box}body{margin:0;background:#eef2f7;color:var(--ink);font:15px/1.7 Inter,system-ui,Arial,sans-serif}.doc{position:relative;max-width:1050px;margin:28px auto;background:#fff;border:1px solid var(--line);box-shadow:0 8px 30px #172d4f0b;overflow:hidden}.doc:after{content:attr(data-watermark);position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-25deg);z-index:2;pointer-events:none;color:#0b1326;opacity:.055;font-weight:900;font-size:38px;white-space:nowrap}.head{background:linear-gradient(135deg,#071020,#172c4e);color:#fff;padding:22px;border-bottom:3px solid var(--gold)}.brand{color:#e7d18b;font-size:11px;letter-spacing:1px;font-weight:bold}.head h1{font:700 28px/1.25 Georgia,serif;margin:14px 0 7px}.head p{font-size:12px;margin:0;color:#e3eaf4}.content{position:relative;z-index:1;padding:24px 32px}.hierarchy-title{text-align:center;background:#f0f3f8;padding:10px;border-block:1px solid var(--line);font-weight:850;margin:24px 0 15px}.hierarchy-subtitle{text-align:center;font-weight:750}.section-heading{font-weight:850;background:#eef2f7;border-left:4px solid var(--gold);padding:10px 13px}.legal-article,.article-auto{background:#f8fafc;border-left:3px solid var(--gold);padding:11px 15px;border-radius:0 6px 6px 0;margin:11px 0 15px;text-align:justify}.content p{text-align:justify}.foot{border-top:1px solid var(--line);padding:12px 20px;font-size:10px;color:#64748b}@media(max-width:600px){.doc{margin:0}.content{padding:14px}.head h1{font-size:21px}}@media print{body{background:#fff}.doc{margin:0;border:0;box-shadow:none}.head{break-after:avoid}.legal-article{break-inside:avoid}}
 </style></head><body><article class="doc" data-watermark="${escapeHtml(d.watermark||'PLATAFORMA APERFEIÇOAMENTO')}"><header class="head"><div class="brand">◆ PLATAFORMA APERFEIÇOAMENTO · PMESP</div><h1>${escapeHtml(d.title)}</h1><p>${escapeHtml(d.code)}${d.edition?' · '+escapeHtml(d.edition):''}</p><p style="margin-top:7px">${escapeHtml(d.description)}</p></header><main class="content">${safeContent}</main><footer class="foot">${escapeHtml(d.code)} · Exportação de demonstração — requer revisão antes de publicação.</footer></article>
 
+
+
+<script id="admin-mobile-menu-controller">
+(function(){
+  const app=document.getElementById('adminApp');
+  const toggle=document.getElementById('adminMobileMenuToggle');
+  const backdrop=document.getElementById('adminMobileBackdrop');
+  const sidebar=document.getElementById('adminSidebar');
+  if(!app||!toggle||!backdrop||!sidebar) return;
+  function closeMenu(){
+    app.classList.remove('admin-mobile-menu-open');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Abrir menu');
+    toggle.title='Abrir menu';
+    toggle.innerHTML='<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+    document.body.classList.remove('admin-menu-lock');
+  }
+  function openMenu(){
+    app.classList.add('admin-mobile-menu-open');
+    toggle.setAttribute('aria-expanded','true');
+    toggle.setAttribute('aria-label','Fechar menu');
+    toggle.title='Fechar menu';
+    toggle.innerHTML='<i class="fa-solid fa-xmark" aria-hidden="true"></i>';
+    document.body.classList.add('admin-menu-lock');
+  }
+  toggle.addEventListener('click',function(){
+    app.classList.contains('admin-mobile-menu-open')?closeMenu():openMenu();
+  });
+  backdrop.addEventListener('click',closeMenu);
+  sidebar.addEventListener('click',function(event){
+    const control=event.target.closest('a,button');
+    if(control) closeMenu();
+  });
+  document.addEventListener('keydown',function(event){if(event.key==='Escape')closeMenu()});
+  window.addEventListener('resize',function(){if(window.innerWidth>850)closeMenu()});
+})();
+</script>
 
 </body></html>`}
 $('downloadHtml').onclick=()=>{const blob=new Blob([buildStandalone()],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=(($('code').value.trim()||'pagina-normativa').replace(/[^a-z0-9_-]+/gi,'-'))+'-previa.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);toast('HTML de pré-visualização exportado. Não foi publicado.')}
