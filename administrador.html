@@ -390,32 +390,33 @@ document.querySelectorAll('[data-insert]').forEach(b=>{
    const range=sel.getRangeAt(0);
    const selectedText=range.toString().trim();
    if(type==='article'){
-    // Preserve o parágrafo e seu HTML; apenas aplique o destaque de artigo.
-    let block=sel.anchorNode.nodeType===1?sel.anchorNode:sel.anchorNode.parentElement;
+    // Aplicar o estilo ao bloco existente; não apagar nem reconstruir o texto selecionado.
+    let block=range.startContainer.nodeType===1?range.startContainer:range.startContainer.parentElement;
     while(block&&block!==editor&&!/^(P|DIV|LI|BLOCKQUOTE)$/.test(block.tagName))block=block.parentElement;
-    const endBlock=(sel.focusNode.nodeType===1?sel.focusNode:sel.focusNode.parentElement);
-    let end=endBlock;
-    while(end&&end!==editor&&!/^(P|DIV|LI|BLOCKQUOTE)$/.test(end.tagName))end=end.parentElement;
-    if(block&&block!==editor&&block===end){
+    let endBlock=range.endContainer.nodeType===1?range.endContainer:range.endContainer.parentElement;
+    while(endBlock&&endBlock!==editor&&!/^(P|DIV|LI|BLOCKQUOTE)$/.test(endBlock.tagName))endBlock=endBlock.parentElement;
+    if(block&&block!==editor&&block===endBlock){
      block.classList.remove('hierarchy-title','hierarchy-subtitle','section-heading','article-auto');
      block.classList.add('legal-article');
-     if(!/^\s*<strong>\s*Art(?:igo)?\.?\s*\d*/i.test(block.innerHTML)){
+     const first=block.firstElementChild;
+     const alreadyHasLabel=first&&first.tagName==='STRONG'&&/^Art(?:igo)?\.?\s*/i.test(first.textContent||'');
+     if(!alreadyHasLabel){
       const label=document.createElement('strong');
       label.textContent='Art. [NUMERAÇÃO ORIGINAL] ';
       block.insertBefore(label,block.firstChild);
      }
      rememberNormEditorRange();update();
-     toast('Artigo formatado sem remover o texto selecionado. Preencha a numeração.');
+     toast('Destaque de artigo aplicado ao parágrafo existente. O texto foi preservado; ajuste a numeração.');
      return;
     }
-    // Seleção atravessando blocos: substitui o trecho selecionado por um único bloco de artigo estilizado.
-    range.deleteContents();
+    // Para seleções que atravessam blocos, cria um novo artigo a partir do texto selecionado.
+    const fragment=range.extractContents();
     const wrapper=document.createElement('p');
     wrapper.className='legal-article';
     const label=document.createElement('strong');
     label.textContent='Art. [NUMERAÇÃO ORIGINAL] ';
     wrapper.appendChild(label);
-    wrapper.appendChild(document.createTextNode(selectedText));
+    wrapper.appendChild(fragment);
     range.insertNode(wrapper);
     const spacer=document.createElement('p');spacer.innerHTML='<br>';wrapper.after(spacer);
     const nextRange=document.createRange();nextRange.setStart(spacer,0);nextRange.collapse(true);
