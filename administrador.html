@@ -897,7 +897,7 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
       else await createAdminNotification(payload);
       resetNoticeForm(); await refreshAdminNotifications(); notify(payload.active ? "Notificação salva e publicada." : "Notificação salva como inativa.");
     } catch(e) { console.error("Falha ao salvar notificação:", e); notify(e?.message || "Não foi possível salvar a notificação."); }
-    finally { button.disabled = false; button.textContent = editingNotificationId ? "Salvar alterações" : oldLabel; }
+    finally { button.disabled = false; button.textContent = editingNotificationId ? "Salvar alterações" : "Salvar notificação"; }
   });
 
   watchAdminAccess(async ({ user, isAdmin, error }) => {
