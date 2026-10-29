@@ -328,7 +328,17 @@ function sanitizeHtml(input){
  });
  return parsed.body.innerHTML;
 }
+function normalizeEditorParagraphs(){
+ const editor=$('normText');
+ editor.querySelectorAll('p.legal-article,p.article-auto').forEach(p=>{
+  const text=(p.textContent||'').replace(/\\u00a0/g,' ').trim();
+  // O navegador pode copiar a classe do artigo ao pressionar Enter dentro dele.
+  // Mantém a caixa visual apenas em parágrafos que realmente iniciam um artigo numerado.
+  if(!text || !/^Art(?:igo)?\\.?\\s*\\d+/i.test(text))p.classList.remove('legal-article','article-auto');
+ });
+}
 function update(){
+ normalizeEditorParagraphs();
  const d=data();
  $('previewTitle').textContent=d.title||'Título não informado';
  $('previewMeta').textContent=[d.code,d.edition].filter(Boolean).join(' · ');
