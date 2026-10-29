@@ -69,6 +69,22 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
 .va-preview-copy{padding:16px 3px 2px}.va-preview-copy h2{font-size:19px;margin:10px 0 6px}.va-preview-copy p{color:#536176;white-space:pre-wrap}.va-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.va-tags span{background:#f1f4f8;padding:4px 8px;border-radius:99px;font-size:11px;color:#536176}.va-draft-list{display:grid;gap:8px}.va-draft{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px;border:1px solid var(--line);border-radius:8px}.va-draft strong{display:block}.va-draft .hint{overflow-wrap:anywhere}.va-draft-actions{display:flex;gap:6px;flex-wrap:wrap}
 @media(max-width:1050px){.video-admin-grid{grid-template-columns:1fr}}@media(max-width:600px){.va-draft{align-items:flex-start;flex-direction:column}.va-draft-actions{width:100%}}
 
+
+.editor-normative-inserts{align-items:center!important;gap:8px!important}
+.editor-tools-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:800;margin-right:3px}
+.editor-normative-inserts button{background:#fff8dc;border-color:#e2c65d;color:#202938;font-weight:750}
+.editor-format-area{border:1px solid var(--line);border-bottom:0;background:#f8fafc}
+.editor-stylebar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:9px 10px;border-bottom:1px solid var(--line)}
+.editor-stylebar label{font-size:10px;text-transform:uppercase;letter-spacing:.8px;font-weight:800;color:var(--muted)}
+.editor-stylebar select{min-width:150px;flex:1;border:1px solid var(--line);border-radius:6px;padding:7px;background:#fff}
+.editor-format-toolbar{border:0!important;border-radius:0!important;padding:8px 10px!important;gap:5px!important}
+.editor-format-toolbar button{min-height:32px!important}
+.editor{border-radius:0 0 7px 7px!important}
+.editor blockquote{border-left:3px solid var(--gold);padding:8px 12px;background:#f8fafc;margin:12px 0}
+.editor table{border-collapse:collapse;width:100%}
+.editor td,.editor th{border:1px solid var(--line);padding:6px}
+@media(max-width:850px){.editor-tools-label{width:100%}.editor-stylebar select{min-width:0;width:100%}.editor-format-toolbar button{font-size:11px!important;padding:6px 8px!important}}
+
 </style>
   <link rel="stylesheet" href="administrador.mobile.css">
 </head>
@@ -143,8 +159,33 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
               <div class="field"><label for="edition">Edição / ano</label><input id="edition" value="Versão de demonstração"></div>
               <div class="field full"><label for="description">Descrição editorial (não normativa)</label><textarea id="description">Conteúdo fictício utilizado para aprovar o padrão visual e funcional de uma página normativa.</textarea></div>
               <div class="field full"><label for="normText">Conteúdo HTML de demonstração *</label>
-                <div class="editor-toolbar">
-                  <button data-cmd="bold"><b>B</b></button><button data-cmd="italic"><i>I</i></button><button data-cmd="insertUnorderedList">Lista</button><button data-insert="article">＋ Artigo demonstrativo</button><button data-insert="chapter">＋ Capítulo demonstrativo</button>
+                <div class="editor-toolbar editor-normative-inserts">
+                  <span class="editor-tools-label">Elementos normativos</span>
+                  <button type="button" data-insert="article">＋ Inserir artigo</button>
+                  <button type="button" data-insert="chapter">＋ Inserir capítulo</button>
+                </div>
+                <div class="editor-format-area">
+                  <div class="editor-stylebar">
+                    <label for="normBlockStyle">Estilo do parágrafo</label>
+                    <select id="normBlockStyle">
+                      <option value="p">Texto normal</option>
+                      <option value="h1">Título principal</option>
+                      <option value="h2">Subtítulo</option>
+                      <option value="h3">Título de seção</option>
+                      <option value="blockquote">Citação / transcrição</option>
+                    </select>
+                  </div>
+                  <div class="editor-toolbar editor-format-toolbar" role="toolbar" aria-label="Formatação do texto">
+                    <button type="button" data-cmd="bold" title="Negrito"><b>B</b></button>
+                    <button type="button" data-cmd="italic" title="Itálico"><i>I</i></button>
+                    <button type="button" data-cmd="underline" title="Sublinhado"><u>U</u></button>
+                    <button type="button" data-cmd="insertUnorderedList">• Lista</button>
+                    <button type="button" data-cmd="insertOrderedList">1. Lista</button>
+                    <button type="button" data-cmd="justifyLeft" title="Alinhar à esquerda">☰</button>
+                    <button type="button" data-cmd="justifyCenter" title="Centralizar">≡</button>
+                    <button type="button" data-format-insert="quote">❝ Citação</button>
+                    <button type="button" data-format-insert="table">▦ Tabela</button>
+                  </div>
                 </div>
                 <div id="normText" class="editor" contenteditable="true" aria-label="Editor de conteúdo normativo">
                   <p class="hierarchy-title">TÍTULO I</p>
@@ -303,8 +344,17 @@ function update(){
 $('normText').addEventListener('input',update);
 document.querySelectorAll('#leftTabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('#leftTabs~.cardbody .panel').forEach(p=>p.classList.remove('active'));['p-content','p-meta','p-mats','p-check'].forEach(id=>$(id).classList.toggle('active',id===b.dataset.panel))});
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));const tab=b.dataset.tab;const isVideos=tab==='videos',isLogs=tab==='logs';$('normAdminView').style.display=(isVideos||isLogs)?'none':'block';$('videoAdminView').style.display=isVideos?'block':'none';$('auditAdminView').style.display=isLogs?'block':'none';const map={editor:'p-content',metadados:'p-meta',materiais:'p-mats',validacao:'p-check'};if(!isVideos&&!isLogs){document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x.dataset.panel===map[tab]));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===map[tab]))}else if(isVideos){updateVideoAdminPreview();renderVideoAdminDrafts()}else{loadAuditEvents()}const headers={editor:{crumb:'Administração / Páginas normativas',title:'Editor de páginas normativas'},metadados:{crumb:'Administração / Páginas normativas / Classificação',title:'Classificação da página'},materiais:{crumb:'Administração / Páginas normativas / Materiais',title:'Materiais de apoio'},validacao:{crumb:'Administração / Páginas normativas / Validação',title:'Validação da página'},videos:{crumb:'Administração / Vídeos e aulas',title:'Gestão de vídeos e aulas'},logs:{crumb:'Administração / Monitoramento / Log do sistema',title:'Log do sistema'}};const header=headers[tab]||headers.editor;$('adminHeaderCrumb').textContent=header.crumb;$('adminHeaderTitle').textContent=header.title;$('status').style.display=(isVideos||isLogs)?'none':'';$('saveDraft').style.display=(isVideos||isLogs)?'none':'';$('newDraft').style.display=(isVideos||isLogs)?'none':'';$('downloadHtml').style.display=(isVideos||isLogs)?'none':''});
-document.querySelectorAll('[data-cmd]').forEach(b=>b.onclick=()=>{ $('normText').focus();document.execCommand(b.dataset.cmd,false,null);update()});
-document.querySelectorAll('[data-insert]').forEach(b=>b.onclick=()=>{const type=b.dataset.insert;const s=type==='article'?'<p class="legal-article"><strong>Art. [NUMERAÇÃO ORIGINAL]</strong> [Insira aqui o texto proveniente da fonte oficial.]</p>':'<p class="hierarchy-title">CAPÍTULO [IDENTIFICAÇÃO ORIGINAL]</p>';document.execCommand('insertHTML',false,s);update();toast('Inserido marcador demonstrativo; confira a fonte oficial antes de usar conteúdo normativo.')});
+let normEditorRange=null;
+function rememberNormEditorRange(){const s=window.getSelection();if(s&&s.rangeCount&&$('normText').contains(s.anchorNode))normEditorRange=s.getRangeAt(0).cloneRange()}
+function restoreNormEditorRange(){if(!normEditorRange)return;const s=window.getSelection();s.removeAllRanges();s.addRange(normEditorRange)}
+$('normText').addEventListener('keyup',rememberNormEditorRange);
+$('normText').addEventListener('mouseup',rememberNormEditorRange);
+$('normText').addEventListener('focus',rememberNormEditorRange);
+$('normText').addEventListener('input',()=>{rememberNormEditorRange();update()});
+document.querySelectorAll('[data-cmd]').forEach(b=>{b.addEventListener('mousedown',rememberNormEditorRange);b.onclick=()=>{$('normText').focus();restoreNormEditorRange();document.execCommand(b.dataset.cmd,false,null);rememberNormEditorRange();update()}});
+$('normBlockStyle').addEventListener('change',()=>{$('normText').focus();restoreNormEditorRange();document.execCommand('formatBlock',false,$('normBlockStyle').value);rememberNormEditorRange();update()});
+document.querySelectorAll('[data-format-insert]').forEach(b=>{b.addEventListener('mousedown',rememberNormEditorRange);b.onclick=()=>{$('normText').focus();restoreNormEditorRange();const html=b.dataset.formatInsert==='quote'?'<blockquote>Digite aqui a citação ou transcrição.</blockquote><p></p>':'<table><tbody><tr><th>Item</th><th>Descrição</th></tr><tr><td>1</td><td>Digite aqui</td></tr></tbody></table><p></p>';document.execCommand('insertHTML',false,html);rememberNormEditorRange();update()}});
+document.querySelectorAll('[data-insert]').forEach(b=>b.onclick=()=>{$('normText').focus();const type=b.dataset.insert;const s=type==='article'?'<p class="legal-article"><strong>Art. [NUMERAÇÃO ORIGINAL]</strong> [Insira aqui o texto proveniente da fonte oficial.]</p><p></p>':'<p class="hierarchy-title">CAPÍTULO [IDENTIFICAÇÃO ORIGINAL]</p><p class="hierarchy-subtitle">[TÍTULO DO CAPÍTULO]</p><p></p>';document.execCommand('insertHTML',false,s);rememberNormEditorRange();update();toast('Elemento inserido. Confira a redação e a numeração com a fonte oficial.')});
 $('addMaterial').onclick=()=>{const title=$('matTitle').value.trim(),url=$('matUrl').value.trim();if(!title)return toast('Informe o título do material.');if(url&&!/^https?:\/\//i.test(url))return toast('A URL deve começar com http:// ou https://.');materials.push({title,type:$('matType').value,url,description:$('matDesc').value});$('matTitle').value='';$('matUrl').value='';$('matDesc').value='';renderMaterials();update();toast('Material adicionado apenas à demonstração.')};
 window.__paMaterialsReplace = items => { materials = items.map(item => ({title:String(item.title||''),type:String(item.type||''),url:String(item.url||''),description:String(item.description||'')})); renderMaterials(); };
 window.__paRefreshEditor = () => { update(); validate(); };
