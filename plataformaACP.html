@@ -644,7 +644,7 @@ async function openNotice(notice) {
   const body=document.createElement("div");body.textContent=notice.body||"";
   content.append(title,date,body);
   const actions=document.createElement("div");actions.className="notification-actions";
-  const back=document.createElement("button");back.textContent="Voltar à lista";back.onclick=()=>{noticeModal.classList.remove("open");$n("notificationBell").focus();};
+  const back=document.createElement("button");back.textContent="Voltar à lista";back.onclick=showNoticeList;
   const read=document.createElement("button");read.className="primary";read.textContent=noticeStates[notice.id]?.read?"Marcar como não lida":"Marcar como lida";
   read.onclick=async()=>{try{await saveNoticeState(notice.id,{read:!noticeStates[notice.id]?.read,deleted:false});openNoticeWithoutRead(notice)}catch(e){showPlatformNotice("Não foi possível atualizar o estado da notificação.","error")}};
   const del=document.createElement("button");del.textContent="Apagar para mim";del.onclick=async()=>{if(!confirm("Apagar esta notificação apenas da sua lista? Ela continuará disponível para os demais alunos."))return;try{await saveNoticeState(notice.id,{deleted:true});selectedNotice=null;renderNoticeList();showNoticeList();showPlatformNotice("Notificação apagada da sua lista.","success")}catch(e){showPlatformNotice("Não foi possível apagar a notificação.","error")}};
