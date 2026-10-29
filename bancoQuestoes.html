@@ -1839,6 +1839,11 @@
       import { auth } from "./firebase-config.js";
       import { recordQuestionUsage, saveExamResult, loadQuestionHistory, getProgressSummary } from "./user-progress-firestore.js";
       import { isAdminUser } from "./admin-access.js";
+      import { getCollectiveQuestionStats, recordCollectiveStudyAnswer } from "./collective-question-stats.js";
+      window.collectiveQuestionStats = {
+        getStats: (question) => getCollectiveQuestionStats(question, 'ACP'),
+        recordAnswer: (question, isCorrect) => recordCollectiveStudyAnswer(question, isCorrect, 'ACP')
+      };
 
       auth.languageCode = 'pt-BR';
       // Ponte controlada entre scripts clássicos do simulado e módulos Firebase.
