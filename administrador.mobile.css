@@ -24,6 +24,17 @@
   .top{position:sticky!important;top:0!important;z-index:100!important;display:grid!important;
     grid-template-columns:40px minmax(0,1fr)!important;align-items:center!important;gap:8px!important;
     width:100%!important;padding:10px!important;flex-wrap:initial!important}
+
+  .admin-mobile-menu-toggle{position:relative!important;overflow:hidden!important;box-shadow:0 3px 10px #07102022!important;transition:background .2s ease,border-color .2s ease,transform .2s ease!important}
+  .admin-mobile-menu-toggle:active{transform:scale(.96)!important}
+  .admin-mobile-menu-toggle .admin-hamburger-lines{display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;gap:5px!important;width:20px!important;height:20px!important}
+  .admin-mobile-menu-toggle .admin-hamburger-lines span{display:block!important;width:20px!important;height:2px!important;border-radius:3px!important;background:#d4af37!important;transform-origin:center!important;transition:transform .22s ease,opacity .18s ease,width .22s ease!important}
+  .admin-mobile-menu-toggle.is-open .admin-hamburger-lines span:first-child{transform:translateY(7px) rotate(45deg)!important}
+  .admin-mobile-menu-toggle.is-open .admin-hamburger-lines span:nth-child(2){opacity:0!important;width:0!important}
+  .admin-mobile-menu-toggle.is-open .admin-hamburger-lines span:last-child{transform:translateY(-7px) rotate(-45deg)!important}
+  .section-actions{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:10px!important;margin-top:18px!important}
+  .section-actions button{min-height:44px!important}
+
   .admin-mobile-menu-toggle{display:inline-flex!important;align-items:center!important;justify-content:center!important;
     width:40px!important;height:40px!important;min-width:40px!important;padding:0!important;
     border:1px solid #2a3c66!important;border-radius:10px!important;background:#101d34!important;
@@ -67,6 +78,8 @@
   .modalback{padding:10px!important;align-items:center!important}
   .modal{max-height:calc(100dvh - 20px)!important}
   .modal .cardbody{padding:14px!important}
+  .section-actions{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:10px!important;margin-top:18px!important}
+  .section-actions button{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-height:46px!important;margin:0!important}
   .confirm-actions{justify-content:stretch!important}
   .confirm-actions button{flex:1 1 120px!important}
   .toast{left:10px!important;right:10px!important;bottom:10px!important;max-width:none!important}
