@@ -559,6 +559,31 @@
                         </div>
                         <div id="studyExplanationText" class="text-slate-300 text-xs sm:text-sm leading-relaxed"></div>
                     </div>
+                    <section id="collectiveStatsPanel" class="hidden mt-5 rounded-xl border border-pm-gold/40 bg-slate-950/60 p-4 sm:p-5" aria-live="polite">
+                        <div class="flex items-start justify-between gap-3 mb-4">
+                            <div>
+                                <h3 class="text-sm sm:text-base font-bold text-slate-100">Como os outros participantes responderam?</h3>
+                                <p class="text-xs sm:text-sm text-slate-400 mt-1">Resultados coletivos desta questão no Modo Estudo.</p>
+                            </div>
+                            <span class="shrink-0 rounded-full border border-pm-gold/40 px-2.5 py-1 text-[10px] font-semibold text-pm-gold">Coletivo</span>
+                        </div>
+                        <div class="mb-5 rounded-lg border border-pm-border bg-pm-navy/80 p-3">
+                            <div class="text-xs text-slate-400">Participantes</div>
+                            <div id="collectiveParticipants" class="text-2xl font-extrabold text-pm-gold mt-1">—</div>
+                            <div class="text-xs text-slate-500 mt-1">Pessoas que já responderam a esta questão</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex items-center justify-between gap-3 mb-2"><span class="text-sm text-slate-200">Acertos</span><strong id="collectiveCorrectPercent" class="text-sm text-emerald-400">—</strong></div>
+                                <div class="h-2.5 rounded-full bg-slate-800 overflow-hidden"><div id="collectiveCorrectBar" class="h-full rounded-full bg-emerald-400 transition-all duration-300" style="width:0%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between gap-3 mb-2"><span class="text-sm text-slate-200">Erros</span><strong id="collectiveIncorrectPercent" class="text-sm text-rose-400">—</strong></div>
+                                <div class="h-2.5 rounded-full bg-slate-800 overflow-hidden"><div id="collectiveIncorrectBar" class="h-full rounded-full bg-rose-400 transition-all duration-300" style="width:0%"></div></div>
+                            </div>
+                        </div>
+                        <p id="collectiveStatsMessage" class="text-xs text-slate-500 mt-4">Carregando estatísticas coletivas…</p>
+                    </section>
                 </div>
 
                 <!-- Rodapé de Navegação (Salva ao avançar/voltar) -->
@@ -1515,6 +1540,50 @@
 
             document.getElementById('btnNext').disabled = state.currentIndex === state.filteredQuestions.length - 1;
             document.getElementById('btnNext').style.opacity = state.currentIndex === state.filteredQuestions.length - 1 ? "0.4" : "1";
+            refreshCollectiveStats(q, selectedOpt, state.mode);
+        }
+
+        let collectiveStatsRequestToken = 0;
+        function refreshCollectiveStats(question, selectedOpt, mode) {
+            const panel = document.getElementById('collectiveStatsPanel');
+            if (!panel) return;
+            if (mode !== 'study' || selectedOpt === null || selectedOpt === undefined) {
+                panel.classList.add('hidden');
+                return;
+            }
+            panel.classList.remove('hidden');
+            const message = document.getElementById('collectiveStatsMessage');
+            message.textContent = 'Carregando estatísticas coletivas…';
+            const token = ++collectiveStatsRequestToken;
+            const bridge = window.collectiveQuestionStats;
+            if (!bridge?.getStats) {
+                message.textContent = 'Estatística coletiva ainda não está disponível. Verifique a conexão com o serviço.';
+                return;
+            }
+            bridge.getStats(question).then(stats => {
+                if (token !== collectiveStatsRequestToken || state.mode !== 'study') return;
+                renderCollectiveStats(stats);
+            }).catch(error => {
+                console.warn('Falha ao carregar estatística coletiva:', error);
+                if (token === collectiveStatsRequestToken) message.textContent = 'Não foi possível carregar as estatísticas agora.';
+            });
+        }
+
+        function renderCollectiveStats(stats) {
+            const participants = Math.max(0, Number(stats?.participants) || 0);
+            const correct = Math.max(0, Number(stats?.correct) || 0);
+            const incorrect = Math.max(0, Number(stats?.incorrect) || 0);
+            const total = correct + incorrect;
+            const correctPct = total ? correct / total * 100 : 0;
+            const incorrectPct = total ? incorrect / total * 100 : 0;
+            document.getElementById('collectiveParticipants').textContent = participants.toLocaleString('pt-BR');
+            document.getElementById('collectiveCorrectPercent').textContent = total ? correctPct.toLocaleString('pt-BR', {maximumFractionDigits: 1}) + '%' : '0%';
+            document.getElementById('collectiveIncorrectPercent').textContent = total ? incorrectPct.toLocaleString('pt-BR', {maximumFractionDigits: 1}) + '%' : '0%';
+            document.getElementById('collectiveCorrectBar').style.width = correctPct + '%';
+            document.getElementById('collectiveIncorrectBar').style.width = incorrectPct + '%';
+            document.getElementById('collectiveStatsMessage').textContent = participants
+                ? 'Dados coletivos atualizados a partir das respostas registradas.'
+                : 'Esta questão ainda não possui respostas coletivas registradas.';
         }
 
         function selectOption(targetIdx, optIdx) {
@@ -1532,6 +1601,13 @@
             // Responder no Modo Estudo revela a fundamentação e bloqueia a questão.
             if (state.mode === 'study') {
                 state.studyLocked[targetIdx] = true;
+                const answeredQuestion = questionsDatabase[targetIdx];
+                const isCorrect = optIdx === answeredQuestion?.answer;
+                window.collectiveQuestionStats?.recordAnswer(answeredQuestion, isCorrect).then(renderCollectiveStats).catch(error => {
+                    console.warn('Não foi possível registrar a estatística coletiva:', error);
+                    const message = document.getElementById('collectiveStatsMessage');
+                    if (message) message.textContent = 'Sua resposta foi registrada no estudo, mas não foi possível atualizar a estatística coletiva.';
+                });
             }
 
             saveStateToLocalStorage();
