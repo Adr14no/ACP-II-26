@@ -98,7 +98,7 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
 <div class="admin-mobile-backdrop" id="adminMobileBackdrop" aria-hidden="true"></div>
 <main class="main">
   <header class="top">
-    <button type="button" id="adminMobileMenuToggle" class="admin-mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" title="Abrir menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    <button type="button" id="adminMobileMenuToggle" class="admin-mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" title="Abrir menu"><span class="admin-hamburger-lines" aria-hidden="true"><span></span><span></span><span></span></span></button>
     <div class="admin-top-title"><div class="crumb" id="adminHeaderCrumb">Console de Integração/Criação</div><strong id="adminHeaderTitle">Administração</strong></div>
     <div class="top-actions"><a class="back-to-courses" href="plataforma.html" aria-label="Voltar à seleção de cursos"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span>Voltar aos cursos</span></a><span id="status" class="status">Demonstração local</span><button id="newDraft">Novo rascunho</button><button id="saveDraft" class="primary">Salvar rascunho no Firebase</button><button class="primary" id="downloadHtml">Exportar HTML</button></div>
   </header>
@@ -731,7 +731,7 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
     toggle.setAttribute('aria-expanded','false');
     toggle.setAttribute('aria-label','Abrir menu');
     toggle.title='Abrir menu';
-    toggle.innerHTML='<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+    toggle.classList.remove('is-open');
     document.body.classList.remove('admin-menu-lock');
   }
   function openMenu(){
@@ -739,7 +739,7 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
     toggle.setAttribute('aria-expanded','true');
     toggle.setAttribute('aria-label','Fechar menu');
     toggle.title='Fechar menu';
-    toggle.innerHTML='<i class="fa-solid fa-xmark" aria-hidden="true"></i>';
+    toggle.classList.add('is-open');
     document.body.classList.add('admin-menu-lock');
   }
   toggle.addEventListener('click',function(){
