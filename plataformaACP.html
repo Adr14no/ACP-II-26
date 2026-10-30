@@ -117,8 +117,12 @@ main{margin-left:252px;width:calc(100% - 252px);min-width:0}.topbar{position:sti
     margin-top: 4px;
   }
 }
+
+/* Central de notificações ACP */
+.notification-bell{display:inline-flex;align-items:center;gap:9px;position:relative;white-space:nowrap}.notification-bell i{font-size:15px}.notification-count{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#c94141;color:#fff;font-size:10px;font-weight:900;line-height:1}.notification-count[hidden]{display:none}.notification-backdrop{z-index:100}.notification-box{width:min(760px,100%)}.notification-list{display:grid;grid-template-columns:1fr;gap:9px}.notification-entry{display:flex;align-items:flex-start;gap:12px;text-align:left;width:100%;padding:15px;border:1px solid #263750;border-radius:12px;background:#101f37;color:#f8fafc;cursor:pointer}.notification-entry:hover{border-color:var(--gold);background:#142642}.notification-entry.unread{border-color:rgba(234,191,58,.48);background:linear-gradient(110deg,#172b49,#101f37)}.notification-entry-copy{flex:1;min-width:0}.notification-entry strong{display:block;font-size:13px;line-height:1.45}.notification-entry small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.notification-entry p{margin:7px 0 0;color:#b9c6d8;font-size:12px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}.notification-unread-dot{width:8px;height:8px;flex:none;margin-top:5px;border-radius:50%;background:var(--gold)}.notification-entry:not(.unread) .notification-unread-dot{background:#60728c}.notification-actions{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid #ffffff12}.notification-actions button{border:1px solid #31415a;border-radius:9px;background:#0b192d;color:#dce5f1;padding:9px 12px;font-weight:750}.notification-actions button.primary{background:linear-gradient(135deg,#f2cf59,#d9a92b);color:#111b2a;border-color:#f3d66e}.notification-detail{padding:20px 22px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;color:#dce5f1}.notification-detail-title{font-size:17px;font-weight:900;color:#fff;margin:0 0 8px}.notification-detail-date{font-size:11px;color:var(--muted);margin-bottom:16px}.notification-empty{padding:28px 14px;text-align:center;color:var(--muted);border:1px dashed #31415a;border-radius:12px;font-size:12px}
+@media(max-width:720px){.topbar{gap:8px}.top-actions{margin-left:auto}.notification-bell{padding:9px 10px;font-size:11px}.notification-bell span:nth-child(2){display:none}.notification-box{max-height:calc(100dvh - 20px)}.notification-list{padding:12px}.notification-entry{padding:12px}.notification-detail{padding:16px}}
 </style></head><body><div class="scrim" id="scrim"></div><div class="shell">
-<aside class="sidebar" id="sidebar"><div><div class="brand"><svg class="logo" viewBox="0 0 76 54" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg><div><div class="eyebrow">Plataforma de Aperfeiçoamento</div><h1>ACP</h1><p>Avaliação de Competência Profissional</p></div></div><div class="nav-label">Ambiente de estudo</div><nav class="nav" id="nav"><button class="active" data-page="dashboard"><span class="ico">◫</span>Painel inicial</button><button data-page="materias"><span class="ico">▤</span>Matérias e materiais</button><button data-page="bizus"><span class="ico">✦</span>Bizu - Mastigado</button><button data-page="perfil"><span class="ico">◎</span>Perfil & Estatísticas</button><a class="nav-link" href="bancoQuestoes.html?curso=ACP"><span class="ico">▣</span>Banco de questões <span class="nav-arrow">↗</span></a><a class="nav-link" href="plataforma.html"><span class="ico">▦</span>Cursos <span class="nav-arrow">↗</span></a></nav></div><div class="sidefoot"><div class="user"><div class="avatar" id="sideAvatar">ACP</div><div><strong id="sideName">Perfil do aluno</strong><small>Área de estudos</small></div></div><p style="font-size:10px;color:#8190a7;margin:12px 4px 0">Plataforma de Aperfeiçoamento</p></div></aside><main><header class="topbar"><div style="display:flex;align-items:center;gap:13px"><button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button><div class="top-title" id="topTitle">Painel inicial<small>ACP · Área de Estudos</small></div></div></header><div class="content">
+<aside class="sidebar" id="sidebar"><div><div class="brand"><svg class="logo" viewBox="0 0 76 54" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg><div><div class="eyebrow">Plataforma de Aperfeiçoamento</div><h1>ACP</h1><p>Avaliação de Competência Profissional</p></div></div><div class="nav-label">Ambiente de estudo</div><nav class="nav" id="nav"><button class="active" data-page="dashboard"><span class="ico">◫</span>Painel inicial</button><button data-page="materias"><span class="ico">▤</span>Matérias e materiais</button><button data-page="bizus"><span class="ico">✦</span>Bizu - Mastigado</button><button data-page="perfil"><span class="ico">◎</span>Perfil & Estatísticas</button><a class="nav-link" href="bancoQuestoes.html?curso=ACP"><span class="ico">▣</span>Banco de questões <span class="nav-arrow">↗</span></a><a class="nav-link" href="plataforma.html"><span class="ico">▦</span>Cursos <span class="nav-arrow">↗</span></a></nav></div><div class="sidefoot"><div class="user"><div class="avatar" id="sideAvatar">ACP</div><div><strong id="sideName">Perfil do aluno</strong><small>Área de estudos</small></div></div><p style="font-size:10px;color:#8190a7;margin:12px 4px 0">Plataforma de Aperfeiçoamento</p></div></aside><main><header class="topbar"><div style="display:flex;align-items:center;gap:13px"><button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button><div class="top-title" id="topTitle">Painel inicial<small>ACP · Área de Estudos</small></div></div><div class="top-actions"><button type="button" class="pill notification-bell" id="notificationBell" aria-label="Abrir notificações" aria-haspopup="dialog" aria-controls="notificationModal"><i class="fa-regular fa-bell" aria-hidden="true"></i><span>Notificações</span><span class="notification-count" id="notificationCount" hidden>0</span></button></div></header><div class="content">
 <section class="page active" id="page-dashboard">
 <div class="hero"><span class="tag">Área do aluno · ACP</span><div class="profile-line" style="margin-top:14px"><div class="profile-avatar" id="welcomeAvatar">A</div><div class="profile-copy"><h2 style="margin:0">Bem-vindo, <span class="gold" id="welcomeName">[Nome do perfil]</span></h2><small>Seu ambiente de estudos e aperfeiçoamento profissional</small></div></div><p style="margin-top:12px">Acesse as matérias, consulte os materiais de referência e revise os bizus em um único ambiente.</p></div>
 <div class="section-head"><div><h3>Estatísticas do usuário</h3><p>Indicadores calculados a partir dos simulados concluídos na sua conta.</p></div></div>
@@ -133,7 +137,8 @@ main{margin-left:252px;width:calc(100% - 252px);min-width:0}.topbar{position:sti
 <section class="page" id="page-bizus"><div class="section-head"><div><h3>Bizu - Mastigado</h3><p>Catálogo de revisão. Os links marcados para preenchimento continuam pendentes no arquivo-fonte.</p></div></div><div class="notice">Selecione um item para consultar a descrição e abrir o material correspondente.</div><div id="bizusInline" class="resource-grid" style="margin-top:14px"></div></section>
 <section class="page" id="page-perfil"><div class="section-head"><div><h3>Perfil & Estatísticas</h3><p>Consulte seu desempenho, atualize seus dados e gerencie sua conta sem sair do ambiente ACP.</p></div><a class="btn" href="perfil-usuario.html" target="_blank" rel="noopener noreferrer" style="text-decoration:none">Abrir em nova aba ↗</a></div><div class="profile-embed-wrap"><iframe id="profileFrame" class="profile-frame" src="perfil-usuario.html" title="Perfil do usuário e estatísticas" loading="lazy"></iframe></div></section>
 <section class="page" id="page-detail"><button class="btn back" id="detailBack">← Voltar</button><div class="panel"><span class="kind" id="detailKind">MATERIAL</span><h2 id="detailTitle" style="font-size:22px;margin:12px 0 6px"></h2><p id="detailMeta" class="sub"></p><div id="detailActions" class="modal-actions"></div></div></section>
-</div></main></div><div class="toast" id="toast"></div>
+</div></main></div><div class="modal-backdrop notification-backdrop" id="notificationModal" role="presentation"><section class="modal-box notification-box" role="dialog" aria-modal="true" aria-labelledby="notificationModalTitle"><header class="modal-head"><div class="subject-icon"><i class="fa-regular fa-bell"></i></div><div class="modal-heading"><h2 id="notificationModalTitle">Notificações</h2><p id="notificationModalSubtitle">Avisos e comunicados da plataforma.</p></div><button class="modal-close" id="notificationClose" aria-label="Fechar notificações">×</button></header><div class="modal-list notification-list" id="notificationList"><div class="empty">Carregando notificações…</div></div></section></div>
+<div class="toast" id="toast"></div>
 <div class="modal-backdrop" id="materialsModal" role="presentation"><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="materialsTitle"><header class="modal-head"><div class="subject-icon"><i id="materialsIcon" class="fa-solid fa-book-open"></i></div><div class="modal-heading"><h2 id="materialsTitle">Matéria</h2><p id="materialsDescription">Pesquise e selecione um material.</p></div><button class="modal-close" data-close="materialsModal" aria-label="Fechar">×</button></header><div class="modal-tools"><input id="materialsSearch" type="search" placeholder="Pesquisar por nome, código ou assunto..."><p id="materialsCount" style="font-size:11px;color:var(--muted);margin:7px 0 0"></p></div><div class="modal-list" id="materialsList"></div><div class="modal-foot">A lista apresenta somente os materiais da área selecionada.</div></section></div>
 <div class="modal-backdrop" id="resourcesModal" role="presentation"><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="resourcesTitle"><header class="modal-head"><div class="subject-icon"><i class="fa-solid fa-book-open"></i></div><div class="modal-heading"><h2 id="resourcesTitle">Materiais</h2><p id="resourcesDescription">Escolha o texto integral ou material de revisão.</p></div><button class="modal-close" data-close="resourcesModal" aria-label="Fechar">×</button></header><div class="modal-list" id="resourcesList"></div><div class="modal-foot">Links externos abrem em uma nova aba. Os links internos dependem de os respectivos arquivos existirem no projeto.</div></section></div>
 <div class="modal-backdrop" id="bizuModal" role="presentation"><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="bizuTitle"><header class="modal-head"><div class="subject-icon"><i class="fa-solid fa-lightbulb"></i></div><div class="modal-heading"><h2 id="bizuTitle">Bizu - Mastigado</h2><p>Selecione uma das matérias cadastradas no arquivo-fonte.</p></div><button class="modal-close" data-close="bizuModal" aria-label="Fechar">×</button></header><div class="bizu-grid" id="bizuList"></div></section></div>
@@ -571,4 +576,99 @@ onAuthStateChanged(auth, async user => {
   setProfileName("", "");
   showStatsError("Não foi possível verificar a sessão. Volte ao login e entre novamente.");
 });
+</script><script type="module">
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+import { collection, doc, getDocs, query, serverTimestamp, setDoc, where } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+import { auth, db } from "./firebase-config.js";
+
+const $n = id => document.getElementById(id);
+let currentUser = null, activeNotices = [], noticeStates = {}, selectedNotice = null;
+const noticeModal = $n("notificationModal"), noticeList = $n("notificationList");
+function noticeDate(value) {
+  try { const date = value?.toDate ? value.toDate() : value ? new Date(value) : null; return date && !Number.isNaN(date.getTime()) ? date.toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" }) : ""; }
+  catch { return ""; }
+}
+function visibleNotices() { return activeNotices.filter(n => !noticeStates[n.id]?.deleted); }
+function updateNoticeCount() {
+  const unread = visibleNotices().filter(n => !noticeStates[n.id]?.read).length;
+  const badge = $n("notificationCount"); badge.textContent = unread > 99 ? "99+" : String(unread); badge.hidden = unread === 0;
+  $n("notificationBell").setAttribute("aria-label", unread ? "Abrir notificações, " + unread + " não lida(s)" : "Abrir notificações");
+}
+function renderNoticeList() {
+  noticeList.replaceChildren();
+  const items = visibleNotices();
+  if (!items.length) { const empty=document.createElement("div");empty.className="notification-empty";empty.textContent="Você não tem notificações disponíveis.";noticeList.append(empty);return; }
+  items.forEach(n => {
+    const button=document.createElement("button");button.type="button";button.className="notification-entry"+(noticeStates[n.id]?.read?"":" unread");
+    const dot=document.createElement("span");dot.className="notification-unread-dot";dot.setAttribute("aria-hidden","true");
+    const copy=document.createElement("span");copy.className="notification-entry-copy";
+    const title=document.createElement("strong");title.textContent=n.title||"Aviso da plataforma";
+    const date=document.createElement("small");date.textContent=noticeDate(n.createdAt)||"Comunicado da plataforma";
+    const body=document.createElement("p");body.textContent=(n.body||"").slice(0,160)+((n.body||"").length>160?"…":"");
+    copy.append(title,date,body);button.append(dot,copy);button.onclick=()=>openNotice(n);noticeList.append(button);
+  });
+}
+async function refreshStudentNotices() {
+  if (!currentUser) return;
+  try {
+    const [noticesSnap, statesSnap] = await Promise.all([
+      getDocs(query(collection(db,"notifications"),where("active","==",true))),
+      getDocs(query(collection(db,"userNotificationState"),where("uid","==",currentUser.uid)))
+    ]);
+    activeNotices=noticesSnap.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>{
+      const ta=a.createdAt?.toMillis?a.createdAt.toMillis():0, tb=b.createdAt?.toMillis?b.createdAt.toMillis():0;return tb-ta;
+    });
+    noticeStates={};statesSnap.docs.forEach(d=>{const state=d.data();if(state.noticeId)noticeStates[state.noticeId]=state;});
+    updateNoticeCount();renderNoticeList();
+  } catch(error) {
+    console.error("Falha ao carregar notificações:",error);
+    noticeList.replaceChildren();const msg=document.createElement("div");msg.className="notification-empty";msg.textContent="Não foi possível carregar as notificações. Verifique sua conexão e as permissões da conta.";noticeList.append(msg);
+  }
+}
+async function saveNoticeState(noticeId, patch) {
+  if(!currentUser) throw new Error("Sua sessão expirou. Entre novamente.");
+  const stateId=currentUser.uid+"_"+noticeId;
+  const previous=noticeStates[noticeId]||{};
+  const next={...previous,...patch,uid:currentUser.uid,noticeId,updatedAt:serverTimestamp()};
+  await setDoc(doc(db,"userNotificationState",stateId),next,{merge:true});
+  noticeStates[noticeId]={...next};
+  updateNoticeCount();
+}
+async function openNotice(notice) {
+  selectedNotice=notice;
+  try { if(!noticeStates[notice.id]?.read) await saveNoticeState(notice.id,{read:true,deleted:false}); }
+  catch(error) { console.error("Falha ao marcar notificação como lida:",error); }
+  const content=document.createElement("div");content.className="notification-detail";
+  const title=document.createElement("h3");title.className="notification-detail-title";title.textContent=notice.title||"Aviso da plataforma";
+  const date=document.createElement("div");date.className="notification-detail-date";date.textContent=noticeDate(notice.createdAt);
+  const body=document.createElement("div");body.textContent=notice.body||"";
+  content.append(title,date,body);
+  const actions=document.createElement("div");actions.className="notification-actions";
+  const back=document.createElement("button");back.textContent="Voltar à lista";back.onclick=showNoticeList;
+  const read=document.createElement("button");read.className="primary";read.textContent=noticeStates[notice.id]?.read?"Marcar como não lida":"Marcar como lida";
+  read.onclick=async()=>{try{await saveNoticeState(notice.id,{read:!noticeStates[notice.id]?.read,deleted:false});openNoticeWithoutRead(notice)}catch(e){showPlatformNotice("Não foi possível atualizar o estado da notificação.","error")}};
+  const del=document.createElement("button");del.textContent="Apagar para mim";del.onclick=async()=>{if(!confirm("Apagar esta notificação apenas da sua lista? Ela continuará disponível para os demais alunos."))return;try{await saveNoticeState(notice.id,{deleted:true});selectedNotice=null;renderNoticeList();showNoticeList();showPlatformNotice("Notificação apagada da sua lista.","success")}catch(e){showPlatformNotice("Não foi possível apagar a notificação.","error")}};
+  actions.append(back,read,del);noticeList.replaceChildren(content,actions);
+}
+function openNoticeWithoutRead(notice) {
+  selectedNotice=notice;
+  const content=document.createElement("div");content.className="notification-detail";
+  const title=document.createElement("h3");title.className="notification-detail-title";title.textContent=notice.title||"Aviso da plataforma";
+  const date=document.createElement("div");date.className="notification-detail-date";date.textContent=noticeDate(notice.createdAt);
+  const body=document.createElement("div");body.textContent=notice.body||"";content.append(title,date,body);
+  const actions=document.createElement("div");actions.className="notification-actions";
+  const back=document.createElement("button");back.textContent="Voltar à lista";back.onclick=showNoticeList;
+  const read=document.createElement("button");read.className="primary";read.textContent=noticeStates[notice.id]?.read?"Marcar como não lida":"Marcar como lida";
+  read.onclick=async()=>{try{await saveNoticeState(notice.id,{read:!noticeStates[notice.id]?.read,deleted:false});openNoticeWithoutRead(notice)}catch(e){showPlatformNotice("Não foi possível atualizar o estado da notificação.","error")}};
+  const del=document.createElement("button");del.textContent="Apagar para mim";del.onclick=async()=>{if(!confirm("Apagar esta notificação apenas da sua lista? Ela continuará disponível para os demais alunos."))return;try{await saveNoticeState(notice.id,{deleted:true});renderNoticeList();showNoticeList();showPlatformNotice("Notificação apagada da sua lista.","success")}catch(e){showPlatformNotice("Não foi possível apagar a notificação.","error")}};
+  actions.append(back,read,del);noticeList.replaceChildren(content,actions);
+}
+function showNoticeList(){renderNoticeList();$n("notificationModalTitle").textContent="Notificações";$n("notificationModalSubtitle").textContent="Avisos e comunicados da plataforma."}
+async function openNoticeCenter(){noticeModal.classList.add("open");$n("notificationModalTitle").textContent="Notificações";$n("notificationModalSubtitle").textContent="Avisos e comunicados da plataforma.";noticeList.innerHTML='<div class="empty">Carregando notificações…</div>';await refreshStudentNotices();}
+function closeNoticeCenter(){noticeModal.classList.remove("open");$n("notificationBell").focus();}
+$n("notificationBell").addEventListener("click",openNoticeCenter);
+$n("notificationClose").addEventListener("click",closeNoticeCenter);
+noticeModal.addEventListener("click",e=>{if(e.target===noticeModal)closeNoticeCenter()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&noticeModal.classList.contains("open"))closeNoticeCenter()});
+onAuthStateChanged(auth,user=>{currentUser=user;if(!user){activeNotices=[];noticeStates={};updateNoticeCount();return;}refreshStudentNotices();});
 </script></body></html>

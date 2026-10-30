@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Protótipo — Editor de páginas normativas | Plataforma Aperfeiçoamento</title>
+<title>Administração | Plataforma Aperfeiçoamento</title>
 <style>
 :root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--gold-soft:#f7edc7;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--bg:#eef2f7;--highlight:#fff09a;--green:#166534;--red:#a12b2b}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
@@ -93,6 +93,115 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
 
 </style>
   <link rel="stylesheet" href="administrador.mobile.css">
+
+<style id="acp-admin-design-system">
+:root{--navy:#071326;--header:#071326;--gold:#eabf3a;--gold-soft:#f5d46a;--card:#101f37;--ink:#f8fafc;--muted:#aab7ca;--line:rgba(234,191,58,.18);--bg:#071326;--highlight:#fff09a;--green:#45c49a;--red:#fb7185}
+html{background:#071326}
+body{background:radial-gradient(ellipse at 75% -10%,#1b3151 0,transparent 42%),#071326!important;color:#f8fafc!important;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+.app{display:block!important;min-height:100vh;background:transparent}
+#adminSidebar{position:fixed;inset:0 auto 0 0;width:252px;overflow-y:auto;background:linear-gradient(180deg,#081326,#050d1a)!important;border-right:1px solid rgba(234,191,58,.2);padding:22px 15px!important;z-index:30}
+#adminSidebar .brand{display:flex;align-items:center;gap:11px;padding:4px 8px 22px!important;border-bottom:1px solid rgba(234,191,58,.18);font-size:0;line-height:1.1}
+#adminSidebar .brand:before{content:"ACP";width:46px;height:42px;display:grid;place-items:center;flex:none;border:1px solid rgba(234,191,58,.55);border-radius:12px;background:linear-gradient(145deg,#142642,#09162a);color:#f5d46a;font-size:15px;font-weight:950;letter-spacing:.08em}
+#adminSidebar .brand em{display:none}
+#adminSidebar .brand{position:relative;font-size:0}
+#adminSidebar .brand:after{content:"PLATAFORMA\A APERFEIÇOAMENTO";white-space:pre;display:block;font-size:12px;line-height:1.5;letter-spacing:.08em;font-weight:900;color:#f8fafc}
+#adminSidebar .nav{display:grid;gap:6px;margin-top:22px}
+#adminSidebar .nav:before{content:"GESTÃO DA PLATAFORMA";font-size:9px;letter-spacing:.15em;color:#687a94;font-weight:900;padding:0 10px 4px}
+#adminSidebar .nav button{display:flex;align-items:center;gap:12px;width:100%;min-height:43px;padding:11px 12px!important;border:1px solid transparent!important;border-radius:12px!important;background:transparent!important;color:#aab7ca!important;text-align:left;font-weight:650!important;font-size:12px!important;transition:background .15s,border-color .15s,color .15s}
+#adminSidebar .nav button:before{width:19px;flex:none;text-align:center;color:#eabf3a;font-size:15px;font-weight:800}
+#adminSidebar .nav button[data-tab="editor"]:before{content:"✎"}
+#adminSidebar .nav button[data-tab="metadados"]:before{content:"▤"}
+#adminSidebar .nav button[data-tab="materiais"]:before{content:"▧"}
+#adminSidebar .nav button[data-tab="validacao"]:before{content:"✓"}
+#adminSidebar .nav button[data-tab="videos"]:before{content:"▷"}
+#adminSidebar .nav button[data-tab="logs"]:before{content:"◷"}
+#adminSidebar .nav button[data-tab="notificacoes"]:before{content:"♢"}
+#adminSidebar .nav button.active,#adminSidebar .nav button:hover{color:#f5d46a!important;background:linear-gradient(100deg,rgba(234,191,58,.14),rgba(234,191,58,.035))!important;border-color:rgba(234,191,58,.25)!important;box-shadow:inset 3px 0 #eabf3a}
+#adminSidebar .side-note{margin:24px 8px 0;color:#8392a9;font-size:10px;line-height:1.7;border-top:1px solid rgba(255,255,255,.07);padding-top:14px}
+.main{margin-left:252px;width:calc(100% - 252px);min-width:0;background:transparent}
+.top{position:sticky;top:0;z-index:25;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:rgba(7,19,38,.9)!important;backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)!important;padding:15px 26px!important;color:#f8fafc}
+.admin-top-title{min-width:0}
+.crumb{font-size:10px!important;color:#aab7ca!important;letter-spacing:.04em}
+.admin-top-title strong{display:block;font-size:21px!important;font-weight:900;letter-spacing:-.025em;color:#f8fafc}
+.top-actions{gap:8px!important}
+.back-to-courses{border-color:rgba(234,191,58,.28)!important;border-radius:10px!important;background:#0d1b30!important;color:#f5d46a!important}
+.back-to-courses:hover{background:#142642!important;color:#fff!important}
+.wrap{max-width:1600px;padding:25px!important}
+.intro h1{font-size:clamp(22px,2.1vw,30px)!important;font-weight:900;letter-spacing:-.025em;color:#f8fafc}
+.muted,.hint,.footer-note{color:#aab7ca!important}
+.callout{background:#eabf3a0d!important;border:1px solid rgba(234,191,58,.22)!important;border-radius:13px!important;color:#d6dfeb!important;padding:13px 15px!important}
+.card,.metric,.resource{background:linear-gradient(145deg,#101f37,#0b182b)!important;border:1px solid rgba(255,255,255,.075)!important;border-radius:16px!important;box-shadow:0 12px 30px #0002!important;color:#f8fafc}
+.cardhead{background:linear-gradient(110deg,#142642,#0d1b30)!important;border-bottom:1px solid rgba(255,255,255,.07)!important;padding:15px 18px!important}
+.cardhead h2{font-size:14px!important;font-weight:850;color:#f8fafc!important}
+.cardbody{background:transparent;color:#dce5f1;padding:18px!important}
+.fields{gap:13px!important}
+.field label{color:#bdc9da!important;font-size:11px!important;letter-spacing:.02em}
+.field input,.field select,.field textarea,.draft-controls select,.preview-toolbar input{background:#081529!important;color:#f8fafc!important;border:1px solid #293951!important;border-radius:10px!important;padding:11px 12px!important}
+.field input::placeholder,.field textarea::placeholder{color:#71829b}
+.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid #eabf3a30!important;border-color:#eabf3a!important}
+button{border:1px solid #293951!important;border-radius:10px!important;background:#13243d!important;color:#dce5f1!important;font-weight:800;transition:filter .15s,border-color .15s}
+button:hover{border-color:rgba(234,191,58,.5)!important;filter:brightness(1.08)}
+button.primary{background:linear-gradient(135deg,#f2cf59,#d9a92b)!important;border-color:#f3d66e!important;color:#111b2a!important;box-shadow:0 8px 24px #eabf3a20}
+button.dark{background:#0d1b30!important;border-color:rgba(234,191,58,.25)!important;color:#f5d46a!important}
+button.danger,.danger{color:#fb9b9b!important}
+.status{background:#14243b!important;color:#b9c6d8!important;border:1px solid rgba(255,255,255,.07);padding:5px 10px!important}
+.status.ok{background:#10372f!important;color:#6ee7b7!important;border-color:#45c49a33!important}
+.draft-controls{padding:13px 15px;border:1px solid rgba(255,255,255,.07);border-radius:14px;background:#0d1b30;margin:0 0 20px}
+.draft-controls label{color:#dce5f1}
+.draft-controls select{min-width:200px}
+.tabs{background:#0d1b30;border-bottom:1px solid rgba(255,255,255,.07)}
+.tabs button{background:transparent!important;color:#b9c6d8!important}
+.tabs button.active{color:#f5d46a!important;border-bottom:3px solid #eabf3a!important}
+.editor-toolbar,.editor-format-area,.editor-format-toolbar{background:#101f37!important;border-color:#293951!important}
+.editor-toolbar button,.editor-format-toolbar button,.editor-normative-inserts button{background:#142642!important;color:#dce5f1!important;border-color:#293951!important}
+.editor-stylebar label{color:#aab7ca!important}
+.editor-stylebar select{background:#081529!important;color:#f8fafc!important;border-color:#293951!important}
+.editor{background:#fdfdfd!important;color:#202938!important;border-color:#293951!important}
+.preview-wrap{background:#0a172a!important}
+.preview-toolbar{background:#0d1b30!important;border-color:#293951!important}
+.doc{background:#fff!important;color:#202938!important;border-color:#293951!important}
+.doc-header{background:linear-gradient(135deg,#071020,#172c4e)!important}
+.doc-content{color:#202938!important}
+.table th,.table td{border-bottom-color:#26364c!important;color:#dce5f1}
+.table th{color:#aab7ca!important}
+.va-draft{background:#0d1b30;border-color:#293951!important}
+.va-draft strong{color:#f8fafc}
+.va-player{border:1px solid rgba(234,191,58,.18)}
+#notificationAdminView .card,#videoAdminView .card,#auditAdminView .card{background:linear-gradient(145deg,#101f37,#0b182b)!important}
+#notificationAdminView .va-draft{align-items:flex-start}
+#notificationAdminView .va-draft-actions{justify-content:flex-end;flex:none}
+#notificationAdminView .va-draft-actions button{font-size:11px}
+#toast{background:#13243c!important;border:1px solid rgba(234,191,58,.2)!important;color:#fff!important;border-radius:12px!important}
+.admin-access-guard{background:radial-gradient(ellipse at 75% -10%,#1b3151 0,transparent 42%),#071326!important}
+.admin-access-card{background:#0d1b30!important;border:1px solid rgba(234,191,58,.55)!important;border-radius:18px!important;box-shadow:0 25px 80px #0008}
+.admin-access-card h2{color:#f5d46a!important}
+@media(max-width:850px){
+ .app{display:block!important;grid-template-columns:1fr!important}
+ #adminSidebar{width:min(290px,86vw)!important;padding:22px 15px!important}
+ .main{margin:0!important;width:100%!important}
+ .top{grid-template-columns:40px minmax(0,1fr)!important;background:rgba(7,19,38,.96)!important;padding:10px!important}
+ .admin-top-title strong{font-size:17px!important}
+ .top-actions{grid-column:1/-1;display:flex;gap:6px!important}
+ .top-actions .back-to-courses{display:inline-flex!important}
+ .wrap{padding:14px!important}
+ .intro{flex-direction:column;align-items:stretch}
+ .intro h1{font-size:23px!important}
+ .draft-controls{align-items:stretch}
+ .draft-controls select{width:100%;min-width:0}
+ .cardbody{padding:14px!important}
+ .video-admin-grid,.layout,.bottomgrid{grid-template-columns:minmax(0,1fr)!important}
+ #notificationAdminView .va-draft{flex-direction:column}
+ #notificationAdminView .va-draft-actions{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ #notificationAdminView .va-draft-actions button:last-child{grid-column:1/-1}
+}
+@media(max-width:480px){
+ .top-actions button,.top-actions a{font-size:10px!important;padding:8px!important}
+ .admin-top-title strong{font-size:15px!important}
+ .wrap{padding:10px!important}
+ .cardhead{padding:12px!important}
+ .cardbody{padding:12px!important}
+}
+</style>
 </head>
 <body>
 
@@ -114,14 +223,15 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
     <!-- VIDEOAULAS — escopo atual: manter a aba administrativa e o gerenciamento de rascunhos já implementados nesta branch. Etapas futuras: catálogo do aluno, fluxo próprio de publicação/despublicação e player responsivo. -->
       <button data-tab="videos">Vídeos e aulas</button>
     <button data-tab="logs">Log do sistema</button>
+    <button data-tab="notificacoes">Notificações</button>
   </nav>
-  <div class="side-note">Protótipo para aprovação visual.<br>Dados de demonstração.<br><br>Conectado ao Firebase quando autorizado.<br>Salvar não publica a norma.</div>
+  <div class="side-note">Área administrativa.<br>Gerenciamento de conteúdo e materiais.<br><br>Acesso restrito a administradores ativos.</div>
 </aside>
 <div class="admin-mobile-backdrop" id="adminMobileBackdrop" aria-hidden="true"></div>
 <main class="main">
   <header class="top">
     <button type="button" id="adminMobileMenuToggle" class="admin-mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" title="Abrir menu"><span class="admin-hamburger-lines" aria-hidden="true"><span></span><span></span><span></span></span></button>
-    <div class="admin-top-title"><div class="crumb" id="adminHeaderCrumb">Console de Integração/Criação</div><strong id="adminHeaderTitle">Administração</strong></div>
+    <div class="admin-top-title"><div class="crumb" id="adminHeaderCrumb">Gestão da Plataforma</div><strong id="adminHeaderTitle">Administração</strong></div>
     <div class="top-actions"><a class="back-to-courses" href="plataforma.html" aria-label="Voltar à seleção de cursos"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span>Voltar aos cursos</span></a><span id="status" class="status">Demonstração local</span><button id="newDraft">Novo rascunho</button><button id="saveDraft" class="primary">Salvar rascunho no Firebase</button><button class="primary" id="downloadHtml">Exportar HTML</button></div>
   </header>
 
@@ -147,7 +257,7 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
       <span id="firebaseStatus" class="status">Firebase: aguardando verificação</span>
     </div>
     <div class="intro">
-      <div><h1>Protótipo de criação de páginas normativas</h1><div class="muted">Edite os campos à esquerda e confira a renderização à direita antes de aprovar o padrão.</div></div>
+      <div><h1>Editor de páginas normativas</h1><div class="muted">Edite os campos à esquerda e confira a renderização à direita antes de aprovar o padrão.</div></div>
       <button class="dark" id="reset">Restaurar exemplo</button>
     </div>
     <div class="callout"><strong>Importante:</strong> o texto exibido é fictício e serve apenas para demonstrar a estrutura. Antes de publicar uma norma real, o texto deverá ser importado da fonte oficial e comparado integralmente. Salvar rascunho envia os dados ao Firebase; não publica a norma.</div>
@@ -306,6 +416,21 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
         <div class="cardbody"><div id="vaDraftList" class="va-draft-list"><p class="hint">Carregando rascunhos do Firestore…</p></div></div>
       </section>
     </section>
+    <section id="notificationAdminView" style="display:none">
+      <div class="intro"><div><h1>Central de notificações</h1><div class="muted">Crie avisos para os alunos, edite o conteúdo e controle quando cada aviso fica visível.</div></div><span id="notificationAdminStatus" class="status">Aguardando autorização</span></div>
+      <div class="callout"><strong>Como funciona:</strong> publicar torna o aviso visível aos alunos. Desativar oculta o aviso sem apagar os dados. Quando um aluno apaga uma notificação, ela é ocultada apenas para a conta dele.</div>
+      <div class="video-admin-grid">
+        <section class="card"><div class="cardhead"><h2 id="notificationFormTitle">Criar notificação</h2><span class="status">Editor</span></div><div class="cardbody">
+          <div class="fields">
+            <div class="field full"><label for="noticeTitle">Título *</label><input id="noticeTitle" maxlength="180" placeholder="Ex.: Atualização do material de estudo"></div>
+            <div class="field full"><label for="noticeBody">Mensagem *</label><textarea id="noticeBody" maxlength="8000" rows="7" placeholder="Escreva o aviso que será exibido aos alunos."></textarea><span class="hint">A mensagem aceita quebras de linha. Limite de 8.000 caracteres.</span></div>
+            <div class="field full"><label class="checkline"><input id="noticePublishNow" type="checkbox"> Publicar imediatamente após salvar</label></div>
+          </div>
+          <div class="section-actions"><button id="noticeReset">Limpar</button><button class="primary" id="noticeSave">Salvar notificação</button></div>
+        </div></section>
+        <section class="card"><div class="cardhead"><h2>Notificações cadastradas</h2><button id="noticeRefresh">Atualizar</button></div><div class="cardbody"><div id="noticeAdminList" class="va-draft-list"><p class="hint">Carregando notificações…</p></div></div></section>
+      </div>
+    </section>
     <div class="footer-note">Protótipo de aprovação visual. Não substitui o modelo oficial, não confirma vigência normativa e não realiza publicação automática. O acesso administrativo é verificado separadamente.</div>
   </div>
 </main>
@@ -360,7 +485,7 @@ function update(){
 ['title','code','edition','description','course','subject','category','order','tags','watermark','showSearch'].forEach(id=>$(id).addEventListener('input',update));
 $('normText').addEventListener('input',update);
 document.querySelectorAll('#leftTabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('#leftTabs~.cardbody .panel').forEach(p=>p.classList.remove('active'));['p-content','p-meta','p-mats','p-check'].forEach(id=>$(id).classList.toggle('active',id===b.dataset.panel))});
-document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));const tab=b.dataset.tab;const isVideos=tab==='videos',isLogs=tab==='logs';$('normAdminView').style.display=(isVideos||isLogs)?'none':'block';$('videoAdminView').style.display=isVideos?'block':'none';$('auditAdminView').style.display=isLogs?'block':'none';const map={editor:'p-content',metadados:'p-meta',materiais:'p-mats',validacao:'p-check'};if(!isVideos&&!isLogs){document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x.dataset.panel===map[tab]));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===map[tab]))}else if(isVideos){updateVideoAdminPreview();renderVideoAdminDrafts()}else{loadAuditEvents()}const headers={editor:{crumb:'Administração / Páginas normativas',title:'Editor de páginas normativas'},metadados:{crumb:'Administração / Páginas normativas / Classificação',title:'Classificação da página'},materiais:{crumb:'Administração / Páginas normativas / Materiais',title:'Materiais de apoio'},validacao:{crumb:'Administração / Páginas normativas / Validação',title:'Validação da página'},videos:{crumb:'Administração / Vídeos e aulas',title:'Gestão de vídeos e aulas'},logs:{crumb:'Administração / Monitoramento / Log do sistema',title:'Log do sistema'}};const header=headers[tab]||headers.editor;$('adminHeaderCrumb').textContent=header.crumb;$('adminHeaderTitle').textContent=header.title;$('status').style.display=(isVideos||isLogs)?'none':'';$('saveDraft').style.display=(isVideos||isLogs)?'none':'';$('newDraft').style.display=(isVideos||isLogs)?'none':'';$('downloadHtml').style.display=(isVideos||isLogs)?'none':''});
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));const tab=b.dataset.tab;const isVideos=tab==='videos',isLogs=tab==='logs',isNotifications=tab==='notificacoes',isSpecial=isVideos||isLogs||isNotifications;$('normAdminView').style.display=isSpecial?'none':'block';$('videoAdminView').style.display=isVideos?'block':'none';$('auditAdminView').style.display=isLogs?'block':'none';$('notificationAdminView').style.display=isNotifications?'block':'none';const map={editor:'p-content',metadados:'p-meta',materiais:'p-mats',validacao:'p-check'};if(!isSpecial){document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x.dataset.panel===map[tab]));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===map[tab]))}else if(isVideos){updateVideoAdminPreview();renderVideoAdminDrafts()}else if(isLogs){loadAuditEvents()}else if(isNotifications){window.__paRefreshNotifications?.()};const headers={editor:{crumb:'Administração / Páginas normativas',title:'Editor de páginas normativas'},metadados:{crumb:'Administração / Páginas normativas / Classificação',title:'Classificação da página'},materiais:{crumb:'Administração / Páginas normativas / Materiais',title:'Materiais de apoio'},validacao:{crumb:'Administração / Páginas normativas / Validação',title:'Validação da página'},videos:{crumb:'Administração / Vídeos e aulas',title:'Gestão de vídeos e aulas'},logs:{crumb:'Administração / Monitoramento / Log do sistema',title:'Log do sistema'},notificacoes:{crumb:'Administração / Comunicação',title:'Central de notificações'}};const header=headers[tab]||headers.editor;$('adminHeaderCrumb').textContent=header.crumb;$('adminHeaderTitle').textContent=header.title;$('status').style.display=isSpecial?'none':'';$('saveDraft').style.display=isSpecial?'none':'';$('newDraft').style.display=isSpecial?'none':'';$('downloadHtml').style.display=isSpecial?'none':''});
 let normEditorRange=null;
 function rememberNormEditorRange(){const s=window.getSelection();if(s&&s.rangeCount&&$('normText').contains(s.anchorNode))normEditorRange=s.getRangeAt(0).cloneRange()}
 function restoreNormEditorRange(){if(!normEditorRange)return;const s=window.getSelection();s.removeAllRanges();s.addRange(normEditorRange)}
@@ -542,6 +667,7 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
   import { saveVideoDraft, updateVideoDraft, listVideoDrafts, deleteVideoDraft } from "./admin-videos-firestore.js";
   import { isAdminUser } from "./admin-access.js";
   import { listAuditEvents } from "./system-audit-firestore.js";
+  import { listAdminNotifications, createAdminNotification, updateAdminNotification, deleteAdminNotification } from "./admin-notifications-firestore.js";
   import {
     saveNormaDraft,
     updateNormaDraft,
@@ -820,6 +946,69 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
   document.getElementById("auditRefresh").addEventListener("click", loadAuditEvents);
   document.getElementById("auditApply").addEventListener("click", loadAuditEvents);
 
+
+  // Central administrativa de notificações — as operações são revalidadas no módulo Firestore.
+  let notificationRows = [];
+  let editingNotificationId = null;
+  const noticeTitle = document.getElementById("noticeTitle");
+  const noticeBody = document.getElementById("noticeBody");
+  const noticePublishNow = document.getElementById("noticePublishNow");
+  const noticeAdminList = document.getElementById("noticeAdminList");
+  const noticeAdminStatus = document.getElementById("notificationAdminStatus");
+  function resetNoticeForm() {
+    editingNotificationId = null;
+    noticeTitle.value = "";
+    noticeBody.value = "";
+    noticePublishNow.checked = false;
+    document.getElementById("notificationFormTitle").textContent = "Criar notificação";
+    document.getElementById("noticeSave").textContent = "Salvar notificação";
+  }
+  function renderAdminNotifications() {
+    noticeAdminList.replaceChildren();
+    if (!notificationRows.length) {
+      const empty = document.createElement("p"); empty.className = "hint"; empty.textContent = "Nenhuma notificação cadastrada."; noticeAdminList.append(empty); return;
+    }
+    notificationRows.forEach(item => {
+      const row = document.createElement("article"); row.className = "va-draft";
+      const copy = document.createElement("div"); copy.style.minWidth = "0";
+      const title = document.createElement("strong"); title.textContent = item.title || "Sem título";
+      const meta = document.createElement("div"); meta.className = "hint"; meta.textContent = item.active ? "Publicada · visível aos alunos" : "Inativa · oculta dos alunos";
+      const excerpt = document.createElement("p"); excerpt.className = "hint"; excerpt.style.whiteSpace = "pre-wrap"; excerpt.textContent = (item.body || "").slice(0, 180) + ((item.body || "").length > 180 ? "…" : "");
+      copy.append(title, meta, excerpt);
+      const actions = document.createElement("div"); actions.className = "va-draft-actions";
+      const edit = document.createElement("button"); edit.textContent = "Editar"; edit.onclick = () => {
+        editingNotificationId = item.id; noticeTitle.value = item.title || ""; noticeBody.value = item.body || "";
+        noticePublishNow.checked = !!item.active; document.getElementById("notificationFormTitle").textContent = "Editar notificação";
+        document.getElementById("noticeSave").textContent = "Salvar alterações"; document.getElementById("noticeTitle").focus();
+      };
+      const toggle = document.createElement("button"); toggle.className = "primary"; toggle.textContent = item.active ? "Desativar" : "Publicar";
+      toggle.onclick = async () => { try { await updateAdminNotification(item.id, { title: item.title, body: item.body, active: !item.active }); await refreshAdminNotifications(); notify(item.active ? "Notificação desativada." : "Notificação publicada."); } catch(e) { console.error(e); notify(e?.message || "Não foi possível alterar a publicação."); } };
+      const del = document.createElement("button"); del.className = "danger"; del.textContent = "Excluir";
+      del.onclick = async () => { if (!await window.paConfirm("Excluir notificação", "Excluir permanentemente “" + item.title + "”? Isso remove o aviso do sistema para todos os alunos.", "Excluir permanentemente", true)) return; try { await deleteAdminNotification(item.id); if (editingNotificationId === item.id) resetNoticeForm(); await refreshAdminNotifications(); notify("Notificação excluída."); } catch(e) { console.error(e); notify(e?.message || "Não foi possível excluir a notificação."); } };
+      actions.append(edit, toggle, del); row.append(copy, actions); noticeAdminList.append(row);
+    });
+  }
+  async function refreshAdminNotifications() {
+    noticeAdminStatus.textContent = "Carregando…"; noticeAdminStatus.className = "status";
+    try { notificationRows = await listAdminNotifications(); renderAdminNotifications(); noticeAdminStatus.textContent = notificationRows.length + " aviso(s)"; noticeAdminStatus.className = "status ok"; }
+    catch(e) { console.error("Falha ao carregar notificações:", e); noticeAdminStatus.textContent = "Falha ao carregar"; noticeAdminStatus.className = "status"; noticeAdminList.textContent = e?.code === "permission-denied" ? "O Firestore negou a consulta. Publique as regras atualizadas de firestore.rules no projeto Firebase e confirme que sua conta consta em admins com active=true." : "Não foi possível carregar. Confira sua conexão e as regras do Firestore."; throw e; }
+  }
+  window.__paRefreshNotifications = () => refreshAdminNotifications().catch(() => {});
+  document.getElementById("noticeRefresh").addEventListener("click", () => refreshAdminNotifications().catch(() => {}));
+  document.getElementById("noticeReset").addEventListener("click", resetNoticeForm);
+  document.getElementById("noticeSave").addEventListener("click", async () => {
+    const title = noticeTitle.value.trim(), body = noticeBody.value.trim();
+    if (!title || !body) { notify("Preencha o título e a mensagem da notificação."); return; }
+    const button = document.getElementById("noticeSave"), oldLabel = button.textContent; button.disabled = true; button.textContent = "Salvando…";
+    try {
+      const payload = { title, body, active: noticePublishNow.checked };
+      if (editingNotificationId) await updateAdminNotification(editingNotificationId, payload);
+      else await createAdminNotification(payload);
+      resetNoticeForm(); await refreshAdminNotifications(); notify(payload.active ? "Notificação salva e publicada." : "Notificação salva como inativa.");
+    } catch(e) { console.error("Falha ao salvar notificação:", e); notify(e?.code === "permission-denied" ? "Permissão negada pelo Firestore. Publique as regras atualizadas de firestore.rules no Firebase e confirme que sua conta administrativa está ativa." : (e?.message || "Não foi possível salvar a notificação.")); }
+    finally { button.disabled = false; button.textContent = editingNotificationId ? "Salvar alterações" : "Salvar notificação"; }
+  });
+
   watchAdminAccess(async ({ user, isAdmin, error }) => {
     const thisCheck = ++accessSequence;
 
@@ -858,7 +1047,8 @@ va$('vaSave').onclick=saveVideoAdminDraft;va$('vaExport').onclick=()=>exportVide
     firebaseStatus.textContent = "Firebase: administrador autorizado";
     firebaseStatus.className = "status ok";
     await refreshDraftList();
-    await refreshVideoAdminDrafts().catch(() => {});
+await refreshVideoAdminDrafts().catch(() => {});
+    await refreshAdminNotifications().catch(() => {});
   });
 </script>
 <script id="admin-mobile-menu-controller">
