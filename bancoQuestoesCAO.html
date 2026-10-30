@@ -11,7 +11,7 @@
     <!-- Carrega apenas o banco do curso selecionado. Isso evita conflito entre declarações globais dos dois arquivos. -->
     <script>
         var cursoSolicitado = new URLSearchParams(window.location.search).get('curso');
-        // CAO permanece indisponível nesta etapa: não carregar o banco de questões nem permitir acesso direto.
+        // Banco de questões exclusivo do Curso de Aperfeiçoamento de Oficiais.
         var acessoCAOBloqueado = false;
         var cursoInicial = cursoSolicitado === 'CAO' ? 'CAO' : null;
         if (cursoInicial === 'CAO') {
@@ -185,7 +185,7 @@
       }
 
     
-      /* Identidade oficial da Plataforma ACP e distribuição de ações conforme a referência */
+      /* Identidade da Plataforma CAO e distribuição de ações conforme a referência */
       .app-platform-logo{display:grid;place-items:center;padding:7px}
       .app-platform-logo svg{display:block;width:100%;height:100%;max-width:46px;max-height:34px}
       .app-sidebar-mark.app-platform-logo{width:43px;height:43px;flex:0 0 43px;border:1px solid rgba(234,191,58,.55);background:linear-gradient(145deg,#142642,#09162a);border-radius:12px;color:transparent;font-size:0}
@@ -441,7 +441,7 @@
         <button type="button" class="app-sidebar-collapse" id="appSidebarCollapse" aria-label="Recolher menu" title="Recolher menu"><i class="fa-solid fa-angles-left" aria-hidden="true"></i></button>
         <div class="app-sidebar-label">AMBIENTE DE ESTUDOS</div>
         <nav class="app-sidebar-nav">
-          <a href="bancoQuestoes.html?curso=ACP" class="app-nav-active" title="Banco de questões"><span class="app-nav-icon"><i class="fa-solid fa-grip" aria-hidden="true"></i></span><span class="app-nav-label">Banco de questões</span></a>
+          <a href="bancoQuestoesCAO.html?curso=CAO" class="app-nav-active" title="Banco de questões"><span class="app-nav-icon"><i class="fa-solid fa-grip" aria-hidden="true"></i></span><span class="app-nav-label">Banco de questões</span></a>
           <button type="button" onclick="voltarSelecaoCursos()" title="Cursos"><span class="app-nav-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><span class="app-nav-label">Cursos</span></button>
           <button type="button" onclick="abrirModalPersonalizado()" title="Personalizar sessão"><span class="app-nav-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></span><span class="app-nav-label">Personalizar sessão</span></button>
         </nav>
