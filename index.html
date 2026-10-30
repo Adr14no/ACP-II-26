@@ -93,6 +93,10 @@
 
 </style>
   <link rel="stylesheet" href="index.mobile.css">
+<meta name="theme-color" content="#071326">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/svg+xml" href="/pa-icon.svg">
+<link rel="apple-touch-icon" href="/pa-icon.svg">
 </head>
 <body>
 <div class="page">
@@ -364,6 +368,16 @@ const dismissExperimental = () => experimentalModal.classList.remove('open');
 document.getElementById('closeExperimental').addEventListener('click', dismissExperimental);
 document.getElementById('dismissExperimental').addEventListener('click', dismissExperimental);
 dismissExperimental();
+</script>
+
+<script>
+  // Registro do aplicativo instalável. O service worker não armazena conteúdo autenticado.
+  if ("serviceWorker" in navigator && location.protocol === "https:") {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/sw.js", { scope: "/" })
+        .catch(error => console.warn("Não foi possível registrar o modo aplicativo:", error));
+    }, { once: true });
+  }
 </script>
 </body>
 </html>
