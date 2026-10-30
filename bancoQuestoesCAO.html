@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full bg-slate-900 text-slate-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:,">
+    <title>Banco de Questões — CAO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Carrega apenas o banco do curso selecionado. Isso evita conflito entre declarações globais dos dois arquivos. -->
+    <script>
+        var cursoSolicitado = new URLSearchParams(window.location.search).get('curso');
+        // Banco de questões exclusivo do Curso de Aperfeiçoamento de Oficiais.
+        var acessoCAOBloqueado = false;
+        var cursoInicial = cursoSolicitado === 'CAO' ? 'CAO' : null;
+        if (cursoInicial === 'CAO') {
+            document.write('<script src="questoes2.js"><\/script>');
+        }
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pm: {
+                            navy: '#0b1326',
+                            header: '#1b2a47',
+                            gold: '#d4af37',
+                            goldHover: '#b59226',
+                            accent: '#1e3a8a',
+                            lightBg: '#131e36',
+                            cardBg: '#1a2744',
+                            border: '#2a3c66'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+      #authGuard{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;background:#0b1326;color:#f1f5f9;text-align:center;font-family:Arial,sans-serif}
+      #authGuard .auth-guard-card{max-width:440px;border:1px solid #d4af37;border-radius:16px;padding:28px;background:#1a2744;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+      #authGuard p{line-height:1.6;color:#cbd5e1}
+    
+      /* Layout desktop do Banco de Questões — camada visual, sem alterar a lógica do simulado */
+      .app-shell{display:flex;align-items:stretch;min-height:100vh}
+      .app-sidebar{width:244px;flex:0 0 244px;position:sticky;top:0;align-self:flex-start;height:100vh;overflow-y:auto;background:#071020;border-right:1px solid #1d2b45;padding:22px 14px;display:flex;flex-direction:column;transition:width .2s ease,flex-basis .2s ease}
+      .app-sidebar-brand{display:flex;align-items:center;gap:12px;padding:0 8px 25px;border-bottom:1px solid #1d2b45}
+      .app-sidebar-mark{width:43px;height:43px;flex:0 0 43px;border:1px solid #8b7126;background:#18243a;border-radius:12px;display:grid;place-items:center;color:#d4af37;font-size:20px}
+      .app-header-title{display:flex;align-items:center;gap:12px;min-width:0}
+      .app-header-title-mark{width:42px;height:42px;flex:0 0 42px;border:1px solid #8b7126;background:#18243a;border-radius:12px;display:grid;place-items:center;color:#d4af37;font-size:19px}
+      .app-header-title h1{font-size:11px;line-height:1.3;letter-spacing:.14em;text-transform:uppercase;color:#d4af37;font-weight:800;margin:0}
+      .app-header-title h2{font-size:16px;line-height:1.35;font-weight:800;color:#fff;margin:2px 0 0}
+      .app-header-title p{font-size:11px;color:#cbd5e1;margin:2px 0 0}
+      .app-sidebar-brand-copy strong{display:block;font-size:12px;letter-spacing:.11em;color:#f1f5f9}
+      .app-sidebar-brand-copy small{display:block;color:#aab6ca;font-size:11px;margin-top:3px}
+      .app-sidebar-label{display:block!important;font-size:10px!important;line-height:1.4!important;color:#7787a2!important;letter-spacing:.14em!important;text-transform:uppercase!important;font-weight:700!important;margin:25px 12px 9px!important;white-space:nowrap}
+      .app-sidebar-nav{display:grid;gap:5px}
+      .app-sidebar-nav a,.app-sidebar-nav button{width:100%;border:0;background:transparent;color:#aab6ca;text-align:left;text-decoration:none;padding:11px 12px;border-radius:9px;display:flex;align-items:center;gap:12px;font-size:13px;cursor:pointer;transition:background .15s,color .15s}
+      .app-sidebar-nav a:hover,.app-sidebar-nav button:hover{background:#121f36;color:#fff}
+      .app-sidebar-nav .app-nav-active{background:#1b2a47;color:#d4af37;box-shadow:inset 3px 0 #d4af37}
+      .app-nav-icon{width:20px;flex:0 0 20px;text-align:center;font-size:16px}
+      .app-sidebar-collapse{width:36px;height:34px;flex:0 0 34px;align-self:flex-end;margin:12px 0 5px;background:#101c33;color:#aab6ca;border:1px solid #2a3c66;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer;overflow:hidden}
+      .app-sidebar-collapse:hover{border-color:#d4af37;color:#d4af37}
+      .app-sidebar-bottom{margin-top:auto}
+      .app-sidebar-user{display:flex;align-items:center;gap:10px;padding:13px 8px 0;margin-top:18px;border-top:1px solid #1d2b45}
+      .app-sidebar-avatar{width:34px;height:34px;flex:0 0 34px;border-radius:50%;background:#283958;color:#f0cf62;display:grid;place-items:center;font-size:12px;font-weight:800}
+      .app-sidebar-user-copy strong{display:block;font-size:12px;color:#f1f5f9}
+      .app-sidebar-user-copy small{display:block;color:#aab6ca;font-size:10px}
+      .app-main{min-width:0;flex:1;display:flex;flex-direction:column}
+      .app-main header .app-header-inner{max-width:none!important;padding-left:28px!important;padding-right:28px!important;flex-direction:row!important;align-items:center!important}
+      .app-main header .app-brand-lockup{display:none!important}
+      .app-main nav .app-filter-inner{max-width:none!important}
+      .app-main main{max-width:none!important;padding-left:28px!important;padding-right:28px!important;grid-template-columns:minmax(0,1fr) 278px!important;gap:20px!important}
+      .app-main main>section{grid-column:span 1!important;min-width:0}
+      .app-main main>aside{grid-column:span 1!important;min-width:0}
+      .app-main #questionContainer{padding:26px!important;min-height:540px}
+      .app-main #qText{font-size:16px;line-height:1.75;max-width:1100px}
+      .app-main #questionsGrid{grid-template-columns:repeat(5,minmax(0,1fr))!important;max-height:400px}
+      .app-main footer{margin-top:auto}
+      .app-shell.sidebar-collapsed .app-sidebar{width:78px;flex-basis:78px;padding-left:9px;padding-right:9px}
+      .app-shell.sidebar-collapsed .app-sidebar-brand{justify-content:center;padding-left:0;padding-right:0}
+      .app-shell.sidebar-collapsed .app-sidebar-mark{width:43px;height:43px;flex-basis:43px}
+      .app-shell.sidebar-collapsed .app-header-title-mark{display:none}
+      .app-shell.sidebar-collapsed .app-sidebar-brand-copy,.app-shell.sidebar-collapsed .app-sidebar-label,.app-shell.sidebar-collapsed .app-sidebar-nav .app-nav-label,.app-shell.sidebar-collapsed .app-sidebar-user-copy{display:none!important}
+      .app-shell.sidebar-collapsed .app-sidebar-collapse{width:36px;height:34px;align-self:center;font-size:13px}
+      .app-shell.sidebar-collapsed .app-sidebar-nav a,.app-shell.sidebar-collapsed .app-sidebar-nav button{justify-content:center;padding:12px 5px}
+      .app-shell.sidebar-collapsed .app-nav-icon{width:auto;flex-basis:auto}
+      .app-shell.sidebar-collapsed .app-sidebar-user{justify-content:center}
+      .app-main .app-top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+      .app-main .app-new-sim{background:#d4af37!important;color:#0b1326!important;border-color:#d4af37!important}
+      .app-main .app-new-sim:hover{background:#b59226!important}
+      .app-main .app-finish-sim{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:#b83232;color:#fff;border:1px solid #e35e5e;border-radius:10px;padding:10px 12px;font-size:12px;font-weight:700;box-shadow:0 5px 15px #0002}
+      .app-main .app-finish-sim:hover{background:#d13c3c}
+      .app-main .app-progress-ring{width:92px;height:92px;position:relative;flex:0 0 92px}
+      .app-main .app-progress-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+      .app-main .app-progress-ring circle{fill:none;stroke-width:9}
+      .app-main .app-progress-ring .track{stroke:#2a3c66}
+      .app-main .app-progress-ring .value{stroke:#d4af37;stroke-linecap:round;stroke-dasharray:251.2;stroke-dashoffset:251.2;transition:stroke-dashoffset .25s ease}
+      .app-main .app-progress-ring-label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+      @media(max-width:1100px){
+        .app-sidebar{width:210px;flex-basis:210px}
+        .app-main main{grid-template-columns:minmax(0,1fr) 245px!important;padding-left:18px!important;padding-right:18px!important}
+        .app-main header .app-header-inner{padding-left:18px!important;padding-right:18px!important}
+      }
+      @media(max-width:850px){
+        .app-sidebar{width:72px;flex-basis:72px;padding:18px 9px}
+        .app-sidebar-brand{justify-content:center;padding:0 0 20px}
+        .app-sidebar-brand-copy,.app-sidebar-label,.app-sidebar-nav .app-nav-label,.app-sidebar-user-copy{display:none!important}
+        .app-sidebar-nav a,.app-sidebar-nav button{justify-content:center;padding:12px 5px}
+        .app-sidebar-nav .app-nav-icon{width:auto;flex-basis:auto}
+        .app-sidebar-collapse{display:flex;width:34px;height:32px}
+        .app-sidebar-user{justify-content:center}
+        .app-main main{grid-template-columns:minmax(0,1fr)!important}
+        .app-main main>aside{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+        .app-main header .app-header-inner{flex-wrap:wrap!important}
+      }
+      @media(max-width:560px){
+        .app-sidebar{width:54px;flex-basis:54px;padding:13px 5px}
+        .app-sidebar-collapse{width:30px;height:30px}
+        .app-main header .app-header-inner{padding:12px!important}
+        .app-main main{padding:14px 10px!important}
+        .app-main main>aside{grid-template-columns:minmax(0,1fr)}
+        .app-main #questionContainer{padding:17px!important}
+        .app-main #qText{text-align:left;font-size:15px}
+      }
+
+    
+      /* Ajuste fiel à proposta visual anexada: paleta, cartões, controles e hierarquia */
+      .app-shell{background:#0b1326;color:#edf2f9}
+      .app-sidebar{background:#071020;border-right-color:#1c2a44}
+      .app-sidebar-brand{border-bottom-color:#1d2b45}
+      .app-main{background:#0b1326}
+      .app-main>header.bg-pm-header{background:#071020!important;border-bottom:1px solid #1d2b45!important;box-shadow:0 8px 24px #00000012!important}
+      .app-main header .app-header-title-mark{background:#18243a;border-color:#8b7126;border-radius:12px}
+      .app-main header .app-header-title h1{color:#d4af37}
+      .app-main header .app-header-title h2{color:#fff}
+      .app-main header .app-header-title p{color:#aab6ca}
+      .app-main>nav.bg-pm-lightBg{background:#101c33!important;border-bottom:1px solid #2a3c66!important}
+      .app-main main{background:#0b1326!important}
+      .app-main #questionContainer,.app-main main aside>div.bg-pm-cardBg,.app-main #progressPanel,.app-main #modalPersonalizado>div{
+        background:#14213b!important;border-color:#2a3c66!important;border-radius:15px!important;box-shadow:0 10px 35px #00000012!important
+      }
+      .app-main #questionContainer{padding:25px 27px 20px!important;min-height:540px}
+      .app-main #qText{font-size:19px!important;line-height:1.65!important;letter-spacing:-.012em!important;font-weight:600!important;color:#edf2f9!important;margin-top:23px!important;margin-bottom:22px!important}
+      .app-main #qBadgeNum{background:#d4af37!important;color:#101827!important;border-radius:6px!important}
+      .app-main #qBadgeSubject{background:#21304b!important;color:#c8d5e8!important;border-color:#30415f!important;border-radius:6px!important}
+      .app-main #qOptions>div{min-height:63px;padding:15px 16px!important;border-radius:11px!important;line-height:1.55!important}
+      .app-main #qOptions>div:not([class*="emerald-"]):not([class*="rose-"]){background:#101c33!important;border-color:#30415f!important;color:#dce4f0!important}
+      .app-main #qOptions>div:not([class*="emerald-"]):not([class*="rose-"]):hover{background:#172640!important;border-color:#657ba4!important}
+      .app-main #qOptions>div[class*="blue-"]{background:#282d37!important;border-color:#d4af37!important;color:#fff!important}
+      .app-main #studyExplanation{background:#102d2d!important;border-color:#315a56!important;border-radius:10px!important;color:#ccebe2!important}
+      .app-main #qMarkFlag{border-radius:8px!important;padding:7px 10px!important}
+      .app-main #btnPrev{background:#15233d!important;border-radius:9px!important}
+      .app-main #btnNext{background:#d4af37!important;border-color:#d4af37!important;color:#101827!important;border-radius:9px!important}
+      .app-main #btnNext:hover{background:#f0cf62!important}
+      .app-main #progressPanel,.app-main main aside>div.bg-pm-cardBg{padding:18px!important}
+      .app-main #progressPanel h3,.app-main main aside h3{color:#c8d5e8!important}
+      .app-main #progressPanel .bg-pm-navy,.app-main main aside .bg-pm-navy{background:#101c33!important;border-color:#2a3c66!important}
+      .app-main #progBar{background:#d4af37!important}
+      .app-main #questionsGrid button{border-radius:7px!important;min-height:32px}
+      .app-main .app-customize-sim{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:10px 14px;min-height:40px;border:1px solid #2a3c66;border-radius:9px;background:#15233d;color:#edf2f9;font-size:12px;font-weight:700;white-space:nowrap;transition:background .15s,border-color .15s,color .15s}
+      .app-main .app-customize-sim:hover{border-color:#657ba4;background:#1b2a47;color:#fff}
+      .app-main .app-customize-sim i{color:#d4af37}
+      .app-main .app-new-sim{border-radius:9px!important;padding:10px 14px!important;min-height:40px;box-shadow:none!important}
+      .app-main #modalPersonalizado>div{background:#14213b!important;border-color:#2a3c66!important}
+      .app-main #modalPersonalizado>div>div:first-child{border-bottom-color:#2a3c66!important}
+      .app-main #modalPersonalizado h3{color:#d4af37!important}
+      .app-main #modalPersonalizado select,.app-main #modalPersonalizado input{background:#101c33!important;border-color:#2a3c66!important;border-radius:9px!important}
+      .app-main footer{background:#071020!important;border-top-color:#1d2b45!important}
+      @media(max-width:850px){
+        .app-main #questionContainer{padding:21px!important}
+        .app-main #qText{font-size:17px!important}
+        .app-main .app-customize-sim{padding:9px 11px;font-size:11px}
+      }
+      @media(max-width:560px){
+        .app-main #questionContainer{padding:18px!important}
+        .app-main #qText{font-size:16px!important;line-height:1.6!important}
+        .app-main .app-customize-sim span{display:inline}
+        .app-main .app-customize-sim{gap:6px;padding:9px 10px}
+        .app-main .app-new-sim{padding:9px 10px!important}
+      }
+
+    
+      /* Identidade da Plataforma CAO e distribuição de ações conforme a referência */
+      .app-platform-logo{display:grid;place-items:center;padding:7px}
+      .app-platform-logo svg{display:block;width:100%;height:100%;max-width:46px;max-height:34px}
+      .app-sidebar-mark.app-platform-logo{width:43px;height:43px;flex:0 0 43px;border:1px solid rgba(234,191,58,.55);background:linear-gradient(145deg,#142642,#09162a);border-radius:12px;color:transparent;font-size:0}
+      .app-header-title-mark.app-platform-logo{width:42px;height:42px;flex:0 0 42px;border:1px solid rgba(234,191,58,.55);background:linear-gradient(145deg,#142642,#09162a);border-radius:12px}
+      .app-sidebar-nav .app-nav-active{color:#f5d46a;background:linear-gradient(100deg,rgba(234,191,58,.14),rgba(234,191,58,.035));border:1px solid rgba(234,191,58,.25);box-shadow:inset 3px 0 #eabf3a}
+      .app-sidebar-nav a,.app-sidebar-nav button{border:1px solid transparent;border-radius:12px}
+      .app-sidebar-nav a:hover,.app-sidebar-nav button:hover{background:#12213a;color:#fff}
+      .app-sidebar-label{color:#687a94!important;font-weight:900!important;letter-spacing:.15em!important}
+      .app-main header .app-header-inner{background:rgba(7,19,38,.9)}
+      .app-main>header.bg-pm-header{background:rgba(7,19,38,.94)!important;border-bottom:1px solid rgba(255,255,255,.06)!important}
+      .app-main header .app-header-title h1{color:#eabf3a!important}
+      .app-main .app-top-actions{gap:10px}
+      .app-main .app-top-actions .app-new-sim,.app-main .app-top-actions .app-customize-sim{display:none!important}
+      .app-content-actions{grid-column:1/-1;display:flex;justify-content:flex-end;align-items:center;min-height:0;margin-bottom:-10px}
+      .app-content-actions .app-new-sim{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:10px 16px;min-height:40px;background:#eabf3a;color:#071326;border:1px solid #eabf3a;border-radius:10px;font-size:12px;font-weight:800;box-shadow:0 5px 16px #0002;transition:background .15s}
+      .app-content-actions .app-new-sim:hover{background:#f5d46a}
+      .app-sidebar .app-sidebar-nav button[title="Personalizar sessão"] .app-nav-icon{color:#eabf3a}
+      @media(max-width:850px){.app-content-actions{margin-bottom:0}.app-content-actions .app-new-sim{min-height:38px}}
+
+    
+      /* Refinamento da composição: cabeçalho persistente, ação acima dos filtros e botão finalizar dourado */
+      .app-main>header.bg-pm-header{position:sticky!important;top:0!important;z-index:1000!important;align-self:stretch!important;width:100%;flex-shrink:0;background:#071020!important;border-bottom:0!important;box-shadow:none!important}
+      .app-main .app-content-actions{display:flex;justify-content:flex-end;align-items:center;padding:16px 28px 4px;margin:0;background:#0b1326;border:0!important;box-shadow:none!important}
+      .app-main .app-content-actions .app-new-sim{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:38px;padding:9px 14px;background:#d4af37;color:#101827;border:1px solid #d4af37;border-radius:9px;font-size:12px;font-weight:800;box-shadow:none;white-space:nowrap}
+      .app-main .app-content-actions .app-new-sim:hover{background:#f0cf62;border-color:#f0cf62}
+      .app-main>nav.bg-pm-lightBg{background:#0b1326!important;border:0!important;padding-top:4px!important;padding-bottom:12px!important}
+      .app-main>nav.bg-pm-lightBg .app-filter-inner{padding-top:0!important}
+      .app-main .app-finish-sim{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:38px;padding:9px 12px;background:#d4af37!important;color:#101827!important;border:1px solid #d4af37!important;border-radius:9px!important;font-size:12px!important;font-weight:800!important;line-height:1.3;box-shadow:none!important;white-space:nowrap}
+      .app-main .app-finish-sim:hover{background:#f0cf62!important;border-color:#f0cf62!important}
+      @media(max-width:850px){.app-main .app-content-actions{padding:12px 16px 4px}.app-main .app-content-actions .app-new-sim{min-height:36px}.app-main>nav.bg-pm-lightBg{padding-left:16px!important;padding-right:16px!important}}
+
+    
+      /* Correções de comportamento: cabeçalho fixo, sobreposição de modais e navegação responsiva */
+      :root{--acp-sidebar-expanded:244px;--acp-sidebar-collapsed:78px}
+      .app-shell{position:relative;overflow:visible}
+      .app-sidebar{z-index:60}
+      .app-main{padding-top:72px!important;min-width:0;overflow:visible}
+      .app-main>header.bg-pm-header{
+        position:fixed!important;top:0!important;left:var(--acp-sidebar-expanded)!important;right:0!important;
+        width:auto!important;height:72px!important;min-height:72px!important;z-index:40!important;
+        display:flex!important;align-items:center!important;box-sizing:border-box!important;
+        background:#071020!important;border-bottom:1px solid #1d2b45!important;box-shadow:none!important;
+      }
+      .app-main>header.bg-pm-header .app-header-inner{width:100%;min-height:72px!important;height:72px!important;box-sizing:border-box!important}
+      .app-shell.sidebar-collapsed .app-main>header.bg-pm-header{left:var(--acp-sidebar-collapsed)!important}
+      #authGuard{z-index:99999!important}
+      .app-main .fixed.inset-0,.app-main [role="dialog"],.app-main .modal,.app-main .modal-overlay{z-index:1200!important}
+      .app-main .app-content-actions{width:100%;max-width:100%;min-width:0;box-sizing:border-box;flex-wrap:wrap;overflow:visible}
+      .app-main .app-content-actions .app-new-sim{max-width:100%;min-width:0;flex:0 1 auto;white-space:nowrap;overflow:visible}
+      .app-main .app-content-actions .app-new-sim span{display:inline}
+      @media(max-width:850px){
+        .app-sidebar{width:210px;flex-basis:210px;padding:16px 10px}
+        .app-sidebar-brand{justify-content:flex-start;padding:0 4px 16px}
+        .app-sidebar-brand-copy,.app-sidebar-label,.app-sidebar-nav .app-nav-label,.app-sidebar-user-copy{display:initial!important}
+        .app-sidebar-label{display:block!important}
+        .app-sidebar-nav a,.app-sidebar-nav button{justify-content:flex-start;padding:10px 9px;gap:9px}
+        .app-sidebar-nav .app-nav-icon{width:20px;flex-basis:20px}
+        .app-sidebar-collapse{align-self:flex-end}
+        .app-shell.sidebar-collapsed .app-sidebar{width:54px;flex-basis:54px;padding:13px 5px}
+        .app-shell.sidebar-collapsed .app-sidebar-brand{justify-content:center;padding:0 0 15px}
+        .app-shell.sidebar-collapsed .app-sidebar-brand-copy,.app-shell.sidebar-collapsed .app-sidebar-label,.app-shell.sidebar-collapsed .app-sidebar-nav .app-nav-label,.app-shell.sidebar-collapsed .app-sidebar-user-copy{display:none!important}
+        .app-shell.sidebar-collapsed .app-sidebar-nav a,.app-shell.sidebar-collapsed .app-sidebar-nav button{justify-content:center;padding:11px 3px}
+        .app-shell.sidebar-collapsed .app-sidebar-nav .app-nav-icon{width:auto;flex-basis:auto}
+        .app-main>header.bg-pm-header{left:210px!important;right:0!important;height:72px!important;min-height:72px!important}
+        .app-shell.sidebar-collapsed .app-main>header.bg-pm-header{left:54px!important}
+        .app-main{padding-top:72px!important}
+        .app-main header .app-header-inner{flex-wrap:nowrap!important;gap:8px!important;padding:8px 12px!important}
+        .app-main .app-header-title-mark{display:none!important}
+        .app-main .app-header-title h2{font-size:13px!important}
+        .app-main .app-header-title p{display:none!important}
+        .app-main .app-top-actions{flex-wrap:nowrap!important;gap:6px!important}
+        .app-main .app-top-actions #timerDisplay{font-size:14px!important}
+        .app-main .app-top-actions>div{padding:6px 8px!important}
+        .app-main .app-content-actions{padding:10px 12px 4px!important}
+        .app-main>nav.bg-pm-lightBg{padding-left:12px!important;padding-right:12px!important}
+      }
+      @media(max-width:560px){
+        .app-sidebar{width:174px;flex-basis:174px;padding:12px 8px}
+        .app-sidebar-brand-copy strong{font-size:9px!important;letter-spacing:.04em!important}
+        .app-sidebar-brand-copy small{font-size:9px!important}
+        .app-sidebar-label{font-size:8px!important;margin:16px 4px 7px!important;letter-spacing:.07em!important}
+        .app-sidebar-nav a,.app-sidebar-nav button{font-size:11px!important;padding:9px 5px!important;gap:6px!important}
+        .app-sidebar-nav .app-nav-icon{font-size:13px!important;width:17px;flex-basis:17px}
+        .app-shell.sidebar-collapsed .app-sidebar{width:48px;flex-basis:48px;padding:12px 4px}
+        .app-main>header.bg-pm-header{left:174px!important;height:66px!important;min-height:66px!important}
+        .app-shell.sidebar-collapsed .app-main>header.bg-pm-header{left:48px!important}
+        .app-main{padding-top:66px!important}
+        .app-main header .app-header-inner{height:66px!important;min-height:66px!important;padding:6px 8px!important}
+        .app-main .app-header-title h1{font-size:9px!important;letter-spacing:.08em!important}
+        .app-main .app-header-title h2{font-size:11px!important;white-space:normal!important}
+        .app-main .app-top-actions{gap:4px!important}
+        .app-main .app-top-actions>div{padding:5px 6px!important}
+        .app-main .app-top-actions #timerDisplay{font-size:11px!important;gap:4px!important}
+        .app-main .app-top-actions #toggleTimerBtn{padding:4px!important;font-size:10px!important}
+        .app-main .app-content-actions{padding:10px 10px 4px!important;justify-content:flex-end}
+        .app-main .app-content-actions .app-new-sim{min-height:36px;padding:8px 10px!important;font-size:11px!important;flex-shrink:0}
+        .app-main .app-content-actions .app-new-sim span{display:inline!important}
+      }
+
+    
+      /* Mobile: reserva espaço real para o cabeçalho fixo e mantém Novo Simulado totalmente visível */
+      @media(max-width:850px){
+        .app-main{padding-top:96px!important}
+        .app-main>header.bg-pm-header{height:96px!important;min-height:96px!important;overflow:visible!important}
+        .app-main>header.bg-pm-header .app-header-inner{height:96px!important;min-height:96px!important;max-height:96px!important;overflow:visible!important}
+        .app-main .app-content-actions{position:relative!important;z-index:45!important;display:flex!important;min-height:52px!important;height:auto!important;padding:8px 12px!important;margin:0!important;background:#0b1326!important;overflow:visible!important;visibility:visible!important;opacity:1!important}
+        .app-main .app-content-actions .app-new-sim{position:relative!important;display:inline-flex!important;visibility:visible!important;opacity:1!important;height:38px!important;min-height:38px!important;max-height:38px!important;line-height:1.2!important;padding:8px 12px!important;overflow:visible!important;clip:auto!important;transform:none!important}
+      }
+      @media(max-width:560px){
+        .app-main{padding-top:104px!important}
+        .app-main>header.bg-pm-header{height:104px!important;min-height:104px!important}
+        .app-main>header.bg-pm-header .app-header-inner{height:104px!important;min-height:104px!important;max-height:104px!important;align-items:center!important}
+        .app-main .app-content-actions{min-height:52px!important;padding:8px 10px!important;justify-content:flex-end!important}
+        .app-main .app-content-actions .app-new-sim{height:38px!important;min-height:38px!important;max-height:38px!important;max-width:100%!important;white-space:nowrap!important;font-size:11px!important}
+        .app-main>nav.bg-pm-lightBg{position:relative!important;z-index:1!important}
+      }
+
+    </style>
+
+    <link rel="stylesheet" href="bancoQuestoesCAO.mobile.css?v=1">
+</head>
+<body class="h-full flex flex-col bg-pm-navy text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
+    <div id="authGuard" role="status" aria-live="polite">
+      <div class="auth-guard-card">
+        <h2 style="font-size:1.25rem;font-weight:800;color:#d4af37;margin:0 0 10px">Verificando acesso</h2>
+        <p style="margin:0">Aguarde enquanto confirmamos sua autenticação.</p>
+      </div>
+    </div>
+    <script id="auth-guard-timeout">
+      // Fallback independente: informa falhas de carregamento de módulos sem liberar o conteúdo protegido.
+      window.setTimeout(() => {
+        const guard = document.getElementById('authGuard');
+        if (guard && document.body.contains(guard) && guard.querySelector('h2')?.textContent === 'Verificando acesso') {
+          guard.innerHTML = '<div class="auth-guard-card"><h2 style="font-size:1.25rem;font-weight:800;color:#d4af37;margin:0 0 10px">Não foi possível carregar a plataforma</h2><p style="margin:0 0 18px">A verificação de acesso não foi concluída. Atualize a página; se o problema persistir, informe o erro do Console ao suporte.</p><a href="index.html" style="display:inline-block;padding:11px 18px;border-radius:9px;background:#d4af37;color:#0b1326;font-weight:800;text-decoration:none">Voltar ao login</a></div>';
+        }
+      }, 12000);
+    </script>
+
+
+    <!-- Banco de questões ACP: página independente do seletor de cursos. -->
+    <!-- Modal de Instruções Iniciais (Pop-up) -->
+    <div id="modalInstrucoes" class="fixed inset-0 z-[100] flex items-start sm:items-center justify-center bg-black/70 backdrop-blur-sm hidden overflow-y-auto overscroll-contain p-3 sm:p-6">
+        <div class="bg-pm-cardBg border border-pm-gold/50 rounded-2xl max-w-2xl w-full max-h-[calc(100dvh-1.5rem)] sm:max-h-[calc(100dvh-3rem)] flex flex-col shadow-2xl text-slate-100 relative my-auto overflow-hidden">
+            <div class="flex items-center gap-3 border-b border-pm-border p-4 sm:px-6 sm:py-5 flex-shrink-0">
+                <div class="w-10 h-10 rounded-full bg-pm-gold/10 border border-pm-gold flex items-center justify-center text-pm-gold flex-shrink-0">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="min-w-0">
+                    <h3 class="text-base sm:text-lg font-black text-pm-gold uppercase tracking-wider">Bem-vindo ao Simulado ACP II/26</h3>
+                    <p class="text-xs text-slate-400">Instruções rápidas de utilização</p>
+                </div>
+            </div>
+
+            <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-slate-300 p-4 sm:px-6 sm:py-5 leading-relaxed overflow-y-auto overscroll-contain flex-1">
+                <section>
+                    <p class="font-bold text-white mb-1">🎯 1. OBJETIVO</p>
+                    <p>Treinar para a ACP II/26 — Capitão PM, identificar dificuldades e revisar os conteúdos estudados.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">📝 2. NOVO SIMULADO</p>
+                    <p>Ao iniciar um novo simulado, o cronômetro e as respostas são reiniciados, ocorrendo o sorteio de 50 questões divididas em 50% de Operacional, 30% de Jurídico-Administrativo e 20% de Organizacional. Caso queira atualizar as questões, evite atualizar o navegador e utilize o botão <strong class="text-white">Novo Simulado</strong></p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">⚙️ 3. MODOS DE UTILIZAÇÃO</p>
+                    <p><strong class="text-white">Modo Prova:</strong> permite alterar respostas até finalizar e não mostra acertos ou erros durante a execução. <strong class="text-white">Modo Estudo:</strong> corrige imediatamente e exibe a fundamentação. <strong class="text-white">Modo Personalizado:</strong> funciona exclusivamente como o Modo Estudo; escolha uma única área de conhecimento e a quantidade de questões. Não há cronômetro nessa modalidade. Para simular uma prova real, permaneça no Modo Prova.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">📚 4. RESPONDER E REVISAR</p>
+                    <p>No Modo Estudo, a primeira resposta fica bloqueada, mesmo se você voltar ao Modo Prova. Use <strong class="text-white">Marcar para Revisar</strong> para sinalizar dúvidas e o <strong class="text-white">Cartão de Respostas</strong> para acessar questões diretamente.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">🔎 5. FILTROS E ACOMPANHAMENTO</p>
+                    <p>Use os filtros para navegar por matéria. O painel de progresso fica disponível no Modo Estudo; no Modo Prova, o desempenho não é exibido durante a execução.</p>
+                </section>
+                <section>
+                    <p class="font-bold text-white mb-1">🏁 6. FINALIZAR</p>
+                    <p>Ao finalizar, o cronômetro para e o resultado é apresentado. Questões não respondidas não pontuam. Confira o enunciado e as alternativas antes de responder.</p>
+                </section>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-pm-border p-4 sm:px-6 sm:py-4 flex-shrink-0 bg-pm-cardBg">
+                <label class="flex items-center gap-2 text-xs text-slate-400 cursor-pointer select-none">
+                    <input type="checkbox" id="checkNaoMostrar" class="rounded border-pm-border bg-pm-navy text-pm-gold focus:ring-pm-gold w-4 h-4">
+                    <span>Não exibir esta mensagem novamente</span>
+                </label>
+                <button onclick="fecharModalInstrucoes()" class="w-full sm:w-auto px-5 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl text-xs sm:text-sm transition shadow">Entendido, Iniciar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal de configuração da sessão personalizada -->
+    <div id="modalPersonalizado" class="fixed inset-0 z-[105] hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modalPersonalizadoTitulo">
+        <div class="w-full max-w-lg overflow-hidden rounded-2xl border border-pm-gold/50 bg-pm-cardBg text-slate-100 shadow-2xl">
+            <div class="flex items-center gap-3 border-b border-pm-border px-5 py-4">
+                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-pm-gold/50 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-sliders"></i></div>
+                <div><h3 id="modalPersonalizadoTitulo" class="text-base font-extrabold text-pm-gold">Sessão Personalizada</h3><p class="text-xs text-slate-400">Escolha a área, o tema e a quantidade de questões</p></div>
+            </div>
+            <div class="space-y-4 px-5 py-5">
+                <p class="text-sm leading-relaxed text-slate-300">A sessão funciona exclusivamente no <strong class="text-white">Modo Estudo</strong>, com correção imediata e fundamentação. Não há cronômetro e as provas oficiais não serão alteradas.</p>
+                <div><label for="personalizadoArea" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-300">Área de estudo</label>
+                    <select id="personalizadoArea" class="w-full rounded-xl border border-pm-border bg-pm-navy px-3 py-3 text-sm text-white outline-none focus:border-pm-gold">
+                        <option value="OPERACIONAL">Assuntos Operacionais</option>
+                        <option value="JURIDICO">Assuntos Jurídico-Administrativos</option>
+                        <option value="ORGANIZACIONAL">Assuntos Organizacionais</option>
+                    </select>
+                </div>
+                <div><label for="personalizadoTema" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-300">Tema (TAG)</label>
+                    <select id="personalizadoTema" class="w-full rounded-xl border border-pm-border bg-pm-navy px-3 py-3 text-sm text-white outline-none focus:border-pm-gold">
+                        <option value="ALL">Todos os temas da área</option>
+                    </select>
+                    <p id="personalizadoTemaInfo" class="mt-1.5 text-xs text-slate-400">Selecione um tema para filtrar as questões pela TAG oficial.</p>
+                </div>
+                <div><label for="personalizadoQuantidade" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-300">Quantidade de questões</label>
+                    <input id="personalizadoQuantidade" type="number" min="1" step="1" value="10" class="w-full rounded-xl border border-pm-border bg-pm-navy px-3 py-3 text-sm text-white outline-none focus:border-pm-gold">
+                    <p id="personalizadoDisponiveis" class="mt-1.5 text-xs text-slate-400">A quantidade será validada conforme o banco da área escolhida.</p>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse gap-2 border-t border-pm-border bg-pm-navy/40 px-5 py-4 sm:flex-row sm:justify-end">
+                <button type="button" onclick="fecharModalPersonalizado()" class="rounded-lg border border-pm-border px-4 py-2.5 text-sm font-semibold text-slate-300 transition hover:bg-pm-border hover:text-white">Cancelar</button>
+                <button type="button" onclick="iniciarSessaoPersonalizada()" class="rounded-lg bg-pm-gold px-4 py-2.5 text-sm font-bold text-pm-navy shadow transition hover:bg-pm-goldHover"><i class="fa-solid fa-play mr-1.5"></i> Iniciar sessão</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal personalizado de confirmação -->
+    <div id="modalConfirmacao" class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modalConfirmacaoTitulo" aria-describedby="modalConfirmacaoMensagem">
+        <div class="w-full max-w-md overflow-hidden rounded-2xl border border-pm-gold/50 bg-pm-cardBg text-slate-100 shadow-2xl">
+            <div class="flex items-center gap-3 border-b border-pm-border px-5 py-4">
+                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-pm-gold/50 bg-pm-gold/10 text-pm-gold">
+                    <i id="modalConfirmacaoIcone" class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <h3 id="modalConfirmacaoTitulo" class="text-base font-extrabold text-pm-gold">Confirmar ação</h3>
+            </div>
+            <div class="px-5 py-5">
+                <p id="modalConfirmacaoMensagem" class="text-sm leading-relaxed text-slate-300"></p>
+            </div>
+            <div class="flex justify-end gap-3 border-t border-pm-border bg-pm-navy/40 px-5 py-4">
+                <button id="modalConfirmacaoCancelar" type="button" class="rounded-lg border border-pm-border px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-pm-border hover:text-white">Cancelar</button>
+                <button id="modalConfirmacaoAceitar" type="button" class="rounded-lg bg-pm-gold px-4 py-2 text-sm font-bold text-pm-navy shadow transition hover:bg-pm-goldHover">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-shell" id="appShell">
+      <div class="app-mobile-backdrop" id="appMobileBackdrop" aria-hidden="true"></div>
+      <aside class="app-sidebar" aria-label="Menu principal">
+        <div class="app-sidebar-brand">
+          <div class="app-sidebar-mark app-platform-logo" aria-label="Logotipo da Plataforma de Aperfeiçoamento"><svg viewBox="0 0 76 54" fill="none" role="img" aria-hidden="true"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div class="app-sidebar-brand-copy"><strong>PLATAFORMA DE</strong><strong>APERFEIÇOAMENTO</strong><small>Ambiente de estudos</small></div>
+        </div>
+        <button type="button" class="app-sidebar-collapse" id="appSidebarCollapse" aria-label="Recolher menu" title="Recolher menu"><i class="fa-solid fa-angles-left" aria-hidden="true"></i></button>
+        <div class="app-sidebar-label">AMBIENTE DE ESTUDOS</div>
+        <nav class="app-sidebar-nav">
+          <a href="bancoQuestoesCAO.html?curso=CAO" class="app-nav-active" title="Banco de questões"><span class="app-nav-icon"><i class="fa-solid fa-grip" aria-hidden="true"></i></span><span class="app-nav-label">Banco de questões</span></a>
+          <button type="button" onclick="voltarSelecaoCursos()" title="Cursos"><span class="app-nav-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><span class="app-nav-label">Cursos</span></button>
+          <button type="button" onclick="abrirModalPersonalizado()" title="Personalizar sessão"><span class="app-nav-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></span><span class="app-nav-label">Personalizar sessão</span></button>
+        </nav>
+        <div class="app-sidebar-label">CONTA</div>
+        <nav class="app-sidebar-nav">
+          <a href="perfil-usuario.html" title="Meu perfil"><span class="app-nav-icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span><span class="app-nav-label">Meu perfil</span></a>
+        </nav>
+        <div class="app-sidebar-bottom">
+          <div class="app-sidebar-user">
+            <div class="app-sidebar-avatar">ACP</div>
+            <div class="app-sidebar-user-copy"><strong>Área do aluno</strong><small>ACP II/26</small></div>
+          </div>
+        </div>
+      </aside>
+      <div class="app-main">
+    <!-- Cabeçalho Principal -->
+    <header class="bg-pm-header border-b border-pm-gold/30 shadow-lg sticky top-0 z-50">
+        <div class="app-header-inner max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <button type="button" id="mobileMenuToggle" class="app-mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" title="Abrir menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+            <div class="app-header-title">
+                <div class="app-header-title-mark app-platform-logo" aria-label="Logotipo da Plataforma de Aperfeiçoamento"><svg viewBox="0 0 76 54" fill="none" role="img" aria-hidden="true"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg></div>
+                <div>
+                    <h1>Banco de Questões</h1>
+                    <h2 id="simuladoTitulo">ACP II/26 - Capitão PM</h2>
+                    <p id="subtituloCurso">Ambiente de preparação para avaliações profissionais</p>
+                </div>
+            </div>
+            <!-- Seletor de cursos e controles do simulado -->
+            <div class="app-top-actions flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                <div class="flex items-center gap-2 bg-pm-navy/80 px-4 py-2 rounded-xl border border-pm-border shadow-inner">
+                    <div id="timerDisplay" class="flex items-center gap-2 font-mono font-bold text-xl text-pm-gold">
+                        <i class="fa-regular fa-clock text-base text-slate-400"></i>
+                        <span>02:30:00</span>
+                    </div>
+                    <button id="toggleTimerBtn" onclick="toggleTimer()" title="Pausar/Continuar Cronômetro" class="text-xs text-slate-300 hover:text-white px-2 py-1 bg-pm-border rounded transition">
+                        <i class="fa-solid fa-pause"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Ação principal acima dos filtros, conforme a referência visual -->
+    <div class="app-content-actions">
+        <button onclick="confirmarNovoSimulado()" title="Limpar tudo e iniciar novo sorteio" class="app-new-sim">
+            <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i><span>Novo Simulado</span>
+        </button>
+    </div>
+    <!-- Barra de Navegação e Filtros -->
+    <nav class="bg-pm-lightBg border-b border-pm-border py-3 px-4">
+        <div class="app-filter-inner max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <!-- Alternador de Modos -->
+            <div class="flex items-center bg-pm-navy rounded-lg p-1 border border-pm-border">
+                <button id="btnModeExam" onclick="setMode('exam')" class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow">
+                    <i class="fa-solid fa-file-pen mr-1.5"></i> Modo Prova
+                </button>
+                <button id="btnModeStudy" onclick="setMode('study')" class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200">
+                    <i class="fa-solid fa-graduation-cap mr-1.5"></i> Modo Estudo
+                </button>
+            </div>
+
+            <!-- Filtros de Matéria Dinâmicos -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 custom-scrollbar max-w-full">
+                <span class="text-xs font-semibold text-slate-400 whitespace-nowrap"><i class="fa-solid fa-filter mr-1"></i>Filtrar:</span>
+                <button onclick="setSubjectFilter('ALL')" id="filterALL" class="px-3 py-1 text-xs rounded-full border border-pm-gold text-pm-gold font-medium bg-pm-gold/10 whitespace-nowrap">Todas (<span id="cntAll">0</span>)</button>
+                <button onclick="setSubjectFilter('OPERACIONAL')" id="filterOPERACIONAL" class="px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap">Operacional (<span id="cntOp">0</span>)</button>
+                <button onclick="setSubjectFilter('ORGANIZACIONAL')" id="filterORGANIZACIONAL" class="px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap">Organizacional (<span id="cntOrg">0</span>)</button>
+                <button onclick="setSubjectFilter('JURIDICO')" id="filterJURIDICO" class="px-3 py-1 text-xs rounded-full border border-pm-border text-slate-300 hover:border-pm-gold/50 whitespace-nowrap">Jurídico-Admin (<span id="cntJur">0</span>)</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+        <!-- Área de Exibição de Questões e Resultados -->
+        <section class="lg:col-span-3 flex flex-col gap-4">
+
+            <!-- Card da Questão Ativa -->
+            <div id="questionContainer" class="bg-pm-cardBg border border-pm-border rounded-xl shadow-xl p-5 sm:p-7 flex flex-col justify-between min-h-[500px]">
+                <div>
+                    <!-- Cabeçalho da Questão -->
+                    <div class="flex flex-wrap items-center justify-between border-b border-pm-border/60 pb-3 mb-4 gap-2">
+                        <div class="flex items-center gap-2">
+                            <span id="qBadgeNum" class="bg-pm-gold text-pm-navy font-black text-sm px-3 py-1 rounded-md shadow-sm">
+                                Questão 1
+                            </span>
+                            <span id="qBadgeSubject" class="bg-pm-accent/60 text-blue-200 border border-blue-400/30 text-xs px-2.5 py-1 rounded-md font-medium">
+                                Assuntos Operacionais
+                            </span>
+                        </div>
+                        
+                        <!-- Botão Marcar para Revisar -->
+                        <button id="qMarkFlag" onclick="toggleFlagCurrentQuestion()" class="text-xs text-slate-400 hover:text-amber-400 transition flex items-center gap-1.5 px-3 py-1 rounded border border-pm-border bg-pm-navy/50">
+                            <i class="fa-regular fa-bookmark"></i> <span>Marcar para Revisar</span>
+                        </button>
+                    </div>
+
+                    <!-- Texto do Enunciado -->
+                    <div id="qText" class="text-slate-100 text-sm sm:text-base leading-relaxed font-normal mb-6 text-justify">
+                        Carregando questões do simulado...
+                    </div>
+
+                    <!-- Lista de Alternativas -->
+                    <div id="qOptions" class="space-y-3 mb-6"></div>
+
+                    <!-- Box de Fundamentação (Modo Estudo) -->
+                    <div id="studyExplanation" class="hidden mt-6 p-4 rounded-xl border border-blue-500/30 bg-slate-900/90 text-sm leading-relaxed">
+                        <div class="flex items-center gap-2 font-bold text-pm-gold mb-2">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                            <span>Fundamentação e Justificativa Oficial:</span>
+                        </div>
+                        <div id="studyExplanationText" class="text-slate-300 text-xs sm:text-sm leading-relaxed"></div>
+                    </div>
+                    <section id="collectiveStatsPanel" class="hidden mt-5 rounded-xl border border-pm-gold/40 bg-slate-950/60 p-4 sm:p-5" aria-live="polite">
+                        <div class="flex items-start justify-between gap-3 mb-4">
+                            <div>
+                                <h3 class="text-sm sm:text-base font-bold text-slate-100">Como os outros participantes responderam?</h3>
+                                <p class="text-xs sm:text-sm text-slate-400 mt-1">Resultados coletivos desta questão no Modo Estudo.</p>
+                            </div>
+                            <span class="shrink-0 rounded-full border border-pm-gold/40 px-2.5 py-1 text-[10px] font-semibold text-pm-gold">Coletivo</span>
+                        </div>
+                        <div class="mb-5 rounded-lg border border-pm-border bg-pm-navy/80 p-3">
+                            <div class="text-xs text-slate-400">Participantes</div>
+                            <div id="collectiveParticipants" class="text-2xl font-extrabold text-pm-gold mt-1">—</div>
+                            <div class="text-xs text-slate-500 mt-1">Pessoas que já responderam a esta questão</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex items-center justify-between gap-3 mb-2"><span class="text-sm text-slate-200">Acertos</span><strong id="collectiveCorrectPercent" class="text-sm text-emerald-400">—</strong></div>
+                                <div class="h-2.5 rounded-full bg-slate-800 overflow-hidden"><div id="collectiveCorrectBar" class="h-full rounded-full bg-emerald-400 transition-all duration-300" style="width:0%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between gap-3 mb-2"><span class="text-sm text-slate-200">Erros</span><strong id="collectiveIncorrectPercent" class="text-sm text-rose-400">—</strong></div>
+                                <div class="h-2.5 rounded-full bg-slate-800 overflow-hidden"><div id="collectiveIncorrectBar" class="h-full rounded-full bg-rose-400 transition-all duration-300" style="width:0%"></div></div>
+                            </div>
+                        </div>
+                        <p id="collectiveStatsMessage" class="text-xs text-slate-500 mt-4">Carregando estatísticas coletivas…</p>
+                    </section>
+                </div>
+
+                <!-- Rodapé de Navegação (Salva ao avançar/voltar) -->
+                <div class="flex flex-wrap items-center justify-between border-t border-pm-border/60 pt-4 mt-6 gap-3">
+                    <button id="btnPrev" onclick="navigateQuestion(-1)" class="px-4 py-2 bg-pm-navy border border-pm-border hover:border-pm-gold text-slate-200 rounded-lg text-xs sm:text-sm font-semibold transition flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-left"></i> Anterior
+                    </button>
+
+                    <div class="text-xs text-slate-400 font-mono" id="qCounterSummary">
+                        Respondidas: <span id="countAnswered">0</span>/<span id="totalQuestionsCount">0</span>
+                    </div>
+
+                    <button id="btnNext" onclick="navigateQuestion(1)" class="px-5 py-2 bg-pm-gold hover:bg-pm-goldHover text-pm-navy rounded-lg text-xs sm:text-sm font-bold transition flex items-center gap-2 shadow">
+                        Próxima <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tela de Resultados -->
+            <div id="resultsContainer" class="hidden bg-pm-cardBg border border-pm-gold/40 rounded-xl shadow-2xl p-6 sm:p-8">
+                <div class="text-center pb-6 border-b border-pm-border mb-6">
+                    <div class="inline-flex p-4 rounded-full bg-pm-gold/10 border-2 border-pm-gold mb-3 text-pm-gold text-3xl">
+                        🏆
+                    </div>
+                    <h2 class="text-2xl font-black text-white">Relatório Final de Desempenho</h2>
+                    <p class="text-sm text-slate-300">Avaliação de Competência Profissional ACP II/26 — PMESP</p>
+                </div>
+
+                <!-- Quadro Geral de Pontuação -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-pm-navy p-4 rounded-xl border border-pm-border text-center">
+                        <div class="text-xs text-slate-400 uppercase font-semibold">Pontuação</div>
+                        <div id="resScore" class="text-2xl sm:text-3xl font-black text-pm-gold mt-1">0/0</div>
+                    </div>
+                    <div class="bg-pm-navy p-4 rounded-xl border border-pm-border text-center">
+                        <div class="text-xs text-slate-400 uppercase font-semibold">Aproveitamento</div>
+                        <div id="resPercent" class="text-2xl sm:text-3xl font-black text-blue-400 mt-1">0%</div>
+                    </div>
+                    <div class="bg-pm-navy p-4 rounded-xl border border-pm-border text-center">
+                        <div class="text-xs text-slate-400 uppercase font-semibold">Nota Estimada</div>
+                        <div id="resGrade" class="text-2xl sm:text-3xl font-black text-emerald-400 mt-1">0.0</div>
+                    </div>
+                    <div class="bg-pm-navy p-4 rounded-xl border border-pm-border text-center">
+                        <div class="text-xs text-slate-400 uppercase font-semibold">Tempo Utilizado</div>
+                        <div id="resTime" class="text-xl sm:text-2xl font-black text-slate-200 mt-2 font-mono">00:00</div>
+                    </div>
+                </div>
+
+                <!-- Desempenho por Matéria -->
+                <h3 class="text-sm font-bold text-pm-gold uppercase tracking-wider mb-4 border-l-4 border-pm-gold pl-3">
+                    Desempenho por Área de Conhecimento
+                </h3>
+                <div class="space-y-4 mb-8">
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span>Assuntos Operacionais</span>
+                            <span id="labelOpScore">0/0 (0%)</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden border border-pm-border">
+                            <div id="barOpScore" class="bg-blue-500 h-full w-0 transition-all duration-500"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span>Assuntos Organizacionais</span>
+                            <span id="labelOrgScore">0/0 (0%)</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden border border-pm-border">
+                            <div id="barOrgScore" class="bg-emerald-500 h-full w-0 transition-all duration-500"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span>Assuntos Jurídico-Administrativos</span>
+                            <span id="labelJurScore">0/0 (0%)</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden border border-pm-border">
+                            <div id="barJurScore" class="bg-amber-500 h-full w-0 transition-all duration-500"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-4">
+                    <button onclick="confirmarNovoSimulado()" class="px-6 py-2.5 bg-pm-gold hover:bg-pm-goldHover text-pm-navy font-bold rounded-xl transition shadow flex items-center gap-2 text-sm">
+                        <i class="fa-solid fa-rotate-right"></i> Gerar Novo Simulado Aleatório
+                    </button>
+                    <button onclick="reviewExamFromResults()" class="px-6 py-2.5 bg-pm-navy hover:bg-pm-border text-white font-semibold rounded-xl border border-pm-border transition flex items-center gap-2 text-sm">
+                        <i class="fa-solid fa-magnifying-glass"></i> Revisar Respostas
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Barra Lateral: Painel de Controle e Cartão de Respostas -->
+        <aside class="flex flex-col gap-4">
+            <button onclick="finishExam()" class="app-finish-sim" title="Finalizar e apresentar o resultado do simulado">
+                <i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> Finalizar simulado
+            </button>
+
+            <!-- Painel de Progresso: visível no Modo Estudo; oculto no Modo Prova -->
+            <div id="progressPanel" class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg">
+                <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-chart-pie text-pm-gold"></i> Painel de Progresso
+                </h3>
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <div class="app-progress-ring">
+                        <svg viewBox="0 0 100 100" aria-hidden="true">
+                            <circle class="track" cx="50" cy="50" r="40"></circle>
+                            <circle class="value" id="progressRing" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <div class="app-progress-ring-label">
+                            <strong id="progressRingPercent" class="text-xl font-black text-white">0%</strong>
+                            <span class="text-[9px] text-slate-400">concluído</span>
+                        </div>
+                    </div>
+                    <div class="text-xs text-slate-300 leading-relaxed">
+                        <div class="font-bold text-white mb-1">Seu progresso</div>
+                        <div><span id="progressRingAnswered">0</span> de <span id="progressRingTotal">50</span> respondidas</div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-2 text-center text-xs mb-3">
+                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
+                        <div class="text-emerald-400 font-bold text-lg" id="statCorrect">0</div>
+                        <div class="text-[10px] text-slate-400">Acertos</div>
+                    </div>
+                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
+                        <div class="text-rose-400 font-bold text-lg" id="statWrong">0</div>
+                        <div class="text-[10px] text-slate-400">Erros</div>
+                    </div>
+                    <div class="bg-pm-navy p-2 rounded-lg border border-pm-border">
+                        <div class="text-amber-400 font-bold text-lg" id="statPending">0</div>
+                        <div class="text-[10px] text-slate-400">Pendentes</div>
+                    </div>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden border border-pm-border mb-1">
+                    <div id="progBar" class="bg-pm-gold h-full w-0 transition-all duration-300"></div>
+                </div>
+                <div class="text-[11px] text-slate-400 text-right font-mono" id="progPercent">0% concluído</div>
+            </div>
+
+            <!-- Cartão de Respostas Interativo -->
+            <div class="bg-pm-cardBg border border-pm-border rounded-xl p-4 shadow-lg flex-1 flex flex-col">
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-grip text-pm-gold"></i> Cartão de Respostas
+                    </h3>
+                    <span class="text-[10px] bg-pm-navy text-slate-400 px-2 py-0.5 rounded border border-pm-border"><span id="gridTotalSpan">0</span> questões</span>
+                </div>
+
+                <div class="text-[10px] flex items-center justify-between mb-3 text-slate-400 px-1">
+                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-slate-700 inline-block"></span> Pendente</span>
+                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-pm-gold inline-block"></span> Marcada</span>
+                    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-blue-600 inline-block"></span> Respondida</span>
+                </div>
+
+                <!-- Grid de Botões Numéricos -->
+                <div id="questionsGrid" class="grid grid-cols-5 sm:grid-cols-10 lg:grid-cols-5 gap-2 overflow-y-auto max-h-[380px] pr-1 custom-scrollbar"></div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- Rodapé com Créditos -->
+    <footer class="bg-pm-header border-t border-pm-border py-3 px-3 text-center text-xs text-slate-400 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+            <span>Plataforma de Aperfeiçoamento</span>
+            <span class="text-pm-gold font-semibold">Elaborado pelo 1° Ten PM Adriano</span>
+        </div>
+    </footer>
+
+      </div><!-- /.app-main -->
+    </div><!-- /.app-shell -->
+
+    <!-- Script de Lógica Principal -->
+    <script>
+        const TOTAL_QUESTOES = cursoInicial === 'CAO' ? 100 : 50;
+        const TEMPO_PROVA_SEGUNDOS = TOTAL_QUESTOES * 3 * 60;
+        let STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_SIMULADO_CAO_STATE' : 'PMESP_SIMULADO_ACP_STATE';
+        let MODAL_STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_MODAL_INSTRUCOES_VISTO_CAO' : 'PMESP_MODAL_INSTRUCOES_VISTO_ACP';
+
+        let questionsDatabase = [];
+        let sessaoPersonalizadaAtiva = false;
+        let avisoAvancoEstudoExibido = false;
+        const STORAGE_KEY_OFICIAL = STORAGE_KEY;
+
+        let state = {
+            mode: 'exam', 
+            activeFilter: 'ALL', 
+            currentIndex: 0,
+            userAnswers: [],
+            flagged: [],
+            studyLocked: [], // Questões já consultadas/respondidas no Modo Estudo
+            timerSeconds: TEMPO_PROVA_SEGUNDOS,
+            timerEndTime: null,     // Timestamp do término real
+            timerInterval: null,
+            timerPaused: false,
+            examFinished: false,
+            filteredQuestions: []
+        };
+
+        let cursoAtivo = cursoInicial;
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const appShell = document.getElementById('appShell');
+            const sidebarToggle = document.getElementById('appSidebarCollapse');
+            if (appShell && sidebarToggle) {
+                sidebarToggle.addEventListener('click', () => {
+                    const collapsed = appShell.classList.toggle('sidebar-collapsed');
+                    sidebarToggle.innerHTML = collapsed
+                        ? '<i class="fa-solid fa-angles-right" aria-hidden="true"></i>'
+                        : '<i class="fa-solid fa-angles-left" aria-hidden="true"></i>';
+                    sidebarToggle.setAttribute('aria-label', collapsed ? 'Expandir menu' : 'Recolher menu');
+                    sidebarToggle.title = collapsed ? 'Expandir menu' : 'Recolher menu';
+                });
+            }
+            if (!cursoInicial || acessoCAOBloqueado) {
+                window.location.replace('plataforma.html');
+                return;
+            }
+            configurarIdentidadeCurso();
+            verificarModalInstrucoes();
+            carregarOuInicializarSimulado();
+        });
+
+        function entrarNoCurso(curso) {
+            if (curso === 'ACP') {
+                window.location.href = 'plataformaACP.html';
+                return;
+            }
+            if (curso === 'CAO') {
+                abrirModalCAOConstrucao();
+            }
+        }
+
+        function abrirModalCAOConstrucao() {
+            const modal = document.getElementById('modalCAOConstrucao');
+            if (!modal) return;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            const botao = modal.querySelector('button');
+            if (botao) botao.focus();
+        }
+
+        function fecharModalCAOConstrucao() {
+            const modal = document.getElementById('modalCAOConstrucao');
+            if (!modal) return;
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function voltarSelecaoCursos() {
+            if (state.timerInterval) {
+                clearInterval(state.timerInterval);
+                state.timerInterval = null;
+            }
+            if (!state.examFinished && state.timerSeconds > 0) {
+                state.timerPaused = true;
+                state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+                saveStateToLocalStorage();
+            }
+            window.location.href = window.location.pathname;
+        }
+
+        function configurarIdentidadeCurso() {
+            const isCAO = cursoAtivo === 'CAO';
+            const titulo = isCAO ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP II/26 — Capitão PM';
+            document.getElementById('simuladoTitulo').innerText = titulo;
+            const subtituloCurso = document.getElementById('subtituloCurso');
+            if (subtituloCurso) subtituloCurso.innerText = isCAO ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
+            const modalTitulo = document.querySelector('#modalInstrucoes h3');
+            if (modalTitulo) modalTitulo.innerText = isCAO ? 'Bem-vindo ao Simulado CAO' : 'Bem-vindo ao Simulado ACP II/26';
+            const objetivo = document.querySelector('#modalInstrucoes section p:nth-child(2)');
+            if (objetivo) objetivo.innerText = isCAO
+                ? 'Treinar para o Curso de Aperfeiçoamento de Oficiais (CAO), identificar dificuldades e revisar os conteúdos estudados.'
+                : 'Treinar para a ACP II/26 — Capitão PM, identificar dificuldades e revisar os conteúdos estudados.';
+            const instrucoes = document.querySelectorAll('#modalInstrucoes section p:nth-child(2)');
+            if (instrucoes[1]) instrucoes[1].innerHTML = `Ao iniciar um novo simulado, o cronômetro e as respostas são reiniciados, ocorrendo o sorteio de <strong class="text-white">${TOTAL_QUESTOES} questões</strong>. Para gerar outro conjunto, utilize o botão <strong class="text-white">Novo Simulado</strong>.`;
+            const resultadoSubtitulo = document.querySelector('#resultsContainer .text-center p');
+            if (resultadoSubtitulo) resultadoSubtitulo.innerText = isCAO
+                ? 'Curso de Aperfeiçoamento de Oficiais — PMESP'
+                : 'Avaliação de Competência Profissional ACP II/26 — PMESP';
+            document.title = `Plataforma de Aperfeiçoamento | ${isCAO ? 'CAO' : 'ACP II/26'}`;
+        }
+
+        // CONTROLE DO MODAL DE INSTRUÇÕES
+        function verificarModalInstrucoes() {
+            const jaViu = localStorage.getItem(MODAL_STORAGE_KEY);
+            if (!jaViu) {
+                document.getElementById('modalInstrucoes').classList.remove('hidden');
+            }
+        }
+
+        function fecharModalInstrucoes() {
+            const naoMostrarNovamente = document.getElementById('checkNaoMostrar').checked;
+            if (naoMostrarNovamente) {
+                localStorage.setItem(MODAL_STORAGE_KEY, "true");
+            }
+            document.getElementById('modalInstrucoes').classList.add('hidden');
+        }
+
+        // SALVAMENTO PERSISTENTE NO LOCALSTORAGE
+        function saveStateToLocalStorage() {
+            const dataToSave = {
+                questionsDatabase: questionsDatabase,
+                userAnswers: state.userAnswers,
+                flagged: state.flagged,
+                studyLocked: state.studyLocked,
+                timerSeconds: state.timerSeconds,
+                timerEndTime: state.timerEndTime,
+                timerPaused: state.timerPaused,
+                examFinished: state.examFinished,
+                currentIndex: state.currentIndex,
+                mode: state.mode,
+                activeFilter: state.activeFilter,
+                sessaoPersonalizadaAtiva: sessaoPersonalizadaAtiva
+            };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
+        }
+
+        function carregarOuInicializarSimulado() {
+            const savedData = localStorage.getItem(STORAGE_KEY);
+
+            if (savedData) {
+                try {
+                    const parsed = JSON.parse(savedData);
+                    if (parsed.questionsDatabase && parsed.questionsDatabase.length > 0) {
+                        questionsDatabase = parsed.questionsDatabase;
+                        state.userAnswers = parsed.userAnswers || new Array(questionsDatabase.length).fill(null);
+                        state.flagged = parsed.flagged || new Array(questionsDatabase.length).fill(false);
+                        state.studyLocked = parsed.studyLocked || new Array(questionsDatabase.length).fill(false);
+                        state.timerSeconds = parsed.timerSeconds !== undefined ? parsed.timerSeconds : TEMPO_PROVA_SEGUNDOS;
+                        state.timerEndTime = parsed.timerEndTime || null;
+                        state.timerPaused = parsed.timerPaused || false;
+                        state.examFinished = parsed.examFinished || false;
+                        state.currentIndex = parsed.currentIndex || 0;
+                        state.mode = parsed.mode || 'exam';
+                        state.activeFilter = parsed.activeFilter || 'ALL';
+
+                        restaurarInterface();
+                        return;
+                    }
+                } catch (e) {
+                    console.error("Erro ao ler dados do LocalStorage:", e);
+                }
+            }
+
+            gerarEIniciarNovoSimulado();
+        }
+
+        function restaurarInterface() {
+            updateSubjectCounts();
+            updateFilteredQuestions();
+            setMode(state.mode);
+            setSubjectFilter(state.activeFilter, false); 
+            renderQuestionGrid();
+            displayCurrentQuestion();
+
+            if (state.examFinished) {
+                finishExam(false);
+            } else {
+                document.getElementById('resultsContainer').classList.add('hidden');
+                document.getElementById('questionContainer').classList.remove('hidden');
+                startTimer();
+            }
+        }
+
+        function abrirModalConfirmacao({ titulo = "Confirmar ação", mensagem, textoConfirmar = "Confirmar", textoCancelar = "Cancelar", aoConfirmar }) {
+            const modal = document.getElementById('modalConfirmacao');
+            const btnConfirmar = document.getElementById('modalConfirmacaoAceitar');
+            const btnCancelar = document.getElementById('modalConfirmacaoCancelar');
+            document.getElementById('modalConfirmacaoTitulo').innerText = titulo;
+            document.getElementById('modalConfirmacaoMensagem').innerText = mensagem;
+            btnConfirmar.innerText = textoConfirmar;
+            btnCancelar.innerText = textoCancelar;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+
+            const fechar = () => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                btnConfirmar.onclick = null;
+                btnCancelar.onclick = null;
+                document.removeEventListener('keydown', teclaEsc);
+            };
+            const teclaEsc = (event) => {
+                if (event.key === 'Escape') fechar();
+            };
+            btnCancelar.onclick = fechar;
+            btnConfirmar.onclick = () => {
+                fechar();
+                if (typeof aoConfirmar === 'function') aoConfirmar();
+            };
+            document.addEventListener('keydown', teclaEsc);
+            btnConfirmar.focus();
+        }
+
+        function confirmarNovoSimulado() {
+            abrirModalConfirmacao({
+                titulo: "Iniciar novo simulado?",
+                mensagem: "Todas as respostas salvas e o tempo atual serão zerados, e um novo conjunto de questões será sorteado. Deseja continuar?",
+                textoConfirmar: "Iniciar novo",
+                aoConfirmar: () => {
+                    localStorage.removeItem(STORAGE_KEY);
+                    gerarEIniciarNovoSimulado();
+                }
+            });
+        }
+
+        // HISTÓRICO DE USO DAS QUESTÕES: evita repetição por 3 dias (72 horas).
+        const QUESTION_HISTORY_KEY = cursoAtivo === 'CAO'
+            ? 'PMESP_SIMULADO_CAO_QUESTION_HISTORY'
+            : 'PMESP_SIMULADO_ACP_QUESTION_HISTORY';
+        const QUESTION_HISTORY_WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
+
+        function chaveEstavelQuestao(q) {
+            // Chave compacta: matéria + ID estável; não replica o enunciado no histórico.
+            const id = q?.id !== undefined && q.id !== null && String(q.id).trim() ? q.id : q?.idSimulado;
+            if (id === undefined || id === null || !String(id).trim()) return "";
+            return String(q?.subject || "GERAL").trim() + "::" + String(id).trim();
+        }
+
+        function carregarHistoricoQuestoes() {
+            try {
+                const raw = localStorage.getItem(QUESTION_HISTORY_KEY);
+                const parsed = raw ? JSON.parse(raw) : [];
+                if (!Array.isArray(parsed)) return [];
+                const corte = Date.now() - QUESTION_HISTORY_WINDOW_MS;
+                const compactado = new Map();
+                parsed.forEach(item => {
+                    if (!item || typeof item.key !== "string" || !Number.isFinite(Number(item.usedAt)) || Number(item.usedAt) < corte) return;
+                    const partes = item.key.split("::");
+                    const key = partes.length >= 2 && partes[0] && partes[1] ? partes[0] + "::" + partes[1] : item.key;
+                    const anterior = compactado.get(key);
+                    if (!anterior || Number(anterior.usedAt) < Number(item.usedAt)) compactado.set(key, { key, usedAt: Number(item.usedAt) });
+                });
+                const historico = [...compactado.values()];
+                // Persiste a migração do formato antigo (com enunciado) para o formato compacto.
+                if (raw !== JSON.stringify(historico)) localStorage.setItem(QUESTION_HISTORY_KEY, JSON.stringify(historico));
+                return historico;
+            } catch (e) {
+                console.warn("Não foi possível ler o histórico de questões:", e);
+                return [];
+            }
+        }
+
+        function registrarQuestoesUtilizadas(questoes) {
+            const agora = Date.now();
+            const corte = agora - QUESTION_HISTORY_WINDOW_MS;
+            const historico = carregarHistoricoQuestoes()
+                .filter(item => item.usedAt >= corte);
+            const novas = questoes.map(q => ({ key: chaveEstavelQuestao(q), usedAt: agora }));
+            // Uma entrada por questão, mantendo a utilização mais recente.
+            const porChave = new Map();
+            [...historico, ...novas].forEach(item => {
+                const anterior = porChave.get(item.key);
+                if (!anterior || item.usedAt > anterior.usedAt) porChave.set(item.key, item);
+            });
+            localStorage.setItem(QUESTION_HISTORY_KEY, JSON.stringify([...porChave.values()]));
+            // Sincroniza histórico com a conta autenticada; localStorage continua como fallback.
+            if (window.studyProgress?.recordQuestionUsage) {
+                window.studyProgress.recordQuestionUsage(questoes, cursoAtivo || 'ACP')
+                    .catch(error => console.warn('Não foi possível sincronizar o histórico no Firestore:', error));
+            }
+        }
+
+        function sortearQuestoesProporcionalmente(bancoBruto, totalSimulado = 50) {
+            const historico = carregarHistoricoQuestoes();
+            const agora = Date.now();
+            const corte = agora - QUESTION_HISTORY_WINDOW_MS;
+            const usoRecente = new Map();
+            historico.forEach(item => {
+                const anterior = usoRecente.get(item.key);
+                if (!anterior || item.usedAt > anterior) usoRecente.set(item.key, item.usedAt);
+            });
+
+            const pools = {
+                OPERACIONAL: bancoBruto.filter(q => q.subject === 'OPERACIONAL'),
+                JURIDICO: bancoBruto.filter(q => q.subject === 'JURIDICO'),
+                ORGANIZACIONAL: bancoBruto.filter(q => q.subject === 'ORGANIZACIONAL')
+            };
+            const qtdOp = Math.round(totalSimulado * 0.50);
+            const qtdJur = Math.round(totalSimulado * 0.30);
+            const qtdOrg = totalSimulado - qtdOp - qtdJur;
+            const quantidades = { OPERACIONAL: qtdOp, JURIDICO: qtdJur, ORGANIZACIONAL: qtdOrg };
+
+            for (const materia of Object.keys(pools)) {
+                if (pools[materia].length < quantidades[materia]) {
+                    alert(
+                        `Banco insuficiente para gerar ${totalSimulado} questões.\n` +
+                        `Operacional: ${pools.OPERACIONAL.length}/${qtdOp}\n` +
+                        `Jurídico: ${pools.JURIDICO.length}/${qtdJur}\n` +
+                        `Organizacional: ${pools.ORGANIZACIONAL.length}/${qtdOrg}`
+                    );
+                    return [];
+                }
+            }
+
+            function shuffle(arr) {
+                const array = [...arr];
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            const selecionadas = [];
+            for (const materia of Object.keys(pools)) {
+                const quantidade = quantidades[materia];
+                const pool = pools[materia];
+                const recentes = pool.filter(q => (usoRecente.get(chaveEstavelQuestao(q)) || 0) >= corte);
+                const disponiveis = pool.filter(q => (usoRecente.get(chaveEstavelQuestao(q)) || 0) < corte);
+
+                // Primeiro sorteia entre as não usadas na janela de 3 dias.
+                const escolhidas = shuffle(disponiveis).slice(0, quantidade);
+
+                // Se faltarem questões inéditas na janela, usa as mais antigas primeiro.
+                if (escolhidas.length < quantidade) {
+                    const jaEscolhidas = new Set(escolhidas.map(chaveEstavelQuestao));
+                    const reposicao = shuffle(recentes)
+                        .filter(q => !jaEscolhidas.has(chaveEstavelQuestao(q)))
+                        .sort((a, b) => (usoRecente.get(chaveEstavelQuestao(a)) || 0) - (usoRecente.get(chaveEstavelQuestao(b)) || 0));
+                    escolhidas.push(...reposicao.slice(0, quantidade - escolhidas.length));
+                }
+                selecionadas.push(...escolhidas);
+            }
+
+            return shuffle(selecionadas).map((q, idx) => ({ ...q, idSimulado: idx + 1 }));
+        }
+
+        function obterBancoBase() {
+            if (typeof BANCO_SIMULADOS !== 'undefined' && BANCO_SIMULADOS.simulado_01 && BANCO_SIMULADOS.simulado_01.questoes) return BANCO_SIMULADOS.simulado_01.questoes;
+            if (typeof BANCO_SIMULADOS !== 'undefined' && Array.isArray(BANCO_SIMULADOS)) return BANCO_SIMULADOS;
+            if (typeof BANCO_GERAL_QUESTOES !== 'undefined' && Array.isArray(BANCO_GERAL_QUESTOES)) return BANCO_GERAL_QUESTOES;
+            if (window.questionsDatabase && window.questionsDatabase.length > 0) return window.questionsDatabase;
+            return [];
+        }
+
+        function abrirModalPersonalizado() {
+            const banco = obterBancoBase();
+            if (!banco.length) {
+                alert(`Erro ao carregar o banco ${cursoAtivo === 'CAO' ? 'questoes2.js' : 'questoes.js'}. Verifique se o arquivo está na mesma pasta do index.html e publicado no repositório.`);
+                return;
+            }
+            atualizarDisponibilidadePersonalizada();
+            const modal = document.getElementById('modalPersonalizado');
+            modal.classList.remove('hidden'); modal.classList.add('flex');
+        }
+
+        function fecharModalPersonalizado() {
+            const modal = document.getElementById('modalPersonalizado');
+            modal.classList.add('hidden'); modal.classList.remove('flex');
+        }
+
+        // Lista oficial de TAGs usada no filtro do Modo Personalizado.
+        const TAGS_OFICIAIS = {
+            OPERACIONAL: [
+                'NORSOP', 'COP', 'COP MOTOROLA', 'SCIPM', 'Sistema de Comando e Controle',
+                'Policiamento de Trânsito', 'Policiamento Escolar', 'Policiamento Rural',
+                'Policiamento Comunitário', 'Força Tática', 'Drones', 'Crime Organizado',
+                'Sala de Operações', 'Radiopatrulha'
+            ],
+            JURIDICO: [
+                'RDPM', 'Sistema Correcional', 'Procedimento Disciplinar', 'Legislação Promoção'
+            ],
+            ORGANIZACIONAL: [
+                'I-16-PM', 'I-2-PM', 'I-36-PM', 'TCI', 'Material Bélico', 'SisTAF', 'Regime de Trabalho', 'PM vítima Violência Doméstica',
+                'Sistemática Proteção Violência Doméstica'
+            ]
+        };
+
+        function atualizarTemasPersonalizados() {
+            const area = document.getElementById('personalizadoArea').value;
+            const seletorTema = document.getElementById('personalizadoTema');
+            const temaAnterior = seletorTema.value;
+            const temas = TAGS_OFICIAIS[area] || [];
+            seletorTema.innerHTML = '<option value="ALL">Todos os temas da área</option>';
+            temas.forEach(tag => {
+                const option = document.createElement('option');
+                option.value = tag;
+                option.textContent = tag;
+                seletorTema.appendChild(option);
+            });
+            if (temas.includes(temaAnterior)) seletorTema.value = temaAnterior;
+            atualizarDisponibilidadePersonalizada();
+        }
+
+        function atualizarDisponibilidadePersonalizada() {
+            const banco = obterBancoBase();
+            const area = document.getElementById('personalizadoArea').value;
+            const tema = document.getElementById('personalizadoTema').value;
+            const poolArea = banco.filter(q => q.subject === area);
+            const pool = tema === 'ALL' ? poolArea : poolArea.filter(q => q.tag === tema);
+            const campo = document.getElementById('personalizadoQuantidade');
+            campo.max = Math.max(1, pool.length);
+            document.getElementById('personalizadoDisponiveis').innerText = `${pool.length} questão(ões) disponíveis ${tema === 'ALL' ? 'nesta área' : `para a TAG “${tema}”`} no banco atual.`;
+            document.getElementById('personalizadoTemaInfo').innerText = tema === 'ALL'
+                ? 'Serão consideradas todas as TAGs oficiais da área selecionada.'
+                : `${pool.length} questão(ões) encontradas com a TAG “${tema}”.`;
+            if (Number(campo.value) > pool.length) campo.value = pool.length || 1;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const area = document.getElementById('personalizadoArea');
+            const tema = document.getElementById('personalizadoTema');
+            if (area) area.addEventListener('change', atualizarTemasPersonalizados);
+            if (tema) tema.addEventListener('change', atualizarDisponibilidadePersonalizada);
+            atualizarTemasPersonalizados();
+        });
+
+        function iniciarSessaoPersonalizada() {
+            const bancoBase = obterBancoBase();
+            const area = document.getElementById('personalizadoArea').value;
+            const tema = document.getElementById('personalizadoTema').value;
+            const quantidade = Number.parseInt(document.getElementById('personalizadoQuantidade').value, 10);
+            const poolArea = bancoBase.filter(q => q.subject === area);
+            const pool = tema === 'ALL' ? poolArea : poolArea.filter(q => q.tag === tema);
+            if (!Number.isInteger(quantidade) || quantidade < 1) {
+                alert('Informe uma quantidade inteira de pelo menos 1 questão.'); return;
+            }
+            if (quantidade > pool.length) {
+                alert(`O filtro selecionado possui apenas ${pool.length} questão(ões) no banco. Reduza a quantidade ou escolha outro tema.`); return;
+            }
+
+            if (state.timerInterval) { clearInterval(state.timerInterval); state.timerInterval = null; }
+            sessaoPersonalizadaAtiva = true;
+            avisoAvancoEstudoExibido = false;
+            STORAGE_KEY = `${STORAGE_KEY_OFICIAL}_PERSONALIZADO`;
+            const embaralhadas = [...pool];
+            for (let i = embaralhadas.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [embaralhadas[i], embaralhadas[j]] = [embaralhadas[j], embaralhadas[i]];
+            }
+            questionsDatabase = embaralhadas.slice(0, quantidade).map((q, idx) => ({ ...q, idSimulado: idx + 1 }));
+            state.mode = 'study';
+            state.userAnswers = new Array(questionsDatabase.length).fill(null);
+            state.flagged = new Array(questionsDatabase.length).fill(false);
+            state.studyLocked = new Array(questionsDatabase.length).fill(false);
+            state.timerSeconds = 0;
+            state.timerEndTime = null;
+            state.timerPaused = true;
+            state.examFinished = false;
+            state.currentIndex = 0;
+            state.activeFilter = 'ALL';
+            fecharModalPersonalizado();
+
+            document.getElementById('timerDisplay').parentElement.classList.add('hidden');
+            document.querySelectorAll('button[onclick="confirmarNovoSimulado()"]')[0]?.classList.remove('hidden');
+            document.querySelectorAll('button[onclick="finishExam()"]')[0].innerHTML = '<i class="fa-solid fa-flag-checkered"></i> Concluir Sessão';
+            document.getElementById('btnModeExam').classList.add('hidden');
+            document.getElementById('btnModeStudy').classList.add('hidden');
+            document.getElementById('simuladoTitulo').innerText = 'Sessão Personalizada';
+            const nomeAreaPersonalizada = area === 'OPERACIONAL' ? 'Assuntos Operacionais' : area === 'JURIDICO' ? 'Assuntos Jurídico-Administrativos' : 'Assuntos Organizacionais';
+            document.getElementById('subtituloCurso').innerText = `${nomeAreaPersonalizada} · ${tema === 'ALL' ? 'Todos os temas' : tema} · Sessão Personalizada`;
+            document.getElementById('resultsContainer').classList.add('hidden');
+            document.getElementById('questionContainer').classList.remove('hidden');
+            updateSubjectCounts(); updateFilteredQuestions(); renderQuestionGrid(); displayCurrentQuestion(); updateRealtimeStats();
+            saveStateToLocalStorage();
+        }
+
+        function gerarEIniciarNovoSimulado() {
+            const veioDePersonalizado = sessaoPersonalizadaAtiva;
+            sessaoPersonalizadaAtiva = false;
+            avisoAvancoEstudoExibido = false;
+            STORAGE_KEY = STORAGE_KEY_OFICIAL;
+            if (veioDePersonalizado) {
+                state.mode = 'exam';
+                document.getElementById('btnModeExam').className = "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow";
+                document.getElementById('btnModeStudy').className = "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
+            }
+            document.getElementById('timerDisplay').parentElement.classList.remove('hidden');
+            document.getElementById('btnModeExam').classList.remove('hidden');
+            document.getElementById('btnModeStudy').classList.remove('hidden');
+            document.getElementById('simuladoTitulo').innerText = cursoAtivo === 'CAO' ? 'CAO — Curso de Aperfeiçoamento de Oficiais' : 'ACP II/26 — Capitão PM';
+            document.getElementById('subtituloCurso').innerText = cursoAtivo === 'CAO' ? 'Curso de Aperfeiçoamento de Oficiais' : 'Avaliação de Competência Profissional';
+            document.querySelectorAll('button[onclick="finishExam()"]')[0].innerHTML = '<i class="fa-solid fa-flag-checkered"></i> Finalizar Prova';
+            let bancoBase = obterBancoBase();
+            if (!bancoBase.length) {
+                alert(`Erro ao carregar o banco ${cursoAtivo === 'CAO' ? 'questoes2.js' : 'questoes.js'}. Verifique se o arquivo está na mesma pasta do index.html e publicado no repositório.`);
+                return;
+            }
+
+            questionsDatabase = sortearQuestoesProporcionalmente(bancoBase, TOTAL_QUESTOES);
+            if (questionsDatabase.length !== TOTAL_QUESTOES) return;
+            registrarQuestoesUtilizadas(questionsDatabase);
+
+            state.userAnswers = new Array(questionsDatabase.length).fill(null);
+            state.flagged = new Array(questionsDatabase.length).fill(false);
+            state.studyLocked = new Array(questionsDatabase.length).fill(false);
+            state.timerSeconds = TEMPO_PROVA_SEGUNDOS;
+            state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+            state.timerPaused = false;
+            state.examFinished = false;
+            state.currentIndex = 0;
+            state.activeFilter = 'ALL';
+
+            document.getElementById('resultsContainer').classList.add('hidden');
+            document.getElementById('questionContainer').classList.remove('hidden');
+
+            saveStateToLocalStorage();
+
+            updateSubjectCounts();
+            updateFilteredQuestions();
+            renderQuestionGrid();
+            displayCurrentQuestion();
+            
+            startTimer();
+        }
+
+        function updateSubjectCounts() {
+            const total = questionsDatabase.length;
+            const op = questionsDatabase.filter(q => q.subject === 'OPERACIONAL').length;
+            const org = questionsDatabase.filter(q => q.subject === 'ORGANIZACIONAL').length;
+            const jur = questionsDatabase.filter(q => q.subject === 'JURIDICO').length;
+
+            document.getElementById('cntAll').innerText = total;
+            document.getElementById('cntOp').innerText = op;
+            document.getElementById('cntOrg').innerText = org;
+            document.getElementById('cntJur').innerText = jur;
+            document.getElementById('totalQuestionsCount').innerText = total;
+            document.getElementById('gridTotalSpan').innerText = total;
+        }
+
+        function setMode(newMode, confirmado = false) {
+            if (sessaoPersonalizadaAtiva) newMode = 'study';
+            if (newMode === state.mode) return;
+
+            // Confirmação visual personalizada ao sair do Modo Prova para o Modo Estudo.
+            if (newMode === 'study' && state.mode === 'exam' && !state.examFinished && !confirmado) {
+                abrirModalConfirmacao({
+                    titulo: "Entrar no Modo Estudo?",
+                    mensagem: "Você poderá visualizar a resposta correta e a fundamentação. As questões consultadas ficarão bloqueadas para alterações, mesmo se você voltar ao Modo Prova. Deseja realmente mudar para o Modo Estudo?",
+                    textoConfirmar: "Entrar no Modo Estudo",
+                    aoConfirmar: () => setMode(newMode, true)
+                });
+                return;
+            }
+
+            state.mode = newMode;
+            document.getElementById('btnModeExam').className = newMode === 'exam' 
+                ? "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow"
+                : "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
+            
+            document.getElementById('btnModeStudy').className = newMode === 'study' 
+                ? "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 bg-pm-gold text-pm-navy shadow"
+                : "px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-200";
+
+            const progressPanel = document.getElementById('progressPanel');
+            if (progressPanel) progressPanel.classList.toggle('hidden', newMode === 'exam');
+
+            saveStateToLocalStorage();
+            displayCurrentQuestion();
+            updateRealtimeStats();
+        }
+
+        function setSubjectFilter(cat, resetIndex = true) {
+            state.activeFilter = cat;
+            ['ALL', 'OPERACIONAL', 'ORGANIZACIONAL', 'JURIDICO'].forEach(c => {
+                const btn = document.getElementById('filter' + c);
+                if (c === cat) {
+                    btn.className = "px-3 py-1 text-xs rounded-full border border-pm-gold text-pm-gold font-medium bg-pm-gold/10 whitespace-nowrap";
+                    btn.setAttribute('aria-pressed', 'true');
+                } else {
+                    btn.className = "px-3 py-1 text-xs rounded-full border border-transparent text-slate-300 whitespace-nowrap";
+                    btn.setAttribute('aria-pressed', 'false');
+                }
+            });
+
+            updateFilteredQuestions();
+            if (resetIndex) {
+                state.currentIndex = 0;
+            }
+            saveStateToLocalStorage();
+            renderQuestionGrid();
+            displayCurrentQuestion();
+        }
+
+        function updateFilteredQuestions() {
+            if (state.activeFilter === 'ALL') {
+                state.filteredQuestions = questionsDatabase;
+            } else {
+                state.filteredQuestions = questionsDatabase.filter(q => q.subject === state.activeFilter);
+            }
+        }
+
+        function renderQuestionGrid() {
+            const grid = document.getElementById('questionsGrid');
+            grid.innerHTML = '';
+
+            state.filteredQuestions.forEach((q, idx) => {
+                const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
+                const targetIdx = origIdx !== -1 ? origIdx : idx;
+
+                const isAnswered = state.userAnswers[targetIdx] !== null;
+                const isFlagged = state.flagged[targetIdx];
+                const isCurrent = idx === state.currentIndex;
+
+                let btnClass = "h-8 rounded text-xs font-bold transition flex items-center justify-center border ";
+
+                if (isCurrent) {
+                    btnClass += "ring-2 ring-pm-gold ring-offset-2 ring-offset-pm-navy ";
+                }
+
+                if (isFlagged) {
+                    btnClass += "bg-amber-500/20 text-amber-300 border-amber-500/60 ";
+                } else if (isAnswered) {
+                    btnClass += "bg-blue-600/30 text-blue-200 border-blue-500/50 ";
+                } else {
+                    btnClass += "bg-pm-navy/60 text-slate-400 border-pm-border hover:border-slate-500 ";
+                }
+
+                const button = document.createElement('button');
+                button.className = btnClass;
+                button.innerText = q.idSimulado || (idx + 1);
+                button.onclick = () => {
+                    state.currentIndex = idx;
+                    saveStateToLocalStorage();
+                    displayCurrentQuestion();
+                    renderQuestionGrid();
+                };
+                grid.appendChild(button);
+            });
+
+            updateRealtimeStats();
+        }
+
+        function displayCurrentQuestion() {
+            if (state.filteredQuestions.length === 0) return;
+
+            const q = state.filteredQuestions[state.currentIndex];
+            const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
+            const targetIdx = origIdx !== -1 ? origIdx : state.currentIndex;
+
+            document.getElementById('qBadgeNum').innerText = `Questão ${q.idSimulado || (targetIdx + 1)} / ${questionsDatabase.length}`;
+            
+            const subjNames = {
+                'OPERACIONAL': 'Assuntos Operacionais',
+                'ORGANIZACIONAL': 'Assuntos Organizacionais',
+                'JURIDICO': 'Assuntos Jurídico-Administrativos'
+            };
+            document.getElementById('qBadgeSubject').innerText = `${subjNames[q.subject] || q.subject} | ${q.topic}`;
+            const questionTextElement = document.getElementById('qText');
+            const isMobileQuestionLayout = window.matchMedia('(max-width: 850px)').matches;
+            if (isMobileQuestionLayout) {
+                // Em telas pequenas, cada proposição romana começa em uma nova linha.
+                questionTextElement.innerText = q.text.replace(/\\s*\\((i{1,3})\\)\\s*/gi,
+                    (match, roman) => `\\n${roman.toUpperCase()}- `);
+                questionTextElement.style.whiteSpace = 'pre-line';
+            } else {
+                questionTextElement.innerText = q.text;
+                questionTextElement.style.whiteSpace = '';
+            }
+
+            const flagBtn = document.getElementById('qMarkFlag');
+            if (state.flagged[targetIdx]) {
+                flagBtn.className = "text-xs text-amber-400 font-semibold transition flex items-center gap-1.5 px-3 py-1 rounded border border-amber-500/50 bg-amber-500/10";
+                flagBtn.innerHTML = '<i class="fa-solid fa-bookmark"></i> <span>Marcada</span>';
+            } else {
+                flagBtn.className = "text-xs text-slate-400 hover:text-amber-400 transition flex items-center gap-1.5 px-3 py-1 rounded border border-pm-border bg-pm-navy/50";
+                flagBtn.innerHTML = '<i class="fa-regular fa-bookmark"></i> <span>Marcar p/ Revisar</span>';
+            }
+
+            const optionsContainer = document.getElementById('qOptions');
+            optionsContainer.innerHTML = '';
+
+            const selectedOpt = state.userAnswers[targetIdx];
+
+            // Ao consultar uma resposta no Modo Estudo, ela fica definitiva,
+            // mesmo que o usuário volte posteriormente ao Modo Prova.
+            if (state.mode === 'study' && selectedOpt !== null && !state.studyLocked[targetIdx]) {
+                state.studyLocked[targetIdx] = true;
+                saveStateToLocalStorage();
+            }
+
+            q.options.forEach((optText, optIdx) => {
+                const optionDiv = document.createElement('div');
+                let optStyle = "p-3.5 rounded-xl border transition-all duration-200 cursor-pointer text-xs sm:text-sm flex items-start gap-3 ";
+
+                if (state.mode === 'study' && selectedOpt !== null) {
+                    if (optIdx === q.answer) {
+                        optStyle += "bg-emerald-950/60 border-emerald-500 text-emerald-200 font-medium ";
+                    } else if (optIdx === selectedOpt && selectedOpt !== q.answer) {
+                        optStyle += "bg-rose-950/60 border-rose-500 text-rose-200 ";
+                    } else {
+                        optStyle += "bg-pm-navy/40 border-pm-border/40 text-slate-400 opacity-60 ";
+                    }
+                } else {
+                    if (selectedOpt === optIdx) {
+                        optStyle += "bg-pm-accent/40 border-blue-400 text-white font-medium shadow-md ";
+                    } else {
+                        optStyle += "bg-pm-navy/80 border-pm-border hover:border-pm-gold/50 text-slate-200 hover:bg-pm-navy ";
+                    }
+                }
+
+                optionDiv.className = optStyle;
+                const answerLocked = state.userAnswers[targetIdx] !== null &&
+                    (state.mode === 'study' || state.studyLocked[targetIdx] || state.examFinished);
+                if (answerLocked) {
+                    optionDiv.classList.remove('cursor-pointer');
+                    optionDiv.classList.add('cursor-not-allowed');
+                }
+                optionDiv.onclick = () => selectOption(targetIdx, optIdx);
+
+                const radioCircle = document.createElement('div');
+                let circleStyle = "w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] ";
+                
+                if (state.mode === 'study' && selectedOpt !== null) {
+                    if (optIdx === q.answer) {
+                        circleStyle += "border-emerald-400 bg-emerald-500 text-pm-navy font-bold";
+                        radioCircle.innerHTML = "✓";
+                    } else if (optIdx === selectedOpt && selectedOpt !== q.answer) {
+                        circleStyle += "border-rose-400 bg-rose-500 text-white font-bold";
+                        radioCircle.innerHTML = "✕";
+                    } else {
+                        circleStyle += "border-slate-600";
+                    }
+                } else {
+                    if (selectedOpt === optIdx) {
+                        circleStyle += "border-pm-gold bg-pm-gold text-pm-navy font-bold";
+                        radioCircle.innerHTML = "✓";
+                    } else {
+                        circleStyle += "border-slate-500";
+                    }
+                }
+                
+                radioCircle.className = circleStyle;
+
+                const textSpan = document.createElement('span');
+                textSpan.className = "flex-1 leading-snug";
+                textSpan.innerText = optText;
+
+                optionDiv.appendChild(radioCircle);
+                optionDiv.appendChild(textSpan);
+                optionsContainer.appendChild(optionDiv);
+            });
+
+            const studyExpBox = document.getElementById('studyExplanation');
+            const showStudyExplanation = state.mode === 'study' && selectedOpt !== null;
+            if (showStudyExplanation) {
+                studyExpBox.classList.remove('hidden');
+                studyExpBox.style.display = 'block';
+                document.getElementById('studyExplanationText').innerText = q.explanation;
+            } else {
+                // Oculta explicitamente em Modo Prova, independente do CSS/responsividade.
+                studyExpBox.classList.add('hidden');
+                studyExpBox.style.display = 'none';
+                document.getElementById('studyExplanationText').innerText = '';
+            }
+
+            document.getElementById('btnPrev').disabled = state.currentIndex === 0;
+            document.getElementById('btnPrev').style.opacity = state.currentIndex === 0 ? "0.4" : "1";
+
+            document.getElementById('btnNext').disabled = state.currentIndex === state.filteredQuestions.length - 1;
+            document.getElementById('btnNext').style.opacity = state.currentIndex === state.filteredQuestions.length - 1 ? "0.4" : "1";
+            refreshCollectiveStats(q, selectedOpt, state.mode);
+        }
+
+        let collectiveStatsRequestToken = 0;
+        function refreshCollectiveStats(question, selectedOpt, mode) {
+            const panel = document.getElementById('collectiveStatsPanel');
+            if (!panel) return;
+            if (mode !== 'study' || selectedOpt === null || selectedOpt === undefined) {
+                panel.classList.add('hidden');
+                return;
+            }
+            panel.classList.remove('hidden');
+            const message = document.getElementById('collectiveStatsMessage');
+            message.textContent = 'Carregando estatísticas coletivas…';
+            const token = ++collectiveStatsRequestToken;
+            const bridge = window.collectiveQuestionStats;
+            if (!bridge?.getStats) {
+                message.textContent = 'Estatística coletiva ainda não está disponível. Verifique a conexão com o serviço.';
+                return;
+            }
+            bridge.getStats(question).then(stats => {
+                if (token !== collectiveStatsRequestToken || state.mode !== 'study') return;
+                renderCollectiveStats(stats);
+            }).catch(error => {
+                console.warn('Falha ao carregar estatística coletiva:', error);
+                if (token === collectiveStatsRequestToken) message.textContent = 'Não foi possível carregar as estatísticas agora.';
+            });
+        }
+
+        function renderCollectiveStats(stats) {
+            const participants = Math.max(0, Number(stats?.participants) || 0);
+            const correct = Math.max(0, Number(stats?.correct) || 0);
+            const incorrect = Math.max(0, Number(stats?.incorrect) || 0);
+            const total = correct + incorrect;
+            const correctPct = total ? correct / total * 100 : 0;
+            const incorrectPct = total ? incorrect / total * 100 : 0;
+            document.getElementById('collectiveParticipants').textContent = participants.toLocaleString('pt-BR');
+            document.getElementById('collectiveCorrectPercent').textContent = total ? correctPct.toLocaleString('pt-BR', {maximumFractionDigits: 1}) + '%' : '0%';
+            document.getElementById('collectiveIncorrectPercent').textContent = total ? incorrectPct.toLocaleString('pt-BR', {maximumFractionDigits: 1}) + '%' : '0%';
+            document.getElementById('collectiveCorrectBar').style.width = correctPct + '%';
+            document.getElementById('collectiveIncorrectBar').style.width = incorrectPct + '%';
+            document.getElementById('collectiveStatsMessage').textContent = participants
+                ? 'Dados coletivos atualizados a partir das respostas registradas.'
+                : 'Esta questão ainda não possui respostas coletivas registradas.';
+        }
+
+        function selectOption(targetIdx, optIdx) {
+            if (state.examFinished) return;
+
+            // Questões consultadas no Modo Estudo nunca podem ser alteradas.
+            if (state.studyLocked[targetIdx]) return;
+
+            // No Modo Estudo, a primeira resposta é definitiva.
+            if (state.mode === 'study' && state.userAnswers[targetIdx] !== null) return;
+
+            // No Modo Prova, permite alterar a alternativa até a finalização.
+            state.userAnswers[targetIdx] = optIdx;
+
+            // Responder no Modo Estudo revela a fundamentação e bloqueia a questão.
+            if (state.mode === 'study') {
+                state.studyLocked[targetIdx] = true;
+                const answeredQuestion = questionsDatabase[targetIdx];
+                const isCorrect = optIdx === answeredQuestion?.answer;
+                window.collectiveQuestionStats?.recordAnswer(answeredQuestion, isCorrect).then(() => {
+                    refreshCollectiveStats(answeredQuestion, optIdx, 'study');
+                }).catch(error => {
+                    console.warn('Não foi possível registrar a estatística coletiva:', error);
+                    const message = document.getElementById('collectiveStatsMessage');
+                    if (message) message.textContent = 'Sua resposta foi registrada no estudo, mas não foi possível atualizar a estatística coletiva.';
+                });
+            }
+
+            saveStateToLocalStorage();
+            displayCurrentQuestion();
+            renderQuestionGrid();
+        }
+
+        function navigateQuestion(direction, confirmado = false) {
+            const currentQuestion = state.filteredQuestions[state.currentIndex];
+            if (!currentQuestion) return;
+
+            const currentOrigIdx = questionsDatabase.findIndex(item => item.idSimulado === currentQuestion.idSimulado);
+            const currentTargetIdx = currentOrigIdx !== -1 ? currentOrigIdx : state.currentIndex;
+
+            // Ao avançar no Modo Estudo depois de responder, confirma a saída
+            // porque a fundamentação já foi revelada e a questão ficará bloqueada.
+            if (direction > 0 && state.mode === 'study' && state.userAnswers[currentTargetIdx] !== null && !confirmado && !avisoAvancoEstudoExibido) {
+                avisoAvancoEstudoExibido = true;
+                abrirModalConfirmacao({
+                    titulo: "Avançar para a próxima questão?",
+                    mensagem: "A resposta e a fundamentação desta questão já foram reveladas. Ela ficará bloqueada para alterações, mesmo que você retorne ao Modo Prova. Deseja avançar?",
+                    textoConfirmar: "Avançar",
+                    aoConfirmar: () => navigateQuestion(direction, true)
+                });
+                return;
+            }
+
+            const nextIndex = state.currentIndex + direction;
+            if (nextIndex >= 0 && nextIndex < state.filteredQuestions.length) {
+                state.currentIndex = nextIndex;
+                saveStateToLocalStorage();
+                displayCurrentQuestion();
+                renderQuestionGrid();
+
+                // Em celular e computador, retorna ao cabeçalho após trocar de questão.
+                requestAnimationFrame(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+        }
+
+        function toggleFlagCurrentQuestion() {
+            const q = state.filteredQuestions[state.currentIndex];
+            const origIdx = questionsDatabase.findIndex(item => item.idSimulado === q.idSimulado);
+            const targetIdx = origIdx !== -1 ? origIdx : state.currentIndex;
+
+            state.flagged[targetIdx] = !state.flagged[targetIdx];
+            saveStateToLocalStorage();
+            displayCurrentQuestion();
+            renderQuestionGrid();
+        }
+
+        function updateRealtimeStats() {
+            let answered = 0;
+            let correct = 0;
+            let wrong = 0;
+            const total = questionsDatabase.length;
+
+            questionsDatabase.questionsDatabase?.forEach?.((q, idx) => {}) // fallback safe
+            questionsDatabase.forEach((q, idx) => {
+                const ans = state.userAnswers[idx];
+                if (ans !== null) {
+                    answered++;
+                    if (ans === q.answer) correct++;
+                    else wrong++;
+                }
+            });
+
+            const pending = total - answered;
+            const pct = total > 0 ? Math.round((answered / total) * 100) : 0;
+
+            const progressPanel = document.getElementById('progressPanel');
+            if (progressPanel) progressPanel.classList.toggle('hidden', state.mode === 'exam');
+
+            document.getElementById('countAnswered').innerText = answered;
+            document.getElementById('statCorrect').innerText = correct;
+            document.getElementById('statWrong').innerText = wrong;
+            document.getElementById('statPending').innerText = pending;
+            document.getElementById('progBar').style.width = `${pct}%`;
+            document.getElementById('progPercent').innerText = `${pct}% concluído`;
+            const progressRing = document.getElementById('progressRing');
+            if (progressRing) progressRing.style.strokeDashoffset = 251.2 - (251.2 * pct / 100);
+            const progressRingPercent = document.getElementById('progressRingPercent');
+            if (progressRingPercent) progressRingPercent.textContent = `${pct}%`;
+            const progressRingAnswered = document.getElementById('progressRingAnswered');
+            if (progressRingAnswered) progressRingAnswered.textContent = answered;
+            const progressRingTotal = document.getElementById('progressRingTotal');
+            if (progressRingTotal) progressRingTotal.textContent = total;
+        }
+
+        function startTimer() {
+            if (sessaoPersonalizadaAtiva) {
+                if (state.timerInterval) { clearInterval(state.timerInterval); state.timerInterval = null; }
+                document.getElementById('timerDisplay').parentElement.classList.add('hidden');
+                return;
+            }
+            if (!state.timerEndTime) {
+                state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+                saveStateToLocalStorage();
+            }
+
+            if (state.timerInterval) clearInterval(state.timerInterval);
+
+            state.timerInterval = setInterval(() => {
+                if (!state.timerPaused) {
+                    const now = Date.now();
+                    const remaining = Math.max(0, Math.round((state.timerEndTime - now) / 1000));
+                    
+                    state.timerSeconds = remaining;
+                    updateTimerDisplay();
+
+                    if (remaining <= 0) {
+                        clearInterval(state.timerInterval);
+                        finishExam();
+                    }
+                } else {
+                    state.timerEndTime += 1000;
+                }
+            }, 1000);
+        }
+
+        function toggleTimer() {
+            state.timerPaused = !state.timerPaused;
+            if (!state.timerPaused) {
+                state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+            }
+            saveStateToLocalStorage();
+            const btn = document.getElementById('toggleTimerBtn');
+            btn.innerHTML = state.timerPaused ? '<i class="fa-solid fa-play"></i>' : '<i class="fa-solid fa-pause"></i>';
+        }
+
+        function updateTimerDisplay() {
+            const h = String(Math.floor(state.timerSeconds / 3600)).padStart(2, '0');
+            const m = String(Math.floor((state.timerSeconds % 3600) / 60)).padStart(2, '0');
+            const s = String(state.timerSeconds % 60).padStart(2, '0');
+            document.getElementById('timerDisplay').querySelector('span').innerText = `${h}:${m}:${s}`;
+        }
+
+        function finishExam(shouldSave = true) {
+            clearInterval(state.timerInterval);
+            state.examFinished = true;
+
+            if (shouldSave) {
+                saveStateToLocalStorage();
+            }
+
+            let score = 0;
+            let opScore = 0, opTotal = 0;
+            let orgScore = 0, orgTotal = 0;
+            let jurScore = 0, jurTotal = 0;
+
+            const total = questionsDatabase.length;
+
+            questionsDatabase.forEach((q, idx) => {
+                if (q.subject === 'OPERACIONAL') opTotal++;
+                if (q.subject === 'ORGANIZACIONAL') orgTotal++;
+                if (q.subject === 'JURIDICO') jurTotal++;
+
+                const isCorrect = state.userAnswers[idx] === q.answer;
+                if (isCorrect) {
+                    score++;
+                    if (q.subject === 'OPERACIONAL') opScore++;
+                    if (q.subject === 'ORGANIZACIONAL') orgScore++;
+                    if (q.subject === 'JURIDICO') jurScore++;
+                }
+            });
+
+            const percent = total > 0 ? ((score / total) * 100).toFixed(1) : 0;
+            const grade = total > 0 ? ((score / total) * 10).toFixed(1) : 0;
+
+            const elapsedSecs = TEMPO_PROVA_SEGUNDOS - state.timerSeconds;
+            const elapsedMins = Math.floor(elapsedSecs / 60);
+            const elapsedSecsRem = elapsedSecs % 60;
+            const timeFormatted = sessaoPersonalizadaAtiva ? '—' : `${String(elapsedMins).padStart(2, '0')}m ${String(elapsedSecsRem).padStart(2, '0')}s`;
+
+            document.getElementById('resScore').innerText = `${score}/${total}`;
+            document.getElementById('resPercent').innerText = `${percent}%`;
+            document.getElementById('resGrade').innerText = grade;
+            document.getElementById('resTime').innerText = timeFormatted;
+
+            const opPct = opTotal > 0 ? Math.round((opScore / opTotal) * 100) : 0;
+            const orgPct = orgTotal > 0 ? Math.round((orgScore / orgTotal) * 100) : 0;
+            const jurPct = jurTotal > 0 ? Math.round((jurScore / jurTotal) * 100) : 0;
+
+            document.getElementById('labelOpScore').innerText = `${opScore}/${opTotal} (${opPct}%)`;
+            document.getElementById('barOpScore').style.width = `${opPct}%`;
+
+            document.getElementById('labelOrgScore').innerText = `${orgScore}/${orgTotal} (${orgPct}%)`;
+            document.getElementById('barOrgScore').style.width = `${orgPct}%`;
+
+            document.getElementById('labelJurScore').innerText = `${jurScore}/${jurTotal} (${jurPct}%)`;
+            document.getElementById('barJurScore').style.width = `${jurPct}%`;
+
+            // Salva uma tentativa concluída no Firestore, isolada pelo UID em user-progress-firestore.js.
+            if (shouldSave && window.studyProgress?.saveExamResult) {
+                const answered = state.userAnswers.filter(answer => answer !== undefined && answer !== null && answer !== '').length;
+                const incorrect = Math.max(0, score >= 0 ? answered - score : 0);
+                const unanswered = Math.max(0, total - answered);
+                const sessionId = (globalThis.crypto?.randomUUID?.() || `s${Date.now()}${Math.random().toString(36).slice(2, 10)}`);
+                window.studyProgress.saveExamResult({
+                    sessionId,
+                    course: cursoAtivo || 'ACP',
+                    mode: sessaoPersonalizadaAtiva ? 'personalizado' : (state.mode || 'exam'),
+                    total, correct: score, score, answered, incorrect, unanswered,
+                    percent: Number(percent), grade: Number(grade),
+                    elapsedSeconds: Math.max(0, elapsedSecs),
+                    completedAtMs: Date.now(),
+                    subjects: {
+                        OPERACIONAL: { correct: opScore, total: opTotal, percent: opPct },
+                        ORGANIZACIONAL: { correct: orgScore, total: orgTotal, percent: orgPct },
+                        JURIDICO: { correct: jurScore, total: jurTotal, percent: jurPct }
+                    }
+                }).catch(error => console.warn('Não foi possível salvar o resultado no Firestore:', error));
+            }
+
+            document.getElementById('questionContainer').classList.add('hidden');
+            document.getElementById('resultsContainer').classList.remove('hidden');
+        }
+
+        function reviewExamFromResults() {
+            setMode('study');
+            document.getElementById('resultsContainer').classList.add('hidden');
+            document.getElementById('questionContainer').classList.remove('hidden');
+        }
+    </script>
+
+    <script type="module">
+      import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+      import { auth } from "./firebase-config.js";
+      import { recordQuestionUsage, saveExamResult, loadQuestionHistory, getProgressSummary } from "./user-progress-firestore.js";
+      import { isAdminUser } from "./admin-access.js";
+      import { getCollectiveQuestionStats, recordCollectiveStudyAnswer } from "./collective-question-stats.js";
+      window.collectiveQuestionStats = {
+        getStats: (question) => getCollectiveQuestionStats(question, 'CAO'),
+        recordAnswer: (question, isCorrect) => recordCollectiveStudyAnswer(question, isCorrect, 'CAO')
+      };
+
+      auth.languageCode = 'pt-BR';
+      // Ponte controlada entre scripts clássicos do simulado e módulos Firebase.
+      window.studyProgress = { recordQuestionUsage, saveExamResult, loadQuestionHistory, getProgressSummary };
+      const guard = document.getElementById('authGuard');
+      let accessDecisionMade = false;
+
+      function showAccessMessage(title, message, showLoginLink = true) {
+        if (!guard) return;
+        guard.innerHTML = `
+          <div class="auth-guard-card">
+            <h2 style="font-size:1.25rem;font-weight:800;color:#d4af37;margin:0 0 10px">${title}</h2>
+            <p style="margin:0 0 18px">${message}</p>
+            ${showLoginLink ? '<a href="index.html?motivo=confirmar-email" style="display:inline-block;padding:11px 18px;border-radius:9px;background:#d4af37;color:#0b1326;font-weight:800;text-decoration:none">Voltar ao login</a>' : ''}
+          </div>`;
+        guard.style.display = 'flex';
+      }
+
+      onAuthStateChanged(auth, async (user) => {
+        if (accessDecisionMade) return;
+        if (!user || user.uid !== 'HwKwtmGWHuPnaDlyCusYp91FHXb2') {
+          accessDecisionMade = true;
+          showAccessMessage('Acesso restrito', 'Esta área está temporariamente disponível apenas para o usuário autorizado.');
+          if (user) { try { await signOut(auth); } catch (error) { console.error('Falha ao encerrar sessão sem autorização:', error); } }
+          return;
+        }
+        if (!user) {
+          accessDecisionMade = true;
+          showAccessMessage('Acesso não autenticado', 'Para visualizar a plataforma, entre com sua conta. Se você acabou de se cadastrar, confirme primeiro o endereço de e-mail.');
+          return;
+        }
+
+        const isPasswordAccount = user.providerData.some(provider => provider.providerId === 'password');
+        if (isPasswordAccount && !user.emailVerified) {
+          accessDecisionMade = true;
+          showAccessMessage('Confirme seu e-mail', 'Esta conta ainda não confirmou o endereço de e-mail. Volte ao login, solicite o envio do link e confirme a mensagem recebida antes de acessar os cursos.');
+          try { await signOut(auth); } catch (error) { console.error('Falha ao encerrar sessão não confirmada:', error); }
+          return;
+        }
+
+        // Link de administração é apenas uma conveniência visual; a autorização real exige regras Firestore.
+        try {
+          const adminLink = document.getElementById('adminPanelLinkLanding');
+          if (adminLink && await isAdminUser(user)) {
+            adminLink.hidden = false;
+            adminLink.classList.remove('hidden');
+          }
+        } catch (error) {
+          console.warn('Não foi possível verificar o perfil administrativo:', error);
+        }
+
+        accessDecisionMade = true;
+        if (guard) guard.remove();
+      }, error => {
+        console.error('Falha ao verificar autenticação:', error);
+        accessDecisionMade = true;
+        showAccessMessage('Não foi possível verificar o acesso', 'Ocorreu um erro ao consultar sua sessão. Volte ao login e tente novamente.');
+      });
+    </script>
+
+
+<script id="mobile-menu-controller">
+(function(){
+  const shell=document.getElementById('appShell');
+  const toggle=document.getElementById('mobileMenuToggle');
+  const backdrop=document.getElementById('appMobileBackdrop');
+  const sidebar=shell?.querySelector('.app-sidebar');
+  if(!shell||!toggle||!backdrop||!sidebar) return;
+  function closeMenu(){
+    shell.classList.remove('app-mobile-menu-open');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Abrir menu');
+    toggle.title='Abrir menu';
+    toggle.innerHTML='<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+  }
+  function openMenu(){
+    shell.classList.add('app-mobile-menu-open');
+    toggle.setAttribute('aria-expanded','true');
+    toggle.setAttribute('aria-label','Fechar menu');
+    toggle.title='Fechar menu';
+    toggle.innerHTML='<i class="fa-solid fa-xmark" aria-hidden="true"></i>';
+  }
+  toggle.addEventListener('click',function(){
+    shell.classList.contains('app-mobile-menu-open')?closeMenu():openMenu();
+  });
+  backdrop.addEventListener('click',closeMenu);
+  sidebar.addEventListener('click',function(event){
+    const control=event.target.closest('a,button');
+    if(control && !control.id?.includes('appSidebarCollapse')) closeMenu();
+  });
+  document.addEventListener('keydown',function(event){if(event.key==='Escape')closeMenu()});
+  window.addEventListener('resize',function(){if(window.innerWidth>850)closeMenu()});
+})();
+</script>
+
+</body>
