@@ -22,7 +22,7 @@ import { isAdminUser } from "./admin-access.js";
 const NORMS_COLLECTION = "normas";
 
 const ALLOWED_TAGS = new Set([
-  "P", "BR", "STRONG", "B", "EM", "I", "U",
+  "P", "BR", "STRONG", "B", "EM", "I", "U", "S", "STRIKE", "DEL",
   "H1", "H2", "H3", "H4",
   "UL", "OL", "LI", "BLOCKQUOTE",
   "TABLE", "THEAD", "TBODY", "TR", "TH", "TD",
