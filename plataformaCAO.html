@@ -1,245 +1,746 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#071020">
-  <title>Área de Estudos CAO — Plataforma de Aperfeiçoamento</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script>
-    tailwind.config = {
-      theme: { extend: { colors: {
-        pm: { navy: '#0b1326', header: '#071020', gold: '#d4af37',
-              goldHover: '#b59226', card: '#101c32', card2: '#14223b',
-              border: '#2a3c66' }
-      }}}
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#071326"><title>CAO — Área de Estudos</title><script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><style>
+:root{--navy:#071326;--navy2:#0b1b32;--card:#101f37;--card2:#142642;--gold:#eabf3a;--gold2:#f5d46a;--white:#f8fafc;--muted:#aab7ca;--line:rgba(234,191,58,.2);--green:#45c49a;--blue:#8bbcff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% -10%,#1b3151 0,transparent 42%),var(--navy);color:var(--white);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input{font:inherit}button{cursor:pointer}
+.shell{min-height:100vh;display:flex}.sidebar{width:252px;position:fixed;inset:0 auto 0 0;background:linear-gradient(180deg,#081326,#050d1a);border-right:1px solid var(--line);padding:22px 15px;display:flex;flex-direction:column;z-index:20;overflow-y:auto}.brand{display:flex;align-items:center;gap:11px;padding:4px 8px 22px;border-bottom:1px solid var(--line)}.logo{width:46px;height:42px;flex:none}.eyebrow{font-size:9px;color:var(--gold);font-weight:900;letter-spacing:.15em;text-transform:uppercase}.brand h1{font-size:24px;line-height:1.05;margin:3px 0;font-weight:950;letter-spacing:.08em}.brand p{font-size:10px;color:var(--muted);margin:0}.nav-label{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#687a94;font-weight:900;margin:22px 10px 8px}.nav{display:grid;gap:6px}.nav button{display:flex;align-items:center;gap:12px;width:100%;padding:12px 13px;border:1px solid transparent;border-radius:12px;background:transparent;color:#aab7ca;text-align:left;font-weight:650}.nav button:hover,.nav-link:hover{background:#12213a;color:#fff}.nav-link{display:flex;align-items:center;gap:12px;width:100%;padding:12px 13px;border:1px solid transparent;border-radius:12px;background:transparent;color:#aab7ca;text-align:left;font-weight:650;text-decoration:none}.nav-arrow{margin-left:auto;color:var(--gold2);font-size:12px}.nav button.active{color:var(--gold2);background:linear-gradient(100deg,rgba(234,191,58,.14),rgba(234,191,58,.035));border-color:rgba(234,191,58,.25);box-shadow:inset 3px 0 var(--gold)}.ico{width:19px;text-align:center;font-size:17px}.sidefoot{margin-top:auto;border-top:1px solid var(--line);padding-top:15px}.user{padding:12px;background:#0d1a2e;border:1px solid rgba(255,255,255,.07);border-radius:13px;display:flex;align-items:center;gap:10px}.avatar{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(145deg,#142642,#09162a);border:1px solid rgba(234,191,58,.55);color:var(--gold2);font-size:15px;font-weight:900;box-shadow:inset 0 0 0 2px rgba(234,191,58,.06)}.user small{display:block;color:var(--muted);font-size:11px}
+main{margin-left:252px;width:calc(100% - 252px);min-width:0}.topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 28px;background:rgba(7,19,38,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}.top-title{font-size:23px;line-height:1.2;font-weight:900;letter-spacing:-.025em}.top-title small{display:block;color:var(--muted);font-size:13px;line-height:1.4;font-weight:550;letter-spacing:.015em;margin-top:3px}.top-actions{display:flex;align-items:center;gap:9px}.pill{border:1px solid var(--line);background:#0d1b30;color:var(--gold2);border-radius:10px;padding:8px 11px;font-size:12px;font-weight:800}.menu-toggle{display:none}.content{max-width:1500px;padding:26px;margin:auto}.page{display:none}.page.active{display:block}.hero{position:relative;overflow:hidden;padding:28px;border:1px solid rgba(234,191,58,.25);border-radius:20px;background:linear-gradient(115deg,#172b49,#0d1b30 68%,#0b1729);box-shadow:0 20px 45px #0003}.hero:after{content:"CAO";position:absolute;right:22px;bottom:-42px;font-weight:1000;font-size:140px;letter-spacing:.04em;color:rgba(234,191,58,.045);pointer-events:none}.hero .tag{display:inline-flex;padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:var(--gold2);background:#eabf3a12;font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.08em}.hero h2{font-size:clamp(24px,3vw,34px);margin:13px 0 8px;line-height:1.15}.hero p{max-width:690px;color:#c4cfdd;margin:0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:21px}.btn{border-radius:11px;padding:11px 15px;border:1px solid var(--line);background:#13243d;color:#dce5f1;font-weight:800}.btn.primary{background:linear-gradient(135deg,#f2cf59,#d9a92b);color:#111b2a;border-color:#f3d66e;box-shadow:0 8px 24px #eabf3a20}.btn:hover{filter:brightness(1.08)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:27px 0 14px}.section-head h3{margin:0;font-size:17px}.section-head p{margin:3px 0 0;color:var(--muted);font-size:12px}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:18px}.metric,.panel,.course,.resource{border:1px solid rgba(255,255,255,.075);background:linear-gradient(145deg,#101f37,#0b182b);border-radius:16px;box-shadow:0 12px 30px #0002}.metric{padding:17px}.metric-top{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}.metric-icon{color:var(--gold);font-size:17px}.metric strong{display:block;font-size:29px;letter-spacing:-.04em;margin:9px 0 3px}.metric small{color:#9eacc0}.dashboard-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,1fr);gap:15px;margin-top:16px}.panel{padding:20px}.panel h3{margin:0 0 4px;font-size:16px}.sub{color:var(--muted);font-size:12px;margin:0 0 18px}.subject{margin:15px 0}.subject-row{display:flex;justify-content:space-between;gap:10px;font-size:12px;margin-bottom:7px}.subject-row span:last-child{color:var(--muted)}.bar{height:7px;background:#24334b;border-radius:99px;overflow:hidden}.bar i{height:100%;display:block;background:linear-gradient(90deg,#b78b20,var(--gold2));border-radius:99px;box-shadow:0 0 14px #eabf3a30}.recommend{padding:13px;border:1px solid rgba(234,191,58,.14);border-radius:12px;background:#14243b;margin-top:10px}.recommend strong{display:block;font-size:13px}.recommend small{color:var(--muted)}.courses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.course{padding:19px;cursor:pointer;transition:.2s}.course:hover{transform:translateY(-2px);border-color:var(--line)}.course-icon{font-size:25px;margin-bottom:13px;color:var(--gold)}.course h3{font-size:15px;margin:0 0 5px}.course p{font-size:12px;color:var(--muted);margin:0}.course .course-link{margin-top:20px;padding-top:12px;border-top:1px solid #ffffff10;color:var(--gold2);font-weight:800;font-size:12px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}.search{flex:1;min-width:220px;background:#081529;color:#fff;border:1px solid #293951;border-radius:11px;padding:12px 14px;outline:none}.search:focus{border-color:var(--gold)}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 18px}.tabs button{border:1px solid #293951;border-radius:999px;padding:8px 13px;background:#0c192c;color:#b9c6d8;font-size:12px;font-weight:800}.tabs button.active{border-color:var(--gold);color:var(--gold2);background:#eabf3a12}.resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.resource{padding:18px}.resource .kind{display:inline-block;font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);font-weight:900;padding:5px 8px;border:1px solid var(--line);border-radius:999px;background:#eabf3a0d}.resource h3{font-size:15px;margin:12px 0 6px}.resource p{font-size:12px;color:var(--muted);margin:0 0 14px}.resource .resource-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;border-top:1px solid #ffffff10;padding-top:12px;color:#9eacc0;font-size:11px}.resource .open-resource{border:0;background:transparent;color:var(--gold2);font-weight:850;padding:0}.notice{padding:15px 16px;border:1px dashed rgba(234,191,58,.35);border-radius:13px;background:#eabf3a08;color:#bdc9da;font-size:12px}.detail-content{white-space:pre-wrap;line-height:1.8;color:#d6dfeb}.detail-content h4{color:var(--gold2)}.back{margin-bottom:15px}.empty{padding:25px;text-align:center;border:1px dashed #31415a;border-radius:14px;color:var(--muted);font-size:13px}.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.toast{position:fixed;right:20px;bottom:20px;background:#13243c;border:1px solid var(--line);border-radius:12px;padding:12px 16px;color:#fff;z-index:50;display:none}
+@media(max-width:1050px){.sidebar{width:225px}.shell main{margin-left:225px;width:calc(100% - 225px)}.content{padding:20px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.courses{grid-template-columns:repeat(2,minmax(0,1fr))}.dashboard-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.sidebar{width:min(290px,86vw);transform:translateX(-105%);transition:transform .25s ease;box-shadow:18px 0 45px #0007}.sidebar.open{transform:translateX(0)}.scrim{display:none;position:fixed;inset:0;background:#020713aa;z-index:15}.scrim.show{display:block}.shell main{margin:0;width:100%}.topbar{padding:12px 15px}.menu-toggle{display:inline-grid;place-items:center;width:39px;height:39px;border:1px solid var(--line);border-radius:10px;background:#102039;color:var(--gold);font-size:19px}.top-title{font-size:19px}.top-title small{font-size:12px}.top-actions .pill:not(.notification-bell){display:none}.content{padding:15px}.hero{padding:22px 19px}.hero:after{font-size:95px;right:6px}.hero p{font-size:13px}.metrics{gap:9px}.metric{padding:13px}.metric strong{font-size:24px}.metric-top{font-size:9px}.dashboard-grid,.profile-grid{grid-template-columns:1fr}.courses,.resource-grid{grid-template-columns:1fr}.panel{padding:16px}.section-head{align-items:start;flex-direction:column}.actions .btn{flex:1}.brand h1{font-size:22px}}
+ 
+/* Ajustes da revisão v2 */
+.hero h2 .gold{color:var(--gold2)}.profile-line{display:flex;align-items:center;gap:14px}.profile-avatar{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(145deg,#142642,#09162a);border:1px solid rgba(234,191,58,.6);box-shadow:inset 0 0 0 2px rgba(234,191,58,.06);color:var(--gold2);font-size:21px;font-weight:950;flex:none}.profile-copy small{color:var(--muted);display:block}.section-head{margin-top:24px}.subjects-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.subject-card{border:1px solid rgba(255,255,255,.08);background:linear-gradient(145deg,#142642,#0b182b);border-radius:16px;padding:19px;display:flex;flex-direction:column;min-height:210px;transition:.2s}.subject-card:hover{border-color:var(--line);transform:translateY(-2px)}.subject-card h3{font-size:15px;margin:12px 0 6px}.subject-card p{color:var(--muted);font-size:12px;flex:1}.subject-icon{width:43px;height:43px;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;color:var(--gold);font-size:19px;background:#eabf3a0c}.subject-card button{width:100%;margin-top:15px}.bizu-hero{display:flex;align-items:center;justify-content:space-between;gap:16px;border:1px solid var(--line);border-radius:16px;padding:18px;background:linear-gradient(110deg,#142642,#0c192c)}.modal-backdrop{position:fixed;inset:0;z-index:60;background:#020713d9;display:none;align-items:center;justify-content:center;padding:16px}.modal-backdrop.open{display:flex}.modal-box{width:min(820px,100%);max-height:88vh;display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#09162a;box-shadow:0 25px 80px #0009}.modal-head{display:flex;align-items:flex-start;gap:12px;padding:18px;background:linear-gradient(110deg,#172b49,#0d1b30);border-bottom:1px solid #ffffff12}.modal-head .modal-heading{flex:1;min-width:0}.modal-head h2{margin:0;font-size:19px}.modal-head p{margin:4px 0 0;color:var(--muted);font-size:12px}.modal-close{border:1px solid #31415a;background:#0b192d;color:#dce5f1;border-radius:9px;width:36px;height:36px;font-size:20px}.modal-tools{padding:14px;border-bottom:1px solid #ffffff12}.modal-tools input{width:100%;background:#071020;border:1px solid #293951;border-radius:10px;padding:11px 13px;color:#fff}.modal-list{padding:15px;overflow-y:auto;display:grid;gap:9px}.material-row{display:flex;align-items:center;gap:12px;text-align:left;width:100%;padding:13px;border:1px solid #263750;border-radius:12px;background:#101f37;color:#f8fafc}.material-row:hover{border-color:var(--line);background:#142642}.material-row .number{width:37px;height:37px;display:grid;place-items:center;flex:none;border-radius:10px;background:#eabf3a14;color:var(--gold2);font-weight:900}.material-row strong{display:block;font-size:13px}.material-row small{display:block;color:var(--muted);margin-top:4px;font-size:11px}.modal-foot{padding:12px 16px;color:#8190a7;font-size:10px;border-top:1px solid #ffffff12}.bizu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:15px;overflow-y:auto}.bizu-row{display:flex;align-items:center;gap:10px;text-align:left;padding:13px;border:1px solid #263750;border-radius:12px;background:#101f37;color:#fff}.bizu-row:hover{border-color:var(--line)}.bizu-row .number{width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#eabf3a14;color:var(--gold2);font-weight:900;flex:none}.bizu-row strong{display:block;font-size:12px}.bizu-row small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+@media(max-width:900px){.subjects-grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:720px){.bizu-grid{grid-template-columns:1fr}.bizu-hero{align-items:flex-start;flex-direction:column}.bizu-hero .btn{width:100%}}
+/* Revisão visual CAO: cards maiores, melhor distribuição vertical e perfil sem erro de elementos ausentes */
+.content{max-width:1680px;padding:34px clamp(24px,3.2vw,52px)}
+#page-materias>.section-head{margin:22px 0 28px;align-items:flex-start}
+#page-materias>.section-head h3{font-size:23px;letter-spacing:-.025em}
+#page-materias>.section-head p{font-size:13px;max-width:760px;line-height:1.65;margin-top:8px}
+#page-materias .subjects-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch;min-height:min(54vh,560px)}
+#page-materias .subject-card{min-height:340px;padding:28px;justify-content:flex-start;border-color:rgba(234,191,58,.16);background:linear-gradient(155deg,rgba(20,38,66,.98),rgba(8,20,37,.98));box-shadow:0 18px 42px rgba(0,0,0,.2)}
+#page-materias .subject-card:hover{border-color:rgba(234,191,58,.5);box-shadow:0 22px 50px rgba(0,0,0,.28);transform:translateY(-4px)}
+#page-materias .subject-icon{width:56px;height:56px;border-radius:15px;font-size:23px}
+#page-materias .subject-card h3{font-size:19px;line-height:1.35;margin:24px 0 10px}
+#page-materias .subject-card p{font-size:14px;line-height:1.8;max-width:340px}
+#page-materias .subject-card button{margin-top:auto;padding:15px 17px;font-size:13px}
+.profile-embed-wrap{background:#071326;border-color:rgba(234,191,58,.14)}
+.profile-frame{background:#071326;color-scheme:dark}
+@media(max-width:1050px){#page-materias .subjects-grid{min-height:0;gap:14px}#page-materias .subject-card{min-height:300px;padding:20px}#page-materias .subject-card h3{font-size:16px;margin-top:18px}#page-materias .subject-card p{font-size:12px}}
+@media(max-width:720px){.content{padding:18px 14px}#page-materias>.section-head{margin:12px 0 18px}#page-materias>.section-head h3{font-size:20px}#page-materias .subjects-grid{grid-template-columns:1fr;gap:13px}#page-materias .subject-card{min-height:240px;padding:21px}#page-materias .subject-card h3{margin:16px 0 8px}#page-materias .subject-card button{margin-top:18px}}
+/* Perfil integrado ao painel CAO e modais ampliados */
+.profile-embed-wrap{width:100%;min-height:1100px;overflow:hidden;border:1px solid rgba(234,191,58,.18);border-radius:18px;background:#071326;box-shadow:0 18px 45px #0003}.profile-frame{display:block;width:100%;height:1250px;border:0;background:var(--navy)}
+.modal-box{width:min(1120px,100%);max-height:92vh;margin:2vh auto}.modal-head{padding:22px 24px}.modal-head h2{font-size:22px}.modal-head p{font-size:13px}.modal-tools{padding:17px 22px}.modal-list{padding:20px 22px;grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;gap:12px}.material-row{min-height:82px;padding:16px}.material-row .number{width:44px;height:44px}.material-row strong{font-size:14px}.material-row small{font-size:12px;line-height:1.45}.modal-foot{padding:14px 22px}
+@media(max-width:720px){.profile-embed-wrap{min-height:1450px}.profile-frame{height:1550px}.modal-box{max-height:94vh;margin:0}.modal-head{padding:16px}.modal-list{grid-template-columns:1fr;padding:13px;gap:9px}.material-row{min-height:72px;padding:12px}.modal-tools{padding:12px}.modal-foot{padding:11px 14px}}
+
+
+/* Correção mobile dos modais: impedir sobreposição de títulos e descrições.
+   Os cartões podem crescer conforme o texto e a lista rola dentro do modal. */
+@media (max-width: 720px) {
+  .modal-backdrop {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  .modal-box {
+    width: 100%;
+    max-height: calc(100dvh - 20px);
+    height: auto;
+    min-height: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-head {
+    flex: 0 0 auto;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 0;
+  }
+  .modal-head .subject-icon {
+    flex: 0 0 56px;
+  }
+  .modal-heading {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .modal-head h2,
+  .modal-head p {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+  .modal-close {
+    flex: 0 0 36px;
+  }
+  .modal-tools,
+  .modal-foot {
+    flex: 0 0 auto;
+  }
+  .modal-list,
+  .bizu-grid {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    grid-auto-rows: max-content;
+    align-content: start;
+  }
+  .material-row,
+  .bizu-row {
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    align-items: center;
+  }
+  .material-row > span,
+  .bizu-row > span {
+    min-width: 0;
+    flex: 1 1 0%;
+    overflow-wrap: anywhere;
+  }
+  .material-row strong,
+  .material-row small,
+  .bizu-row strong,
+  .bizu-row small {
+    display: block;
+    position: static;
+    height: auto;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-height: 1.45;
+  }
+  .material-row strong,
+  .bizu-row strong {
+    margin: 0;
+  }
+  .material-row small,
+  .bizu-row small {
+    margin-top: 4px;
+  }
+}
+
+/* Central de notificações CAO */
+.notification-bell{display:inline-flex;align-items:center;gap:9px;position:relative;white-space:nowrap}.notification-bell i{font-size:15px}.notification-count{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#c94141;color:#fff;font-size:10px;font-weight:900;line-height:1}.notification-count[hidden]{display:none}.notification-backdrop{z-index:100}.notification-box{width:min(760px,100%)}.notification-list{display:grid;grid-template-columns:1fr;gap:9px}.notification-entry{display:flex;align-items:flex-start;gap:12px;text-align:left;width:100%;padding:15px;border:1px solid #263750;border-radius:12px;background:#101f37;color:#f8fafc;cursor:pointer}.notification-entry:hover{border-color:var(--gold);background:#142642}.notification-entry.unread{border-color:rgba(234,191,58,.48);background:linear-gradient(110deg,#172b49,#101f37)}.notification-entry-copy{flex:1;min-width:0}.notification-entry strong{display:block;font-size:13px;line-height:1.45}.notification-entry small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.notification-entry p{margin:7px 0 0;color:#b9c6d8;font-size:12px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}.notification-unread-dot{width:8px;height:8px;flex:none;margin-top:5px;border-radius:50%;background:var(--gold)}.notification-entry:not(.unread) .notification-unread-dot{background:#60728c}.notification-actions{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap;padding:14px 20px;border-top:1px solid #ffffff12}.notification-actions button{border:1px solid #31415a;border-radius:9px;background:#0b192d;color:#dce5f1;padding:9px 12px;font-weight:750}.notification-actions button.primary{background:linear-gradient(135deg,#f2cf59,#d9a92b);color:#111b2a;border-color:#f3d66e}.notification-detail{padding:20px 22px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;color:#dce5f1}.notification-detail-title{font-size:17px;font-weight:900;color:#fff;margin:0 0 8px}.notification-detail-date{font-size:11px;color:var(--muted);margin-bottom:16px}.notification-empty{padding:28px 14px;text-align:center;color:var(--muted);border:1px dashed #31415a;border-radius:12px;font-size:12px}
+@media(max-width:720px){.topbar{gap:8px}.top-actions{margin-left:auto}.notification-bell{padding:9px 10px;font-size:11px}.notification-bell span:nth-child(2){display:none}.notification-box{max-height:calc(100dvh - 20px)}.notification-list{padding:12px}.notification-entry{padding:12px}.notification-detail{padding:16px}}
+
+/* Catálogo de editais CAO integrado à aba existente de Provas */
+.acp-edital-card{display:flex;align-items:center;gap:18px;padding:22px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(110deg,rgba(234,191,58,.10),rgba(16,31,55,.96) 48%,rgba(11,27,50,.98));}
+.acp-edital-icon{width:48px;height:48px;flex:none;display:grid;place-items:center;border:1px solid var(--line);border-radius:13px;background:#eabf3a0d;color:var(--gold2);font-size:20px}
+.acp-edital-copy{flex:1;min-width:0}.acp-edital-kicker{font-size:9px;letter-spacing:.14em;font-weight:900;color:var(--gold2)}
+.acp-edital-copy h3{font-size:17px;margin:5px 0}.acp-edital-copy p{font-size:12px;color:var(--muted);margin:0;max-width:650px}.acp-edital-count{display:inline-block;margin-top:10px;color:#91a2b9;font-size:10px}
+.acp-edital-open{flex:none;border:1px solid rgba(234,191,58,.45);background:rgba(234,191,58,.08);color:var(--gold2);border-radius:10px;padding:11px 14px;font-weight:800;font-size:11px;cursor:pointer}.acp-edital-open:hover{background:rgba(234,191,58,.16)}
+.acp-exams-heading{margin-top:30px!important}
+.acp-edital-backdrop{position:fixed;inset:0;z-index:1000;background:rgba(1,7,16,.82);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:18px}.acp-edital-backdrop.open{display:flex}
+.acp-edital-modal{width:min(700px,100%);max-height:90vh;overflow:auto;background:linear-gradient(145deg,#142642,#0b172a);border:1px solid rgba(234,191,58,.38);border-radius:18px;padding:23px;box-shadow:0 25px 90px #0009}
+.acp-edital-modal-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.acp-edital-close{width:35px;height:35px;border:1px solid #ffffff25;border-radius:9px;background:#ffffff0c;color:#e2e8f0;cursor:pointer}
+.acp-edital-modal h3{font-size:22px;margin:15px 0 4px}.acp-edital-modal-intro{font-size:12px;color:var(--muted);margin:0}
+.acp-edital-tools{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:20px 0 12px;color:#9eacc0;font-size:11px}.acp-edital-tools select{margin-left:7px;background:#09172a;color:#fff;border:1px solid #ffffff25;border-radius:8px;padding:8px}
+.acp-edital-history{display:grid;gap:13px}.acp-edital-year{border:1px solid #ffffff18;border-radius:12px;overflow:hidden;background:#09172a66}.acp-edital-year-head{display:flex;justify-content:space-between;padding:11px 14px;background:#ffffff08;border-bottom:1px solid #ffffff12}.acp-edital-year-head strong{font-size:13px}.acp-edital-year-head span{font-size:10px;color:#91a2b9}
+.acp-edital-row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 14px;border-bottom:1px solid #ffffff0d}.acp-edital-row:last-child{border-bottom:0}.acp-edital-row strong{font-size:13px}.acp-edital-row small{display:block;color:#91a2b9;font-size:10px;margin-top:3px}
+.acp-edital-pdf{flex:none;display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#f5d46a,#dcae28);color:#172033;border-radius:8px;padding:9px 11px;text-decoration:none;font-size:10px;font-weight:900}.acp-edital-pdf.disabled{opacity:.35;pointer-events:none}
+.acp-edital-empty{padding:25px;text-align:center;color:#9eacc0;border:1px dashed #ffffff25;border-radius:12px;font-size:12px}
+.acp-edital-modal-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:17px;color:#8292a9;font-size:10px}.acp-edital-modal-foot button{border:1px solid #ffffff2a;background:transparent;color:#d3dbea;padding:9px 13px;border-radius:8px;cursor:pointer}
+@media(max-width:720px){.acp-edital-card{align-items:flex-start;flex-wrap:wrap;padding:17px}.acp-edital-copy{flex:1 1 calc(100% - 70px)}.acp-edital-open{width:100%}.acp-edital-modal{padding:17px}.acp-edital-row{align-items:flex-start}.acp-edital-modal-foot{align-items:flex-start;flex-direction:column}}
+</style><link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/svg+xml" href="/pa-icon.svg">
+<link rel="apple-touch-icon" href="/pa-icon.svg">
+</head><body><div id="caoAccessGate" style="position:fixed;inset:0;z-index:999999;background:#071326;color:#f8fafc;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-family:system-ui"><div style="max-width:440px;padding:28px;border:1px solid #eabf3a;border-radius:16px;background:#101f37"><h2 style="color:#eabf3a;margin:0 0 12px">Verificando acesso ao CAO</h2><p id="caoAccessMessage">Aguarde enquanto confirmamos sua autorização.</p></div></div><script type="module">import{onAuthStateChanged}from"https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";import{auth}from"./firebase-config.js";const gate=document.getElementById("caoAccessGate");onAuthStateChanged(auth,user=>{if(!user){document.getElementById("caoAccessMessage").textContent="Acesso restrito. Entre com a conta autorizada.";return;}if(user.uid!=="HwKwtmGWHuPnaDlyCusYp91FHXb2"){document.getElementById("caoAccessMessage").textContent="Acesso restrito a usuário autorizado.";return;}gate.remove();},()=>{document.getElementById("caoAccessMessage").textContent="Não foi possível validar sua autorização.";});</script><div class="scrim" id="scrim"></div><div class="shell">
+<aside class="sidebar" id="sidebar"><div><div class="brand"><svg class="logo" viewBox="0 0 76 54" fill="none"><path d="M7 35 27 8l18 10L65 4 49 34 31 24 7 35Z" fill="#EABF3A"/><path d="M9 42c17-7 39-7 58 0M14 49c15-5 32-5 47 0" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/></svg><div><div class="eyebrow">Plataforma de Aperfeiçoamento</div><h1>CAO</h1><p>Curso de Aperfeiçoamento de Oficiais</p></div></div><div class="nav-label">Ambiente de estudo</div><nav class="nav" id="nav"><button class="active" data-page="dashboard"><span class="ico">◫</span>Painel inicial</button><button data-page="materias"><span class="ico">▤</span>Matérias e materiais</button><button data-page="bizus"><span class="ico">✦</span>Bizu - Mastigado</button><button data-page="provas"><span class="ico">▣</span>Provas e Editais</button><button data-page="perfil"><span class="ico">◎</span>Perfil & Estatísticas</button><a class="nav-link" href="bancoQuestoesCAO.html?curso=CAO"><span class="ico">▣</span>Banco de questões <span class="nav-arrow">↗</span></a><a class="nav-link" href="plataforma.html"><span class="ico">▦</span>Cursos <span class="nav-arrow">↗</span></a></nav></div><div class="sidefoot"><div class="user"><div class="avatar" id="sideAvatar">CAO</div><div><strong id="sideName">Perfil do aluno</strong><small>Área de estudos</small></div></div><p style="font-size:10px;color:#8190a7;margin:12px 4px 0">Plataforma de Aperfeiçoamento</p></div></aside><main><header class="topbar"><div style="display:flex;align-items:center;gap:13px"><button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button><div class="top-title" id="topTitle">Painel inicial<small>CAO · Área de Estudos</small></div></div><div class="top-actions"><button type="button" class="pill notification-bell" id="notificationBell" aria-label="Abrir notificações" aria-haspopup="dialog" aria-controls="notificationModal"><i class="fa-regular fa-bell" aria-hidden="true"></i><span>Notificações</span><span class="notification-count" id="notificationCount" hidden>0</span></button></div></header><div class="content">
+<section class="page active" id="page-dashboard">
+<div class="hero"><span class="tag">Área do aluno · CAO</span><div class="profile-line" style="margin-top:14px"><div class="profile-avatar" id="welcomeAvatar">A</div><div class="profile-copy"><h2 style="margin:0">Bem-vindo, <span class="gold" id="welcomeName">[Nome do perfil]</span></h2><small>Seu ambiente de estudos e aperfeiçoamento profissional</small></div></div><p style="margin-top:12px">Acesse as matérias, consulte os materiais de referência e revise os bizus em um único ambiente.</p></div>
+<div class="section-head"><div><h3>Estatísticas do usuário</h3><p>Indicadores calculados a partir dos simulados concluídos na sua conta.</p></div></div>
+<div class="metrics"><div class="metric"><div class="metric-top"><span>Questões respondidas</span><span class="metric-icon">✓</span></div><strong id="metricAnswered">0</strong><small id="metricAnsweredNote">Questões respondidas em simulados concluídos</small></div><div class="metric"><div class="metric-top"><span>Média de aproveitamento</span><span class="metric-icon">◎</span></div><strong id="metricAccuracy">0%</strong><small id="metricAccuracyNote">Média dos simulados concluídos</small></div><div class="metric"><div class="metric-top"><span>Matérias estudadas</span><span class="metric-icon">▤</span></div><strong id="metricSubjects">0</strong><small id="metricSubjectsNote">Matérias identificadas nos resultados</small></div><div class="metric"><div class="metric-top"><span>Melhor resultado</span><span class="metric-icon">↗</span></div><strong id="metricProgress">0%</strong><small id="metricProgressNote">Maior aproveitamento em um simulado</small></div></div>
+<div class="section-head"><div><h3>Matérias e áreas de estudo</h3><p>Selecione uma área para consultar as normas, os textos e os resumos disponíveis.</p></div></div>
+<div class="subjects-grid"><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>Assuntos Jurídico-Administrativos</h3><p>Legislação, normas e diretrizes aplicadas à atividade policial e à administração pública.</p><button class="btn" data-category="juridico">Ver materiais →</button></article><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-building-columns"></i></div><h3>Assuntos Organizacionais</h3><p>Organização, gestão, administração e assuntos institucionais da PMESP.</p><button class="btn" data-category="organizacional">Ver materiais →</button></article><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-crosshairs"></i></div><h3>Assuntos Operacionais</h3><p>Doutrina, programas de policiamento, diretrizes e procedimentos operacionais.</p><button class="btn" data-category="operacional">Ver materiais →</button></article></div>
+<div class="section-head"><div><h3>Bizus para revisão</h3><p>Acesse os materiais de revisão organizados por matéria.</p></div></div>
+<div class="bizu-hero"><div class="profile-line"><div class="subject-icon"><i class="fa-solid fa-lightbulb"></i></div><div><h3 style="margin:0 0 3px">Bizu - Mastigado</h3><p style="margin:0;color:var(--muted);font-size:12px">Materiais de revisão rápida e pontos essenciais para fixação.</p></div></div><button class="btn primary" id="openBizus">Abrir matérias →</button></div>
+
+</section>
+<section class="page" id="page-materias"><div class="section-head"><div><h3>Matérias e materiais</h3><p>Selecione uma das três áreas para localizar normas, textos integrais e materiais de revisão.</p></div></div><div class="subjects-grid"><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>Assuntos Jurídico-Administrativos</h3><p>Legislação, normas e diretrizes.</p><button class="btn" data-category="juridico">Ver materiais →</button></article><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-building-columns"></i></div><h3>Assuntos Organizacionais</h3><p>Estrutura e gestão institucional.</p><button class="btn" data-category="organizacional">Ver materiais →</button></article><article class="subject-card"><div class="subject-icon"><i class="fa-solid fa-crosshairs"></i></div><h3>Assuntos Operacionais</h3><p>Doutrina e procedimentos operacionais.</p><button class="btn" data-category="operacional">Ver materiais →</button></article></div></section>
+<section class="page" id="page-provas">
+<div class="section-head"><div><h3>Provas e Editais CAO</h3><p>Consulte os editais oficiais e acesse o acervo de avaliações do curso.</p></div></div>
+<div class="acp-edital-card"><div class="acp-edital-icon"><i class="fa-solid fa-folder-open"></i></div><div class="acp-edital-copy"><span class="acp-edital-kicker">DOCUMENTOS OFICIAIS · CAO</span><h3>Histórico de Editais</h3><p>Consulte os editais publicados para o Curso de Aperfeiçoamento Profissional, organizados por ano e número.</p><span class="acp-edital-count" id="acpEditalCount">2 editais cadastrados</span></div><button type="button" class="acp-edital-open" id="openAcpEditais">Consultar editais <i class="fa-solid fa-arrow-right"></i></button></div>
+<div class="section-head acp-exams-heading"><div><h3>Provas CAO</h3><p>Acervo de avaliações de Competência Profissional.</p></div></div>
+<iframe id="caoExamFrame" src="provas-cao.html?embedded=1" title="Módulo de provas CAO" style="display:block;width:100%;height:650px;border:0;border-radius:12px;background:transparent" loading="lazy"></iframe>
+<script>window.addEventListener("message",e=>{const f=document.getElementById("caoExamFrame");if(!f||e.source!==f.contentWindow)return;if(e.data?.type==="cao-exam-height")f.style.height=Math.max(0,Math.min(6000,e.data.height+2))+"px";if(e.data?.type==="cao-exam-scroll"&&Number.isFinite(e.data.top)){const top=f.getBoundingClientRect().top+window.scrollY+e.data.top-84;window.scrollTo({top:Math.max(0,top),behavior:"smooth"})}});</script>
+<div class="acp-edital-backdrop" id="acpEditalModal" role="dialog" aria-modal="true" aria-labelledby="acpEditalTitle"><section class="acp-edital-modal"><header class="acp-edital-modal-head"><span class="acp-edital-kicker">CAO · HISTÓRICO DE PUBLICAÇÕES</span><button type="button" class="acp-edital-close" id="closeAcpEditais" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button></header><h3 id="acpEditalTitle">Editais do Curso CAO</h3><p class="acp-edital-modal-intro">Documentos organizados do mais recente para o mais antigo. Selecione o edital para abrir o arquivo oficial.</p><div class="acp-edital-tools"><label>Filtrar por ano <select id="acpEditalYear"><option value="todos">Todos os anos</option></select></label><span id="acpEditalModalCount"></span></div><div id="acpEditalHistory" class="acp-edital-history"></div><footer class="acp-edital-modal-foot"><span>Os documentos são disponibilizados em PDF no Google Drive.</span><button type="button" id="backAcpEditais">Fechar histórico</button></footer></section></div>
+</section>
+<section class="page" id="page-bizus"><div class="section-head"><div><h3>Bizu - Mastigado</h3><p>Catálogo de revisão. Os links marcados para preenchimento continuam pendentes no arquivo-fonte.</p></div></div><div class="notice">Selecione um item para consultar a descrição e abrir o material correspondente.</div><div id="bizusInline" class="resource-grid" style="margin-top:14px"></div></section>
+<section class="page" id="page-perfil"><div class="section-head"><div><h3>Perfil & Estatísticas</h3><p>Consulte seu desempenho, atualize seus dados e gerencie sua conta sem sair do ambiente CAO.</p></div><a class="btn" href="perfil-usuario.html" target="_blank" rel="noopener noreferrer" style="text-decoration:none">Abrir em nova aba ↗</a></div><div class="profile-embed-wrap"><iframe id="profileFrame" class="profile-frame" src="perfil-usuario.html" title="Perfil do usuário e estatísticas" loading="lazy"></iframe></div></section>
+<section class="page" id="page-detail"><button class="btn back" id="detailBack">← Voltar</button><div class="panel"><span class="kind" id="detailKind">MATERIAL</span><h2 id="detailTitle" style="font-size:22px;margin:12px 0 6px"></h2><p id="detailMeta" class="sub"></p><div id="detailActions" class="modal-actions"></div></div></section>
+</div></main></div><div class="modal-backdrop notification-backdrop" id="notificationModal" role="presentation"><section class="modal-box notification-box" role="dialog" aria-modal="true" aria-labelledby="notificationModalTitle"><header class="modal-head"><div class="subject-icon"><i class="fa-regular fa-bell"></i></div><div class="modal-heading"><h2 id="notificationModalTitle">Notificações</h2><p id="notificationModalSubtitle">Avisos e comunicados da plataforma.</p></div><button class="modal-close" id="notificationClose" aria-label="Fechar notificações">×</button></header><div class="modal-list notification-list" id="notificationList"><div class="empty">Carregando notificações…</div></div></section></div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="materialsModal" role="presentation"><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="materialsTitle"><header class="modal-head"><div class="subject-icon"><i id="materialsIcon" class="fa-solid fa-book-open"></i></div><div class="modal-heading"><h2 id="materialsTitle">Matéria</h2><p id="materialsDescription">Pesquise e selecione um material.</p></div><button class="modal-close" data-close="materialsModal" aria-label="Fechar">×</button></header><div class="modal-tools"><input id="materialsSearch" type="search" placeholder="Pesquisar por nome, código ou assunto..."><p id="materialsCount" style="font-size:11px;color:var(--muted);margin:7px 0 0"></p></div><div class="modal-list" id="materialsList"></div><div class="modal-foot">A lista apresenta somente os materiais da área selecionada.</div></section></div>
+<div class="modal-backdrop" id="resourcesModal" role="presentation"><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="resourcesTitle"><header class="modal-head"><div class="subject-icon"><i class="fa-solid fa-book-open"></i></div><div class="modal-heading"><h2 id="resourcesTitle">Materiais</h2><p id="resourcesDescription">Escolha o texto integral ou material de revisão.</p></div><button class="modal-close" data-close="resourcesModal" aria-label="Fechar">×</button></header><div class="modal-list" id="resourcesList"></div><div class="modal-foot">Links externos abrem em uma nova aba. Os links internos dependem de os respectivos arquivos existirem no projeto.</div></section></div>
+<div class="modal-backdrop" id="bizuModal" role="presentation"><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="bizuTitle"><header class="modal-head"><div class="subject-icon"><i class="fa-solid fa-lightbulb"></i></div><div class="modal-heading"><h2 id="bizuTitle">Bizu - Mastigado</h2><p>Selecione uma das matérias cadastradas no arquivo-fonte.</p></div><button class="modal-close" data-close="bizuModal" aria-label="Fechar">×</button></header><div class="bizu-grid" id="bizuList"></div></section></div>
+<div class="modal-backdrop" id="bizuDetailModal" role="presentation"><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="bizuDetailTitle"><header class="modal-head"><div class="subject-icon"><i class="fa-solid fa-file-lines"></i></div><div class="modal-heading"><h2 id="bizuDetailTitle">Matéria</h2><p id="bizuDetailDescription"></p></div><button class="modal-close" data-close="bizuDetailModal" aria-label="Fechar">×</button></header><div class="modal-list"><p id="bizuLinkStatus" style="color:var(--muted);font-size:12px;margin:0"></p><a id="bizuOpenLink" class="btn primary" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration:none;text-align:center">Abrir material ↗</a></div></section></div>
+<script>
+function showPlatformNotice(message, type='info') {
+  const el = document.getElementById('toast');
+  if (!el) return;
+  el.textContent = String(message || '');
+  el.style.display = 'block';
+  el.style.borderColor = type === 'error' ? 'rgba(248,113,113,.65)' : type === 'success' ? 'rgba(69,196,154,.65)' : 'var(--line)';
+  el.style.borderLeftWidth = '4px';
+  el.style.borderLeftColor = type === 'error' ? '#f87171' : type === 'success' ? '#45c49a' : '#eabf3a';
+  el.setAttribute('role', type === 'error' ? 'alert' : 'status');
+  clearTimeout(window.__paNoticeTimer);
+  window.__paNoticeTimer = setTimeout(() => { el.style.display = 'none'; }, 4200);
+}
+const BIZU_MATERIAS = [
+      { titulo: "Mastigado 01", descricao: "Combate ao Crime Organizado.", href: "https://drive.google.com/file/d/1ztwSzheK-src9Gu4RuLY-iIvx1-JuqsH/view?usp=drive_link" },
+      { titulo: "Mastigado 02", descricao: "COP.", href: "https://drive.google.com/file/d/1X_xxzO_xHKa9LIDJHLEAGfDifgvCeiAh/view?usp=drive_link" },
+      { titulo: "Mastigado 03", descricao: "POP -COP MOTOROLA.", href: "https://drive.google.com/file/d/1XjGJKc-UZUNf9NSi4VG5gFV2VaRHWFde/view?usp=drive_link" },
+      { titulo: "Mastigado 04", descricao: "Radiopatrulhamento", href: "https://drive.google.com/file/d/1PkIj1cHAW1yfPUpD87tjYALOJyqaj_qG/view?usp=drive_link" },
+      { titulo: "Mastigado 05", descricao: "Força Tática", href: "https://drive.google.com/file/d/11tVyr031GOKzhgxGviSBqruDLopao5lO/view?usp=drive_link" },
+      { titulo: "Mastigado 06", descricao: "Ronda Escolar", href: "https://drive.google.com/file/d/1-bvVVgdOS5B5f3t00aWkmxzc4dEwuSHJ/view?usp=drive_link" },
+      { titulo: "Mastigado 07", descricao: "Comunitário", href: "https://drive.google.com/file/d/1fc5I2es9tIVueFU3eM9YVN9Btrk5nfzT/view?usp=drive_link" },
+      { titulo: "Mastigado 08", descricao: "Policiamento de Trânsito", href: "https://drive.google.com/file/d/1pNr-FNQ5-goKW-gOvLEMCECw7EhHSkji/view?usp=drive_link" },
+      { titulo: "Mastigado 09", descricao: "Policiamento Rural.", href: "https://drive.google.com/file/d/1hTdxJqzhXy0JbUK0L6Wa1EsCBOyxKtsf/view?usp=drive_link" },
+      { titulo: "Mastigado 10", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_10" },
+      { titulo: "Matéria 11 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_11" },
+      { titulo: "Matéria 12 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_12" },
+      { titulo: "Matéria 13 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_13" },
+      { titulo: "Matéria 14 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_14" },
+      { titulo: "Matéria 15 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_15" },
+      { titulo: "Matéria 16 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_16" },
+      { titulo: "Matéria 17 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_17" },
+      { titulo: "Matéria 18 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_18" },
+      { titulo: "Matéria 19 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_19" },
+      { titulo: "Matéria 20 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_20" },
+      { titulo: "Matéria 21 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_21" },
+      { titulo: "Matéria 22 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_22" },
+      { titulo: "Matéria 23 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_23" },
+      { titulo: "Matéria 24 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_24" },
+      { titulo: "Matéria 25 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_25" },
+      { titulo: "Matéria 26 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_26" },
+      { titulo: "Matéria 27 — substituir pelo nome", descricao: "Material de revisão desta matéria.", href: "#PREENCHER_LINK_27" }
+    ];
+const catalogoMateriais = {
+      juridico: {
+        titulo: "Jurídico-Administrativo",
+        descricao: "Pesquise e selecione uma norma jurídico-administrativa.",
+        icone: "fa-scale-balanced",
+        materiais: [
+          {
+            codigo: "RDPM",
+            titulo: "Regulamento Disciplinar da Polícia Militar",
+            detalhe: "Lei Complementar nº 893/2001 · Texto integral e resumo para revisão",
+            href: "rdpm.html",
+            normaId: "rdpm",
+            termos: "regulamento disciplinar lei complementar 893 transgressão sanção disciplina",
+            recursos: [
+              { tipo: "texto", titulo: "RDPM · TEXTO INTEGRAL", descricao: "Leitor do regulamento com grifos e anotações.", href: "rdpm.html" },
+              { tipo: "resumo", titulo: "RDPM · RESUMO PARA REVISÃO 1", descricao: "Material de apoio à revisão; confira a legislação oficial e suas alterações.", href: "https://drive.google.com/file/d/17i9k7v3Mee2k6jrb30B_roDKNpvzTH8R/view?usp=drive_link", externo: true },
+              { tipo: "resumo", titulo: "RDPM · RESUMO PARA REVISÃO 2", descricao: "Material de apoio à revisão; confira a legislação oficial e suas alterações.", href: "https://drive.google.com/file/d/1IWcTPi4yEbejmBU3hYqnUIc25nJAyNnQ/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "PROCEDIMENTO DISCIPLINAR",
+            titulo: "Procedimento Disciplinar no âmbito da PMESP",
+            detalhe: "Portaria do Comandante Geral CORREGPM-1/360/13 · Boletim Geral PM 211",
+            href: "procedimento-disciplinar.html",
+            normaId: "procedimento-disciplinar",
+            termos: "procedimento disciplinar portaria CORREGPM-1/360/13 boletim geral PM 211 termo acusatório audiência defesa contraditório",
+            recursos: [
+              { tipo: "texto", titulo: "PROCEDIMENTO DISCIPLINAR · TEXTO INTEGRAL", descricao: "Leitor da norma com pesquisa, grifos e anotações.", href: "procedimento-disciplinar.html" },
+              { tipo: "fonte", titulo: "PROCEDIMENTO DISCIPLINAR · ARQUIVO ORIGINAL", descricao: "Abrir o documento original no Google Drive.", href: "https://drive.google.com/file/d/1iOso7KU7CzQd-3q7o9D1Zmaar9lYDPxs/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "SISTEMA CORRECIONAL",
+            titulo: "Sistema Correcional — Instauração e atualização de Investigação Preliminar",
+            detalhe: "Nota CORREGPM-12243/280/24 · Texto integral e resumo para revisão",
+            href: "sistema-correcional.html",
+            normaId: "sistema-correcional",
+            termos: "Sistema Correcional Investigação Preliminar SIJD Corregedoria PM CORREGPM-12243/280/24 instauração atualização prefixos Seção Correcional",
+            recursos: [
+              { tipo: "texto", titulo: "SISTEMA CORRECIONAL · TEXTO INTEGRAL", descricao: "Leitor do ato com pesquisa, grifos e anotações.", href: "sistema-correcional.html" },
+              { tipo: "resumo", titulo: "SISTEMA CORRECIONAL · RESUMO PARA REVISÃO", descricao: "Material de apoio para revisão do Sistema Correcional.", href: "https://drive.google.com/file/d/1dlBj6pLw7mBD-9SKHL-RMmQb4Ju9prWe/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "LEI Nº 18.442/2026",
+            titulo: "Efetivo, regime jurídico e regras gerais de promoção dos militares do Estado de São Paulo",
+            detalhe: "Lei nº 18.442, de 2 de abril de 2026 · Texto integral e resumo para revisão",
+            href: "lei-18442.html",
+            normaId: "lei-18442",
+            termos: "Lei 18.442 2026 efetivo regime jurídico promoção militares quadros QOEM QOE QOS QOM QP carreira promoção antiguidade merecimento",
+            recursos: [
+              { tipo: "texto", titulo: "LEI Nº 18.442/2026 · TEXTO INTEGRAL", descricao: "Leitor da lei com pesquisa, grifos e anotações.", href: "lei-18442.html" },
+              { tipo: "resumo", titulo: "LEI Nº 18.442/2026 · RESUMO PARA REVISÃO", descricao: "Material de apoio à revisão no Google Drive.", href: "https://drive.google.com/file/d/1g9LNJm8tiEKzY_Pv2PbueU_t9ToCgRhh/view?usp=drive_link", externo: true }
+            ]
+          }
+        ]
+      },
+      organizacional: {
+        titulo: "Organizacional",
+        descricao: "Pesquise e selecione uma norma organizacional.",
+        icone: "fa-building-columns",
+        materiais: [
+          {
+            codigo: "I-16-PM",
+            titulo: "Instruções do Processo Administrativo da Polícia Militar",
+            detalhe: "3ª edição · Texto integral e materiais de revisão",
+            href: "norma-I16-PM-modelo.html",
+            normaId: "i16pm",
+            termos: "processo administrativo polícia militar instruções norma",
+            recursos: [
+              { tipo: "texto", titulo: "I-16-PM · TEXTO INTEGRAL", descricao: "Leitor da norma com grifos e anotações.", href: "norma-I16-PM-modelo.html" },
+              { tipo: "resumo", titulo: "I-16-PM · RESUMO PARA REVISÃO", descricao: "Material de apoio à revisão; confira a publicação oficial.", href: "https://drive.google.com/file/d/1yZEoGGFXwuo-_J27ORIsHIDjEoD4Pffk/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "REGIME DE TRABALHO",
+            titulo: "Regime de Trabalho na Polícia Militar",
+            detalhe: "Portaria do Cmt G PM1-7/02/23 · Texto integral e dois resumos",
+            href: "regime-de-trabalho.html",
+            normaId: "regime-trabalho",
+            termos: "Regime de Trabalho Portaria PM1-7/02/23 expediente administrativo escala operacional escala administrativa jornada 40 horas folga mensal obrigatória OAES QOS militar estudante",
+            recursos: [
+              { tipo: "texto", titulo: "REGIME DE TRABALHO · TEXTO INTEGRAL", descricao: "Leitor da Portaria com pesquisa, grifos e anotações.", href: "regime-de-trabalho.html" },
+              { tipo: "resumo", titulo: "REGIME DE TRABALHO · RESUMO 1", descricao: "Primeiro material de apoio para revisão do Regime de Trabalho.", href: "https://drive.google.com/file/d/1yS5Yf4kSdtA2ZEXX5HIOV6-Smowhg-RE/view?usp=drive_link", externo: true },
+              { tipo: "resumo", titulo: "REGIME DE TRABALHO · RESUMO 2", descricao: "Segundo material de apoio para revisão do Regime de Trabalho.", href: "https://drive.google.com/file/d/1L3NSAqs0vblf5bbjbEH97EiCuL7VoKPM/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "I-2-PM · MOVIMENTAÇÕES",
+            titulo: "Instruções para movimentação de oficiais e praças",
+            detalhe: "I-2-PM · Texto integral e dois resumos para revisão",
+            href: "i-2-pm-movimentacoes.html",
+            normaId: "i2pm-movimentacoes",
+            termos: "I-2-PM movimentações classificação transferência adição desligamento disposição conveniência própria união de cônjuges disciplina justiça competência apresentação OPM",
+            recursos: [
+              { tipo: "texto", titulo: "I-2-PM · MOVIMENTAÇÕES · TEXTO INTEGRAL", descricao: "Leitor das instruções com pesquisa, grifos e anotações.", href: "i-2-pm-movimentacoes.html" },
+              { tipo: "resumo", titulo: "I-2-PM · MOVIMENTAÇÕES · RESUMO 1", descricao: "Primeiro material de apoio para revisão das movimentações.", href: "https://drive.google.com/file/d/1V_Fdbi-Cbnua1uwwWs4NfnQrQgit6ibA/view?usp=drive_link", externo: true },
+              { tipo: "resumo", titulo: "I-2-PM · MOVIMENTAÇÕES · RESUMO 2", descricao: "Segundo material de apoio para revisão das movimentações.", href: "https://drive.google.com/file/d/11GHEDlNR8hn95Clt4WbTgsywYPfNP47h/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "TCI",
+            titulo: "Treinamento Continuado Institucional",
+            detalhe: "Diretriz nº PM3-001/03/24 · Texto integral e materiais de revisão",
+            href: "treinamento-continuado-institucional.html",
+            normaId: "tci",
+            termos: "Treinamento Continuado Institucional TCI Diretriz PM3-001/03/24 treinamento físico técnico operacional TTOp TF",
+            recursos: [
+              { tipo: "texto", titulo: "TCI · TEXTO INTEGRAL", descricao: "Leitor da diretriz com pesquisa, grifos e anotações.", href: "treinamento-continuado-institucional.html" },
+              { tipo: "resumo", titulo: "TCI · RESUMO 1", descricao: "Material de revisão do Treinamento Continuado Institucional.", href: "https://drive.google.com/file/d/1cJADlj1UpMkjEUjYWrd6jIsI4RNKT5mD/view?usp=drive_link", externo: true },
+              { tipo: "resumo", titulo: "TCI · RESUMO 2", descricao: "Segundo material de revisão do Treinamento Continuado Institucional.", href: "https://drive.google.com/file/d/1Q44z0piKp0QLLmUqFnymc3Jpkot7rX8X/view?usp=drive_link", externo: true },
+              { tipo: "mapa", titulo: "TCI · MAPA MENTAL", descricao: "Mapa mental para revisão do conteúdo.", href: "https://drive.google.com/file/d/1M1L6EwL0oHUQ3XP6TMpoNfV6fNMuHE4p/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "Sistemática de Proteção à Mulher e Defesa contra a Vilência Doméstica e Familiar",
+            titulo: "Violência Doméstica",
+            detalhe: "Assuntos Organizacionais · Nota de Instrução nº PM3-001/02/26 · Texto integral e resumo",
+            href: "sistematica-protecao-mulher.html",
+            normaId: "protecao-mulher",
+            termos: "Sistemática Proteção Mulher Defesa Violência Doméstica Familiar Nota de Instrução PM3-001/02/26 Patrulha Maria da Penha SP Mulher Segura Cabine Lilás Espaço Lilás FONAR",
+            recursos: [
+              { tipo: "texto", titulo: "PROTEÇÃO À MULHER · TEXTO INTEGRAL", descricao: "Leitor da Nota de Instrução com pesquisa, grifos e anotações.", href: "sistematica-protecao-mulher.html" },
+              { tipo: "resumo", titulo: "PROTEÇÃO À MULHER · RESUMO", descricao: "Material de apoio para revisão da sistemática.", href: "https://drive.google.com/file/d/1Qzv77yawR7iVXT8sXzXs5ZF6C_FVvKk2/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "Atendimento, acolhimento e proteçao a PM vítimas de Violência Doméstica e Familiar",
+            titulo: "NUPRO-PM",
+            detalhe: "Assuntos Organizacionais · Nota de Instrução nº PM3-003/02/26 · Texto integral e resumo",
+            href: "atendimento-acolhimento-protecao-pm.html",
+            normaId: "atendimento-protecao-pm",
+            termos: "Atendimento acolhimento proteção policiais militares vítimas violência doméstica familiar NUPRO-PM CAPS NAPS SiSMen Correg PM",
+            recursos: [
+              { tipo: "texto", titulo: "ATENDIMENTO E PROTEÇÃO · TEXTO INTEGRAL", descricao: "Leitor da Nota de Instrução com pesquisa, grifos e anotações.", href: "atendimento-acolhimento-protecao-pm.html" },
+              { tipo: "resumo", titulo: "ATENDIMENTO E PROTEÇÃO · RESUMO 1", descricao: "Material de apoio para revisão da Nota de Instrução nº PM3-003/02/26.", href: "https://drive.google.com/file/d/1fWt4u9F1YOEWAwKaghmNi2oud2rvQrLX/view?usp=drive_link", externo: true },
+              { tipo: "resumo", titulo: "ATENDIMENTO E PROTEÇÃO · RESUMO 2", descricao: "Material de apoio para revisão da Nota de Instrução nº PM3-003/02/26.", href: "https://drive.google.com/file/d/1sDNEYnqnsXom73gHNCyrBfgsh5CV49-J/view?usp=drive_link", externo: true }
+            ]
+          },
+
+          {
+            codigo: "MATERIAL BÉLICO",
+            titulo: "Propriedade e Porte de Material Bélico na Polícia Militar",
+            detalhe: "Portaria do Cmt G PM4-1/1.2/24 · alterações publicadas no Bol G PM 241, de 20DEZ24 · texto e dois resumos",
+            href: "propriedade-porte-material-belico.html",
+            normaId: "propriedade-porte-material-belico",
+            termos: "propriedade porte material bélico arma de fogo munição aquisição transferência CRAF SIGMA SINARM APAFI PM4-1/1.2/24",
+            recursos: [
+              { tipo: "texto", titulo: "PROPRIEDADE E PORTE DE MATERIAL BÉLICO · TEXTO TRANSCRITO", descricao: "Leitor com pesquisa, grifos e anotações pessoais.", href: "propriedade-porte-material-belico.html" },
+              { tipo: "resumo", titulo: "MATERIAL BÉLICO · RESUMO 1", descricao: "Primeiro material de apoio para revisão da matéria.", href: "https://drive.google.com/file/d/1rSZywVqW2YiVbAPEg09np9UPsIqPiLrs/view?usp=drive_link", externo: true },
+              { tipo: "resumo", titulo: "MATERIAL BÉLICO · RESUMO 2", descricao: "Segundo material de apoio para revisão da matéria.", href: "https://drive.google.com/file/d/1uCaltCoW1PRLwk7I5nvFCyYS7460B7-6/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "SisTAF",
+            titulo: "Doutrina e Sistemática de Treinamento e Avaliação Física (SisTAF)",
+            detalhe: "Assuntos Organizacionais · Diretriz nº PM3-001/03/25 · Texto integral, resumo e mapa mental",
+            href: "sistaf.html",
+            normaId: "sistaf",
+            termos: "SisTAF Doutrina Sistemática Treinamento Avaliação Física TAF aptidão física condicionamento físico SITAF treinamento físico antropometria TAF-1 TAF-2 TAF-3 TAF-4 EEF",
+            recursos: [
+              { tipo: "texto", titulo: "SisTAF · TEXTO INTEGRAL", descricao: "Leitor da Diretriz com pesquisa, grifos e anotações.", href: "sistaf.html" },
+              { tipo: "resumo", titulo: "SisTAF · RESUMO", descricao: "Material de apoio para revisão da Diretriz nº PM3-001/03/25.", href: "https://drive.google.com/file/d/1ZmgUQ7t11wCLOydfvezc0ZkKu7tNJyME/view?usp=drive_link", externo: true },
+              { tipo: "mapa", titulo: "SisTAF · MAPA MENTAL", descricao: "Mapa mental para revisão do conteúdo.", href: "https://drive.google.com/file/d/1n1eDtAwy57Cd0M5b2MLYwREV7W_T2GPA/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "I-36-PM",
+            titulo: "Instruções para os Afastamentos na Polícia Militar",
+            detalhe: "I-36-PM · 3ª edição · Texto integral e dois resumos para revisão",
+            href: "i-36-pm.html",
+            normaId: "i36pm",
+            termos: "I-36-PM afastamentos Polícia Militar afastamento férias licença dispensa trânsito instalação núpcias luto saúde própria pessoa da família publicação Bol G PM 033 18/02/2019",
+            recursos: [
+              { tipo: "texto", titulo: "I-36-PM · TEXTO INTEGRAL", descricao: "Leitor das instruções com pesquisa, grifos e anotações.", href: "i-36-pm.html" },
+              { tipo: "resumo", titulo: "I-36-PM · RESUMO 1", descricao: "Primeiro material de apoio para revisão das instruções de afastamento.", href: "https://drive.google.com/file/d/1HQCgkgQvrhEOneBR1JGUav-XaDohw7JW/view?usp=drive_link", externo: true },
+              { tipo: "resumo", titulo: "I-36-PM · RESUMO 2", descricao: "Segundo material de apoio para revisão das instruções de afastamento.", href: "https://drive.google.com/file/d/1J2JP5-qNlRfrv2GA_Q-cRz7hOIA1Cav4/view?usp=drive_link", externo: true }
+            ]
+          }
+        ]
+      },
+      operacional: {
+        titulo: "Operacional",
+        descricao: "Pesquise e selecione uma norma operacional.",
+        icone: "fa-crosshairs",
+        materiais: [
+          {
+            codigo: "PROGRAMAS",
+            titulo: "Programas de Policiamento",
+            detalhe: "Resumos e sete programas individuais de estudo",
+            href: "#programas-policiamento",
+            normaId: "programas-policiamento",
+            termos: "Programas de Policiamento Radiopatrulha Força Tática Comunitário Trânsito Rural Escolar Ronda Escolar Drones resumo geral",
+            recursos: [
+              {
+                tipo: "submenu",
+                titulo: "RESUMOS",
+                descricao: "Acesse os resumos gerais e os materiais agrupados por programa.",
+                codigo: "Resumos dos Programas",
+                subrecursos: [
+                  { tipo: "resumo", titulo: "RESUMO GERAL 1", descricao: "Resumo geral dos Programas de Policiamento.", href: "https://drive.google.com/file/d/1Pa9BTcMZfNxcyjiOvmODeF8tsjYxyWGO/view?usp=drive_link", externo: true },
+                  { tipo: "resumo", titulo: "RESUMO GERAL 2", descricao: "Segundo resumo geral dos Programas de Policiamento.", href: "https://drive.google.com/file/d/1tLj96BJ6s5q6MsnwmMLi-f2ea1AuQYt-/view?usp=drive_link", externo: true },
+                  { tipo: "resumo", titulo: "RADIOPATRULHA, FORÇA TÁTICA E POLICIAMENTO ESCOLAR", descricao: "Resumo agrupado desses três programas.", href: "https://drive.google.com/file/d/1qF0Q0FsJuHOYo2HHBJVoUa5JP1bYgX_T/view?usp=drive_link", externo: true },
+                  { tipo: "resumo", titulo: "POLICIAMENTO RURAL, DE TRÂNSITO E COMUNITÁRIO", descricao: "Resumo agrupado desses três programas.", href: "https://drive.google.com/file/d/19POhj3Na38KwfDOqdOrtw5sRtLMdbZuo/view?usp=drive_link", externo: true },
+                  { tipo: "resumo", titulo: "POLICIAMENTO COM DRONES", descricao: "Resumo exclusivo do Programa de Policiamento com Drones.", href: "https://drive.google.com/file/d/1PBkmaLq4t6Nvqs5c92bjW4Sfxo-oYHXb/view?usp=drive_link", externo: true }
+                ]
+              },
+              {
+                tipo: "submenu",
+                titulo: "PROGRAMAS INDIVIDUAIS",
+                descricao: "Abra o texto integral de cada programa, com pesquisa, grifos e anotações.",
+                codigo: "Programas Individuais",
+                subrecursos: [
+                  { tipo: "texto", titulo: "RADIOPATRULHA", descricao: "Programa de Radiopatrulha · texto integral.", href: "programa-radiopatrulha.html" },
+                  { tipo: "texto", titulo: "FORÇA TÁTICA", descricao: "Programa de Força Tática · texto integral.", href: "programa-forca-tatica.html" },
+                  { tipo: "texto", titulo: "POLICIAMENTO COMUNITÁRIO", descricao: "Programa de Policiamento Comunitário · texto integral.", href: "programa-policiamento-comunitario.html" },
+                  { tipo: "texto", titulo: "POLICIAMENTO DE TRÂNSITO", descricao: "Programa de Policiamento de Trânsito · texto integral.", href: "programa-policiamento-transito.html" },
+                  { tipo: "texto", titulo: "POLICIAMENTO RURAL", descricao: "Programa de Policiamento Rural · texto integral.", href: "programa-policiamento-rural.html" },
+                  { tipo: "texto", titulo: "POLICIAMENTO ESCOLAR / RONDA ESCOLAR", descricao: "Programa de Policiamento Escolar · texto integral.", href: "programa-policiamento-escolar.html" },
+                  { tipo: "texto", titulo: "POLICIAMENTO COM DRONES", descricao: "Programa de Policiamento com Drones · texto integral.", href: "programa-policiamento-drones.html" }
+                ]
+              }
+            ]
+          },
+          {
+            codigo: "NORSOP",
+            titulo: "Normas para o Sistema Operacional de Policiamento (NORSOP)",
+            detalhe: "Diretriz nº PM3-001/02/20 · Texto principal e anexos organizados",
+            href: "norsop-texto-principal-e-resumos.html",
+            normaId: "norsop",
+            termos: "NORSOP Diretriz PM3-001/02/20 normas sistema operacional policiamento texto principal anexo A glossário conceituação doutrinária anexo B CGP CFP anexo C comando territorial anexo D Enc US Mot US Aux US posturas gerais anexo E grave perturbação ordem pública ocorrência incidente grave repercussão",
+            recursos: [
+              { tipo: "texto", titulo: "NORSOP · TEXTO PRINCIPAL", descricao: "Diretriz nº PM3-001/02/20 · texto principal.", href: "norsop-texto-principal-e-resumos.html" },
+              {
+                tipo: "submenu",
+                titulo: "RESUMOS DA NORSOP",
+                descricao: "Acesse os materiais de revisão da Diretriz NORSOP.",
+                codigo: "Resumos da NORSOP",
+                subrecursos: [
+                  { tipo: "resumo", titulo: "NORSOP · RESUMO 1", descricao: "Primeiro material de apoio para revisão da NORSOP.", href: "https://drive.google.com/file/d/1eoWIOxI54obkVluW87TKL5OuFtDPb4M4/view?usp=drive_link", externo: true },
+                  { tipo: "resumo", titulo: "NORSOP · RESUMO 2", descricao: "Segundo material de apoio para revisão da NORSOP.", href: "https://drive.google.com/file/d/1X-GI-4yQKYcI5ejizcCxsB4QuzAgQmBc/view?usp=drive_link", externo: true }
+                ]
+              },
+              { tipo: "texto", titulo: "ANEXO A · CONCEITUAÇÃO DOUTRINÁRIA E GLOSSÁRIO PM", descricao: "Glossário com navegação alfabética, pesquisa, grifos e anotações.", href: "norsop-anexo-a-glossario.html" },
+              { tipo: "texto", titulo: "ANEXOS B E C · COMANDO, SUPERVISÃO E COMANDO TERRITORIAL", descricao: "Atribuições do CGP, CFP e funções de comando territorial.", href: "norsop-anexos-b-c.html" },
+              { tipo: "texto", titulo: "ANEXOS D E E · ATRIBUIÇÕES, POSTURAS E OCORRÊNCIAS GRAVES", descricao: "Atribuições dos integrantes da US, posturas gerais e orientações para ocorrências graves.", href: "norsop-anexos-d-e.html" }
+            ]
+          },
+          {
+            codigo: "COMBATE AO CRIME ORGANIZADO",
+            titulo: "Doutrina de Combate ao Crime Organizado",
+            detalhe: "Texto integral e resumo para revisão",
+            href: "doutrina-combate-crime-organizado-revisada.html",
+            normaId: "combate-crime-organizado",
+            termos: "Doutrina Combate ao Crime Organizado ORCRIM organização criminosa investigação medidas de conhecimento atuação policial",
+            recursos: [
+              { tipo: "texto", titulo: "COMBATE AO CRIME ORGANIZADO · TEXTO INTEGRAL", descricao: "Leitor da doutrina com pesquisa, grifos, anotações e notas de rodapé.", href: "doutrina-combate-crime-organizado-revisada.html" },
+              { tipo: "resumo", titulo: "COMBATE AO CRIME ORGANIZADO · RESUMO PARA REVISÃO", descricao: "Material de apoio para revisão da doutrina.", href: "https://drive.google.com/file/d/1DBY8cUWDZUh7wlIRloYJyLV8149aWg5g/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "COP",
+            titulo: "Câmeras Operacionais Portáteis (COP)",
+            detalhe: "Diretriz nº PM3-001/02/25 · Texto integral e resumo",
+            href: "cameras-operacionais-portateis.html",
+            normaId: "cop",
+            termos: "Câmeras Operacionais Portáteis COP Diretriz PM3-001/02/25 acionamento gravação evidências digitais SiGCED cadeia de custódia auditoria armazenamento",
+            recursos: [
+              { tipo: "texto", titulo: "COP · TEXTO INTEGRAL", descricao: "Leitor da Diretriz com pesquisa, grifos e anotações.", href: "cameras-operacionais-portateis.html" },
+              { tipo: "resumo", titulo: "COP · RESUMO", descricao: "Material de apoio para revisão das Câmeras Operacionais Portáteis.", href: "https://drive.google.com/file/d/1sWmLyejnd5soSGXhmucxC_6sunhNU3mZ/view?usp=drive_link", externo: true },
+              { tipo: "resumo", titulo: "POP - COP -MOTOROLA · RESUMO", descricao: "Material de apoio para revisão das Câmeras Operacionais Portáteis - MOTOROLA.", href: "https://drive.google.com/file/d/1cIsKriJIXk9N01DImEernARF_nXhdnNs/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "SCIPM",
+            titulo: "Sistema de Comando de Incidentes da Polícia Militar (SCIPM)",
+            detalhe: "Diretriz nº PM3-003/02/23 · Texto integral, resumo e mapa mental",
+            href: "sistema-comando-incidentes-pmesp.html",
+            normaId: "scipm",
+            termos: "Sistema de Comando de Incidentes da Polícia Militar SCIPM Diretriz PM3-003/02/23 incidente crítico comandante do incidente Cmt Inc Estado-Maior operações emergenciais unidade de comando gestão por objetivos SMART 5W2H",
+            recursos: [
+              { tipo: "texto", titulo: "SCIPM · TEXTO INTEGRAL", descricao: "Leitor da Diretriz com pesquisa, grifos, anotações e notas de rodapé separadas.", href: "sistema-comando-incidentes-pmesp.html" },
+              { tipo: "resumo", titulo: "SCIPM · RESUMO", descricao: "Material de apoio para revisão do Sistema de Comando de Incidentes da Polícia Militar.", href: "https://drive.google.com/file/d/1o_lSe22kycfAN6hWpi_IEkkPblKtE-DM/view?usp=drive_link", externo: true },
+              { tipo: "mapa", titulo: "SCIPM · MAPA MENTAL", descricao: "Mapa mental para revisão visual da doutrina do SCIPM.", href: "https://drive.google.com/file/d/10XJGK5c_Pxen38grxFTnu4P82KoId7Eb/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "SCC",
+            titulo: "Sistema de Comando e Controle",
+            detalhe: "Diretriz nº PM3-001/02/23 · Texto integral e resumo",
+            href: "sistema-comando-controle.html",
+            normaId: "sistema-comando-controle",
+            termos: "Sistema de Comando e Controle C2 C4ISR consciência situacional imagem operacional comum CC2 COPOM Sala de Operações videopatrulhamento",
+            recursos: [
+              { tipo: "texto", titulo: "SISTEMA DE COMANDO E CONTROLE · TEXTO INTEGRAL", descricao: "Leitor da Diretriz com pesquisa, grifos, anotações e notas de rodapé.", href: "sistema-comando-controle.html" },
+              { tipo: "resumo", titulo: "SISTEMA DE COMANDO E CONTROLE · RESUMO", descricao: "Material de apoio para revisão do Sistema de Comando e Controle.", href: "https://drive.google.com/file/d/180xn85wWI0yKkzG-Dy7BwWA6CQJhsTae/view?usp=drive_link", externo: true }
+            ]
+          },
+          {
+            codigo: "SALA DE OPERAÇÕES",
+            titulo: "Sala de Operações (SOp)",
+            detalhe: "Nota de Instrução nº PM3-002/02/26 · Texto integral e resumo",
+            href: "sala-de-operacoes.html",
+            normaId: "sala-operacoes",
+            termos: "Sala de Operações SOp Nota de Instrução PM3-002/02/26 COPOM Espaço Lilás Serviço de Intervenção Remota SIR",
+            recursos: [
+              { tipo: "texto", titulo: "SALA DE OPERAÇÕES · TEXTO INTEGRAL", descricao: "Leitor da Nota de Instrução com pesquisa, grifos e anotações.", href: "sala-de-operacoes.html" },
+              { tipo: "resumo", titulo: "SALA DE OPERAÇÕES · RESUMO", descricao: "Material de apoio para revisão da Nota de Instrução.", href: "https://drive.google.com/file/d/1bek__b5o7XL9azTzsSd2Lw1NDF8k7IbW/view?usp=drive_link", externo: true }
+            ]
+          }
+        ]
+      }
     };
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body { background: #0b1326; }
-    .hero-pattern {
-      background:
-        linear-gradient(90deg, rgba(7,16,32,.98) 0%, rgba(7,16,32,.88) 55%, rgba(7,16,32,.96) 100%),
-        repeating-linear-gradient(135deg, transparent 0 42px, rgba(212,175,55,.035) 42px 44px);
+const areaLabels={juridico:"Assuntos Jurídico-Administrativos",organizacional:"Assuntos Organizacionais",operacional:"Assuntos Operacionais"};
+let activeCategory="juridico", previousModal="materialsModal";
+const pageTitles={dashboard:["Painel inicial","CAO · Área de Estudos"],materias:["Matérias e materiais","Biblioteca de conteúdos CAO"],bizus:["Bizu - Mastigado","Materiais de revisão"],provas:["Provas e Editais","Editais oficiais e acervo de avaliações CAO"],perfil:["Perfil & Estatísticas","Dados do usuário"],detail:["Material selecionado","Recursos disponíveis"]};
+function go(page){document.querySelectorAll(".page").forEach(el=>el.classList.toggle("active",el.id==="page-"+page));document.querySelectorAll("#nav button").forEach(el=>el.classList.toggle("active",el.dataset.page===page));const t=pageTitles[page]||pageTitles.dashboard;document.getElementById("topTitle").innerHTML=t[0]+"<small>"+t[1]+"</small>";closeMenu();window.scrollTo({top:0,behavior:"smooth"});}
+document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.page)));document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.go)));
+const sidebar=document.getElementById("sidebar"),scrim=document.getElementById("scrim");function closeMenu(){sidebar.classList.remove("open");scrim.classList.remove("show")}document.getElementById("menuToggle").onclick=()=>{sidebar.classList.toggle("open");scrim.classList.toggle("show")};scrim.onclick=closeMenu;
+function showModal(id){document.getElementById(id).classList.add("open");document.body.style.overflow="hidden"}function hideModal(id){document.getElementById(id).classList.remove("open");if(!document.querySelector(".modal-backdrop.open"))document.body.style.overflow=""}
+document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",()=>hideModal(b.dataset.close)));document.querySelectorAll(".modal-backdrop").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)hideModal(m.id)}));document.addEventListener("keydown",e=>{if(e.key==="Escape"){const opened=[...document.querySelectorAll(".modal-backdrop.open")].reverse()[0];if(opened)hideModal(opened.id)}});
+function openMaterials(category){activeCategory=category;const data=catalogoMateriais[category];document.getElementById("materialsTitle").textContent=data.titulo;document.getElementById("materialsDescription").textContent=data.descricao;document.getElementById("materialsIcon").className="fa-solid "+data.icone;document.getElementById("materialsSearch").value="";renderMaterials();showModal("materialsModal");}
+function renderMaterials(){const data=catalogoMateriais[activeCategory];const q=document.getElementById("materialsSearch").value.trim().toLocaleLowerCase("pt-BR");const items=data.materiais.filter(m=>(m.codigo+" "+m.titulo+" "+m.detalhe+" "+m.termos).toLocaleLowerCase("pt-BR").includes(q));document.getElementById("materialsCount").textContent=items.length+" material(is) encontrado(s)";const list=document.getElementById("materialsList");list.innerHTML="";if(!items.length){list.innerHTML='<div class="empty">Nenhum material corresponde à pesquisa.</div>';return}items.forEach((m,i)=>{const b=document.createElement("button");b.className="material-row";b.innerHTML='<span class="number">'+String(i+1).padStart(2,"0")+'</span><span style="flex:1;min-width:0"><strong></strong><small></small></span><i class="fa-solid fa-chevron-right" style="color:var(--gold)"></i>';b.querySelector("strong").textContent=m.titulo;b.querySelector("small").textContent=(m.codigo?m.codigo+" · ":"")+m.detalhe;b.onclick=()=>openResources(m);list.append(b)})}
+document.getElementById("materialsSearch").addEventListener("input",renderMaterials);
+function openResources(m){document.getElementById("resourcesTitle").textContent=m.titulo;document.getElementById("resourcesDescription").textContent=m.detalhe||"Materiais disponíveis";const list=document.getElementById("resourcesList");list.innerHTML="";(m.recursos||[]).forEach((r,i)=>{const b=document.createElement("a");b.className="material-row";b.href=r.href||"#";b.innerHTML='<span class="number">'+(r.tipo==="texto"?"▤":r.subrecursos?"▣":"↗")+'</span><span style="flex:1;min-width:0"><strong></strong><small></small></span><i class="fa-solid fa-arrow-up-right-from-square" style="color:var(--gold)"></i>';b.querySelector("strong").textContent=r.titulo;b.querySelector("small").textContent=r.descricao||"";if(r.subrecursos){b.href="#";b.addEventListener("click",e=>{e.preventDefault();openSubresources(r)})}else if(r.externo){b.target="_blank";b.rel="noopener noreferrer"}else if((r.href||"").startsWith("#")){b.href="#";b.addEventListener("click",e=>{e.preventDefault();showPlatformNotice("Este item é um agrupador ou ainda não possui uma página vinculada.", "info")})}list.append(b)});if(!(m.recursos||[]).length){const a=document.createElement("a");a.className="material-row";a.href=m.href||"#";a.textContent="Abrir material";list.append(a)}hideModal("materialsModal");showModal("resourcesModal");}
+function openSubresources(r){document.getElementById("resourcesTitle").textContent=r.titulo;document.getElementById("resourcesDescription").textContent=r.descricao||"Selecione um material";const list=document.getElementById("resourcesList");list.innerHTML="";(r.subrecursos||[]).forEach((x,i)=>{const a=document.createElement("a");a.className="material-row";a.href=x.href||"#";a.innerHTML='<span class="number">'+String(i+1).padStart(2,"0")+'</span><span style="flex:1;min-width:0"><strong></strong><small></small></span><i class="fa-solid fa-arrow-up-right-from-square" style="color:var(--gold)"></i>';a.querySelector("strong").textContent=x.titulo;a.querySelector("small").textContent=x.descricao||"";if(x.externo){a.target="_blank";a.rel="noopener noreferrer"}else if((x.href||"").startsWith("#")){a.href="#";a.onclick=e=>{e.preventDefault();showPlatformNotice("Este item ainda não possui uma página vinculada.", "info")}}list.append(a)});}
+document.querySelectorAll("[data-category]").forEach(b=>b.addEventListener("click",()=>openMaterials(b.dataset.category)));
+function openBizuModal(){const list=document.getElementById("bizuList");list.innerHTML="";BIZU_MATERIAS.forEach((m,i)=>{const b=document.createElement("button");b.className="bizu-row";b.innerHTML='<span class="number">'+String(i+1).padStart(2,"0")+'</span><span style="flex:1;min-width:0"><strong></strong><small></small></span><i class="fa-solid fa-chevron-right" style="color:var(--gold)"></i>';b.querySelector("strong").textContent=m.titulo;b.querySelector("small").textContent=m.descricao;b.onclick=()=>openBizuDetail(m);list.append(b)});showModal("bizuModal")}
+function openBizuDetail(m){document.getElementById("bizuDetailTitle").textContent=m.titulo;document.getElementById("bizuDetailDescription").textContent=m.descricao;const valid=m.href&&!m.href.startsWith("#PREENCHER_LINK");const link=document.getElementById("bizuOpenLink");link.href=valid?m.href:"#";link.style.opacity=valid?"1":".45";link.setAttribute("aria-disabled",valid?"false":"true");document.getElementById("bizuLinkStatus").textContent=valid?"O link cadastrado no arquivo-fonte está disponível para abertura.":"Este item ainda tem um link de preenchimento pendente no arquivo-fonte.";link.onclick=e=>{if(!valid)e.preventDefault()};showModal("bizuDetailModal")}
+document.getElementById("openBizus").addEventListener("click",openBizuModal);
+document.querySelector('[data-page="bizus"]').addEventListener("click",()=>{const grid=document.getElementById("bizusInline");grid.innerHTML="";BIZU_MATERIAS.slice(0,9).forEach((m,i)=>{const a=document.createElement("article");a.className="resource";a.innerHTML='<span class="kind">BIZU · '+String(i+1).padStart(2,"0")+'</span><h3></h3><p></p><div class="resource-foot"><span>Material de revisão</span><button class="open-resource">Abrir →</button></div>';a.querySelector("h3").textContent=m.titulo;a.querySelector("p").textContent=m.descricao;a.querySelector("button").onclick=()=>openBizuDetail(m);grid.append(a)});if(BIZU_MATERIAS.length>9){const b=document.createElement("button");b.className="btn";b.textContent="Ver todas as matérias de bizu";b.onclick=openBizuModal;grid.append(b)}});
+document.getElementById("detailBack").onclick=()=>go("materias");
+// Identidade e estatísticas são preenchidas pelo módulo de integração Firebase abaixo.
+</script>
+<script type="module">
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+import { auth } from "./firebase-config.js";
+import "./user-progress-firestore.js";
+
+const $ = id => document.getElementById(id);
+function setMetric(id, value) { const el = $(id); if (el) el.textContent = value; }
+function setProfileName(name, email) {
+  const displayName = (name || "").trim() || (email ? email.split("@")[0] : "") || "Aluno";
+  ["welcomeName", "sideName"].forEach(id => { const el = $(id); if (el) el.textContent = displayName; });
+  const initial = displayName.charAt(0).toLocaleUpperCase("pt-BR");
+  ["welcomeAvatar", "sideAvatar"].forEach(id => { const el = $(id); if (el) el.textContent = initial; });
+}
+function showStatsError(message) {
+  const notice = $("profileDataNotice");
+  if (notice) { notice.textContent = message; notice.style.display = "block"; }
+  setMetric("metricAnswered", "—");
+  setMetric("metricAccuracy", "—");
+  setMetric("metricSubjects", "—");
+  setMetric("metricProgress", "—");
+}
+async function loadStats() {
+  try {
+    await window.studyProgress?.ready();
+    if (!window.studyProgress?.getProgressSummary) throw new Error("O módulo de progresso não ficou disponível.");
+    const summary = await window.studyProgress.getProgressSummary();
+    setMetric("metricAnswered", String(summary.totalQuestions || 0));
+    setMetric("metricAccuracy", Number(summary.averagePercent || 0).toFixed(1) + "%");
+    setMetric("metricSubjects", String((summary.studiedSubjects || []).length));
+    setMetric("metricProgress", Number(summary.bestPercent || 0).toFixed(1) + "%");
+    setMetric("metricAnsweredNote", summary.attempts ? "Em " + summary.attempts + " simulado(s) concluído(s)" : "Conclua um simulado para iniciar seu histórico");
+    setMetric("metricAccuracyNote", summary.attempts ? "Mesma média exibida em Perfil & Estatísticas" : "Ainda sem resultados registrados");
+    setMetric("metricSubjectsNote", (summary.studiedSubjects || []).length ? "Identificadas nos resultados salvos" : "As matérias aparecem após concluir simulados");
+    setMetric("metricProgressNote", summary.attempts ? "Maior resultado entre os simulados" : "Ainda sem resultados registrados");
+    const notice = $("profileDataNotice");
+    if (notice) {
+      notice.textContent = summary.attempts
+        ? "Perfil conectado. Estatísticas sincronizadas com os simulados salvos na sua conta."
+        : "Perfil conectado. Ainda não há simulados concluídos salvos nesta conta; os indicadores serão preenchidos após o primeiro resultado.";
+      notice.style.display = "block";
     }
-    .subject-card { transition: border-color .18s ease, transform .18s ease; }
-    .subject-card:hover { border-color: rgba(212,175,55,.7); transform: translateY(-2px); }
-    .focus-ring:focus-visible { outline: 2px solid #d4af37; outline-offset: 3px; }
-  </style>
-</head>
-<body class="min-h-screen text-slate-100 selection:bg-pm-gold selection:text-pm-navy">
-  <!-- CABEÇALHO INSTITUCIONAL -->
-  <header class="sticky top-0 z-40 border-b border-pm-border bg-pm-header/95 shadow-lg backdrop-blur">
-    <div class="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6 lg:px-8">
-      <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-card text-pm-gold">
-        <i class="fa-solid fa-graduation-cap text-lg"></i>
-      </div>
-      <div class="min-w-0">
-        <h1 class="text-sm font-black tracking-tight text-white sm:text-base">Plataforma <span class="text-pm-gold">de Aperfeiçoamento</span></h1>
-        <p class="text-[10px] text-slate-400 sm:text-xs">Polícia Militar do Estado de São Paulo</p>
-      </div>
-      <div class="ml-auto flex items-center gap-2">
-        <a href="perfil-usuario.html" title="Abrir perfil e segurança da conta" aria-label="Perfil do usuário" class="focus-ring inline-flex items-center gap-2 rounded-lg border border-pm-gold/50 bg-pm-navy/70 px-2.5 py-2 text-xs font-bold text-slate-200 transition hover:border-pm-gold hover:text-pm-gold sm:px-3 sm:text-sm">
-          <span class="flex h-7 w-7 items-center justify-center rounded-full border border-pm-gold/70 bg-pm-gold/10 text-pm-gold"><i class="fa-solid fa-user"></i></span><span>Perfil</span>
-        </a>
-        <a href="plataforma.html" class="focus-ring inline-flex items-center gap-2 rounded-lg border border-pm-border px-3 py-2 text-xs font-bold text-slate-300 transition hover:border-pm-gold/60 hover:text-white sm:text-sm">
-          <i class="fa-solid fa-arrow-left"></i><span>Início</span>
-        </a>
-      </div>
-    </div>
-  </header>
+  } catch (error) {
+    console.error("Falha ao carregar estatísticas do CAO:", error);
+    showStatsError("Não foi possível carregar as estatísticas. Verifique as regras do Firestore e tente atualizar a página.");
+  }
+}
+onAuthStateChanged(auth, async user => {
+  if (!user) { location.replace("index.html?motivo=sessao"); return; }
+  const isPassword = user.providerData.some(provider => provider.providerId === "password");
+  if (isPassword && !user.emailVerified) { location.replace("index.html?motivo=confirmar-email"); return; }
+  setProfileName(user.displayName, user.email);
+  await loadStats();
+}, error => {
+  console.error("Falha ao verificar sessão do CAO:", error);
+  setProfileName("", "");
+  showStatsError("Não foi possível verificar a sessão. Volte ao login e entre novamente.");
+});
+</script><script type="module">
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+import { collection, doc, getDocs, query, serverTimestamp, setDoc, where } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+import { auth, db } from "./firebase-config.js";
 
-  <!-- BANNER DA ÁREA DO CURSO -->
-  <section class="hero-pattern border-b border-pm-border">
-    <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-      <div class="mb-4 flex items-center gap-2 text-xs text-slate-400">
-        <a class="focus-ring hover:text-pm-gold" href="index.html"><i class="fa-solid fa-house mr-1"></i>Início</a>
-        <span>/</span><span class="text-slate-200">CAO</span>
-      </div>
-      <div class="mb-4 h-1 w-16 bg-pm-gold"></div>
-      <p class="mb-2 text-[10px] font-extrabold uppercase tracking-[.24em] text-pm-gold sm:text-xs">Ambiente de estudos</p>
-      <h2 class="text-3xl font-black leading-tight text-white sm:text-4xl">Área de estudos <span class="text-pm-gold">— CAO</span></h2>
-      <p class="mt-3 max-w-2xl text-sm leading-relaxed text-slate-300 sm:text-base">Selecione uma matéria para acessar normas, referências e materiais organizados por ramo do conhecimento.</p>
-    </div>
-  </section>
+const $n = id => document.getElementById(id);
+let currentUser = null, activeNotices = [], noticeStates = {}, selectedNotice = null;
+const noticeModal = $n("notificationModal"), noticeList = $n("notificationList");
+function noticeDate(value) {
+  try { const date = value?.toDate ? value.toDate() : value ? new Date(value) : null; return date && !Number.isNaN(date.getTime()) ? date.toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" }) : ""; }
+  catch { return ""; }
+}
+function visibleNotices() { return activeNotices.filter(n => !noticeStates[n.id]?.deleted); }
+function updateNoticeCount() {
+  const unread = visibleNotices().filter(n => !noticeStates[n.id]?.read).length;
+  const badge = $n("notificationCount"); badge.textContent = unread > 99 ? "99+" : String(unread); badge.hidden = unread === 0;
+  $n("notificationBell").setAttribute("aria-label", unread ? "Abrir notificações, " + unread + " não lida(s)" : "Abrir notificações");
+}
+function renderNoticeList() {
+  noticeList.replaceChildren();
+  const items = visibleNotices();
+  if (!items.length) { const empty=document.createElement("div");empty.className="notification-empty";empty.textContent="Você não tem notificações disponíveis.";noticeList.append(empty);return; }
+  items.forEach(n => {
+    const button=document.createElement("button");button.type="button";button.className="notification-entry"+(noticeStates[n.id]?.read?"":" unread");
+    const dot=document.createElement("span");dot.className="notification-unread-dot";dot.setAttribute("aria-hidden","true");
+    const copy=document.createElement("span");copy.className="notification-entry-copy";
+    const title=document.createElement("strong");title.textContent=n.title||"Aviso da plataforma";
+    const date=document.createElement("small");date.textContent=noticeDate(n.createdAt)||"Comunicado da plataforma";
+    const body=document.createElement("p");body.textContent=(n.body||"").slice(0,160)+((n.body||"").length>160?"…":"");
+    copy.append(title,date,body);button.append(dot,copy);button.onclick=()=>openNotice(n);noticeList.append(button);
+  });
+}
+async function refreshStudentNotices() {
+  if (!currentUser) return;
+  try {
+    const [noticesSnap, statesSnap] = await Promise.all([
+      getDocs(query(collection(db,"notifications"),where("active","==",true))),
+      getDocs(query(collection(db,"userNotificationState"),where("uid","==",currentUser.uid)))
+    ]);
+    activeNotices=noticesSnap.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>{
+      const ta=a.createdAt?.toMillis?a.createdAt.toMillis():0, tb=b.createdAt?.toMillis?b.createdAt.toMillis():0;return tb-ta;
+    });
+    noticeStates={};statesSnap.docs.forEach(d=>{const state=d.data();if(state.noticeId)noticeStates[state.noticeId]=state;});
+    updateNoticeCount();renderNoticeList();
+  } catch(error) {
+    console.error("Falha ao carregar notificações:",error);
+    noticeList.replaceChildren();const msg=document.createElement("div");msg.className="notification-empty";msg.textContent="Não foi possível carregar as notificações. Verifique sua conexão e as permissões da conta.";noticeList.append(msg);
+  }
+}
+async function saveNoticeState(noticeId, patch) {
+  if(!currentUser) throw new Error("Sua sessão expirou. Entre novamente.");
+  const stateId=currentUser.uid+"_"+noticeId;
+  const previous=noticeStates[noticeId]||{};
+  const next={...previous,...patch,uid:currentUser.uid,noticeId,updatedAt:serverTimestamp()};
+  await setDoc(doc(db,"userNotificationState",stateId),next,{merge:true});
+  noticeStates[noticeId]={...next};
+  updateNoticeCount();
+}
+async function openNotice(notice) {
+  selectedNotice=notice;
+  try { if(!noticeStates[notice.id]?.read) await saveNoticeState(notice.id,{read:true,deleted:false}); }
+  catch(error) { console.error("Falha ao marcar notificação como lida:",error); }
+  const content=document.createElement("div");content.className="notification-detail";
+  const title=document.createElement("h3");title.className="notification-detail-title";title.textContent=notice.title||"Aviso da plataforma";
+  const date=document.createElement("div");date.className="notification-detail-date";date.textContent=noticeDate(notice.createdAt);
+  const body=document.createElement("div");body.textContent=notice.body||"";
+  content.append(title,date,body);
+  const actions=document.createElement("div");actions.className="notification-actions";
+  const back=document.createElement("button");back.textContent="Voltar à lista";back.onclick=showNoticeList;
+  const read=document.createElement("button");read.className="primary";read.textContent=noticeStates[notice.id]?.read?"Marcar como não lida":"Marcar como lida";
+  read.onclick=async()=>{try{await saveNoticeState(notice.id,{read:!noticeStates[notice.id]?.read,deleted:false});openNoticeWithoutRead(notice)}catch(e){showPlatformNotice("Não foi possível atualizar o estado da notificação.","error")}};
+  const del=document.createElement("button");del.textContent="Apagar para mim";del.onclick=async()=>{if(!confirm("Apagar esta notificação apenas da sua lista? Ela continuará disponível para os demais alunos."))return;try{await saveNoticeState(notice.id,{deleted:true});selectedNotice=null;renderNoticeList();showNoticeList();showPlatformNotice("Notificação apagada da sua lista.","success")}catch(e){showPlatformNotice("Não foi possível apagar a notificação.","error")}};
+  actions.append(back,read,del);noticeList.replaceChildren(content,actions);
+}
+function openNoticeWithoutRead(notice) {
+  selectedNotice=notice;
+  const content=document.createElement("div");content.className="notification-detail";
+  const title=document.createElement("h3");title.className="notification-detail-title";title.textContent=notice.title||"Aviso da plataforma";
+  const date=document.createElement("div");date.className="notification-detail-date";date.textContent=noticeDate(notice.createdAt);
+  const body=document.createElement("div");body.textContent=notice.body||"";content.append(title,date,body);
+  const actions=document.createElement("div");actions.className="notification-actions";
+  const back=document.createElement("button");back.textContent="Voltar à lista";back.onclick=showNoticeList;
+  const read=document.createElement("button");read.className="primary";read.textContent=noticeStates[notice.id]?.read?"Marcar como não lida":"Marcar como lida";
+  read.onclick=async()=>{try{await saveNoticeState(notice.id,{read:!noticeStates[notice.id]?.read,deleted:false});openNoticeWithoutRead(notice)}catch(e){showPlatformNotice("Não foi possível atualizar o estado da notificação.","error")}};
+  const del=document.createElement("button");del.textContent="Apagar para mim";del.onclick=async()=>{if(!confirm("Apagar esta notificação apenas da sua lista? Ela continuará disponível para os demais alunos."))return;try{await saveNoticeState(notice.id,{deleted:true});renderNoticeList();showNoticeList();showPlatformNotice("Notificação apagada da sua lista.","success")}catch(e){showPlatformNotice("Não foi possível apagar a notificação.","error")}};
+  actions.append(back,read,del);noticeList.replaceChildren(content,actions);
+}
+function showNoticeList(){renderNoticeList();$n("notificationModalTitle").textContent="Notificações";$n("notificationModalSubtitle").textContent="Avisos e comunicados da plataforma."}
+async function openNoticeCenter(){noticeModal.classList.add("open");$n("notificationModalTitle").textContent="Notificações";$n("notificationModalSubtitle").textContent="Avisos e comunicados da plataforma.";noticeList.innerHTML='<div class="empty">Carregando notificações…</div>';await refreshStudentNotices();}
+function closeNoticeCenter(){noticeModal.classList.remove("open");$n("notificationBell").focus();}
+$n("notificationBell").addEventListener("click",openNoticeCenter);
+$n("notificationClose").addEventListener("click",closeNoticeCenter);
+noticeModal.addEventListener("click",e=>{if(e.target===noticeModal)closeNoticeCenter()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&noticeModal.classList.contains("open"))closeNoticeCenter()});
+onAuthStateChanged(auth,user=>{currentUser=user;if(!user){activeNotices=[];noticeStates={};updateNoticeCount();return;}refreshStudentNotices();});
+</script><script>
+  // Registro do aplicativo instalável. O service worker não armazena conteúdo autenticado.
+  if ("serviceWorker" in navigator && location.protocol === "https:") {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/sw.js", { scope: "/" })
+        .catch(error => console.warn("Não foi possível registrar o modo aplicativo:", error));
+    }, { once: true });
+  }
+</script>
 
-  <main class="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-    <!-- IDENTIFICAÇÃO DO CURSO -->
-    <section class="mb-5 flex flex-col gap-4 rounded-2xl border border-pm-border bg-gradient-to-r from-[#172641] to-[#0e1a30] p-4 sm:flex-row sm:items-center sm:p-5">
-      <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-gold/10 text-2xl text-pm-gold">
-        <i class="fa-solid fa-graduation-cap"></i>
-      </div>
-      <div class="min-w-0 flex-1">
-        <p class="text-[10px] font-extrabold uppercase tracking-[.2em] text-pm-gold">Curso selecionado</p>
-        <h3 class="mt-1 text-lg font-black text-white sm:text-xl">Curso de Aperfeiçoamento de Oficiais</h3>
-        <p class="mt-1 text-sm text-slate-400">Conteúdos de estudo, legislação e materiais complementares.</p>
-      </div>
-      <span class="inline-flex w-fit items-center gap-2 rounded-full border border-pm-gold/50 px-3 py-2 text-xs font-extrabold text-pm-gold">
-        <i class="fa-solid fa-book-open"></i>CAO
-      </span>
-    </section>
-
-    <!-- BANCO DE CONTEÚDOS POR MATÉRIA -->
-    <section class="rounded-2xl border border-pm-border bg-[#101c32]/95 p-4 shadow-lg sm:p-6">
-      <div class="mb-5 flex items-start gap-3">
-        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-gold/10 text-xl text-pm-gold">
-          <i class="fa-solid fa-book-open"></i>
-        </div>
-        <div>
-          <h3 class="text-lg font-black text-white sm:text-xl">Banco de conteúdos por matéria</h3>
-          <p class="mt-1 text-xs leading-relaxed text-slate-400 sm:text-sm">Abra uma área para consultar os materiais disponíveis.</p>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
-        <!-- MATÉRIA 1: adicione os links dos documentos no bloco DOCUMENTOS JURÍDICO-ADMINISTRATIVOS, ao final deste arquivo. -->
-        <article class="subject-card flex flex-col rounded-xl border border-pm-border bg-gradient-to-b from-[#14223b] to-[#0d192c] p-4 sm:p-5">
-          <div class="mb-4 flex items-center gap-3">
-            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-navy text-xl text-pm-gold"><i class="fa-solid fa-scale-balanced"></i></div>
-            <div>
-              <h4 class="font-extrabold text-white">Jurídico-Administrativo</h4>
-              <p class="mt-1 text-xs text-slate-400">Legislação, normas e diretrizes</p>
-            </div>
-          </div>
-          <div class="mb-4 flex-1">
-            <p class="text-xs leading-relaxed text-slate-400">Normas e referências aplicadas à atividade policial e à administração pública.</p>
-            <div id="lista-juridico" class="mt-4 space-y-2">
-              <p class="rounded-lg border border-dashed border-pm-border px-3 py-3 text-xs text-slate-500">Materiais serão adicionados aqui.</p>
-            </div>
-          </div>
-          <a href="#lista-juridico" class="focus-ring inline-flex items-center justify-center gap-2 rounded-lg border border-pm-gold/70 px-4 py-3 text-xs font-extrabold text-pm-gold transition hover:bg-pm-gold hover:text-pm-navy">
-            Ver materiais <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </article>
-
-        <!-- MATÉRIA 2: adicione os links dos documentos no bloco DOCUMENTOS ORGANIZACIONAIS, ao final deste arquivo. -->
-        <article class="subject-card flex flex-col rounded-xl border border-pm-border bg-gradient-to-b from-[#14223b] to-[#0d192c] p-4 sm:p-5">
-          <div class="mb-4 flex items-center gap-3">
-            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-navy text-xl text-pm-gold"><i class="fa-solid fa-building-columns"></i></div>
-            <div>
-              <h4 class="font-extrabold text-white">Organizacional</h4>
-              <p class="mt-1 text-xs text-slate-400">Estrutura e gestão institucional</p>
-            </div>
-          </div>
-          <div class="mb-4 flex-1">
-            <p class="text-xs leading-relaxed text-slate-400">Organização, gestão, administração e assuntos institucionais da PMESP.</p>
-            <div id="lista-organizacional" class="mt-4 space-y-2">
-              <p class="rounded-lg border border-dashed border-pm-border px-3 py-3 text-xs text-slate-500">Materiais serão adicionados aqui.</p>
-            </div>
-          </div>
-          <a href="#lista-organizacional" class="focus-ring inline-flex items-center justify-center gap-2 rounded-lg border border-pm-gold/70 px-4 py-3 text-xs font-extrabold text-pm-gold transition hover:bg-pm-gold hover:text-pm-navy">
-            Ver materiais <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </article>
-
-        <!-- MATÉRIA 3: adicione os links dos documentos no bloco DOCUMENTOS OPERACIONAIS, ao final deste arquivo. -->
-        <article class="subject-card flex flex-col rounded-xl border border-pm-border bg-gradient-to-b from-[#14223b] to-[#0d192c] p-4 sm:p-5">
-          <div class="mb-4 flex items-center gap-3">
-            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-navy text-xl text-pm-gold"><i class="fa-solid fa-crosshairs"></i></div>
-            <div>
-              <h4 class="font-extrabold text-white">Operacional</h4>
-              <p class="mt-1 text-xs text-slate-400">Doutrina e procedimentos operacionais</p>
-            </div>
-          </div>
-          <div class="mb-4 flex-1">
-            <p class="text-xs leading-relaxed text-slate-400">Diretrizes, procedimentos, técnicas e emprego operacional.</p>
-            <div id="lista-operacional" class="mt-4 space-y-2">
-              <p class="rounded-lg border border-dashed border-pm-border px-3 py-3 text-xs text-slate-500">Materiais serão adicionados aqui.</p>
-            </div>
-          </div>
-          <a href="#lista-operacional" class="focus-ring inline-flex items-center justify-center gap-2 rounded-lg border border-pm-gold/70 px-4 py-3 text-xs font-extrabold text-pm-gold transition hover:bg-pm-gold hover:text-pm-navy">
-            Ver materiais <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <!-- ACESSO TEMPORÁRIO AO GOOGLE DRIVE: manter enquanto a biblioteca interna não estiver pronta. -->
-    <section class="mt-5 rounded-2xl border border-pm-gold/40 bg-gradient-to-r from-[#101c32] to-[#14223b] p-4 shadow-lg sm:p-5">
-      <div class="mb-4 flex items-start gap-3">
-        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-pm-gold/50 bg-pm-gold/10 text-lg text-pm-gold">
-          <i class="fa-brands fa-google-drive"></i>
-        </div>
-        <div>
-          <div class="flex flex-wrap items-center gap-2">
-            <h3 class="text-sm font-extrabold text-white sm:text-base">Acesso temporário aos materiais</h3>
-            <span class="rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-1 text-[9px] font-bold uppercase tracking-wide text-amber-300">Temporário</span>
-          </div>
-          <p class="mt-1 text-xs leading-relaxed text-slate-400 sm:text-sm">Enquanto a biblioteca interna está em desenvolvimento, acesse os arquivos pelo Google Drive.</p>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        <a href="https://drive.google.com/drive/u/0/folders/17iptcN0FYZRxodRZZnr5MTuNZ_lJrS3d" target="_blank" rel="noopener noreferrer" class="focus-ring flex items-center justify-between gap-3 rounded-xl border border-pm-border bg-[#0b1326]/70 p-4 transition hover:border-pm-gold/70 hover:bg-[#192b49]">
-          <span class="flex items-center gap-3"><i class="fa-solid fa-file-lines text-xl text-pm-gold"></i><span><span class="block text-sm font-bold text-white">Resumos</span><span class="mt-1 block text-xs text-slate-400">Sínteses para revisão</span></span></span>
-          <i class="fa-solid fa-arrow-up-right-from-square text-sm text-pm-gold"></i>
-        </a>
-        <a href="https://drive.google.com/drive/u/6/folders/1dVtJH7zNjgt2vhIZFmVQWQ527c-t_pgi" target="_blank" rel="noopener noreferrer" class="focus-ring flex items-center justify-between gap-3 rounded-xl border border-pm-border bg-[#0b1326]/70 p-4 transition hover:border-pm-gold/70 hover:bg-[#192b49]">
-          <span class="flex items-center gap-3"><i class="fa-solid fa-scale-balanced text-xl text-pm-gold"></i><span><span class="block text-sm font-bold text-white">Legislação</span><span class="mt-1 block text-xs text-slate-400">Normas e referências de estudo</span></span></span>
-          <i class="fa-solid fa-arrow-up-right-from-square text-sm text-pm-gold"></i>
-        </a>
-      </div>
-    </section>
-
-    <!-- BANCO DE QUESTÕES: leva ao simulador existente. A página do simulador deve permanecer como plataforma.html. -->
-    <section class="mt-5 flex flex-col gap-4 rounded-2xl border border-pm-border bg-gradient-to-r from-[#101c32] to-[#14223b] p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
-      <div class="flex items-center gap-3">
-        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-navy text-xl text-pm-gold"><i class="fa-solid fa-file-lines"></i></div>
-        <div>
-          <h3 class="font-black text-white sm:text-lg">Banco de questões</h3>
-          <p class="mt-1 text-xs text-slate-400 sm:text-sm">Acesse o ambiente de simulados do curso selecionado.</p>
-        </div>
-      </div>
-      <a href="plataforma.html?curso=CAO" class="focus-ring inline-flex items-center justify-center gap-2 rounded-lg bg-pm-gold px-5 py-3 text-sm font-black text-pm-navy shadow-lg transition hover:bg-pm-goldHover">
-        <i class="fa-solid fa-arrow-right-to-bracket"></i>Acessar questões<i class="fa-solid fa-arrow-right ml-1"></i>
-      </a>
-    </section>
-
-    <!-- INSTRUÇÃO PARA FUTURA INTEGRAÇÃO -->
-    <aside class="mt-4 rounded-xl border border-dashed border-pm-border bg-pm-card/60 p-4">
-      <div class="flex items-start gap-3">
-        <i class="fa-solid fa-circle-info mt-0.5 text-pm-gold"></i>
-        <div>
-          <h3 class="text-sm font-bold text-slate-200">Biblioteca em organização</h3>
-          <p class="mt-1 text-xs leading-relaxed text-slate-400">Os links para as normas serão inseridos conforme os documentos forem transcritos e preparados em páginas próprias, com leitura, marcação amarela e anotações pessoais. Esta página é o índice das matérias, não o leitor da norma.</p>
-        </div>
-      </div>
-    </aside>
-  </main>
-
-  <footer class="mt-auto border-t border-pm-border bg-pm-header/80">
-    <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-4 text-[10px] text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-      <p><i class="fa-solid fa-shield-halved mr-1.5 text-pm-gold"></i>Seus estudos são a prioridade.</p>
-      <p>Plataforma de Aperfeiçoamento | Polícia Militar do Estado de São Paulo</p>
-    </div>
-  </footer>
-
-  <!--
-  ============================================================
-  COMO ADICIONAR UMA NORMA (quando a página da norma existir)
-  ============================================================
-  1. Crie a página própria da norma, por exemplo: norma-diretriz-cop-acp.html
-  2. Localize a lista correspondente abaixo e troque o aviso de
-     "Materiais serão adicionados aqui" por um link no formato:
-
-     <a href="norma-diretriz-cop-acp.html"
-        class="block rounded-lg border border-pm-border bg-pm-navy/60 px-3 py-3 text-sm text-slate-200 hover:border-pm-gold/60">
-       <span class="font-bold">04. Diretriz nº PM3-001/02/25</span>
-       <span class="mt-1 block text-xs text-slate-400">Câmeras Operacionais Portáteis (COP)</span>
-     </a>
-
-  3. Mantenha cada link dentro do recipiente da matéria correta:
-     lista-juridico, lista-organizacional ou lista-operacional.
-  4. Repita o procedimento para cada norma. Não é necessário alterar
-     a estrutura geral da página.
-  5. Para o CAO, use os arquivos e links específicos do CAO.
-  ============================================================
-  -->
-
-  <script>
-    // FUTURO: aqui podem ser adicionados recursos de busca/filtro de materiais.
-    // Por enquanto, a página funciona como índice estático e não altera os bancos de questões.
-  </script>
-</body>
-</html>
+<script>
+// Cadastro demonstrativo: inserir os links de visualização do Drive em url quando disponíveis.
+// A listagem aceita novos anos e novos números sem alterar a estrutura da página.
+(function(){
+ const editais=[];
+ const modal=document.getElementById("acpEditalModal");
+ const history=document.getElementById("acpEditalHistory");
+ const yearSelect=document.getElementById("acpEditalYear");
+ const searchState={year:"todos"};
+ const count=document.getElementById("acpEditalModalCount");
+ const cardCount=document.getElementById("acpEditalCount");
+ if(!modal||!history||!yearSelect)return;
+ const years=[...new Set(editais.map(e=>e.ano))].sort((a,b)=>b-a);
+ years.forEach(y=>{const o=document.createElement("option");o.value=String(y);o.textContent=String(y);yearSelect.appendChild(o)});
+ cardCount.textContent=editais.length+" edital(is) cadastrado(s)";
+ function render(){
+  const rows=editais.filter(e=>searchState.year==="todos"||String(e.ano)===searchState.year).sort((a,b)=>b.ano-a.ano||b.numero.localeCompare(a.numero));
+  const groups=[...new Set(rows.map(e=>e.ano))];
+  count.textContent=rows.length+" documento(s)";
+  history.innerHTML=groups.length?groups.map(y=>{const items=rows.filter(e=>e.ano===y);return '<section class="acp-edital-year"><header class="acp-edital-year-head"><strong>'+y+'</strong><span>'+items.length+' edital(is)</span></header>'+items.map(e=>'<article class="acp-edital-row"><div><strong>Edital '+e.numero+'</strong><small>Curso de Aperfeiçoamento Profissional · '+e.ano+'</small></div><a class="acp-edital-pdf '+(e.url?'':'disabled')+'" href="'+(e.url||'#')+'" target="_blank" rel="noopener" title="'+(e.url?'Abrir documento no Google Drive':'Link ainda não cadastrado')+'"><i class="fa-brands fa-google-drive"></i> Abrir PDF <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>').join('')+'</section>'}).join(''):'<div class="acp-edital-empty">Nenhum edital encontrado para o ano selecionado.</div>';
+ }
+ function open(){modal.classList.add("open");document.body.style.overflow="hidden";render()}
+ function close(){modal.classList.remove("open");if(!document.querySelector(".acp-edital-backdrop.open"))document.body.style.overflow=""}
+ document.getElementById("openAcpEditais").addEventListener("click",open);
+ document.getElementById("closeAcpEditais").addEventListener("click",close);
+ document.getElementById("backAcpEditais").addEventListener("click",close);
+ modal.addEventListener("click",e=>{if(e.target===modal)close()});
+ yearSelect.addEventListener("change",()=>{searchState.year=yearSelect.value;render()});
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&modal.classList.contains("open"))close()});
+ render();
+})();
+</script>
+</body></html>
