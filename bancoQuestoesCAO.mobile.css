@@ -1,0 +1,301 @@
+/* Layout mobile dedicado — Banco de Questões ACP
+   Regras isoladas para telas pequenas; não altera a lógica do simulado. */
+@media (max-width: 850px) {
+  html, body { min-height: 100%; height: auto !important; }
+  body { display: block !important; overflow-x: hidden !important; }
+  #appShell { display: flex !important; align-items: flex-start !important; min-height: 100dvh !important; overflow: visible !important; }
+  #appShell > .app-sidebar { position: sticky !important; top: 0 !important; height: 100dvh !important; flex: 0 0 210px !important; width: 210px !important; overflow-y: auto !important; z-index: 30 !important; }
+  #appShell > .app-main { display: flex !important; flex: 1 1 auto !important; min-width: 0 !important; width: calc(100% - 210px) !important; padding-top: 0 !important; overflow: visible !important; }
+  #appShell > .app-main > header.bg-pm-header {
+    position: sticky !important; inset: auto !important; top: 0 !important; left: auto !important; right: auto !important;
+    width: 100% !important; height: auto !important; min-height: 68px !important; max-height: none !important;
+    flex: 0 0 auto !important; align-self: stretch !important; z-index: 100 !important;
+    display: flex !important; overflow: visible !important; box-sizing: border-box !important;
+    background: #071020 !important; border-bottom: 1px solid #1d2b45 !important;
+  }
+  #appShell > .app-main > header.bg-pm-header .app-header-inner {
+    width: 100% !important; height: auto !important; min-height: 68px !important; max-height: none !important;
+    padding: 9px 10px !important; gap: 8px !important; flex-wrap: wrap !important; box-sizing: border-box !important;
+  }
+  #appShell > .app-main .app-header-title { min-width: 0 !important; flex: 1 1 100% !important; gap: 7px !important; }
+  #appShell > .app-main .app-header-title-mark { display: none !important; }
+  #appShell > .app-main .app-header-title h1 { font-size: 10px !important; line-height: 1.3 !important; }
+  #appShell > .app-main .app-header-title h2 { font-size: 12px !important; line-height: 1.3 !important; white-space: normal !important; }
+  #appShell > .app-main .app-header-title p { display: none !important; }
+  #appShell > .app-main .app-top-actions { width: 100% !important; display: flex !important; flex: 1 1 100% !important; justify-content: flex-start !important; flex-wrap: nowrap !important; gap: 6px !important; }
+  #appShell > .app-main .app-top-actions > div { padding: 5px 7px !important; }
+  #appShell > .app-main .app-top-actions #timerDisplay { font-size: 13px !important; gap: 5px !important; }
+  #appShell > .app-main .app-top-actions #toggleTimerBtn { padding: 5px !important; }
+  #appShell > .app-main .app-content-actions {
+    position: relative !important; inset: auto !important; z-index: 1 !important; width: 100% !important;
+    display: flex !important; justify-content: flex-end !important; align-items: center !important;
+    min-height: 54px !important; height: auto !important; margin: 0 !important; padding: 8px 10px !important;
+    overflow: visible !important; visibility: visible !important; opacity: 1 !important; box-sizing: border-box !important;
+    background: #0b1326 !important;
+  }
+  #appShell > .app-main .app-content-actions .app-new-sim {
+    position: static !important; display: inline-flex !important; flex: 0 0 auto !important;
+    width: auto !important; max-width: 100% !important; min-width: 0 !important;
+    height: 38px !important; min-height: 38px !important; max-height: none !important;
+    padding: 8px 12px !important; white-space: nowrap !important; overflow: visible !important;
+    clip: auto !important; transform: none !important; visibility: visible !important; opacity: 1 !important;
+    font-size: 11px !important; line-height: 1.2 !important; box-sizing: border-box !important;
+  }
+  #appShell > .app-main > nav.bg-pm-lightBg {
+    position: relative !important; inset: auto !important; z-index: 0 !important;
+    width: 100% !important; padding: 5px 10px 10px !important; border: 0 !important;
+    background: #0b1326 !important; box-sizing: border-box !important;
+  }
+  #appShell > .app-main > nav.bg-pm-lightBg .app-filter-inner {
+    width: 100% !important; max-width: 100% !important; display: flex !important;
+    align-items: flex-start !important; flex-direction: column !important; gap: 9px !important;
+  }
+  #appShell > .app-main > nav.bg-pm-lightBg .app-filter-inner > div:last-child {
+    width: 100% !important; max-width: 100% !important; padding-bottom: 4px !important;
+  }
+  #appShell > .app-main > main { width: 100% !important; max-width: 100% !important; padding: 12px 10px !important; grid-template-columns: minmax(0,1fr) !important; gap: 12px !important; box-sizing: border-box !important; }
+  #appShell > .app-main > main > section, #appShell > .app-main > main > aside { min-width: 0 !important; grid-column: 1 !important; }
+  #appShell > .app-main > main > aside { display: grid !important; grid-template-columns: minmax(0,1fr) !important; gap: 12px !important; }
+  #appShell > .app-main #questionContainer { min-height: 0 !important; padding: 16px !important; }
+  #appShell > .app-main #qText { font-size: 16px !important; line-height: 1.65 !important; overflow-wrap: anywhere !important; }
+  #appShell > .app-main .app-finish-sim { width: 100% !important; min-height: 38px !important; font-size: 12px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar { width: 54px !important; flex-basis: 54px !important; padding: 12px 4px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-brand { justify-content: center !important; padding: 0 0 15px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-brand-copy,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-label,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav .app-nav-label,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-user-copy { display: none !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav a,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav button { justify-content: center !important; padding: 11px 3px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav .app-nav-icon { width: auto !important; flex-basis: auto !important; }
+}
+@media (max-width: 560px) {
+  #appShell > .app-sidebar { flex-basis: 174px !important; width: 174px !important; padding: 12px 8px !important; }
+  #appShell > .app-sidebar .app-sidebar-brand { justify-content: flex-start !important; padding: 0 4px 15px !important; }
+  #appShell > .app-sidebar .app-sidebar-brand-copy,
+  #appShell > .app-sidebar .app-sidebar-user-copy { display: block !important; }
+  #appShell > .app-sidebar .app-sidebar-label { display: block !important; font-size: 8px !important; margin: 16px 4px 7px !important; letter-spacing: .07em !important; }
+  #appShell > .app-sidebar .app-sidebar-nav .app-nav-label { display: inline !important; }
+  #appShell > .app-sidebar .app-sidebar-nav a,
+  #appShell > .app-sidebar .app-sidebar-nav button { justify-content: flex-start !important; padding: 9px 5px !important; gap: 6px !important; font-size: 11px !important; }
+  #appShell > .app-sidebar .app-sidebar-nav .app-nav-icon { width: 17px !important; flex: 0 0 17px !important; font-size: 13px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar { flex-basis: 48px !important; width: 48px !important; padding: 12px 4px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-brand { justify-content: center !important; padding: 0 0 15px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-brand-copy,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-label,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav .app-nav-label,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-user-copy { display: none !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav a,
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav button { justify-content: center !important; padding: 11px 3px !important; }
+  #appShell.sidebar-collapsed > .app-sidebar .app-sidebar-nav .app-nav-icon { width: auto !important; flex-basis: auto !important; }
+  #appShell > .app-main { width: calc(100% - 174px) !important; }
+  #appShell.sidebar-collapsed > .app-main { width: calc(100% - 48px) !important; }
+  #appShell > .app-main > header.bg-pm-header .app-header-inner { padding: 8px !important; }
+  #appShell > .app-main .app-header-title { flex-basis: 100% !important; }
+  #appShell > .app-main .app-header-title h1 { font-size: 9px !important; }
+  #appShell > .app-main .app-header-title h2 { font-size: 11px !important; }
+  #appShell > .app-main .app-top-actions #timerDisplay { font-size: 11px !important; }
+  #appShell > .app-main .app-content-actions { padding: 8px !important; }
+  #appShell > .app-main > nav.bg-pm-lightBg .app-filter-inner { gap: 8px !important; }
+  #appShell > .app-main > main { padding: 10px 8px !important; }
+  #appShell > .app-main #questionContainer { padding: 14px !important; }
+  #appShell > .app-main #qText { font-size: 15px !important; }
+}
+
+
+/* Mobile approved layout v2: hamburger drawer, full-width questions, compact new-sim button */
+.app-mobile-menu-toggle,.app-mobile-backdrop{display:none}
+@media(max-width:850px){
+  #appShell{position:relative!important;overflow:visible!important}
+  #appShell>.app-sidebar{
+    position:fixed!important;top:0!important;bottom:0!important;left:0!important;
+    width:min(82vw,290px)!important;max-width:290px!important;height:100dvh!important;
+    flex:0 0 auto!important;transform:translateX(-105%)!important;
+    transition:transform .22s ease!important;z-index:900!important;
+    overflow-y:auto!important;box-shadow:18px 0 45px #0008!important;
+    align-items:stretch!important;padding:18px 13px!important;background:#071020!important;
+  }
+  #appShell.app-mobile-menu-open>.app-sidebar{transform:translateX(0)!important}
+  #appShell .app-mobile-backdrop{display:block!important;position:fixed!important;inset:0!important;
+    background:rgba(2,7,19,.72)!important;backdrop-filter:blur(2px);opacity:0;visibility:hidden;
+    pointer-events:none;transition:opacity .2s ease,visibility .2s ease;z-index:850!important}
+  #appShell.app-mobile-menu-open .app-mobile-backdrop{opacity:1;visibility:visible;pointer-events:auto}
+  #appShell .app-mobile-menu-toggle{display:inline-flex!important;align-items:center!important;justify-content:center!important;
+    flex:0 0 38px!important;width:38px!important;height:38px!important;min-width:38px!important;
+    padding:0!important;border:1px solid #2a3c66!important;border-radius:10px!important;
+    background:#101d34!important;color:#d4af37!important;font-size:18px!important;line-height:1!important;
+    cursor:pointer!important;order:0!important}
+  #appShell>.app-main>header.bg-pm-header{position:sticky!important;top:0!important;left:auto!important;right:auto!important;
+    width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;z-index:100!important;
+    overflow:visible!important;background:#071020!important}
+  #appShell>.app-main>header.bg-pm-header .app-header-inner{
+    display:grid!important;grid-template-columns:38px minmax(0,1fr) auto!important;
+    align-items:center!important;gap:8px!important;width:100%!important;height:auto!important;
+    min-height:66px!important;max-height:none!important;padding:9px 10px!important;box-sizing:border-box!important}
+  #appShell>.app-main .app-header-title{grid-column:2!important;grid-row:1!important;display:flex!important;
+    min-width:0!important;flex:initial!important;align-items:center!important;gap:7px!important}
+  #appShell>.app-main .app-header-title-mark{display:none!important}
+  #appShell>.app-main .app-header-title h1{font-size:9px!important;line-height:1.25!important;letter-spacing:.08em!important}
+  #appShell>.app-main .app-header-title h2{font-size:11px!important;line-height:1.3!important;white-space:normal!important}
+  #appShell>.app-main .app-header-title p{display:none!important}
+  #appShell>.app-main .app-top-actions{grid-column:3!important;grid-row:1!important;width:auto!important;min-width:0!important;
+    display:flex!important;flex-wrap:nowrap!important;justify-content:flex-end!important;gap:4px!important}
+  #appShell>.app-main .app-top-actions>div{padding:5px 6px!important}
+  #appShell>.app-main .app-top-actions #timerDisplay{font-size:11px!important;gap:4px!important;white-space:nowrap!important}
+  #appShell>.app-main .app-top-actions #toggleTimerBtn{padding:4px!important}
+  #appShell>.app-main .app-content-actions{position:relative!important;z-index:1!important;width:100%!important;
+    min-height:0!important;height:auto!important;padding:8px 10px 4px!important;margin:0!important;
+    display:flex!important;justify-content:flex-end!important;align-items:center!important;overflow:visible!important;
+    background:#0b1326!important;border:0!important;box-shadow:none!important}
+  #appShell>.app-main .app-content-actions .app-new-sim{display:inline-flex!important;align-items:center!important;
+    justify-content:center!important;gap:6px!important;width:auto!important;min-width:0!important;max-width:100%!important;
+    height:32px!important;min-height:32px!important;max-height:32px!important;padding:6px 9px!important;
+    border-radius:8px!important;font-size:10px!important;line-height:1!important;white-space:nowrap!important;
+    flex:0 0 auto!important;box-shadow:none!important}
+  #appShell>.app-main .app-content-actions .app-new-sim i{font-size:10px!important}
+  #appShell>.app-main>nav.bg-pm-lightBg{position:relative!important;z-index:1!important;padding:4px 10px 10px!important;
+    border:0!important;background:#0b1326!important}
+  #appShell>.app-main>main{width:100%!important;max-width:100%!important;padding:10px!important;
+    grid-template-columns:minmax(0,1fr)!important;gap:10px!important;box-sizing:border-box!important}
+  #appShell>.app-main>main>section,#appShell>.app-main>main>aside{grid-column:1!important;min-width:0!important}
+  #appShell>.app-main>main>aside{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:10px!important}
+  #appShell #questionContainer{padding:13px!important}
+  #appShell #qText{font-size:15px!important;line-height:1.6!important;overflow-wrap:anywhere!important}
+  #appShell .app-sidebar-brand-copy,#appShell .app-sidebar-label,#appShell .app-sidebar-nav .app-nav-label,#appShell .app-sidebar-user-copy{display:initial!important}
+  #appShell .app-sidebar-label{display:block!important}
+  #appShell .app-sidebar-nav a,#appShell .app-sidebar-nav button{justify-content:flex-start!important;padding:10px 9px!important;gap:9px!important}
+  #appShell .app-sidebar-collapse{align-self:flex-end!important}
+  #authGuard{z-index:99999!important}
+}
+@media(max-width:560px){
+  #appShell>.app-main>header.bg-pm-header .app-header-inner{grid-template-columns:34px minmax(0,1fr) auto!important;gap:6px!important;padding:8px!important}
+  #appShell .app-mobile-menu-toggle{width:34px!important;height:34px!important;min-width:34px!important;flex-basis:34px!important;font-size:16px!important}
+  #appShell>.app-main .app-header-title h1{font-size:8px!important}
+  #appShell>.app-main .app-header-title h2{font-size:10px!important}
+  #appShell>.app-main .app-top-actions #timerDisplay{font-size:10px!important}
+  #appShell>.app-main .app-content-actions{padding:7px 8px 3px!important}
+  #appShell>.app-main .app-content-actions .app-new-sim{height:30px!important;min-height:30px!important;max-height:30px!important;padding:5px 8px!important;font-size:9px!important}
+  #appShell>.app-main>nav.bg-pm-lightBg{padding-left:8px!important;padding-right:8px!important}
+  #appShell>.app-main>main{padding:8px!important}
+}
+
+
+/* Filtros sem contorno permanente: apenas o filtro ativo mantém borda */
+.app-main nav button[id^="filter"]{border-color:transparent!important;box-shadow:none!important}
+.app-main nav button[id^="filter"]:hover{border-color:transparent!important}
+.app-main nav button[id^="filter"][class*="border-pm-gold"]{border-color:#d4af37!important;box-shadow:0 0 0 1px rgba(212,175,55,.08)!important}
+@media(max-width:850px){
+  /* Authentication gate must cover every mobile header/sidebar stacking context */
+  html body #authGuard{position:fixed!important;inset:0!important;z-index:2147483647!important;
+    isolation:isolate!important;display:flex!important;align-items:center!important;justify-content:center!important;
+    background:#0b1326!important;pointer-events:auto!important}
+  html body #authGuard[hidden],html body #authGuard.is-hidden{display:none!important}
+  #appShell>.app-main>header.bg-pm-header{z-index:100!important}
+}
+
+
+/* Ajuste final dos filtros: sem borda nos inativos; dourado apenas no ativo */
+.app-main nav button[id^="filter"]{
+  border:1px solid transparent!important;
+  outline:0!important;
+  box-shadow:none!important;
+}
+.app-main nav button[id^="filter"]:hover{
+  border-color:transparent!important;
+  box-shadow:none!important;
+}
+.app-main nav button[id^="filter"][class~="border-pm-gold"]{
+  border-color:#d4af37!important;
+  box-shadow:0 0 0 1px rgba(212,175,55,.08)!important;
+}
+@media(max-width:850px){
+  /* Aumenta o respiro entre Modo Prova/Estudo e os filtros */
+  #appShell>.app-main>nav.bg-pm-lightBg .app-filter-inner{gap:16px!important}
+  #appShell>.app-main>nav.bg-pm-lightBg .app-filter-inner>div:last-child{margin-top:5px!important}
+}
+
+/* Correção definitiva: o pop-up inicial é #modalInstrucoes, não #authGuard.
+   Ele deve ficar acima do cabeçalho sticky e de qualquer stacking context. */
+html body #modalInstrucoes{
+  position:fixed!important;
+  inset:0!important;
+  z-index:2147483646!important;
+  isolation:isolate!important;
+}
+html body #modalInstrucoes.hidden{display:none!important}
+html body #modalInstrucoes:not(.hidden){display:flex!important}
+html body #modalInstrucoes>div{
+  max-height:calc(100dvh - 24px)!important;
+  overflow-y:auto!important;
+}
+@media(max-width:850px){
+  html body #modalInstrucoes{align-items:center!important;padding:12px!important}
+  html body #modalInstrucoes>div{max-height:calc(100dvh - 24px)!important}
+}
+/* Inativos não têm borda nem realce de hover; o selecionado usa aria-pressed. */
+#appShell>.app-main>nav button[id^="filter"]{
+  border-color:transparent!important;
+  box-shadow:none!important;
+  outline:none!important;
+}
+#appShell>.app-main>nav button[id^="filter"]:hover{
+  border-color:transparent!important;
+  box-shadow:none!important;
+}
+#appShell>.app-main>nav button[id^="filter"][aria-pressed="true"]{
+  border-color:#d4af37!important;
+  box-shadow:none!important;
+}
+
+
+/* Navegação das questões no celular: Anterior e Próxima lado a lado,
+   com o contador em uma linha própria para evitar apertos e quebras. */
+@media (max-width: 560px) {
+  #appShell .app-main div:has(> #btnPrev):has(> #qCounterSummary):has(> #btnNext) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    align-items: center !important;
+    column-gap: 10px !important;
+    row-gap: 12px !important;
+  }
+  #appShell #btnPrev,
+  #appShell #btnNext {
+    width: 100% !important;
+    min-width: 0 !important;
+    justify-content: center !important;
+    padding: 10px 8px !important;
+    white-space: nowrap !important;
+    order: initial !important;
+  }
+  #appShell #qCounterSummary {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    text-align: center !important;
+    order: initial !important;
+  }
+}
+
+/* Posicionamento final da navegação mobile: os dois botões na mesma linha. */
+@media (max-width: 560px) {
+  #appShell .app-main div:has(> #btnPrev):has(> #qCounterSummary):has(> #btnNext) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    grid-template-rows: auto auto !important;
+    align-items: center !important;
+    column-gap: 10px !important;
+    row-gap: 12px !important;
+  }
+  #appShell #btnPrev {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+  #appShell #btnNext {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+  #appShell #qCounterSummary {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    text-align: center !important;
+  }
+}
