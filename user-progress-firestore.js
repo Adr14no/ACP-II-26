@@ -153,14 +153,18 @@ export async function saveExamResult(result) {
   return true;
 }
 
-export async function getProgressSummary() {
+export async function getProgressSummary(course = "ACP") {
+  const selectedCourse = courseCode(course);
   if (!activeUser) return { attempts: 0, totalQuestions: 0, totalCorrect: 0, totalIncorrect: 0, totalUnanswered: 0, averagePercent: 0, bestPercent: 0, studiedSubjects: [], recentResults: [] };
   const snap = await getDocs(collection(db, "users", activeUser.uid, LIBRARY_COLLECTION));
   const results = [];
   const studiedSubjects = new Set();
   snap.forEach(item => {
     const data = item.data();
-    if (data?.recordType === "examResult" && Number.isFinite(Number(data.percent))) {
+    if (data?.recordType === "examResult"
+      && Number.isFinite(Number(data.percent))
+      // Registros antigos sem curso permanecem no ACP por compatibilidade.
+      && courseCode(data.course || "ACP") === selectedCourse) {
       results.push({ ...data, id: item.id });
       if (data.subjects && typeof data.subjects === "object") {
         Object.entries(data.subjects).forEach(([subject, values]) => {
