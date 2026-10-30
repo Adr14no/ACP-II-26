@@ -9,6 +9,11 @@ main{margin-left:252px}.top{position:sticky;top:0;z-index:20;background:#071326e
 @media(max-width:1000px){.sidebar{width:225px}main{margin-left:225px}.content{padding:20px}.work{grid-template-columns:minmax(0,1fr) 220px}}
 @media(max-width:740px){.sidebar{width:min(290px,86vw);transform:translateX(-105%);transition:.25s;box-shadow:18px 0 45px #0008}.sidebar.open{transform:translateX(0)}.scrim.show{display:block;position:fixed;inset:0;background:#020713aa;z-index:25}main{margin:0}.top{padding:10px 14px}.hamb{display:block;background:#102039;border:1px solid #eabf3a44;color:var(--g);border-radius:9px;padding:8px 11px}.top{justify-content:flex-start;gap:12px}.chip{display:none}.content{padding:15px}.courses{gap:9px}.course{padding:14px}.filters{grid-template-columns:1fr 1fr}.filters .field:last-child{grid-column:1/-1}.exam{display:block}.exam .btn{width:100%;margin-top:13px}.detail{grid-template-columns:1fr}.work{grid-template-columns:1fr}.work aside{order:-1}.navigator{grid-template-columns:repeat(10,1fr)}.question{padding:16px}.qtext{font-size:15px}.qactions{position:sticky;bottom:0;background:#071326ed;padding:9px 0}.workhead{padding:12px}.stats{gap:6px}.stat{padding:10px}}
 @media(max-width:420px){.courses{grid-template-columns:1fr}.navigator{grid-template-columns:repeat(8,1fr)}}
+</style><script>if(new URLSearchParams(location.search).has("embedded"))document.documentElement.classList.add("embedded");</script><style>
+.embedded .sidebar,.embedded .top{display:none!important}
+.embedded main{margin-left:0!important}
+.embedded .content{padding:8px!important;max-width:none}
+.embedded .hero{margin-bottom:14px}
 </style></head><body>
 <div class="scrim" id="scrim"></div>
 <aside class="sidebar" id="sidebar"><div><div class="brand"><div class="logo">ACP</div><div><strong>PLATAFORMA</strong><small>APERFEIÇOAMENTO</small></div></div><div class="navlabel">Ambiente de estudo</div><nav class="nav"><button class="active">▦ &nbsp; Provas</button><button>▣ &nbsp; Banco de questões</button><button>◫ &nbsp; Painel inicial</button></nav></div><div class="foot">PROTÓTIPO DE ANÁLISE<br>Plataforma de Aperfeiçoamento</div></aside>
@@ -42,4 +47,11 @@ function submit(){let n=Object.keys(answers).length;if(!confirm(`Você respondeu
 function buildReview(){if(!selected.real){$("reviewList").innerHTML='<div class="empty">A revisão estará disponível após o cadastro do conteúdo e do gabarito.</div>';return}$("reviewList").innerHTML=Array.from({length:selected.questions},(_,i)=>i+1).map(n=>`<div class="reviewrow"><b>Questão ${n}</b><div style="color:var(--m);margin-top:5px">Sua resposta: <b>${answers[n]||"Em branco"}</b> · Gabarito: <b>${key[n]}</b> · <span style="color:${answers[n]===key[n]?"#7be0bb":"#fda4af"}">${answers[n]===key[n]?"Correta":"Incorreta ou em branco"}</span></div></div>`).join("")}
 function closeMenu(){$("sidebar").classList.remove("open");$("scrim").classList.remove("show")}
 ["year","edition","status"].forEach(id=>$(id).onchange=renderList);$("back").onclick=()=>view("selection","Provas","Acervo de provas ACP");$("start").onclick=start;$("prev").onclick=()=>jump(Math.max(1,q-1));$("next").onclick=()=>jump(Math.min(selected.questions,q+1));$("mark").onclick=toggleMark;$("submit").onclick=submit;$("reviewBtn").onclick=()=>{$("reviewPanel").style.display="block";buildReview();$("reviewPanel").scrollIntoView({behavior:"smooth"})};$("return").onclick=()=>view("selection","Provas","Acervo de provas ACP");$("hamb").onclick=()=>{$("sidebar").classList.toggle("open");$("scrim").classList.toggle("show")};$("scrim").onclick=closeMenu;renderList();
+</script><script>
+if(document.documentElement.classList.contains("embedded")){
+ const sendHeight=()=>parent.postMessage({type:"acp-exam-height",height:document.documentElement.scrollHeight},"*");
+ new ResizeObserver(sendHeight).observe(document.body);
+ window.addEventListener("load",sendHeight);
+ document.addEventListener("click",()=>setTimeout(sendHeight,80));
+}
 </script></body></html>
