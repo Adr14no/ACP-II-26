@@ -14,6 +14,18 @@ main{margin-left:252px}.top{position:sticky;top:0;z-index:20;background:#071326e
 .embedded main{margin-left:0!important}
 .embedded .content{padding:0!important;max-width:none;width:100%}.embedded .view{width:100%}.embedded .work{grid-template-columns:minmax(0,1fr)}.embedded .question{min-width:0}.embedded .workhead{gap:12px}.embedded .hero{padding:20px 22px}
 .embedded .hero{margin-bottom:14px}
+
+/* Ajuste de espaçamento dos controles de navegação */
+.qactions{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.qactions>div{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex:0 0 auto}
+.qactions>div .btn{min-width:112px}
+.qactions>#mark{min-height:44px}
+@media(max-width:740px){
+ .qactions{flex-wrap:wrap;gap:12px}
+ .qactions>#mark{flex:1 1 100%;width:100%}
+ .qactions>div{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ .qactions>div .btn{width:100%;min-width:0;min-height:46px}
+}
 </style></head><body>
 <div class="scrim" id="scrim"></div>
 <aside class="sidebar" id="sidebar"><div><div class="brand"><div class="logo">ACP</div><div><strong>PLATAFORMA</strong><small>APERFEIÇOAMENTO</small></div></div><div class="navlabel">Ambiente de estudo</div><nav class="nav"><button class="active">▦ &nbsp; Provas</button><button>▣ &nbsp; Banco de questões</button><button>◫ &nbsp; Painel inicial</button></nav></div><div class="foot">PROTÓTIPO DE ANÁLISE<br>Plataforma de Aperfeiçoamento</div></aside>
