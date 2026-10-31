@@ -45,6 +45,10 @@
   #courseLanding > div > section {
     width: 100% !important; min-width: 0 !important;
   }
+  /* Realce sutil da bandeira no banner, exclusivo para telas mobile. */
+  #courseLanding > div > section img[fetchpriority="high"] {
+    filter: brightness(1.22) saturate(1.16) !important;
+  }
   #courseLanding > div > section .min-h-\[210px\] {
     min-height: 170px !important; padding: 24px 18px !important;
     justify-content: flex-start !important;
