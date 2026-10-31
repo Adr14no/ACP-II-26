@@ -15,16 +15,22 @@
   "theme_color": "#071326",
   "icons": [
     {
-      "src": "/pa-icon.svg",
-      "sizes": "192x192",
+      "src": "/pa-icon.svg?v=2",
+      "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "/pa-icon.svg",
+      "src": "/pa-icon.svg?v=2",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/pa-icon.svg?v=2",
       "sizes": "512x512",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     }
   ],
   "id": "/"
