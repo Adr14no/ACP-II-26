@@ -85,3 +85,19 @@
   .form-options { align-items: flex-start !important; }
   .form-options a { text-align: right !important; }
 }
+
+/* Marca aprovada: aparece dentro do cartão apenas no layout mobile. */
+.mobile-brand-lockup{display:none}
+@media(max-width:600px){
+  .mobile-brand-lockup{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;margin:0 auto 22px;padding:2px 0 4px;text-align:center}
+  .mobile-brand-emblem{display:block;width:clamp(112px,34vw,148px);height:auto;overflow:visible;filter:drop-shadow(0 10px 14px rgba(0,0,0,.24))}
+  .mobile-brand-name{font-family:Manrope,Inter,Segoe UI,Arial,sans-serif;font-size:12px;font-weight:650;letter-spacing:.14em;line-height:1.45;text-transform:uppercase;color:#e9edf2}
+  .mobile-brand-name span{display:block;color:#efd493;font-weight:800;letter-spacing:.18em}
+  .mobile-layer{transform-box:fill-box;transform-origin:center;animation:mobileLogoAssemble 1.45s cubic-bezier(.2,.85,.22,1) both}
+  .mobile-layer-top{--dx:-18px;--dy:-28px;--rot:-8deg;animation-delay:.08s}
+  .mobile-layer-mid{--dx:18px;--dy:0px;--rot:7deg;animation-delay:.02s}
+  .mobile-layer-bottom{--dx:-12px;--dy:28px;--rot:-6deg;animation-delay:.14s}
+  @keyframes mobileLogoAssemble{0%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(var(--rot)) scale(.86)}65%{opacity:1;transform:translate(0,0) rotate(0) scale(1.035)}100%{opacity:1;transform:translate(0,0) rotate(0) scale(1)}}
+  .platform-bypass{background:linear-gradient(110deg,#c9362b,#ea4335)!important;border-color:rgba(234,67,53,.78)!important;color:#fff!important;box-shadow:0 8px 22px rgba(234,67,53,.18)!important}
+}
+@media(prefers-reduced-motion:reduce){.mobile-layer{animation:none!important}}
