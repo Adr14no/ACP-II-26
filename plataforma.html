@@ -62,104 +62,137 @@
 
 
     <!-- Página inicial da Plataforma de Aperfeiçoamento: cursos e materiais -->
-    <section id="courseLanding" class="fixed inset-0 z-[200] overflow-y-auto bg-pm-navy">
-        <div class="min-h-full flex flex-col">
-            <!-- Cabeçalho da página inicial -->
-            <header class="relative z-10 border-b border-pm-border bg-[#071020]/95 shadow-lg">
-                <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-                    <div class="flex items-center gap-3">
-                        <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl border border-pm-gold/60 bg-pm-header shadow-lg p-1.5">
-                            <img src="pa-logo.svg" alt="Logotipo da Plataforma de Aperfeiçoamento" class="h-full w-full object-contain">
-                        </div>
-                        <div class="min-w-0">
-                            <h1 class="text-sm font-black tracking-tight text-white sm:text-base">Plataforma <span class="text-pm-gold">de Aperfeiçoamento</span></h1>
-                        
-                        </div>
-                    </div>
-                    <div class="flex justify-end gap-4">
-                        <a href="perfil-usuario.html" title="Abrir perfil e segurança da conta" aria-label="Perfil do usuário" class="inline-flex items-center gap-2.5 rounded-xl border border-pm-gold/60 bg-[#071326]/85 px-4 py-2.5 text-xs font-bold text-white shadow-sm transition hover:border-pm-gold hover:bg-pm-gold/10 sm:text-sm">
-                            <span class="flex h-8 w-8 items-center justify-center rounded-full bg-pm-gold/15 text-pm-gold"><i class="fa-solid fa-user"></i></span>
-                            <span>Meu perfil</span>
-                        </a>
-                        <button id="paLogoutButton" type="button" title="Encerrar sessão" class="inline-flex items-center gap-2.5 rounded-xl border border-red-500/80 bg-[#071326]/85 px-4 py-2.5 text-xs font-bold text-red-400 shadow-sm transition hover:border-red-400 hover:bg-red-950/40 sm:text-sm">
-                            <i class="fa-solid fa-right-from-bracket"></i><span>Sair</span>
-                        </button>
-                        <a id="adminPanelLinkLanding" href="administrador.html" hidden title="Painel administrativo" aria-label="Painel administrativo" class="hidden inline-flex items-center gap-2 rounded-xl border border-pm-gold/50 bg-pm-navy/70 px-3 py-2 text-xs font-bold text-pm-gold transition hover:border-pm-gold sm:text-sm">
-                            <i class="fa-solid fa-shield-halved"></i><span>Administração</span>
-                        </a>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Banner com imagem da bandeira paulista; manter bandeira-sp-banner.png na raiz do repositório -->
-            <section class="relative isolate overflow-hidden border-b border-pm-border/70">
-                <img src="bandeira-sp-banner-v2.png" alt="Bandeira do Estado de São Paulo em composição escura" class="absolute inset-0 h-full w-full object-cover object-center" fetchpriority="high">
-                <div class="absolute inset-0 bg-gradient-to-r from-[#071020]/15 via-[#071020]/35 to-[#071020]/75"></div>
-                <div class="absolute inset-0 bg-gradient-to-t from-pm-navy/55 via-transparent to-[#071020]/10"></div>
-                <div class="relative mx-auto flex min-h-[210px] max-w-7xl items-center justify-end px-5 py-8 sm:min-h-[250px] sm:px-8 sm:py-10 lg:min-h-[275px] lg:px-10">
-                    <div class="w-full max-w-xl">
-                        <div class="mb-4 h-1 w-16 bg-pm-gold"></div>
-                        <p class="mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-pm-gold sm:text-xs">Ambiente de preparação</p>
-                        <h2 class="max-w-xl text-2xl font-black leading-tight text-white sm:text-3xl lg:text-4xl">Bem-vindo ao seu<br class="hidden sm:block"> ambiente de preparação</h2>
-                        <p class="mt-3 max-w-lg text-xs leading-relaxed text-slate-200 sm:text-sm">Escolha o curso e siga com seus estudos.</p>
-                    </div>
-                </div>
-            </section>
-
-            <main class="mx-auto w-full max-w-7xl flex-1 px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
-                    <article class="flex flex-col rounded-2xl border border-pm-gold/60 bg-gradient-to-br from-[#172641] to-[#0e1a30] p-4 shadow-xl sm:p-5">
-                        <div class="mb-4 flex items-start justify-between gap-3">
-                            <div class="flex h-11 w-11 items-center justify-center rounded-xl border border-pm-gold/40 bg-pm-gold/10 text-lg text-pm-gold"><i class="fa-solid fa-book-open-reader"></i></div>
-                            <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wide text-emerald-300"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>Disponível</span>
-                        </div>
-                        <p class="text-[9px] font-bold uppercase tracking-[0.2em] text-pm-gold">Curso ativo</p>
-                       <h3 class="mt-1 text-2xl font-black text-white sm:text-3xl">ACP</h3>
-                        <p class="mt-1 text-xs font-semibold text-slate-200">Avaliação de Competência Profissional· Capitão PM</p>
-                        <p class="mt-3 flex-1 text-xs leading-relaxed text-slate-400">Simulados de 50 questões, Modo Prova, Modo Estudo, fundamentação, cronômetro e acompanhamento de desempenho.</p>
-                        <button type="button" onclick="entrarNoCurso('ACP')" class="mt-4 w-full rounded-lg bg-pm-gold px-4 py-3 text-xs font-extrabold text-pm-navy shadow-lg transition hover:bg-pm-goldHover focus:outline-none focus:ring-2 focus:ring-pm-gold"><i class="fa-solid fa-arrow-right-to-bracket mr-2"></i>Entrar no ACP</button>
-                    </article>
-
-                    <article class="flex flex-col rounded-2xl border border-pm-border bg-gradient-to-br from-[#17233d] to-[#101a30] p-4 shadow-lg sm:p-5">
-                        <div class="mb-4 flex items-start justify-between gap-3">
-                            <div class="flex h-11 w-11 items-center justify-center rounded-xl border border-pm-border bg-pm-navy text-lg text-slate-300"><i class="fa-solid fa-graduation-cap"></i></div>
-                            <span class="inline-flex items-center gap-1.5 rounded-full border border-slate-600 bg-slate-800/80 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wide text-slate-300"><i class="fa-regular fa-clock"></i>Em preparação</span>
-                        </div>
-                        <p class="text-[9px] font-bold uppercase tracking-[0.2em] text-slate-400">Próxima área</p>
-                        <h3 class="mt-1 text-2xl font-black text-white sm:text-3xl">CAO</h3>
-                        <p class="mt-1 text-xs font-semibold text-slate-200">Curso de Aperfeiçoamento de Oficiais</p>
-                        <p class="mt-3 flex-1 text-xs leading-relaxed text-slate-400">Ambiente de simulados, Modo Prova, Modo Estudo, fundamentação, cronômetro e acompanhamento de desempenho.</p>
-                        <button type="button" onclick="entrarNoCurso('CAO')" class="mt-4 w-full rounded-lg border border-pm-border bg-pm-navy/80 px-4 py-3 text-xs font-bold text-slate-200 transition hover:border-pm-gold/60 hover:text-white"><i class="fa-solid fa-flask mr-2"></i>Entrar no CAO</button>
-                    </article>
-                </div>
-
-                <!-- Outros cursos: espaço reservado para futuras áreas de formação -->
-                <section class="mt-4 rounded-2xl border border-pm-border bg-[#101c32]/95 p-4 shadow-lg sm:mt-5 sm:p-5" aria-labelledby="outrosCursosTitulo">
-                    <div class="mb-4 flex items-center gap-3">
-                        <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl border border-pm-gold/40 bg-pm-gold/10 text-lg text-pm-gold">
-                            <i class="fa-solid fa-layer-group"></i>
-                        </div>
-                        <div>
-                            <h3 id="outrosCursosTitulo" class="text-sm font-extrabold text-white sm:text-base">Outros cursos</h3>
-                            <p class="text-[10px] text-slate-400 sm:text-xs">Novas áreas de preparação profissional</p>
-                        </div>
-                        <span class="ml-auto inline-flex flex-shrink-0 items-center gap-1.5 rounded-full border border-pm-gold/40 bg-pm-gold/10 px-2.5 py-1.5 text-[9px] font-bold uppercase tracking-wide text-pm-gold">
-                            <i class="fa-regular fa-clock"></i>Em breve
-                        </span>
-                    </div>
-                    <div class="rounded-xl border border-dashed border-pm-border bg-[#14223b]/70 px-4 py-6 text-center sm:py-8">
-                        <i class="fa-solid fa-graduation-cap text-2xl text-pm-gold/80"></i>
-                        <p class="mt-3 text-sm font-bold text-white">Novos cursos serão disponibilizados em breve.</p>
-                        <p class="mx-auto mt-1 max-w-xl text-xs leading-relaxed text-slate-400">Esta área será utilizada para apresentar futuras oportunidades de preparação e aperfeiçoamento.</p>
-                    </div>
-                </section>
-
-                <footer class="mt-4 flex flex-col items-center justify-between gap-2 rounded-xl border border-pm-border bg-pm-header/70 px-4 py-3 text-[10px] text-slate-400 sm:mt-5 sm:flex-row">
-                    <span><i class="fa-solid fa-shield-halved mr-2 text-pm-gold"></i>Seus estudos são a prioridade.</span>
-                    <span>Plataforma elaborada pelo 1º Ten PM Adriano</span>
-                </footer>
-            </main>
+    <style>
+      /* Layout integral do seletor de cursos — baseado no protótipo aprovado */
+      #courseLanding{background:radial-gradient(ellipse at 12% 0%,#18304d,transparent 38%),#071326;color:#f4f6fb}
+      #courseLanding .pa-top{min-height:76px;padding:12px clamp(18px,5vw,70px);display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid rgba(178,196,220,.16);background:#050f1edc;backdrop-filter:blur(16px)}
+      #courseLanding .pa-brand{display:flex;align-items:center;gap:12px;min-width:0}
+      #courseLanding .pa-brand img{width:45px;height:45px;object-fit:contain;flex:none}
+      #courseLanding .pa-brand b{font-size:13px;letter-spacing:.03em;white-space:nowrap}
+      #courseLanding .pa-brand em{color:#d7b34b;font-style:normal}
+      #courseLanding .pa-brand small{display:block;color:#a9b7ca;font-size:10px;margin-top:4px}
+      #courseLanding .pa-actions{display:flex;align-items:center;gap:10px;flex:none}
+      #courseLanding .pa-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid rgba(178,196,220,.2);border-radius:10px;background:#0d1b30;color:#dce5f1;padding:10px 14px;font-size:11px;font-weight:750;text-decoration:none;white-space:nowrap;transition:.2s}
+      #courseLanding .pa-btn:hover{border-color:#d7b34b;color:#f0d58a}
+      #courseLanding .pa-btn .pa-btn-icon{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:#d7b34b18;color:#f0d58a}
+      #courseLanding .pa-btn.logout{border-color:#b94b5866;color:#e7a2a8}
+      #courseLanding .pa-btn.logout:hover{border-color:#e17b84;background:#391823}
+      #courseLanding .pa-btn.admin{background:#d7b34b;color:#101b2c;border-color:#d7b34b}
+      #courseLanding .pa-main{width:min(1220px,calc(100% - 44px));margin:32px auto 45px}
+      #courseLanding .pa-hero{min-height:335px;position:relative;isolation:isolate;overflow:hidden;border:1px solid #d7b34b44;border-radius:24px;display:flex;align-items:center;background:#0b1b30;box-shadow:0 24px 70px #0005}
+      #courseLanding .pa-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2;opacity:.75}
+      #courseLanding .pa-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#050f1ef2 0%,#050f1ebd 45%,#050f1e45 100%),linear-gradient(0deg,#050f1e88,transparent 60%)}
+      #courseLanding .pa-copy{padding:clamp(30px,5vw,65px);max-width:700px}
+      #courseLanding .pa-eyebrow{color:#f0d58a;font-size:10px;font-weight:850;letter-spacing:.23em;text-transform:uppercase}
+      #courseLanding .pa-eyebrow:before{content:"";display:inline-block;width:30px;height:2px;background:#d7b34b;vertical-align:middle;margin-right:11px}
+      #courseLanding .pa-hero h1{font-size:clamp(34px,4.5vw,53px);line-height:1.03;letter-spacing:-.045em;margin:18px 0 14px;font-weight:900;color:#f4f6fb}
+      #courseLanding .pa-hero h1 span{color:#f0d58a}
+      #courseLanding .pa-hero p{font-size:14px;line-height:1.7;color:#d0d9e6;max-width:440px;margin:0}
+      #courseLanding .pa-badge{position:absolute;right:28px;bottom:25px;padding:13px 16px;border:1px solid #ffffff33;border-radius:13px;background:#07132699;backdrop-filter:blur(12px);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+      #courseLanding .pa-badge b{display:block;color:#f0d58a;font-size:11px;margin-top:4px;letter-spacing:.04em}
+      #courseLanding .pa-head{display:flex;justify-content:space-between;align-items:end;margin:35px 2px 16px;gap:15px}
+      #courseLanding .pa-kicker{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#d7b34b;font-weight:850}
+      #courseLanding .pa-head h2{font-size:23px;margin:5px 0 0;letter-spacing:-.03em;color:#f4f6fb}
+      #courseLanding .pa-head p{font-size:11px;color:#a9b7ca;margin:0}
+      #courseLanding .pa-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+      #courseLanding .pa-card{position:relative;overflow:hidden;min-height:260px;padding:24px;border:1px solid rgba(178,196,220,.16);border-radius:20px;background:linear-gradient(135deg,#172b45,#0c1b30);display:flex;flex-direction:column;box-shadow:0 16px 40px #0003;transition:.2s}
+      #courseLanding .pa-card:hover{transform:translateY(-4px);border-color:#d7b34b88}
+      #courseLanding .pa-card.active{border-color:#d7b37b88;background:linear-gradient(135deg,#1b304c,#10213a 70%,#0d1b30)}
+      #courseLanding .pa-card:after{content:attr(data-no);position:absolute;right:18px;top:8px;font-size:115px;font-weight:950;color:#ffffff08;letter-spacing:-.09em;pointer-events:none}
+      #courseLanding .pa-row{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}
+      #courseLanding .pa-symbol{width:48px;height:48px;border:1px solid #d7b34b66;border-radius:14px;display:grid;place-items:center;color:#f0d58a;background:#d7b34b18;font-weight:900}
+      #courseLanding .pa-status{font-size:9px;text-transform:uppercase;letter-spacing:.1em;font-weight:850;color:#82e8c0;border:1px solid #43d6a055;background:#43d6a015;border-radius:30px;padding:7px 10px}
+      #courseLanding .pa-status.pending{color:#c4cede;border-color:#c4cede33;background:#c4cede0c}
+      #courseLanding .pa-label{margin-top:21px;color:#d7b34b;font-size:9px;font-weight:850;letter-spacing:.2em;text-transform:uppercase}
+      #courseLanding .pa-card h3{font-size:34px;line-height:1;margin:7px 0 6px;letter-spacing:-.04em;color:#f4f6fb}
+      #courseLanding .pa-card h4{font-size:13px;margin:0;color:#e1e8f1}
+      #courseLanding .pa-desc{font-size:12px;line-height:1.65;color:#aebbd0;margin:13px 0 19px;max-width:520px}
+      #courseLanding .pa-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px}
+      #courseLanding .pa-note{font-size:10px;color:#8395ad}
+      #courseLanding .pa-enter{border:0;border-radius:10px;padding:12px 17px;background:#d7b34b;color:#101b2c;font-size:11px;font-weight:900;white-space:nowrap;cursor:pointer}
+      #courseLanding .pa-enter:hover{background:#e7c96d}
+      #courseLanding .pa-enter.alt{background:#07132699;border:1px solid #aebed344;color:#dbe4f0}
+      #courseLanding .pa-more{margin-top:18px;padding:20px 23px;border:1px solid rgba(178,196,220,.16);border-radius:17px;background:#0f1f35c9;display:flex;align-items:center;justify-content:space-between;gap:15px}
+      #courseLanding .pa-more b{font-size:14px}
+      #courseLanding .pa-more p{font-size:11px;color:#a9b7ca;margin:4px 0 0}
+      #courseLanding .pa-soon{color:#f0d58a;border:1px solid #d7b34b55;border-radius:30px;padding:8px 11px;font-size:9px;font-weight:850;text-transform:uppercase;white-space:nowrap}
+      #courseLanding .pa-footer{display:flex;justify-content:space-between;gap:12px;margin-top:20px;padding:15px 18px;border:1px solid rgba(178,196,220,.16);border-radius:12px;background:#10223d88;color:#91a2b8;font-size:10px}
+      @media(max-width:740px){
+        #courseLanding .pa-top{min-height:68px;padding:11px 15px}
+        #courseLanding .pa-brand img{width:38px;height:38px}
+        #courseLanding .pa-brand b{font-size:11px;white-space:normal}
+        #courseLanding .pa-brand small{font-size:9px}
+        #courseLanding .pa-actions{gap:6px}
+        #courseLanding .pa-btn{padding:8px 9px;font-size:10px;gap:5px}
+        #courseLanding .pa-btn .pa-btn-icon{width:25px;height:25px}
+        #courseLanding .pa-btn span.pa-btn-text{display:none}
+        #courseLanding .pa-main{width:calc(100% - 26px);margin:16px auto 30px}
+        #courseLanding .pa-hero{min-height:365px;border-radius:19px;align-items:center}
+        #courseLanding .pa-hero>img{object-position:36% center;opacity:.65}
+        #courseLanding .pa-hero:after{background:linear-gradient(90deg,#050f1ee8,#050f1e88),linear-gradient(0deg,#050f1ebd,transparent 75%)}
+        #courseLanding .pa-copy{padding:28px 22px 75px}
+        #courseLanding .pa-hero h1{font-size:35px}
+        #courseLanding .pa-hero p{font-size:12px}
+        #courseLanding .pa-badge{left:22px;right:auto;bottom:19px}
+        #courseLanding .pa-head{display:block;margin:27px 2px 13px}
+        #courseLanding .pa-head h2{font-size:21px}
+        #courseLanding .pa-head p{margin:6px 0 0}
+        #courseLanding .pa-grid{grid-template-columns:1fr;gap:12px}
+        #courseLanding .pa-card{min-height:245px;padding:20px}
+        #courseLanding .pa-card h3{font-size:31px}
+        #courseLanding .pa-desc{font-size:11px}
+        #courseLanding .pa-more{padding:17px}
+        #courseLanding .pa-more p{line-height:1.5}
+        #courseLanding .pa-footer{flex-direction:column;gap:7px}
+      }
+      @media(max-width:390px){
+        #courseLanding .pa-brand b{max-width:150px;display:block}
+        #courseLanding .pa-hero h1{font-size:30px}
+        #courseLanding .pa-foot{align-items:stretch;flex-direction:column}
+        #courseLanding .pa-enter{width:100%}
+        #courseLanding .pa-more{align-items:flex-start;flex-direction:column}
+      }
+    </style>
+    <section id="courseLanding" class="fixed inset-0 z-[200] overflow-y-auto">
+      <header class="pa-top">
+        <div class="pa-brand">
+          <img src="pa-logo.svg" alt="Logo da Plataforma de Aperfeiçoamento">
+          <div><b>PLATAFORMA <em>DE APERFEIÇOAMENTO</em></b><small>Ambiente de estudos</small></div>
         </div>
+        <nav class="pa-actions" aria-label="Ações da conta">
+          <a class="pa-btn" href="perfil-usuario.html" title="Abrir perfil e segurança da conta" aria-label="Perfil do usuário"><span class="pa-btn-icon"><i class="fa-solid fa-user"></i></span><span class="pa-btn-text">Perfil</span></a>
+          <button class="pa-btn logout" id="paLogoutButton" type="button" title="Encerrar sessão"><span class="pa-btn-icon"><i class="fa-solid fa-right-from-bracket"></i></span><span class="pa-btn-text">Sair</span></button>
+          <a id="adminPanelLinkLanding" class="pa-btn admin" href="administrador.html" hidden title="Painel administrativo" aria-label="Painel administrativo"><i class="fa-solid fa-shield-halved"></i><span class="pa-btn-text">Administração</span></a>
+        </nav>
+      </header>
+      <main class="pa-main">
+        <section class="pa-hero">
+          <img src="bandeira-sp-banner-v2.png" alt="Bandeira do Estado de São Paulo">
+          <div class="pa-copy">
+            <div class="pa-eyebrow">Ambiente de preparação</div>
+            <h1>Seu próximo passo<br><span>começa com preparo.</span></h1>
+            <p>Um ambiente dedicado ao estudo, à revisão e ao aperfeiçoamento profissional. Acesse seus cursos e avance com consistência.</p>
+          </div>
+          <div class="pa-badge">Formação profissional<b>Conhecimento · Evolução</b></div>
+        </section>
+        <div class="pa-head"><div><div class="pa-kicker">Áreas de formação</div><h2>Escolha seu ambiente de estudos</h2></div><p>Seu acesso, seu ritmo, sua evolução.</p></div>
+        <section class="pa-grid">
+          <article class="pa-card active" data-no="01">
+            <div class="pa-row"><div class="pa-symbol">ACP</div><span class="pa-status">Disponível</span></div>
+            <div class="pa-label">Curso ativo</div><h3>ACP</h3><h4>Avaliação de Competência Profissional · Capitão PM</h4>
+            <p class="pa-desc">Simulados, Modo Prova, Modo Estudo, fundamentação, cronômetro e acompanhamento de desempenho em um só ambiente.</p>
+            <div class="pa-foot"><span class="pa-note">50 questões · Área de estudos</span><button class="pa-enter" type="button" onclick="entrarNoCurso('ACP')">Entrar no ACP&nbsp; →</button></div>
+          </article>
+          <article class="pa-card" data-no="02">
+            <div class="pa-row"><div class="pa-symbol">CAO</div><span class="pa-status pending">Em preparação</span></div>
+            <div class="pa-label">Próxima área</div><h3>CAO</h3><h4>Curso de Aperfeiçoamento de Oficiais</h4>
+            <p class="pa-desc">Um espaço dedicado à preparação para o CAO, com ambiente de simulados, materiais de estudo e acompanhamento de desempenho.</p>
+            <div class="pa-foot"><span class="pa-note">Nova etapa de formação</span><button class="pa-enter alt" type="button" onclick="entrarNoCurso('CAO')">Conhecer o CAO&nbsp; →</button></div>
+          </article>
+        </section>
+        <section class="pa-more"><div><b>Outros cursos</b><p>Novas áreas de preparação profissional serão apresentadas aqui.</p></div><span class="pa-soon">Em breve</span></section>
+        <footer class="pa-footer"><span>✦ Seus estudos são a prioridade.</span><span>Plataforma de Aperfeiçoamento · Ambiente de formação profissional</span></footer>
+      </main>
     </section>
 
     <!-- Modal de CAO em construção: impede a entrada no curso e no banco de questões -->
