@@ -94,11 +94,11 @@
 
   /* Identidade desktop aprovada — composição do protótipo V3. */
   .pa-symbol-defs{position:absolute;width:0;height:0;overflow:hidden}
-  .desktop-brand-lockup{display:flex;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:42px 5vw;pointer-events:none}
-  .desktop-brand-emblem{display:block;width:clamp(230px,28vw,390px);height:auto;overflow:visible;filter:drop-shadow(0 24px 28px rgba(0,0,0,.28))}
+  .desktop-brand-lockup{display:flex;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:42px 5vw;pointer-events:none;isolation:isolate;background:transparent}
+  .desktop-brand-lockup:before{content:"";position:absolute;z-index:-1;width:clamp(440px,42vw,650px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(214,179,106,.16);background:radial-gradient(circle,rgba(28,57,86,.32) 0%,rgba(20,43,67,.18) 58%,rgba(12,29,48,0) 74%);box-shadow:inset 0 0 70px rgba(212,175,87,.025),0 0 90px rgba(0,0,0,.08)}
+  .desktop-brand-emblem{display:block;width:clamp(230px,28vw,390px);height:auto;overflow:visible;filter:drop-shadow(0 18px 22px rgba(0,0,0,.24))}
   .desktop-brand-name{margin-top:25px;font-family:Manrope,Inter,Segoe UI,sans-serif;font-size:clamp(20px,2vw,29px);font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#e9edf2;line-height:1.55}
   .desktop-brand-name span{display:block;color:var(--gold2);font-size:.88em;font-weight:800;letter-spacing:.28em}
-  .desktop-brand-rule{height:2px;width:58px;background:var(--gold);margin:19px auto 0;box-shadow:0 0 18px rgba(212,175,87,.35)}
   .desktop-brand-motto{margin:24px 0 0;color:#9eafc1;font-size:11px;letter-spacing:.24em;text-transform:uppercase}
   .pa-layer{transform-box:fill-box;transform-origin:center;animation:paAssemble 1.45s cubic-bezier(.2,.85,.22,1) both}
   .pa-layer-top{--dx:-28px;--dy:-52px;--rot:-8deg;animation-delay:.08s}
@@ -107,9 +107,9 @@
   @keyframes paAssemble{0%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(var(--rot)) scale(.86)}65%{opacity:1;transform:translate(0,0) rotate(0) scale(1.035)}100%{opacity:1;transform:translate(0,0) rotate(0) scale(1)}}
   @media(prefers-reduced-motion:reduce){.pa-layer{animation:none}}
   @media(min-width:601px){
-    .visual{align-items:stretch;justify-content:center;padding:40px 4vw}
-    .visual:before{width:min(68vw,760px);left:50%;top:50%;transform:translate(-50%,-50%)}
-    .visual:after{width:min(48vw,540px);left:50%;top:50%;transform:translate(-50%,-50%)}
+    .visual{align-items:stretch;justify-content:center;padding:40px 4vw;background:transparent}
+    .visual:before{inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(24,48,73,.42) 0%,rgba(13,31,50,.18) 48%,rgba(8,23,39,0) 76%),linear-gradient(135deg,#0b1d33 0%,#0b1d33 100%)}
+    .visual:after{display:none}
     .brand,.hero,.visual-foot{display:none}
     .desktop-brand-lockup{display:flex}
     .form-side{padding:40px clamp(28px,5vw,76px);background:linear-gradient(135deg,rgba(4,14,26,.32),rgba(4,13,24,.72))}
