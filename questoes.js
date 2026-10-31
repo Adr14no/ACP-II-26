@@ -28355,8 +28355,2106 @@ const BANCO_GERAL_QUESTOES = [
             ],
             "answer": 2,
             "explanation": "Gabarito: C. O Anexo C, item 1.2, condiciona a aplicação do TAF-3 anual à realização da Inspeção Anual de Saúde. A frequência ao treinamento não substitui a condição expressamente prevista; as alternativas B e D criam exceções ou prazos posteriores não constantes do item."
+      },
+      {
+        "id": 1882,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Publicação da decisão da autoridade instauradora",
+        "text": "QUESTÃO 1882 — A autoridade instauradora proferiu decisão no processo regular e determinou as providências necessárias à sua publicidade. Considerando especificamente o prazo estabelecido pelas I-16-PM para encaminhamento da decisão à publicação em boletim, assinale a alternativa correta.",
+        "options": [
+          "a) A decisão deverá ser enviada no prazo de 3 dias, para publicação em boletim.",
+          "b) A decisão deverá ser enviada no prazo de 5 dias, para publicação em boletim.",
+          "c) A decisão deverá ser enviada no prazo de 10 dias, para publicação em boletim.",
+          "d) A decisão deverá ser enviada no prazo de 15 dias, para publicação em boletim."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, art. 179, PDF p. 54. O dispositivo estabelece expressamente o prazo de 3 dias. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1883,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Saneamento dos autos",
+        "text": "QUESTÃO 1883 — Considerando as disposições do art. 180, § 2º, das I-16-PM, acerca do saneamento que antecede a remessa dos autos ao Comandante-Geral, assinale a alternativa INCORRETA.",
+        "options": [
+          "a) O saneamento deverá preceder a remessa dos autos ao Comandante-Geral, realizada por intermédio da Corregedoria PM.",
+          "b) O saneamento será realizado pela autoridade administrativa nas funções privativas do posto de Coronel PM.",
+          "c) O saneamento deverá ser realizado no prazo de 30 dias, contado da publicação da decisão da autoridade instauradora.",
+          "d) Constatada irregularidade prejudicial à decisão final, deverão ser adotadas medidas necessárias à regularização do processo."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, art. 180, § 2º, PDF p. 54. O prazo de 30 dias está previsto, mas o dispositivo não estabelece como marco inicial a publicação da decisão. A, B e D reproduzem aspectos previstos no dispositivo; C acrescenta marco inicial não estabelecido. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1884,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Conteúdo obrigatório do relatório do Conselho",
+        "text": "QUESTÃO 1884 — Considerando o conteúdo obrigatório do relatório previsto nas I-16-PM, analise as proposições:\n\nI. Deverá constar a indicação do local, da data e do horário em que ocorreu o fato constante da portaria.\n\nII. Deverá constar a data de ingresso do militar do Estado acusado na Instituição.\n\nIII. Deverá constar a exposição sucinta da defesa.\n\nIV. Deverá constar exclusivamente a proposta de sanção, dispensando-se manifestação sobre a capacidade moral de permanência na Instituição.\n\nAssinale a alternativa que contém apenas as proposições corretas.",
+        "options": [
+          "a) I e II.",
+          "b) I, II e III.",
+          "c) II, III e IV.",
+          "d) I, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, art. 172, incisos II, IV, VIII e X, PDF p. 52. O inciso X exige manifestação sobre a capacidade moral de permanência na Instituição, tornando incorreta a proposição IV. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1885,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Decisão final e publicidade",
+        "text": "QUESTÃO 1885 — Após o recebimento dos autos e a conclusão da análise pela Corregedoria PM, o Comandante-Geral profere decisão administrativa final. De acordo com as I-16-PM, assinale a alternativa que descreve corretamente a publicidade dessa decisão.",
+        "options": [
+          "a) A ementa será publicada em Boletim Geral e o inteiro teor em Diário Oficial do Estado.",
+          "b) A ementa e o inteiro teor serão publicados exclusivamente em Boletim Geral.",
+          "c) O inteiro teor será publicado em Diário Oficial do Estado, sendo dispensada sua transcrição nos assentamentos.",
+          "d) A ementa será publicada em Diário Oficial do Estado e o inteiro teor em Boletim Geral, com transcrição no Assentamento Individual."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, art. 183, PDF p. 55. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1886,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Deliberações do Conselho",
+        "text": "QUESTÃO 1886 — Durante a elaboração do relatório do Conselho de Disciplina, surge divergência entre os membros quanto à conclusão a ser apresentada. Considerando as I-16-PM, assinale a alternativa correta sobre a deliberação e a ordem de votação.",
+        "options": [
+          "a) As deliberações serão tomadas por maioria de votos, computado o voto do presidente, observada a ordem: relator, interrogante e presidente.",
+          "b) As deliberações serão tomadas por maioria de votos, excluído o voto do presidente, observada a ordem: interrogante, relator e presidente.",
+          "c) As deliberações serão tomadas por unanimidade, observada a ordem: presidente, relator e interrogante.",
+          "d) As deliberações serão tomadas por maioria de votos, computado o voto do presidente, observada a ordem: presidente, interrogante e relator."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, art. 171 e parágrafo único, PDF p. 52. Dificuldade editorial: MEDIANA."
+      },
+      {
+        "id": 1887,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Medidas posteriores à decisão da autoridade instauradora",
+        "text": "QUESTÃO 1887 — A autoridade instauradora concluiu pela procedência da acusação e pretende adotar imediatamente medida punitiva, antes da decisão final do Comandante-Geral. À luz dos arts. 177 e seguintes das I-16-PM, assinale a alternativa INCORRETA.",
+        "options": [
+          "a) A autoridade instauradora deverá declarar se a acusação é procedente, procedente em parte ou improcedente.",
+          "b) A autoridade instauradora poderá adotar medida punitiva imediatamente, desde que tenha concordado integralmente com o relatório do Conselho.",
+          "c) A decisão deverá observar o disposto no art. 173 das I-16-PM.",
+          "d) A conclusão da autoridade instauradora não autoriza, por si só, a adoção de medida punitiva antes da decisão final do Comandante-Geral."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, art. 177, caput e parágrafo único, PDF p. 54. A concordância com o relatório não autoriza, por si só, a aplicação imediata de medida punitiva antes da decisão final. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1888,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Documentos obrigatórios na remessa dos autos",
+        "text": "QUESTÃO 1888 — Antes de encaminhar os autos do Conselho de Disciplina para decisão final, a autoridade instauradora deve observar exigências documentais específicas. Analise as proposições:\n\nI. Deverá apensar à contracapa do último volume cópia da nota de corretivo atualizada do acusado.\n\nII. Deverá apensar certidão de objeto e pé relativa a eventual processo-crime instaurado para apuração dos mesmos fatos.\n\nIII. A exigência documental prevista no § 1º refere-se à contracapa do primeiro volume.\n\nIV. A certidão de objeto e pé mencionada no dispositivo está relacionada a eventual processo-crime instaurado para apuração dos mesmos fatos objeto do processo regular.\n\nAssinale a alternativa correta.",
+        "options": [
+          "a) I, II e III.",
+          "b) I, III e IV.",
+          "c) I, II e IV.",
+          "d) II, III e IV."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, art. 180, § 1º, PDF p. 54. A proposição III altera a localização expressamente determinada pela norma. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1889,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Responsabilização penal ou civil",
+        "text": "QUESTÃO 1889 — Durante a apreciação do processo regular, a autoridade instauradora identifica elementos que podem caracterizar responsabilidade penal e civil do militar do Estado acusado. Considerando o art. 178 das I-16-PM, qual providência corresponde ao dispositivo?",
+        "options": [
+          "a) Determinar exclusivamente a instauração de novo processo disciplinar, independentemente dos elementos probatórios existentes.",
+          "b) Aguardar a decisão final do Comandante-Geral para somente então extrair cópias das peças processuais.",
+          "c) Encaminhar obrigatoriamente os autos integrais ao Poder Judiciário, sem adoção de providência administrativa.",
+          "d) Determinar a extração de cópias das peças com elementos probatórios, adotar a providência pertinente ou remeter à autoridade competente."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, art. 178, PDF p. 54. Dificuldade editorial: MEDIANA."
+      },
+      {
+        "id": 1890,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Afastamento dos membros do Conselho",
+        "text": "QUESTÃO 1890 — Diante da necessidade de conferir maior celeridade à apuração dos fatos, a autoridade instauradora solicita o afastamento dos membros do Conselho de Disciplina de suas funções normais. Conforme o art. 175, § 1º, das I-16-PM, assinale a alternativa correta.",
+        "options": [
+          "a) O afastamento poderá ser determinado pelo presidente do Conselho, mediante despacho fundamentado.",
+          "b) O Comandante-Geral poderá afastar os membros, atendendo à solicitação da autoridade instauradora, para dedicação exclusiva à instrução do processo.",
+          "c) O afastamento será determinado pela autoridade superior à instauradora, exclusivamente pelo prazo de 90 dias.",
+          "d) O afastamento dependerá de deliberação unânime dos membros do Conselho, com posterior homologação."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, art. 175, § 1º, PDF p. 53. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1891,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Prorrogação do prazo de instrução",
+        "text": "QUESTÃO 1891 — O presidente do processo regular verifica que não conseguirá concluir os trabalhos no prazo ordinário, em razão de procedimentos ainda pendentes. Considerando o art. 175, §§ 3º e 4º, das I-16-PM, assinale a alternativa INCORRETA.",
+        "options": [
+          "a) O pedido deverá ser dirigido à autoridade superior à instauradora, no posto de Coronel PM.",
+          "b) O presidente deverá indicar os motivos que impediram a finalização dos trabalhos e os procedimentos pendentes.",
+          "c) A autoridade superior poderá prorrogar o prazo por até 90 dias, independentemente da pertinência dos motivos apresentados.",
+          "d) A prorrogação poderá ser concedida pela autoridade superior à instauradora, no posto de Coronel PM, após confirmar a pertinência do pedido."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, art. 175, §§ 3º e 4º, PDF p. 53. A confirmação da pertinência do pedido integra expressamente a regra. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1892,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Decisão da autoridade instauradora",
+        "text": "QUESTÃO 1892 — Considerando as exigências estabelecidas pelo art. 176 das I-16-PM para a decisão da autoridade instauradora, analise as proposições:\n\nI. A decisão deverá ser devidamente fundamentada.\n\nII. A apreciação deverá abranger o processo, toda a prova produzida, as razões de defesa e o relatório do Conselho.\n\nIII. A decisão deverá ser aposta nos autos no prazo de 15 dias da data do relatório.\n\nIV. A autoridade poderá limitar-se a declarar sua concordância ou discordância com o relatório, desde que a decisão seja publicada em boletim.\n\nAssinale a alternativa correta.",
+        "options": [
+          "a) I, II e III.",
+          "b) I, II e IV.",
+          "c) I, III e IV.",
+          "d) II, III e IV."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, art. 176, caput e § 1º, PDF p. 54. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1893,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Consequência do descumprimento do prazo",
+        "text": "QUESTÃO 1893 — O presidente do Processo Administrativo Disciplinar e os membros do Conselho de Disciplina deixam de encerrar os trabalhos no prazo estabelecido, sem apresentar justificativa para a demora. Conforme o art. 175, § 2º, das I-16-PM, assinale a alternativa correta.",
+        "options": [
+          "a) A demora implica nulidade automática de todos os atos praticados após o sexagésimo dia.",
+          "b) A demora determina exclusivamente a prorrogação automática do processo por igual período.",
+          "c) A demora enseja transgressão disciplinar e possibilita a substituição de parte ou da totalidade dos membros do Conselho, conforme o caso.",
+          "d) A demora produz o arquivamento obrigatório dos autos, independentemente da natureza da apuração."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, art. 175, § 2º, PDF p. 53. Dificuldade editorial: MEDIANA."
+      },
+      {
+        "id": 1894,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Saneamento e restituição dos autos",
+        "text": "QUESTÃO 1894 — No procedimento de saneamento que antecede a remessa dos autos ao Comandante-Geral, a autoridade administrativa identifica irregularidade capaz de prejudicar a decisão final. Considerando o art. 180, § 2º, das I-16-PM, analise:\n\nI. O saneamento é realizado pela autoridade administrativa nas funções privativas do posto de Coronel PM.\n\nII. O prazo previsto para o saneamento é de 30 dias.\n\nIII. Identificada irregularidade prejudicial, deverão ser adotadas medidas necessárias à regularização do processo.\n\nIV. A restituição dos autos poderá ocorrer, prorrogando-se, se for o caso, o prazo de instrução por até 30 dias, com ciência à Corregedoria.\n\nAssinale a alternativa correta.",
+        "options": [
+          "a) I, II e III.",
+          "b) I, II, III e IV.",
+          "c) II, III e IV.",
+          "d) I e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, art. 180, § 2º, PDF p. 54. Dificuldade editorial: EXTREMAMENTE DIFÍCIL (subcategoria de DIFÍCIL)."
+      },
+      {
+        "id": 1895,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Excesso do prazo de prorrogação",
+        "text": "QUESTÃO 1895 — Após a concessão da prorrogação prevista no art. 175, § 4º, verifica-se que o limite de 90 dias foi excedido. Considerando o § 5º do mesmo artigo, assinale a alternativa correta.",
+        "options": [
+          "a) O oficial na função de Coronel PM solicitará dilação de prazo, devidamente fundamentada, ao Comandante-Geral, por via eletrônica.",
+          "b) O presidente do processo solicitará diretamente nova prorrogação à autoridade instauradora, por meio de despacho nos autos.",
+          "c) O Conselho de Disciplina encaminhará pedido de dilação à Corregedoria PM, independentemente de fundamentação.",
+          "d) A autoridade instauradora determinará automaticamente a suspensão dos trabalhos até nova autorização do Comandante-Geral."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: I-16-PM, art. 175, § 5º, PDF p. 53. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1896,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Citação por edital",
+        "text": "QUESTÃO 1896 — Não sendo possível localizar o policial militar acusado em razão de deserção, ausência ilegal, desconhecimento de seu paradeiro ou esquiva à citação, o presidente deverá observar o procedimento específico previsto nas I-16-PM. Assinale a alternativa correta.",
+        "options": [
+          "a) Determinar a publicação de edital em duas oportunidades, estabelecendo prazo de 10 dias para resposta.",
+          "b) Determinar a publicação de extrato da citação em boletim interno, estabelecendo prazo de 5 dias úteis.",
+          "c) Encaminhar a citação à OPM de origem, aguardando 5 dias antes de determinar a publicação oficial.",
+          "d) Determinar a publicação, por única vez, de extrato da citação em Diário Oficial, estabelecendo prazo de 5 dias, contado da publicação, para responder à acusação."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, art. 54, §§ 3º e 4º, PDF p. 19. Dificuldade editorial: DIFÍCIL."
+      },
+      {
+        "id": 1897,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Defesa preliminar",
+        "text": "QUESTÃO 1897 — A citação do policial militar acusado deve conter informações destinadas a assegurar o exercício da defesa preliminar. Considerando o art. 54, § 1º, das I-16-PM, assinale a alternativa INCORRETA.",
+        "options": [
+          "a) A citação deverá informar o nome do presidente do processo e a qualificação do policial militar acusado.",
+          "b) A citação deverá conter cópia da portaria que instaurou o processo regular.",
+          "c) A citação deverá conceder prazo de 10 dias para constituir defensor e apresentar defesa preliminar por escrito.",
+          "d) A citação deverá indicar o tipo de processo regular e conter a assinatura do presidente."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, art. 54, § 1º, itens 1 a 7, PDF p. 19. O prazo previsto é de 5 dias. Dificuldade editorial: MEDIANA."
+      },
+      {
+        "id": 1898,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Efeitos do não atendimento à citação",
+        "text": "QUESTÃO 1898 — Um policial militar acusado deixa de atender à citação regularmente realizada. Considerando as disposições do art. 54 das I-16-PM, analise:\n\nI. O não atendimento ao prazo para constituir defensor e apresentar defesa preliminar acarretará o prosseguimento à revelia.\n\nII. A citação deverá informar a consequência do não atendimento à determinação de constituição de defensor e apresentação da defesa preliminar.\n\nIII. O dispositivo prevê a nomeação de defensor dativo em decorrência do não atendimento.\n\nIV. A revelia impede o prosseguimento do processo até que o acusado compareça pessoalmente.\n\nAssinale a alternativa correta.",
+        "options": [
+          "a) I, II e IV.",
+          "b) I, III e IV.",
+          "c) II, III e IV.",
+          "d) I, II e III."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, art. 54, § 1º, itens 5 e 6, e § 5º, PDF p. 19. A proposição IV contraria o prosseguimento à revelia. Dificuldade editorial: EXTREMAMENTE DIFÍCIL (subcategoria de DIFÍCIL)."
+      },
+      {
+        "id": 1899,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Relatório do Conselho e situação funcional",
+        "text": "QUESTÃO 1899 — Na elaboração do relatório do Conselho, o presidente precisa verificar quais informações funcionais do acusado devem integrar o documento. De acordo com o art. 172 das I-16-PM, assinale a alternativa que reúne corretamente as informações exigidas.",
+        "options": [
+          "a) Data de ingresso na Instituição, local de residência e tempo de permanência na OPM atual.",
+          "b) Indicação de que estava de serviço e fardado quando dos fatos, além da data de ingresso na Instituição.",
+          "c) Posto atual, antiguidade na graduação e data da última promoção.",
+          "d) Histórico disciplinar completo, tempo de serviço na Unidade e classificação de comportamento."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: I-16-PM, art. 172, incisos III e IV, PDF p. 52. Dificuldade editorial: FÁCIL."
+      },
+      {
+        "id": 1900,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Conclusão do Conselho e proposta de medida",
+        "text": "QUESTÃO 1900 — O Conselho de Disciplina conclui a análise da acusação e precisa formular sua proposta no relatório. Considerando as disposições do art. 173 das I-16-PM, assinale a alternativa INCORRETA.",
+        "options": [
+          "a) Julgada procedente a acusação, deverá propor a aplicação da sanção de reforma administrativa disciplinar, demissão ou expulsão.",
+          "b) Julgada procedente em parte, poderá propor a aplicação de outra sanção, observado o art. 42 do RDPM.",
+          "c) Julgada improcedente a acusação, deverá propor o arquivamento dos autos.",
+          "d) Julgada improcedente a acusação, deverá propor a aplicação de sanção disciplinar mais branda, observada a decisão da autoridade instauradora."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: I-16-PM, art. 173, incisos I a III, PDF p. 52. Dificuldade editorial: MEDIANA."
+      },
+      {
+        "id": 1901,
+        "subject": "ORGANIZACIONAL",
+        "tag": "I-16-PM",
+        "topic": "I-16-PM — Decisão final e prazo para diligências complementares",
+        "text": "QUESTÃO 1901 — Após o recebimento dos autos pela Corregedoria PM, são identificados vícios que precisam ser sanados antes da decisão administrativa final. Considerando o art. 181 das I-16-PM, analise:\n\nI. A Corregedoria PM analisará o processo quanto aos aspectos legais e formais, preparando a minuta do ato decisório.\n\nII. O prazo para decisão final do Comandante-Geral será o estabelecido no art. 83 do RDPM, contado do recebimento dos autos pela Corregedoria PM.\n\nIII. Existindo vícios a serem sanados ou diligências necessárias, poderá ser determinada a restituição dos autos à autoridade instauradora para investigações complementares.\n\nIV. O prazo para as investigações complementares poderá ser fixado em até 30 dias, contado do recebimento dos autos.\n\nAssinale a alternativa correta.",
+        "options": [
+          "a) I, II e III.",
+          "b) I, III e IV.",
+          "c) I, II, III e IV.",
+          "d) II e IV."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: I-16-PM, art. 181, §§ 1º e 2º, PDF p. 55. Dificuldade editorial: EXTREMAMENTE DIFÍCIL (subcategoria de DIFÍCIL)."
+      },
+      {
+        "id": 1902,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — sistemática semestral de visitas comunitárias",
+        "text": "QUESTÃO 1902 — Uma OPM está elaborando seu planejamento de atuação comunitária para o próximo período. Considerando a periodicidade, o instrumento formal e a finalidade previstos na Diretriz nº PM3-005/02/20, assinale a alternativa correta.",
+        "options": [
+          "c) A sistemática de visitas deverá ser estabelecida trimestralmente, por plano operacional do Cmt Btl, para alimentar os relatórios encaminhados ao respectivo Gde Cmdo.",
+          "b) A sistemática de visitas deverá ser estabelecida anualmente, por ordem de serviço do Cmt Cia PM, para consolidar os indicadores divulgados pela DPCDH.",
+          "a) A sistemática de visitas deverá ser estabelecida semestralmente, por documento próprio de Estado-Maior, para coletar informações necessárias aos questionários divulgados pela Coord Op PM.",
+          "d) A sistemática de visitas deverá ser estabelecida semestralmente, por ordem de serviço da Coord Op PM, para coletar informações destinadas aos questionários elaborados pela própria OPM."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-005/02/20, item 6.5.4.1, Assuntos Operacionais.pdf, PDF p. 422. A norma determina documento próprio de Estado-Maior, periodicidade semestral e coleta de informações dos moradores para preenchimento dos questionários divulgados pela Coord Op PM. B altera periodicidade, instrumento e órgão; C altera periodicidade, instrumento e finalidade; D atribui a elaboração da sistemática à Coord Op PM e a elaboração dos questionários à OPM. Não há prazo em dias ou data-limite fixados nesse subitem; a periodicidade normativa expressa é semestral."
+      },
+      {
+        "id": 1903,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — atribuições da OPM no registro de atividades comunitárias",
+        "text": "QUESTÃO 1903 — No controle das atividades comunitárias realizadas por diferentes estruturas operacionais, assinale a alternativa INCORRETA quanto às providências atribuídas às OPM pela Diretriz nº PM3-005/02/20.",
+        "options": [
+          "a) Coordenar a realização de visitas comunitárias ou solidárias, campanhas comunitárias e reuniões comunitárias.",
+          "b) Adotar medidas de controle sobre o correto registro das informações relativas a essas atividades junto ao SICoordOp.",
+          "c) Restringir o controle no SICoordOp às visitas comunitárias e solidárias, mantendo campanhas e reuniões exclusivamente em registros locais.",
+          "d) Estabelecer a sistemática semestral de atuação por documento próprio de Estado-Maior, voltada às visitas comunitárias."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20, itens 6.5.4.1 e 6.5.4.2, Assuntos Operacionais.pdf, PDF pp. 422–423. A norma inclui visitas comunitárias ou solidárias, campanhas e reuniões comunitárias e determina medidas de controle do correto registro junto ao SICoordOp. A, B e D correspondem às providências previstas. C cria uma exclusão para campanhas e reuniões que não consta da diretriz."
+      },
+      {
+        "id": 1904,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — mobilização comunitária e governança local",
+        "text": "QUESTÃO 1904 — Considerando as orientações para otimizar a interface entre a Polícia Militar e a governança local, analise as proposições.\n\nI. As OPM devem estimular a atuação dos CONSEG, Associações de Bairro, Centros de Integração da Cidadania (CIC) e outras entidades e lideranças comunitárias.\nII. A finalidade dessa atuação é otimizar a interface entre a Polícia Militar e a governança local como forma de promoção da qualidade de vida.\nIII. A diretriz restringe esse estímulo às localidades em que exista BCS instalada.\nIV. A atuação das entidades comunitárias substitui a responsabilidade policial-militar pela mobilização comunitária.\n\nAssinale a alternativa que contém apenas as proposições corretas.",
+        "options": [
+          "a) I e III.",
+          "c) II e IV.",
+          "b) I e II.",
+          "d) I, II e III."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-005/02/20, item 6.5.4.3, Assuntos Operacionais.pdf, PDF p. 423. I e II reproduzem os atores e a finalidade indicados. III é incorreta porque o subitem não condiciona o estímulo à existência de BCS; IV é incorreta porque a diretriz não transfere às entidades a responsabilidade policial-militar. A, C e D incluem proposições incorretas ou omitem uma correta."
+      },
+      {
+        "id": 1905,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — estímulo a estruturas de prevenção e mediação",
+        "text": "QUESTÃO 1905 — Uma OPM pretende ampliar mecanismos de prevenção criminal e de solução consensual de conflitos em sua área. À luz do item 6.5.4.4 da Diretriz nº PM3-005/02/20, assinale a alternativa correta.",
+        "options": [
+          "a) Deve estimular a criação de PVS, NUMEC PM e NUMEC/CEJUSC, para disponibilizar mecanismos de prevenção criminal e solução consensual de conflitos, buscando neutralizar a evolução de demandas simples para ocorrências policiais.",
+          "b) Deve estimular a criação de PVS, PROERD e CONSEG, para disponibilizar mecanismos de investigação criminal e solução adjudicada de conflitos, buscando substituir o atendimento policial ordinário.",
+          "c) Deve estimular a criação de BCS, BCSD e BCM, para disponibilizar mecanismos de repressão qualificada e solução administrativa de conflitos, buscando reduzir a necessidade de policiamento territorial.",
+          "d) Deve estimular a criação de PVS, NUMEC PM e CIC, para disponibilizar mecanismos de prevenção criminal e solução consensual de conflitos, buscando encaminhar demandas simples diretamente ao registro de ocorrência."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-005/02/20, item 6.5.4.4, Assuntos Operacionais.pdf, PDF p. 423. A alternativa reproduz as três estruturas e a finalidade descritas. B substitui estruturas e altera a natureza da solução; C troca os mecanismos e a finalidade; D substitui NUMEC/CEJUSC por CIC e inverte o propósito preventivo. "
+      },
+      {
+        "id": 1906,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — continuidade do vínculo com a comunidade",
+        "text": "QUESTÃO 1906 — A substituição frequente do policial empregado no policiamento ostensivo comunitário é objeto de orientação específica. Assinale a alternativa INCORRETA sobre o fundamento e a consequência indicados na Diretriz nº PM3-005/02/20.",
+        "options": [
+          "a) O policial necessita de tempo suficiente para conquistar a confiança da comunidade e desenvolver parcerias.",
+          "b) A substituição constante é desaconselhável, pois pode prejudicar os objetivos almejados pelo programa.",
+          "c) A continuidade do vínculo é considerada relevante para o desenvolvimento das parcerias comunitárias.",
+          "d) A substituição constante é recomendada para ampliar a quantidade de policiais que estabelecem contato inicial com os moradores."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20, item 6.5.1, Assuntos Operacionais.pdf, PDF p. 422. A diretriz afirma que o policial precisa de tempo suficiente para conquistar confiança e desenvolver parcerias, sendo desaconselhável sua substituição constante. A, B e C refletem esse fundamento; D inverte a orientação."
+      },
+      {
+        "id": 1907,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — coleta de informações e indicadores",
+        "text": "QUESTÃO 1907 — Sobre a atuação do policial militar empregado no policiamento ostensivo comunitário na coleta de informações, analise as proposições.\n\nI. Deve estar apto a coletar informações junto à comunidade em geral.\nII. A coleta deve alcançar, principalmente, as unidades comunitárias.\nIII. A entrevista de moradores e demais partes interessadas constitui meio indicado para obter indicadores úteis ao policiamento comunitário.\nIV. A coleta de informações deve limitar-se aos dados formalizados em boletins de ocorrência.\n\nAssinale a alternativa correta.",
+        "options": [
+          "a) I, II e IV.",
+          "b) I, III e IV.",
+          "c) II, III e IV.",
+          "d) I, II e III."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-005/02/20, item 6.5.2, Assuntos Operacionais.pdf, PDF p. 422. I, II e III correspondem à aptidão, ao público prioritário e ao método descritos. IV é incorreta porque a norma prevê coleta de informações junto à comunidade e entrevistas, sem restringi-las a boletins de ocorrência. A, B e C incluem IV ou excluem proposição correta."
+      },
+      {
+        "id": 1908,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — postura permanente e continuidade da interação",
+        "text": "QUESTÃO 1908 — O efetivo empregado no policiamento comunitário recebe orientações para conhecer a comunidade e preservar a continuidade da interação institucional. Assinale a alternativa correta.",
+        "options": [
+          "a) Conhecer as características da comunidade e manter vínculos com cidadãos e lideranças apenas durante o período de execução de campanhas locais.",
+          "b) Conhecer as características da comunidade e manter vínculos permanentes com cidadãos e lideranças, evitando solução de continuidade na interação entre a Polícia Militar e a comunidade.",
+          "c) Conhecer as características da comunidade e manter vínculos permanentes apenas com lideranças formalmente constituídas, sem necessidade de interação com os demais cidadãos.",
+          "d) Conhecer as características da comunidade e manter vínculos com cidadãos e lideranças em reuniões periódicas, admitindo interrupção da interação entre as atividades programadas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-005/02/20, item 6.5.3.1, Assuntos Operacionais.pdf, PDF p. 422. A norma determina conhecimento das características comunitárias e vínculos permanentes com cidadãos e lideranças, de modo a evitar solução de continuidade. A limita o vínculo às campanhas; C exclui os cidadãos em geral; D admite a interrupção que a norma busca evitar."
+      },
+      {
+        "id": 1909,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — postura proativa e RAIA",
+        "text": "QUESTÃO 1909 — Durante a atuação em determinada comunidade, o policial militar identifica problema que prejudica a qualidade de vida local, embora ainda não tenha resultado em ocorrência policial. Considerando o item 6.5.3.2 da Diretriz nº PM3-005/02/20, assinale a alternativa correta.",
+        "options": [
+          "a) Deve aguardar a formalização de ocorrência policial para iniciar providências, pois a atuação comunitária não abrange problemas ainda não registrados.",
+          "b) Deve limitar a iniciativa aos problemas que afetem diretamente a segurança pública, sem considerar reflexos sobre a qualidade de vida da comunidade.",
+          "c) Deve manter postura proativa e buscar soluções para problemas que afetem a ordem pública e prejudiquem a qualidade de vida, incluindo a elaboração de RAIA, se for o caso.",
+          "d) Deve encaminhar todo problema identificado exclusivamente ao CONSEG, cabendo à entidade decidir sobre a elaboração de RAIA."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-005/02/20, item 6.5.3.2, Assuntos Operacionais.pdf, PDF p. 422. A regra prevê iniciativa na busca de soluções para quaisquer problemas que afetem a ordem pública e prejudiquem a qualidade de vida, incluindo RAIA, se for o caso. A e B restringem indevidamente o campo de atuação; D transfere atribuição não prevista ao CONSEG."
+      },
+      {
+        "id": 1910,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — críticas, sugestões e encaminhamento",
+        "text": "QUESTÃO 1910 — No relacionamento com a comunidade, o efetivo recebe críticas e sugestões acerca dos serviços prestados. À luz do item 6.5.3.3 da Diretriz nº PM3-005/02/20, assinale a alternativa INCORRETA.",
+        "options": [
+          "a) Deve adotar postura receptiva às críticas e sugestões apresentadas pela comunidade.",
+          "b) Deve buscar o devido encaminhamento das críticas e sugestões recebidas.",
+          "c) A excelência na prestação dos serviços exige receptividade às manifestações da comunidade.",
+          "d) Pode deixar de encaminhar críticas e sugestões quando não forem apresentadas em reunião comunitária formal."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20, item 6.5.3.3, Assuntos Operacionais.pdf, PDF p. 422. A norma exige postura receptiva a críticas e sugestões e busca de seu devido encaminhamento, sem restringir a manifestação a reuniões formais. A, B e C correspondem ao dispositivo."
+      },
+      {
+        "id": 1911,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — patrulhamento a pé e integração operacional",
+        "text": "QUESTÃO 1911 — A OPM pretende estimular o patrulhamento a pé como forma de interação com a comunidade. Considerando o item 6.5.4.6 da Diretriz nº PM3-005/02/20, assinale a alternativa correta.",
+        "options": [
+          "a) O patrulhamento a pé deve ser realizado pelo efetivo comunitário, mantendo-se integrado às demais estruturas operacionais.",
+          "b) O patrulhamento a pé deve ser realizado exclusivamente por efetivo não pertencente ao Programa, para preservar a especialização das estruturas comunitárias.",
+          "c) O patrulhamento a pé deve substituir as demais estruturas operacionais durante os períodos de interação com a comunidade.",
+          "d) O patrulhamento a pé deve ocorrer somente em campanhas comunitárias, sem integração permanente com as demais estruturas operacionais."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-005/02/20, item 6.5.4.6, Assuntos Operacionais.pdf, PDF p. 423. A diretriz estimula o patrulhamento a pé pelo efetivo envolvido no Policiamento Comunitário, que deverá manter-se constantemente integrado às demais estruturas operacionais. B, C e D alteram o efetivo, a relação com outras estruturas ou a frequência da integração."
+      },
+      {
+        "id": 1912,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — coordenação semestral e questionários",
+        "text": "QUESTÃO 1912 — Sobre a sistemática de coleta de dados de percepção de segurança no Programa de Policiamento Comunitário, analise as proposições.\n\nI. A Coord Op PM define sistemática semestral de coleta de dados sobre percepção de segurança e outros temas ligados à polícia comunitária.\nII. A Coord Op PM padroniza os questionários a serem disseminados pelo efetivo envolvido no Policiamento Comunitário.\nIII. A coleta de informações junto aos moradores relaciona-se à sistemática prevista no item 6.5.4.1.\nIV. A sistemática semestral é definida individualmente por cada Cmt Cia PM, sem padronização de questionários pela Coord Op PM.\n\nAssinale a alternativa correta.",
+        "options": [
+          "a) I, II e III.",
+          "b) I, II e IV.",
+          "c) I, III e IV.",
+          "d) II, III e IV."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-005/02/20, itens 6.5.4.1 e 6.6.1.2, Assuntos Operacionais.pdf, PDF pp. 422–423. I e II descrevem as atribuições da Coord Op PM; III relaciona a coleta com a sistemática semestral das OPM. IV é incorreta porque a Coord Op PM define a sistemática de coleta e padroniza os questionários. B, C e D incluem IV ou excluem proposições corretas."
+      },
+      {
+        "id": 1913,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — compartilhamento de indicadores com a DPCDH",
+        "text": "QUESTÃO 1913 — No fluxo institucional de informações do Programa de Policiamento Comunitário, a Coord Op PM deve adotar providência específica em relação à DPCDH. Assinale a alternativa correta.",
+        "options": [
+          "a) Encaminhar à DPCDH apenas os registros de visitas solidárias, excluídos os indicadores de desempenho do Programa.",
+          "b) Compartilhar com a DPCDH as informações sobre indicadores relacionados ao desenvolvimento do Programa de Policiamento Comunitário.",
+          "c) Submeter à DPCDH a aprovação prévia dos questionários de percepção de segurança e dos documentos semestrais de Estado-Maior.",
+          "d) Transferir à DPCDH o monitoramento e a supervisão do Programa, realizados por meio do Guia de Indicadores."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-005/02/20, item 6.6.1.4, Assuntos Operacionais.pdf, PDF p. 423. O dispositivo atribui à Coord Op PM o compartilhamento com a DPCDH das informações sobre indicadores relacionados ao desenvolvimento do Programa. A restringe o conteúdo; C cria aprovação prévia; D transfere competência de monitoramento atribuída à Coord Op PM no item 6.6.1.1."
+      },
+      {
+        "id": 1914,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — planejamento estratégico e regulação do emprego",
+        "text": "QUESTÃO 1914 — Considerando as atribuições particulares da Coord Op PM, assinale a alternativa INCORRETA.",
+        "options": [
+          "a) Monitorar e supervisionar o desenvolvimento do Programa por meio do Guia de Indicadores dos Programas de Policiamento.",
+          "b) Promover ajustes necessários para que o SICoordOp receba informações sobre visitas, campanhas e reuniões comunitárias.",
+          "c) Desenvolver o planejamento estratégico e a regulação detalhada dos mecanismos de emprego do Programa, especialmente de BCS, BCSD e BCM.",
+          "d) Centralizar a guarda física dos documentos de regularização imobiliária de cada BCS e manter o arquivo digital dos autos em cada Cia PM."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20, itens 6.6.1.1, 6.6.1.3 e 6.6.1.5, e Anexo A, item 1.4.2.7, Assuntos Operacionais.pdf, PDF pp. 423 e páginas do Anexo A. A guarda da documentação de regularização do imóvel fica sob responsabilidade do Cmt Btl, junto à Seção de Logística, enquanto a Cia PM mantém arquivo digital dos autos. A, B e C são atribuições expressas da Coord Op PM."
+      },
+      {
+        "id": 1915,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — instalação de BCS: instrução e parecer",
+        "text": "QUESTÃO 1915 — Uma proposta de instalação de BCS foi formalizada pela OPM territorial. Considerando a sequência prevista no Anexo A da Diretriz nº PM3-005/02/20, assinale a alternativa correta quanto à instrução e ao encaminhamento do processo.",
+        "options": [
+          "a) O Cmt Btl com responsabilidade territorial instrui o processo e se manifesta sobre a instalação; depois, o expediente segue ao respectivo Gde Cmdo para parecer que subsidiará a decisão do Subcmt PM.",
+          "b) O Cmt Cia PM instrui o processo e decide sobre a instalação; depois, o expediente segue à 4ª EM/PM para homologação pelo respectivo Gde Cmdo.",
+          "c) O respectivo Gde Cmdo instrui o processo e decide sobre a instalação; depois, o expediente segue ao Cmt Btl para parecer conclusivo ao Subcmt PM.",
+          "d) O Subcmt PM instrui o processo e solicita manifestação posterior do Cmt Btl; depois, o expediente segue diretamente à DPCDH para decisão."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-005/02/20, Anexo A, itens 1.1 e 1.3, Assuntos Operacionais.pdf, Anexo A, fl. 1. O Cmt Btl territorial instrui e manifesta-se sobre a proposta; formalizada essa manifestação, o processo segue ao respectivo Gde Cmdo (CPC, CPM ou CPI) para parecer destinado a subsidiar a decisão do Subcmt PM. B, C e D alteram a autoridade instrutora, a sequência ou a autoridade decisória."
+      },
+      {
+        "id": 1916,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — instalação de BCS: decisão desfavorável",
+        "text": "QUESTÃO 1916 — O Subcmt PM decide desfavoravelmente à instalação de uma BCS. Conforme o Anexo A da Diretriz nº PM3-005/02/20, assinale a alternativa correta quanto às providências subsequentes.",
+        "options": [
+          "a) O processo será arquivado pela 4ª EM/PM, que comunicará diretamente à DPCDH, dispensada manifestação ao interessado.",
+          "b) O processo será restituído à autoridade policial-militar de origem, que deverá formalizar expediente expondo ao interessado as razões da não instalação e arquivar cópia digitalizada da documentação.",
+          "c) O processo será remetido ao Gde Cmdo, que deverá instaurar novo procedimento e comunicar a decisão exclusivamente ao CONSEG local.",
+          "d) O processo será restituído ao Cmt Btl, que deverá apresentar nova proposta no prazo de 30 dias, mantendo-se suspensa a comunicação ao interessado."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-005/02/20, Anexo A, itens 1.4.1.1 e 1.4.1.2, Assuntos Operacionais.pdf, Anexo A, fl. 1. A decisão desfavorável determina a restituição à autoridade de origem, que formaliza expediente com as razões da não instalação e arquiva cópia digitalizada. A, C e D atribuem providências ou prazos não previstos."
+      },
+      {
+        "id": 1917,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — instalação de BCS: vistoria e início das atividades",
+        "text": "QUESTÃO 1917 — Após decisão favorável à instalação de BCS em imóvel específico, a OPM inicia as providências para regularização da edificação. Analise as proposições.\n\nI. O Gde Cmdo deve adotar providências para regularização da edificação, providenciando documentação diretamente à DF, via CIAP.\nII. O CIAP deve adotar as providências previstas nas I-38-PM relativas à visita técnica e à vistoria do imóvel.\nIII. O início das atividades pode ocorrer após a regularização estrutural e documental do imóvel, com alocação dos recursos humanos e materiais necessários, registrados no Plano Diretor.\nIV. A existência de decisão favorável do Subcmt PM, isoladamente, autoriza o início imediato das atividades, antes da vistoria e da regularização documental.\n\nAssinale a alternativa correta.",
+        "options": [
+          "a) I, II e IV.",
+          "b) I, III e IV.",
+          "c) I, II e III.",
+          "d) II, III e IV."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-005/02/20, Anexo A, itens 1.4.2.3, 1.4.2.4 e 1.4.2.6, Assuntos Operacionais.pdf, Anexo A, fl. 2. I, II e III reproduzem a sequência e as condições previstas. IV é incorreta porque o início das atividades depende da regularização estrutural e documental do imóvel. A, B e D incluem IV ou excluem providência correta."
+      },
+      {
+        "id": 1918,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — instalação de BCS: guarda e circulação documental",
+        "text": "QUESTÃO 1918 — Após a instalação de BCS, devem ser mantidos registros para controle da regularização do imóvel e do funcionamento da estrutura. Considerando o Anexo A da Diretriz nº PM3-005/02/20, assinale a alternativa INCORRETA.",
+        "options": [
+          "a) A documentação relativa à regularização do imóvel permanece arquivada sob responsabilidade do Cmt Btl, junto à respectiva Seção de Logística.",
+          "b) A Cia PM em que a BCS estiver instalada mantém arquivo digital dos autos para fins de controle.",
+          "c) Cópia digital dos expedientes que formalizaram a instalação e o funcionamento é encaminhada ao Subcmt PM, via 4ª EM/PM.",
+          "d) A DPCDH recebe apenas comunicação resumida da instalação, pois a cópia integral do processo permanece exclusivamente na OPM de origem."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (alternativa INCORRETA). Fundamentação: Diretriz nº PM3-005/02/20, Anexo A, itens 1.4.2.7 a 1.4.2.9, Assuntos Operacionais.pdf, Anexo A, fl. 2. A documentação de regularização fica sob responsabilidade do Cmt Btl; a Cia PM mantém arquivo digital; a cópia digital dos expedientes segue ao Subcmt PM via 4ª EM/PM; e a 4ª EM/PM encaminha cópia de todo o processo à DPCDH, responsável pelo cadastro atualizado e controle das BCS."
+      },
+      {
+        "id": 1919,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — desativação de BCS: providências prévias e fundamentação",
+        "text": "QUESTÃO 1919 — O comando territorial estuda a desativação de uma BCS. Considerando as exigências do Anexo A da Diretriz nº PM3-005/02/20, analise as proposições.\n\nI. Devem ser realizadas gestões antecipadas junto às autoridades públicas locais e às lideranças comunitárias, apresentando intenções e motivos da OPM local.\nII. As providências devem envolver frentes diversas, buscando alcançar o maior número possível de integrantes das comunidades afetadas e mitigar impactos negativos.\nIII. A proposta será instruída pelo Cmt Btl, com documentos comprobatórios detalhados e outros motivos técnicos e operacionais.\nIV. A análise dos indicadores criminais e de produtividade policial é facultativa quando houver atas de reuniões com lideranças.\n\nAssinale a alternativa correta.",
+        "options": [
+          "a) I, II e IV.",
+          "b) I, II e III.",
+          "c) II, III e IV.",
+          "d) I, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-005/02/20, Anexo A, itens 2.1 e 2.2, Assuntos Operacionais.pdf, Anexo A, fl. 3. I, II e III correspondem às gestões prévias, à mitigação dos impactos e à instrução fundamentada pelo Cmt Btl. IV é incorreta porque a análise dos indicadores criminais e de produtividade policial é obrigatória, não facultativa."
+      },
+      {
+        "id": 1920,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — desativação de BCS: decisão e execução",
+        "text": "QUESTÃO 1920 — Após a instrução do processo de desativação de BCS pelo Cmt Btl, o expediente segue para análise e decisão. Assinale a alternativa correta sobre o fluxo e as providências decorrentes de decisão favorável.",
+        "options": [
+          "a) O processo segue ao Subcmt PM diretamente, sem parecer do Gde Cmdo; aprovada a desativação, a OPM de origem encerra as atividades e a DPCDH descaracteriza o imóvel.",
+          "b) O processo segue ao respectivo Gde Cmdo para parecer que subsidiará a decisão do Subcmt PM; aprovada a desativação, a 4ª EM/PM registra e arquiva o processo, cientifica o Gde Cmdo e a DPCDH, e o Gde Cmdo providencia encerramento, realocação, descaracterização e continuidade dos serviços.",
+          "c) O processo segue à DPCDH para parecer que subsidiará a decisão do Cmt Btl; aprovada a desativação, a 4ª EM/PM realoca o efetivo e o Subcmt PM atualiza o cadastro imobiliário.",
+          "d) O processo segue ao respectivo Gde Cmdo para decisão final; aprovada a desativação, a 3ª EM/PM encerra as atividades e a OPM de origem assume a atualização do cadastro das BCS."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-005/02/20, Anexo A, itens 2.2 a 2.4.2.3, Assuntos Operacionais.pdf, Anexo A, fl. 3. O Gde Cmdo emite parecer; o Subcmt PM decide. Na decisão favorável, a 4ª EM/PM registra e arquiva, cientifica o Gde Cmdo e a DPCDH; o Gde Cmdo, por meio das OPM subordinadas, encerra as atividades, realoca recursos, descaracteriza o imóvel e mantém os serviços; a DPCDH atualiza o cadastro. A, C e D trocam competências e etapas."
+      },
+      {
+        "id": 1921,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Comunitário",
+        "topic": "Diretriz PM3-005/02/20 — processo de instalação de BCSD e instrumento de disponibilização do imóvel",
+        "text": "QUESTÃO 1921 — Uma proposta de instalação de Base Comunitária de Segurança Distrital (BCSD) é apresentada por entidade local. De acordo com o Anexo B da Diretriz nº PM3-005/02/20, assinale a alternativa correta quanto à condição preliminar relativa ao imóvel.",
+        "options": [
+          "a) A proposta deverá indicar imóvel disponibilizado pela respectiva Prefeitura Municipal, ainda que subsidiado por outro órgão ou entidade pública ou privada, mediante prévia celebração de convênio entre Estado e Município, nos termos das I-27-PM.",
+          "b) A proposta deverá indicar imóvel disponibilizado diretamente pela OPM territorial, admitida posterior celebração de convênio entre Estado e Município, nos termos das I-38-PM.",
+          "c) A proposta deverá indicar imóvel disponibilizado por entidade privada, independentemente de convênio, desde que haja anuência do Cmt Btl e vistoria do CIAP.",
+          "d) A proposta poderá indicar imóvel de qualquer origem, cabendo à Prefeitura Municipal formalizar convênio após a decisão favorável do Cmt Pol Metropol ou Cmt Pol Int."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-005/02/20, Anexo B, item 1.1, Assuntos Operacionais.pdf, Anexo B, fl. 1. O imóvel deve ser necessariamente disponibilizado pela respectiva Prefeitura Municipal, mesmo quando subsidiado por outro órgão ou entidade pública ou privada, mediante prévia celebração de convênio Estado-Município conforme I-27-PM. B altera o disponibilizador e a norma de referência; C dispensa convênio; D posterga o convênio e admite qualquer origem."
+      },
+       {
+        "id": 1922,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Regularização de estruturas preexistentes — prazo e termo inicial",
+        "text": "QUESTÃO 1922 — Uma OPM já possuía Estrutura de Comando e Controle antes da edição da Diretriz nº PM3-001/02/23. Considerando a prescrição transitória e a hipótese nela delimitada, assinale a alternativa CORRETA.",
+        "options": [
+          "A) A regularização deveria ocorrer em 30 dias, contados da ciência do comandante da OPM, para todas as estruturas já existentes.",
+          "B) A regularização deveria ocorrer em 60 dias, contados da publicação da Diretriz, para as estruturas preexistentes, quanto à exigência do subitem 6.6.2.3, se aplicável.",
+          "C) A regularização deveria ocorrer em 60 dias, contados da assinatura da Diretriz, para qualquer estrutura, independentemente da incidência do subitem 6.6.2.3.",
+          "D) A regularização deveria ocorrer em 90 dias, contados da publicação da Diretriz, exclusivamente para os Centros de Comando e Controle."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, item 6.10.2, Assuntos Operacionais.pdf, PDF p. 211 (fl. 15). O dispositivo concede 60 dias a partir da publicação para que OPM com estruturas implementadas anteriormente providenciem a regularização conforme o subitem 6.6.2.3, se aplicável. A altera prazo e termo inicial; C troca publicação por assinatura e elimina a condição “se aplicável”; D altera prazo e restringe indevidamente o universo de estruturas."
+      },
+      {
+        "id": 1923,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Integração dos UAS às Estruturas de Comando e Controle — priorização",
+        "text": "QUESTÃO 1923 — Considerando a integração dos sistemas de captação e transmissão de dados e imagens dos drones às Estruturas de Comando e Controle, a Diretriz estabelece uma priorização específica. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Devem ser priorizados os CC2 dos Grandes Comandos e as Salas de Gerenciamento de Incidentes, em razão da abrangência interagências dessas estruturas.",
+          "B) Devem ser priorizados os COPOM regionais e os CCO de órgãos externos, em razão da concentração de recursos tecnológicos para monitoramento.",
+          "C) Devem ser priorizadas as Salas de Operações das Companhias PM e das sedes dos Batalhões, em razão da proximidade com as demandas operacionais.",
+          "D) Devem ser priorizadas as Salas de Operações dos Comandos de Policiamento e as estruturas móveis, em razão da capacidade de coordenação de operações complexas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.2.7 e 6.2.7.1, Assuntos Operacionais.pdf, PDF p. 202 (fl. 6). A Diretriz determina a plena integração dos sistemas de captação e transmissão de dados e imagens dos UAS às Estruturas de Comando e Controle, para prover Imagem Operacional Comum aos policiais em solo. Especificamente, estabelece prioridade para a integração com as Salas de Operações das Companhias PM e das sedes dos Batalhões, pela proximidade com as demandas operacionais. A, B e D deslocam a prioridade para estruturas que não são indicadas no subitem 6.2.7.1."
+      },
+      {
+        "id": 1924,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Seleção do operador de videopatrulhamento — requisitos cumulativos e preferência",
+        "text": "QUESTÃO 1924 — Para selecionar policial militar como operador de videopatrulhamento (OpVPtr), a OPM verifica comportamento, situação processual e experiência operacional. À luz do Anexo A, assinale a alternativa CORRETA.",
+        "options": [
+          "A) Exige comportamento ótimo, ausência de processo regular e experiência operacional mínima de dois anos.",
+          "B) Exige comportamento bom, ausência de processo regular e experiência operacional mínima de dois anos.",
+          "C) Exige, no mínimo, comportamento bom e ausência de processo regular ou PAE; a experiência operacional de dois anos é preferencial.",
+          "D) Exige comportamento excepcional e ausência de sanção disciplinar, sendo facultativa a verificação de processo regular."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-001/02/23, Anexo A, itens 4.1 a 4.3, Assuntos Operacionais.pdf, PDF p. 213 (fl. 17). A norma exige, no mínimo, comportamento “bom”; não estar respondendo a processo regular (CJ, CD, PAD) nem PAE; e indica, preferencialmente, experiência de 2 anos na atividade operacional. A e B transformam a preferência de experiência em requisito mínimo e elevam o comportamento; D substitui os requisitos expressos."
+      },
+      {
+        "id": 1925,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Anexo B — restrições profissionais para policial destacado em CCO",
+        "text": "QUESTÃO 1925 — Na análise dos requisitos profissionais do policial militar a ser destacado em Centro de Controle Operacional (CCO), qual conjunto reproduz integralmente as restrições funcionais enumeradas no Anexo B da Diretriz?",
+        "options": [
+          "A) Audição primordial (AU), datilografia e digitação (DG), escrita à mão (EM), longa permanência sentado (LS), serviços burocráticos (SB), serviços internos (SI), serviços de telefonia (ST) e visão primordial (VP).",
+          "B) Audição primordial (AU), datilografia e digitação (DG), escrita à mão (EM), longa permanência em pé, serviços burocráticos (SB), serviços internos (SI), serviços de telefonia (ST) e visão primordial (VP).",
+          "C) Audição primordial (AU), direção veicular, escrita à mão (EM), longa permanência sentado (LS), serviços burocráticos (SB), serviços internos (SI), serviços de telefonia (ST) e visão primordial (VP).",
+          "D) Audição primordial (AU), datilografia e digitação (DG), escrita à mão (EM), longa permanência sentado (LS), serviços burocráticos (SB), serviços externos, serviços de telefonia (ST) e visão primordial (VP)."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, Anexo B, item 1 e subitens 1.1 a 1.8, Assuntos Operacionais.pdf, PDF p. 214 (fl. 18). O Anexo enumera AU, DG, EM, LS, SB, SI, ST e VP. B substitui DG e LS por restrições não listadas; C troca SB por SE; D troca SI por SE. A sigla DG corresponde a “Datilografia e digitação”, e não apenas digitação."
+      },
+      {
+        "id": 1926,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Policial destacado em CCO — regime de trabalho e documento de Estado-Maior",
+        "text": "QUESTÃO 1926 — Um policial militar foi designado para atuar presencialmente em CCO de outro órgão público. Além da dedicação exclusiva às atividades institucionais e da integração aos sistemas previstos, a Diretriz disciplina o regime de escala e a formalização das atribuições. Assinale a alternativa INCORRETA.",
+        "options": [
+          "A) A escala será cumprida presencialmente nas instalações do CCO externo, sob o regime previsto na Portaria do Cmt G nº PM1-7/02/23.",
+          "B) O regime de trabalho do policial militar deverá acompanhar o regime praticado pelos demais entes que compõem o CCO, ainda que diverso da Portaria institucional.",
+          "C) As atribuições, os processos de trabalho, o regime de escala e a fiscalização pelos escalões de comando e supervisão deverão constar de documento de Estado-Maior emitido pelo Cmdo Pol.",
+          "D) A dedicação do policial militar será exclusiva às atividades de polícia ostensiva e preservação da ordem pública, com integração à rede e aos sistemas da PM e acesso aos sistemas do CCO conforme instrumento legal."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B (INCORRETA). Fundamentação: Diretriz nº PM3-001/02/23, itens 6.5.4.3.2, 6.5.4.3.4 e 6.5.4.3.5, Assuntos Operacionais.pdf, PDF p. 205 (fl. 9). A escala é presencial e observa a Portaria do Cmt G nº PM1-7/02/23, independentemente do regime praticado pelos demais entes. A, C e D reproduzem os requisitos dos dispositivos citados; B inverte expressamente a regra de independência do regime externo."
+      },
+      {
+        "id": 1927,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Implementação das estruturas — competência deliberativa e Plano Diretor",
+        "text": "QUESTÃO 1927 — Na proposta de implementação de estruturas de Comando e Controle, deve-se distinguir a autoridade competente para deliberar conforme o tipo de estrutura e a previsão dos recursos. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) O Cmdo Pol delibera sobre a implementação dos CC2, enquanto o Gde Cmdo delibera sobre Salas de Operações e policiais destacados em CCO, sem necessidade de previsão no Plano Diretor.",
+          "B) O Gde Cmdo delibera sobre CC2 e Salas de Operações, cabendo ao Cmdo Pol apenas indicar os policiais destacados em CCO, com recursos previstos no Plano Diretor.",
+          "C) O Cmdo G delibera sobre todas as estruturas, cabendo ao Gde Cmdo e ao Cmdo Pol somente executar a implementação após autorização específica.",
+          "D) O Gde Cmdo delibera sobre CC2; o Cmdo Pol, sobre Salas de Operações e a sistemática de policial destacado em CCO; os recursos humanos e materiais devem constar do respectivo Plano Diretor."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-001/02/23, item 6.6.1, Assuntos Operacionais.pdf, PDF p. 206 (fl. 10). A competência é vinculada ao Gde Cmdo para CC2 e ao Cmdo Pol para Salas de Operações e sistemática de policial destacado em CCO; os recursos humanos e materiais devem estar previstos no respectivo Plano Diretor. A inverte as competências e dispensa o Plano Diretor; B amplia a competência do Gde Cmdo; C atribui deliberação geral ao Cmdo G sem previsão no item."
+      },
+      {
+        "id": 1928,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Integração com outro órgão — requisitos prévios e instrumento jurídico",
+        "text": "QUESTÃO 1928 — Uma Sala de Operações instalada em dependência da Polícia Militar utilizará tecnologia fornecida por concessionária de serviço público. Considerando os requisitos específicos para essa hipótese, assinale a alternativa INCORRETA.",
+        "options": [
+          "A) As atribuições da concessionária devem guardar pertinência com a missão de polícia ostensiva e preservação da ordem pública.",
+          "B) O Cmt OPM deve realizar gestões antecipadas com representantes do outro órgão para esclarecer os mecanismos de atuação integrada e os parâmetros legais e regulamentares institucionais.",
+          "C) O acordo de cooperação pode ser formalizado por ajuste verbal, desde que o Plano de Trabalho seja posteriormente elaborado pela OPM e aprovado pelo Cmdo Pol.",
+          "D) O acordo deve ser objeto de convênio ou instrumento jurídico apropriado, contendo Plano de Trabalho que descreva as atividades da Polícia Militar na sistemática pretendida."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C (INCORRETA). Fundamentação: Diretriz nº PM3-001/02/23, itens 6.6.2.1 a 6.6.2.3, Assuntos Operacionais.pdf, PDF p. 206 (fl. 10). A norma exige pertinência das atribuições, gestões antecipadas do Cmt OPM e formalização por convênio ou instrumento jurídico apropriado com Plano de Trabalho. A, B e D correspondem a esses requisitos; C substitui a formalização jurídica por ajuste verbal, hipótese não admitida pelo texto."
+      },
+      {
+        "id": 1929,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Atribuições da Coord Op PM — acompanhamento e análise de desempenho",
+        "text": "QUESTÃO 1929 — No acompanhamento institucional das Estruturas de Comando e Controle, a Coord Op PM deve avaliar resultados e propor aperfeiçoamentos. Assinale a alternativa que descreve corretamente o alcance dessa atribuição.",
+        "options": [
+          "A) Acompanhar resultados operacionais das estruturas, apontar não conformidades, elaborar análises de desempenho das OPM e propor soluções para aprimorar a sistemática vigente.",
+          "B) Acompanhar somente a disponibilidade dos equipamentos, apontar falhas de manutenção e elaborar análise financeira das aquisições realizadas pelas OPM.",
+          "C) Acompanhar os resultados disciplinares dos operadores, apontar desvios individuais e propor sanções aos policiais escalados nas estruturas.",
+          "D) Acompanhar exclusivamente as ocorrências de grande repercussão, manter o Cmdo G informado e deliberar sobre a atualização da Diretriz."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, item 6.9.3.1, Assuntos Operacionais.pdf, PDF p. 208 (fl. 12). Compete à Coord Op PM acompanhar resultados operacionais das estruturas, apontar não conformidades, elaborar análises de desempenho das OPM e propor soluções de aprimoramento. B desloca o foco para gestão patrimonial/financeira; C atribui função disciplinar não prevista; D combina atribuições do CIPM (6.9.1.2) e da 3ª EM/PM (6.9.5)."
+      },
+      {
+        "id": 1930,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Atribuições da Coord Op PM por intermédio do COPOM",
+        "text": "QUESTÃO 1930 — Considerando as atribuições da Coord Op PM exercidas por intermédio do COPOM, analise as proposições: I. Desenvolver formulários padronizados, com terminologia e simbologia comuns aos Centros de Operações, Salas de Operações e policiais destacados. II. Estruturar, com apoio da DTIC, recursos para espelhamento de sistemas e plataformas de videomonitoramento disponibilizados por outros órgãos. III. Na qualidade de OGC, prover treinamento para o efetivo selecionado pelos Gde Cmdo para o videopatrulhamento. IV. Atuar, no que couber, como elo integrador entre a PM e órgãos externos envolvidos no Sistema C2. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I, II e III.",
+          "D) I, II, III e IV.",
+          "B) Apenas I, II e IV.",
+          "C) Apenas I, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, item 6.9.3.2 e subitens 6.9.3.2.1 a 6.9.3.2.4, Assuntos Operacionais.pdf, PDF p. 208 (fl. 12). As quatro proposições reproduzem as atribuições da Coord Op PM por intermédio do COPOM. Não há proposição incorreta: todas correspondem, respectivamente, à padronização de formulários, ao espelhamento tecnológico, ao treinamento de VPtr como OGC e à integração com órgãos externos."
+      },
+      {
+        "id": 1931,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Atribuições do CIPM e atuação da Sala de Situação",
+        "text": "QUESTÃO 1931 — Considerando as atribuições particulares do CIPM no Sistema de Comando e Controle, assinale a alternativa CORRETA.",
+        "options": [
+          "A) Acompanhar, por meio da Sala de Situação, ocorrências de gravidade e/ou grande repercussão, mantendo o Cmdo G informado.",
+          "B) Providenciar, em conjunto com a Coord Op PM, a concessão de login e senha e dos níveis de privilégios aos policiais escalados nas Salas de Operações e no CC2.",
+          "C) Desenvolver, por intermédio do COPOM, formulários padronizados com terminologia e simbologia comuns para os Centros de Operações e Salas de Operações.",
+          "D) Prover solução tecnológica para integrar dados e registros audiovisuais de COP, drones e videopatrulhamento às plataformas institucionais."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, item 6.9.1.2, Assuntos Operacionais.pdf, PDF p. 208 (fl. 12). Compete ao CIPM acompanhar, por meio da Sala de Situação, ocorrências de gravidade e/ou grande repercussão, mantendo o Cmdo G informado. B atribui à Coord Op PM uma providência que o item 6.9.10.3 confere conjuntamente ao CIPM e à DTIC; C é atribuição da Coord Op PM por intermédio do COPOM (item 6.9.3.2.1); D é atribuição da DTIC (item 6.9.10.2)."
+      },
+      {
+        "id": 1932,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Atribuições da CComSoc — comunicação institucional e VPtr",
+        "text": "QUESTÃO 1932 — A Diretriz atribui à CComSoc ações específicas de comunicação social relacionadas à doutrina de Comando e Controle e ao videopatrulhamento. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Elaborar estratégias de comunicação social apenas para o público interno e restringir a divulgação de imagens de VPtr aos órgãos de persecução penal.",
+          "B) Elaborar estratégias para os públicos interno e externo, visando consolidar o conhecimento do efetivo sobre a doutrina, e promover a divulgação de conteúdos positivos produzidos pelo VPtr.",
+          "C) Elaborar estratégias para os públicos interno e externo, selecionar operadores de VPtr e administrar a custódia das evidências digitais produzidas pelas OPM.",
+          "D) Elaborar estratégias de comunicação social, conceder acesso aos sistemas inteligentes e realizar a análise de desempenho operacional das OPM."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.9.2.1 e 6.9.2.2, Assuntos Operacionais.pdf, PDF p. 208 (fl. 12). À CComSoc compete elaborar estratégias para os públicos interno e externo voltadas à consolidação da doutrina e promover a divulgação de conteúdos positivos produzidos pelo VPtr. A restringe indevidamente o público; C atribui seleção e custódia a outros responsáveis; D desloca atribuições de acesso e análise operacional."
+      },
+      {
+        "id": 1933,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Atribuições da 4ª EM/PM — orçamento, materiais e UAS",
+        "text": "QUESTÃO 1933 — No planejamento de recursos para as Estruturas de Comando e Controle, a 4ª EM/PM possui atribuições que envolvem previsão orçamentária, aquisição de materiais e estudos para distribuição de aeronaves não tripuladas. Assinale a alternativa INCORRETA.",
+        "options": [
+          "A) Providenciar, em conjunto com DF, DL, DTIC e COPOM, a previsão orçamentária para atender às necessidades apontadas pelos Gde Cmdo.",
+          "B) Planejar a aquisição de recursos materiais destinados ao suporte das atividades das Estruturas de Comando e Controle.",
+          "C) Realizar, em conjunto com a 3ª EM/PM, DF, DL e CAvPM, estudos para aquisição e distribuição de UAS suficientes para prover, no mínimo, um equipamento por Btl, destinado ao CFP ou função equivalente.",
+          "D) Prover, isoladamente, os recursos orçamentários para a implementação das estruturas e executar diretamente a concessão de login e senha aos policiais escalados."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (INCORRETA). Fundamentação: Diretriz nº PM3-001/02/23, itens 6.9.6.1 a 6.9.6.3, Assuntos Operacionais.pdf, PDF p. 209 (fl. 13). A 4ª EM/PM atua conjuntamente na previsão orçamentária, planeja aquisição de materiais e participa dos estudos para UAS. A provisão de recursos orçamentários é atribuição da DF (6.9.8.1), e a concessão de login/senha é conjunta entre CIPM e DTIC (6.9.10.3). A, B e C correspondem às atribuições da 4ª EM/PM."
+      },
+      {
+        "id": 1934,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Atribuições da DEC — currículos e instrumentos de divulgação doutrinária",
+        "text": "QUESTÃO 1934 — No âmbito da Diretriz nº PM3-001/02/23, compete à Diretoria de Ensino e Cultura (DEC):",
+        "options": [
+          "A) Atualizar os currículos dos cursos e estágios da PM para inserir a doutrina de C2 e elaborar ICC e PVT para ampla divulgação dos conceitos e aplicações práticas.",
+          "B) Atualizar os currículos apenas dos cursos de formação e elaborar formulários padronizados para uso dos Centros de Operações.",
+          "C) Elaborar ICC e PVT para divulgação da doutrina e providenciar o treinamento operacional dos efetivos selecionados para videopatrulhamento.",
+          "D) Inserir a doutrina de C2 nos currículos e regulamentar, juntamente com a DTIC, a política de acesso e os níveis de privilégios das ferramentas inteligentes."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.9.7.1 e 6.9.7.2, Assuntos Operacionais.pdf, PDF p. 209 (fl. 13). À DEC compete atualizar currículos dos cursos e estágios e elaborar ICC e PVT para divulgação ampla dos conceitos e aplicações práticas. B limita indevidamente os currículos e desloca a padronização de formulários para a Coord Op PM/COPOM; C desloca o treinamento de VPtr; D atribui ao DEC competência conjunta do CIPM e DTIC."
+      },
+      {
+        "id": 1935,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Atribuições da DF — recursos orçamentários e estudos de UAS",
+        "text": "QUESTÃO 1935 — Em relação às atribuições da Diretoria de Finanças (DF) no Sistema de Comando e Controle, analise as proposições: I. Prover recursos orçamentários para implementação das Estruturas de Comando e Controle. II. Realizar estudos, em conjunto com a 4ª EM/PM, DL e CAvPM, para aquisição e distribuição de UAS suficientes para prover, no mínimo, um equipamento por Btl, disponibilizado ao CFP ou função equivalente. III. Planejar a aquisição de recursos materiais para suporte às atividades das estruturas. IV. Providenciar a previsão orçamentária em conjunto com 4ª EM/PM, DL, DTIC e COPOM. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e III.",
+          "B) Apenas II e IV.",
+          "C) Apenas I e II.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.9.8.1 e 6.9.8.2, Assuntos Operacionais.pdf, PDF p. 209 (fl. 13). À DF compete prover recursos orçamentários e participar dos estudos de aquisição/distribuição de UAS com a 4ª EM/PM, DL e CAvPM. III é atribuição da 4ª EM/PM (6.9.6.2); IV também integra a atribuição da 4ª EM/PM, em conjunto com DF, DL, DTIC e COPOM (6.9.6.1)."
+      },
+      {
+        "id": 1936,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Atribuições da DL — materiais e estudos de UAS",
+        "text": "QUESTÃO 1936 — A Diretoria de Logística (DL) participa da implementação das Estruturas de Comando e Controle e de estudos para aquisição de UAS. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Compete à DL prover recursos orçamentários e atualizar os currículos dos cursos e estágios para inserção da doutrina de C2.",
+          "B) Compete à DL adotar providências para prover os materiais necessários às OPM interessadas e participar dos estudos de aquisição e distribuição de UAS com a 4ª EM/PM, DF e CAvPM.",
+          "C) Compete à DL providenciar a previsão orçamentária com DF, DTIC e COPOM e planejar a aquisição de materiais para todas as estruturas.",
+          "D) Compete à DL integrar imagens de UAS e aeronaves tripuladas às plataformas institucionais e treinar os policiais integrantes das US dos CFP."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.9.9.1 a 6.9.9.2, Assuntos Operacionais.pdf, PDF p. 209 (fl. 13). A DL deve adotar providências para prover materiais necessários às estruturas das OPM interessadas e participar dos estudos de UAS com 4ª EM/PM, DF e CAvPM. A descreve DF e DEC; C mistura atribuições da 4ª EM/PM; D descreve atribuições do CAvPM."
+      },
+      {
+        "id": 1937,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Atribuições da DTIC — integração tecnológica e credenciais de acesso",
+        "text": "QUESTÃO 1937 — Sobre as atribuições da Diretoria de Tecnologia da Informação e Comunicação (DTIC), assinale a alternativa INCORRETA.",
+        "options": [
+          "A) Apoiar as OPM, no que couber, na estruturação de CC2 e Salas de Operações, especialmente para implementação de VPtr.",
+          "B) Prover solução tecnológica para integrar dados, informações e registros audiovisuais captados por COP, drones e videopatrulhamento às plataformas institucionais utilizadas pelas estruturas.",
+          "C) Providenciar, em conjunto com o CIPM, login, senha e níveis de privilégios das ferramentas inteligentes aos policiais escalados nas Salas de Operações e no CC2.",
+          "D) Regulamentar isoladamente a política de acesso e os níveis de privilégios das ferramentas inteligentes, dispensando a participação do CIPM."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (INCORRETA). Fundamentação: Diretriz nº PM3-001/02/23, itens 6.9.10.1 a 6.9.10.3, Assuntos Operacionais.pdf, PDF pp. 209–210 (fls. 13–14). A DTIC apoia a estruturação, provê solução tecnológica de integração e providencia credenciais e privilégios em conjunto com o CIPM. A política de acesso é regulamentada conjuntamente por CIPM e DTIC (6.9.1.1); D exclui indevidamente o CIPM."
+      },
+      {
+        "id": 1938,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Atribuições do Gde Cmdo — Plano Diretor, integração e Sala de Gerenciamento de Incidentes",
+        "text": "QUESTÃO 1938 — Considerando as atribuições do Grande Comando (Gde Cmdo) previstas na Diretriz, analise as proposições: I. Descrever no Plano Diretor as estruturas de C2 implementadas na região e os recursos humanos e materiais necessários. II. Providenciar integração das comunicações entre o COPOM Regional e OPM da Matriz III com áreas coincidentes ou limítrofes, provendo estações permanentes no CC2. III. Promover integração com órgãos públicos e concessionárias, concitando-os a ocupar estações de trabalho no COPOM Regional. IV. Providenciar estrutura física para a Sala de Gerenciamento de Incidentes e regulamentar processos específicos para sua ativação e desativação. Estão CORRETAS:",
+        "options": [
+          "D) I, II, III e IV.",
+          "A) Apenas I, II e III.",
+          "B) Apenas I, II e IV.",
+          "C) Apenas II, III e IV."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-001/02/23, itens 6.9.11.1 a 6.9.11.5, Assuntos Operacionais.pdf, PDF p. 210 (fl. 14). As quatro proposições correspondem às atribuições do Gde Cmdo: descrição no Plano Diretor; integração com OPM da Matriz III e estações permanentes; integração com órgãos externos; e estrutura/processos da Sala de Gerenciamento de Incidentes."
+      },
+      {
+        "id": 1939,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Anexo A — roteiro de videopatrulhamento e acionamento da US",
+        "text": "QUESTÃO 1939 — Durante o videopatrulhamento, o operador identifica imagem de interesse policial e constata necessidade de intervenção. Considerando a sequência prevista no Anexo A, assinale a alternativa CORRETA.",
+        "options": [
+          "A) O operador deve acionar diretamente a US por canal próprio, sem intermediação do COPOM/CAD, e depois elaborar roteiro de CPP para justificar a intervenção.",
+          "B) O operador deve comunicar o fato ao Chefe PJMD, que decidirá se haverá acionamento da US e determinará a extração da imagem após eventual procedimento.",
+          "C) O operador deve providenciar o acionamento, via COPOM/CAD, da US responsável, fornecendo o maior número de informações obtidas por VPtr; também deve providenciar a extração das imagens e, se forem evidência digital, o upload ao SiGCED e sua classificação conforme a diretriz de COP.",
+          "D) O operador deve remeter a imagem ao COPOM/CAD e aguardar requisição formal para extração, classificação e upload ao SiGCED, ainda que a gravação constitua evidência digital."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-001/02/23, Anexo A, itens 1.1, 1.2.1 e 1.2.2, Assuntos Operacionais.pdf, PDF p. 212 (fl. 16). O VPtr deve seguir roteiro preestabelecido no formato de CPP; identificada necessidade de intervenção, o OpVPtr aciona via COPOM/CAD a US responsável, fornece o maior número de informações e providencia extração e, tratando-se de evidência digital, upload ao SiGCED e classificação conforme a diretriz de COP. A, B e D alteram o fluxo e/ou condicionam providências que o Anexo atribui diretamente ao OpVPtr."
+      },
+      {
+        "id": 1940,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Anexo A — início da cadeia de custódia e transferência de responsabilidade",
+        "text": "QUESTÃO 1940 — Em relação à cadeia de custódia das evidências digitais produzidas pelo videopatrulhamento, assinale a alternativa INCORRETA.",
+        "options": [
+          "A) A cadeia de custódia tem início com a extração do registro audiovisual pela plataforma em que ocorre a captação.",
+          "B) Cabe ao OpVPtr garantir a integridade das informações e realizar o upload das imagens ao SiGCED.",
+          "C) Depois de realizado o upload ao SiGCED, a administração e a custódia das evidências digitais captadas pelo OpVPtr da respectiva OPM passam ao Chefe da Seção PJMD.",
+          "D) A responsabilidade pela administração e custódia permanece com o OpVPtr mesmo depois do upload, cabendo ao Chefe PJMD apenas autorizar a visualização das imagens."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (INCORRETA). Fundamentação: Diretriz nº PM3-001/02/23, Anexo A, itens 2.1 e 2.2, Assuntos Operacionais.pdf, PDF pp. 212–213 (fls. 16–17). A cadeia inicia-se com a extração; o OpVPtr garante integridade e realiza upload; depois do upload, a administração e custódia passam ao Chefe da Seção PJMD. A, B e C correspondem ao fluxo normativo; D mantém a responsabilidade no operador após a transferência expressamente prevista."
+      },
+      {
+        "id": 1941,
+        "subject": "OPERACIONAL",
+        "tag": "Sistema de Comando e Controle",
+        "topic": "Anexo A — acesso às imagens, requerimento e difusão",
+        "text": "QUESTÃO 1941 — Sobre a disponibilidade de acesso às imagens registradas pelo videopatrulhamento, analise as proposições: I. O policial militar poderá ter acesso às imagens vinculadas à ocorrência em que atuou para instruir processo ou procedimento administrativo e/ou judicial, na condição de testemunha, vítima ou acusado. II. É vedada a captação das imagens por outro equipamento, bem como a extração, edição ou transferência dos dados pelo policial que pretende acessá-las. III. O requerimento de dados para subsidiar procedimento apuratório por acusado civil ou policial militar, ou por seu defensor, deve ser dirigido à autoridade encarregada. IV. Em solicitações de órgãos externos ou por interesse institucional, ressalvada a requisição de autoridades encarregadas de procedimentos e processos apuratórios, cabe à CDCA analisar a conveniência e oportunidade da divulgação. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I, II e III.",
+          "B) Apenas I, III e IV.",
+          "C) Apenas II e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-001/02/23, Anexo A, itens 3.1 a 3.3, Assuntos Operacionais.pdf, PDF p. 213 (fl. 17). As quatro proposições correspondem ao regime de acesso: vínculo com ocorrência em que o policial atuou e finalidade processual; vedação de captação por outro equipamento, extração, edição ou transferência; requerimento do acusado/defensor à autoridade encarregada; e análise pela CDCA nos casos de solicitação externa ou interesse institucional, ressalvada a requisição de autoridades encarregadas."
+      },
+            {
+        "id": 1942,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Comunicação hierárquica quando o agressor é policial militar",
+        "text": "QUESTÃO 1942 — Quando a ocorrência envolve vítima e agressor policiais militares, o acionamento da cadeia hierárquica do agressor observa uma ordem específica. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Deverá ser acionado o superior hierárquico do agressor ou, na ausência deste, o policial militar mais antigo disponível.",
+          "B) Deverá ser acionado o policial militar mais antigo da OPM ou, na ausência deste, o superior hierárquico da vítima.",
+          "C) Deverá ser acionado o comandante da OPM da vítima ou, na ausência deste, o Oficial de Serviço da unidade.",
+          "D) Deverá ser acionado o Oficial de Serviço da OPM do agressor ou, na ausência deste, o comandante da OPM da vítima."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.4.1.6, p. 8. Trecho de suporte: “deverá ser acionado superior hierárquico do agressor ou, na ausência deste, o policial militar mais antigo disponível”. B desloca a referência hierárquica para a vítima; C e D substituem a sequência expressamente indicada por autoridades distintas."
+      },
+      {
+        "id": 1943,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Oficial de Serviço — ciência e remessa de informações iniciais",
+        "text": "QUESTÃO 1943 — Após tomar conhecimento de ocorrência envolvendo policial militar vítima de violência doméstica, o Oficial de Serviço deve adotar providências de comunicação. Assinale a alternativa INCORRETA.",
+        "options": [
+          "A) Cientificar o NUPRO-PM e encaminhar as informações iniciais disponíveis por e-mail, sem prejuízo das providências urgentes.",
+          "B) Aguardar a reunião de todos os documentos do caso para, somente então, cientificar o NUPRO-PM e remeter as informações.",
+          "C) Encaminhar as informações iniciais disponíveis, ainda que outras providências de proteção estejam sendo adotadas simultaneamente.",
+          "D) Cumprir a comunicação ao NUPRO-PM sem condicionar a remessa inicial à conclusão da apuração ou do acompanhamento."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B (INCORRETA). Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.4.1.7, p. 8. Trecho de suporte: “O Oficial de Serviço deverá cientificar o NUPRO-PM [...] encaminhando as informações iniciais disponíveis”. A, C e D preservam o caráter inicial e concomitante da comunicação; B posterga a ciência até a reunião integral dos documentos, condição não prevista no item."
+      },
+      {
+        "id": 1944,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Encaminhamento do agressor policial militar ao CAPS",
+        "text": "QUESTÃO 1944 — No atendimento de ocorrência em que o agressor também é policial militar, a Nota prevê encaminhamento para avaliação psicológica. Analise as proposições: I. O encaminhamento é ao CAPS. II. A referência normativa é a Nota de Instrução nº PM3-001/03/20, de 29JUL20. III. O encaminhamento não afasta a adoção de medidas administrativas, disciplinares, operacionais, judiciais e protetivas cabíveis. IV. O encaminhamento depende de absolvição definitiva no processo criminal. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas II e IV.",
+          "C) Apenas I, II e III.",
+          "D) Apenas I, III e IV."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.4.1.10, p. 8. Trecho de suporte: “encaminhar o agressor [...] ao CAPS para avaliação psicológica e demais providências pertinentes [...] sem prejuízo da adoção das medidas administrativas, disciplinares, operacionais, judiciais e protetivas cabíveis”. I, II e III correspondem ao dispositivo. IV cria condição suspensiva — absolvição definitiva — que não consta do item."
+      },
+      {
+        "id": 1945,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Alojamento temporário — formalização do ingresso",
+        "text": "QUESTÃO 1945 — Na fase emergencial do acolhimento em alojamento temporário, a Nota atribui ao responsável local providência específica após o ingresso da vítima. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Ao NUPRO-PM cabe formalizar o ingresso e comunicar o fato à Chefia da Divisão de Subsistência.",
+          "B) Ao Oficial de Serviço cabe formalizar o ingresso e comunicar o fato à Chefia da Divisão de Subsistência.",
+          "C) Ao Oficial de Dia ou Fiscal de Dia do Alojamento C cabe formalizar o ingresso e comunicar o fato à Chefia da Divisão de Subsistência.",
+          "D) Ao Cmt/Ch/Dir da OPM cabe formalizar o ingresso e comunicar o fato à Chefia da Divisão de Subsistência."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.5.1.1.2, p. 10. Trecho de suporte: “caberá ao Oficial de Dia ou Fiscal de dia do ‘Alojamento C’ formalizar o ingresso e comunicar o fato à Chefia da Divisão de Subsistência”. A, B e D deslocam a atribuição para outros agentes; o dispositivo individualiza o Oficial de Dia ou Fiscal de Dia do Alojamento C."
+      },
+      {
+        "id": 1946,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Alojamento temporário — acolhimento emergencial e providências administrativas",
+        "text": "QUESTÃO 1946 — Considerando o acolhimento emergencial em alojamento temporário e a formalização do ingresso, assinale a alternativa INCORRETA.",
+        "options": [
+          "A) O acolhimento emergencial deve ser realizado imediatamente, sem exigir prévia formalização por expediente administrativo.",
+          "B) A cobrança de diárias não deve constituir condição para a realização do acolhimento emergencial.",
+          "C) A formalização do ingresso e a comunicação à Chefia da Divisão de Subsistência são providências atribuídas ao Oficial de Dia ou Fiscal de Dia do Alojamento C.",
+          "D) A formalização por expediente administrativo e o recolhimento prévio de diárias constituem requisitos para autorizar o acolhimento emergencial."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (INCORRETA). Fundamentação: Nota de Instrução nº PM3-003/02/26, itens 6.5.1.1 e 6.5.1.1.2, p. 10. O acolhimento é imediato, dispensando prévia formalização por expediente administrativo e cobrança de diárias; a formalização do ingresso compete ao Oficial de Dia ou Fiscal de Dia do Alojamento C. A, B e C correspondem às regras; D transforma em requisitos duas exigências expressamente dispensadas."
+      },
+      {
+        "id": 1947,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atuação do CAPS — acolhimento técnico especializado",
+        "text": "QUESTÃO 1947 — No atendimento psicossocial especializado à vítima, o CAPS deve desenvolver ações que abrangem avaliação e planejamento individualizado. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Realizar acolhimento técnico especializado, avaliação psicossocial, identificação de fatores de risco, vulnerabilidades e recursos disponíveis, articulando planos de intervenção individualizados.",
+          "B) Realizar acolhimento institucional, classificação administrativa do risco, apuração disciplinar e definição de medidas de polícia judiciária militar.",
+          "C) Realizar avaliação clínica, investigação criminal, coleta de depoimentos e deliberação sobre medidas protetivas judiciais.",
+          "D) Realizar triagem funcional, análise de desempenho profissional, classificação disciplinar e definição do procedimento administrativo aplicável."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26, itens 6.6.6.1.4 a 6.6.6.1.6, pp. 12–13. Trecho de suporte: “realizar o acolhimento técnico especializado da vítima [...] avaliação psicossocial, identificação de fatores de risco, vulnerabilidades e recursos disponíveis”. B, C e D agregam funções investigativas, disciplinares ou judiciais que não integram o conteúdo do acolhimento técnico descrito."
+      },
+      {
+        "id": 1948,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Acompanhamento psicossocial — adesão voluntária e autonomia",
+        "text": "QUESTÃO 1948 — A vítima recebeu proposta de medidas no acompanhamento psicossocial e manifestou dúvidas quanto à adesão. À luz da Nota, assinale a alternativa CORRETA.",
+        "options": [
+          "A) A adesão será obrigatória quando houver classificação de risco alto, ainda que a vítima manifeste recusa.",
+          "B) A adesão será voluntária, cabendo aos profissionais orientar sobre relevância e benefícios, com respeito à autonomia e à liberdade de decisão.",
+          "C) A adesão será condicionada à autorização do comandante da OPM, após manifestação do NUPRO-PM.",
+          "D) A adesão será facultativa somente depois do encerramento das providências administrativas e judiciais."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.7.2, p. 14. Trecho de suporte: “a adesão da vítima às medidas propostas [...] será voluntária [...] respeitando sua autonomia e liberdade de decisão”. A transforma a adesão em obrigatória; C cria autorização hierárquica; D posterga a voluntariedade para momento não previsto."
+      },
+      {
+        "id": 1949,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Providências institucionais — coexistência de medidas",
+        "text": "QUESTÃO 1949 — A adoção das medidas de atendimento, acolhimento e proteção previstas na Nota produz qual efeito em relação às demais providências cabíveis?",
+        "options": [
+          "A) Afasta a adoção de medidas disciplinares enquanto estiver ativo o acompanhamento psicossocial.",
+          "B) Suspende as providências penais e judiciais até o encerramento do acompanhamento pelo NUPRO-PM.",
+          "C) Não exclui outras providências cabíveis nos âmbitos administrativo, disciplinar, penal ou judicial.",
+          "D) Substitui as providências administrativas e disciplinares quando houver encaminhamento à rede de saúde."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.7.4, p. 14. Trecho de suporte: “as medidas previstas nesta NI não excluem outras providências cabíveis no âmbito administrativo, disciplinar, penal ou judicial”. A, B e D atribuem efeito suspensivo ou substitutivo que contraria a regra de coexistência de providências."
+      },
+      {
+        "id": 1950,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Proteção documental — classificação e acesso",
+        "text": "QUESTÃO 1950 — Ao organizar a documentação relativa ao atendimento da vítima, a OPM deve observar a classificação da informação e a restrição de acesso. Assinale a alternativa INCORRETA.",
+        "options": [
+          "A) A documentação deve ser avaliada quanto à classificação como informação pessoal, considerando intimidade e vida privada.",
+          "B) Os registros, documentos e atendimentos realizados pelo NUPRO-PM possuem restrição de acesso.",
+          "C) A proteção documental deve observar as normas de acesso à informação e de proteção de dados pessoais.",
+          "D) A documentação poderá ser disponibilizada irrestritamente ao efetivo da OPM, desde que a consulta seja registrada em sistema."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (INCORRETA). Fundamentação: Nota de Instrução nº PM3-003/02/26, itens 6.7.5 e 6.7.7, p. 15. Trechos de suporte: “avaliar a classificação da documentação como informação pessoal”; “os registros, documentos e atendimentos [...] terão restrição de acesso”. A, B e C preservam a classificação e a restrição; D cria acesso geral condicionado apenas a registro de consulta, hipótese não prevista."
+      },
+      {
+        "id": 1951,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Providências do Cmt/Ch/Dir — preservação da integridade e acesso à rede de saúde",
+        "text": "QUESTÃO 1951 — Ao tomar conhecimento de situação de violência doméstica envolvendo policial militar na condição de vítima, o Cmt/Ch/Dir deve:",
+        "options": [
+          "A) Adotar providências imediatas para preservar a integridade da vítima e disponibilizar meios para acesso célere ao CAPS, NAPS, CMed ou rede externa de saúde.",
+          "B) Aguardar a avaliação conclusiva do NUPRO-PM para somente depois disponibilizar meios de acesso ao CAPS, NAPS, CMed ou rede externa de saúde.",
+          "C) Adotar providências imediatas apenas quando houver medida protetiva judicial, restringindo o acesso à rede interna de saúde.",
+          "D) Encaminhar a vítima exclusivamente ao CMed, condicionando o acesso ao CAPS ou NAPS à conclusão da apuração."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.6.8.1, p. 13. Trecho de suporte: “adotar providências imediatas voltadas à preservação da integridade da vítima, disponibilizando meios para acesso célere ao CAPS, NAPS, CMed ou rede externa de saúde”. B posterga a providência; C cria condição judicial e restringe a rede; D torna exclusivo o CMed e condiciona outros atendimentos à apuração."
+      },
+      {
+        "id": 1952,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Providências quando o policial militar figura como autor",
+        "text": "QUESTÃO 1952 — Havendo indícios de envolvimento de policial militar na condição de autor da violência doméstica, analise as proposições: I. Devem ser adotadas as medidas de polícia judiciária militar cabíveis. II. Devem ser adotadas as medidas administrativas cabíveis. III. Podem ser adotadas providências institucionais investigativas, protetivas ou acautelatórias necessárias. IV. As providências institucionais ficam suspensas até a conclusão do acompanhamento psicossocial da vítima. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, II e III.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.6.8.2, p. 14. Trecho de suporte: “adotar [...] as medidas de polícia judiciária militar e administrativas cabíveis, bem como demais providências institucionais de natureza investigativa, protetiva ou acautelatória”. I, II e III correspondem ao item; IV acrescenta suspensão não prevista."
+      },
+      {
+        "id": 1953,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "NUPRO-PM — acompanhamento contínuo e encerramento do caso",
+        "text": "QUESTÃO 1953 — Considerando o acompanhamento institucional da ocorrência pelo NUPRO-PM, assinale a alternativa CORRETA quanto ao marco temporal de sua atuação.",
+        "options": [
+          "A) O acompanhamento inicia-se após a avaliação psicossocial e termina com o primeiro encaminhamento à rede de saúde.",
+          "B) O acompanhamento inicia-se após o registro formal na Polícia Civil e termina com a conclusão do procedimento criminal.",
+          "C) O acompanhamento inicia-se com a decisão judicial sobre medidas protetivas e termina com a revogação dessas medidas.",
+          "D) O acompanhamento ocorre continuamente desde o registro inicial até o encerramento do caso."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.3.7, p. 7. Trecho de suporte: “todas as ocorrências [...] serão acompanhadas continuamente pelo NUPRO-PM, desde o registro inicial até o encerramento do caso”. A, B e C deslocam o termo inicial ou final para marcos que não correspondem à regra expressa."
+      },
+      {
+        "id": 1954,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "NUPRO-PM — fluxo de comunicações e fontes de notícia",
+        "text": "QUESTÃO 1954 — Sobre as formas de comunicação de ocorrência ao NUPRO-PM, analise as proposições: I. A OPM pode encaminhar documentação ou notícia do fato. II. A vítima policial militar pode realizar comunicação direta nas hipóteses previstas na Nota. III. A Polícia Civil comunica o NUPRO-PM após registro em DDM ou Delegacia Policial. IV. A comunicação pela Polícia Civil depende de prévia decisão judicial sobre medida protetiva. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, III e IV.",
+          "C) Apenas I, II e III.",
+          "D) Apenas II, III e IV."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Nota de Instrução nº PM3-003/02/26, itens 6.3.5.1, 6.3.5.3 e 6.3.5.4, pp. 6–7. Os dispositivos preveem encaminhamento pela OPM, comunicação direta pela vítima nas hipóteses delimitadas e comunicação pela Polícia Civil após o registro em DDM ou Delegacia Policial. IV acrescenta decisão judicial prévia, condição não prevista."
+      },
+      {
+        "id": 1955,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Níveis de prevenção — início preferencial do Nível 3",
+        "text": "QUESTÃO 1955 — O Nível 3 — Prevenção e Cuidados Indicados — possui indicação preferencial quanto ao local e aos órgãos de início. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Inicia-se preferencialmente no âmbito externo, por encaminhamento da autoridade judicial ou do Ministério Público.",
+          "B) Inicia-se preferencialmente no âmbito interno da Instituição, por meio do CAPS ou do NUPRO-PM.",
+          "C) Inicia-se exclusivamente na OPM de origem, por determinação do Cmt/Ch/Dir e sem participação do CAPS.",
+          "D) Inicia-se preferencialmente na rede municipal de saúde, após a conclusão da avaliação preliminar pela Polícia Civil."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.2.2.3, pp. 5–6. Trecho de suporte: “Iniciado, preferencialmente, no âmbito interno da Instituição, por meio do CAPS ou do NUPRO-PM”. A desloca o início para órgãos externos; C restringe ao comando local e exclui CAPS; D condiciona a atuação à conclusão de avaliação pela Polícia Civil."
+      },
+      {
+        "id": 1956,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "NUPRO-PM — atribuições institucionais e limites de competência",
+        "text": "QUESTÃO 1956 — No exercício de suas atribuições, o NUPRO-PM recebe notícia de fato e identifica necessidade de proteção. Qual alternativa delimita corretamente sua atuação?",
+        "options": [
+          "A) Recebe denúncias e pedidos de apoio, realiza acolhimento institucional e avaliação preliminar de risco, sem substituir autoridades competentes para decisões judiciais ou disciplinares.",
+          "B) Recebe denúncias e pedidos de apoio, decreta medidas protetivas judiciais e aplica sanções disciplinares ao policial militar autor.",
+          "C) Recebe denúncias e pedidos de apoio, conduz exclusivamente a investigação criminal e decide sobre a responsabilidade penal do agressor.",
+          "D) Recebe denúncias e pedidos de apoio, substitui a OPM na adoção de todas as medidas administrativas e encerra o caso após o primeiro atendimento."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26, itens 6.3.2.1 a 6.3.2.7, p. 6. Trecho de suporte: “receber denúncias e pedidos de apoio; realizar o acolhimento institucional e avaliação preliminar de risco”. B e C atribuem poderes judiciais, disciplinares e de investigação criminal não indicados no rol; D amplia a atuação e contraria o acompanhamento contínuo previsto no item 6.3.7."
+      },
+      {
+        "id": 1957,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Acolhimento institucional — conteúdo do primeiro contato",
+        "text": "QUESTÃO 1957 — A Nota emprega o conceito de acolhimento institucional para caracterizar o primeiro contato estruturado com a vítima. Assinale a alternativa INCORRETA quanto aos elementos desse contato.",
+        "options": [
+          "A) Deve envolver escuta qualificada pelo primeiro interventor, com garantia de sigilo.",
+          "B) Deve permitir avaliação inicial das necessidades e dos riscos envolvidos.",
+          "C) Deve ser estruturado como primeiro contato com a vítima, sem se confundir com decisão final sobre responsabilidade penal ou disciplinar.",
+          "D) Deve ser substituído por interrogatório formal, voltado à definição imediata da responsabilidade penal e disciplinar."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (INCORRETA). Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.1.1, p. 3. Trecho de suporte: “primeiro contato estruturado com a vítima, realizado com escuta qualificada (pelo primeiro interventor), garantindo sigilo e avaliação inicial das necessidades e riscos envolvidos”. A, B e C preservam o caráter de acolhimento inicial; D converte o contato em interrogatório e atribui-lhe finalidade decisória estranha ao conceito."
+      },
+      {
+        "id": 1958,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Risco e providências protetivas — distinção entre classificação e decisão",
+        "text": "QUESTÃO 1958 — Durante o atendimento, o NUPRO-PM identifica fatores que indicam risco alto. Considerando os limites da classificação de risco previstos na Nota, assinale a alternativa CORRETA.",
+        "options": [
+          "A) A classificação de risco alto equivale à decretação de medida protetiva judicial e dispensa encaminhamento à autoridade competente.",
+          "B) A classificação de risco alto define, por si só, a culpabilidade penal e disciplinar do policial apontado como autor.",
+          "C) A classificação de risco alto orienta a adoção de medidas protetivas e providências administrativas urgentes, sem substituir decisões de autoridades competentes.",
+          "D) A classificação de risco alto encerra a avaliação do caso e afasta a necessidade de acompanhamento contínuo pelo NUPRO-PM."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Nota de Instrução nº PM3-003/02/26, itens 6.3.6.3 e 6.3.7, p. 7. O risco alto está associado a agressões graves, ameaça com arma e/ou descumprimento de medidas protetivas de urgência, e orienta providências protetivas e administrativas urgentes. A e B atribuem efeitos decisórios judiciais ou de culpabilidade que não decorrem da classificação; D contraria o acompanhamento contínuo até o encerramento."
+      },
+      {
+        "id": 1959,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Alojamento temporário — sequência de providências",
+        "text": "QUESTÃO 1959 — Analise as proposições relativas ao acolhimento emergencial no Alojamento C: I. O acolhimento deve ocorrer imediatamente. II. A prévia formalização por expediente administrativo é dispensada nessa fase. III. A cobrança de diárias é dispensada nessa fase. IV. O Oficial de Dia ou Fiscal de Dia formaliza o ingresso e comunica a Chefia da Divisão de Subsistência. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I, II e III.",
+          "B) Apenas I, II e IV.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Nota de Instrução nº PM3-003/02/26, itens 6.5.1.1 e 6.5.1.1.2, p. 10. O acolhimento é imediato, dispensa prévia formalização por expediente administrativo e cobrança de diárias; o Oficial de Dia ou Fiscal de Dia do Alojamento C formaliza o ingresso e comunica a Chefia da Divisão de Subsistência. As quatro proposições estão de acordo com os dispositivos."
+      },
+      {
+        "id": 1960,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Atendimento de saúde — atribuição do Centro Médico",
+        "text": "QUESTÃO 1960 — No fluxo de atendimento previsto na Nota, o Centro Médico possui atribuição própria em relação ao policial militar vítima. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Assegurar atendimento médico célere, humanizado e sigiloso, com preservação da integridade física e psicológica da vítima.",
+          "B) Realizar acolhimento técnico especializado, avaliação psicossocial e elaboração de planos de intervenção individualizados.",
+          "C) Avaliar a classificação de risco, acompanhar continuamente a ocorrência e centralizar as comunicações institucionais.",
+          "D) Formalizar o ingresso em alojamento temporário e comunicar a Chefia da Divisão de Subsistência."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Nota de Instrução nº PM3-003/02/26, item 6.6.7.1.1, p. 13. Trecho de suporte: “assegurar o atendimento médico ao policial militar vítima [...] de forma célere, humanizada e sigilosa”. B descreve atribuições do CAPS; C reúne funções do NUPRO-PM; D corresponde ao Oficial de Dia ou Fiscal de Dia do Alojamento C, conforme item 6.5.1.1.2."
+      },
+      {
+        "id": 1961,
+        "subject": "ORGANIZACIONAL",
+        "tag": "PM vítima Violência Doméstica",
+        "topic": "Providências integradas — vítima e agressor policiais militares",
+        "text": "QUESTÃO 1961 — Em ocorrência na qual vítima e agressor são policiais militares, o comandante precisa conciliar proteção, comunicação hierárquica e providências relativas ao autor. Analise as proposições: I. Deve assegurar sigilo das informações e coibir discriminação ou retaliação. II. Deve cientificar imediatamente o Oficial de Serviço. III. Deve ser acionado o superior hierárquico do agressor ou, na ausência deste, o policial militar mais antigo disponível. IV. O encaminhamento do agressor ao CAPS exclui medidas administrativas, disciplinares, operacionais, judiciais e protetivas. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, II e III.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Nota de Instrução nº PM3-003/02/26, itens 6.4.1.1, 6.4.1.2, 6.4.1.6 e 6.4.1.10, pp. 7–8. Os dispositivos exigem sigilo e prevenção de retaliação, ciência imediata do Oficial de Serviço, acionamento da cadeia hierárquica do agressor na ordem indicada e encaminhamento do agressor ao CAPS sem prejuízo de outras medidas. IV inverte expressamente a cláusula “sem prejuízo”."
+      },
+ {
+        "id": 1962,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Distribuição insuficiente — ordem de prioridade entre programas e funções",
+        "text": "QUESTÃO 1962 — Quando o número de COP não permite equipar integralmente o efetivo, a distribuição deve observar a ordem de prioridade prevista no POP 5.28.03. Assinale a alternativa que apresenta a sequência CORRETA após os Programas de Policiamento Primários.",
+        "options": [
+          "A) Programas Complementares; Atividades Operacionais Diversas; Funções de Comando e Supervisão, na ordem CFP, CGP e Supervisor Regional.",
+          "B) Atividades Operacionais Diversas; Programas Complementares; Funções de Comando e Supervisão, na ordem CGP, CFP e Supervisor Regional.",
+          "C) Programas Complementares; Atividades Operacionais Diversas; Funções de Comando e Supervisão, na ordem CGP, CFP e Supervisor Regional.",
+          "D) Funções de Comando e Supervisão; Programas Complementares; Atividades Operacionais Diversas, na ordem CGP, CFP e Supervisor Regional."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: POP 5.28.03, item 5, subitens 5.4 a 5.10, Assuntos Operacionais.pdf, PDF p. 15. Após os Programas Primários, a ordem é Programas Complementares; Atividades Operacionais Diversas; e Funções de Comando e Supervisão, nesta última sequência: CGP, CFP e Supervisor Regional. A altera a ordem entre CGP e CFP; B antecipa Atividades Operacionais Diversas; D antecipa as funções de comando e supervisão."
+      },
+      {
+        "id": 1963,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Obrigatoriedade de uso em operações de restauração da ordem pública",
+        "text": "QUESTÃO 1963 — Havendo disponibilidade do equipamento, o POP torna obrigatório o uso da COP por policiais militares empregados em operações policial-militares para restauração da ordem pública. Analise as proposições: I. Operações de grande envergadura. II. Operações que incluam incursões em comunidades vulneráveis. III. Operações deflagradas em resposta a ataques praticados contra policiais militares. IV. Toda atividade administrativa interna, independentemente de emprego operacional. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, II e III.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: POP 5.28.03, item 6, subitens 6.1 a 6.3, Assuntos Operacionais.pdf, PDF p. 15. O uso é obrigatório, havendo disponibilidade, nas operações de restauração da ordem pública indicadas nos três primeiros incisos. IV amplia a regra para atividade administrativa interna, que não integra as hipóteses do item 6."
+      },
+      {
+        "id": 1964,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Falha de atribuição — sinalização e desligamento automático",
+        "text": "QUESTÃO 1964 — Durante a retirada da COP da doca, o sistema não reconhece o cartão RFID e o equipamento não fica corretamente atribuído ao usuário. Qual comportamento do equipamento está previsto no POP 5.28.01?",
+        "options": [
+          "A) Exibe indicador luminoso vermelho e desliga-se automaticamente após 1 minuto.",
+          "B) Exibe indicador luminoso amarelo e desliga-se automaticamente após 2 minutos.",
+          "C) Emite sinal sonoro contínuo e permanece ligado por 3 minutos para nova tentativa.",
+          "D) Exibe indicador luminoso verde intermitente e bloqueia a gravação após 1 minuto."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: POP 5.28.01, sequência das ações, item 5, Assuntos Operacionais.pdf, PDF p. 3. Se o cartão não for reconhecido ou a COP for retirada sem atribuição correta, o equipamento exibe indicador vermelho e desliga automaticamente após 1 minuto. B, C e D alteram cor, sinalização, duração ou comportamento descritos no item."
+      },
+      {
+        "id": 1965,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Retirada extraordinária da COP do uniforme durante o serviço",
+        "text": "QUESTÃO 1965 — Após o início do serviço, o policial necessita retirar temporariamente a COP da parte superior do tronco. Considerando as hipóteses e cautelas previstas no POP, assinale a alternativa CORRETA.",
+        "options": [
+          "A) A retirada é admitida para ajuste de equipamento ou uso do sanitário, mesmo com gravação em andamento, desde que o policial mantenha a câmera consigo.",
+          "B) A retirada é admitida para ajuste de peças complementares ou uso do sanitário, desde que a COP permaneça sob a guarda de outro policial da mesma OPM.",
+          "C) A retirada é admitida para ajuste de peças complementares ou uso do sanitário, desde que não haja gravação em andamento e outro policial da mesma US fique com a COP.",
+          "D) A retirada é admitida para ajuste de peças complementares ou uso do sanitário, desde que o equipamento permaneça em local seguro da viatura."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: POP 5.28.03, item 13, Assuntos Operacionais.pdf, PDF p. 18. A retirada é extraordinária e limitada ao ajuste durante sobreposição ou retirada de peças complementares do fardamento, ou ao uso do sanitário; não pode haver gravação em andamento e a COP fica sob a guarda de outro policial militar da mesma US. A admite retirada durante gravação; B altera mesma US para mesma OPM; D substitui a guarda por outro policial da US por depósito na viatura."
+      },
+      {
+        "id": 1966,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Informação às partes e ausência de exigência de consentimento",
+        "text": "QUESTÃO 1966 — Iniciada a gravação pela COP, o policial militar deve informar às partes que a cena está sendo registrada. À luz do POP 5.28.03, assinale a alternativa CORRETA.",
+        "options": [
+          "A) A informação deve ocorrer antes do acionamento, e a continuidade da gravação depende de consentimento expresso das partes.",
+          "B) A informação deve ocorrer sempre que for seguro e possível, não sendo necessário consentimento para acionar a COP ou continuar a gravação.",
+          "C) A informação pode ser dispensada quando houver acionamento remoto, mas a continuidade depende de autorização do COPOM.",
+          "D) A informação deve ocorrer somente após o encerramento da ocorrência, sendo dispensável durante o atendimento."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: POP 5.28.03, item 10, Assuntos Operacionais.pdf, PDF p. 17. O policial informa às partes, sempre que seguro e possível, após iniciado o registro; o próprio item esclarece que não há necessidade de consentimento para acionar a COP ou continuar a gravação. A altera o momento e cria consentimento; C cria autorização do COPOM; D posterga a informação para depois da ocorrência."
+      },
+      {
+        "id": 1967,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Omissão inicial por fato impeditivo — retomada e declaração",
+        "text": "QUESTÃO 1967 — Por circunstância impeditiva, o policial não iniciou a gravação quando deveria. Cessado o impedimento, qual providência corretiva específica está prevista no POP 5.28.03?",
+        "options": [
+          "A) Iniciar a gravação no próximo atendimento e registrar a justificativa exclusivamente no RSO ao término do turno.",
+          "B) Solicitar ao COPOM a recuperação retroativa das imagens e aguardar orientação antes de iniciar nova gravação.",
+          "C) Registrar a omissão no BOe e aguardar autorização do escalão superior para iniciar a gravação da interação remanescente.",
+          "D) Iniciar a gravação imediatamente após cessar o fato impeditivo e gravar declaração explicando os motivos de não ter acionado intencionalmente o equipamento."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: POP 5.28.03, Ações Corretivas, item 3, Assuntos Operacionais.pdf, PDF p. 19. O procedimento determina iniciar a gravação imediatamente após cessar o fato impeditivo e gravar declaração explicando os motivos da falta de acionamento intencional. A posterga para atendimento posterior; B pressupõe recuperação retroativa não prevista; C condiciona a retomada a autorização que o item não exige."
+      },
+      {
+        "id": 1968,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "COP inoperante — comunicação, registro e substituição",
+        "text": "QUESTÃO 1968 — A COP tornou-se inoperante durante o serviço por defeito técnico. Considerando as ações corretivas do POP 5.28.03, assinale a alternativa CORRETA.",
+        "options": [
+          "A) Reportar imediatamente ao escalão superior, registrar horário e local em relatório ou BOe, substituir o equipamento se houver disponibilidade e acionar a Central de Serviços de TIC com o número de série.",
+          "B) Reportar ao escalão superior ao término do turno, registrar somente a natureza da falha e solicitar substituição diretamente ao COPOM, sem identificar o equipamento.",
+          "C) Registrar o defeito no RSO, aguardar a conclusão da ocorrência e encaminhar o número de série à Agência de Inteligência para providenciar a substituição.",
+          "D) Comunicar imediatamente o CGP/CFP, registrar apenas o período de inoperância e encaminhar o equipamento à Seção PJMD para substituição."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: POP 5.28.03, Ações Corretivas, item 1, Assuntos Operacionais.pdf, PDF p. 18. A inoperância deve ser comunicada imediatamente ao escalão superior e registrada em relatório ou, se ocorrer durante atendimento, em BOe, com horário e local; o equipamento deve ser substituído se houver disponibilidade e a Central de Serviços de TIC acionada com o número de série gravado no chassi. B posterga e omite dados; C indica destinatário e momento não previstos; D atribui a substituição à PJMD e omite a Central de Serviços de TIC."
+      },
+      {
+        "id": 1969,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Falta de bateria — exceção ao contato com a Central de Serviços de TIC",
+        "text": "QUESTÃO 1969 — Uma COP tornou-se inoperante exclusivamente por falta de bateria. Em relação às providências previstas para equipamento inoperante, assinale a alternativa INCORRETA.",
+        "options": [
+          "A) O fato deve ser reportado imediatamente ao escalão superior.",
+          "B) A ocorrência deve ser registrada em relatório ou, se durante atendimento, em BOe, com horário e local.",
+          "C) Deve ser acionada a Central de Serviços de TIC, com o número de série do equipamento, mesmo quando a causa for exclusivamente falta de bateria.",
+          "D) A substituição imediata deve ser providenciada se houver equipamento disponível."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C (INCORRETA). Fundamentação: POP 5.28.03, Ações Corretivas, itens 1 e 1.1.1, Assuntos Operacionais.pdf, PDF pp. 18–19. A falta de bateria segue as providências do item 1, mas o subitem 1.1.1 dispensa o contato com a Central de Serviços de TIC. A, B e D reproduzem as providências gerais do item 1; C ignora a exceção expressa."
+      },
+      {
+        "id": 1970,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Extravio da COP — desatribuição do usuário",
+        "text": "QUESTÃO 1970 — No caso de extravio da COP, além das providências gerais aplicáveis ao equipamento inoperante, o POP prevê medida específica para desatribuir o equipamento do usuário. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Enviar mensagem ao COPOM, por rádio, solicitando a retirada da COP do cadastro da Unidade de Serviço.",
+          "B) Enviar e-mail à Agência de Inteligência da OPM, solicitando a exclusão do cartão RFID do cadastro institucional.",
+          "C) Encaminhar expediente à Seção PJMD, solicitando a desatribuição da COP do usuário no sistema de armazenamento.",
+          "D) Enviar e-mail para cop@policiamilitar.sp.gov.br, reportando o extravio para desatribuição da COP do usuário."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: POP 5.28.03, Ações Corretivas, item 1.1.3, Assuntos Operacionais.pdf, PDF p. 18. No extravio, além das providências do item 1, deve ser enviado e-mail para cop@policiamilitar.sp.gov.br para desatribuir a COP do usuário. A, B e C indicam destinatários ou meios diferentes do canal expressamente previsto."
+      },
+      {
+        "id": 1971,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Interrupção involuntária — registro do período e comunicação ao CGP/CFP",
+        "text": "QUESTÃO 1971 — A gravação foi interrompida por situação alheia à vontade do policial militar. Segundo as ações corretivas do POP 5.28.03, analise as proposições: I. Registrar o fato em RSO e/ou BOe. II. Fazer constar o período de inoperância e o possível motivo. III. Informar imediatamente o CGP/CFP para a troca do equipamento. IV. Aguardar o término do turno para comunicar a interrupção, desde que o registro seja feito no RSO. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV.",
+          "B) Apenas I, II e III."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: POP 5.28.03, Ações Corretivas, item 5 e subitens 5.1 a 5.3, Assuntos Operacionais.pdf, PDF p. 19. O fato deve ser registrado em RSO e/ou BOe, com período de inoperância e possível motivo, e comunicado imediatamente ao CGP/CFP para troca. IV contraria a exigência de comunicação imediata."
+      },
+      {
+        "id": 1972,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Interrupção durante atendimento — reacionamento manual e persistência da falha",
+        "text": "QUESTÃO 1972 — Durante o atendimento de fato de interesse policial, a gravação já acionada é interrompida. O policial realiza o reacionamento manual, mas a falha persiste. Qual providência complementar determina o POP 5.28.03?",
+        "options": [
+          "A) Informar o escalão superior tão breve quanto possível, solicitando a substituição da COP, além de registrar a falha em BOe ou RSO, conforme o caso.",
+          "B) Aguardar o encerramento do atendimento, registrar a falha apenas no RSO e solicitar substituição no início do próximo turno.",
+          "C) Solicitar ao COPOM a reativação remota e dispensar registro em BOe ou RSO enquanto a câmera permanecer ligada.",
+          "D) Encaminhar a COP à doca para nova atribuição, mantendo o atendimento sem comunicação ao escalão superior."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: POP 5.28.03, sequência de ações, item 9, Assuntos Operacionais.pdf, PDF p. 17. Constatada interrupção durante atendimento, deve haver imediato reacionamento manual e registro da falha em BOe ou RSO, conforme o caso; persistindo a falha, o escalão superior deve ser informado tão breve quanto possível, com solicitação de substituição. B posterga; C dispensa indevidamente registro e substituição; D não contempla comunicação nem solicitação de troca."
+      },
+      {
+        "id": 1973,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Temporalidade mínima — vídeo de rotina e demais evidências",
+        "text": "QUESTÃO 1973 — A temporalidade mínima de armazenamento distingue vídeos de rotina e demais evidências digitais. Considerando também a observação específica sobre os modelos Motorola mais recentes, assinale a alternativa CORRETA.",
+        "options": [
+          "A) Vídeos de rotina: 1 ano; demais evidências digitais: 90 dias; os novos modelos Motorola mantêm gravação contínua em stand-by.",
+          "B) Vídeos de rotina: 90 dias; demais evidências digitais: 1 ano; os novos modelos Motorola não possuem vídeo de rotina, devendo a regra ser observada para imagens do modelo anterior enquanto ainda estiver em curso o período de guarda.",
+          "C) Vídeos de rotina: 90 dias; demais evidências digitais: 2 anos; os novos modelos Motorola mantêm vídeo de rotina apenas durante o turno.",
+          "D) Vídeos de rotina: 1 ano; demais evidências digitais: 2 anos; os novos modelos Motorola não possuem gravação de evidências de interesse policial."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: material complementar sobre disponibilidade e acesso às gravações, Assuntos Operacionais.pdf, PDF p. 54. A temporalidade mínima é de 90 dias para vídeos de rotina e 1 ano para as demais evidências digitais. O material esclarece que as novas COP Motorola não têm vídeo de rotina e que a regra correspondente deve ser observada apenas enquanto ainda houver período de guarda em curso para imagens captadas no modelo anterior. A, C e D alteram os prazos ou a característica dos modelos novos."
+      },
+      {
+        "id": 1974,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Acesso do policial militar às gravações — condição processual e deliberação",
+        "text": "QUESTÃO 1974 — Um policial militar pretende acessar registros audiovisuais vinculados a ocorrência em que atuou, para instruir procedimento administrativo ou judicial. Conforme os esclarecimentos do POP, assinale a alternativa CORRETA.",
+        "options": [
+          "A) O acesso é permitido somente se o policial figurar como testemunha, e o momento será definido pelo Chefe da Seção PJMD.",
+          "B) O acesso é permitido somente se o policial figurar como vítima ou acusado, e o local será definido pelo Cmt da OPM.",
+          "C) O acesso é permitido se o policial figurar como testemunha, vítima ou acusado; se estiver sob investigação por sua conduta, o momento e o local serão deliberados pelo CFP ou pelo Oficial responsável pela investigação.",
+          "D) O acesso é permitido a qualquer policial da OPM, independentemente de vínculo com a ocorrência, e o momento será definido pelo próprio interessado."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: POP 5.28.03, Esclarecimentos, item 9, Assuntos Operacionais.pdf, PDF p. 20. O policial pode acessar registros da ocorrência em que atuou para instruir processos ou procedimentos administrativos e/ou judiciais, na condição de testemunha, vítima ou acusado. Quando estiver sob investigação por sua conduta, o momento e o local de acesso serão deliberados pelo CFP ou pelo Oficial responsável pela investigação. A e B restringem as condições e deslocam a competência; D elimina o vínculo com a ocorrência."
+      },
+      {
+        "id": 1975,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Solicitação de cópias — autoridades e partes envolvidas",
+        "text": "QUESTÃO 1975 — No tocante ao acesso às gravações da COP, o POP diferencia a orientação dirigida às autoridades da orientação destinada às partes envolvidas na ocorrência. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Autoridades, inclusive as legalmente competentes, devem solicitar cópia formalmente ao Cmt do Btl, via Seção de PJMD; às partes envolvidas deve ser orientado o acesso por via judicial.",
+          "B) Autoridades devem solicitar cópia diretamente ao policial usuário; às partes envolvidas deve ser orientado pedido formal ao Cmt do Btl, via Seção de PJMD.",
+          "C) Autoridades devem solicitar cópia ao COPOM, por meio de registro no SIOPM; às partes envolvidas deve ser orientado pedido à Agência de Inteligência da OPM.",
+          "D) Autoridades devem solicitar cópia diretamente à DTIC; às partes envolvidas deve ser orientado requerimento administrativo ao Cmt da Cia PM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: POP 5.28.03, sequência de ações, itens 15 e 16, Assuntos Operacionais.pdf, PDF p. 18. Mesmo autoridades com competência legal devem solicitar cópia formalmente ao Cmt do Btl, via Seção de PJMD; às partes interessadas deve ser orientado que o acesso se realize por via judicial. B, C e D alteram os destinatários ou o canal normativamente indicado."
+      },
+      {
+        "id": 1976,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Ausência de registro audiovisual — instauração obrigatória de investigação preliminar",
+        "text": "QUESTÃO 1976 — Ao atender requisição de evidência digital, constata-se ausência de registro audiovisual da COP decorrente de falha de acionamento, descarga de bateria ou uso em desacordo com as normas. Qual providência está prevista no material complementar?",
+        "options": [
+          "A) Instaurar investigação preliminar somente se não houver outro procedimento apurando a ocorrência principal.",
+          "B) Instaurar investigação preliminar apenas quando a ausência decorrer de falha técnica certificada pela Central de Serviços de TIC.",
+          "C) Registrar a ausência em RSO e aguardar manifestação da Correg PM para decidir se haverá apuração específica.",
+          "D) Instaurar obrigatoriamente investigação preliminar específica, independentemente da existência de outro procedimento que apure a ocorrência em si."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: material complementar sobre disponibilidade e acesso às gravações, Assuntos Operacionais.pdf, PDF p. 54. Identificada, no atendimento de requisição de evidência digital, ausência de registro audiovisual decorrente de falha de acionamento, descarga de bateria ou qualquer outro uso em desacordo com as normas, deve ser obrigatoriamente instaurada investigação preliminar específica, independentemente de outro procedimento apurar a ocorrência em si. A cria condição de inexistência de outro procedimento; B restringe as causas; C substitui a instauração obrigatória por decisão futura."
+      },
+      {
+        "id": 1977,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Busca pessoal minuciosa — registro prévio do ambiente",
+        "text": "QUESTÃO 1977 — Na realização de busca pessoal minuciosa, o POP prevê cautela específica para o registro audiovisual. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) O ambiente deve ser registrado previamente em 360º, com enquadramento horizontal, antes do início da busca.",
+          "B) O ambiente deve ser registrado previamente em 720º, nos planos horizontal e vertical, antes da realização da busca pessoal minuciosa.",
+          "C) O ambiente deve ser registrado em 720º somente após a busca, para documentar o estado final do local.",
+          "D) A COP deve ser direcionada exclusivamente à pessoa abordada, dispensando o registro prévio do ambiente."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: POP 5.28.03, item 12.3, Assuntos Operacionais.pdf, PDF p. 18. Para busca pessoal minuciosa, o ambiente deve ser previamente registrado em 720º, horizontal e vertical. A reduz a abrangência e altera o ângulo; C inverte o momento; D dispensa o registro prévio expressamente exigido."
+      },
+      {
+        "id": 1978,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Propriedade institucional de registros produzidos em serviço",
+        "text": "QUESTÃO 1978 — Um policial militar, durante o cumprimento da missão constitucional e em serviço, registra imagens e áudios por equipamento que não pertence à PMESP. Considerando os esclarecimentos do POP, assinale a alternativa CORRETA.",
+        "options": [
+          "A) Os registros pertencem ao policial que operou o equipamento, salvo se houver requisição judicial.",
+          "B) Os registros pertencem ao proprietário particular do equipamento, cabendo à PMESP apenas solicitar cópia.",
+          "C) As imagens e os áudios são de propriedade da Instituição, ainda que produzidos por equipamento não pertencente à PMESP, quando captados por policial militar em serviço no desenvolvimento de sua missão constitucional.",
+          "D) Os registros pertencem à Instituição somente quando produzidos por COP institucional e armazenados na plataforma oficial."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: POP 5.28.03, Esclarecimentos, item 3, Assuntos Operacionais.pdf, PDF p. 20. O texto atribui à Instituição todas as imagens e áudios produzidos por equipamentos pertencentes ou não à PMESP, quando tomados por policiais militares em serviço no desenvolvimento de sua missão constitucional. A e B atribuem titularidade ao operador ou proprietário do equipamento; D restringe a regra à COP institucional e à plataforma oficial."
+      },
+      {
+        "id": 1979,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Adaptação excepcional — criança/adolescente vítima e crimes sexuais",
+        "text": "QUESTÃO 1979 — Em ocorrência com criança ou adolescente na condição de vítima, ou envolvendo crime de natureza sexual, o uso da COP pode ser temporariamente adaptado. Assinale a alternativa CORRETA quanto aos limites específicos dessa adaptação.",
+        "options": [
+          "A) O registro deve limitar-se às evidências relacionadas ao local do crime ou corpo de delito, sem relação direta com a imagem da vítima e pelo tempo estritamente necessário.",
+          "B) O registro deve ser integralmente interrompido durante toda a ocorrência, inclusive quanto ao local do crime e ao corpo de delito.",
+          "C) O registro deve captar diretamente a imagem da vítima, desde que o arquivo seja classificado como evidência digital de acesso restrito.",
+          "D) O registro deve ser mantido sem limitação temporal, desde que a câmera seja reposicionada para captar apenas o ambiente."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: POP 5.28.03, item 12.2, Assuntos Operacionais.pdf, PDF p. 18. Nessas hipóteses, o registro limita-se às evidências relacionadas ao local do crime ou corpo de delito, sem relação direta com a imagem da vítima e durante o tempo estritamente necessário. B amplia a interrupção para toda a ocorrência; C autoriza captação direta da imagem da vítima; D elimina o limite temporal expresso."
+      },
+      {
+        "id": 1980,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Direitos da pessoa presa — silêncio e continuidade da coleta audiovisual",
+        "text": "QUESTÃO 1980 — Durante a gravação da abordagem, a pessoa presa é informada de que a cena está sendo registrada e manifesta que exercerá o direito ao silêncio. À luz dos esclarecimentos do POP, assinale a alternativa CORRETA.",
+        "options": [
+          "A) O exercício do silêncio determina o encerramento de toda gravação audiovisual, inclusive das demais ações policiais.",
+          "B) O exercício do silêncio impede a continuidade da coleta de imagens, mas permite manter a gravação apenas de áudio.",
+          "C) O exercício do silêncio suspende a gravação até a chegada à unidade policial, quando poderá ser retomada mediante autorização.",
+          "D) O exercício do silêncio encerra a coleta do depoimento, mas não impede a coleta das demais provas em vídeo e áudio."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: POP 5.28.03, Esclarecimentos, item 11, Assuntos Operacionais.pdf, PDF p. 20. O silêncio constitucional pode ser exercido sempre que o policial informa que a cena está sendo gravada, mas não impõe o fim da coleta das demais provas em vídeo e áudio, limitando-se ao depoimento. A, B e C ampliam o efeito do silêncio para além do que estabelece o item."
+      },
+      {
+        "id": 1981,
+        "subject": "OPERACIONAL",
+        "tag": "COP MOTOROLA",
+        "topic": "Classificação das evidências — múltiplas categorias e subetiquetas",
+        "text": "QUESTÃO 1981 — Ao classificar evidência digital produzida pela COP, o policial identifica fato que envolveu uso da força e resultou em morte. Considerando as regras de classificação das etiquetas eletrônicas, analise as proposições: I. A categoria Polícia Judiciária Militar contém evidências de interesse policial que podem compor provas em inquéritos e processos da Justiça Militar Estadual. II. Na hipótese de morte decorrente de intervenção policial, devem ser selecionadas a etiqueta Polícia Judiciária Militar e a subetiqueta MDIP. III. O policial pode selecionar mais de uma categoria, conforme o tipo de ocorrência e seus desdobramentos. IV. A subetiqueta MDIP substitui a categoria Polícia Judiciária Militar, dispensando sua seleção. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, II e III.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: POP 5.28.02, Esclarecimentos, itens 6, 6.6 e 6.7, Assuntos Operacionais.pdf, PDF pp. 11–12. A etiqueta PJM reúne evidências que podem compor provas em inquéritos e processos da Justiça Militar Estadual; em MDIP, devem ser selecionadas PJM e MDIP; e mais de uma categoria pode ser selecionada conforme o fato e seus desdobramentos. IV contraria a determinação de selecionar também a etiqueta Polícia Judiciária Militar."
+      },{
+        "id": 1962,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Programa de Radiopatrulha — gestão ordinária e coordenação em AISP",
+        "text": "QUESTÃO 1962 — Em OPM que adotou o Módulo 3 de Configuração Territorial, a gestão do Programa de Radiopatrulha e a coordenação das Patrulhas dispostas em AISP devem observar a distinção prevista na Diretriz. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) A gestão cabe ordinariamente ao Coord Op Btl; o Cmt Cia PM coordena as Patrulhas dispostas em AISP em todas as configurações territoriais.",
+          "B) A gestão cabe ordinariamente ao CGP; o Coord Op Btl coordena as Patrulhas dispostas em AISP sempre que houver mais de uma Companhia PM.",
+          "C) A gestão cabe ordinariamente ao CFP; o Cmt Cia PM coordena as Patrulhas dispostas em AISP somente nas OPM que optaram pelo Módulo 2.",
+          "D) A gestão cabe ordinariamente ao Cmt Cia PM; o Coord Op Btl ou equivalente coordena as Patrulhas dispostas em AISP somente nas OPM que optaram pelo Módulo 3."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.4, Assuntos Operacionais.pdf, PDF p. 471. A gestão do Programa RP cabe, em regra, aos Cmt Cia PM. O Coord Op Btl (ou equivalente) somente coordena Patrulhas dispostas em AISP, exclusivamente nas OPM que optaram pelo Módulo 3. B e C deslocam a gestão ordinária; D atribui-a ao CFP e troca o Módulo 3 pelo Módulo 2."
+      },
+      {
+        "id": 1963,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — conceito de Nível de Resposta 1",
+        "text": "QUESTÃO 1963 — Considerando a definição de Nível de Resposta 1 empregada na Diretriz do Programa de Radiopatrulha, analise as proposições: I. Abrange ocorrências policiais atendidas com recursos locais. II. Admite uma US atuando unicamente. III. Admite apoio de outras US da Matriz Operacional I, inclusive de OPM limítrofe. IV. Exige, em qualquer hipótese, emprego simultâneo de duas ou mais US. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, III e IV.",
+          "C) Apenas I, II e III.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-002/02/20, item 6.1.5, Assuntos Operacionais.pdf, PDF p. 470. O Nível de Resposta 1 considera recursos locais, com uma US atuando isoladamente e/ou com apoio de outras US da Matriz Operacional I, ainda que de OPM limítrofe. IV é incorreta porque a definição expressamente admite atuação de uma única US."
+      },
+      {
+        "id": 1964,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — atualização diária no SIOPM",
+        "text": "QUESTÃO 1964 — A composição das Patrulhas e os respectivos territórios de atuação sofreram alteração determinada pelo CGP no decorrer do turno. De acordo com a Diretriz, qual providência deve ser adotada no SIOPM?",
+        "options": [
+          "A) Atualizar os dados no início do turno seguinte, salvo se a alteração tiver sido determinada por autoridade superior.",
+          "B) Atualizar os dados semanalmente, desde que a composição e os territórios permaneçam registrados no Plano Diretor da OPM.",
+          "C) Atualizar os dados somente quando houver mudança permanente de composição ou de território, dispensada a atualização por alteração temporária.",
+          "D) Atualizar os dados diariamente, a cada início de turno ou tão logo ocorram alterações promovidas pelo CFP ou CGP, ou determinadas por autoridade competente."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.10, Assuntos Operacionais.pdf, PDF p. 472. A indicação no SIOPM deve ser atualizada diariamente, a cada início de turno ou tão logo ocorram alterações promovidas pelo CFP/CGP ou determinadas por autoridade policial-militar superior competente. A posterga para o turno seguinte; C cria periodicidade semanal; D exclui alterações que também exigem atualização."
+      },
+      {
+        "id": 1965,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — emprego excepcional em Status de Viatura 3",
+        "text": "QUESTÃO 1965 — O Cmt OPM Territorial pretende empregar excepcional e matricialmente Patrulhas do Programa RP no Status de Viatura “3”, em determinados locais e períodos do dia. Assinale a alternativa CORRETA quanto às condições previstas.",
+        "options": [
+          "A) A quantidade empregada pode comprometer o atendimento do Programa RP se houver reforço de Força Tática, sendo vedada a participação de outros programas.",
+          "B) A quantidade empregada deve preservar o atendimento do Programa RP, mas o Programa de Policiamento Escolar pode integrar a ação mesmo quando houver apenas uma Patrulha na Subárea.",
+          "C) A quantidade empregada deve preservar o atendimento do Programa RP, admitindo-se a integração de outros programas, inclusive o Escolar, independentemente do número de Patrulhas na Subárea.",
+          "D) A quantidade empregada não pode inviabilizar o atendimento das demandas do Programa RP; outros programas podem atuar conjuntamente, exceto o Escolar quando dispuser de apenas uma Patrulha na Subárea."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-002/02/20, itens 6.2.13.1 e 6.2.13.2, Assuntos Operacionais.pdf, PDF pp. 472–473. O emprego excepcional não pode inviabilizar as demandas próprias do RP. Outros programas e atividades podem ser empregados em conjunto, exceto o Policiamento Escolar quando dispuser de apenas uma Patrulha na Subárea. A admite comprometimento; B e C afastam a exceção expressa."
+      },
+      {
+        "id": 1966,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — velocidade de patrulhamento e parâmetro mínimo",
+        "text": "QUESTÃO 1966 — Durante o patrulhamento, a viatura deve observar a velocidade compatível com o fluxo de trânsito. Considerando os parâmetros expressos na Diretriz, assinale a alternativa CORRETA.",
+        "options": [
+          "A) A velocidade deve respeitar o limite máximo da via e, como mínimo, um terço desse limite, ressalvado o deslocamento emergencial.",
+          "B) A velocidade deve observar o limite máximo e, como mínimo, metade desse limite, inclusive nos deslocamentos emergenciais.",
+          "C) A velocidade deve ser compatível com o fluxo, observando o limite máximo — exceto em deslocamento emergencial — e o mínimo correspondente à metade da velocidade máxima.",
+          "D) A velocidade deve corresponder à metade do limite máximo em qualquer situação, inclusive quando a viatura estiver em deslocamento emergencial."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.14, Assuntos Operacionais.pdf, PDF p. 473. A condução deve ser compatível com o fluxo, observando velocidade máxima (exceto em deslocamento emergencial) e mínima correspondente à metade da velocidade máxima, sem prejudicar o fluxo normal. A altera a fração; B e D deixam de observar a exceção relativa à velocidade máxima em deslocamento emergencial."
+      },
+      {
+        "id": 1967,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — composição mínima e configuração de viatura",
+        "text": "QUESTÃO 1967 — A Diretriz disciplina a composição da Patrulha e a configuração das viaturas empregadas. Assinale a alternativa INCORRETA.",
+        "options": [
+          "A) A Patrulha será composta por dois policiais militares e poderá utilizar viatura de duas ou quatro rodas, conforme previsão no Plano Diretor.",
+          "B) A Patrulha poderá atuar em um ou mais Subsetores, AISP ou outros parâmetros de distribuição territorial adotados pela OPM.",
+          "C) A composição de dois policiais militares aplica-se à Patrulha, sem afastar a previsão de ocupação individual de cada motocicleta quando empregada viatura de duas rodas.",
+          "D) A Patrulha será composta por dois policiais militares, e cada motocicleta será ocupada por dois policiais, conforme o módulo territorial."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (INCORRETA). Fundamentação: Diretriz nº PM3-002/02/20, itens 6.2.8 e 6.2.9.2, Assuntos Operacionais.pdf, PDF p. 472. A Patrulha é composta por dois policiais militares; pode usar viatura de duas ou quatro rodas conforme o Plano Diretor; cada motocicleta é ocupada por apenas um policial. D cria composição de três policiais não prevista para a Patrulha RP. A, B e C correspondem às regras citadas."
+      },
+      {
+        "id": 1968,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — atendimento imediato e apoio de outras matrizes",
+        "text": "QUESTÃO 1968 — Uma Patrulha do Programa RP recebe ocorrência cuja natureza e complexidade exigem reforço. À luz do Nível de Resposta atribuído à Patrulha, assinale a alternativa CORRETA.",
+        "options": [
+          "A) A Patrulha inicia o atendimento e pode receber apoio de qualquer Matriz quando a natureza, gravidade ou complexidade da ocorrência exigir.",
+          "B) A Patrulha aguarda reforço da Matriz I antes do atendimento, salvo se o COPOM determinar o início imediato da intervenção.",
+          "C) A Patrulha atende de imediato, mas recebe apoio somente de US da mesma OPM e da Matriz Operacional I.",
+          "D) A Patrulha solicita apoio de outra Matriz após autorização do Coord Op Btl, mesmo quando a ocorrência exigir resposta urgente."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.7, Assuntos Operacionais.pdf, PDF p. 471. A Patrulha atua sempre no Nível de Resposta 1, prestando pronto atendimento urgente e imediato, podendo receber apoio de outras Patrulhas de qualquer Matriz Operacional se a natureza, gravidade ou complexidade exigir. B condiciona o início; C restringe a origem do apoio; D cria autorização prévia não prevista."
+      },
+      {
+        "id": 1969,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — distribuição racional e ação geral de presença",
+        "text": "QUESTÃO 1969 — Ao revisar a distribuição territorial das Patrulhas do Programa RP, o comando pretende ampliar a presença ostensiva e a acessibilidade da população. Analise as proposições: I. As Patrulhas devem ser distribuídas racionalmente na circunscrição da OPM. II. A distribuição deve buscar maior alcance visual e, consequentemente, acessibilidade à população. III. A viatura deve ser estacionada de modo a proporcionar a maior visibilidade possível ao público. IV. A distribuição deve priorizar a concentração das Patrulhas nas instalações policial-militares, ainda que reduza o alcance visual nas áreas de patrulhamento. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas II, III e IV.",
+          "C) Apenas I, II e III.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-002/02/20, itens 6.2.12.1 e 6.2.12.2, Assuntos Operacionais.pdf, PDF p. 472. A norma prevê distribuição racional das Patrulhas na circunscrição para maior alcance visual e acessibilidade à população, além de estacionamento da viatura para máxima visibilidade. IV introduz concentração em instalações como prioridade, em sentido contrário às medidas expressas."
+      },
+      {
+        "id": 1970,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — concentração de patrulhas em ocorrências graves",
+        "text": "QUESTÃO 1970 — Em ocorrência de maior gravidade, o CGP avalia reunir Patrulhas do Programa RP que se encontram nas proximidades. Assinale a alternativa CORRETA quanto ao procedimento subsequente.",
+        "options": [
+          "A) A reunião depende de autorização do Coord Op Btl, e as Patrulhas permanecem no local até o encerramento do turno.",
+          "B) O CGP ou autoridade superior pode reunir as Patrulhas próximas, coordenar a intervenção e determinar seu retorno imediato aos locais de patrulhamento.",
+          "C) A reunião cabe apenas ao CFP, e as Patrulhas são redistribuídas pelo COPOM após o encerramento da intervenção local.",
+          "D) A reunião pode ser determinada pelo CGP, mas o retorno depende de nova análise do PPI e de ordem do comando superior."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.11, Assuntos Operacionais.pdf, PDF p. 472. Nos casos mais graves, o CGP ou autoridade de comando/supervisão superior pode reunir as Patrulhas mais próximas, coordenar intervenções locais diretas e, após estas, as Patrulhas devem retornar imediatamente aos locais de patrulhamento. A e C alteram autoridade e permanência; D posterga o retorno."
+      },
+      {
+        "id": 1971,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — atribuições da Coord Op PM e dos comandos de policiamento",
+        "text": "QUESTÃO 1971 — Sobre as atribuições particulares previstas na Diretriz do Programa RP, analise as proposições: I. A Coord Op PM monitora e supervisiona o desenvolvimento do Programa por meio do Guia de Indicadores dos Programas de Policiamento. II. CPC, CPM, CPI e CPA gerenciam a alocação de recursos das OPM subordinadas. III. Os mesmos comandos gerenciam a coleta de informações do Guia e monitoram seu registro na plataforma da Coord Op PM. IV. A Coord Op PM realiza diretamente a distribuição diária das Patrulhas de cada Cia PM. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, II e III.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-002/02/20, itens 6.3.1, 6.3.2.1 e 6.3.2.2, Assuntos Operacionais.pdf, PDF pp. 473–474. A Coord Op PM monitora e supervisiona por meio do Guia; CPC, CPM, CPI e CPA gerenciam alocação de recursos e coleta/registro das informações. IV atribui à Coord Op PM distribuição diária de Patrulhas, atribuição não descrita nesses dispositivos."
+      },
+      {
+        "id": 1972,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — emprego de arma portátil e equipamentos do CFP/CGP",
+        "text": "QUESTÃO 1972 — A Diretriz distingue a possibilidade de emprego de arma portátil pela Patrulha e a obrigatoriedade de equipamentos para CFP e CGP. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) A Patrulha utiliza arma portátil quando houver disponibilidade; CFP e CGP podem portá-la após autorização individual do Cmt Cia PM.",
+          "B) A Patrulha pode portar arma portátil sem habilitação; CFP e CGP precisam de habilitação apenas para utilizar escudo balístico.",
+          "C) A Patrulha pode portar arma portátil se habilitada e autorizada; CFP e CGP a utilizam obrigatoriamente, e ao menos o CFP dispõe de escudo e instrumentos de menor potencial ofensivo.",
+          "D) A Patrulha e o CGP podem portar arma portátil mediante autorização; somente o CGP deve utilizar escudo e instrumentos de menor potencial ofensivo."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-002/02/20, itens 6.2.17 e 6.2.18, Assuntos Operacionais.pdf, PDF p. 473. Para a Patrulha, o emprego de arma portátil é possível se os policiais forem habilitados e houver autorização dos escalões superiores. CFP e CGP devem utilizá-la obrigatoriamente, com habilitação controlada pelas Seções Operacionais/Gabinetes de Treinamento; pelo menos o CFP também deve dispor de escudo balístico e instrumentos de menor potencial ofensivo. A e B alteram condições; D transfere os equipamentos adicionais ao CGP."
+      },
+      {
+        "id": 1973,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — regime de trabalho e trocas de turno",
+        "text": "QUESTÃO 1973 — Ao organizar o regime de trabalho e as trocas de turno do Programa RP, o comando da OPM deve observar qual referência normativa indicada expressamente na Diretriz?",
+        "options": [
+          "A) O subitem 6.10 e suas divisões das NORSOP, observada a regulamentação institucional em vigor.",
+          "B) O subitem 6.2.10 e suas divisões da Diretriz RP, observada a disponibilidade de viaturas da OPM.",
+          "C) O subitem 6.3 e suas divisões da Diretriz RP, observadas as orientações do Guia de Indicadores.",
+          "D) O subitem 6.4 e suas divisões das NORSOP, observadas as determinações do COPOM."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.19, Assuntos Operacionais.pdf, PDF p. 473. O regime de trabalho e as trocas de turnos devem observar o subitem 6.10 e divisões das NORSOP, além da regulamentação institucional em vigor. B, C e D indicam referências distintas e não previstas para essa matéria."
+      },
+      {
+        "id": 1974,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — prioridade de desenvolvimento dos programas primários",
+        "text": "QUESTÃO 1974 — A Matriz Operacional I compreende o Programa RP, Programas Complementares e Atividades Operacionais Diversas. Considerando a classificação dos Programas de Policiamento Primários, assinale a alternativa CORRETA.",
+        "options": [
+          "A) Os programas primários são Radiopatrulha e Policiamento Escolar, prioritários sobre Força Tática e atividades diversas.",
+          "B) Os programas primários são Radiopatrulha e Força Tática, prioritários sobre os demais programas e atividades operacionais diversas.",
+          "C) Os programas primários são Força Tática e Policiamento Comunitário, prioritários sobre Radiopatrulha e atividades diversas.",
+          "D) Todos os programas da Matriz I são primários, sem prioridade interna entre programas e atividades diversas."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-002/02/20, itens 6.1.4 e 6.1.6, Assuntos Operacionais.pdf, PDF p. 470. A Matriz Operacional I é composta pelo RP, Programas Complementares e Atividades Operacionais Diversas; os Programas Primários são especificamente RP e Força Tática, prioritários em relação aos demais. A e C trocam programas; D elimina a classificação expressa."
+      },
+      {
+        "id": 1975,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — exceção de trânsito no ponto de estacionamento ou ocorrência",
+        "text": "QUESTÃO 1975 — A viatura da Patrulha encontra-se em Ponto de Estacionamento ou atendendo ocorrência. Em relação à observância das normas de trânsito, assinale a alternativa INCORRETA.",
+        "options": [
+          "A) A regra é observar as normas de trânsito durante o emprego da viatura em Ponto de Estacionamento ou atendimento de ocorrência.",
+          "B) Pode haver circunstância contrária em razão das características da ocorrência, de sua urgência ou para garantir a segurança das pessoas envolvidas.",
+          "C) Na hipótese excepcional, devem ser adotados procedimentos para evitar acidentes e/ou prejuízos ao tráfego.",
+          "D) A urgência da ocorrência dispensa a adoção de procedimentos destinados a evitar acidentes e prejuízos ao tráfego."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (INCORRETA). Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.15, Assuntos Operacionais.pdf, PDF p. 473. A regra é observar as normas de trânsito, admitindo-se circunstância contrária por características, urgência ou segurança das pessoas, mas com adoção de todos os procedimentos para evitar acidentes e prejuízos ao tráfego. A, B e C reproduzem a regra e a ressalva; D elimina a cautela obrigatória."
+      },
+      {
+        "id": 1976,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — finalidade e fontes de demanda de segurança pública",
+        "text": "QUESTÃO 1976 — A Diretriz caracteriza o Programa RP como voltado ao policiamento ostensivo e ao atendimento das demandas de segurança pública. Analise as proposições: I. Abrange demandas originadas pelo telefone de emergência 190. II. Abrange solicitações diretas junto às US. III. Abrange solicitações junto a instalações policial-militares ou outras plataformas digitais. IV. Restringe o atendimento às chamadas recebidas pelo telefone 190. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, II e III.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-002/02/20, item 3.2, Assuntos Operacionais.pdf, PDF p. 469. A demanda inclui chamadas pelo 190, solicitações diretas às US, instalações policial-militares e outras plataformas digitais. IV restringe o atendimento a apenas uma das fontes expressamente indicadas."
+      },
+      {
+        "id": 1977,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — alinhamento entre Plano Diretor e emprego efetivo dos recursos",
+        "text": "QUESTÃO 1977 — Ao gerenciar recursos destinados ao Programa RP, CPC, CPM, CPI e CPA devem assegurar qual correspondência entre planejamento e execução?",
+        "options": [
+          "A) As informações dos Planos Diretores devem ser alinhadas à aplicação efetiva dos recursos alocados pelas OPM subordinadas.",
+          "B) As informações do Guia de Indicadores devem substituir o Plano Diretor na definição da alocação dos recursos pelas OPM subordinadas.",
+          "C) A alocação deve ser definida exclusivamente pela Coord Op PM, cabendo aos comandos de policiamento apenas registrar os resultados.",
+          "D) A alocação deve ser vinculada ao Plano Diretor somente depois da execução, para permitir ajustes conforme os resultados obtidos."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-002/02/20, item 6.3.2.1, Assuntos Operacionais.pdf, PDF p. 473. CPC, CPM, CPI e CPA gerenciam a alocação de recursos do Programa RP por suas OPM subordinadas, garantindo alinhamento das informações dos Planos Diretores à aplicação efetiva. B substitui indevidamente o Plano Diretor; C desloca a competência; D inverte o vínculo entre planejamento e aplicação."
+      },
+      {
+        "id": 1978,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — Nível de Resposta e apoio de matriz operacional diversa",
+        "text": "QUESTÃO 1978 — A Diretriz define a Patrulha do Programa RP como empregada sempre em determinado Nível de Resposta, embora admita reforço de outras estruturas. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) A Patrulha atua no Nível 2 e recebe apoio apenas de US da Matriz Operacional I, ainda que a ocorrência seja complexa.",
+          "B) A Patrulha atua no Nível 1 e recebe apoio somente de US da própria OPM, conforme a distribuição territorial ordinária.",
+          "C) A Patrulha atua no Nível 1 e pode receber apoio de qualquer Matriz quando a natureza, gravidade ou complexidade da situação exigir.",
+          "D) A Patrulha passa ao Nível 4 quando recebe apoio especializado e assume a coordenação das demais matrizes envolvidas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-002/02/20, item 6.2.7, Assuntos Operacionais.pdf, PDF p. 471. A Patrulha RP atua sempre no Nível de Resposta 1 e pode receber apoio de Patrulhas de qualquer Matriz Operacional se a situação exigir. A, B e D alteram o nível ou restringem/ampliam os efeitos do apoio."
+      },
+      {
+        "id": 1979,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — Plano Diretor e emprego de motocicletas",
+        "text": "QUESTÃO 1979 — Uma OPM pretende empregar motocicletas no Programa RP em razão das características topográficas e da necessidade de maior rapidez em determinados locais. Analise as proposições: I. O emprego deve estar previsto no Plano Diretor. II. A decisão considera conveniência do Cmt OPM, necessidade operacional e disponibilidade de meios. III. Cada motocicleta será ocupada por apenas um policial militar. IV. A Patrulha com motocicletas deve ser empregada preferencialmente entre 06h00 e 23h00, sem possibilidade de realocação para viatura de quatro rodas durante o turno. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, II e III.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-002/02/20, itens 6.2.9 a 6.2.9.4, Assuntos Operacionais.pdf, PDF p. 472. O emprego deve estar previsto no Plano Diretor, depende da conveniência do Cmt OPM, necessidade e meios, e cada motocicleta terá um policial. O período 06h00–23h00 é preferencial, e a Patrulha pode ser realocada entre motocicleta e viatura de quatro rodas conforme serviço, local e clima; IV erra ao vedar a realocação."
+      },
+      {
+        "id": 1980,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — atribuição institucional de monitoramento por indicadores",
+        "text": "QUESTÃO 1980 — No acompanhamento do desenvolvimento do Programa RP, a Coord Op PM utiliza o Guia de Indicadores dos Programas de Policiamento. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) A Coord Op PM monitora e supervisiona o Programa RP por meio do Guia de Indicadores dos Programas de Policiamento.",
+          "B) A Coord Op PM gerencia exclusivamente a coleta dos dados das OPM subordinadas e a atualização de Planos Diretores.",
+          "C) A Coord Op PM fiscaliza diretamente cada Patrulha em serviço, substituindo o comando gerencial das Cias PM.",
+          "D) A Coord Op PM elabora os CPP das Patrulhas e define os territórios de atuação de cada US."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-002/02/20, item 6.3.1, Assuntos Operacionais.pdf, PDF p. 473. A Coord Op PM monitora e supervisiona o desenvolvimento do Programa RP por meio do Guia de Indicadores. B desloca atribuições de CPC/CPM/CPI/CPA; C contraria a gestão ordinária dos Cmt Cia PM; D atribui tarefas de planejamento territorial que não constam do item."
+      },
+      {
+        "id": 1981,
+        "subject": "OPERACIONAL",
+        "tag": "Radiopatrulha",
+        "topic": "Radiopatrulha — data de edição e diretriz revogada",
+        "text": "QUESTÃO 1981 — A Diretriz nº PM3-002/02/20, que disciplina o Programa de Radiopatrulha, revogou expressamente atos normativos anteriores. Assinale a alternativa que identifica corretamente uma das diretrizes revogadas e sua data.",
+        "options": [
+          "A) Diretriz nº PM3-011/02/05, de 07NOV05, relativa ao Programa de Radiopatrulha — Atendimento 190.",
+          "B) Diretriz nº PM3-011/02/05, de 30OUT12, relativa ao emprego de motocicletas no Programa RP.",
+          "C) Diretriz nº PM3-012/02/05, de 06MAR20, relativa ao Programa de Policiamento Integrado.",
+          "D) Diretriz nº PM3-004/02/12, de 07NOV05, relativa ao Programa de Radiopatrulha — Atendimento 190."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-002/02/20, item 6.4.1.1, Assuntos Operacionais.pdf, PDF p. 474. A norma revoga a Diretriz nº PM3-011/02/05, de 07NOV05, Programa de Radiopatrulha — Atendimento 190. B associa o número 011/02/05 à data e ao assunto da diretriz 004/02/12; C atribui à diretriz 012/02/05 a data da NORSOP; D troca número, data e assunto."
+      },
+ {
+        "id": 1982,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — definição normativa de ambiente rural",
+        "text": "QUESTÃO 1982 — Para aplicação da Diretriz nº PM3-007/02/20, a delimitação do ambiente rural considera critérios territoriais e características predominantes do espaço. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Espaço situado necessariamente fora dos limites estaduais, com baixa densidade demográfica e predominância exclusiva de atividades agrícolas.",
+          "B) Espaço territorial situado dentro do Perímetro Urbano, desde que apresente baixa densidade demográfica e atividades econômicas de criação de animais.",
+          "C) Espaço territorial situado, em princípio, fora dos limites legais do Perímetro Urbano estabelecidos pelo Município, normalmente com baixa densidade demográfica e atividades vinculadas à terra.",
+          "D) Espaço territorial delimitado pelo comando da OPM, independentemente do Perímetro Urbano municipal, da densidade demográfica e das atividades desenvolvidas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-007/02/20, item 6.1.4, Assuntos Operacionais.pdf, PDF p. 476. Ambiente Rural é espaço territorial, em princípio, fora dos limites legais estabelecidos pelo Poder Público Municipal como Perímetro Urbano, normalmente com baixa densidade demográfica e atividades extrativistas, agrárias, de criação de animais ou congêneres vinculadas à terra. A desloca os limites para o Estado e restringe as atividades; C situa o ambiente dentro do perímetro urbano; D substitui o critério legal por delimitação operacional."
+      },
+      {
+        "id": 1983,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — Nível de Resposta das estruturas do CPAmb",
+        "text": "QUESTÃO 1983 — As estruturas do CPAmb vinculadas à Matriz Operacional III podem atuar no Programa Pol Rr em modalidades distintas. Analise as proposições: I. O emprego ocorre de forma integrada e compartilhada com OPM Territoriais e Rodoviárias quando presente fator de implantação. II. Utilizam-se recursos próprios das unidades subordinadas. III. Ordinariamente, para atividades típicas de policiamento ostensivo geral rural, atuam no Nível de Resposta 1. IV. Quando necessário apoio especializado a qualquer US, podem atuar no Nível de Resposta 4. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, II e III.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.3.1.2.1 a 6.3.1.2.3, Assuntos Operacionais.pdf, PDF pp. 477–478. O CPAmb atua de forma integrada e compartilhada com OPM Territoriais e Rodoviárias, com recursos próprios; ordinariamente no Nível 1 e, para apoio especializado, no Nível 4. As quatro proposições correspondem aos dispositivos."
+      },
+      {
+        "id": 1984,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — diferença entre estrutura territorial e emprego pelo PPI",
+        "text": "QUESTÃO 1984 — As OPM Territoriais subordinadas ao CPC, CPM e CPI podem desenvolver o Policiamento Geral Rural com recursos especificamente destinados ao Programa ou por meio de outros programas e atividades. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Em ambas as formas de emprego, os recursos humanos e materiais devem constar detalhadamente do Plano Diretor, qualquer que seja sua origem.",
+          "B) Com recursos específicos, a composição da Ptr Rr consta do Plano Diretor; nos demais programas ou atividades, a atuação segue o PPI sem detalhar os recursos no Plano Diretor.",
+          "C) Com recursos específicos, a composição da Ptr Rr pode ser omitida; nos demais programas, exige-se CPP em substituição ao PPI da OPM.",
+          "D) A atuação por outros programas depende de autorização do CPAmb e de cadastramento prévio dos policiais no Plano Diretor da OPM."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.3.1.1.1 e 6.3.1.1.2, Assuntos Operacionais.pdf, PDF p. 477. Recursos especificamente destinados ao Pol Rr devem ter a composição da Ptr Rr consignada nos Planos Diretores. Quando a atuação ocorre por outros programas ou atividades, as missões seguem o PPI da OPM e não há necessidade de detalhamento dos recursos envolvidos no Plano Diretor. A generaliza a exigência; C inverte as regras; D cria autorização e requisito inexistentes."
+      },
+      {
+        "id": 1985,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — Matriz Operacional e nível de resposta das OPM territoriais",
+        "text": "QUESTÃO 1985 — Sobre as estruturas territoriais que desenvolvem o Programa Pol Rr, assinale a alternativa INCORRETA.",
+        "options": [
+          "A) As estruturas territoriais com recursos especificamente destinados ao Programa integram a Matriz Operacional I, conforme a Diretriz.",
+          "B) As estruturas territoriais que atuam por outros programas ou atividades também integram a Matriz Operacional I.",
+          "C) As US territoriais atuam sempre no Nível de Resposta 1, inclusive quando houver apoio especializado de outra Matriz.",
+          "D) As estruturas territoriais específicas integram a Matriz III, enquanto as que atuam por outros programas integram a Matriz Operacional I."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (INCORRETA). Fundamentação: Diretriz nº PM3-007/02/20, itens 6.3.1.1.1 a 6.3.1.1.4, Assuntos Operacionais.pdf, PDF p. 477. As estruturas territoriais, tanto as especificamente destinadas ao Programa quanto as que atuam por outros programas/atividades, integram a Matriz Operacional I, e suas US atuam no Nível de Resposta 1. D desloca indevidamente as estruturas específicas para a Matriz III."
+      },
+      {
+        "id": 1986,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — atuação do CPRv e níveis de resposta",
+        "text": "QUESTÃO 1986 — O CPRv atua de forma complementar às OPM Territoriais e Ambientais no Programa Pol Rr. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) O CPRv utiliza recursos territoriais, atua no Nível 4 ordinariamente e no Nível 1 quando presta apoio especializado.",
+          "B) O CPRv utiliza recursos próprios, atua no Nível 1 ordinariamente e no Nível 4, excepcionalmente, para apoio especializado.",
+          "C) O CPRv utiliza recursos próprios, atua no Nível 4 ordinariamente e no Nível 1 para prevenção e repressão imediata em seu ambiente.",
+          "D) O CPRv substitui as OPM Territoriais e Ambientais e atua exclusivamente no Nível 1 em todas as situações."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, item 6.3.1.3, Assuntos Operacionais.pdf, PDF p. 478. O CPRv atua complementarmente às OPM Territoriais e Ambientais, com recursos próprios; ordinariamente no Nível 1 para prevenção e repressão imediata no seu ambiente e excepcionalmente no Nível 4 para apoio especializado. A, C e D trocam recursos, níveis ou caráter complementar."
+      },
+      {
+        "id": 1987,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — processo de policiamento conforme características geográficas",
+        "text": "QUESTÃO 1987 — Uma circunscrição rural possui rios, trilhas, montanhas, áreas de preservação e terrenos acidentados. Considerando a Diretriz, assinale a alternativa CORRETA quanto aos processos de policiamento admitidos.",
+        "options": [
+          "A) O processo deve ser motorizado, salvo autorização do CPAmb para o emprego de embarcação em rios e represas.",
+          "B) O processo deve ser motorizado ou montado, não se admitindo emprego aéreo ou atuação com cães no ambiente rural.",
+          "C) O processo pode ser motorizado, náutico, aéreo, montado ou com cães, conforme a geografia e o planejamento conjunto das OPM envolvidas.",
+          "D) O processo deve ser definido pelo Cmt Cia Territorial, sem considerar o planejamento conjunto das OPM especializadas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-007/02/20, item 6.3.2, Assuntos Operacionais.pdf, PDF p. 478. Consideradas as características geográficas e situações indicadas pelo planejamento conjunto, o policiamento pode utilizar qualquer processo, inclusive motorizado, náutico, aéreo, montado ou com cães. A e B restringem modalidades; D elimina o planejamento conjunto."
+      },
+      {
+        "id": 1988,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — composição da US e funções dos integrantes",
+        "text": "QUESTÃO 1988 — A Diretriz estabelece limites de efetivo e distribuição de funções para a US que atua no ambiente rural. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) A US terá de dois a quatro policiais, com encarregado, motorista e auxiliar obrigatórios quando houver quatro integrantes.",
+          "B) A US terá no mínimo dois e no máximo três policiais; se houver três, haverá encarregado, motorista e/ou auxiliar, com graduações preferenciais.",
+          "C) A US terá três policiais obrigatoriamente, com Subtenente/Sargento encarregado, Cabo/Soldado motorista e Cabo/Soldado auxiliar.",
+          "D) A US terá um ou dois policiais, cabendo ao Cmt Cia PM definir a inclusão de auxiliar conforme a disponibilidade local."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.1.1, Assuntos Operacionais.pdf, PDF p. 478. A US terá no mínimo dois e no máximo três policiais; quando composta por três, haverá um encarregado (preferencialmente Subten/Sgt), um motorista (Cb/Sd) e/ou um auxiliar (Cb/Sd). A e D alteram limites; C transforma o máximo em composição obrigatória e a preferência em requisito absoluto."
+      },
+      {
+        "id": 1989,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — sistema de radiocomunicação compartilhado",
+        "text": "QUESTÃO 1989 — A Diretriz determina que o sistema de radiocomunicação utilizado no Programa Pol Rr seja compartilhado entre as OPM envolvidas. Qual finalidade normativa está expressamente associada a essa exigência?",
+        "options": [
+          "A) Permitir o conhecimento e acompanhamento mútuo das ações desencadeadas e viabilizar esforços conjugados para maximizar os efeitos preventivos do Programa.",
+          "B) Centralizar o despacho de todas as ocorrências rurais no COPOM da OPM territorial, dispensando comunicação entre as unidades especializadas.",
+          "C) Garantir que cada OPM mantenha canal exclusivo e independente, evitando o acompanhamento das ações desenvolvidas pelas demais.",
+          "D) Permitir somente a transmissão de dados estatísticos ao Guia de Indicadores, sem interferir na coordenação operacional das ações."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.1.5, Assuntos Operacionais.pdf, PDF p. 478. O compartilhamento permite conhecimento e acompanhamento mútuo das ações e viabiliza esforços conjugados para maximizar efeitos preventivos. B restringe a finalidade ao despacho e dispensa integração; C contraria o compartilhamento; D reduz a finalidade a estatística."
+      },
+      {
+        "id": 1990,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — responsabilidade gerencial do Programa",
+        "text": "QUESTÃO 1990 — Em determinada subárea, o Programa Pol Rr é executado com participação de OPM Territorial, Ambiental e Rodoviária. A quem a Diretriz atribui a responsabilidade gerencial sobre o Programa Pol Rr?",
+        "options": [
+          "A) Aos comandantes das OPM Pol Amb, em razão da natureza rural das áreas de preservação.",
+          "B) Aos comandantes das OPM Pol Rv, por coordenarem a circulação nas estradas rurais.",
+          "C) Ao Cmt Cia PM Territorial, que detém a responsabilidade gerencial sobre o Programa Pol Rr.",
+          "D) Ao Coord Op Btl, independentemente da configuração territorial e da participação das OPM envolvidas."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.2, Assuntos Operacionais.pdf, PDF p. 478. A responsabilidade gerencial sobre o Programa Pol Rr é dos Cmt Cia PM Territoriais. A e B atribuem-na às OPM especializadas; D desloca a responsabilidade para o Coord Op Btl."
+      },
+      {
+        "id": 1991,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — dados para elaboração do PPI",
+        "text": "QUESTÃO 1991 — Na elaboração do PPI voltado ao Programa Pol Rr, as camadas de dados de interesse devem ser obtidas de fontes determinadas pela Diretriz. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Exclusivamente de registros de ocorrências policiais e de estatísticas municipais consolidadas pela Secretaria de Segurança Pública.",
+          "B) De dados georreferenciados obtidos junto aos Sistemas Inteligentes e de informações das comunidades rurais consideradas relevantes para o Programa.",
+          "C) De cadastros de propriedades rurais elaborados pelas associações comunitárias, sem utilização dos Sistemas Inteligentes.",
+          "D) De dados do COPOM/CAD e de levantamentos das OPM especializadas, dispensadas informações oriundas das comunidades rurais."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.3.1, Assuntos Operacionais.pdf, PDF p. 478. As camadas de dados devem ser obtidas de dados georreferenciados junto aos Sistemas Inteligentes e de informações oriundas das comunidades rurais relevantes ao Programa. A, C e D restringem ou substituem uma das fontes expressamente previstas."
+      },
+      {
+        "id": 1992,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — delimitação conjunta das áreas e elaboração dos CPP",
+        "text": "QUESTÃO 1992 — Em razão da extensão territorial das áreas rurais, a Diretriz atribui a determinados comandantes a definição conjunta dos espaços físicos de atuação das US. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) Os Cmt Cia PM Territoriais e os comandantes, até o nível Pel PM, das OPM Pol Amb e Pol Rv dos territórios correspondentes estabelecem conjuntamente as áreas, que devem constar dos CPP.",
+          "B) Os Cmt Btl Territoriais e os comandantes de Companhia das OPM Pol Amb e Pol Rv estabelecem isoladamente as áreas, registradas apenas nos Planos Diretores.",
+          "C) Os Cmt Cia PM Territoriais definem as áreas após consulta ao COPOM, cabendo às OPM Pol Amb e Pol Rv apenas cumprir os CPP recebidos.",
+          "D) Os comandantes até nível Pel PM das OPM Pol Amb e Pol Rv definem as áreas, dispensada a participação dos Cmt Cia PM Territoriais."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.3.2, Assuntos Operacionais.pdf, PDF p. 478–479. A definição é conjunta entre Cmt Cia PM Territorial e comandantes, até nível Pel PM, das OPM Pol Amb e Pol Rv dos territórios correspondentes; os espaços devem ser previstos em CPP. B altera escalões e documento; C e D retiram a participação conjunta de um dos grupos."
+      },
+      {
+        "id": 1993,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — periodicidade mínima de participação nas RAC",
+        "text": "QUESTÃO 1993 — Os comandantes das OPM de Policiamento Ambiental e Rodoviário devem participar das Reuniões de Análise Crítica junto aos Batalhões Territoriais abrangidos por suas circunscrições. Qual periodicidade mínima consta da Diretriz?",
+        "options": [
+          "A) Ao menos uma vez por trimestre, nas RAC de Nível II junto aos comandos de policiamento.",
+          "B) Ao menos uma vez por mês, nas RAC de Nível I junto aos Batalhões Territoriais abrangidos pelas respectivas circunscrições.",
+          "C) Ao menos uma vez por bimestre, nas RAC de Nível I junto às Companhias PM Territoriais.",
+          "D) Ao menos uma vez por mês, nas RAC de Nível II junto às OPM especializadas da região."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.3.3, Assuntos Operacionais.pdf, PDF p. 479. A participação deve ocorrer ao menos uma vez por mês, nas RAC de Nível I junto aos Batalhões Territoriais abrangidos pelas circunscrições. A, C e D alteram periodicidade, nível ou unidade de referência."
+      },
+      {
+        "id": 1994,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — distribuição de efetivo e prevenção de sobreposição",
+        "text": "QUESTÃO 1994 — Duas OPM planejam o emprego de suas US em área rural limítrofe. A Diretriz estabelece critério para a distribuição dos efetivos e meios. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) A distribuição deve priorizar a sobreposição das áreas de patrulhamento, para que cada OPM mantenha autonomia plena sobre os mesmos locais.",
+          "B) A distribuição deve ser feita separadamente por cada OPM, ainda que haja duplicidade de esforços e concentração de recursos em uma mesma área.",
+          "C) A distribuição deve evitar sobreposição de esforços e permitir melhor alocação de recursos por parte de cada OPM.",
+          "D) A distribuição deve concentrar todos os recursos na OPM territorial, cabendo às OPM especializadas apenas apoio eventual."
+        ],
+        "answer": 2,
+        "explanation": "Gabarito: C. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.3.5, Assuntos Operacionais.pdf, PDF p. 479. A distribuição dos efetivos e meios deve evitar sobreposição de esforços e permitir melhor alocação de recursos por cada OPM. A e B admitem a sobreposição; D cria concentração exclusiva não prevista."
+      },
+      {
+        "id": 1995,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — medidas mínimas nos planos de ação e CPP",
+        "text": "QUESTÃO 1995 — Os planos de ação do Programa Pol Rr devem considerar medidas descritas nos CPP das Patrulhas que atuam isolada ou conjuntamente. Analise as proposições: I. Bloqueios viários em estradas vicinais e principais rotas de veículos. II. Contato com direção de escolas rurais para intercâmbio de informações de interesse ao planejamento. III. Saturação preventiva em locais de aglomeração humana, inclusive vilas, distritos e pontos turísticos. IV. Contato com representantes das comunidades rurais e entidades públicas e privadas locais. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e II.",
+          "B) Apenas I, II e III.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D. Fundamentação: Diretriz nº PM3-007/02/20, item 6.4.3.6, Assuntos Operacionais.pdf, PDF p. 479. As quatro proposições correspondem a medidas expressamente indicadas nos planos de ação e CPP. Nenhuma delas foi incluída por inferência externa; todas integram a relação normativa."
+      },
+      {
+        "id": 1996,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — atribuições da Coord Op PM, CComSoc e 6ª EM/PM",
+        "text": "QUESTÃO 1996 — A Diretriz distribui atribuições específicas entre Coord Op PM, CComSoc e 6ª EM/PM. Assinale a alternativa CORRETA.",
+        "options": [
+          "A) A Coord Op PM dá visibilidade ao Programa; a CComSoc monitora indicadores; a 6ª EM/PM cadastra propriedades rurais.",
+          "B) A Coord Op PM monitora pelo Guia; a CComSoc promove visibilidade interna e externa; a 6ª EM/PM desenvolve POP sobre atuação e equipamentos das Ptr Rr.",
+          "C) A Coord Op PM elabora POP; a CComSoc define equipamentos de apoio; a 6ª EM/PM monitora o Guia de Indicadores.",
+          "D) A Coord Op PM cadastra propriedades; a CComSoc elabora CPP; a 6ª EM/PM promove reuniões comunitárias e parcerias locais."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.5.1, 6.5.2 e 6.5.3, Assuntos Operacionais.pdf, PDF p. 479. A Coord Op PM monitora/supervisiona pelo Guia; a CComSoc dá conhecimento e visibilidade ao Programa; a 6ª EM/PM desenvolve POP com formas de atuação e equipamentos de apoio. A, C e D permutam atribuições com outros órgãos e comandos."
+      },
+      {
+        "id": 1997,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — cadastro de propriedades e disponibilidade no COPOM/CAD",
+        "text": "QUESTÃO 1997 — CPC, CPM e CPI devem adotar providências relativas ao cadastramento de propriedades rurais. Assinale a alternativa CORRETA quanto à finalidade e à abrangência da atribuição.",
+        "options": [
+          "A) Elaborar e manter atualizado o cadastro onde necessário, providenciando que os COPOM/CAD disponham das informações para facilitar o despacho de ocorrências.",
+          "B) Elaborar cadastro obrigatório de todas as propriedades do Estado, mantendo as informações exclusivamente na 6ª EM/PM para fins estatísticos.",
+          "C) Manter cadastro atualizado apenas das propriedades com registro criminal, disponibilizando-o somente às OPM especializadas.",
+          "D) Delegar às associações rurais a elaboração do cadastro, cabendo aos COPOM/CAD apenas consultar os dados quando requisitados."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, item 6.5.4.1, Assuntos Operacionais.pdf, PDF p. 480. CPC, CPM e CPI devem elaborar e manter atualizado o cadastro onde necessário, providenciando disponibilidade aos COPOM/CAD para facilitar o despacho. B torna universal o cadastro e restringe seu destino; C limita a propriedades com registros criminais; D transfere a atribuição."
+      },
+      {
+        "id": 1998,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — articulação comunitária e governança local",
+        "text": "QUESTÃO 1998 — Além do cadastramento de propriedades rurais, CPC, CPM e CPI possuem atribuição de estimular a participação comunitária. Assinale a alternativa INCORRETA.",
+        "options": [
+          "A) Estudar formas de a comunidade potencializar o Programa e estimular a identificação de lideranças locais.",
+          "B) Estimular reuniões comunitárias e parcerias envolvendo a governança local para apoiar o Programa.",
+          "C) Elaborar os CPP das US especializadas após a definição conjunta das áreas de atuação de cada OPM.",
+          "D) Transferir às lideranças rurais a responsabilidade gerencial e a elaboração dos CPP das Patrulhas do Programa."
+        ],
+        "answer": 3,
+        "explanation": "Gabarito: D (INCORRETA). Fundamentação: Diretriz nº PM3-007/02/20, item 6.5.4.2, Assuntos Operacionais.pdf, PDF p. 480. A atribuição é estudar e propor formas de potencialização pela comunidade, estimulando identificação de lideranças, reuniões e parcerias com governança local. D transfere responsabilidade gerencial e elaboração de CPP, competências que a Diretriz não atribui às lideranças."
+      },
+      {
+        "id": 1999,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — participação de CPAmb e CPRv no planejamento e elaboração de CPP",
+        "text": "QUESTÃO 1999 — As OPM subordinadas ao CPAmb e ao CPRv participam do planejamento conjunto realizado pelas OPM Territoriais. Assinale a alternativa CORRETA quanto às providências subsequentes.",
+        "options": [
+          "A) As OPM participam das reuniões e elaboram CPP antes da definição das áreas, para posterior homologação territorial.",
+          "B) As OPM participam do planejamento e fornecem informações; após a definição conjunta das áreas, seus comandantes elaboram os CPP das US de apoio.",
+          "C) As OPM participam somente em ocorrências graves e elaboram CPP exclusivos para apoio especializado no Nível 4.",
+          "D) As OPM participam das reuniões, mas os CPP das unidades especializadas são elaborados pelos Cmt Cia Territoriais."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.5.5.1 e 6.5.5.2, Assuntos Operacionais.pdf, PDF p. 480. CPAmb e CPRv participam, por meio de suas OPM subordinadas, das reuniões de planejamento conjunto, fornecendo informações; após definição das áreas, os respectivos Cmt OPM Pol Amb e Pol Rv elaboram os CPP das US que apoiarão o Programa. A inverte a sequência; C restringe a participação; D desloca a elaboração dos CPP."
+      },
+      {
+        "id": 2000,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — canal técnico entre OPM",
+        "text": "QUESTÃO 2000 — No desenvolvimento do Programa Pol Rr, as OPM envolvidas necessitam compartilhar informações, planejar conjuntamente e compatibilizar atividades. Qual orientação a Diretriz estabelece como prioritária?",
+        "options": [
+          "A) Privilegiar o canal técnico entre as OPM para compartilhar informações, planejar em conjunto, compatibilizar atividades e solicitar apoio necessário.",
+          "B) Substituir o canal técnico por comunicação exclusivamente hierárquica entre comandantes, sem contato direto entre as seções operacionais das OPM.",
+          "C) Centralizar no CPAmb as solicitações de apoio, mesmo quando a demanda envolver simultaneamente OPM Territoriais e Rodoviárias.",
+          "D) Formalizar toda troca de informação por expediente à Coord Op PM, vedada comunicação técnica direta entre as OPM envolvidas."
+        ],
+        "answer": 0,
+        "explanation": "Gabarito: A. Fundamentação: Diretriz nº PM3-007/02/20, item 6.6.1, Assuntos Operacionais.pdf, PDF p. 480. Deve ser privilegiado o canal técnico entre as OPM envolvidas para compartilhamento, planejamento conjunto, compatibilização de atividades e solicitação de apoio. B, C e D substituem ou restringem o canal técnico, contrariando a orientação."
+      },
+      {
+        "id": 2001,
+        "subject": "OPERACIONAL",
+        "tag": "Policiamento Rural",
+        "topic": "Policiamento Rural — características do veículo e emprego de arma portátil",
+        "text": "QUESTÃO 2001 — Na composição dos meios de uma US que atua no ambiente rural, a Diretriz estabelece preferências para a viatura e condições para o emprego de armamento. Analise as proposições: I. O veículo deve possuir, preferencialmente, altura em relação ao solo, suspensão e/ou tração adequadas ao ambiente rural. II. Além do armamento usual, pode ser utilizada arma portátil, desde que os policiais militares sejam devidamente habilitados. III. A Diretriz exige que toda viatura rural possua simultaneamente altura elevada, suspensão reforçada e tração integral. IV. O emprego de arma portátil é obrigatório para todas as US, independentemente da habilitação dos policiais. Estão CORRETAS:",
+        "options": [
+          "A) Apenas I e III.",
+          "B) Apenas I e II.",
+          "C) Apenas II, III e IV.",
+          "D) I, II, III e IV."
+        ],
+        "answer": 1,
+        "explanation": "Gabarito: B. Fundamentação: Diretriz nº PM3-007/02/20, itens 6.4.1.2 e 6.4.1.3, Assuntos Operacionais.pdf, PDF p. 478. O veículo deve possuir preferencialmente altura, suspensão e/ou tração adequadas ao ambiente rural. Além do armamento usual, pode ser utilizada arma portátil desde que os policiais sejam devidamente habilitados. III transforma características preferenciais e alternativas em exigência cumulativa; IV converte possibilidade condicionada em obrigatoriedade."
       }
-
     ];
 
 window.questionsDatabase = BANCO_GERAL_QUESTOES;
