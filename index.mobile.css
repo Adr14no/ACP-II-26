@@ -98,6 +98,20 @@
   .mobile-layer-mid{--dx:18px;--dy:0px;--rot:7deg;animation-delay:.02s}
   .mobile-layer-bottom{--dx:-12px;--dy:28px;--rot:-6deg;animation-delay:.14s}
   @keyframes mobileLogoAssemble{0%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(var(--rot)) scale(.86)}65%{opacity:1;transform:translate(0,0) rotate(0) scale(1.035)}100%{opacity:1;transform:translate(0,0) rotate(0) scale(1)}}
-  .platform-bypass{background:linear-gradient(110deg,#c9362b,#ea4335)!important;border-color:rgba(234,67,53,.78)!important;color:#fff!important;box-shadow:0 8px 22px rgba(234,67,53,.18)!important}
 }
 @media(prefers-reduced-motion:reduce){.mobile-layer{animation:none!important}}
+
+/* Ajustes solicitados após a avaliação visual do login mobile. */
+@media(max-width:600px){
+  .brand{gap:0!important;justify-content:flex-start!important}
+  .brand .crest{display:none!important}
+  .brand>div:last-child{width:100%!important}
+  .brand-kicker{margin-bottom:4px!important}
+  .platform-bypass{
+    background:linear-gradient(150deg,rgba(17,39,65,.92),rgba(7,22,41,.94))!important;
+    border:1px solid rgba(214,179,106,.42)!important;
+    color:#f7f8fb!important;
+    box-shadow:none!important;
+  }
+  .platform-bypass:hover{background:rgba(214,179,106,.09)!important;border-color:#d6b36a!important}
+}
