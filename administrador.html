@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="theme-color" content="#071326"><link rel="manifest" href="/manifest.json"><link rel="icon" type="image/svg+xml" href="/pa-icon.svg?v=3"><link rel="shortcut icon" href="/pa-icon.svg?v=3"><link rel="apple-touch-icon" href="/pa-icon.svg?v=3">
 <title>Administração | Plataforma Aperfeiçoamento</title>
 <style>
 :root{--navy:#0b1326;--header:#071020;--gold:#d4af37;--gold-soft:#f7edc7;--card:#fff;--ink:#202938;--muted:#64748b;--line:#d9e0ea;--bg:#eef2f7;--highlight:#fff09a;--green:#166534;--red:#a12b2b}
@@ -102,7 +104,6 @@ body{background:radial-gradient(ellipse at 75% -10%,#1b3151 0,transparent 42%),#
 .app{display:block!important;min-height:100vh;background:transparent}
 #adminSidebar{position:fixed;inset:0 auto 0 0;width:252px;overflow-y:auto;background:linear-gradient(180deg,#081326,#050d1a)!important;border-right:1px solid rgba(234,191,58,.2);padding:22px 15px!important;z-index:30}
 #adminSidebar .brand{display:flex;align-items:center;gap:11px;padding:4px 8px 22px!important;border-bottom:1px solid rgba(234,191,58,.18);font-size:0;line-height:1.1}
-#adminSidebar .brand:before{content:"ACP";width:46px;height:42px;display:grid;place-items:center;flex:none;border:1px solid rgba(234,191,58,.55);border-radius:12px;background:linear-gradient(145deg,#142642,#09162a);color:#f5d46a;font-size:15px;font-weight:950;letter-spacing:.08em}
 #adminSidebar .brand em{display:none}
 #adminSidebar .brand{position:relative;font-size:0}
 #adminSidebar .brand:after{content:"PLATAFORMA\A APERFEIÇOAMENTO";white-space:pre;display:block;font-size:12px;line-height:1.5;letter-spacing:.08em;font-weight:900;color:#f8fafc}
@@ -215,7 +216,7 @@ button.danger,.danger{color:#fb9b9b!important}
 
 <div class="app" id="adminApp">
 <aside id="adminSidebar" aria-label="Menu administrativo">
-  <div class="brand"><em>◆</em> Plataforma<br>Aperfeiçoamento</div>
+  <div class="brand"><img src="pa-logo.svg" alt="Logotipo da Plataforma de Aperfeiçoamento"><span>Plataforma<br>Aperfeiçoamento</span></div>
   <nav class="nav">
     <button class="active" data-tab="editor">Editor de página</button>
     <button data-tab="metadados">Classificação</button>
