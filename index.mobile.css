@@ -115,3 +115,8 @@
   }
   .platform-bypass:hover{background:rgba(214,179,106,.09)!important;border-color:#d6b36a!important}
 }
+
+/* A marca desktop usa o mesmo SVG, mas não interfere na composição mobile aprovada. */
+@media(max-width:600px){
+  .desktop-brand-lockup{display:none!important}
+}
