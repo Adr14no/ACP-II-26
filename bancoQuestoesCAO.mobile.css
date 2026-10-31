@@ -299,3 +299,19 @@ html body #modalInstrucoes>div{
     text-align: center !important;
   }
 }
+
+
+/* Ajuste do identificador da questão no mobile: evita quebra em duas linhas. */
+@media (max-width: 560px) {
+  #appShell #qBadgeNum {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: max-content !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+    font-size: clamp(11px, 3vw, 13px) !important;
+    line-height: 1.25 !important;
+    padding: 7px 9px !important;
+    letter-spacing: -0.02em !important;
+  }
+}
