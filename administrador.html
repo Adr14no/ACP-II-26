@@ -106,7 +106,9 @@ body{background:radial-gradient(ellipse at 75% -10%,#1b3151 0,transparent 42%),#
 #adminSidebar .brand{display:flex;align-items:center;gap:11px;padding:4px 8px 22px!important;border-bottom:1px solid rgba(234,191,58,.18);font-size:0;line-height:1.1}
 #adminSidebar .brand em{display:none}
 #adminSidebar .brand{position:relative;font-size:0}
-#adminSidebar .brand:after{content:"PLATAFORMA\A APERFEIÇOAMENTO";white-space:pre;display:block;font-size:12px;line-height:1.5;letter-spacing:.08em;font-weight:900;color:#f8fafc}
+#adminSidebar .brand:before,#adminSidebar .brand:after{content:none!important;display:none!important}
+#adminSidebar .brand img{display:block;width:46px;height:42px;flex:0 0 46px;object-fit:contain}
+#adminSidebar .brand span{display:block;font-size:12px;line-height:1.5;letter-spacing:.08em;font-weight:900;color:#f8fafc}
 #adminSidebar .nav{display:grid;gap:6px;margin-top:22px}
 #adminSidebar .nav:before{content:"GESTÃO DA PLATAFORMA";font-size:9px;letter-spacing:.15em;color:#687a94;font-weight:900;padding:0 10px 4px}
 #adminSidebar .nav button{display:flex;align-items:center;gap:12px;width:100%;min-height:43px;padding:11px 12px!important;border:1px solid transparent!important;border-radius:12px!important;background:transparent!important;color:#aab7ca!important;text-align:left;font-weight:650!important;font-size:12px!important;transition:background .15s,border-color .15s,color .15s}
