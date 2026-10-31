@@ -1,4 +1,4 @@
-const CACHE_NAME = "pa-shell-v2";
+const CACHE_NAME = "pa-shell-v3";
 const OFFLINE_URL = "/offline.html";
 
 self.addEventListener("install", event => {
