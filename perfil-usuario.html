@@ -16,7 +16,7 @@
   <div class="brand"><div class="crest" aria-hidden="true">◈</div><div><div class="kicker">Ambiente de formação</div><div class="brand-name">PLATAFORMA DE APERFEIÇOAMENTO</div></div></div>
   <a class="nav-btn" href="plataforma.html">← Voltar à plataforma</a>
 </header>
-<section class="intro"><div class="eyebrow">Área do usuário</div><h1>Perfil e segurança</h1><p>Consulte os dados da sua conta, atualize seu nome de exibição e gerencie a segurança do acesso à Plataforma PMESP.</p></section>
+<section class="intro"><div class="eyebrow">Área do usuário</div><h1>Perfil e segurança</h1><p id="profileCourseLabel" class="course-context" aria-live="polite"></p><p>Consulte os dados da sua conta, atualize seu nome de exibição e gerencie a segurança do acesso à Plataforma PMESP.</p></section>
 <div id="loading">Verificando sua sessão...</div>
 <main id="profileContent" class="grid hidden">
   <section class="card">
@@ -30,7 +30,7 @@
   </section>
   <div>
     <section class="card">
-      <div class="card-head"><div class="icon" aria-hidden="true">▥</div><div><h2>Meu desempenho</h2><p>Resultados dos simulados salvos na sua conta, sincronizados pelo Firestore.</p></div></div>
+      <div class="card-head"><div class="icon" aria-hidden="true">▥</div><div><h2>Meu desempenho</h2><p id="performanceCourseLabel">Resultados dos simulados do curso selecionado, sincronizados pelo Firestore.</p></div></div>
       <div class="stats-grid">
         <div class="stat-box"><div class="stat-label">Simulados concluídos</div><div class="stat-value" id="statAttempts">—</div></div>
         <div class="stat-box"><div class="stat-label">Média de aproveitamento</div><div class="stat-value" id="statAverage">—</div></div>
@@ -103,11 +103,20 @@ function renderUser(user){currentUser=user;$('fullName').value=user.displayName|
  loadStudyStats();
 }
 async function loadStudyStats(){
+ const courseParam = new URLSearchParams(window.location.search).get('curso');
+ const profileCourse = String(courseParam || 'ACP').toUpperCase() === 'CAO' ? 'CAO' : 'ACP';
+ const courseLabel = document.getElementById('profileCourseLabel');
+ if (courseLabel) courseLabel.textContent = 'Estatísticas e histórico: ' + profileCourse;
+ const performanceLabel = document.getElementById('performanceCourseLabel');
+ if (performanceLabel) performanceLabel.textContent = 'Resultados dos simulados do curso ' + profileCourse + ', sincronizados pelo Firestore.';
  const recent=$('recentResults');
  try{
   await window.studyProgress?.ready();
   if(!window.studyProgress) throw new Error('Serviço de progresso indisponível.');
-  const summary=await window.studyProgress.getProgressSummary();
+  const params = new URLSearchParams(window.location.search);
+  const requestedCourse = String(params.get('curso') || 'ACP').toUpperCase();
+  const activeCourse = requestedCourse === 'CAO' ? 'CAO' : 'ACP';
+  const summary=await window.studyProgress.getProgressSummary(activeCourse);
   $('statAttempts').textContent=String(summary.attempts);
   $('statAverage').textContent=`${summary.averagePercent.toFixed(1)}%`;
   $('statBest').textContent=`${summary.bestPercent.toFixed(1)}%`;
