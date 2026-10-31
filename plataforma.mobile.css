@@ -15,9 +15,10 @@
   }
   #courseLanding > div > header > div > div:first-child { min-width: 0 !important; gap: 9px !important; }
   #courseLanding > div > header > div > div:first-child > div:first-child {
-    width: 39px !important; height: 39px !important; flex: 0 0 39px !important;
-    border-radius: 11px !important;
+    width: 43px !important; height: 43px !important; flex: 0 0 43px !important;
+    border-radius: 11px !important; padding: 5px !important;
   }
+  #courseLanding > div > header > div > div:first-child > div:first-child img { width:100% !important;height:100% !important;object-fit:contain !important; }
   #courseLanding > div > header h1 {
     font-size: 12px !important; line-height: 1.3 !important; overflow-wrap: normal !important;
   }
