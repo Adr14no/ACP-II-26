@@ -852,6 +852,19 @@
                 state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
                 saveStateToLocalStorage();
             }
+            window.location.href = window.location.pathname;
+        }
+
+        function voltarDashboard() {
+            if (state.timerInterval) {
+                clearInterval(state.timerInterval);
+                state.timerInterval = null;
+            }
+            if (!state.examFinished && state.timerSeconds > 0) {
+                state.timerPaused = true;
+                state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
+                saveStateToLocalStorage();
+            }
             window.location.href = 'plataformaCAO.html';
         }
 
