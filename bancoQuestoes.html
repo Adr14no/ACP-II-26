@@ -448,6 +448,7 @@
         <nav class="app-sidebar-nav">
           <a href="bancoQuestoes.html?curso=ACP" class="app-nav-active" title="Banco de questões"><span class="app-nav-icon"><i class="fa-solid fa-grip" aria-hidden="true"></i></span><span class="app-nav-label">Banco de questões</span></a>
           <button type="button" onclick="voltarSelecaoCursos()" title="Cursos"><span class="app-nav-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><span class="app-nav-label">Cursos</span></button>
+          <button type="button" onclick="voltarDashboard()" title="Voltar à Dashboard"><span class="app-nav-icon"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></span><span class="app-nav-label">Voltar à Dashboard</span></button>
           <button type="button" onclick="abrirModalPersonalizado()" title="Personalizar sessão"><span class="app-nav-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></span><span class="app-nav-label">Personalizar sessão</span></button>
         </nav>
         <div class="app-sidebar-label">CONTA</div>
@@ -851,7 +852,7 @@
                 state.timerEndTime = Date.now() + (state.timerSeconds * 1000);
                 saveStateToLocalStorage();
             }
-            window.location.href = window.location.pathname;
+            window.location.href = 'plataformaACP.html';
         }
 
         function configurarIdentidadeCurso() {
