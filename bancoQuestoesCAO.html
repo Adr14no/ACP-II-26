@@ -1833,12 +1833,10 @@
                 window.studyProgress.completeActiveStudySession(cursoAtivo || 'ACP', Boolean(sessaoPersonalizadaAtiva))
                     .catch(error => console.warn('Falha ao registrar conclusão no Firestore:', error));
             }
-            try { localStorage.removeItem(STORAGE_KEY); } catch (_) {}
-
-
             if (shouldSave) {
                 saveStateToLocalStorage();
             }
+            try { localStorage.removeItem(STORAGE_KEY); } catch (_) {}
 
             let score = 0;
             let opScore = 0, opTotal = 0;
