@@ -268,12 +268,13 @@ export async function saveActiveStudySession(course, personalized, payload) {
   await runTransaction(db, async tx => {
     const snap = await tx.get(ref);
     const current = snap.exists() ? snap.data() : null;
-    if (current?.completed === true) return;
-    if (current?.writerId && current.writerId !== deviceId) return;
+    if (current?.completed === true && current?.sessionInstanceId === payload.sessionInstanceId) return;
+    if (current?.writerId && current.writerId !== deviceId && current?.completed !== true) return;
     tx.set(ref, {
       course: courseCode(course),
       sessionType: personalized ? "personalized" : "official",
       writerId: deviceId,
+      sessionInstanceId: String(payload.sessionInstanceId || ""),
       payload,
       completed: false,
       updatedAt: serverTimestamp(),
