@@ -975,7 +975,20 @@
                         return;
                     }
                 }
-            } catch (error) { console.warn('Falha ao consultar sessão remota; usando recuperação local:', error); }
+            } catch (error) {
+                console.warn('Falha ao consultar sessão remota; tentando recuperar o último estado local:', error);
+                try {
+                    const local = localStorage.getItem(STORAGE_KEY) || localStorage.getItem(`${STORAGE_KEY_OFICIAL}_PERSONALIZADO`);
+                    const parsed = local ? JSON.parse(local) : null;
+                    if (parsed?.questionsDatabase?.length && !parsed.examFinished) {
+                        sessaoPersonalizadaAtiva = Boolean(parsed.sessaoPersonalizadaAtiva);
+                        STORAGE_KEY = sessaoPersonalizadaAtiva ? `${STORAGE_KEY_OFICIAL}_PERSONALIZADO` : STORAGE_KEY_OFICIAL;
+                        restaurarDadosDaSessao(parsed);
+                        restaurarInterface();
+                        return;
+                    }
+                } catch (localError) { console.warn('Falha ao recuperar estado local:', localError); }
+            }
             STORAGE_KEY = STORAGE_KEY_OFICIAL;
             sessaoPersonalizadaAtiva = false;
             gerarEIniciarNovoSimulado();
