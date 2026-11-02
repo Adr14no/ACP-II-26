@@ -774,7 +774,8 @@
         let MODAL_STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_MODAL_INSTRUCOES_VISTO_CAO' : 'PMESP_MODAL_INSTRUCOES_VISTO_ACP';
 
         let questionsDatabase = [];
-        let sessaoPersonalizadaAtiva = false;\n        let sessionInstanceId = globalThis.crypto?.randomUUID?.() || `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+        let sessaoPersonalizadaAtiva = false;
+        let sessionInstanceId = globalThis.crypto?.randomUUID?.() || `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
         let avisoAvancoEstudoExibido = false;
         const STORAGE_KEY_OFICIAL = STORAGE_KEY;
 
@@ -1274,7 +1275,8 @@
             atualizarTemasPersonalizados();
         });
 
-        function iniciarSessaoPersonalizada() {\n            sessionInstanceId = globalThis.crypto?.randomUUID?.() || `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+        function iniciarSessaoPersonalizada() {
+            sessionInstanceId = globalThis.crypto?.randomUUID?.() || `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
             const bancoBase = obterBancoBase();
             const area = document.getElementById('personalizadoArea').value;
             const tema = document.getElementById('personalizadoTema').value;
@@ -1324,7 +1326,8 @@
             saveStateToLocalStorage();
         }
 
-        function gerarEIniciarNovoSimulado() {\n            sessionInstanceId = globalThis.crypto?.randomUUID?.() || `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+        function gerarEIniciarNovoSimulado() {
+            sessionInstanceId = globalThis.crypto?.randomUUID?.() || `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
             const veioDePersonalizado = sessaoPersonalizadaAtiva;
             sessaoPersonalizadaAtiva = false;
             avisoAvancoEstudoExibido = false;
