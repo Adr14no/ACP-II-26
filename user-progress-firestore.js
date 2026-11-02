@@ -233,7 +233,9 @@ function sessionRef(course, personalized) {
   return userDoc(sessionDocId(course, personalized));
 }
 
-export const waitForProgressAuth = () => authReady;\n\nexport async function loadActiveStudySession(course, personalized = false) {
+export const waitForProgressAuth = () => authReady;
+
+export async function loadActiveStudySession(course, personalized = false) {
   await authReady;
   if (!activeUser) return null;
   const ref = sessionRef(course, personalized);
