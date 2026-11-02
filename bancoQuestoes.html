@@ -774,7 +774,7 @@
         let MODAL_STORAGE_KEY = cursoInicial === 'CAO' ? 'PMESP_MODAL_INSTRUCOES_VISTO_CAO' : 'PMESP_MODAL_INSTRUCOES_VISTO_ACP';
 
         let questionsDatabase = [];
-        let sessaoPersonalizadaAtiva = false;
+        let sessaoPersonalizadaAtiva = false;\n        let sessionInstanceId = globalThis.crypto?.randomUUID?.() || `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
         let avisoAvancoEstudoExibido = false;
         const STORAGE_KEY_OFICIAL = STORAGE_KEY;
 
@@ -913,7 +913,7 @@
         let cloudSaveQueue = Promise.resolve();
         let cloudConflictWarned = false;
         function snapshotSessaoAtual() {
-            return { questionsDatabase, userAnswers: state.userAnswers, flagged: state.flagged,
+            return { sessionInstanceId, savedAtMs: Date.now(), questionsDatabase, userAnswers: state.userAnswers, flagged: state.flagged,
                 studyLocked: state.studyLocked, timerSeconds: state.timerSeconds, timerEndTime: state.timerEndTime,
                 timerPaused: state.timerPaused, examFinished: state.examFinished, currentIndex: state.currentIndex,
                 mode: state.mode, activeFilter: state.activeFilter, sessaoPersonalizadaAtiva };
@@ -965,7 +965,7 @@
                     { raw: personalized?.completed ? null : localStorage.getItem(personalKey), personal: true }
                 ].filter(x => x.raw);
                 if (candidates.length) {
-                    const chosen = candidates[candidates.length - 1], parsed = JSON.parse(chosen.raw);
+                    const chosen = candidates.map(item => ({ ...item, parsed: JSON.parse(item.raw) })).sort((a,b) => Number(b.parsed.savedAtMs || 0) - Number(a.parsed.savedAtMs || 0))[0], parsed = chosen.parsed;
                     if (parsed.questionsDatabase?.length && !parsed.examFinished) {
                         sessaoPersonalizadaAtiva = Boolean(parsed.sessaoPersonalizadaAtiva || chosen.personal);
                         STORAGE_KEY = sessaoPersonalizadaAtiva ? personalKey : STORAGE_KEY_OFICIAL;
@@ -1274,7 +1274,7 @@
             atualizarTemasPersonalizados();
         });
 
-        function iniciarSessaoPersonalizada() {
+        function iniciarSessaoPersonalizada() {\n            sessionInstanceId = globalThis.crypto?.randomUUID?.() || `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
             const bancoBase = obterBancoBase();
             const area = document.getElementById('personalizadoArea').value;
             const tema = document.getElementById('personalizadoTema').value;
@@ -1324,7 +1324,7 @@
             saveStateToLocalStorage();
         }
 
-        function gerarEIniciarNovoSimulado() {
+        function gerarEIniciarNovoSimulado() {\n            sessionInstanceId = globalThis.crypto?.randomUUID?.() || `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
             const veioDePersonalizado = sessaoPersonalizadaAtiva;
             sessaoPersonalizadaAtiva = false;
             avisoAvancoEstudoExibido = false;
