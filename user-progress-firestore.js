@@ -2,7 +2,7 @@
  // Usa somente o Firebase do projeto e limita os dados ao UID autenticado.
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 import {
-  collection, doc, getDocs, runTransaction, serverTimestamp, setDoc, Timestamp
+  collection, doc, getDoc, getDocs, runTransaction, serverTimestamp, setDoc, Timestamp
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 import { auth, db } from "./firebase-config.js";
 
@@ -208,3 +208,102 @@ window.studyProgress = {
   saveExamResult,
   getProgressSummary
 };
+
+
+// Sessão ativa do banco de questões: um documento independente por curso e modalidade.
+const SESSION_SCHEMA_VERSION = 1;
+const sessionDeviceIds = new Map();
+function sessionDocId(course, personalized) {
+  return `activeSession_${courseCode(course)}_${personalized ? "PERSONALIZED" : "OFFICIAL"}`;
+}
+function sessionDeviceId(course, personalized) {
+  const key = sessionDocId(course, personalized);
+  if (!sessionDeviceIds.has(key)) {
+    const storageKey = `PA_SESSION_DEVICE_${key}`;
+    let id = localStorage.getItem(storageKey);
+    if (!id) {
+      id = globalThis.crypto?.randomUUID?.() || `device_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      localStorage.setItem(storageKey, id);
+    }
+    sessionDeviceIds.set(key, id);
+  }
+  return sessionDeviceIds.get(key);
+}
+function sessionRef(course, personalized) {
+  return userDoc(sessionDocId(course, personalized));
+}
+
+export async function loadActiveStudySession(course, personalized = false) {
+  await authReady;
+  if (!activeUser) return null;
+  const ref = sessionRef(course, personalized);
+  const deviceId = sessionDeviceId(course, personalized);
+  let result = null;
+  await runTransaction(db, async tx => {
+    const snap = await tx.get(ref);
+    if (!snap.exists()) return;
+    const data = snap.data();
+    if (data.schemaVersion !== SESSION_SCHEMA_VERSION || data.completed === true) {
+      result = { completed: true };
+      return;
+    }
+    // A retomada assume a sessão neste dispositivo. O dispositivo anterior será
+    // impedido de sobrescrever a sessão quando tentar gravar novamente.
+    tx.set(ref, { writerId: deviceId, claimedAt: serverTimestamp() }, { merge: true });
+    result = data.payload && typeof data.payload === "object"
+      ? { ...data.payload, _cloudUpdatedAt: data.updatedAt?.toMillis?.() || 0 }
+      : null;
+  });
+  return result;
+}
+
+export async function saveActiveStudySession(course, personalized, payload) {
+  await authReady;
+  if (!activeUser || !payload || payload.examFinished === true) return false;
+  const ref = sessionRef(course, personalized);
+  const deviceId = sessionDeviceId(course, personalized);
+  let saved = false;
+  await runTransaction(db, async tx => {
+    const snap = await tx.get(ref);
+    const current = snap.exists() ? snap.data() : null;
+    if (current?.completed === true) return;
+    if (current?.writerId && current.writerId !== deviceId) return;
+    tx.set(ref, {
+      course: courseCode(course),
+      sessionType: personalized ? "personalized" : "official",
+      writerId: deviceId,
+      payload,
+      completed: false,
+      updatedAt: serverTimestamp(),
+      updatedAtMs: Date.now(),
+      schemaVersion: SESSION_SCHEMA_VERSION
+    }, { merge: true });
+    saved = true;
+  });
+  return saved;
+}
+
+export async function completeActiveStudySession(course, personalized) {
+  await authReady;
+  if (!activeUser) return false;
+  const ref = sessionRef(course, personalized);
+  const deviceId = sessionDeviceId(course, personalized);
+  let completed = false;
+  await runTransaction(db, async tx => {
+    const snap = await tx.get(ref);
+    const current = snap.exists() ? snap.data() : null;
+    if (current?.writerId && current.writerId !== deviceId) return;
+    tx.set(ref, {
+      course: courseCode(course),
+      sessionType: personalized ? "personalized" : "official",
+      writerId: deviceId,
+      completed: true,
+      completedAt: serverTimestamp(),
+      updatedAt: serverTimestamp(),
+      updatedAtMs: Date.now(),
+      schemaVersion: SESSION_SCHEMA_VERSION
+    }, { merge: true });
+    completed = true;
+  });
+  return completed;
+}
