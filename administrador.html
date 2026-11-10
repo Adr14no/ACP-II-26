@@ -98,6 +98,17 @@ button,input,textarea,select{font:inherit}button{border:1px solid var(--line);ba
 @media(max-width:850px){.editor-tools-label{width:100%}.editor-stylebar select{min-width:0;width:100%}.editor-format-toolbar button{font-size:11px!important;padding:6px 8px!important}}
 
 .editor-page-actions{display:flex;align-items:center;justify-content:flex-end;gap:7px;flex-wrap:wrap;max-width:100%}.editor-page-intro{align-items:center}.editor-page-actions #status{white-space:nowrap}
+
+/* Central de Atendimento administrativa */
+#adminMessagesView .ticket-admin-row{display:block;width:100%;text-align:left;border:1px solid #263951;background:#0d1b30;color:#e7edf6;border-radius:9px;padding:11px;margin:0 0 8px}
+#adminMessagesView .ticket-admin-row.active{border-color:#d4af37;background:#142642}
+#adminMessagesView .ticket-admin-row strong{display:block;font-size:12px;color:#f8fafc}
+#adminMessagesView .ticket-admin-row small{display:block;color:#aab7ca;font-size:10px;margin-top:4px}
+#adminMessagesView .ticket-admin-bubble{padding:11px 12px;border:1px solid #30465f;border-radius:10px;background:#1a2c42;color:#e7edf6;white-space:pre-wrap;font-size:12px}
+#adminMessagesView .ticket-admin-bubble.admin{background:#203a53;border-color:#47617c}
+#adminMessagesView .ticket-admin-bubble b{display:block;color:#f5d46a;font-size:10px;margin-bottom:4px}
+#adminMessagesView .ticket-admin-bubble time{display:block;text-align:right;color:#aab7ca;font-size:9px;margin-top:5px}
+@media(max-width:850px){#adminMessagesView .layout{grid-template-columns:minmax(0,1fr)!important}}
 </style>
   <link rel="stylesheet" href="administrador.mobile.css">
 
@@ -123,6 +134,7 @@ body{background:radial-gradient(ellipse at 75% -10%,#1b3151 0,transparent 42%),#
 #adminSidebar .nav button[data-tab="videos"]:before{content:"▷"}
 #adminSidebar .nav button[data-tab="logs"]:before{content:"◷"}
 #adminSidebar .nav button[data-tab="notificacoes"]:before{content:"♢"}
+#adminSidebar .nav button[data-tab="mensagens"]:before{content:"✉"}
 #adminSidebar .nav button.active,#adminSidebar .nav button:hover{color:#f5d46a!important;background:linear-gradient(100deg,rgba(234,191,58,.14),rgba(234,191,58,.035))!important;border-color:rgba(234,191,58,.25)!important;box-shadow:inset 3px 0 #eabf3a}
 #adminSidebar .side-note{margin:24px 8px 0;color:#8392a9;font-size:10px;line-height:1.7;border-top:1px solid rgba(255,255,255,.07);padding-top:14px}
 .main{margin-left:252px;width:calc(100% - 252px);min-width:0;background:transparent}
@@ -231,6 +243,7 @@ button.danger,.danger{color:#fb9b9b!important}
       <button data-tab="videos">Vídeos e aulas</button>
     <button data-tab="logs">Log do sistema</button>
     <button data-tab="notificacoes">Notificações</button>
+    <button data-tab="mensagens">Mensagens dos Alunos</button>
   </nav>
   <div class="side-note">Área administrativa.<br>Gerenciamento de conteúdo e materiais.<br><br>Acesso restrito a administradores ativos.</div>
 </aside>
@@ -252,6 +265,35 @@ button.danger,.danger{color:#fb9b9b!important}
       </div>
       <section class="card"><div class="cardhead"><h2>Atividade recente</h2><span id="auditStatus" class="status">Aguardando autorização</span></div><div class="tablewrap"><table class="table"><thead><tr><th>Data e hora (Brasília)</th><th>Usuário</th><th>Evento</th><th>Detalhes</th></tr></thead><tbody id="auditRows"><tr><td colspan="4">Os registros aparecerão após carregar o histórico.</td></tr></tbody></table></div></section>
     </section>
+    <section id="adminMessagesView" style="display:none">
+  <div class="intro"><div><h1>Mensagens dos Alunos</h1><div class="muted">Caixa de entrada unificada dos atendimentos ACP e CAO.</div></div><button class="primary" id="adminMessagesRefresh">Atualizar mensagens</button></div>
+  <div class="bottomgrid" style="margin-top:0;margin-bottom:15px">
+    <section class="card"><div class="cardhead"><h2>Total de atendimentos</h2></div><div class="cardbody"><strong id="ticketTotal" style="font-size:28px">—</strong><div class="muted small">Protocolos carregados</div></div></section>
+    <section class="card"><div class="cardhead"><h2>Novas mensagens</h2></div><div class="cardbody"><strong id="ticketNew" style="font-size:28px">—</strong><div class="muted small">Aguardando análise da administração</div></div></section>
+  </div>
+  <section class="card" style="margin-bottom:15px"><div class="cardbody">
+    <div class="fields">
+      <div class="field"><label for="ticketCourseFilter">Curso</label><select id="ticketCourseFilter"><option value="">ACP e CAO</option><option value="ACP">ACP</option><option value="CAO">CAO</option></select></div>
+      <div class="field"><label for="ticketStatusFilter">Situação</label><select id="ticketStatusFilter"><option value="">Todas as situações</option><option value="new">Nova</option><option value="progress">Em análise</option><option value="replied">Respondida</option><option value="closed">Encerrada</option></select></div>
+      <div class="field full"><label for="ticketSearch">Pesquisar aluno, protocolo ou assunto</label><input id="ticketSearch" type="search" placeholder="Digite para filtrar…"></div>
+    </div>
+    <div class="hint" id="ticketAdminStatus" style="margin-top:10px">Aguardando autorização administrativa.</div>
+  </div></section>
+  <div class="layout" style="grid-template-columns:minmax(280px,.85fr) minmax(340px,1.15fr)">
+    <section class="card"><div class="cardhead"><h2>Caixa de entrada</h2><span class="status" id="ticketListCount">0</span></div><div class="cardbody" id="ticketAdminList"><p class="hint">As mensagens aparecerão aqui.</p></div></section>
+    <section class="card"><div class="cardhead"><h2 id="ticketThreadTitle">Selecione um atendimento</h2><span class="status" id="ticketThreadStatus">—</span></div>
+      <div class="cardbody" id="ticketThreadMeta"><p class="hint">Abra uma mensagem da caixa de entrada para consultar a conversa.</p></div>
+      <div id="ticketThreadMessages" style="padding:0 15px 15px;display:grid;gap:9px;max-height:390px;overflow:auto"></div>
+      <div class="cardbody" style="border-top:1px solid var(--line)">
+        <div class="field"><label for="ticketAdminReply">Resposta da administração</label><textarea id="ticketAdminReply" rows="4" placeholder="Escreva uma resposta ao aluno…" disabled></textarea></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:10px">
+          <select id="ticketAdminStatusSelect" disabled style="max-width:180px"><option value="new">Nova</option><option value="progress">Em análise</option><option value="replied">Respondida</option><option value="closed">Encerrada</option></select>
+          <button class="primary" id="ticketAdminSend" disabled>Enviar resposta</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
     <div id="normAdminView">
     <div class="draft-controls" aria-label="Rascunhos armazenados no Firebase">
       <label for="savedDrafts"><strong>Rascunhos no Firebase:</strong></label>
@@ -492,7 +534,7 @@ function update(){
 ['title','code','edition','description','course','subject','category','order','tags','watermark','showSearch'].forEach(id=>$(id).addEventListener('input',update));
 $('normText').addEventListener('input',update);
 document.querySelectorAll('#leftTabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('#leftTabs~.cardbody .panel').forEach(p=>p.classList.remove('active'));['p-content','p-meta','p-mats','p-check'].forEach(id=>$(id).classList.toggle('active',id===b.dataset.panel))});
-document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));const tab=b.dataset.tab;const isVideos=tab==='videos',isLogs=tab==='logs',isNotifications=tab==='notificacoes',isSpecial=isVideos||isLogs||isNotifications;$('normAdminView').style.display=isSpecial?'none':'block';$('videoAdminView').style.display=isVideos?'block':'none';$('auditAdminView').style.display=isLogs?'block':'none';$('notificationAdminView').style.display=isNotifications?'block':'none';const map={editor:'p-content',metadados:'p-meta',materiais:'p-mats',validacao:'p-check'};if(!isSpecial){document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x.dataset.panel===map[tab]));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===map[tab]))}else if(isVideos){updateVideoAdminPreview();renderVideoAdminDrafts()}else if(isLogs){loadAuditEvents()}else if(isNotifications){window.__paRefreshNotifications?.()};const headers={editor:{crumb:'Administração / Páginas normativas',title:'Editor de páginas normativas'},metadados:{crumb:'Administração / Páginas normativas / Classificação',title:'Classificação da página'},materiais:{crumb:'Administração / Páginas normativas / Materiais',title:'Materiais de apoio'},validacao:{crumb:'Administração / Páginas normativas / Validação',title:'Validação da página'},videos:{crumb:'Administração / Vídeos e aulas',title:'Gestão de vídeos e aulas'},logs:{crumb:'Administração / Monitoramento / Log do sistema',title:'Log do sistema'},notificacoes:{crumb:'Administração / Comunicação',title:'Central de notificações'}};const header=headers[tab]||headers.editor;$('adminHeaderCrumb').textContent=header.crumb;$('adminHeaderTitle').textContent=header.title;$('status').style.display=isSpecial?'none':'';$('saveDraft').style.display=isSpecial?'none':'';$('newDraft').style.display=isSpecial?'none':'';$('downloadHtml').style.display=isSpecial?'none':''});
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));const tab=b.dataset.tab;const isVideos=tab==='videos',isLogs=tab==='logs',isNotifications=tab==='notificacoes',isMessages=tab==='mensagens',isSpecial=isVideos||isLogs||isNotifications||isMessages;$('normAdminView').style.display=isSpecial?'none':'block';$('videoAdminView').style.display=isVideos?'block':'none';$('auditAdminView').style.display=isLogs?'block':'none';$('notificationAdminView').style.display=isNotifications?'block':'none';$('adminMessagesView').style.display=isMessages?'block':'none';const map={editor:'p-content',metadados:'p-meta',materiais:'p-mats',validacao:'p-check'};if(!isSpecial){document.querySelectorAll('#leftTabs button').forEach(x=>x.classList.toggle('active',x.dataset.panel===map[tab]));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===map[tab]))}else if(isVideos){updateVideoAdminPreview();renderVideoAdminDrafts()}else if(isLogs){loadAuditEvents()}else if(isNotifications){window.__paRefreshNotifications?.()}else if(isMessages){window.dispatchEvent(new Event('pa:open-admin-messages'))};const headers={editor:{crumb:'Administração / Páginas normativas',title:'Editor de páginas normativas'},metadados:{crumb:'Administração / Páginas normativas / Classificação',title:'Classificação da página'},materiais:{crumb:'Administração / Páginas normativas / Materiais',title:'Materiais de apoio'},validacao:{crumb:'Administração / Páginas normativas / Validação',title:'Validação da página'},videos:{crumb:'Administração / Vídeos e aulas',title:'Gestão de vídeos e aulas'},logs:{crumb:'Administração / Monitoramento / Log do sistema',title:'Log do sistema'},notificacoes:{crumb:'Administração / Comunicação',title:'Central de notificações'},mensagens:{crumb:'Administração / Comunicação',title:'Mensagens dos Alunos'}};const header=headers[tab]||headers.editor;$('adminHeaderCrumb').textContent=header.crumb;$('adminHeaderTitle').textContent=header.title;$('status').style.display=isSpecial?'none':'';$('saveDraft').style.display=isSpecial?'none':'';$('newDraft').style.display=isSpecial?'none':'';$('downloadHtml').style.display=isSpecial?'none':''});
 let normEditorRange=null;
 function rememberNormEditorRange(){const s=window.getSelection();if(s&&s.rangeCount&&$('normText').contains(s.anchorNode))normEditorRange=s.getRangeAt(0).cloneRange()}
 function restoreNormEditorRange(){if(!normEditorRange)return;const s=window.getSelection();s.removeAllRanges();s.addRange(normEditorRange)}
@@ -616,6 +658,46 @@ function buildStandalone(){const d=data();const safeContent=sanitizeHtml(d.conte
 
 
 
+<script type="module">
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+import { auth } from "./firebase-config.js";
+import { isAdminUser } from "./admin-access.js";
+import { listAdminTickets, watchAdminTicketMessages, sendAdminTicketReply, setAdminTicketStatus } from "./admin-atendimentos-firestore.js";
+const $=id=>document.getElementById(id);
+const labels={new:"Nova",progress:"Em análise",replied:"Respondida",closed:"Encerrada"};
+let allowed=false,tickets=[],selected=null,stopList=null,stopThread=null;
+function date(v){return v?.toDate?v.toDate().toLocaleString("pt-BR"):"—"}
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function status(s){return labels[s]||"—"}
+function notify(s){const el=$("toast");el.textContent=s;el.style.display="block";clearTimeout(window.__ticketToast);window.__ticketToast=setTimeout(()=>el.style.display="none",4000)}
+function renderList(){
+ const course=$("ticketCourseFilter").value,st=$("ticketStatusFilter").value,q=$("ticketSearch").value.toLowerCase();
+ const rows=tickets.filter(t=>(!course||t.course===course)&&(!st||t.status===st)&&[t.studentName,t.studentEmail,t.subject,t.id,t.course].join(" ").toLowerCase().includes(q));
+ $("ticketTotal").textContent=tickets.length;$("ticketNew").textContent=tickets.filter(t=>t.status==="new").length;$("ticketListCount").textContent=rows.length+" atendimento(s)";
+ $("ticketAdminList").innerHTML=rows.length?rows.map(t=>'<button class="ticket-admin-row '+(selected===t.id?'active':'')+'" data-ticket="'+esc(t.id)+'"><strong>'+esc(t.subject)+'</strong><small>'+esc(t.studentName||"Aluno")+' · '+esc(t.course)+' · '+esc(status(t.status))+'</small><small>'+esc(t.category)+' · '+esc(t.studentEmail||"")+'</small><small>'+esc(t.id)+' · '+esc(date(t.updatedAt))+'</small></button>').join(""):'<p class="hint">Nenhum atendimento corresponde aos filtros.</p>';
+ $("ticketAdminList").querySelectorAll("[data-ticket]").forEach(b=>b.onclick=()=>openTicket(b.dataset.ticket));
+}
+function openTicket(id){
+ selected=id;const t=tickets.find(x=>x.id===id);if(!t)return;
+ $("ticketThreadTitle").textContent=t.subject;$("ticketThreadStatus").textContent=status(t.status);
+ $("ticketThreadMeta").innerHTML='<p class="hint"><strong>Aluno:</strong> '+esc(t.studentName||"Aluno")+' ('+esc(t.studentEmail||"sem e-mail")+')<br><strong>Curso:</strong> '+esc(t.course)+' · <strong>Categoria:</strong> '+esc(t.category)+'<br><strong>Protocolo:</strong> '+esc(t.id)+'<br><strong>Recebida:</strong> '+esc(date(t.createdAt))+'</p>';
+ $("ticketAdminReply").disabled=t.status==="closed";$("ticketAdminSend").disabled=t.status==="closed";$("ticketAdminStatusSelect").disabled=false;$("ticketAdminStatusSelect").value=t.status||"new";
+ stopThread?.();stopThread=watchAdminTicketMessages(id,msgs=>{$("ticketThreadMessages").innerHTML=msgs.map(m=>'<div class="ticket-admin-bubble '+(m.senderRole==="admin"?'admin':'')+'"><b>'+esc(m.senderName||"Aluno")+' · '+(m.senderRole==="admin"?"Administração":"Aluno")+'</b>'+esc(m.text)+'<time>'+esc(date(m.createdAt))+'</time></div>').join("");$("ticketThreadMessages").scrollTop=$("ticketThreadMessages").scrollHeight},e=>notify("Falha ao carregar conversa: "+e.message));
+ renderList();
+}
+async function refresh(){
+ if(!allowed)return;
+ $("ticketAdminStatus").textContent="Conectando à caixa de entrada…";
+ try{stopList?.();stopList=await listAdminTickets(rows=>{tickets=rows;renderList();if(selected){const t=tickets.find(x=>x.id===selected);if(t){$("ticketThreadStatus").textContent=status(t.status);$("ticketAdminStatusSelect").value=t.status;$("ticketAdminReply").disabled=$("ticketAdminSend").disabled=t.status==="closed"}}$("ticketAdminStatus").textContent="Atualização em tempo real · "+tickets.length+" atendimento(s)";},e=>{$("ticketAdminStatus").textContent="Falha ao consultar Firestore: "+e.message;notify("Verifique as regras de atendimento no Firestore.")});}
+ catch(e){$("ticketAdminStatus").textContent=e.message;notify(e.message)}
+}
+$("adminMessagesRefresh").onclick=refresh;
+["ticketCourseFilter","ticketStatusFilter","ticketSearch"].forEach(id=>$(id).addEventListener(id==="ticketSearch"?"input":"change",renderList));
+$("ticketAdminSend").onclick=async()=>{if(!selected)return;const text=$("ticketAdminReply").value.trim();if(!text)return;const b=$("ticketAdminSend");b.disabled=true;try{await sendAdminTicketReply(selected,text);$("ticketAdminReply").value="";notify("Resposta enviada ao aluno.");}catch(e){notify(e.message||"Não foi possível enviar a resposta.")}finally{const t=tickets.find(x=>x.id===selected);b.disabled=!t||t.status==="closed"}};
+$("ticketAdminStatusSelect").onchange=async e=>{if(!selected)return;try{await setAdminTicketStatus(selected,e.target.value);notify("Situação do atendimento atualizada.")}catch(err){notify(err.message);}};
+window.addEventListener("pa:open-admin-messages",()=>{if(!allowed){notify("Aguarde a validação do acesso administrativo.");return}refresh()});
+onAuthStateChanged(auth,async user=>{allowed=!!user&&await isAdminUser(user);if(!allowed){stopList?.();stopThread?.();tickets=[];return}if($("adminMessagesView").style.display==="block")refresh()});
+</script>
 </body></html>`}
 $('downloadHtml').onclick=()=>{const blob=new Blob([buildStandalone()],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=(($('code').value.trim()||'pagina-normativa').replace(/[^a-z0-9_-]+/gi,'-'))+'-previa.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);toast('HTML de pré-visualização exportado. Não foi publicado.')}
 function resetEditorToExample({confirmAction=true, confirmMessage='Restaurar os dados demonstrativos iniciais? As alterações desta sessão serão perdidas.'}={}) {
