@@ -658,46 +658,7 @@ function buildStandalone(){const d=data();const safeContent=sanitizeHtml(d.conte
 
 
 
-<script type="module">
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
-import { auth } from "./firebase-config.js";
-import { isAdminUser } from "./admin-access.js";
-import { listAdminTickets, watchAdminTicketMessages, sendAdminTicketReply, setAdminTicketStatus } from "./admin-atendimentos-firestore.js";
-const $=id=>document.getElementById(id);
-const labels={new:"Nova",progress:"Em análise",replied:"Respondida",closed:"Encerrada"};
-let allowed=false,tickets=[],selected=null,stopList=null,stopThread=null;
-function date(v){return v?.toDate?v.toDate().toLocaleString("pt-BR"):"—"}
-function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
-function status(s){return labels[s]||"—"}
-function notify(s){const el=$("toast");el.textContent=s;el.style.display="block";clearTimeout(window.__ticketToast);window.__ticketToast=setTimeout(()=>el.style.display="none",4000)}
-function renderList(){
- const course=$("ticketCourseFilter").value,st=$("ticketStatusFilter").value,q=$("ticketSearch").value.toLowerCase();
- const rows=tickets.filter(t=>(!course||t.course===course)&&(!st||t.status===st)&&[t.studentName,t.studentEmail,t.subject,t.id,t.course].join(" ").toLowerCase().includes(q));
- $("ticketTotal").textContent=tickets.length;$("ticketNew").textContent=tickets.filter(t=>t.status==="new").length;$("ticketListCount").textContent=rows.length+" atendimento(s)";
- $("ticketAdminList").innerHTML=rows.length?rows.map(t=>'<button class="ticket-admin-row '+(selected===t.id?'active':'')+'" data-ticket="'+esc(t.id)+'"><strong>'+esc(t.subject)+'</strong><small>'+esc(t.studentName||"Aluno")+' · '+esc(t.course)+' · '+esc(status(t.status))+'</small><small>'+esc(t.category)+' · '+esc(t.studentEmail||"")+'</small><small>'+esc(t.id)+' · '+esc(date(t.updatedAt))+'</small></button>').join(""):'<p class="hint">Nenhum atendimento corresponde aos filtros.</p>';
- $("ticketAdminList").querySelectorAll("[data-ticket]").forEach(b=>b.onclick=()=>openTicket(b.dataset.ticket));
-}
-function openTicket(id){
- selected=id;const t=tickets.find(x=>x.id===id);if(!t)return;
- $("ticketThreadTitle").textContent=t.subject;$("ticketThreadStatus").textContent=status(t.status);
- $("ticketThreadMeta").innerHTML='<p class="hint"><strong>Aluno:</strong> '+esc(t.studentName||"Aluno")+' ('+esc(t.studentEmail||"sem e-mail")+')<br><strong>Curso:</strong> '+esc(t.course)+' · <strong>Categoria:</strong> '+esc(t.category)+'<br><strong>Protocolo:</strong> '+esc(t.id)+'<br><strong>Recebida:</strong> '+esc(date(t.createdAt))+'</p>';
- $("ticketAdminReply").disabled=t.status==="closed";$("ticketAdminSend").disabled=t.status==="closed";$("ticketAdminStatusSelect").disabled=false;$("ticketAdminStatusSelect").value=t.status||"new";
- stopThread?.();stopThread=watchAdminTicketMessages(id,msgs=>{$("ticketThreadMessages").innerHTML=msgs.map(m=>'<div class="ticket-admin-bubble '+(m.senderRole==="admin"?'admin':'')+'"><b>'+esc(m.senderName||"Aluno")+' · '+(m.senderRole==="admin"?"Administração":"Aluno")+'</b>'+esc(m.text)+'<time>'+esc(date(m.createdAt))+'</time></div>').join("");$("ticketThreadMessages").scrollTop=$("ticketThreadMessages").scrollHeight},e=>notify("Falha ao carregar conversa: "+e.message));
- renderList();
-}
-async function refresh(){
- if(!allowed)return;
- $("ticketAdminStatus").textContent="Conectando à caixa de entrada…";
- try{stopList?.();stopList=await listAdminTickets(rows=>{tickets=rows;renderList();if(selected){const t=tickets.find(x=>x.id===selected);if(t){$("ticketThreadStatus").textContent=status(t.status);$("ticketAdminStatusSelect").value=t.status;$("ticketAdminReply").disabled=$("ticketAdminSend").disabled=t.status==="closed"}}$("ticketAdminStatus").textContent="Atualização em tempo real · "+tickets.length+" atendimento(s)";},e=>{$("ticketAdminStatus").textContent="Falha ao consultar Firestore: "+e.message;notify("Verifique as regras de atendimento no Firestore.")});}
- catch(e){$("ticketAdminStatus").textContent=e.message;notify(e.message)}
-}
-$("adminMessagesRefresh").onclick=refresh;
-["ticketCourseFilter","ticketStatusFilter","ticketSearch"].forEach(id=>$(id).addEventListener(id==="ticketSearch"?"input":"change",renderList));
-$("ticketAdminSend").onclick=async()=>{if(!selected)return;const text=$("ticketAdminReply").value.trim();if(!text)return;const b=$("ticketAdminSend");b.disabled=true;try{await sendAdminTicketReply(selected,text);$("ticketAdminReply").value="";notify("Resposta enviada ao aluno.");}catch(e){notify(e.message||"Não foi possível enviar a resposta.")}finally{const t=tickets.find(x=>x.id===selected);b.disabled=!t||t.status==="closed"}};
-$("ticketAdminStatusSelect").onchange=async e=>{if(!selected)return;try{await setAdminTicketStatus(selected,e.target.value);notify("Situação do atendimento atualizada.")}catch(err){notify(err.message);}};
-window.addEventListener("pa:open-admin-messages",()=>{if(!allowed){notify("Aguarde a validação do acesso administrativo.");return}refresh()});
-onAuthStateChanged(auth,async user=>{allowed=!!user&&await isAdminUser(user);if(!allowed){stopList?.();stopThread?.();tickets=[];return}if($("adminMessagesView").style.display==="block")refresh()});
-</script>
+
 </body></html>`}
 $('downloadHtml').onclick=()=>{const blob=new Blob([buildStandalone()],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=(($('code').value.trim()||'pagina-normativa').replace(/[^a-z0-9_-]+/gi,'-'))+'-previa.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);toast('HTML de pré-visualização exportado. Não foi publicado.')}
 function resetEditorToExample({confirmAction=true, confirmMessage='Restaurar os dados demonstrativos iniciais? As alterações desta sessão serão perdidas.'}={}) {
@@ -1174,6 +1135,46 @@ await refreshVideoAdminDrafts().catch(() => {});
   document.addEventListener('keydown',function(event){if(event.key==='Escape')closeMenu()});
   window.addEventListener('resize',function(){if(window.innerWidth>850)closeMenu()});
 })();
+</script>
+<script type="module">
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+import { auth } from "./firebase-config.js";
+import { isAdminUser } from "./admin-access.js";
+import { listAdminTickets, watchAdminTicketMessages, sendAdminTicketReply, setAdminTicketStatus } from "./admin-atendimentos-firestore.js";
+const $=id=>document.getElementById(id);
+const labels={new:"Nova",progress:"Em análise",replied:"Respondida",closed:"Encerrada"};
+let allowed=false,tickets=[],selected=null,stopList=null,stopThread=null;
+function date(v){return v?.toDate?v.toDate().toLocaleString("pt-BR"):"—"}
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function status(s){return labels[s]||"—"}
+function notify(s){const el=$("toast");el.textContent=s;el.style.display="block";clearTimeout(window.__ticketToast);window.__ticketToast=setTimeout(()=>el.style.display="none",4000)}
+function renderList(){
+ const course=$("ticketCourseFilter").value,st=$("ticketStatusFilter").value,q=$("ticketSearch").value.toLowerCase();
+ const rows=tickets.filter(t=>(!course||t.course===course)&&(!st||t.status===st)&&[t.studentName,t.studentEmail,t.subject,t.id,t.course].join(" ").toLowerCase().includes(q));
+ $("ticketTotal").textContent=tickets.length;$("ticketNew").textContent=tickets.filter(t=>t.status==="new").length;$("ticketListCount").textContent=rows.length+" atendimento(s)";
+ $("ticketAdminList").innerHTML=rows.length?rows.map(t=>'<button class="ticket-admin-row '+(selected===t.id?'active':'')+'" data-ticket="'+esc(t.id)+'"><strong>'+esc(t.subject)+'</strong><small>'+esc(t.studentName||"Aluno")+' · '+esc(t.course)+' · '+esc(status(t.status))+'</small><small>'+esc(t.category)+' · '+esc(t.studentEmail||"")+'</small><small>'+esc(t.id)+' · '+esc(date(t.updatedAt))+'</small></button>').join(""):'<p class="hint">Nenhum atendimento corresponde aos filtros.</p>';
+ $("ticketAdminList").querySelectorAll("[data-ticket]").forEach(b=>b.onclick=()=>openTicket(b.dataset.ticket));
+}
+function openTicket(id){
+ selected=id;const t=tickets.find(x=>x.id===id);if(!t)return;
+ $("ticketThreadTitle").textContent=t.subject;$("ticketThreadStatus").textContent=status(t.status);
+ $("ticketThreadMeta").innerHTML='<p class="hint"><strong>Aluno:</strong> '+esc(t.studentName||"Aluno")+' ('+esc(t.studentEmail||"sem e-mail")+')<br><strong>Curso:</strong> '+esc(t.course)+' · <strong>Categoria:</strong> '+esc(t.category)+'<br><strong>Protocolo:</strong> '+esc(t.id)+'<br><strong>Recebida:</strong> '+esc(date(t.createdAt))+'</p>';
+ $("ticketAdminReply").disabled=t.status==="closed";$("ticketAdminSend").disabled=t.status==="closed";$("ticketAdminStatusSelect").disabled=false;$("ticketAdminStatusSelect").value=t.status||"new";
+ stopThread?.();stopThread=watchAdminTicketMessages(id,msgs=>{$("ticketThreadMessages").innerHTML=msgs.map(m=>'<div class="ticket-admin-bubble '+(m.senderRole==="admin"?'admin':'')+'"><b>'+esc(m.senderName||"Aluno")+' · '+(m.senderRole==="admin"?"Administração":"Aluno")+'</b>'+esc(m.text)+'<time>'+esc(date(m.createdAt))+'</time></div>').join("");$("ticketThreadMessages").scrollTop=$("ticketThreadMessages").scrollHeight},e=>notify("Falha ao carregar conversa: "+e.message));
+ renderList();
+}
+async function refresh(){
+ if(!allowed)return;
+ $("ticketAdminStatus").textContent="Conectando à caixa de entrada…";
+ try{stopList?.();stopList=await listAdminTickets(rows=>{tickets=rows;renderList();if(selected){const t=tickets.find(x=>x.id===selected);if(t){$("ticketThreadStatus").textContent=status(t.status);$("ticketAdminStatusSelect").value=t.status;$("ticketAdminReply").disabled=$("ticketAdminSend").disabled=t.status==="closed"}}$("ticketAdminStatus").textContent="Atualização em tempo real · "+tickets.length+" atendimento(s)";},e=>{$("ticketAdminStatus").textContent="Falha ao consultar Firestore: "+e.message;notify("Verifique as regras de atendimento no Firestore.")});}
+ catch(e){$("ticketAdminStatus").textContent=e.message;notify(e.message)}
+}
+$("adminMessagesRefresh").onclick=refresh;
+["ticketCourseFilter","ticketStatusFilter","ticketSearch"].forEach(id=>$(id).addEventListener(id==="ticketSearch"?"input":"change",renderList));
+$("ticketAdminSend").onclick=async()=>{if(!selected)return;const text=$("ticketAdminReply").value.trim();if(!text)return;const b=$("ticketAdminSend");b.disabled=true;try{await sendAdminTicketReply(selected,text);$("ticketAdminReply").value="";notify("Resposta enviada ao aluno.");}catch(e){notify(e.message||"Não foi possível enviar a resposta.")}finally{const t=tickets.find(x=>x.id===selected);b.disabled=!t||t.status==="closed"}};
+$("ticketAdminStatusSelect").onchange=async e=>{if(!selected)return;try{await setAdminTicketStatus(selected,e.target.value);notify("Situação do atendimento atualizada.")}catch(err){notify(err.message);}};
+window.addEventListener("pa:open-admin-messages",()=>{if(!allowed){notify("Aguarde a validação do acesso administrativo.");return}refresh()});
+onAuthStateChanged(auth,async user=>{allowed=!!user&&await isAdminUser(user);if(!allowed){stopList?.();stopThread?.();tickets=[];return}if($("adminMessagesView").style.display==="block")refresh()});
 </script>
 </body>
 </html>
