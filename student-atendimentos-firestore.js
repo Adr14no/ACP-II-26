@@ -30,3 +30,7 @@ export async function sendStudentReply(ticketId,text){
  batch.set(msg,{text:value,senderUid:user.uid,senderName:user.displayName||user.email?.split("@")[0]||"Aluno",senderRole:"student",createdAt:serverTimestamp()});
  batch.update(parent,{updatedAt:serverTimestamp()});await batch.commit();
 }
+
+
+// Oculta o atendimento apenas na lista do aluno; a administração mantém o histórico.
+export async function hideStudentTicket(ticketId){const user=requireUser();await updateDoc(doc(db,"atendimentos",ticketId),{hiddenForStudent:true,updatedAt:serverTimestamp()});}
