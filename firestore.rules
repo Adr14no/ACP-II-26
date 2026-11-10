@@ -90,6 +90,7 @@ service cloud.firestore {
 
     match /atendimentos/{ticketId} {
       allow create: if request.auth != null
+        && request.resource.data.keys().hasOnly(['uid', 'studentName', 'studentEmail', 'course', 'category', 'subject', 'status', 'createdAt', 'updatedAt'])
         && request.resource.data.uid == request.auth.uid
         && request.resource.data.course in ['ACP', 'CAO']
         && request.resource.data.subject is string
@@ -120,7 +121,9 @@ service cloud.firestore {
           && request.resource.data.senderName is string
           && request.resource.data.createdAt == request.time
           && ((isAdmin() && request.resource.data.senderRole == 'admin')
-            || (ticketOwnerAfter(ticketId) && request.resource.data.senderRole == 'student'));
+            || (ticketOwnerAfter(ticketId)
+              && getAfter(/databases/$(database)/documents/atendimentos/$(ticketId)).data.status != 'closed'
+              && request.resource.data.senderRole == 'student'));
         allow update, delete: if false;
       }
     }
