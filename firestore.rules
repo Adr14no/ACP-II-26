@@ -76,6 +76,59 @@ service cloud.firestore {
 
     // Auditoria: usuários só podem criar eventos vinculados à própria conta.
     // A consulta global é exclusiva de administradores ativos.
+
+    // Central de Atendimento: cada aluno acessa somente os próprios protocolos.
+    // Administradores ativos podem consultar, responder e alterar o status.
+    function ticketOwner(ticketId) {
+      return request.auth != null
+        && get(/databases/$(database)/documents/atendimentos/$(ticketId)).data.uid == request.auth.uid;
+    }
+    function ticketOwnerAfter(ticketId) {
+      return request.auth != null
+        && getAfter(/databases/$(database)/documents/atendimentos/$(ticketId)).data.uid == request.auth.uid;
+    }
+
+    match /atendimentos/{ticketId} {
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasOnly(['uid', 'studentName', 'studentEmail', 'course', 'category', 'subject', 'status', 'createdAt', 'updatedAt'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.course in ['ACP', 'CAO']
+        && request.resource.data.subject is string
+        && request.resource.data.subject.size() > 0
+        && request.resource.data.category is string
+        && request.resource.data.status == 'new'
+        && request.resource.data.studentName is string
+        && request.resource.data.studentEmail is string
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.updatedAt == request.time;
+      allow read: if isAdmin() || (request.auth != null && resource.data.uid == request.auth.uid);
+      allow update: if isAdmin()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'updatedAt'])
+        && request.resource.data.status in ['new', 'progress', 'replied', 'closed']
+        && request.resource.data.updatedAt == request.time
+        || (request.auth != null
+          && resource.data.uid == request.auth.uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['updatedAt', 'hiddenForStudent'])
+          && request.resource.data.updatedAt == request.time
+          && (!('hiddenForStudent' in request.resource.data) || request.resource.data.hiddenForStudent == true));
+      allow delete: if false;
+
+      match /messages/{messageId} {
+        allow read: if isAdmin() || ticketOwner(ticketId);
+        allow create: if request.resource.data.keys().hasOnly(['text', 'senderUid', 'senderName', 'senderRole', 'createdAt'])
+          && request.resource.data.text is string
+          && request.resource.data.text.size() > 0
+          && request.resource.data.senderUid == request.auth.uid
+          && request.resource.data.senderName is string
+          && request.resource.data.createdAt == request.time
+          && ((isAdmin() && request.resource.data.senderRole == 'admin')
+            || (ticketOwnerAfter(ticketId)
+              && getAfter(/databases/$(database)/documents/atendimentos/$(ticketId)).data.status != 'closed'
+              && request.resource.data.senderRole == 'student'));
+        allow update, delete: if false;
+      }
+    }
+
     match /systemLogs/{logId} {
       allow create: if request.auth != null
         && request.resource.data.uid == request.auth.uid
